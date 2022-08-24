@@ -5378,7 +5378,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The foe, if it is the opposite\\ngender as the user, becomes\\ninfatuated and may not attack.",
+      "description_english": "A move that may\\ncause paralysis.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5387,7 +5387,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Attract"
+      "moveId": "ThunderWave"
     },
     {
       "english": "TM46",
