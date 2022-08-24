@@ -5395,7 +5395,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "An attack that gives the user an\\nopportunity to steal the foe's hold\\nitem.",
+      "description_english": "An attack with\\nvariable power.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5404,7 +5404,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Thief"
+      "moveId": "Psywave"
     },
     {
       "english": "TM47",
