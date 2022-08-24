@@ -5361,7 +5361,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A move that makes the user fall\\nasleep over two turns to restore HP\\nand heal any status problems.",
+      "description_english": "Sleep for two turns\\nto fully recover.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
