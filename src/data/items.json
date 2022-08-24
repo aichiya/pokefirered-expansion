@@ -5446,7 +5446,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A move that steals the effects of\\nany status-changing or healing move\\nthat the foe tries to use.",
+      "description_english": "Fires three kinds of\\nbeams at once.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5455,7 +5455,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Snatch"
+      "moveId": "TriAttack"
     },
     {
       "english": "TM50",
@@ -5463,7 +5463,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A maximum-power attack of great\\nferocity, but one that also sharply\\nreduces the user's SP. ATK stat.",
+      "description_english": "Makes a decoy with\\n1/4 user's max HP.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5472,7 +5472,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Overheat"
+      "moveId": "Substitute"
     },
     {
       "english": "HM01",
