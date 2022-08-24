@@ -5293,7 +5293,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "An extremely fast attack against\\none target. It is impossible to\\nevade.",
+      "description_english": "1st turn: Prepare\\n2nd turn: Attack",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5302,7 +5302,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "AerialAce"
+      "moveId": "SkullBash"
     },
     {
       "english": "TM41",
