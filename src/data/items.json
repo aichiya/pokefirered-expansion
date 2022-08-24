@@ -5344,7 +5344,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "An attack move that may have an\\nadditional effect depending on the\\nbattle terrain.",
+      "description_english": "1st turn: Prepare\\n2nd turn: Attack",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5353,7 +5353,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "SecretPower"
+      "moveId": "SkyAttack"
     },
     {
       "english": "TM44",
