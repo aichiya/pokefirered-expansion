@@ -4970,7 +4970,7 @@
       "price": 1000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "This attack move grows more\\npowerful the more the POKéMON\\ndislikes its TRAINER.",
+      "description_english": "Steals 1/2 of the\\ndamage inflicted.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4979,7 +4979,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Frustration"
+      "moveId": "MegaDrain"
     },
     {
       "english": "TM22",
