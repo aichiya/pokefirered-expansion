@@ -4834,7 +4834,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "An icy-cold beam is shot at the\\nfoe. It may leave the target\\nfrozen.",
+      "description_english": "An attack that may\\nfreeze the foe.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
