@@ -5531,7 +5531,7 @@
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The user builds enormous power,\\nthen slams the foe. It can be used\\nfor moving large, round boulders.",
+      "description_english": "A powerful physical attack.",
       "importance": 1,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
