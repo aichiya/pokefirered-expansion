@@ -4919,7 +4919,7 @@
       "price": 2000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A heavy rain is summoned for five\\nturns. Over that time, WATER-type\\nmoves are powered up.",
+      "description_english": "Returns a physical\\nblow double.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4928,7 +4928,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "RainDance"
+      "moveId": "Counter"
     },
     {
       "english": "TM19",
