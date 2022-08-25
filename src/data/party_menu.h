@@ -1041,7 +1041,7 @@ static const u16 sTMHMMoves_Duplicate[] =
     MOVE_DIG,
     MOVE_PSYCHIC,
     MOVE_SHADOW_BALL,
-    MOVE_BRICK_BREAK,
+    MOVE_MIMIC,
     MOVE_DOUBLE_TEAM,
     MOVE_REFLECT,
     MOVE_BIDE,
