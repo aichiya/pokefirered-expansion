@@ -5497,7 +5497,7 @@
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The user flies up on the first turn,\\nthen attacks next turn. It can be\\nused to fly to any known town.",
+      "description_english": "1st turn: Fly\\n2nd turn: Attack",
       "importance": 1,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
