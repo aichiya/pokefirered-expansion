@@ -5208,7 +5208,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The foe is roasted with a heavy\\nblast of fire. It may leave the\\ntarget with a burn.",
+      "description_english": "Randomly uses any\\nPOKéMON move.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5217,7 +5217,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Flamethrower"
+      "moveId": "Metronome"
     },
     {
       "english": "TM36",
