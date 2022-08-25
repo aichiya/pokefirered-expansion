@@ -1239,7 +1239,7 @@ static const u8 *const sUnionRoomTradeMessages[] =
 static const u16 sTMHMMoves[] =
 {
     MOVE_FOCUS_PUNCH,
-    MOVE_DRAGON_CLAW,
+    MOVE_RAZOR_WIND,
     MOVE_SWORDS_DANCE,
     MOVE_WHIRLWIND,
     MOVE_MEGA_KICK,
