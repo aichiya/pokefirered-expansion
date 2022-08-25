@@ -5514,7 +5514,7 @@
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Creates a huge wave, then crashes\\nit down on the foe. It can be used\\nfor traveling on water.",
+      "description_english": "A strong water-type attack.",
       "importance": 1,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
