@@ -5038,7 +5038,7 @@
       "price": 5500,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Strikes the foe with a huge\\nthunderbolt. It may cause\\nparalysis.",
+      "description_english": "An attack that may\\ncause paralysis.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
