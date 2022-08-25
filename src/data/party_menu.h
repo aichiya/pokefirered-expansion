@@ -1049,7 +1049,7 @@ static const u16 sTMHMMoves_Duplicate[] =
     MOVE_SLUDGE_BOMB,
     MOVE_SANDSTORM,
     MOVE_FIRE_BLAST,
-    MOVE_ROCK_TOMB,
+    MOVE_SWIFT,
     MOVE_AERIAL_ACE,
     MOVE_TORMENT,
     MOVE_FACADE,
