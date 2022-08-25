@@ -5548,7 +5548,7 @@
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Looses a powerful blast of light\\nthat reduces the foe's accuracy.\\nIt also lights up dark caves.",
+      "description_english": "Blinds the foe to\\nreduce accuracy.",
       "importance": 1,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
