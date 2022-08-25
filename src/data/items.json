@@ -5259,7 +5259,7 @@
       "price": 5500,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The foe is incinerated with an\\nintense flame. It may leave the\\ntarget with a burn.",
+      "description_english": "An attack that may\\ncause a burn.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
