@@ -4953,7 +4953,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Protects the party with a shield\\nagainst all status problems over\\nfive turns.",
+      "description_english": "Raises ATTACK if\\nthe user is hit.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4962,7 +4962,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Safeguard"
+      "moveId": "Rage"
     },
     {
       "english": "TM21",
