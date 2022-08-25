@@ -4936,7 +4936,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The user strikes the foe with\\ntentacles or roots, stealing the\\ntarget's HP and healing itself.",
+      "description_english": "The user’s level\\nequals damage HP.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4945,7 +4945,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "GigaDrain"
+      "moveId": "SeismicToss"
     },
     {
       "english": "TM20",
