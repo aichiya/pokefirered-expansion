@@ -5055,7 +5055,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Causes an earthquake that strikes\\nall POKéMON in battle, excluding\\nthe user.",
+      "description_english": "Tough but useless\\nvs. flying foes.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
