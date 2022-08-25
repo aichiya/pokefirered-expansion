@@ -5004,7 +5004,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The foe is slammed with a sturdy\\ntail of steel. It may lower the\\ntarget's DEFENSE stat.",
+      "description_english": "Always inflicts\\n40HP damage.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5013,7 +5013,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "IronTail"
+      "moveId": "DragonRage"
     },
     {
       "english": "TM24",
