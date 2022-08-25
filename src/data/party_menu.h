@@ -1244,7 +1244,7 @@ static const u16 sTMHMMoves[] =
     MOVE_CALM_MIND,
     MOVE_ROAR,
     MOVE_TOXIC,
-    MOVE_HAIL,
+    MOVE_HORN_DRILL,
     MOVE_BODY_SLAM,
     MOVE_TAKE_DOWN,
     MOVE_DOUBLE_EDGE,
