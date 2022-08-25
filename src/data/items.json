@@ -5480,7 +5480,7 @@
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Attacks the foe with sharp blades\\nor claws. It can also cut down thin\\ntrees and grass outside of battle.",
+      "description_english": "Cuts using claws,\\nscythes, etc.",
       "importance": 1,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
