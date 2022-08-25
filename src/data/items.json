@@ -4698,7 +4698,7 @@
       "price": 1000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A savage roar that causes the foe\\nto switch out of battle. In the\\nwild, ROAR ends the battle.",
+      "description_english": "A powerful kicking attack.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4707,7 +4707,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Roar"
+      "moveId": "MegaKick"
     },
     {
       "english": "TM06",
