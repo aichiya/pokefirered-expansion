@@ -5106,7 +5106,7 @@
       "price": 2000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A powerful blast of telekinetic\\nenergy strikes the foe. It may\\nlower the target's SP. DEF stat.",
+      "description_english": "An attack that may\\nlower SPCL.DEF.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
