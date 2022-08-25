@@ -5191,7 +5191,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A rapid jolt of electricity strikes\\nthe foe. This attack is impossible\\nto evade.",
+      "description_english": "Waits 2-3 turns &\\nhits back double.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5200,7 +5200,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "ShockWave"
+      "moveId": "Bide"
     },
     {
       "english": "TM35",
