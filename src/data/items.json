@@ -4885,7 +4885,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A wall of light is created over\\nfive turns. It reduces damage from\\nSP. ATK attacks.",
+      "description_english": "Throws coins. \\nGets them back later.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4894,7 +4894,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "LightScreen"
+      "moveId": "PayDay"
     },
     {
       "english": "TM17",
