@@ -5021,7 +5021,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A massive jolt of electricity is\\nlaunched at the foe. It may cause\\nparalysis.",
+      "description_english": "An attack that may\\ncause paralysis.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
