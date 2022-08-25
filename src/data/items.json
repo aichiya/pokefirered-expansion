@@ -5089,7 +5089,7 @@
       "price": 2000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A 2-turn attack in which the user\\ndigs underground, then strikes.\\nIt can be used to exit dungeons.",
+      "description_english": "1st turn: Burrow\\n2nd turn: Attack",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
