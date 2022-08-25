@@ -4868,7 +4868,7 @@
       "price": 7500,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A harsh attack that inflicts severe\\ndamage on the foe. However, the\\nuser must rest the next turn.",
+      "description_english": "1st turn: Attack\\n2nd turn: Rest",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
