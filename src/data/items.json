@@ -4715,7 +4715,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A move that leaves the foe badly\\npoisoned. Its poison damage worsens\\nevery turn.",
+      "description_english": "A poison move with\\nincreasing damage.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
