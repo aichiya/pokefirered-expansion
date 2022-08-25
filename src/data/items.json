@@ -5242,7 +5242,7 @@
       "price": 2000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Summons a sandstorm that lasts for\\nfive turns. It damages all types\\nexcept ROCK, GROUND, and STEEL.",
+      "description_english": "Eggs are hurled\\nat the foe.",
       "importance": 0,
       "exitsBagOnUse": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5251,7 +5251,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Sandstorm"
+      "moveId": "EggBomb"
     },
     {
       "english": "TM38",
