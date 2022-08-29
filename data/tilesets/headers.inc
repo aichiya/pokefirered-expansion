@@ -747,3 +747,14 @@ gTileset_HallOfFame::
 	.4byte 0x0
 	.4byte gMetatileAttributes_HallOfFame
 
+
+	.align 2
+gTileset_RB_Overworld::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Overworld
+	.4byte gTilesetPalettes_RB_Overworld
+	.4byte gMetatiles_RB_Overworld
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Overworld

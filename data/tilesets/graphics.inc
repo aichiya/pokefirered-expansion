@@ -1469,3 +1469,23 @@ gTilesetPalettes_HallOfFame::
 	.incbin "data/tilesets/secondary/hall_of_fame/palettes/13.gbapal"
 	.incbin "data/tilesets/secondary/hall_of_fame/palettes/14.gbapal"
 	.incbin "data/tilesets/secondary/hall_of_fame/palettes/15.gbapal"
+
+	.align 2
+gTilesetPalettes_RB_Overworld::
+	.incbin "data/tilesets/secondary/rb_overworld/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Overworld::
+	.incbin "data/tilesets/secondary/rb_overworld/tiles.4bpp.lz"

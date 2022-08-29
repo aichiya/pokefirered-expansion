@@ -541,3 +541,11 @@ gMetatiles_HallOfFame::
 	.align 1
 gMetatileAttributes_HallOfFame::
 	.incbin "data/tilesets/secondary/hall_of_fame/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_RB_Overworld::
+	.incbin "data/tilesets/secondary/rb_overworld/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Overworld::
+	.incbin "data/tilesets/secondary/rb_overworld/metatile_attributes.bin"
