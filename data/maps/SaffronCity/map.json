@@ -31,7 +31,7 @@
     },
     {
       "direction": "right",
-      "offset": 7,
+      "offset": 8,
       "map": "MAP_ROUTE8"
     }
   ],
@@ -319,8 +319,8 @@
       "dest_warp_id": 2
     },
     {
-      "x": 39,
-      "y": 17,
+      "x": 41,
+      "y": 18,
       "elevation": 3,
       "dest_map": "MAP_ROUTE8_WEST_ENTRANCE",
       "dest_warp_id": 1
@@ -430,6 +430,5 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "SaffronCity_EventScript_TrainerFanClubSign"
     }
-  ],
-  "connections_no_include": ""
+  ]
 }
