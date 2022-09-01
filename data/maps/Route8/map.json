@@ -16,13 +16,18 @@
   "connections": [
     {
       "direction": "left",
-      "offset": -10,
+      "offset": -7,
       "map": "MAP_SAFFRON_CITY_CONNECTION"
     },
     {
       "direction": "right",
       "offset": 0,
       "map": "MAP_LAVENDER_TOWN"
+    },
+    {
+      "direction": "left",
+      "offset": -7,
+      "map": "MAP_SAFFRON_CITY"
     }
   ],
   "object_events": [
