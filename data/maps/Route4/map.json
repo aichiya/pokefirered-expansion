@@ -128,14 +128,14 @@
   "warp_events": [
     {
       "x": 18,
-      "y": 5,
+      "y": 6,
       "elevation": 3,
       "dest_map": "MAP_MT_MOON_1F",
       "dest_warp_id": 3
     },
     {
       "x": 24,
-      "y": 5,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_MT_MOON_B1F",
       "dest_warp_id": 7
