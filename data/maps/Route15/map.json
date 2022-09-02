@@ -16,12 +16,12 @@
   "connections": [
     {
       "direction": "left",
-      "offset": -10,
+      "offset": -8,
       "map": "MAP_FUCHSIA_CITY"
     },
     {
       "direction": "right",
-      "offset": -34,
+      "offset": -36,
       "map": "MAP_ROUTE14"
     }
   ],
@@ -29,7 +29,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
       "in_connection": false,
-      "x": 22,
+      "x": 18,
       "y": 13,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -44,7 +44,7 @@
       "graphics_id": "OBJ_EVENT_GFX_ROCKER",
       "in_connection": false,
       "x": 31,
-      "y": 12,
+      "y": 13,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -57,8 +57,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKER",
       "in_connection": false,
-      "x": 37,
-      "y": 14,
+      "x": 35,
+      "y": 13,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
@@ -71,8 +71,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
       "in_connection": false,
-      "x": 44,
-      "y": 13,
+      "x": 41,
+      "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -85,8 +85,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
       "in_connection": false,
-      "x": 50,
-      "y": 12,
+      "x": 46,
+      "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -99,8 +99,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
       "in_connection": false,
-      "x": 59,
-      "y": 12,
+      "x": 53,
+      "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
       "movement_range_x": 1,
@@ -113,8 +113,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
       "in_connection": false,
-      "x": 63,
-      "y": 13,
+      "x": 53,
+      "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
       "movement_range_x": 1,
@@ -127,8 +127,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
       "in_connection": false,
-      "x": 52,
-      "y": 8,
+      "x": 51,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
@@ -141,8 +141,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
       "in_connection": false,
-      "x": 54,
-      "y": 12,
+      "x": 48,
+      "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -155,8 +155,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
       "in_connection": false,
-      "x": 28,
-      "y": 6,
+      "x": 27,
+      "y": 1,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
@@ -169,8 +169,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "in_connection": false,
-      "x": 20,
-      "y": 6,
+      "x": 18,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -183,8 +183,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BLACKBELT",
       "in_connection": false,
-      "x": 39,
-      "y": 7,
+      "x": 37,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -197,8 +197,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BATTLE_GIRL",
       "in_connection": false,
-      "x": 40,
-      "y": 7,
+      "x": 41,
+      "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -207,33 +207,19 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route15_EventScript_Mya",
       "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
-      "in_connection": true,
-      "x": 73,
-      "y": 7,
-      "elevation": 13,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "32",
-      "trainer_sight_or_berry_tree_id": "3",
-      "script": "0x0",
-      "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 9,
-      "y": 11,
+      "x": 7,
+      "y": 9,
       "elevation": 3,
       "dest_map": "MAP_ROUTE15_WEST_ENTRANCE_1F",
       "dest_warp_id": 0
     },
     {
-      "x": 16,
-      "y": 11,
+      "x": 14,
+      "y": 9,
       "elevation": 3,
       "dest_map": "MAP_ROUTE15_WEST_ENTRANCE_1F",
       "dest_warp_id": 2
@@ -245,8 +231,8 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 41,
-      "y": 11,
+      "x": 39,
+      "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route15_EventScript_RouteSign"
