@@ -26,7 +26,7 @@
     },
     {
       "direction": "right",
-      "offset": -7,
+      "offset": -8,
       "map": "MAP_SAFFRON_CITY"
     }
   ],
@@ -48,14 +48,14 @@
   ],
   "warp_events": [
     {
-      "x": 7,
-      "y": 14,
+      "x": 5,
+      "y": 13,
       "elevation": 0,
       "dest_map": "MAP_UNDERGROUND_PATH_WEST_ENTRANCE",
       "dest_warp_id": 1
     },
     {
-      "x": 15,
+      "x": 11,
       "y": 10,
       "elevation": 3,
       "dest_map": "MAP_ROUTE7_EAST_ENTRANCE",
@@ -68,8 +68,8 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 5,
-      "y": 14,
+      "x": 3,
+      "y": 13,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route7_EventScript_UndergroundPathSign"
@@ -77,7 +77,7 @@
     {
       "type": "hidden_item",
       "x": 16,
-      "y": 15,
+      "y": 12,
       "elevation": 3,
       "item": "ITEM_WEPEAR_BERRY",
       "flag": "HIDDEN_ITEM_ROUTE7_WEPEAR_BERRY",
