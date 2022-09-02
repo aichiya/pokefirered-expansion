@@ -796,12 +796,12 @@
     {
       "id": "LAYOUT_CELADON_CITY",
       "name": "CeladonCity_Layout",
-      "width": 60,
-      "height": 40,
-      "border_width": 2,
-      "border_height": 2,
+      "width": 50,
+      "height": 36,
+      "border_width": 1,
+      "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_CeladonCity",
+      "secondary_tileset": "gTileset_RB_Overworld",
       "border_filepath": "data/layouts/CeladonCity/border.bin",
       "blockdata_filepath": "data/layouts/CeladonCity/map.bin"
     },
