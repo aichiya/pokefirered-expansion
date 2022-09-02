@@ -21,7 +21,7 @@
     },
     {
       "direction": "down",
-      "offset": -2,
+      "offset": -6,
       "map": "MAP_ROUTE21_NORTH"
     }
   ],
