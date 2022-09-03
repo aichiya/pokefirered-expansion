@@ -16,8 +16,8 @@
   "connections": [
     {
       "direction": "up",
-      "offset": 0,
-      "map": "MAP_ROUTE21_SOUTH"
+      "offset": -6,
+      "map": "MAP_ROUTE21_NORTH"
     },
     {
       "direction": "right",
