@@ -13,12 +13,13 @@
   "show_map_name": true,
   "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
+  "connections": 0,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 29,
-      "y": 58,
+      "in_connection": false,
+      "x": 16,
+      "y": 43,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
@@ -30,8 +31,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY",
-      "x": 45,
-      "y": 58,
+      "in_connection": false,
+      "x": 27,
+      "y": 40,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -43,8 +45,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
-      "x": 47,
-      "y": 45,
+      "in_connection": false,
+      "x": 30,
+      "y": 33,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -56,8 +59,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
-      "x": 47,
-      "y": 29,
+      "in_connection": false,
+      "x": 30,
+      "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -69,8 +73,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
-      "x": 7,
-      "y": 22,
+      "in_connection": false,
+      "x": 2,
+      "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -82,8 +87,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 5,
-      "y": 41,
+      "in_connection": false,
+      "x": 12,
+      "y": 29,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -95,8 +101,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 40,
-      "y": 21,
+      "in_connection": false,
+      "x": 25,
+      "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -108,6 +115,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "in_connection": false,
       "x": 21,
       "y": 34,
       "elevation": 3,
@@ -121,19 +129,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
-      "x": 43,
-      "y": 6,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
-      "script": "ViridianForest_EventScript_Anthony",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
+      "in_connection": false,
       "x": 16,
       "y": 5,
       "elevation": 3,
@@ -147,8 +143,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 49,
-      "y": 60,
+      "in_connection": false,
+      "x": 1,
+      "y": 31,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -161,115 +158,107 @@
   ],
   "warp_events": [
     {
-      "x": 29,
-      "y": 62,
+      "x": 16,
+      "y": 47,
       "elevation": 3,
       "dest_map": "MAP_ROUTE2_VIRIDIAN_FOREST_SOUTH_ENTRANCE",
       "dest_warp_id": 3
     },
     {
-      "x": 28,
-      "y": 62,
+      "x": 15,
+      "y": 47,
       "elevation": 3,
       "dest_map": "MAP_ROUTE2_VIRIDIAN_FOREST_SOUTH_ENTRANCE",
       "dest_warp_id": 3
     },
     {
-      "x": 5,
-      "y": 9,
+      "x": 2,
+      "y": 0,
       "elevation": 3,
       "dest_map": "MAP_ROUTE2_VIRIDIAN_FOREST_NORTH_ENTRANCE",
       "dest_warp_id": 1
     },
     {
-      "x": 6,
-      "y": 9,
+      "x": 3,
+      "y": 0,
       "elevation": 3,
       "dest_map": "MAP_ROUTE2_VIRIDIAN_FOREST_NORTH_ENTRANCE",
       "dest_warp_id": 1
     },
     {
-      "x": 30,
-      "y": 62,
+      "x": 17,
+      "y": 47,
       "elevation": 3,
       "dest_map": "MAP_ROUTE2_VIRIDIAN_FOREST_SOUTH_ENTRANCE",
       "dest_warp_id": 3
     },
     {
-      "x": 4,
-      "y": 9,
+      "x": 1,
+      "y": 0,
       "elevation": 3,
       "dest_map": "MAP_ROUTE2_VIRIDIAN_FOREST_NORTH_ENTRANCE",
       "dest_warp_id": 1
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",
-      "x": 39,
-      "y": 59,
+      "x": 18,
+      "y": 45,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "ViridianForest_EventScript_TrainerTips1"
     },
     {
       "type": "sign",
-      "x": 43,
-      "y": 26,
+      "x": 24,
+      "y": 40,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "ViridianForest_EventScript_TrainerTips3"
     },
     {
       "type": "sign",
-      "x": 9,
-      "y": 29,
+      "x": 26,
+      "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "ViridianForest_EventScript_TrainerTips4"
     },
     {
       "type": "sign",
-      "x": 6,
-      "y": 12,
+      "x": 2,
+      "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "ViridianForest_EventScript_ExitSign"
     },
     {
       "type": "sign",
-      "x": 28,
-      "y": 44,
+      "x": 16,
+      "y": 32,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "ViridianForest_EventScript_TrainerTips2"
     },
     {
       "type": "sign",
-      "x": 31,
-      "y": 60,
+      "x": 4,
+      "y": 24,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "ViridianForest_EventScript_TrainerTips5"
     },
     {
       "type": "hidden_item",
-      "x": 3,
-      "y": 22,
+      "x": 14,
+      "y": 19,
       "elevation": 3,
       "item": "ITEM_POTION",
       "flag": "HIDDEN_ITEM_VIRIDIAN_FOREST_POTION",
-      "quantity": 1,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 28,
-      "y": 57,
-      "elevation": 0,
-      "item": "ITEM_ANTIDOTE",
-      "flag": "HIDDEN_ITEM_VIRIDIAN_FOREST_ANTIDOTE",
       "quantity": 1,
       "underfoot": false
     }
