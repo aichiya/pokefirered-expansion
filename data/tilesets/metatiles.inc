@@ -549,3 +549,17 @@ gMetatiles_RB_Overworld::
 	.align 1
 gMetatileAttributes_RB_Overworld::
 	.incbin "data/tilesets/secondary/rb_overworld/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_House::
+	.incbin "data/tilesets/secondary/rb_house/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_House::
+	.incbin "data/tilesets/secondary/rb_house/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_Forest::
+	.incbin "data/tilesets/secondary/rb_forest/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Forest::
+	.incbin "data/tilesets/secondary/rb_forest/metatile_attributes.bin"

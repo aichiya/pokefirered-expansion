@@ -758,3 +758,25 @@ gTileset_RB_Overworld::
 	.4byte gMetatiles_RB_Overworld
 	.4byte NULL
 	.4byte gMetatileAttributes_RB_Overworld
+
+	.align 2
+gTileset_RB_House::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_House
+	.4byte gTilesetPalettes_RB_House
+	.4byte gMetatiles_RB_House
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_House
+
+	.align 2
+gTileset_RB_Forest::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Forest
+	.4byte gTilesetPalettes_RB_Forest
+	.4byte gMetatiles_RB_Forest
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Forest

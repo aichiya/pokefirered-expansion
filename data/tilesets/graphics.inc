@@ -1489,3 +1489,43 @@ gTilesetPalettes_RB_Overworld::
 	.align 2
 gTilesetTiles_RB_Overworld::
 	.incbin "data/tilesets/secondary/rb_overworld/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_House::
+	.incbin "data/tilesets/secondary/rb_house/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_house/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_house/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_house/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_house/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_house/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_house/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_house/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_house/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_house/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_house/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_house/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_house/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_House::
+	.incbin "data/tilesets/secondary/rb_house/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Forest::
+	.incbin "data/tilesets/secondary/rb_forest/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_forest/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_forest/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_forest/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_forest/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_forest/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_forest/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_forest/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_forest/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_forest/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_forest/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_forest/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_forest/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Forest::
+	.incbin "data/tilesets/secondary/rb_forest/tiles.4bpp.lz"
