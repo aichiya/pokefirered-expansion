@@ -1276,12 +1276,12 @@
     {
       "id": "LAYOUT_DIGLETTS_CAVE_B1F",
       "name": "DiglettsCave_B1F_Layout",
-      "width": 85,
-      "height": 80,
-      "border_width": 2,
-      "border_height": 2,
+      "width": 40,
+      "height": 36,
+      "border_width": 1,
+      "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_DiglettsCave",
+      "secondary_tileset": "gTileset_RB_Cavern",
       "border_filepath": "data/layouts/DiglettsCave_B1F/border.bin",
       "blockdata_filepath": "data/layouts/DiglettsCave_B1F/map.bin"
     },
