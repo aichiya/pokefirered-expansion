@@ -1168,12 +1168,12 @@
     {
       "id": "LAYOUT_MT_MOON_B1F",
       "name": "MtMoon_B1F_Layout",
-      "width": 49,
-      "height": 40,
-      "border_width": 2,
-      "border_height": 2,
+      "width": 28,
+      "height": 28,
+      "border_width": 1,
+      "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_RB_Cavern",
       "border_filepath": "data/layouts/MtMoon_B1F/border.bin",
       "blockdata_filepath": "data/layouts/MtMoon_B1F/map.bin"
     },
