@@ -1529,3 +1529,23 @@ gTilesetPalettes_RB_Forest::
 	.align 2
 gTilesetTiles_RB_Forest::
 	.incbin "data/tilesets/secondary/rb_forest/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Cavern::
+	.incbin "data/tilesets/secondary/rb_cavern/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_cavern/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_cavern/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_cavern/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_cavern/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_cavern/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_cavern/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_cavern/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_cavern/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_cavern/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_cavern/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_cavern/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_cavern/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Cavern::
+	.incbin "data/tilesets/secondary/rb_cavern/tiles.4bpp.lz"

@@ -780,3 +780,14 @@ gTileset_RB_Forest::
 	.4byte gMetatiles_RB_Forest
 	.4byte NULL
 	.4byte gMetatileAttributes_RB_Forest
+
+	.align 2
+gTileset_RB_Cavern::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Cavern
+	.4byte gTilesetPalettes_RB_Cavern
+	.4byte gMetatiles_RB_Cavern
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Cavern

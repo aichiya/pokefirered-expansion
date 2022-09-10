@@ -249,7 +249,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding1",
+      "secondary_tileset": "gTileset_RB_House",
       "border_filepath": "data/layouts/House5/border.bin",
       "blockdata_filepath": "data/layouts/House5/map.bin"
     },
@@ -1156,12 +1156,12 @@
     {
       "id": "LAYOUT_MT_MOON_1F",
       "name": "MtMoon_1F_Layout",
-      "width": 48,
-      "height": 40,
-      "border_width": 2,
-      "border_height": 2,
+      "width": 40,
+      "height": 36,
+      "border_width": 1,
+      "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_RB_Cavern",
       "border_filepath": "data/layouts/MtMoon_1F/border.bin",
       "blockdata_filepath": "data/layouts/MtMoon_1F/map.bin"
     },
@@ -1192,12 +1192,12 @@
     {
       "id": "LAYOUT_VIRIDIAN_FOREST",
       "name": "ViridianForest_Layout",
-      "width": 54,
-      "height": 69,
-      "border_width": 3,
+      "width": 34,
+      "height": 48,
+      "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_ViridianForest",
+      "secondary_tileset": "gTileset_RB_Forest",
       "border_filepath": "data/layouts/ViridianForest/border.bin",
       "blockdata_filepath": "data/layouts/ViridianForest/map.bin"
     },

@@ -563,3 +563,10 @@ gMetatiles_RB_Forest::
 	.align 1
 gMetatileAttributes_RB_Forest::
 	.incbin "data/tilesets/secondary/rb_forest/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_Cavern::
+	.incbin "data/tilesets/secondary/rb_cavern/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Cavern::
+	.incbin "data/tilesets/secondary/rb_cavern/metatile_attributes.bin"
