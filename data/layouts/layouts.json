@@ -1828,12 +1828,12 @@
     {
       "id": "LAYOUT_SSANNE_KITCHEN",
       "name": "SSAnne_Kitchen_Layout",
-      "width": 16,
-      "height": 14,
-      "border_width": 2,
-      "border_height": 2,
+      "width": 14,
+      "height": 16,
+      "border_width": 1,
+      "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_SSAnne",
+      "secondary_tileset": "gTileset_RB_Ship",
       "border_filepath": "data/layouts/SSAnne_Kitchen/border.bin",
       "blockdata_filepath": "data/layouts/SSAnne_Kitchen/map.bin"
     },
