@@ -19,15 +19,15 @@
   ],
   "warp_events": [
     {
-      "x": 4,
-      "y": 3,
+      "x": 5,
+      "y": 4,
       "elevation": 3,
       "dest_map": "MAP_UNDERGROUND_PATH_NORTH_ENTRANCE",
       "dest_warp_id": 3
     },
     {
-      "x": 3,
-      "y": 60,
+      "x": 2,
+      "y": 41,
       "elevation": 3,
       "dest_map": "MAP_UNDERGROUND_PATH_SOUTH_ENTRANCE",
       "dest_warp_id": 3
@@ -40,7 +40,7 @@
     {
       "type": "hidden_item",
       "x": 5,
-      "y": 30,
+      "y": 10,
       "elevation": 3,
       "item": "ITEM_POTION",
       "flag": "HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_POTION",
@@ -59,8 +59,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 2,
-      "y": 57,
+      "x": 3,
+      "y": 36,
       "elevation": 3,
       "item": "ITEM_BURN_HEAL",
       "flag": "HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_BURN_HEAL",
@@ -69,8 +69,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 1,
-      "y": 24,
+      "x": 2,
+      "y": 8,
       "elevation": 3,
       "item": "ITEM_AWAKENING",
       "flag": "HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_AWAKENING",
@@ -79,8 +79,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 6,
-      "y": 53,
+      "x": 5,
+      "y": 29,
       "elevation": 3,
       "item": "ITEM_ICE_HEAL",
       "flag": "HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_ICE_HEAL",
@@ -89,8 +89,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 3,
-      "y": 15,
+      "x": 4,
+      "y": 7,
       "elevation": 3,
       "item": "ITEM_PARALYZE_HEAL",
       "flag": "HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_PARALYZE_HEAL",
@@ -100,7 +100,7 @@
     {
       "type": "hidden_item",
       "x": 3,
-      "y": 39,
+      "y": 12,
       "elevation": 3,
       "item": "ITEM_ETHER",
       "flag": "HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_ETHER",
