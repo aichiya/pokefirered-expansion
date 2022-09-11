@@ -1216,12 +1216,12 @@
     {
       "id": "LAYOUT_SSANNE_1F_CORRIDOR",
       "name": "SSAnne_1F_Corridor_Layout",
-      "width": 31,
-      "height": 21,
-      "border_width": 2,
-      "border_height": 2,
+      "width": 40,
+      "height": 18,
+      "border_width": 1,
+      "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_SSAnne",
+      "secondary_tileset": "gTileset_RB_Ship",
       "border_filepath": "data/layouts/SSAnne_1F_Corridor/border.bin",
       "blockdata_filepath": "data/layouts/SSAnne_1F_Corridor/map.bin"
     },
