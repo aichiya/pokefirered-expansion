@@ -1264,12 +1264,12 @@
     {
       "id": "LAYOUT_SSANNE_DECK",
       "name": "SSAnne_Deck_Layout",
-      "width": 24,
-      "height": 19,
-      "border_width": 2,
-      "border_height": 2,
+      "width": 21,
+      "height": 14,
+      "border_width": 1,
+      "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_SSAnne",
+      "secondary_tileset": "gTileset_RB_Ship",
       "border_filepath": "data/layouts/SSAnne_Deck/border.bin",
       "blockdata_filepath": "data/layouts/SSAnne_Deck/map.bin"
     },
