@@ -13,12 +13,13 @@
   "show_map_name": true,
   "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
+  "connections": 0,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_BLUE",
-      "x": 30,
-      "y": 2,
+      "in_connection": false,
+      "x": 36,
+      "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -30,7 +31,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SAILOR",
-      "x": 2,
+      "in_connection": false,
+      "x": 3,
       "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
@@ -45,63 +47,63 @@
   "warp_events": [
     {
       "x": 2,
-      "y": 2,
+      "y": 4,
       "elevation": 3,
       "dest_map": "MAP_SSANNE_1F_CORRIDOR",
       "dest_warp_id": 0
     },
     {
-      "x": 3,
+      "x": 2,
       "y": 12,
       "elevation": 3,
       "dest_map": "MAP_SSANNE_3F_CORRIDOR",
       "dest_warp_id": 1
     },
     {
-      "x": 30,
-      "y": 2,
+      "x": 36,
+      "y": 4,
       "elevation": 3,
       "dest_map": "MAP_SSANNE_CAPTAINS_OFFICE",
       "dest_warp_id": 0
     },
     {
-      "x": 6,
-      "y": 10,
+      "x": 9,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_SSANNE_2F_ROOM1",
       "dest_warp_id": 0
     },
     {
-      "x": 10,
-      "y": 10,
+      "x": 13,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_SSANNE_2F_ROOM2",
       "dest_warp_id": 0
     },
     {
-      "x": 14,
-      "y": 10,
+      "x": 17,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_SSANNE_2F_ROOM3",
       "dest_warp_id": 0
     },
     {
-      "x": 18,
-      "y": 10,
+      "x": 21,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_SSANNE_2F_ROOM4",
       "dest_warp_id": 0
     },
     {
-      "x": 22,
-      "y": 10,
+      "x": 25,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_SSANNE_2F_ROOM5",
       "dest_warp_id": 0
     },
     {
-      "x": 26,
-      "y": 10,
+      "x": 29,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_SSANNE_2F_ROOM6",
       "dest_warp_id": 0
@@ -110,8 +112,8 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 30,
-      "y": 6,
+      "x": 36,
+      "y": 8,
       "elevation": 3,
       "var": "VAR_MAP_SCENE_S_S_ANNE_2F_CORRIDOR",
       "var_value": "0",
@@ -119,8 +121,8 @@
     },
     {
       "type": "trigger",
-      "x": 31,
-      "y": 6,
+      "x": 37,
+      "y": 8,
       "elevation": 3,
       "var": "VAR_MAP_SCENE_S_S_ANNE_2F_CORRIDOR",
       "var_value": "0",
@@ -128,13 +130,15 @@
     },
     {
       "type": "trigger",
-      "x": 32,
-      "y": 6,
+      "x": 38,
+      "y": 8,
       "elevation": 3,
       "var": "VAR_MAP_SCENE_S_S_ANNE_2F_CORRIDOR",
       "var_value": "0",
       "script": "SSAnne_2F_Corridor_EventScript_RivalTriggerRight"
     }
   ],
-  "bg_events": []
+  "bg_events": [
+
+  ]
 }
