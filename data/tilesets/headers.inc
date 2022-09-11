@@ -802,3 +802,14 @@ gTileset_RB_Ship::
 	.4byte gMetatiles_RB_Ship
 	.4byte NULL
 	.4byte gMetatileAttributes_RB_Ship
+
+	.align 2
+gTileset_RB_Underground::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Underground
+	.4byte gTilesetPalettes_RB_Underground
+	.4byte gMetatiles_RB_Underground
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Underground

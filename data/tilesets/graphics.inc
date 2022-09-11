@@ -1569,3 +1569,23 @@ gTilesetPalettes_RB_Ship::
 	.align 2
 gTilesetTiles_RB_Ship::
 	.incbin "data/tilesets/secondary/rb_ship/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Underground::
+	.incbin "data/tilesets/secondary/rb_underground/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_underground/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_underground/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_underground/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_underground/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_underground/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_underground/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_underground/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_underground/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_underground/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_underground/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_underground/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_underground/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Underground::
+	.incbin "data/tilesets/secondary/rb_underground/tiles.4bpp.lz"

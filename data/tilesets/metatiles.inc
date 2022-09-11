@@ -577,3 +577,10 @@ gMetatiles_RB_Ship::
 	.align 1
 gMetatileAttributes_RB_Ship::
 	.incbin "data/tilesets/secondary/rb_ship/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_Underground::
+	.incbin "data/tilesets/secondary/rb_underground/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Underground::
+	.incbin "data/tilesets/secondary/rb_underground/metatile_attributes.bin"
