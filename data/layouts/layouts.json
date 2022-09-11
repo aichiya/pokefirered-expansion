@@ -1900,12 +1900,12 @@
     {
       "id": "LAYOUT_SSANNE_ROOM1",
       "name": "SSAnne_Room1_Layout",
-      "width": 6,
-      "height": 8,
-      "border_width": 2,
+      "width": 4,
+      "height": 6,
+      "border_width": 1,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_SSAnne",
+      "secondary_tileset": "gTileset_RB_Ship",
       "border_filepath": "data/layouts/SSAnne_Room1/border.bin",
       "blockdata_filepath": "data/layouts/SSAnne_Room1/map.bin"
     },
