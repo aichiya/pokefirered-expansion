@@ -570,3 +570,10 @@ gMetatiles_RB_Cavern::
 	.align 1
 gMetatileAttributes_RB_Cavern::
 	.incbin "data/tilesets/secondary/rb_cavern/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_Ship::
+	.incbin "data/tilesets/secondary/rb_ship/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Ship::
+	.incbin "data/tilesets/secondary/rb_ship/metatile_attributes.bin"
