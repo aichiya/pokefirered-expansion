@@ -1840,12 +1840,12 @@
     {
       "id": "LAYOUT_SSANNE_CAPTAINS_OFFICE",
       "name": "SSAnne_CaptainsOffice_Layout",
-      "width": 9,
-      "height": 10,
-      "border_width": 2,
-      "border_height": 2,
+      "width": 6,
+      "height": 8,
+      "border_width": 1,
+      "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_SSAnne",
+      "secondary_tileset": "gTileset_RB_Ship",
       "border_filepath": "data/layouts/SSAnne_CaptainsOffice/border.bin",
       "blockdata_filepath": "data/layouts/SSAnne_CaptainsOffice/map.bin"
     },
