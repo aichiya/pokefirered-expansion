@@ -584,3 +584,10 @@ gMetatiles_RB_Underground::
 	.align 1
 gMetatileAttributes_RB_Underground::
 	.incbin "data/tilesets/secondary/rb_underground/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_Playerhouse::
+	.incbin "data/tilesets/secondary/rb_playerhouse/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Playerhouse::
+	.incbin "data/tilesets/secondary/rb_playerhouse/metatile_attributes.bin"

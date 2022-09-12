@@ -813,3 +813,14 @@ gTileset_RB_Underground::
 	.4byte gMetatiles_RB_Underground
 	.4byte NULL
 	.4byte gMetatileAttributes_RB_Underground
+
+	.align 2
+gTileset_RB_Playerhouse::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Playerhouse
+	.4byte gTilesetPalettes_RB_Playerhouse
+	.4byte gMetatiles_RB_Playerhouse
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Playerhouse
