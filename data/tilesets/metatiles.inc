@@ -591,3 +591,17 @@ gMetatiles_RB_Playerhouse::
 	.align 1
 gMetatileAttributes_RB_Playerhouse::
 	.incbin "data/tilesets/secondary/rb_playerhouse/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_Pokecenter::
+	.incbin "data/tilesets/secondary/rb_pokecenter/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Pokecenter::
+	.incbin "data/tilesets/secondary/rb_pokecenter/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_Pokemart::
+	.incbin "data/tilesets/secondary/rb_pokemart/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Pokemart::
+	.incbin "data/tilesets/secondary/rb_pokemart/metatile_attributes.bin"

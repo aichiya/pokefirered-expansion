@@ -824,3 +824,25 @@ gTileset_RB_Playerhouse::
 	.4byte gMetatiles_RB_Playerhouse
 	.4byte NULL
 	.4byte gMetatileAttributes_RB_Playerhouse
+
+	.align 2
+gTileset_RB_Pokecenter::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Pokecenter
+	.4byte gTilesetPalettes_RB_Pokecenter
+	.4byte gMetatiles_RB_Pokecenter
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Pokecenter
+
+	.align 2
+gTileset_RB_Pokemart::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Pokemart
+	.4byte gTilesetPalettes_RB_Pokemart
+	.4byte gMetatiles_RB_Pokemart
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Pokemart

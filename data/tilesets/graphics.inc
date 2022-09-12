@@ -1609,3 +1609,43 @@ gTilesetPalettes_RB_Playerhouse::
 	.align 2
 gTilesetTiles_RB_Playerhouse::
 	.incbin "data/tilesets/secondary/rb_playerhouse/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Pokecenter::
+	.incbin "data/tilesets/secondary/rb_pokecenter/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokecenter/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokecenter/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokecenter/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokecenter/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokecenter/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokecenter/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokecenter/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokecenter/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokecenter/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokecenter/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokecenter/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokecenter/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Pokecenter::
+	.incbin "data/tilesets/secondary/rb_pokecenter/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Pokemart::
+	.incbin "data/tilesets/secondary/rb_pokemart/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokemart/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokemart/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokemart/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokemart/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokemart/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokemart/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokemart/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokemart/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokemart/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokemart/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokemart/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_pokemart/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Pokemart::
+	.incbin "data/tilesets/secondary/rb_pokemart/tiles.4bpp.lz"
