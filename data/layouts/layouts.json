@@ -1312,12 +1312,12 @@
     {
       "id": "LAYOUT_VICTORY_ROAD_3F",
       "name": "VictoryRoad_3F_Layout",
-      "width": 45,
-      "height": 22,
-      "border_width": 2,
-      "border_height": 2,
+      "width": 30,
+      "height": 18,
+      "border_width": 1,
+      "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
+      "secondary_tileset": "gTileset_RB_Cavern",
       "border_filepath": "data/layouts/VictoryRoad_3F/border.bin",
       "blockdata_filepath": "data/layouts/VictoryRoad_3F/map.bin"
     },
