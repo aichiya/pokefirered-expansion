@@ -14,7 +14,7 @@ PalletTown_RivalsHouse_OnTransition::
 
 PalletTown_RivalsHouse_EventScript_MoveDaisyToTable::
 	setobjectmovementtype LOCALID_DAISY, MOVEMENT_TYPE_FACE_RIGHT
-	setobjectxyperm LOCALID_DAISY, 5, 4
+	setobjectxyperm LOCALID_DAISY, 2, 3
 	return
 
 PalletTown_RivalsHouse_EventScript_AlreadyReceivedTownMap::
