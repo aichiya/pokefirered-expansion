@@ -846,3 +846,146 @@ gTileset_RB_Pokemart::
 	.4byte gMetatiles_RB_Pokemart
 	.4byte NULL
 	.4byte gMetatileAttributes_RB_Pokemart
+
+	.align 2
+gTileset_RB_Lab::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Lab
+	.4byte gTilesetPalettes_RB_Lab
+	.4byte gMetatiles_RB_Lab
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Lab
+
+	.align 2
+gTileset_RB_Overworld_Viridian::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Overworld_Viridian
+	.4byte gTilesetPalettes_RB_Overworld_Viridian
+	.4byte gMetatiles_RB_Overworld_Viridian
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Overworld_Viridian
+
+	.align 2
+gTileset_RB_Overworld_Pewter::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Overworld_Pewter
+	.4byte gTilesetPalettes_RB_Overworld_Pewter
+	.4byte gMetatiles_RB_Overworld_Pewter
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Overworld_Pewter
+
+	.align 2
+gTileset_RB_Overworld_Vermilion::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Overworld_Vermilion
+	.4byte gTilesetPalettes_RB_Overworld_Vermilion
+	.4byte gMetatiles_RB_Overworld_Vermilion
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Overworld_Vermilion
+
+	.align 2
+gTileset_RB_Overworld_Celadon::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Overworld_Celadon
+	.4byte gTilesetPalettes_RB_Overworld_Celadon
+	.4byte gMetatiles_RB_Overworld_Celadon
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Overworld_Celadon
+
+	.align 2
+gTileset_RB_Overworld_Saffron::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Overworld_Saffron
+	.4byte gTilesetPalettes_RB_Overworld_Saffron
+	.4byte gMetatiles_RB_Overworld_Saffron
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Overworld_Saffron
+
+	.align 2
+gTileset_RB_Overworld_Fuchsia::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Overworld_Fuchsia
+	.4byte gTilesetPalettes_RB_Overworld_Fuchsia
+	.4byte gMetatiles_RB_Overworld_Fuchsia
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Overworld_Fuchsia
+
+	.align 2
+gTileset_RB_Overworld_Cinnebar::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Overworld_Cinnebar
+	.4byte gTilesetPalettes_RB_Overworld_Cinnebar
+	.4byte gMetatiles_RB_Overworld_Cinnebar
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Overworld_Cinnebar
+
+	.align 2
+gTileset_RB_Overworld_Lavender::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Overworld_Lavender
+	.4byte gTilesetPalettes_RB_Overworld_Lavender
+	.4byte gMetatiles_RB_Overworld_Lavender
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Overworld_Lavender
+
+	.align 2
+gTileset_RB_Overworld_Cerulean::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Overworld_Cerulean
+	.4byte gTilesetPalettes_RB_Overworld_Cerulean
+	.4byte gMetatiles_RB_Overworld_Cerulean
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Overworld_Cerulean
+
+	.align 2
+gTileset_RB_Overworld_Pallet::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Overworld_Pallet
+	.4byte gTilesetPalettes_RB_Overworld_Pallet
+	.4byte gMetatiles_RB_Overworld_Pallet
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Overworld_Pallet
+
+	.align 2
+gTileset_RB_Route23::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Route23
+	.4byte gTilesetPalettes_RB_Route23
+	.4byte gMetatiles_RB_Route23
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Route23
+
+	.align 2
+gTileset_RB_Museum::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0 @ padding
+	.4byte gTilesetTiles_RB_Museum
+	.4byte gTilesetPalettes_RB_Museum
+	.4byte gMetatiles_RB_Museum
+	.4byte NULL @ animation callback
+	.4byte gMetatileAttributes_RB_Museum

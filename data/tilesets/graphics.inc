@@ -1649,3 +1649,263 @@ gTilesetPalettes_RB_Pokemart::
 	.align 2
 gTilesetTiles_RB_Pokemart::
 	.incbin "data/tilesets/secondary/rb_pokemart/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Lab::
+	.incbin "data/tilesets/secondary/rb_lab/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_lab/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_lab/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_lab/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_lab/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_lab/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_lab/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_lab/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_lab/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_lab/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_lab/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_lab/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_lab/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Lab::
+	.incbin "data/tilesets/secondary/rb_lab/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Overworld_Viridian::
+	.incbin "data/tilesets/secondary/rb_overworld_viridian/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_viridian/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_viridian/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_viridian/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_viridian/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_viridian/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_viridian/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_viridian/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_viridian/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_viridian/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_viridian/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_viridian/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_viridian/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Overworld_Viridian::
+	.incbin "data/tilesets/secondary/rb_overworld_viridian/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Overworld_Pewter::
+	.incbin "data/tilesets/secondary/rb_overworld_pewter/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pewter/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pewter/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pewter/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pewter/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pewter/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pewter/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pewter/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pewter/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pewter/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pewter/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pewter/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pewter/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Overworld_Pewter::
+	.incbin "data/tilesets/secondary/rb_overworld_pewter/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Overworld_Vermilion::
+	.incbin "data/tilesets/secondary/rb_overworld_vermilion/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_vermilion/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_vermilion/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_vermilion/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_vermilion/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_vermilion/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_vermilion/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_vermilion/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_vermilion/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_vermilion/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_vermilion/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_vermilion/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_vermilion/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Overworld_Vermilion::
+	.incbin "data/tilesets/secondary/rb_overworld_vermilion/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Overworld_Celadon::
+	.incbin "data/tilesets/secondary/rb_overworld_celadon/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_celadon/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_celadon/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_celadon/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_celadon/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_celadon/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_celadon/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_celadon/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_celadon/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_celadon/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_celadon/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_celadon/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_celadon/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Overworld_Celadon::
+	.incbin "data/tilesets/secondary/rb_overworld_celadon/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Overworld_Saffron::
+	.incbin "data/tilesets/secondary/rb_overworld_saffron/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_saffron/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_saffron/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_saffron/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_saffron/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_saffron/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_saffron/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_saffron/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_saffron/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_saffron/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_saffron/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_saffron/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_saffron/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Overworld_Saffron::
+	.incbin "data/tilesets/secondary/rb_overworld_saffron/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Overworld_Fuchsia::
+	.incbin "data/tilesets/secondary/rb_overworld_fuchsia/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_fuchsia/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_fuchsia/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_fuchsia/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_fuchsia/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_fuchsia/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_fuchsia/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_fuchsia/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_fuchsia/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_fuchsia/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_fuchsia/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_fuchsia/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_fuchsia/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Overworld_Fuchsia::
+	.incbin "data/tilesets/secondary/rb_overworld_fuchsia/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Overworld_Cinnebar::
+	.incbin "data/tilesets/secondary/rb_overworld_cinnebar/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cinnebar/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cinnebar/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cinnebar/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cinnebar/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cinnebar/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cinnebar/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cinnebar/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cinnebar/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cinnebar/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cinnebar/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cinnebar/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cinnebar/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Overworld_Cinnebar::
+	.incbin "data/tilesets/secondary/rb_overworld_cinnebar/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Overworld_Lavender::
+	.incbin "data/tilesets/secondary/rb_overworld_lavender/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_lavender/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_lavender/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_lavender/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_lavender/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_lavender/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_lavender/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_lavender/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_lavender/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_lavender/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_lavender/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_lavender/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_lavender/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Overworld_Lavender::
+	.incbin "data/tilesets/secondary/rb_overworld_lavender/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Overworld_Cerulean::
+	.incbin "data/tilesets/secondary/rb_overworld_cerulean/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cerulean/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cerulean/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cerulean/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cerulean/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cerulean/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cerulean/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cerulean/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cerulean/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cerulean/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cerulean/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cerulean/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_cerulean/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Overworld_Cerulean::
+	.incbin "data/tilesets/secondary/rb_overworld_cerulean/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Overworld_Pallet::
+	.incbin "data/tilesets/secondary/rb_overworld_pallet/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pallet/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pallet/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pallet/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pallet/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pallet/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pallet/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pallet/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pallet/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pallet/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pallet/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pallet/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_overworld_pallet/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Overworld_Pallet::
+	.incbin "data/tilesets/secondary/rb_overworld_pallet/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Route23::
+	.incbin "data/tilesets/secondary/rb_route23/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_route23/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_route23/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_route23/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_route23/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_route23/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_route23/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_route23/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_route23/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_route23/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_route23/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_route23/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_route23/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Route23::
+	.incbin "data/tilesets/secondary/rb_route23/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Museum::
+	.incbin "data/tilesets/secondary/rb_museum/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_museum/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_museum/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_museum/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_museum/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_museum/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_museum/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_museum/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_museum/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_museum/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_museum/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_museum/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_museum/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Museum::
+	.incbin "data/tilesets/secondary/rb_museum/tiles.4bpp.lz"

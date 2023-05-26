@@ -605,3 +605,95 @@ gMetatiles_RB_Pokemart::
 	.align 1
 gMetatileAttributes_RB_Pokemart::
 	.incbin "data/tilesets/secondary/rb_pokemart/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_Lab::
+	.incbin "data/tilesets/secondary/rb_lab/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Lab::
+	.incbin "data/tilesets/secondary/rb_lab/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_Overworld_Viridian::
+	.incbin "data/tilesets/secondary/rb_overworld_viridian/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Overworld_Viridian::
+	.incbin "data/tilesets/secondary/rb_overworld_viridian/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_Overworld_Pewter::
+	.incbin "data/tilesets/secondary/rb_overworld_pewter/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Overworld_Pewter::
+	.incbin "data/tilesets/secondary/rb_overworld_pewter/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_RB_Overworld_Vermilion::
+	.incbin "data/tilesets/secondary/rb_overworld_vermilion/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Overworld_Vermilion::
+	.incbin "data/tilesets/secondary/rb_overworld_vermilion/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_Overworld_Celadon::
+	.incbin "data/tilesets/secondary/rb_overworld_celadon/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Overworld_Celadon::
+	.incbin "data/tilesets/secondary/rb_overworld_celadon/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_Overworld_Saffron::
+	.incbin "data/tilesets/secondary/rb_overworld_saffron/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Overworld_Saffron::
+	.incbin "data/tilesets/secondary/rb_overworld_saffron/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_Overworld_Fuchsia::
+	.incbin "data/tilesets/secondary/rb_overworld_fuchsia/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Overworld_Fuchsia::
+	.incbin "data/tilesets/secondary/rb_overworld_fuchsia/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_Overworld_Cinnebar::
+	.incbin "data/tilesets/secondary/rb_overworld_cinnebar/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Overworld_Cinnebar::
+	.incbin "data/tilesets/secondary/rb_overworld_cinnebar/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_Overworld_Lavender::
+	.incbin "data/tilesets/secondary/rb_overworld_lavender/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Overworld_Lavender::
+	.incbin "data/tilesets/secondary/rb_overworld_lavender/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_Overworld_Cerulean::
+	.incbin "data/tilesets/secondary/rb_overworld_cerulean/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Overworld_Cerulean::
+	.incbin "data/tilesets/secondary/rb_overworld_cerulean/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_Overworld_Pallet::
+	.incbin "data/tilesets/secondary/rb_overworld_pallet/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Overworld_Pallet::
+	.incbin "data/tilesets/secondary/rb_overworld_pallet/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_Route23::
+	.incbin "data/tilesets/secondary/rb_route23/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Route23::
+	.incbin "data/tilesets/secondary/rb_route23/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_Museum::
+	.incbin "data/tilesets/secondary/rb_museum/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Museum::
+	.incbin "data/tilesets/secondary/rb_museum/metatile_attributes.bin"
