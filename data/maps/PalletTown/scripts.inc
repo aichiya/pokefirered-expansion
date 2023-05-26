@@ -32,7 +32,7 @@ PalletTown_EventScript_SetSignLadyPos::
 	return
 
 PalletTown_EventScript_MoveSignLadyToRouteEntrance::
-	setobjectxyperm LOCALID_SIGN_LADY, 12, 2
+	setobjectxyperm LOCALID_SIGN_LADY, 9, 2
 	setobjectmovementtype LOCALID_SIGN_LADY, MOVEMENT_TYPE_FACE_DOWN
 	setvar SIGN_LADY_READY, TRUE
 	return
@@ -217,7 +217,7 @@ PalletTown_EventScript_OakTrigger::
 	setvar VAR_MAP_SCENE_PALLET_TOWN_OAK, 1
 	setflag FLAG_HIDE_OAK_IN_PALLET_TOWN
 	setflag FLAG_DONT_TRANSITION_MUSIC
-	warp MAP_PALLET_TOWN_PROFESSOR_OAKS_LAB, 6, 12
+	warp MAP_PALLET_TOWN_PROFESSOR_OAKS_LAB, 5, 11
 	waitstate
 	releaseall
 	end
@@ -278,10 +278,6 @@ PalletTown_Movement_OakEnterRight::
 	walk_down
 	walk_down
 	walk_down
-	walk_down
-	walk_down
-	walk_right
-	walk_right
 	walk_right
 	walk_right
 	.endm
