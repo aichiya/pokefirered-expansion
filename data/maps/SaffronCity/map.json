@@ -15,30 +15,30 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_ROUTE5",
       "offset": 10,
-      "map": "MAP_ROUTE5"
+      "direction": "up"
     },
     {
-      "direction": "down",
+      "map": "MAP_ROUTE6",
       "offset": 4,
-      "map": "MAP_ROUTE6"
+      "direction": "down"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE7",
       "offset": 8,
-      "map": "MAP_ROUTE7"
+      "direction": "left"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE8",
       "offset": 8,
-      "map": "MAP_ROUTE8"
+      "direction": "right"
     }
   ],
   "object_events": [
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "in_connection": false,
       "x": 7,
       "y": 6,
       "elevation": 3,
@@ -48,11 +48,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_EventScript_RocketGrunt1",
-      "flag": "FLAG_HIDE_SAFFRON_ROCKETS"
+      "flag": "FLAG_HIDE_SAFFRON_ROCKETS",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "in_connection": false,
       "x": 11,
       "y": 7,
       "elevation": 3,
@@ -62,11 +63,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_EventScript_RocketGrunt2",
-      "flag": "FLAG_HIDE_SAFFRON_ROCKETS"
+      "flag": "FLAG_HIDE_SAFFRON_ROCKETS",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "in_connection": false,
       "x": 34,
       "y": 4,
       "elevation": 3,
@@ -76,11 +78,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_EventScript_RocketGrunt3",
-      "flag": "FLAG_HIDE_SAFFRON_ROCKETS"
+      "flag": "FLAG_HIDE_SAFFRON_ROCKETS",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "in_connection": false,
       "x": 13,
       "y": 12,
       "elevation": 3,
@@ -90,11 +93,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_EventScript_RocketGrunt4",
-      "flag": "FLAG_HIDE_SAFFRON_ROCKETS"
+      "flag": "FLAG_HIDE_SAFFRON_ROCKETS",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "in_connection": false,
       "x": 11,
       "y": 24,
       "elevation": 3,
@@ -104,11 +108,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_EventScript_RocketGrunt5",
-      "flag": "FLAG_HIDE_SAFFRON_ROCKETS"
+      "flag": "FLAG_HIDE_SAFFRON_ROCKETS",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "in_connection": false,
       "x": 19,
       "y": 22,
       "elevation": 3,
@@ -118,11 +123,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_EventScript_DoorGuardGrunt",
-      "flag": "FLAG_HIDE_SAFFRON_ROCKETS"
+      "flag": "FLAG_HIDE_SAFFRON_ROCKETS",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "in_connection": false,
       "x": 15,
       "y": 30,
       "elevation": 3,
@@ -132,11 +138,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_EventScript_RocketGrunt7",
-      "flag": "FLAG_HIDE_SAFFRON_ROCKETS"
+      "flag": "FLAG_HIDE_SAFFRON_ROCKETS",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "in_connection": false,
       "x": 36,
       "y": 15,
       "elevation": 3,
@@ -146,11 +153,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_EventScript_RocketGrunt6",
-      "flag": "FLAG_HIDE_SAFFRON_ROCKETS"
+      "flag": "FLAG_HIDE_SAFFRON_ROCKETS",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "in_connection": false,
       "x": 23,
       "y": 23,
       "elevation": 3,
@@ -160,11 +168,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_EventScript_Youngster",
-      "flag": "FLAG_HIDE_SAFFRON_CIVILIANS"
+      "flag": "FLAG_HIDE_SAFFRON_CIVILIANS",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_WORKER_M",
-      "in_connection": false,
       "x": 7,
       "y": 13,
       "elevation": 3,
@@ -174,11 +183,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_EventScript_WorkerM",
-      "flag": "FLAG_HIDE_SAFFRON_CIVILIANS"
+      "flag": "FLAG_HIDE_SAFFRON_CIVILIANS",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_MAN",
-      "in_connection": false,
       "x": 29,
       "y": 7,
       "elevation": 3,
@@ -188,11 +198,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_EventScript_Man",
-      "flag": "FLAG_HIDE_SAFFRON_CIVILIANS"
+      "flag": "FLAG_HIDE_SAFFRON_CIVILIANS",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BOY",
-      "in_connection": false,
       "x": 30,
       "y": 12,
       "elevation": 3,
@@ -202,11 +213,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_EventScript_Boy",
-      "flag": "FLAG_HIDE_SAFFRON_CIVILIANS"
+      "flag": "FLAG_HIDE_SAFFRON_CIVILIANS",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_PIDGEOT",
-      "in_connection": false,
       "x": 31,
       "y": 12,
       "elevation": 3,
@@ -216,11 +228,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_EventScript_Pidgeot",
-      "flag": "FLAG_HIDE_SAFFRON_CIVILIANS"
+      "flag": "FLAG_HIDE_SAFFRON_CIVILIANS",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_LASS",
-      "in_connection": false,
       "x": 17,
       "y": 30,
       "elevation": 3,
@@ -230,11 +243,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_EventScript_Lass",
-      "flag": "FLAG_HIDE_SAFFRON_CIVILIANS"
+      "flag": "FLAG_HIDE_SAFFRON_CIVILIANS",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BATTLE_GIRL",
-      "in_connection": false,
       "x": 35,
       "y": 15,
       "elevation": 3,
@@ -244,7 +258,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_EventScript_BattleGirl",
-      "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
+      "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS",
+      "in_connection": false
     }
   ],
   "warp_events": [
@@ -253,105 +268,105 @@
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_SILPH_CO_1F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 7,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY_COPYCATS_HOUSE_1F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 26,
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY_DOJO",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 34,
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY_GYM",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 13,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY_HOUSE",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 25,
       "y": 11,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY_MART",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 9,
       "y": 29,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY_POKEMON_CENTER_1F",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 29,
       "y": 29,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY_MR_PSYCHICS_HOUSE",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 0,
       "y": 17,
       "elevation": 3,
       "dest_map": "MAP_ROUTE7_EAST_ENTRANCE",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 19,
       "y": 0,
       "elevation": 3,
       "dest_map": "MAP_ROUTE5_SOUTH_ENTRANCE",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 41,
       "y": 18,
       "elevation": 3,
       "dest_map": "MAP_ROUTE8_WEST_ENTRANCE",
-      "dest_warp_id": 1
+      "dest_warp_id": "1"
     },
     {
       "x": 20,
       "y": 35,
       "elevation": 3,
       "dest_map": "MAP_ROUTE6_NORTH_ENTRANCE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 21,
       "y": 35,
       "elevation": 3,
       "dest_map": "MAP_ROUTE6_NORTH_ENTRANCE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 20,
       "y": 0,
       "elevation": 3,
       "dest_map": "MAP_ROUTE5_SOUTH_ENTRANCE",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 33,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_SAFFRON_CITY_POKEMON_TRAINER_FAN_CLUB",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
