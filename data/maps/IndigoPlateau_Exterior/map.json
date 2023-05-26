@@ -16,7 +16,7 @@
   "connections": [
     {
       "direction": "down",
-      "offset": 0,
+      "offset": -1,
       "map": "MAP_ROUTE23"
     }
   ],
@@ -24,7 +24,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BLUE",
       "in_connection": false,
-      "x": 11,
+      "x": 10,
       "y": 6,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -38,7 +38,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_PROF_OAK",
       "in_connection": false,
-      "x": 11,
+      "x": 10,
       "y": 6,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -52,7 +52,7 @@
   ],
   "warp_events": [
     {
-      "x": 11,
+      "x": 10,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_INDIGO_PLATEAU_POKEMON_CENTER_1F",
