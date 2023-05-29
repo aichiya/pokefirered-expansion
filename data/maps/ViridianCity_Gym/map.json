@@ -16,10 +16,10 @@
   "connections": 0,
   "object_events": [
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BLACKBELT",
-      "in_connection": false,
       "x": 10,
-      "y": 2,
+      "y": 1,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -27,13 +27,14 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "ViridianCity_Gym_EventScript_Takashi",
-      "flag": "0"
+      "flag": "0",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
-      "in_connection": false,
       "x": 12,
-      "y": 10,
+      "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -41,13 +42,14 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "ViridianCity_Gym_EventScript_Yuji",
-      "flag": "0"
+      "flag": "0",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BLACKBELT",
-      "in_connection": false,
       "x": 11,
-      "y": 14,
+      "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
@@ -55,13 +57,14 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "ViridianCity_Gym_EventScript_Atsushi",
-      "flag": "0"
+      "flag": "0",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_MAN",
-      "in_connection": false,
       "x": 10,
-      "y": 10,
+      "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -69,13 +72,14 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "ViridianCity_Gym_EventScript_Jason",
-      "flag": "0"
+      "flag": "0",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_MAN",
-      "in_connection": false,
       "x": 2,
-      "y": 21,
+      "y": 16,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
@@ -83,13 +87,14 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "ViridianCity_Gym_EventScript_Cole",
-      "flag": "0"
+      "flag": "0",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BLACKBELT",
-      "in_connection": false,
       "x": 3,
-      "y": 11,
+      "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -97,13 +102,14 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "ViridianCity_Gym_EventScript_Kiyo",
-      "flag": "0"
+      "flag": "0",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
-      "in_connection": false,
       "x": 6,
-      "y": 8,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -111,13 +117,14 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "ViridianCity_Gym_EventScript_Samuel",
-      "flag": "0"
+      "flag": "0",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_GIOVANNI",
-      "in_connection": false,
       "x": 2,
-      "y": 2,
+      "y": 1,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -125,13 +132,14 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ViridianCity_Gym_EventScript_Giovanni",
-      "flag": "FLAG_HIDE_VIRIDIAN_GIOVANNI"
+      "flag": "FLAG_HIDE_VIRIDIAN_GIOVANNI",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
-      "in_connection": false,
       "x": 13,
-      "y": 7,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
@@ -139,13 +147,14 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "ViridianCity_Gym_EventScript_Warren",
-      "flag": "0"
+      "flag": "0",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_GYM_GUY",
-      "in_connection": false,
       "x": 16,
-      "y": 20,
+      "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -153,30 +162,31 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ViridianCity_Gym_EventScript_GymGuy",
-      "flag": "0"
+      "flag": "0",
+      "in_connection": false
     }
   ],
   "warp_events": [
     {
       "x": 16,
-      "y": 22,
+      "y": 17,
       "elevation": 3,
       "dest_map": "MAP_VIRIDIAN_CITY",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 17,
-      "y": 22,
+      "y": 17,
       "elevation": 3,
       "dest_map": "MAP_VIRIDIAN_CITY",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
-      "x": 18,
-      "y": 22,
+      "x": 17,
+      "y": 17,
       "elevation": 3,
       "dest_map": "MAP_VIRIDIAN_CITY",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [
@@ -186,28 +196,28 @@
     {
       "type": "sign",
       "x": 15,
-      "y": 20,
+      "y": 15,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "ViridianCity_Gym_EventScript_GymStatue"
     },
     {
       "type": "sign",
-      "x": 19,
-      "y": 20,
+      "x": 18,
+      "y": 15,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "ViridianCity_Gym_EventScript_GymStatue"
     },
     {
       "type": "hidden_item",
-      "x": 2,
-      "y": 2,
+      "x": 16,
+      "y": 9,
       "elevation": 3,
       "item": "ITEM_MACHO_BRACE",
-      "flag": "HIDDEN_ITEM_VIRIDIAN_CITY_GYM_MACHO_BRACE",
+      "flag": "",
       "quantity": 1,
-      "underfoot": true
+      "underfoot": false
     }
   ]
 }
