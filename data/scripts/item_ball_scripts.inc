@@ -50,16 +50,16 @@ MtMoon_B2F_EventScript_ItemTM46::
 	finditem ITEM_TM46
 	end
 
-Route4_EventScript_ItemTM05::
-	finditem ITEM_TM05
+Route4_EventScript_ItemTM04::
+	finditem ITEM_TM04
 	end
 
 Route24_EventScript_ItemTM45::
 	finditem ITEM_TM45
 	end
 
-Route25_EventScript_ItemTM43::
-	finditem ITEM_TM43
+Route25_EventScript_ItemTM19::
+	finditem ITEM_TM19
 	end
 
 SSAnne_1F_Room2_EventScript_ItemTM31::
