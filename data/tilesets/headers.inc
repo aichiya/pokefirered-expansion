@@ -989,3 +989,58 @@ gTileset_RB_Museum::
 	.4byte gMetatiles_RB_Museum
 	.4byte NULL @ animation callback
 	.4byte gMetatileAttributes_RB_Museum
+
+	.align 2
+gTileset_RB_Bicycle::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0 @ padding
+	.4byte gTilesetTiles_RB_Bicycle
+	.4byte gTilesetPalettes_RB_Bicycle
+	.4byte gMetatiles_RB_Bicycle
+	.4byte NULL @ animation callback
+	.4byte gMetatileAttributes_RB_Bicycle
+
+	.align 2
+gTileset_RB_Bill::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0 @ padding
+	.4byte gTilesetTiles_RB_Bill
+	.4byte gTilesetPalettes_RB_Bill
+	.4byte gMetatiles_RB_Bill
+	.4byte NULL @ animation callback
+	.4byte gMetatileAttributes_RB_Bill
+
+	.align 2
+gTileset_RB_Tower::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0 @ padding
+	.4byte gTilesetTiles_RB_Tower
+	.4byte gTilesetPalettes_RB_Tower
+	.4byte gMetatiles_RB_Tower
+	.4byte NULL @ animation callback
+	.4byte gMetatileAttributes_RB_Tower
+
+	.align 2
+gTileset_RB_Plant::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0 @ padding
+	.4byte gTilesetTiles_RB_Plant
+	.4byte gTilesetPalettes_RB_Plant
+	.4byte gMetatiles_RB_Plant
+	.4byte NULL @ animation callback
+	.4byte gMetatileAttributes_RB_Plant
+
+	.align 2
+gTileset_RB_ShipExterior::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0 @ padding
+	.4byte gTilesetTiles_RB_ShipExterior
+	.4byte gTilesetPalettes_RB_ShipExterior
+	.4byte gMetatiles_RB_ShipExterior
+	.4byte NULL @ animation callback
+	.4byte gMetatileAttributes_RB_ShipExterior

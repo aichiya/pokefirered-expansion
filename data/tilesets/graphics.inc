@@ -1909,3 +1909,103 @@ gTilesetPalettes_RB_Museum::
 	.align 2
 gTilesetTiles_RB_Museum::
 	.incbin "data/tilesets/secondary/rb_museum/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Bicycle::
+	.incbin "data/tilesets/secondary/rb_bicycle/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_bicycle/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_bicycle/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_bicycle/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_bicycle/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_bicycle/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_bicycle/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_bicycle/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_bicycle/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_bicycle/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_bicycle/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_bicycle/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_bicycle/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Bicycle::
+	.incbin "data/tilesets/secondary/rb_bicycle/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Bill::
+	.incbin "data/tilesets/secondary/rb_bill/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_bill/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_bill/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_bill/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_bill/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_bill/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_bill/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_bill/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_bill/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_bill/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_bill/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_bill/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_bill/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Bill::
+	.incbin "data/tilesets/secondary/rb_bill/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Tower::
+	.incbin "data/tilesets/secondary/rb_tower/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_tower/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_tower/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_tower/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_tower/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_tower/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_tower/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_tower/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_tower/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_tower/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_tower/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_tower/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_tower/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Tower::
+	.incbin "data/tilesets/secondary/rb_tower/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Plant::
+	.incbin "data/tilesets/secondary/rb_plant/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_plant/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_plant/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_plant/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_plant/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_plant/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_plant/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_plant/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_plant/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_plant/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_plant/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_plant/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_plant/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Plant::
+	.incbin "data/tilesets/secondary/rb_plant/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_ShipExterior::
+	.incbin "data/tilesets/secondary/rb_ship_exterior/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_ship_exterior/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_ship_exterior/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_ship_exterior/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_ship_exterior/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_ship_exterior/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_ship_exterior/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_ship_exterior/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_ship_exterior/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_ship_exterior/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_ship_exterior/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_ship_exterior/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_ship_exterior/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_ShipExterior::
+	.incbin "data/tilesets/secondary/rb_ship_exterior/tiles.4bpp.lz"

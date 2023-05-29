@@ -13,9 +13,10 @@
   "show_map_name": false,
   "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_GYM",
-  "connections": null,
+  "connections": 0,
   "object_events": [
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_LT_SURGE",
       "x": 5,
       "y": 2,
@@ -29,9 +30,10 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BALDING_MAN",
-      "x": 2,
-      "y": 11,
+      "x": 3,
+      "y": 8,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -42,9 +44,10 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SAILOR",
-      "x": 8,
-      "y": 13,
+      "x": 0,
+      "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -55,9 +58,10 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_GYM_GUY",
       "x": 4,
-      "y": 17,
+      "y": 14,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -68,9 +72,10 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
-      "x": 7,
-      "y": 8,
+      "x": 9,
+      "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -84,40 +89,42 @@
   "warp_events": [
     {
       "x": 4,
-      "y": 19,
+      "y": 17,
       "elevation": 3,
       "dest_map": "MAP_VERMILION_CITY",
-      "dest_warp_id": 9
+      "dest_warp_id": "9"
     },
     {
       "x": 5,
-      "y": 19,
+      "y": 17,
       "elevation": 3,
       "dest_map": "MAP_VERMILION_CITY",
-      "dest_warp_id": 9
+      "dest_warp_id": "9"
     },
     {
-      "x": 6,
-      "y": 19,
+      "x": 5,
+      "y": 17,
       "elevation": 3,
       "dest_map": "MAP_VERMILION_CITY",
-      "dest_warp_id": 9
+      "dest_warp_id": "9"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",
       "x": 3,
-      "y": 17,
+      "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "VermilionCity_Gym_EventScript_GymStatue"
     },
     {
       "type": "sign",
-      "x": 7,
-      "y": 17,
+      "x": 6,
+      "y": 14,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "VermilionCity_Gym_EventScript_GymStatue"
@@ -125,7 +132,7 @@
     {
       "type": "sign",
       "x": 1,
-      "y": 10,
+      "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "VermilionCity_Gym_EventScript_TrashCan1"
@@ -133,7 +140,7 @@
     {
       "type": "sign",
       "x": 3,
-      "y": 10,
+      "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "VermilionCity_Gym_EventScript_TrashCan2"
@@ -141,7 +148,7 @@
     {
       "type": "sign",
       "x": 5,
-      "y": 10,
+      "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "VermilionCity_Gym_EventScript_TrashCan3"
@@ -149,7 +156,7 @@
     {
       "type": "sign",
       "x": 7,
-      "y": 10,
+      "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "VermilionCity_Gym_EventScript_TrashCan4"
@@ -157,7 +164,7 @@
     {
       "type": "sign",
       "x": 9,
-      "y": 10,
+      "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "VermilionCity_Gym_EventScript_TrashCan5"
@@ -165,7 +172,7 @@
     {
       "type": "sign",
       "x": 1,
-      "y": 12,
+      "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "VermilionCity_Gym_EventScript_TrashCan6"
@@ -173,7 +180,7 @@
     {
       "type": "sign",
       "x": 3,
-      "y": 12,
+      "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "VermilionCity_Gym_EventScript_TrashCan7"
@@ -181,7 +188,7 @@
     {
       "type": "sign",
       "x": 5,
-      "y": 12,
+      "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "VermilionCity_Gym_EventScript_TrashCan8"
@@ -189,7 +196,7 @@
     {
       "type": "sign",
       "x": 7,
-      "y": 12,
+      "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "VermilionCity_Gym_EventScript_TrashCan9"
@@ -197,7 +204,7 @@
     {
       "type": "sign",
       "x": 9,
-      "y": 12,
+      "y": 9,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "VermilionCity_Gym_EventScript_TrashCan10"
@@ -205,7 +212,7 @@
     {
       "type": "sign",
       "x": 1,
-      "y": 14,
+      "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "VermilionCity_Gym_EventScript_TrashCan11"
@@ -213,7 +220,7 @@
     {
       "type": "sign",
       "x": 3,
-      "y": 14,
+      "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "VermilionCity_Gym_EventScript_TrashCan12"
@@ -221,7 +228,7 @@
     {
       "type": "sign",
       "x": 5,
-      "y": 14,
+      "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "VermilionCity_Gym_EventScript_TrashCan13"
@@ -229,7 +236,7 @@
     {
       "type": "sign",
       "x": 7,
-      "y": 14,
+      "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "VermilionCity_Gym_EventScript_TrashCan14"
@@ -237,7 +244,7 @@
     {
       "type": "sign",
       "x": 9,
-      "y": 14,
+      "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "VermilionCity_Gym_EventScript_TrashCan15"

@@ -697,3 +697,43 @@ gMetatiles_RB_Museum::
 	.align 1
 gMetatileAttributes_RB_Museum::
 	.incbin "data/tilesets/secondary/rb_museum/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_RB_Bicycle::
+	.incbin "data/tilesets/secondary/rb_bicycle/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Bicycle::
+	.incbin "data/tilesets/secondary/rb_bicycle/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_RB_Bill::
+	.incbin "data/tilesets/secondary/rb_bill/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Bill::
+	.incbin "data/tilesets/secondary/rb_bill/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_RB_Tower::
+	.incbin "data/tilesets/secondary/rb_tower/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Tower::
+	.incbin "data/tilesets/secondary/rb_tower/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_RB_Plant::
+	.incbin "data/tilesets/secondary/rb_plant/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Plant::
+	.incbin "data/tilesets/secondary/rb_plant/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_RB_ShipExterior::
+	.incbin "data/tilesets/secondary/rb_ship_exterior/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_ShipExterior::
+	.incbin "data/tilesets/secondary/rb_ship_exterior/metatile_attributes.bin"

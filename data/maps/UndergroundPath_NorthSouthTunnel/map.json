@@ -23,14 +23,14 @@
       "y": 4,
       "elevation": 3,
       "dest_map": "MAP_UNDERGROUND_PATH_NORTH_ENTRANCE",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     },
     {
       "x": 2,
       "y": 41,
       "elevation": 3,
       "dest_map": "MAP_UNDERGROUND_PATH_SOUTH_ENTRANCE",
-      "dest_warp_id": 3
+      "dest_warp_id": "3"
     }
   ],
   "coord_events": [
@@ -39,27 +39,7 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 5,
-      "y": 10,
-      "elevation": 3,
-      "item": "ITEM_POTION",
-      "flag": "HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_POTION",
-      "quantity": 1,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 5,
-      "y": 6,
-      "elevation": 3,
-      "item": "ITEM_ANTIDOTE",
-      "flag": "HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_ANTIDOTE",
-      "quantity": 1,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 3,
+      "x": 4,
       "y": 36,
       "elevation": 3,
       "item": "ITEM_BURN_HEAL",
@@ -69,41 +49,11 @@
     },
     {
       "type": "hidden_item",
-      "x": 2,
-      "y": 8,
+      "x": 3,
+      "y": 4,
       "elevation": 3,
       "item": "ITEM_AWAKENING",
       "flag": "HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_AWAKENING",
-      "quantity": 1,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 5,
-      "y": 29,
-      "elevation": 3,
-      "item": "ITEM_ICE_HEAL",
-      "flag": "HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_ICE_HEAL",
-      "quantity": 1,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 4,
-      "y": 7,
-      "elevation": 3,
-      "item": "ITEM_PARALYZE_HEAL",
-      "flag": "HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_PARALYZE_HEAL",
-      "quantity": 1,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 3,
-      "y": 12,
-      "elevation": 3,
-      "item": "ITEM_ETHER",
-      "flag": "HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_ETHER",
       "quantity": 1,
       "underfoot": false
     }

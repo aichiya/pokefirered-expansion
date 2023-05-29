@@ -198,36 +198,6 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
-      "x": 17,
-      "y": 52,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route12_EventScript_Gia",
-      "flag": "0",
-      "in_connection": false
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_MAN",
-      "x": 17,
-      "y": 53,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route12_EventScript_Jes",
-      "flag": "0",
-      "in_connection": false
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
       "x": 9,
       "y": 99,
@@ -294,16 +264,6 @@
     },
     {
       "type": "hidden_item",
-      "x": 17,
-      "y": 50,
-      "elevation": 3,
-      "item": "ITEM_HYPER_POTION",
-      "flag": "HIDDEN_ITEM_ROUTE12_HYPER_POTION",
-      "quantity": 1,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
       "x": 10,
       "y": 62,
       "elevation": 3,
@@ -311,16 +271,6 @@
       "flag": "HIDDEN_ITEM_ROUTE12_LEFTOVERS",
       "quantity": 1,
       "underfoot": true
-    },
-    {
-      "type": "hidden_item",
-      "x": 4,
-      "y": 99,
-      "elevation": 3,
-      "item": "ITEM_RARE_CANDY",
-      "flag": "HIDDEN_ITEM_ROUTE12_RARE_CANDY",
-      "quantity": 1,
-      "underfoot": false
     }
   ]
 }

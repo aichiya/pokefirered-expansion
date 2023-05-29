@@ -198,21 +198,6 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
-      "x": 40,
-      "y": 0,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
-      "script": "Route8_EventScript_Eli",
-      "flag": "0",
-      "in_connection": false
-    },
-    {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
       "x": 13,
       "y": 9,
@@ -223,36 +208,6 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route8_EventScript_Ricardo",
-      "flag": "0",
-      "in_connection": false
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_BIKER",
-      "x": 24,
-      "y": 17,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_UP_DOWN_LEFT",
-      "movement_range_x": 5,
-      "movement_range_y": 5,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
-      "script": "Route8_EventScript_Jaren",
-      "flag": "0",
-      "in_connection": false
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
-      "x": 41,
-      "y": 0,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
-      "script": "Route8_EventScript_Anne",
       "flag": "0",
       "in_connection": false
     }
@@ -284,36 +239,6 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route8_EventScript_UndergroundPathSign"
-    },
-    {
-      "type": "hidden_item",
-      "x": 30,
-      "y": 8,
-      "elevation": 3,
-      "item": "ITEM_RAWST_BERRY",
-      "flag": "HIDDEN_ITEM_ROUTE8_RAWST_BERRY",
-      "quantity": 1,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 30,
-      "y": 15,
-      "elevation": 3,
-      "item": "ITEM_LUM_BERRY",
-      "flag": "HIDDEN_ITEM_ROUTE8_LUM_BERRY",
-      "quantity": 1,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 39,
-      "y": 15,
-      "elevation": 3,
-      "item": "ITEM_LEPPA_BERRY",
-      "flag": "HIDDEN_ITEM_ROUTE8_LEPPA_BERRY",
-      "quantity": 1,
-      "underfoot": false
     }
   ]
 }
