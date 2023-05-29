@@ -1254,7 +1254,7 @@
       "name": "SSAnne_B1F_Corridor_Layout",
       "width": 30,
       "height": 8,
-      "border_width": 2,
+      "border_width": 1,
       "border_height": 1,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_RB_Ship",
