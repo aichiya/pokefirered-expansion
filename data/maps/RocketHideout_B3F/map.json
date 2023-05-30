@@ -13,12 +13,13 @@
   "show_map_name": true,
   "floor_number": -3,
   "battle_scene": "MAP_BATTLE_SCENE_INDOOR_2",
-  "connections": null,
+  "connections": 0,
   "object_events": [
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "x": 19,
-      "y": 9,
+      "x": 18,
+      "y": 8,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
@@ -29,9 +30,10 @@
       "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
       "x": 2,
-      "y": 20,
+      "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
@@ -42,9 +44,10 @@
       "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 12,
-      "y": 12,
+      "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -55,9 +58,10 @@
       "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B3F_RARE_CANDY"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 19,
-      "y": 14,
+      "x": 18,
+      "y": 13,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -66,43 +70,32 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RocketHideout_B3F_EventScript_ItemTM21",
       "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B3F_TM21"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 14,
-      "y": 24,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "RocketHideout_B3F_EventScript_ItemBlackGlasses",
-      "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B3F_BLACK_GLASSES"
     }
   ],
   "warp_events": [
     {
-      "x": 18,
+      "x": 17,
       "y": 2,
       "elevation": 3,
       "dest_map": "MAP_ROCKET_HIDEOUT_B2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 15,
       "y": 18,
       "elevation": 3,
       "dest_map": "MAP_ROCKET_HIDEOUT_B4F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 1,
-      "y": 3,
+      "x": 19,
+      "y": 13,
       "elevation": 3,
       "item": "ITEM_NUGGET",
       "flag": "HIDDEN_ITEM_ROCKET_HIDEOUT_B3F_NUGGET",
