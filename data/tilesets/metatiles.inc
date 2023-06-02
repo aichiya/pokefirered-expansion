@@ -737,3 +737,11 @@ gMetatiles_RB_ShipExterior::
 	.align 1
 gMetatileAttributes_RB_ShipExterior::
 	.incbin "data/tilesets/secondary/rb_ship_exterior/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_RB_Department::
+	.incbin "data/tilesets/secondary/rb_department/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Department::
+	.incbin "data/tilesets/secondary/rb_department/metatile_attributes.bin"

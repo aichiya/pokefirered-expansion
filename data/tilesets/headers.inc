@@ -1044,3 +1044,14 @@ gTileset_RB_ShipExterior::
 	.4byte gMetatiles_RB_ShipExterior
 	.4byte NULL @ animation callback
 	.4byte gMetatileAttributes_RB_ShipExterior
+
+	.align 2
+gTileset_RB_Department::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0 @ padding
+	.4byte gTilesetTiles_RB_Department
+	.4byte gTilesetPalettes_RB_Department
+	.4byte gMetatiles_RB_Department
+	.4byte NULL @ animation callback
+	.4byte gMetatileAttributes_RB_Department

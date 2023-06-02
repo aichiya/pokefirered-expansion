@@ -2009,3 +2009,23 @@ gTilesetPalettes_RB_ShipExterior::
 	.align 2
 gTilesetTiles_RB_ShipExterior::
 	.incbin "data/tilesets/secondary/rb_ship_exterior/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Department::
+	.incbin "data/tilesets/secondary/rb_department/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_department/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_department/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_department/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_department/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_department/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_department/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_department/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_department/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_department/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_department/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_department/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_department/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Department::
+	.incbin "data/tilesets/secondary/rb_department/tiles.4bpp.lz"
