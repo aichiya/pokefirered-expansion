@@ -13,13 +13,12 @@
   "show_map_name": true,
   "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_INDOOR_2",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 7,
-      "y": 25,
+      "y": 27,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -30,10 +29,9 @@
       "flag": "FLAG_HIDE_POWER_PLANT_MAX_POTION"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 25,
-      "y": 18,
+      "x": 40,
+      "y": 22,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -44,10 +42,9 @@
       "flag": "FLAG_HIDE_POWER_PLANT_TM17"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 32,
-      "y": 18,
+      "x": 46,
+      "y": 37,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -58,10 +55,9 @@
       "flag": "FLAG_HIDE_POWER_PLANT_TM25"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 34,
-      "y": 3,
+      "x": 45,
+      "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -72,10 +68,9 @@
       "flag": "FLAG_HIDE_POWER_PLANT_THUNDER_STONE"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 21,
-      "y": 14,
+      "x": 26,
+      "y": 22,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -86,10 +81,9 @@
       "flag": "FLAG_HIDE_POWER_PLANT_ELIXIR"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ZAPDOS",
-      "x": 4,
-      "y": 9,
+      "x": 5,
+      "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -100,10 +94,9 @@
       "flag": "FLAG_HIDE_ZAPDOS"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 28,
-      "y": 3,
+      "x": 36,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -114,10 +107,9 @@
       "flag": "FLAG_HIDE_POWER_PLANT_ELECTRODE_2"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 37,
-      "y": 32,
+      "x": 30,
+      "y": 38,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -131,48 +123,46 @@
   "warp_events": [
     {
       "x": 4,
-      "y": 35,
+      "y": 39,
       "elevation": 3,
       "dest_map": "MAP_ROUTE10",
-      "dest_warp_id": "2"
+      "dest_warp_id": 2
     },
     {
       "x": 5,
-      "y": 35,
+      "y": 38,
       "elevation": 3,
       "dest_map": "MAP_ROUTE10",
-      "dest_warp_id": "2"
+      "dest_warp_id": 2
     },
     {
-      "x": 5,
-      "y": 35,
+      "x": 6,
+      "y": 39,
       "elevation": 3,
       "dest_map": "MAP_ROUTE10",
-      "dest_warp_id": "2"
+      "dest_warp_id": 2
     },
     {
-      "x": 0,
+      "x": 1,
       "y": 11,
       "elevation": 3,
       "dest_map": "MAP_ROUTE10",
-      "dest_warp_id": "4"
+      "dest_warp_id": 4
     },
     {
       "x": 0,
-      "y": 11,
+      "y": 13,
       "elevation": 3,
       "dest_map": "MAP_ROUTE10",
-      "dest_warp_id": "2"
+      "dest_warp_id": 2
     }
   ],
-  "coord_events": [
-
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 26,
-      "y": 32,
+      "x": 29,
+      "y": 16,
       "elevation": 3,
       "item": "ITEM_MAX_ELIXIR",
       "flag": "HIDDEN_ITEM_POWER_PLANT_MAX_ELIXIR",
@@ -181,8 +171,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 26,
-      "y": 28,
+      "x": 8,
+      "y": 12,
       "elevation": 3,
       "item": "ITEM_THUNDER_STONE",
       "flag": "HIDDEN_ITEM_POWER_PLANT_THUNDER_STONE",
