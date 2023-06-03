@@ -1,6 +1,6 @@
 # Pokémon FireRed and LeafGreen
 
-![](https://gitlab.com/xyifer12/firered_gen1style/-/blob/dbd5ac867ef1eb85c4394eb893a6122b142f37aa/ImagesAndStuff/Cerulean.png "Cerulean")
+![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/dbd5ac867ef1eb85c4394eb893a6122b142f37aa/ImagesAndStuff/Cerulean.png "Cerulean")
 
 This is a disassembly of Pokémon FireRed and LeafGreen, the purpose of this project is to replicate the majority of Red and Blue in a faithful manner in full color.
 
