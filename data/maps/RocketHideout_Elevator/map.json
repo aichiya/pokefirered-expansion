@@ -13,34 +13,30 @@
   "show_map_name": true,
   "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_INDOOR_2",
-  "connections": 0,
-  "object_events": [
-
-  ],
+  "connections": null,
+  "object_events": [],
   "warp_events": [
     {
-      "x": 2,
-      "y": 2,
+      "x": 1,
+      "y": 5,
       "elevation": 3,
-      "dest_map": "MAP_DYNAMIC",
-      "dest_warp_id": "127"
+      "dest_map": "MAP_NONE",
+      "dest_warp_id": 127
     },
     {
-      "x": 3,
-      "y": 2,
+      "x": 2,
+      "y": 5,
       "elevation": 3,
-      "dest_map": "MAP_DYNAMIC",
-      "dest_warp_id": "127"
+      "dest_map": "MAP_NONE",
+      "dest_warp_id": 127
     }
   ],
-  "coord_events": [
-
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",
-      "x": 1,
-      "y": 1,
+      "x": 0,
+      "y": 2,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "RocketHideout_Elevator_EventScript_FloorSelect"
