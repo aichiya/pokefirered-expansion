@@ -8,3 +8,23 @@ It builds the following ROMs:
 * [**pokeleafgreen.gba**]
 * [**pokefirered_rev1.gba**]
 * [**pokeleafgreen_rev1.gba**]
+
+Stages:
+
+Overworld Layout - Mostly Done
+Underworld Layout - WIP
+Wild Encounters - TBD
+Tile Animation - TBD
+
+Item Locations - TBD
+Item Stats - TBD
+Item Sprites - TBD
+
+Pokemon Move Stats - TBD
+Pokemon Learn Sets - TBD
+Pokemon Front Sprites - TBD
+Pokemon Back Sprites - TBD
+Pokemon Party Sprites - TBD
+Pokemon Palettes - TBD
+NPC Battle Sprites - Partial
+NPC World Sprites - TBD
