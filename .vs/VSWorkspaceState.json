@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\data",
-    "\\data\\maps",
-    "\\data\\maps\\RocketHideout_Elevator",
-    "\\data\\maps\\ViridianCity_Gym"
+    "\\data\\tilesets",
+    "\\data\\tilesets\\secondary",
+    "\\data\\tilesets\\secondary\\rb_forest"
   ],
   "PreviewInSolutionExplorer": false
 }
