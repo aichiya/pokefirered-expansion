@@ -13,12 +13,13 @@
   "show_map_name": false,
   "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
+  "connections": 0,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
-      "x": 5,
-      "y": 4,
+      "in_connection": false,
+      "x": 3,
+      "y": 1,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -26,12 +27,14 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VermilionCity_PokemonFanClub_EventScript_Chairman",
-      "flag": "0"
+      "flag": "0",
+      "type": "object"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WORKER_F",
-      "x": 6,
-      "y": 4,
+      "in_connection": false,
+      "x": 5,
+      "y": 1,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -39,12 +42,14 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VermilionCity_PokemonFanClub_EventScript_WorkerF",
-      "flag": "0"
+      "flag": "0",
+      "type": "object"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PIKACHU",
-      "x": 7,
-      "y": 6,
+      "in_connection": false,
+      "x": 6,
+      "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -52,12 +57,14 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VermilionCity_PokemonFanClub_EventScript_Pikachu",
-      "flag": "0"
+      "flag": "0",
+      "type": "object"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SEEL",
-      "x": 4,
-      "y": 6,
+      "in_connection": false,
+      "x": 1,
+      "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -65,12 +72,14 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VermilionCity_PokemonFanClub_EventScript_Seel",
-      "flag": "0"
+      "flag": "0",
+      "type": "object"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
-      "x": 4,
-      "y": 5,
+      "in_connection": false,
+      "x": 1,
+      "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -78,12 +87,14 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VermilionCity_PokemonFanClub_EventScript_Woman",
-      "flag": "0"
+      "flag": "0",
+      "type": "object"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
-      "x": 7,
-      "y": 5,
+      "in_connection": false,
+      "x": 6,
+      "y": 3,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -91,46 +102,49 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VermilionCity_PokemonFanClub_EventScript_FatMan",
-      "flag": "0"
+      "flag": "0",
+      "type": "object"
     }
   ],
   "warp_events": [
     {
-      "x": 4,
-      "y": 10,
+      "x": 2,
+      "y": 7,
       "elevation": 3,
       "dest_map": "MAP_VERMILION_CITY",
-      "dest_warp_id": 5
+      "dest_warp_id": 0
     },
     {
-      "x": 5,
-      "y": 10,
+      "x": 3,
+      "y": 7,
       "elevation": 3,
       "dest_map": "MAP_VERMILION_CITY",
-      "dest_warp_id": 5
+      "dest_warp_id": 0
     },
     {
-      "x": 6,
-      "y": 10,
+      "x": 3,
+      "y": 7,
       "elevation": 3,
       "dest_map": "MAP_VERMILION_CITY",
-      "dest_warp_id": 5
+      "dest_warp_id": 0
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",
-      "x": 2,
-      "y": 1,
+      "x": 1,
+      "y": 0,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "VermilionCity_PokemonFanClub_EventScript_RulesSign1"
     },
     {
       "type": "sign",
-      "x": 9,
-      "y": 1,
+      "x": 6,
+      "y": 0,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "VermilionCity_PokemonFanClub_EventScript_RulesSign2"

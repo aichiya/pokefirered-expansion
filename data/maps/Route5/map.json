@@ -15,19 +15,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_CERULEAN_CITY",
+      "direction": "up",
       "offset": -10,
-      "direction": "up"
+      "map": "MAP_CERULEAN_CITY"
     },
     {
-      "map": "MAP_SAFFRON_CITY_CONNECTION",
+      "direction": "down",
       "offset": -10,
-      "direction": "down"
+      "map": "MAP_SAFFRON_CITY_CONNECTION"
     },
     {
-      "map": "MAP_SAFFRON_CITY",
+      "direction": "down",
       "offset": -10,
-      "direction": "down"
+      "map": "MAP_SAFFRON_CITY"
     }
   ],
   "object_events": [
@@ -39,35 +39,35 @@
       "y": 31,
       "elevation": 0,
       "dest_map": "MAP_UNDERGROUND_PATH_NORTH_ENTRANCE",
-      "dest_warp_id": "1"
+      "dest_warp_id": 0
     },
     {
       "x": 10,
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_ROUTE5_POKEMON_DAY_CARE",
-      "dest_warp_id": "1"
+      "dest_warp_id": 0
     },
     {
       "x": 9,
       "y": 29,
       "elevation": 3,
       "dest_map": "MAP_ROUTE5_SOUTH_ENTRANCE",
-      "dest_warp_id": "1"
+      "dest_warp_id": 0
     },
     {
       "x": 10,
       "y": 29,
       "elevation": 3,
       "dest_map": "MAP_ROUTE5_SOUTH_ENTRANCE",
-      "dest_warp_id": "1"
+      "dest_warp_id": 0
     },
     {
       "x": 17,
       "y": 27,
       "elevation": 0,
       "dest_map": "MAP_UNDERGROUND_PATH_NORTH_ENTRANCE",
-      "dest_warp_id": "1"
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

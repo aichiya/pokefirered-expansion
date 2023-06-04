@@ -1,3 +1,6 @@
+
+2P Colosseum, SilphCo, and Rocket Hideout elevators have no warps, temp so that building works. 
+
 Route 20 is missing a swimmer.
 Route 21_North is missing 2 swimmers and 2 fishers.
 Underground 1 has 2 incorrect items. Full Restore top - X Special bottom.

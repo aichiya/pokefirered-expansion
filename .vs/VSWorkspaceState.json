@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\data",
+    "\\data\\maps",
+    "\\data\\maps\\RocketHideout_Elevator",
+    "\\data\\maps\\ViridianCity_Gym"
   ],
   "PreviewInSolutionExplorer": false
 }
