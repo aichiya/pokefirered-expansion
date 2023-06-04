@@ -16,8 +16,8 @@
   "connections": 0,
   "object_events": [
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "in_connection": false,
       "x": 5,
       "y": 13,
       "elevation": 3,
@@ -27,11 +27,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PokemonMansion_B1F_EventScript_ItemTM22",
-      "flag": "FLAG_HIDE_POKEMON_MANSION_B1F_TM22"
+      "flag": "FLAG_HIDE_POKEMON_MANSION_B1F_TM22",
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SUPER_NERD",
+      "in_connection": false,
       "x": 16,
       "y": 23,
       "elevation": 3,
@@ -41,11 +42,12 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "PokemonMansion_B1F_EventScript_Lewis",
-      "flag": "0"
+      "flag": "0",
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SCIENTIST",
+      "in_connection": false,
       "x": 27,
       "y": 11,
       "elevation": 3,
@@ -55,11 +57,12 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "6",
       "script": "PokemonMansion_B1F_EventScript_Ivan",
-      "flag": "0"
+      "flag": "0",
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "in_connection": false,
       "x": 10,
       "y": 2,
       "elevation": 3,
@@ -69,11 +72,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PokemonMansion_B1F_EventScript_ItemTM14",
-      "flag": "FLAG_HIDE_POKEMON_MANSION_B1F_TM14"
+      "flag": "FLAG_HIDE_POKEMON_MANSION_B1F_TM14",
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "in_connection": false,
       "x": 1,
       "y": 22,
       "elevation": 3,
@@ -83,11 +87,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PokemonMansion_B1F_EventScript_ItemFullRestore",
-      "flag": "FLAG_HIDE_POKEMON_MANSION_B1F_FULL_RESTORE"
+      "flag": "FLAG_HIDE_POKEMON_MANSION_B1F_FULL_RESTORE",
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "in_connection": false,
       "x": 5,
       "y": 4,
       "elevation": 3,
@@ -97,7 +102,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PokemonMansion_B1F_EventScript_ItemSecretKey",
-      "flag": "FLAG_HIDE_POKEMON_MANSION_B1F_SECRET_KEY"
+      "flag": "FLAG_HIDE_POKEMON_MANSION_B1F_SECRET_KEY",
+      "type": "object"
     }
   ],
   "warp_events": [
@@ -106,7 +112,7 @@
       "y": 22,
       "elevation": 3,
       "dest_map": "MAP_POKEMON_MANSION_1F",
-      "dest_warp_id": "4"
+      "dest_warp_id": 4
     }
   ],
   "coord_events": [
