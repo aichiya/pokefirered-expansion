@@ -745,3 +745,11 @@ gMetatiles_RB_Department::
 	.align 1
 gMetatileAttributes_RB_Department::
 	.incbin "data/tilesets/secondary/rb_department/metatile_attributes.bin"
+
+	.align 1
+gMetatiles_RB_Generator::
+	.incbin "data/tilesets/secondary/rb_generator/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Generator::
+	.incbin "data/tilesets/secondary/rb_generator/metatile_attributes.bin"

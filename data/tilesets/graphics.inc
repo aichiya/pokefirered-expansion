@@ -2029,3 +2029,23 @@ gTilesetPalettes_RB_Department::
 	.align 2
 gTilesetTiles_RB_Department::
 	.incbin "data/tilesets/secondary/rb_department/tiles.4bpp.lz"
+
+	.align 2
+gTilesetPalettes_RB_Generator::
+	.incbin "data/tilesets/secondary/rb_generator/palettes/00.gbapal"
+	.incbin "data/tilesets/secondary/rb_generator/palettes/01.gbapal"
+	.incbin "data/tilesets/secondary/rb_generator/palettes/02.gbapal"
+	.incbin "data/tilesets/secondary/rb_generator/palettes/03.gbapal"
+	.incbin "data/tilesets/secondary/rb_generator/palettes/04.gbapal"
+	.incbin "data/tilesets/secondary/rb_generator/palettes/05.gbapal"
+	.incbin "data/tilesets/secondary/rb_generator/palettes/06.gbapal"
+	.incbin "data/tilesets/secondary/rb_generator/palettes/07.gbapal"
+	.incbin "data/tilesets/secondary/rb_generator/palettes/08.gbapal"
+	.incbin "data/tilesets/secondary/rb_generator/palettes/09.gbapal"
+	.incbin "data/tilesets/secondary/rb_generator/palettes/10.gbapal"
+	.incbin "data/tilesets/secondary/rb_generator/palettes/11.gbapal"
+	.incbin "data/tilesets/secondary/rb_generator/palettes/12.gbapal"
+
+	.align 2
+gTilesetTiles_RB_Generator::
+	.incbin "data/tilesets/secondary/rb_generator/tiles.4bpp.lz"

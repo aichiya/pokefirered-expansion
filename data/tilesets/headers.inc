@@ -1055,3 +1055,14 @@ gTileset_RB_Department::
 	.4byte gMetatiles_RB_Department
 	.4byte NULL @ animation callback
 	.4byte gMetatileAttributes_RB_Department
+
+	.align 2
+gTileset_RB_Generator::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Generator
+	.4byte gTilesetPalettes_RB_Generator
+	.4byte gMetatiles_RB_Generator
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Generator
