@@ -13,11 +13,12 @@
   "show_map_name": true,
   "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_INDOOR_1",
-  "connections": null,
+  "connections": 0,
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_CHANNELER",
-      "x": 17,
+      "in_connection": false,
+      "x": 13,
       "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -30,8 +31,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CHANNELER",
-      "x": 15,
-      "y": 13,
+      "in_connection": false,
+      "x": 12,
+      "y": 12,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -43,8 +45,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CHANNELER",
-      "x": 4,
-      "y": 12,
+      "in_connection": false,
+      "x": 3,
+      "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
@@ -56,8 +59,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 12,
-      "y": 11,
+      "in_connection": false,
+      "x": 10,
+      "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -69,8 +73,9 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 8,
-      "y": 11,
+      "in_connection": false,
+      "x": 7,
+      "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -82,7 +87,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 11,
+      "in_connection": false,
+      "x": 10,
       "y": 16,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -96,20 +102,24 @@
   ],
   "warp_events": [
     {
-      "x": 4,
-      "y": 10,
+      "x": 1,
+      "y": 9,
       "elevation": 3,
       "dest_map": "MAP_POKEMON_TOWER_5F",
       "dest_warp_id": 0
     },
     {
-      "x": 18,
-      "y": 10,
+      "x": 16,
+      "y": 9,
       "elevation": 3,
       "dest_map": "MAP_POKEMON_TOWER_3F",
       "dest_warp_id": 1
     }
   ],
-  "coord_events": [],
-  "bg_events": []
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
 }
