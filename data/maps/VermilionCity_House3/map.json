@@ -16,8 +16,8 @@
   "connections": 0,
   "object_events": [
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BOY",
+      "in_connection": false,
       "x": 5,
       "y": 3,
       "elevation": 3,
@@ -27,11 +27,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VermilionCity_House3_EventScript_Boy",
-      "flag": "0"
+      "flag": "0",
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_PIDGEY",
+      "in_connection": false,
       "x": 3,
       "y": 5,
       "elevation": 3,
@@ -41,11 +42,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VermilionCity_House3_EventScript_Pidgey",
-      "flag": "0"
+      "flag": "0",
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CLIPBOARD",
+      "in_connection": false,
       "x": 4,
       "y": 3,
       "elevation": 0,
@@ -55,7 +57,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "0"
+      "flag": "0",
+      "type": "object"
     }
   ],
   "warp_events": [
@@ -64,21 +67,21 @@
       "y": 7,
       "elevation": 3,
       "dest_map": "MAP_VERMILION_CITY",
-      "dest_warp_id": "8"
+      "dest_warp_id": 0
     },
     {
       "x": 4,
       "y": 7,
       "elevation": 3,
       "dest_map": "MAP_VERMILION_CITY",
-      "dest_warp_id": "8"
+      "dest_warp_id": 0
     },
     {
       "x": 4,
       "y": 7,
       "elevation": 3,
       "dest_map": "MAP_VERMILION_CITY",
-      "dest_warp_id": "8"
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

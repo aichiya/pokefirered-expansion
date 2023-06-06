@@ -18,7 +18,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_F",
       "in_connection": false,
-      "x": 4,
+      "x": 2,
       "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -32,8 +32,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_CUBONE",
       "in_connection": false,
-      "x": 8,
-      "y": 6,
+      "x": 3,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -46,6 +46,13 @@
   ],
   "warp_events": [
     {
+      "x": 2,
+      "y": 7,
+      "elevation": 3,
+      "dest_map": "MAP_LAVENDER_TOWN",
+      "dest_warp_id": 3
+    },
+    {
       "x": 3,
       "y": 7,
       "elevation": 3,
@@ -53,14 +60,7 @@
       "dest_warp_id": 3
     },
     {
-      "x": 4,
-      "y": 7,
-      "elevation": 3,
-      "dest_map": "MAP_LAVENDER_TOWN",
-      "dest_warp_id": 3
-    },
-    {
-      "x": 5,
+      "x": 3,
       "y": 7,
       "elevation": 3,
       "dest_map": "MAP_LAVENDER_TOWN",

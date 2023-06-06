@@ -18,8 +18,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_CLERK",
       "in_connection": false,
-      "x": 10,
-      "y": 9,
+      "x": 16,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
@@ -46,8 +46,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_GBA_KID",
       "in_connection": false,
-      "x": 4,
-      "y": 9,
+      "x": 8,
+      "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -60,8 +60,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_GBA_KID",
       "in_connection": false,
-      "x": 1,
-      "y": 9,
+      "x": 7,
+      "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -74,8 +74,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
       "in_connection": false,
-      "x": 9,
-      "y": 14,
+      "x": 2,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
       "movement_range_x": 1,
@@ -88,22 +88,22 @@
   ],
   "warp_events": [
     {
-      "x": 6,
+      "x": 1,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_CELADON_CITY_DEPARTMENT_STORE_ELEVATOR",
       "dest_warp_id": 0
     },
     {
-      "x": 9,
-      "y": 2,
+      "x": 16,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_CELADON_CITY_DEPARTMENT_STORE_2F",
-      "dest_warp_id": 2
+      "dest_warp_id": 1
     },
     {
-      "x": 3,
-      "y": 2,
+      "x": 12,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_CELADON_CITY_DEPARTMENT_STORE_4F",
       "dest_warp_id": 1
@@ -115,7 +115,7 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 8,
+      "x": 14,
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -123,64 +123,40 @@
     },
     {
       "type": "sign",
-      "x": 2,
-      "y": 8,
+      "x": 3,
+      "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "CeladonCity_DepartmentStore_3F_EventScript_TV1"
     },
     {
       "type": "sign",
-      "x": 5,
-      "y": 8,
+      "x": 6,
+      "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "CeladonCity_DepartmentStore_3F_EventScript_TV2"
     },
     {
       "type": "sign",
-      "x": 2,
-      "y": 11,
+      "x": 3,
+      "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "CeladonCity_DepartmentStore_3F_EventScript_TV3"
     },
     {
       "type": "sign",
-      "x": 5,
-      "y": 11,
+      "x": 6,
+      "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "CeladonCity_DepartmentStore_3F_EventScript_TV4"
     },
     {
       "type": "sign",
-      "x": 1,
-      "y": 8,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "CeladonCity_DepartmentStore_3F_EventScript_SuperNES"
-    },
-    {
-      "type": "sign",
-      "x": 1,
-      "y": 11,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "CeladonCity_DepartmentStore_3F_EventScript_SuperNES"
-    },
-    {
-      "type": "sign",
-      "x": 4,
-      "y": 8,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "CeladonCity_DepartmentStore_3F_EventScript_SuperNES"
-    },
-    {
-      "type": "sign",
-      "x": 4,
-      "y": 11,
+      "x": 2,
+      "y": 4,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "CeladonCity_DepartmentStore_3F_EventScript_SuperNES"
@@ -188,15 +164,55 @@
     {
       "type": "sign",
       "x": 2,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "CeladonCity_DepartmentStore_3F_EventScript_SuperNES"
+    },
+    {
+      "type": "sign",
+      "x": 5,
       "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "CeladonCity_DepartmentStore_3F_EventScript_SuperNES"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "CeladonCity_DepartmentStore_3F_EventScript_SuperNES"
+    },
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "CeladonCity_DepartmentStore_3F_EventScript_Poster"
     },
     {
       "type": "sign",
-      "x": 0,
-      "y": 4,
+      "x": 4,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "CeladonCity_DepartmentStore_3F_EventScript_Poster"
+    },
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "CeladonCity_DepartmentStore_3F_EventScript_Poster"
+    },
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "CeladonCity_DepartmentStore_3F_EventScript_Poster"

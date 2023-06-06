@@ -13,38 +13,42 @@
   "show_map_name": false,
   "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
-  "object_events": [],
+  "connections": 0,
+  "object_events": [
+
+  ],
   "warp_events": [
     {
-      "x": 2,
-      "y": 5,
+      "x": 1,
+      "y": 3,
       "elevation": 3,
       "dest_map": "MAP_NONE",
       "dest_warp_id": 127
     },
     {
       "x": 2,
-      "y": 6,
+      "y": 3,
       "elevation": 0,
       "dest_map": "MAP_NONE",
       "dest_warp_id": 127
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",
-      "x": 0,
-      "y": 2,
+      "x": 3,
+      "y": 0,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "CeladonCity_DepartmentStore_Elevator_EventScript_FloorSelect"
     },
     {
       "type": "sign",
-      "x": 4,
-      "y": 1,
+      "x": 3,
+      "y": 0,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "CeladonCity_DepartmentStore_Elevator_EventScript_FloorSelect"
