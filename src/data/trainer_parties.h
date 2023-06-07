@@ -1134,12 +1134,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_PicnickerHannah[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_PokemaniacMark[] = {
     {
         .iv = 30,
-        .lvl = 29,
+        .lvl = 30,
         .species = SPECIES_RHYHORN,
     },
     {
         .iv = 30,
-        .lvl = 29,
+        .lvl = 30,
         .species = SPECIES_LICKITUNG,
     },
 };
