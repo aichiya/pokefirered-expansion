@@ -16,10 +16,10 @@
   "connections": 0,
   "object_events": [
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_POLICEMAN",
-      "x": 6,
-      "y": 2,
+      "in_connection": false,
+      "x": 4,
+      "y": 1,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -28,37 +28,51 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route18_EastEntrance_1F_EventScript_Guard",
       "flag": "0",
-      "in_connection": false
+      "type": "object"
     }
   ],
   "warp_events": [
     {
-      "x": 1,
-      "y": 6,
+      "x": 0,
+      "y": 4,
       "elevation": 3,
       "dest_map": "MAP_ROUTE18",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     },
     {
-      "x": 11,
-      "y": 6,
+      "x": 7,
+      "y": 4,
       "elevation": 3,
       "dest_map": "MAP_ROUTE18",
-      "dest_warp_id": "1"
+      "dest_warp_id": 0
     },
     {
-      "x": 9,
-      "y": 10,
+      "x": 6,
+      "y": 8,
       "elevation": 3,
       "dest_map": "MAP_ROUTE18_EAST_ENTRANCE_2F",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE18",
+      "dest_warp_id": 0
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE18",
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [
     {
       "type": "trigger",
-      "x": 2,
-      "y": 6,
+      "x": 1,
+      "y": 4,
       "elevation": 3,
       "var": "VAR_MAP_SCENE_ROUTE16",
       "var_value": "0",
@@ -66,8 +80,8 @@
     },
     {
       "type": "trigger",
-      "x": 6,
-      "y": 4,
+      "x": 4,
+      "y": 2,
       "elevation": 3,
       "var": "VAR_TEMP_1",
       "var_value": "0",
@@ -75,8 +89,8 @@
     },
     {
       "type": "trigger",
-      "x": 6,
-      "y": 5,
+      "x": 4,
+      "y": 3,
       "elevation": 3,
       "var": "VAR_TEMP_1",
       "var_value": "0",
@@ -84,8 +98,8 @@
     },
     {
       "type": "trigger",
-      "x": 6,
-      "y": 6,
+      "x": 4,
+      "y": 4,
       "elevation": 3,
       "var": "VAR_TEMP_1",
       "var_value": "0",
@@ -93,8 +107,8 @@
     },
     {
       "type": "trigger",
-      "x": 6,
-      "y": 7,
+      "x": 4,
+      "y": 5,
       "elevation": 3,
       "var": "VAR_TEMP_1",
       "var_value": "0",
@@ -102,8 +116,8 @@
     },
     {
       "type": "trigger",
-      "x": 6,
-      "y": 8,
+      "x": 4,
+      "y": 6,
       "elevation": 3,
       "var": "VAR_TEMP_1",
       "var_value": "0",
@@ -111,7 +125,25 @@
     },
     {
       "type": "trigger",
-      "x": 10,
+      "x": 6,
+      "y": 4,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_ROUTE16",
+      "var_value": "1",
+      "script": "EventScript_SetExitingCyclingRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 3,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_ROUTE16",
+      "var_value": "1",
+      "script": "EventScript_SetExitingCyclingRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
       "y": 6,
       "elevation": 3,
       "var": "VAR_MAP_SCENE_ROUTE16",
@@ -120,26 +152,8 @@
     },
     {
       "type": "trigger",
-      "x": 11,
-      "y": 5,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_ROUTE16",
-      "var_value": "1",
-      "script": "EventScript_SetExitingCyclingRoad"
-    },
-    {
-      "type": "trigger",
-      "x": 11,
-      "y": 7,
-      "elevation": 3,
-      "var": "VAR_MAP_SCENE_ROUTE16",
-      "var_value": "1",
-      "script": "EventScript_SetExitingCyclingRoad"
-    },
-    {
-      "type": "trigger",
-      "x": 1,
-      "y": 5,
+      "x": 0,
+      "y": 3,
       "elevation": 3,
       "var": "VAR_MAP_SCENE_ROUTE16",
       "var_value": "0",
@@ -147,8 +161,26 @@
     },
     {
       "type": "trigger",
+      "x": 0,
+      "y": 6,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_ROUTE16",
+      "var_value": "0",
+      "script": "EventScript_SetEnteringCyclingRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 5,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_ROUTE16",
+      "var_value": "1",
+      "script": "EventScript_SetExitingCyclingRoad"
+    },
+    {
+      "type": "trigger",
       "x": 1,
-      "y": 7,
+      "y": 5,
       "elevation": 3,
       "var": "VAR_MAP_SCENE_ROUTE16",
       "var_value": "0",
