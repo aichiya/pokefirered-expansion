@@ -936,7 +936,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_CamperDrew[] = {
     {
         .iv = 0,
         .lvl = 19,
-        .species = SPECIES_SANDSHREW,
+        .species = SPECIES_DIGLETT,
     },
     {
         .iv = 0,
