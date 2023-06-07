@@ -514,7 +514,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_LassSally[] = {
     {
         .iv = 0,
         .lvl = 10,
-        .species = SPECIES_NIDORAN_F,
+        .species = SPECIES_NIDORAN_M,
     },
 };
 
