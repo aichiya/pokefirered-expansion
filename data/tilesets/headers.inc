@@ -1066,3 +1066,14 @@ gTileset_RB_Generator::
 	.4byte gMetatiles_RB_Generator
 	.4byte NULL
 	.4byte gMetatileAttributes_RB_Generator
+
+	.align 2
+gTileset_RB_Condo::
+	.byte TRUE @ is compressed
+	.byte TRUE @ is secondary
+	.2byte 0
+	.4byte gTilesetTiles_RB_Condo
+	.4byte gTilesetPalettes_RB_Condo
+	.4byte gMetatiles_RB_Condo
+	.4byte NULL
+	.4byte gMetatileAttributes_RB_Condo

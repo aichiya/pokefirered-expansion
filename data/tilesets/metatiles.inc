@@ -753,3 +753,10 @@ gMetatiles_RB_Generator::
 	.align 1
 gMetatileAttributes_RB_Generator::
 	.incbin "data/tilesets/secondary/rb_generator/metatile_attributes.bin"
+	.align 1
+gMetatiles_RB_Condo::
+	.incbin "data/tilesets/secondary/rb_condo/metatiles.bin"
+
+	.align 1
+gMetatileAttributes_RB_Condo::
+	.incbin "data/tilesets/secondary/rb_condo/metatile_attributes.bin"

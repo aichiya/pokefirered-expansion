@@ -18,7 +18,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_2",
       "in_connection": false,
-      "x": 5,
+      "x": 4,
       "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -32,7 +32,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
       "in_connection": false,
-      "x": 2,
+      "x": 1,
       "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
@@ -44,10 +44,10 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
+      "graphics_id": "OBJ_EVENT_GFX_SAILOR",
       "in_connection": false,
-      "x": 8,
-      "y": 4,
+      "x": 5,
+      "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
       "movement_range_x": 1,
@@ -60,6 +60,13 @@
   ],
   "warp_events": [
     {
+      "x": 2,
+      "y": 7,
+      "elevation": 3,
+      "dest_map": "MAP_CELADON_CITY",
+      "dest_warp_id": 8
+    },
+    {
       "x": 3,
       "y": 7,
       "elevation": 3,
@@ -67,14 +74,7 @@
       "dest_warp_id": 8
     },
     {
-      "x": 4,
-      "y": 7,
-      "elevation": 3,
-      "dest_map": "MAP_CELADON_CITY",
-      "dest_warp_id": 8
-    },
-    {
-      "x": 5,
+      "x": 3,
       "y": 7,
       "elevation": 3,
       "dest_map": "MAP_CELADON_CITY",
