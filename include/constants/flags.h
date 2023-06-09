@@ -349,19 +349,19 @@
 #define FLAG_0x153               0x153
 
 // Item ball hide/show
-#define FLAG_HIDE_ROUTE2_ETHER                                  0x154
-#define FLAG_HIDE_ROUTE2_PARALYZE_HEAL                          0x155
+#define FLAG_HIDE_ROUTE2_HP_UP                                  0x154
+#define FLAG_HIDE_ROUTE2_MOON_STONE                             0x155
 #define FLAG_HIDE_VIRIDIAN_FOREST_POKE_BALL                     0x156
 #define FLAG_HIDE_VIRIDIAN_FOREST_ANTIDOTE                      0x157
 #define FLAG_HIDE_VIRIDIAN_FOREST_POTION                        0x158
-#define FLAG_HIDE_MT_MOON_1F_PARALYZE_HEAL                      0x159
+#define FLAG_HIDE_MT_MOON_1F_POTION2                            0x159
 #define FLAG_HIDE_MT_MOON_1F_TM09                               0x15A
 #define FLAG_HIDE_MT_MOON_1F_POTION                             0x15B
 #define FLAG_HIDE_MT_MOON_1F_RARE_CANDY                         0x15C
 #define FLAG_HIDE_MT_MOON_1F_ESCAPE_ROPE                        0x15D
 #define FLAG_HIDE_MT_MOON_1F_MOON_STONE                         0x15E
-#define FLAG_HIDE_MT_MOON_B2F_STAR_PIECE                        0x15F
-#define FLAG_HIDE_MT_MOON_B2F_TM46                              0x160
+#define FLAG_HIDE_MT_MOON_B2F_HP_UP                             0x15F
+#define FLAG_HIDE_MT_MOON_B2F_TM01                              0x160
 #define FLAG_HIDE_ROUTE4_TM04                                   0x161
 #define FLAG_HIDE_ROUTE24_TM45                                  0x162
 #define FLAG_HIDE_ROUTE25_TM19                                  0x163
@@ -372,7 +372,7 @@
 #define FLAG_HIDE_SSANNE_B1F_ROOM3_ETHER                        0x168
 #define FLAG_HIDE_SSANNE_B1F_ROOM5_SUPER_POTION                 0x169
 #define FLAG_HIDE_SSANNE_KITCHEN_GREAT_BALL                     0x16A
-#define FLAG_HIDE_ROUTE9_TM40                                   0x16B
+#define FLAG_HIDE_ROUTE9_TM30                                   0x16B
 #define FLAG_HIDE_ROCKET_HIDEOUT_B1F_ESCAPE_ROPE                0x16C
 #define FLAG_HIDE_ROCKET_HIDEOUT_B1F_HYPER_POTION               0x16D
 #define FLAG_HIDE_ROCKET_HIDEOUT_B2F_X_SPEED                    0x16E
@@ -391,9 +391,9 @@
 #define FLAG_HIDE_POKEMON_TOWER_5F_NUGGET                       0x17B
 #define FLAG_HIDE_POKEMON_TOWER_6F_RARE_CANDY                   0x17C
 #define FLAG_HIDE_POKEMON_TOWER_6F_X_ACCURACY                   0x17D
-#define FLAG_HIDE_ROUTE12_TM48                                  0x17E
+#define FLAG_HIDE_ROUTE12_TM16                                  0x17E
 #define FLAG_HIDE_ROUTE12_IRON                                  0x17F
-#define FLAG_HIDE_ROUTE15_TM18                                  0x180
+#define FLAG_HIDE_ROUTE15_TM20                                  0x180
 #define FLAG_HIDE_SAFARI_ZONE_CENTER_NUGGET                     0x181
 #define FLAG_HIDE_SAFARI_ZONE_EAST_MAX_POTION                   0x182
 #define FLAG_HIDE_SAFARI_ZONE_EAST_FULL_RESTORE                 0x183
@@ -423,7 +423,7 @@
 #define FLAG_HIDE_POWER_PLANT_TM17                              0x19B
 #define FLAG_HIDE_POWER_PLANT_TM25                              0x19C
 #define FLAG_HIDE_POWER_PLANT_THUNDER_STONE                     0x19D
-#define FLAG_HIDE_POWER_PLANT_ELIXIR                            0x19E
+#define FLAG_HIDE_POWER_PLANT_HP_UP                             0x19E
 #define FLAG_HIDE_POKEMON_MANSION_1F_CARBOS                     0x19F
 #define FLAG_HIDE_POKEMON_MANSION_1F_ESCAPE_ROPE                0x1A0
 #define FLAG_HIDE_POKEMON_MANSION_2F_CALCIUM                    0x1A1

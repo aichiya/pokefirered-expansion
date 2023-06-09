@@ -23,121 +23,62 @@
       "y": 5,
       "elevation": 3,
       "dest_map": "MAP_MT_MOON_1F",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     },
     {
       "x": 25,
       "y": 9,
       "elevation": 3,
       "dest_map": "MAP_MT_MOON_1F",
-      "dest_warp_id": "1"
+      "dest_warp_id": 0
     },
     {
       "x": 25,
       "y": 15,
       "elevation": 3,
       "dest_map": "MAP_MT_MOON_1F",
-      "dest_warp_id": "2"
+      "dest_warp_id": 0
     },
     {
       "x": 21,
       "y": 17,
       "elevation": 3,
       "dest_map": "MAP_MT_MOON_B2F",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     },
     {
       "x": 17,
       "y": 11,
       "elevation": 3,
       "dest_map": "MAP_MT_MOON_B2F",
-      "dest_warp_id": "1"
+      "dest_warp_id": 0
     },
     {
       "x": 13,
       "y": 27,
       "elevation": 3,
       "dest_map": "MAP_MT_MOON_B2F",
-      "dest_warp_id": "2"
+      "dest_warp_id": 0
     },
     {
       "x": 23,
       "y": 3,
       "elevation": 3,
       "dest_map": "MAP_MT_MOON_B2F",
-      "dest_warp_id": "3"
+      "dest_warp_id": 0
     },
     {
       "x": 27,
       "y": 3,
       "elevation": 3,
       "dest_map": "MAP_ROUTE4",
-      "dest_warp_id": "1"
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [
 
   ],
   "bg_events": [
-    {
-      "type": "hidden_item",
-      "x": 20,
-      "y": 2,
-      "elevation": 0,
-      "item": "ITEM_TINY_MUSHROOM",
-      "flag": "HIDDEN_ITEM_MT_MOON_B1F_TINY_MUSHROOM",
-      "quantity": 1,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 27,
-      "y": 2,
-      "elevation": 0,
-      "item": "ITEM_TINY_MUSHROOM",
-      "flag": "HIDDEN_ITEM_MT_MOON_B1F_TINY_MUSHROOM_2",
-      "quantity": 1,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 24,
-      "y": 14,
-      "elevation": 0,
-      "item": "ITEM_TINY_MUSHROOM",
-      "flag": "HIDDEN_ITEM_MT_MOON_B1F_TINY_MUSHROOM_3",
-      "quantity": 1,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 10,
-      "y": 27,
-      "elevation": 0,
-      "item": "ITEM_BIG_MUSHROOM",
-      "flag": "HIDDEN_ITEM_MT_MOON_B1F_BIG_MUSHROOM",
-      "quantity": 1,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 4,
-      "y": 4,
-      "elevation": 0,
-      "item": "ITEM_BIG_MUSHROOM",
-      "flag": "HIDDEN_ITEM_MT_MOON_B1F_BIG_MUSHROOM_2",
-      "quantity": 1,
-      "underfoot": false
-    },
-    {
-      "type": "hidden_item",
-      "x": 11,
-      "y": 26,
-      "elevation": 0,
-      "item": "ITEM_BIG_MUSHROOM",
-      "flag": "HIDDEN_ITEM_MT_MOON_B1F_BIG_MUSHROOM_3",
-      "quantity": 1,
-      "underfoot": false
-    }
+
   ]
 }

@@ -2,8 +2,13 @@
 2P Colosseum, SilphCo, and Rocket Hideout elevators have no warps, temp so that building works. 
 
 Route 20 is missing a swimmer.
-Route 21_North is missing 2 swimmers and 2 fishers.
-Underground 1 has 2 incorrect items. Full Restore top - X Special bottom.
-Power Plant missing many items.
 Infested Saffron missing 1 rocket by door.
-Horizontal underground path has wrong items.
+Silph 8F Grunt1 party incorrect, seemingly mixed up with 7F Grunt.
+
+Route 13 hidden items not scripted.
+Route 17 hidden items not added yet.
+Viridian Dream Eater Tutor not checked for TM42 give.
+Viridian Forest main tree missing hidden Antidote.
+Cerulean Cave B1F hidden ultra ball not scripted.
+Route 10 hidden items not scripted.
+Power Plant items and hidden items incorrect.

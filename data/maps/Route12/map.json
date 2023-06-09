@@ -177,8 +177,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route12_EventScript_ItemTM48",
-      "flag": "FLAG_HIDE_ROUTE12_TM48",
+      "script": "Route12_EventScript_ItemTM16",
+      "flag": "FLAG_HIDE_ROUTE12_TM16",
       "type": "object"
     },
     {
@@ -271,6 +271,16 @@
       "flag": "HIDDEN_ITEM_ROUTE12_LEFTOVERS",
       "quantity": 1,
       "underfoot": true
+    },
+    {
+      "type": "hidden_item",
+      "x": 2,
+      "y": 63,
+      "elevation": 3,
+      "item": "ITEM_HYPER_POTION",
+      "flag": "HIDDEN_ITEM_ROUTE12_HYPER_POTION",
+      "quantity": 1,
+      "underfoot": false
     }
   ]
 }

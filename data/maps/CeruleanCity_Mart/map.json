@@ -16,8 +16,8 @@
   "connections": 0,
   "object_events": [
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CLERK",
+      "in_connection": false,
       "x": 0,
       "y": 5,
       "elevation": 0,
@@ -28,11 +28,11 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CeruleanCity_Mart_EventScript_Clerk",
       "flag": "0",
-      "in_connection": false
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
+      "in_connection": false,
       "x": 6,
       "y": 2,
       "elevation": 3,
@@ -43,11 +43,11 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CeruleanCity_Mart_EventScript_Woman",
       "flag": "0",
-      "in_connection": false
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "in_connection": false,
       "x": 3,
       "y": 4,
       "elevation": 3,
@@ -58,7 +58,7 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CeruleanCity_Mart_EventScript_Youngster",
       "flag": "0",
-      "in_connection": false
+      "type": "object"
     }
   ],
   "warp_events": [
@@ -67,21 +67,14 @@
       "y": 7,
       "elevation": 3,
       "dest_map": "MAP_CERULEAN_CITY",
-      "dest_warp_id": "6"
+      "dest_warp_id": 0
     },
     {
       "x": 4,
       "y": 7,
       "elevation": 3,
       "dest_map": "MAP_CERULEAN_CITY",
-      "dest_warp_id": "6"
-    },
-    {
-      "x": 4,
-      "y": 7,
-      "elevation": 3,
-      "dest_map": "MAP_CERULEAN_CITY",
-      "dest_warp_id": "6"
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

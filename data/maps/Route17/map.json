@@ -15,20 +15,20 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE16",
+      "direction": "up",
       "offset": 0,
-      "direction": "up"
+      "map": "MAP_ROUTE16"
     },
     {
-      "map": "MAP_ROUTE18",
+      "direction": "down",
       "offset": 0,
-      "direction": "down"
+      "map": "MAP_ROUTE18"
     }
   ],
   "object_events": [
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
+      "in_connection": false,
       "x": 4,
       "y": 18,
       "elevation": 3,
@@ -39,11 +39,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route17_EventScript_Virgil",
       "flag": "0",
-      "in_connection": false
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
+      "in_connection": false,
       "x": 11,
       "y": 16,
       "elevation": 3,
@@ -54,11 +54,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route17_EventScript_Isaiah",
       "flag": "0",
-      "in_connection": false
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
+      "in_connection": false,
       "x": 12,
       "y": 19,
       "elevation": 3,
@@ -69,11 +69,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route17_EventScript_Raul",
       "flag": "0",
-      "in_connection": false
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
+      "in_connection": false,
       "x": 14,
       "y": 34,
       "elevation": 3,
@@ -84,11 +84,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route17_EventScript_Nikolas",
       "flag": "0",
-      "in_connection": false
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
+      "in_connection": false,
       "x": 7,
       "y": 32,
       "elevation": 3,
@@ -99,11 +99,11 @@
       "trainer_sight_or_berry_tree_id": "5",
       "script": "Route17_EventScript_Billy",
       "flag": "0",
-      "in_connection": false
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
+      "in_connection": false,
       "x": 2,
       "y": 68,
       "elevation": 3,
@@ -114,11 +114,11 @@
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route17_EventScript_Jamal",
       "flag": "0",
-      "in_connection": false
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
+      "in_connection": false,
       "x": 17,
       "y": 58,
       "elevation": 3,
@@ -129,11 +129,11 @@
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route17_EventScript_Zeek",
       "flag": "0",
-      "in_connection": false
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
+      "in_connection": false,
       "x": 14,
       "y": 98,
       "elevation": 3,
@@ -144,11 +144,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route17_EventScript_Corey",
       "flag": "0",
-      "in_connection": false
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
+      "in_connection": false,
       "x": 10,
       "y": 118,
       "elevation": 3,
@@ -159,11 +159,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route17_EventScript_William",
       "flag": "0",
-      "in_connection": false
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
+      "in_connection": false,
       "x": 5,
       "y": 98,
       "elevation": 3,
@@ -174,7 +174,7 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route17_EventScript_Jaxon",
       "flag": "0",
-      "in_connection": false
+      "type": "object"
     }
   ],
   "warp_events": [

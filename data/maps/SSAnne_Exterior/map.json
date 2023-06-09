@@ -16,8 +16,8 @@
   "connections": 0,
   "object_events": [
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SS_ANNE",
+      "in_connection": false,
       "x": 19,
       "y": 5,
       "elevation": 1,
@@ -27,7 +27,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
-      "flag": "FLAG_HIDE_SS_ANNE"
+      "flag": "FLAG_HIDE_SS_ANNE",
+      "type": "object"
     }
   ],
   "warp_events": [
@@ -36,35 +37,21 @@
       "y": 0,
       "elevation": 0,
       "dest_map": "MAP_VERMILION_CITY",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 20,
-      "y": 0,
-      "elevation": 3,
-      "dest_map": "MAP_VERMILION_CITY",
-      "dest_warp_id": "1"
+      "dest_warp_id": 0
     },
     {
       "x": 20,
       "y": 2,
       "elevation": 3,
       "dest_map": "MAP_SSANNE_1F_CORRIDOR",
-      "dest_warp_id": "2"
+      "dest_warp_id": 0
     },
     {
       "x": 20,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_SSANNE_1F_CORRIDOR",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 20,
-      "y": 0,
-      "elevation": 0,
-      "dest_map": "MAP_VERMILION_CITY",
-      "dest_warp_id": "2"
+      "dest_warp_id": 1
     }
   ],
   "coord_events": [

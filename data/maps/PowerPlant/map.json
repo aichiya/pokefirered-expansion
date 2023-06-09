@@ -18,8 +18,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "in_connection": false,
-      "x": 7,
-      "y": 27,
+      "x": 1,
+      "y": 34,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -32,8 +32,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "in_connection": false,
-      "x": 40,
-      "y": 22,
+      "x": 3,
+      "y": 34,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -46,8 +46,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "in_connection": false,
-      "x": 46,
-      "y": 37,
+      "x": 26,
+      "y": 32,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -60,8 +60,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "in_connection": false,
-      "x": 45,
-      "y": 4,
+      "x": 5,
+      "y": 34,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -74,22 +74,22 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "in_connection": false,
-      "x": 26,
-      "y": 22,
+      "x": 28,
+      "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PowerPlant_EventScript_ItemElixir",
-      "flag": "FLAG_HIDE_POWER_PLANT_ELIXIR"
+      "script": "PowerPlant_EventScript_ItemHP_Up",
+      "flag": "FLAG_HIDE_POWER_PLANT_HP_UP"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ZAPDOS",
       "in_connection": false,
-      "x": 5,
-      "y": 11,
+      "x": 4,
+      "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -102,8 +102,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "in_connection": false,
-      "x": 36,
-      "y": 5,
+      "x": 32,
+      "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -116,8 +116,8 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "in_connection": false,
-      "x": 30,
-      "y": 38,
+      "x": 25,
+      "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -131,35 +131,21 @@
   "warp_events": [
     {
       "x": 4,
-      "y": 39,
+      "y": 35,
       "elevation": 3,
       "dest_map": "MAP_ROUTE10",
       "dest_warp_id": 2
     },
     {
       "x": 5,
-      "y": 38,
+      "y": 35,
       "elevation": 3,
       "dest_map": "MAP_ROUTE10",
       "dest_warp_id": 2
-    },
-    {
-      "x": 6,
-      "y": 39,
-      "elevation": 3,
-      "dest_map": "MAP_ROUTE10",
-      "dest_warp_id": 2
-    },
-    {
-      "x": 1,
-      "y": 11,
-      "elevation": 3,
-      "dest_map": "MAP_ROUTE10",
-      "dest_warp_id": 4
     },
     {
       "x": 0,
-      "y": 13,
+      "y": 11,
       "elevation": 3,
       "dest_map": "MAP_ROUTE10",
       "dest_warp_id": 2
@@ -171,7 +157,7 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 29,
+      "x": 17,
       "y": 16,
       "elevation": 3,
       "item": "ITEM_MAX_ELIXIR",
@@ -181,8 +167,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 8,
-      "y": 12,
+      "x": 0,
+      "y": 0,
       "elevation": 3,
       "item": "ITEM_THUNDER_STONE",
       "flag": "HIDDEN_ITEM_POWER_PLANT_THUNDER_STONE",

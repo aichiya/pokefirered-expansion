@@ -15,15 +15,15 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE23",
+      "direction": "down",
       "offset": -1,
-      "direction": "down"
+      "map": "MAP_ROUTE23"
     }
   ],
   "object_events": [
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BLUE",
+      "in_connection": false,
       "x": 10,
       "y": 6,
       "elevation": 0,
@@ -34,11 +34,11 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_CREDITS_RIVAL",
-      "in_connection": false
+      "type": "object"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_PROF_OAK",
+      "in_connection": false,
       "x": 10,
       "y": 6,
       "elevation": 0,
@@ -49,7 +49,7 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_CREDITS_OAK",
-      "in_connection": false
+      "type": "object"
     }
   ],
   "warp_events": [
@@ -58,7 +58,7 @@
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_INDIGO_PLATEAU_POKEMON_CENTER_1F",
-      "dest_warp_id": "0"
+      "dest_warp_id": 0
     }
   ],
   "coord_events": [

@@ -171,15 +171,6 @@
     }
   ],
   "bg_events": [
-    {
-      "type": "hidden_item",
-      "x": 21,
-      "y": 6,
-      "elevation": 3,
-      "item": "ITEM_PECHA_BERRY",
-      "flag": "HIDDEN_ITEM_ROUTE24_PECHA_BERRY",
-      "quantity": 1,
-      "underfoot": false
-    }
+
   ]
 }
