@@ -355,7 +355,7 @@
 #define FLAG_HIDE_VIRIDIAN_FOREST_ANTIDOTE                      0x157
 #define FLAG_HIDE_VIRIDIAN_FOREST_POTION                        0x158
 #define FLAG_HIDE_MT_MOON_1F_POTION2                            0x159
-#define FLAG_HIDE_MT_MOON_1F_TM09                               0x15A
+#define FLAG_HIDE_MT_MOON_1F_TM12                               0x15A
 #define FLAG_HIDE_MT_MOON_1F_POTION                             0x15B
 #define FLAG_HIDE_MT_MOON_1F_RARE_CANDY                         0x15C
 #define FLAG_HIDE_MT_MOON_1F_ESCAPE_ROPE                        0x15D
@@ -1114,7 +1114,7 @@
 #define HIDDEN_ITEM_THREE_ISLAND_BERRY_FOREST_BLUK_BERRY               91
 #define HIDDEN_ITEM_THREE_ISLAND_BERRY_FOREST_NANAB_BERRY              92
 #define HIDDEN_ITEM_THREE_ISLAND_BERRY_FOREST_WEPEAR_BERRY             93
-#define HIDDEN_ITEM_THREE_ISLAND_BERRY_FOREST_ORAN_BERRY               94
+#define HIDDEN_ITEM_THREE_ISLAND_BERRY_FOREST_BERRY               94
 #define HIDDEN_ITEM_THREE_ISLAND_BERRY_FOREST_CHERI_BERRY              95
 #define HIDDEN_ITEM_THREE_ISLAND_BERRY_FOREST_CHESTO_BERRY             96
 #define HIDDEN_ITEM_THREE_ISLAND_BERRY_FOREST_PECHA_BERRY              97
@@ -1133,10 +1133,10 @@
 #define HIDDEN_ITEM_ONE_ISLAND_TREASURE_BEACH_BIG_PEARL               110
 #define HIDDEN_ITEM_TWO_ISLAND_CAPE_BRINK_RARE_CANDY                  111
 #define HIDDEN_ITEM_PEWTER_CITY_POKE_BALL                             112
-#define HIDDEN_ITEM_ROUTE3_ORAN_BERRY                                 113
+#define HIDDEN_ITEM_ROUTE3_BERRY                                 113
 #define HIDDEN_ITEM_ROUTE4_PERSIM_BERRY                               114
 #define HIDDEN_ITEM_ROUTE24_PECHA_BERRY                               115
-#define HIDDEN_ITEM_ROUTE25_ORAN_BERRY                                116
+#define HIDDEN_ITEM_ROUTE25_BERRY                                116
 #define HIDDEN_ITEM_ROUTE25_BLUK_BERRY                                117
 #define HIDDEN_ITEM_ROUTE6_SITRUS_BERRY                               118
 #define HIDDEN_ITEM_ROUTE6_RARE_CANDY                                 119
@@ -1202,7 +1202,7 @@
 #define HIDDEN_ITEM_SIX_ISLAND_OUTCAST_ISLAND_NET_BALL                179
 #define HIDDEN_ITEM_SIX_ISLAND_GREEN_PATH_ULTRA_BALL                  180
 #define HIDDEN_ITEM_SIX_ISLAND_WATER_PATH_ASPEAR_BERRY                181
-#define HIDDEN_ITEM_SIX_ISLAND_WATER_PATH_ORAN_BERRY                  182
+#define HIDDEN_ITEM_SIX_ISLAND_WATER_PATH_BERRY                  182
 #define HIDDEN_ITEM_SIX_ISLAND_WATER_PATH_PINAP_BERRY                 183
 #define HIDDEN_ITEM_SIX_ISLAND_LEPPA_BERRY                            184
 #define HIDDEN_ITEM_SEVEN_ISLAND_TRAINER_TOWER_BIG_PEARL              185

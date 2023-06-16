@@ -1,6 +1,11 @@
 
 2P Colosseum, SilphCo, and Rocket Hideout elevators have no warps, temp so that building works. 
 
+Drunk gives Teachy TV and forces capture tutorial.
+Route 2 bushes missing for some reason.
+Route 1 to Pallet Town palette shift visible. Route 1 must use Palette Town palette.
+Viritian parcel pathing possibly incorrect.
+
 Route 20 is missing a swimmer.
 Infested Saffron missing 1 rocket by door.
 Silph 8F Grunt1 party incorrect, seemingly mixed up with 7F Grunt.

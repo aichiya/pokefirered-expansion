@@ -18,7 +18,13 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 1,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_SILPH_CO_ELEVATOR",
+      "dest_warp_id": 0
+    }
   ],
   "coord_events": [
 

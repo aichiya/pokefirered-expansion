@@ -284,8 +284,8 @@
       "x": 37,
       "y": 18,
       "elevation": 3,
-      "item": "ITEM_ORAN_BERRY",
-      "flag": "HIDDEN_ITEM_THREE_ISLAND_BERRY_FOREST_ORAN_BERRY",
+      "item": "ITEM_BERRY",
+      "flag": "HIDDEN_ITEM_THREE_ISLAND_BERRY_FOREST_BERRY",
       "quantity": 1,
       "underfoot": false
     },

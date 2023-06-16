@@ -772,7 +772,7 @@ struct PickupItem
 
 static const struct PickupItem sPickupItems[] =
 {
-    { ITEM_ORAN_BERRY, 15 },
+    { ITEM_BERRY, 15 },
     { ITEM_CHERI_BERRY, 25 },
     { ITEM_CHESTO_BERRY, 35 },
     { ITEM_PECHA_BERRY, 45 },

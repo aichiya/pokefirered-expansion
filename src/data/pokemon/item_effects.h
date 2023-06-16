@@ -333,7 +333,7 @@ static const u8 sItemEffect_LeppaBerry[7] = {
     [6] = 10,
 };
 
-static const u8 sItemEffect_OranBerry[7] = {
+static const u8 sItemEffect_Berry[7] = {
     [4] = ITEM4_HEAL_HP,
     [6] = 10,
 };
@@ -412,7 +412,7 @@ const u8 *const gItemEffectTable[] =
     [ITEM_RAWST_BERRY - ITEM_POTION] = sItemEffect_RawstBerry,
     [ITEM_ASPEAR_BERRY - ITEM_POTION] = sItemEffect_AspearBerry,
     [ITEM_LEPPA_BERRY - ITEM_POTION] = sItemEffect_LeppaBerry,
-    [ITEM_ORAN_BERRY - ITEM_POTION] = sItemEffect_OranBerry,
+    [ITEM_BERRY - ITEM_POTION] = sItemEffect_Berry,
     [ITEM_PERSIM_BERRY - ITEM_POTION] = sItemEffect_PersimBerry,
     [ITEM_LUM_BERRY - ITEM_POTION] = sItemEffect_LumBerry,
     [ITEM_SITRUS_BERRY - ITEM_POTION] = sItemEffect_SitrusBerry,

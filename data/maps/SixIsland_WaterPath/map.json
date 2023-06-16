@@ -190,8 +190,8 @@
       "x": 3,
       "y": 8,
       "elevation": 3,
-      "item": "ITEM_ORAN_BERRY",
-      "flag": "HIDDEN_ITEM_SIX_ISLAND_WATER_PATH_ORAN_BERRY",
+      "item": "ITEM_BERRY",
+      "flag": "HIDDEN_ITEM_SIX_ISLAND_WATER_PATH_BERRY",
       "quantity": 1,
       "underfoot": false
     },

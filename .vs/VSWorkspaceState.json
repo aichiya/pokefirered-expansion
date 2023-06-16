@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\data\\tilesets\\secondary",
-    "\\data\\tilesets\\secondary\\rb_forest",
-    "\\src",
-    "\\src\\data"
+    "\\src"
   ],
-  "SelectedNode": "\\src\\data\\wild_encounters.json",
   "PreviewInSolutionExplorer": false
 }

@@ -88,13 +88,6 @@
       "dest_warp_id": 6
     },
     {
-      "x": 5,
-      "y": 8,
-      "elevation": 3,
-      "dest_map": "MAP_FUCHSIA_CITY",
-      "dest_warp_id": 6
-    },
-    {
       "x": 1,
       "y": 6,
       "elevation": 4,

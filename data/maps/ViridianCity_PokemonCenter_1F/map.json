@@ -86,13 +86,6 @@
       "elevation": 3,
       "dest_map": "MAP_VIRIDIAN_CITY",
       "dest_warp_id": 0
-    },
-    {
-      "x": 5,
-      "y": 8,
-      "elevation": 3,
-      "dest_map": "MAP_VIRIDIAN_CITY",
-      "dest_warp_id": 0
     }
   ],
   "coord_events": [

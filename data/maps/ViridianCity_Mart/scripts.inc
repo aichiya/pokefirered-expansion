@@ -36,8 +36,7 @@ ViridianCity_Mart_EventScript_ParcelScene::
 	end
 
 ViridianCity_Mart_Movement_ApproachCounter::
-	walk_up
-	walk_up
+	walk_left
 	walk_up
 	walk_up
 	walk_in_place_faster_left

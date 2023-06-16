@@ -100,13 +100,6 @@
       "elevation": 3,
       "dest_map": "MAP_LAVENDER_TOWN",
       "dest_warp_id": 1
-    },
-    {
-      "x": 5,
-      "y": 8,
-      "elevation": 3,
-      "dest_map": "MAP_LAVENDER_TOWN",
-      "dest_warp_id": 1
     }
   ],
   "coord_events": [

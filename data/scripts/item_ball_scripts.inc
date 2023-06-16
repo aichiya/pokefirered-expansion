@@ -294,7 +294,7 @@ PowerPlant_EventScript_ItemThunderStone::
 	finditem ITEM_THUNDER_STONE
 	end
 
-PowerPlant_EventScript_ItemHP_Up
+PowerPlant_EventScript_ItemHP_Up::
 	finditem ITEM_HP_UP
 	end
 

@@ -2,7 +2,7 @@ const struct BattleTowerPokemonTemplate gBattleTowerLevel50Mons[] =
 {
 	{
 		.species = SPECIES_PIKACHU,
-		.heldItem = BATTLE_TOWER_ITEM_ORAN_BERRY,
+		.heldItem = BATTLE_TOWER_ITEM_BERRY,
 		.teamFlags = 0x42,
 		.moves = {
 			MOVE_QUICK_ATTACK,

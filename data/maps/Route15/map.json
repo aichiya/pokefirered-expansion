@@ -198,6 +198,13 @@
       "y": 9,
       "elevation": 3,
       "dest_map": "MAP_ROUTE15_WEST_ENTRANCE_1F",
+      "dest_warp_id": 1
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE15_WEST_ENTRANCE_1F",
       "dest_warp_id": 0
     },
     {
@@ -205,7 +212,14 @@
       "y": 9,
       "elevation": 3,
       "dest_map": "MAP_ROUTE15_WEST_ENTRANCE_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": 3
+    },
+    {
+      "x": 14,
+      "y": 8,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE15_WEST_ENTRANCE_1F",
+      "dest_warp_id": 2
     }
   ],
   "coord_events": [

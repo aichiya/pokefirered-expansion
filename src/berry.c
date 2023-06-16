@@ -199,7 +199,7 @@ const struct Berry gBerries[] = {
             .smoothness = 20
         },
 
-    [ITEM_ORAN_BERRY - FIRST_BERRY_INDEX] =
+    [ITEM_BERRY - FIRST_BERRY_INDEX] =
         {
             .name = _("ORAN"),
             .firmness = BERRY_FIRMNESS_SUPER_HARD,
@@ -874,7 +874,7 @@ const struct BerryCrushStats gBerryCrush_BerryData[] = {
     [ITEM_RAWST_BERRY  - FIRST_BERRY_INDEX] = { 50,  20},
     [ITEM_ASPEAR_BERRY - FIRST_BERRY_INDEX] = { 50,  20},
     [ITEM_LEPPA_BERRY  - FIRST_BERRY_INDEX] = { 50,  30},
-    [ITEM_ORAN_BERRY   - FIRST_BERRY_INDEX] = { 50,  30},
+    [ITEM_BERRY   - FIRST_BERRY_INDEX] = { 50,  30},
     [ITEM_PERSIM_BERRY - FIRST_BERRY_INDEX] = { 50,  30},
     [ITEM_LUM_BERRY    - FIRST_BERRY_INDEX] = { 50,  30},
     [ITEM_SITRUS_BERRY - FIRST_BERRY_INDEX] = { 50,  30},
