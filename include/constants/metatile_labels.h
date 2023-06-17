@@ -168,6 +168,7 @@
 // gTileset_RB
 #define METATILE_RB_Overworld_Door         0x299
 #define METATILE_RB_Overworld_Plain_Grass  0x28B
+#define METATILE_RB_Plant_WildEncounters   0x373
 
 // gTileset_SSAnne
 #define METATILE_SSAnne_Door  0x281
