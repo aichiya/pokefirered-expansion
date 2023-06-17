@@ -59,3 +59,5 @@ porymap.project.cfg
 *.js
 *.sym
 /.vs/firered_gen1style/v16
+*.sqlite
+*.sqlite-journal
