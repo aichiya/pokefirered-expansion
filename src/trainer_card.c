@@ -99,9 +99,9 @@ static void HandleGpuRegs(void);
 static void UpdateCardFlipRegs(u16 cardTop);
 static void ResetGpuRegs(void);
 static void TrainerCardNull(void);
-static void sub_8089C5C(void);
-static void sub_8089C80(void);
-static void sub_8089CA4(void);
+static void DmaClearOam(void);
+static void DmaClearPltt(void);
+static void ResetBgRegs(void);
 static void InitBgsAndWindows(void);
 static void SetTrainerCardCB2(void);
 static void SetUpTrainerCardTask(void);
@@ -274,7 +274,7 @@ static const u16 *const sKantoTrainerCardStarPals[] =
 static const u8 sTrainerCardTextColors[] = {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_LIGHT_GRAY};
 static const u8 sTrainerCardStatColors[] = {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_RED, TEXT_COLOR_LIGHT_RED};
 static const u8 sTimeColonInvisibleTextColors[] = {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_TRANSPARENT, TEXT_COLOR_TRANSPARENT};
-static const u8 sTrainerCardFontIds[] = {FONT_0, FONT_2, FONT_0};
+static const u8 sTrainerCardFontIds[] = {FONT_SMALL, FONT_NORMAL, FONT_SMALL};
 
 static const u8 sTrainerPicOffsets[2][GENDER_COUNT][2] = 
 {
@@ -620,7 +620,7 @@ static void Task_TrainerCard(u8 taskId)
     case STATE_WAIT_LINK_PARTNER:
         SetCloseLinkCallback();
         DrawDialogueFrame(0, 1);
-        AddTextPrinterParameterized(0, FONT_2, gText_WaitingTrainerFinishReading, 0, 1, TEXT_SKIP_DRAW, 0);
+        AddTextPrinterParameterized(0, FONT_NORMAL, gText_WaitingTrainerFinishReading, 0, 1, TEXT_SKIP_DRAW, 0);
         CopyWindowToVram(0, COPYWIN_FULL);
         sTrainerCardDataPtr->mainState = STATE_CLOSE_CARD_LINK;
         break;
@@ -713,15 +713,15 @@ static void CB2_InitTrainerCard(void)
         gMain.state++;
         break;
     case 2:
-        sub_8089C5C();
+        DmaClearOam();
         gMain.state++;
         break;
     case 3:
-        sub_8089C80();
+        DmaClearPltt();
         gMain.state++;
         // fallthrough
     case 4:
-        sub_8089CA4();
+        ResetBgRegs();
         gMain.state++;
         break;
     case 5:
@@ -984,30 +984,30 @@ static void TrainerCardNull(void)
 {
 }
 
-static void sub_8089C5C(void)
+static void DmaClearOam(void)
 {
     DmaClear32(3, (void *)OAM, OAM_SIZE);
 }
 
-static void sub_8089C80(void)
+static void DmaClearPltt(void)
 {
     DmaClear16(3, (void *)PLTT, PLTT_SIZE);
 }
 
-static void sub_8089CA4(void)
+static void ResetBgRegs(void)
 {
-    SetGpuReg(REG_OFFSET_BG0CNT, DISPCNT_MODE_0);
-    SetGpuReg(REG_OFFSET_BG1CNT, DISPCNT_MODE_0);
-    SetGpuReg(REG_OFFSET_BG2CNT, DISPCNT_MODE_0);
-    SetGpuReg(REG_OFFSET_BG3CNT, DISPCNT_MODE_0);
-    SetGpuReg(REG_OFFSET_BG0HOFS, DISPCNT_MODE_0);
-    SetGpuReg(REG_OFFSET_BG0VOFS, DISPCNT_MODE_0);
-    SetGpuReg(REG_OFFSET_BG1HOFS, DISPCNT_MODE_0);
-    SetGpuReg(REG_OFFSET_BG1VOFS, DISPCNT_MODE_0);
-    SetGpuReg(REG_OFFSET_BG2HOFS, DISPCNT_MODE_0);
-    SetGpuReg(REG_OFFSET_BG2VOFS, DISPCNT_MODE_0);
-    SetGpuReg(REG_OFFSET_BG3HOFS, DISPCNT_MODE_0);
-    SetGpuReg(REG_OFFSET_BG3VOFS, DISPCNT_MODE_0);
+    SetGpuReg(REG_OFFSET_BG0CNT, 0);
+    SetGpuReg(REG_OFFSET_BG1CNT, 0);
+    SetGpuReg(REG_OFFSET_BG2CNT, 0);
+    SetGpuReg(REG_OFFSET_BG3CNT, 0);
+    SetGpuReg(REG_OFFSET_BG0HOFS, 0);
+    SetGpuReg(REG_OFFSET_BG0VOFS, 0);
+    SetGpuReg(REG_OFFSET_BG1HOFS, 0);
+    SetGpuReg(REG_OFFSET_BG1VOFS, 0);
+    SetGpuReg(REG_OFFSET_BG2HOFS, 0);
+    SetGpuReg(REG_OFFSET_BG2VOFS, 0);
+    SetGpuReg(REG_OFFSET_BG3HOFS, 0);
+    SetGpuReg(REG_OFFSET_BG3VOFS, 0);
 }
 
 static void InitBgsAndWindows(void)
@@ -1237,16 +1237,16 @@ static void PrintProfilePhraseOnCard(void)
 {
     if (sTrainerCardDataPtr->isLink)
     {
-        AddTextPrinterParameterized3(1, FONT_2, 10, sTrainerCardProfilePhraseXPositions[sTrainerCardDataPtr->cardType],
+        AddTextPrinterParameterized3(1, FONT_NORMAL, 10, sTrainerCardProfilePhraseXPositions[sTrainerCardDataPtr->cardType],
             sTrainerCardTextColors, TEXT_SKIP_DRAW, sTrainerCardDataPtr->easyChatProfile[0]);
 
-        AddTextPrinterParameterized3(1, FONT_2, GetStringWidth(FONT_2, sTrainerCardDataPtr->easyChatProfile[0], 0) + 16, sTrainerCardProfilePhraseXPositions[sTrainerCardDataPtr->cardType],
+        AddTextPrinterParameterized3(1, FONT_NORMAL, GetStringWidth(FONT_NORMAL, sTrainerCardDataPtr->easyChatProfile[0], 0) + 16, sTrainerCardProfilePhraseXPositions[sTrainerCardDataPtr->cardType],
             sTrainerCardTextColors, TEXT_SKIP_DRAW, sTrainerCardDataPtr->easyChatProfile[1]);
 
-        AddTextPrinterParameterized3(1, FONT_2, 10, sTrainerCardProfilePhraseYPositions[sTrainerCardDataPtr->cardType],
+        AddTextPrinterParameterized3(1, FONT_NORMAL, 10, sTrainerCardProfilePhraseYPositions[sTrainerCardDataPtr->cardType],
             sTrainerCardTextColors, TEXT_SKIP_DRAW, sTrainerCardDataPtr->easyChatProfile[2]);
 
-        AddTextPrinterParameterized3(1, FONT_2, GetStringWidth(FONT_2, sTrainerCardDataPtr->easyChatProfile[2], 0) + 16, sTrainerCardProfilePhraseYPositions[sTrainerCardDataPtr->cardType],
+        AddTextPrinterParameterized3(1, FONT_NORMAL, GetStringWidth(FONT_NORMAL, sTrainerCardDataPtr->easyChatProfile[2], 0) + 16, sTrainerCardProfilePhraseYPositions[sTrainerCardDataPtr->cardType],
             sTrainerCardTextColors, TEXT_SKIP_DRAW, sTrainerCardDataPtr->easyChatProfile[3]);    
     }
 }
@@ -1428,7 +1428,7 @@ static void LoadMonIconGfx(void)
         break;
     }
 
-    LoadPalette(sTrainerCardDataPtr->monIconPals, 80, 192);
+    LoadPalette(sTrainerCardDataPtr->monIconPals, BG_PLTT_ID(5), sizeof(sTrainerCardDataPtr->monIconPals));
     for (i = 0; i < PARTY_SIZE; i++)
     {
         LoadBgTiles(3, GetMonIconTiles(sTrainerCardDataPtr->trainerCard.monSpecies[i], 0), 512, 16 * i + 32);
@@ -1454,10 +1454,10 @@ static void PrintStickersOnCard(void)
 
 static void LoadStickerGfx(void)
 {
-    LoadPalette(sTrainerCardStickerPal1, 176, 32);
-    LoadPalette(sTrainerCardStickerPal2, 192, 32);
-    LoadPalette(sTrainerCardStickerPal3, 208, 32);
-    LoadPalette(sTrainerCardStickerPal4, 224, 32);
+    LoadPalette(sTrainerCardStickerPal1, BG_PLTT_ID(11), sizeof(sTrainerCardStickerPal1));
+    LoadPalette(sTrainerCardStickerPal2, BG_PLTT_ID(12), sizeof(sTrainerCardStickerPal2));
+    LoadPalette(sTrainerCardStickerPal3, BG_PLTT_ID(13), sizeof(sTrainerCardStickerPal3));
+    LoadPalette(sTrainerCardStickerPal4, BG_PLTT_ID(14), sizeof(sTrainerCardStickerPal4));
     LoadBgTiles(3, sTrainerCardDataPtr->stickerTiles, 1024, 128);
 }
 
@@ -1479,24 +1479,24 @@ static bool8 SetTrainerCardBgsAndPals(void)
         break;
     case 2:
         if (sTrainerCardDataPtr->cardType == CARD_TYPE_RSE)
-            LoadPalette(sHoennTrainerCardStarPals[sTrainerCardDataPtr->trainerCard.rse.stars], 0, 96);
+            LoadPalette(sHoennTrainerCardStarPals[sTrainerCardDataPtr->trainerCard.rse.stars], BG_PLTT_ID(0), 3 * PLTT_SIZE_4BPP);
         else
-            LoadPalette(sKantoTrainerCardStarPals[sTrainerCardDataPtr->trainerCard.rse.stars], 0, 96);
+            LoadPalette(sKantoTrainerCardStarPals[sTrainerCardDataPtr->trainerCard.rse.stars], BG_PLTT_ID(0), 3 * PLTT_SIZE_4BPP);
         break;
     case 3:
         if (sTrainerCardDataPtr->cardType == CARD_TYPE_RSE)
-            LoadPalette(sHoennTrainerCardBadges_Pal, 48, 32);
+            LoadPalette(sHoennTrainerCardBadges_Pal, BG_PLTT_ID(3), sizeof(sHoennTrainerCardBadges_Pal));
         else
-            LoadPalette(sKantoTrainerCardBadges_Pal, 48, 32);
+            LoadPalette(sKantoTrainerCardBadges_Pal, BG_PLTT_ID(3), sizeof(sKantoTrainerCardBadges_Pal));
         break;
     case 4:
         if (sTrainerCardDataPtr->cardType == CARD_TYPE_RSE && sTrainerCardDataPtr->trainerCard.rse.gender != MALE)
-            LoadPalette(sHoennTrainerCardFemaleBackground_Pal, 16, 32);
+            LoadPalette(sHoennTrainerCardFemaleBackground_Pal, BG_PLTT_ID(1), sizeof(sHoennTrainerCardFemaleBackground_Pal));
         else if (sTrainerCardDataPtr->trainerCard.rse.gender != MALE)
-            LoadPalette(sKantoTrainerCardFemaleBackground_Pal, 16, 32);
+            LoadPalette(sKantoTrainerCardFemaleBackground_Pal, BG_PLTT_ID(1), sizeof(sKantoTrainerCardFemaleBackground_Pal));
         break;
     case 5:
-        LoadPalette(sTrainerCardGold_Pal, 64, 32);
+        LoadPalette(sTrainerCardGold_Pal, BG_PLTT_ID(4), sizeof(sTrainerCardGold_Pal));
         break;
     case 6:
         SetBgTilemapBuffer(0, sTrainerCardDataPtr->cardTilemapBuffer);
@@ -1927,7 +1927,7 @@ static void CreateTrainerCardTrainerPic(void)
         }
         else
         {
-            CreateTrainerCardTrainerPicSprite(PlayerGenderToFrontTrainerPicId_Debug(sTrainerCardDataPtr->trainerCard.rse.gender, TRUE), TRUE,
+            CreateTrainerCardTrainerPicSprite(PlayerGenderToFrontTrainerPicId(sTrainerCardDataPtr->trainerCard.rse.gender, TRUE), TRUE,
                     sTrainerPicOffsets[sTrainerCardDataPtr->cardType][sTrainerCardDataPtr->trainerCard.rse.gender][0],
                     sTrainerPicOffsets[sTrainerCardDataPtr->cardType][sTrainerCardDataPtr->trainerCard.rse.gender][1],
                     8, 2);

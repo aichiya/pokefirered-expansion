@@ -165,11 +165,6 @@
 #define METATILE_PokemonMansion_Wall_EndPost_Bottom                      0x2AD
 #define METATILE_PokemonMansion_Wall_EndPost_Mid                         0x2A5
 
-// gTileset_RB
-#define METATILE_RB_Overworld_Door         0x299
-#define METATILE_RB_Overworld_Plain_Grass  0x28B
-#define METATILE_RB_Plant_WildEncounters   0x373
-
 // gTileset_SSAnne
 #define METATILE_SSAnne_Door  0x281
 
@@ -259,8 +254,8 @@
 #define METATILE_TrainerTower_RoofElevatorDoor       0x356
 
 // gTileset_VermilionCity
-#define METATILE_VermilionCity_Door                0x29E
-#define METATILE_VermilionCity_PokemonFanClubDoor  0x2E1
+#define METATILE_VermilionCity_Door        0x29E
+#define METATILE_VermilionCity_SSAnneWarp  0x2E1
 
 // gTileset_VermilionGym
 #define METATILE_VermilionGym_Beam_MidBottom                     0x28D

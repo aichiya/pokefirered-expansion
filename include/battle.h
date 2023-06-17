@@ -29,11 +29,6 @@
    (!(gBattleMons[battler].status2 & STATUS2_TRANSFORMED)           \
  && !(gDisableStructs[battler].mimickedMoves & gBitTable[moveSlot]))
 
-#define TRAINER_OPPONENT_3FE        0x3FE
-#define TRAINER_OPPONENT_C00        0xC00
-#define TRAINER_LINK_OPPONENT       0x800
-#define SECRET_BASE_OPPONENT        0x400
-
 // Battle Actions
 // These determine what each battler will do in a turn
 #define B_ACTION_USE_MOVE                  0
@@ -93,7 +88,7 @@ struct TrainerMonNoItemCustomMoves
     u16 iv;
     u8 lvl;
     u16 species;
-    u16 moves[4];
+    u16 moves[MAX_MON_MOVES];
 };
 
 struct TrainerMonItemCustomMoves
@@ -102,8 +97,13 @@ struct TrainerMonItemCustomMoves
     u8 lvl;
     u16 species;
     u16 heldItem;
-    u16 moves[4];
+    u16 moves[MAX_MON_MOVES];
 };
+
+#define NO_ITEM_DEFAULT_MOVES(party) { .NoItemDefaultMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = 0
+#define NO_ITEM_CUSTOM_MOVES(party) { .NoItemCustomMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET
+#define ITEM_DEFAULT_MOVES(party) { .ItemDefaultMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_HELD_ITEM
+#define ITEM_CUSTOM_MOVES(party) { .ItemCustomMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM
 
 union TrainerMonPtr
 {
@@ -120,7 +120,7 @@ struct Trainer
     /*0x02*/ u8 encounterMusic_gender; // last bit is gender
     /*0x03*/ u8 trainerPic;
     /*0x04*/ u8 trainerName[12];
-    /*0x10*/ u16 items[4];
+    /*0x10*/ u16 items[MAX_TRAINER_ITEMS];
     /*0x18*/ bool8 doubleBattle;
     /*0x1C*/ u32 aiFlags;
     /*0x20*/ u8 partySize;
@@ -188,7 +188,7 @@ struct ProtectStruct
     u32 confusionSelfDmg:1;
     u32 targetNotAffected:1;
     u32 chargingTurn:1;
-    u32 fleeFlag:2; // for RunAway and Smoke Ball
+    u32 fleeType:2; // for RunAway and Smoke Ball
     u32 usedImprisonedMove:1;
     u32 loveImmobility:1;
     u32 usedDisabledMove:1;
@@ -361,7 +361,7 @@ struct BattleResults
 
 extern struct BattleResults gBattleResults;
 
-struct LinkPartnerHeader
+struct LinkBattlerHeader
 {
     u8 versionSignatureLo;
     u8 versionSignatureHi;
@@ -402,8 +402,8 @@ struct BattleStruct
     u8 runTries;
     u8 caughtMonNick[POKEMON_NAME_LENGTH + 1];
     u8 field_78; // unused
-    u8 safariGoNearCounter;
-    u8 safariPkblThrowCounter;
+    u8 safariRockThrowCounter;
+    u8 safariBaitThrowCounter;
     u8 safariEscapeFactor;
     u8 safariCatchFactor;
     u8 linkBattleVsSpriteId_V;
@@ -452,7 +452,7 @@ struct BattleStruct
     u8 field_182;
     // align 4
     union {
-        struct LinkPartnerHeader linkPartnerHeader;
+        struct LinkBattlerHeader linkBattlerHeader;
         struct MultiBattlePokemonTx multiBattleMons[3];
     } multiBuffer;
     u8 padding_1E4[0x1C];
@@ -493,6 +493,8 @@ extern struct BattleStruct *gBattleStruct;
 
 #define SET_STATCHANGER(statId, stage, goesDown)(gBattleScripting.statChanger = (statId) + (stage << 4) + (goesDown << 7))
 
+// NOTE: The members of this struct have hard-coded offsets
+//       in include/constants/battle_script_commands.h
 struct BattleScripting
 {
     s32 painSplitHp;
@@ -518,17 +520,7 @@ struct BattleScripting
     u8 pursuitDoublesAttacker;
     u8 reshowMainState;
     u8 reshowHelperState;
-    u8 field_23;
-};
-
-enum
-{
-    BACK_PIC_RED,
-    BACK_PIC_LEAF,
-    BACK_PIC_RS_BRENDAN,
-    BACK_PIC_RS_MAY,
-    BACK_PIC_POKEDUDE,
-    BACK_PIC_OLDMAN
+    u8 levelUpHP;
 };
 
 struct BattleSpriteInfo
@@ -591,7 +583,7 @@ struct BattleBarInfo
     u8 healthboxSpriteId;
     s32 maxValue;
     s32 oldValue;
-    s32 receivedValue;
+    s32 receivedValue; // if positive/negative, fills the bar to the left/right respectively
     s32 currValue;
 };
 
@@ -681,12 +673,12 @@ extern u8 gActionSelectionCursor[MAX_BATTLERS_COUNT];
 extern void (*gPreBattleCallback1)(void);
 extern bool8 gDoingBattleAnim;
 extern struct PokedudeBattlerState *gPokedudeBattlerStates[MAX_BATTLERS_COUNT];
-extern u8 *gBattleAnimMons_BgTilesBuffer;
-extern u8 *gBattleAnimMons_BgTilemapBuffer;
+extern u8 *gBattleAnimBgTileBuffer;
+extern u8 *gBattleAnimBgTilemapBuffer;
 extern void (*gBattleMainFunc)(void);
 extern u8 gMoveSelectionCursor[MAX_BATTLERS_COUNT];
-extern u32 gUnknown_2022B54;
-extern u8 gUnknown_2023DDC;
+extern u32 gUnusedFirstBattleVar1;
+extern u8 gUnusedFirstBattleVar2;
 extern u8 gBattlerAttacker;
 extern u8 gEffectBattler;
 extern u8 gMultiHitCounter;

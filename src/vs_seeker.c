@@ -624,7 +624,7 @@ static void Task_ResetObjectsRematchWantedState(u8 taskId)
     {
         DestroyTask(taskId);
         StopPlayerAvatar();
-        EnableBothScriptContexts();
+        ScriptContext_Enable();
     }
 }
 
@@ -638,11 +638,11 @@ void VsSeekerResetObjectMovementAfterChargeComplete(void)
 
     for (i = 0; i < gMapHeader.events->objectEventCount; i++)
     {
-        if ((templates[i].trainerType == TRAINER_TYPE_NORMAL
-          || templates[i].trainerType == TRAINER_TYPE_BURIED) 
-         && (templates[i].movementType == MOVEMENT_TYPE_VS_SEEKER_4D
-          || templates[i].movementType == MOVEMENT_TYPE_VS_SEEKER_4E
-          || templates[i].movementType == MOVEMENT_TYPE_VS_SEEKER_4F))
+        if ((templates[i].objUnion.normal.trainerType == TRAINER_TYPE_NORMAL
+          || templates[i].objUnion.normal.trainerType == TRAINER_TYPE_BURIED) 
+         && (templates[i].objUnion.normal.movementType == MOVEMENT_TYPE_RAISE_HAND_AND_STOP
+          || templates[i].objUnion.normal.movementType == MOVEMENT_TYPE_RAISE_HAND_AND_JUMP
+          || templates[i].objUnion.normal.movementType == MOVEMENT_TYPE_RAISE_HAND_AND_SWIM))
         {
             movementType = GetRandomFaceDirectionMovementType();
             TryGetObjectEventIdByLocalIdAndMap(templates[i].localId, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, &objEventId);
@@ -651,7 +651,7 @@ void VsSeekerResetObjectMovementAfterChargeComplete(void)
             {
                 SetTrainerMovementType(objectEvent, movementType);
             }
-            templates[i].movementType = movementType;
+            templates[i].objUnion.normal.movementType = movementType;
         }
     }
 }
@@ -700,7 +700,9 @@ static void ResetMovementOfRematchableTrainers(void)
     for (i = 0; i < OBJECT_EVENTS_COUNT; i++)
     {
         struct ObjectEvent * objectEvent = &gObjectEvents[i];
-        if (objectEvent->movementType == MOVEMENT_TYPE_VS_SEEKER_4D || objectEvent->movementType == MOVEMENT_TYPE_VS_SEEKER_4E || objectEvent->movementType == MOVEMENT_TYPE_VS_SEEKER_4F)
+        if (objectEvent->movementType == MOVEMENT_TYPE_RAISE_HAND_AND_STOP
+                || objectEvent->movementType == MOVEMENT_TYPE_RAISE_HAND_AND_JUMP
+                || objectEvent->movementType == MOVEMENT_TYPE_RAISE_HAND_AND_SWIM)
         {
             u8 movementType = GetRandomFaceDirectionMovementType();
             if (objectEvent->active && gSprites[objectEvent->spriteId].data[0] == i)
@@ -749,12 +751,12 @@ void Task_VsSeeker_0(u8 taskId)
     if (respval == VSSEEKER_NOT_CHARGED)
     {
         Free(sVsSeeker);
-        DisplayItemMessageOnField(taskId, FONT_2, VSSeeker_Text_BatteryNotChargedNeedXSteps, Task_ItemUse_CloseMessageBoxAndReturnToField_VsSeeker);
+        DisplayItemMessageOnField(taskId, FONT_NORMAL, VSSeeker_Text_BatteryNotChargedNeedXSteps, Task_ItemUse_CloseMessageBoxAndReturnToField_VsSeeker);
     }
     else if (respval == VSSEEKER_NO_ONE_IN_RANGE)
     {
         Free(sVsSeeker);
-        DisplayItemMessageOnField(taskId, FONT_2, VSSeeker_Text_NoTrainersWithinRange, Task_ItemUse_CloseMessageBoxAndReturnToField_VsSeeker);
+        DisplayItemMessageOnField(taskId, FONT_NORMAL, VSSeeker_Text_NoTrainersWithinRange, Task_ItemUse_CloseMessageBoxAndReturnToField_VsSeeker);
     }
     else if (respval == VSSEEKER_CAN_USE)
     {
@@ -805,7 +807,7 @@ static void GatherNearbyTrainerInfo(void)
 
     for (objectEventIdx = 0; objectEventIdx < gMapHeader.events->objectEventCount; objectEventIdx++)
     {
-        if (templates[objectEventIdx].trainerType == TRAINER_TYPE_NORMAL || templates[objectEventIdx].trainerType == TRAINER_TYPE_BURIED)
+        if (templates[objectEventIdx].objUnion.normal.trainerType == TRAINER_TYPE_NORMAL || templates[objectEventIdx].objUnion.normal.trainerType == TRAINER_TYPE_BURIED)
         {
             sVsSeeker->trainerInfo[vsSeekerObjectIdx].script = templates[objectEventIdx].script;
             sVsSeeker->trainerInfo[vsSeekerObjectIdx].trainerIdx = GetTrainerFlagFromScript(templates[objectEventIdx].script);
@@ -827,7 +829,7 @@ static void Task_VsSeeker_3(u8 taskId)
     {
         if (sVsSeeker->responseCode == VSSEEKER_RESPONSE_NO_RESPONSE)
         {
-            DisplayItemMessageOnField(taskId, FONT_2, VSSeeker_Text_TrainersNotReady, Task_ItemUse_CloseMessageBoxAndReturnToField_VsSeeker);
+            DisplayItemMessageOnField(taskId, FONT_NORMAL, VSSeeker_Text_TrainersNotReady, Task_ItemUse_CloseMessageBoxAndReturnToField_VsSeeker);
         }
         else
         {
@@ -835,7 +837,7 @@ static void Task_VsSeeker_3(u8 taskId)
                 StartAllRespondantIdleMovements();
             ClearDialogWindowAndFrame(0, TRUE);
             ClearPlayerHeldMovementAndUnfreezeObjectEvents();
-            ScriptContext2_Disable();
+            UnlockPlayerFieldControls();
             DestroyTask(taskId);
         }
         Free(sVsSeeker);
@@ -939,7 +941,9 @@ void ClearRematchStateByTrainerId(void)
 
         for (i = 0; i < gMapHeader.events->objectEventCount; i++)
         {
-            if ((objectEventTemplates[i].trainerType == TRAINER_TYPE_NORMAL || objectEventTemplates[i].trainerType == TRAINER_TYPE_BURIED) && vsSeekerDataIdx == LookupVsSeekerOpponentInArray(sVsSeekerData, GetTrainerFlagFromScript(objectEventTemplates[i].script)))
+            if ((objectEventTemplates[i].objUnion.normal.trainerType == TRAINER_TYPE_NORMAL 
+              || objectEventTemplates[i].objUnion.normal.trainerType == TRAINER_TYPE_BURIED)
+              && vsSeekerDataIdx == LookupVsSeekerOpponentInArray(sVsSeekerData, GetTrainerFlagFromScript(objectEventTemplates[i].script)))
             {
                 struct ObjectEvent *objectEvent;
 
@@ -1142,13 +1146,13 @@ static u8 GetRunningBehaviorFromGraphicsId(u8 graphicsId)
         case OBJ_EVENT_GFX_BLACKBELT:
         case OBJ_EVENT_GFX_HIKER:
         case OBJ_EVENT_GFX_SAILOR:
-            return MOVEMENT_TYPE_VS_SEEKER_4E;
+            return MOVEMENT_TYPE_RAISE_HAND_AND_JUMP;
         case OBJ_EVENT_GFX_TUBER_M_WATER:
         case OBJ_EVENT_GFX_SWIMMER_M_WATER:
         case OBJ_EVENT_GFX_SWIMMER_F_WATER:
-            return MOVEMENT_TYPE_VS_SEEKER_4F;
+            return MOVEMENT_TYPE_RAISE_HAND_AND_SWIM;
         default:
-            return MOVEMENT_TYPE_VS_SEEKER_4D;
+            return MOVEMENT_TYPE_RAISE_HAND_AND_STOP;
     }
 }
 

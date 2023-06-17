@@ -197,7 +197,7 @@ const struct BattleTowerPokemonTemplate gBattleTowerLevel100Mons[] =
 	},
 	{
 		.species = SPECIES_MUK,
-		.heldItem = BATTLE_TOWER_ITEM_BERRY,
+		.heldItem = BATTLE_TOWER_ITEM_ORAN_BERRY,
 		.teamFlags = 0x01,
 		.moves = {
 			MOVE_POISON_GAS,

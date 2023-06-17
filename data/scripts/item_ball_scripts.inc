@@ -1,9 +1,9 @@
-Route2_EventScript_ItemHP_Up::
-	finditem ITEM_HP_UP
+Route2_EventScript_ItemEther::
+	finditem ITEM_ETHER
 	end
 
-Route2_EventScript_ItemMoonStone::
-	finditem ITEM_MOON_STONE
+Route2_EventScript_ItemParalyzeHeal::
+	finditem ITEM_PARALYZE_HEAL
 	end
 
 ViridianForest_EventScript_ItemPokeBall::
@@ -18,12 +18,12 @@ ViridianForest_EventScript_ItemPotion::
 	finditem ITEM_POTION
 	end
 
-MtMoon_1F_EventScript_ItemPotion2::
-	finditem ITEM_POTION
+MtMoon_1F_EventScript_ItemParalyzeHeal::
+	finditem ITEM_PARALYZE_HEAL
 	end
 
-MtMoon_1F_EventScript_ItemTM12::
-	finditem ITEM_TM12
+MtMoon_1F_EventScript_ItemTM09::
+	finditem ITEM_TM09
 	end
 
 MtMoon_1F_EventScript_ItemPotion::
@@ -42,24 +42,24 @@ MtMoon_1F_EventScript_ItemMoonStone::
 	finditem ITEM_MOON_STONE
 	end
 
-MtMoon_B2F_EventScript_ItemHP_Up::
-	finditem ITEM_HP_UP
+MtMoon_B2F_EventScript_ItemStarPiece::
+	finditem ITEM_STAR_PIECE
 	end
 
-MtMoon_B2F_EventScript_ItemTM01::
-	finditem ITEM_TM01
+MtMoon_B2F_EventScript_ItemTM46::
+	finditem ITEM_TM46
 	end
 
-Route4_EventScript_ItemTM04::
-	finditem ITEM_TM04
+Route4_EventScript_ItemTM05::
+	finditem ITEM_TM05
 	end
 
 Route24_EventScript_ItemTM45::
 	finditem ITEM_TM45
 	end
 
-Route25_EventScript_ItemTM19::
-	finditem ITEM_TM19
+Route25_EventScript_ItemTM43::
+	finditem ITEM_TM43
 	end
 
 SSAnne_1F_Room2_EventScript_ItemTM31::
@@ -90,8 +90,8 @@ SSAnne_Kitchen_EventScript_ItemGreatBall::
 	finditem ITEM_GREAT_BALL
 	end
 
-Route9_EventScript_ItemTM30::
-	finditem ITEM_TM30
+Route9_EventScript_ItemTM40::
+	finditem ITEM_TM40
 	end
 
 RocketHideout_B1F_EventScript_ItemEscapeRope::
@@ -166,16 +166,16 @@ PokemonTower_6F_EventScript_ItemXAccuracy::
 	finditem ITEM_X_ACCURACY
 	end
 
-Route12_EventScript_ItemTM16::
-	finditem ITEM_TM16
+Route12_EventScript_ItemTM48::
+	finditem ITEM_TM48
 	end
 
 Route12_EventScript_ItemIron::
 	finditem ITEM_IRON
 	end
 
-Route15_EventScript_ItemTM20::
-	finditem ITEM_TM20
+Route15_EventScript_ItemTM18::
+	finditem ITEM_TM18
 	end
 
 SafariZone_Center_EventScript_ItemNugget::
@@ -294,8 +294,8 @@ PowerPlant_EventScript_ItemThunderStone::
 	finditem ITEM_THUNDER_STONE
 	end
 
-PowerPlant_EventScript_ItemHP_Up::
-	finditem ITEM_HP_UP
+PowerPlant_EventScript_ItemElixir::
+	finditem ITEM_ELIXIR
 	end
 
 PokemonMansion_1F_EventScript_ItemCarbos::
