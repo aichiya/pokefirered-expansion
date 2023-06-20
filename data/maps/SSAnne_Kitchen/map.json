@@ -140,7 +140,7 @@
       "y": 9,
       "elevation": 0,
       "item": "ITEM_CHESTO_BERRY",
-      "flag": "HIDDEN_ITEM_SSANNE_KITCHEN_CHESTO_BERRY",
+      "flag": "FLAG_HIDDEN_ITEM_SSANNE_KITCHEN_CHESTO_BERRY",
       "quantity": 1,
       "underfoot": false
     },
@@ -150,7 +150,7 @@
       "y": 5,
       "elevation": 0,
       "item": "ITEM_PECHA_BERRY",
-      "flag": "HIDDEN_ITEM_SSANNE_KITCHEN_PECHA_BERRY",
+      "flag": "FLAG_HIDDEN_ITEM_SSANNE_KITCHEN_PECHA_BERRY",
       "quantity": 1,
       "underfoot": false
     },
@@ -160,7 +160,7 @@
       "y": 7,
       "elevation": 0,
       "item": "ITEM_CHERI_BERRY",
-      "flag": "HIDDEN_ITEM_SSANNE_KITCHEN_CHERI_BERRY",
+      "flag": "FLAG_HIDDEN_ITEM_SSANNE_KITCHEN_CHERI_BERRY",
       "quantity": 1,
       "underfoot": false
     }

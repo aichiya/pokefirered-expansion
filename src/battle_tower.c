@@ -59,7 +59,7 @@ static const u16 sBattleTowerHeldItems[] = {
     ITEM_NONE,
     ITEM_KINGS_ROCK,
     ITEM_SITRUS_BERRY,
-    ITEM_BERRY,
+    ITEM_ORAN_BERRY,
     ITEM_CHESTO_BERRY,
     ITEM_HARD_STONE,
     ITEM_FOCUS_BAND,

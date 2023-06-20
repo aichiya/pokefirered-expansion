@@ -43,7 +43,7 @@
       "y": 36,
       "elevation": 3,
       "item": "ITEM_BURN_HEAL",
-      "flag": "HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_BURN_HEAL",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_BURN_HEAL",
       "quantity": 1,
       "underfoot": false
     },
@@ -53,7 +53,7 @@
       "y": 4,
       "elevation": 3,
       "item": "ITEM_AWAKENING",
-      "flag": "HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_AWAKENING",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_AWAKENING",
       "quantity": 1,
       "underfoot": false
     }

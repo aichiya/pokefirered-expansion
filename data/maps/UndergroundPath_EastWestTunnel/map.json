@@ -43,7 +43,7 @@
       "y": 2,
       "elevation": 3,
       "item": "ITEM_POTION",
-      "flag": "HIDDEN_ITEM_UNDERGROUND_PATH_EAST_WEST_TUNNEL_POTION",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERGROUND_PATH_EAST_WEST_TUNNEL_POTION",
       "quantity": 1,
       "underfoot": false
     },
@@ -53,7 +53,7 @@
       "y": 5,
       "elevation": 3,
       "item": "ITEM_PARALYZE_HEAL",
-      "flag": "HIDDEN_ITEM_UNDERGROUND_PATH_EAST_WEST_TUNNEL_PARALYZE_HEAL",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERGROUND_PATH_EAST_WEST_TUNNEL_PARALYZE_HEAL",
       "quantity": 1,
       "underfoot": false
     }

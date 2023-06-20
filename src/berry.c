@@ -199,7 +199,7 @@ const struct Berry gBerries[] = {
             .smoothness = 20
         },
 
-    [ITEM_BERRY - FIRST_BERRY_INDEX] =
+    [ITEM_ORAN_BERRY - FIRST_BERRY_INDEX] =
         {
             .name = _("ORAN"),
             .firmness = BERRY_FIRMNESS_SUPER_HARD,

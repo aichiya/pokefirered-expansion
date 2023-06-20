@@ -138,28 +138,28 @@
       "y": 31,
       "elevation": 3,
       "dest_map": "MAP_VICTORY_ROAD_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 15,
       "y": 31,
       "elevation": 3,
       "dest_map": "MAP_VICTORY_ROAD_2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 8,
       "y": 139,
       "elevation": 3,
       "dest_map": "MAP_ROUTE22_NORTH_ENTRANCE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 9,
       "y": 139,
       "elevation": 0,
       "dest_map": "MAP_ROUTE22_NORTH_ENTRANCE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -549,7 +549,7 @@
       "y": 44,
       "elevation": 0,
       "item": "ITEM_FULL_RESTORE",
-      "flag": "HIDDEN_ITEM_ROUTE23_FULL_RESTORE",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE23_FULL_RESTORE",
       "quantity": 1,
       "underfoot": false
     },
@@ -559,7 +559,7 @@
       "y": 70,
       "elevation": 0,
       "item": "ITEM_ULTRA_BALL",
-      "flag": "HIDDEN_ITEM_ROUTE23_ULTRA_BALL",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE23_ULTRA_BALL",
       "quantity": 1,
       "underfoot": false
     },
@@ -569,7 +569,7 @@
       "y": 89,
       "elevation": 3,
       "item": "ITEM_MAX_ETHER",
-      "flag": "HIDDEN_ITEM_ROUTE23_MAX_ETHER",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE23_MAX_ETHER",
       "quantity": 1,
       "underfoot": false
     },

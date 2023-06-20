@@ -151,7 +151,7 @@
       "y": 3,
       "elevation": 3,
       "item": "ITEM_GREAT_BALL",
-      "flag": "HIDDEN_ITEM_ROUTE4_GREAT_BALL",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE4_GREAT_BALL",
       "quantity": 1,
       "underfoot": false
     }

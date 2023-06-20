@@ -268,7 +268,7 @@
       "y": 62,
       "elevation": 3,
       "item": "ITEM_LEFTOVERS",
-      "flag": "HIDDEN_ITEM_ROUTE12_LEFTOVERS",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE12_LEFTOVERS",
       "quantity": 1,
       "underfoot": true
     },
@@ -278,7 +278,7 @@
       "y": 63,
       "elevation": 3,
       "item": "ITEM_HYPER_POTION",
-      "flag": "HIDDEN_ITEM_ROUTE12_HYPER_POTION",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE12_HYPER_POTION",
       "quantity": 1,
       "underfoot": false
     }

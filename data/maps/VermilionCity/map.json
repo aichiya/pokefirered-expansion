@@ -304,7 +304,7 @@
       "y": 5,
       "elevation": 3,
       "item": "ITEM_MAX_ETHER",
-      "flag": "HIDDEN_ITEM_VERMILION_CITY_MAX_ETHER",
+      "flag": "FLAG_HIDDEN_ITEM_VERMILION_CITY_MAX_ETHER",
       "quantity": 1,
       "underfoot": false
     }

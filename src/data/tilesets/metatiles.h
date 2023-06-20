@@ -201,3 +201,93 @@ const u32 gMetatileAttributes_PokemonLeague[] = INCBIN_U32("data/tilesets/second
 
 const u16 gMetatiles_HallOfFame[] = INCBIN_U16("data/tilesets/secondary/hall_of_fame/metatiles.bin");
 const u32 gMetatileAttributes_HallOfFame[] = INCBIN_U32("data/tilesets/secondary/hall_of_fame/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Bicycle[] = INCBIN_U16("data/tilesets/secondary/rb_bicycle/metatiles.bin");
+const u32 gMetatileAttributes_RB_Bicycle[] = INCBIN_U32("data/tilesets/secondary/rb_bicycle/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Bill[] = INCBIN_U16("data/tilesets/secondary/rb_bill/metatiles.bin");
+const u32 gMetatileAttributes_RB_Bill[] = INCBIN_U32("data/tilesets/secondary/rb_bill/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Cavern[] = INCBIN_U16("data/tilesets/secondary/rb_cavern/metatiles.bin");
+const u32 gMetatileAttributes_RB_Cavern[] = INCBIN_U32("data/tilesets/secondary/rb_cavern/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Condo[] = INCBIN_U16("data/tilesets/secondary/rb_condo/metatiles.bin");
+const u32 gMetatileAttributes_RB_Condo[] = INCBIN_U32("data/tilesets/secondary/rb_condo/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Department[] = INCBIN_U16("data/tilesets/secondary/rb_department/metatiles.bin");
+const u32 gMetatileAttributes_RB_Department[] = INCBIN_U32("data/tilesets/secondary/rb_department/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Forest[] = INCBIN_U16("data/tilesets/secondary/rb_forest/metatiles.bin");
+const u32 gMetatileAttributes_RB_Forest[] = INCBIN_U32("data/tilesets/secondary/rb_forest/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Generator[] = INCBIN_U16("data/tilesets/secondary/rb_generator/metatiles.bin");
+const u32 gMetatileAttributes_RB_Generator[] = INCBIN_U32("data/tilesets/secondary/rb_generator/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_House[] = INCBIN_U16("data/tilesets/secondary/rb_house/metatiles.bin");
+const u32 gMetatileAttributes_RB_House[] = INCBIN_U32("data/tilesets/secondary/rb_house/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Lab[] = INCBIN_U16("data/tilesets/secondary/rb_lab/metatiles.bin");
+const u32 gMetatileAttributes_RB_Lab[] = INCBIN_U32("data/tilesets/secondary/rb_lab/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Museum[] = INCBIN_U16("data/tilesets/secondary/rb_museum/metatiles.bin");
+const u32 gMetatileAttributes_RB_Museum[] = INCBIN_U32("data/tilesets/secondary/rb_museum/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Overworld[] = INCBIN_U16("data/tilesets/secondary/rb_overworld/metatiles.bin");
+const u32 gMetatileAttributes_RB_Overworld[] = INCBIN_U32("data/tilesets/secondary/rb_overworld/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Overworld_Celadon[] = INCBIN_U16("data/tilesets/secondary/rb_overworld_celadon/metatiles.bin");
+const u32 gMetatileAttributes_RB_Overworld_Celadon[] = INCBIN_U32("data/tilesets/secondary/rb_overworld_celadon/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Overworld_Cerulean[] = INCBIN_U16("data/tilesets/secondary/rb_overworld_cerulean/metatiles.bin");
+const u32 gMetatileAttributes_RB_Overworld_Cerulean[] = INCBIN_U32("data/tilesets/secondary/rb_overworld_cerulean/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Overworld_Cinnebar[] = INCBIN_U16("data/tilesets/secondary/rb_overworld_cinnebar/metatiles.bin");
+const u32 gMetatileAttributes_RB_Overworld_Cinnebar[] = INCBIN_U32("data/tilesets/secondary/rb_overworld_cinnebar/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Overworld_Fuchsia[] = INCBIN_U16("data/tilesets/secondary/rb_overworld_fuchsia/metatiles.bin");
+const u32 gMetatileAttributes_RB_Overworld_Fuchsia[] = INCBIN_U32("data/tilesets/secondary/rb_overworld_fuchsia/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Overworld_Lavender[] = INCBIN_U16("data/tilesets/secondary/rb_overworld_lavender/metatiles.bin");
+const u32 gMetatileAttributes_RB_Overworld_Lavender[] = INCBIN_U32("data/tilesets/secondary/rb_overworld_lavender/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Overworld_Pallet[] = INCBIN_U16("data/tilesets/secondary/rb_overworld_pallet/metatiles.bin");
+const u32 gMetatileAttributes_RB_Overworld_Pallet[] = INCBIN_U32("data/tilesets/secondary/rb_overworld_pallet/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Overworld_Pewter[] = INCBIN_U16("data/tilesets/secondary/rb_overworld_pewter/metatiles.bin");
+const u32 gMetatileAttributes_RB_Overworld_Pewter[] = INCBIN_U32("data/tilesets/secondary/rb_overworld_pewter/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Overworld_Saffron[] = INCBIN_U16("data/tilesets/secondary/rb_overworld_saffron/metatiles.bin");
+const u32 gMetatileAttributes_RB_Overworld_Saffron[] = INCBIN_U32("data/tilesets/secondary/rb_overworld_saffron/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Overworld_Vermilion[] = INCBIN_U16("data/tilesets/secondary/rb_overworld_vermilion/metatiles.bin");
+const u32 gMetatileAttributes_RB_Overworld_Vermilion[] = INCBIN_U32("data/tilesets/secondary/rb_overworld_vermilion/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Overworld_Viridian[] = INCBIN_U16("data/tilesets/secondary/rb_overworld_viridian/metatiles.bin");
+const u32 gMetatileAttributes_RB_Overworld_Viridian[] = INCBIN_U32("data/tilesets/secondary/rb_overworld_viridian/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Plant[] = INCBIN_U16("data/tilesets/secondary/rb_plant/metatiles.bin");
+const u32 gMetatileAttributes_RB_Plant[] = INCBIN_U32("data/tilesets/secondary/rb_plant/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Playerhouse[] = INCBIN_U16("data/tilesets/secondary/rb_playerhouse/metatiles.bin");
+const u32 gMetatileAttributes_RB_Playerhouse[] = INCBIN_U32("data/tilesets/secondary/rb_playerhouse/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Pokecenter[] = INCBIN_U16("data/tilesets/secondary/rb_poke_center/metatiles.bin");
+const u32 gMetatileAttributes_RB_Pokecenter[] = INCBIN_U32("data/tilesets/secondary/rb_poke_center/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Pokemart[] = INCBIN_U16("data/tilesets/secondary/rb_poke_mart/metatiles.bin");
+const u32 gMetatileAttributes_RB_Pokemart[] = INCBIN_U32("data/tilesets/secondary/rb_poke_mart/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Route23[] = INCBIN_U16("data/tilesets/secondary/rb_route_23/metatiles.bin");
+const u32 gMetatileAttributes_RB_Route23[] = INCBIN_U32("data/tilesets/secondary/rb_route_23/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Ship[] = INCBIN_U16("data/tilesets/secondary/rb_ship/metatiles.bin");
+const u32 gMetatileAttributes_RB_Ship[] = INCBIN_U32("data/tilesets/secondary/rb_ship/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_ShipExterior[] = INCBIN_U16("data/tilesets/secondary/rb_ship_exterior/metatiles.bin");
+const u32 gMetatileAttributes_RB_ShipExterior[] = INCBIN_U32("data/tilesets/secondary/rb_ship_exterior/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Tower[] = INCBIN_U16("data/tilesets/secondary/rb_tower/metatiles.bin");
+const u32 gMetatileAttributes_RB_Tower[] = INCBIN_U32("data/tilesets/secondary/rb_tower/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_Underground[] = INCBIN_U16("data/tilesets/secondary/rb_underground/metatiles.bin");
+const u32 gMetatileAttributes_RB_Underground[] = INCBIN_U32("data/tilesets/secondary/rb_underground/metatile_attributes.bin");

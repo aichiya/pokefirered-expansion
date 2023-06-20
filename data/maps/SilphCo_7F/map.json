@@ -348,7 +348,7 @@
       "y": 17,
       "elevation": 0,
       "item": "ITEM_ZINC",
-      "flag": "HIDDEN_ITEM_SILPH_CO_7F_ZINC",
+      "flag": "FLAG_HIDDEN_ITEM_SILPH_CO_7F_ZINC",
       "quantity": 1,
       "underfoot": false
     },

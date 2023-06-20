@@ -21,7 +21,7 @@ ViridianCity_Mart_OnFrame::
 ViridianCity_Mart_EventScript_ParcelScene::
 	lockall
 	textcolor NPC_TEXT_COLOR_MALE
-	applymovement LOCALID_CLERK, Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_CLERK, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	msgbox ViridianCity_Mart_Text_YouCameFromPallet
 	closemessage
@@ -38,7 +38,8 @@ ViridianCity_Mart_EventScript_ParcelScene::
 ViridianCity_Mart_Movement_ApproachCounter::
 	walk_up
 	walk_up
-	walk_left
+	walk_up
+	walk_up
 	walk_in_place_faster_left
 	step_end
 
@@ -65,9 +66,9 @@ ViridianCity_Mart_EventScript_Clerk::
 	.align 2
 ViridianCity_Mart_Items::
 	.2byte ITEM_POKE_BALL
+	.2byte ITEM_POTION
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_BURN_HEAL
 	.2byte ITEM_NONE
 	release
 	end

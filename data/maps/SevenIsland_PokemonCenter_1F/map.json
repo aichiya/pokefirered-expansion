@@ -13,13 +13,13 @@
   "show_map_name": false,
   "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_NURSE",
-      "in_connection": false,
-      "x": 3,
-      "y": 1,
+      "x": 7,
+      "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -30,8 +30,8 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
-      "in_connection": false,
       "x": 11,
       "y": 5,
       "elevation": 3,
@@ -44,10 +44,10 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SAILOR",
-      "in_connection": false,
-      "x": 11,
-      "y": 7,
+      "x": 14,
+      "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -58,8 +58,8 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
-      "in_connection": false,
       "x": 4,
       "y": 4,
       "elevation": 3,
@@ -72,10 +72,10 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "0",
-      "in_connection": false,
-      "x": 1,
-      "y": 3,
+      "x": 3,
+      "y": 1,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 1,
@@ -86,10 +86,10 @@
       "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
     },
     {
+      "type": "object",
       "graphics_id": "0",
-      "in_connection": false,
-      "x": 0,
-      "y": 3,
+      "x": 2,
+      "y": 1,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 1,
@@ -102,24 +102,20 @@
   ],
   "warp_events": [
     {
-      "x": 3,
-      "y": 7,
+      "x": 7,
+      "y": 8,
       "elevation": 3,
       "dest_map": "MAP_SEVEN_ISLAND",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 1,
       "y": 6,
       "elevation": 4,
       "dest_map": "MAP_SEVEN_ISLAND_POKEMON_CENTER_2F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
-  "coord_events": [
-
-  ],
-  "bg_events": [
-
-  ]
+  "coord_events": [],
+  "bg_events": []
 }
