@@ -777,7 +777,7 @@
       "border_width": 1,
       "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_RB_Overworld_Lavender",
+      "secondary_tileset": "gTileset_RB_Overworld",
       "border_filepath": "data/layouts/LavenderTown/border.bin",
       "blockdata_filepath": "data/layouts/LavenderTown/map.bin"
     },
@@ -861,7 +861,7 @@
       "border_width": 1,
       "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_RB_Overworld",
+      "secondary_tileset": "gTileset_RB_Overworld_Pallet",
       "border_filepath": "data/layouts/Route1/border.bin",
       "blockdata_filepath": "data/layouts/Route1/map.bin"
     },
