@@ -15,20 +15,20 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "up",
+      "map": "MAP_FUCHSIA_CITY",
       "offset": -10,
-      "map": "MAP_FUCHSIA_CITY"
+      "direction": "up"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE20",
       "offset": 36,
-      "map": "MAP_ROUTE20"
+      "direction": "left"
     }
   ],
   "object_events": [
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M_LAND",
-      "in_connection": false,
       "x": 13,
       "y": 7,
       "elevation": 3,
@@ -39,11 +39,11 @@
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route19_EventScript_Reece",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M_LAND",
-      "in_connection": false,
       "x": 8,
       "y": 7,
       "elevation": 3,
@@ -54,11 +54,11 @@
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route19_EventScript_Richard",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
-      "in_connection": false,
       "x": 9,
       "y": 11,
       "elevation": 1,
@@ -69,11 +69,11 @@
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route19_EventScript_Tony",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
-      "in_connection": false,
       "x": 13,
       "y": 25,
       "elevation": 1,
@@ -84,11 +84,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route19_EventScript_Matthew",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
-      "in_connection": false,
       "x": 4,
       "y": 27,
       "elevation": 1,
@@ -99,11 +99,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route19_EventScript_Douglas",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
-      "in_connection": false,
       "x": 16,
       "y": 31,
       "elevation": 1,
@@ -114,11 +114,11 @@
       "trainer_sight_or_berry_tree_id": "6",
       "script": "Route19_EventScript_David",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
-      "in_connection": false,
       "x": 9,
       "y": 42,
       "elevation": 1,
@@ -129,11 +129,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route19_EventScript_Axle",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
-      "in_connection": false,
       "x": 11,
       "y": 43,
       "elevation": 1,
@@ -144,11 +144,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route19_EventScript_Alice",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
-      "in_connection": false,
       "x": 10,
       "y": 44,
       "elevation": 1,
@@ -159,11 +159,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route19_EventScript_Connie",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
-      "in_connection": false,
       "x": 8,
       "y": 43,
       "elevation": 1,
@@ -174,7 +174,7 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route19_EventScript_Anya",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     }
   ],
   "warp_events": [

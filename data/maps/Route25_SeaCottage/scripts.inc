@@ -15,7 +15,7 @@ Route25_SeaCottage_OnTransition::
 
 Route25_SeaCottage_EventScript_HideClefairyBill::
 	clearflag FLAG_HIDE_BILL_CLEFAIRY
-	setobjectxyperm LOCALID_BILL_HUMAN, 3, 3
+	setobjectxyperm LOCALID_BILL_HUMAN, 1, 2
 	return
 
 Route25_SeaCottage_EventScript_SetReturnedAfterSSTicket::
@@ -133,11 +133,10 @@ Route25_SeaCottage_Movement_BillWalkToTeleporter::
 	step_end
 
 Route25_SeaCottage_Movement_BillWalkToTeleporterSouth::
-	walk_right
-	walk_up
-	walk_up
 	walk_left
-	walk_in_place_faster_up
+	walk_up
+	walk_up
+	walk_right
 	step_end
 
 Route25_SeaCottage_Movement_BillEnterTeleporter::
@@ -158,14 +157,11 @@ Route25_SeaCottage_EventScript_RunCellSeparator::
 	closemessage
 	clearflag BILL_IN_TELEPORTER
 	setflag FLAG_HELPED_BILL_IN_SEA_COTTAGE
-	special SpawnCameraObject
-	applymovement OBJ_EVENT_ID_CAMERA, Route25_SeaCottage_Movement_CameraPanToTeleporters
 	waitmovement 0
 	delay 35
 	playse SE_PIN
 	waitse
 	setvar VAR_0x8004, 0
-	special AnimateTeleporterHousing
 	delay 10
 	call Route25_SeaCottage_EventScript_PlayTeleporterBeepSE
 	call Route25_SeaCottage_EventScript_PlayTeleporterBeepSE
@@ -175,9 +171,7 @@ Route25_SeaCottage_EventScript_RunCellSeparator::
 	call Route25_SeaCottage_EventScript_PlayTeleporterBeepSE
 	call Route25_SeaCottage_EventScript_PlayTeleporterBeepSE
 	setvar VAR_0x8004, 1
-	special AnimateTeleporterHousing
 	playse SE_WARP_IN
-	special AnimateTeleporterCable
 	waitse
 	call Route25_SeaCottage_EventScript_PlayTeleporterBeepSE
 	call Route25_SeaCottage_EventScript_PlayTeleporterBeepSE
@@ -194,14 +188,11 @@ Route25_SeaCottage_EventScript_RunCellSeparator::
 	applymovement LOCALID_BILL_HUMAN, Route25_SeaCottage_Movement_BillExitTeleporter
 	waitmovement 0
 	waitfanfare
-	applymovement OBJ_EVENT_ID_CAMERA, Route25_SeaCottage_Movement_CameraPanBackFromTeleporters
-	waitmovement 0
 	playse SE_CONTEST_CURTAIN_FALL
 	closedoor 3, 3
 	waitdooranim
 	applymovement LOCALID_BILL_HUMAN, Route25_SeaCottage_Movement_BillWalkToMiddleOfRoom
 	waitmovement 0
-	special RemoveCameraObject
 	releaseall
 	end
 
@@ -289,8 +280,6 @@ Route25_SeaCottage_Movement_BillWalkToMiddleOfRoom::
 	walk_right
 	walk_right
 	walk_right
-	walk_right
-	walk_down
 	walk_down
 	step_end
 

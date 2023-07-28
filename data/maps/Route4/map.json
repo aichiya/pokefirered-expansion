@@ -15,20 +15,20 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_ROUTE3",
       "offset": -50,
-      "map": "MAP_ROUTE3"
+      "direction": "down"
     },
     {
-      "direction": "right",
+      "map": "MAP_CERULEAN_CITY",
       "offset": -8,
-      "map": "MAP_CERULEAN_CITY"
+      "direction": "right"
     }
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
-      "in_connection": false,
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_LASS",
       "x": 9,
       "y": 8,
       "elevation": 3,
@@ -39,11 +39,11 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route4_EventScript_Woman",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_LASS",
-      "in_connection": false,
       "x": 62,
       "y": 3,
       "elevation": 3,
@@ -54,11 +54,11 @@
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route4_EventScript_Crissy",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "in_connection": false,
       "x": 56,
       "y": 3,
       "elevation": 3,
@@ -69,26 +69,11 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route4_EventScript_ItemTM04",
       "flag": "FLAG_HIDE_ROUTE4_TM04",
-      "type": "object"
+      "in_connection": false
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BOY",
-      "in_connection": false,
-      "x": 0,
-      "y": 0,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route4_EventScript_Boy",
-      "flag": "0",
-      "type": "object"
-    },
-    {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
-      "in_connection": true,
       "x": 109,
       "y": 3,
       "elevation": 12,
@@ -99,7 +84,7 @@
       "trainer_sight_or_berry_tree_id": "3",
       "script": "0x0",
       "flag": "0",
-      "type": "object"
+      "in_connection": true
     }
   ],
   "warp_events": [
@@ -108,21 +93,21 @@
       "y": 6,
       "elevation": 3,
       "dest_map": "MAP_MT_MOON_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "3"
     },
     {
       "x": 24,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_MT_MOON_B1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "7"
     },
     {
       "x": 11,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_ROUTE4_POKEMON_CENTER_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

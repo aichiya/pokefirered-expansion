@@ -3,8 +3,6 @@
 
 Drunk gives Teachy TV and forces capture tutorial.
 Route 2 bushes missing for some reason.
-Route 1 to Pallet Town palette shift visible. Route 1 must use Palette Town palette.
-Viritian parcel pathing possibly incorrect.
 
 Route 20 is missing a swimmer.
 Infested Saffron missing 1 rocket by door.

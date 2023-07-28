@@ -15,18 +15,19 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_LAVENDER_TOWN",
       "offset": 0,
-      "map": "MAP_LAVENDER_TOWN"
+      "direction": "down"
     },
     {
-      "direction": "left",
+      "map": "MAP_ROUTE9",
       "offset": 0,
-      "map": "MAP_ROUTE9"
+      "direction": "left"
     }
   ],
   "object_events": [
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
       "x": 7,
       "y": 54,
@@ -37,10 +38,10 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route10_EventScript_Carol",
-      "flag": "0",
-      "type": "object"
+      "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
       "x": 3,
       "y": 57,
@@ -51,10 +52,10 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route10_EventScript_Clark",
-      "flag": "0",
-      "type": "object"
+      "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SUPER_NERD",
       "x": 14,
       "y": 64,
@@ -65,10 +66,10 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route10_EventScript_Herman",
-      "flag": "0",
-      "type": "object"
+      "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
       "x": 3,
       "y": 61,
@@ -79,10 +80,10 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route10_EventScript_Trent",
-      "flag": "0",
-      "type": "object"
+      "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SUPER_NERD",
       "x": 10,
       "y": 44,
@@ -93,10 +94,10 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
       "script": "Route10_EventScript_Mark",
-      "flag": "0",
-      "type": "object"
+      "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
       "x": 7,
       "y": 25,
@@ -107,10 +108,10 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route10_EventScript_Heidi",
-      "flag": "0",
-      "type": "object"
+      "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
       "x": 9,
       "y": 18,
@@ -121,10 +122,10 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
-      "flag": "0",
-      "type": "object"
+      "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
       "x": 9,
       "y": 20,
@@ -135,10 +136,10 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
-      "flag": "0",
-      "type": "object"
+      "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
       "x": 9,
       "y": 22,
@@ -149,10 +150,10 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
-      "flag": "0",
-      "type": "object"
+      "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
       "x": 9,
       "y": 24,
@@ -163,8 +164,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
-      "flag": "0",
-      "type": "object"
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -180,7 +180,7 @@
       "y": 54,
       "elevation": 3,
       "dest_map": "MAP_ROCK_TUNNEL_1F",
-      "dest_warp_id": "0"
+      "dest_warp_id": "5"
     },
     {
       "x": 6,

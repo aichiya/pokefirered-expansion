@@ -16,7 +16,7 @@
   "connections": [
     {
       "map": "MAP_ROUTE2",
-      "offset": 10,
+      "offset": -1,
       "direction": "up"
     },
     {
@@ -26,7 +26,7 @@
     },
     {
       "map": "MAP_ROUTE22",
-      "offset": 8,
+      "offset": 0,
       "direction": "left"
     }
   ],
@@ -148,13 +148,13 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
-      "flag": "FLAG_TEMP_12",
+      "flag": "0",
       "in_connection": false
     },
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
-      "x": 14,
+      "x": 15,
       "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -225,7 +225,7 @@
     },
     {
       "type": "trigger",
-      "x": 17,
+      "x": 16,
       "y": 6,
       "elevation": 3,
       "var": "VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN",
@@ -234,7 +234,7 @@
     },
     {
       "type": "trigger",
-      "x": 19,
+      "x": 20,
       "y": 6,
       "elevation": 3,
       "var": "VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN",

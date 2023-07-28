@@ -131,13 +131,12 @@ SSAnne_2F_Corridor_Movement_RivalApproachRight::
 	walk_down
 	walk_down
 	walk_down
-	walk_right
+	face_right
 	delay_4
 	step_end
 
 SSAnne_2F_Corridor_Movement_RivalExitLeft::
 	walk_right
-	walk_down
 	walk_down
 	walk_down
 	walk_down
@@ -153,11 +152,9 @@ SSAnne_2F_Corridor_Movement_RivalExitMid::
 	walk_down
 	walk_down
 	walk_down
-	walk_down
 	step_end
 
 SSAnne_2F_Corridor_Movement_RivalExitRight::
-	walk_down
 	walk_down
 	walk_down
 	walk_down

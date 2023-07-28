@@ -27,7 +27,7 @@ SSAnne_Exterior_ExitSSAnne::
 	waitmovement 0
 	setvar VAR_MAP_SCENE_VERMILION_CITY, 2
 	setvar VAR_VERMILION_CITY_TICKET_CHECK_TRIGGER, 0
-	warp MAP_VERMILION_CITY, 23, 34
+	warp MAP_VERMILION_CITY, 23, 31
 	waitstate
 	releaseall
 	end
@@ -45,23 +45,8 @@ SSAnne_Exterior_WalkInPlaceDown::
 SSAnne_Exterior_Movement_Exit::
 	walk_up
 	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
 	step_end
 
 SSAnne_Exterior_Movement_WalkDown::
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
+	walk_in_place_down
 	step_end

@@ -36,13 +36,13 @@ PalletTown_ProfessorOaksLab_EventScript_SetNationalDexSceneFinished::
 	return
 
 PalletTown_ProfessorOaksLab_EventScript_ReadyOakForStarterScene::
-	setobjectxyperm LOCALID_PROF_OAK, 6, 11
+	setobjectxyperm LOCALID_PROF_OAK, 5, 10
 	setobjectmovementtype LOCALID_PROF_OAK, MOVEMENT_TYPE_FACE_UP
 	savebgm MUS_OAK
 	return
 
 PalletTown_ProfessorOaksLab_EventScript_ReadyOakForNationalDexScene::
-	setobjectxyperm LOCALID_PROF_OAK, 6, 11
+	setobjectxyperm LOCALID_PROF_OAK, 5, 10
 	setobjectmovementtype LOCALID_PROF_OAK, MOVEMENT_TYPE_FACE_UP
 	return
 
@@ -66,7 +66,7 @@ PalletTown_ProfessorOaksLab_EventScript_EnterForNationalDexScene:: @ 8169002
 	applymovement LOCALID_PROF_OAK, PalletTown_ProfessorOaksLab_Movement_OakEnter
 	waitmovement 0
 	removeobject LOCALID_PROF_OAK
-	setobjectxyperm LOCALID_PROF_OAK, 6, 3
+	setobjectxyperm LOCALID_PROF_OAK, 5, 2
 	setobjectmovementtype LOCALID_PROF_OAK, MOVEMENT_TYPE_FACE_DOWN
 	clearflag FLAG_HIDE_OAK_IN_HIS_LAB
 	applymovement OBJ_EVENT_ID_PLAYER, PalletTown_ProfessorOaksLab_Movement_PlayerEnter
@@ -137,7 +137,7 @@ PalletTown_ProfessorOaksLab_EventScript_NationalDexSceneRivalEnterNorth::
 	return
 
 PalletTown_ProfessorOaksLab_EventScript_NationalDexSceneRivalEnterEastWest::
-	setobjectxyperm LOCALID_RIVAL, 6, 10
+	setobjectxyperm LOCALID_RIVAL, 5, 10
 	addobject LOCALID_RIVAL
 	playbgm MUS_ENCOUNTER_RIVAL, 0
 	applymovement LOCALID_PROF_OAK, Common_Movement_WalkInPlaceFasterDown
@@ -147,7 +147,7 @@ PalletTown_ProfessorOaksLab_EventScript_NationalDexSceneRivalEnterEastWest::
 	return
 
 PalletTown_ProfessorOaksLab_EventScript_NationalDexSceneRivalEnterSouth::
-	setobjectxyperm LOCALID_RIVAL, 6, 10
+	setobjectxyperm LOCALID_RIVAL, 5, 10
 	addobject LOCALID_RIVAL
 	playbgm MUS_ENCOUNTER_RIVAL, 0
 	applymovement LOCALID_PROF_OAK, Common_Movement_WalkInPlaceFasterDown
@@ -210,7 +210,7 @@ PalletTown_ProfessorOaksLab_ChooseStarterScene::
 	applymovement LOCALID_PROF_OAK, PalletTown_ProfessorOaksLab_Movement_OakEnter
 	waitmovement 0
 	removeobject LOCALID_PROF_OAK
-	setobjectxyperm LOCALID_PROF_OAK, 6, 3
+	setobjectxyperm LOCALID_PROF_OAK, 5, 2
 	setobjectmovementtype LOCALID_PROF_OAK, MOVEMENT_TYPE_FACE_DOWN
 	clearflag FLAG_HIDE_OAK_IN_HIS_LAB
 	applymovement OBJ_EVENT_ID_PLAYER, PalletTown_ProfessorOaksLab_Movement_PlayerEnter
@@ -346,17 +346,11 @@ PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleSquirtleLeft::
 	walk_left
 	walk_left
 	walk_left
-	walk_left
 	walk_down
 	walk_down
 	step_end
 
 PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleSquirtleMid::
-	walk_left
-	walk_left
-	walk_left
-	walk_down
-	walk_down
 	step_end
 
 PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleSquirtleRight::
@@ -398,25 +392,14 @@ PalletTown_ProfessorOaksLab_EventScript_RivalBattleCharmander::
 PalletTown_ProfessorOaksLab_Movement_ApproachForBattleCharmanderLeft::
 	walk_left
 	walk_left
-	walk_left
-	walk_left
-	walk_left
 	walk_down
 	walk_down
 	step_end
 
 PalletTown_ProfessorOaksLab_Movement_ApproachForBattleCharmanderMid::
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_down
-	walk_down
 	step_end
 
 PalletTown_ProfessorOaksLab_Movement_ApproachForBattleCharmanderRight::
-	walk_left
-	walk_left
 	walk_left
 	walk_down
 	walk_down
@@ -455,18 +438,17 @@ PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleBulbasaurLeft::
 	walk_left
 	walk_left
 	walk_left
+	walk_left
 	walk_down
 	walk_down
 	step_end
 
 PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleBulbasaurMid::
-	walk_left
-	walk_left
-	walk_down
-	walk_down
 	step_end
 
 PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleBulbasaurRight::
+	walk_left
+	walk_left
 	walk_left
 	walk_down
 	walk_down
@@ -956,7 +938,7 @@ PalletTown_ProfessorOaksLab_EventScript_PlayerAlreadyGotBalls::
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_DexSceneRivalEnterNorth::
-	setobjectxyperm LOCALID_RIVAL, 5, 10
+	setobjectxyperm LOCALID_RIVAL, 4, 10
 	addobject LOCALID_RIVAL
 	applymovement OBJ_EVENT_ID_PLAYER, PalletTown_ProfessorOaksLab_Movement_WatchRivalEnterNorth
 	applymovement LOCALID_RIVAL, PalletTown_ProfessorOaksLab_Movement_RivalEnter
@@ -964,7 +946,7 @@ PalletTown_ProfessorOaksLab_EventScript_DexSceneRivalEnterNorth::
 	return
 
 PalletTown_ProfessorOaksLab_EventScript_DexSceneRivalEnterEastWest::
-	setobjectxyperm LOCALID_RIVAL, 6, 10
+	setobjectxyperm LOCALID_RIVAL, 5, 10
 	addobject LOCALID_RIVAL
 	applymovement LOCALID_PROF_OAK, Common_Movement_WalkInPlaceFasterDown
 	applymovement OBJ_EVENT_ID_PLAYER, PalletTown_ProfessorOaksLab_Movement_WatchRivalEnterEastWest
@@ -973,7 +955,7 @@ PalletTown_ProfessorOaksLab_EventScript_DexSceneRivalEnterEastWest::
 	return
 
 PalletTown_ProfessorOaksLab_EventScript_DexSceneRivalEnterSouth::
-	setobjectxyperm LOCALID_RIVAL, 6, 10
+	setobjectxyperm LOCALID_RIVAL, 5, 10
 	addobject LOCALID_RIVAL
 	applymovement LOCALID_PROF_OAK, Common_Movement_WalkInPlaceFasterDown
 	applymovement LOCALID_RIVAL, PalletTown_ProfessorOaksLab_Movement_RivalEnter
@@ -1057,6 +1039,7 @@ PalletTown_ProfessorOaksLab_Movement_WatchRivalEnterNorth::
 	step_end
 
 PalletTown_ProfessorOaksLab_Movement_RivalEnter::
+	walk_up
 	walk_up
 	walk_up
 	walk_up
@@ -1191,29 +1174,29 @@ PalletTown_ProfessorOaksLab_EventScript_ReadyEndSignLadyScene::
 
 PalletTown_ProfessorOaksLab_Movement_RivalWalksToCharmander::
 	walk_down
-	walk_down
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_up
-	step_end
-
-PalletTown_ProfessorOaksLab_Movement_RivalWalksToSquirtle::
-	walk_down
-	walk_right
-	walk_right
 	walk_right
 	walk_right
 	walk_in_place_faster_up
 	step_end
 
-PalletTown_ProfessorOaksLab_Movement_RivalWalksToBulbasaur::
+PalletTown_ProfessorOaksLab_Movement_RivalWalksToSquirtle::
+	walk_down
 	walk_down
 	walk_right
 	walk_right
 	walk_right
+	walk_up
+	walk_in_place_faster_up
+	step_end
+
+PalletTown_ProfessorOaksLab_Movement_RivalWalksToBulbasaur::
+	walk_down
+	walk_down
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_up
 	walk_in_place_faster_up
 	step_end
 

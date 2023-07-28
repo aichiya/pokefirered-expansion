@@ -15,20 +15,20 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "left",
+      "map": "MAP_CINNABAR_ISLAND",
       "offset": 0,
-      "map": "MAP_CINNABAR_ISLAND"
+      "direction": "left"
     },
     {
-      "direction": "right",
+      "map": "MAP_ROUTE19",
       "offset": -36,
-      "map": "MAP_ROUTE19"
+      "direction": "right"
     }
   ],
   "object_events": [
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
-      "in_connection": false,
       "x": 15,
       "y": 8,
       "elevation": 1,
@@ -39,11 +39,11 @@
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route20_EventScript_Melissa",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
-      "in_connection": false,
       "x": 24,
       "y": 12,
       "elevation": 3,
@@ -54,11 +54,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route20_EventScript_Missy",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
-      "in_connection": false,
       "x": 25,
       "y": 7,
       "elevation": 1,
@@ -69,11 +69,11 @@
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route20_EventScript_Nora",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKER",
-      "in_connection": false,
       "x": 34,
       "y": 9,
       "elevation": 3,
@@ -84,11 +84,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route20_EventScript_Roger",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
-      "in_connection": false,
       "x": 45,
       "y": 10,
       "elevation": 1,
@@ -99,11 +99,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route20_EventScript_Dean",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
-      "in_connection": false,
       "x": 87,
       "y": 8,
       "elevation": 1,
@@ -114,11 +114,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route20_EventScript_Barry",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
-      "in_connection": false,
       "x": 87,
       "y": 13,
       "elevation": 1,
@@ -129,11 +129,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route20_EventScript_Darrin",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
-      "in_connection": false,
       "x": 68,
       "y": 11,
       "elevation": 1,
@@ -144,11 +144,11 @@
       "trainer_sight_or_berry_tree_id": "5",
       "script": "Route20_EventScript_Shirley",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
-      "in_connection": false,
       "x": 38,
       "y": 13,
       "elevation": 1,
@@ -159,7 +159,7 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route20_EventScript_Tiffany",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     }
   ],
   "warp_events": [
@@ -168,14 +168,14 @@
       "y": 6,
       "elevation": 3,
       "dest_map": "MAP_SEAFOAM_ISLANDS_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 58,
       "y": 10,
       "elevation": 3,
       "dest_map": "MAP_SEAFOAM_ISLANDS_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

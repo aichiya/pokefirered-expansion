@@ -15,20 +15,20 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "direction": "down",
+      "map": "MAP_ROUTE17",
       "offset": 0,
-      "map": "MAP_ROUTE17"
+      "direction": "down"
     },
     {
-      "direction": "right",
+      "map": "MAP_CELADON_CITY",
       "offset": -8,
-      "map": "MAP_CELADON_CITY"
+      "direction": "right"
     }
   ],
   "object_events": [
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
-      "in_connection": false,
       "x": 17,
       "y": 12,
       "elevation": 3,
@@ -39,11 +39,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route16_EventScript_Lao",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
-      "in_connection": false,
       "x": 14,
       "y": 13,
       "elevation": 3,
@@ -54,11 +54,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route16_EventScript_Koji",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
-      "in_connection": false,
       "x": 11,
       "y": 12,
       "elevation": 3,
@@ -69,11 +69,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route16_EventScript_Luke",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
-      "in_connection": false,
       "x": 3,
       "y": 12,
       "elevation": 3,
@@ -84,11 +84,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route16_EventScript_Ruben",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
-      "in_connection": false,
       "x": 9,
       "y": 11,
       "elevation": 3,
@@ -99,11 +99,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route16_EventScript_Hideo",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
-      "in_connection": false,
       "x": 6,
       "y": 10,
       "elevation": 3,
@@ -114,11 +114,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route16_EventScript_Camron",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
-      "in_connection": false,
       "x": 34,
       "y": 9,
       "elevation": 3,
@@ -128,12 +128,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
-      "flag": "FLAG_TEMP_12",
-      "type": "object"
+      "flag": "0",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SNORLAX",
-      "in_connection": false,
       "x": 26,
       "y": 10,
       "elevation": 3,
@@ -144,7 +144,7 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route16_EventScript_Snorlax",
       "flag": "FLAG_HIDE_ROUTE_16_SNORLAX",
-      "type": "object"
+      "in_connection": false
     }
   ],
   "warp_events": [
@@ -153,35 +153,35 @@
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_ROUTE16_HOUSE",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 17,
       "y": 5,
       "elevation": 3,
       "dest_map": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 24,
       "y": 5,
       "elevation": 3,
       "dest_map": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 17,
       "y": 10,
       "elevation": 3,
       "dest_map": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 24,
       "y": 10,
       "elevation": 3,
       "dest_map": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

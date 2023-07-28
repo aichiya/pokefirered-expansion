@@ -82,7 +82,6 @@ MtMoon_B2F_Movement_MiguelToHelixFossil::
 	walk_right
 	walk_up
 	walk_up
-	walk_up
 	step_end
 
 MtMoon_B2F_EventScript_HelixFossil::
@@ -114,7 +113,6 @@ MtMoon_B2F_EventScript_DontTakeFossil::
 	end
 
 MtMoon_B2F_Movement_MiguelToDomeFossil::
-	walk_up
 	walk_up
 	walk_up
 	step_end

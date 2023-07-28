@@ -14,29 +14,13 @@ VermilionCity_Gym_OnLoad::
 	end
 
 VermilionCity_Gym_EventScript_SetOneBeamOff::
-	setmetatile 3, 6, METATILE_VermilionGym_Beam_Node_TopLeft_HalfOn, 1
-	setmetatile 4, 6, METATILE_VermilionGym_Beam_Node_TopLeft_Edge_HalfOn, 1
-	setmetatile 5, 6, METATILE_VermilionGym_Beam_MidTop_HalfOn, 1
-	setmetatile 6, 6, METATILE_VermilionGym_Beam_Node_TopRight_Edge_HalfOn, 1
-	setmetatile 7, 6, METATILE_VermilionGym_Beam_Node_TopRight_HalfOn, 1
-	setmetatile 3, 7, METATILE_VermilionGym_Beam_Node_BottomLeft_HalfOn, 1
-	setmetatile 4, 7, METATILE_VermilionGym_Beam_Node_BottomLeft_Edge_HalfOn, 1
-	setmetatile 5, 7, METATILE_VermilionGym_Beam_MidBottom_HalfOn, 1
-	setmetatile 6, 7, METATILE_VermilionGym_Beam_Node_BottomRight_Edge_HalfOn, 1
-	setmetatile 7, 7, METATILE_VermilionGym_Beam_Node_BottomRight_HalfOn, 1
 	return
 
 VermilionCity_Gym_EventScript_SetBeamsOff::
-	setmetatile 3, 6, METATILE_VermilionGym_Beam_Node_TopLeft_Off, 1
-	setmetatile 4, 6, METATILE_VermilionGym_Beam_Node_TopLeft_Edge_Off, 0
-	setmetatile 5, 6, METATILE_VermilionGym_Floor, 0
-	setmetatile 6, 6, METATILE_VermilionGym_Beam_Node_TopRight_Edge_Off, 0
-	setmetatile 7, 6, METATILE_VermilionGym_Beam_Node_TopRight_Off, 1
-	setmetatile 3, 7, METATILE_VermilionGym_Beam_Node_BottomLeft_Off, 1
-	setmetatile 4, 7, METATILE_VermilionGym_Beam_Node_BottomLeft_Edge_Off, 0
-	setmetatile 5, 7, METATILE_VermilionGym_Floor, 0
-	setmetatile 6, 7, METATILE_VermilionGym_Beam_Node_BottomRight_Edge_Off, 0
-	setmetatile 7, 7, METATILE_VermilionGym_Beam_Node_BottomRight_Off, 1
+	setmetatile 4, 4, METATILE_VermilionGym_Beam_Node_TopLeft_Off, 1
+	setmetatile 4, 4, METATILE_VermilionGym_Floor, 0
+	setmetatile 5, 4, METATILE_VermilionGym_Beam_Node_TopRight_Off, 1
+	setmetatile 5, 4, METATILE_VermilionGym_Floor, 0
 	return
 
 VermilionCity_Gym_OnTransition::
@@ -191,16 +175,6 @@ VermilionCity_Gym_EventScript_LocksAlreadyOpen::
 	end
 
 VermilionCity_Gym_EventScript_SetBeamsOn::
-	setmetatile 3, 6, METATILE_VermilionGym_Beam_Node_TopLeft_On, 1
-	setmetatile 4, 6, METATILE_VermilionGym_Beam_Node_TopLeft_Edge_On, 1
-	setmetatile 5, 6, METATILE_VermilionGym_Beam_MidTop, 1
-	setmetatile 6, 6, METATILE_VermilionGym_Beam_Node_TopRight_Edge_On, 1
-	setmetatile 7, 6, METATILE_VermilionGym_Beam_Node_TopRight_On, 1
-	setmetatile 3, 7, METATILE_VermilionGym_Beam_Node_BottomLeft_On, 1
-	setmetatile 4, 7, METATILE_VermilionGym_Beam_Node_BottomLeft_Edge_On, 1
-	setmetatile 5, 7, METATILE_VermilionGym_Beam_MidBottom, 1
-	setmetatile 6, 7, METATILE_VermilionGym_Beam_Node_BottomRight_Edge_On, 1
-	setmetatile 7, 7, METATILE_VermilionGym_Beam_Node_BottomRight_On, 1
 	return
 
 VermilionCity_Gym_EventScript_LtSurge::

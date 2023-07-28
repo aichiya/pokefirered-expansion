@@ -271,11 +271,11 @@ const u32 gMetatileAttributes_RB_Plant[] = INCBIN_U32("data/tilesets/secondary/r
 const u16 gMetatiles_RB_Playerhouse[] = INCBIN_U16("data/tilesets/secondary/rb_playerhouse/metatiles.bin");
 const u32 gMetatileAttributes_RB_Playerhouse[] = INCBIN_U32("data/tilesets/secondary/rb_playerhouse/metatile_attributes.bin");
 
-const u16 gMetatiles_RB_Pokecenter[] = INCBIN_U16("data/tilesets/secondary/rb_poke_center/metatiles.bin");
-const u32 gMetatileAttributes_RB_Pokecenter[] = INCBIN_U32("data/tilesets/secondary/rb_poke_center/metatile_attributes.bin");
+const u16 gMetatiles_RB_Pokecenter[] = INCBIN_U16("data/tilesets/secondary/rb_pokecenter/metatiles.bin");
+const u32 gMetatileAttributes_RB_Pokecenter[] = INCBIN_U32("data/tilesets/secondary/rb_pokecenter/metatile_attributes.bin");
 
-const u16 gMetatiles_RB_Pokemart[] = INCBIN_U16("data/tilesets/secondary/rb_poke_mart/metatiles.bin");
-const u32 gMetatileAttributes_RB_Pokemart[] = INCBIN_U32("data/tilesets/secondary/rb_poke_mart/metatile_attributes.bin");
+const u16 gMetatiles_RB_Pokemart[] = INCBIN_U16("data/tilesets/secondary/rb_pokemart/metatiles.bin");
+const u32 gMetatileAttributes_RB_Pokemart[] = INCBIN_U32("data/tilesets/secondary/rb_pokemart/metatile_attributes.bin");
 
 const u16 gMetatiles_RB_Route23[] = INCBIN_U16("data/tilesets/secondary/rb_route_23/metatiles.bin");
 const u32 gMetatileAttributes_RB_Route23[] = INCBIN_U32("data/tilesets/secondary/rb_route_23/metatile_attributes.bin");

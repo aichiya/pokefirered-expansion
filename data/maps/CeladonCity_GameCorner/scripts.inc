@@ -9,11 +9,8 @@ CeladonCity_GameCorner_OnLoad::
 	end
 
 CeladonCity_GameCorner_EventScript_HideRocketHideout::
-	setmetatile 15, 2, METATILE_GameCorner_Floor_ShadeFull, 0
-	setmetatile 16, 2, METATILE_GameCorner_Floor_ShadeFull, 0
-	setmetatile 17, 2, METATILE_GameCorner_Floor_ShadeFull, 0
-	setmetatile 16, 3, METATILE_GameCorner_PurpleWall_Floor, 1
-	setmetatile 17, 3, METATILE_GameCorner_PurpleWall_Floor, 1
+	setmetatile 17, 0, METATILE_GameCorner_Floor_ShadeFull, 0
+	setmetatile 17, 0, METATILE_GameCorner_PurpleWall_Floor, 1
 	return
 
 CeladonCity_GameCorner_EventScript_InfoClerk::
@@ -402,11 +399,7 @@ CeladonCity_GameCorner_EventScript_Poster::
 
 CeladonCity_GameCorner_EventScript_OpenRocketHideout::
 	playse SE_UNLOCK
-	setmetatile 15, 2, METATILE_GameCorner_Floor_StairsTop, 0
-	setmetatile 16, 2, METATILE_GameCorner_StairsTop, 1
-	setmetatile 17, 2, METATILE_GameCorner_StairsBottom, 1
-	setmetatile 16, 3, METATILE_GameCorner_PurpleWall_StairsTop, 1
-	setmetatile 17, 3, METATILE_GameCorner_PurpleWall_stairsBottom, 1
+	setmetatile 17, 0, METATILE_GameCorner_StairsTop, 1
 	special DrawWholeMapView
 	setflag FLAG_OPENED_ROCKET_HIDEOUT
 	return
@@ -444,9 +437,13 @@ CeladonCity_GameCorner_Movement_GruntExitWest::
 	walk_right
 	walk_right
 	walk_right
+	walk_right
+	walk_right
 	step_end
 
 CeladonCity_GameCorner_Movement_GruntExit::
+	walk_right
+	walk_right
 	walk_right
 	walk_right
 	walk_right

@@ -33,6 +33,16 @@
       "map": "MAP_ROUTE8",
       "offset": 8,
       "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE8",
+      "offset": 8,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE6",
+      "offset": 8,
+      "direction": "down"
     }
   ],
   "object_events": [
@@ -330,14 +340,14 @@
       "y": 35,
       "elevation": 3,
       "dest_map": "MAP_ROUTE6_NORTH_ENTRANCE",
-      "dest_warp_id": "0"
+      "dest_warp_id": "11"
     },
     {
       "x": 21,
       "y": 35,
       "elevation": 3,
       "dest_map": "MAP_ROUTE6_NORTH_ENTRANCE",
-      "dest_warp_id": "0"
+      "dest_warp_id": "11"
     },
     {
       "x": 20,

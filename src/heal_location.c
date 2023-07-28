@@ -82,7 +82,7 @@ void SetWhiteoutRespawnWarpAndHealerNpc(struct WarpData * warp)
 
         if (sWhiteoutRespawnHealCenterMapIdxs[healLocationIdx - 1][0] == MAP_GROUP(PALLET_TOWN_PLAYERS_HOUSE_1F) && sWhiteoutRespawnHealCenterMapIdxs[healLocationIdx - 1][1] == MAP_NUM(PALLET_TOWN_PLAYERS_HOUSE_1F))
         {
-            warp->x = 8;
+            warp->x = 5;
             warp->y = 5;
         }
         else if (sWhiteoutRespawnHealCenterMapIdxs[healLocationIdx - 1][0] == MAP_GROUP(INDIGO_PLATEAU_POKEMON_CENTER_1F) && sWhiteoutRespawnHealCenterMapIdxs[healLocationIdx - 1][1] == MAP_NUM(INDIGO_PLATEAU_POKEMON_CENTER_1F))
@@ -103,8 +103,8 @@ void SetWhiteoutRespawnWarpAndHealerNpc(struct WarpData * warp)
         }
         else
         {
-            warp->x = 7;
-            warp->y = 4;
+            warp->x = 3;
+            warp->y = 3;
         }
         SetWhiteoutRespawnHealerNpcAsLastTalked(healLocationIdx);
     }
