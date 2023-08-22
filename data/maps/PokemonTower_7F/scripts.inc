@@ -14,7 +14,7 @@ PokemonTower_7F_EventScript_MrFuji::
 	setflag FLAG_RESCUED_MR_FUJI
 	msgbox PokemonTower_7F_Text_MrFujiThankYouFollowMe
 	closemessage
-	warp MAP_LAVENDER_TOWN_VOLUNTEER_POKEMON_HOUSE, 4, 7
+	warp MAP_LAVENDER_TOWN_VOLUNTEER_POKEMON_HOUSE, 2, 7
 	waitstate
 	release
 	end
@@ -75,9 +75,9 @@ PokemonTower_7F_Movement_Grunt1ExitMid::
 PokemonTower_7F_Movement_Grunt1ExitRight::
 	walk_down
 	walk_down
-	walk_down
-	walk_down
 	walk_right
+	walk_down
+	walk_down
 	walk_down
 	walk_down
 	step_end
@@ -85,6 +85,7 @@ PokemonTower_7F_Movement_Grunt1ExitRight::
 PokemonTower_7F_Movement_Grunt1Exit::
 	walk_down
 	walk_down
+	walk_right
 	walk_down
 	walk_down
 	walk_down
@@ -97,7 +98,6 @@ PokemonTower_7F_Movement_Grunt1ExitLeft::
 	walk_down
 	walk_down
 	walk_down
-	walk_right
 	walk_down
 	walk_down
 	walk_in_place_faster_left
@@ -141,8 +141,8 @@ PokemonTower_7F_Movement_Grunt2ExitLeft::
 	walk_down
 	walk_down
 	walk_down
-	walk_left
 	walk_down
+	walk_left
 	walk_down
 	walk_down
 	step_end
@@ -152,6 +152,7 @@ PokemonTower_7F_Movement_Grunt2Exit::
 	walk_down
 	walk_down
 	walk_down
+	walk_left
 	walk_down
 	walk_down
 	step_end

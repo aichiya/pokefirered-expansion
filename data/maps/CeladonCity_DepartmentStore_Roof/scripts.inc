@@ -258,6 +258,12 @@ CeladonCity_DepartmentStore_Roof_EventScript_TryBuyDrink::
 	playse SE_VEND
 	msgbox CeladonCity_DepartmentStore_Roof_Text_DrinkCanPoppedOut
 	additem VAR_TEMP_0
+	call_if_eq VAR_MAP_SCENE_ROUTE5_ROUTE6_ROUTE7_ROUTE8_GATES, 0, CeladonCity_DepartmentStore_Roof_EventScript_GiveTea
+	goto CeladonCity_DepartmentStore_Roof_EventScript_ChooseNewDrink
+	end
+
+CeladonCity_DepartmentStore_Roof_EventScript_GiveTea::
+	setflag FLAG_GOT_TEA
 	goto CeladonCity_DepartmentStore_Roof_EventScript_ChooseNewDrink
 	end
 

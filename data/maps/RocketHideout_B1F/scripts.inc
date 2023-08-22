@@ -45,8 +45,8 @@ RocketHideout_B1F_EventScript_DefeatedGrunt5::
 	end
 
 RocketHideout_B1F_EventScript_SetBarrier::
-	setmetatile 16, 16, METATILE_SilphCo_HorizontalBarrier_TopLeft , 1
-	setmetatile 17, 16, METATILE_SilphCo_HorizontalBarrier_TopRight , 1
+	setmetatile 16, 16, METATILE_SilphCo_HideoutBarrier_BottomLeft, 1
+	setmetatile 17, 16, METATILE_SilphCo_HideoutBarrier_BottomRight, 1
 	return
 
 RocketHideout_B1F_EventScript_RemoveBarrier::

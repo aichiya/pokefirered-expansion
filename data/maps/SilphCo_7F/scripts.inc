@@ -99,8 +99,7 @@ SilphCo_7F_Movement_RivalApproachTop::
 SilphCo_7F_Movement_RivalExitTop::
 	walk_right
 	walk_right
-	walk_right
-	walk_up
+	walk_down
 	delay_16
 	step_end
 
@@ -108,8 +107,8 @@ SilphCo_7F_Movement_RivalExitBottom::
 	walk_left
 	walk_up
 	walk_up
-	walk_right
-	walk_right
+	walk_up
+	walk_up
 	walk_right
 	walk_right
 	delay_16

@@ -37,7 +37,7 @@
       "y": 5,
       "elevation": 3,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": "9"
+      "dest_warp_id": "10"
     },
     {
       "x": 3,
@@ -51,7 +51,7 @@
       "y": 5,
       "elevation": 3,
       "dest_map": "MAP_SAFFRON_CITY",
-      "dest_warp_id": "9"
+      "dest_warp_id": "10"
     },
     {
       "x": 4,

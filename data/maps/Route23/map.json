@@ -145,7 +145,7 @@
       "y": 31,
       "elevation": 3,
       "dest_map": "MAP_VICTORY_ROAD_2F",
-      "dest_warp_id": "0"
+      "dest_warp_id": "5"
     },
     {
       "x": 8,
@@ -540,6 +540,15 @@
       "var": "VAR_MAP_SCENE_ROUTE23",
       "var_value": "1",
       "script": "Route23_EventScript_CascadeBadgeGuardTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 105,
+      "elevation": 3,
+      "var": "VAR_MAP_SCENE_ROUTE23",
+      "var_value": "3",
+      "script": "Route23_EventScript_RainbowBadgeGuardTrigger"
     }
   ],
   "bg_events": [

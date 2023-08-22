@@ -10,15 +10,13 @@ VictoryRoad_3F_OnLoad::
 	end
 
 VictoryRoad_3F_EventScript_SetRockBarrier::
-	setmetatile 12, 12, METATILE_Cave_RockBarrier_Top, 1
-	setmetatile 12, 13, METATILE_Cave_RockBarrier_Bottom, 1
+	setmetatile 7, 10, METATILE_Cave_RockBarrier_Top, 1
 	return
 
 VictoryRoad_3F_EventScript_FloorSwitch::
 	lockall
 	goto_if_eq VAR_MAP_SCENE_VICTORY_ROAD_3F, 100, VictoryRoad_3F_EventScript_FloorSwitchAlreadyPressed
-	setmetatile 12, 12, METATILE_Cave_Floor_Ledge_Top, 0
-	setmetatile 12, 13, METATILE_Cave_Floor_Ledge_Bottom, 0
+	setmetatile 7, 10, METATILE_Cave_Floor, 0
 	playse SE_ICE_BREAK
 	special DrawWholeMapView
 	waitse

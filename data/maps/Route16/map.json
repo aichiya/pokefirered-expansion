@@ -128,7 +128,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
-      "flag": "0",
+      "flag": "FLAG_TEMP_1",
       "in_connection": false
     },
     {
@@ -167,21 +167,21 @@
       "y": 5,
       "elevation": 3,
       "dest_map": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
-      "dest_warp_id": "0"
+      "dest_warp_id": "1"
     },
     {
       "x": 17,
       "y": 10,
       "elevation": 3,
       "dest_map": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
-      "dest_warp_id": "0"
+      "dest_warp_id": "6"
     },
     {
       "x": 24,
       "y": 10,
       "elevation": 3,
       "dest_map": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
-      "dest_warp_id": "0"
+      "dest_warp_id": "5"
     }
   ],
   "coord_events": [

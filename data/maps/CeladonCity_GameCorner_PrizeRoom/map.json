@@ -16,8 +16,8 @@
   "connections": 0,
   "object_events": [
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BALDING_MAN",
-      "in_connection": false,
       "x": 1,
       "y": 4,
       "elevation": 3,
@@ -27,11 +27,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CeladonCity_GameCorner_PrizeRoom_EventScript_BaldingMan",
-      "flag": "0"
+      "flag": "0",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_2",
-      "in_connection": false,
       "x": 7,
       "y": 3,
       "elevation": 3,
@@ -41,11 +42,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CeladonCity_GameCorner_PrizeRoom_EventScript_OldMan",
-      "flag": "0"
+      "flag": "0",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_WORKER_M",
-      "in_connection": false,
       "x": 4,
       "y": 1,
       "elevation": 3,
@@ -55,11 +57,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CeladonCity_GameCorner_PrizeRoom_EventScript_PrizeClerkMons",
-      "flag": "0"
+      "flag": "0",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_WORKER_M",
-      "in_connection": false,
       "x": 6,
       "y": 1,
       "elevation": 3,
@@ -69,11 +72,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CeladonCity_GameCorner_PrizeRoom_EventScript_PrizeClerkTMs",
-      "flag": "0"
+      "flag": "0",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_WORKER_M",
-      "in_connection": false,
       "x": 2,
       "y": 1,
       "elevation": 3,
@@ -83,7 +87,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CeladonCity_GameCorner_PrizeRoom_EventScript_PrizeClerkItems",
-      "flag": "0"
+      "flag": "0",
+      "in_connection": false
     }
   ],
   "warp_events": [
@@ -92,21 +97,21 @@
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_CELADON_CITY",
-      "dest_warp_id": 5
+      "dest_warp_id": "5"
     },
     {
       "x": 5,
       "y": 7,
       "elevation": 3,
       "dest_map": "MAP_CELADON_CITY",
-      "dest_warp_id": 5
+      "dest_warp_id": "5"
     },
     {
       "x": 5,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_CELADON_CITY",
-      "dest_warp_id": 5
+      "dest_warp_id": "5"
     }
   ],
   "coord_events": [

@@ -1,6 +1,4 @@
 
-2P Colosseum, SilphCo, and Rocket Hideout elevators have no warps, temp so that building works. 
-
 Drunk gives Teachy TV and forces capture tutorial.
 Route 2 bushes missing for some reason.
 
@@ -15,3 +13,8 @@ Viridian Forest main tree missing hidden Antidote.
 Cerulean Cave B1F hidden ultra ball not scripted.
 Route 10 hidden items not scripted.
 Power Plant items and hidden items incorrect.
+
+Silph elevator exit warps broken.
+Viridian City hidden item appears as drunk.
+Badge guards only face left.
+Victory road boulder switches seem broken.

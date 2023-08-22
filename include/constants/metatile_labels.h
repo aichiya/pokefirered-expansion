@@ -6,10 +6,10 @@
 #define METATILE_Building_PCOn   0x063
 
 // gTileset_Cave
-#define METATILE_Cave_Floor_Ledge_Bottom  0x2E1
+#define METATILE_Cave_Floor               0x28B
 #define METATILE_Cave_Floor_Ledge_Top     0x2D1
 #define METATILE_Cave_RockBarrier_Bottom  0x317
-#define METATILE_Cave_RockBarrier_Top     0x307
+#define METATILE_Cave_RockBarrier_Top     0x288
 
 // gTileset_CeladonCity
 #define METATILE_CeladonCity_CyclingRoad_Grass  0x352
@@ -20,7 +20,7 @@
 #define METATILE_CeruleanCity_Door  0x298
 
 // gTileset_CinnabarGym
-#define METATILE_CinnabarGym_Floor                  0x281
+#define METATILE_CinnabarGym_Floor                  0x358
 #define METATILE_CinnabarGym_Floor_ShadeDiagonal    0x282
 #define METATILE_CinnabarGym_Floor_ShadeFull        0x289
 #define METATILE_CinnabarGym_Floor_WallLeftCorner   0x2C7
@@ -122,14 +122,14 @@
 #define METATILE_PokemonCenter_NetworkMachine_ScreenRight_On         0x35B
 
 // gTileset_PokemonLeague
-#define METATILE_PokemonLeague_Door_Mid_Open             0x296
-#define METATILE_PokemonLeague_Door_Top_Open             0x28E
-#define METATILE_PokemonLeague_Entry_BottomLeft_Closed   0x2A5
+#define METATILE_PokemonLeague_Door_Mid_Open             0x35E
+#define METATILE_PokemonLeague_Door_Top_Open             0x2B7
+#define METATILE_PokemonLeague_Entry_BottomLeft_Closed   0x2B0
 #define METATILE_PokemonLeague_Entry_BottomMid_Closed    0x2A6
 #define METATILE_PokemonLeague_Entry_BottomRight_Closed  0x2A7
-#define METATILE_PokemonLeague_Entry_TopLeft_Closed      0x29D
+#define METATILE_PokemonLeague_Entry_TopLeft_Closed      0x2B0
 #define METATILE_PokemonLeague_Entry_TopMid_Closed       0x29E
-#define METATILE_PokemonLeague_Entry_TopRight_Closed     0x29F
+#define METATILE_PokemonLeague_Entry_TopRight_Closed     0x353
 #define METATILE_PokemonLeague_Floor_ShadeFull_Lance     0x311
 
 // gTileset_PokemonMansion
@@ -139,20 +139,20 @@
 #define METATILE_PokemonMansion_Barrier_Horizontal_BottomMid_Basement    0x355
 #define METATILE_PokemonMansion_Barrier_Horizontal_BottomRight           0x302
 #define METATILE_PokemonMansion_Barrier_Horizontal_BottomRight_Basement  0x356
-#define METATILE_PokemonMansion_Barrier_Horizontal_TopLeft               0x2F8
+#define METATILE_PokemonMansion_Barrier_Horizontal_TopLeft               0x379
 #define METATILE_PokemonMansion_Barrier_Horizontal_TopMid                0x2F9
-#define METATILE_PokemonMansion_Barrier_Horizontal_TopRight              0x2FA
-#define METATILE_PokemonMansion_Barrier_Vertical_Bottom                  0x370
+#define METATILE_PokemonMansion_Barrier_Horizontal_TopRight              0x379
+#define METATILE_PokemonMansion_Barrier_Vertical_Bottom                  0x378
 #define METATILE_PokemonMansion_Barrier_Vertical_Bottom_Basement         0x372
 #define METATILE_PokemonMansion_Barrier_Vertical_Mid                     0x368
 #define METATILE_PokemonMansion_Barrier_Vertical_MidShadow               0x360
 #define METATILE_PokemonMansion_Barrier_Vertical_MidShadow_Basement      0x362
 #define METATILE_PokemonMansion_Barrier_Vertical_Mid_Basement            0x36A
-#define METATILE_PokemonMansion_Barrier_Vertical_TopBase                 0x358
+#define METATILE_PokemonMansion_Barrier_Vertical_TopBase                 0x378
 #define METATILE_PokemonMansion_Barrier_Vertical_TopWall                 0x350
-#define METATILE_PokemonMansion_BasementFloor                            0x286
-#define METATILE_PokemonMansion_BasementFloor_ShadeFull                  0x287
-#define METATILE_PokemonMansion_Floor                                    0x284
+#define METATILE_PokemonMansion_BasementFloor                            0x373
+#define METATILE_PokemonMansion_BasementFloor_ShadeFull                  0x383
+#define METATILE_PokemonMansion_Floor                                    0x373
 #define METATILE_PokemonMansion_Floor_ShadeFull                          0x285
 #define METATILE_PokemonMansion_Statue_BlackEyes                         0x314
 #define METATILE_PokemonMansion_Statue_BlackEyes_Basement                0x316
@@ -221,12 +221,12 @@
 #define METATILE_SilphCo_ElevatorWindow_Top0            0x2E8
 #define METATILE_SilphCo_ElevatorWindow_Top1            0x2E9
 #define METATILE_SilphCo_ElevatorWindow_Top2            0x2EA
-#define METATILE_SilphCo_Floor                          0x334
-#define METATILE_SilphCo_Floor_ShadeFull                0x335
+#define METATILE_SilphCo_Floor                          0x358
+#define METATILE_SilphCo_Floor_ShadeFull                0x350
 #define METATILE_SilphCo_Floor_WallLeftCorner           0x339
 #define METATILE_SilphCo_Floor_WallRightCorner          0x33A
-#define METATILE_SilphCo_HideoutBarrier_BottomLeft      0x2D6
-#define METATILE_SilphCo_HideoutBarrier_BottomRight     0x2D7
+#define METATILE_SilphCo_HideoutBarrier_BottomLeft      0x379
+#define METATILE_SilphCo_HideoutBarrier_BottomRight     0x379
 #define METATILE_SilphCo_HideoutBarrier_TopLeft_Floor   0x2CE
 #define METATILE_SilphCo_HideoutBarrier_TopLeft_Wall    0x2C6
 #define METATILE_SilphCo_HideoutBarrier_TopRight_Floor  0x2CF
@@ -234,16 +234,16 @@
 #define METATILE_SilphCo_HideoutElevatorDoor            0x2AB
 #define METATILE_SilphCo_HideoutFloor                   0x358
 #define METATILE_SilphCo_HideoutFloor_ShadeFull         0x358
-#define METATILE_SilphCo_HorizontalBarrier_BottomLeft   0x3B8
-#define METATILE_SilphCo_HorizontalBarrier_BottomRight  0x3B9
+#define METATILE_SilphCo_HorizontalBarrier_BottomLeft   0x379
+#define METATILE_SilphCo_HorizontalBarrier_BottomRight  0x379
 #define METATILE_SilphCo_HorizontalBarrier_TopLeft      0x379
-#define METATILE_SilphCo_HorizontalBarrier_TopRight     0x379
-#define METATILE_SilphCo_VerticalBarrier_BottomLeft     0x3C4
-#define METATILE_SilphCo_VerticalBarrier_BottomRight    0x3C5
-#define METATILE_SilphCo_VerticalBarrier_MidLeft        0x3C2
-#define METATILE_SilphCo_VerticalBarrier_MidRight       0x3C3
-#define METATILE_SilphCo_VerticalBarrier_TopLeft        0x3C0
-#define METATILE_SilphCo_VerticalBarrier_TopRight       0x3C1
+#define METATILE_SilphCo_HorizontalBarrier_TopRight     0x382
+#define METATILE_SilphCo_VerticalBarrier_BottomLeft     0x378
+#define METATILE_SilphCo_VerticalBarrier_BottomRight    0x378
+#define METATILE_SilphCo_VerticalBarrier_MidLeft        0x378
+#define METATILE_SilphCo_VerticalBarrier_MidRight       0x378
+#define METATILE_SilphCo_VerticalBarrier_TopLeft        0x378
+#define METATILE_SilphCo_VerticalBarrier_TopRight       0x378
 #define METATILE_SilphCo_Wall_LeftEdge                  0x347
 #define METATILE_SilphCo_Wall_RightEdge                 0x346
 

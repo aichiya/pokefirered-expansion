@@ -4,8 +4,8 @@ Route6_NorthEntrance_Text_ThirstyOnGuardDuty::
     .string "Oh, wait there, the road's closed.$"
 
 Route6_NorthEntrance_Text_ThatTeaLooksTasty::
-    .string "Oh, that TEA…\n"
-    .string "It looks awfully tasty…$"
+    .string "Whoa, boy!\n"
+    .string "I'm parched!$"
 
 Route6_NorthEntrance_Text_ThanksIllShareTeaWithGuards::
     .string "Huh? I can have this drink?\n"
@@ -18,7 +18,7 @@ Route6_NorthEntrance_Text_ThanksIllShareTeaWithGuards::
     .string "CITY…\l"
     .string "… …\l"
     .string "You can go on through.\p"
-    .string "I'll share this TEA with the other\n"
+    .string "I'll share this with the other\n"
     .string "guards!$"
 
 Route6_NorthEntrance_Text_HiHowsItGoing::

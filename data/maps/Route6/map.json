@@ -16,7 +16,7 @@
   "connections": [
     {
       "map": "MAP_SAFFRON_CITY",
-      "offset": -8,
+      "offset": -6,
       "direction": "up"
     },
     {
@@ -35,7 +35,7 @@
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
       "x": 7,
-      "y": 15,
+      "y": 13,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
@@ -50,7 +50,7 @@
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
       "x": 17,
-      "y": 21,
+      "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
@@ -65,7 +65,7 @@
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
       "x": 18,
-      "y": 21,
+      "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -80,7 +80,7 @@
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
       "x": 26,
-      "y": 26,
+      "y": 24,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -95,7 +95,7 @@
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
       "x": 18,
-      "y": 31,
+      "y": 29,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -110,7 +110,7 @@
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
       "x": 18,
-      "y": 30,
+      "y": 28,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -125,14 +125,14 @@
   "warp_events": [
     {
       "x": 24,
-      "y": 13,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_UNDERGROUND_PATH_SOUTH_ENTRANCE",
       "dest_warp_id": "0"
     },
     {
       "x": 17,
-      "y": 7,
+      "y": 5,
       "elevation": 3,
       "dest_map": "MAP_ROUTE6_NORTH_ENTRANCE",
       "dest_warp_id": "2"
@@ -145,7 +145,7 @@
     {
       "type": "sign",
       "x": 26,
-      "y": 15,
+      "y": 13,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route6_EventScript_UndergroundPathSign"

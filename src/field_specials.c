@@ -1067,7 +1067,6 @@ void AnimateElevator(void)
         nfloors = 8;
     data[5] = sElevatorAnimationDuration[nfloors];
     SetCameraPanningCallback(NULL);
-    AnimateElevatorWindowView(nfloors, data[6]);
     PlaySE(SE_ELEVATOR);
 }
 

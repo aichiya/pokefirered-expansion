@@ -3,7 +3,7 @@
   "name": "SaffronCity_Connection",
   "layout": "LAYOUT_SAFFRON_CITY_CONNECTION",
   "music": "MUS_PEWTER",
-  "region_map_section": "MAPSEC_SAFFRON_CITY",
+  "region_map_section": "MAPSEC_NONE",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_TOWN",
@@ -13,18 +13,7 @@
   "show_map_name": true,
   "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "map": "MAP_ROUTE5",
-      "offset": 10,
-      "direction": "up"
-    },
-    {
-      "map": "MAP_ROUTE7",
-      "offset": 7,
-      "direction": "left"
-    }
-  ],
+  "connections": 0,
   "object_events": [
 
   ],

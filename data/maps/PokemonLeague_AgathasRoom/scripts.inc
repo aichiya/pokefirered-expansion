@@ -16,7 +16,7 @@ PokemonLeague_AgathasRoom_OnLoad::
 	end
 
 PokemonLeague_AgathasRoom_EventScript_CloseEntry::
-	call PokemonLeague_EventScript_CloseEntry
+	call PokemonLeague_EventScript_AgathasCloseEntry
 	return
 
 PokemonLeague_AgathasRoom_EventScript_SetDoorOpen::

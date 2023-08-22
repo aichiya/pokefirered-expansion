@@ -16,8 +16,8 @@
   "connections": 0,
   "object_events": [
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_GIOVANNI",
-      "in_connection": false,
       "x": 17,
       "y": 3,
       "elevation": 3,
@@ -28,11 +28,11 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RocketHideout_B4F_EventScript_Giovanni",
       "flag": "FLAG_HIDE_HIDEOUT_GIOVANNI",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "in_connection": false,
       "x": 17,
       "y": 2,
       "elevation": 3,
@@ -43,11 +43,11 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RocketHideout_B4F_EventScript_SilphScope",
       "flag": "FLAG_HIDE_SILPH_SCOPE",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "in_connection": false,
       "x": 3,
       "y": 2,
       "elevation": 3,
@@ -58,11 +58,11 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "RocketHideout_B4F_EventScript_Grunt1",
       "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "in_connection": false,
       "x": 2,
       "y": 2,
       "elevation": 3,
@@ -73,11 +73,11 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RocketHideout_B4F_EventScript_LiftKey",
       "flag": "FLAG_HIDE_LIFT_KEY",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "in_connection": false,
       "x": 18,
       "y": 12,
       "elevation": 3,
@@ -88,11 +88,11 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RocketHideout_B4F_EventScript_Grunt3",
       "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "in_connection": false,
       "x": 15,
       "y": 12,
       "elevation": 3,
@@ -103,11 +103,11 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RocketHideout_B4F_EventScript_Grunt2",
       "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "in_connection": false,
       "x": 1,
       "y": 4,
       "elevation": 3,
@@ -118,11 +118,11 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RocketHideout_B4F_EventScript_ItemTM49",
       "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B4F_TM49",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "in_connection": false,
       "x": 2,
       "y": 12,
       "elevation": 0,
@@ -133,11 +133,11 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RocketHideout_B4F_EventScript_ItemMaxEther",
       "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B4F_MAX_ETHER",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "in_connection": false,
       "x": 4,
       "y": 20,
       "elevation": 0,
@@ -148,30 +148,30 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RocketHideout_B4F_EventScript_ItemCalcium",
       "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B4F_CALCIUM",
-      "type": "object"
+      "in_connection": false
     }
   ],
   "warp_events": [
     {
       "x": 11,
-      "y": 15,
+      "y": 10,
       "elevation": 3,
       "dest_map": "MAP_ROCKET_HIDEOUT_B3F",
-      "dest_warp_id": 0
+      "dest_warp_id": "1"
     },
     {
       "x": 16,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_ROCKET_HIDEOUT_ELEVATOR",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     },
     {
       "x": 17,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_ROCKET_HIDEOUT_ELEVATOR",
-      "dest_warp_id": 0
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

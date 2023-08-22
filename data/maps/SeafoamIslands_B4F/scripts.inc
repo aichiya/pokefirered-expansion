@@ -121,8 +121,6 @@ SeafoamIslands_B4F_EventScript_CurrentBlocked::
 SeafoamIslands_B4F_Movement_RideCurrentFar::
 	walk_up
 	walk_up
-	walk_up
-	walk_right
 	walk_right
 	walk_right
 	walk_right
@@ -132,8 +130,6 @@ SeafoamIslands_B4F_Movement_RideCurrentFar::
 SeafoamIslands_B4F_Movement_RideCurrentClose::
 	walk_up
 	walk_up
-	walk_up
-	walk_right
 	walk_right
 	walk_right
 	walk_up

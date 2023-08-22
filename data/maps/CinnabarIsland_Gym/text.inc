@@ -152,7 +152,7 @@ CinnabarIsland_Gym_Text_GymStatuePlayerWon::
 CinnabarIsland_Gym_Text_PokemonQuizRules::
     .string "POKéMON Quiz!\p"
     .string "Get it right, and the door opens to\n"
-    .string "the next room.\p"
+    .string "the next room!\p"
     .string "Get it wrong, and face a TRAINER!\p"
     .string "If you want to conserve your\n"
     .string "POKéMON for the GYM LEADER…\p"
@@ -160,25 +160,25 @@ CinnabarIsland_Gym_Text_PokemonQuizRules::
     .string "Here we go!$"
 
 CinnabarIsland_Gym_Text_QuizQuestion1::
-    .string "CATERPIE evolves into METAPOD?$"
+    .string "CATERPIE evolves into BUTTERFREE?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion2::
-    .string "There are nine certified POKéMON\n"
-    .string "LEAGUE BADGES?$"
+    .string "There are 9 certified POKéMON\n"
+    .string "LEAGUE BADGEs?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion3::
-    .string "POLIWAG evolves three times?$"
+    .string "POLIWAG evolves 3 times?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion4::
-    .string "Are electric moves effective\n"
-    .string "against GROUND-type POKéMON?$"
+    .string "Are thunder moves effective\n"
+    .string "against ground element-type POKéMON?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion5::
     .string "POKéMON of the same kind and level\n"
     .string "are not identical?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion6::
-    .string "TM28 contains TOMBSTONY?$"
+    .string "TM28 contains TOMBSTONER?$"
 
 CinnabarIsland_Gym_Text_CorrectGoOnThrough::
     .string "You're absolutely correct!\p"

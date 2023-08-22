@@ -278,7 +278,7 @@
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE",
-      "dest_warp_id": "0"
+      "dest_warp_id": "2"
     },
     {
       "x": 27,
@@ -334,14 +334,7 @@
       "y": 24,
       "elevation": 3,
       "dest_map": "MAP_FUCHSIA_CITY_HOUSE2",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 31,
-      "y": 24,
-      "elevation": 3,
-      "dest_map": "MAP_FUCHSIA_CITY_HOUSE2",
-      "dest_warp_id": "0"
+      "dest_warp_id": "2"
     },
     {
       "x": 15,
