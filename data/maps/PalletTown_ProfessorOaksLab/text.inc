@@ -124,8 +124,7 @@ PalletTown_ProfessorOaksLab_Text_OakCanReachNextTownWithMon::
 
 PalletTown_ProfessorOaksLab_Text_OakBattleMonForItToGrow::
     .string "OAK: {PLAYER}, raise your young\n"
-    .string "POKéMON by making it battle.\p"
-    .string "It has to battle for it to grow.$"
+    .string "POKéMON by making it fight!$"
 
 PalletTown_ProfessorOaksLab_Text_OakHaveSomethingForMe::
     .string "OAK: Oh, {PLAYER}!\n"
@@ -227,7 +226,7 @@ PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls::
     .string "They contain POKéMON!$"
 
 PalletTown_ProfessorOaksLab_Text_OaksLastMon::
-    .string "That's PROF. OAK's last POKéMON.$"
+    .string "That's PROF. OAK's last POKéMON!$"
 
 PalletTown_ProfessorOaksLab_Text_PressStartToOpenMenu::
     .string "Press START to open the MENU!$"
@@ -244,8 +243,8 @@ PalletTown_ProfessorOaksLab_Text_EmailMessage::
     .string "There's an e-mail message here!\p"
     .string ". . .\p"
     .string "Calling all POKéMON trainers!\n"
-    .string "The elite trainers of the\l"
-    .string "POKéMON LEAGUE are ready to\p"
+    .string "The elite trainers of\l"
+    .string "POKéMON LEAGUE are ready to\l"
     .string "take on all comers!\p"
     .string "Bring your best POKéMON and see\n"
     .string "how you rate as a TRAINER!\p"
@@ -277,8 +276,8 @@ PalletTown_ProfessorOaksLab_Text_OakIsGoingToHaveRadioShow::
     .string "OAK's POKéMON SEMINAR.$"
 
 PalletTown_ProfessorOaksLab_Text_OakIsAuthorityOnMons::
-    .string "PROF. OAK is the authority,\n"
-    .string "on POKéMON!\p"
+    .string "PROF. OAK is the\n"
+    .string "authority on POKéMON!\p"
     .string "Many POKéMON trainers hold him\n"
     .string "in high regard!$"
 
