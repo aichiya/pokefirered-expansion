@@ -17,7 +17,7 @@ PalletTown_OnFrame::
 PalletTown_EventScript_OakRatingScene::
 	lockall
 	textcolor NPC_TEXT_COLOR_MALE
-	setobjectxyperm LOCALID_PROF_OAK, 14, 14
+	setobjectxyperm LOCALID_PROF_OAK, 8, 7
 	setobjectmovementtype LOCALID_PROF_OAK, MOVEMENT_TYPE_FACE_LEFT
 	addobject LOCALID_PROF_OAK
 	applymovement LOCALID_PROF_OAK, PalletTown_Movement_OakWalkToPlayersDoor
@@ -219,23 +219,20 @@ PalletTown_EventScript_OakLeadPlayerToLabRight::
 PalletTown_Movement_OakEnterLeft::
 	walk_up
 	walk_up
-	walk_right
-	walk_up
 	walk_up
 	walk_right
 	walk_up
+	walk_right
 	walk_up
 	step_end
 
 PalletTown_Movement_OakEnterRight::
-	walk_right
 	walk_up
-	walk_up
-	walk_right
 	walk_up
 	walk_up
 	walk_right
 	walk_up
+	walk_right
 	walk_up
 	step_end
 
