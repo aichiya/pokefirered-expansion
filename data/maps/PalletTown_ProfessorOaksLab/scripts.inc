@@ -347,7 +347,6 @@ PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleSquirtleLeft::
 	walk_left
 	walk_left
 	walk_down
-	walk_down
 	step_end
 
 PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleSquirtleMid::
@@ -356,7 +355,6 @@ PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleSquirtleMid::
 PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleSquirtleRight::
 	walk_left
 	walk_left
-	walk_down
 	walk_down
 	step_end
 
@@ -393,7 +391,6 @@ PalletTown_ProfessorOaksLab_Movement_ApproachForBattleCharmanderLeft::
 	walk_left
 	walk_left
 	walk_down
-	walk_down
 	step_end
 
 PalletTown_ProfessorOaksLab_Movement_ApproachForBattleCharmanderMid::
@@ -401,7 +398,6 @@ PalletTown_ProfessorOaksLab_Movement_ApproachForBattleCharmanderMid::
 
 PalletTown_ProfessorOaksLab_Movement_ApproachForBattleCharmanderRight::
 	walk_left
-	walk_down
 	walk_down
 	step_end
 
@@ -440,7 +436,6 @@ PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleBulbasaurLeft::
 	walk_left
 	walk_left
 	walk_down
-	walk_down
 	step_end
 
 PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleBulbasaurMid::
@@ -450,7 +445,6 @@ PalletTown_ProfessorOaksLab_Movement_RivalApproachForBattleBulbasaurRight::
 	walk_left
 	walk_left
 	walk_left
-	walk_down
 	walk_down
 	step_end
 
@@ -495,11 +489,13 @@ PalletTown_ProfessorOaksLab_Movement_RivalExitAfterBattleLeft::
 	walk_down
 	walk_down
 	walk_down
+	walk_down
 	delay_8
 	step_end
 
 PalletTown_ProfessorOaksLab_Movement_RivalExitAfterBattleRight::
 	walk_left
+	walk_down
 	walk_down
 	walk_down
 	walk_down
