@@ -101,7 +101,7 @@
     {
       "type": "sign",
       "x": 7,
-      "y": 1,
+      "y": 0,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "ViridianCity_School_EventScript_PokemonJournal"
