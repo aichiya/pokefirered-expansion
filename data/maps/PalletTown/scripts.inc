@@ -177,12 +177,12 @@ PalletTown_EventScript_OakTrigger::
 	delay 30
 	call_if_eq VAR_TEMP_1, 0, PalletTown_EventScript_OakLeadPlayerToLabLeft
 	call_if_eq VAR_TEMP_1, 1, PalletTown_EventScript_OakLeadPlayerToLabRight
-	opendoor 16, 13
+	opendoor 12, 11
 	waitdooranim
 	applymovement LOCALID_PROF_OAK, PalletTown_Movement_OakEnterLab
 	applymovement OBJ_EVENT_ID_PLAYER, PalletTown_Movement_PlayerEnterLab
 	waitmovement 0
-	closedoor 16, 13
+	closedoor 12, 11
 	waitdooranim
 	setvar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 1
 	clearflag FLAG_HIDE_OAK_IN_HIS_LAB
