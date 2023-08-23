@@ -4,9 +4,9 @@ PalletTown_RivalsHouse_Text_HiBrothersAtLab::
     .string "Grandpa's lab.$"
 
 PalletTown_RivalsHouse_Text_HeardYouBattledRival::
-    .string "DAISY: {PLAYER}, I heard you had\n"
-    .string "a battle against {RIVAL}.\p"
-    .string "I wish I'd seen that!$"
+    .string "DAISY: Hi {PLAYER}!\n"
+    .string "{RIVAL} is out\p"
+    .string "at Grandpa's lab.$"
 
 PalletTown_RivalsHouse_Text_ErrandForGrandpaThisWillHelp::
     .string "Grandpa asked you to run an\n"
