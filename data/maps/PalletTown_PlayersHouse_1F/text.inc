@@ -1,8 +1,8 @@
 PalletTown_PlayersHouse_1F_Text_AllBoysLeaveOakLookingForYou::
-    .string "MOM: …Right.\n"
-    .string "All boys leave home someday.\l"
+    .string "MOM: Right.\n"
+    .string "All boys leave home some day.\l"
     .string "It said so on TV.\p"
-    .string "Oh, yes. PROF. OAK, next door, was\n"
+    .string "PROF. OAK, next door, is\n"
     .string "looking for you.$"
 
 PalletTown_PlayersHouse_1F_Text_AllGirlsLeaveOakLookingForYou::
