@@ -1,6 +1,6 @@
 PalletTown_ProfessorOaksLab_Text_RivalGrampsIsntAround::
-    .string "{RIVAL}: What, it's only {PLAYER}?\n"
-    .string "Gramps isn't around.$"
+    .string "{RIVAL}: Yo {PLAYER}!\n"
+    .string "Gramps isn't around!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalFedUpWithWaiting::
     .string "{RIVAL}: Gramps!\n"
@@ -229,8 +229,8 @@ PalletTown_ProfessorOaksLab_Text_OakComeSeeMeSometime::
     .string "POKéDEX is coming along.$"
 
 PalletTown_ProfessorOaksLab_Text_BlankEncyclopedia::
-    .string "It's like an encyclopedia, but the\n"
-    .string "pages are blank.$"
+    .string "It's encyclopedia-like, but\n"
+    .string "the pages are blank!$"
 
 PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls::
     .string "Those are POKé BALLS.\n"
@@ -243,26 +243,26 @@ PalletTown_ProfessorOaksLab_Text_PressStartToOpenMenu::
     .string "Press START to open the MENU!$"
 
 PalletTown_ProfessorOaksLab_Text_SaveOptionInMenu::
-    .string "The SAVE option is on the MENU.\n"
-    .string "Use it regularly.$"
+    .string "The SAVE option is on\n"
+    .string "the MENU screen.$"
 
 PalletTown_ProfessorOaksLab_Text_AllMonTypesHaveStrongAndWeakPoints::
     .string "All POKéMON types have strong and\n"
     .string "weak points against others.$"
 
 PalletTown_ProfessorOaksLab_Text_EmailMessage::
-    .string "There's an e-mail message here.\p"
-    .string "…\p"
-    .string "Finally!\n"
-    .string "The ultimate TRAINERS of the\l"
-    .string "POKéMON LEAGUE are ready to\l"
+    .string "There's an e-mail message here!\p"
+    .string ". . .\p"
+    .string "Calling all POKéMON trainers!\n"
+    .string "The elite trainers of the\l"
+    .string "POKéMON LEAGUE are ready to\p"
     .string "take on all comers!\p"
     .string "Bring your best POKéMON and see\n"
     .string "how you rate as a TRAINER!\p"
     .string "POKéMON LEAGUE HQ\n"
     .string "INDIGO PLATEAU\p"
-    .string "PROF. OAK, please visit us!\n"
-    .string "…$"
+    .string "PS: PROF. OAK, please visit us!\n"
+    .string ". . .$"
 
 PalletTown_ProfessorOaksLab_Text_StudyAsOaksAide::
     .string "I study POKéMON as PROF. OAK's\n"
