@@ -1,8 +1,8 @@
 ViridianCity_Text_CanCarryMonsAnywhere::
-    .string "Those POKé BALLS at your waist!\n"
-    .string "You have POKéMON, don't you?\p"
+    .string "Those POKé BALLs at your waist!\n"
+    .string "You have POKéMON!\p"
     .string "It's great that you can carry and\n"
-    .string "use POKéMON anytime, anywhere.$"
+    .string "use POKéMON any time, anywhere!$"
 
 ViridianCity_Text_GymClosedWonderWhoLeaderIs::
     .string "This POKéMON GYM is always closed.\p"
@@ -12,7 +12,7 @@ ViridianCity_Text_ViridiansGymLeaderReturned::
     .string "VIRIDIAN GYM's LEADER returned!$"
 
 ViridianCity_Text_WantToKnowAboutCaterpillarMons::
-    .string "You want to know about the two\n"
+    .string "You want to know about the 2\n"
     .string "kinds of caterpillar POKéMON?$"
 
 ViridianCity_Text_OhOkayThen::
@@ -21,14 +21,14 @@ ViridianCity_Text_OhOkayThen::
 ViridianCity_Text_ExplainCaterpieWeedle::
     .string "CATERPIE has no poison,\n"
     .string "but WEEDLE does.\p"
-    .string "Watch that your POKéMON aren't\n"
-    .string "stabbed by WEEDLE's POISON STING.$"
+    .string "Watch out for its\n"
+    .string "POISON STING!$"
 
 ViridianCity_Text_GrandpaHasntHadCoffeeYet::
-    .string "Oh, Grandpa!\n"
+    .string "Oh Grandpa!\n"
     .string "Don't be so mean!\p"
-    .string "I'm so sorry.\n"
-    .string "He hasn't had his coffee yet.$"
+    .string "He hasn't had his\n"
+    .string "coffee yet.$"
 
 ViridianCity_Text_GoShoppingInPewterOccasionally::
     .string "I go shopping in PEWTER CITY\n"
@@ -37,8 +37,8 @@ ViridianCity_Text_GoShoppingInPewterOccasionally::
     .string "VIRIDIAN FOREST when I go.$"
 
 ViridianCity_Text_ThisIsPrivateProperty::
-    .string "I absolutely forbid you from\n"
-    .string "going through here!\p"
+    .string "You can't go\n"
+    .string "through here!\p"
     .string "This is private property!$"
 
 ViridianCity_Text_ShowYouHowToCatchMons::
@@ -113,9 +113,9 @@ ViridianCity_Text_CatchMonsForEasierBattles::
 ViridianCity_Text_MovesLimitedByPP::
     .string "TRAINER TIPS\p"
     .string "The battle moves of POKéMON are\n"
-    .string "limited by their POWER POINTS, PP.\p"
+    .string "limited by their POWER POINTs, PP.\p"
     .string "To replenish PP, rest your tired\n"
-    .string "POKéMON at a POKéMON CENTER.$"
+    .string "POKéMON at a POKéMON CENTER!$"
 
 ViridianCity_Text_GymSign::
     .string "VIRIDIAN CITY POKéMON GYM$"
