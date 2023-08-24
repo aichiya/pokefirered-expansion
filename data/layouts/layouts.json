@@ -1192,10 +1192,10 @@
     {
       "id": "LAYOUT_VIRIDIAN_FOREST",
       "name": "ViridianForest_Layout",
-      "width": 34,
+      "width": 46,
       "height": 48,
-      "border_width": 2,
-      "border_height": 2,
+      "border_width": 1,
+      "border_height": 1,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_RB_Forest",
       "border_filepath": "data/layouts/ViridianForest/border.bin",
