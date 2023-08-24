@@ -93,10 +93,10 @@ ViridianCity_Text_CitySign::
 
 ViridianCity_Text_CatchMonsForEasierBattles::
     .string "TRAINER TIPS\p"
-    .string "Catch POKéMON and expand your\n"
-    .string "collection.\p"
-    .string "The more you have, the easier it\n"
-    .string "is to battle.$"
+    .string "Catch POKéMON and expand\n"
+    .string "your collection!\p"
+    .string "The more you have, the easier\n"
+    .string "it is to fight!$"
 
 ViridianCity_Text_MovesLimitedByPP::
     .string "TRAINER TIPS\p"
@@ -109,5 +109,5 @@ ViridianCity_Text_GymSign::
     .string "VIRIDIAN CITY POKéMON GYM$"
 
 ViridianCity_Text_GymDoorsAreLocked::
-    .string "VIRIDIAN GYM's doors are locked…$"
+    .string "The GYM's doors are locked...$"
 
