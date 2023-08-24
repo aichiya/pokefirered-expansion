@@ -58,7 +58,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
-      "flag": "FLAG_TEMP_11",
+      "flag": "FLAG_TEMP_8",
       "in_connection": false
     },
     {
@@ -80,9 +80,9 @@
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
       "x": 18,
-      "y": 4,
+      "y": 5,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 2,
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -93,7 +93,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_3",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
       "x": 17,
       "y": 9,
       "elevation": 3,
@@ -148,22 +148,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
-      "flag": "0",
-      "in_connection": false
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_VAR_0",
-      "x": 15,
-      "y": 4,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "ViridianCity_EventScript_ItemPotion",
-      "flag": "FLAG_HIDE_VIRIDIAN_CITY_POTION",
+      "flag": "FLAG_TEMP_9",
       "in_connection": false
     }
   ],
@@ -282,6 +267,16 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "ViridianCity_EventScript_GymDoor"
+    },
+    {
+      "type": "hidden_item",
+      "x": 14,
+      "y": 4,
+      "elevation": 0,
+      "item": "ITEM_POTION",
+      "flag": "FLAG_HIDE_VIRIDIAN_CITY_POTION",
+      "quantity": 1,
+      "underfoot": false
     }
   ]
 }

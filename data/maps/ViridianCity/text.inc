@@ -31,10 +31,9 @@ ViridianCity_Text_GrandpaHasntHadCoffeeYet::
     .string "coffee yet.$"
 
 ViridianCity_Text_GoShoppingInPewterOccasionally::
-    .string "I go shopping in PEWTER CITY\n"
-    .string "occasionally.\p"
-    .string "I have to take the winding trail in\n"
-    .string "VIRIDIAN FOREST when I go.$"
+    .string "When I go shop in PEWTER CITY,\n"
+    .string "I have to take the winding\p"
+    .string "trail in VIRIDIAN FOREST.$"
 
 ViridianCity_Text_ThisIsPrivateProperty::
     .string "You can't go\n"
@@ -42,21 +41,10 @@ ViridianCity_Text_ThisIsPrivateProperty::
     .string "This is private property!$"
 
 ViridianCity_Text_ShowYouHowToCatchMons::
-    .string "Well, now, I've had my coffee, and\n"
-    .string "that's what I need to get going!\p"
-    .string "Hm?\n"
-    .string "What is that red box you have?\p"
-    .string "Ah, so you're working on your\n"
-    .string "POKéDEX.\p"
-    .string "Then let me give you a word of\n"
-    .string "advice.\p"
-    .string "Whenever you catch a POKéMON,\n"
-    .string "the POKéDEX automatically updates\l"
-    .string "its data.\p"
-    .string "…You don't know how to catch\n"
-    .string "a POKéMON?\p"
-    .string "I suppose I had better show you\n"
-    .string "then!$"
+    .string "Ahh, I've had my coffee now\n"
+    .string "and I feel great!\p"
+    .string "Sure you can go through!\n"
+    .string "Are you in a hurry?$"
 
 ViridianCity_Text_ThatWasEducationalTakeThis::
     .string "There! Now tell me, that was\n"
