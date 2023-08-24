@@ -1,25 +1,25 @@
 Route22_Text_EarlyRivalIntro::
 	.string "{RIVAL}: Hey! {PLAYER}!\p"
-	.string "You're off to the POKéMON LEAGUE?\n"
-	.string "Forget about it!\p"
-	.string "You probably don't have any\n"
-	.string "BADGES, do you?\p"
-	.string "The guard won't let you through\n"
-	.string "without them.\p"
-	.string "By the way, did your POKéMON get\n"
-	.string "any stronger?$"
+	.string "You're going to\n"
+	.string "POKéMON LEAGUE?\l"
+	.string "Forget it!\p"
+	.string "You probably don't\n"
+	.string "have any BADGEs!\l"
+	.string "The guard won't let you through!\p"
+	.string "By the way, did your POKéMON\n"
+	.string "get any stronger?$"
 
 Route22_Text_EarlyRivalDefeat::
 	.string "Awww!\n"
 	.string "You just lucked out!$"
 
 Route22_Text_EarlyRivalPostBattle::
-	.string "I heard the POKéMON LEAGUE is\n"
-	.string "crawling with tough TRAINERS.\p"
-	.string "I have to figure out how to get\n"
-	.string "past them.\p"
-	.string "You should quit dawdling and get a\n"
-	.string "move on!$"
+	.string "I heard POKéMON LEAGUE has\n"
+	.string "many tough trainers!\p"
+	.string "I have to figure out how\n"
+	.string "to get past them!\p"
+	.string "You should quit dawdling\n"
+	.string "and get a move on!$"
 
 @ Translated in RB as "{RIVAL}: What? Why do I have 2 POKéMON? You should catch some more too!"
 Route22_Text_RivalShouldCatchSomeMons::
