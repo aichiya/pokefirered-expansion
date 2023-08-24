@@ -1,13 +1,13 @@
 Text_DreamEaterTeach::
     .string "Yawn!\n"
     .string "I must have dozed off in the sun.\p"
-    .string "I had this weird dream about\n"
-    .string "a DROWZEE eating my dream.\p"
-    .string "And…\n"
-    .string "I learned how to eat dreams…\p"
-    .string "Oogh, this is too spooky!\p"
-    .string "Let me teach it to a POKéMON so\n"
-    .string "I can forget about it!$"
+    .string "I had this dream about a\n"
+    .string "DROWZEE eating my dream.\p"
+    .string "What's this?'\n"
+    .string "Where did this TM\p"
+    .string "come from?\p"
+    .string "This is spooky! Here,\n"
+    .string "you can have this TM.$"
 
 Text_DreamEaterDeclined::
     .string "…Snore…$"
