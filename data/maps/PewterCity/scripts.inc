@@ -198,7 +198,6 @@ PewterCity_EventScript_GymGuideTriggerBottom::
 	goto PewterCity_EventScript_GymGuideTrigger
 	end
 
-@ This trigger is inaccessible and its corresponding movement script isnt linked
 PewterCity_EventScript_GymGuideTriggerRight::
 	lockall
 	setvar VAR_TEMP_1, 3
@@ -213,6 +212,7 @@ PewterCity_EventScript_GymGuideTrigger::
 	call_if_eq VAR_TEMP_1, 0, PewterCity_EventScript_WalkToGymTop
 	call_if_eq VAR_TEMP_1, 1, PewterCity_EventScript_WalkToGymMid
 	call_if_eq VAR_TEMP_1, 2, PewterCity_EventScript_WalkToGymBottom
+	call_if_eq VAR_TEMP_1, 3, PewterCity_EventScript_WalkToGymRight
 	msgbox PewterCity_Text_GoTakeOnBrock
 	closemessage
 	applymovement LOCALID_GYM_GUIDE, PewterCity_Movement_GymGuideExit
@@ -259,22 +259,32 @@ PewterCity_EventScript_WalkToGymRight::
 PewterCity_Movement_PlayerWalkToGymTop::
 	walk_left
 	walk_right
+	walk_down
 	walk_to_gym
 	step_end
 
 PewterCity_Movement_PlayerWalkToGymMid::
+	delay_16
+	walk_left
+	walk_left
+	walk_to_gym
 	step_end
 
 PewterCity_Movement_PlayerWalkToGymBottom::
+	walk_left
+	walk_up
+	walk_left
+	walk_to_gym
 	step_end
 
 PewterCity_Movement_PlayerWalkToGymRight::
+	delay_16
+	walk_left
+	walk_down
+	walk_to_gym
 	step_end
 
 PewterCity_Movement_GuideMoveToLeadTop::
-	delay_16
-	walk_down
-	walk_down
 	step_end
 
 PewterCity_Movement_GuideMoveToLeadMid::
@@ -287,18 +297,35 @@ PewterCity_Movement_GuideApproachPlayerRight::
 	step_end
 
 PewterCity_Movement_GuideWalkToGymTop::
+	walk_down
+	walk_down
 	walk_to_gym
 	walk_right
 	walk_in_place_faster_left
 	step_end
 
 PewterCity_Movement_GuideWalkToGymMid::
+	walk_down
+	walk_down
+	walk_to_gym
+	walk_right
+	walk_in_place_faster_left
 	step_end
 
 PewterCity_Movement_GuideWalkToGymBottom::
+	walk_down
+	walk_down
+	walk_to_gym
+	walk_right
+	walk_in_place_faster_left
 	step_end
 
 PewterCity_Movement_GuideWalkToGymRight::
+	walk_down
+	walk_down
+	walk_to_gym
+	walk_right
+	walk_in_place_faster_left
 	step_end
 
 PewterCity_EventScript_Lass::
