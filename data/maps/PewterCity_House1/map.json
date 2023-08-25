@@ -16,23 +16,23 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_BALDING_MAN",
-      "in_connection": false,
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_BLAINE",
       "x": 1,
       "y": 2,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PewterCity_House1_EventScript_BaldingMan",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
-      "in_connection": false,
       "x": 3,
       "y": 5,
       "elevation": 3,
@@ -43,11 +43,11 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PewterCity_House1_EventScript_LittleBoy",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_NIDORAN_M",
-      "in_connection": false,
       "x": 4,
       "y": 5,
       "elevation": 3,
@@ -58,7 +58,7 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PewterCity_House1_EventScript_Nidoran",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     }
   ],
   "warp_events": [
@@ -67,21 +67,14 @@
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "4"
     },
     {
       "x": 3,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_PEWTER_CITY",
-      "dest_warp_id": 0
-    },
-    {
-      "x": 3,
-      "y": 7,
-      "elevation": 0,
-      "dest_map": "MAP_PEWTER_CITY",
-      "dest_warp_id": 0
+      "dest_warp_id": "4"
     }
   ],
   "coord_events": [

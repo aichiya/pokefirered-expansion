@@ -1,6 +1,5 @@
 PewterCity_Museum_1F_Text_Its50YForChildsTicket::
-    .string "Yes, yes.\n"
-    .string "It's ¥50 for a child's ticket.\p"
+    .string "It's ¥50 for a child's ticket.\n"
     .string "Would you like to come in?$"
 
 PewterCity_Museum_1F_Text_ComeAgain::
@@ -39,10 +38,8 @@ PewterCity_Museum_1F_Text_PleaseGoAround::
     .string "あちらへ　おまわりください$"
 
 PewterCity_Museum_1F_Text_ShouldBeGratefulForLongLife::
-    .string "I should be grateful for my long\n"
-    .string "life.\p"
-    .string "Never did I think I would get to\n"
-    .string "see the bones of a dragon!$"
+    .string "That is one magnificent \n"
+    .string "fossil!$"
 
 PewterCity_Museum_1F_Text_WantYouToGetAmberExamined::
     .string "Ssh! Listen, I need to share a\n"
