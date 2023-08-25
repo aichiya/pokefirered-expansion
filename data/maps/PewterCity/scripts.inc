@@ -63,10 +63,6 @@ PewterCity_EventScript_WalkToGymNorth::
 	walk_left
 	walk_left
 	walk_left
-	walk_up
-	walk_left
-	walk_left
-	walk_left
 	walk_left
 	walk_left
 	walk_left
@@ -84,16 +80,6 @@ PewterCity_EventScript_WalkToGymNorth::
 	walk_up
 	walk_up
 	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
 	walk_left
 	walk_left
 	walk_left
@@ -110,59 +96,11 @@ PewterCity_EventScript_WalkToGymNorth::
 	walk_down
 	walk_down
 	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
 	walk_right
 	walk_right
 .endm
 
 .macro walk_to_gym_alt
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_right
 .endm
 
 PewterCity_Movement_PlayerWaitForGuideEast::
@@ -178,29 +116,18 @@ PewterCity_Movement_PlayerWalkToGymEast::
 	step_end
 
 PewterCity_Movement_PlayerWaitForGuideWest::
-	delay_16
 	step_end
 
 PewterCity_Movement_PlayerWalkToGymWest::
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_to_gym_alt
 	step_end
 
 PewterCity_Movement_PlayerWaitForGuideNorth::
-	delay_16
+	walk_left
+	walk_right
 	step_end
 
 PewterCity_Movement_PlayerWalkToGymNorth::
-	walk_up
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_to_gym_alt
+	walk_to_gym
 	step_end
 
 PewterCity_Movement_GuideMoveToLeadEast::
@@ -245,16 +172,12 @@ PewterCity_Movement_GuideWalkToGymNorth::
 	step_end
 
 PewterCity_Movement_GymGuideExit::
-	walk_down
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
 	step_end
 
 PewterCity_EventScript_GymGuideTriggerTop::
@@ -335,61 +258,32 @@ PewterCity_EventScript_WalkToGymRight::
 
 PewterCity_Movement_PlayerWalkToGymTop::
 	walk_left
+	walk_right
 	walk_to_gym
 	step_end
 
 PewterCity_Movement_PlayerWalkToGymMid::
-	walk_up
-	walk_left
-	walk_to_gym
 	step_end
 
 PewterCity_Movement_PlayerWalkToGymBottom::
-	walk_up
-	walk_up
-	walk_left
-	walk_to_gym
 	step_end
 
 PewterCity_Movement_PlayerWalkToGymRight::
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_up
-	walk_left
-	walk_left
-	walk_left
-	walk_up
-	walk_up
-	walk_to_gym_alt
 	step_end
 
 PewterCity_Movement_GuideMoveToLeadTop::
-	walk_left
+	delay_16
 	walk_down
-	walk_in_place_faster_right
-	walk_in_place_right
+	walk_down
 	step_end
 
 PewterCity_Movement_GuideMoveToLeadMid::
-	walk_down
-	walk_in_place_down
 	step_end
 
 PewterCity_Movement_GuideMoveToLeadBottom::
-	walk_down
-	walk_down
-	walk_in_place_down
 	step_end
 
 PewterCity_Movement_GuideApproachPlayerRight::
-	walk_down
-	walk_down
-	walk_right
-	walk_down
-	walk_right
-	walk_in_place_right
 	step_end
 
 PewterCity_Movement_GuideWalkToGymTop::
@@ -399,33 +293,12 @@ PewterCity_Movement_GuideWalkToGymTop::
 	step_end
 
 PewterCity_Movement_GuideWalkToGymMid::
-	walk_left
-	walk_to_gym
-	walk_right
-	walk_in_place_faster_left
 	step_end
 
 PewterCity_Movement_GuideWalkToGymBottom::
-	walk_up
-	walk_left
-	walk_to_gym
-	walk_right
-	walk_in_place_faster_left
 	step_end
 
 PewterCity_Movement_GuideWalkToGymRight::
-	walk_left
-	walk_left
-	walk_left
-	walk_up
-	walk_left
-	walk_left
-	walk_left
-	walk_up
-	walk_up
-	walk_to_gym_alt
-	walk_right
-	walk_in_place_faster_left
 	step_end
 
 PewterCity_EventScript_Lass::
@@ -490,6 +363,11 @@ PewterCity_EventScript_CheckedOutMuseum::
 	walk_up
 	walk_up
 	walk_up
+	walk_up
+	walk_up
+	walk_left
+	walk_left
+	walk_left
 	walk_left
 	walk_left
 	walk_left
@@ -503,19 +381,18 @@ PewterCity_EventScript_CheckedOutMuseum::
 	walk_up
 	walk_up
 	walk_up
-	walk_up
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
 .endm
 
 .macro walk_to_museum_south
 	walk_up
 	walk_up
 	walk_up
+	walk_up
+	walk_up
+	walk_left
+	walk_left
+	walk_left
+	walk_left
 	walk_left
 	walk_left
 	walk_left
@@ -528,13 +405,6 @@ PewterCity_EventScript_CheckedOutMuseum::
 	walk_up
 	walk_up
 	walk_up
-	walk_up
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
 .endm
 
 PewterCity_Movement_PlayerWalkToMuseumNorth::
@@ -551,16 +421,15 @@ PewterCity_Movement_GuideWalkToMuseumNorth::
 	step_end
 
 PewterCity_Movement_PlayerWalkToMuseumSouth::
-	delay_16
-	delay_16
 	walk_left
-	walk_to_museum_south
 	delay_8
+	walk_right
+	walk_to_museum_south
 	walk_in_place_faster_up
 	step_end
 
 PewterCity_Movement_GuideWalkToMuseumSouth::
-	walk_left
+	delay_8
 	walk_up
 	walk_to_museum_south
 	walk_left
@@ -595,19 +464,10 @@ PewterCity_Movement_GuideWalkToMuseumEast::
 
 PewterCity_Movement_MuseumGuideExit::
 	walk_down
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
 	walk_down
 	walk_down
 	walk_down
-	walk_right
-	walk_right
-	walk_right
+	walk_down
 	step_end
 
 PewterCity_EventScript_FatMan::
