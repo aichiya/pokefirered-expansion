@@ -15,7 +15,7 @@ Route4_Text_CrissyPostBattle::
     .string "I think I got them all.$"
 
 Route4_Text_MtMoonEntrance::
-    .string "MT. MOON\n"
+    .string "MT.MOON\n"
     .string "Tunnel Entrance$"
 
 Route4_Text_RouteSign::
