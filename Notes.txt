@@ -1,20 +1,87 @@
 
-Drunk gives Teachy TV and forces capture tutorial.
-Route 2 bushes missing for some reason.
+-Title-
+'95.'96.'98 screen not changed.
+Gamefreak screen not changed.
+Pokemon logo not in correct position.
 
-Route 20 is missing a swimmer.
-Infested Saffron missing 1 rocket by door.
-Silph 8F Grunt1 party incorrect, seemingly mixed up with 7F Grunt.
+-Global-
+PC animation wrong tiles.
+Water no animation.
+Flowers no animation.
+PC options wrong.
+Textbox border no accurate option.
+Overworld character sprites 4 pixels too low.
+Pokemon center YES/NO should be HEAL/CANCEL.
+Cut tree animation not replaced.
+Occupied tall grass sprite incorrect palette/sprite.
+Door animation incorrect palette/sprite.
+Special Atk & Special Def not combined.
+Pokemon gender not removed.
+Moves not changed.
+Learnsets not changed.
+Font not replaced.
+Gendered font colors not changed.
+Replay removal undecided.
+Oak sprite colors ugly.
+Channeler sprite colors ugly.
+Area name popup removal undecided.
+BUG_CATCHER sprite misaligned.
+Red doesn't turn to face approaching trainer.
 
-Route 13 hidden items not scripted.
-Route 17 hidden items not added yet.
-Viridian Dream Eater Tutor not checked for TM42 give.
-Viridian Forest main tree missing hidden Antidote.
-Cerulean Cave B1F hidden ultra ball not scripted.
-Route 10 hidden items not scripted.
-Power Plant items and hidden items incorrect.
+-Intro-
+Pikachu screen not skipped.
+Controls screen not skipped.
+Gender choice not skipped.
+Player name no preset choices.
+Rival name presets wrong.
+Nidorino animation not changed yet.
 
-Silph elevator exit warps broken.
-Viridian City hidden item appears as drunk.
-Badge guards only face left.
-Victory road boulder switches seem broken.
+-Palette Town-
+Rival sister map on table wrong sprite.
+Woman1 missing from Pallet Town.
+Oak seems invisible in Pallet Town intro.
+
+-Oak's Lab-
+Pokemon choice doesn't show pokedex page, popup style not changed.
+
+-Battle-
+Oak tutorial not skipped.
+Red backsprite not changed.
+UI layout not finished.
+POKeMON not changed to PKMN.
+BAG not changed to ITEM.
+ITEM and PKMN should be swapped.
+PP is above move type, should be below.
+Selection bob animation for Pokemon and GUI don't exist in Blue, removal undecided.
+Lost Against text not skipped.
+Paid Prize Money text not skipped.
+... ... ... ... not skipped.
+Titles like LEADER not excluded from trainer names.
+
+-Viridian City-
+Drunk uses wrong sprite, should be gambler.
+Catch tutorial forced, no YES/NO, dialogue not finished.
+Dream Eater guy is tutor, doesn't give TM42.
+Gym peeper uses wrong sprite, should be gambler.
+
+-Pewter City-
+Museum F1 old guy uses wrong sprite, should be GAMBLER.
+SouthWest house old man uses wrong sprite, should be Gambler.
+BROCK gives TM39 Rock Tomb instead of TM34 BIDE.
+
+-PokeMart-
+2 tiles change during Parcel scene for some reason.
+
+-PokeCenter-
+Couch guy in Viridian doesn't talk.
+Couch guy in Viridian needs sprite adjustment.
+Couch guy in Pewter doesn't talk.
+Jigglypuff in Pewter doesn't dance after speaking.
+Route 4 Magikarp dealer uses wrong sprite, should be MAN which needs to be edited.
+Route 4 couch guy doesn't talk.
+
+-Possible Additions-
+Screen overlay to fit visible area to that of GameBoy Color.
+Instant text speed.
+Monochrome mode.
+Pokemon Yellow color mode.
