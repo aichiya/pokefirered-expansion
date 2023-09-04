@@ -55,7 +55,7 @@ EventScript_FieldWhiteOutNoMoney::
 
 EventScript_FieldWhiteOutHasMoney::
 	special OverworldWhiteOutGetMoneyLoss
-	msgbox Text_WhitedOutLostMoney
+	msgbox Text_WhitedOut
 	goto EventScript_FieldWhiteOutFade
 	end
 
