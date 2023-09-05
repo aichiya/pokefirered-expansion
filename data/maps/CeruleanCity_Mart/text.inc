@@ -1,14 +1,12 @@
 CeruleanCity_Mart_Text_RepelWorksOnWeakMons::
-    .string "REPEL not only keeps bugs away,\n"
-    .string "it also works on weak POKéMON.\p"
-    .string "Put your strongest POKéMON at the\n"
-    .string "left of the POKéMON LIST.\p"
-    .string "If your first POKéMON is strong,\n"
-    .string "REPEL's effect is boosted.$"
+    .string "Use REPEL to keep bugs\n"
+    .string "and weak POKéMON away.\p"
+    .string "Put your strongest POKéMON\n"
+    .string "at the top of the list\l"
+    .string "for best results!$"
 
 CeruleanCity_Mart_Text_DoYouKnowAboutRareCandy::
-    .string "Do you know about RARE CANDY?\n"
-    .string "They don't sell it in shops.\p"
-    .string "I think it makes POKéMON grow\n"
-    .string "very quickly all of a sudden.$"
+    .string "Have you seen any RARE CANDY?\n"
+    .string "It's supposed to make\l"
+    .string "POKéMON go up one level!$"
 

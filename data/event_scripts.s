@@ -833,7 +833,7 @@ Text_WelcomeTimeCapsule::
 	.string "TIME CAPSULE.$"
 
 Text_PleaseComeAgain::
-	.string "Please come again!$"
+	.string "Thank you!$"
 
 @ Unused
 Text_HavingDiscountSaleToday::

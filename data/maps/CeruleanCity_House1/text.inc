@@ -1,71 +1,61 @@
 CeruleanCity_House1_Text_BadgesHaveAmazingSecrets::
-    .string "Only skilled TRAINERS can collect\n"
-    .string "POKéMON BADGES.\p"
+    .string "POKéMON BADGEs are owned\n"
+    .string "only by skilled trainers.\p"
     .string "I see you have at least one.\p"
-    .string "Those BADGES have amazing secrets,\n"
-    .string "did you know?$"
+    .string "Those BADGEs have amazing secrets!$"
 
 CeruleanCity_House1_Text_DescribeWhichBadge::
-    .string "Now then…\p"
-    .string "Which of the eight BADGES should\n"
-    .string "I describe?$"
+    .string "Now then...\p"
+    .string "Which of the 8 BADGEs\n"
+    .string "should I describe?$"
 
 CeruleanCity_House1_Text_ComeVisitAnytime::
-    .string "Come visit me anytime you wish.$"
+    .string "Come visit me any time you wish.$"
 
 CeruleanCity_House1_Text_AttackStatFlash::
-    .string "The ATTACK stat of all your\n"
-    .string "POKéMON increases a little bit.\p"
-    .string "It also lets you use the move\n"
-    .string "FLASH outside of battle.$"
+    .string "The ATTACK of all POKéMON\n"
+    .string "increases a little bit.\p"
+    .string "It also lets you use FLASH\n"
+    .string "any time you desire.$"
 
 CeruleanCity_House1_Text_ObeyLv30Cut::
-    .string "POKéMON up to Lv. 30 will obey\n"
-    .string "you.\p"
-    .string "That includes even outsiders you\n"
-    .string "obtain in trades.\p"
-    .string "POKéMON of higher levels will\n"
-    .string "be unruly in battle, however.\p"
-    .string "It also lets you use the move\n"
+    .string "POKéMON up to L30\n"
+    .string "will obey you.\p"
+    .string "Any higher, they\n"
+    .string "become unruly!\p"
+    .string "It also lets you use\n"
     .string "CUT outside of battle.$"
 
 CeruleanCity_House1_Text_SpeedStatFly::
-    .string "The SPEED stat of all your\n"
-    .string "POKéMON increases a little bit.\p"
-    .string "It also lets you use the move\n"
+    .string "The SPEED of all POKéMON\n"
+    .string "increases a little bit.\p"
+    .string "It also lets you use\n"
     .string "FLY outside of battle.$"
 
 CeruleanCity_House1_Text_ObeyLv50Strength::
-    .string "POKéMON up to Lv. 50 will obey\n"
-    .string "you.\p"
-    .string "That includes even outsiders you\n"
-    .string "obtain in trades.\p"
-    .string "POKéMON of higher levels will\n"
-    .string "be unruly in battle, however.\p"
-    .string "It also lets you use the move\n"
-    .string "STRENGTH outside of battle.$"
+    .string "POKéMON up L50\n"
+    .string "will obey you.\p"
+    .string "Any higher, they\n"
+    .string "become unruly!\p"
+    .string "It also lets you\n"
+    .string "use STRENGTH out-$"
+    .string "side of battle."
 
 CeruleanCity_House1_Text_DefenseStatSurf::
-    .string "The DEFENSE stat of all your\n"
-    .string "POKéMON increases a little bit.\p"
-    .string "It also lets you use the move\n"
+    .string "The DEFENSE all POKéMON\n"
+    .string "increases a little bit.\p"
+    .string "It also lets you use\n"
     .string "SURF outside of battle.$"
 
 CeruleanCity_House1_Text_ObeyLv70RockSmash::
-    .string "POKéMON up to Lv. 70 will obey\n"
-    .string "you.\p"
-    .string "That includes even outsiders you\n"
-    .string "obtain in trades.\p"
-    .string "POKéMON of higher levels will\n"
-    .string "be unruly in battle, however.\p"
-    .string "It also lets you use the move\n"
-    .string "ROCK SMASH outside of battle.$"
+    .string "POKéMON up to L70\n"
+    .string "will obey you.\p"
+    .string "Any higher, they\n"
+    .string "become unruly!$"
 
 CeruleanCity_House1_Text_SpStatsWaterfall::
-    .string "The SP. ATK and SP. DEF stats of\n"
-    .string "all your POKéMON rise a little bit.\p"
-    .string "It also lets you use the move\n"
-    .string "WATERFALL outside of battle.$"
+    .string "Your POKéMON's SPECIAL\n"
+    .string "abilities increase a bit.$"
 
 CeruleanCity_House1_Text_AllMonsWillObeyYou::
     .string "All POKéMON will obey you!$"

@@ -1,5 +1,5 @@
 Text_MayIHelpYou::
-	.string "Hi, there!\n"
+	.string "Hi there!\n"
 	.string "May I help you?$"
 
 Text_FillOutQuestionnaire::

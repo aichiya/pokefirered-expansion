@@ -64,13 +64,12 @@ CeruleanCity_Gym_Text_LuisPostBattle::
 CeruleanCity_Gym_Text_GymGuyAdvice::
     .string "Yo!\n"
     .string "Champ in the making!\p"
-    .string "Let me give you some advice!\p"
-    .string "The LEADER, MISTY, is a pro who\n"
-    .string "uses WATER-type POKéMON.\p"
-    .string "You can drain all their water with\n"
-    .string "GRASS-type POKéMON.\p"
-    .string "Or, you might use ELECTRIC-type\n"
-    .string "POKéMON and zap them!$"
+    .string "Here's my advice!\p"
+    .string "The LEADER, MISTY, is a pro\n"
+    .string "who uses water POKéMON!\p"
+    .string "You can drain all their water\n"
+    .string "with plant POKéMON!\p"
+    .string "Or, zap them with electricity!$"
 
 CeruleanCity_Gym_Text_WeMakePrettyGoodTeam::
     .string "You beat MISTY!\n"
@@ -79,13 +78,13 @@ CeruleanCity_Gym_Text_WeMakePrettyGoodTeam::
     .string "darn-good team!$"
 
 CeruleanCity_Gym_Text_GymStatue::
-    .string "CERULEAN POKéMON GYM\n"
+    .string "CERULEAN CITY POKéMON GYM\n"
     .string "LEADER: MISTY\p"
     .string "WINNING TRAINERS:\n"
     .string "{RIVAL}$"
 
 CeruleanCity_Gym_Text_GymStatuePlayerWon::
-    .string "CERULEAN POKéMON GYM\n"
+    .string "CERULEAN CITY POKéMON GYM\n"
     .string "LEADER: MISTY\p"
     .string "WINNING TRAINERS:\n"
     .string "{RIVAL}, {PLAYER}$"

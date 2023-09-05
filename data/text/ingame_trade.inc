@@ -19,13 +19,11 @@ Trade_Text_IsntMyOldMonGreat::
 	.string "Isn't my old {STR_VAR_2} great?$"
 
 Trade_Text_DoYouHaveMonWouldYouTradeForMon::
-	.string "Hello, there! Do you happen to\n"
-	.string "have a {STR_VAR_1}?\p"
-	.string "Would you agree to a trade for\n"
-	.string "my {STR_VAR_2}?$"
+	.string "Hello, there! Do you want to trade\n"
+	.string "your {STR_VAR_1} for {STR_VAR_2}?$"
 
 Trade_Text_WellIfYouDontWantTo::
-	.string "Well, if you don't want to…$"
+	.string "Well, if you don't want to...$"
 
 Trade_Text_ThisIsntMon::
 	.string "Hmmm?\n"

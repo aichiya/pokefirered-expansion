@@ -132,7 +132,7 @@
     },
     {
       "type": "hidden_item",
-      "x": 40,
+      "x": 39,
       "y": 3,
       "elevation": 3,
       "item": "ITEM_GREAT_BALL",

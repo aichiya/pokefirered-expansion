@@ -76,9 +76,9 @@ CeruleanCity_Text_MakeRoomForThisCantRun::
     .string "I can't run until I give it to you!$"
 
 CeruleanCity_Text_TrainerLifeIsToughIsntIt::
-    .string "You're a TRAINER, too?\p"
-    .string "Collecting, battling…\n"
-    .string "It's a tough life, isn't it?$"
+    .string "You're a TRAINER too?\p"
+    .string "Collecting, fighting,\n"
+    .string "it's a tough life.$"
 
 CeruleanCity_Text_YouCanCutDownSmallTrees::
     .string "Did you know that you can CUT down\n"
@@ -89,12 +89,9 @@ CeruleanCity_Text_YouCanCutDownSmallTrees::
     .string "though.$"
 
 CeruleanCity_Text_IfSlowbroWasntThereCouldCutTree::
-    .string "If that SLOWBRO wasn't there, you\n"
-    .string "could CUT down the small tree.\p"
-    .string "That way, you could get to the\n"
-    .string "other side.\p"
-    .string "I think there's a way around it,\n"
-    .string "though.$"
+    .string "That bush in front of the\n"
+    .string "shop is in the way.\l"
+    .string "There might be a way around.$"
 
 CeruleanCity_Text_PokemonEncyclopediaAmusing::
     .string "You're making an encyclopedia on\n"
@@ -105,14 +102,15 @@ CeruleanCity_Text_PeopleHereWereRobbed::
     .string "It's obvious that TEAM ROCKET is\n"
     .string "behind this most heinous crime!\p"
     .string "Even our POLICE FORCE has\n"
-    .string "trouble with the ROCKETS!$"
+    .string "trouble with the ROCKETs!$"
 
 CeruleanCity_Text_SlowbroUseSonicboom::
     .string "Okay! SLOWBRO!\n"
     .string "Use SONICBOOM!$"
 
 CeruleanCity_Text_SlowbroPayAttention::
-    .string "Come on, SLOWBRO, pay attention!$"
+    .string "Come on, SLOWBRO pay attention!\p"
+    .string "pay attention!$"
 
 CeruleanCity_Text_SlowbroPunch::
     .string "SLOWBRO, punch!$"
@@ -128,24 +126,24 @@ CeruleanCity_Text_HardToControlMonsObedience::
     .string "No! That's wrong!\n"
     .string "It's so hard to control POKéMON!\p"
     .string "Your POKéMON's obedience depends\n"
-    .string "on your abilities as a TRAINER.$"
+    .string "on your abilities as a trainer!$"
 
 CeruleanCity_Text_SlowbroTookSnooze::
-    .string "SLOWBRO took a snooze…$"
+    .string "SLOWBRO took a snooze...$"
 
 CeruleanCity_Text_SlowbroLoafingAround::
-    .string "SLOWBRO is loafing around…$"
+    .string "SLOWBRO is loafing around...$"
 
 CeruleanCity_Text_SlowbroTurnedAway::
-    .string "SLOWBRO turned away…$"
+    .string "SLOWBRO turned away...$"
 
 CeruleanCity_Text_SlowbroIgnoredOrders::
-    .string "SLOWBRO ignored orders…$"
+    .string "SLOWBRO ignored orders...$"
 
 CeruleanCity_Text_WantBrightRedBicycle::
-    .string "I want a bright red bicycle.\p"
-    .string "I'll keep it at home, so it won't\n"
-    .string "get dirty.$"
+    .string "I want a bright red bicycle!\p"
+    .string "I'll keep it at home, so\n"
+    .string "it won't get dirty!$"
 
 CeruleanCity_Text_ThisIsCeruleanCave::
     .string "This is CERULEAN CAVE.\p"
