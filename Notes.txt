@@ -70,6 +70,12 @@ Museum F1 old guy uses wrong sprite, should be GAMBLER.
 SouthWest house old man uses wrong sprite, should be Gambler.
 BROCK gives TM39 Rock Tomb instead of TM34 BIDE.
 
+-Cerulean City-
+Slowpoke uses incorrect sprite.
+Old Man in middle left house should be GAMBLER.
+Bike shop guy uses unique sprite, not implemented yet.
+Gym swimmer cannot be talked to from land.
+
 -PokeMart-
 2 tiles change during Parcel scene for some reason.
 
