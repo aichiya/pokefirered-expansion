@@ -57,6 +57,7 @@ Lost Against text not skipped.
 Paid Prize Money text not skipped.
 ... ... ... ... not skipped.
 Titles like LEADER not excluded from trainer names.
+TEAM ROCKET GRUNT should be ROCKET.
 
 -Viridian City-
 Drunk uses wrong sprite, should be gambler.
@@ -85,3 +86,8 @@ Screen overlay to fit visible area to that of GameBoy Color.
 Instant text speed.
 Monochrome mode.
 Pokemon Yellow color mode.
+
+-Pokemon-
+Zubat sprite has incorrect whitespace.
+Pokemon types not changed.
+Pokemon moves not changed.
