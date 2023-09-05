@@ -41,7 +41,6 @@ MtMoon_B2F_EventScript_BattleMiguel::
 	setvar VAR_LAST_TALKED, LOCALID_MIGUEL
 	trainerbattle_no_intro TRAINER_SUPER_NERD_MIGUEL, MtMoon_B2F_Text_MiguelDefeat
 	setvar VAR_MAP_SCENE_MT_MOON_B2F, 1
-	msgbox MtMoon_B2F_Text_WellEachTakeAFossil
 	return
 
 MtMoon_B2F_EventScript_MiguelFossilPicked::
@@ -81,7 +80,6 @@ MtMoon_B2F_EventScript_DomeFossil::
 MtMoon_B2F_Movement_MiguelToHelixFossil::
 	walk_right
 	walk_up
-	walk_up
 	step_end
 
 MtMoon_B2F_EventScript_HelixFossil::
@@ -113,7 +111,6 @@ MtMoon_B2F_EventScript_DontTakeFossil::
 	end
 
 MtMoon_B2F_Movement_MiguelToDomeFossil::
-	walk_up
 	walk_up
 	step_end
 

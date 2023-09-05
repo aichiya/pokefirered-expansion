@@ -22,11 +22,11 @@ MtMoon_1F_Text_JoshPostBattle::
     .string "show off to girls.$"
 
 MtMoon_1F_Text_MiriamIntro::
-    .string "Wow! It's way bigger in here than\n"
-    .string "I thought!$"
+    .string "Wow! It's way bigger in here\n"
+    .string "then I thought!$"
 
 MtMoon_1F_Text_MiriamDefeat::
-    .string "LASS": Oh!\n"
+    .string "LASS: Oh!\n"
     .string "I lost it!$"
 
 MtMoon_1F_Text_MiriamPostBattle::
@@ -45,7 +45,7 @@ MtMoon_1F_Text_JovanPostBattle::
     .string "I have to find stronger POKéMON.$"
 
 MtMoon_1F_Text_IrisIntro::
-    .string "What? I'm waiting'\n"
+    .string "What? I'm waiting\n"
     .string "for my friends to\l"
     .string "find me here.$"
 
@@ -76,12 +76,12 @@ MtMoon_1F_Text_RobbyDefeat::
     .string "BUG CATCHER: I lost.$"
 
 MtMoon_1F_Text_RobbyPostBattle::
-    .string "ZUBAT is tough!\n"
-    .string "But if you can catch one, you'll\l"
+    .string "ZUBAT is tough! But if\n"
+    .string "you can catch one, you'll\l"
     .string "be able to count on it.$"
 
 MtMoon_1F_Text_ZubatIsABloodsucker::
-    .string "Beware! ZUBAT IS\n"
+    .string "Beware! ZUBAT is\n"
     .string "a blood sucker!$"
 
 MtMoon_1F_Text_BrockHelpsExcavateFossils::
@@ -89,3 +89,4 @@ MtMoon_1F_Text_BrockHelpsExcavateFossils::
     .string "under MT. MOON.\p"
     .string "Sometimes, BROCK of PEWTER GYM\n"
     .string "lends me a hand.$"
+
