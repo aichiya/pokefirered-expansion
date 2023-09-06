@@ -164,10 +164,9 @@ CeruleanCity_Text_CitySign::
 
 CeruleanCity_Text_TrainerTipsHeldItems::
     .string "TRAINER TIPS\p"
-    .string "A POKéMON can be made to hold\n"
-    .string "an item.\p"
-    .string "Some items can even be used by\n"
-    .string "the holding POKéMON in battle.$"
+    .string "Pressing B Button during\n"
+    .string "evolution cancels\p"
+    .string "the whole process.$"
 
 CeruleanCity_Text_BikeShopSign::
     .string "Grass and caves handled easily!\n"

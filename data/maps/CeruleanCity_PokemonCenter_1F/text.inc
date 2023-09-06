@@ -1,9 +1,7 @@
 CeruleanCity_PokemonCenter_1F_Text_BillDoesWhateverForRareMons::
     .string "That BILL!\p"
     .string "I heard that he'll do whatever it\n"
-    .string "takes to get rare POKéMON.\p"
-    .string "He's not above doing all sorts\n"
-    .string "of things, I've heard.$"
+    .string "takes to get rare POKéMON!$"
 
 CeruleanCity_PokemonCenter_1F_Text_EveryoneCallsBillPokemaniac::
     .string "Have you heard about BILL?\p"

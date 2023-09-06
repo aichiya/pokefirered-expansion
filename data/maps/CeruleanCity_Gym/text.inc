@@ -37,16 +37,17 @@ CeruleanCity_Gym_Text_MistyDefeat::
     .string "show you beat me.$"
 
 CeruleanCity_Gym_Text_DianaIntro::
-    .string "What? You?\n"
-    .string "I'm more than good enough for you!\p"
-    .string "MISTY won't have to be bothered.$"
+    .string "I'm more than good enough for you!\n"
+    .string "MISTY can wait!$"
 
 CeruleanCity_Gym_Text_DianaDefeat::
-    .string "You overwhelmed me!$"
+    .string "JR.TRAINER♀: You\n"
+    .string "overwhelmed me!$"
 
 CeruleanCity_Gym_Text_DianaPostBattle::
-    .string "You have to face other TRAINERS\n"
-    .string "to see how good you really are.$"
+    .string "You have to face other\n"
+    .string "trainers to find out how\p"
+    .string "good you really are.$"
 
 CeruleanCity_Gym_Text_LuisIntro::
     .string "Splash!\p"
