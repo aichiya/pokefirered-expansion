@@ -890,7 +890,7 @@ Text_WelcomeWantToHealPkmn::
 	.string "back to perfect health!$"
 
 Text_TakeYourPkmnForFewSeconds::
-	.string "OK. We'll need'\n"
+	.string "OK. We'll need\n"
 	.string "your POKéMON.$"
 
 Text_WeHopeToSeeYouAgain::
@@ -898,7 +898,7 @@ Text_WeHopeToSeeYouAgain::
 
 Text_RestoredPkmnToFullHealth::
 	.string "Thank you!\n"
-	.string "Your POKéMON are\l"
+	.string "Your POKéMON are\p"
 	.string "fighting fit!$"
 
 	.include "data/text/surf.inc"
@@ -996,8 +996,7 @@ Text_TheresBedLetsRest::
 	.string "やすんでいこう$"
 
 Text_FoundTMHMContainsMove::
-	.string "{PLAYER} found a {STR_VAR_2}!\n"
-	.string "It contains {STR_VAR_1}.$"
+	.string "{PLAYER} found {STR_VAR_2}!$"
 
 	.include "data/text/seagallop.inc"
 
