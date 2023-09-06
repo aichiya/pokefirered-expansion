@@ -3787,13 +3787,13 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalRoute22EarlyCharmand
 static const struct TrainerMonNoItemCustomMoves sParty_RivalCeruleanSquirtle[] = {
     {
         .iv = 50,
-        .lvl = 17,
+        .lvl = 18,
         .species = SPECIES_PIDGEOTTO,
         .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
     },
     {
         .iv = 50,
-        .lvl = 16,
+        .lvl = 15,
         .species = SPECIES_ABRA,
         .moves = {MOVE_TELEPORT, MOVE_NONE, MOVE_NONE, MOVE_NONE},
     },
@@ -3805,7 +3805,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalCeruleanSquirtle[] =
     },
     {
         .iv = 100,
-        .lvl = 18,
+        .lvl = 17,
         .species = SPECIES_SQUIRTLE,
         .moves = {MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_WITHDRAW, MOVE_WATER_GUN},
     },
@@ -3814,13 +3814,13 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalCeruleanSquirtle[] =
 static const struct TrainerMonNoItemCustomMoves sParty_RivalCeruleanBulbasaur[] = {
     {
         .iv = 50,
-        .lvl = 17,
+        .lvl = 18,
         .species = SPECIES_PIDGEOTTO,
         .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
     },
     {
         .iv = 50,
-        .lvl = 16,
+        .lvl = 15,
         .species = SPECIES_ABRA,
         .moves = {MOVE_TELEPORT, MOVE_NONE, MOVE_NONE, MOVE_NONE},
     },
@@ -3832,7 +3832,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalCeruleanBulbasaur[] 
     },
     {
         .iv = 100,
-        .lvl = 18,
+        .lvl = 17,
         .species = SPECIES_BULBASAUR,
         .moves = {MOVE_SLEEP_POWDER, MOVE_POISON_POWDER, MOVE_VINE_WHIP, MOVE_LEECH_SEED},
     },
@@ -3841,13 +3841,13 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalCeruleanBulbasaur[] 
 static const struct TrainerMonNoItemCustomMoves sParty_RivalCeruleanCharmander[] = {
     {
         .iv = 50,
-        .lvl = 17,
+        .lvl = 18,
         .species = SPECIES_PIDGEOTTO,
         .moves = {MOVE_TACKLE, MOVE_SAND_ATTACK, MOVE_GUST, MOVE_QUICK_ATTACK},
     },
     {
         .iv = 50,
-        .lvl = 16,
+        .lvl = 15,
         .species = SPECIES_ABRA,
         .moves = {MOVE_TELEPORT, MOVE_NONE, MOVE_NONE, MOVE_NONE},
     },
@@ -3859,7 +3859,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_RivalCeruleanCharmander[]
     },
     {
         .iv = 100,
-        .lvl = 18,
+        .lvl = 17,
         .species = SPECIES_CHARMANDER,
         .moves = {MOVE_METAL_CLAW, MOVE_EMBER, MOVE_GROWL, MOVE_SCRATCH},
     },

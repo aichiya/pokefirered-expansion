@@ -29,14 +29,14 @@ CeruleanCity_EventScript_RivalTriggerLeft::
 CeruleanCity_EventScript_RivalTriggerMid::
 	lockall
 	setvar VAR_TEMP_1, 1
-	setobjectxyperm LOCALID_RIVAL, 22, 0
+	setobjectxyperm LOCALID_RIVAL, 21, 1
 	goto CeruleanCity_EventScript_Rival
 	end
 
 CeruleanCity_EventScript_RivalTriggerRight::
 	lockall
 	setvar VAR_TEMP_1, 2
-	setobjectxyperm LOCALID_RIVAL, 21, 0
+	setobjectxyperm LOCALID_RIVAL, 21, 1
 	goto CeruleanCity_EventScript_Rival
 	end
 
