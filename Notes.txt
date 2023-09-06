@@ -75,17 +75,20 @@ Slowpoke uses incorrect sprite.
 Old Man in middle left house should be GAMBLER.
 Bike shop guy uses unique sprite, not implemented yet.
 Gym swimmer cannot be talked to from land.
+Misty uses sprite that isn't added yet.
 
 -PokeMart-
 2 tiles change during Parcel scene for some reason.
 
 -PokeCenter-
 Couch guy in Viridian doesn't talk.
-Couch guy in Viridian needs sprite adjustment.
+Couch guy needs sprite adjustment.
 Couch guy in Pewter doesn't talk.
 Jigglypuff in Pewter doesn't dance after speaking.
 Route 4 Magikarp dealer uses wrong sprite, should be MAN which needs to be edited.
 Route 4 couch guy doesn't talk.
+Couch guy in Cerulean doesn't talk.
+Pokeballs are misplaced in healing machine.
 
 -Possible Additions-
 Screen overlay to fit visible area to that of GameBoy Color.
