@@ -24,6 +24,7 @@ Gendered font colors not changed.
 Replay removal undecided.
 Oak sprite colors ugly.
 Channeler sprite colors ugly.
+Old lady sprite colors ugly.
 Area name popup removal undecided.
 BUG_CATCHER sprite misaligned.
 Red doesn't turn to face approaching trainer.
@@ -75,7 +76,6 @@ Slowpoke uses incorrect sprite.
 Old Man in middle left house should be GAMBLER.
 Bike shop guy uses unique sprite, not implemented yet.
 Gym swimmer cannot be talked to from land.
-Misty uses sprite that isn't added yet.
 
 -PokeMart-
 2 tiles change during Parcel scene for some reason.
@@ -93,10 +93,6 @@ Pokeballs are misplaced in healing machine.
 -Possible Additions-
 Screen overlay to fit visible area to that of GameBoy Color.
 Instant text speed.
-Monochrome mode.
-Pokemon Yellow color mode.
 
 -Pokemon-
 Zubat sprite has incorrect whitespace.
-Pokemon types not changed.
-Pokemon moves not changed.
