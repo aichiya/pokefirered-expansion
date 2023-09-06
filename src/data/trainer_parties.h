@@ -154,12 +154,17 @@ static const struct TrainerMonNoItemDefaultMoves sParty_YoungsterTimmy[] = {
     {
         .iv = 0,
         .lvl = 14,
-        .species = SPECIES_SANDSHREW,
+        .species = SPECIES_RATTATA,
     },
     {
         .iv = 0,
         .lvl = 14,
         .species = SPECIES_EKANS,
+    },
+    {
+        .iv = 0,
+        .lvl = 14,
+        .species = SPECIES_ZUBAT,
     },
 };
 
@@ -397,23 +402,13 @@ static const struct TrainerMonNoItemDefaultMoves sParty_BugCatcherRobby[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_BugCatcherCale[] = {
     {
         .iv = 0,
-        .lvl = 10,
+        .lvl = 14,
         .species = SPECIES_CATERPIE,
     },
     {
         .iv = 0,
-        .lvl = 10,
+        .lvl = 14,
         .species = SPECIES_WEEDLE,
-    },
-    {
-        .iv = 0,
-        .lvl = 10,
-        .species = SPECIES_METAPOD,
-    },
-    {
-        .iv = 0,
-        .lvl = 10,
-        .species = SPECIES_KAKUNA,
     },
 };
 
@@ -569,7 +564,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_LassReli[] = {
     {
         .iv = 0,
         .lvl = 16,
-        .species = SPECIES_NIDORAN_M,
+        .species = SPECIES_PIDGEY,
     },
     {
         .iv = 0,
@@ -581,18 +576,13 @@ static const struct TrainerMonNoItemDefaultMoves sParty_LassReli[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_LassAli[] = {
     {
         .iv = 0,
-        .lvl = 12,
+        .lvl = 14,
         .species = SPECIES_PIDGEY,
     },
     {
         .iv = 0,
-        .lvl = 12,
-        .species = SPECIES_ODDISH,
-    },
-    {
-        .iv = 0,
-        .lvl = 12,
-        .species = SPECIES_BELLSPROUT,
+        .lvl = 14,
+        .species = SPECIES_NIDORAN_F,
     },
 };
 
