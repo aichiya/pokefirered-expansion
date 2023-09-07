@@ -3,7 +3,7 @@ Route6_Text_RickyIntro::
     .string "Quit listening in on us!$"
 
 Route6_Text_RickyDefeat::
-    .string "I just can't win!$"
+    .string "JR.TRAINER♂: I just can't win!$"
 
 Route6_Text_RickyPostBattle::
     .string "Whisper…\n"
@@ -14,8 +14,8 @@ Route6_Text_NancyIntro::
     .string "This is a private conversation!$"
 
 Route6_Text_NancyDefeat::
-    .string "Ugh!\n"
-    .string "I hate losing.$"
+    .string "JR.TRAINER♀: Ugh!\n"
+    .string "I hate losing!$"
 
 Route6_Text_NancyPostBattle::
     .string "Whisper…\n"
@@ -25,7 +25,7 @@ Route6_Text_KeigoIntro::
     .string "There aren't many bugs out here.$"
 
 Route6_Text_KeigoDefeat::
-    .string "No!\n"
+    .string "BUG CATCHER: No!\n"
     .string "You're kidding!$"
 
 Route6_Text_KeigoPostBattle::
@@ -37,35 +37,33 @@ Route6_Text_JeffIntro::
     .string "You want to talk to me?$"
 
 Route6_Text_JeffDefeat::
-    .string "This stinks…\n"
-    .string "I couldn't beat your challenge…$"
+    .string "JR.TRAINER♂: I didn't start it!$"
 
 Route6_Text_JeffPostBattle::
-    .string "I should bring more POKéMON with\n"
-    .string "me. I'll feel safer that way.$"
+    .string "I should carry more POKéMON\n"
+    .string "with me for safety.$"
 
 Route6_Text_IsabelleIntro::
-    .string "Me?\n"
-    .string "Well, okay. I'll play!$"
+    .string "Me? Well, OK.\n"
+    .string "I'll play!$"
 
 Route6_Text_IsabelleDefeat::
-    .string "Things just didn't work…$"
+    .string "JR.TRAINER♀: Just didn't work!$"
 
 Route6_Text_IsabellePostBattle::
-    .string "I want to get stronger.\n"
+    .string "I want to get stronger!\n"
     .string "What's your secret?$"
 
 Route6_Text_ElijahIntro::
-    .string "I've never seen you around.\n"
+    .string "I've never seen you around!\n"
     .string "Are you good?$"
 
 Route6_Text_ElijahDefeat::
-    .string "You're too good!$"
+    .string "BUG CATCHER: You are too good!$"
 
 Route6_Text_ElijahPostBattle::
     .string "Are my POKéMON weak?\n"
-    .string "Or, am I just bad?\l"
-    .string "Which do you think?$"
+    .string "Or, am I just bad?$"
 
 Route6_Text_UndergroundPathSign::
     .string "UNDERGROUND PATH\n"

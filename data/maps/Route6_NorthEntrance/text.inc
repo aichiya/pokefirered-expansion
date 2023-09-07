@@ -1,7 +1,7 @@
 Route6_NorthEntrance_Text_ThirstyOnGuardDuty::
     .string "I'm on guard duty.\n"
     .string "Gee, I'm thirsty, though!\p"
-    .string "Oh, wait there, the road's closed.$"
+    .string "Oh wait there, the road's closed.$"
 
 Route6_NorthEntrance_Text_ThatTeaLooksTasty::
     .string "Whoa, boy!\n"

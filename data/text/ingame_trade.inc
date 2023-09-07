@@ -39,16 +39,16 @@ Trade_Text_HasTradedMonGrownStronger::
 
 Trade_Text_DoYouHaveMonWantToTradeForMon::
 	.string "Hi!\n"
-	.string "Do you have a {STR_VAR_1}?\p"
-	.string "Want to trade it for my\n"
+	.string "Do you have {STR_VAR_1}?\p"
+	.string "Want to trade it for\n"
 	.string "{STR_VAR_2}?$"
 
 Trade_Text_ThatsTooBad::
 	.string "That's too bad.$"
 
 Trade_Text_ThisIsNoMon::
-	.string "…This is no {STR_VAR_1}.\p"
-	.string "If you get one, trade it with me.$"
+	.string "...This is no {STR_VAR_1}.\p"
+	.string "If you get one, trade it with me!$"
 
 Trade_Text_ThanksYoureAPal::
 	.string "Thanks, you're a pal!$"

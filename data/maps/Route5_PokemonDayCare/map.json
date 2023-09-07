@@ -21,7 +21,7 @@
       "x": 2,
       "y": 3,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -33,14 +33,14 @@
   ],
   "warp_events": [
     {
-      "x": 3,
+      "x": 2,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_ROUTE5",
       "dest_warp_id": "1"
     },
     {
-      "x": 4,
+      "x": 3,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_ROUTE5",
