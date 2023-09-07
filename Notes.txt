@@ -59,6 +59,8 @@ Paid Prize Money text not skipped.
 ... ... ... ... not skipped.
 Titles like LEADER not excluded from trainer names.
 TEAM ROCKET GRUNT should be ROCKET.
+Full pokeball icon not changed.
+Pokeball arrow goes offscreen instead of starting and bending onscreen.
 
 -Viridian City-
 Drunk uses wrong sprite, should be gambler.
@@ -76,6 +78,8 @@ Slowpoke uses incorrect sprite.
 Old Man in middle left house should be GAMBLER.
 Bike shop guy uses unique sprite, not implemented yet.
 Gym swimmer cannot be talked to from land.
+Bill pauses after exiting the machine.
+DIG guy uses wrong sprite, should be safari worker I think.
 
 -PokeMart-
 2 tiles change during Parcel scene for some reason.
