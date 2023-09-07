@@ -67,7 +67,7 @@
       "y": 17,
       "elevation": 3,
       "dest_map": "MAP_CERULEAN_CITY",
-      "dest_warp_id": "14"
+      "dest_warp_id": "10"
     },
     {
       "x": 27,
@@ -123,7 +123,7 @@
       "y": 17,
       "elevation": 3,
       "dest_map": "MAP_CERULEAN_CITY",
-      "dest_warp_id": "14"
+      "dest_warp_id": "10"
     }
   ],
   "coord_events": [

@@ -953,7 +953,7 @@
       "id": "LAYOUT_ROUTE9",
       "name": "Route9_Layout",
       "width": 60,
-      "height": 18,
+      "height": 24,
       "border_width": 1,
       "border_height": 1,
       "primary_tileset": "gTileset_General",
