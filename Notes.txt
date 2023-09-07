@@ -81,6 +81,9 @@ Gym swimmer cannot be talked to from land.
 Bill pauses after exiting the machine.
 DIG guy uses wrong sprite, should be safari worker I think.
 
+-Route9-
+Day Care man dialogue for level up not checked.
+
 -PokeMart-
 2 tiles change during Parcel scene for some reason.
 
