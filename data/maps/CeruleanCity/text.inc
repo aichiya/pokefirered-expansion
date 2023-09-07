@@ -51,22 +51,20 @@ CeruleanCity_Text_RivalVictory::
 CeruleanCity_Text_GruntIntro::
     .string "Hey! Stay out!\n"
     .string "It's not your yard!\p"
-    .string "…Huh?\n"
-    .string "Me?\p"
+    .string "Huh? me?\n"
     .string "I'm an innocent bystander!\n"
     .string "Don't you believe me?{PLAY_BGM}{MUS_ENCOUNTER_ROCKET}$"
 
 CeruleanCity_Text_GruntDefeat::
-    .string "GRUNT: Stop! I give up!\n"
+    .string "ROCKET: Stop! I give up!\n"
     .string "I'll leave quietly!$"
 
 CeruleanCity_Text_OkayIllReturnStolenTM::
-    .string "…Okay.\n"
-    .string "I'll return the TM I stole.$"
+    .string "OK!\n"
+    .string "I'll return the TM I stole!$"
 
 CeruleanCity_Text_RecoveredTM28FromGrunt::
-    .string "{PLAYER} recovered TM28 from\n"
-    .string "the TEAM ROCKET GRUNT.$"
+    .string "{PLAYER} recovered TM28!$"
 
 CeruleanCity_Text_BetterGetMovingBye::
     .string "I better get moving!\n"
