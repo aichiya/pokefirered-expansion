@@ -12,7 +12,7 @@ PC options wrong.
 Textbox border no accurate option.
 Overworld character sprites 4 pixels too low.
 Pokemon center YES/NO should be HEAL/CANCEL.
-Cut tree animation not replaced.
+Cut tree animation not accurate.
 Occupied tall grass sprite incorrect palette/sprite.
 Door animation incorrect palette/sprite.
 Special Atk & Special Def not combined.
@@ -28,6 +28,8 @@ Old lady sprite colors ugly.
 Area name popup removal undecided.
 BUG_CATCHER sprite misaligned.
 Red doesn't turn to face approaching trainer.
+Start menu shows help text in blue box at bottom of the screen, needs to be removed.
+Ingame trade success texts not tested.
 
 -Intro-
 Pikachu screen not skipped.
@@ -63,35 +65,27 @@ Full pokeball icon not changed.
 Pokeball arrow goes offscreen instead of starting and bending onscreen.
 
 -Viridian City-
-Drunk uses wrong sprite, should be gambler.
 Catch tutorial forced, no YES/NO, dialogue not finished.
 Dream Eater guy is tutor, doesn't give TM42.
-Gym peeper uses wrong sprite, should be gambler.
 
 -Pewter City-
-Museum F1 old guy uses wrong sprite, should be GAMBLER.
-SouthWest house old man uses wrong sprite, should be Gambler.
 BROCK gives TM39 Rock Tomb instead of TM34 BIDE.
 
 -Cerulean City-
 Slowpoke uses incorrect sprite.
-Old Man in middle left house should be GAMBLER.
 Bike shop guy uses unique sprite, not implemented yet.
 Gym swimmer cannot be talked to from land.
 Bill pauses after exiting the machine.
-DIG guy uses wrong sprite, should be safari worker I think.
+DIG guy uses wrong sprite, should be FISHING GURU.
 
 -Route9-
 Day Care man dialogue for level up not checked.
 
 -Vermilion City-
-Hat guy in PokeCenter uses wrong sprite, is hiker but should be hat guy.
+HIKER in PokeCenter uses wrong sprite, should be FISHING GURU.
 Youngster put over couch guy, will be corrected later.
-Old man outside poke center should be GAMBLER.
-Construction guy should be GAMBLER.
 Machop should be generic monster sprite.
 Pikachu uses clefairy sprite, should probably replace pikachu's generic sprite with recolored clefairy.
-President assistant uses receptionist sprite, currently not modified.
 
 -PokeMart-
 2 tiles change during Parcel scene for some reason.
@@ -101,14 +95,18 @@ Couch guy in Viridian doesn't talk.
 Couch guy needs sprite adjustment.
 Couch guy in Pewter doesn't talk.
 Jigglypuff in Pewter doesn't dance after speaking.
-Route 4 Magikarp dealer uses wrong sprite, should be MAN which needs to be edited.
 Route 4 couch guy doesn't talk.
 Couch guy in Cerulean doesn't talk.
 Pokeballs are misplaced in healing machine.
 
 -Possible Additions-
-Screen overlay to fit visible area to that of GameBoy Color.
 Instant text speed.
+
+-Route2-
+Diglett cave hiker should be FISHING GURU.
+
+-Route11-
+Aid success text not tested.
 
 -Pokemon-
 Zubat sprite has incorrect whitespace.
