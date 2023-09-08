@@ -84,6 +84,15 @@ DIG guy uses wrong sprite, should be safari worker I think.
 -Route9-
 Day Care man dialogue for level up not checked.
 
+-Vermilion City-
+Hat guy in PokeCenter uses wrong sprite, is hiker but should be hat guy.
+Youngster put over couch guy, will be corrected later.
+Old man outside poke center should be GAMBLER.
+Construction guy should be GAMBLER.
+Machop should be generic monster sprite.
+Pikachu uses clefairy sprite, should probably replace pikachu's generic sprite with recolored clefairy.
+President assistant uses receptionist sprite, currently not modified.
+
 -PokeMart-
 2 tiles change during Parcel scene for some reason.
 
