@@ -6,9 +6,9 @@ Aide_Text_HaventCaughtEnoughMonsForItem::
 	.string "if you want the {STR_VAR_2}.$"
 
 Aide_Text_GetEnoughMonsComeBackForItem::
-	.string "…Oh. I see.\p"
-	.string "When you get {STR_VAR_1} kinds of POKéMON,\n"
-	.string "come back for the {STR_VAR_2}.$"
+	.string "Oh. I see.\p"
+	.string "When you get {STR_VAR_1} kinds,\n"
+	.string "come back for {STR_VAR_2}.$"
 
 Aide_Text_DontHaveAnyRoomForItem::
 	.string "Oh! I see you don't have any\n"

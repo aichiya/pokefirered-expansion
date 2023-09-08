@@ -1,13 +1,11 @@
 Route11_EastEntrance_2F_Text_GiveItemfinderIfCaught30::
     .string "Hi! Remember me?\n"
-    .string "I'm one of PROF. OAK's AIDES.\p"
-    .string "If your POKéDEX has complete data\n"
-    .string "on {STR_VAR_1} species, I'm supposed to\l"
-    .string "give you a reward.\p"
-    .string "PROF. OAK entrusted me with the\n"
-    .string "{STR_VAR_2} for you.\p"
-    .string "So, {PLAYER}, let me ask you.\p"
-    .string "Have you gathered data on at least\n"
+    .string "I'm PROF.OAK's AIDE!\p"
+    .string "If you caught {STR_VAR_1} kinds\n"
+    .string "of POKéMON, I'm supposed to\l"
+    .string "give you an ITEMFINDER!\p"
+    .string "So, {PLAYER}!\p"
+    .string "Have you caught at least\n"
     .string "{STR_VAR_1} kinds of POKéMON?$"
 
 Route11_EastEntrance_2F_Text_GreatHereYouGo::
@@ -33,8 +31,7 @@ Route11_EastEntrance_2F_Text_ExplainItemfinder::
     .string "search the suspect area by hand.$"
 
 Route11_EastEntrance_2F_Text_BigMonAsleepOnRoad::
-    .string "Let's see what the binoculars have\n"
-    .string "to show…\p"
+    .string "Looked into the binoculars.\n"
     .string "A big POKéMON is asleep on a road!$"
 
 Route11_EastEntrance_2F_Text_WhatABreathtakingView::
@@ -43,10 +40,8 @@ Route11_EastEntrance_2F_Text_WhatABreathtakingView::
     .string "What a breathtaking view!$"
 
 Route11_EastEntrance_2F_Text_RockTunnelGoodRouteToLavender::
-    .string "Let's see what the binoculars have\n"
-    .string "to show…\p"
-    .string "To get to LAVENDER TOWN from\n"
-    .string "CERULEAN CITY…\p"
-    .string "ROCK TUNNEL appears to be a good\n"
-    .string "route to take.$"
+    .string "Looked into the binoculars.\n"
+    .string "The only way to get from\n"
+    .string "CERULEAN CITY to LAVENDER is\p"
+    .string "by way of the ROCK TUNNEL.$"
 
