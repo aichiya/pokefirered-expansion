@@ -21,7 +21,7 @@
       "x": 27,
       "y": 5,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -36,7 +36,7 @@
       "x": 12,
       "y": 6,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -55,14 +55,14 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 26,
+      "x": 27,
       "y": 0,
       "elevation": 3,
       "dest_map": "MAP_SSANNE_EXTERIOR",
       "dest_warp_id": "1"
     },
     {
-      "x": 27,
+      "x": 26,
       "y": 0,
       "elevation": 0,
       "dest_map": "MAP_SSANNE_EXTERIOR",

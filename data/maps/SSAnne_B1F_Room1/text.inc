@@ -1,23 +1,22 @@
 SSAnne_B1F_Room1_Text_PhillipIntro::
-    .string "Matey, you're walking the plank if\n"
-    .string "you lose!$"
+    .string "Matey, you're walking the\n"
+    .string "plank if you lose!$"
 
 SSAnne_B1F_Room1_Text_PhillipDefeat::
-    .string "Argh!\n"
+    .string "SAILOR: Argh!\n"
     .string "Beaten by a kid!$"
 
 SSAnne_B1F_Room1_Text_PhillipPostBattle::
-    .string "When we're out at sea, jellyfish\n"
-    .string "POKéMON sometimes drift by.$"
+    .string "Jellyfish sometimes\n"
+    .string "drift into the ship.$"
 
 SSAnne_B1F_Room1_Text_BarnyIntro::
-    .string "Hello, stranger!\p"
-    .string "I can't tell if you're from the seas\n"
-    .string "or mountains, but stop and chat.\p"
-    .string "All my POKéMON are from the sea.$"
+    .string "Hello stranger!\p"
+    .string "Stop and chat!\n"
+    .string "All my POKéMON are from the sea!$"
 
 SSAnne_B1F_Room1_Text_BarnyDefeat::
-    .string "Darn!\n"
+    .string "FISHERMAN: Darn!\n"
     .string "I let that one get away!$"
 
 SSAnne_B1F_Room1_Text_BarnyPostBattle::

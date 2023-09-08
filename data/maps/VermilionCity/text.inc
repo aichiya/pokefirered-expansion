@@ -25,9 +25,9 @@ VermilionCity_Text_MachopStompingLandFlat::
     .string "A MACHOP is stomping the land flat.$"
 
 VermilionCity_Text_SSAnneVisitsOnceAYear::
-    .string "The S.S. ANNE is a famous luxury\n"
-    .string "cruise ship.\p"
-    .string "It visits VERMILION once a year.$"
+    .string "The S.S.ANNE is a famous\n"
+    .string "luxury cruise ship.\p"
+    .string "We visit VERMILION once a year.$"
 
 VermilionCity_Text_CitySign::
     .string "VERMILION CITY\n"
@@ -57,13 +57,13 @@ VermilionCity_Text_WelcomeToTheSSAnne::
     .string "Welcome to the S.S. ANNE!$"
 
 VermilionCity_Text_DoYouHaveATicket::
-    .string "Welcome to the S.S. ANNE!\p"
+    .string "Welcome to the S.S.ANNE!\p"
     .string "Excuse me, do you have a ticket?$"
 
 VermilionCity_Text_FlashedSSTicket::
-    .string "{FONT_NORMAL}{PLAYER} flashed the S.S. TICKET!\p"
+    .string "{FONT_NORMAL}{PLAYER} flashed the S.S.TICKET!\p"
     .string "{FONT_MALE}Great!\n"
-    .string "Welcome to the S.S. ANNE!$"
+    .string "Welcome to S.S.ANNE!$"
 
 VermilionCity_Text_DontHaveNeededSSTicket::
     .string "{FONT_NORMAL}{PLAYER} doesn't have the needed\n"

@@ -3,6 +3,6 @@ SSAnne_1F_Room4_Text_WaiterCherryPiePlease::
     .string "please!$"
 
 SSAnne_1F_Room4_Text_WaitressCherryPiePlease::
-    .string "Waitress, I would like a cherry\n"
-    .string "pie, please!$"
+    .string "Waitress, I would like\n"
+    .string "a cherry pie please!$"
 
