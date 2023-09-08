@@ -1,22 +1,22 @@
 VermilionCity_Text_GrimerMultipliesInSludge::
-    .string "We're careful about pollution here.\p"
-    .string "We've heard GRIMER multiplies in\n"
-    .string "toxic sludge.$"
+    .string "We're careful about pollution!\p"
+    .string "We've heard GRIMER multiplies\n"
+    .string "in toxic sludge!$"
 
 VermilionCity_Text_DidYouSeeSSAnneInHarbor::
-    .string "Did you see the S.S. ANNE moored\n"
-    .string "in the harbor?$"
+    .string "Did you see the S.S.ANNE\n"
+    .string "moored in the harbor?$"
 
 VermilionCity_Text_SSAnneHasDepartedForYear::
-    .string "So, the S.S. ANNE has departed?\p"
+    .string "So, the S.S.ANNE has departed?\p"
     .string "She'll be back in VERMILION about\n"
     .string "this time next year.$"
 
 VermilionCity_Text_BuildingOnThisLand::
-    .string "I'm putting up a building on this\n"
-    .string "plot of land. I own it all.\p"
-    .string "My POKéMON is tamping the land\n"
-    .string "to lay the foundation.$"
+    .string "I'm putting up a building\n"
+    .string "on this plot of land.\p"
+    .string "My POKéMON is tamping\n"
+    .string "the land.$"
 
 VermilionCity_Text_Machop::
     .string "MACHOP: Guoh! Gogogoh!$"
@@ -47,7 +47,7 @@ VermilionCity_Text_PokemonFanClubSign::
 
 VermilionCity_Text_GymSign::
     .string "VERMILION CITY POKéMON GYM\n"
-    .string "LEADER: LT. SURGE\l"
+    .string "LEADER: LT.SURGE\l"
     .string "The Lightning American!$"
 
 VermilionCity_Text_VermilionHarbor::

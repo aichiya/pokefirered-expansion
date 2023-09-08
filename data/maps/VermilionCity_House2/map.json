@@ -33,14 +33,14 @@
   ],
   "warp_events": [
     {
-      "x": 3,
+      "x": 2,
       "y": 7,
       "elevation": 3,
       "dest_map": "MAP_VERMILION_CITY",
       "dest_warp_id": "6"
     },
     {
-      "x": 4,
+      "x": 3,
       "y": 7,
       "elevation": 3,
       "dest_map": "MAP_VERMILION_CITY",
