@@ -63,6 +63,7 @@ Titles like LEADER not excluded from trainer names.
 TEAM ROCKET GRUNT should be ROCKET.
 Full pokeball icon not changed.
 Pokeball arrow goes offscreen instead of starting and bending onscreen.
+SAILOR sprite not replaced.
 
 -Viridian City-
 Catch tutorial forced, no YES/NO, dialogue not finished.
@@ -99,14 +100,18 @@ Route 4 couch guy doesn't talk.
 Couch guy in Cerulean doesn't talk.
 Pokeballs are misplaced in healing machine.
 
--Possible Additions-
-Instant text speed.
-
 -Route2-
 Diglett cave hiker should be FISHING GURU.
 
 -Route11-
 Aid success text not tested.
+
+-SS.ANNE-
+1F Room2 item is TM31, should be TM08.
+1F worker sprite not yet edited.
+Kitchen bottom trash has berry, should have GREAT BALL.
+B1F Room5 is missing a MAX POTION.
+2F sailor should have bellhop sprite.
 
 -Pokemon-
 Zubat sprite has incorrect whitespace.
