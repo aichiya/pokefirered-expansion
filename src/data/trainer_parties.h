@@ -2036,13 +2036,18 @@ static const struct TrainerMonNoItemDefaultMoves sParty_BurglarLewis[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_EngineerBaily[] = {
     {
         .iv = 0,
-        .lvl = 21,
+        .lvl = 20,
         .species = SPECIES_VOLTORB,
     },
     {
         .iv = 0,
-        .lvl = 21,
+        .lvl = 20,
         .species = SPECIES_MAGNEMITE,
+    },
+    {
+        .iv = 0,
+        .lvl = 20,
+        .species = SPECIES_VOLTORB,
     },
 };
 
