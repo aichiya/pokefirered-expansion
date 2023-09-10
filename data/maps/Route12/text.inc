@@ -1,6 +1,6 @@
 Route12_Text_MonSprawledOutInSlumber::
-    .string "A POKéMON is sprawled out in\n"
-    .string "a deep and comfortable slumber.$"
+    .string "A sleeping POKéMON\n"
+    .string "blocks the way!$"
 
 Text_SnorlaxWokeUp::
     .string "SNORLAX woke up!\p"
