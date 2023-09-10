@@ -1,5 +1,5 @@
 Aide_Text_HaventCaughtEnoughMonsForItem::
-	.string "Let's see…\n"
+	.string "Let's see...\n"
 	.string "Uh-oh! You have caught only\l"
 	.string "{STR_VAR_3} kinds of POKéMON!\p"
 	.string "You need {STR_VAR_1} kinds\n"
