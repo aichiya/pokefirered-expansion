@@ -63,7 +63,6 @@ Titles like LEADER not excluded from trainer names.
 TEAM ROCKET GRUNT should be ROCKET.
 Full pokeball icon not changed.
 Pokeball arrow goes offscreen instead of starting and bending onscreen.
-SAILOR sprite not replaced.
 
 -Viridian City-
 Catch tutorial forced, no YES/NO, dialogue not finished.
@@ -78,6 +77,7 @@ Bike shop guy uses unique sprite, not implemented yet.
 Gym swimmer cannot be talked to from land.
 Bill pauses after exiting the machine.
 DIG guy uses wrong sprite, should be FISHING GURU.
+MISTY wrongly gives TM03 instead of TM11.
 
 -Route9-
 Day Care man dialogue for level up not checked.
@@ -112,6 +112,8 @@ Aid success text not tested.
 Kitchen bottom trash has berry, should have GREAT BALL.
 B1F Room5 is missing a MAX POTION.
 2F sailor should have bellhop sprite.
+2F Room2 STARDUST should be MAX ETHER.
+2F Room4 X ATTACK should be RARE CANDY.
 
 -Pokemon-
 Zubat sprite has incorrect whitespace.
