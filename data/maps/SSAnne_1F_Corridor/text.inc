@@ -8,6 +8,6 @@ SSAnne_1F_Corridor_Text_LeStrongSilentType::
 
 SSAnne_1F_Corridor_Text_PassengersAreRestless::
     .string "The passengers are restless!\n"
-    .string "You might be challenged by\n"
+    .string "You might be challenged by\l"
     .string "the more bored ones!$"
 

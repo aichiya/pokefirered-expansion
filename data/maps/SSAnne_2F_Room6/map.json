@@ -16,8 +16,8 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_3",
-      "in_connection": false,
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
       "x": 0,
       "y": 2,
       "elevation": 3,
@@ -28,11 +28,11 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SSAnne_2F_Room6_EventScript_Woman2",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
-      "in_connection": false,
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
       "x": 2,
       "y": 2,
       "elevation": 3,
@@ -43,7 +43,7 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SSAnne_2F_Room6_EventScript_Woman1",
       "flag": "0",
-      "type": "object"
+      "in_connection": false
     }
   ],
   "warp_events": [
@@ -52,14 +52,14 @@
       "y": 5,
       "elevation": 3,
       "dest_map": "MAP_SSANNE_2F_CORRIDOR",
-      "dest_warp_id": 8
+      "dest_warp_id": "8"
     },
     {
       "x": 3,
       "y": 5,
       "elevation": 3,
       "dest_map": "MAP_SSANNE_2F_CORRIDOR",
-      "dest_warp_id": 8
+      "dest_warp_id": "8"
     }
   ],
   "coord_events": [
