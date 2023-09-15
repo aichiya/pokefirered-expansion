@@ -30,6 +30,7 @@ BUG_CATCHER sprite misaligned.
 Red doesn't turn to face approaching trainer.
 Start menu shows help text in blue box at bottom of the screen, needs to be removed.
 Ingame trade success texts not tested.
+ROCKER sprite not replaced.
 
 -Intro-
 Pikachu screen not skipped.
@@ -87,6 +88,8 @@ HIKER in PokeCenter uses wrong sprite, should be FISHING GURU.
 Youngster put over couch guy, will be corrected later.
 Machop should be generic monster sprite.
 Pikachu uses clefairy sprite, should probably replace pikachu's generic sprite with recolored clefairy.
+LT.SURGE uses Crystal sprite, must be corrected.
+LT.SURGE gives TM34 instead of TM24.
 
 -PokeMart-
 2 tiles change during Parcel scene for some reason.
