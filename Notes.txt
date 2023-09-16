@@ -31,6 +31,7 @@ Red doesn't turn to face approaching trainer.
 Start menu shows help text in blue box at bottom of the screen, needs to be removed.
 Ingame trade success texts not tested.
 ROCKER sprite not replaced.
+Dark vision effect wrong, is circle of light but should black all but 1 tile color instead.
 
 -Intro-
 Pikachu screen not skipped.
