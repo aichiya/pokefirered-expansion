@@ -119,5 +119,8 @@ B1F Room5 is missing a MAX POTION.
 2F Room2 STARDUST should be MAX ETHER.
 2F Room4 X ATTACK should be RARE CANDY.
 
+-LAVENDER TOWN-
+House 2 guy is supposed to use balding CEO sprite.
+
 -Pokemon-
 Zubat sprite has incorrect whitespace.
