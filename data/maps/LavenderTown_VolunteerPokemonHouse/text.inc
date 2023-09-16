@@ -4,7 +4,7 @@ LavenderTown_PokemonCenter_1F_Text_HearMrFujiNotFromAroundHere::
     .string "these parts originally, either.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_WhereDidMrFujiGo::
-    .string "That's odd, MR. FUJI isn't here.\n"
+    .string "That's odd, MR.FUJI isn't here.\n"
     .string "Where'd he go?$"
 
 LavenderTown_VolunteerPokemonHouse_Text_MrFujiWasPrayingForCubonesMother::
@@ -12,10 +12,10 @@ LavenderTown_VolunteerPokemonHouse_Text_MrFujiWasPrayingForCubonesMother::
     .string "for CUBONE's mother.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_MrFujiLooksAfterOrphanedMons::
-    .string "This is really MR. FUJI's house.\p"
-    .string "He's really kind.\p"
+    .string "This is really MR.FUJI's house.\p"
+    .string "He's really kind!\p"
     .string "He looks after abandoned and\n"
-    .string "orphaned POKéMON.$"
+    .string "orphaned POKéMON!$"
 
 LavenderTown_VolunteerPokemonHouse_Text_MonsNiceToHug::
     .string "It's so warm!\n"

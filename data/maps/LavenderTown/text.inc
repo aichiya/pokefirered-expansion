@@ -1,14 +1,14 @@
 LavenderTown_Text_DoYouBelieveInGhosts::
-    .string "Do you believe in ghosts?$"
+    .string "Do you believe in GHOSTs?$"
 
 LavenderTown_Text_SoThereAreBelievers::
     .string "Really?\n"
-    .string "So there are believers…$"
+    .string "So there are believers...$"
 
 LavenderTown_Text_JustImaginingWhiteHand::
     .string "Hahaha, I guess not.\p"
-    .string "That white hand on your shoulder…\n"
-    .string "I'm just imagining it.$"
+    .string "That white hand on your shoulder,\n"
+    .string "it's not real.$"
 
 LavenderTown_Text_TownKnownAsMonGraveSite::
     .string "This town is known as the grave\n"
@@ -17,9 +17,9 @@ LavenderTown_Text_TownKnownAsMonGraveSite::
     .string "POKéMON TOWER.$"
 
 LavenderTown_Text_GhostsAppearedInTower::
-    .string "Ghosts appeared in POKéMON TOWER.\p"
+    .string "GHOSTs appeared in POKéMON TOWER.\p"
     .string "I think they're the spirits of\n"
-    .string "POKéMON that the ROCKETS killed.$"
+    .string "POKéMON that the ROCKETs killed.$"
 
 LavenderTown_Text_TownSign::
     .string "LAVENDER TOWN\n"
@@ -35,6 +35,7 @@ LavenderTown_Text_VolunteerPokemonHouse::
     .string "POKéMON HOUSE$"
 
 LavenderTown_Text_PokemonTowerSign::
-    .string "POKéMON TOWER\n"
-    .string "Becalm the Spirits of POKéMON$"
+    .string "May the Souls of POKéMON\n"
+    .string "Rest Easy\p"
+    .string "POKéMON TOWER$"
 

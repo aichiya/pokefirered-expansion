@@ -5,29 +5,28 @@ LavenderTown_House2_Text_WantMeToRateNicknames::
     .string "your POKéMON?$"
 
 LavenderTown_House2_Text_CritiqueWhichMonsNickname::
-    .string "Which POKéMON's nickname should\n"
-    .string "I critique?$"
+    .string "Which POKéMON should\n"
+    .string "I look at?$"
 
 LavenderTown_House2_Text_GiveItANicerName::
     .string "{STR_VAR_1}, is it?\n"
     .string "That is a decent nickname!\p"
-    .string "But, would you like me to give it\n"
-    .string "a nicer name?\p"
+    .string "But, would you like me to\n"
+    .string "give it a nicer name?\p"
     .string "How about it?$"
 
 LavenderTown_House2_Text_WhatShallNewNicknameBe::
-    .string "Ah, good. Then, what shall the new\n"
-    .string "nickname be?$"
+    .string "Fine!\n"
+    .string "What should we name it?$"
 
 LavenderTown_House2_Text_FromNowOnShallBeKnownAsName::
-    .string "Done! From now on, this POKéMON\n"
-    .string "shall be known as {STR_VAR_1}!\p"
-    .string "It is a better name than before!\n"
-    .string "How fortunate for you!$"
+    .string "OK! This POKéMON has been\n"
+    .string "renamed {STR_VAR_1}!\p"
+    .string "That's' a better name than before!$"
 
 LavenderTown_House2_Text_ISeeComeVisitAgain::
-    .string "I see.\n"
-    .string "Do come visit again.$"
+    .string "Fine!\n"
+    .string "Come any time you like!$"
 
 LavenderTown_House2_Text_FromNowOnShallBeKnownAsSameName::
     .string "Done! From now on, this POKéMON\n"
