@@ -36,19 +36,17 @@ Route10_Text_HermanPostBattle::
     .string "I don't like anyone better than me!$"
 
 Route10_Text_HeidiIntro::
-    .string "I've been out at a POKéMON GYM\n"
+    .string "I've been to a POKéMON GYM\n"
     .string "a few times.\p"
-    .string "…But I always lose.$"
+    .string "But, I lost each time.$"
 
 Route10_Text_HeidiDefeat::
-    .string "Ohh!\n"
-    .string "After all my training!$"
+    .string "JR.TRAINER♀: Ohh!\n"
+    .string "Blew it again!$"
 
 Route10_Text_HeidiPostBattle::
-    .string "I noticed some POKéMANIACS\n"
-    .string "prowling around.\p"
-    .string "Can you imagine? Them?\n"
-    .string "Up here in the mountains?$"
+    .string "I noticed some POKéMANIACs\n"
+    .string "prowling around.$"
 
 Route10_Text_TrentIntro::
     .string "Ah!\n"

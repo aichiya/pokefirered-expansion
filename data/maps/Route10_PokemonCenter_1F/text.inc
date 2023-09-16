@@ -1,12 +1,11 @@
 Route10_PokemonCenter_1F_Text_EveryTypeStrongerThanOthers::
-    .string "The types of POKéMON match up\n"
-    .string "differently with each other.\p"
-    .string "Every type is stronger than some\n"
-    .string "types and weaker than others.$"
+    .string "The element types of POKéMON\n"
+    .string "make them stronger than some\l"
+    .string "types and weaker than others!$"
 
 Route10_PokemonCenter_1F_Text_NuggetUselessSoldFor5000::
-    .string "A NUGGET is totally useless.\n"
-    .string "So I sold it for ¥5000.$"
+    .string "I sold a useless\n"
+    .string "NUGGET for ¥5000!$"
 
 Route10_PokemonCenter_1F_Text_HeardGhostsHauntLavender::
     .string "I heard that ghosts haunt\n"

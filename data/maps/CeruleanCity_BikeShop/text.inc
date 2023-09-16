@@ -11,9 +11,9 @@ CeruleanCity_BikeShop_Text_SorryYouCantAffordIt::
     .string "You can't afford it!$"
 
 CeruleanCity_BikeShop_Text_OhBikeVoucherHereYouGo::
-    .string "Oh, that's…\p"
+    .string "Oh, that's...\p"
     .string "A BIKE VOUCHER!\p"
-    .string "Okay!\n"
+    .string "OK!\n"
     .string "Here you go!$"
 
 CeruleanCity_BikeShop_Text_ExchangedVoucherForBicycle::
@@ -25,13 +25,11 @@ CeruleanCity_BikeShop_Text_ThankYouComeAgain::
 
 CeruleanCity_BikeShop_Text_HowDoYouLikeNewBicycle::
     .string "How do you like your new BICYCLE?\n"
-    .string "Do you like how it rides?\p"
-    .string "You can take it out on CYCLING\n"
-    .string "ROAD and even into caves!$"
+    .string "You can take it on CYCLING\n"
+    .string "ROAD and in caves!$"
 
 CeruleanCity_BikeShop_Text_MakeRoomForBicycle::
-    .string "You better make room for your\n"
-    .string "BICYCLE!$"
+    .string "You better make room for this!$"
 
 CeruleanCity_BikeShop_Text_CityBikeGoodEnoughForMe::
     .string "A plain city BIKE is\n"
