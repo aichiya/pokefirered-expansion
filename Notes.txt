@@ -32,6 +32,7 @@ Start menu shows help text in blue box at bottom of the screen, needs to be remo
 Ingame trade success texts not tested.
 ROCKER sprite not replaced.
 Dark vision effect wrong, is circle of light but should black all but 1 tile color instead.
+Item Ball and seemingly all other object_event sprites are 4 pixels too low in the overworld, a universal offset is likely needed in the code.
 
 -Intro-
 Pikachu screen not skipped.
@@ -122,6 +123,10 @@ B1F Room5 is missing a MAX POTION.
 
 -LAVENDER TOWN-
 House 2 guy is supposed to use balding CEO sprite.
+PokemonTower_4F GREAT BALL should be HP UP.
+5F item ball temporarily out of bounds, need to verify existence in Blue.
+Pokedoll trick doesn't work for GHOST encounter.
+THE GHOST instead of GHOST appeared.
 
 -Pokemon-
 Charizard backsprite has extra white space between head and wing.
