@@ -6367,7 +6367,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ChannelerJanae[] = {
     {
         .iv = 0,
         .lvl = 22,
-        .species = SPECIES_GASTLY,
+        .species = SPECIES_HAUNTER,
     },
 };
 
