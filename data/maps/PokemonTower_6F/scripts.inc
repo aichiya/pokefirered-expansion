@@ -29,7 +29,7 @@ PokemonTower_6F_EventScript_DefeatedMarowakGhost::
 	end
 
 PokemonTower_6F_Movement_ForcePlayerUp::
-	walk_up
+	walk_right
 	step_end
 
 PokemonTower_6F_EventScript_Angelica::

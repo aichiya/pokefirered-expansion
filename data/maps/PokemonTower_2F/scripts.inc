@@ -82,22 +82,22 @@ PokemonTower_2F_EventScript_RivalExitDown::
 
 PokemonTower_2F_Movement_RivalExitRight::
 	walk_down
+	walk_down
+	walk_right
+	walk_right
 	walk_right
 	walk_right
 	walk_down
 	walk_down
-	walk_down
-	walk_right
-	walk_in_place_faster_right
 	step_end
 
 PokemonTower_2F_Movement_RivalExitDown::
 	walk_right
-	walk_right
-	walk_down
-	walk_down
 	walk_down
 	walk_down
 	walk_right
-	walk_in_place_faster_right
+	walk_down
+	walk_down
+	walk_right
+	walk_right
 	step_end
