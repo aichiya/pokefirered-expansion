@@ -1,9 +1,9 @@
 Route8_Text_AidanIntro::
-    .string "You look good at POKéMON, but how\n"
-    .string "is your chemistry grade?$"
+    .string "You look good at POKéMON,\n"
+    .string "but how's your chem?$"
 
 Route8_Text_AidanDefeat::
-    .string "Ow!\n"
+    .string "SUPER NERD: Ow!\n"
     .string "Meltdown!$"
 
 Route8_Text_AidanPostBattle::
@@ -11,14 +11,14 @@ Route8_Text_AidanPostBattle::
 
 Route8_Text_StanIntro::
     .string "All right!\n"
-    .string "Let's play a game!$"
+    .string "Let's roll the dice!$"
 
 Route8_Text_StanDefeat::
-    .string "Drat!\n"
+    .string "GAMBLER: Drat!\n"
     .string "Came up short!$"
 
 Route8_Text_StanPostBattle::
-    .string "Things didn't work today.$"
+    .string "Lady Luck's not with me today!$"
 
 Route8_Text_GlennIntro::
     .string "You need strategy to win at this!$"
@@ -34,50 +34,45 @@ Route8_Text_PaigeIntro::
     .string "I like NIDORAN, so I collect them!$"
 
 Route8_Text_PaigeDefeat::
-    .string "Why?\n"
+    .string "LASS: Why?\n"
     .string "Why??$"
 
 Route8_Text_PaigePostBattle::
-    .string "When POKéMON grow up, they get\n"
-    .string "ugly! They shouldn't evolve.$"
+    .string "When POKéMON grow up they get\n"
+    .string "ugly! They shouldn't evolve!$"
 
 Route8_Text_LeslieIntro::
     .string "School is fun, but so are POKéMON.$"
 
 Route8_Text_LeslieDefeat::
-    .string "You made it clear to me that\n"
-    .string "I should stick with school.$"
+    .string "SUPER NERD: I'll stay with school.$"
 
 Route8_Text_LesliePostBattle::
-    .string "I was planning on getting some\n"
-    .string "fresh air for a change, but…\p"
-    .string "We're stuck here because of the\n"
-    .string "gates at SAFFRON.$"
+    .string "We're stuck here because of\n"
+    .string "the gates at SAFFRON.$"
 
 Route8_Text_AndreaIntro::
-    .string "MEOWTH is so cute, meow, meow,\n"
-    .string "meow!$"
+    .string "MEOWTH is so cute,\n"
+    .string "meow, meow, meow!$"
 
 Route8_Text_AndreaDefeat::
-    .string "Meeeeyow!$"
+    .string "LASS: Meow!$"
 
 Route8_Text_AndreaPostBattle::
-    .string "I think PIDGEY and RATTATA are\n"
-    .string "cute, too!$"
+    .string "I think PIDGEY and RATTATA\n"
+    .string "are cute too!$"
 
 Route8_Text_MeganIntro::
-    .string "We must look silly standing here\n"
-    .string "like this.$"
+    .string "We must look silly standing\n"
+    .string "here like this!$"
 
 Route8_Text_MeganDefeat::
-    .string "Look what you did to my poor, cute\n"
-    .string "POKéMON!$"
+    .string "LASS: Look what you did!$"
 
 Route8_Text_MeganPostBattle::
-    .string "SAFFRON's gatekeeper won't let us\n"
-    .string "go through.\p"
-    .string "I know he's doing his job, but I\n"
-    .string "think he's mean.$"
+    .string "SAFFRON's gate keeper\n"
+    .string "won't let us through.\p"
+    .string "He's so mean!$"
 
 Route8_Text_RichIntro::
     .string "I'm a rambling, gambling dude!$"
