@@ -128,5 +128,9 @@ PokemonTower_4F GREAT BALL should be HP UP.
 Pokedoll trick doesn't work for GHOST encounter.
 THE GHOST instead of GHOST appeared.
 
+-Route12-
+Lookout tower woman gives TM27 instead of TM39.
+Hella decoration error in left border OOB.
+
 -Pokemon-
 Charizard backsprite has extra white space between head and wing.
