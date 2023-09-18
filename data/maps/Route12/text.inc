@@ -19,26 +19,26 @@ Text_PlayedPokeFlute::
 
 Route12_Text_NedIntro::
     .string "Yeah!\n"
-    .string "I got a bite here!$"
+    .string "I got a bite, here!$"
 
 Route12_Text_NedDefeat::
-    .string "Tch!\n"
-    .string "Just a small fry…$"
+    .string "FISHERMAN: Tch!\n"
+    .string "Just a small fry!$"
 
 Route12_Text_NedPostBattle::
     .string "Hang on!\n"
     .string "My line's snagged!$"
 
 Route12_Text_ChipIntro::
-    .string "Be patient.\n"
-    .string "Fishing is a waiting game.$"
+    .string "Be patient!\n"
+    .string "Fishing is a waiting game!$"
 
 Route12_Text_ChipDefeat::
-    .string "That one got away!$"
+    .string "FISHERMAN: That one got away!$"
 
 Route12_Text_ChipPostBattle::
-    .string "With a better ROD, I could catch\n"
-    .string "better POKéMON…$"
+    .string "With a better ROD, I could\n"
+    .string "catch better POKéMON!$"
 
 Route12_Text_JustinIntro::
     .string "I'm searching for a MOON STONE.\n"
@@ -65,29 +65,25 @@ Route12_Text_LucaPostBattle::
     .string "should zap sea POKéMON.$"
 
 Route12_Text_HankIntro::
-    .string "The FISHING FOOL versus POKéMON\n"
-    .string "KID!$"
+    .string "The FISHING FOOL vs.\n"
+    .string "POKéMON KID!$"
 
 Route12_Text_HankDefeat::
-    .string "Touch too much!$"
+    .string "FISHERMAN: Too much!$"
 
 Route12_Text_HankPostBattle::
-    .string "I guess you get to be good at\n"
-    .string "what you like.\p"
-    .string "Well, you beat me at POKéMON,\n"
-    .string "but you can't top me at fishing.$"
+    .string "You beat me at POKéMON,\n"
+    .string "but I'm good at fishing!$"
 
 Route12_Text_ElliotIntro::
-    .string "I love fishing, don't get me wrong.\p"
-    .string "But it'd be best if I also had more\n"
-    .string "work.$"
+    .string "I'd rather be working!$"
 
 Route12_Text_ElliotDefeat::
-    .string "It's not easy…$"
+    .string "FISHERMAN: It's not easy...$"
 
 Route12_Text_ElliotPostBattle::
     .string "It's all right.\n"
-    .string "Losing doesn't bug me anymore.$"
+    .string "Losing doesn't bug me any more.$"
 
 Route12_Text_AndrewIntro::
     .string "What's catching?\p"
@@ -107,7 +103,7 @@ Route12_Text_RouteSign::
     .string "North to LAVENDER$"
 
 Route12_Text_SportfishingArea::
-    .string "SPORTFISHING AREA$"
+    .string "SPORT FISHING AREA$"
 
 Route12_Text_JesIntro::
     .string "JES: If I win, I'm going to\n"

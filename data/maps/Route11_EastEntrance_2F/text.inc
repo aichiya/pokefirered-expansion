@@ -35,8 +35,7 @@ Route11_EastEntrance_2F_Text_BigMonAsleepOnRoad::
     .string "A big POKéMON is asleep on a road!$"
 
 Route11_EastEntrance_2F_Text_WhatABreathtakingView::
-    .string "Let's see what the binoculars have\n"
-    .string "to show…\p"
+    .string "Looked into the binoculars.\n"
     .string "What a breathtaking view!$"
 
 Route11_EastEntrance_2F_Text_RockTunnelGoodRouteToLavender::

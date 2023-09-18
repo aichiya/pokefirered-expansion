@@ -3,17 +3,16 @@ Route12_NorthEntrance_2F_Text_TakeTMDontNeedAnymoreMale::
     .string "My POKéMON's ashes are stored in\n"
     .string "POKéMON TOWER.\p"
     .string "You can have this TM.\n"
-    .string "I don't need it anymore…$"
+    .string "I don't need it any more...$"
 
 Route12_NorthEntrance_2F_Text_TakeTMDontNeedAnymoreFemale::
     .string "My POKéMON's ashes are stored in\n"
     .string "POKéMON TOWER.\p"
     .string "You can have this TM.\n"
-    .string "I don't need it anymore…$"
+    .string "I don't need it any more...$"
 
 Route12_NorthEntrance_2F_Text_ReceivedTM27FromLittleGirl::
-    .string "{PLAYER} received TM27\n"
-    .string "from the little girl.$"
+    .string "{PLAYER} received TM39!$"
 
 Route12_NorthEntrance_2F_Text_ExplainTM27::
     .string "TM27 is a move called RETURN…\p"
@@ -25,12 +24,10 @@ Route12_NorthEntrance_2F_Text_DontHaveRoomForThis::
     .string "You don't have room for this.$"
 
 Route12_NorthEntrance_2F_Text_TheresManFishing::
-    .string "Let's see what the binoculars have\n"
-    .string "to show…\p"
-    .string "There's a man fishing!$"
+    .string "Looked into the binoculars.\n"
+    .string "A man fishing!$"
 
 Route12_NorthEntrance_2F_Text_ItsPokemonTower::
-    .string "Let's see what the binoculars have\n"
-    .string "to show…\p"
+    .string "Looked into the binoculars.\n"
     .string "It's POKéMON TOWER!$"
 

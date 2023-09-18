@@ -21,15 +21,14 @@ Route8_Text_StanPostBattle::
     .string "Things didn't work today.$"
 
 Route8_Text_GlennIntro::
-    .string "You should be informed.\n"
     .string "You need strategy to win at this!$"
 
 Route8_Text_GlennDefeat::
-    .string "It's not logical!$"
+    .string "SUPER NERD: It's not logical!$"
 
 Route8_Text_GlennPostBattle::
-    .string "Go with GRIMER first…and…\n"
-    .string "…and…then…$"
+    .string "Go with GRIMER first...\n"
+    .string "and...and...then...$"
 
 Route8_Text_PaigeIntro::
     .string "I like NIDORAN, so I collect them!$"
@@ -81,28 +80,26 @@ Route8_Text_MeganPostBattle::
     .string "think he's mean.$"
 
 Route8_Text_RichIntro::
-    .string "I'm a rambling, gaming dude!$"
+    .string "I'm a rambling, gambling dude!$"
 
 Route8_Text_RichDefeat::
-    .string "Missed the big chance!$"
+    .string "GAMBLER: Missed the big score!$"
 
 Route8_Text_RichPostBattle::
-    .string "Playing games and POKéMON are like\n"
-    .string "eating peanuts! I just can't stop!$"
+    .string "Gambling and POKéMON are like\n"
+    .string "eating peanuts! Just can't stop!$"
 
 Route8_Text_JuliaIntro::
-    .string "What's a cute, round, and fluffy\n"
-    .string "POKéMON?$"
+    .string "What's a cute, round and\n"
+    .string "fluffy POKéMON?$"
 
 Route8_Text_JuliaDefeat::
-    .string "Stop!\p"
+    .string "LASS: Stop!\p"
     .string "Don't be so mean to my CLEFAIRY!$"
 
 Route8_Text_JuliaPostBattle::
-    .string "I read that CLEFAIRY evolves when\n"
-    .string "it's exposed to a MOON STONE.\p"
-    .string "I read that in a POKéMON JOURNAL.\n"
-    .string "I wonder if it's true?$"
+    .string "I heard that CLEFAIRY evolves when\n"
+    .string "it's exposed to a MOON STONE.$"
 
 Route8_Text_UndergroundPathSign::
     .string "UNDERGROUND PATH\n"
