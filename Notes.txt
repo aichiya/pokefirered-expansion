@@ -67,6 +67,7 @@ TEAM ROCKET GRUNT should be ROCKET.
 Full pokeball icon not changed.
 Pokeball arrow goes offscreen instead of starting and bending onscreen.
 Player backsprite too high.
+COOLTRAINER title isn't gendered.
 
 -Viridian City-
 Catch tutorial forced, no YES/NO, dialogue not finished.
@@ -130,7 +131,18 @@ THE GHOST instead of GHOST appeared.
 
 -Route12-
 Lookout tower woman gives TM27 instead of TM39.
-Hella decoration error in left border OOB.
+Possible remaining decoration error in left border OOB.
+
+-Celadon City-
+Game Corner fisherman is supposed to be FISHING_GURU.
+6 slot machines missing event tiles in game corner.
+Coin exchange workers have sprites, should be invisible.
+Left coin exchange worker has too many prizes, also prices are wrong.
+Middle coin exchange worker has totally wrong prizes.
+Right coin exchange worker has too many prizes, also prices are wrong.
+House1 incorrectly uses generic house layout, somehow linked to all others. Must use custom layout.
+Hotel couch guy doesn't talk, needs the usual sprite adjustment.
+ERIKA gives TM19 instead of TM21.
 
 -Pokemon-
 Charizard backsprite has extra white space between head and wing.
