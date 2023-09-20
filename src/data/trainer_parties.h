@@ -2761,7 +2761,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_BeautyTamia[] = {
 static const struct TrainerMonNoItemDefaultMoves sParty_BeautyLori[] = {
     {
         .iv = 0,
-        .lvl = 24,
+        .lvl = 26,
         .species = SPECIES_EXEGGCUTE,
     },
 };
@@ -5176,33 +5176,18 @@ static const struct TrainerMonNoItemCustomMoves sParty_CooltrainerWarren[] = {
 static const struct TrainerMonNoItemCustomMoves sParty_CooltrainerMary[] = {
     {
         .iv = 100,
-        .lvl = 22,
-        .species = SPECIES_BELLSPROUT,
-        .moves = {MOVE_WRAP, MOVE_STUN_SPORE, MOVE_POISON_POWDER, MOVE_GROWTH},
-    },
-    {
-        .iv = 100,
-        .lvl = 22,
-        .species = SPECIES_ODDISH,
-        .moves = {MOVE_POISON_POWDER, MOVE_STUN_SPORE, MOVE_ABSORB, MOVE_SWEET_SCENT},
-    },
-    {
-        .iv = 100,
-        .lvl = 22,
+        .lvl = 24,
         .species = SPECIES_WEEPINBELL,
-        .moves = {MOVE_VINE_WHIP, MOVE_STUN_SPORE, MOVE_POISON_POWDER, MOVE_GROWTH},
     },
     {
         .iv = 100,
-        .lvl = 22,
+        .lvl = 24,
         .species = SPECIES_GLOOM,
-        .moves = {MOVE_ABSORB, MOVE_STUN_SPORE, MOVE_POISON_POWDER, MOVE_SWEET_SCENT},
     },
     {
         .iv = 100,
-        .lvl = 22,
+        .lvl = 24,
         .species = SPECIES_IVYSAUR,
-        .moves = {MOVE_RAZOR_LEAF, MOVE_SLEEP_POWDER, MOVE_VINE_WHIP, MOVE_LEECH_SEED},
     },
 };
 
