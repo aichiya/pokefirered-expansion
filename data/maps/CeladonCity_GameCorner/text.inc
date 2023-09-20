@@ -1,20 +1,20 @@
 CeladonCity_GameCorner_Text_CanExchangeCoinsNextDoor::
     .string "Welcome!\p"
-    .string "You can exchange your COINS for\n"
+    .string "You can exchange your coins for\n"
     .string "fabulous prizes next door.$"
 
 CeladonCity_GameCorner_Text_WelcomeBuySomeCoins::
     .string "Welcome to ROCKET GAME CORNER!\p"
-    .string "Do you need some game COINS?\n"
-    .string "Would you like to buy some?$"
+    .string "Do you need some game coins?\n"
+    .string "It's ¥1000 for 50 coins.\n"
+    .string "Would you like some?$"
 
 CeladonCity_GameCorner_Text_ComePlaySometime::
     .string "No?\n"
     .string "Please come play sometime!$"
 
 CeladonCity_GameCorner_Text_SorryDontHaveCoinCase::
-    .string "Oh, I'm sorry.\n"
-    .string "You don't have a COIN CASE.$"
+    .string "You don't have a COIN CASE!$"
 
 CeladonCity_GameCorner_Text_CoinCaseIsFull::
     .string "Whoops!\n"
@@ -51,20 +51,16 @@ CeladonCity_GameCorner_Text_WinsComeAndGo::
     .string "Nothing's a sure thing.$"
 
 CeladonCity_GameCorner_Text_WinOrLoseItsOnlyLuck::
-    .string "These slot games…\n"
-    .string "Win or lose, it's only by luck.$"
+    .string "I'm having a wonderful time!$"
 
 CeladonCity_GameCorner_Text_GymGuyAdvice::
     .string "Hey!\p"
     .string "You have better things to do,\n"
     .string "champ in the making!\p"
-    .string "CELADON GYM's LEADER is ERIKA.\p"
-    .string "She is a user of GRASS-type\n"
-    .string "POKéMON, and at one with nature.\p"
-    .string "She might appear docile because of\n"
-    .string "her flower arranging…\p"
-    .string "But she's not one to be taken\n"
-    .string "lightly!$"
+    .string "CELADON GYM's LEADER is ERIKA!\n"
+    .string "She uses grass-type POKéMON!\p"
+    .string "She might appear docile,\n"
+    .string "but don't be fooled!$"
 
 CeladonCity_GameCorner_Text_RareMonsForCoins::
     .string "They offer rare POKéMON that can\n"
@@ -77,7 +73,7 @@ CeladonCity_GameCorner_Text_SoEasyToGetHooked::
 
 CeladonCity_GameCorner_Text_WantSomeCoins::
     .string "What's up?\n"
-    .string "Want some COINS?$"
+    .string "Want some coins?$"
 
 CeladonCity_GameCorner_Text_Received20CoinsFromNiceGuy::
     .string "{PLAYER} received 20 COINS\n"
@@ -92,7 +88,7 @@ CeladonCity_GameCorner_Text_NeedMoreCoinsForMonIWant::
 
 CeladonCity_GameCorner_Text_HereAreSomeCoinsShoo::
     .string "Hey, what? You're throwing me off!\n"
-    .string "Here are some COINS, so shoo!$"
+    .string "Here are some coins, shoo!$"
 
 CeladonCity_GameCorner_Text_Received20CoinsFromMan::
     .string "{PLAYER} received 20 COINS\n"
@@ -111,10 +107,10 @@ CeladonCity_GameCorner_Text_GruntIntro::
     .string "Go away, or else!$"
 
 CeladonCity_GameCorner_Text_GruntDefeat::
-    .string "Dang!$"
+    .string "ROCKET: Dang!$"
 
 CeladonCity_GameCorner_Text_GruntPostBattle::
-    .string "The TEAM ROCKET HIDEOUT might\n"
+    .string "Our HIDEOUT might\n"
     .string "be discovered!\p"
     .string "I better tell BOSS!$"
 
@@ -128,7 +124,7 @@ CeladonCity_GameCorner_Text_CoinCaseIsRequired::
 
 CeladonCity_GameCorner_Text_DontHaveCoinCase::
     .string "Oops!\n"
-    .string "Don't have the COIN CASE!$"
+    .string "Forgot the COIN CASE!$"
 
 CeladonCity_GameCorner_Text_SlotMachineWantToPlay::
     .string "A slot machine!\n"

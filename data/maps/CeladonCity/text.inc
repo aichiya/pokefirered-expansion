@@ -1,35 +1,32 @@
 CeladonCity_Text_GotMyKoffingInCinnabar::
-    .string "I got my KOFFING in CINNABAR.\p"
-    .string "It's usually nice, but it breathes\n"
-    .string "poison when it's angry.$"
+    .string "I got my KOFFING in CINNABAR!\p"
+    .string "It's nice, but it breathes\n"
+    .string "poison when it's angry!$"
 
 CeladonCity_Text_GymIsGreatFullOfWomen::
     .string "Heheh! This GYM is great!\n"
     .string "It's full of women!$"
 
 CeladonCity_Text_GameCornerIsBadForCitysImage::
-    .string "CELADON takes pride in its efforts\n"
-    .string "to keep the city beautiful.\p"
-    .string "That's why the new GAME CORNER is\n"
-    .string "bad for our city's image.$"
+    .string "The GAME CORNER is bad\n"
+    .string "for our city's image.$"
 
 CeladonCity_Text_BlewItAllAtSlots::
-    .string "Moan…\n"
+    .string "Moan!x\n"
     .string "I blew it all at the slots!\p"
-    .string "I knew I should have cashed in my\n"
-    .string "COINS for prizes!$"
+    .string "I knew I should have cashed\n"
+    .string "in my coins for prizes!$"
 
 CeladonCity_Text_MyTrustedPalPoliwrath::
-    .string "This is my trusted pal, POLIWRATH.\p"
-    .string "It evolved from a POLIWHIRL when\n"
-    .string "I used a WATER STONE.$"
+    .string "This is my trusted pal, POLIWRATH!\p"
+    .string "It evolved from POLIWHIRL when\n"
+    .string "I used WATER STONE!$"
 
 CeladonCity_Text_Poliwrath::
     .string "POLIWRATH: Ribi ribit!$"
 
 CeladonCity_Text_GetLostOrIllPunchYou::
-    .string "What are you staring at?\n"
-    .string "Get lost, or I'll punch you.$"
+    .string "What are you staring at?$"
 
 CeladonCity_Text_KeepOutOfTeamRocketsWay::
     .string "Keep out of TEAM ROCKET's way!$"
@@ -50,7 +47,7 @@ CeladonCity_Text_CitySign::
 CeladonCity_Text_GymSign::
     .string "CELADON CITY POKéMON GYM\n"
     .string "LEADER: ERIKA\l"
-    .string "The Nature-Loving Princess!$"
+    .string "The Nature Loving Princess!$"
 
 CeladonCity_Text_MansionSign::
     .string "CELADON MANSION$"
@@ -62,9 +59,9 @@ CeladonCity_Text_DeptStoreSign::
 CeladonCity_Text_GuardSpecProtectsFromStatus::
     .string "TRAINER TIPS\p"
     .string "GUARD SPEC. protects POKéMON\n"
-    .string "from status-reduction moves during\l"
-    .string "battle.\p"
-    .string "Get your items at the\n"
+    .string "against SPECIAL attacks such\l"
+    .string "as fire and water!\p"
+    .string "Get your items at\n"
     .string "CELADON DEPT. STORE!$"
 
 CeladonCity_Text_PrizeExchangeSign::

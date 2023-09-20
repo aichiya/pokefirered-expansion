@@ -439,6 +439,7 @@ CeladonCity_GameCorner_Movement_GruntExitWest::
 	walk_right
 	walk_right
 	walk_right
+	walk_right
 	step_end
 
 CeladonCity_GameCorner_Movement_GruntExit::
