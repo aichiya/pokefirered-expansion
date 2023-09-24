@@ -143,6 +143,19 @@ Right coin exchange worker has too many prizes, also prices are wrong.
 House1 incorrectly uses generic house layout, somehow linked to all others. Must use custom layout.
 Hotel couch guy doesn't talk, needs the usual sprite adjustment.
 ERIKA gives TM19 instead of TM21.
+GAME FREAK programmer uses wrong sprite, correct sunglasses sprite not implemented yet.
+GAME FREAK lead uses wrong sprite, correct sprite not implemented yet.
+DEPT.STORE_2F missing NPC.
+DEPT.STORE_3F move tutor is supposed to be TM gifter.
+DEPT.STORE thirsty girl dialogue shouldn't have EXIT in menu.
+Giving Water to girl gets TM16, should be TM13.
+Giving Soda to girl gets TM20, should be TM48.
+Giving Lemonade to girl gets TM33, should be TM49.
+Blackboard for Link Cable info is replaced by Wireless Adapter info, must replace.
+
+-Saffron City-
+Fighting dojo pokemon selection doesn't show pokedex page, uses different preview style.
+Mr.Psychic uses wrong sprite, should be FISHING GURU.
 
 -Pokemon-
 Charizard backsprite has extra white space between head and wing.
