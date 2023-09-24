@@ -1,17 +1,15 @@
 SaffronCity_PokemonCenter_1F_Text_GrowthRatesDifferBySpecies::
-    .string "POKéMON growth rates differ from\n"
-    .string "species to species.$"
+    .string "POKéMON growth rates differ\n"
+    .string "from species to specie.$"
 
 SaffronCity_PokemonCenter_1F_Text_SilphCoVictimOfFame::
-    .string "SILPH CO. is widely known to all.\p"
-    .string "It's a victim of its own fame - it\n"
-    .string "attracted TEAM ROCKET.$"
+    .string "SILPH CO. is very famous.\p"
+    .string "That's why it attracted\n"
+    .string "TEAM ROCKET!$"
 
 SaffronCity_PokemonCenter_1F_Text_GreatIfEliteFourCameBeatRockets::
-    .string "Sigh…\n"
-    .string "Wouldn't this be great?\p"
-    .string "If the ELITE FOUR came and\n"
-    .string "stomped TEAM ROCKET?$"
+    .string "It would be great if the ELITE FOUR\n"
+    .string "came and stomped TEAM ROCKET!$"
 
 SaffronCity_PokemonCenter_1F_Text_TeamRocketTookOff::
     .string "TEAM ROCKET took off!\n"
