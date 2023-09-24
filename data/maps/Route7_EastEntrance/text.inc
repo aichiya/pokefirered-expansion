@@ -8,19 +8,20 @@ Route7_EastEntrance_Text_ThatTeaLooksTasty::
     .string "I'm parched!$"
 
 Route7_EastEntrance_Text_ThanksIllShareTeaWithGuards::
+    .string "...\n"
     .string "Huh? I can have this drink?\n"
     .string "Gee, thanks!\l"
-    .string "… …\l"
-    .string "Glug, glug…\l"
-    .string "… …\l"
-    .string "Gulp…\l"
-    .string "If you want to go to SAFFRON\l"
-    .string "CITY…\l"
-    .string "… …\l"
+    .string "...\l"
+    .string "Glug, glug...\l"
+    .string "...\l"
+    .string "Gulp...\l"
+    .string "If you want to go to\l"
+    .string "SAFFRON CITY...\l"
+    .string "...\l"
     .string "You can go on through.\p"
-    .string "I'll share this with the other\n"
-    .string "guards!$"
+    .string "I'll share this with the\n"
+    .string "other guards!$"
 
 Route7_EastEntrance_Text_HiHowsItGoing::
-    .string "Hi, how's it going?$"
+    .string "Hi, thanks for the cool drinks!$"
 

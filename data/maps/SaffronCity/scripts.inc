@@ -10,7 +10,7 @@ SaffronCity_OnTransition::
 	end
 
 SaffronCity_EventScript_MoveDoorGuardGrunt::
-	setobjectxyperm LOCALID_DOOR_GUARD_GRUNT, 33, 31
+	setobjectxyperm LOCALID_DOOR_GUARD_GRUNT, 20, 24
 	return
 
 SaffronCity_EventScript_RocketGrunt1::

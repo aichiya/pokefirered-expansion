@@ -3,19 +3,17 @@ SaffronCity_Text_WhatDoYouWantGetLost::
     .string "Get lost!$"
 
 SaffronCity_Text_BossTakeTownForTeamRocket::
-    .string "BOSS said he'll take this town\n"
-    .string "in the name of TEAM ROCKET!$"
+    .string "BOSS said he'll take this town!$"
 
 SaffronCity_Text_DontGetDefiantOrIllHurtYou::
-    .string "Don't get defiant!\n"
-    .string "Or I'll have to hurt you!$"
+    .string "Get out of the way!$"
 
 SaffronCity_Text_SaffronBelongsToTeamRocket::
     .string "SAFFRON belongs to TEAM ROCKET!$"
 
 SaffronCity_Text_CriminalLifeMakesMeFeelAlive::
-    .string "My life as a criminal makes me feel\n"
-    .string "so alive!$"
+    .string "Being evil makes me\n"
+    .string "feel so alive!$"
 
 SaffronCity_Text_WatchWhereYoureWalking::
     .string "Ow!\n"
@@ -23,8 +21,7 @@ SaffronCity_Text_WatchWhereYoureWalking::
 
 SaffronCity_Text_WeCanExploitMonsAroundWorld::
     .string "With SILPH under control, we can\n"
-    .string "exploit POKéMON around the world!\p"
-    .string "We'll get stinking rich, yeahah!$"
+    .string "exploit POKéMON around the world!$"
 
 SaffronCity_Text_YouBeatTeamRocket::
     .string "You beat TEAM ROCKET all alone?\n"
@@ -72,7 +69,7 @@ SaffronCity_Text_FightingDojo::
 SaffronCity_Text_GymSign::
     .string "SAFFRON CITY POKéMON GYM\n"
     .string "LEADER: SABRINA\l"
-    .string "The Master of PSYCHIC POKéMON!$"
+    .string "The Master of Psychic POKéMON!$"
 
 SaffronCity_Text_FullHealCuresStatus::
     .string "TRAINER TIPS\p"
@@ -84,8 +81,8 @@ SaffronCity_Text_FullHealCuresStatus::
 
 SaffronCity_Text_GreatBallImprovedCatchRate::
     .string "TRAINER TIPS\p"
-    .string "The new GREAT BALL offers improved\n"
-    .string "catching rates.\p"
+    .string "New GREAT BALL offers improved\n"
+    .string "capture rates.\p"
     .string "Try it on those hard-to-catch\n"
     .string "POKéMON.$"
 
@@ -97,7 +94,7 @@ SaffronCity_Text_MrPsychicsHouse::
 
 SaffronCity_Text_SilphsLatestProduct::
     .string "SILPH's latest product!\n"
-    .string "Release to be determined…$"
+    .string "Release to be determined...$"
 
 SaffronCity_Text_TrainerFanClubSign::
     .string "POKéMON TRAINER FAN CLUB\p"

@@ -298,14 +298,14 @@
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_CELADON_CITY_CONDOMINIUMS_1F",
-      "dest_warp_id": "5"
+      "dest_warp_id": "4"
     },
     {
       "x": 25,
       "y": 3,
       "elevation": 3,
       "dest_map": "MAP_CELADON_CITY_CONDOMINIUMS_1F",
-      "dest_warp_id": "5"
+      "dest_warp_id": "4"
     }
   ],
   "coord_events": [

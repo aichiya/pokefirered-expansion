@@ -9,7 +9,6 @@ Route16_House_EventScript_Woman::
 	checkitemspace ITEM_HM02
 	goto_if_eq VAR_RESULT, FALSE, Route16_House_EventScript_NoRoomForHM02
 	giveitem_msg Route16_House_Text_ReceivedHM02FromGirl, ITEM_HM02
-	msgbox Route16_House_Text_ExplainHM02
 	setflag FLAG_GOT_HM02
 	release
 	end

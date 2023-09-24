@@ -2,9 +2,7 @@ CeladonCity_Condominiums_1F_MapScripts::
 	.byte 0
 
 CeladonCity_Condominiums_1F_EventScript_TeaWoman::
-	lock
-	faceplayer
-	msgbox CeladonCity_Condominiums_1F_Text_NothingBeatsThirstLikeTea
+	msgbox CeladonCity_Condominiums_1F_Text_MyDearMonsKeepMeCompany
 	release
 	end
 

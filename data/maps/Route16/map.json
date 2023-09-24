@@ -182,6 +182,20 @@
       "elevation": 3,
       "dest_map": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
       "dest_warp_id": "5"
+    },
+    {
+      "x": 24,
+      "y": 4,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 17,
+      "y": 4,
+      "elevation": 3,
+      "dest_map": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
+      "dest_warp_id": "8"
     }
   ],
   "coord_events": [

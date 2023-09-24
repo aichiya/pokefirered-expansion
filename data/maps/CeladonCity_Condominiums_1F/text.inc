@@ -29,7 +29,7 @@ CeladonCity_Condominiums_1F_Text_Clefairy::
     .string "CLEFAIRY: Pi pippippi!$"
 
 CeladonCity_Condominiums_1F_Text_Nidoran::
-    .string "NIDORAN♀: Kya kyaoo!$"
+    .string "NIDORAN: Kya kyaoo!$"
 
 CeladonCity_Condominiums_1F_Text_ManagersSuite::
     .string "CELADON MANSION\n"

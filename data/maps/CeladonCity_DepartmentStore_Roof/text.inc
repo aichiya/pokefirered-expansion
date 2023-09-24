@@ -51,10 +51,10 @@ CeladonCity_DepartmentStore_Roof_Text_ImNotThirstyAfterAll::
     .string "I'm not thirsty after all!$"
 
 CeladonCity_DepartmentStore_Roof_Text_MySisterIsImmature::
-    .string "My sister is a TRAINER, believe it\n"
-    .string "or not.\p"
-    .string "But, she's so immature, she drives\n"
-    .string "me nuts!$"
+    .string "My sister is a trainer,\n"
+    .string "believe it or not.\p"
+    .string "But, she's so immature,\n"
+    .string "she drives me nuts!$"
 
 CeladonCity_DepartmentStore_Roof_Text_ImThirstyIWantDrink::
     .string "I'm thirsty!\n"
@@ -66,13 +66,13 @@ CeladonCity_DepartmentStore_Roof_Text_FloorSign::
 
 CeladonCity_DepartmentStore_Roof_Text_VendingMachineWhatDoesItHave::
     .string "A vending machine!\n"
-    .string "What does it have?$"
+    .string "Here's the menu!$"
 
 CeladonCity_DepartmentStore_Roof_Text_NotEnoughMoney::
     .string "Oops, not enough money!$"
 
 CeladonCity_DepartmentStore_Roof_Text_DrinkCanPoppedOut::
-    .string "A can of {STR_VAR_1} popped out!$"
+    .string "{STR_VAR_1} popped out!$"
 
 CeladonCity_DepartmentStore_Roof_Text_NoMoreRoomForStuff::
     .string "There's no more room for stuff!$"

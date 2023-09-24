@@ -1,21 +1,19 @@
 CeladonCity_Condominiums_RoofRoom_Text_TheresNothingIDontKnow::
-    .string "There is nothing that I don't know,\n"
-    .string "like I wrote on the blackboard.\p"
-    .string "I know about the world of POKéMON\n"
-    .string "in your GAME BOY ADVANCE!\p"
-    .string "Get together with your friends and\n"
-    .string "enjoy trading POKéMON!$"
+    .string "I know everything about the world\n"
+    .string "of POKéMON in your GAME BOY!\p"
+    .string "Get together with your friends\n"
+    .string "and trade POKéMON!$"
 
 CeladonCity_Condominiums_RoofRoom_Text_ObtainedAnEevee::
-    .string "{PLAYER} obtained an EEVEE!$"
+    .string "{PLAYER} got EEVEE!$"
 
 CeladonCity_Condominiums_RoofRoom_Text_BoxIsFull::
     .string "ポケモンが　いっぱいだ\n"
     .string "ボックスを　かえて　きなさい$"
 
 CeladonCity_Condominiums_RoofRoom_Text_WirelessAdapterLecture::
-    .string "POKéMON Lecture\p"
-    .string "Playing with the Wireless Adapter$"
+    .string "TRAINER TIPS\p"
+    .string "Using a Game Link Cable$"
 
 CeladonCity_Condominiums_RoofRoom_Text_ReadWhichHeading::
     .string "Which heading do you want to read?$"
@@ -44,9 +42,9 @@ CeladonCity_Condominiums_RoofRoom_Text_ExplainUnionRoom::
 
 CeladonCity_Condominiums_RoofRoom_Text_PamphletOnTMs::
     .string "It's a pamphlet on TMs.\p"
-    .string "… …\p"
-    .string "There are fifty TMs in all.\p"
-    .string "There are also seven HMs that\n"
+    .string "...\p"
+    .string "There are 50 TMs in all.\p"
+    .string "There are also 5 HMs that\n"
     .string "can be used repeatedly.\p"
     .string "SILPH CO.$"
 
