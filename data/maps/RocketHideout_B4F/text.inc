@@ -1,43 +1,36 @@
 RocketHideout_B4F_Text_GiovanniIntro::
-    .string "So! I must say, I am impressed you\n"
-    .string "got here.\p"
-    .string "TEAM ROCKET captures POKéMON from\n"
-    .string "around the world.\p"
-    .string "They're important tools for keeping\n"
-    .string "our criminal enterprise going.\p"
-    .string "I am the leader, GIOVANNI!\p"
-    .string "For your insolence, you will feel a\n"
-    .string "world of pain!$"
+    .string "So! I must say, I am impressed\n"
+    .string "you got here.$"
 
 RocketHideout_B4F_Text_GiovanniDefeat::
     .string "WHAT!\n"
     .string "This can't be!$"
 
 RocketHideout_B4F_Text_GiovanniPostBattle::
-    .string "I see that you raise POKéMON with\n"
-    .string "utmost care.\p"
+    .string "I see that you raise POKéMON\n"
+    .string "with utmost care.\p"
     .string "A child like you would never\n"
     .string "understand what I hope to achieve.\p"
     .string "I shall step aside this time!\p"
-    .string "I hope we meet again…$"
+    .string "I hope we meet again...$"
 
 RocketHideout_B4F_Text_Grunt2Intro::
     .string "I know you!\n"
-    .string "You ruined our plans at MT. MOON!$"
+    .string "You ruined our plans at MT.MOON!$"
 
 RocketHideout_B4F_Text_Grunt2Defeat::
-    .string "Burned again!$"
+    .string "ROCKET: Burned again!$"
 
 RocketHideout_B4F_Text_Grunt2PostBattle::
-    .string "Do you have something against TEAM\n"
-    .string "ROCKET?$"
+    .string "Do you have something against\n"
+    .string "TEAM ROCKET?$"
 
 RocketHideout_B4F_Text_Grunt3Intro::
-    .string "How can you not see the beauty of\n"
-    .string "our evil?$"
+    .string "How can you not see the\n"
+    .string "beauty of our evil?$"
 
 RocketHideout_B4F_Text_Grunt3Defeat::
-    .string "Ayaya!$"
+    .string "ROCKET: Ayaya!$"
 
 RocketHideout_B4F_Text_Grunt3PostBattle::
     .string "BOSS!\n"
@@ -48,7 +41,7 @@ RocketHideout_B4F_Text_Grunt1Intro::
     .string "Who has the LIFT KEY?$"
 
 RocketHideout_B4F_Text_Grunt1Defeat::
-    .string "No!$"
+    .string "ROCKET: No!$"
 
 RocketHideout_B4F_Text_Grunt1PostBattle::
     .string "Oh, no!\n"

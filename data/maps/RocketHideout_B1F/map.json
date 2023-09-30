@@ -25,7 +25,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "5",
+      "trainer_sight_or_berry_tree_id": "2",
       "script": "RocketHideout_B1F_EventScript_Grunt2",
       "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS",
       "in_connection": false
@@ -55,7 +55,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "4",
+      "trainer_sight_or_berry_tree_id": "3",
       "script": "RocketHideout_B1F_EventScript_Grunt4",
       "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS",
       "in_connection": false
@@ -70,7 +70,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
+      "trainer_sight_or_berry_tree_id": "2",
       "script": "RocketHideout_B1F_EventScript_Grunt3",
       "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS",
       "in_connection": false
@@ -81,11 +81,11 @@
       "x": 20,
       "y": 18,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
+      "trainer_sight_or_berry_tree_id": "4",
       "script": "RocketHideout_B1F_EventScript_Grunt5",
       "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS",
       "in_connection": false

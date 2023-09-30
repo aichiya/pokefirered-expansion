@@ -3,51 +3,49 @@ RocketHideout_B1F_Text_Grunt1Intro::
     .string "How did you get here?$"
 
 RocketHideout_B1F_Text_Grunt1Defeat::
-    .string "Oww!\n"
+    .string "ROCKET: Oww!\n"
     .string "Beaten!$"
 
 RocketHideout_B1F_Text_Grunt1PostBattle::
-    .string "Blast it… You're dissing TEAM\n"
-    .string "ROCKET, aren't you?$"
+    .string "Are you dissing TEAM ROCKET?$"
 
 RocketHideout_B1F_Text_Grunt2Intro::
-    .string "You broke into TEAM ROCKET's\n"
-    .string "operation? What nerve!$"
+    .string "You broke into our operation?$"
 
 RocketHideout_B1F_Text_Grunt2Defeat::
-    .string "Boom!$"
+    .string "ROCKET: Burnt!$"
 
 RocketHideout_B1F_Text_Grunt2PostBattle::
-    .string "You're not going to get away with\n"
-    .string "this, brat!$"
+    .string "You're not going to get\n"
+    .string "away with this, brat!$"
 
 RocketHideout_B1F_Text_Grunt3Intro::
     .string "Intruder alert!$"
 
 RocketHideout_B1F_Text_Grunt3Defeat::
-    .string "I can't do it!$"
+    .string "ROCKET: I can't do it!$"
 
 RocketHideout_B1F_Text_Grunt3PostBattle::
-    .string "SILPH SCOPE? Humph!\n"
-    .string "I don't know where it is.$"
+    .string "SILPH SCOPE?\n"
+    .string "I don't know where it is!$"
 
 RocketHideout_B1F_Text_Grunt4Intro::
     .string "Why did you come here?$"
 
 RocketHideout_B1F_Text_Grunt4Defeat::
-    .string "This won't do!$"
+    .string "ROCKET: This won't do!$"
 
 RocketHideout_B1F_Text_Grunt4PostBattle::
-    .string "Okay, I'll talk…\n"
-    .string "Take the elevator to see my BOSS.$"
+    .string "Okay, I'll talk!\n"
+    .string "Take the elevator to see my BOSS!$"
 
 RocketHideout_B1F_Text_Grunt5Intro::
-    .string "Are you lost, you little mouse?$"
+    .string "Are you lost, you little rat?$"
 
 RocketHideout_B1F_Text_Grunt5Defeat::
-    .string "Why…?$"
+    .string "ROCKET: Why...?$"
 
 RocketHideout_B1F_Text_Grunt5PostBattle::
-    .string "Uh-oh, that ruckus somehow opened\n"
-    .string "the door!$"
+    .string "Uh-oh, that fight somehow\n"
+    .string "opened the door!$"
 
