@@ -157,5 +157,11 @@ Blackboard for Link Cable info is replaced by Wireless Adapter info, must replac
 Fighting dojo pokemon selection doesn't show pokedex page, uses different preview style.
 Mr.Psychic uses wrong sprite, should be FISHING GURU.
 
--Pokemon-
-Charizard backsprite has extra white space between head and wing.
+-Rocket Hideout-
+B2F X Speed is supposed to be NUGGET.
+B2F TM12 is supposed to be TM07.
+B3F TM21 is supposed to be TM10.
+B4F Max Ether is suppsed to be HP UP.
+B4F TM49 is supposed to be TM02.
+B4F Grunt drops lift key immediately, should require talking to him first.
+B4F CALCIUM is supposed to be IRON.
