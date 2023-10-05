@@ -1,14 +1,11 @@
 Route15_WestEntrance_2F_Text_GiveItemIfCaughtEnough::
     .string "Hi! Remember me?\n"
-    .string "I'm PROF. OAK's AIDE!\p"
-    .string "If your POKéDEX has complete data\n"
-    .string "on {STR_VAR_1} species, I'm supposed to\l"
-    .string "give you a reward.\p"
-    .string "PROF. OAK entrusted me with the\n"
-    .string "{STR_VAR_2} for you.\p"
-    .string "So, {PLAYER}, let me ask you.\p"
-    .string "Have you gathered data on at least\n"
-    .string "{STR_VAR_1} kinds of POKéMON?$"
+    .string "I'm PROF.OAK's AIDE!\p"
+    .string "If you caught {STR_VAR_1} kinds\n"
+    .string "of POKéMON, I'm supposed to\l"
+    .string "give you an {STR_VAR_2}!\p"
+    .string "So, {PLAYER}, have you caught at\p"
+    .string "least {STR_VAR_1} kinds of POKéMON?\n"
 
 Route15_WestEntrance_2F_Text_GreatHereYouGo::
     .string "Great! You have caught or owned\n"
@@ -28,12 +25,11 @@ Route15_WestEntrance_2F_Text_ExplainExpShare::
     .string "to battle.$"
 
 Route15_WestEntrance_2F_Text_LargeShiningBird::
-    .string "Looked into the binoculars.\n"
-    .string "A large, shining bird is flying\n"
+    .string "Looked into the binoculars...\n"
+    .string "A large, shining bird is flying\p"
     .string "toward the sea.$"
 
 Route15_WestEntrance_2F_Text_SmallIslandOnHorizon::
     .string "Looked into the binoculars.\n"
-    .string "It looks like a small island on\n"
-    .string "the horizon!$"
+    .string "It looks like a small island!$"
 

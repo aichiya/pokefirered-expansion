@@ -7,9 +7,9 @@ Text_SnorlaxWokeUp::
     .string "It attacked in a grumpy rage!$"
 
 Text_SnorlaxReturnedToMountains::
-    .string "SNORLAX calmed down.\n"
-    .string "It gave a huge yawn…\l"
-    .string "And returned to the mountains.$"
+    .string "SNORLAX calmed down!\n"
+    .string "With a big yawn, it retuned\l"
+    .string "to the mountains!$"
 
 Text_WantToUsePokeFlute::
     .string "Want to use the POKé FLUTE?$"
@@ -41,28 +41,24 @@ Route12_Text_ChipPostBattle::
     .string "catch better POKéMON!$"
 
 Route12_Text_JustinIntro::
-    .string "I'm searching for a MOON STONE.\n"
-    .string "Have you found one?$"
+    .string "Have you found a MOON STONE?$"
 
 Route12_Text_JustinDefeat::
-    .string "Oww!$"
+    .string "JR.TRAINER♂: Oww!$"
 
 Route12_Text_JustinPostBattle::
     .string "I could have made my POKéMON\n"
-    .string "evolve with a MOON STONE.\p"
-    .string "I would have won then, I bet.$"
+    .string "evolve with MOON STONE!$"
 
 Route12_Text_LucaIntro::
-    .string "Electricity is my specialty.\p"
-    .string "I don't know a thing about POKéMON\n"
-    .string "of the sea, though.$"
+    .string "Electricity is my specialty!$"
 
 Route12_Text_LucaDefeat::
-    .string "Unplugged!$"
+    .string "ROCKER: Unplugged!$"
 
 Route12_Text_LucaPostBattle::
-    .string "Water conducts electricity, so you\n"
-    .string "should zap sea POKéMON.$"
+    .string "Water conducts electricity, so\n"
+    .string "you should zap sea POKéMON!$"
 
 Route12_Text_HankIntro::
     .string "The FISHING FOOL vs.\n"
@@ -86,17 +82,15 @@ Route12_Text_ElliotPostBattle::
     .string "Losing doesn't bug me any more.$"
 
 Route12_Text_AndrewIntro::
-    .string "What's catching?\p"
-    .string "You never know what you could\n"
-    .string "catch!$"
+    .string "You never know what you\n"
+    .string "could catch!$"
 
 Route12_Text_AndrewDefeat::
-    .string "Lost it!$"
+    .string "FISHERMAN: Lost it!$"
 
 Route12_Text_AndrewPostBattle::
-    .string "What, MAGIKARP?\p"
-    .string "I catch them all the time, sure.\n"
-    .string "But, boy are they wimpy.$"
+    .string "I catch MAGIKARP all the time,\n"
+    .string "but they're so weak!$"
 
 Route12_Text_RouteSign::
     .string "ROUTE 12 \n"

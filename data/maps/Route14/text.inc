@@ -1,124 +1,115 @@
 Route14_Text_CarterIntro::
     .string "You need to use TMs to teach good\n"
-    .string "moves to POKéMON.$"
+    .string "moves to POKéMON!$"
 
 Route14_Text_CarterDefeat::
-    .string "Not good enough quite yet.$"
+    .string "BIRD KEEPER: Not good enough!$"
 
 Route14_Text_CarterPostBattle::
-    .string "You have some HMs, right? POKéMON\n"
-    .string "can't forget those moves easily.$"
+    .string "You have some HMs right? POKéMON\n"
+    .string "can't ever forget those moves.$"
 
 Route14_Text_MitchIntro::
     .string "My bird POKéMON should be ready\n"
     .string "for battle.$"
 
 Route14_Text_MitchDefeat::
-    .string "Not ready yet!$"
+    .string "BIRD KEEPER: Not ready yet!$"
 
 Route14_Text_MitchPostBattle::
-    .string "My bird POKéMON need to learn\n"
-    .string "better moves.$"
+    .string "They need to learn better moves.$"
 
 Route14_Text_BeckIntro::
-    .string "They have TMs on sale at the\n"
-    .string "CELADON DEPT. STORE.\p"
-    .string "TMs aren't really rare, but not\n"
-    .string "many people have HMs.$"
+    .string "TMs are on sale in CELEDON!\n"
+    .string "But, only a few people\n"
+    .string "have HMs!$"
 
 Route14_Text_BeckDefeat::
-    .string "Aww, bummer!$"
+    .string "BIRD KEEPER: Aww, bummer!$"
 
 Route14_Text_BeckPostBattle::
-    .string "Try teaching POKéMON a move that's\n"
-    .string "the same type as it.\p"
-    .string "That apparently boosts the power\n"
-    .string "of the move.$"
+    .string "Teach POKéMON moves of the same\n"
+    .string "element type for more power.$"
 
 Route14_Text_MarlonIntro::
     .string "Have you taught your bird POKéMON\n"
-    .string "how to FLY?\p"
-    .string "You'll be able to soar with it into\n"
-    .string "the sky!$"
+    .string "how to FLY?$"
 
 Route14_Text_MarlonDefeat::
-    .string "Shot down in flames!$"
+    .string "BIRD KEEPER: Shot down in flames!$"
 
 Route14_Text_MarlonPostBattle::
-    .string "Bird POKéMON are my one true love.\n"
-    .string "I don't want to raise anything else.$"
+    .string "Bird POKéMON are my one true love!$"
 
 Route14_Text_DonaldIntro::
-    .string "Have you heard the legend of the\n"
-    .string "winged mirages?$"
+    .string "Have you heard of the\n"
+    .string "legendary POKéMON?$"
 
 Route14_Text_DonaldDefeat::
-    .string "Why?\n"
+    .string "BIRD KEEPER: Why?\n"
     .string "Why'd I lose?$"
 
 Route14_Text_DonaldPostBattle::
-    .string "Well, the winged mirages are the\n"
-    .string "legendary bird POKéMON.\p"
-    .string "There are three of them: ARTICUNO,\n"
-    .string "ZAPDOS, and MOLTRES.$"
+    .string "The 3 legendary POKéMON are\n"
+    .string "all birds of prey.$"
 
 Route14_Text_BennyIntro::
-    .string "I'm not into it, but okay.\n"
+    .string "I'm not into it, but OK!\n"
     .string "Let's go!$"
 
 Route14_Text_BennyDefeat::
-    .string "I knew it!$"
+    .string "BIRD KEEPER: I knew it!$"
 
 Route14_Text_BennyPostBattle::
-    .string "Winning, losing… It's insignificant\n"
-    .string "under this huge sky.$"
+    .string "Winning, losing, it doesn't matter\n"
+    .string "in the long run!$"
 
 Route14_Text_LukasIntro::
     .string "C'mon, c'mon.\n"
     .string "Let's go, let's go, let's go!$"
 
 Route14_Text_LukasDefeat::
-    .string "Arrg!\n"
+    .string "BIKER: Arrg!\n"
     .string "Lost! Get lost!$"
 
 Route14_Text_LukasPostBattle::
     .string "What, what, what?\n"
-    .string "What do you want still?$"
+    .string "What do you want?$"
 
 Route14_Text_IsaacIntro::
-    .string "I need to burn some time.\n"
-    .string "Shut up and battle.$"
+    .string "Perfect!\n"
+    .string "I need to burn some time!$"
 
 Route14_Text_IsaacDefeat::
-    .string "What?\n"
+    .string "BIKER: What?\n"
     .string "You!?$"
 
 Route14_Text_IsaacPostBattle::
     .string "Raising POKéMON is a drag, man.$"
 
 Route14_Text_GeraldIntro::
-    .string "We ride out here because of the\n"
-    .string "wide-open spaces.$"
+    .string "We ride out here because there's\n"
+    .string "more room!$"
 
 Route14_Text_GeraldDefeat::
-    .string "Wipeout!$"
+    .string "BIKER: Wipe out!$"
 
 Route14_Text_GeraldPostBattle::
-    .string "It's cool you made your POKéMON so\n"
-    .string "strong.\p"
+    .string "It's cool you made your POKéMON\n"
+    .string "so strong!\p"
     .string "Might is right!\n"
     .string "And you know it!$"
 
 Route14_Text_MalikIntro::
-    .string "POKéMON battle?\n"
+    .string "POKéMON fight?\n"
     .string "Cool! Rumble!$"
 
 Route14_Text_MalikDefeat::
-    .string "Blown away!$"
+    .string "BIKER: Blown away!$"
 
 Route14_Text_MalikPostBattle::
-    .string "You know who'd win, you and me\n"
-    .string "one-on-one!$"
+    .string "You know who'd win, you and\n"
+    .string "me one on one!$"
 
 Route14_Text_RouteSign::
     .string "ROUTE 14\n"

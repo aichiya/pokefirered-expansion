@@ -26,7 +26,7 @@
     },
     {
       "map": "MAP_ROUTE15",
-      "offset": 8,
+      "offset": -30,
       "direction": "right"
     }
   ],

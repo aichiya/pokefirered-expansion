@@ -1,88 +1,80 @@
 Route15_Text_KindraIntro::
-    .string "I just got some POKéMON in trades.\n"
-    .string "Can I try them out on you?$"
+    .string "Let me try out the POKéMON\n"
+    .string "I just got in a trade!$"
 
 Route15_Text_KindraDefeat::
-    .string "Not good enough!$"
+    .string "JR.TRAINER♀: Not good enough!$"
 
 Route15_Text_KindraPostBattle::
     .string "You can't change the nickname of\n"
     .string "any POKéMON you get in a trade.\p"
-    .string "Only the Original TRAINER can get\n"
-    .string "the nickname changed.$"
+    .string "Only the Original Trainer can.$"
 
 Route15_Text_BeckyIntro::
-    .string "You look gentle, so I think I can\n"
-    .string "beat you.\p"
-    .string "I'll give it a go!$"
+    .string "You look gentle, so I think I\n"
+    .string "can beat you!$"
 
 Route15_Text_BeckyDefeat::
-    .string "No, wrong!$"
+    .string "JR.TRAINER♀: No, wrong!$"
 
 Route15_Text_BeckyPostBattle::
-    .string "I'm afraid of BIKERS. They look so\n"
-    .string "ugly and mean!$"
+    .string "I'm afraid of BIKERs, they look\n"
+    .string "so ugly and mean!$"
 
 Route15_Text_EdwinIntro::
-    .string "When I whistle, I can summon bird\n"
-    .string "POKéMON.$"
+    .string "When I whistle, I can summon\n"
+    .string "bird POKéMON.$"
 
 Route15_Text_EdwinDefeat::
-    .string "Ow!\n"
+    .string "BIRD KEEPER: Ow!\n"
     .string "That's tragic!$"
 
 Route15_Text_EdwinPostBattle::
-    .string "Maybe I'm not cut out for battles.\n"
-    .string "I'm not the right type, I guess.$"
+    .string "Maybe I'm not cut out for battles.$"
 
 Route15_Text_ChesterIntro::
     .string "Hmm? My birds are shivering!\n"
     .string "You're good, aren't you?$"
 
 Route15_Text_ChesterDefeat::
-    .string "Just as I thought!$"
+    .string "BIRD KEEPER: Just as I thought!$"
 
 Route15_Text_ChesterPostBattle::
-    .string "This is so obvious, you should know\n"
-    .string "this, but…\p"
-    .string "Moves like EARTHQUAKE and FISSURE\n"
-    .string "have no effect on bird POKéMON.$"
+    .string "Did you know that moves like\n"
+    .string "EARTHQUAKE don't have any\l"
+    .string "effect on birds?$"
 
 Route15_Text_GraceIntro::
-    .string "Oh, you're a little cutie!\n"
-    .string "So like a darling POKéMON!$"
+    .string "Oh, you're a little cutie!$"
 
 Route15_Text_GraceDefeat::
-    .string "You looked so cute, too!$"
+    .string "BEAUTY: You looked so cute too!$"
 
 Route15_Text_GracePostBattle::
-    .string "I forgive you.\n"
-    .string "I can take it.\l"
-    .string "I'm a big girl now.$"
+    .string "I forgive you!\n"
+    .string "I can take it!$"
 
 Route15_Text_OliviaIntro::
-    .string "I raise POKéMON for protection\n"
-    .string "because I live alone.$"
+    .string "I raise POKéMON because I\n"
+    .string "live alone!$"
 
 Route15_Text_OliviaDefeat::
-    .string "POKéMON isn't about winning or\n"
-    .string "losing for me.$"
+    .string "BEAUTY: I didn't ask for this!$"
 
 Route15_Text_OliviaPostBattle::
-    .string "I love having my POKéMON greet me\n"
-    .string "when I get home.\p"
-    .string "It's so reassuring.$"
+    .string "I just like going home to be\n"
+    .string "with my POKéMON!$"
 
 Route15_Text_ErnestIntro::
     .string "Hey, kid! C'mon!\n"
-    .string "I just got these off some loser!$"
+    .string "I just got these!$"
 
 Route15_Text_ErnestDefeat::
-    .string "Why not?$"
+    .string "BIKER: Why not?$"
 
 Route15_Text_ErnestPostBattle::
-    .string "Life's too short.\n"
-    .string "It's cool to live as an outlaw.\l"
+    .string "You only live once, so I live\n"
+    .string "as an outlaw!\l"
     .string "TEAM ROCKET RULES!$"
 
 Route15_Text_AlexIntro::
@@ -90,28 +82,26 @@ Route15_Text_AlexIntro::
     .string "lose to me, kid!$"
 
 Route15_Text_AlexDefeat::
-    .string "That can't be true!$"
+    .string "biker: That can't be true!$"
 
 Route15_Text_AlexPostBattle::
-    .string "I was just joking about the money.\n"
-    .string "Don't take me all serious.$"
+    .string "I was just joking about the money!$"
 
 Route15_Text_CeliaIntro::
-    .string "What's cool and happening?\n"
+    .string "What's cool?\n"
     .string "Trading POKéMON!$"
 
 Route15_Text_CeliaDefeat::
-    .string "I said trade!$"
+    .string "JR.TRAINER♀: I said trade!$"
 
 Route15_Text_CeliaPostBattle::
-    .string "I trade POKéMON with my friends\n"
-    .string "all the time.$"
+    .string "I trade POKéMON with my friends!$"
 
 Route15_Text_YazminIntro::
     .string "Want to play with my POKéMON?$"
 
 Route15_Text_YazminDefeat::
-    .string "I was too impatient!$"
+    .string "JR.TRAINER♀: I was too impatient!$"
 
 Route15_Text_YazminPostBattle::
     .string "I'll go train with weaker people.$"

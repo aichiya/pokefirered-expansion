@@ -238,7 +238,7 @@
       "y": 17,
       "elevation": 3,
       "item": "ITEM_SUPER_POTION",
-      "flag": "FLAG_TEMP_1",
+      "flag": "FLAG_TEMP_2",
       "quantity": 1,
       "underfoot": false
     },
