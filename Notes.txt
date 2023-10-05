@@ -33,6 +33,7 @@ Ingame trade success texts not tested.
 ROCKER sprite not replaced.
 Dark vision effect wrong, is circle of light but should black all but 1 tile color instead.
 Item Ball and seemingly all other object_event sprites are 4 pixels too low in the overworld, a universal offset is likely needed in the code.
+All cut bush flags must be checked.
 
 -Intro-
 Pikachu screen not skipped.
@@ -68,6 +69,7 @@ Full pokeball icon not changed.
 Pokeball arrow goes offscreen instead of starting and bending onscreen.
 Player backsprite too high.
 COOLTRAINER title isn't gendered.
+ROCKER battle sprite not replaced.
 
 -Viridian City-
 Catch tutorial forced, no YES/NO, dialogue not finished.
@@ -132,6 +134,7 @@ THE GHOST instead of GHOST appeared.
 -Route12-
 Lookout tower woman gives TM27 instead of TM39.
 Possible remaining decoration error in left border OOB.
+Fishing rod guy should be FISHING GURU instead of FISHERMAN.
 
 -Celadon City-
 Game Corner fisherman is supposed to be FISHING_GURU.
@@ -165,3 +168,6 @@ B4F Max Ether is suppsed to be HP UP.
 B4F TM49 is supposed to be TM02.
 B4F Grunt drops lift key immediately, should require talking to him first.
 B4F CALCIUM is supposed to be IRON.
+
+-Route 14-
+Border shows garbage tiles.
