@@ -1,10 +1,10 @@
 FuchsiaCity_Text_DidYouTrySafariGame::
     .string "Did you try the SAFARI GAME?\p"
-    .string "There are some rare POKéMON that\n"
-    .string "can only be caught there.$"
+    .string "Some POKéMON can only be\n"
+    .string "caught there.$"
 
 FuchsiaCity_Text_SafariZoneZooInFront::
-    .string "The SAFARI ZONE has a zoo in front\n"
+    .string "SAFARI ZONE has a zoo in front\n"
     .string "of the entrance.\p"
     .string "Out back is the SAFARI GAME for\n"
     .string "catching POKéMON.$"
@@ -14,10 +14,8 @@ FuchsiaCity_Text_WheresSara::
     .string "I said I'd meet her here.$"
 
 FuchsiaCity_Text_ItemBallInThere::
-    .string "That item ball in there…\n"
-    .string "Were you wanting that?\p"
-    .string "Me, too!\n"
-    .string "…Huh? That's a POKéMON?$"
+    .string "That item ball in there\n"
+    .string "is really a POKéMON$"
 
 FuchsiaCity_Text_CitySign::
     .string "FUCHSIA CITY\n"
@@ -64,17 +62,17 @@ FuchsiaCity_Text_SlowpokeSign::
 
 FuchsiaCity_Text_LaprasSign::
     .string "Name: LAPRAS\n"
-    .string "AKA the king of the seas.$"
+    .string "A.K.A. the king of the seas.$"
 
 FuchsiaCity_Text_OmanyteSign::
     .string "Name: OMANYTE\n"
     .string "An extremely rare POKéMON that was\l"
-    .string "regenerated from a fossil.$"
+    .string "resurrected from a fossil.$"
 
 FuchsiaCity_Text_KabutoSign::
     .string "Name: KABUTO\n"
     .string "An extremely rare POKéMON that was\l"
-    .string "regenerated from a fossil.$"
+    .string "resurrected from a fossil.$"
 
 @ Unused. May have been meant to be the placeholder text for the zoo mons, similar to RB's "!" text
 FuchsiaCity_Text_Ellipsis::
