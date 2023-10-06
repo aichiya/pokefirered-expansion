@@ -2,29 +2,24 @@ FuchsiaCity_SafariZone_Entrance_Text_WelcomeToSafariZone::
     .string "Welcome to the SAFARI ZONE!$"
 
 FuchsiaCity_SafariZone_Entrance_Text_PlaySafariGameFor500::
-    .string "For just ¥500, you can play the\n"
-    .string "SAFARI GAME.\p"
-    .string "You can roam the wide-open safari\n"
-    .string "and catch what you like.\p"
-    .string "Would you like to play?$"
+    .string "For just ¥500, you can catch all\n"
+    .string "the POKéMON you want in the park!\p"
+    .string "Would you like to join the hunt?$"
 
 FuchsiaCity_SafariZone_Entrance_Text_ThatllBe500WeOnlyUseSpecialBalls::
     .string "That'll be ¥500, please!\p"
-    .string "We only use a special kind of \n"
-    .string "POKé BALLS here.$"
+    .string "We only use a special POKé\n"
+    .string "BALL here.$"
 
 FuchsiaCity_SafariZone_Entrance_Text_PlayerReceived30SafariBalls::
-    .string "{PLAYER} received 30 SAFARI BALLS\n"
-    .string "from the attendant.$"
+    .string "{PLAYER} received 30 SAFARI BALLS!$"
 
 FuchsiaCity_SafariZone_Entrance_Text_CallYouOnPAWhenYouRunOut::
     .string "We'll call you on the PA when you\n"
-    .string "run out of time or SAFARI BALLS.\p"
-    .string "Well, I'll wish you the best of\n"
-    .string "luck!$"
+    .string "run out of time or SAFARI BALLS!$"
 
 FuchsiaCity_SafariZone_Entrance_Text_OkayPleaseComeAgain::
-    .string "Okay.\n"
+    .string "OK!\n"
     .string "Please come again!$"
 
 FuchsiaCity_SafariZone_Entrance_Text_OopsNotEnoughMoney::
@@ -47,26 +42,20 @@ FuchsiaCity_SafariZone_Entrance_Text_CatchFairShareComeAgain::
     .string "Come again!$"
 
 FuchsiaCity_SafariZone_Entrance_Text_FirstTimeAtSafariZone::
-    .string "Hi! Is it your first time here at\n"
-    .string "the SAFARI ZONE?$"
+    .string "Hi! Is it your first time here?$"
 
 FuchsiaCity_SafariZone_Entrance_Text_ExplainSafariZone::
-    .string "The SAFARI ZONE actually has\n"
-    .string "four zones in it.\p"
-    .string "Each zone has different kinds of\n"
-    .string "POKéMON, even some rare ones.\p"
-    .string "Use the supplied SAFARI BALLS to\n"
-    .string "catch them.\p"
-    .string "You can also throw BAIT or ROCKS\n"
-    .string "besides the SAFARI BALLS.\p"
-    .string "If you throw BAIT, the POKéMON\n"
-    .string "becomes less likely to flee, but\l"
-    .string "harder to catch.\p"
-    .string "If you throw ROCKS, the POKéMON\n"
-    .string "becomes more likely to flee, but\l"
-    .string "easier to catch.\p"
+    .string "SAFARI ZONE actually has 4\n"
+    .string "zones in it.\p"
+    .string "Each zone has different kinds\n"
+    .string "of POKéMON.\p"
+    .string "Use SAFARI BALLS to\n"
+    .string "catch them!\p"
     .string "When you run out of time or SAFARI\n"
-    .string "BALLS, it's game over for you!$"
+    .string "BALLS, it's game over for you!/p"
+    .string "Before you go, open an unused/n"
+    .string "POKéMON BOX so there's room for/l"
+    .string "new POKéMON!$"
 
 FuchsiaCity_SafariZone_Entrance_Text_SorryYoureARegularHere::
     .string "Sorry, you're a regular here!$"

@@ -110,8 +110,8 @@
     },
     {
       "type": "sign",
-      "x": 37,
-      "y": 31,
+      "x": 21,
+      "y": 27,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "SafariZone_Center_EventScript_TrainerTips"
@@ -128,8 +128,8 @@
     },
     {
       "type": "sign",
-      "x": 21,
-      "y": 27,
+      "x": 37,
+      "y": 31,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "SafariZone_Center_EventScript_AreaSign"

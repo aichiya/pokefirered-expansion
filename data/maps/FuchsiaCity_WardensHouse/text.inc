@@ -39,8 +39,7 @@ FuchsiaCity_WardensHouse_Text_ThanksLassieGiveYouSomething::
     .string "trouble.$"
 
 FuchsiaCity_WardensHouse_Text_ReceivedHM04FromWarden::
-    .string "{PLAYER} received HM04\n"
-    .string "from the WARDEN.$"
+    .string "{PLAYER} received HM04!$"
 
 FuchsiaCity_WardensHouse_Text_ExplainStrength::
     .string "WARDEN: Inside HM04 you'll find\n"
@@ -56,10 +55,8 @@ FuchsiaCity_WardensHouse_Text_YouHaveTooMuchStuff::
     .string "いっぱいやんけ！$"
 
 FuchsiaCity_WardensHouse_Text_MonPhotosFossilsOnDisplay::
-    .string "POKéMON photos and fossils are on\n"
-    .string "display.$"
+    .string "POKéMON photos and fossils.$"
 
 FuchsiaCity_WardensHouse_Text_OldMonMerchandiseOnDisplay::
-    .string "Old POKéMON merchandise is on\n"
-    .string "display.$"
+    .string "Old POKéMON merchandise.$"
 

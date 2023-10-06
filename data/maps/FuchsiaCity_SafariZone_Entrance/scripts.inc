@@ -129,7 +129,7 @@ FuchsiaCity_SafariZone_Entrance_EventScript_TryEnterSafariZone::
 	call_if_eq VAR_TEMP_2, 2, FuchsiaCity_SafariZone_Entrance_EventScript_EnterSafariZoneLeft
 	special EnterSafariMode
 	setvar VAR_MAP_SCENE_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE, 2
-	warp MAP_SAFARI_ZONE_CENTER, 255, 21, 29
+	warp MAP_SAFARI_ZONE_CENTER, 255, 22, 30
 	waitstate
 	end
 
