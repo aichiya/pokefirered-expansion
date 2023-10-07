@@ -21,7 +21,7 @@
       "x": 1,
       "y": 3,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -36,7 +36,7 @@
       "x": 4,
       "y": 2,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -51,7 +51,7 @@
       "x": 5,
       "y": 2,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -67,14 +67,14 @@
       "y": 7,
       "elevation": 3,
       "dest_map": "MAP_SAFARI_ZONE_EAST",
-      "dest_warp_id": "5"
+      "dest_warp_id": "4"
     },
     {
       "x": 3,
       "y": 7,
       "elevation": 3,
       "dest_map": "MAP_SAFARI_ZONE_EAST",
-      "dest_warp_id": "5"
+      "dest_warp_id": "4"
     }
   ],
   "coord_events": [
