@@ -34,6 +34,8 @@ ROCKER sprite not replaced.
 Dark vision effect wrong, is circle of light but should black all but 1 tile color instead.
 Item Ball and seemingly all other object_event sprites are 4 pixels too low in the overworld, a universal offset is likely needed in the code.
 All cut bush flags must be checked.
+Can't save in the Safari Zone.
+Safari Zone gives 600 steps instead of 500.
 
 -Intro-
 Pikachu screen not skipped.
@@ -171,3 +173,16 @@ B4F CALCIUM is supposed to be IRON.
 
 -Route 14-
 Border shows garbage tiles.
+
+-Fuchsia City-
+Fishing Guru brother uses FISHER sprite, should be GURU sprite.
+Zoo signs show pokemon previews incorrectly, use popup style instead of pokedex style.
+Safari Zone borders are all wrong, supposed to be plain grass.
+Safari Zone East Leaf Stone is supposed to be CARBOS.
+Safari Zone East TM11 is supposed to be TM37.
+Safari Zone East Rest House Balding Man uses wrong sprite, correct sprite not added yet.
+Safari Zone North Quick Claw has no equivalent ball, check with itemfinder.
+Safari Zone North TM47 is supposed to be TM40.
+Safari Zone West bottom right statue must have hidden revive, no itemfinder.
+Safari Zone Secret House guy uses wrong sprite, is Worker but hsould be GURU.
+Bushes reflect player sprite.
