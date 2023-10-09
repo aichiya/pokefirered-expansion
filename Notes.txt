@@ -186,3 +186,10 @@ Safari Zone North TM47 is supposed to be TM40.
 Safari Zone West bottom right statue must have hidden revive, no itemfinder.
 Safari Zone Secret House guy uses wrong sprite, is Worker but hsould be GURU.
 Bushes reflect player sprite.
+
+-Route 17-
+Signs reflect player sprite.
+No slope movement.
+
+
+
