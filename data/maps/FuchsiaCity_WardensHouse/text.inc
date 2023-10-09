@@ -13,41 +13,38 @@ FuchsiaCity_WardensHouse_Text_HeOhayHeHaHoo::
 
 FuchsiaCity_WardensHouse_Text_GaveGoldTeethToWarden::
     .string "{PLAYER} gave the GOLD TEETH\n"
-    .string "to the WARDEN.$"
+    .string "to the WARDEN!$"
 
 FuchsiaCity_WardensHouse_Text_WardenPoppedInHisTeeth::
     .string "The WARDEN popped in his teeth!$"
 
 FuchsiaCity_WardensHouse_Text_ThanksSonGiveYouSomething::
-    .string "WARDEN: Thanks, son!\n"
-    .string "You're a real lifesaver!\p"
+    .string "WARDEN: Thanks, kid!\n"
     .string "No one could understand a word\n"
-    .string "that I said, not a one!\p"
-    .string "I was too ashamed to show my face\n"
-    .string "around the OFFICE, even.\p"
-    .string "Let me give you something for your\n"
-    .string "trouble.$"
+    .string "that I said.\p"
+    .string "I couldn't work that way.\n"
+    .string "Let me give you something for\n"
+    .string "your trouble.$"
 
 FuchsiaCity_WardensHouse_Text_ThanksLassieGiveYouSomething::
-    .string "WARDEN: Thank you, lassie!\n"
-    .string "You're a real lifesaver!\p"
+    .string "WARDEN: Thanks, kid!\n"
     .string "No one could understand a word\n"
-    .string "that I said, not a one!\p"
-    .string "I was too ashamed to show my face\n"
-    .string "around the OFFICE, even.\p"
-    .string "Let me give you something for your\n"
-    .string "trouble.$"
+    .string "that I said.\p"
+    .string "I couldn't work that way.\n"
+    .string "Let me give you something for\n"
+    .string "your trouble.$"
 
 FuchsiaCity_WardensHouse_Text_ReceivedHM04FromWarden::
     .string "{PLAYER} received HM04!$"
 
 FuchsiaCity_WardensHouse_Text_ExplainStrength::
-    .string "WARDEN: Inside HM04 you'll find\n"
-    .string "STRENGTH.\p"
+    .string "WARDEN: HM04 teaches STRENGTH!\n"
     .string "It lets POKéMON move boulders when\n"
     .string "you're outside of battle.\p"
     .string "Oh yes, did you find the SECRET\n"
-    .string "HOUSE in the SAFARI ZONE?$"
+    .string "HOUSE in the SAFARI ZONE?\p"
+    .string "If you do, you win an HM!\n"
+    .string "I hear it's the rare SURF HM.$"
 
 @ Unused
 FuchsiaCity_WardensHouse_Text_YouHaveTooMuchStuff::

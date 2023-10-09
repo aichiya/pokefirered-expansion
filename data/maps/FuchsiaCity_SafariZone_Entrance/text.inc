@@ -38,7 +38,7 @@ FuchsiaCity_SafariZone_Entrance_Text_GoodLuck::
     .string "Good luck!$"
 
 FuchsiaCity_SafariZone_Entrance_Text_CatchFairShareComeAgain::
-    .string "Did you catch your fair share?\n"
+    .string "Did you get a good haul?\n"
     .string "Come again!$"
 
 FuchsiaCity_SafariZone_Entrance_Text_FirstTimeAtSafariZone::

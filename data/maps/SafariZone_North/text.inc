@@ -3,7 +3,7 @@ SafariZone_North_Text_RestHouse::
 
 SafariZone_North_Text_SecretHouseStillAhead::
     .string "TRAINER TIPS\p"
-    .string "The SECRET HOUSE is still ahead.$"
+    .string "The SECRET HOUSE is still ahead!$"
 
 SafariZone_North_Text_Area2::
     .string "AREA 2$"
