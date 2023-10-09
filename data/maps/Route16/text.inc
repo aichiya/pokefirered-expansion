@@ -2,18 +2,18 @@ Route16_Text_LaoIntro::
     .string "What do you want?$"
 
 Route16_Text_LaoDefeat::
-    .string "Don't you dare laugh!$"
+    .string "BIKER: Don't you dare laugh!$"
 
 Route16_Text_LaoPostBattle::
-    .string "We like just hanging here.\n"
-    .string "What's it to you?$"
+    .string "We like just hanging here,\n"
+    .string "what's it to you?$"
 
 Route16_Text_KojiIntro::
     .string "Nice BIKE!\n"
     .string "Hand it over!$"
 
 Route16_Text_KojiDefeat::
-    .string "Knockout!$"
+    .string "CUE BALL: Knock out!$"
 
 Route16_Text_KojiPostBattle::
     .string "Forget it, who needs your BIKE!$"
@@ -22,49 +22,41 @@ Route16_Text_LukeIntro::
     .string "Come out and play, little mouse!$"
 
 Route16_Text_LukeDefeat::
-    .string "You little rat!$"
+    .string "CUE BALL: You little rat!$"
 
 Route16_Text_LukePostBattle::
     .string "I hate losing!\n"
-    .string "Get out of my face!$"
+    .string "Get away form me!$"
 
 Route16_Text_HideoIntro::
     .string "Hey, you just bumped me!$"
 
 Route16_Text_HideoDefeat::
-    .string "Kaboom!$"
+    .string "BIKER: Kaboom!$"
 
 Route16_Text_HideoPostBattle::
-    .string "We'll always be hanging around here\n"
-    .string "even if you don't like it.\p"
-    .string "You can detour to VERMILION from\n"
-    .string "FUCHSIA going along the coast.$"
+    .string "You can also get to FUCHSIA from\n"
+    .string "VERMILION using a coastal road.$"
 
 Route16_Text_CamronIntro::
-    .string "I'm feeling hungry and mean!\n"
-    .string "I need a punching bag!$"
+    .string "I'm feeling hungry and mean!$"
 
 Route16_Text_CamronDefeat::
-    .string "Bad, bad, bad!$"
+    .string "CUE BALL: Bad, bad, bad!$"
 
 Route16_Text_CamronPostBattle::
-    .string "If I'm going to have POKéMON, they\n"
-    .string "may as well be ferocious.\p"
-    .string "I'd use them to leave my enemies\n"
-    .string "in tatters.$"
+    .string "I like my POKéMON ferocious!\n"
+    .string "They tear up enemies!$"
 
 Route16_Text_RubenIntro::
-    .string "Hey, there!\n"
-    .string "Let's have ourselves a good time!$"
+    .string "Sure, I'll go!$"
 
 Route16_Text_RubenDefeat::
-    .string "Don't make me mad!$"
+    .string "BIKER: Don't make me mad!$"
 
 Route16_Text_RubenPostBattle::
-    .string "I get my kicks by harassing people\n"
-    .string "with my stinking POKéMON.\p"
-    .string "They're great for startling people.\n"
-    .string "And, they bite, too.$"
+    .string "I like harassing people with\n"
+    .string "my vicious POKéMON!$"
 
 Route16_Text_MonSprawledOutInSlumber::
     .string "A sleeping POKéMON\n"

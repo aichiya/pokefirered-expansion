@@ -1,10 +1,9 @@
 Route16_NorthEntrance_2F_Text_OnBikeRideWithGirlfriend::
-    .string "I'm on a relaxing ride on my new\n"
-    .string "bike with my girlfriend.$"
+    .string "I'm going for a ride with my\n"
+    .string "girl friend!$"
 
 Route16_NorthEntrance_2F_Text_RidingTogetherOnNewBikes::
-    .string "We're going riding together on our\n"
-    .string "new bikes.$"
+    .string "We're going riding together!$"
 
 Route16_NorthEntrance_2F_Text_ItsCeladonDeptStore::
     .string "Looked into the binoculars.\n"
@@ -12,8 +11,7 @@ Route16_NorthEntrance_2F_Text_ItsCeladonDeptStore::
 
 Route16_NorthEntrance_2F_Text_LongPathOverWater::
     .string "Looked into the binoculars.\n"
-    .string "There's a long path over water far\n"
-    .string "away.$"
+    .string "There's a long path over water!$"
 
 Route16_NorthEntrance_2F_Text_GiveAmuletCoinIfCaught40::
     .string "Hi! Remember me?\n"
