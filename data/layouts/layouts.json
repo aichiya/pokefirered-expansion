@@ -1041,7 +1041,7 @@
       "border_width": 1,
       "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_RB_Overworld",
+      "secondary_tileset": "gTileset_RB_Overworld_Celadon",
       "border_filepath": "data/layouts/Route16/border.bin",
       "blockdata_filepath": "data/layouts/Route16/map.bin"
     },
