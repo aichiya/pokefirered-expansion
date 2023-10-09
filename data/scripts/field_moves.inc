@@ -168,8 +168,7 @@ Text_MonUsedStrengthCanMoveBoulders::
 	.string "possible to move boulders around!$"
 
 Text_MonMayPushBoulder::
-	.string "It's a big boulder, but a POKéMON\n"
-	.string "may be able to push it aside.$"
+	.string "This requires STRENGTH to move!$"
 
 Text_StrengthMadeMovingBouldersPossible::
 	.string "STRENGTH made it possible to move\n"
