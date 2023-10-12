@@ -12,7 +12,7 @@ SilphCo_5F_Text_Grunt1Intro::
     .string "around.$"
 
 SilphCo_5F_Text_Grunt1Defeat::
-    .string "Boom!$"
+    .string "ROCKET: Boom!$"
 
 SilphCo_5F_Text_Grunt1PostBattle::
     .string "It's not smart to pick a fight with\n"
@@ -20,23 +20,23 @@ SilphCo_5F_Text_Grunt1PostBattle::
 
 SilphCo_5F_Text_BeauIntro::
     .string "We study POKé BALL technology on\n"
-    .string "this floor.$"
+    .string "this floor!$"
 
 SilphCo_5F_Text_BeauDefeat::
-    .string "Dang!\n"
+    .string "SCIENTIST: Dang!\n"
     .string "Blast it!$"
 
 SilphCo_5F_Text_BeauPostBattle::
     .string "We worked on the ultimate POKé\n"
-    .string "BALL which would catch anything.$"
+    .string "BALL which would catch anything!$"
 
 SilphCo_5F_Text_DaltonIntro::
     .string "Whaaat?\p"
-    .string "There shouldn't be any children\n"
-    .string "here!$"
+    .string "There shouldn't be any\n"
+    .string "children here?$"
 
 SilphCo_5F_Text_DaltonDefeat::
-    .string "Oh, goodness!$"
+    .string "JUGGLER: Oh goodness!$"
 
 SilphCo_5F_Text_DaltonPostBattle::
     .string "You're only on 5F.\n"
@@ -46,27 +46,27 @@ SilphCo_5F_Text_Grunt2Intro::
     .string "Show TEAM ROCKET a little respect!$"
 
 SilphCo_5F_Text_Grunt2Defeat::
-    .string "Cough…\n"
-    .string "Cough…$"
+    .string "Cough...\n"
+    .string "Cough...$"
 
 SilphCo_5F_Text_Grunt2PostBattle::
-    .string "Which reminds me.\p"
+    .string "ROCKET: Which reminds me.\p"
     .string "KOFFING evolves into WEEZING!$"
 
 SilphCo_5F_Text_PorygonFirstVRMon::
     .string "It's a POKéMON REPORT!\p"
     .string "POKéMON LAB created PORYGON,\n"
-    .string "the first virtual-reality POKéMON.$"
+    .string "the first virtual reality POKéMON.$"
 
 SilphCo_5F_Text_Over350TechniquesConfirmed::
     .string "It's a POKéMON REPORT!\p"
-    .string "Over 350 POKéMON techniques have\n"
+    .string "Over 160 POKéMON techniques have\n"
     .string "been confirmed.$"
 
 SilphCo_5F_Text_SomeMonsEvolveWhenTraded::
     .string "It's a POKéMON REPORT!\p"
-    .string "Some POKéMON have been confirmed\n"
-    .string "to evolve when they are traded.$"
+    .string "4 POKéMON evolve only when traded\n"
+    .string "by link-cable.$"
 
 SilphCo_5F_Text_FloorSign::
     .string "SILPH CO. HEAD OFFICE\n"

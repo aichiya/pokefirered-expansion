@@ -3,7 +3,7 @@ SilphCo_10F_Text_GruntIntro::
     .string "So good of you to join me!$"
 
 SilphCo_10F_Text_GruntDefeat::
-    .string "I'm stunned!$"
+    .string "ROCKET: I'm stunned!$"
 
 SilphCo_10F_Text_GruntPostBattle::
     .string "Nice try, but the boardroom is up\n"
@@ -13,7 +13,7 @@ SilphCo_10F_Text_TravisIntro::
     .string "Enough of your silly games!$"
 
 SilphCo_10F_Text_TravisDefeat::
-    .string "No continues left!$"
+    .string "SCIENTIST: No continues left!$"
 
 SilphCo_10F_Text_TravisPostBattle::
     .string "Are you satisfied with beating me?\n"
@@ -24,8 +24,8 @@ SilphCo_10F_Text_WaaaImScared::
     .string "I'm scared!$"
 
 SilphCo_10F_Text_KeepMeCryingASecret::
-    .string "About me crying…\n"
-    .string "Please keep it a secret.$"
+    .string "Please keep quiet about\n"
+    .string "my crying!$"
 
 SilphCo_10F_Text_FloorSign::
     .string "SILPH CO. HEAD OFFICE\n"

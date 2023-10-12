@@ -1,25 +1,24 @@
 Route19_Text_RichardIntro::
-    .string "I have to exercise and warm up\n"
-    .string "before going out for a swim.$"
+    .string "Have to warm up before\n"
+    .string "my swim!$"
 
 Route19_Text_RichardDefeat::
-    .string "All warmed up!$"
+    .string "SWIMMER: All warmed up!$"
 
 Route19_Text_RichardPostBattle::
     .string "Thanks, kid!\n"
-    .string "I'm ready for a swim.$"
+    .string "I'm ready for a swim!$"
 
 Route19_Text_ReeceIntro::
-    .string "Wait! Slow down!\n"
+    .string "Wait!\n"
     .string "You'll have a heart attack!$"
 
 Route19_Text_ReeceDefeat::
-    .string "Ooh!\n"
+    .string "SWIMMER: Ooh!\n"
     .string "That's chilly!$"
 
 Route19_Text_ReecePostBattle::
-    .string "Watch out for TENTACOOL.\n"
-    .string "They sting so painfully.$"
+    .string "Watch out for TENTACOOL!$"
 
 Route19_Text_MatthewIntro::
     .string "I love swimming!\n"

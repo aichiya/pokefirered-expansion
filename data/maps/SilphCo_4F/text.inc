@@ -7,28 +7,27 @@ SilphCo_4F_Text_TeamRocketIsGone::
     .string "TEAM ROCKET is gone?$"
 
 SilphCo_4F_Text_Grunt1Intro::
-    .string "TEAM ROCKET has taken control\n"
-    .string "of SILPH CO.!$"
+    .string "TEAM ROCKET has taken command\n"
+    .string "of SILPH CO. !$"
 
 SilphCo_4F_Text_Grunt1Defeat::
-    .string "Arrgh!$"
+    .string "ROCKET: Arrgh!$"
 
 SilphCo_4F_Text_Grunt1PostBattle::
     .string "Fwahahaha!\n"
     .string "My BOSS has been after this place!$"
 
 SilphCo_4F_Text_RodneyIntro::
-    .string "My POKéMON is my loyal servant.$"
+    .string "My POKéMON are my loyal soldiers!$"
 
 SilphCo_4F_Text_RodneyDefeat::
-    .string "Darn!\n"
+    .string "SCIENTIST: Darn!\n"
     .string "You weak POKéMON!$"
 
 SilphCo_4F_Text_RodneyPostBattle::
     .string "The doors are electronically\n"
-    .string "locked.\p"
-    .string "It takes a CARD KEY to open the\n"
-    .string "doors here.$"
+    .string "locked!\p"
+    .string "A CARD KEY opens them!$"
 
 SilphCo_4F_Text_Grunt2Intro::
     .string "Intruder spotted!$"

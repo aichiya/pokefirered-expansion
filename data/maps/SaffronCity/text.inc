@@ -55,8 +55,8 @@ SaffronCity_Text_ImASecurityGuard::
     .string "Suspicious kids I don't allow in!$"
 
 SaffronCity_Text_HesTakingASnooze::
-    .string "…\n"
-    .string "Snore…\p"
+    .string "...\n"
+    .string "Snore...\p"
     .string "Hah! He's taking a snooze!$"
 
 SaffronCity_Text_CitySign::
