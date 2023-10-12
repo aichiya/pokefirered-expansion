@@ -98,14 +98,14 @@ SilphCo_11F_Movement_GiovanniApproachLeft::
 	walk_down
 	walk_down
 	walk_down
-	walk_down
-	walk_in_place_faster_left
 	step_end
 
 SilphCo_11F_Movement_GiovanniApproachRight::
 	walk_down
 	walk_down
 	walk_down
+	walk_down
+	walk_in_place_faster_right
 	step_end
 
 SilphCo_11F_Movement_PlayerFaceGiovanni::
