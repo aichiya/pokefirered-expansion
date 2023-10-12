@@ -67,9 +67,6 @@ SilphCo_7F_EventScript_RivalApproachTop::
 	waitmovement 0
 	return
 
-SilphCo_7F_EventScript_RivalApproachBottom::
-	return
-
 SilphCo_7F_EventScript_RivalSquirtle::
 	trainerbattle_no_intro TRAINER_RIVAL_SILPH_SQUIRTLE, SilphCo_7F_Text_RivalDefeat
 	return
@@ -94,12 +91,20 @@ SilphCo_7F_EventScript_RivalExitBottom::
 
 SilphCo_7F_Movement_RivalApproachTop::
 	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+SilphCo_7F_EventScript_RivalApproachBottom::
+	walk_up
+	walk_up
+	walk_up
 	step_end
 
 SilphCo_7F_Movement_RivalExitTop::
 	walk_right
 	walk_right
-	walk_down
 	delay_16
 	step_end
 
@@ -107,10 +112,10 @@ SilphCo_7F_Movement_RivalExitBottom::
 	walk_left
 	walk_up
 	walk_up
-	walk_up
-	walk_up
 	walk_right
 	walk_right
+	walk_right
+	walk_down
 	delay_16
 	step_end
 
