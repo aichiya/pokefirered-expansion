@@ -49,8 +49,8 @@ EventScript_Close5FDoor2::
 	return
 
 EventScript_Close5FDoor3::
-	setmetatile 0, 0, METATILE_SilphCo_VerticalBarrier_TopLeft, 1
-	setmetatile 0, 0, METATILE_SilphCo_VerticalBarrier_TopLeft, 1
+	setmetatile 15, 10, METATILE_SilphCo_VerticalBarrier_TopLeft, 1
+	setmetatile 15, 11, METATILE_SilphCo_VerticalBarrier_TopLeft, 1
 	return
 
 EventScript_Close6FDoor::
@@ -149,8 +149,8 @@ EventScript_Open5FDoor2::
 	return
 
 EventScript_Open5FDoor3::
-	setmetatile 0, 0, METATILE_SilphCo_Floor, 0
-	setmetatile 0, 0, METATILE_SilphCo_Floor, 0
+	setmetatile 15, 10, METATILE_SilphCo_Floor, 0
+	setmetatile 15, 11, METATILE_SilphCo_Floor, 0
 	return
 
 EventScript_Open6FDoor::
