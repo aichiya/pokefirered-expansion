@@ -186,10 +186,19 @@ Safari Zone North TM47 is supposed to be TM40.
 Safari Zone West bottom right statue must have hidden revive, no itemfinder.
 Safari Zone Secret House guy uses wrong sprite, is Worker but hsould be GURU.
 Bushes reflect player sprite.
+Pillars reflect player sprite.
+Signs reflect player sprite.
 
 -Route 17-
 Signs reflect player sprite.
 No slope movement.
 
-
-
+-Silph Co-
+Elevator broken.
+5F TM01 should be TM09.
+6F X SPECIAL is supposed to be X ACCURACY.
+7F TM08 is supposed to be TM03.
+2F hiding woman is MOVE TUTOR, is supposed to give TM36.
+7F Lapras guy has no dialogue switch after Rockets leave.
+10F trainers not checked at all, forgot.
+10F ULTRA BALL is supposed to be TM26.
