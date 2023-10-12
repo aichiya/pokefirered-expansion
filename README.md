@@ -16,7 +16,7 @@ Stages:
 
 Overworld Layout - Mostly Done
 
-Underworld Layout - WIP
+Underworld Layout - Mostly Done
 
 Wild Encounters - TBD
 
@@ -36,9 +36,9 @@ Pokemon Move Stats - TBD
 
 Pokemon Learn Sets - TBD
 
-Pokemon Front Sprites - TBD
+Pokemon Front Sprites - Mostly Done
 
-Pokemon Back Sprites - TBD
+Pokemon Back Sprites - Mostly Done
 
 Pokemon Party Sprites - TBD
 
@@ -46,6 +46,6 @@ Pokemon Palettes - TBD
 
 
 
-NPC Battle Sprites - Partial
+NPC Battle Sprites - Mostly Done
 
-NPC World Sprites - TBD
+NPC World Sprites - Mostly Done
