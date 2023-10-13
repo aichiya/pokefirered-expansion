@@ -32,16 +32,14 @@ SaffronCity_Text_SafeToGoOutAgain::
     .string "It's safe to go out again!$"
 
 SaffronCity_Text_PeopleComingBackToSaffron::
-    .string "People fled from here in droves\n"
-    .string "when those ROCKETS came.\p"
-    .string "They should be flocking back to\n"
-    .string "SAFFRON now.$"
+    .string "People should be flocking back\n"
+    .string "to SAFFRON now.$"
 
 SaffronCity_Text_FlewHereOnPidgeot::
     .string "I flew here on my PIDGEOT when\n"
     .string "I read about SILPH.\p"
     .string "It's already over?\n"
-    .string "I missed the media action…$"
+    .string "I missed the media action.$"
 
 SaffronCity_Text_Pidgeot::
     .string "PIDGEOT: Bi bibii!$"
