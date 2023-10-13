@@ -4661,25 +4661,21 @@ static const struct TrainerMonNoItemCustomMoves sParty_TeamRocketGrunt32[] = {
         .iv = 0,
         .lvl = 26,
         .species = SPECIES_RATICATE,
-        .moves = {MOVE_SCARY_FACE, MOVE_HYPER_FANG, MOVE_QUICK_ATTACK, MOVE_TAIL_WHIP},
     },
     {
         .iv = 0,
         .lvl = 26,
         .species = SPECIES_ARBOK,
-        .moves = {MOVE_GLARE, MOVE_BITE, MOVE_POISON_STING, MOVE_LEER},
     },
     {
         .iv = 0,
         .lvl = 26,
         .species = SPECIES_KOFFING,
-        .moves = {MOVE_SMOKESCREEN, MOVE_SLUDGE, MOVE_SMOG, MOVE_TACKLE},
     },
     {
         .iv = 0,
         .lvl = 26,
         .species = SPECIES_GOLBAT,
-        .moves = {MOVE_WING_ATTACK, MOVE_BITE, MOVE_ASTONISH, MOVE_SUPERSONIC},
     },
 };
 
