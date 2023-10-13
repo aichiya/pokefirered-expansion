@@ -23,7 +23,7 @@ CinnabarIsland_Text_PokemonLab::
 CinnabarIsland_Text_GymSign::
     .string "CINNABAR ISLAND POKéMON GYM\n"
     .string "LEADER: BLAINE\l"
-    .string "The Hotheaded Quiz Master!$"
+    .string "The Hot-Headed Quiz Master!$"
 
 CinnabarIsland_Text_HeyIfItIsntPlayer::
     .string "Huh?\n"
