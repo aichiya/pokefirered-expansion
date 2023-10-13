@@ -291,3 +291,5 @@ const u32 gMetatileAttributes_RB_Tower[] = INCBIN_U32("data/tilesets/secondary/r
 
 const u16 gMetatiles_RB_Underground[] = INCBIN_U16("data/tilesets/secondary/rb_underground/metatiles.bin");
 const u32 gMetatileAttributes_RB_Underground[] = INCBIN_U32("data/tilesets/secondary/rb_underground/metatile_attributes.bin");
+const u16 gMetatiles_RB_Mansion[] = INCBIN_U16("data/tilesets/secondary/rb_mansion/metatiles.bin");
+const u32 gMetatileAttributes_RB_Mansion[] = INCBIN_U32("data/tilesets/secondary/rb_mansion/metatile_attributes.bin");

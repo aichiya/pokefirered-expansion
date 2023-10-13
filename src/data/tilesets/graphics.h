@@ -1977,3 +1977,22 @@ const u16 gTilesetPalettes_RB_Underground[][16] =
 };
 
 const u32 gTilesetTiles_RB_Underground[] = INCBIN_U32("data/tilesets/secondary/rb_underground/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_RB_Mansion[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/rb_mansion/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rb_mansion/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rb_mansion/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rb_mansion/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rb_mansion/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rb_mansion/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rb_mansion/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rb_mansion/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rb_mansion/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rb_mansion/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rb_mansion/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rb_mansion/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/rb_mansion/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_RB_Mansion[] = INCBIN_U32("data/tilesets/secondary/rb_mansion/tiles.4bpp.lz");
