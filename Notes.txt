@@ -157,10 +157,12 @@ Giving Water to girl gets TM16, should be TM13.
 Giving Soda to girl gets TM20, should be TM48.
 Giving Lemonade to girl gets TM33, should be TM49.
 Blackboard for Link Cable info is replaced by Wireless Adapter info, must replace.
+Stranded old man is move tutor, supposed to give TM41.
 
 -Saffron City-
 Fighting dojo pokemon selection doesn't show pokedex page, uses different preview style.
 Mr.Psychic uses wrong sprite, should be FISHING GURU.
+Sabrina gives TM04, should be TM46.
 
 -Rocket Hideout-
 B2F X Speed is supposed to be NUGGET.
