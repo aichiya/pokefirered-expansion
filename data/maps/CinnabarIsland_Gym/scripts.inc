@@ -357,7 +357,6 @@ CinnabarIsland_Gym_EventScript_AveryApproachRight::
 CinnabarIsland_Gym_Movement_AveryApproachLeft::
 	walk_left
 	walk_up
-	walk_up
 	step_end
 
 CinnabarIsland_Gym_Movement_AveryApproachRight::
@@ -368,7 +367,7 @@ CinnabarIsland_Gym_Movement_AveryApproachRight::
 CinnabarIsland_Gym_Movement_PlayerFaceAvery::
 	delay_16
 	delay_16
-	walk_in_place_faster_right
+	walk_in_place_faster_down
 	step_end
 
 CinnabarIsland_Gym_EventScript_Quiz3Left::
