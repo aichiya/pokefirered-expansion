@@ -6,13 +6,13 @@ CinnabarIsland_Gym_Text_PhotoOfBlaineAndFuji::
 
 CinnabarIsland_PokemonLab_Entrance_Text_StudyMonsExtensively::
     .string "We study POKéMON extensively\n"
-    .string "every day.\p"
-    .string "People often bring us rare POKéMON\n"
-    .string "for examination.$"
+    .string "here.\p"
+    .string "People often bring us rare\n"
+    .string "POKéMON for examination.$"
 
 CinnabarIsland_PokemonLab_Entrance_Text_PhotoOfLabFounderDrFuji::
-    .string "A photo of the LAB's founder…\n"
-    .string "DR. FUJI?!$"
+    .string "A photo of the LAB's\n"
+    .string "founder, DR.FUJI!$"
 
 CinnabarIsland_PokemonLab_Entrance_Text_MeetingRoomSign::
     .string "POKéMON LAB\n"
@@ -20,7 +20,7 @@ CinnabarIsland_PokemonLab_Entrance_Text_MeetingRoomSign::
 
 CinnabarIsland_PokemonLab_Entrance_Text_RAndDRoomSign::
     .string "POKéMON LAB\n"
-    .string "R & D Room$"
+    .string "R-and-D Room$"
 
 CinnabarIsland_PokemonLab_Entrance_Text_TestingRoomSign::
     .string "POKéMON LAB\n"

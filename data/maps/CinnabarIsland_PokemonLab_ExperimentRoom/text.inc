@@ -22,15 +22,13 @@ Text_MetronomeTaught::
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_HaveYouAFossilForMe::
     .string "Hiya!\p"
     .string "I am important doctor.\n"
-    .string "Yes, very much so, indeed.\p"
-    .string "Here, I study rare POKéMON fossils.\n"
-    .string "All the time, I study.\p"
+    .string "I study here rare POKéMON fossils!\p"
     .string "You!\n"
     .string "Have you a fossil for me?$"
 
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_NoIsTooBad::
-    .string "No!\n"
-    .string "Is too bad!$"
+    .string "Aiyah!\n"
+    .string "You come again!$"
 
 @ Unused
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_TakesTimeGoForWalkJP::
@@ -39,14 +37,12 @@ CinnabarIsland_PokemonLab_ExperimentRoom_Text_TakesTimeGoForWalkJP::
     .string "ブラブラ　してくると　よろしー！$"
 
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_FossilMonBackToLife::
-    .string "You late.\n"
     .string "Where were you?\p"
     .string "Your fossil is back to life!\n"
     .string "It was {STR_VAR_1} like I think!$"
 
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_ReceivedMonFromDoctor::
-    .string "{PLAYER} received the {STR_VAR_1}\n"
-    .string "from the doctor.$"
+    .string "{PLAYER} got {STR_VAR_1}!$"
 
 @ Unused
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_NoRoomForPokemon::
@@ -54,7 +50,7 @@ CinnabarIsland_PokemonLab_ExperimentRoom_Text_NoRoomForPokemon::
 
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_ThatFossilIsOfMonMakeItLiveAgain::
     .string "Oh!\n"
-    .string "That is {STR_VAR_2}, it is!\p"
+    .string "That is {STR_VAR_2}!\p"
     .string "It is fossil of {STR_VAR_1},\n"
     .string "a POKéMON that is already extinct!\p"
     .string "My Resurrection Machine will make\n"
@@ -64,8 +60,8 @@ CinnabarIsland_PokemonLab_ExperimentRoom_Text_ThatFossilIsOfMonMakeItLiveAgain::
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_HandedFossilToWeirdDoctor::
     .string "So!\n"
     .string "You hurry and give me that!\p"
-    .string "{FONT_NORMAL}{PLAYER} handed over the\n"
-    .string "{STR_VAR_2} to the weird doctor.$"
+    .string "{FONT_NORMAL}{PLAYER} handed over\n"
+    .string "{STR_VAR_2}$"
 
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_TakesTimeGoForWalk::
     .string "I take a little time!\n"
