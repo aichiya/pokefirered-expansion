@@ -204,3 +204,8 @@ Elevator broken.
 7F Lapras guy has no dialogue switch after Rockets leave.
 10F trainers not checked at all, forgot.
 10F ULTRA BALL is supposed to be TM26.
+
+-Cinnebar Island-
+Mansion 1F PROTEIN is supposed to be CARBOS.
+Mansion B1F is supposed to RARE CANDY ball in middle top room.
+Lab entrance guy uses wrong sprite, should be GURU.
