@@ -21,7 +21,7 @@ Trade_Text_IsntMyOldMonGreat::
 	.string "Isn't my old {STR_VAR_2} great?$"
 
 Trade_Text_DoYouHaveMonWouldYouTradeForMon::
-	.string "Hello, there! Do you want to trade\n"
+	.string "Hello there! Do you want to trade\n"
 	.string "your {STR_VAR_1} for {STR_VAR_2}?$"
 
 Trade_Text_WellIfYouDontWantTo::
