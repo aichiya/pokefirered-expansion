@@ -9,10 +9,10 @@ PokemonMansion_Text_GaveUpOnPressingSwitch::
     .string "おすのは　あきらめた$"
 
 PokemonMansion_1F_Text_SimonIntro::
-    .string "This place is, like, huge!$"
+    .string "This place is like, huge!$"
 
 PokemonMansion_1F_Text_SimonDefeat::
-    .string "Ayah!$"
+    .string "BURGLAR: Ayah!$"
 
 PokemonMansion_1F_Text_SimonPostBattle::
     .string "I wonder where my partner went.$"
@@ -21,7 +21,7 @@ PokemonMansion_1F_Text_BraydonIntro::
     .string "My mentor once lived here.$"
 
 PokemonMansion_1F_Text_BraydonDefeat::
-    .string "Whew!\n"
+    .string "SCIENTIST: Whew!\n"
     .string "Overwhelming!$"
 
 PokemonMansion_1F_Text_BraydonPostBattle::

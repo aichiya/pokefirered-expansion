@@ -3,11 +3,11 @@ PokemonMansion_1F_Text_TedIntro::
     .string "There shouldn't be anyone here.$"
 
 PokemonMansion_1F_Text_TedDefeat::
-    .string "Ouch!$"
+    .string "SCIENTIST: Ouch!$"
 
 PokemonMansion_1F_Text_TedPostBattle::
-    .string "A key? I don't know what you're\n"
-    .string "talking about.$"
+    .string "A key? I don't know what\n"
+    .string "you're talking about.$"
 
 PokemonMansion_1F_Text_JohnsonIntro::
     .string "W-w-waah! You startled me!\n"
