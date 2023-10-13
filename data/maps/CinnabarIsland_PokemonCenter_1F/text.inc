@@ -1,29 +1,20 @@
 CinnabarIsland_PokemonCenter_1F_Text_CinnabarGymLocked::
-    .string "I came to visit the CINNABAR GYM,\n"
-    .string "but the door is locked tight.\p"
-    .string "There should be a key for it\n"
-    .string "somewhere.\p"
-    .string "Could it be in that burned-out\n"
-    .string "mansion?\p"
-    .string "The GYM LEADER's friend used to\n"
-    .string "live there, they say.$"
+    .string "POKéMON can still learn techniques\n"
+    .string "after cancelling evolution.\p"
+    .string "Evolution can wait until new\n"
+    .string "moves have been learned.$"
 
 CinnabarIsland_PokemonCenter_1F_Text_VisitUnionRoom::
-    .string "Do you have lots of friends?\p"
-    .string "Linking up with the usual friends\n"
-    .string "is fun, of course.\p"
-    .string "But how about visiting the\n"
-    .string "UNION ROOM every so often?\p"
-    .string "Who knows, you may end up making\n"
-    .string "new friends.\p"
-    .string "I think it would be worth your time\n"
-    .string "to check the UNION ROOM.$"
+    .string "Do you have any friends?\p"
+    .string "POKéMON you get in trades\n"
+    .string "grow very quickly.\p"
+    .string "I think it's worth a try!$"
 
 CinnabarIsland_PokemonCenter_1F_Text_EvolutionCanWaitForNewMoves::
-    .string "POKéMON can still learn techniques\n"
-    .string "after canceling evolution.\p"
-    .string "Evolution can wait until new moves\n"
-    .string "have been learned.$"
+    .string "You can cancel evolution.\n"
+    .string "When a POKéMON is evolving,\n"
+    .string "you can stop it and leave\p"
+    .string "it the way it is.$"
 
 CinnabarIsland_PokemonCenter_1F_Text_ReadyToSailToOneIsland::
     .string "BILL: Hey, you kept me waiting!\n"
