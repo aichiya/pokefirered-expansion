@@ -1,22 +1,20 @@
 SaffronCity_CopycatsHouse_2F_Text_MimickingFavoriteHobbyMale::
     .string "{PLAYER}: Hi!\n"
     .string "Do you like POKéMON?\p"
-    .string "{PLAYER}: Uh, no, I just asked you.\p"
+    .string "{PLAYER}: Uh no, I just asked you.\p"
     .string "{PLAYER}: Huh?\n"
     .string "You're strange!\p"
     .string "COPYCAT: Hmm? Quit mimicking?\n"
     .string "But, that's my favorite hobby!$"
 
 SaffronCity_CopycatsHouse_2F_Text_MimickingFavoriteHobbyFemale::
-    .string "{PLAYER}: Hi.\n"
-    .string "You must like POKéMON.\p"
-    .string "{PLAYER}: No, not me.\n"
-    .string "I asked you.\p"
-    .string "{PLAYER}: Pardon?\n"
-    .string "You're weird!\l"
-    .string " \l"
-    .string "COPYCAT: Hmm? Quit mimicking?\l"
-    .string "But that's my favorite hobby!$"
+    .string "{PLAYER}: Hi!\n"
+    .string "Do you like POKéMON?\p"
+    .string "{PLAYER}: Uh no, I just asked you.\p"
+    .string "{PLAYER}: Huh?\n"
+    .string "You're strange!\p"
+    .string "COPYCAT: Hmm? Quit mimicking?\n"
+    .string "But, that's my favorite hobby!$"
 
 Text_MimicTeach::
     .string "Oh wow!\n"
@@ -80,8 +78,8 @@ SaffronCity_CopycatsHouse_2F_Text_MimickingFavoriteHobbyFemaleJP::
 
 SaffronCity_CopycatsHouse_2F_Text_Doduo::
     .string "DODUO: Giiih!\p"
-    .string "PRETTY MIRROR LOOK AT ME,\n"
-    .string "SEE HOW PRETTY I CAN BE?$"
+    .string "PRETTY MIRROR ON THE WALL,\n"
+    .string "WHO IS THE FAIREST ONE OF ALL?$"
 
 SaffronCity_CopycatsHouse_2F_Text_RareMonOnlyDoll::
     .string "This is a rare POKéMON!\n"
@@ -92,7 +90,7 @@ SaffronCity_CopycatsHouse_2F_Text_MarioWearingABucket::
     .string "on his head!$"
 
 SaffronCity_CopycatsHouse_2F_Text_MySecrets::
-    .string "…\p"
+    .string "...\p"
     .string "My Secrets!\p"
     .string "Skill: Mimicry!\n"
     .string "Hobby: Collecting dolls!\l"
