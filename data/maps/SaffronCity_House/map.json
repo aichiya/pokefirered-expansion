@@ -32,7 +32,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_LASS",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
       "x": 2,
       "y": 3,
       "elevation": 3,
@@ -62,7 +62,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_CLIPBOARD",
+      "graphics_id": "OBJ_EVENT_GFX_TOWN_MAP",
       "x": 3,
       "y": 3,
       "elevation": 0,
