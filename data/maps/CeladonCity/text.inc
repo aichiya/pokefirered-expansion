@@ -12,7 +12,7 @@ CeladonCity_Text_GameCornerIsBadForCitysImage::
     .string "for our city's image.$"
 
 CeladonCity_Text_BlewItAllAtSlots::
-    .string "Moan!x\n"
+    .string "Moan!\n"
     .string "I blew it all at the slots!\p"
     .string "I knew I should have cashed\n"
     .string "in my coins for prizes!$"
@@ -73,7 +73,7 @@ CeladonCity_Text_GameCornerSign::
     .string "The playground for grown-ups!$"
 
 CeladonCity_Text_ScaldedTongueOnTea::
-    .string "Aaaagh, ow…\n"
+    .string "Aaaagh, ow...\n"
     .string "I scalded my tongue!\p"
     .string "This nice old lady in the MANSION\n"
     .string "gave me some TEA.\p"
@@ -82,12 +82,10 @@ CeladonCity_Text_ScaldedTongueOnTea::
 
 Text_SoftboiledTeach::
     .string "Hello, there!\p"
-    .string "I've seen you about, but I never\n"
-    .string "had a chance to chat.\p"
-    .string "It must be good luck that brought\n"
-    .string "us together finally.\p"
-    .string "I'd like to celebrate by teaching\n"
-    .string "you the move SOFTBOILED.$"
+    .string "I've seen you, but I never\n"
+    .string "had a chance to talk!\p"
+    .string "Here's a gift for\n"
+    .string "dropping by!$"
 
 Text_SoftboiledDeclined::
     .string "I'll always be keeping an eye out\n"
