@@ -28,8 +28,8 @@ PokemonMansion_EventScript_DontPressSwitch::
 PokemonMansion_EventScript_PressSwitch_1F::
 	setmetatile 20, 17, METATILE_PokemonMansion_Floor, 0
 	setmetatile 21, 17, METATILE_PokemonMansion_Floor, 0
-	setmetatile 26, 27, METATILE_PokemonMansion_Floor_ShadeFull, 0
-	setmetatile 27, 27, METATILE_PokemonMansion_Floor_ShadeFull, 0
+	setmetatile 26, 27, METATILE_PokemonMansion_BasementFloor_ShadeFull, 0
+	setmetatile 27, 27, METATILE_PokemonMansion_BasementFloor_ShadeFull, 0
 	setmetatile 16, 7, METATILE_PokemonMansion_Floor, 0
 	setmetatile 17, 7, METATILE_PokemonMansion_Floor, 0
 	setmetatile 24, 13, METATILE_PokemonMansion_Barrier_Horizontal_TopLeft, 1
