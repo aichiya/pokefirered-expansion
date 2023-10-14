@@ -1089,7 +1089,7 @@
       "border_width": 1,
       "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_RB_Overworld",
+      "secondary_tileset": "gTileset_RB_Overworld_Cinnebar",
       "border_filepath": "data/layouts/Route20/border.bin",
       "blockdata_filepath": "data/layouts/Route20/map.bin"
     },

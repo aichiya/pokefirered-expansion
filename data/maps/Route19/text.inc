@@ -25,32 +25,31 @@ Route19_Text_MatthewIntro::
     .string "What about you?$"
 
 Route19_Text_MatthewDefeat::
-    .string "Belly flop!$"
+    .string "SWIMMER: Belly flop!$"
 
 Route19_Text_MatthewPostBattle::
-    .string "I can beat even marine POKéMON\n"
-    .string "at swimming.$"
+    .string "I can beat POKéMON\n"
+    .string "at swimming!$"
 
 Route19_Text_DouglasIntro::
     .string "What's beyond the horizon?$"
 
 Route19_Text_DouglasDefeat::
-    .string "Glub!$"
+    .string "SWIMMER: Glub!$"
 
 Route19_Text_DouglasPostBattle::
-    .string "I see a couple of islands over\n"
-    .string "yonder!$"
+    .string "I see a couple of islands!$"
 
 Route19_Text_DavidIntro::
     .string "I tried diving for POKéMON, but it\n"
-    .string "was a no-go.$"
+    .string "was a no go!$"
 
 Route19_Text_DavidDefeat::
-    .string "Help!$"
+    .string "SWIMMER: Help!$"
 
 Route19_Text_DavidPostBattle::
-    .string "I guess you have to fish for sea\n"
-    .string "POKéMON.$"
+    .string "You have to fish for\n"
+    .string "sea POKéMON!$"
 
 Route19_Text_TonyIntro::
     .string "I look at the sea to forget all\n"
@@ -69,48 +68,43 @@ Route19_Text_AnyaIntro::
     .string "Can I have it if I win?$"
 
 Route19_Text_AnyaDefeat::
-    .string "Oh! I lost!$"
+    .string "BEAUTY: Oh! I lost!$"
 
 Route19_Text_AnyaPostBattle::
-    .string "It's still a long way to go to\n"
-    .string "SEAFOAM ISLANDS…\p"
-    .string "I want to go back to FUCHSIA…$"
+    .string "It's still a long way to go\n"
+    .string "to SEAFOAM ISLANDS.$"
 
 Route19_Text_AliceIntro::
     .string "Swimming's great!\n"
     .string "Sunburns aren't!$"
 
 Route19_Text_AliceDefeat::
-    .string "Shocker!$"
+    .string "BEAUTY: Shocker!$"
 
 Route19_Text_AlicePostBattle::
-    .string "My boyfriend wanted to swim to\n"
-    .string "SEAFOAM ISLANDS.$"
+    .string "My boy friend wanted to swim\n"
+    .string "TO SEAFOAM ISLANDS.$"
 
 Route19_Text_AxleIntro::
-    .string "Ahoy, there!\n"
     .string "These waters are treacherous!$"
 
 Route19_Text_AxleDefeat::
-    .string "Ooh!\n"
+    .string "SWIMMER: Ooh!\n"
     .string "Dangerous!$"
 
 Route19_Text_AxlePostBattle::
-    .string "M-my legs! They cramped up!\n"
-    .string "Glub, glub…$"
+    .string "I got a cramp!\n"
+    .string "Glub, glub...$"
 
 Route19_Text_ConnieIntro::
-    .string "I swam here with my friends…\n"
-    .string "I'm tired…$"
+    .string "I swam here , but I'm tired.$"
 
 Route19_Text_ConnieDefeat::
-    .string "I'm exhausted…$"
+    .string "BEAUTY: I'm exhausted...$"
 
 Route19_Text_ConniePostBattle::
-    .string "If I were to ride a POKéMON on\n"
-    .string "the sea, I'd like a LAPRAS.\p"
-    .string "LAPRAS is so big, I bet it\n"
-    .string "would keep me dry on water.$"
+    .string "LAPRAS is so big, it must\n"
+    .string "keep you dry on water.$"
 
 Route19_Text_RouteSign::
     .string "SEA ROUTE 19\n"
