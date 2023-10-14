@@ -148,8 +148,8 @@ ViridianCity_Gym_Text_GymGuyAdvice::
     .string "like ground-type POKéMON!$"
 
 ViridianCity_Gym_Text_GymGuyPostVictory::
-    .string "Blow me away! GIOVANNI was the\n"
-    .string "GYM LEADER of VIRIDIAN?$"
+    .string "Blow me away! GIOVANNI was\n"
+    .string "the GYM LEADER here?$"
 
 ViridianCity_Gym_Text_GymStatue::
     .string "VIRIDIAN CITY POKéMON GYM\n"
