@@ -1,10 +1,9 @@
 Route10_Text_MarkIntro::
-    .string "Wow, you came all the way here?\n"
-    .string "Maybe you're a POKéMANIAC, too?\l"
+    .string "Wow, are you a POKéMANIAC too?\n"
     .string "Want to see my collection?$"
 
 Route10_Text_MarkDefeat::
-    .string "Humph.\n"
+    .string "POKéMANIAC: Humph.\n"
     .string "I'm not angry!$"
 
 Route10_Text_MarkPostBattle::
