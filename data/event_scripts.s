@@ -898,8 +898,7 @@ Text_WeHopeToSeeYouAgain::
 
 Text_RestoredPkmnToFullHealth::
 	.string "Thank you!\n"
-	.string "Your POKéMON are\p"
-	.string "fighting fit!$"
+	.string "Your POKéMON are fighting fit$"
 
 	.include "data/text/surf.inc"
 
