@@ -1358,3 +1358,9 @@ Text_TestMsg::
 	.include "data/text/save.inc"
 	.include "data/text/new_game_intro.inc"
 	.include "data/text/pokedude.inc"
+
+	.include "data/maps/SeafoamIslands_B3F_CurrentStopped/scripts.inc"
+	.include "data/maps/SeafoamIslands_B3F_CurrentStopped/text.inc"
+
+	.include "data/maps/SeafoamIslands_B4F_CurrentStopped/scripts.inc"
+	.include "data/maps/SeafoamIslands_B4F_CurrentStopped/text.inc"
