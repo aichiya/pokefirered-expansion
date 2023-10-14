@@ -278,12 +278,12 @@ SilphCo_10F_EventScript_ItemRareCandy::
 	finditem ITEM_RARE_CANDY
 	end
 
-PowerPlant_EventScript_ItemMaxPotion::
-	finditem ITEM_MAX_POTION
+PowerPlant_EventScript_ItemTM33::
+	finditem ITEM_TM33
 	end
 
-PowerPlant_EventScript_ItemTM17::
-	finditem ITEM_TM17
+PowerPlant_EventScript_ItemCARBOS::
+	finditem ITEM_CARBOS
 	end
 
 PowerPlant_EventScript_ItemTM25::

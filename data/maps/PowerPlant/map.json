@@ -16,36 +16,38 @@
   "connections": 0,
   "object_events": [
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "in_connection": false,
-      "x": 1,
-      "y": 34,
+      "x": 20,
+      "y": 32,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PowerPlant_EventScript_ItemMaxPotion",
-      "flag": "FLAG_HIDE_POWER_PLANT_MAX_POTION"
+      "script": "PowerPlant_EventScript_ItemTM33",
+      "flag": "FLAG_HIDE_POWER_PLANT_TM33",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "in_connection": false,
-      "x": 3,
-      "y": 34,
+      "x": 7,
+      "y": 25,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PowerPlant_EventScript_ItemTM17",
-      "flag": "FLAG_HIDE_POWER_PLANT_TM17"
+      "script": "PowerPlant_EventScript_ItemCARBOS",
+      "flag": "FLAG_HIDE_POWER_PLANT_CARBOS",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "in_connection": false,
       "x": 26,
       "y": 32,
       "elevation": 3,
@@ -55,25 +57,27 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PowerPlant_EventScript_ItemTM25",
-      "flag": "FLAG_HIDE_POWER_PLANT_TM25"
+      "flag": "FLAG_HIDE_POWER_PLANT_TM25",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "in_connection": false,
-      "x": 5,
-      "y": 34,
+      "x": 34,
+      "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PowerPlant_EventScript_ItemThunderStone",
-      "flag": "FLAG_HIDE_POWER_PLANT_THUNDER_STONE"
+      "script": "PowerPlant_EventScript_ItemRareCandy",
+      "flag": "FLAG_HIDE_POWER_PLANT_RARE_CANDY",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "in_connection": false,
       "x": 28,
       "y": 3,
       "elevation": 3,
@@ -83,11 +87,12 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PowerPlant_EventScript_ItemHP_Up",
-      "flag": "FLAG_HIDE_POWER_PLANT_HP_UP"
+      "flag": "FLAG_HIDE_POWER_PLANT_HP_UP",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ZAPDOS",
-      "in_connection": false,
       "x": 4,
       "y": 9,
       "elevation": 3,
@@ -97,11 +102,27 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PowerPlant_EventScript_Zapdos",
-      "flag": "FLAG_HIDE_ZAPDOS"
+      "flag": "FLAG_HIDE_ZAPDOS",
+      "in_connection": false
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "in_connection": false,
+      "x": 21,
+      "y": 14,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PowerPlant_EventScript_Electrode2",
+      "flag": "FLAG_HIDE_POWER_PLANT_ELECTRODE_2",
+      "in_connection": false
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 32,
       "y": 18,
       "elevation": 3,
@@ -110,22 +131,93 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PowerPlant_EventScript_Electrode2",
-      "flag": "FLAG_HIDE_POWER_PLANT_ELECTRODE_2"
+      "script": "PowerPlant_EventScript_Electrode1",
+      "flag": "FLAG_HIDE_POWER_PLANT_ELECTRODE_1",
+      "in_connection": false
     },
     {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_POKEDEX",
+      "x": 9,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
+      "x": 23,
+      "y": 34,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_FOSSIL",
+      "x": 21,
+      "y": 25,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_METEORITE",
+      "x": 26,
+      "y": 28,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_OLD_AMBER",
+      "x": 37,
+      "y": 32,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "in_connection": false,
       "x": 25,
       "y": 18,
-      "elevation": 3,
+      "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PowerPlant_EventScript_Electrode1",
-      "flag": "FLAG_HIDE_POWER_PLANT_ELECTRODE_1"
+      "script": "PowerPlant_EventScript_Voltorb1",
+      "flag": "FLAG_HIDE_POWER_PLANT_VOLTORB_1"
     }
   ],
   "warp_events": [
@@ -134,21 +226,21 @@
       "y": 35,
       "elevation": 3,
       "dest_map": "MAP_ROUTE10",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 5,
       "y": 35,
       "elevation": 3,
       "dest_map": "MAP_ROUTE10",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     },
     {
       "x": 0,
       "y": 11,
       "elevation": 3,
       "dest_map": "MAP_ROUTE10",
-      "dest_warp_id": 2
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

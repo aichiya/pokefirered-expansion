@@ -427,11 +427,11 @@
 #define FLAG_HIDE_SILPH_CO_10F_CARBOS                           0x197
 #define FLAG_HIDE_SILPH_CO_10F_ULTRA_BALL                       0x198
 #define FLAG_HIDE_SILPH_CO_10F_RARE_CANDY                       0x199
-#define FLAG_HIDE_POWER_PLANT_MAX_POTION                        0x19A
-#define FLAG_HIDE_POWER_PLANT_TM17                              0x19B
+#define FLAG_HIDE_POWER_PLANT_TM33                              0x19A
+#define FLAG_HIDE_POWER_PLANT_CARBOS                            0x19B
 #define FLAG_HIDE_POWER_PLANT_TM25                              0x19C
-#define FLAG_HIDE_POWER_PLANT_THUNDER_STONE                     0x19D
-#define FLAG_HIDE_POWER_PLANT_HP_UP                            0x19E
+#define FLAG_HIDE_POWER_PLANT_RARE_CANDY                        0x19D
+#define FLAG_HIDE_POWER_PLANT_HP_UP                             0x19E
 #define FLAG_HIDE_POKEMON_MANSION_1F_CARBOS                     0x19F
 #define FLAG_HIDE_POKEMON_MANSION_1F_ESCAPE_ROPE                0x1A0
 #define FLAG_HIDE_POKEMON_MANSION_2F_CALCIUM                    0x1A1

@@ -16,12 +16,17 @@ PowerPlant_EventScript_TryRemoveStaticMon::
 PowerPlant_OnTransition::
 	setworldmapflag FLAG_WORLD_MAP_POWER_PLANT
 	call_if_unset FLAG_FOUGHT_ZAPDOS, PowerPlant_EventScript_ShowZapdos
+	call_if_unset FLAG_FOUGHT_POWER_PLANT_VOLTORB_1, PowerPlant_EventScript_ShowVoltorb1
 	call_if_unset FLAG_FOUGHT_POWER_PLANT_ELECTRODE_1, PowerPlant_EventScript_ShowElectrode1
 	call_if_unset FLAG_FOUGHT_POWER_PLANT_ELECTRODE_2, PowerPlant_EventScript_ShowElectrode2
 	end
 
 PowerPlant_EventScript_ShowZapdos::
 	clearflag FLAG_HIDE_ZAPDOS
+	return
+
+PowerPlant_EventScript_ShowVoltorb1::
+	clearflag FLAG_HIDE_POWER_PLANT_VOLTORB_1
 	return
 
 PowerPlant_EventScript_ShowElectrode1::
@@ -68,11 +73,37 @@ PowerPlant_EventScript_RanFromZapdos::
 	goto EventScript_MonFlewAway
 	end
 
+PowerPlant_EventScript_Voltorb1::
+	goto_if_questlog EventScript_ReleaseEnd
+	lock
+	faceplayer
+	setwildbattle SPECIES_VOLTORB, 40
+	waitse
+	playmoncry SPECIES_VOLTORB, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	dowildbattle
+	clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	special QuestLog_CutRecording
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, PowerPlant_EventScript_FoughtVoltorb1
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, PowerPlant_EventScript_FoughtVoltorb1
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, PowerPlant_EventScript_FoughtVoltorb1
+	setflag FLAG_FOUGHT_POWER_PLANT_VOLTORB_1
+	release
+	end
+
+PowerPlant_EventScript_FoughtVoltorb1::
+	setflag FLAG_FOUGHT_POWER_PLANT_VOLTORB_1
+	goto EventScript_RemoveStaticMon
+	end
+
 PowerPlant_EventScript_Electrode1::
 	goto_if_questlog EventScript_ReleaseEnd
 	lock
 	faceplayer
-	setwildbattle SPECIES_ELECTRODE, 34
+	setwildbattle SPECIES_ELECTRODE, 43
 	waitse
 	playmoncry SPECIES_ELECTRODE, CRY_MODE_ENCOUNTER
 	delay 40
@@ -98,7 +129,7 @@ PowerPlant_EventScript_Electrode2::
 	goto_if_questlog EventScript_ReleaseEnd
 	lock
 	faceplayer
-	setwildbattle SPECIES_ELECTRODE, 34
+	setwildbattle SPECIES_ELECTRODE, 43
 	waitse
 	playmoncry SPECIES_ELECTRODE, CRY_MODE_ENCOUNTER
 	delay 40
