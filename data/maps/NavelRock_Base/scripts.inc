@@ -6,17 +6,17 @@ NavelRock_Base_MapScripts::
 	.byte 0
 
 NavelRock_Base_OnTransition::
-	call_if_set FLAG_FOUGHT_LUGIA, NavelRock_Base_EventScript_HideLugia
-	call_if_unset FLAG_FOUGHT_LUGIA, NavelRock_Base_EventScript_TryShowLugia
+	call_if_set FLAG_FOUGHT_POWER_PLANT_VOLTORB_2, NavelRock_Base_EventScript_HideLugia
+	call_if_unset FLAG_FOUGHT_POWER_PLANT_VOLTORB_2, NavelRock_Base_EventScript_TryShowLugia
 	end
 
 NavelRock_Base_EventScript_HideLugia::
-	setflag FLAG_HIDE_LUGIA
+	setflag FLAG_HIDE_POWER_PLANT_VOLTORB_2
 	return
 
 NavelRock_Base_EventScript_TryShowLugia::
 	goto_if_set FLAG_LUGIA_FLEW_AWAY, EventScript_Return
-	clearflag FLAG_HIDE_LUGIA
+	clearflag FLAG_HIDE_POWER_PLANT_VOLTORB_2
 	return
 
 NavelRock_Base_OnResume::
@@ -64,7 +64,7 @@ NavelRock_Base_EventScript_Lugia::
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, NavelRock_Base_EventScript_DefeatedLugia
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, NavelRock_Base_EventScript_RanFromLugia
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, NavelRock_Base_EventScript_RanFromLugia
-	setflag FLAG_FOUGHT_LUGIA
+	setflag FLAG_FOUGHT_POWER_PLANT_VOLTORB_2
 	release
 	end
 

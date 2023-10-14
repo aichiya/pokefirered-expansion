@@ -290,8 +290,8 @@ PowerPlant_EventScript_ItemTM25::
 	finditem ITEM_TM25
 	end
 
-PowerPlant_EventScript_ItemThunderStone::
-	finditem ITEM_THUNDER_STONE
+PowerPlant_EventScript_ItemRareCandy::
+	finditem ITEM_RARE_CANDY
 	end
 
 PowerPlant_EventScript_ItemHP_Up::

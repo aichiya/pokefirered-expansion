@@ -6,20 +6,20 @@ NavelRock_Summit_MapScripts::
 	.byte 0
 
 NavelRock_Summit_OnTransition::
-	call_if_set FLAG_FOUGHT_HO_OH, NavelRock_Summit_EventScript_HideHoOh
-	call_if_unset FLAG_FOUGHT_HO_OH, NavelRock_Summit_EventScript_TryShowHoOh
+	call_if_set FLAG_FOUGHT_POWER_PLANT_VOLTORB_3, NavelRock_Summit_EventScript_HideHoOh
+	call_if_unset FLAG_FOUGHT_POWER_PLANT_VOLTORB_3, NavelRock_Summit_EventScript_TryShowHoOh
 	end
 
 NavelRock_Summit_EventScript_HideHoOh::
 	setvar VAR_TEMP_1, 1
-	setflag FLAG_HIDE_HO_OH
+	setflag FLAG_HIDE_POWER_PLANT_VOLTORB_3
 	return
 
 NavelRock_Summit_EventScript_TryShowHoOh::
 	setvar VAR_TEMP_1, 1
 	goto_if_set FLAG_HO_OH_FLEW_AWAY, EventScript_Return
 	setvar VAR_TEMP_1, 0
-	clearflag FLAG_HIDE_HO_OH
+	clearflag FLAG_HIDE_POWER_PLANT_VOLTORB_3
 	return
 
 NavelRock_Summit_OnResume::
@@ -69,7 +69,7 @@ NavelRock_Summit_EventScript_HoOh::
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, NavelRock_Summit_EventScript_DefeatedHoOh
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, NavelRock_Summit_EventScript_RanFromHoOh
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, NavelRock_Summit_EventScript_RanFromHoOh
-	setflag FLAG_FOUGHT_HO_OH
+	setflag FLAG_FOUGHT_POWER_PLANT_VOLTORB_3
 	releaseall
 	end
 

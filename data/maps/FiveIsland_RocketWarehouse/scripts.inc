@@ -62,7 +62,7 @@ FiveIsland_RocketWarehouse_EventScript_MentionGiovannisKid::
 
 FiveIsland_RocketWarehouse_EventScript_DefeatedGideon::
 	msgbox FiveIsland_RocketWarehouse_Text_GideonPostBattle
-	setflag FLAG_RECOVERED_SAPPHIRE
+	setflag FLAG_FOUGHT_POWER_PLANT_VOLTORB_4
 	giveitem ITEM_SAPPHIRE
 	release
 	end

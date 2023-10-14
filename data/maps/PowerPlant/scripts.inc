@@ -99,6 +99,136 @@ PowerPlant_EventScript_FoughtVoltorb1::
 	goto EventScript_RemoveStaticMon
 	end
 
+PowerPlant_EventScript_Voltorb2::
+	goto_if_questlog EventScript_ReleaseEnd
+	lock
+	faceplayer
+	setwildbattle SPECIES_VOLTORB, 40
+	waitse
+	playmoncry SPECIES_VOLTORB, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	dowildbattle
+	clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	special QuestLog_CutRecording
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, PowerPlant_EventScript_FoughtVoltorb2
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, PowerPlant_EventScript_FoughtVoltorb2
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, PowerPlant_EventScript_FoughtVoltorb2
+	setflag FLAG_FOUGHT_POWER_PLANT_VOLTORB_2
+	release
+	end
+
+PowerPlant_EventScript_FoughtVoltorb2::
+	setflag FLAG_FOUGHT_POWER_PLANT_VOLTORB_2
+	goto EventScript_RemoveStaticMon
+	end
+
+PowerPlant_EventScript_Voltorb3::
+	goto_if_questlog EventScript_ReleaseEnd
+	lock
+	faceplayer
+	setwildbattle SPECIES_VOLTORB, 40
+	waitse
+	playmoncry SPECIES_VOLTORB, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	dowildbattle
+	clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	special QuestLog_CutRecording
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, PowerPlant_EventScript_FoughtVoltorb3
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, PowerPlant_EventScript_FoughtVoltorb3
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, PowerPlant_EventScript_FoughtVoltorb3
+	setflag FLAG_FOUGHT_POWER_PLANT_VOLTORB_3
+	release
+	end
+
+PowerPlant_EventScript_FoughtVoltorb3::
+	setflag FLAG_FOUGHT_POWER_PLANT_VOLTORB_3
+	goto EventScript_RemoveStaticMon
+	end
+
+PowerPlant_EventScript_Voltorb4::
+	goto_if_questlog EventScript_ReleaseEnd
+	lock
+	faceplayer
+	setwildbattle SPECIES_VOLTORB, 40
+	waitse
+	playmoncry SPECIES_VOLTORB, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	dowildbattle
+	clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	special QuestLog_CutRecording
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, PowerPlant_EventScript_FoughtVoltorb4
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, PowerPlant_EventScript_FoughtVoltorb4
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, PowerPlant_EventScript_FoughtVoltorb4
+	setflag FLAG_FOUGHT_POWER_PLANT_VOLTORB_4
+	release
+	end
+
+PowerPlant_EventScript_FoughtVoltorb4::
+	setflag FLAG_FOUGHT_POWER_PLANT_VOLTORB_4
+	goto EventScript_RemoveStaticMon
+	end
+
+PowerPlant_EventScript_Voltorb5::
+	goto_if_questlog EventScript_ReleaseEnd
+	lock
+	faceplayer
+	setwildbattle SPECIES_VOLTORB, 40
+	waitse
+	playmoncry SPECIES_VOLTORB, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	dowildbattle
+	clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	special QuestLog_CutRecording
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, PowerPlant_EventScript_FoughtVoltorb5
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, PowerPlant_EventScript_FoughtVoltorb5
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, PowerPlant_EventScript_FoughtVoltorb5
+	setflag FLAG_FOUGHT_POWER_PLANT_VOLTORB_5
+	release
+	end
+
+PowerPlant_EventScript_FoughtVoltorb5::
+	setflag FLAG_FOUGHT_POWER_PLANT_VOLTORB_5
+	goto EventScript_RemoveStaticMon
+	end
+
+PowerPlant_EventScript_Voltorb6::
+	goto_if_questlog EventScript_ReleaseEnd
+	lock
+	faceplayer
+	setwildbattle SPECIES_VOLTORB, 40
+	waitse
+	playmoncry SPECIES_VOLTORB, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	dowildbattle
+	clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
+	special QuestLog_CutRecording
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, PowerPlant_EventScript_FoughtVoltorb6
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, PowerPlant_EventScript_FoughtVoltorb6
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, PowerPlant_EventScript_FoughtVoltorb6
+	setflag FLAG_FOUGHT_POWER_PLANT_VOLTORB_6
+	release
+	end
+
+PowerPlant_EventScript_FoughtVoltorb6::
+	setflag FLAG_FOUGHT_POWER_PLANT_VOLTORB_6
+	goto EventScript_RemoveStaticMon
+	end
+
 PowerPlant_EventScript_Electrode1::
 	goto_if_questlog EventScript_ReleaseEnd
 	lock

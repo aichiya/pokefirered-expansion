@@ -268,8 +268,8 @@ MysteryEventScript_MysticTicket::
 	lock
 	faceplayer
 	vgoto_if_set FLAG_RECEIVED_MYSTIC_TICKET, MysticTicket_Obtained
-	vgoto_if_set FLAG_FOUGHT_LUGIA, MysticTicket_Obtained
-	vgoto_if_set FLAG_FOUGHT_HO_OH, MysticTicket_Obtained
+	vgoto_if_set FLAG_FOUGHT_POWER_PLANT_VOLTORB_2, MysticTicket_Obtained
+	vgoto_if_set FLAG_FOUGHT_POWER_PLANT_VOLTORB_3, MysticTicket_Obtained
 	checkitem ITEM_MYSTIC_TICKET, 1
 	vgoto_if_eq VAR_RESULT, TRUE, MysticTicket_Obtained
 	vmessage sText_MysticTicket2
