@@ -81,20 +81,15 @@ Dream Eater guy is tutor, doesn't give TM42.
 BROCK gives TM39 Rock Tomb instead of TM34 BIDE.
 
 -Cerulean City-
-Slowpoke uses incorrect sprite.
 Bike shop guy uses unique sprite, not implemented yet.
 Gym swimmer cannot be talked to from land.
 Bill pauses after exiting the machine.
-DIG guy uses wrong sprite, should be FISHING GURU.
 MISTY wrongly gives TM03 instead of TM11.
 
 -Route9-
 Day Care man dialogue for level up not checked.
 
 -Vermilion City-
-HIKER in PokeCenter uses wrong sprite, should be FISHING GURU.
-Youngster put over couch guy, will be corrected later.
-Machop should be generic monster sprite.
 Pikachu uses clefairy sprite, should probably replace pikachu's generic sprite with recolored clefairy.
 LT.SURGE uses Crystal sprite, must be corrected.
 LT.SURGE gives TM34 instead of TM24.
@@ -111,9 +106,6 @@ Route 4 couch guy doesn't talk.
 Couch guy in Cerulean doesn't talk.
 Pokeballs are misplaced in healing machine.
 
--Route2-
-Diglett cave hiker should be FISHING GURU.
-
 -Route11-
 Aid success text not tested.
 
@@ -127,7 +119,7 @@ B1F Room5 is missing a MAX POTION.
 2F Room4 X ATTACK should be RARE CANDY.
 
 -LAVENDER TOWN-
-House 2 guy is supposed to use balding CEO sprite.
+House 2 guy is supposed to use balding CEO sprite. [check]
 PokemonTower_4F GREAT BALL should be HP UP.
 5F item ball temporarily out of bounds, need to verify existence in Blue.
 Pokedoll trick doesn't work for GHOST encounter.
@@ -136,12 +128,9 @@ THE GHOST instead of GHOST appeared.
 -Route12-
 Lookout tower woman gives TM27 instead of TM39.
 Possible remaining decoration error in left border OOB.
-Fishing rod guy should be FISHING GURU instead of FISHERMAN.
 
 -Celadon City-
-Game Corner fisherman is supposed to be FISHING_GURU.
 6 slot machines missing event tiles in game corner.
-Coin exchange workers have sprites, should be invisible.
 Left coin exchange worker has too many prizes, also prices are wrong.
 Middle coin exchange worker has totally wrong prizes.
 Right coin exchange worker has too many prizes, also prices are wrong.
@@ -161,7 +150,6 @@ Stranded old man is move tutor, supposed to give TM41.
 
 -Saffron City-
 Fighting dojo pokemon selection doesn't show pokedex page, uses different preview style.
-Mr.Psychic uses wrong sprite, should be FISHING GURU.
 Sabrina gives TM04, should be TM46.
 
 -Rocket Hideout-
@@ -177,7 +165,6 @@ B4F CALCIUM is supposed to be IRON.
 Border shows garbage tiles.
 
 -Fuchsia City-
-Fishing Guru brother uses FISHER sprite, should be GURU sprite.
 Zoo signs show pokemon previews incorrectly, use popup style instead of pokedex style.
 Safari Zone borders are all wrong, supposed to be plain grass.
 Safari Zone East Leaf Stone is supposed to be CARBOS.
@@ -186,10 +173,7 @@ Safari Zone East Rest House Balding Man uses wrong sprite, correct sprite not ad
 Safari Zone North Quick Claw has no equivalent ball, check with itemfinder.
 Safari Zone North TM47 is supposed to be TM40.
 Safari Zone West bottom right statue must have hidden revive, no itemfinder.
-Safari Zone Secret House guy uses wrong sprite, is Worker but hsould be GURU.
 Bushes reflect player sprite.
-Pillars reflect player sprite.
-Signs reflect player sprite.
 
 -Route 17-
 Signs reflect player sprite.
@@ -208,4 +192,3 @@ Elevator broken.
 -Cinnebar Island-
 Mansion 1F PROTEIN is supposed to be CARBOS.
 Mansion B1F is supposed to RARE CANDY ball in middle top room.
-Lab entrance guy uses wrong sprite, should be GURU.
