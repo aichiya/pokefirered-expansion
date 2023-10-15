@@ -120,7 +120,7 @@ CeladonCity_GameCorner_Text_SwitchBehindPosterPushIt::
     .string "Let's push it!$"
 
 CeladonCity_GameCorner_Text_CoinCaseIsRequired::
-    .string "A COIN CASE is required…$"
+    .string "A COIN CASE is required...$"
 
 CeladonCity_GameCorner_Text_DontHaveCoinCase::
     .string "Oops!\n"

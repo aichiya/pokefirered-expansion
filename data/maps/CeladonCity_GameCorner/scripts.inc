@@ -385,6 +385,24 @@ CeladonCity_GameCorner_EventScript_SlotMachine21::
 	goto CeladonCity_GameCorner_EventScript_SlotMachine
 	end
 
+CeladonCity_GameCorner_EventScript_SlotMachine22::
+	lockall
+	setvar VAR_0x8004, 22
+	goto CeladonCity_GameCorner_EventScript_SlotMachine
+	end
+
+CeladonCity_GameCorner_EventScript_SlotMachine23::
+	lockall
+	setvar VAR_0x8004, 23
+	goto CeladonCity_GameCorner_EventScript_SlotMachine
+	end
+
+CeladonCity_GameCorner_EventScript_SlotMachine24::
+	lockall
+	setvar VAR_0x8004, 24
+	goto CeladonCity_GameCorner_EventScript_SlotMachine
+	end
+
 CeladonCity_GameCorner_EventScript_SlotMachineNoCoinCase::
 	msgbox CeladonCity_GameCorner_Text_CoinCaseIsRequired
 	releaseall
