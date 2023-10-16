@@ -66,6 +66,15 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 3,
+      "y": 1,
+      "elevation": 0,
+      "item": "ITEM_HYPER_POTION",
+      "flag": "FLAG_HIDDEN_ITEM_SSANNE_B1F_ROOM1_HYPER_POTION",
+      "quantity": 1,
+      "underfoot": false
+    }
   ]
 }

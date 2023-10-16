@@ -159,11 +159,11 @@
     },
     {
       "type": "hidden_item",
-      "x": 29,
-      "y": 0,
-      "elevation": 3,
-      "item": "ITEM_ELIXIR",
-      "flag": "FLAG_HIDDEN_ITEM_POKEMON_MANSION_B1F_ELIXIR",
+      "x": 1,
+      "y": 9,
+      "elevation": 0,
+      "item": "ITEM_RARE_CANDY",
+      "flag": "FLAG_HIDDEN_ITEM_POKEMON_MANSION_B1F_RARE_CANDY",
       "quantity": 1,
       "underfoot": false
     }

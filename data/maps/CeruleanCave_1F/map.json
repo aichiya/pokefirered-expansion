@@ -130,6 +130,15 @@
 
   ],
   "bg_events": [
-
+    {
+      "type": "hidden_item",
+      "x": 14,
+      "y": 11,
+      "elevation": 0,
+      "item": "ITEM_RARE_CANDY",
+      "flag": "FLAG_HIDDEN_ITEM_CERULEAN_CAVE_1F_RARE_CANDY",
+      "quantity": 1,
+      "underfoot": false
+    }
   ]
 }

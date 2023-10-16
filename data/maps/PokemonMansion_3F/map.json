@@ -156,11 +156,11 @@
     },
     {
       "type": "hidden_item",
-      "x": 29,
-      "y": 17,
+      "x": 1,
+      "y": 9,
       "elevation": 3,
-      "item": "ITEM_RARE_CANDY",
-      "flag": "FLAG_HIDDEN_ITEM_POKEMON_MANSION_3F_RARE_CANDY",
+      "item": "ITEM_MAX_REVIVE",
+      "flag": "FLAG_HIDDEN_ITEM_POKEMON_MANSION_3F_MAX_REVIVE",
       "quantity": 1,
       "underfoot": false
     }

@@ -238,7 +238,7 @@
       "y": 17,
       "elevation": 3,
       "item": "ITEM_SUPER_POTION",
-      "flag": "FLAG_TEMP_2",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE10_SUPER_POTION",
       "quantity": 1,
       "underfoot": false
     },
@@ -248,7 +248,7 @@
       "y": 53,
       "elevation": 3,
       "item": "ITEM_MAX_ETHER",
-      "flag": "FLAG_TEMP_1",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE10_MAX_ETHER",
       "quantity": 1,
       "underfoot": false
     }

@@ -118,7 +118,7 @@
     {
       "type": "hidden_item",
       "x": 1,
-      "y": 0,
+      "y": 1,
       "elevation": 0,
       "item": "ITEM_NUGGET",
       "flag": "FLAG_HIDDEN_ITEM_SAFFRON_CITY_COPYCATS_HOUSE_2F_NUGGET",

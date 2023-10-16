@@ -40,10 +40,10 @@
     {
       "type": "hidden_item",
       "x": 4,
-      "y": 36,
-      "elevation": 3,
-      "item": "ITEM_BURN_HEAL",
-      "flag": "FLAG_HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_BURN_HEAL",
+      "y": 35,
+      "elevation": 0,
+      "item": "ITEM_X_SPECIAL",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_X_SPECIAL",
       "quantity": 1,
       "underfoot": false
     },
@@ -51,9 +51,9 @@
       "type": "hidden_item",
       "x": 3,
       "y": 4,
-      "elevation": 3,
-      "item": "ITEM_AWAKENING",
-      "flag": "FLAG_HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_AWAKENING",
+      "elevation": 0,
+      "item": "ITEM_FULL_RESTORE",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERGROUND_PATH_NORTH_SOUTH_TUNNEL_FULL_RESTORE",
       "quantity": 1,
       "underfoot": false
     }

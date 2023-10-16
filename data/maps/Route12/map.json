@@ -163,7 +163,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
-      "flag": "FLAG_TEMP_1",
+      "flag": "FLAG_TEMP_12",
       "in_connection": false
     },
     {
@@ -208,7 +208,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
-      "flag": "FLAG_TEMP_2",
+      "flag": "FLAG_TEMP_13",
       "in_connection": false
     }
   ],
@@ -261,16 +261,6 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route12_EventScript_FishingSign"
-    },
-    {
-      "type": "hidden_item",
-      "x": 10,
-      "y": 62,
-      "elevation": 3,
-      "item": "ITEM_LEFTOVERS",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE12_LEFTOVERS",
-      "quantity": 1,
-      "underfoot": true
     },
     {
       "type": "hidden_item",

@@ -521,7 +521,7 @@
     {
       "type": "hidden_item",
       "x": 9,
-      "y": 89,
+      "y": 90,
       "elevation": 3,
       "item": "ITEM_MAX_ETHER",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE23_MAX_ETHER",

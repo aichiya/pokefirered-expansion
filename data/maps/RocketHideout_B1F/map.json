@@ -156,13 +156,6 @@
       "elevation": 0,
       "dest_map": "MAP_ROCKET_HIDEOUT_ELEVATOR",
       "dest_warp_id": "0"
-    },
-    {
-      "x": 17,
-      "y": 19,
-      "elevation": 0,
-      "dest_map": "MAP_ROCKET_HIDEOUT_ELEVATOR",
-      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

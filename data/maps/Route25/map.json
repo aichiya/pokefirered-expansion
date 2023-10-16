@@ -203,7 +203,7 @@
     {
       "type": "hidden_item",
       "x": 10,
-      "y": 7,
+      "y": 6,
       "elevation": 3,
       "item": "ITEM_ELIXIR",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE25_ELIXIR",

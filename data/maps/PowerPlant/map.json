@@ -259,11 +259,11 @@
     },
     {
       "type": "hidden_item",
-      "x": 0,
-      "y": 0,
-      "elevation": 3,
-      "item": "ITEM_THUNDER_STONE",
-      "flag": "FLAG_HIDDEN_ITEM_POWER_PLANT_THUNDER_STONE",
+      "x": 12,
+      "y": 1,
+      "elevation": 0,
+      "item": "ITEM_PP_UP",
+      "flag": "FLAG_HIDDEN_ITEM_POWER_PLANT_PP_UP",
       "quantity": 1,
       "underfoot": false
     }

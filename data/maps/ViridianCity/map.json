@@ -274,7 +274,7 @@
       "y": 4,
       "elevation": 0,
       "item": "ITEM_POTION",
-      "flag": "FLAG_HIDE_VIRIDIAN_CITY_POTION",
+      "flag": "FLAG_HIDEEN_ITEM_VIRIDIAN_CITY_POTION",
       "quantity": 1,
       "underfoot": false
     }
