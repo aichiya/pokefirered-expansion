@@ -1,18 +1,19 @@
 IndigoPlateau_PokemonCenter_1F_Text_GymGuyAdvice::
     .string "Yo!\n"
     .string "Champ in the making!\p"
-    .string "At the POKéMON LEAGUE, you will\n"
-    .string "face the ELITE FOUR all in a row.\p"
-    .string "If you lose, you have to start all\n"
-    .string "over again!\p"
+    .string "At POKéMON LEAGUE, you will\n"
+    .string "have to face the ELITE FOUR\p"
+    .string "in succession.\l"
+    .string "If you lose, you have to start\n"
+    .string "all over again!\p"
     .string "This is it!\n"
     .string "Go for it!$"
 
 IndigoPlateau_PokemonCenter_1F_Text_FaceEliteFourGoodLuck::
     .string "From here on, you face the\n"
-    .string "ELITE FOUR one by one.\p"
+    .string "ELITE FOUR one by one!\p"
     .string "If you win, a door opens to the\n"
-    .string "next TRAINER. Good luck!$"
+    .string "next TRAINER! Good luck!$"
 
 IndigoPlateau_PokemonCenter_1F_Text_LoreleiIsAbsentClosedForTimeBeing::
     .string "I am so sorry, but you've wasted\n"
