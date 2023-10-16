@@ -196,6 +196,7 @@ Mansion B1F is supposed to RARE CANDY ball in middle top room.
 Voltorb and Electrode don't say "Bzzzt!" before battle.
 
 -Victory Road-
+1F TM02 is supposed to be TM43.
 2F TM37 is supposed to be TM05.
 2F TM07 is supposed to be TM17.
 3F TM50  is supposed to be TM47
