@@ -195,12 +195,12 @@ Route22_EventScript_LateRival::
 
 Route22_EventScript_LateRivalApproach::
 	applymovement LOCALID_RIVAL, Route22_Movement_RivalApproach
+	applymovement OBJ_EVENT_ID_PLAYER, Route22_Movement_PlayerFaceRival
 	waitmovement 0
 	return
 
 Route22_EventScript_LateRivalApproachBottom::
 	applymovement LOCALID_RIVAL, Route22_Movement_RivalApproachBottom
-	applymovement OBJ_EVENT_ID_PLAYER, Route22_Movement_PlayerFaceRival
 	waitmovement 0
 	return
 

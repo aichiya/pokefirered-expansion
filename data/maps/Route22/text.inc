@@ -32,22 +32,22 @@ Route22_Text_RivalShouldCatchSomeMons::
 Route22_Text_LateRivalIntro::
 	.string "{RIVAL}: What? {PLAYER}!\n"
 	.string "What a surprise to see you here!\p"
-	.string "So you're going to the POKéMON\n"
-	.string "LEAGUE?\p"
-	.string "You collected all the BADGES, too?\n"
+	.string "So you're going to\n"
+	.string "POKéMON LEAGUE?\p"
+	.string "You collected all the BADGEs too?\n"
 	.string "That's cool!\p"
-	.string "Then I'll whip you, {PLAYER}, as a\n"
-	.string "warm-up for the POKéMON LEAGUE!\p"
+	.string "Then I'll whip you {PLAYER} as\n"
+	.string "a warm up for POKéMON LEAGUE!\p"
 	.string "Come on!$"
 
 Route22_Text_LateRivalDefeat::
 	.string "What!?\p"
-	.string "I was just careless, you!$"
+	.string "I was just careless!$"
 
 Route22_Text_LateRivalPostBattle::
-	.string "That loosened me up.\n"
-	.string "I'm ready for the POKéMON LEAGUE!\p"
-	.string "{PLAYER}, you need more practice.\p"
+	.string "That loosened me up!\n"
+	.string "I'm ready for POKéMON LEAGUE!\p"
+	.string "{PLAYER}, you need more practice!\p"
 	.string "But hey, you know that!\n"
 	.string "I'm out of here. Smell ya!$"
 
