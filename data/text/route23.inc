@@ -10,7 +10,7 @@ Text_CantLetYouPass::
 
 Text_OhThatsBadgeGoRightAhead::
 	.string "Oh! That is the {STR_VAR_1}!\n"
-	.string "Go right ahead.$"
+	.string "Go right ahead!$"
 
 Text_OnlyPassWithBadgeDontHaveYet::
 	.string "You can pass here only if you have\n"
@@ -21,8 +21,8 @@ Text_OnlyPassWithBadgeDontHaveYet::
 	.string "the POKéMON LEAGUE.$"
 
 Text_OnlyPassWithBadgeOhGoAhead::
-	.string "You can pass here only if you have\n"
-	.string "the {STR_VAR_1}.\p"
+	.string "You can pass here only if you\n"
+	.string "have the {STR_VAR_1}!\p"
 	.string "Oh! That is the {STR_VAR_1}!{PAUSE_MUSIC}{PLAY_BGM}{MUS_LEVEL_UP}{PAUSE 0x60}{RESUME_MUSIC}\p"
-	.string "Okay, then.\n"
-	.string "Please, go right ahead.$"
+	.string "OK then!\n"
+	.string "Please, go right ahead!$"

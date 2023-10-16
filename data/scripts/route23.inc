@@ -114,7 +114,6 @@ Route23_EventScript_RecognizeBadge::
 
 Route23_EventScript_BadgeGuardTrigger::
 	textcolor NPC_TEXT_COLOR_MALE
-	applymovement VAR_0x8009, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	switch VAR_TEMP_1
 	case 1, Route23_EventScript_CheckBoulderBadgeTrigger
