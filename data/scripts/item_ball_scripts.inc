@@ -242,8 +242,8 @@ SilphCo_5F_EventScript_ItemProtein::
 	finditem ITEM_PROTEIN
 	end
 
-SilphCo_5F_EventScript_ItemTM01::
-	finditem ITEM_TM01
+SilphCo_5F_EventScript_ItemTM09::
+	finditem ITEM_TM09
 	end
 
 SilphCo_5F_EventScript_ItemCardKey::
@@ -254,24 +254,24 @@ SilphCo_6F_EventScript_ItemHPUp::
 	finditem ITEM_HP_UP
 	end
 
-SilphCo_6F_EventScript_ItemXSpecial::
-	finditem ITEM_X_SPECIAL
+SilphCo_6F_EventScript_ItemXAccuracy::
+	finditem ITEM_X_ACCURACY
 	end
 
 SilphCo_7F_EventScript_ItemCalcium::
 	finditem ITEM_CALCIUM
 	end
 
-SilphCo_7F_EventScript_ItemTM08::
-	finditem ITEM_TM08
+SilphCo_7F_EventScript_ItemTM03::
+	finditem ITEM_TM03
 	end
 
 SilphCo_10F_EventScript_ItemCarbos::
 	finditem ITEM_CARBOS
 	end
 
-SilphCo_10F_EventScript_ItemUltraBall::
-	finditem ITEM_ULTRA_BALL
+SilphCo_10F_EventScript_ItemTM26::
+	finditem ITEM_TM26
 	end
 
 SilphCo_10F_EventScript_ItemRareCandy::
@@ -458,8 +458,8 @@ SilphCo_11F_EventScript_ItemZinc::
 	finditem ITEM_ZINC
 	end
 
-PokemonMansion_1F_EventScript_ItemProtein::
-	finditem ITEM_PROTEIN
+Erased::
+	finditem ITEM_CARBOS
 	end
 
 PokemonMansion_2F_EventScript_ItemZinc::
