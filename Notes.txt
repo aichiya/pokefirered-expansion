@@ -69,6 +69,7 @@ Pokeball arrow goes offscreen instead of starting and bending onscreen.
 Player backsprite too high.
 COOLTRAINER title isn't gendered.
 ROCKER battle sprite not replaced.
+ELITE FOUR title not removed from trainers.
 
 -Viridian City-
 Catch tutorial forced, no YES/NO, dialogue not finished.
@@ -199,4 +200,8 @@ Voltorb and Electrode don't say "Bzzzt!" before battle.
 1F TM02 is supposed to be TM43.
 2F TM37 is supposed to be TM05.
 2F TM07 is supposed to be TM17.
-3F TM50  is supposed to be TM47
+3F TM50  is supposed to be TM47.
+
+-Pokemon League-
+Don't Leave script doesn't play, exits simply don't have correct tiles.
+Member doesn't face up after battle.
