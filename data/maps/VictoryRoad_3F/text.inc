@@ -22,48 +22,48 @@ Text_DoubleEdgeTaught::
     .string "out!$"
 
 VictoryRoad_3F_Text_GeorgeIntro::
-    .string "I heard rumors of a child prodigy.$"
+    .string "I heard rumors of a child prodigy!$"
 
 VictoryRoad_3F_Text_GeorgeDefeat::
-    .string "The rumors were true!$"
+    .string "COOLTRAINER♂: The rumors were true!$"
 
 VictoryRoad_3F_Text_GeorgePostBattle::
-    .string "So, it was you who beat GIOVANNI\n"
-    .string "of TEAM ROCKET?$"
+    .string "You beat GIOVANNI of\n"
+    .string "TEAM ROCKET?$"
 
 VictoryRoad_3F_Text_AlexaIntro::
     .string "TRAINERS live to seek stronger\n"
-    .string "opponents.$"
+    .string "opponents!$"
 
 VictoryRoad_3F_Text_AlexaDefeat::
-    .string "Oh!\n"
+    .string "COOLTRAINER♀: Oh!\n"
     .string "So strong!$"
 
 VictoryRoad_3F_Text_AlexaPostBattle::
-    .string "By fighting tough battles, you get\n"
-    .string "stronger.$"
+    .string "By fighting tough battles, you\n"
+    .string "get stronger!$"
 
 VictoryRoad_3F_Text_CarolineIntro::
-    .string "I'll show you just how good you\n"
-    .string "are. Not!$"
+    .string "I'll show you just how good\n"
+    .string "you are!$"
 
 VictoryRoad_3F_Text_CarolineDefeat::
-    .string "I'm furious!$"
+    .string "COOLTRAINER♀: I'm furious!$"
 
 VictoryRoad_3F_Text_CarolinePostBattle::
     .string "You showed me just how good\n"
-    .string "I was…$"
+    .string "I was!$"
 
 VictoryRoad_3F_Text_ColbyIntro::
     .string "Only the chosen can pass here!$"
 
 VictoryRoad_3F_Text_ColbyDefeat::
-    .string "I don't believe it!$"
+    .string "COOLTRAINER♂: I don't believe it!$"
 
 VictoryRoad_3F_Text_ColbyPostBattle::
-    .string "All TRAINERS here are headed to\n"
-    .string "the POKéMON LEAGUE.\p"
-    .string "Don't let down your guard.$"
+    .string "All trainers here are headed to\n"
+    .string "the POKéMON LEAGUE!\p"
+    .string "Be careful!$"
 
 VictoryRoad_3F_Text_RayIntro::
     .string "RAY: Together, the two of us are\n"
