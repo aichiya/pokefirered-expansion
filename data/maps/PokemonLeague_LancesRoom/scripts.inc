@@ -51,43 +51,40 @@ PokemonLeague_LancesRoom_EventScript_EnterRoom::
 	end
 
 PokemonLeague_LancesRoom_EventScript_SetEntryClosed::
-	setmetatile 5, 14, METATILE_PokemonLeague_Entry_TopLeft_Closed, 1
-	setmetatile 6, 14, METATILE_PokemonLeague_Entry_TopMid_Closed, 1
-	setmetatile 7, 14, METATILE_PokemonLeague_Entry_TopRight_Closed, 1
-	setmetatile 5, 15, METATILE_PokemonLeague_Entry_BottomLeft_Closed, 1
-	setmetatile 6, 15, METATILE_PokemonLeague_Entry_BottomMid_Closed, 1
-	setmetatile 7, 15, METATILE_PokemonLeague_Entry_BottomRight_Closed, 1
-	setmetatile 6, 16, METATILE_PokemonLeague_Floor_ShadeFull_Lance, 0
-	setmetatile 7, 16, METATILE_PokemonLeague_Floor_ShadeFull_Lance, 0
+	setmetatile 5, 12, METATILE_PokemonLeague_Entry_BottomLeft_Closed, 1
+	setmetatile 6, 12, METATILE_PokemonLeague_Entry_BottomLeft_Closed, 1
 	return
 
 PokemonLeague_LancesRoom_Movement_WalkThroughCorridor::
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
 	walk_up
 	walk_up
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
-	walk_left
+	walk_up
+	walk_up
 	walk_up
 	walk_up
 	walk_up

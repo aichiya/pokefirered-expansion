@@ -84,6 +84,7 @@ PokemonLeague_ChampionsRoom_EventScript_EnterRoom::
 	msgbox PokemonLeague_ChampionsRoom_Text_OakImDisappointedRival
 	closemessage
 	applymovement LOCALID_PROF_OAK, Common_Movement_WalkInPlaceFasterDown
+	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	delay 20
 	msgbox PokemonLeague_ChampionsRoom_Text_OakPlayerComeWithMe
@@ -151,33 +152,22 @@ PokemonLeague_ChampionsRoom_Movement_PlayerEnter::
 	walk_up
 	walk_up
 	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	walk_up
+	walk_right
 	walk_up
 	step_end
 
 PokemonLeague_ChampionsRoom_Movement_PlayerExit::
 	delay_16
+	delay_16
 	walk_left
 	walk_up
 	walk_up
 	walk_up
-	walk_right
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	delay_8
 	set_invisible
 	step_end
 
 PokemonLeague_ChampionsRoom_Movement_PlayerWatchOakEnter::
-	delay_8
-	walk_in_place_faster_down
+	delay_16
 	delay_16
 	delay_16
 	delay_16
@@ -196,9 +186,6 @@ PokemonLeague_ChampionsRoom_Movement_OakEnter::
 	walk_up
 	walk_up
 	walk_up
-	walk_left
-	walk_up
-	walk_up
 	walk_in_place_faster_down
 	delay_16
 	step_end
@@ -206,18 +193,10 @@ PokemonLeague_ChampionsRoom_Movement_OakEnter::
 PokemonLeague_ChampionsRoom_Movement_OakExit::
 	walk_up
 	walk_up
-	walk_right
-	walk_up
-	walk_up
-	walk_up
-	walk_up
-	delay_8
 	set_invisible
 	step_end
 
 PokemonLeague_ChampionsRoom_Movement_RivalWatchOakEnter::
-	delay_16
-	delay_16
 	delay_16
 	delay_16
 	delay_16
