@@ -20,7 +20,7 @@ PokemonLeague_AgathasRoom_EventScript_CloseEntry::
 	return
 
 PokemonLeague_AgathasRoom_EventScript_SetDoorOpen::
-	call PokemonLeague_EventScript_SetDoorOpen
+	call PokemonLeague_EventScript_AgathasSetDoorOpen
 	return
 
 PokemonLeague_AgathasRoom_OnWarp::
@@ -37,7 +37,7 @@ PokemonLeague_AgathasRoom_OnFrame::
 
 PokemonLeague_AgathasRoom_EventScript_EnterRoom::
 	lockall
-	call PokemonLeague_EventScript_EnterRoom
+	call PokemonLeague_EventScript_EnterAgathasRoom
 	setvar VAR_MAP_SCENE_POKEMON_LEAGUE, 3
 	releaseall
 	end
@@ -83,7 +83,7 @@ PokemonLeague_AgathasRoom_EventScript_PostBattle::
 
 PokemonLeague_AgathasRoom_EventScript_DefeatedAgatha::
 	setflag FLAG_DEFEATED_AGATHA
-	call PokemonLeague_EventScript_OpenDoor
+	call PokemonLeague_EventScript_AgathasOpenDoor
 	msgbox PokemonLeague_AgathasRoom_Text_PostBattle
 	release
 	end

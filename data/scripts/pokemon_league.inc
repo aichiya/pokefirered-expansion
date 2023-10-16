@@ -7,6 +7,15 @@ PokemonLeague_EventScript_OpenDoor::
 	setflag FLAG_TEMP_4
 	return
 
+PokemonLeague_EventScript_AgathasOpenDoor::
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_Delay32
+	waitmovement 0
+	playse SE_RS_DOOR
+	call PokemonLeague_EventScript_AgathasSetDoorOpen
+	special DrawWholeMapView
+	setflag FLAG_TEMP_4
+	return
+
 PokemonLeague_EventScript_EnterRoom::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp5
 	waitmovement 0
@@ -16,7 +25,21 @@ PokemonLeague_EventScript_EnterRoom::
 	special DrawWholeMapView
 	return
 
+PokemonLeague_EventScript_EnterAgathasRoom::
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp5
+	waitmovement 0
+	setflag FLAG_TEMP_2
+	playse SE_UNLOCK
+	call PokemonLeague_EventScript_AgathasCloseEntry
+	special DrawWholeMapView
+	return
+
 PokemonLeague_EventScript_SetDoorOpen::
+	setmetatile 4, 0, METATILE_PokemonLeague_Door_Top_Open, 0
+	setmetatile 5, 0, METATILE_PokemonLeague_Door_Top_Open, 0
+	return
+
+PokemonLeague_EventScript_AgathasSetDoorOpen::
 	setmetatile 4, 0, METATILE_PokemonLeague_Door_Mid_Open, 0
 	setmetatile 5, 0, METATILE_PokemonLeague_Door_Mid_Open, 0
 	return
@@ -47,13 +70,13 @@ PokemonLeague_EventScript_SetDoorOpenLance::
 	return
 
 PokemonLeague_EventScript_CloseEntry::
-	setmetatile 4, 11, METATILE_PokemonLeague_Entry_TopLeft_Closed, 1
-	setmetatile 5, 11, METATILE_PokemonLeague_Entry_TopLeft_Closed, 1
+	setmetatile 4, 0, METATILE_PokemonLeague_Entry_TopLeft_Closed, 1
+	setmetatile 5, 0, METATILE_PokemonLeague_Entry_TopLeft_Closed, 1
 	return
 
 PokemonLeague_EventScript_AgathasCloseEntry::
-	setmetatile 4, 11, METATILE_PokemonLeague_Entry_TopRight_Closed, 1
-	setmetatile 5, 11, METATILE_PokemonLeague_Entry_TopRight_Closed, 1
+	setmetatile 4, 0, METATILE_PokemonLeague_Entry_TopRight_Closed, 1
+	setmetatile 5, 0, METATILE_PokemonLeague_Entry_TopRight_Closed, 1
 	return
 
 PokemonLeague_Movement_ForcePlayerIn::
