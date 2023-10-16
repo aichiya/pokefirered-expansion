@@ -897,7 +897,7 @@
       "border_width": 1,
       "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_RB_Overworld",
+      "secondary_tileset": "gTileset_RB_Overworld_Pewter",
       "border_filepath": "data/layouts/Route4/border.bin",
       "blockdata_filepath": "data/layouts/Route4/map.bin"
     },
@@ -909,7 +909,7 @@
       "border_width": 1,
       "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_RB_Overworld",
+      "secondary_tileset": "gTileset_RB_Overworld_Saffron",
       "border_filepath": "data/layouts/Route5/border.bin",
       "blockdata_filepath": "data/layouts/Route5/map.bin"
     },
@@ -921,7 +921,7 @@
       "border_width": 1,
       "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_RB_Overworld_Vermilion",
+      "secondary_tileset": "gTileset_RB_Overworld_Saffron",
       "border_filepath": "data/layouts/Route6/border.bin",
       "blockdata_filepath": "data/layouts/Route6/map.bin"
     },
@@ -933,7 +933,7 @@
       "border_width": 1,
       "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_RB_Overworld",
+      "secondary_tileset": "gTileset_RB_Overworld_Celadon",
       "border_filepath": "data/layouts/Route7/border.bin",
       "blockdata_filepath": "data/layouts/Route7/map.bin"
     },
@@ -945,7 +945,7 @@
       "border_width": 1,
       "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_RB_Overworld",
+      "secondary_tileset": "gTileset_RB_Overworld_Saffron",
       "border_filepath": "data/layouts/Route8/border.bin",
       "blockdata_filepath": "data/layouts/Route8/map.bin"
     },
@@ -981,7 +981,7 @@
       "border_width": 1,
       "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_RB_Overworld",
+      "secondary_tileset": "gTileset_RB_Overworld_Vermilion",
       "border_filepath": "data/layouts/Route11/border.bin",
       "blockdata_filepath": "data/layouts/Route11/map.bin"
     },
@@ -1029,7 +1029,7 @@
       "border_width": 1,
       "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_RB_Overworld",
+      "secondary_tileset": "gTileset_RB_Overworld_Fuchsia",
       "border_filepath": "data/layouts/Route15/border.bin",
       "blockdata_filepath": "data/layouts/Route15/map.bin"
     },
@@ -1053,7 +1053,7 @@
       "border_width": 1,
       "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_RB_Overworld",
+      "secondary_tileset": "gTileset_RB_CyclingRoad",
       "border_filepath": "data/layouts/Route17/border.bin",
       "blockdata_filepath": "data/layouts/Route17/map.bin"
     },
@@ -1113,7 +1113,7 @@
       "border_width": 1,
       "border_height": 1,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_RB_Overworld",
+      "secondary_tileset": "gTileset_RB_Overworld_Viridian",
       "border_filepath": "data/layouts/Route22/border.bin",
       "blockdata_filepath": "data/layouts/Route22/map.bin"
     },
