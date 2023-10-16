@@ -180,14 +180,22 @@ No slope movement.
 
 -Silph Co-
 Elevator broken.
-5F TM01 should be TM09.
-6F X SPECIAL is supposed to be X ACCURACY.
-7F TM08 is supposed to be TM03.
+5F TM01 should be TM09. [Check]
+6F X SPECIAL is supposed to be X ACCURACY. [Check]
+7F TM08 is supposed to be TM03. [Check]
 2F hiding woman is MOVE TUTOR, is supposed to give TM36.
 7F Lapras guy has no dialogue switch after Rockets leave.
 10F trainers not checked at all, forgot.
-10F ULTRA BALL is supposed to be TM26.
+10F ULTRA BALL is supposed to be TM26. [Check]
 
--Cinnebar Island-
-Mansion 1F PROTEIN is supposed to be CARBOS.
+-Cinnabar Island-
+Mansion 1F PROTEIN is supposed to be CARBOS. [Check]
 Mansion B1F is supposed to RARE CANDY ball in middle top room.
+
+-Power Plant-
+Voltorb and Electrode don't say "Bzzzt!" before battle.
+
+-Victory Road-
+2F TM37 is supposed to be TM05.
+2F TM07 is supposed to be TM17.
+3F TM50  is supposed to be TM47
