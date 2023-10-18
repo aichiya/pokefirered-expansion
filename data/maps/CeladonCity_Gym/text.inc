@@ -37,7 +37,7 @@ CeladonCity_Gym_Text_ExplainRainbowBadgeTakeThis::
 CeladonCity_Gym_Text_ReceivedTM21FromErika::
     .string "{PLAYER} received TM21!$"
 
-CeladonCity_Gym_Text_ExplainTM19::
+CeladonCity_Gym_Text_ExplainTM21::
     .string "TM21 contains MEGA DRAIN.\p"
     .string "Half the damage it inflicts is\n"
     .string "drained to heal your POKéMON!$"

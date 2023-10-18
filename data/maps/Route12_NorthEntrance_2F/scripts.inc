@@ -18,7 +18,7 @@ Route12_NorthEntrance_2F_EventScript_Lass::
 	call_if_eq VAR_RESULT, FEMALE, Route12_NorthEntrance_2F_EventScript_TakeTMFemale
 	checkitemspace ITEM_TM39
 	goto_if_eq VAR_RESULT, FALSE, Route12_NorthEntrance_2F_EventScript_NoRoomForTM39
-	giveitem_msg Route12_NorthEntrance_2F_Text_ReceivedTM27FromLittleGirl, ITEM_TM39
+	giveitem_msg Route12_NorthEntrance_2F_Text_ReceivedTM39FromLittleGirl, ITEM_TM39
 	setflag FLAG_GOT_TM39
 	release
 	end

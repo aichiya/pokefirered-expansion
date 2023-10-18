@@ -102,7 +102,7 @@ RocketHideout_B1F_EventScript_ItemHyperPotion::
 	finditem ITEM_HYPER_POTION
 	end
 
-RocketHideout_B2F_EventScript_ItemXSpeed::
+RocketHideout_B2F_EventScript_ItemNugget::
 	finditem ITEM_NUGGET
 	end
 
@@ -322,10 +322,6 @@ PokemonMansion_B1F_EventScript_ItemTM14::
 	finditem ITEM_TM14
 	end
 
-PokemonMansion_B1F_EventScript_ItemRareCandy
-	finditem ITEM_RARE_CANDY
-	end
-
 PokemonMansion_B1F_EventScript_ItemFullRestore::
 	finditem ITEM_FULL_RESTORE
 	end
@@ -538,8 +534,8 @@ OneIsland_KindleRoad_EventScript_ItemMaxRepel::
 	finditem ITEM_MAX_REPEL
 	end
 
-OneIsland_KindleRoad_EventScript_ItemCarbos::
-	finditem ITEM_CARBOS
+PokemonMansion_B1F_EventScript_ItemRareCandy::
+	finditem ITEM_RARE_CANDY
 	end
 
 FiveIsland_Meadow_EventScript_ItemMaxPotion::
