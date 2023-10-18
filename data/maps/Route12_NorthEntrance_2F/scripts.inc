@@ -12,14 +12,14 @@ Route12_NorthEntrance_2F_EventScript_RightBinoculars::
 Route12_NorthEntrance_2F_EventScript_Lass::
 	lock
 	faceplayer
-	goto_if_set FLAG_GOT_TM27, Route12_NorthEntrance_2F_EventScript_ExplainTM27
+	goto_if_set FLAG_GOT_TM39, Route12_NorthEntrance_2F_EventScript_ExplainTM39
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, Route12_NorthEntrance_2F_EventScript_TakeTMMale
 	call_if_eq VAR_RESULT, FEMALE, Route12_NorthEntrance_2F_EventScript_TakeTMFemale
-	checkitemspace ITEM_TM27
-	goto_if_eq VAR_RESULT, FALSE, Route12_NorthEntrance_2F_EventScript_NoRoomForTM27
-	giveitem_msg Route12_NorthEntrance_2F_Text_ReceivedTM27FromLittleGirl, ITEM_TM27
-	setflag FLAG_GOT_TM27
+	checkitemspace ITEM_TM39
+	goto_if_eq VAR_RESULT, FALSE, Route12_NorthEntrance_2F_EventScript_NoRoomForTM39
+	giveitem_msg Route12_NorthEntrance_2F_Text_ReceivedTM27FromLittleGirl, ITEM_TM39
+	setflag FLAG_GOT_TM39
 	release
 	end
 
@@ -31,12 +31,12 @@ Route12_NorthEntrance_2F_EventScript_TakeTMFemale::
 	msgbox Route12_NorthEntrance_2F_Text_TakeTMDontNeedAnymoreFemale
 	return
 
-Route12_NorthEntrance_2F_EventScript_NoRoomForTM27::
+Route12_NorthEntrance_2F_EventScript_NoRoomForTM39::
 	msgbox Route12_NorthEntrance_2F_Text_DontHaveRoomForThis
 	release
 	end
 
-Route12_NorthEntrance_2F_EventScript_ExplainTM27::
-	msgbox Route12_NorthEntrance_2F_Text_ExplainTM27
+Route12_NorthEntrance_2F_EventScript_ExplainTM39::
+	msgbox Route12_NorthEntrance_2F_Text_ExplainTM39
 	release
 	end

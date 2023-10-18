@@ -56,8 +56,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SafariZone_East_EventScript_ItemTM11",
-      "flag": "FLAG_HIDE_SAFARI_ZONE_EAST_TM11",
+      "script": "SafariZone_East_EventScript_ItemTM37",
+      "flag": "FLAG_HIDE_SAFARI_ZONE_EAST_TM37",
       "in_connection": false
     },
     {
@@ -71,8 +71,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SafariZone_East_EventScript_ItemLeafStone",
-      "flag": "FLAG_HIDE_SAFARI_ZONE_EAST_LEAF_STONE",
+      "script": "SafariZone_East_EventScript_ItemCarbos",
+      "flag": "FLAG_HIDE_SAFARI_ZONE_EAST_CARBOS",
       "in_connection": false
     }
   ],

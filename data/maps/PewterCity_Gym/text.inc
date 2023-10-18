@@ -29,10 +29,10 @@ PewterCity_Gym_Text_TakeThisWithYou::
     .string "Wait!\n"
     .string "Take this with you!$"
 
-PewterCity_Gym_Text_ReceivedTM39FromBrock::
+PewterCity_Gym_Text_ReceivedTM34FromBrock::
     .string "{PLAYER} received TM34!$"
 
-PewterCity_Gym_Text_ExplainTM39::
+PewterCity_Gym_Text_ExplainTM34::
     .string "A TM contains a technique\n"
     .string "that can be taught to POKéMON!\p"
     .string "A TM is only good once! So\n"

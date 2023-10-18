@@ -116,8 +116,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RocketHideout_B4F_EventScript_ItemTM49",
-      "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B4F_TM49",
+      "script": "RocketHideout_B4F_EventScript_ItemTM02",
+      "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B4F_TM02",
       "in_connection": false
     },
     {
@@ -131,8 +131,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RocketHideout_B4F_EventScript_ItemMaxEther",
-      "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B4F_MAX_ETHER",
+      "script": "RocketHideout_B4F_EventScript_ItemHPUp",
+      "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B4F_HP_UP",
       "in_connection": false
     },
     {
@@ -146,8 +146,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RocketHideout_B4F_EventScript_ItemCalcium",
-      "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B4F_CALCIUM",
+      "script": "RocketHideout_B4F_EventScript_ItemIron",
+      "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B4F_IRON",
       "in_connection": false
     }
   ],

@@ -62,16 +62,16 @@ Route25_EventScript_ItemTM19::
 	finditem ITEM_TM19
 	end
 
-SSAnne_1F_Room2_EventScript_ItemTM31::
-	finditem ITEM_TM31
+SSAnne_1F_Room2_EventScript_ItemTM08::
+	finditem ITEM_TM08
 	end
 
-SSAnne_2F_Room2_EventScript_ItemStardust::
-	finditem ITEM_STARDUST
+SSAnne_2F_Room2_EventScript_ItemMaxEther::
+	finditem ITEM_MAX_ETHER
 	end
 
-SSAnne_2F_Room4_EventScript_ItemXAttack::
-	finditem ITEM_X_ATTACK
+SSAnne_2F_Room4_EventScript_ItemRareCandy::
+	finditem ITEM_RARE_CANDY
 	end
 
 SSAnne_B1F_Room2_EventScript_ItemTM44::
@@ -103,15 +103,15 @@ RocketHideout_B1F_EventScript_ItemHyperPotion::
 	end
 
 RocketHideout_B2F_EventScript_ItemXSpeed::
-	finditem ITEM_X_SPEED
+	finditem ITEM_NUGGET
 	end
 
 RocketHideout_B2F_EventScript_ItemMoonStone::
 	finditem ITEM_MOON_STONE
 	end
 
-RocketHideout_B2F_EventScript_ItemTM12::
-	finditem ITEM_TM12
+RocketHideout_B2F_EventScript_ItemTM07::
+	finditem ITEM_TM07
 	end
 
 RocketHideout_B2F_EventScript_ItemSuperPotion::
@@ -122,20 +122,20 @@ RocketHideout_B3F_EventScript_ItemRareCandy::
 	finditem ITEM_RARE_CANDY
 	end
 
-RocketHideout_B3F_EventScript_ItemTM21::
-	finditem ITEM_TM21
+RocketHideout_B3F_EventScript_ItemTM10::
+	finditem ITEM_TM10
 	end
 
-RocketHideout_B4F_EventScript_ItemTM49::
-	finditem ITEM_TM49
+RocketHideout_B4F_EventScript_ItemTM02::
+	finditem ITEM_TM02
 	end
 
-RocketHideout_B4F_EventScript_ItemMaxEther::
-	finditem ITEM_MAX_ETHER
+RocketHideout_B4F_EventScript_ItemHPUp::
+	finditem ITEM_HP_UP
 	end
 
-RocketHideout_B4F_EventScript_ItemCalcium::
-	finditem ITEM_CALCIUM
+RocketHideout_B4F_EventScript_ItemIron::
+	finditem ITEM_IRON
 	end
 
 PokemonTower_3F_EventScript_ItemEscapeRope::
@@ -150,8 +150,8 @@ PokemonTower_4F_EventScript_ItemAwakening::
 	finditem ITEM_AWAKENING
 	end
 
-PokemonTower_4F_EventScript_ItemGreatBall::
-	finditem ITEM_GREAT_BALL
+PokemonTower_4F_EventScript_ItemHPUp::
+	finditem ITEM_HP_UP
 	end
 
 PokemonTower_5F_EventScript_ItemNugget::
@@ -190,20 +190,20 @@ SafariZone_East_EventScript_ItemFullRestore::
 	finditem ITEM_FULL_RESTORE
 	end
 
-SafariZone_East_EventScript_ItemTM11::
-	finditem ITEM_TM11
+SafariZone_East_EventScript_ItemTM37::
+	finditem ITEM_TM37
 	end
 
-SafariZone_East_EventScript_ItemLeafStone::
-	finditem ITEM_LEAF_STONE
+SafariZone_East_EventScript_ItemCarbos::
+	finditem ITEM_CARBOS
 	end
 
 SafariZone_North_EventScript_ItemProtein::
 	finditem ITEM_PROTEIN
 	end
 
-SafariZone_North_EventScript_ItemTM47::
-	finditem ITEM_TM47
+SafariZone_North_EventScript_ItemTM40::
+	finditem ITEM_TM40
 	end
 
 SafariZone_West_EventScript_ItemTM32::
@@ -322,6 +322,10 @@ PokemonMansion_B1F_EventScript_ItemTM14::
 	finditem ITEM_TM14
 	end
 
+PokemonMansion_B1F_EventScript_ItemRareCandy
+	finditem ITEM_RARE_CANDY
+	end
+
 PokemonMansion_B1F_EventScript_ItemFullRestore::
 	finditem ITEM_FULL_RESTORE
 	end
@@ -338,32 +342,32 @@ VictoryRoad_1F_EventScript_ItemRareCandy::
 	finditem ITEM_RARE_CANDY
 	end
 
-VictoryRoad_1F_EventScript_ItemTM02::
-	finditem ITEM_TM02
+VictoryRoad_1F_EventScript_ItemTM43::
+	finditem ITEM_TM43
 	end
 
 VictoryRoad_2F_EventScript_ItemGuardSpec::
 	finditem ITEM_GUARD_SPEC
 	end
 
-VictoryRoad_2F_EventScript_ItemTM07::
-	finditem ITEM_TM07
+VictoryRoad_2F_EventScript_ItemTM17::
+	finditem ITEM_TM17
 	end
 
 VictoryRoad_2F_EventScript_ItemFullHeal::
 	finditem ITEM_FULL_HEAL
 	end
 
-VictoryRoad_2F_EventScript_ItemTM37::
-	finditem ITEM_TM37
+VictoryRoad_2F_EventScript_ItemTM05::
+	finditem ITEM_TM05
 	end
 
 VictoryRoad_3F_EventScript_ItemMaxRevive::
 	finditem ITEM_MAX_REVIVE
 	end
 
-VictoryRoad_3F_EventScript_ItemTM50::
-	finditem ITEM_TM50
+VictoryRoad_3F_EventScript_ItemTM47::
+	finditem ITEM_TM47
 	end
 
 CeruleanCave_1F_EventScript_ItemMaxElixir::
@@ -574,8 +578,8 @@ SixIsland_RuinValley_EventScript_ItemSunStone::
 	finditem ITEM_SUN_STONE
 	end
 
-SevenIsland_SevaultCanyon_EventScript_ItemKingsRock::
-	finditem ITEM_KINGS_ROCK
+ViridianCity_Gym_EventScript_ItemRevive::
+	finditem ITEM_REVIVE
 	end
 
 SevenIsland_SevaultCanyon_EventScript_ItemMaxElixir::

@@ -23,10 +23,10 @@ VermilionCity_Gym_Text_ExplainThunderBadgeTakeThis::
     .string "You're special, kid!\n"
     .string "Take this!$"
 
-VermilionCity_Gym_Text_ReceivedTM34FromLtSurge::
+VermilionCity_Gym_Text_ReceivedTM24FromLtSurge::
     .string "{PLAYER} received TM24!$"
 
-VermilionCity_Gym_Text_ExplainTM34::
+VermilionCity_Gym_Text_ExplainTM24::
     .string "TM24 contains THUNDERBOLT!\p"
     .string "Teach it to an electric POKéMON!$"
 

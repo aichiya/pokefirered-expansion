@@ -16,12 +16,12 @@
   "connections": [
     {
       "map": "MAP_VERMILION_CITY",
-      "offset": 9,
+      "offset": 47,
       "direction": "left"
     },
     {
       "map": "MAP_ROUTE12",
-      "offset": -37,
+      "offset": 1,
       "direction": "right"
     }
   ],
@@ -30,7 +30,7 @@
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
       "x": 13,
-      "y": 22,
+      "y": 60,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -45,7 +45,7 @@
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
       "x": 10,
-      "y": 31,
+      "y": 69,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -60,7 +60,7 @@
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
       "x": 22,
-      "y": 21,
+      "y": 59,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
@@ -75,7 +75,7 @@
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
       "x": 22,
-      "y": 29,
+      "y": 67,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 8,
@@ -90,7 +90,7 @@
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
       "x": 26,
-      "y": 26,
+      "y": 64,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -105,7 +105,7 @@
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
       "x": 33,
-      "y": 20,
+      "y": 58,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
@@ -120,7 +120,7 @@
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SUPER_NERD",
       "x": 36,
-      "y": 29,
+      "y": 67,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -135,7 +135,7 @@
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
       "x": 43,
-      "y": 22,
+      "y": 60,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
@@ -150,7 +150,7 @@
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CAMPER",
       "x": 45,
-      "y": 24,
+      "y": 62,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -165,7 +165,7 @@
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SUPER_NERD",
       "x": 45,
-      "y": 33,
+      "y": 71,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -180,35 +180,35 @@
   "warp_events": [
     {
       "x": 4,
-      "y": 23,
+      "y": 61,
       "elevation": 0,
       "dest_map": "MAP_DIGLETTS_CAVE_SOUTH_ENTRANCE",
       "dest_warp_id": "0"
     },
     {
       "x": 49,
-      "y": 25,
+      "y": 63,
       "elevation": 3,
       "dest_map": "MAP_ROUTE11_EAST_ENTRANCE_1F",
       "dest_warp_id": "0"
     },
     {
       "x": 58,
-      "y": 25,
+      "y": 63,
       "elevation": 3,
       "dest_map": "MAP_ROUTE11_EAST_ENTRANCE_1F",
       "dest_warp_id": "2"
     },
     {
       "x": 49,
-      "y": 26,
+      "y": 64,
       "elevation": 3,
       "dest_map": "MAP_ROUTE11_EAST_ENTRANCE_1F",
       "dest_warp_id": "1"
     },
     {
       "x": 58,
-      "y": 26,
+      "y": 64,
       "elevation": 3,
       "dest_map": "MAP_ROUTE11_EAST_ENTRANCE_1F",
       "dest_warp_id": "3"
@@ -221,7 +221,7 @@
     {
       "type": "sign",
       "x": 1,
-      "y": 22,
+      "y": 60,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route11_EventScript_DiglettsCaveSign"
@@ -229,7 +229,7 @@
     {
       "type": "hidden_item",
       "x": 48,
-      "y": 22,
+      "y": 60,
       "elevation": 0,
       "item": "ITEM_ESCAPE_ROPE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE11_ESCAPE_ROPE",

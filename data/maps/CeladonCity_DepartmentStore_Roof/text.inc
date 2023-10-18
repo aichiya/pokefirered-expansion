@@ -16,8 +16,8 @@ Text_ReceivedItemFromLittleGirl::
     .string "{PLAYER} received a {STR_VAR_2}\n"
     .string "from the little girl.$"
 
-CeladonCity_DepartmentStore_Roof_Text_ExplainTM16::
-    .string "TM16 contains LIGHT SCREEN.\p"
+CeladonCity_DepartmentStore_Roof_Text_ExplainTM13::
+    .string "TM13 contains LIGHT SCREEN.\p"
     .string "It's a move that weakens the power\n"
     .string "of special attacks by your foe.$"
 
@@ -27,8 +27,8 @@ CeladonCity_DepartmentStore_Roof_Text_YaySodaPopHaveThis::
     .string "Thank you!\n"
     .string "You can have this from me!$"
 
-CeladonCity_DepartmentStore_Roof_Text_ExplainTM20::
-    .string "TM20 contains SAFEGUARD.\p"
+CeladonCity_DepartmentStore_Roof_Text_ExplainTM48::
+    .string "TM48 contains SAFEGUARD.\p"
     .string "It's a move that prevents status\n"
     .string "problems among your POKéMON.$"
 
@@ -38,8 +38,8 @@ CeladonCity_DepartmentStore_Roof_Text_YayLemonadeHaveThis::
     .string "Thank you!\n"
     .string "You can have this from me!$"
 
-CeladonCity_DepartmentStore_Roof_Text_ExplainTM33::
-    .string "TM33 contains REFLECT.\p"
+CeladonCity_DepartmentStore_Roof_Text_ExplainTM49::
+    .string "TM49 contains REFLECT.\p"
     .string "It's a move that weakens the power\n"
     .string "of physical attacks by your foe.$"
 

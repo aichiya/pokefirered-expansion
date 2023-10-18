@@ -11,11 +11,11 @@ Route12_NorthEntrance_2F_Text_TakeTMDontNeedAnymoreFemale::
     .string "You can have this TM.\n"
     .string "I don't need it any more...$"
 
-Route12_NorthEntrance_2F_Text_ReceivedTM27FromLittleGirl::
+Route12_NorthEntrance_2F_Text_ReceivedTM39FromLittleGirl::
     .string "{PLAYER} received TM39!$"
 
-Route12_NorthEntrance_2F_Text_ExplainTM27::
-    .string "TM27 is a move called RETURN…\p"
+Route12_NorthEntrance_2F_Text_ExplainTM39::
+    .string "TM39 is a move called RETURN...\p"
     .string "If you treat your POKéMON good,\n"
     .string "it will return your love by working\l"
     .string "its hardest in battle.$"
