@@ -43,7 +43,7 @@ Rival name presets wrong.
 Nidorino animation not changed yet.
 
 -Palette Town-
-Rival sister map on table wrong sprite.
+Rival sister map on table wrong sprite. [Check]
 Woman1 missing from Pallet Town.
 Oak seems invisible in Pallet Town intro.
 
@@ -52,7 +52,6 @@ Pokemon choice doesn't show pokedex page, popup style not changed.
 
 -Battle-
 Oak tutorial not skipped.
-Red backsprite not changed.
 UI layout not finished.
 POKeMON not changed to PKMN.
 BAG not changed to ITEM.
@@ -74,25 +73,24 @@ ELITE FOUR title not removed from trainers.
 -Viridian City-
 Catch tutorial forced, no YES/NO, dialogue not finished.
 Dream Eater guy is tutor, doesn't give TM42.
-Gym supposed to have REVIVE item ball above arrow tile in narrow passage down.
+Gym supposed to have REVIVE item ball above arrow tile in narrow passage down. [Check]
 Giovanni gives TM26, supposed to be TM27.
 
 -Pewter City-
-BROCK gives TM39 Rock Tomb instead of TM34 BIDE.
+BROCK gives TM39 Rock Tomb instead of TM34 BIDE. [Check]
 
 -Cerulean City-
-Bike shop guy uses unique sprite, not implemented yet.
-Gym swimmer cannot be talked to from land.
+Gym swimmer cannot be talked to from land. [Check]
 Bill pauses after exiting the machine.
-MISTY wrongly gives TM03 instead of TM11.
+MISTY wrongly gives TM03 instead of TM11. [Check]
+Top right of area has border issue, must figure out solution.
 
 -Route9-
 Day Care man dialogue for level up not checked.
 
 -Vermilion City-
 Pikachu uses clefairy sprite, should probably replace pikachu's generic sprite with recolored clefairy.
-LT.SURGE uses Crystal sprite, must be corrected.
-LT.SURGE gives TM34 instead of TM24.
+LT.SURGE gives TM34 instead of TM24. [Check]
 
 -PokeMart-
 2 tiles change during Parcel scene for some reason.
@@ -106,78 +104,63 @@ Route 4 couch guy doesn't talk.
 Couch guy in Cerulean doesn't talk.
 Pokeballs are misplaced in healing machine.
 
--Route11-
+-Route 11-
 Aid success text not tested.
+Tileset change visible from right exit, must give some world to Route 12.
 
 -SS.ANNE-
-1F Room2 item is TM31, should be TM08.
+1F Room2 item is TM31, should be TM08. [Check]
 1F worker sprite not yet edited.
-Kitchen bottom trash has berry, should have GREAT BALL.
-B1F Room5 is missing a MAX POTION.
 2F sailor should have bellhop sprite.
-2F Room2 STARDUST should be MAX ETHER.
-2F Room4 X ATTACK should be RARE CANDY.
+2F Room2 STARDUST should be MAX ETHER. [Check]
+2F Room4 X ATTACK should be RARE CANDY. [Check]
 
 -LAVENDER TOWN-
-House 2 guy is supposed to use balding CEO sprite. [check]
-PokemonTower_4F GREAT BALL should be HP UP.
-5F item ball temporarily out of bounds, need to verify existence in Blue.
+House 2 guy is supposed to use balding CEO sprite. [Check]
+PokemonTower_4F GREAT BALL should be HP UP. [Check]
 Pokedoll trick doesn't work for GHOST encounter.
 THE GHOST instead of GHOST appeared.
+Roof palette error, need to figure out a fix.
 
 -Route12-
-Lookout tower woman gives TM27 instead of TM39.
+Lookout tower woman gives TM27 instead of TM39. [Check]
 Possible remaining decoration error in left border OOB.
 
 -Celadon City-
-6 slot machines missing event tiles in game corner.
 Left coin exchange worker has too many prizes, also prices are wrong.
 Middle coin exchange worker has totally wrong prizes.
 Right coin exchange worker has too many prizes, also prices are wrong.
 House1 incorrectly uses generic house layout, somehow linked to all others. Must use custom layout.
 Hotel couch guy doesn't talk, needs the usual sprite adjustment.
-ERIKA gives TM19 instead of TM21.
-GAME FREAK programmer uses wrong sprite, correct sunglasses sprite not implemented yet.
-GAME FREAK lead uses wrong sprite, correct sprite not implemented yet.
+ERIKA gives TM19 instead of TM21. [Check]
 DEPT.STORE_2F missing NPC.
 DEPT.STORE_3F move tutor is supposed to be TM gifter.
 DEPT.STORE thirsty girl dialogue shouldn't have EXIT in menu.
-Giving Water to girl gets TM16, should be TM13.
-Giving Soda to girl gets TM20, should be TM48.
-Giving Lemonade to girl gets TM33, should be TM49.
+Giving Water to girl gets TM16, should be TM13. [Check]
+Giving Soda to girl gets TM20, should be TM48. [Check]
+Giving Lemonade to girl gets TM33, should be TM49. [Check]
 Blackboard for Link Cable info is replaced by Wireless Adapter info, must replace.
 Stranded old man is move tutor, supposed to give TM41.
 
 -Saffron City-
 Fighting dojo pokemon selection doesn't show pokedex page, uses different preview style.
-Sabrina gives TM04, should be TM46.
+Sabrina gives TM04, should be TM46. [Check]
 
 -Rocket Hideout-
-B2F X Speed is supposed to be NUGGET.
-B2F TM12 is supposed to be TM07.
-B3F TM21 is supposed to be TM10.
-B4F Max Ether is suppsed to be HP UP.
-B4F TM49 is supposed to be TM02.
+B2F X Speed is supposed to be NUGGET. [Check]
+B2F TM12 is supposed to be TM07. [Check]
+B3F TM21 is supposed to be TM10. [Check]
+B4F Max Ether is suppsed to be HP UP. [Check]
+B4F TM49 is supposed to be TM02. [Check]
 B4F Grunt drops lift key immediately, should require talking to him first.
-B4F CALCIUM is supposed to be IRON.
-
--Route 14-
-Border shows garbage tiles.
+B4F CALCIUM is supposed to be IRON. [Check]
 
 -Fuchsia City-
 Zoo signs show pokemon previews incorrectly, use popup style instead of pokedex style.
 Safari Zone borders are all wrong, supposed to be plain grass.
-Safari Zone East Leaf Stone is supposed to be CARBOS.
-Safari Zone East TM11 is supposed to be TM37.
-Safari Zone East Rest House Balding Man uses wrong sprite, correct sprite not added yet.
-Safari Zone North Quick Claw has no equivalent ball, check with itemfinder.
-Safari Zone North TM47 is supposed to be TM40.
-Safari Zone West bottom right statue must have hidden revive, no itemfinder.
-Bushes reflect player sprite.
-
--Route 17-
-Signs reflect player sprite.
-No slope movement.
+Safari Zone East Leaf Stone is supposed to be CARBOS. [Check]
+Safari Zone East TM11 is supposed to be TM37. [Check]
+Safari Zone North TM47 is supposed to be TM40. [Check]
 
 -Silph Co-
 Elevator broken.
@@ -191,17 +174,21 @@ Elevator broken.
 
 -Cinnabar Island-
 Mansion 1F PROTEIN is supposed to be CARBOS. [Check]
-Mansion B1F is supposed to RARE CANDY ball in middle top room.
+Mansion B1F is supposed to RARE CANDY ball in middle top room. [Check]
 
 -Power Plant-
 Voltorb and Electrode don't say "Bzzzt!" before battle.
 
 -Victory Road-
-1F TM02 is supposed to be TM43.
-2F TM37 is supposed to be TM05.
-2F TM07 is supposed to be TM17.
-3F TM50  is supposed to be TM47.
+1F TM02 is supposed to be TM43. [Check]
+2F TM37 is supposed to be TM05. [Check]
+2F TM07 is supposed to be TM17. [Check]
+3F TM50  is supposed to be TM47. [Check]
 
 -Pokemon League-
 Don't Leave script doesn't play, exits simply don't have correct tiles.
 Member doesn't face up after battle.
+Record machine animation skipped entirely, must restore playing sound.
+
+-Route 15-
+Blue blocks surfing with dialog "Cycling is fun!\n Forget SURFing!$", must add this.
