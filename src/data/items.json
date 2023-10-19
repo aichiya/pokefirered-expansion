@@ -4630,7 +4630,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "An extremely powerful attack.\\nHowever, if the user is hit before\\nusing the move, they will flinch.",
+      "description_english": "A Normal-type attack move. It \\nis highly accurate and relativ\\nely powerful.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4639,7 +4639,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "FocusPunch"
+      "moveId": "MegaPunch"
     },
     {
       "english": "TM02",
@@ -4647,7 +4647,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Sharp, huge claws hook and slash\\nthe foe quickly and with great\\npower.",
+      "description_english": "A two-turn attack with the win\\nd attack in the second turn. L\\nearned by many Flying-type Pok\\némon.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4656,7 +4656,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "DragonClaw"
+      "moveId": "RazorWind"
     },
     {
       "english": "TM03",
@@ -4664,7 +4664,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The foe is hit with a pulsing blast\\nof water. It may also confuse the\\ntarget.",
+      "description_english": "A special move that greatly bo\\nosts the user's Attack power. \\nCan normally be used up to thr\\nee times.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4673,7 +4673,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "WaterPulse"
+      "moveId": "SwordsDance"
     },
     {
       "english": "TM04",
@@ -4681,7 +4681,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The user calms its spirit and\\nfocuses its mind to raise its\\nSP. ATK and SP. DEF stats.",
+      "description_english": "Generates a powerful wind that\\n blows away wild Pokémon. Usef\\nul in the wild only.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4690,7 +4690,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "CalmMind"
+      "moveId": "Whirlwind"
     },
     {
       "english": "TM05",
@@ -4698,7 +4698,7 @@
       "price": 1000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A savage roar that causes the foe\\nto switch out of battle. In the\\nwild, ROAR ends the battle.",
+      "description_english": "A Normal-type attack. Out of a\\nll the Pokémon kicking attacks\\n, this is the strongest.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4707,7 +4707,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Roar"
+      "moveId": "MegaKick"
     },
     {
       "english": "TM06",
@@ -4715,7 +4715,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A move that leaves the foe badly\\npoisoned. Its poison damage worsens\\nevery turn.",
+      "description_english": "A technique that badly poisons\\n the target. The amount of dam\\nage from the poison increases \\nevery turn.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4732,7 +4732,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Summons a hailstorm that lasts for\\nfive turns. The hailstorm damages\\nall types except the ICE type.",
+      "description_english": "A single-hit knockout attack. \\nLearned only by Pokémon with a\\n horn or horns.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4741,7 +4741,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Hail"
+      "moveId": "HornDrill"
     },
     {
       "english": "TM08",
@@ -4749,7 +4749,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The user tightens all its muscles\\nand bulks up, boosting both its\\nATTACK and DEFENSE stats.",
+      "description_english": "A Normal-type attack. Has a on\\ne-in-three chance of paralyzin\\ng the target if it connects.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4758,7 +4758,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "BulkUp"
+      "moveId": "BodySlam"
     },
     {
       "english": "TM09",
@@ -4766,7 +4766,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The user shoots seeds at the foe\\nin rapid succession. Two to five\\nseeds are shot at once.",
+      "description_english": "A charging attack. One quarter\\n of the damage it inflicts com\\nes back to hurt the attacker.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4775,7 +4775,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "BulletSeed"
+      "moveId": "TakeDown"
     },
     {
       "english": "TM10",
@@ -4783,7 +4783,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A variable move that changes type\\nand power depending on the POKéMON\\nusing it.",
+      "description_english": "A charging tackle attack. One \\nquarter of the damage it infli\\ncts comes back to hurt the att\\nacker.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4792,7 +4792,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "HiddenPower"
+      "moveId": "Double-Edge"
     },
     {
       "english": "TM11",
@@ -4800,7 +4800,7 @@
       "price": 2000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The weather is turned sunny for\\nfive turns. Over that time, FIRE-\\ntype moves are powered up.",
+      "description_english": "A Water-type attack. Stronger \\nthan Bubble. Many Water-type P\\nokémon learn this move.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4809,7 +4809,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "SunnyDay"
+      "moveId": "BubbleBeam"
     },
     {
       "english": "TM12",
@@ -4817,7 +4817,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A taunted foe may become enraged.\\nIt will then only be able to use\\nattack moves.",
+      "description_english": "A Water-type attack. Stronger \\nthan Bubble. Many Water-type P\\nokémon learn this move.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4826,7 +4826,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Taunt"
+      "moveId": "WaterGun"
     },
     {
       "english": "TM13",
@@ -4834,7 +4834,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "An icy-cold beam is shot at the\\nfoe. It may leave the target\\nfrozen.",
+      "description_english": "An Ice-type attack. Has a one-\\nin-ten chance of freezing the \\ntarget solid.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4851,7 +4851,7 @@
       "price": 5500,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A vicious snow-and-wind attack that\\nstrikes all foes in battle. It may\\ncause freezing.",
+      "description_english": "The strongest Ice-type attack.\\n Has a one-in-ten chance of fr\\neezing the target solid.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4868,7 +4868,7 @@
       "price": 7500,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A harsh attack that inflicts severe\\ndamage on the foe. However, the\\nuser must rest the next turn.",
+      "description_english": "An extremely powerful attack. \\nThe attacker becomes so tired,\\n it has to rest the next turn.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4885,7 +4885,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A wall of light is created over\\nfive turns. It reduces damage from\\nSP. ATK attacks.",
+      "description_english": "A move that also nets money at\\n the end of battle. How much d\\nepends on the attack frequency\\n and level.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4894,7 +4894,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "LightScreen"
+      "moveId": "PayDay"
     },
     {
       "english": "TM17",
@@ -4902,7 +4902,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The user is completely protected\\nfrom attack in the turn it is used.\\nIt may fail if used in succession.",
+      "description_english": "The strongest Fighting attack.\\n One quarter of the damage it \\ninflicts comes back to hurt th\\ne attacker.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4911,7 +4911,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Protect"
+      "moveId": "Submission"
     },
     {
       "english": "TM18",
@@ -4919,7 +4919,7 @@
       "price": 2000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A heavy rain is summoned for five\\nturns. Over that time, WATER-type\\nmoves are powered up.",
+      "description_english": "A retaliation move that back d\\nouble the damage of a physical\\n attack. Highly accurate.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4928,7 +4928,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "RainDance"
+      "moveId": "Counter"
     },
     {
       "english": "TM19",
@@ -4936,7 +4936,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The user strikes the foe with\\ntentacles or roots, stealing the\\ntarget's HP and healing itself.",
+      "description_english": "A Fighting-type attack. Throws\\n the target with enough force \\nto flip the world upside down.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4945,7 +4945,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "GigaDrain"
+      "moveId": "SeismicToss"
     },
     {
       "english": "TM20",
@@ -4953,7 +4953,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Protects the party with a shield\\nagainst all status problems over\\nfive turns.",
+      "description_english": "A non-stop attack move. The us\\ner's Attack power increases ev\\nery time it sustains damage.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4962,7 +4962,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Safeguard"
+      "moveId": "Rage"
     },
     {
       "english": "TM21",
@@ -4970,7 +4970,7 @@
       "price": 1000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "This attack move grows more\\npowerful the more the POKéMON\\ndislikes its TRAINER.",
+      "description_english": "A Grass-type attack. It adds h\\nalf the HP it drained from the\\n target to the attacker's HP.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -4979,7 +4979,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Frustration"
+      "moveId": "MegaDrain"
     },
     {
       "english": "TM22",
@@ -4987,7 +4987,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A 2-turn attack that uses the first\\nturn for absorbing sunlight, then\\nblasting the foe in the next turn.",
+      "description_english": "The strongest Grass-type attac\\nk. Energy is absorbed in the f\\nirst turn, then fired the next\\n turn.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5004,7 +5004,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The foe is slammed with a sturdy\\ntail of steel. It may lower the\\ntarget's DEFENSE stat.",
+      "description_english": "A Dragon-type attack. It infli\\ncts a set amount of damage, re\\ngardless of the target's type.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5013,7 +5013,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "IronTail"
+      "moveId": "DragonRage"
     },
     {
       "english": "TM24",
@@ -5021,7 +5021,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A massive jolt of electricity is\\nlaunched at the foe. It may cause\\nparalysis.",
+      "description_english": "An Electric-type attack. Has a\\n one-in-ten chance of paralyzi\\nng the target.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5038,7 +5038,7 @@
       "price": 5500,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Strikes the foe with a huge\\nthunderbolt. It may cause\\nparalysis.",
+      "description_english": "The strongest of all Electric-\\ntype attacks. Has a one-in-ten\\n chance of paralyzing the targ\\net.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5055,7 +5055,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Causes an earthquake that strikes\\nall POKéMON in battle, excluding\\nthe user.",
+      "description_english": "An attack that inflicts the da\\nmage by shaking the ground. It\\n is useless against Flying typ\\ne Pokémon.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5072,7 +5072,7 @@
       "price": 1000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "This attack move grows more\\npowerful the more the POKéMON\\nlikes its TRAINER.",
+      "description_english": "Causes a single-hit knockout i\\nf it hits. Useless against Fly\\ning-type Pokémon.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5081,7 +5081,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Return"
+      "moveId": "Fissure"
     },
     {
       "english": "TM28",
@@ -5089,7 +5089,7 @@
       "price": 2000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A 2-turn attack in which the user\\ndigs underground, then strikes.\\nIt can be used to exit dungeons.",
+      "description_english": "The attacker digs underground \\nin the first turn, then pops u\\np in the next turn to attack.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5106,7 +5106,7 @@
       "price": 2000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A powerful blast of telekinetic\\nenergy strikes the foe. It may\\nlower the target's SP. DEF stat.",
+      "description_english": "A Psychic-type attack. Has a o\\nne-in-three chance of lowering\\n the target's Special rating.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5123,7 +5123,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The foe is attacked with a shadowy\\nlump. It may lower the target's\\nSP. DEF stat.",
+      "description_english": "A special technique for instan\\ntly escaping from wild Pokémon\\n. Useful in the wild only.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5132,7 +5132,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "ShadowBall"
+      "moveId": "Teleport"
     },
     {
       "english": "TM31",
@@ -5140,7 +5140,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Strikes the foe with a rock-hard\\nfist, etc. It shatters barriers such\\nas REFLECT and LIGHT SCREEN.",
+      "description_english": "A move for learning one of the\\n opponent's moves, for use dur\\ning that battle only.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5149,7 +5149,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "BrickBreak"
+      "moveId": "Mimic"
     },
     {
       "english": "TM32",
@@ -5157,7 +5157,7 @@
       "price": 2000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The user begins moving so quickly\\nthat it creates illusory copies to\\nraise its evasiveness.",
+      "description_english": "Creates illusionary copies of \\nthe user. The copies disorient\\n the enemy, reducing its accur\\nacy.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5174,7 +5174,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A tough barrier is put up over five\\nturns. It reduces damage from\\nphysical attacks over that time.",
+      "description_english": "Reduces damage from physical a\\nttacks by about half. A specia\\nl Psychic-type technique.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5191,7 +5191,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A rapid jolt of electricity strikes\\nthe foe. This attack is impossible\\nto evade.",
+      "description_english": "The user waits for several tur\\nns. At the end, it returns dou\\nble the damage it received.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5200,7 +5200,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "ShockWave"
+      "moveId": "Bide"
     },
     {
       "english": "TM35",
@@ -5208,7 +5208,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The foe is roasted with a heavy\\nblast of fire. It may leave the\\ntarget with a burn.",
+      "description_english": "The user waggles its finger, t\\nriggering a move. There is no \\ntelling what will happen.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5217,7 +5217,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Flamethrower"
+      "moveId": "Metronome"
     },
     {
       "english": "TM36",
@@ -5225,7 +5225,7 @@
       "price": 1000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Toxic sludge is hurled at the foe\\nwith great force. It may also\\npoison the target.",
+      "description_english": "The user explodes, inflicting \\ndamage on the enemy, then fain\\nts. Useless against Ghost-type.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5234,7 +5234,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "SludgeBomb"
+      "moveId": "Selfdestruct"
     },
     {
       "english": "TM37",
@@ -5242,7 +5242,7 @@
       "price": 2000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Summons a sandstorm that lasts for\\nfive turns. It damages all types\\nexcept ROCK, GROUND, and STEEL.",
+      "description_english": "A Normal-type attack. An egg i\\ns launched at the target. It m\\nay miss, however.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5251,7 +5251,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Sandstorm"
+      "moveId": "EggBomb"
     },
     {
       "english": "TM38",
@@ -5259,7 +5259,7 @@
       "price": 5500,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The foe is incinerated with an\\nintense flame. It may leave the\\ntarget with a burn.",
+      "description_english": "The strongest Fire-type attack\\n. Has a one-in-three chance of\\n inflicting a burn on the targ\\net.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5276,7 +5276,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Boulders are hurled at the foe.\\nIt also lowers the target's SPEED\\nstat if it hits.",
+      "description_english": "A Normal-type attack. It is hi\\nghly accurate, so it can be co\\nunted on to inflict damage.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5285,7 +5285,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "RockTomb"
+      "moveId": "Swift"
     },
     {
       "english": "TM40",
@@ -5293,7 +5293,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "An extremely fast attack against\\none target. It is impossible to\\nevade.",
+      "description_english": "In the first turn, the attacke\\nr tucks in its head. The next\\nturn, it head-butts at full st\\neam.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5302,7 +5302,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "AerialAce"
+      "moveId": "SkullBash"
     },
     {
       "english": "TM41",
@@ -5310,7 +5310,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "If enraged by this move, the target\\nbecomes incapable of using the same\\nmove twice in a row.",
+      "description_english": "Restores HP by 1/2 of the user\\n's maximum HP. May also be use\\nd in the field.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5319,7 +5319,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Torment"
+      "moveId": "Softboiled"
     },
     {
       "english": "TM42",
@@ -5327,7 +5327,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "An attack move that becomes very\\npowerful if the user is poisoned,\\nburned, or paralyzed.",
+      "description_english": "Works only on sleeping Pokémon.\\nThis technique steals the targ\\net's HP and adds it to the use\\nr's HP.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5336,7 +5336,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Facade"
+      "moveId": "DreamEater"
     },
     {
       "english": "TM43",
@@ -5344,7 +5344,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "An attack move that may have an\\nadditional effect depending on the\\nbattle terrain.",
+      "description_english": "The strongest Flying-type atta\\nck. Energy is stored in the fi\\nrst turn, then fired the next \\nturn.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5353,7 +5353,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "SecretPower"
+      "moveId": "SkyAttack"
     },
     {
       "english": "TM44",
@@ -5361,7 +5361,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A move that makes the user fall\\nasleep over two turns to restore HP\\nand heal any status problems.",
+      "description_english": "The user takes a nap to fully\\nrestore its HP and recover from\\nany status abnormalities.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5378,7 +5378,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The foe, if it is the opposite\\ngender as the user, becomes\\ninfatuated and may not attack.",
+      "description_english": "A special move that causes par\\nalysis. When paralyzed, the vi\\nctim has a one-in-four chance \\nof immobility.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5387,7 +5387,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Attract"
+      "moveId": "ThunderWave"
     },
     {
       "english": "TM46",
@@ -5395,7 +5395,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "An attack that gives the user an\\nopportunity to steal the foe's hold\\nitem.",
+      "description_english": "A Psychic-type attack of varyi\\nng intensity. It occasionally \\ninflicts heavy damage.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5404,7 +5404,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Thief"
+      "moveId": "Psywave"
     },
     {
       "english": "TM47",
@@ -5412,7 +5412,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The foe is struck with steel-hard\\nwings. It may also raise the user's\\nDEFENSE stat.",
+      "description_english": "The most powerful attack of al\\nl. However, the attacker faint\\ns after using this move.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5421,7 +5421,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "SteelWing"
+      "moveId": "Explosion"
     },
     {
       "english": "TM48",
@@ -5429,7 +5429,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A special power is transmitted to\\nthe foe, causing it to switch\\nabilities with the user.",
+      "description_english": "A Rock-type attack that hits t\\nhe target with an avalanche of\\nrocks and boulders.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5438,7 +5438,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "SkillSwap"
+      "moveId": "RockSlide"
     },
     {
       "english": "TM49",
@@ -5446,7 +5446,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A move that steals the effects of\\nany status-changing or healing move\\nthat the foe tries to use.",
+      "description_english": "A Normal-type attack. A triang\\nular field of energy is create\\nd and launched at the target.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5455,7 +5455,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Snatch"
+      "moveId": "TriAttack"
     },
     {
       "english": "TM50",
@@ -5463,7 +5463,7 @@
       "price": 3000,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "A maximum-power attack of great\\nferocity, but one that also sharply\\nreduces the user's SP. ATK stat.",
+      "description_english": "Uses 1/4 of the user's maximum\\nHP to create a substitute that\\ntakes the opponent's attacks.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5472,7 +5472,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Overheat"
+      "moveId": "Substitute"
     },
     {
       "english": "HM01",
@@ -5480,7 +5480,7 @@
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Attacks the foe with sharp blades\\nor claws. It can also cut down thin\\ntrees and grass outside of battle.",
+      "description_english": "A Normal-type attack. Also use\\nd for cutting small bushes to \\nopen new paths.",
       "importance": 1,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5497,7 +5497,7 @@
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The user flies up on the first turn,\\nthen attacks next turn. It can be\\nused to fly to any known town.",
+      "description_english": "The Pokémon flies high, then s\\ntrikes in the next turn. Used \\nfor flying to places already v\\nisited.",
       "importance": 1,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5514,7 +5514,7 @@
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Creates a huge wave, then crashes\\nit down on the foe. It can be used\\nfor traveling on water.",
+      "description_english": "A Water-type attack. The power\\n of this technique is strong a\\nnd highly accurate.",
       "importance": 1,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5531,7 +5531,7 @@
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "The user builds enormous power,\\nthen slams the foe. It can be used\\nfor moving large, round boulders.",
+      "description_english": "A very powerful Normal-type at\\ntack. Also used for moving obs\\ntacles like boulders.",
       "importance": 1,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
@@ -5548,7 +5548,7 @@
       "price": 0,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Looses a powerful blast of light\\nthat reduces the foe's accuracy.\\nIt also lights up dark caves.",
+      "description_english": "Creates a brilliant flash of l\\night that blinds the target. T\\nhis technique reduces the oppo\\nnent's accuracy.",
       "importance": 1,
       "registrability": 0,
       "pocket": "POCKET_TM_CASE",
