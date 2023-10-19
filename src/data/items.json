@@ -4792,7 +4792,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Double-Edge"
+      "moveId": "DoubleEdge"
     },
     {
       "english": "TM11",
@@ -5234,7 +5234,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Selfdestruct"
+      "moveId": "SelfDestruct"
     },
     {
       "english": "TM37",
@@ -5319,7 +5319,7 @@
       "battleUsage": 0,
       "battleUseFunc": "NULL",
       "secondaryId": 0,
-      "moveId": "Softboiled"
+      "moveId": "SoftBoiled"
     },
     {
       "english": "TM42",
