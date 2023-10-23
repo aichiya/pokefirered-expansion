@@ -3510,7 +3510,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_4 = {
 				{
 					.species = SPECIES_JUMPLUFF,
 					.heldItem = ITEM_LUM_BERRY,
-					.moves = {MOVE_TAIL_WHIP, MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_AERIAL_ACE},
+					.moves = {MOVE_TAIL_WHIP, MOVE_SUNNY_DAY, MOVE_SOLARBEAM, MOVE_AERIAL_ACE},
 					.hpEV = 0,
 					.attackEV = 0,
 					.defenseEV = 0,

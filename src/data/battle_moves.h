@@ -988,9 +988,9 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
     },
 
-    [MOVE_SOLAR_BEAM] =
+    [MOVE_SOLARBEAM] =
     {
-        .effect = EFFECT_SOLAR_BEAM,
+        .effect = EFFECT_SOLARBEAM,
         .power = 120,
         .type = TYPE_GRASS,
         .accuracy = 100,

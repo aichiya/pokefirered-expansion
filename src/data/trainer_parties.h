@@ -10549,7 +10549,7 @@ static const struct TrainerMonItemCustomMoves sParty_ChampionRematchBulbasaur[] 
         .lvl = 75,
         .species = SPECIES_VENUSAUR,
         .heldItem = ITEM_SITRUS_BERRY,
-        .moves = {MOVE_SOLAR_BEAM, MOVE_SLUDGE_BOMB, MOVE_EARTHQUAKE, MOVE_SUNNY_DAY},
+        .moves = {MOVE_SOLARBEAM, MOVE_SLUDGE_BOMB, MOVE_EARTHQUAKE, MOVE_SUNNY_DAY},
     },
 };
 

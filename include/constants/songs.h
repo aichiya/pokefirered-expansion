@@ -196,7 +196,7 @@
 #define SE_M_BRICK_BREAK          191 // SE_W280
 #define SE_M_GIGA_DRAIN           192 // SE_W202
 #define SE_M_PSYBEAM2             193 // SE_W060B
-#define SE_M_SOLAR_BEAM           194 // SE_W076
+#define SE_M_SOLARBEAM           194 // SE_W076
 #define SE_M_PETAL_DANCE          195 // SE_W080
 #define SE_M_TELEPORT             196 // SE_W100
 #define SE_M_MINIMIZE             197 // SE_W107

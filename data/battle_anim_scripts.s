@@ -96,7 +96,7 @@ gBattleAnims_Moves::
 	.4byte Move_LEECH_SEED
 	.4byte Move_GROWTH
 	.4byte Move_RAZOR_LEAF
-	.4byte Move_SOLAR_BEAM
+	.4byte Move_SOLARBEAM
 	.4byte Move_POISON_POWDER
 	.4byte Move_STUN_SPORE
 	.4byte Move_SLEEP_POWDER
@@ -3985,7 +3985,7 @@ Move_LUSTER_PURGE:
 	waitbgfadein
 	monbg ANIM_ATTACKER
 	setalpha 12, 8
-	playsewithpan SE_M_SOLAR_BEAM, SOUND_PAN_ATTACKER
+	playsewithpan SE_M_SOLARBEAM, SOUND_PAN_ATTACKER
 	createsprite gLusterPurgeCircleSpriteTemplate, ANIM_ATTACKER, 41, 0, 0, 0, 0
 	delay 20
 	createvisualtask AnimTask_BlendBattleAnimPalExclude, 5, 5, 2, 0, 16, RGB_WHITEALPHA
@@ -5527,7 +5527,7 @@ AuroraBeamCreateRings:
 	delay 1
 	return
 
-Move_SOLAR_BEAM:
+Move_SOLARBEAM:
 	loadspritegfx ANIM_TAG_ORBS
 	choosetwoturnanim SolarBeamSetUp, SolarBeamUnleash
 
@@ -5579,7 +5579,7 @@ SolarBeamAbsorbEffect:
 
 SolarBeamUnleash:
 	call SetSolarBeamBg
-	panse SE_M_SOLAR_BEAM, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +2, 0
+	panse SE_M_SOLARBEAM, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +2, 0
 	createvisualtask AnimTask_CreateSmallSolarBeamOrbs, 5
 	createsprite gSolarBeamBigOrbSpriteTemplate, ANIM_TARGET, 3, 15, 0, 20, 0
 	delay 4
@@ -10417,15 +10417,15 @@ SetSolarBeamBgContinue:
 	return
 
 SetSolarBeamBgContest:
-	fadetobg BG_SOLAR_BEAM_CONTESTS
+	fadetobg BG_SOLARBEAM_CONTESTS
 	goto SetSolarBeamBgContinue
 
 SetSolarBeamBgPlayer:
-	fadetobg BG_SOLAR_BEAM_PLAYER
+	fadetobg BG_SOLARBEAM_PLAYER
 	goto SetSolarBeamBgContinue
 
 SetSolarBeamBgOpponent:
-	fadetobg BG_SOLAR_BEAM_OPPONENT
+	fadetobg BG_SOLARBEAM_OPPONENT
 	goto SetSolarBeamBgContinue
 
 UnsetSolarBeamBg:

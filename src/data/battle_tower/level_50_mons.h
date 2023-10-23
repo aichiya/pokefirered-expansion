@@ -190,7 +190,7 @@ const struct BattleTowerPokemonTemplate gBattleTowerLevel50Mons[] =
 			MOVE_POISON_STING,
 			MOVE_GROWTH,
 			MOVE_ABSORB,
-			MOVE_SOLAR_BEAM
+			MOVE_SOLARBEAM
 		},
 		.evSpread = F_EV_SPREAD_SP_ATTACK,
 		.nature = NATURE_HARDY,
@@ -631,7 +631,7 @@ const struct BattleTowerPokemonTemplate gBattleTowerLevel50Mons[] =
 		.moves = {
 			MOVE_ROCK_THROW,
 			MOVE_SUNNY_DAY,
-			MOVE_SOLAR_BEAM,
+			MOVE_SOLARBEAM,
 			MOVE_SANDSTORM
 		},
 		.evSpread = F_EV_SPREAD_SPEED | F_EV_SPREAD_DEFENSE,
@@ -681,7 +681,7 @@ const struct BattleTowerPokemonTemplate gBattleTowerLevel50Mons[] =
 		.heldItem = BATTLE_TOWER_ITEM_MIRACLE_SEED,
 		.teamFlags = 0x0A,
 		.moves = {
-			MOVE_SOLAR_BEAM,
+			MOVE_SOLARBEAM,
 			MOVE_PETAL_DANCE,
 			MOVE_SWEET_SCENT,
 			MOVE_BULLET_SEED
@@ -748,7 +748,7 @@ const struct BattleTowerPokemonTemplate gBattleTowerLevel50Mons[] =
 		.moves = {
 			MOVE_TORMENT,
 			MOVE_EXTRASENSORY,
-			MOVE_SOLAR_BEAM,
+			MOVE_SOLARBEAM,
 			MOVE_AERIAL_ACE
 		},
 		.evSpread = F_EV_SPREAD_DEFENSE,
@@ -890,7 +890,7 @@ const struct BattleTowerPokemonTemplate gBattleTowerLevel50Mons[] =
 		.teamFlags = 0x05,
 		.moves = {
 			MOVE_SUNNY_DAY,
-			MOVE_SOLAR_BEAM,
+			MOVE_SOLARBEAM,
 			MOVE_SYNTHESIS,
 			MOVE_RAZOR_LEAF
 		},
@@ -2230,7 +2230,7 @@ const struct BattleTowerPokemonTemplate gBattleTowerLevel50Mons[] =
 		.moves = {
 			MOVE_SUNNY_DAY,
 			MOVE_SYNTHESIS,
-			MOVE_SOLAR_BEAM,
+			MOVE_SOLARBEAM,
 			MOVE_LEECH_SEED
 		},
 		.evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_DEFENSE,

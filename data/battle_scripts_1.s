@@ -172,7 +172,7 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectFutureSight            @ EFFECT_FUTURE_SIGHT
 	.4byte BattleScript_EffectGust                   @ EFFECT_GUST
 	.4byte BattleScript_EffectStomp                  @ EFFECT_FLINCH_MINIMIZE_HIT
-	.4byte BattleScript_EffectSolarBeam              @ EFFECT_SOLAR_BEAM
+	.4byte BattleScript_EffectSolarBeam              @ EFFECT_SOLARBEAM
 	.4byte BattleScript_EffectThunder                @ EFFECT_THUNDER
 	.4byte BattleScript_EffectTeleport               @ EFFECT_TELEPORT
 	.4byte BattleScript_EffectBeatUp                 @ EFFECT_BEAT_UP
@@ -1903,7 +1903,7 @@ BattleScript_EffectSolarBeam::
 BattleScript_SolarBeamDecideTurn::
 	jumpifstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS, BattleScript_TwoTurnMovesSecondTurn
 	jumpifword CMP_COMMON_BITS, gHitMarker, HITMARKER_NO_ATTACKSTRING, BattleScript_TwoTurnMovesSecondTurn
-	setbyte sTWOTURN_STRINGID, B_MSG_TURN1_SOLAR_BEAM
+	setbyte sTWOTURN_STRINGID, B_MSG_TURN1_SOLARBEAM
 	call BattleScriptFirstChargingTurn
 	goto BattleScript_MoveEnd
 BattleScript_SolarBeamOnFirstTurn::

@@ -1518,7 +1518,7 @@ static const u16 sEasyChatWordsByLetter_S[] = {
     EC_WORD_SO,
     EC_MOVE2(SOFT_BOILED),
     EC_WORD_SOFTWARE,
-    EC_MOVE(SOLAR_BEAM),
+    EC_MOVE(SOLARBEAM),
     EC_POKEMON2(SOLROCK),
     EC_WORD_SOME,
     EC_WORD_SOMEHOW,

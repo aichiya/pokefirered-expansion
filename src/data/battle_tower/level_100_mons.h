@@ -657,7 +657,7 @@ const struct BattleTowerPokemonTemplate gBattleTowerLevel100Mons[] =
 		.moves = {
 			MOVE_CHARM,
 			MOVE_ENCORE,
-			MOVE_SOLAR_BEAM,
+			MOVE_SOLARBEAM,
 			MOVE_ATTRACT
 		},
 		.evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED,
@@ -775,7 +775,7 @@ const struct BattleTowerPokemonTemplate gBattleTowerLevel100Mons[] =
 			MOVE_TOXIC,
 			MOVE_STUN_SPORE,
 			MOVE_SUNNY_DAY,
-			MOVE_SOLAR_BEAM
+			MOVE_SOLARBEAM
 		},
 		.evSpread = F_EV_SPREAD_DEFENSE | F_EV_SPREAD_ATTACK,
 		.nature = NATURE_LAX,
@@ -1071,7 +1071,7 @@ const struct BattleTowerPokemonTemplate gBattleTowerLevel100Mons[] =
 		.heldItem = BATTLE_TOWER_ITEM_PECHA_BERRY,
 		.teamFlags = 0x43,
 		.moves = {
-			MOVE_SOLAR_BEAM,
+			MOVE_SOLARBEAM,
 			MOVE_SUNNY_DAY,
 			MOVE_COSMIC_POWER,
 			MOVE_CALM_MIND
@@ -1358,7 +1358,7 @@ const struct BattleTowerPokemonTemplate gBattleTowerLevel100Mons[] =
 		.teamFlags = 0xCA,
 		.moves = {
 			MOVE_CONFUSE_RAY,
-			MOVE_SOLAR_BEAM,
+			MOVE_SOLARBEAM,
 			MOVE_SUNNY_DAY,
 			MOVE_GRUDGE
 		},
