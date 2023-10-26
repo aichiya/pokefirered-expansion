@@ -10,8 +10,6 @@ ViridianCity_Mart_OnLoad::
 	end
 
 ViridianCity_Mart_EventScript_HideQuestionnaire::
-	setmetatile 1, 3, METATILE_Mart_CounterMid_Top, 1
-	setmetatile 1, 4, METATILE_Mart_CounterMid_Bottom, 1
 	end
 
 ViridianCity_Mart_OnFrame::
@@ -65,9 +63,9 @@ ViridianCity_Mart_EventScript_Clerk::
 	.align 2
 ViridianCity_Mart_Items::
 	.2byte ITEM_POKE_BALL
-	.2byte ITEM_POTION
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_BURN_HEAL
 	.2byte ITEM_NONE
 	release
 	end
