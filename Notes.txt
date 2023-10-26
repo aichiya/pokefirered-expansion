@@ -16,9 +16,7 @@ Cut tree animation not accurate.
 Occupied tall grass sprite incorrect palette/sprite.
 Door animation incorrect palette/sprite.
 Special Atk & Special Def not combined.
-Pokemon gender not removed.
 Moves not changed.
-Learnsets not changed.
 Font not replaced.
 Gendered font colors not changed.
 Replay removal undecided.
@@ -26,12 +24,10 @@ BUG_CATCHER sprite misaligned.
 Red doesn't turn to face approaching trainer.
 Start menu shows help text in blue box at bottom of the screen, needs to be removed.
 Ingame trade success texts not tested.
-ROCKER sprite not replaced.
 Dark vision effect wrong, is circle of light but should black all but 1 tile color instead.
 Seemingly all object_event sprites are 4 pixels too low in the overworld.
 All cut bush flags must be checked.
 Can't save in the Safari Zone.
-Safari Zone gives 600 steps instead of 500.
 COOLTRAINER class not gendered.
 
 -Intro-
@@ -91,9 +87,6 @@ Day Care man dialogue for level up not checked.
 -Vermilion City-
 Pikachu uses clefairy sprite, should probably replace pikachu's generic sprite with recolored clefairy.
 LT.SURGE gives TM34 instead of TM24. [Check]
-
--PokeMart-
-2 tiles change during Parcel scene for some reason.
 
 -PokeCenter-
 Couch guy in Viridian doesn't talk.
