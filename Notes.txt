@@ -9,8 +9,6 @@ PC animation wrong tiles.
 Water no animation.
 Flowers no animation.
 PC options wrong.
-Textbox border no accurate option.
-Overworld character sprites 4 pixels too low.
 Pokemon center YES/NO should be HEAL/CANCEL.
 Cut tree animation not accurate.
 Occupied tall grass sprite incorrect palette/sprite.
@@ -29,6 +27,9 @@ Seemingly all object_event sprites are 4 pixels too low in the overworld.
 All cut bush flags must be checked.
 Can't save in the Safari Zone.
 COOLTRAINER class not gendered.
+menu_message needs data adjustment, bottom corner tiles use mirrored top corner tiles.
+GAME FREAK splash screen needs replacement.
+Window type 10 must be removed from options menu.
 
 -Intro-
 Pikachu screen not skipped.
