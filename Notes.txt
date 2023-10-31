@@ -18,7 +18,6 @@ Moves not changed.
 Font not replaced.
 Gendered font colors not changed.
 Replay removal undecided.
-BUG_CATCHER sprite misaligned.
 Red doesn't turn to face approaching trainer.
 Start menu shows help text in blue box at bottom of the screen, needs to be removed.
 Ingame trade success texts not tested.
@@ -28,17 +27,16 @@ All cut bush flags must be checked.
 Can't save in the Safari Zone.
 COOLTRAINER class not gendered.
 menu_message needs data adjustment, bottom corner tiles use mirrored top corner tiles.
-GAME FREAK splash screen needs improvements.
+
 Window type 10 must be removed from options menu.
-Into rival sprite wrong palette.
 
 -Intro-
-Pikachu screen not skipped.
-Controls screen not skipped.
-Gender choice not skipped.
+GAME FREAK splash screen needs improvements.
+Player sprite animation during Oak->Player sprite transition flickers, needs fixing.
 Player name no preset choices.
-Rival name presets wrong.
 Nidorino animation not changed yet.
+Intro rival sprite wrong palette.
+Rival preset name box has blank slot.
 
 -Palette Town-
 Rival sister map on table wrong sprite. [Check]
