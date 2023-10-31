@@ -1483,7 +1483,7 @@ static void SpriteCB_PartySummaryBall_OnSwitchout(struct Sprite *sprite)
 #undef sEnterSpeed
 #undef sExitSpeed
 
-static const u8 sText_HealthboxNickname[] = _("{HIGHLIGHT 02}");
+static const u8 sText_HealthboxNickname[] = _("");
 
 void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon)
 {
@@ -2205,9 +2205,9 @@ static u8 *AddTextPrinterAndCreateWindowOnHealthbox(const u8 *str, u32 x, u32 y,
     struct WindowTemplate winTemplate = sHealthboxWindowTemplate;
 
     winId = AddWindow(&winTemplate);
-    FillWindowPixelBuffer(winId, PIXEL_FILL(2));
+    FillWindowPixelBuffer(winId, PIXEL_FILL(0));
 
-    color[0] = 2;
+    color[0] = 0;
     color[1] = 1;
     color[2] = 3;
 
