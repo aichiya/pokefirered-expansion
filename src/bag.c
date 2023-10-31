@@ -11,9 +11,9 @@
 static const u16 sBagWindowPalF[] = INCBIN_U16("graphics/item_menu/bag_window_pal.gbapal");
 
 static const u8 sTextColors[][3] = {
-    {0, 1, 2},
     {0, 2, 3},
-    {0, 3, 2},
+    {0, 2, 3},
+    {0, 2, 3},
     {0, 8, 9}
 };
 
