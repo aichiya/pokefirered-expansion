@@ -589,16 +589,12 @@ static const u8 *const sMaleNameChoices[] =
 {
 #if defined(FIRERED)
     gNameChoice_Red,
-    gNameChoice_Fire,
     gNameChoice_Ash,
     gNameChoice_Kene,
-    gNameChoice_Geki,
 #elif defined(LEAFGREEN)
     gNameChoice_Green,
-    gNameChoice_Leaf,
     gNameChoice_Gary,
     gNameChoice_Kaz,
-    gNameChoice_Toru,
 #endif
     gNameChoice_Jak,
     gNameChoice_Janne,
@@ -650,12 +646,10 @@ static const u8 *const sRivalNameChoices[] =
     gNameChoice_Green,
     gNameChoice_Gary,
     gNameChoice_Kaz,
-    gNameChoice_Toru
 #elif defined(LEAFGREEN)
     gNameChoice_Red,
     gNameChoice_Ash,
     gNameChoice_Kene,
-    gNameChoice_Geki
 #endif
 };
 
@@ -1258,7 +1252,8 @@ static void Task_OakSpeech_FadeOutOak(u8 taskId)
         ClearDialogWindowAndFrame(WIN_INTRO_TEXTBOX, 1);
         CreateFadeInTask(taskId, 2);
         tTimer = 48;
-        gTasks[taskId].func = Task_OakSpeech_AskPlayerGender;
+        gSaveBlock2Ptr->playerGender = MALE;
+        gTasks[taskId].func = Task_OakSpeech_LoadPlayerPic;
     }
 }
 
