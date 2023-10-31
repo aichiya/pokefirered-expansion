@@ -1,6 +1,12 @@
 # Pokémon FireRed and LeafGreen
 
-![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/dbd5ac867ef1eb85c4394eb893a6122b142f37aa/ImagesAndStuff/Cerulean.png "Cerulean")
+![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/RedTitlePromo.png "Red Title Screen")
+
+![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/BlueTitlePromo.png "Blue Title Screen")
+
+![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/BattlePromo.png "Battle Screen")
+
+![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/ViridianForestPromo.png "Viridian Forest Screen")
 
 This is a disassembly of Pokémon FireRed and LeafGreen, the purpose of this project is to replicate the majority of Red and Blue in a faithful manner in full color.
 
@@ -24,28 +30,28 @@ Tile Animation - TBD
 
 
 
-Item Locations - TBD
+Item Locations - 99%
 
-Item Stats - TBD
+Item Stats - 0%
 
-Item Sprites - TBD
-
-
-
-Pokemon Move Stats - TBD
-
-Pokemon Learn Sets - TBD
-
-Pokemon Front Sprites - Mostly Done
-
-Pokemon Back Sprites - Mostly Done
-
-Pokemon Party Sprites - TBD
-
-Pokemon Palettes - TBD
+Item Sprites - 0%
 
 
 
-NPC Battle Sprites - Mostly Done
+Pokemon Move Stats - 0%
 
-NPC World Sprites - Mostly Done
+Pokemon Learn Sets - 100%
+
+Pokemon Front Sprites - 95%
+
+Pokemon Back Sprites - 95%
+
+Pokemon Party Sprites - 0%
+
+Pokemon Palettes - 75%
+
+
+
+NPC Battle Sprites - 99%
+
+NPC World Sprites - 99%
