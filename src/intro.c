@@ -405,7 +405,7 @@ static const struct WindowTemplate sWindowTemplates[WIN_COUNT + 1] = {
 	    .tilemapTop = 4,
 	    .width = 18,
 	    .height = 9,
-	    .paletteNum = 13,
+	    .paletteNum = 14,
 	    .baseBlock = 0x000
     },
     [WIN_COUNT] = DUMMY_WIN_TEMPLATE
