@@ -28,8 +28,9 @@ All cut bush flags must be checked.
 Can't save in the Safari Zone.
 COOLTRAINER class not gendered.
 menu_message needs data adjustment, bottom corner tiles use mirrored top corner tiles.
-GAME FREAK splash screen needs replacement.
+GAME FREAK splash screen needs improvements.
 Window type 10 must be removed from options menu.
+Into rival sprite wrong palette.
 
 -Intro-
 Pikachu screen not skipped.
