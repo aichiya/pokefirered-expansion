@@ -347,6 +347,9 @@ firered_rev1:           ; @$(MAKE) GAME_VERSION=FIRERED GAME_REVISION=1
 leafgreen:              ; @$(MAKE) GAME_VERSION=LEAFGREEN
 leafgreen_rev1:         ; @$(MAKE) GAME_VERSION=LEAFGREEN GAME_REVISION=1
 
+red:                ; @$(MAKE) GAME_VERSION=FIRERED
+blue:              ; @$(MAKE) GAME_VERSION=LEAFGREEN
+
 compare_firered:        ; @$(MAKE) GAME_VERSION=FIRERED COMPARE=1
 compare_firered_rev1:   ; @$(MAKE) GAME_VERSION=FIRERED GAME_REVISION=1 COMPARE=1
 compare_leafgreen:      ; @$(MAKE) GAME_VERSION=LEAFGREEN COMPARE=1
