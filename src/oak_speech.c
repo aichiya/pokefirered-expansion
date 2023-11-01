@@ -2124,7 +2124,7 @@ static void PrintNameChoiceOptions(u8 taskId, u8 hasPlayerBeenNamed)
         textPtrs = sRivalNameChoices;
     for (i = 0; i < ARRAY_COUNT(sRivalNameChoices); i++)
         AddTextPrinterParameterized(tMenuWindowId, FONT_NORMAL, textPtrs[i], 8, 16 * (i + 1) + 1, 0, NULL);
-    Menu_InitCursor(tMenuWindowId, FONT_NORMAL, 0, 1, 16, 5, 0);
+    Menu_InitCursor(tMenuWindowId, FONT_NORMAL, 0, 1, 16, 4, 0);
     CopyWindowToVram(tMenuWindowId, COPYWIN_FULL);
 }
 
