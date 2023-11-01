@@ -427,8 +427,7 @@ void TrySetUpQuestLogScenes_ElseContinueFromSave(u8 taskId)
 
     if (sNumScenes != 0)
     {
-        gHelpSystemEnabled = FALSE;
-        Task_BeginQuestLogPlayback(taskId);
+        SetMainCallback2(CB2_ContinueSavedGame);
         DestroyTask(taskId);
     }
     else
