@@ -218,16 +218,13 @@ static const struct MenuAction sItemMenuContextActions[] = {
 static const u8 sContextMenuItems_Field[][4] = {
     {
         ITEMMENUACTION_USE,
-        ITEMMENUACTION_GIVE,
-        ITEMMENUACTION_TOSS,
-        ITEMMENUACTION_CANCEL
+        ITEMMENUACTION_TOSS
     }, {
         ITEMMENUACTION_USE,
         ITEMMENUACTION_REGISTER,
         ITEMMENUACTION_CANCEL,
         ITEMMENUACTION_DUMMY
     }, {
-        ITEMMENUACTION_GIVE,
         ITEMMENUACTION_TOSS,
         ITEMMENUACTION_CANCEL,
         ITEMMENUACTION_DUMMY
@@ -236,20 +233,17 @@ static const u8 sContextMenuItems_Field[][4] = {
 
 static const u8 sContextMenuItems_CheckGiveTossCancel[] = {
     ITEMMENUACTION_CHECK,
-    ITEMMENUACTION_GIVE,
     ITEMMENUACTION_TOSS,
     ITEMMENUACTION_CANCEL
 };
 
 static const u8 sContextMenuItems_GiveIfNotKeyItemPocket[][2] = {
     {
-        ITEMMENUACTION_GIVE,
         ITEMMENUACTION_CANCEL
     }, {
         ITEMMENUACTION_CANCEL,
         ITEMMENUACTION_DUMMY
     }, {
-        ITEMMENUACTION_GIVE,
         ITEMMENUACTION_CANCEL
     }
 };
@@ -1391,7 +1385,7 @@ static void OpenContextMenu(u8 taskId)
             switch (gBagMenuState.pocket)
             {
             case OPEN_BAG_ITEMS:
-                sContextMenuNumItems = 4;
+                sContextMenuNumItems = 2;
                 if (ItemIsMail(gSpecialVar_ItemId) == TRUE)
                     sContextMenuItemsPtr = sContextMenuItems_CheckGiveTossCancel;
                 else
@@ -1399,7 +1393,7 @@ static void OpenContextMenu(u8 taskId)
                 break;
             case OPEN_BAG_KEYITEMS:
                 sContextMenuItemsPtr = sContextMenuItemsBuffer;
-                sContextMenuNumItems = 3;
+                sContextMenuNumItems = 2;
                 sContextMenuItemsBuffer[2] = ITEMMENUACTION_CANCEL;
                 if (gSaveBlock1Ptr->registeredItem == gSpecialVar_ItemId)
                     sContextMenuItemsBuffer[1] = ITEMMENUACTION_DESELECT;
