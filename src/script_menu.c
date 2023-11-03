@@ -167,11 +167,9 @@ static const struct MenuAction sMultichoiceList_CeladonVendingMachine[] = {
 };
 
 static const struct MenuAction sMultichoiceList_GameCornerTMPrizes[] = {
-    { gText_Tm13_4000Coins },
-    { gText_Tm23_3500Coins },
-    { gText_Tm24_4000Coins },
-    { gText_Tm30_4500Coins },
-    { gText_Tm35_4000Coins },
+    { gText_Tm23_3300Coins },
+    { gText_Tm15_5500Coins },
+    { gText_Tm50_7700Coins },
     { gText_NoThanks_2 }
 };
 
@@ -314,16 +312,25 @@ static const struct MenuAction sMultichoiceList_BikeShop[] = {
     { gText_NoThanks }
 };
 
-static const struct MenuAction sMultichoiceList_GameCornerPokemonPrizes[] = {
+static const struct MenuAction sMultichoiceList_GameCornerPokemonPrizes1[] = {
 #if defined(FIRERED)
-    { gText_Abra_180Coins },
-    { gText_Clefairy_500Coins },
-    { gText_Dratini_2800Coins },
-    { gText_Scyther_5500Coins },
-    { gText_Porygon_9999Coins },
+    { gText_Abra_120Coins },
+    { gText_Clefairy_750Coins },
+    { gText_Nidorino_1200Coins },
 #elif defined(LEAFGREEN)
     { gText_Abra_120Coins },
     { gText_Clefairy_750Coins },
+    { gText_Nidorino_1200Coins },
+#endif
+    { gText_NoThanks_2 }
+};
+
+static const struct MenuAction sMultichoiceList_GameCornerPokemonPrizes2[] = {
+#if defined(FIRERED)
+    { gText_Pinsir_2500Coins },
+    { gText_Dratini_4600Coins },
+    { gText_Porygon_6500Coins },
+#elif defined(LEAFGREEN)
     { gText_Pinsir_2500Coins },
     { gText_Dratini_4600Coins },
     { gText_Porygon_6500Coins },
@@ -511,7 +518,8 @@ static const struct MultichoiceListStruct sMultichoiceLists[] = {
     [MULTICHOICE_EXIT_2]                                     = MULTICHOICE(sMultichoiceList_Exit),
     [MULTICHOICE_EXIT_3]                                     = MULTICHOICE(sMultichoiceList_Exit),
     [MULTICHOICE_BIKE_SHOP]                                  = MULTICHOICE(sMultichoiceList_BikeShop),
-    [MULTICHOICE_GAME_CORNER_POKEMON_PRIZES]                 = MULTICHOICE(sMultichoiceList_GameCornerPokemonPrizes),
+    [MULTICHOICE_GAME_CORNER_POKEMON_PRIZES1]                = MULTICHOICE(sMultichoiceList_GameCornerPokemonPrizes1),
+    [MULTICHOICE_GAME_CORNER_POKEMON_PRIZES2]                = MULTICHOICE(sMultichoiceList_GameCornerPokemonPrizes2),
     [MULTICHOICE_TRAINER_SCHOOL_WHITEBOARD]                  = MULTICHOICE(sMultichoiceList_TrainerSchoolWhiteboard),
     [MULTICHOICE_YES_NO_INFO]                                = MULTICHOICE(sMultichoiceList_YesNoInfo),
     [MULTICHOICE_SINGLE_DOUBLE_MULTI_INFO_EXIT]              = MULTICHOICE(sMultichoiceList_SingleDoubleMultiInfoExit),
@@ -551,7 +559,6 @@ static const struct MultichoiceListStruct sMultichoiceLists[] = {
     [MULTICHOICE_MUSHROOMS]                                  = MULTICHOICE(sMultichoiceList_Mushrooms),
     [MULTICHOICE_TRADE_COLOSSEUM_BLANK_CRUSH]                = MULTICHOICE(sMultichoiceList_TradeColosseumBlankCrush),
     [MULTICHOICE_TRADE_COLOSSEUM_BLANK]                      = MULTICHOICE(sMultichoiceList_TradeColosseumBlank),
-    [MULTICHOICE_SEVII_NAVEL]                                = MULTICHOICE(sMultichoiceList_SeviiNavel),
     [MULTICHOICE_SEVII_BIRTH]                                = MULTICHOICE(sMultichoiceList_SeviiBirth),
     [MULTICHOICE_SEVII_NAVEL_BIRTH]                          = MULTICHOICE(sMultichoiceList_SeviiNavelBirth),
     [MULTICHOICE_SEAGALLOP_123]                              = MULTICHOICE(sMultichoiceList_Seagallop123),

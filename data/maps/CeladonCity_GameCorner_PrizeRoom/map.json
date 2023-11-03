@@ -56,7 +56,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "CeladonCity_GameCorner_PrizeRoom_EventScript_PrizeClerkMons",
+      "script": "CeladonCity_GameCorner_PrizeRoom_EventScript_PrizeClerkMons1",
       "flag": "0",
       "in_connection": false
     },
@@ -86,7 +86,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "CeladonCity_GameCorner_PrizeRoom_EventScript_PrizeClerkItems",
+      "script": "CeladonCity_GameCorner_PrizeRoom_EventScript_PrizeClerkMons2",
       "flag": "0",
       "in_connection": false
     }

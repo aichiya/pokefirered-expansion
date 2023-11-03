@@ -18,7 +18,7 @@
 #define MULTICHOICE_EXIT_2                                     11
 #define MULTICHOICE_EXIT_3                                     12
 #define MULTICHOICE_BIKE_SHOP                                  13
-#define MULTICHOICE_GAME_CORNER_POKEMON_PRIZES                 14
+#define MULTICHOICE_GAME_CORNER_POKEMON_PRIZES1                14
 #define MULTICHOICE_TRAINER_SCHOOL_WHITEBOARD                  15
 #define MULTICHOICE_YES_NO_INFO                                16
 #define MULTICHOICE_SINGLE_DOUBLE_MULTI_INFO_EXIT              17
@@ -58,7 +58,7 @@
 #define MULTICHOICE_MUSHROOMS                                  51
 #define MULTICHOICE_TRADE_COLOSSEUM_BLANK_CRUSH                52
 #define MULTICHOICE_TRADE_COLOSSEUM_BLANK                      53
-#define MULTICHOICE_SEVII_NAVEL                                54
+#define MULTICHOICE_GAME_CORNER_POKEMON_PRIZES2                54
 #define MULTICHOICE_SEVII_BIRTH                                55
 #define MULTICHOICE_SEVII_NAVEL_BIRTH                          56
 #define MULTICHOICE_SEAGALLOP_123                              57

@@ -18,15 +18,13 @@ CeladonCity_GameCorner_PrizeRoom_Text_HereYouGo::
     .string "はい どうぞ$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_YouWantPrize::
-    .string "So, you want the {STR_VAR_1}?$"
+    .string "So, you want {STR_VAR_1}?$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_YouWantTM::
-    .string "Okay, a TM of {STR_VAR_2}\n"
-    .string "is what you want?$"
+    .string "So, you want {STR_VAR_2}?$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_NeedMoreCoins::
-    .string "Sorry, you'll need more COINS\n"
-    .string "than that.$"
+    .string "Sorry, you need more coins.$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_OopsNotEnoughRoom::
     .string "おきゃくさん もう もてないよ$"
