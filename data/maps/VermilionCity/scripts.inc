@@ -97,7 +97,6 @@ VermilionCity_EventScript_HasMysticTicket::
 	call_if_unset FLAG_SHOWN_MYSTIC_TICKET, VermilionCity_EventScript_ShowMysticTicket
 	message VermilionCity_Text_BoardSeagallopFerry
 	waitmessage
-	multichoice 17, 6, MULTICHOICE_SEVII_NAVEL, FALSE
 	switch VAR_RESULT
 	case 0, EventScript_SeviiDestinationsPage1
 	case 1, EventScript_SailToNavelRock
@@ -132,7 +131,6 @@ VermilionCity_EventScript_HasMysticAndAuroraTickets::
 	call_if_unset FLAG_SHOWN_AURORA_TICKET, VermilionCity_EventScript_ShowAuroraTicket
 	message VermilionCity_Text_BoardSeagallopFerry
 	waitmessage
-	multichoice 13, 5, MULTICHOICE_SEVII_NAVEL_BIRTH, FALSE
 	switch VAR_RESULT
 	case 0, EventScript_SeviiDestinationsPage1
 	case 1, EventScript_SailToNavelRock
