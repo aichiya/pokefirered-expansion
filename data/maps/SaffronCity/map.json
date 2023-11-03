@@ -247,7 +247,7 @@
       "x": 19,
       "y": 32,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 5,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
