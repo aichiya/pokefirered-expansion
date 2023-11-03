@@ -64,7 +64,7 @@ PalletTown_ProfessorOaksLab_Text_RivalTellSisNotToGiveYouMap::
     .string "I know! I'll borrow a TOWN MAP\n"
     .string "from my sis!\p"
     .string "I'll tell her not to lend you one,\n"
-    .string "{PLAYER}! Hahaha!\p"
+    .string "{PLAYER}! Hahaha!$"
 
 PalletTown_ProfessorOaksLab_Text_OakThreeMonsChooseOne::
     .string "OAK: {RIVAL}?\n"
@@ -138,9 +138,8 @@ PalletTown_ProfessorOaksLab_Text_DeliveredOaksParcel::
     .string "{PLAYER} delivered OAK'S PARCEL.$"
 
 PalletTown_ProfessorOaksLab_Text_OakCustomBallIOrdered::
-    .string "Ah! This is the\n"
-    .string "custom POKé BALL\p"
-    .string "I ordered!\n"
+    .string "Ah! This is the custom\n"
+    .string "POKé BALL I ordered!\p"
     .string "Thank you!$"
 
 PalletTown_ProfessorOaksLab_Text_OakHaveRequestForYouTwo::
