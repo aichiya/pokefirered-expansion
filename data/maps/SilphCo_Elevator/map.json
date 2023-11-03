@@ -22,15 +22,15 @@
       "x": 1,
       "y": 3,
       "elevation": 0,
-      "dest_map": "MAP_SILPH_CO_ELEVATOR",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "WARP_ID_DYNAMIC"
     },
     {
       "x": 2,
       "y": 3,
       "elevation": 0,
-      "dest_map": "MAP_SILPH_CO_ELEVATOR",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "WARP_ID_DYNAMIC"
     }
   ],
   "coord_events": [
