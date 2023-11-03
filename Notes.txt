@@ -1,33 +1,21 @@
 
--Title-
-'95.'96.'98 screen not changed.
-Gamefreak screen not changed.
-Pokemon logo not in correct position.
-
 -Global-
 PC animation wrong tiles.
 Water no animation.
 Flowers no animation.
 PC options wrong.
 Pokemon center YES/NO should be HEAL/CANCEL.
-Cut tree animation not accurate.
-Occupied tall grass sprite incorrect palette/sprite.
 Door animation incorrect palette/sprite.
 Special Atk & Special Def not combined.
-Moves not changed.
 Font not replaced.
 Gendered font colors not changed.
-Replay removal undecided.
 Red doesn't turn to face approaching trainer.
 Start menu shows help text in blue box at bottom of the screen, needs to be removed.
 Ingame trade success texts not tested.
 Dark vision effect wrong, is circle of light but should black all but 1 tile color instead.
-Seemingly all object_event sprites are 4 pixels too low in the overworld.
 All cut bush flags must be checked.
-Can't save in the Safari Zone.
 COOLTRAINER class not gendered.
 menu_message needs data adjustment, bottom corner tiles use mirrored top corner tiles.
-
 Window type 10 must be removed from options menu.
 
 -Intro-
@@ -53,18 +41,16 @@ POKeMON not changed to PKMN.
 BAG not changed to ITEM.
 ITEM and PKMN should be swapped.
 PP is above move type, should be below.
-Selection bob animation for Pokemon and GUI don't exist in Blue, removal undecided.
 Lost Against text not skipped.
 Paid Prize Money text not skipped.
 ... ... ... ... not skipped.
 Titles like LEADER not excluded from trainer names.
 TEAM ROCKET GRUNT should be ROCKET.
-Full pokeball icon not changed.
-Pokeball arrow goes offscreen instead of starting and bending onscreen.
+Pokeball arrow goes offscreen instead of starting and ending onscreen.
 Player backsprite too high.
 COOLTRAINER title isn't gendered.
-ROCKER battle sprite not replaced.
 ELITE FOUR title not removed from trainers.
+Prize money not checked.
 
 -Viridian City-
 Catch tutorial forced, no YES/NO, dialogue not finished.
@@ -85,7 +71,6 @@ Top right of area has border issue, must figure out solution.
 Day Care man dialogue for level up not checked.
 
 -Vermilion City-
-Pikachu uses clefairy sprite, should probably replace pikachu's generic sprite with recolored clefairy.
 LT.SURGE gives TM34 instead of TM24. [Check]
 
 -PokeCenter-
@@ -103,7 +88,6 @@ Tileset change visible from right exit, must give some world to Route 12.
 
 -SS.ANNE-
 1F Room2 item is TM31, should be TM08. [Check]
-1F worker sprite not yet edited.
 2F sailor should have bellhop sprite.
 2F Room2 STARDUST should be MAX ETHER. [Check]
 2F Room4 X ATTACK should be RARE CANDY. [Check]
@@ -111,7 +95,6 @@ Tileset change visible from right exit, must give some world to Route 12.
 -LAVENDER TOWN-
 House 2 guy is supposed to use balding CEO sprite. [Check]
 PokemonTower_4F GREAT BALL should be HP UP. [Check]
-Pokedoll trick doesn't work for GHOST encounter.
 THE GHOST instead of GHOST appeared.
 Roof palette error, need to figure out a fix.
 
@@ -120,15 +103,15 @@ Lookout tower woman gives TM27 instead of TM39. [Check]
 Possible remaining decoration error in left border OOB.
 
 -Celadon City-
-Left coin exchange worker has too many prizes, also prices are wrong.
-Middle coin exchange worker has totally wrong prizes.
-Right coin exchange worker has too many prizes, also prices are wrong.
+Left coin exchange prizes not checked for LeafGreen/Blue.
+Middle coin exchange prizes not checked for LeafGreen/Blue.
+Right coin exchange prizes not checked for LeafGreen/Blue.
+Cancelling prize purchase should display "Oh, fine then." text. Currently no dialogue.
 House1 incorrectly uses generic house layout, somehow linked to all others. Must use custom layout.
 Hotel couch guy doesn't talk, needs the usual sprite adjustment.
 ERIKA gives TM19 instead of TM21. [Check]
 DEPT.STORE_2F missing NPC.
 DEPT.STORE_3F move tutor is supposed to be TM gifter.
-DEPT.STORE thirsty girl dialogue shouldn't have EXIT in menu.
 Giving Water to girl gets TM16, should be TM13. [Check]
 Giving Soda to girl gets TM20, should be TM48. [Check]
 Giving Lemonade to girl gets TM33, should be TM49. [Check]
@@ -156,7 +139,6 @@ Safari Zone East TM11 is supposed to be TM37. [Check]
 Safari Zone North TM47 is supposed to be TM40. [Check]
 
 -Silph Co-
-Elevator broken.
 5F TM01 should be TM09. [Check]
 6F X SPECIAL is supposed to be X ACCURACY. [Check]
 7F TM08 is supposed to be TM03. [Check]
@@ -179,7 +161,7 @@ Voltorb and Electrode don't say "Bzzzt!" before battle.
 3F TM50  is supposed to be TM47. [Check]
 
 -Pokemon League-
-Don't Leave script doesn't play, exits simply don't have correct tiles.
+Don't Leave script doesn't play, door tiles removed instead..
 Member doesn't face up after battle.
 Record machine animation skipped entirely, must restore playing sound.
 
