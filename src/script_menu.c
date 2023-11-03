@@ -208,43 +208,36 @@ static const struct MenuAction sMultichoiceList_DeptStoreElevator[] = {
 };
 
 static const struct MenuAction sMultichoiceList_ThirstyGirlFreshWater[] = {
-    { gText_FreshWater },
-    { gOtherText_Exit }
+    { gText_FreshWater }
 };
 
 static const struct MenuAction sMultichoiceList_ThirstyGirlSodaPop[] = {
-    { gText_SodaPop },
-    { gOtherText_Exit }
+    { gText_SodaPop }
 };
 
 static const struct MenuAction sMultichoiceList_ThirstyGirlFreshWaterSodaPop[] = {
     { gText_FreshWater },
-    { gText_SodaPop },
-    { gOtherText_Exit }
+    { gText_SodaPop }
 };
 
 static const struct MenuAction sMultichoiceList_ThirstyGirlLemonade[] = {
-    { gText_Lemonade },
-    { gOtherText_Exit }
+    { gText_Lemonade }
 };
 
 static const struct MenuAction sMultichoiceList_ThirstyGirlFreshWaterLemonade[] = {
     { gText_FreshWater },
-    { gText_Lemonade },
-    { gOtherText_Exit }
+    { gText_Lemonade }
 };
 
 static const struct MenuAction sMultichoiceList_ThirstyGirlSodaPopLemonade[] = {
     { gText_SodaPop },
-    { gText_Lemonade },
-    { gOtherText_Exit }
+    { gText_Lemonade }
 };
 
 static const struct MenuAction sMultichoiceList_ThirstyGirlFreshWaterSodaPopLemonade[] = {
     { gText_FreshWater },
     { gText_SodaPop },
-    { gText_Lemonade },
-    { gOtherText_Exit }
+    { gText_Lemonade }
 };
 
 static const struct MenuAction sMultichoiceList_Unref_Shards_0[] = {
