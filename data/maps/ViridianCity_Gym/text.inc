@@ -35,10 +35,10 @@ ViridianCity_Gym_Text_ExplainEarthBadgeTakeThis::
     .string "It is my gift for your POKéMON\n"
     .string "LEAGUE challenge!$"
 
-ViridianCity_Gym_Text_ReceivedTM26FromGiovanni::
+ViridianCity_Gym_Text_ReceivedTM27FromGiovanni::
     .string "{PLAYER} received TM27!$"
 
-ViridianCity_Gym_Text_ExplainTM26::
+ViridianCity_Gym_Text_ExplainTM27::
     .string "TM27 is FISSURE!\p"
     .string "It will take out POKéMON\n"
     .string "with just one hit!\p"
