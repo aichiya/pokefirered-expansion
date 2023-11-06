@@ -128,32 +128,6 @@ EventScript_MegaKickTaught::
 	release
 	end
 
-EventScript_SoftboiledTutor::
-	lock
-	faceplayer
-	goto_if_set FLAG_TUTOR_SOFT_BOILED, EventScript_SoftboiledTaught
-	msgbox Text_SoftboiledTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, EventScript_SoftboiledDeclined
-	call EventScript_CanOnlyBeLearnedOnce
-	goto_if_eq VAR_RESULT, NO, EventScript_SoftboiledDeclined
-	msgbox Text_SoftboiledWhichMon
-	setvar VAR_0x8005, MOVETUTOR_SOFT_BOILED
-	call EventScript_ChooseMoveTutorMon
-	goto_if_eq VAR_RESULT, FALSE, EventScript_SoftboiledDeclined
-	setflag FLAG_TUTOR_SOFT_BOILED
-	goto EventScript_SoftboiledTaught
-	end
-
-EventScript_SoftboiledDeclined::
-	msgbox Text_SoftboiledDeclined
-	release
-	end
-
-EventScript_SoftboiledTaught::
-	msgbox Text_SoftboiledTaught
-	release
-	end
-
 FuchsiaCity_EventScript_SubstituteTutor::
 	lock
 	faceplayer

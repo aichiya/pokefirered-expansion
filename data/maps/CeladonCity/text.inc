@@ -80,24 +80,20 @@ CeladonCity_Text_ScaldedTongueOnTea::
     .string "But it was boiling hot!\n"
     .string "Gotta cool it to drink it.$"
 
-Text_SoftboiledTeach::
+CeladonCity_Text_TakeTM41::
     .string "Hello, there!\p"
     .string "I've seen you, but I never\n"
     .string "had a chance to talk!\p"
     .string "Here's a gift for\n"
     .string "dropping by!$"
 
-Text_SoftboiledDeclined::
-    .string "I'll always be keeping an eye out\n"
-    .string "for you.\p"
-    .string "I hope we can chat again.$"
+CeladonCity_Text_PutTM41Away::
+    .string "{PLAYER} put TM41 away in\n"
+    .string "the BAG's TM CASE.$"
 
-Text_SoftboiledWhichMon::
-    .string "So, who's the POKéMON that gets\n"
-    .string "the chance to learn SOFTBOILED?$"
-
-Text_SoftboiledTaught::
-    .string "I wish you the best of luck!$"
+CeladonCity_Text_TM41_Contains::
+    .string "TM41 teaches SOFTBOILED!\n"
+    .string "Only one POKéMON can use it!$"
 
 CeladonCity_Text_SomeoneStoleSilphScope::
     .string "Oh, what am I to do…\p"
