@@ -307,9 +307,9 @@ static const struct MenuAction sMultichoiceList_BikeShop[] = {
 
 static const struct MenuAction sMultichoiceList_GameCornerPokemonPrizes1[] = {
 #if defined(FIRERED)
-    { gText_Abra_120Coins },
-    { gText_Clefairy_750Coins },
-    { gText_Nidorino_1200Coins },
+    { gText_Abra_180Coins },
+    { gText_Clefairy_500Coins },
+    { gText_Nidorina_1200Coins },
 #elif defined(LEAFGREEN)
     { gText_Abra_120Coins },
     { gText_Clefairy_750Coins },
@@ -320,9 +320,9 @@ static const struct MenuAction sMultichoiceList_GameCornerPokemonPrizes1[] = {
 
 static const struct MenuAction sMultichoiceList_GameCornerPokemonPrizes2[] = {
 #if defined(FIRERED)
-    { gText_Pinsir_2500Coins },
-    { gText_Dratini_4600Coins },
-    { gText_Porygon_6500Coins },
+    { gText_Scyther_5500Coins },
+    { gText_Dratini_2800Coins },
+    { gText_Porygon_9999Coins },
 #elif defined(LEAFGREEN)
     { gText_Pinsir_2500Coins },
     { gText_Dratini_4600Coins },
