@@ -4,8 +4,7 @@ ViridianCity_Text_TakeTM42::
     .string "I had this dream about a\n"
     .string "DROWZEE eating my dream.\p"
     .string "What's this?\n"
-    .string "Where did this TM\p"
-    .string "come from?\p"
+    .string "Where did this TM come from?\p"
     .string "This is spooky! Here,\n"
     .string "you can have this TM.$"
 
