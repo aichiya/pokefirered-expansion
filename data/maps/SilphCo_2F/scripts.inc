@@ -7,8 +7,29 @@ SilphCo_2F_OnLoad::
 	call_if_unset FLAG_SILPH_2F_DOOR_2, EventScript_Close2FDoor2
 	end
 
-SilphCo_2F_EventScript_ThunderWaveTutor::
-	goto EventScript_ThunderWaveTutor
+SilphCo_2F_EventScript_TM36Gift::
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_TM36_IN_SILPH_CO, SilphCo_2F_EventScript_AlreadyGotTM36
+	msgbox SilphCo_2F_Text_TakeTM36
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	checkitemspace ITEM_TM36
+	goto_if_eq VAR_RESULT, FALSE, EventScript_BagIsFull
+	bufferitemname STR_VAR_2, ITEM_TM36
+	playfanfare MUS_LEVEL_UP
+	message Text_ObtainedTheX
+	waitmessage
+	waitfanfare
+	additem ITEM_TM36
+	msgbox SilphCo_2F_Text_PutTM36Away
+	call EventScript_RestorePrevTextColor
+	setflag FLAG_GOT_TM36_IN_SILPH_CO
+	release
+	end
+	
+SilphCo_2F_EventScript_AlreadyGotTM36::
+	msgbox SilphCo_2F_Text_TM36_Contains
+	release
 	end
 
 SilphCo_2F_EventScript_FloorSign::

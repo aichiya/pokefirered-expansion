@@ -41,7 +41,7 @@ SilphCo_2F_Text_Grunt2PostBattle::
     .string "SILPH CO. will be merged with\n"
     .string "TEAM ROCKET!$"
 
-Text_ThunderWaveTeach::
+SilphCo_2F_Text_TakeTM36::
     .string "Eeek!\n"
     .string "No! Stop! Help!\p"
     .string "Oh, you're not with TEAM ROCKET.\n"
@@ -49,15 +49,11 @@ Text_ThunderWaveTeach::
     .string "I'm sorry.\n"
     .string "Here, please take this!$"
 
-Text_ThunderWaveDeclined::
-    .string "Oh…\n"
-    .string "But THUNDER WAVE is convenient…$"
+SilphCo_2F_Text_PutTM36Away::
+    .string "{PLAYER} put TM36 away in\n"
+    .string "the BAG's TM CASE.$"
 
-Text_ThunderWaveWhichMon::
-    .string "Which POKéMON should I teach\n"
-    .string "THUNDER WAVE?$"
-
-Text_ThunderWaveTaught::
+SilphCo_2F_Text_TM36_Contains::
     .string "TM36 is SELFDESTRUCT!\n"
     .string "It's powerful, but the POKéMON\p"
     .string "that uses it faints!\l"
