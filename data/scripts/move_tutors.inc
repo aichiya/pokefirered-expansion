@@ -232,32 +232,6 @@ EventScript_SeismicTossTaught::
 	release
 	end
 
-EventScript_CounterTutor::
-	lock
-	faceplayer
-	goto_if_set FLAG_TUTOR_COUNTER, EventScript_CounterTaught
-	msgbox Text_CounterTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, EventScript_CounterDeclined
-	call EventScript_CanOnlyBeLearnedOnce
-	goto_if_eq VAR_RESULT, NO, EventScript_CounterDeclined
-	msgbox Text_CounterWhichMon
-	setvar VAR_0x8005, MOVETUTOR_COUNTER
-	call EventScript_ChooseMoveTutorMon
-	goto_if_eq VAR_RESULT, FALSE, EventScript_CounterDeclined
-	setflag FLAG_TUTOR_COUNTER
-	goto EventScript_CounterTaught
-	end
-
-EventScript_CounterDeclined::
-	msgbox Text_CounterDeclined
-	release
-	end
-
-EventScript_CounterTaught::
-	msgbox Text_CounterTaught
-	release
-	end
-
 EventScript_MetronomeTutor::
 	lock
 	faceplayer

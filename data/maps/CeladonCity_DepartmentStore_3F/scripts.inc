@@ -1,8 +1,29 @@
 CeladonCity_DepartmentStore_3F_MapScripts::
 	.byte 0
 
-CeladonCity_DepartmentStore_3F_EventScript_CounterTutor::
-	goto EventScript_CounterTutor
+CeladonCity_DepartmentStore_3F_EventScript_TM18Gift::
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_TM18_IN_DEPT_STORE_3F, CeladonCity_DepartmentStore_3F_EventScript_AlreadyGotTM18
+	msgbox CeladonCity_DepartmentStore_3F_Text_TakeTM18
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	checkitemspace ITEM_TM18
+	goto_if_eq VAR_RESULT, FALSE, EventScript_BagIsFull
+	bufferitemname STR_VAR_2, ITEM_TM18
+	playfanfare MUS_LEVEL_UP
+	message Text_ObtainedTheX
+	waitmessage
+	waitfanfare
+	additem ITEM_TM18
+	msgbox CeladonCity_DepartmentStore_3F_Text_PutTM18Away
+	call EventScript_RestorePrevTextColor
+	setflag FLAG_GOT_TM18_IN_DEPT_STORE_3F
+	release
+	end
+	
+CeladonCity_DepartmentStore_3F_EventScript_AlreadyGotTM18::
+	msgbox CeladonCity_DepartmentStore_3F_Text_TM18_Contains
+	release
 	end
 
 CeladonCity_DepartmentStore_3F_EventScript_GBAKid1::
