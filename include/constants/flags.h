@@ -734,7 +734,7 @@
 #define FLAG_TUTOR_EXPLOSION                             0x2C3
 #define FLAG_TUTOR_MEGA_PUNCH                            0x2C4
 #define FLAG_TUTOR_MEGA_KICK                             0x2C5
-#define FLAG_TUTOR_DREAM_EATER                           0x2C6
+#define FLAG_GOT_TM42_IN_VIRIDIAN_CITY                           0x2C6
 #define FLAG_TUTOR_SOFT_BOILED                           0x2C7
 #define FLAG_TUTOR_SUBSTITUTE                            0x2C8
 #define FLAG_TUTOR_SWORDS_DANCE                          0x2C9

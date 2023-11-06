@@ -172,8 +172,29 @@ ViridianCity_EventScript_WomanRoadBlocked::
 	release
 	end
 
-ViridianCity_EventScript_DreamEaterTutor::
-	goto EventScript_DreamEaterTutor
+ViridianCity_EventScript_TM42Gift::
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_TM42_IN_VIRIDIAN_CITY, ViridianCity_EventScript_AlreadyGotTM42
+	msgbox ViridianCity_Text_TakeTM42
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	checkitemspace ITEM_TM42
+	goto_if_eq VAR_RESULT, FALSE, EventScript_BagIsFull
+	bufferitemname STR_VAR_2, ITEM_TM42
+	playfanfare MUS_LEVEL_UP
+	message Text_ObtainedTheX
+	waitmessage
+	waitfanfare
+	additem ITEM_TM42
+	msgbox ViridianCity_Text_PutTM42Away
+	call EventScript_RestorePrevTextColor
+	setflag FLAG_GOT_TM42_IN_VIRIDIAN_CITY
+	release
+	end
+	
+ViridianCity_EventScript_AlreadyGotTM42::
+	msgbox ViridianCity_Text_TM42_Contains
+	release
 	end
 
 ViridianCity_EventScript_RoadBlocked::
