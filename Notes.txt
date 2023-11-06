@@ -54,7 +54,7 @@ Prize money not checked.
 
 -Viridian City-
 Catch tutorial forced, no YES/NO, dialogue not finished.
-Dream Eater guy is tutor, doesn't give TM42.
+Dream Eater guy is tutor, doesn't give TM42. [Check]
 Gym supposed to have REVIVE item ball above arrow tile in narrow passage down. [Check]
 Giovanni gives TM26, supposed to be TM27.
 
@@ -75,7 +75,6 @@ LT.SURGE gives TM34 instead of TM24. [Check]
 
 -PokeCenter-
 Couch guy in Viridian doesn't talk.
-Couch guy needs sprite adjustment.
 Couch guy in Pewter doesn't talk.
 Jigglypuff in Pewter doesn't dance after speaking.
 Route 4 couch guy doesn't talk.
@@ -96,11 +95,10 @@ Tileset change visible from right exit, must give some world to Route 12.
 House 2 guy is supposed to use balding CEO sprite. [Check]
 PokemonTower_4F GREAT BALL should be HP UP. [Check]
 THE GHOST instead of GHOST appeared.
-Roof palette error, need to figure out a fix.
+Roof palette error from Routes 8 and 10, need to figure out a fix.
 
 -Route12-
 Lookout tower woman gives TM27 instead of TM39. [Check]
-Possible remaining decoration error in left border OOB.
 
 -Celadon City-
 Left coin exchange prizes not checked for LeafGreen/Blue.
@@ -161,7 +159,7 @@ Voltorb and Electrode don't say "Bzzzt!" before battle.
 3F TM50  is supposed to be TM47. [Check]
 
 -Pokemon League-
-Don't Leave script doesn't play, door tiles removed instead..
+Don't Leave script doesn't play, door tiles removed instead.
 Member doesn't face up after battle.
 Record machine animation skipped entirely, must restore playing sound.
 
