@@ -17,6 +17,11 @@ PowerPlant_OnTransition::
 	setworldmapflag FLAG_WORLD_MAP_POWER_PLANT
 	call_if_unset FLAG_FOUGHT_ZAPDOS, PowerPlant_EventScript_ShowZapdos
 	call_if_unset FLAG_FOUGHT_POWER_PLANT_VOLTORB_1, PowerPlant_EventScript_ShowVoltorb1
+	call_if_unset FLAG_FOUGHT_POWER_PLANT_VOLTORB_2, PowerPlant_EventScript_ShowVoltorb2
+	call_if_unset FLAG_FOUGHT_POWER_PLANT_VOLTORB_3, PowerPlant_EventScript_ShowVoltorb3
+	call_if_unset FLAG_FOUGHT_POWER_PLANT_VOLTORB_4, PowerPlant_EventScript_ShowVoltorb4
+	call_if_unset FLAG_FOUGHT_POWER_PLANT_VOLTORB_5, PowerPlant_EventScript_ShowVoltorb5
+	call_if_unset FLAG_FOUGHT_POWER_PLANT_VOLTORB_6, PowerPlant_EventScript_ShowVoltorb6
 	call_if_unset FLAG_FOUGHT_POWER_PLANT_ELECTRODE_1, PowerPlant_EventScript_ShowElectrode1
 	call_if_unset FLAG_FOUGHT_POWER_PLANT_ELECTRODE_2, PowerPlant_EventScript_ShowElectrode2
 	end
@@ -27,6 +32,26 @@ PowerPlant_EventScript_ShowZapdos::
 
 PowerPlant_EventScript_ShowVoltorb1::
 	clearflag FLAG_HIDE_POWER_PLANT_VOLTORB_1
+	return
+
+PowerPlant_EventScript_ShowVoltorb2::
+	clearflag FLAG_HIDE_POWER_PLANT_VOLTORB_2
+	return
+
+PowerPlant_EventScript_ShowVoltorb3::
+	clearflag FLAG_HIDE_POWER_PLANT_VOLTORB_3
+	return
+
+PowerPlant_EventScript_ShowVoltorb4::
+	clearflag FLAG_HIDE_POWER_PLANT_VOLTORB_4
+	return
+	
+PowerPlant_EventScript_ShowVoltorb5::
+	clearflag FLAG_HIDE_POWER_PLANT_VOLTORB_5
+	return
+	
+PowerPlant_EventScript_ShowVoltorb6::
+	clearflag FLAG_HIDE_POWER_PLANT_VOLTORB_6
 	return
 
 PowerPlant_EventScript_ShowElectrode1::
@@ -80,6 +105,7 @@ PowerPlant_EventScript_Voltorb1::
 	setwildbattle SPECIES_VOLTORB, 40
 	waitse
 	playmoncry SPECIES_VOLTORB, CRY_MODE_ENCOUNTER
+	msgbox PowerPlant_Text_Bzzzt
 	delay 40
 	waitmoncry
 	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
@@ -106,6 +132,7 @@ PowerPlant_EventScript_Voltorb2::
 	setwildbattle SPECIES_VOLTORB, 40
 	waitse
 	playmoncry SPECIES_VOLTORB, CRY_MODE_ENCOUNTER
+	msgbox PowerPlant_Text_Bzzzt
 	delay 40
 	waitmoncry
 	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
@@ -132,6 +159,7 @@ PowerPlant_EventScript_Voltorb3::
 	setwildbattle SPECIES_VOLTORB, 40
 	waitse
 	playmoncry SPECIES_VOLTORB, CRY_MODE_ENCOUNTER
+	msgbox PowerPlant_Text_Bzzzt
 	delay 40
 	waitmoncry
 	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
@@ -158,6 +186,7 @@ PowerPlant_EventScript_Voltorb4::
 	setwildbattle SPECIES_VOLTORB, 40
 	waitse
 	playmoncry SPECIES_VOLTORB, CRY_MODE_ENCOUNTER
+	msgbox PowerPlant_Text_Bzzzt
 	delay 40
 	waitmoncry
 	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
@@ -184,6 +213,7 @@ PowerPlant_EventScript_Voltorb5::
 	setwildbattle SPECIES_VOLTORB, 40
 	waitse
 	playmoncry SPECIES_VOLTORB, CRY_MODE_ENCOUNTER
+	msgbox PowerPlant_Text_Bzzzt
 	delay 40
 	waitmoncry
 	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
@@ -210,6 +240,7 @@ PowerPlant_EventScript_Voltorb6::
 	setwildbattle SPECIES_VOLTORB, 40
 	waitse
 	playmoncry SPECIES_VOLTORB, CRY_MODE_ENCOUNTER
+	msgbox PowerPlant_Text_Bzzzt
 	delay 40
 	waitmoncry
 	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
@@ -236,6 +267,7 @@ PowerPlant_EventScript_Electrode1::
 	setwildbattle SPECIES_ELECTRODE, 43
 	waitse
 	playmoncry SPECIES_ELECTRODE, CRY_MODE_ENCOUNTER
+	msgbox PowerPlant_Text_Bzzzt
 	delay 40
 	waitmoncry
 	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
@@ -262,6 +294,7 @@ PowerPlant_EventScript_Electrode2::
 	setwildbattle SPECIES_ELECTRODE, 43
 	waitse
 	playmoncry SPECIES_ELECTRODE, CRY_MODE_ENCOUNTER
+	msgbox PowerPlant_Text_Bzzzt
 	delay 40
 	waitmoncry
 	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
@@ -280,3 +313,6 @@ PowerPlant_EventScript_FoughtElectrode2::
 	setflag FLAG_FOUGHT_POWER_PLANT_ELECTRODE_2
 	goto EventScript_RemoveStaticMon
 	end
+
+PowerPlant_Text_Bzzzt::
+	.string "Bzzzt!$"
