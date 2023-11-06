@@ -34,6 +34,7 @@ PokemonLeague_HallOfFame_EventScript_EnterRoom::
 	delay 20
 	@ dofieldeffect FLDEFF_HALL_OF_FAME_RECORD
 	@ waitfieldeffect FLDEFF_HALL_OF_FAME_RECORD
+	setflag FLAG_HIDE_CERULEAN_CAVE_GUARD
 	delay 40
 	setvar VAR_TEMP_1, 1
 	call EventScript_SetDefeatedEliteFourFlagsVars
