@@ -19,7 +19,7 @@ CeladonCity_DepartmentStore_3F_Text_PutTM18Away::
 
 CeladonCity_DepartmentStore_3F_Text_TM18_Contains::
     .string "TM18 is COUNTER!\n"
-    .string "Not like the one I'm\l
+    .string "Not like the one I'm\l"
     .string "leaning on, mind you!$"
 
 CeladonCity_DepartmentStore_2F_Text_FloorSign::
