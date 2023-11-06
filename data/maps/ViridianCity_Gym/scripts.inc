@@ -29,7 +29,7 @@ ViridianCity_Gym_EventScript_GiveTM27::
 	msgbox ViridianCity_Gym_Text_ExplainEarthBadgeTakeThis
 	checkitemspace ITEM_TM27
 	goto_if_eq VAR_RESULT, FALSE, ViridianCity_Gym_EventScript_NoRoomForTM27
-	giveitem_msg ViridianCity_Gym_Text_ReceivedTM26FromGiovanni, ITEM_TM27
+	giveitem_msg ViridianCity_Gym_Text_ReceivedTM27FromGiovanni, ITEM_TM27
 	setflag FLAG_GOT_TM27_FROM_GIOVANNI
 	msgbox ViridianCity_Gym_Text_ExplainTM27
 	release
