@@ -1,4 +1,7 @@
+.equ LOCALID_SIGN_LADY, 1
 .equ LOCALID_PROF_OAK,  3
+
+.equ SIGN_LADY_READY, VAR_TEMP_2
 
 PalletTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, PalletTown_OnTransition
@@ -17,7 +20,7 @@ PalletTown_OnFrame::
 PalletTown_EventScript_OakRatingScene::
 	lockall
 	textcolor NPC_TEXT_COLOR_MALE
-	setobjectxyperm LOCALID_PROF_OAK, 8, 7
+	setobjectxyperm LOCALID_PROF_OAK, 14, 14
 	setobjectmovementtype LOCALID_PROF_OAK, MOVEMENT_TYPE_FACE_LEFT
 	addobject LOCALID_PROF_OAK
 	applymovement LOCALID_PROF_OAK, PalletTown_Movement_OakWalkToPlayersDoor
@@ -290,6 +293,10 @@ PalletTown_Movement_PlayerEnterLab::
 	set_invisible
 	step_end
 
+PalletTown_EventScript_SignLady::
+	msgbox PalletTown_Text_SignLady, MSGBOX_NPC
+	end
+
 PalletTown_EventScript_FatMan::
 	msgbox PalletTown_Text_CanStoreItemsAndMonsInPC, MSGBOX_NPC
 	end
@@ -311,10 +318,4 @@ PalletTown_EventScript_RivalsHouseSign::
 
 PalletTown_EventScript_TownSign::
 	msgbox PalletTown_Text_TownSign, MSGBOX_SIGN
-	end
-
-PalletTown_EventScript_TrainerTips::
-	lockall
-	msgbox PalletTown_Text_PressStartToOpenMenu
-	releaseall
 	end
