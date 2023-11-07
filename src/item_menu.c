@@ -678,7 +678,6 @@ static void BagListMenuMoveCursorFunc(s32 itemIndex, bool8 onInit, struct ListMe
     if (onInit != TRUE)
     {
         PlaySE(SE_BAG_CURSOR);
-        ShakeBagSprite();
     }
     if (sBagMenuDisplay->itemOriginalLocation == 0xFF)
     {
