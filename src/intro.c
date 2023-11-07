@@ -1281,7 +1281,7 @@ static void IntroCB_GF_RevealLogo(struct IntroSequenceData * this)
         if (++this->timer > 20)
         {
             SetGpuReg(REG_OFFSET_BLDCNT, 0);
-            SetIntroCB(this, IntroCB_Scene1);
+            SetIntroCB(this, IntroCB_ExitToTitleScreen);
         }
         break;
     }
@@ -2448,7 +2448,7 @@ static void SpriteCB_NidorinoCry(struct Sprite *sprite)
         }
         break;
     case 1:
-        PlayCry_ByMode(SPECIES_NIDORINO, 0x3F, CRY_MODE_DOUBLES);
+        PlayCry_ByMode(SPECIES_JIGGLYPUFF, 0x3F, CRY_MODE_DOUBLES);
         sprite->sStateTimer = 0;
         sprite->sState++;
         break;
