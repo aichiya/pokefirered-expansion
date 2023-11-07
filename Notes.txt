@@ -20,15 +20,11 @@ Window type 10 must be removed from options menu.
 
 -Intro-
 GAME FREAK splash screen needs improvements.
-Player sprite animation during Oak->Player sprite transition flickers, needs fixing.
+Player sprite animation during Oak->Player sprite 
+transition flickers, needs fixing.
+Scene 1 and Scene 2 must be skipped.
 Player name no preset choices.
-Nidorino animation not changed yet.
-Intro rival sprite wrong palette.
 Rival preset name box has blank slot.
-
--Palette Town-
-Woman1 missing from Pallet Town.
-Oak seems invisible in Pallet Town intro.
 
 -Oak's Lab-
 Pokemon choice doesn't show pokedex page, popup style not changed.
@@ -46,7 +42,6 @@ Paid Prize Money text not skipped.
 Titles like LEADER not excluded from trainer names.
 TEAM ROCKET GRUNT should be ROCKET.
 Pokeball arrow goes offscreen instead of starting and ending onscreen.
-Player backsprite too high.
 COOLTRAINER title isn't gendered.
 ELITE FOUR title not removed from trainers.
 Prize money not checked.
@@ -80,16 +75,12 @@ THE GHOST instead of GHOST appeared.
 Roof palette error from Routes 8 and 10, need to figure out a fix.
 
 -Celadon City-
-Left coin exchange prizes not checked for LeafGreen/Blue.
-Middle coin exchange prizes not checked for LeafGreen/Blue.
-Right coin exchange prizes not checked for LeafGreen/Blue.
 Slot Machines not altered whatsoever.
 Cancelling prize purchase should display "Oh, fine then." text. Currently no dialogue.
 House1 incorrectly uses generic house layout, somehow linked to all others. Must use custom layout.
-Hotel couch guy doesn't talk, needs the usual sprite adjustment.
+Hotel couch guy doesn't talk.
 DEPT.STORE_2F missing NPC.
 Blackboard for Link Cable info is replaced by Wireless Adapter info, must replace.
-Stranded old man is move tutor, supposed to give TM41.
 
 -Saffron City-
 Fighting dojo pokemon selection doesn't show pokedex page, uses different preview style.
@@ -104,9 +95,6 @@ Safari Zone borders are all wrong, supposed to be plain grass.
 -Silph Co-
 7F Lapras guy has no dialogue switch after Rockets leave.
 10F trainers not checked at all, forgot.
-
--Power Plant-
-Voltorb and Electrode don't say "Bzzzt!" before battle.
 
 -Pokemon League-
 Don't Leave script doesn't play, door tiles removed instead.
