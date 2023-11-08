@@ -26,14 +26,13 @@ Route16_NorthEntrance_2F_Text_GiveAmuletCoinIfCaught40::
     .string "40 kinds of POKéMON?$"
 
 Route16_NorthEntrance_2F_Text_GreatHereYouGo::
-    .string "Great! You have caught or owned\n"
+    .string "Great! You have caught\n"
     .string "{STR_VAR_3} kinds of POKéMON!\p"
     .string "Congratulations!\n"
     .string "Here you go!$"
 
 Route16_NorthEntrance_2F_Text_ReceivedAmuletCoinFromAide::
-    .string "{PLAYER} received the AMULET COIN\n"
-    .string "from the AIDE.$"
+    .string "{PLAYER} got the AMULET COIN!$"
 
 Route16_NorthEntrance_2F_Text_ExplainAmuletCoin::
     .string "An AMULET COIN is an item to be\n"

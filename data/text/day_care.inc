@@ -29,8 +29,7 @@ DayCare_Text_YouHaveNoRoomForIt::
 	.string "Come back when you've made room.$"
 
 DayCare_Text_ReceivedEgg::
-	.string "{PLAYER} received the EGG from\n"
-	.string "the DAY-CARE MAN.$"
+	.string "{PLAYER} got the EGG!$"
 
 DayCare_Text_TakeGoodCareOfIt::
 	.string "Take good care of it.$"

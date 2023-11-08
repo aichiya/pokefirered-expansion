@@ -9,26 +9,21 @@ Route11_EastEntrance_2F_Text_GiveItemfinderIfCaught30::
     .string "{STR_VAR_1} kinds of POKéMON?$"
 
 Route11_EastEntrance_2F_Text_GreatHereYouGo::
-    .string "Great! You have caught or owned\n"
+    .string "Great! You have caught\n"
     .string "{STR_VAR_3} kinds of POKéMON!\p"
     .string "Congratulations!\n"
     .string "Here you go!$"
 
 Route11_EastEntrance_2F_Text_ReceivedItemfinderFromAide::
-    .string "{PLAYER} received the {STR_VAR_2}\n"
-    .string "from the AIDE.$"
+    .string "{PLAYER} got the {STR_VAR_2}!$"
 
 Route11_EastEntrance_2F_Text_ExplainItemfinder::
-    .string "There are items on the ground that\n"
-    .string "may be hidden from view.\p"
-    .string "Use the ITEMFINDER to detect any\n"
-    .string "hidden items close to you.\p"
-    .string "The machine is a bit limited.\n"
-    .string "It can't pinpoint item locations.\p"
-    .string "What it does is show the direction\n"
-    .string "where the item is.\p"
-    .string "Use it to get your bearings, then\n"
-    .string "search the suspect area by hand.$"
+    .string "There are items on the ground\n"
+    .string "that can't be seen.\p"
+    .string "ITEMFINDER will detect an\n"
+    .string "item close to you.\p"
+    .string "It can't pinpoint it, so\n"
+    .string "you have to look yourself!$"
 
 Route11_EastEntrance_2F_Text_BigMonAsleepOnRoad::
     .string "Looked into the binoculars.\n"

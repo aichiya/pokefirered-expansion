@@ -26,14 +26,13 @@ Route10_PokemonCenter_1F_Text_GiveEverstoneIfCaught20Mons::
     .string "twenty kinds of POKéMON?$"
 
 Route10_PokemonCenter_1F_Text_GreatHereYouGo::
-    .string "Great! You have caught or owned\n"
+    .string "Great! You have caught\n"
     .string "{STR_VAR_3} kinds of POKéMON!\p"
     .string "Congratulations!\n"
     .string "Here you go!$"
 
 Route10_PokemonCenter_1F_Text_ReceivedEverstoneFromAide::
-    .string "{PLAYER} received the EVERSTONE\n"
-    .string "from the AIDE.$"
+    .string "{PLAYER} got the EVERSTONE$"
 
 Route10_PokemonCenter_1F_Text_ExplainEverstone::
     .string "Making POKéMON evolve certainly\n"

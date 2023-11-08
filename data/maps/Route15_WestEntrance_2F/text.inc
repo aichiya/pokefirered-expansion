@@ -8,14 +8,13 @@ Route15_WestEntrance_2F_Text_GiveItemIfCaughtEnough::
     .string "least {STR_VAR_1} kinds of POKéMON?\n"
 
 Route15_WestEntrance_2F_Text_GreatHereYouGo::
-    .string "Great! You have caught or owned\n"
+    .string "Great! You have caught\n"
     .string "{STR_VAR_3} kinds of POKéMON!\p"
     .string "Congratulations!\n"
     .string "Here you go!$"
 
 Route15_WestEntrance_2F_Text_ReceivedItemFromAide::
-    .string "{PLAYER} received the {STR_VAR_2}\n"
-    .string "from the AIDE.$"
+    .string "{PLAYER} got the {STR_VAR_2}!$"
 
 Route15_WestEntrance_2F_Text_ExplainExpShare::
     .string "EXP. SHARE is an item to be held\n"
