@@ -21,11 +21,11 @@ CinnabarIsland_PokemonCenter_1F_EventScript_Gentleman::
 	end
 
 CinnabarIsland_PokemonCenter_1F_EventScript_CooltrainerF::
-	msgbox CinnabarIsland_PokemonCenter_1F_Text_CinnabarGymLocked, MSGBOX_NPC
+	msgbox CinnabarIsland_PokemonCenter_1F_Text_EvolutionCanWaitForNewMoves, MSGBOX_NPC
 	end
 
-CinnabarIsland_PokemonCenter_1F_EventScript_Youngster::
-	msgbox CinnabarIsland_PokemonCenter_1F_Text_EvolutionCanWaitForNewMoves, MSGBOX_NPC
+CinnabarIsland_PokemonCenter_1F_EventScript_Couch::
+	msgbox CinnabarIsland_PokemonCenter_1F_Text_CinnabarGymLocked, MSGBOX_NPC
 	end
 
 CinnabarIsland_PokemonCenter_1F_EventScript_Bill::
