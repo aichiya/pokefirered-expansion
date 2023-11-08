@@ -40,52 +40,27 @@ ViridianCity_Text_ThisIsPrivateProperty::
     .string "through here!\p"
     .string "This is private property!$"
 
-ViridianCity_Text_ShowYouHowToCatchMons::
+ViridianCity_Text_HadMyCoffee::
     .string "Ahh, I've had my coffee now\n"
     .string "and I feel great!\p"
     .string "Sure you can go through!\n"
     .string "Are you in a hurry?$"
 
-ViridianCity_Text_ThatWasEducationalTakeThis::
-    .string "There! Now tell me, that was\n"
-    .string "educational, was it not?\p"
-    .string "And here, take this, too.$"
+ViridianCity_Text_ShowYouHowToCatchMons::
+    .string "I see you're using a POKéDEX.\n"
+    .string "When you catch a POKéMON,\p"
+    .string "POKéDEX is automatically\n"
+    .string "updated. What? don't you\p"
+    .string "know how to catch POKéMON?\n"
+    .string "I'll show you how to then.$"
 
-ViridianCity_Text_WatchThatToLearnBasics::
-    .string "If there's something you don't\n"
-    .string "understand, watch that.\p"
-    .string "It will teach you about the basics\n"
-    .string "of being a POKéMON TRAINER.$"
+ViridianCity_Text_DeclineTutorial::
+    .string "Time is money...\n"
+    .string "Go along then.$"
 
-ViridianCity_Text_WeakenMonsFirstToCatch::
-    .string "Well, now, I've had my coffee, and\n"
-    .string "that's what I need to get going!\p"
-    .string "But I made it too strong.\n"
-    .string "It gave me a headache…\p"
-    .string "Incidentally, are you filling your\n"
-    .string "POKéDEX?\p"
-    .string "At first, focus on weakening the\n"
-    .string "POKéMON before trying to catch it.$"
-
-ViridianCity_Text_HowsTeachyTVHelping::
-    .string "Well, now, I've had my coffee, and\n"
-    .string "that's what I need to get going!\p"
-    .string "But I made it too strong.\n"
-    .string "It gave me a headache…\p"
-    .string "Incidentally, is my old TEACHY TV\n"
-    .string "helping you?$"
-
-ViridianCity_Text_MyGrandsonOnTheShow::
-    .string "Wahaha!\n"
-    .string "It's my grandson on the show!\p"
-    .string "Since he's the one doing the\n"
-    .string "teaching, you're bound to learn.$"
-
-ViridianCity_Text_TooBusyForTeachyTV::
-    .string "Hm… You're too busy to not even\n"
-    .string "have the time for TEACHY TV…\p"
-    .string "Time is money, and neither should\n"
-    .string "be ill spent…$"
+ViridianCity_Text_FirstWeaken::
+    .string "First, you need to weaken\n"
+    .string "the target POKéMON.$"
 
 ViridianCity_Text_CitySign::
     .string "VIRIDIAN CITY \n"
