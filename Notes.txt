@@ -1,6 +1,6 @@
 
 -Global-
-PC animation wrong tiles.
+PC animation wrong tiles. No animation in gen 1.
 Water no animation.
 Flowers no animation.
 PC options wrong.
@@ -22,9 +22,8 @@ Window type 10 must be removed from options menu.
 GAME FREAK splash screen needs improvements.
 Player sprite animation during Oak->Player sprite 
 transition flickers, needs fixing.
-Scene 1 and Scene 2 must be skipped.
 Player name no preset choices.
-Rival preset name box has blank slot.
+Red, Rival, and Oak palettes are borked during Oak Speech scenes.
 
 -Oak's Lab-
 Pokemon choice doesn't show pokedex page, popup style not changed.
@@ -36,18 +35,16 @@ POKeMON not changed to PKMN.
 BAG not changed to ITEM.
 ITEM and PKMN should be swapped.
 PP is above move type, should be below.
-Lost Against text not skipped.
-Paid Prize Money text not skipped.
-... ... ... ... not skipped.
-Titles like LEADER not excluded from trainer names.
+Titles like LEADER not excluded from trainer names. battle_message.c
 TEAM ROCKET GRUNT should be ROCKET.
 Pokeball arrow goes offscreen instead of starting and ending onscreen.
 COOLTRAINER title isn't gendered.
 ELITE FOUR title not removed from trainers.
 Prize money not checked.
+whiting out sends player to pokemon center healing animation, should set them outside and fully restored.
 
 -Viridian City-
-Catch tutorial forced, no YES/NO, dialogue not finished.
+Catch tutorial doesn't begin. CreateMaleMon might be cause.
 
 -Cerulean City-
 Bill pauses after exiting the machine.
@@ -57,11 +54,8 @@ Top right of area has border issue, must figure out solution.
 Day Care man dialogue for level up not checked.
 
 -PokeCenter-
-Couch guy in Viridian doesn't talk.
-Couch guy in Pewter doesn't talk.
 Jigglypuff in Pewter doesn't dance after speaking.
 Route 4 couch guy doesn't talk.
-Couch guy in Cerulean doesn't talk.
 Pokeballs are misplaced in healing machine.
 
 -Route 11-
@@ -76,9 +70,7 @@ Roof palette error from Routes 8 and 10, need to figure out a fix.
 
 -Celadon City-
 Slot Machines not altered whatsoever.
-Cancelling prize purchase should display "Oh, fine then." text. Currently no dialogue.
 House1 incorrectly uses generic house layout, somehow linked to all others. Must use custom layout.
-Hotel couch guy doesn't talk.
 DEPT.STORE_2F missing NPC.
 Blackboard for Link Cable info is replaced by Wireless Adapter info, must replace.
 
@@ -89,7 +81,7 @@ Fighting dojo pokemon selection doesn't show pokedex page, uses different previe
 B4F Grunt drops lift key immediately, should require talking to him first.
 
 -Fuchsia City-
-Zoo signs show pokemon previews incorrectly, use popup style instead of pokedex style.
+Zoo signs show pokemon previews incorrectly, use museum style instead of pokedex style.
 Safari Zone borders are all wrong, supposed to be plain grass.
 
 -Silph Co-
