@@ -20,6 +20,9 @@ CeladonCity_GameCorner_PrizeRoom_Text_HereYouGo::
 CeladonCity_GameCorner_PrizeRoom_Text_YouWantPrize::
     .string "So, you want {STR_VAR_1}?$"
 
+CeladonCity_GameCorner_PrizeRoom_Text_OhFine::
+    .string "Oh, fine then.$"
+
 CeladonCity_GameCorner_PrizeRoom_Text_YouWantTM::
     .string "So, you want {STR_VAR_2}?$"
 

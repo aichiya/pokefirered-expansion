@@ -55,6 +55,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_ChoosePrizeMon2::
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange::
 	hidecoinsbox 0, 0
+	msgbox CeladonCity_GameCorner_PrizeRoom_Text_OhFine
 	release
 	end
 
