@@ -236,6 +236,7 @@ PalletTown_Movement_OakEnterRight::
 	walk_right
 	walk_up
 	walk_right
+	walk_right
 	walk_up
 	step_end
 
