@@ -681,6 +681,8 @@ extern const u8 gText_MarshBadge[];
 extern const u8 gText_VolcanoBadge[];
 extern const u8 gText_EarthBadge[];
 extern const u8 gText_LinkedGamePlay[];
+extern const u8 gText_HowToLink[];
+extern const u8 gText_StopReading[];
 extern const u8 gText_DirectCorner[];
 extern const u8 gText_UnionRoom[];
 extern const u8 gOtherText_Quit[];

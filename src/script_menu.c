@@ -351,10 +351,10 @@ static const struct MenuAction sMultichoiceList_RocketHideoutElevator[] = {
 };
 
 static const struct MenuAction sMultichoiceList_LinkedDirectUnion[] = {
-    { gText_LinkedGamePlay },
-    { gText_DirectCorner },
-    { gText_UnionRoom },
-    { gOtherText_Quit }
+    { gText_HowToLink },
+    { gText_Colosseum },
+    { gText_TradeCenter },
+    { gText_StopReading }
 };
 
 static const struct MenuAction sMultichoiceList_Island23[] = {

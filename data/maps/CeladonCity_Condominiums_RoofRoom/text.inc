@@ -19,26 +19,18 @@ CeladonCity_Condominiums_RoofRoom_Text_ReadWhichHeading::
     .string "Which heading do you want to read?$"
 
 CeladonCity_Condominiums_RoofRoom_Text_ExplainWirelessClub::
-    .string "The POKéMON WIRELESS CLUB is\n"
-    .string "upstairs at any POKéMON CENTER.\p"
-    .string "Visit one to link up with friend(s)\n"
-    .string "using your Wireless Adapter.$"
+    .string "When you have linked your GAME\n"
+    .string "BOY with another GAME BOY,\p"
+    .string "talk to the attendant on the\n"
+    .string "right in any POKéMON CENTER.$"
 
 CeladonCity_Condominiums_RoofRoom_Text_ExplainDirectCorner::
-    .string "To link only with a friend, go to\n"
-    .string "the DIRECT CORNER.\p"
-    .string "It is the right counter at the\n"
-    .string "POKéMON WIRELESS CLUB.\p"
-    .string "Go into the TRADE CORNER or the\n"
-    .string "COLOSSEUM with your friend.$"
+    .string "COLOSSEUM lets you play\n"
+    .string "against a friend.$"
 
 CeladonCity_Condominiums_RoofRoom_Text_ExplainUnionRoom::
-    .string "To link and communicate with\n"
-    .string "anyone, go to the UNION ROOM.\p"
-    .string "It is the left counter at the\n"
-    .string "POKéMON WIRELESS CLUB.\p"
-    .string "Go to the UNION ROOM and enjoy\n"
-    .string "meeting other TRAINERS.$"
+    .string "TRADE CENTER is used for\n"
+    .string "trading POKéMON.$"
 
 CeladonCity_Condominiums_RoofRoom_Text_PamphletOnTMs::
     .string "It's a pamphlet on TMs.\p"
