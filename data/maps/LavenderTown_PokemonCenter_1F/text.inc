@@ -7,7 +7,6 @@ LavenderTown_PokemonCenter_1F_Text_CubonesMotherKilledByRockets::
     .string "to escape from TEAM ROCKET!$"
 
 LavenderTown_PokemonCenter_1F_Text_PeoplePayForCuboneSkulls::
-    .string "You know how the CUBONE species\n"
-    .string "wears skulls, right?\p"
-    .string "People will pay a lot for one.$"
+    .string "CUBONEs wear skulls, right?\n"
+    .string "People will pay a lot for one!$"
 

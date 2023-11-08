@@ -22,6 +22,6 @@ FuchsiaCity_PokemonCenter_1F_EventScript_CooltrainerF::
 	msgbox FuchsiaCity_PokemonCenter_1F_Text_PokemonLeagueWestOfViridian, MSGBOX_NPC
 	end
 
-FuchsiaCity_PokemonCenter_1F_EventScript_Youngster::
+FuchsiaCity_PokemonCenter_1F_EventScript_Couch::
 	msgbox FuchsiaCity_PokemonCenter_1F_Text_VisitSafariZoneForPokedex, MSGBOX_NPC
 	end

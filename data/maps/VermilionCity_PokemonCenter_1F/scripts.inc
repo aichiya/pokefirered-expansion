@@ -22,6 +22,6 @@ VermilionCity_PokemonCenter_1F_EventScript_Hiker::
 	msgbox VermilionCity_PokemonCenter_1F_Text_TrainerMonsStrongerThanWild, MSGBOX_NPC
 	end
 
-VermilionCity_PokemonCenter_1F_EventScript_Youngster::
+VermilionCity_PokemonCenter_1F_EventScript_Couch::
 	msgbox VermilionCity_PokemonCenter_1F_Text_AllMonWeakToSpecificTypes, MSGBOX_NPC
 	end

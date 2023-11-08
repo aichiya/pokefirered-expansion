@@ -13,6 +13,6 @@ CeladonCity_Hotel_EventScript_BeautyBoyfriend::
 	msgbox CeladonCity_Hotel_Text_WhyDidSheBringBrother, MSGBOX_NPC
 	end
 
-CeladonCity_Hotel_EventScript_BeautyBrother::
+CeladonCity_Hotel_EventScript_Couch::
 	msgbox CeladonCity_Hotel_Text_SisBroughtMeOnVacation, MSGBOX_NPC
 	end

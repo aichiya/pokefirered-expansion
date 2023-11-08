@@ -22,6 +22,6 @@ ViridianCity_PokemonCenter_1F_EventScript_Gentleman::
 	msgbox ViridianCity_PokemonCenter_1F_Text_FeelFreeToUsePC, MSGBOX_NPC
 	end
 
-ViridianCity_PokemonCenter_1F_EventScript_Youngster::
+ViridianCity_PokemonCenter_1F_EventScript_Couch::
 	msgbox ViridianCity_PokemonCenter_1F_Text_PokeCentersHealMons, MSGBOX_NPC
 	end

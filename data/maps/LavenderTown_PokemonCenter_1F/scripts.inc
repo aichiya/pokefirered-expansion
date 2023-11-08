@@ -22,6 +22,6 @@ LavenderTown_PokemonCenter_1F_EventScript_Lass::
 	msgbox LavenderTown_PokemonCenter_1F_Text_CubonesMotherKilledByRockets, MSGBOX_NPC
 	end
 
-LavenderTown_PokemonCenter_1F_EventScript_Youngster::
+LavenderTown_PokemonCenter_1F_EventScript_Couch::
 	msgbox LavenderTown_PokemonCenter_1F_Text_PeoplePayForCuboneSkulls, MSGBOX_NPC
 	end

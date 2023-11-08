@@ -22,6 +22,6 @@ CeladonCity_PokemonCenter_1F_EventScript_CooltrainerF::
 	msgbox CeladonCity_PokemonCenter_1F_Text_RodeHereFromFuchsia, MSGBOX_NPC
 	end
 
-CeladonCity_PokemonCenter_1F_EventScript_Youngster::
+CeladonCity_PokemonCenter_1F_EventScript_Couch::
 	msgbox CeladonCity_PokemonCenter_1F_Text_GoToCyclingRoadIfIHadBike, MSGBOX_NPC
 	end

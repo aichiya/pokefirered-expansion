@@ -30,7 +30,7 @@ PewterCity_PokemonCenter_1F_EventScript_Jigglypuff::
 	release
 	end
 
-PewterCity_PokemonCenter_1F_EventScript_Youngster::
+PewterCity_PokemonCenter_1F_EventScript_Couch::
 	msgbox PewterCity_PokemonCenter_1F_Text_WhenJiggylypuffSingsMonsGetDrowsy, MSGBOX_NPC
 	end
 

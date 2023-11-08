@@ -22,12 +22,8 @@ CeruleanCity_PokemonCenter_1F_EventScript_Rocker::
 	msgbox CeruleanCity_PokemonCenter_1F_Text_BillDoesWhateverForRareMons, MSGBOX_NPC
 	end
 
-CeruleanCity_PokemonCenter_1F_EventScript_Youngster::
-	lock
-	faceplayer
-	famechecker FAMECHECKER_BILL, 1
+CeruleanCity_PokemonCenter_1F_EventScript_Couch::
 	msgbox CeruleanCity_PokemonCenter_1F_Text_BillCollectsRareMons
-	release
 	end
 
 CeruleanCity_PokemonCenter_1F_EventScript_Lass::
