@@ -58,9 +58,6 @@ Jigglypuff in Pewter doesn't dance after speaking.
 Route 4 couch guy doesn't talk.
 Pokeballs are misplaced in healing machine.
 
--Route 11-
-Aid success text not tested.
-
 -SS.ANNE-
 2F sailor should have bellhop sprite.
 
@@ -72,7 +69,6 @@ Roof palette error from Routes 8 and 10, need to figure out a fix.
 Slot Machines not altered whatsoever.
 House1 incorrectly uses generic house layout, somehow linked to all others. Must use custom layout.
 DEPT.STORE_2F missing NPC.
-Blackboard for Link Cable info is replaced by Wireless Adapter info, must replace.
 
 -Saffron City-
 Fighting dojo pokemon selection doesn't show pokedex page, uses different preview style.
