@@ -103,18 +103,6 @@ static const u16 *const sTilesetAnims_SilphCo_Fountain[] = {
     sTilesetAnims_SilphCo_Fountain_Frame3
 };
 
-static const u16 sTilesetAnims_MtEmber_Steam_Frame0[] = INCBIN_U16("data/tilesets/secondary/mt_ember/anim/steam/0.4bpp");
-static const u16 sTilesetAnims_MtEmber_Steam_Frame1[] = INCBIN_U16("data/tilesets/secondary/mt_ember/anim/steam/1.4bpp");
-static const u16 sTilesetAnims_MtEmber_Steam_Frame2[] = INCBIN_U16("data/tilesets/secondary/mt_ember/anim/steam/2.4bpp");
-static const u16 sTilesetAnims_MtEmber_Steam_Frame3[] = INCBIN_U16("data/tilesets/secondary/mt_ember/anim/steam/3.4bpp");
-
-static const u16 *const sTilesetAnims_MtEmber_Steam[] = {
-    sTilesetAnims_MtEmber_Steam_Frame0,
-    sTilesetAnims_MtEmber_Steam_Frame1,
-    sTilesetAnims_MtEmber_Steam_Frame2,
-    sTilesetAnims_MtEmber_Steam_Frame3
-};
-
 static const u16 sTilesetAnims_VermilionGym_MotorizedDoor_Frame0[] = INCBIN_U16("data/tilesets/secondary/vermilion_gym/anim/motorizeddoor/0.4bpp");
 static const u16 sTilesetAnims_VermilionGym_MotorizedDoor_Frame1[] = INCBIN_U16("data/tilesets/secondary/vermilion_gym/anim/motorizeddoor/1.4bpp");
 
@@ -132,6 +120,30 @@ static const u16 *const sTilesetAnims_CeladonGym_Flowers[] = {
     sTilesetAnims_CeladonGym_Flowers_Frame1,
     sTilesetAnims_CeladonGym_Flowers_Frame2,
     sTilesetAnims_CeladonGym_Flowers_Frame1
+};
+
+static const u16 sTilesetAnims_RB_General_Flower_Frame0[] = INCBIN_U16("data/tilesets/primary/rb_general/anim/flower/0.4bpp");
+static const u16 sTilesetAnims_RB_General_Flower_Frame1[] = INCBIN_U16("data/tilesets/primary/rb_general/anim/flower/1.4bpp");
+static const u16 sTilesetAnims_RB_General_Flower_Frame2[] = INCBIN_U16("data/tilesets/primary/rb_general/anim/flower/2.4bpp");
+
+static const u16* const sTilesetAnims_RB_General_Flower[] = {
+    sTilesetAnims_RB_General_Flower_Frame0,
+    sTilesetAnims_RB_General_Flower_Frame1,
+    sTilesetAnims_RB_General_Flower_Frame2
+};
+
+static const u16 sTilesetAnims_RB_General_Water_Soft_Frame0[] = INCBIN_U16("data/tilesets/primary/rb_general/anim/water_soft/0.4bpp");
+static const u16 sTilesetAnims_RB_General_Water_Soft_Frame1[] = INCBIN_U16("data/tilesets/primary/rb_general/anim/water_soft/1.4bpp");
+static const u16 sTilesetAnims_RB_General_Water_Soft_Frame2[] = INCBIN_U16("data/tilesets/primary/rb_general/anim/water_soft/2.4bpp");
+static const u16 sTilesetAnims_RB_General_Water_Soft_Frame3[] = INCBIN_U16("data/tilesets/primary/rb_general/anim/water_soft/3.4bpp");
+
+static const u16* const sTilesetAnims_RB_General_Water_Soft[] = {
+    sTilesetAnims_RB_General_Water_Soft_Frame0,
+    sTilesetAnims_RB_General_Water_Soft_Frame1,
+    sTilesetAnims_RB_General_Water_Soft_Frame2,
+    sTilesetAnims_RB_General_Water_Soft_Frame3,
+    sTilesetAnims_RB_General_Water_Soft_Frame2,
+    sTilesetAnims_RB_General_Water_Soft_Frame1
 };
 
 static void ResetTilesetAnimBuffer(void)
@@ -220,6 +232,16 @@ static void QueueAnimTiles_General_SandWatersEdge(u16 timer)
     AppendTilesetAnimToBuffer(sTilesetAnims_General_SandWatersEdge[timer % ARRAY_COUNT(sTilesetAnims_General_SandWatersEdge)], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(464)), 18 * TILE_SIZE_4BPP);
 }
 
+static void QueueAnimTiles_RB_General_Flower(u16 timer)
+{
+    AppendTilesetAnimToBuffer(sTilesetAnims_RB_General_Flower[timer % ARRAY_COUNT(sTilesetAnims_RB_General_Flower)], (u16*)(BG_VRAM + TILE_OFFSET_4BPP(183)), 3 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_RB_General_Water_Soft(u16 timer)
+{
+    AppendTilesetAnimToBuffer(sTilesetAnims_RB_General_Water_Soft[timer % ARRAY_COUNT(sTilesetAnims_RB_General_Water_Soft)], (u16*)(BG_VRAM + TILE_OFFSET_4BPP(186)), 4 * TILE_SIZE_4BPP);
+}
+
 static void TilesetAnim_General(u16 timer)
 {
     if (timer % 8 == 0)
@@ -235,6 +257,21 @@ void InitTilesetAnim_General(void)
     sPrimaryTilesetAnimCounter = 0;
     sPrimaryTilesetAnimCounterMax = 640;
     sPrimaryTilesetAnimCallback = TilesetAnim_General;
+}
+
+static void TilesetAnim_RB_General(u16 timer)
+{
+    if (timer % 16 == 0)
+        QueueAnimTiles_RB_General_Flower(timer / 16);
+    if (timer % 16 == 1)
+        QueueAnimTiles_RB_General_Water_Soft(timer / 16);
+}
+
+void InitTilesetAnim_RB_General(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 640;
+    sPrimaryTilesetAnimCallback = TilesetAnim_RB_General;
 }
 
 static void QueueAnimTiles_CeladonCity_Fountain(u16 timer)
@@ -271,24 +308,6 @@ void InitTilesetAnim_SilphCo(void)
     sSecondaryTilesetAnimCounter = 0;
     sSecondaryTilesetAnimCounterMax = 160;
     sSecondaryTilesetAnimCallback = TilesetAnim_SilphCo;
-}
-
-static void QueueAnimTiles_MtEmber_Steam(u16 timer)
-{
-    AppendTilesetAnimToBuffer(sTilesetAnims_MtEmber_Steam[timer % ARRAY_COUNT(sTilesetAnims_MtEmber_Steam)], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(896)), 8 * TILE_SIZE_4BPP);
-}
-
-static void TilesetAnim_MtEmber(u16 timer)
-{
-    if (timer % 16 == 0)
-        QueueAnimTiles_MtEmber_Steam(timer / 16);
-}
-
-void InitTilesetAnim_MtEmber(void)
-{
-    sSecondaryTilesetAnimCounter = 0;
-    sSecondaryTilesetAnimCounterMax = 256;
-    sSecondaryTilesetAnimCallback = TilesetAnim_MtEmber;
 }
 
 static void QueueAnimTiles_VermilionGym_MotorizedDoor(u16 timer)

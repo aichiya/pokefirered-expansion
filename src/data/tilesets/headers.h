@@ -633,7 +633,7 @@ const struct Tileset gTileset_MtEmber =
     .palettes = gTilesetPalettes_MtEmber,
     .metatiles = gMetatiles_MtEmber,
     .metatileAttributes = gMetatileAttributes_MtEmber,
-    .callback = InitTilesetAnim_MtEmber,
+    .callback = NULL,
 };
 
 const struct Tileset gTileset_BerryForest =
@@ -754,8 +754,7 @@ const struct Tileset gTileset_RB_General =
     .palettes = gTilesetPalettes_RB_General,
     .metatiles = gMetatiles_RB_General,
     .metatileAttributes = gMetatileAttributes_RB_General,
-    //.callback = InitTilesetAnim_RB_General,
-    .callback = NULL,
+    .callback = InitTilesetAnim_RB_General,
 };
 
 const struct Tileset gTileset_RB_Bicycle =
@@ -1107,5 +1106,16 @@ const struct Tileset gTileset_RB_CyclingRoad =
     .palettes = gTilesetPalettes_RB_CyclingRoad,
     .metatiles = gMetatiles_RB_CyclingRoad,
     .metatileAttributes = gMetatileAttributes_RB_CyclingRoad,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_RB_Roof =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_RB_Roof,
+    .palettes = gTilesetPalettes_RB_Roof,
+    .metatiles = gMetatiles_RB_Roof,
+    .metatileAttributes = gMetatileAttributes_RB_Roof,
     .callback = NULL,
 };
