@@ -13,8 +13,7 @@ CeladonCity_DepartmentStore_Roof_Text_YayFreshWaterHaveThis::
     .string "You can have this from me!$"
 
 Text_ReceivedItemFromLittleGirl::
-    .string "{PLAYER} received a {STR_VAR_2}\n"
-    .string "from the little girl.$"
+    .string "{PLAYER} received a {STR_VAR_2}!$"
 
 CeladonCity_DepartmentStore_Roof_Text_ExplainTM13::
     .string "TM13 contains ICE BEAM!$"

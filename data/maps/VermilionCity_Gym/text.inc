@@ -70,10 +70,9 @@ VermilionCity_Gym_Text_DwayneDefeat::
     .string "Surprised me!$"
 
 VermilionCity_Gym_Text_DwaynePostBattle::
-    .string "LT.SURGE set up\n"
-    .string "double locks!\p"
-    .string "Here's a hint!\n"
-    .string "When you open the 1st lock, the\l"
+    .string "LT.SURGE set up double locks!\n"
+    .string "Here's a hint!\p"
+    .string "When you open the 1st lock, the\n"
     .string "2nd lock is right next to it!$"
 
 VermilionCity_Gym_Text_GymGuyAdvice::
@@ -127,6 +126,6 @@ VermilionCity_Gym_Text_SecondLockOpened::
 
 VermilionCity_Gym_Text_OnlyTrashLocksWereReset::
     .string "Nope, there's only trash here.\n"
-    .string "Hey!\n"
+    .string "Hey!\p"
     .string "The electric locks were reset!$"
 

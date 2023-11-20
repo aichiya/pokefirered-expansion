@@ -1,8 +1,8 @@
 PokemonTower_2F_Text_RivalIntro::
     .string "{RIVAL}: Hey, {PLAYER}!\n"
-    .string "What brings you here?\l"
-    .string "Your POKéMON don't look dead!\p"
-    .string "I can at least make them faint!\n"
+    .string "What brings you here?\p"
+    .string "Your POKéMON don't look dead!\n"
+    .string "I can at least make them faint!\p"
     .string "Let's go, pal!$"
 
 PokemonTower_2F_Text_RivalDefeat::
@@ -23,10 +23,9 @@ PokemonTower_2F_Text_RivalPostBattle::
     .string "I just caught a CUBONE!\p"
     .string "I can't find the grown-up\n"
     .string "MAROWAK yet!\p"
-    .string "I doubt there are any left!\p"
-    .string "Well, I better get going!\n"
-    .string "I've got a lot to\l"
-    .string "accomplish, pal!\p"
+    .string "I doubt there are any left!\n"
+    .string "Well, I better get going!\p"
+    .string "I've got a lot to accomplish, pal!\n"
     .string "Smell ya later!$"
 
 PokemonTower_2F_Text_SilphScopeCouldUnmaskGhosts::

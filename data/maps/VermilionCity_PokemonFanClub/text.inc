@@ -50,13 +50,13 @@ VermilionCity_PokemonFanClub_Text_ChairmansStory::
     .string "I want you to have this!$"
 
 VermilionCity_PokemonFanClub_Text_ReceivedBikeVoucherFromChairman::
-    .string "{PLAYER} received a BIKE VOUCHER$"
+    .string "{PLAYER} received a BIKE VOUCHER!$"
 
 VermilionCity_PokemonFanClub_Text_ExplainBikeVoucher::
     .string "Exchange that for a BICYCLE!\n"
-    .string "Don't worry, my FEAROW\n"
-    .string "will FLY me anywhere!\p"
-    .string "So, I don't need a BICYCLE!\p"
+    .string "Don't worry, my FEAROW\p"
+    .string "will FLY me anywhere!\l"
+    .string "So, I don't need a BICYCLE!\n"
     .string "I hope you like cycling!$"
 
 VermilionCity_PokemonFanClub_Text_ComeBackToHearStory::

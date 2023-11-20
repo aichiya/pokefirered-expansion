@@ -10,7 +10,7 @@ SaffronCity_Gym_Text_SabrinaIntro::
 SaffronCity_Gym_Text_SabrinaDefeat::
     .string "I'm shocked!\n"
     .string "But, a loss is a loss.\p"
-    .string "I admitx I didn't work hard\n"
+    .string "I admit I didn't work hard\n"
     .string "enough to win!\p"
     .string "You earned the MARSHBADGE!$"
 

@@ -45,8 +45,6 @@ PokemonTower_5F_Text_JanaePostBattle::
     .string "despite my training!$"
 
 PokemonTower_5F_Text_PurifiedZoneMonsFullyHealed::
-    .string "Entered purified,\n"
-    .string "protected zone!\p"
-    .string "{PLAYER}'s POKéMON are\n"
-    .string "fully healed!$"
+    .string "Entered purified, protected zone!\n"
+    .string "{PLAYER}'s POKéMON are fully healed!$"
 

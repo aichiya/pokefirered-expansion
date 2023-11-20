@@ -42,7 +42,7 @@ PewterCity_Gym_Text_ExplainTM34::
     .string "TM34 contains BIDE!\n"
     .string "Your POKéMON will absorb\l"
     .string "damage in battle then pay\l"
-    .string "pay it back double!$"
+    .string "it back double!$"
 
 PewterCity_Gym_Text_BrockPostBattle::
     .string "There are all kinds of TRAINERS in\n"
@@ -98,14 +98,12 @@ PewterCity_Gym_Text_YoureChampMaterial::
 
 PewterCity_Gym_Text_GymStatue::
     .string "PEWTER CITY POKéMON GYM\n"
-    .string "POKéMON GYM\l"
     .string "LEADER: BROCK\p"
     .string "WINNING TRAINERS:\n"
     .string "{RIVAL}$"
 
 PewterCity_Gym_Text_GymStatuePlayerWon::
     .string "PEWTER CITY POKéMON GYM\n"
-    .string "POKéMON GYM\l"
     .string "LEADER: BROCK\p"
     .string "WINNING TRAINERS:\n"
     .string "{RIVAL}, {PLAYER}$"

@@ -27,7 +27,7 @@ ViridianCity_Gym_Text_GiovanniPostBattle::
 
 ViridianCity_Gym_Text_ExplainEarthBadgeTakeThis::
     .string "The EARTHBADGE makes POKéMON\n"
-    .string "of any level obey !\p"
+    .string "of any level obey!\p"
     .string "It is evidence of your mastery\n"
     .string "as a POKéMON trainer!\p"
     .string "With it, you can enter the\n"
@@ -142,7 +142,7 @@ ViridianCity_Gym_Text_GymGuyAdvice::
     .string "Champ in the making!\p"
     .string "Even I don't know VIRIDIAN\n"
     .string "LEADER's identity!\p"
-    .string "This will be the toughest of\l"
+    .string "This will be the toughest of\n"
     .string "all the GYM LEADERs!\p"
     .string "I heard that the trainers here\n"
     .string "like ground-type POKéMON!$"

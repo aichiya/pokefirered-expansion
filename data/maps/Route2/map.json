@@ -10,7 +10,7 @@
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
-  "show_map_name": true,
+  "show_map_name": false,
   "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
@@ -39,7 +39,7 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
       "flag": "FLAG_TEMP_16",
-      "in_connection": false
+      "in_connection": true
     },
     {
       "type": "object",
@@ -69,7 +69,7 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
       "flag": "FLAG_TEMP_18",
-      "in_connection": false
+      "in_connection": true
     },
     {
       "type": "object",
@@ -143,8 +143,8 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
-      "flag": "FLAG_TEMP_13",
-      "in_connection": false
+      "flag": "FLAG_TEMP_19",
+      "in_connection": true
     },
     {
       "type": "object",
@@ -159,7 +159,7 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
       "flag": "FLAG_TEMP_14",
-      "in_connection": false
+      "in_connection": true
     }
   ],
   "warp_events": [

@@ -6,8 +6,8 @@ Route6_Text_RickyDefeat::
     .string "JR.TRAINER♂: I just can't win!$"
 
 Route6_Text_RickyPostBattle::
-    .string "Whisper…\n"
-    .string "Whisper…$"
+    .string "Whisper...\n"
+    .string "Whisper...$"
 
 Route6_Text_NancyIntro::
     .string "Excuse me!\n"
@@ -18,8 +18,8 @@ Route6_Text_NancyDefeat::
     .string "I hate losing!$"
 
 Route6_Text_NancyPostBattle::
-    .string "Whisper…\n"
-    .string "Whisper…$"
+    .string "Whisper...\n"
+    .string "Whisper...$"
 
 Route6_Text_KeigoIntro::
     .string "There aren't many bugs out here.$"

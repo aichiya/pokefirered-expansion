@@ -1,5 +1,5 @@
 SilphCo_10F_Text_GruntIntro::
-    .string "Welcome to 10F!\n"
+    .string "Welcome to the 10F!\n"
     .string "So good of you to join me!$"
 
 SilphCo_10F_Text_GruntDefeat::
@@ -7,7 +7,7 @@ SilphCo_10F_Text_GruntDefeat::
 
 SilphCo_10F_Text_GruntPostBattle::
     .string "Nice try, but the boardroom is up\n"
-    .string "one more floor.$"
+    .string "one more floor!$"
 
 SilphCo_10F_Text_TravisIntro::
     .string "Enough of your silly games!$"

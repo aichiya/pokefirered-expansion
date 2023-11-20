@@ -3,7 +3,7 @@ Route1_Text_WorkAtPokeMartTakeSample::
     .string "I work at a POKéMON MART.\p"
     .string "It's a convenient shop,\n"
     .string "so please visit us\p"
-    .string "in VIRIDIAN CITY.\p"
+    .string "in VIRIDIAN CITY.\l"
     .string "I know, I'll give you a sample!\n"
     .string "Here you go!$"
 

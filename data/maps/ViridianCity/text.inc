@@ -36,8 +36,7 @@ ViridianCity_Text_GoShoppingInPewterOccasionally::
     .string "trail in VIRIDIAN FOREST.$"
 
 ViridianCity_Text_ThisIsPrivateProperty::
-    .string "You can't go\n"
-    .string "through here!\p"
+    .string "You can't go through here!\n"
     .string "This is private property!$"
 
 ViridianCity_Text_HadMyCoffee::

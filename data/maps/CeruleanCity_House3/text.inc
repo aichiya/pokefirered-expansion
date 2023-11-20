@@ -1,5 +1,5 @@
 CeruleanCity_House3_Text_PleaseTradeWithMyHusband::
-    .string "My husband likes trading\p"
-    .string "POKéMON. If you are a collector,\n"
-    .string "would you please trade with him?$"
+    .string "My husband likes trading POKéMON.\n"
+    .string "If you are a collector, would\p"
+    .string "you please trade with him?$"
 

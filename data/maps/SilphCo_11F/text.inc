@@ -80,7 +80,7 @@ SilphCo_11F_Text_Grunt1Defeat::
     .string "Demolished!$"
 
 SilphCo_11F_Text_Grunt1PostBattle::
-    .string "Watch your step…\n"
+    .string "Watch your step...\n"
     .string "My BOSS likes his POKéMON tough!$"
 
 SilphCo_11F_Text_MonitorHasMonsOnIt::

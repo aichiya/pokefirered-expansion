@@ -6,5 +6,5 @@ PewterCity_House2_Text_MonsLearnTechniquesAsTheyGrow::
 
 PewterCity_House2_Text_MonsEasierCatchIfStatused::
     .string "POKéMON become easier to catch\n"
-    .string "when they are hurt or asleep!.\p"
+    .string "when they are hurt or asleep!\p"
     .string "But, it's not a sure thing!$"

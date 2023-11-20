@@ -52,7 +52,7 @@ MtMoon_B2F_Text_Grunt3Intro::
     .string "Get lost, kid!$"
 
 MtMoon_B2F_Text_Grunt3Defeat::
-    .string "So, you are good…$"
+    .string "So, you are good...$"
 
 MtMoon_B2F_Text_Grunt3PostBattle::
     .string "If you find a fossil, give it to me\n"
@@ -81,5 +81,5 @@ MtMoon_B2F_Text_ObtainedHelixFossil::
 
 MtMoon_B2F_Text_ObtainedDomeFossil::
     .string "{PLAYER} got the\n"
-    .string "DOME FOSSIL!"
+    .string "DOME FOSSIL!$"
 

@@ -33,7 +33,7 @@ FuchsiaCity_Gym_Text_ReceivedTM06FromKoga::
 
 FuchsiaCity_Gym_Text_KogaExplainTM06::
     .string "TM06 contains TOXIC!\n"
-    .string "It is a secret technique over\n"
+    .string "It is a secret technique over\p"
     .string "400 years old!$"
 
 FuchsiaCity_Gym_Text_MakeSpaceForThis::
@@ -119,7 +119,7 @@ FuchsiaCity_Gym_Text_ShawnPostBattle::
 FuchsiaCity_Gym_Text_GymGuyAdvice::
     .string "Yo!\n"
     .string "Champ in the making!\p"
-    .string "FUCHSIA GYM is riddles with\n"
+    .string "FUCHSIA GYM is riddled with\n"
     .string "invisible walls!\p"
     .string "KOGA might appear close, but he's\n"
     .string "blocked off!\p"

@@ -59,9 +59,8 @@ PewterCity_Text_SprayingRepelToKeepWildMonsOut::
     .string "POKéMON out of my garden!$"
 
 PewterCity_Text_BrocksLookingForChallengersFollowMe::
-    .string "You're a TRAINER right?\n"
-    .string "BROCK's looking for new\l"
-    .string "challengers!\p"
+    .string "You're a TRAINER right? BROCK's\n"
+    .string "looking for new challengers!\p"
     .string "Follow me!$"
 
 PewterCity_Text_GoTakeOnBrock::

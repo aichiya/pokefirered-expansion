@@ -7,8 +7,7 @@ SSAnne_2F_Room2_Text_BrooksDefeat::
     .string "Ah, I feel young again!$"
 
 SSAnne_2F_Room2_Text_BrooksPostBattle::
-    .string "15 years ago, I\n"
-    .string "would have won!$"
+    .string "15 years ago, I would have won!$"
 
 SSAnne_2F_Room2_Text_DaleIntro::
     .string "Check out what I fished up!$"

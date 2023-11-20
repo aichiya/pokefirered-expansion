@@ -1,7 +1,7 @@
 Route3_Text_TunnelFromCeruleanTiring::
     .string "Whew... I better\n"
     .string "take a rest...\l"
-    .string"Groan...\p"
+    .string "Groan...\p"
     .string "That tunnel from CERULEAN\n"
     .string "take a lot out of you!$"
 
@@ -18,16 +18,14 @@ Route3_Text_ColtonPostBattle::
 
 Route3_Text_BenIntro::
     .string "Hi! I like shorts!\n"
-    .string "They're comfy and\p"
-    .string "easy to wear!$"
+    .string "They're comfy and easy to wear!$"
 
 Route3_Text_BenDefeat::
     .string "YOUNGSTER: I don't believe it!$"
 
 Route3_Text_BenPostBattle::
-    .string "Are you storing your POKéMON\n"
-    .string "on PC? Each BOX can\p"
-    .string "hold 20 POKéMON!$"
+    .string "Are you storing your POKéMON on PC?\n"
+    .string "Each BOX can hold 20 POKéMON!$"
 
 Route3_Text_JaniceIntro::
     .string "You looked at me, didn't you?$"
@@ -59,8 +57,8 @@ Route3_Text_SallyDefeat::
     .string "LASS: Be nice!$"
 
 Route3_Text_SallyPostBattle::
-    .string "Avoid fights by not\n"
-    .string "letting people see you!$"
+    .string "Avoid fights by not letting\n"
+    .string "people see you!$"
 
 Route3_Text_CalvinIntro::
     .string "Hey!\n"
@@ -75,8 +73,7 @@ Route3_Text_CalvinPostBattle::
     .string "even in winter!$"
 
 Route3_Text_JamesIntro::
-    .string "You can fight my\n"
-    .string "new POKéMON!$"
+    .string "You can fight my new POKéMON!$"
 
 Route3_Text_JamesDefeat::
     .string "BUG CATCHER: Done like dinner!$"

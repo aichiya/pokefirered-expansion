@@ -8,7 +8,7 @@ SilphCo_4F_Text_TeamRocketIsGone::
 
 SilphCo_4F_Text_Grunt1Intro::
     .string "TEAM ROCKET has taken command\n"
-    .string "of SILPH CO. !$"
+    .string "of SILPH CO.!$"
 
 SilphCo_4F_Text_Grunt1Defeat::
     .string "ROCKET: Arrgh!$"

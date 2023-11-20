@@ -1,8 +1,8 @@
 SSAnne_2F_Corridor_Text_ThisShipIsLuxuryLiner::
     .string "This ship, she is a luxury\n"
-    .string "liner for TRAINERS !\p"
+    .string "liner for trainerss!\p"
     .string "At every port, we hold parties\n"
-    .string "with invited TRAINERS!$"
+    .string "with invited trainers!$"
 
 SSAnne_2F_Corridor_Text_RivalIntro::
     .string "{RIVAL}: Bonjour!\n"
@@ -28,9 +28,9 @@ SSAnne_2F_Corridor_Text_RivalVictory::
 SSAnne_2F_Corridor_Text_RivalPostBattle::
     .string "{RIVAL}: I heard there was a CUT\n"
     .string "master on board.\p"
-    .string "But, he was just a seasick,\p"
-    .string "old man!"
+    .string "But, he was just a seasick,\n"
+    .string "old man!\p"
     .string "But, CUT itself is really useful!\n"
-    .string "You should go see him!\n"
+    .string "You should go see him!\p"
     .string "Smell ya!$"
 

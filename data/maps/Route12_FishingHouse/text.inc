@@ -1,6 +1,6 @@
 Route12_FishingHouse_Text_DoYouLikeToFish::
     .string "I'm the FISHING GURU's brother!\n"
-    .string "I simply Looove fishing!\n"
+    .string "I simply Looove fishing!\p"
     .string "Do you like to fish?$"
 
 Route12_FishingHouse_Text_TakeThisAndFish::

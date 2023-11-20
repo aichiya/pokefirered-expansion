@@ -11,7 +11,7 @@ RocketHideout_B4F_Text_GiovanniPostBattle::
     .string "with utmost care.\p"
     .string "A child like you would never\n"
     .string "understand what I hope to achieve.\p"
-    .string "I shall step aside this time!\p"
+    .string "I shall step aside this time!\n"
     .string "I hope we meet again...$"
 
 RocketHideout_B4F_Text_Grunt2Intro::

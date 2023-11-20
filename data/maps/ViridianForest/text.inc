@@ -1,7 +1,6 @@
 ViridianForest_Text_FriendsItchingToBattle::
     .string "I came here with some friends!\n"
-    .string "They're out for\n"
-    .string "POKéMON fights!$"
+    .string "They're out for POKéMON fights!$"
 
 ViridianForest_Text_RickIntro::
     .string "Hey! You have POKéMON!\n"
@@ -16,9 +15,8 @@ ViridianForest_Text_RickPostBattle::
     .string "Another time, okay?$"
 
 ViridianForest_Text_DougIntro::
-    .string "Yo! You can't jam'\n"
-    .string "out if you're a\l"
-    .string "POKéMON trainer!$"
+    .string "Yo! You can't jam out if\n"
+    .string "you're a POKéMON trainer!$"
 
 ViridianForest_Text_DougDefeat::
     .string "Huh?\n"
@@ -65,18 +63,14 @@ ViridianForest_Text_CharliePostBattle::
     .string "They're a lot of fun!$"
 
 ViridianForest_Text_RanOutOfPokeBalls::
-    .string "I ran out of POKé\n"
-    .string "BALLs to catch\l"
-    .string "POKéMON with!\p"
-    .string "You should carry\n"
-    .string "extras!$"
+    .string "I ran out of POKé BALLs to\n"
+    .string "catch POKéMON with!\p"
+    .string "You should carry extras!$"
 
 ViridianForest_Text_AvoidGrassyAreasWhenWeak::
     .string "TRAINER TIPS\p"
-    .string "If you want to\n"
-    .string "avoid battles, stay away\l"
-    .string "stay away from\l"
-    .string "grassy areas!$"
+    .string "If you want to avoid battles,\n"
+    .string "stay away from grassy areas!$"
 
 ViridianForest_Text_UseAntidoteForPoison::
     .string "For poison, use ANTIDOTE!\n"
@@ -84,23 +78,20 @@ ViridianForest_Text_UseAntidoteForPoison::
 
 ViridianForest_Text_ContactOakViaPCToRatePokedex::
     .string "TRAINER TIPS\p"
-    .string "Contact PROF.OAK via\n"
-    .string "a PC to get your\l"
-    .string "POKéDEX evaluated!$"
+    .string "Contact PROF.OAK via a PC to\n"
+    .string "get your POKéDEX evaluated!$"
 
 ViridianForest_Text_CantCatchOwnedMons::
     .string "TRAINER TIPS\p"
     .string "No stealing of POKéMON\n"
     .string "from other trainers!\p"
-    .string "Catch only wild\n"
-    .string "POKéMON!$"
+    .string "Catch only wild POKéMON!$"
 
 ViridianForest_Text_WeakenMonsBeforeCapture::
     .string "TRAINER TIPS\p"
     .string "Weaken POKéMON before attempting\n"
     .string "capture!\p"
-    .string "When healthy,\n"
-    .string "they may escape!$"
+    .string "When healthy, they may escape!$"
 
 ViridianForest_Text_LeavingViridianForest::
     .string "LEAVING VIRIDIAN FOREST\n"

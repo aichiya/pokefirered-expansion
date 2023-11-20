@@ -1,8 +1,7 @@
 Route5_PokemonDayCare_Text_WantMeToRaiseMon::
 	.string "I run a DAYCARE.\p"
-	.string "Would you like me\n"
-	.string "to raise one of\l"
-	.string "your POKéMON?$"
+	.string "Would you like me to raise\n"
+	.string "one of your POKéMON?$"
 
 Route5_PokemonDayCare_Text_ComeAgain::
 	.string "come again.$"
@@ -11,8 +10,7 @@ Route5_PokemonDayCare_Text_WhichMonShouldIRaise::
 	.string "Which POKéMON should I raise?$"
 
 Route5_PokemonDayCare_Text_ComeAnytimeYouLike::
-	.string "All right then,\n"
-	.string "come again.$"
+	.string "All right then, come again.$"
 
 Route5_PokemonDayCare_Text_LookAfterMonForAWhile::
 	.string "Fine, I'll look after\n"
@@ -35,7 +33,7 @@ Route5_PokemonDayCare_Text_ThankYouHeresMon::
 	.string "Here's your POKéMON!$"
 
 Route5_PokemonDayCare_Text_PlayerGotMonBack::
-	.string "{PLAYER} got {STR_VAR_1} back!\n"
+	.string "{PLAYER} got {STR_VAR_1} back!$"
 
 Route5_PokemonDayCare_Text_OnlyHaveOneMonWithYou::
 	.string "You only have one\n"
@@ -48,7 +46,7 @@ Route5_PokemonDayCare_Text_WhatWillYouBattleWith::
 Route5_PokemonDayCare_Text_MonHasGrownByXLevels::
 	.string "Your {STR_VAR_1} has grown a lot.\n"
 	.string "Yes, quite a lot, I'd say.\p"
-	.string "Let me see…\n"
+	.string "Let me see...\n"
 	.string "By level, it's grown by {STR_VAR_2}.\p"
 	.string "Aren't I great?$"
 

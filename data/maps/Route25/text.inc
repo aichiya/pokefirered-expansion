@@ -7,8 +7,7 @@ Route25_Text_JoeyDefeat::
 
 Route25_Text_JoeyPostBattle::
     .string "All POKéMON have weaknesses.\n"
-    .string "It's best to raise\p"
-    .string "different kinds.$"
+    .string "It's best to raise different kinds.$"
 
 Route25_Text_DanIntro::
     .string "Dad took me to a great party on\n"
@@ -50,13 +49,11 @@ Route25_Text_ChadDefeat::
     .string "YOUNGSTER: I knew I'd lose too!$"
 
 Route25_Text_ChadPostBattle::
-    .string "If your POKéMON gets\n"
-    .string "confused or falls\p"
-    .string "asleep, switch it!$"
+    .string "If your POKéMON gets confused or\n"
+    .string "falls asleep, switch it!$"
 
 Route25_Text_HaleyIntro::
-    .string "My friend has a\n"
-    .string "cute POKéMON.\p"
+    .string "My friend has a cute POKéMON.\n"
     .string "I'm so jealous!$"
 
 Route25_Text_HaleyDefeat::

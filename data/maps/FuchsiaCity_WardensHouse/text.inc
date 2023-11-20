@@ -20,18 +20,18 @@ FuchsiaCity_WardensHouse_Text_WardenPoppedInHisTeeth::
 
 FuchsiaCity_WardensHouse_Text_ThanksSonGiveYouSomething::
     .string "WARDEN: Thanks, kid!\n"
-    .string "No one could understand a word\n"
-    .string "that I said.\p"
+    .string "No one could understand a word\p"
+    .string "that I said.\l"
     .string "I couldn't work that way.\n"
-    .string "Let me give you something for\n"
+    .string "Let me give you something for\p"
     .string "your trouble.$"
 
 FuchsiaCity_WardensHouse_Text_ThanksLassieGiveYouSomething::
     .string "WARDEN: Thanks, kid!\n"
-    .string "No one could understand a word\n"
-    .string "that I said.\p"
+    .string "No one could understand a word\p"
+    .string "that I said.\l"
     .string "I couldn't work that way.\n"
-    .string "Let me give you something for\n"
+    .string "Let me give you something for\p"
     .string "your trouble.$"
 
 FuchsiaCity_WardensHouse_Text_ReceivedHM04FromWarden::
@@ -39,8 +39,8 @@ FuchsiaCity_WardensHouse_Text_ReceivedHM04FromWarden::
 
 FuchsiaCity_WardensHouse_Text_ExplainStrength::
     .string "WARDEN: HM04 teaches STRENGTH!\n"
-    .string "It lets POKéMON move boulders when\n"
-    .string "you're outside of battle.\p"
+    .string "It lets POKéMON move boulders when\p"
+    .string "you're outside of battle.\l"
     .string "Oh yes, did you find the SECRET\n"
     .string "HOUSE in the SAFARI ZONE?\p"
     .string "If you do, you win an HM!\n"

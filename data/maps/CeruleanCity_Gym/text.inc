@@ -16,14 +16,14 @@ CeruleanCity_Gym_Text_ExplainCascadeBadge::
     .string "The CASCADEBADGE makes all\n"
     .string "POKéMON up to L30 obey!\p"
     .string "That includes even outsiders!\n"
-    .string "There's more, you can now\n"
-    .string "use CUT any time!\p"
+    .string "There's more, you can now\p"
+    .string "use CUT any time!\l"
     .string "You can CUT down small bushes\n"
     .string "to open new paths!\p"
     .string "You can also have my favorite TM!$"
 
 CeruleanCity_Gym_Text_ReceivedTM11FromMisty::
-    .string "{PLAYER} received TM11!\n"
+    .string "{PLAYER} received TM11!$"
 
 CeruleanCity_Gym_Text_BetterMakeRoomForThis::
     .string "You better make room for this!$"
@@ -40,13 +40,11 @@ CeruleanCity_Gym_Text_DianaIntro::
     .string "MISTY can wait!$"
 
 CeruleanCity_Gym_Text_DianaDefeat::
-    .string "JR.TRAINER♀: You\n"
-    .string "overwhelmed me!$"
+    .string "JR.TRAINER♀: You overwhelmed me!$"
 
 CeruleanCity_Gym_Text_DianaPostBattle::
-    .string "You have to face other\n"
-    .string "trainers to find out how\p"
-    .string "good you really are.$"
+    .string "You have to face other trainers to\n"
+    .string "find out how good you really are.$"
 
 CeruleanCity_Gym_Text_LuisIntro::
     .string "Splash!\p"

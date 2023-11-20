@@ -116,8 +116,7 @@ SilphCo_7F_Text_RivalIntro::
 
 SilphCo_7F_Text_RivalDefeat::
     .string "Oh ho!\n"
-    .string "So, you are ready for\l"
-    .string "BOSS ROCKET!$"
+    .string "So, you are ready for BOSS ROCKET!$"
 
 SilphCo_7F_Text_RivalVictory::
     .string "{RIVAL}“おまえなあ‥\p"
@@ -129,14 +128,14 @@ SilphCo_7F_Text_RivalPostBattle::
     .string "Well, {PLAYER}!\n"
     .string "I'm moving on up and ahead!\p"
     .string "By checking my POKéDEX, I'm\n"
-    .string "starting to see what's strong\l"
-    .string "and how they evolve!\p"
+    .string "starting to see what's strong\p"
+    .string "and how they evolve!\l"
     .string "I'm going to the POKéMON LEAGUE to\n"
     .string "boot out the ELITE FOUR!\p"
     .string "I'll become the world's most\n"
     .string "powerful trainer!\p"
     .string "{PLAYER}, well good luck to you!\n"
-    .string "Don't sweat it!\l"
+    .string "Don't sweat it!\p"
     .string "Smell ya!$"
 
 SilphCo_7F_Text_FloorSign::

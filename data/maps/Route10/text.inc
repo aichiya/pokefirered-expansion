@@ -31,8 +31,7 @@ Route10_Text_HermanDefeat::
     .string "My POKéMON!$"
 
 Route10_Text_HermanPostBattle::
-    .string "I don't like you\n"
-    .string "for beating me!$"
+    .string "I don't like you for beating me!$\n"
 
 Route10_Text_HeidiIntro::
     .string "I've been to a POKéMON GYM\n"
@@ -65,9 +64,8 @@ Route10_Text_CarolDefeat::
     .string "JR.TRAINER♂: I'm not up for it!$"
 
 Route10_Text_CarolPostBattle::
-    .string "The POKéMON here\n"
-    .string "are so chunky!\p"
-    .string "There should be a pink one\n"
+    .string "The POKéMON here are so chunky!\n"
+    .string "There should be a pink one\p"
     .string "with a floral pattern!$"
 
 Route10_Text_RockTunnelDetourToLavender::

@@ -4,7 +4,7 @@ Route24_Text_JustEarnedFabulousPrize::
     .string "You just earned a fabulous prize!$"
 
 Route24_Text_ReceivedNuggetFromMysteryTrainer::
-    .string "{PLAYER} received a NUGGET$"
+    .string "{PLAYER} received a NUGGET!$"
 
 Route24_Text_YouDontHaveAnyRoom::
     .string "You don't have any room!$"
@@ -60,7 +60,7 @@ Route24_Text_ReliDefeat::
     .string "LASS: I lost, too!$"
 
 Route24_Text_ReliPostBattle::
-    .string "I did my best, so I've no regrets!$"
+    .string "I did my best. I have no regrets!$"
 
 Route24_Text_TimmyIntro::
     .string "Here's No. 3!\n"
@@ -85,8 +85,8 @@ Route24_Text_AliPostBattle::
 
 Route24_Text_CaleIntro::
     .string "This is NUGGET BRIDGE!\n"
-    .string "Beat us 5 trainers and\n"
-    .string "win a fabulous prize!\p"
+    .string "Beat us 5 trainers and\p"
+    .string "win a fabulous prize!\l"
     .string "Think you got what it takes?$"
 
 Route24_Text_CaleDefeat::

@@ -25,9 +25,8 @@ Route25_SeaCottage_Text_ImBillHelpMeOutLady::
     .string "Help me out here!$"
 
 Route25_SeaCottage_Text_RunCellSeparationOnPC::
-    .string "When I'm in the\n"
-    .string "TELEPORTER, go to\p"
-    .string "my PC and run the\n"
+    .string "When I'm in the TELEPORTER,\n"
+    .string "go to my PC and run the\p"
     .string "Cell Separation System!$"
 
 Route25_SeaCottage_Text_NoPleaseChief::
@@ -55,7 +54,7 @@ Route25_SeaCottage_Text_ThanksBudTakeThis::
     .string "POKéMON collection?\p"
     .string "You didn't?\n"
     .string "That's a bummer.\p"
-    .string "I've got to thank you…\n"
+    .string "I've got to thank you...\n"
     .string "Oh, here, maybe this'll do.$"
 
 Route25_SeaCottage_Text_ThanksLadyTakeThis::
@@ -69,8 +68,7 @@ Route25_SeaCottage_Text_ThanksLadyTakeThis::
     .string "Oh, here, maybe this'll do.$"
 
 Route25_SeaCottage_Text_ReceivedSSTicketFromBill::
-    .string "{PLAYER} received an S.S. TICKET\n"
-    .string "from BILL.$"
+    .string "{PLAYER} received an S.S. TICKET!$"
 
 Route25_SeaCottage_Text_YouveGotTooMuchStuff::
     .string "You've got too much stuff!$"
@@ -78,8 +76,7 @@ Route25_SeaCottage_Text_YouveGotTooMuchStuff::
 Route25_SeaCottage_Text_SSAnnePartyYouGoInstead::
     .string "That cruise ship, S.S. ANNE,\n"
     .string "is in VERMILION CITY.\p"
-    .string "It's passengers are\n"
-    .string "all trainers!\p"
+    .string "It's passengers are all trainers!\l"
     .string "They invited me to their party,\n"
     .string "but I can't stand fancy do's.\p"
     .string "Why don't you go instead of me?$"
@@ -90,8 +87,8 @@ Route25_SeaCottage_Text_CheckOutRareMonsOnPC::
     .string "Go on, check out my PC.$"
 
 Route25_SeaCottage_Text_TeleporterIsDisplayed::
-    .string "TELEPORTER is displayed on the PC\n"
-    .string "monitor.$"
+    .string "TELEPORTER is displayed on the\n"
+    .string "PC monitor.$"
 
 Route25_SeaCottage_Text_InitiatedTeleportersCellSeparator::
     .string "{PLAYER} initiated the TELEPORTER's\n"

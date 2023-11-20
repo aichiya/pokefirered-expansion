@@ -52,7 +52,7 @@ CeruleanCity_Text_GruntIntro::
     .string "Hey! Stay out!\n"
     .string "It's not your yard!\p"
     .string "Huh? me?\n"
-    .string "I'm an innocent bystander!\n"
+    .string "I'm an innocent bystander!\p"
     .string "Don't you believe me?{PLAY_BGM}{MUS_ENCOUNTER_ROCKET}$"
 
 CeruleanCity_Text_GruntDefeat::
@@ -75,8 +75,8 @@ CeruleanCity_Text_MakeRoomForThisCantRun::
     .string "I can't run until I give it to you!$"
 
 CeruleanCity_Text_TrainerLifeIsToughIsntIt::
-    .string "You're a TRAINER too?\p"
-    .string "Collecting, fighting,\n"
+    .string "You're a TRAINER too?\n"
+    .string "Collecting, fighting,\p"
     .string "it's a tough life.$"
 
 CeruleanCity_Text_YouCanCutDownSmallTrees::
@@ -154,14 +154,12 @@ CeruleanCity_Text_ThisIsCeruleanCave::
 
 CeruleanCity_Text_CitySign::
     .string "CERULEAN CITY\n"
-    .string "A Mysterious, Blue Aura Surrounds\l"
-    .string "It$"
+    .string "A Mysterious, Blue Aura Surrounds It$"
 
 CeruleanCity_Text_TrainerTipsHeldItems::
     .string "TRAINER TIPS\p"
-    .string "Pressing B Button during\n"
-    .string "evolution cancels\p"
-    .string "the whole process.$"
+    .string "Pressing B Button during evolution\n"
+    .string "cancels the whole process.$"
 
 CeruleanCity_Text_BikeShopSign::
     .string "Grass and caves handled easily!\n"

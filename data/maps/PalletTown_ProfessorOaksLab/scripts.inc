@@ -622,7 +622,7 @@ PalletTown_ProfessorOaksLab_EventScript_ReceiveDexScene::
 	delay 40
 	msgbox PalletTown_ProfessorOaksLab_Text_OakTakeTheseWithYou
 	closemessage
-	applymovement LOCALID_PROF_OAK, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_PROF_OAK, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	removeobject LOCALID_POKEDEX_1
 	delay 10

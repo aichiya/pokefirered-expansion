@@ -1,7 +1,7 @@
 VermilionCity_House1_Text_ImFishingGuruDoYouLikeToFish::
-    .string "I'm the FISHING GURU!\p"
-    .string "I simply looove fishing!\n"
-    .string "I can't bear to go without.\p"
+    .string "I'm the FISHING GURU!\n"
+    .string "I simply looove fishing!\p"
+    .string "I can't bear to go without.\n"
     .string "Tell me, do you like to fish?$"
 
 VermilionCity_House1_Text_TakeThisAndFish::
@@ -10,8 +10,7 @@ VermilionCity_House1_Text_TakeThisAndFish::
     .string "Take this and fish, young friend!$"
 
 VermilionCity_House1_Text_ReceivedOldRodFromFishingGuru::
-    .string "{PLAYER} received an OLD ROD from\n"
-    .string "the FISHING GURU.$"
+    .string "{PLAYER} received an OLD ROD!$"
 
 VermilionCity_House1_Text_FishingIsAWayOfLife::
     .string "Fishing is a way of life!\n"
@@ -20,8 +19,8 @@ VermilionCity_House1_Text_FishingIsAWayOfLife::
     .string "and land the big one, my friend.$"
 
 VermilionCity_House1_Text_OhThatsSoDisappointing::
-    .string "Oh…\n"
-    .string "That's so disappointing…$"
+    .string "Oh...\n"
+    .string "That's so disappointing...$"
 
 VermilionCity_House1_Text_HowAreTheFishBiting::
     .string "Hello there, {PLAYER}!\p"

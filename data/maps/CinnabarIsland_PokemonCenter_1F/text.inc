@@ -12,8 +12,8 @@ CinnabarIsland_PokemonCenter_1F_Text_VisitUnionRoom::
 
 CinnabarIsland_PokemonCenter_1F_Text_EvolutionCanWaitForNewMoves::
     .string "You can cancel evolution.\n"
-    .string "When a POKéMON is evolving,\n"
-    .string "you can stop it and leave\p"
+    .string "When a POKéMON is evolving,\p"
+    .string "you can stop it and leave\n"
     .string "it the way it is.$"
 
 CinnabarIsland_PokemonCenter_1F_Text_ReadyToSailToOneIsland::

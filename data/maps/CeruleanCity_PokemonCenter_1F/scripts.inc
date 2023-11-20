@@ -23,7 +23,7 @@ CeruleanCity_PokemonCenter_1F_EventScript_Rocker::
 	end
 
 CeruleanCity_PokemonCenter_1F_EventScript_Couch::
-	msgbox CeruleanCity_PokemonCenter_1F_Text_BillCollectsRareMons
+	msgbox CeruleanCity_PokemonCenter_1F_Text_BillCollectsRareMons, MSGBOX_NPC
 	end
 
 CeruleanCity_PokemonCenter_1F_EventScript_Lass::

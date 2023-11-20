@@ -7,8 +7,7 @@ MtMoon_1F_Text_MarcosDefeat::
     .string "Shocked again!$"
 
 MtMoon_1F_Text_MarcosPostBattle::
-    .string "Kids like you shouldn't\n"
-    .string "be here!$"
+    .string "Kids like you shouldn't be here!$"
 
 MtMoon_1F_Text_JoshIntro::
     .string "Did you come to\n"
@@ -23,39 +22,35 @@ MtMoon_1F_Text_JoshPostBattle::
 
 MtMoon_1F_Text_MiriamIntro::
     .string "Wow! It's way bigger in here\n"
-    .string "then I thought!$"
+    .string "than I thought!$"
 
 MtMoon_1F_Text_MiriamDefeat::
     .string "LASS: Oh!\n"
     .string "I lost it!$"
 
 MtMoon_1F_Text_MiriamPostBattle::
-    .string "How do you get\n"
-    .string "out of here?$"
+    .string "How do you get out of here?$"
 
 MtMoon_1F_Text_JovanIntro::
     .string "What!\n"
     .string "Don't sneak up on me!$"
 
 MtMoon_1F_Text_JovanDefeat::
-    .string "SUPER NERD: My\n"
-    .string "POKéMON won't do!$"
+    .string "SUPER NERD: My POKéMON won't do!$"
 
 MtMoon_1F_Text_JovanPostBattle::
     .string "I have to find stronger POKéMON.$"
 
 MtMoon_1F_Text_IrisIntro::
-    .string "What? I'm waiting\n"
-    .string "for my friends to\l"
-    .string "find me here.$"
+    .string "What? I'm waiting for my\n"
+    .string "friends to find me here.$"
 
 MtMoon_1F_Text_IrisDefeat::
     .string "LASS: I lost?$"
 
 MtMoon_1F_Text_IrisPostBattle::
-    .string "I heard there are\n"
-    .string "some very rare\l"
-    .string "fossils here.$"
+    .string "I heard there are some very\n"
+    .string "rare fossils here.$"
 
 MtMoon_1F_Text_KentIntro::
     .string "Suspicious men are in the cave.\n"
@@ -76,13 +71,12 @@ MtMoon_1F_Text_RobbyDefeat::
     .string "BUG CATCHER: I lost.$"
 
 MtMoon_1F_Text_RobbyPostBattle::
-    .string "ZUBAT is tough! But if\n"
-    .string "you can catch one, you'll\l"
-    .string "be able to count on it.$"
+    .string "ZUBAT is tough! But if you can\n"
+    .string "catch one, you'll be able\l"
+    .string "to count on it.$"
 
 MtMoon_1F_Text_ZubatIsABloodsucker::
-    .string "Beware! ZUBAT is\n"
-    .string "a blood sucker!$"
+    .string "Beware! ZUBAT is a blood sucker!$"
 
 MtMoon_1F_Text_BrockHelpsExcavateFossils::
     .string "Hi, I'm excavating for fossils here\n"

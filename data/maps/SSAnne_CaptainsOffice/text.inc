@@ -15,9 +15,9 @@ SSAnne_CaptainsOffice_Text_ThankYouHaveHMForCut::
     .string "You want to see my\n"
     .string "CUT technique?\p"
     .string "I could show you if\n"
-    .string "I wasn't' ill...\p"
+    .string "I wasn't ill...\p"
     .string "I know! You can have this!\n"
-    .string "Teach it to your POKéMON and\n"
+    .string "Teach it to your POKéMON and\p"
     .string "you can see it CUT any time!$"
 
 SSAnne_CaptainsOffice_Text_ObtainedHM01FromCaptain::
