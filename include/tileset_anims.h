@@ -6,11 +6,11 @@ void InitSecondaryTilesetAnimation(void);
 void UpdateTilesetAnimations(void);
 void TransferTilesetAnimsBuffer(void);
 
-void InitTilesetAnim_General(void);
 void InitTilesetAnim_RB_General(void);
-void InitTilesetAnim_CeladonCity(void);
-void InitTilesetAnim_VermilionGym(void);
-void InitTilesetAnim_CeladonGym(void);
-void InitTilesetAnim_SilphCo(void);
+void InitTilesetAnim_RB_Cavern(void);
+void InitTilesetAnim_RB_Plant(void);
+void InitTilesetAnim_RB_Lab(void);
+void InitTilesetAnim_RB_Forest(void);
+void InitTilesetAnim_RB_Ship(void);
 
 #endif // GUARD_TILESET_ANIMS_H
