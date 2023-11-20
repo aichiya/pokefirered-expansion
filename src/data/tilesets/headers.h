@@ -6,7 +6,7 @@ const struct Tileset gTileset_General =
     .palettes = gTilesetPalettes_General,
     .metatiles = gMetatiles_General,
     .metatileAttributes = gMetatileAttributes_General,
-    .callback = InitTilesetAnim_General,
+    .callback = NULL,
 };
 
 const struct Tileset gTileset_PalletTown =
@@ -83,7 +83,7 @@ const struct Tileset gTileset_CeladonCity =
     .palettes = gTilesetPalettes_CeladonCity,
     .metatiles = gMetatiles_CeladonCity,
     .metatileAttributes = gMetatileAttributes_CeladonCity,
-    .callback = InitTilesetAnim_CeladonCity,
+    .callback = NULL,
 };
 
 const struct Tileset gTileset_FuchsiaCity =
@@ -314,7 +314,7 @@ const struct Tileset gTileset_VermilionGym =
     .palettes = gTilesetPalettes_VermilionGym,
     .metatiles = gMetatiles_VermilionGym,
     .metatileAttributes = gMetatileAttributes_VermilionGym,
-    .callback = InitTilesetAnim_VermilionGym,
+    .callback = NULL,
 };
 
 const struct Tileset gTileset_CeladonGym =
@@ -325,7 +325,7 @@ const struct Tileset gTileset_CeladonGym =
     .palettes = gTilesetPalettes_CeladonGym,
     .metatiles = gMetatiles_CeladonGym,
     .metatileAttributes = gMetatileAttributes_CeladonGym,
-    .callback = InitTilesetAnim_CeladonGym,
+    .callback = NULL,
 };
 
 const struct Tileset gTileset_SaffronGym =
@@ -501,7 +501,7 @@ const struct Tileset gTileset_SilphCo =
     .palettes = gTilesetPalettes_Condominiums,
     .metatiles = gMetatiles_SilphCo,
     .metatileAttributes = gMetatileAttributes_SilphCo,
-    .callback = InitTilesetAnim_SilphCo,
+    .callback = NULL,
 };
 
 const struct Tileset gTileset_UndergroundPath =
@@ -787,7 +787,7 @@ const struct Tileset gTileset_RB_Cavern =
     .palettes = gTilesetPalettes_RB_Cavern,
     .metatiles = gMetatiles_RB_Cavern,
     .metatileAttributes = gMetatileAttributes_RB_Cavern,
-    .callback = NULL,
+    .callback = InitTilesetAnim_RB_Cavern,
 };
 
 const struct Tileset gTileset_RB_Condo =
@@ -820,7 +820,7 @@ const struct Tileset gTileset_RB_Forest =
     .palettes = gTilesetPalettes_RB_Forest,
     .metatiles = gMetatiles_RB_Forest,
     .metatileAttributes = gMetatileAttributes_RB_Forest,
-    .callback = NULL,
+    .callback = InitTilesetAnim_RB_Forest,
 };
 
 const struct Tileset gTileset_RB_Generator =
@@ -853,7 +853,7 @@ const struct Tileset gTileset_RB_Lab =
     .palettes = gTilesetPalettes_RB_Lab,
     .metatiles = gMetatiles_RB_Lab,
     .metatileAttributes = gMetatileAttributes_RB_Lab,
-    .callback = NULL,
+    .callback = InitTilesetAnim_RB_Lab,
 };
 
 const struct Tileset gTileset_RB_Museum =
@@ -878,116 +878,6 @@ const struct Tileset gTileset_RB_Overworld =
     .callback = NULL,
 };
 
-const struct Tileset gTileset_RB_Overworld_Celadon =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_RB_Overworld_Celadon,
-    .palettes = gTilesetPalettes_RB_Overworld_Celadon,
-    .metatiles = gMetatiles_RB_Overworld_Celadon,
-    .metatileAttributes = gMetatileAttributes_RB_Overworld_Celadon,
-    .callback = NULL,
-};
-
-const struct Tileset gTileset_RB_Overworld_Cerulean =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_RB_Overworld_Cerulean,
-    .palettes = gTilesetPalettes_RB_Overworld_Cerulean,
-    .metatiles = gMetatiles_RB_Overworld_Cerulean,
-    .metatileAttributes = gMetatileAttributes_RB_Overworld_Cerulean,
-    .callback = NULL,
-};
-
-const struct Tileset gTileset_RB_Overworld_Cinnebar =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_RB_Overworld_Cinnebar,
-    .palettes = gTilesetPalettes_RB_Overworld_Cinnebar,
-    .metatiles = gMetatiles_RB_Overworld_Cinnebar,
-    .metatileAttributes = gMetatileAttributes_RB_Overworld_Cinnebar,
-    .callback = NULL,
-};
-
-const struct Tileset gTileset_RB_Overworld_Fuchsia =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_RB_Overworld_Fuchsia,
-    .palettes = gTilesetPalettes_RB_Overworld_Fuchsia,
-    .metatiles = gMetatiles_RB_Overworld_Fuchsia,
-    .metatileAttributes = gMetatileAttributes_RB_Overworld_Fuchsia,
-    .callback = NULL,
-};
-
-const struct Tileset gTileset_RB_Overworld_Lavender =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_RB_Overworld_Lavender,
-    .palettes = gTilesetPalettes_RB_Overworld_Lavender,
-    .metatiles = gMetatiles_RB_Overworld_Lavender,
-    .metatileAttributes = gMetatileAttributes_RB_Overworld_Lavender,
-    .callback = NULL,
-};
-
-const struct Tileset gTileset_RB_Overworld_Pallet =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_RB_Overworld_Pallet,
-    .palettes = gTilesetPalettes_RB_Overworld_Pallet,
-    .metatiles = gMetatiles_RB_Overworld_Pallet,
-    .metatileAttributes = gMetatileAttributes_RB_Overworld_Pallet,
-    .callback = NULL,
-};
-
-const struct Tileset gTileset_RB_Overworld_Pewter =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_RB_Overworld_Pewter,
-    .palettes = gTilesetPalettes_RB_Overworld_Pewter,
-    .metatiles = gMetatiles_RB_Overworld_Pewter,
-    .metatileAttributes = gMetatileAttributes_RB_Overworld_Pewter,
-    .callback = NULL,
-};
-
-const struct Tileset gTileset_RB_Overworld_Saffron =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_RB_Overworld_Saffron,
-    .palettes = gTilesetPalettes_RB_Overworld_Saffron,
-    .metatiles = gMetatiles_RB_Overworld_Saffron,
-    .metatileAttributes = gMetatileAttributes_RB_Overworld_Saffron,
-    .callback = NULL,
-};
-
-const struct Tileset gTileset_RB_Overworld_Vermilion =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_RB_Overworld_Vermilion,
-    .palettes = gTilesetPalettes_RB_Overworld_Vermilion,
-    .metatiles = gMetatiles_RB_Overworld_Vermilion,
-    .metatileAttributes = gMetatileAttributes_RB_Overworld_Vermilion,
-    .callback = NULL,
-};
-
-const struct Tileset gTileset_RB_Overworld_Viridian =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_RB_Overworld_Viridian,
-    .palettes = gTilesetPalettes_RB_Overworld_Viridian,
-    .metatiles = gMetatiles_RB_Overworld_Viridian,
-    .metatileAttributes = gMetatileAttributes_RB_Overworld_Viridian,
-    .callback = NULL,
-};
-
 const struct Tileset gTileset_RB_Plant =
 {
     .isCompressed = TRUE,
@@ -996,7 +886,7 @@ const struct Tileset gTileset_RB_Plant =
     .palettes = gTilesetPalettes_RB_Plant,
     .metatiles = gMetatiles_RB_Plant,
     .metatileAttributes = gMetatileAttributes_RB_Plant,
-    .callback = NULL,
+    .callback = InitTilesetAnim_RB_Plant,
 };
 
 const struct Tileset gTileset_RB_Playerhouse =
@@ -1051,7 +941,7 @@ const struct Tileset gTileset_RB_Ship =
     .palettes = gTilesetPalettes_RB_Ship,
     .metatiles = gMetatiles_RB_Ship,
     .metatileAttributes = gMetatileAttributes_RB_Ship,
-    .callback = NULL,
+    .callback = InitTilesetAnim_RB_Ship,
 };
 
 const struct Tileset gTileset_RB_ShipExterior =

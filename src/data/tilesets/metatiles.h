@@ -235,36 +235,6 @@ const u32 gMetatileAttributes_RB_Museum[] = INCBIN_U32("data/tilesets/secondary/
 const u16 gMetatiles_RB_Overworld[] = INCBIN_U16("data/tilesets/secondary/rb_overworld/metatiles.bin");
 const u32 gMetatileAttributes_RB_Overworld[] = INCBIN_U32("data/tilesets/secondary/rb_overworld/metatile_attributes.bin");
 
-const u16 gMetatiles_RB_Overworld_Celadon[] = INCBIN_U16("data/tilesets/secondary/rb_overworld_celadon/metatiles.bin");
-const u32 gMetatileAttributes_RB_Overworld_Celadon[] = INCBIN_U32("data/tilesets/secondary/rb_overworld_celadon/metatile_attributes.bin");
-
-const u16 gMetatiles_RB_Overworld_Cerulean[] = INCBIN_U16("data/tilesets/secondary/rb_overworld_cerulean/metatiles.bin");
-const u32 gMetatileAttributes_RB_Overworld_Cerulean[] = INCBIN_U32("data/tilesets/secondary/rb_overworld_cerulean/metatile_attributes.bin");
-
-const u16 gMetatiles_RB_Overworld_Cinnebar[] = INCBIN_U16("data/tilesets/secondary/rb_overworld_cinnebar/metatiles.bin");
-const u32 gMetatileAttributes_RB_Overworld_Cinnebar[] = INCBIN_U32("data/tilesets/secondary/rb_overworld_cinnebar/metatile_attributes.bin");
-
-const u16 gMetatiles_RB_Overworld_Fuchsia[] = INCBIN_U16("data/tilesets/secondary/rb_overworld_fuchsia/metatiles.bin");
-const u32 gMetatileAttributes_RB_Overworld_Fuchsia[] = INCBIN_U32("data/tilesets/secondary/rb_overworld_fuchsia/metatile_attributes.bin");
-
-const u16 gMetatiles_RB_Overworld_Lavender[] = INCBIN_U16("data/tilesets/secondary/rb_overworld_lavender/metatiles.bin");
-const u32 gMetatileAttributes_RB_Overworld_Lavender[] = INCBIN_U32("data/tilesets/secondary/rb_overworld_lavender/metatile_attributes.bin");
-
-const u16 gMetatiles_RB_Overworld_Pallet[] = INCBIN_U16("data/tilesets/secondary/rb_overworld_pallet/metatiles.bin");
-const u32 gMetatileAttributes_RB_Overworld_Pallet[] = INCBIN_U32("data/tilesets/secondary/rb_overworld_pallet/metatile_attributes.bin");
-
-const u16 gMetatiles_RB_Overworld_Pewter[] = INCBIN_U16("data/tilesets/secondary/rb_overworld_pewter/metatiles.bin");
-const u32 gMetatileAttributes_RB_Overworld_Pewter[] = INCBIN_U32("data/tilesets/secondary/rb_overworld_pewter/metatile_attributes.bin");
-
-const u16 gMetatiles_RB_Overworld_Saffron[] = INCBIN_U16("data/tilesets/secondary/rb_overworld_saffron/metatiles.bin");
-const u32 gMetatileAttributes_RB_Overworld_Saffron[] = INCBIN_U32("data/tilesets/secondary/rb_overworld_saffron/metatile_attributes.bin");
-
-const u16 gMetatiles_RB_Overworld_Vermilion[] = INCBIN_U16("data/tilesets/secondary/rb_overworld_vermilion/metatiles.bin");
-const u32 gMetatileAttributes_RB_Overworld_Vermilion[] = INCBIN_U32("data/tilesets/secondary/rb_overworld_vermilion/metatile_attributes.bin");
-
-const u16 gMetatiles_RB_Overworld_Viridian[] = INCBIN_U16("data/tilesets/secondary/rb_overworld_viridian/metatiles.bin");
-const u32 gMetatileAttributes_RB_Overworld_Viridian[] = INCBIN_U32("data/tilesets/secondary/rb_overworld_viridian/metatile_attributes.bin");
-
 const u16 gMetatiles_RB_Plant[] = INCBIN_U16("data/tilesets/secondary/rb_plant/metatiles.bin");
 const u32 gMetatileAttributes_RB_Plant[] = INCBIN_U32("data/tilesets/secondary/rb_plant/metatile_attributes.bin");
 
