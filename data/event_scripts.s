@@ -881,7 +881,7 @@ Text_GiveNicknameToReceivedMon::
 	.string "{STR_VAR_2} you received?$"
 
 gText_PkmnFainted3::
-	.string "{STR_VAR_1} fainted…\p"
+	.string "{STR_VAR_1} fainted...\p"
 	.string "$"
 
 Text_WelcomeWantToHealPkmn::
@@ -890,15 +890,15 @@ Text_WelcomeWantToHealPkmn::
 	.string "back to perfect health!$"
 
 Text_TakeYourPkmnForFewSeconds::
-	.string "OK. We'll need\n"
-	.string "your POKéMON.$"
+	.string "OK.\n"
+	.string "We'll need your POKéMON.$"
 
 Text_WeHopeToSeeYouAgain::
 	.string "We hope to see you again!$"
 
 Text_RestoredPkmnToFullHealth::
 	.string "Thank you!\n"
-	.string "Your POKéMON are fighting fit$"
+	.string "Your POKéMON are fighting fit!$"
 
 	.include "data/text/surf.inc"
 
