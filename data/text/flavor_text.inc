@@ -70,7 +70,7 @@ Text_Telephone::
 
 Text_Computer::
 	.string "It's all complicated words and\n"
-	.string "numbers that make no sense…$"
+	.string "numbers that make no sense...$"
 
 Text_AdvertisingPoster::
 	.string "It's an advertising poster about\n"
