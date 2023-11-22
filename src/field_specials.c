@@ -211,30 +211,13 @@ bool8 PlayerHasGrassPokemonInParty(void)
 
 void AnimatePcTurnOn(void)
 {
-    u8 taskId;
 
-    if (FuncIsActiveTask(Task_AnimatePcTurnOn) != TRUE)
-    {
-        taskId = CreateTask(Task_AnimatePcTurnOn, 8);
-        gTasks[taskId].tState = 0;
-        gTasks[taskId].tTimer = 0;
-    }
 }
 
 // PC flickers on and off while turning on
 static void Task_AnimatePcTurnOn(u8 taskId)
 {
-    s16 *data = gTasks[taskId].data;
-    if (tTimer == 6)
-    {
-        PcTurnOnUpdateMetatileId(tState & 1);
-        DrawWholeMapView();
-        tTimer = 0;
-        tState++;
-        if (tState == 5)
-            DestroyTask(taskId);
-    }
-    tTimer++;
+
 }
 
 #undef tState
@@ -242,77 +225,12 @@ static void Task_AnimatePcTurnOn(u8 taskId)
 
 static void PcTurnOnUpdateMetatileId(bool16 flickerOff)
 {
-    u16 metatileId = 0;
-    s8 deltaX = 0;
-    s8 deltaY = 0;
-    u8 direction = GetPlayerFacingDirection();
 
-    switch (direction)
-    {
-    case DIR_NORTH:
-        deltaX = 0;
-        deltaY = -1;
-        break;
-    case DIR_WEST:
-        deltaX = -1;
-        deltaY = -1;
-        break;
-    case DIR_EAST:
-        deltaX = 1;
-        deltaY = -1;
-        break;
-    }
-    if (flickerOff)
-    {
-        if (gSpecialVar_0x8004 == 0)
-            metatileId = METATILE_Building_PCOff;
-        else if (gSpecialVar_0x8004 == 1)
-            metatileId = METATILE_GenericBuilding1_PlayersPCOff;
-        else if (gSpecialVar_0x8004 == 2)
-            metatileId = METATILE_GenericBuilding1_PlayersPCOff;
-    }
-    else
-    {
-        if (gSpecialVar_0x8004 == 0)
-            metatileId = METATILE_Building_PCOn;
-        else if (gSpecialVar_0x8004 == 1)
-            metatileId = METATILE_GenericBuilding1_PlayersPCOn;
-        else if (gSpecialVar_0x8004 == 2)
-            metatileId = METATILE_GenericBuilding1_PlayersPCOn;
-    }
-    MapGridSetMetatileIdAt(gSaveBlock1Ptr->pos.x + deltaX + MAP_OFFSET, gSaveBlock1Ptr->pos.y + deltaY + MAP_OFFSET, metatileId | MAPGRID_COLLISION_MASK);
 }
 
 void AnimatePcTurnOff()
 {
-    u16 metatileId = 0;
-    s8 deltaX = 0;
-    s8 deltaY = 0;
-    u8 direction = GetPlayerFacingDirection();
 
-    switch (direction)
-    {
-    case DIR_NORTH:
-        deltaX = 0;
-        deltaY = -1;
-        break;
-    case DIR_WEST:
-        deltaX = -1;
-        deltaY = -1;
-        break;
-    case DIR_EAST:
-        deltaX = 1;
-        deltaY = -1;
-        break;
-    }
-    if (gSpecialVar_0x8004 == 0)
-        metatileId = METATILE_Building_PCOff;
-    else if (gSpecialVar_0x8004 == 1)
-        metatileId = METATILE_GenericBuilding1_PlayersPCOff;
-    else if (gSpecialVar_0x8004 == 2)
-        metatileId = METATILE_GenericBuilding1_PlayersPCOff;
-    MapGridSetMetatileIdAt(gSaveBlock1Ptr->pos.x + deltaX + MAP_OFFSET, gSaveBlock1Ptr->pos.y + deltaY + MAP_OFFSET, metatileId | MAPGRID_COLLISION_MASK);
-    DrawWholeMapView();
 }
 
 void SpawnCameraObject(void)
