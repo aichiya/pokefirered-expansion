@@ -2796,11 +2796,11 @@ static void AnimateSelectedPartyIcon(u8 spriteId, u8 animNum)
         if (gSprites[spriteId].x == 16)
         {
             gSprites[spriteId].x2 = 0;
-            gSprites[spriteId].y2 = -4;
+            gSprites[spriteId].y2 = 0;
         }
         else
         {
-            gSprites[spriteId].x2 = -4;
+            gSprites[spriteId].x2 = 0;
             gSprites[spriteId].y2 = 0;
         }
         gSprites[spriteId].callback = SpriteCB_UpdatePartyMonIcon;
@@ -2820,9 +2820,9 @@ static void SpriteCB_BouncePartyMonIcon(struct Sprite *sprite)
     if (animCmd != 0)
     {
         if (animCmd & 1) // % 2 also matches
-            sprite->y2 = -3;
+            sprite->y2 = 0;
         else
-            sprite->y2 = 1;
+            sprite->y2 = 0;
     }
 }
 
