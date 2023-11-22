@@ -20,10 +20,7 @@ Item names not altered.
 
 -Intro-
 GAME FREAK splash screen needs improvements.
-Player sprite animation during Oak->Player sprite 
-transition flickers, needs fixing.
 Player name no preset choices.
-Red, Rival, and Oak palettes are borked during Oak Speech scenes.
 
 -Oak's Lab-
 Pokemon choice doesn't show pokedex page, popup style not changed.
@@ -40,12 +37,7 @@ TEAM ROCKET GRUNT should be ROCKET.
 Pokeball arrow goes offscreen instead of starting and ending onscreen.
 COOLTRAINER title isn't gendered.
 ELITE FOUR title not removed from trainers.
-Prize money not checked.
-whiting out sends player to pokemon center healing animation, should set them outside and fully restored.
-All trainer pics should use custom palettes, currently use bad vanilla colors.
-
--Viridian City-
-Catch tutorial doesn't begin. CreateMaleMon might be cause.
+Whiting out sends player to pokemon center healing animation, should set them outside and fully restored.
 
 -Cerulean City-
 Top right of area has border issue, must figure out solution.
@@ -84,7 +76,6 @@ Safari Zone borders are all wrong, supposed to be plain grass.
 
 -Silph Co-
 7F Lapras guy has no dialogue switch after Rockets leave.
-10F trainers not checked at all, forgot.
 
 -Pokemon League-
 Don't Leave script doesn't play, door tiles removed instead.
