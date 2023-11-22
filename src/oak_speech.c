@@ -1253,7 +1253,7 @@ static void Task_OakSpeech_FadeOutOak(u8 taskId)
         CreateFadeInTask(taskId, 2);
         tTimer = 48;
         gSaveBlock2Ptr->playerGender = MALE;
-        gTasks[taskId].func = Task_OakSpeech_LoadPlayerPic;
+        gTasks[taskId].func = Task_OakSpeech_AskPlayerGender;
     }
 }
 
@@ -1271,8 +1271,7 @@ static void Task_OakSpeech_AskPlayerGender(u8 taskId)
         {
             tTrainerPicPosX = -60;
             ClearTrainerPic();
-            OakSpeechPrintMessage(gOakSpeech_Text_AskPlayerGender, sOakSpeechResources->textSpeed);
-            gTasks[taskId].func = Task_OakSpeech_ShowGenderOptions;
+            gTasks[taskId].func = Task_OakSpeech_LoadPlayerPic;
         }
     }
 }
