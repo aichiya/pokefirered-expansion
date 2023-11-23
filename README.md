@@ -1,4 +1,4 @@
-# Pokémon FireRed and LeafGreen
+# Pokémon Gen1Style
 
 ![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/RedTitlePromo.png "Red Title Screen")
 
@@ -8,7 +8,13 @@
 
 ![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/ViridianForestPromo.png "Viridian Forest Screen")
 
-This is a disassembly of Pokémon FireRed and LeafGreen, the purpose of this project is to replicate the majority of Red and Blue in a faithful manner in full color.
+![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/PokemonInfoPromo.png "Pokemon Info Screen")
+
+![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/PokedexPromo.png "Pokedex Screen")
+
+![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/MapPromo.png "Kanto Map")
+
+This is a disassembly of Pokémon FireRed and LeafGreen, the purpose of this project is to replicate the majority of Red and Blue in a faithful and colored manner.
 
 It builds the following ROMs:
 
@@ -18,40 +24,11 @@ It builds the following ROMs:
 * [**pokeleafgreen_rev1.gba**]
 
 
-Stages:
+Current Status:
+Completable from intro to Cerulean Cave.
+Link script non-functional for now.
 
-Overworld Layout - Mostly Done
+Credits:
+CHAMBER, SOLOO993, BLUE EMERALD, LAKE, NESLUG, PIKACHU25 for the Pokemon party sprites used in party menu and storage system.
+TheXaman for the Gen4 style Pokemon party menu.
 
-Underworld Layout - Mostly Done
-
-Wild Encounters - TBD
-
-Tile Animation - TBD
-
-
-
-Item Locations - 99%
-
-Item Stats - 0%
-
-Item Sprites - 0%
-
-
-
-Pokemon Move Stats - 0%
-
-Pokemon Learn Sets - 100%
-
-Pokemon Front Sprites - 95%
-
-Pokemon Back Sprites - 95%
-
-Pokemon Party Sprites - 0%
-
-Pokemon Palettes - 75%
-
-
-
-NPC Battle Sprites - 99%
-
-NPC World Sprites - 99%

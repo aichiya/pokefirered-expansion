@@ -1,6 +1,5 @@
 
 -Global-
-PC animation wrong tiles. No animation in gen 1.
 PC options wrong.
 Pokemon center YES/NO should be HEAL/CANCEL.
 Door animation incorrect palette/sprite.
@@ -16,7 +15,7 @@ menu_message needs data adjustment, bottom corner tiles use mirrored top corner 
 Window type 10 must be removed from options menu.
 Map has an offset of 4 tiles downwards, can't figure out a fix. 
 Pokedex not altered whatsoever.
-Item names not altered.
+Exp Share must be replaced with Exp All.
 
 -Intro-
 GAME FREAK splash screen needs improvements.
@@ -26,7 +25,6 @@ Player name no preset choices.
 Pokemon choice doesn't show pokedex page, popup style not changed.
 
 -Battle-
-Oak tutorial not skipped.
 UI layout not finished.
 POKeMON not changed to PKMN.
 BAG not changed to ITEM.
@@ -39,17 +37,11 @@ COOLTRAINER title isn't gendered.
 ELITE FOUR title not removed from trainers.
 Whiting out sends player to pokemon center healing animation, should set them outside and fully restored.
 
--Cerulean City-
-Top right of area has border issue, must figure out solution.
-
 -Route9-
 Day Care man dialogue for level up not checked.
 
 -PokeCenter-
 Jigglypuff in Pewter doesn't dance after speaking.
-Route 4 couch guy doesn't talk.
-Route 10 couch guy doesn't talk.
-Gym enforcer uses wrong movement when talked to from left.
 Monitor flash animation should be removed or hidden.
 
 -SS.ANNE-
