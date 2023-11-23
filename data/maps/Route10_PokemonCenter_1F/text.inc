@@ -8,8 +8,8 @@ Route10_PokemonCenter_1F_Text_NuggetUselessSoldFor5000::
     .string "NUGGET for ¥5000!$"
 
 Route10_PokemonCenter_1F_Text_HeardGhostsHauntLavender::
-    .string "I heard that ghosts haunt\n"
-    .string "LAVENDER TOWN.$"
+    .string "I heard that GHOSTSs haunt\n"
+    .string "LAVENDER TOWN!$"
 
 Route10_PokemonCenter_1F_Text_GiveEverstoneIfCaught20Mons::
     .string "Oh… {PLAYER}!\n"

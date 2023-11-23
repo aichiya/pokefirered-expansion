@@ -26,7 +26,7 @@ Route4_PokemonCenter_1F_Text_SweetieBuyMagikarpForJust500::
 
 Route4_PokemonCenter_1F_Text_PaidOutrageouslyForMagikarp::
     .string "{PLAYER} paid an outrageous ¥500\n"
-    .string "and bought the MAGIKARP…$"
+    .string "and bought the MAGIKARP...$"
 
 Route4_PokemonCenter_1F_Text_OnlyDoingThisAsFavorToYou::
     .string "No? I'm only doing this\n"
@@ -43,10 +43,8 @@ Route4_PokemonCenter_1F_Text_IDontGiveRefunds::
     .string "MAN: Well, I don't give refunds!$"
 
 Route4_PokemonCenter_1F_Text_ShouldStoreMonsUsingPC::
-    .string "Sometimes, you'll have too many\n"
-    .string "POKéMON with you to add any more.\p"
-    .string "In that case, you should just\n"
-    .string "store some using any PC.$"
+    .string "If you have too many POKéMON, you\n"
+    .string "should store them via PC!$"
 
 Route4_PokemonCenter_1F_Text_ItsANewspaper::
     .string "It's a newspaper.$"

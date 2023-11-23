@@ -137,7 +137,7 @@ Route4_PokemonCenter_1F_EventScript_Nurse::
 	release
 	end
 
-Route4_PokemonCenter_1F_EventScript_Youngster::
+Route4_PokemonCenter_1F_EventScript_Couch::
 	msgbox Route4_PokemonCenter_1F_Text_ShouldStoreMonsUsingPC, MSGBOX_NPC
 	end
 

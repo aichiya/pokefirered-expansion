@@ -25,7 +25,7 @@ Route10_PokemonCenter_1F_EventScript_Gentleman::
 	msgbox Route10_PokemonCenter_1F_Text_EveryTypeStrongerThanOthers, MSGBOX_NPC
 	end
 
-Route10_PokemonCenter_1F_EventScript_Youngster::
+Route10_PokemonCenter_1F_EventScript_Couch::
 	msgbox Route10_PokemonCenter_1F_Text_HeardGhostsHauntLavender, MSGBOX_NPC
 	end
 
