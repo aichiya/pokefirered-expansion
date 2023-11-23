@@ -1,3 +1,5 @@
+.equ LOCALID_JIGGLYPUFF, 1
+
 PewterCity_PokemonCenter_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, PewterCity_PokemonCenter_1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
@@ -24,11 +26,47 @@ PewterCity_PokemonCenter_1F_EventScript_Jigglypuff::
 	fadeoutbgm 0
 	playbgm MUS_JIGGLYPUFF, 0
 	message PewterCity_PokemonCenter_1F_Text_Jigglypuff
+	applymovement LOCALID_JIGGLYPUFF, PewterCity_Movement_JigglypuffDance
+	waitmovement 0
 	waitmessage
-	delay 455
+	delay 400
 	playbgm MUS_POKE_CENTER, 1
 	release
 	end
+
+PewterCity_Movement_JigglypuffDance::
+	walk_in_place_down
+	delay_4
+	walk_in_place_left
+	delay_4
+	walk_in_place_up
+	delay_4
+	walk_in_place_right
+	delay_4
+	walk_in_place_down
+	delay_4
+	walk_in_place_left
+	delay_4
+	walk_in_place_up
+	delay_4
+	walk_in_place_right
+	delay_4
+	walk_in_place_down
+	delay_4
+	walk_in_place_left
+	delay_4
+	walk_in_place_up
+	delay_4
+	walk_in_place_right
+	delay_4
+	walk_in_place_down
+	delay_4
+	walk_in_place_left
+	delay_4
+	walk_in_place_up
+	delay_4
+	walk_in_place_right
+	step_end
 
 PewterCity_PokemonCenter_1F_EventScript_Couch::
 	msgbox PewterCity_PokemonCenter_1F_Text_WhenJiggylypuffSingsMonsGetDrowsy, MSGBOX_NPC
