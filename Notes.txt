@@ -23,6 +23,7 @@ Player name no preset choices.
 
 -Oak's Lab-
 Pokemon choice doesn't show pokedex page, popup style not changed.
+Red and Rival sprites during intro sequence are wrong, use SGB style.
 
 -Battle-
 UI layout not finished.
@@ -33,7 +34,6 @@ PP is above move type, should be below.
 Titles like LEADER not excluded from trainer names. battle_message.c
 TEAM ROCKET GRUNT should be ROCKET.
 Pokeball arrow goes offscreen instead of starting and ending onscreen.
-COOLTRAINER title isn't gendered.
 ELITE FOUR title not removed from trainers.
 Whiting out sends player to pokemon center healing animation, should set them outside and fully restored.
 
@@ -41,11 +41,7 @@ Whiting out sends player to pokemon center healing animation, should set them ou
 Day Care man dialogue for level up not checked.
 
 -PokeCenter-
-Jigglypuff in Pewter doesn't dance after speaking.
 Monitor flash animation should be removed or hidden.
-
--SS.ANNE-
-2F sailor should have bellhop sprite.
 
 -LAVENDER TOWN-
 THE GHOST instead of GHOST appeared.
