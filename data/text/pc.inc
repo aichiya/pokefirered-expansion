@@ -11,7 +11,10 @@ Text_OpenedPkmnStorage::
 	.string "POKéMON Storage System opened.$"
 
 Text_AccessedPlayersPC::
-	.string "Accessed {PLAYER}'s PC.$"
+	.string "Accessed my PC.$"
+
+Text_AccessedItemStorage::
+	.string "Accessed Item Storage System.$"
 
 Text_AccessedBillsPC::
 	.string "Accessed BILL's PC.$"

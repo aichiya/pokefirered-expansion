@@ -38,6 +38,7 @@ EventScript_ChoosePCMenu::
 EventScript_AccessPlayersPC::
 	playse SE_PC_LOGIN
 	msgbox Text_AccessedPlayersPC
+	msgbox Text_AccessedItemStorage
 	special PlayerPC
 	waitstate
 	goto EventScript_PCMainMenu

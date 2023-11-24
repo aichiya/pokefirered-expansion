@@ -919,7 +919,7 @@ Text_WirelessClubUndergoingAdjustments::
 
 Text_AppearsToBeUndergoingAdjustments::
 	.string "It appears to be undergoing\n"
-	.string "adjustments…$"
+	.string "adjustments...$"
 
 Text_HandedOverItem::
 	.string "{PLAYER} handed over the\n"
@@ -943,16 +943,14 @@ Text_ItNeedsCardKey::
 	.string "It needs a CARD KEY!$"
 
 Text_AccessedProfOaksPC::
-	.string "Accessed PROF. OAK's PC…\p"
-	.string "Accessed the POKéDEX Rating\n"
-	.string "System…$"
+	.string "Accessed PROF.OAK's PC.\p"
+	.string "Accessed POKéDEX Rating System.$"
 
 Text_HavePokedexRated::
-	.string "Would you like to have your\n"
-	.string "POKéDEX rated?$"
+	.string "Want to have your POKéDEX rated?$"
 
 Text_ClosedLinkToProfOaksPC::
-	.string "Closed link to PROF. OAK's PC.$"
+	.string "Closed link to PROF.OAK's PC.$"
 
 Text_VoiceRangOutDontRunAway::
 	.string "Someone's voice rang out,\n"

@@ -44,6 +44,11 @@ static const struct MenuAction sMultichoiceList_YesNo[] = {
     { gText_No }
 };
 
+static const struct MenuAction sMultichoiceList_HealCancel[] = {
+    { gText_HEAL },
+    { gText_CANCEL }
+};
+
 static const struct MenuAction sMultichoiceList_TrainerCardIconTint[] = {
     { gText_Normal },
     { gText_Black },
@@ -498,6 +503,7 @@ static const struct MenuAction sMultichoiceList_Exit[] = {
 
 static const struct MultichoiceListStruct sMultichoiceLists[] = {
     [MULTICHOICE_YES_NO]                                     = MULTICHOICE(sMultichoiceList_YesNo),
+    [MULTICHOICE_HEAL_CANCEL]                                = MULTICHOICE(sMultichoiceList_HealCancel),
     [MULTICHOICE_EEVEELUTIONS]                               = MULTICHOICE(sMultichoiceList_Eeveelutions),
     [MULTICHOICE_TRAINER_CARD_ICON_TINT]                     = MULTICHOICE(sMultichoiceList_TrainerCardIconTint),
     [MULTICHOICE_HOF_QUIT]                                   = MULTICHOICE(sMultichoiceList_HOF_Quit),

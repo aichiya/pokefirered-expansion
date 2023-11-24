@@ -94,7 +94,7 @@ static const u8 sItemOrder_PlayerPC[] = { 0, 1, 2 };
 static const struct MenuAction sMenuActions_ItemPc[] = {
     {gText_WithdrawItem2, Task_PlayerPcWithdrawItem},
     {gText_DepositItem2, Task_PlayerPcDepositItem},
-    {gFameCheckerText_Cancel, Task_PlayerPcCancel}
+    {gText_LogOff, Task_PlayerPcCancel}
 };
 
 static const struct ItemSlot gNewGamePCItems[] = {
@@ -157,7 +157,7 @@ void BedroomPC(void)
     sItemOrder = sItemOrder_BedroomPC;
     sTopMenuItemCount = 3;
     taskId = CreateTask(TaskDummy, 0);
-    DisplayItemMessageOnField(taskId, FONT_NORMAL, gText_WhatWouldYouLikeToDo, Task_DrawPlayerPcTopMenu);
+    DisplayItemMessageOnField(taskId, FONT_NORMAL, gText_WhatWouldYouLikeToDo, Task_PlayerPcItemStorage);
 }
 
 void PlayerPC(void)
@@ -169,7 +169,7 @@ void PlayerPC(void)
     sItemOrder = sItemOrder_PlayerPC;
     sTopMenuItemCount = 3;
     taskId = CreateTask(TaskDummy, 0);
-    DisplayItemMessageOnField(taskId, FONT_NORMAL, gText_WhatWouldYouLikeToDo, Task_DrawPlayerPcTopMenu);
+    DisplayItemMessageOnField(taskId, FONT_NORMAL, gText_WhatWouldYouLikeToDo, Task_PlayerPcItemStorage);
 }
 
 static void Task_DrawPlayerPcTopMenu(u8 taskId)
@@ -215,7 +215,7 @@ static void Task_TopMenuHandleInput(u8 taskId)
 static void Task_ReturnToTopMenu(u8 taskId)
 {
     RestoreHelpContext();
-    DisplayItemMessageOnField(taskId, FONT_NORMAL, gText_WhatWouldYouLikeToDo, Task_DrawPlayerPcTopMenu);
+    DisplayItemMessageOnField(taskId, FONT_NORMAL, gText_WhatWouldYouLikeToDo, Task_PlayerPcTurnOff);
 }
 
 static void Task_PlayerPcItemStorage(u8 taskId)

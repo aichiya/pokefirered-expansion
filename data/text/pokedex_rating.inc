@@ -4,11 +4,10 @@ PokedexRating_Text_HowIsPokedexComingAlong::
 	.string "Here, let me take a look.$"
 
 PokedexRating_Text_SeenXOwnedY::
-	.string "The amount of progress you've made\n"
-	.string "on your POKéDEX is:\p"
-	.string "{STR_VAR_1} POKéMON seen and\n"
+	.string "POKéDEX ompletion is:\p"
+	.string "{STR_VAR_1} POKéMON seen\n"
 	.string "{STR_VAR_2} POKéMON owned.\p"
-	.string "{FONT_NORMAL}PROF. OAK's rating:$"
+	.string "{FONT_NORMAL}PROF.OAK's rating:$"
 
 PokedexRating_Text_LessThan10::
 	.string "You still have lots to do.\p"
@@ -28,10 +27,9 @@ PokedexRating_Text_LessThan30::
 	.string "POKéMON!$"
 
 PokedexRating_Text_LessThan40::
-	.string "Good, it's apparent that you're\n"
-	.string "trying hard!\p"
-	.string "I've given one of my AIDES an\n"
-	.string "ITEMFINDER. Be sure to collect it!$"
+	.string "Good, you're trying hard!\n"
+	.string "Get an ITEMFINDER\n"
+	.string "from my AIDE!$"
 
 PokedexRating_Text_LessThan50::
 	.string "Your POKéDEX is coming along quite\n"
