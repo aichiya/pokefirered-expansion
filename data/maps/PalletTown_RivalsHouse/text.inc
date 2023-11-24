@@ -41,13 +41,9 @@ PalletTown_RivalsHouse_Text_ShelvesCrammedFullOfBooks::
     .string "books on POKéMON.$"
 
 PalletTown_RivalsHouse_Text_LikeMeToGroomMon::
-    .string "DAISY: Hi {PLAYER}!\n"
-    .string "Good timing.\p"
-    .string "I'm about to have some tea.\n"
-    .string "Would you like to join me?\p"
-    .string "Oh, but look.\n"
-    .string "Your POKéMON are a little dirty.\p"
-    .string "Would you like me to groom one?$"
+    .string "POKéMON are living things!\p"
+    .string "If they get tired, give\n"
+    .string "them a rest!$"
 
 PalletTown_RivalsHouse_Text_DontNeedAnyGrooming::
     .string "You don't need any grooming done?\n"

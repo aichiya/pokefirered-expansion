@@ -45,26 +45,7 @@ PalletTown_RivalsHouse_EventScript_HeardBattledRival::
 PalletTown_RivalsHouse_EventScript_GroomMon::
 	goto_if_questlog EventScript_ReleaseEnd
 	special QuestLog_CutRecording
-	goto_if_lt VAR_MASSAGE_COOLDOWN_STEP_COUNTER, 500, PalletTown_RivalsHouse_EventScript_RateMonFriendship
-	msgbox PalletTown_RivalsHouse_Text_LikeMeToGroomMon, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, PalletTown_RivalsHouse_EventScript_DeclineGrooming
-	msgbox PalletTown_RivalsHouse_Text_GroomWhichOne
-	special ChoosePartyMon
-	waitstate
-	lock
-	faceplayer
-	goto_if_ge VAR_0x8004, PARTY_SIZE, PalletTown_RivalsHouse_EventScript_DeclineGrooming
-	specialvar VAR_RESULT, GetPartyMonSpecies
-	goto_if_eq VAR_RESULT, SPECIES_EGG, PalletTown_RivalsHouse_EventScript_CantGroomEgg
-	msgbox PalletTown_RivalsHouse_Text_LookingNiceInNoTime
-	closemessage
-	fadescreen FADE_TO_BLACK
-	playfanfare MUS_HEAL
-	waitfanfare
-	special DaisyMassageServices
-	fadescreen FADE_FROM_BLACK
-	special BufferMonNickname
-	msgbox PalletTown_RivalsHouse_Text_ThereYouGoAllDone
+	msgbox PalletTown_RivalsHouse_Text_LikeMeToGroomMon, MSGBOX_NPC
 	release
 	end
 
