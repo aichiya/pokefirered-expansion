@@ -52,9 +52,9 @@ FuchsiaCity_SafariZone_Entrance_Text_ExplainSafariZone::
     .string "Use SAFARI BALLS to\n"
     .string "catch them!\p"
     .string "When you run out of time or SAFARI\n"
-    .string "BALLS, it's game over for you!/p"
-    .string "Before you go, open an unused/n"
-    .string "POKéMON BOX so there's room for/l"
+    .string "BALLS, it's game over for you!\p"
+    .string "Before you go, open an unused\n"
+    .string "POKéMON BOX so there's room for\l"
     .string "new POKéMON!$"
 
 FuchsiaCity_SafariZone_Entrance_Text_SorryYoureARegularHere::
