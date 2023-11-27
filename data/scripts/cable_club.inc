@@ -290,7 +290,6 @@ CableClub_EventScript_EnterColosseum::
 	copyvar VAR_CABLE_CLUB_STATE, VAR_0x8004
 	messageautoscroll CableClub_Text_PleaseEnter
 	waitmessage
-	call CableClub_EventScript_OpenDirectCornerBarrier
 	special DrawWholeMapView
 	playse SE_CLICK
 	delay 60
@@ -388,7 +387,6 @@ CableClub_EventScript_EnterTradeCenter::
 	copyvar VAR_CABLE_CLUB_STATE, VAR_0x8004
 	messageautoscroll CableClub_Text_PleaseEnter
 	waitmessage
-	call CableClub_EventScript_OpenDirectCornerBarrier
 	special DrawWholeMapView
 	playse SE_CLICK
 	delay 60
@@ -777,7 +775,6 @@ CableClub_EventScript_EnterUnionRoom::
 	setvar VAR_0x8004, USING_UNION_ROOM
 	copyvar VAR_CABLE_CLUB_STATE, VAR_0x8004
 	special HelpSystem_Disable
-	call CableClub_EventScript_OpenUnionRoomBarrier
 	special DrawWholeMapView
 	playse SE_CLICK
 	delay 60
@@ -1053,7 +1050,6 @@ CableClub_EventScript_EnterWirelessLinkRoom::
 	delay 60
 	closemessage
 	copyvar VAR_0x8007, VAR_LAST_TALKED
-	call CableClub_EventScript_OpenDirectCornerBarrier
 	special DrawWholeMapView
 	playse SE_CLICK
 	delay 60
