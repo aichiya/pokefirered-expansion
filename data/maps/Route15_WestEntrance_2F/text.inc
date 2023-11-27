@@ -2,10 +2,10 @@ Route15_WestEntrance_2F_Text_GiveItemIfCaughtEnough::
     .string "Hi! Remember me?\n"
     .string "I'm PROF.OAK's AIDE!\p"
     .string "If you caught {STR_VAR_1} kinds\n"
-    .string "of POKéMON, I'm supposed to\l"
-    .string "give you an {STR_VAR_2}!\p"
-    .string "So, {PLAYER}, have you caught at\p"
-    .string "least {STR_VAR_1} kinds of POKéMON?\n"
+    .string "of POKéMON, I'm supposed to\p"
+    .string "give you an {STR_VAR_2}!\l"
+    .string "So, {PLAYER}, have you caught at\n"
+    .string "least {STR_VAR_1} kinds of POKéMON?$"
 
 Route15_WestEntrance_2F_Text_GreatHereYouGo::
     .string "Great! You have caught\n"
@@ -20,7 +20,7 @@ Route15_WestEntrance_2F_Text_ExplainExpShare::
     .string "EXP. SHARE is an item to be held\n"
     .string "by a POKéMON.\p"
     .string "The POKéMON will receive a share\n"
-    .string "of the EXP. Points without having\l"
+    .string "of the EXP. Points without having\p"
     .string "to battle.$"
 
 Route15_WestEntrance_2F_Text_LargeShiningBird::

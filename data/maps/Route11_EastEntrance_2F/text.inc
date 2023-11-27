@@ -2,10 +2,10 @@ Route11_EastEntrance_2F_Text_GiveItemfinderIfCaught30::
     .string "Hi! Remember me?\n"
     .string "I'm PROF.OAK's AIDE!\p"
     .string "If you caught {STR_VAR_1} kinds\n"
-    .string "of POKéMON, I'm supposed to\l"
-    .string "give you an ITEMFINDER!\p"
-    .string "So, {PLAYER}!\p"
-    .string "Have you caught at least\n"
+    .string "of POKéMON, I'm supposed to\p"
+    .string "give you an ITEMFINDER!\l"
+    .string "So, {PLAYER}!\n"
+    .string "Have you caught at least\p"
     .string "{STR_VAR_1} kinds of POKéMON?$"
 
 Route11_EastEntrance_2F_Text_GreatHereYouGo::

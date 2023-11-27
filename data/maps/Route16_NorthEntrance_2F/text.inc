@@ -17,12 +17,10 @@ Route16_NorthEntrance_2F_Text_GiveAmuletCoinIfCaught40::
     .string "Hi! Remember me?\n"
     .string "I'm PROF.OAK's AIDE!\p"
     .string "If your POKéDEX has complete data\n"
-    .string "on 40 species, I'm supposed to\l"
-    .string "give you a reward.\p"
-    .string "PROF. OAK entrusted me with an\n"
-    .string "AMULET COIN for you.\p"
-    .string "So, {PLAYER}, let me ask you.\p"
-    .string "Have you gathered data on at least\n"
+    .string "on 40 species, I'm supposed to\p"
+    .string "give you a reward.\l"
+    .string "So, {PLAYER}, let me ask you.\n"
+    .string "Have you gathered data on at least\p"
     .string "40 kinds of POKéMON?$"
 
 Route16_NorthEntrance_2F_Text_GreatHereYouGo::
