@@ -334,6 +334,21 @@ void ItemUseOutOfBattle_Itemfinder(u8 taskId)
     SetUpItemUseOnFieldCallback(taskId);
 }
 
+void ItemUseOutOfBattle_ExpShare(u8 taskId)
+{
+    bool8  expShareOn = FlagGet(FLAG_EXP_SHARE);
+    if (!expShareOn)
+    {
+        FlagSet(FLAG_EXP_SHARE);
+        PlaySE(SE_EXP_MAX);
+    }
+    else
+    {
+        FlagClear(FLAG_EXP_SHARE);
+        PlaySE(SE_PC_OFF);
+    }
+}
+
 void FieldUseFunc_CoinCase(u8 taskId)
 {
     ConvertIntToDecimalStringN(gStringVar1, GetCoins(), STR_CONV_MODE_LEFT_ALIGN, 4);
