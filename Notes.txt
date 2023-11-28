@@ -16,6 +16,7 @@ Exp Share must be replaced with Exp All.
 Area name popups not disabled.
 EXP.ALL use requires multiple button presses to free bag cursor.
 EXP.ALL cannot be registered.
+National dex Oak script not removed.
 
 -Intro-
 GAME FREAK splash screen needs improvements.
