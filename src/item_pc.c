@@ -577,7 +577,7 @@ static void ItemPc_PrintOrRemoveCursorAt(u8 y, u8 colorIdx)
 
 static void ItemPc_PrintWithdrawItem(void)
 {
-    ItemPc_AddTextPrinterParameterized(2, FONT_SMALL, gText_WithdrawItem, 0, 1, 0, 1, 0, 0);
+    ItemPc_AddTextPrinterParameterized(2, FONT_SMALL, gText_WithdrawItem, 0, 1, 0, 1, 0, 1);
 }
 
 static void ItemPc_PlaceTopMenuScrollIndicatorArrows(void)
