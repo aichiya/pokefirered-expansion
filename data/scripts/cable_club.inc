@@ -214,7 +214,7 @@ CableClub_EventScript_SelectCableClubRoom::
 	setvar VAR_0x8004, 0
 	multichoice 0, 0, MULTICHOICE_TRADE_CENTER_COLOSSEUM, FALSE
 	switch VAR_RESULT
-	case 0, CableClub_EventScript_TradeCenter
+	case 0, CableClub_EventScript_Colosseum
 	case 1, CableClub_EventScript_Colosseum
 	case 2, CableClub_EventScript_AbortLink
 	case SCR_MENU_CANCEL, CableClub_EventScript_AbortLink

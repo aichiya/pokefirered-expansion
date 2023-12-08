@@ -337,7 +337,7 @@ static const struct MenuAction sMultichoiceList_GameCornerPokemonPrizes2[] = {
 };
 
 static const struct MenuAction sMultichoiceList_TradeCenter_Colosseum[] = {
-    { gText_TradeCenter },
+    { gText_Colosseum_2 },
     { gText_Colosseum },
     { gOtherText_Exit }
 };
@@ -358,7 +358,7 @@ static const struct MenuAction sMultichoiceList_RocketHideoutElevator[] = {
 static const struct MenuAction sMultichoiceList_LinkedDirectUnion[] = {
     { gText_HowToLink },
     { gText_Colosseum },
-    { gText_TradeCenter },
+    { gText_Colosseum },
     { gText_StopReading }
 };
 
@@ -381,7 +381,7 @@ static const struct MenuAction sMultichoiceList_Island12[] = {
 };
 
 static const struct MenuAction sMultichoiceList_TradeColosseumCrush[] = {
-    { gText_TradeCenter },
+    { gText_Colosseum_2 },
     { gText_Colosseum_2 },
     { gText_BerryCrush },
     { gOtherText_Exit }
@@ -394,7 +394,7 @@ static const struct MenuAction sMultichoiceList_48[] = {
 };
 
 static const struct MenuAction sMultichoiceList_TradeColosseum_2[] = {
-    { gText_TradeCenter },
+    { gText_Colosseum_2 },
     { gText_Colosseum_2 },
     { gOtherText_Exit }
 };
@@ -411,7 +411,7 @@ static const struct MenuAction sMultichoiceList_Mushrooms[] = {
 };
 
 static const struct MenuAction sMultichoiceList_TradeColosseumBlankCrush[] = {
-    { gText_TradeCenter },
+    { gText_Colosseum_2 },
     { gText_Colosseum_2 },
     { gText_RecordCorner },
     { gText_BerryCrush },
@@ -419,7 +419,7 @@ static const struct MenuAction sMultichoiceList_TradeColosseumBlankCrush[] = {
 };
 
 static const struct MenuAction sMultichoiceList_TradeColosseumBlank[] = {
-    { gText_TradeCenter },
+    { gText_Colosseum_2 },
     { gText_Colosseum_2 },
     { gText_RecordCorner },
     { gOtherText_Exit }
