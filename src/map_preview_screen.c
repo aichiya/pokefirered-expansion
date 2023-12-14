@@ -345,14 +345,7 @@ bool8 MapHasPreviewScreen(u8 mapsec, u8 type)
     idx = GetMapPreviewScreenIdx(mapsec);
     if (idx != MPS_COUNT)
     {
-        if (type == MPS_TYPE_ANY)
-        {
-            return TRUE;
-        }
-        else
-        {
-            return sMapPreviewScreenData[idx].type == type ? TRUE : FALSE;
-        }
+        return FALSE;
     }
     else
     {
