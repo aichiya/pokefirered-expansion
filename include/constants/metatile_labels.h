@@ -36,7 +36,7 @@
 #define METATILE_DepartmentStore_ElevatorDoor  0x28D
 
 // gTileset_FuchsiaCity
-#define METATILE_FuchsiaCity_Door                           0x2BF
+#define METATILE_FuchsiaCity_Door                           0x093
 #define METATILE_FuchsiaCity_SafariZoneDoor                 0x2D2
 #define METATILE_FuchsiaCity_SafariZoneTreeTopLeft_Grass    0x300
 #define METATILE_FuchsiaCity_SafariZoneTreeTopLeft_Mowed    0x310
