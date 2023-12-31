@@ -170,14 +170,14 @@
   "warp_events": [
     {
       "x": 8,
-      "y": 18,
+      "y": 17,
       "elevation": 3,
       "dest_map": "MAP_ROCK_TUNNEL_1F",
       "dest_warp_id": "0"
     },
     {
       "x": 8,
-      "y": 54,
+      "y": 53,
       "elevation": 3,
       "dest_map": "MAP_ROCK_TUNNEL_1F",
       "dest_warp_id": "5"

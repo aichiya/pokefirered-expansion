@@ -165,14 +165,14 @@
   "warp_events": [
     {
       "x": 48,
-      "y": 6,
+      "y": 5,
       "elevation": 3,
       "dest_map": "MAP_SEAFOAM_ISLANDS_1F",
       "dest_warp_id": "0"
     },
     {
       "x": 58,
-      "y": 10,
+      "y": 9,
       "elevation": 3,
       "dest_map": "MAP_SEAFOAM_ISLANDS_1F",
       "dest_warp_id": "1"

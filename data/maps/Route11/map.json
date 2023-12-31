@@ -180,7 +180,7 @@
   "warp_events": [
     {
       "x": 4,
-      "y": 61,
+      "y": 60,
       "elevation": 0,
       "dest_map": "MAP_DIGLETTS_CAVE_SOUTH_ENTRANCE",
       "dest_warp_id": "0"
