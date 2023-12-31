@@ -220,6 +220,14 @@
       "script": "CeladonCity_EventScript_SilphCoScientist",
       "flag": "FLAG_HIDE_CELADON_ROCKETS",
       "in_connection": false
+    },
+    {
+      "type": "clone",
+      "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
+      "x": -6,
+      "y": 17,
+      "target_local_id": 7,
+      "target_map": "MAP_ROUTE16"
     }
   ],
   "warp_events": [
