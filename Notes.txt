@@ -3,27 +3,24 @@
 PC shows "What would you like to do?" when it shouldn't.
 Door animation incorrect palette/sprite.
 Special Atk & Special Def not combined.
-Font not replaced.
 Red doesn't turn to face approaching trainer.
 Ingame trade success texts not tested.
-Dark vision effect wrong, is circle of light but should black all but 1 tile color instead.
 All cut bush flags must be checked.
 COOLTRAINER class not gendered.
 menu_message needs data adjustment, bottom corner tiles use mirrored top corner tiles.
 Map has an offset of 4 tiles downwards, can't figure out a fix. 
 Pokedex not altered whatsoever.
-Exp Share must be replaced with Exp All.
 Area name popups not disabled.
 EXP.ALL use requires multiple button presses to free bag cursor.
 EXP.ALL cannot be registered.
 National dex Oak script not removed.
+Rival sprite in naming screen not altered.
 
 -Intro-
 GAME FREAK splash screen needs improvements.
 Player name no preset choices.
 
 -Oak's Lab-
-Pokemon choice doesn't show pokedex page, popup style not changed.
 Red and Rival sprites during intro sequence are wrong, use SGB style.
 
 -Battle-
@@ -36,7 +33,6 @@ Titles like LEADER not excluded from trainer names. battle_message.c
 TEAM ROCKET GRUNT should be ROCKET.
 Pokeball arrow goes offscreen instead of starting and ending onscreen.
 ELITE FOUR title not removed from trainers.
-Whiting out sends player to pokemon center healing animation, should set them outside and fully restored.
 Mimic not altered, doesn't match gen 1.
 Hyper Beam recharge feature not added.
 Unfreeze not altered.
@@ -52,18 +48,15 @@ Day Care man dialogue for level up not checked.
 THE GHOST instead of GHOST appeared.
 
 -Celadon City-
-Slot Machines not altered whatsoever.
 House1 incorrectly uses generic house layout, somehow linked to all others. Must use custom layout.
 
 -Saffron City-
-Fighting dojo pokemon selection doesn't show pokedex page, uses different preview style.
 Fainting in Master fight doesn't re-enable battle trigger.
 
 -Rocket Hideout-
 B4F Grunt drops lift key immediately, should require talking to him first.
 
 -Fuchsia City-
-Zoo signs show pokemon previews incorrectly, use museum style instead of pokedex style.
 Safari Zone borders are all wrong, supposed to be plain grass.
 
 -Silph Co-

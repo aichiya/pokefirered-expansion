@@ -26,9 +26,10 @@ It builds the following ROMs:
 
 Current Status:
 Completable from intro to Cerulean Cave.
-Link script non-functional for now.
+Link trade script non-functional for now, battle seems to work.
 
 Credits:
 CHAMBER, SOLOO993, BLUE EMERALD, LAKE, NESLUG, PIKACHU25 for the Pokemon party sprites used in party menu and storage system.
 TheXaman for the Gen4 style Pokemon party menu.
+Moylend for helping with testing and poiting out various issues.
 
