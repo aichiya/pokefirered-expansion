@@ -2610,7 +2610,6 @@ static void AddWallpaperSetsMenu(void)
     SetMenuText(MENU_TEXT_SCENERY_1);
     SetMenuText(MENU_TEXT_SCENERY_2);
     SetMenuText(MENU_TEXT_SCENERY_3);
-    SetMenuText(MENU_TEXT_ETCETERA);
     AddMenu();
 }
 
@@ -2636,12 +2635,6 @@ static void AddWallpapersMenu(u8 wallpaperSet)
         SetMenuText(MENU_TEXT_SEAFLOOR);
         SetMenuText(MENU_TEXT_RIVER);
         SetMenuText(MENU_TEXT_SKY);
-        break;
-    case 3: // ETCETERA
-        SetMenuText(MENU_TEXT_POLKADOT);
-        SetMenuText(MENU_TEXT_POKECENTER);
-        SetMenuText(MENU_TEXT_MACHINE);
-        SetMenuText(MENU_TEXT_SIMPLE);
         break;
     }
     AddMenu();
