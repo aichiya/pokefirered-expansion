@@ -10,19 +10,15 @@
 
 ![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/PokemonInfoPromo.png "Pokemon Info Screen")
 
+![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/BoxPromo.png "Pokemon Storage System Screen")
+
 ![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/PokedexPromo.png "Pokedex Screen")
 
 ![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/MapPromo.png "Kanto Map")
 
-This is a disassembly of Pokémon FireRed and LeafGreen, the purpose of this project is to replicate the majority of Red and Blue in a faithful and colored manner.
+The purpose of this project is to replicate the majority of Red and Blue in a faithful and colored manner.
 
-It builds the following ROMs:
-
-* [**pokefirered.gba**]
-* [**pokeleafgreen.gba**]
-* [**pokefirered_rev1.gba**]
-* [**pokeleafgreen_rev1.gba**]
-
+https://www.pokecommunity.com/threads/red-blue-g1s.525470/
 
 Current Status:
 Completable from intro to Cerulean Cave.
@@ -32,4 +28,3 @@ Credits:
 CHAMBER, SOLOO993, BLUE EMERALD, LAKE, NESLUG, PIKACHU25 for the Pokemon party sprites used in party menu and storage system.
 TheXaman for the Gen4 style Pokemon party menu.
 Moylend for helping with testing and poiting out various issues.
-
