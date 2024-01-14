@@ -2288,13 +2288,14 @@ static void PrintDisplayMonInfo(void)
 {
     u16 i;
     u16 y;
-    FillWindowPixelBuffer(0, PIXEL_FILL(1));
+    FillWindowPixelBuffer(0, PIXEL_FILL(0));
     if (gStorage->boxOption != OPTION_MOVE_ITEMS)
     {
         for (i = 0, y = 0; i < 3; i++, y += 14)
+                                                                                //i is the level
             AddTextPrinterParameterized(0, FONT_NORMAL, gStorage->displayMonTexts[i], i == 2 ? 10 : 6, y, TEXT_SKIP_DRAW, NULL);
-
-        AddTextPrinterParameterized(0, FONT_SMALL, gStorage->displayMonTexts[3], 6, y + 2, TEXT_SKIP_DRAW, NULL);
+                                                                           //3 is the item text. Disabled for now
+        //AddTextPrinterParameterized(0, FONT_SMALL, gStorage->displayMonTexts[3], 6, y + 2, TEXT_SKIP_DRAW, NULL);
     }
     else
     {

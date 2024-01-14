@@ -1105,10 +1105,21 @@ static void SetDisplayMonData(void *pokemon, u8 mode)
             gender = MON_GENDERLESS;
 
         // Buffer nickname
-        StringCopyPadded(gStorage->displayMonNicknameText, gStorage->displayMonNickname, CHAR_SPACE, 5);
+        txtPtr = gStorage->displayMonNicknameText;
+        *(txtPtr++) = EXT_CTRL_CODE_BEGIN;
+        *(txtPtr++) = EXT_CTRL_CODE_COLOR_HIGHLIGHT_SHADOW;
+        *(txtPtr++) = TEXT_COLOR_LIGHT_GRAY;
+        *(txtPtr++) = TEXT_COLOR_DARK_GRAY;
+        *(txtPtr++) = TEXT_COLOR_WHITE;
+        StringCopyPadded(txtPtr, gStorage->displayMonNickname, CHAR_SPACE, 5);
 
         // Buffer species name
         txtPtr = gStorage->displayMonSpeciesNameText;
+        *(txtPtr++) = EXT_CTRL_CODE_BEGIN;
+        *(txtPtr++) = EXT_CTRL_CODE_COLOR_HIGHLIGHT_SHADOW;
+        *(txtPtr++) = TEXT_COLOR_LIGHT_GRAY;
+        *(txtPtr++) = TEXT_COLOR_DARK_GRAY;
+        *(txtPtr++) = TEXT_COLOR_WHITE;
         *(txtPtr)++ = CHAR_SLASH;
         StringCopyPadded(txtPtr, gSpeciesNames[gStorage->displayMonSpecies], CHAR_SPACE, 5);
 
@@ -1132,7 +1143,8 @@ static void SetDisplayMonData(void *pokemon, u8 mode)
             break;
         default:
             *(txtPtr)++ = TEXT_COLOR_DARK_GRAY;
-            *(txtPtr)++ = TEXT_COLOR_WHITE;
+            //This DARK_GRAY controls the gender symbol background color, DG is WHITE
+            *(txtPtr)++ = TEXT_COLOR_DARK_GRAY;
             *(txtPtr)++ = TEXT_COLOR_LIGHT_GRAY;
             *(txtPtr)++ = CHAR_SPACE;
             break;
@@ -1140,9 +1152,12 @@ static void SetDisplayMonData(void *pokemon, u8 mode)
 
         *(txtPtr++) = EXT_CTRL_CODE_BEGIN;
         *(txtPtr++) = EXT_CTRL_CODE_COLOR_HIGHLIGHT_SHADOW;
-        *(txtPtr++) = TEXT_COLOR_DARK_GRAY;
-        *(txtPtr++) = TEXT_COLOR_WHITE;
+        //Replacing DARK_GRAY with WHITE sets the " Lv26" text PRIMARY color to dark gray
         *(txtPtr++) = TEXT_COLOR_LIGHT_GRAY;
+        //Replacing WHITE with DARK_GRAY sets the " Lv26" text background color to white
+        *(txtPtr++) = TEXT_COLOR_DARK_GRAY;
+        //Replacing LIGHT_GRAY with WHITE sets the " Lv26" text shadow color to
+        *(txtPtr++) = TEXT_COLOR_WHITE;
         *(txtPtr++) = CHAR_SPACE;
         *(txtPtr++) = CHAR_EXTRA_SYMBOL;
         *(txtPtr++) = CHAR_LV_2;
