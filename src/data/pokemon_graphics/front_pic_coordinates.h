@@ -373,7 +373,7 @@ const struct MonCoords gMonFrontPicCoords[] =
     [SPECIES_GEODUDE] =
     {
         .size = MON_COORDS_SIZE(64, 64),
-        .y_offset = 16,
+        .y_offset = 0,
     },
     [SPECIES_GRAVELER] =
     {
@@ -503,12 +503,12 @@ const struct MonCoords gMonFrontPicCoords[] =
     [SPECIES_VOLTORB] =
     {
         .size = MON_COORDS_SIZE(64, 64),
-        .y_offset = 16,
+        .y_offset = 0,
     },
     [SPECIES_ELECTRODE] =
     {
         .size = MON_COORDS_SIZE(64, 64),
-        .y_offset = 16,
+        .y_offset = 0,
     },
     [SPECIES_EXEGGCUTE] =
     {
