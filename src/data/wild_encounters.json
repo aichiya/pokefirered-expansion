@@ -14702,7 +14702,7 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_KRABBY"
               }
             ]
           }
@@ -14801,7 +14801,7 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_KRABBY"
               }
             ]
           }
@@ -15013,12 +15013,12 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_KRABBY"
               },
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_SHELLDER"
               }
             ]
           }
@@ -15112,12 +15112,12 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_KRABBY"
               },
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_SHELLDER"
               }
             ]
           }
@@ -15620,12 +15620,12 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_SLOWPOKE"
               },
               {
-                "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_NONE"
+                "min_level": 23,
+                "max_level": 23,
+                "species": "SPECIES_POLIWHIRL"
               }
             ]
           }
@@ -15774,12 +15774,12 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_SLOWPOKE"
               },
               {
-                "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_NONE"
+                "min_level": 23,
+                "max_level": 23,
+                "species": "SPECIES_POLIWHIRL"
               }
             ]
           }
@@ -15873,12 +15873,12 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_SHELLDER"
               },
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_KRABBY"
               }
             ]
           }
@@ -15972,12 +15972,12 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_SHELLDER"
               },
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_KRABBY"
               }
             ]
           }
@@ -18337,14 +18337,14 @@
                 "species": "SPECIES_POLIWAG"
               },
               {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_NONE"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_POLIWAG"
               },
               {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_NONE"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_POLIWAG"
               }
             ]
           }
@@ -18436,14 +18436,14 @@
                 "species": "SPECIES_POLIWAG"
               },
               {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_NONE"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_POLIWAG"
               },
               {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_NONE"
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_POLIWAG"
               }
             ]
           }
@@ -18740,7 +18740,7 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_KRABBY"
               }
             ]
           }
@@ -18839,7 +18839,7 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_KRABBY"
               }
             ]
           }
@@ -18938,7 +18938,7 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_KRABBY"
               }
             ]
           }
@@ -19037,7 +19037,7 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_NONE"
+                "species": "SPECIES_KRABBY"
               }
             ]
           }
