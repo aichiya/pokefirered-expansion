@@ -320,8 +320,7 @@ static const u32 sTMHMLearnsets[][2] =
                                         | TMHM(TM39_SWIFT)
                                         | TMHM(TM40_SKULL_BASH)
                                         | TMHM(TM44_REST)
-                                        | TMHM(TM50_SUBSTITUTE)
-                                        | TMHM(HM02_FLY)),
+                                        | TMHM(TM50_SUBSTITUTE)),
 
     [SPECIES_RATICATE]    = TMHM_LEARNSET(TMHM(TM06_TOXIC)
                                         | TMHM(TM08_BODY_SLAM)
