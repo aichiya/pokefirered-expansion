@@ -1,0 +1,9 @@
+-V4-
+UndergroundPath_NorthSouthTunnel had erroneous impassible tile, fixed.
+Rattata can no longer use FLY HM.
+Super Rod fishing tables for several routes were missing entries, fixed.
+PokemonMansion_3F had erroneous impassible tile, fixed.
+Route23 tiny island in water was inaccessible due to differences in terrain height data, fixed.
+gTileset_RB_Forest used for Safari Zone had wild encounters enabled for mountain terrain, fixed.
+Replaced naming screen Rival sprite.
+Partially replaced naming screen graphics.
