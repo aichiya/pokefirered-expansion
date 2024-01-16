@@ -14,7 +14,6 @@ Area name popups not disabled.
 EXP.ALL use requires multiple button presses to free bag cursor.
 EXP.ALL cannot be registered.
 National dex Oak script not removed.
-Rival sprite in naming screen not altered.
 
 -Intro-
 GAME FREAK splash screen needs improvements.

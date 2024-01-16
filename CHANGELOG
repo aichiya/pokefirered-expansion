@@ -7,3 +7,5 @@ Route23 tiny island in water was inaccessible due to differences in terrain heig
 gTileset_RB_Forest used for Safari Zone had wild encounters enabled for mountain terrain, fixed.
 Replaced naming screen Rival sprite.
 Partially replaced naming screen graphics.
+Partially replaced trade screen graphics.
+Enabled and fixed link trading, it is now possible to trade Pokemon!

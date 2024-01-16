@@ -1,4 +1,4 @@
-# Pokémon Red & Blue Gen1Style V3
+# Pokémon Red & Blue Gen1Style V4
 
 ![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/RedTitlePromo.png "Red Title Screen")
 
@@ -27,8 +27,7 @@ Trainer parties, move stats, item prices and availability, learnsets, TMs, world
 
 Although the project is 99% done, there are still some very important changes to be made
 and more testing to be done before declaring the project fully finished.
-Currently, link battles work while link trades do not. National Dex event and other post E4
-events have not been completely erased/modified/verified.
+National Dex event and other post E4 events have not been completely erased/modified/verified.
 
 ![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/BoxPromo.png "Pokemon Storage System Screen")
 
@@ -48,7 +47,7 @@ Too many projects promised greatness then died due to disinterest, showed amazin
 - _pokeleafgreen sha1_: 574fa542ffebb14be69902d1d36f1ec0a4afd71e
 - _pokeleafgreen_rev1_ sha1: 7862c67bdecbe21d1d69ce082ce34327e1c6ed5e
 
-**Link battling seems to work, but there is the chance that you become stuck or your save is corrupted if I missed something. I have temporarily made part of the Pokecenter counter walkable in order to prevent getting stuck, but be aware that ALL link play is done at your own risk.**
+**Multiplayer seems to work, but there is the chance that you become stuck or your save is corrupted if I missed something. Be aware that ALL link play is done at your own risk.**
 
 https://www.pokecommunity.com/threads/red-blue-g1s.525470/
 
