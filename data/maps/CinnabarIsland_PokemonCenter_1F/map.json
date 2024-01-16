@@ -104,6 +104,13 @@
       "elevation": 3,
       "dest_map": "MAP_CINNABAR_ISLAND",
       "dest_warp_id": "3"
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_TRADE_CENTER",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

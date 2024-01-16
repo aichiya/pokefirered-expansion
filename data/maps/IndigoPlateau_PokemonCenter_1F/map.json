@@ -141,6 +141,13 @@
       "elevation": 3,
       "dest_map": "MAP_INDIGO_PLATEAU_EXTERIOR",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_TRADE_CENTER",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

@@ -49,23 +49,18 @@ CableClub_OnLoad::
 	end
 
 EventScript_OnLoadFromColosseum::
-	call CableClub_EventScript_OpenDirectCornerBarrier
 	end
 
 EventScript_OnLoadFromTradeCenter::
-	call CableClub_EventScript_OpenDirectCornerBarrier
 	end
 
 EventScript_OnLoadFromUnionRoom::
-	call CableClub_EventScript_OpenUnionRoomBarrier
 	end
 
 EventScript_OnLoadFromBerryCrush::
-	call CableClub_EventScript_OpenDirectCornerBarrier
 	end
 
 EventScript_OnLoadFromGameCorner::
-	call CableClub_EventScript_OpenGameCornerBarrier
 	end
 
 CableClub_OnFrame::
@@ -82,7 +77,6 @@ CableClub_OnFrame::
 CableClub_EventScript_ExitLinkRoom::
 	lockall
 	call CableClub_EventScript_CloseLinkAndExitLinkRoom
-	call CableClub_EventScript_CloseDirectCornerBarrier
 	special DrawWholeMapView
 	playse SE_CLICK
 	erasebox 0, 0, 29, 19
@@ -92,7 +86,6 @@ CableClub_EventScript_ExitLinkRoom::
 CableClub_EventScript_ExitMinigameRoom::
 	lockall
 	call CableClub_EventScript_CloseLinkAndExitLinkRoom
-	call CableClub_EventScript_CloseGameCornerBarrier
 	special DrawWholeMapView
 	playse SE_CLICK
 	erasebox 0, 0, 29, 19
@@ -106,18 +99,17 @@ CableClub_EventScript_CloseLinkAndExitLinkRoom::
 	setvar VAR_CABLE_CLUB_STATE, 0
 	textcolor NPC_TEXT_COLOR_FEMALE
 	goto_if_eq VAR_0x8007, 0, CableClub_EventScript_PlayerExitLinkRoom
-	applymovement VAR_0x8007, Movement_AttendantFaceLeft
+	applymovement VAR_0x8007, Movement_AttendantMoveUpRight
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerExitLinkRoom
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerExitLinkRoomLeft
 	waitmovement 0
-	applymovement VAR_0x8007, Movement_AttendantFaceDown
+	applymovement VAR_0x8007, Movement_AttendantMoveDownFromRight
 	waitmovement 0
 	return
 
 CableClub_EventScript_ExitTradeCenter::
 	lockall
 	call CableClub_EventScript_PlayerExitTradeCenter
-	call CableClub_EventScript_CloseDirectCornerBarrier
 	special DrawWholeMapView
 	playse SE_CLICK
 	erasebox 0, 0, 29, 19
@@ -141,7 +133,6 @@ CableClub_EventScript_PlayerExitTradeCenter::
 CableClub_EventScript_ExitUnionRoom::
 	lockall
 	call CableClub_EventScript_PlayerExitUnionRoom
-	call CableClub_EventScript_CloseUnionRoomBarrier
 	special DrawWholeMapView
 	playse SE_CLICK
 	erasebox 0, 0, 29, 19
@@ -167,14 +158,14 @@ CableClub_EventScript_TrainerCardDataOverwritten::
 	playse SE_PIN
 	message CableClub_Text_HopeToSeeYouAgain
 	waitmessage
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerExitLinkRoom
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerExitLinkRoomLeft
 	waitmovement 0
 	applymovement VAR_0x8007, Movement_AttendantFaceDown
 	waitmovement 0
 	return
 
 CableClub_EventScript_PlayerExitLinkRoom::
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerExitLinkRoom
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerExitLinkRoomLeft
 	waitmovement 0
 	return
 
@@ -214,7 +205,7 @@ CableClub_EventScript_SelectCableClubRoom::
 	setvar VAR_0x8004, 0
 	multichoice 0, 0, MULTICHOICE_TRADE_CENTER_COLOSSEUM, FALSE
 	switch VAR_RESULT
-	case 0, CableClub_EventScript_Colosseum
+	case 0, CableClub_EventScript_TradeCenter
 	case 1, CableClub_EventScript_Colosseum
 	case 2, CableClub_EventScript_AbortLink
 	case SCR_MENU_CANCEL, CableClub_EventScript_AbortLink
@@ -291,20 +282,15 @@ CableClub_EventScript_EnterColosseum::
 	messageautoscroll CableClub_Text_PleaseEnter
 	waitmessage
 	special DrawWholeMapView
-	playse SE_CLICK
 	delay 60
-	applymovement VAR_LAST_TALKED, Movement_AttendantFaceLeft
-	waitmovement 0
+	@applymovement VAR_LAST_TALKED, Movement_AttendantMoveUpRight
+	@waitmovement 0
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerApproachLinkRoomLeft
-	waitmovement 0
-	opendoor 9, 1
-	waitdooranim
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerEnterLinkRoom
-	waitmovement 0
+	@applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerApproachLinkRoomLeft
+	@waitmovement 0
+	@applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerEnterLinkRoom
+	@waitmovement 0
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
-	closedoor 9, 1
-	waitdooranim
 	release
 	goto_if_eq VAR_0x8004, USING_MULTI_BATTLE, CableClub_EventScript_WarpTo4PColosseum
 	special SetCableClubWarp
@@ -388,20 +374,15 @@ CableClub_EventScript_EnterTradeCenter::
 	messageautoscroll CableClub_Text_PleaseEnter
 	waitmessage
 	special DrawWholeMapView
-	playse SE_CLICK
 	delay 60
-	applymovement VAR_LAST_TALKED, Movement_AttendantFaceLeft
-	waitmovement 0
+	@applymovement VAR_LAST_TALKED, Movement_AttendantMoveUpLeft
+	@waitmovement 0
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerApproachLinkRoomLeft
-	waitmovement 0
-	opendoor 9, 1
-	waitdooranim
-	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerEnterLinkRoom
-	waitmovement 0
+	@applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerApproachLinkRoomRight
+	@waitmovement 0
+	@applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerEnterLinkRoom
+	@waitmovement 0
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
-	closedoor 9, 1
-	waitdooranim
 	release
 	special SetCableClubWarp
 	setwarp MAP_TRADE_CENTER, 5, 8
@@ -524,21 +505,54 @@ Movement_AttendantFaceLeft::
 	face_left
 	step_end
 
-Movement_PlayerExitLinkRoom::
+Movement_AttendantMoveUpLeft::
+	walk_up
+	walk_left
+	face_right
+	step_end
+
+Movement_AttendantMoveUpRight::
+	walk_up
+	walk_right
+	face_left
+	step_end
+
+Movement_AttendantMoveDownFromLeft::
+	walk_right
+	walk_down
+	step_end
+
+Movement_AttendantMoveDownFromRight::
+	walk_left
+	walk_down
+	step_end
+
+Movement_PlayerExitLinkRoomLeft::
+	walk_down
+	walk_right
+	walk_down
+	walk_down
+	step_end
+
+Movement_PlayerExitLinkRoomRight::
+	walk_down
+	walk_left
 	walk_down
 	walk_down
 	step_end
 
 Movement_PlayerApproachLinkRoomRight::
+	walk_up
+	walk_up
 	walk_right
-	walk_up
-	walk_up
+	face_up
 	step_end
 
 Movement_PlayerApproachLinkRoomLeft::
+	walk_up
+	walk_up
 	walk_left
-	walk_up
-	walk_up
+	face_up
 	step_end
 
 Movement_PlayerEnterLinkRoom::
@@ -782,13 +796,9 @@ CableClub_EventScript_EnterUnionRoom::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerApproachLinkRoomLeft
 	waitmovement 0
-	opendoor 5, 1
-	waitdooranim
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerEnterLinkRoom
 	waitmovement 0
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
-	closedoor 5, 1
-	waitdooranim
 	special Script_ResetUnionRoomTrade
 	special SetCableClubWarp
 	warpspinenter MAP_UNION_ROOM, 7, 11
@@ -1058,13 +1068,9 @@ CableClub_EventScript_EnterWirelessLinkRoom::
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerApproachLinkRoomLeft
 	waitmovement 0
-	opendoor 9, 1
-	waitdooranim
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerEnterLinkRoom
 	waitmovement 0
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
-	closedoor 9, 1
-	waitdooranim
 	release
 	waitstate
 	end
@@ -1090,27 +1096,21 @@ CableClub_EventScript_AdapterNotConnected::
 	end
 
 CableClub_EventScript_OpenUnionRoomBarrier::
-	setmetatile 5, 3, METATILE_PokemonCenter_Floor_ShadeLeft, 0
 	return
 
 CableClub_EventScript_CloseUnionRoomBarrier::
-	setmetatile 5, 3, METATILE_PokemonCenter_CounterBarrier, 1
 	return
 
 CableClub_EventScript_OpenDirectCornerBarrier::
-	setmetatile 9, 3, METATILE_PokemonCenter_Floor_ShadeLeft, 0
 	return
 
 CableClub_EventScript_CloseDirectCornerBarrier::
-	setmetatile 9, 3, METATILE_PokemonCenter_CounterBarrier, 1
 	return
 
 CableClub_EventScript_OpenGameCornerBarrier::
-	setmetatile 5, 3, METATILE_GameCorner_CheckeredFloor_ShadeLeft, 0
 	return
 
 CableClub_EventScript_CloseGameCornerBarrier::
-	setmetatile 5, 3, METATILE_GameCorner_CounterBarrier, 1
 	return
 
 CableClub_OnResume::
@@ -1233,7 +1233,6 @@ CableClub_EventScript_EnterMinigame::
 	delay 120
 	closemessage
 	copyvar VAR_0x8007, VAR_LAST_TALKED
-	call CableClub_EventScript_OpenGameCornerBarrier
 	special DrawWholeMapView
 	playse SE_CLICK
 	delay 60
