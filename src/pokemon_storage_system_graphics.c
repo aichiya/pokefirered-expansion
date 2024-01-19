@@ -158,11 +158,11 @@ static const u16 sBoxTitleColors[][2] = {
     {RGB( 7,  7,  7), RGB_WHITE},
     {RGB( 7,  7,  7), RGB_WHITE},
     {RGB( 7,  7,  7), RGB_WHITE},
-    {RGB( 7,  7,  7), RGB_WHITE},
-    {RGB( 7,  7,  7), RGB_WHITE},
-    {RGB( 7,  7,  7), RGB_WHITE},
-    {RGB( 7,  7,  7), RGB_WHITE},
-    {RGB( 7,  7,  7), RGB_WHITE}
+    {RGB( 7,  7,  7), RGB_BLACK},
+    {RGB( 7,  7,  7), RGB_BLACK},
+    {RGB( 7,  7,  7), RGB_BLACK},
+    {RGB( 7,  7,  7), RGB_BLACK},
+    {RGB( 7,  7,  7), RGB_BLACK}
 };
 
 static const struct Wallpaper sWallpapers[] = {
