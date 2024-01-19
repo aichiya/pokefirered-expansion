@@ -2288,7 +2288,7 @@ static void PrintDisplayMonInfo(void)
 {
     u16 i;
     u16 y;
-    FillWindowPixelBuffer(0, PIXEL_FILL(0));
+    FillWindowPixelBuffer(0, PIXEL_FILL(2));
     if (gStorage->boxOption != OPTION_MOVE_ITEMS)
     {
         for (i = 0, y = 0; i < 3; i++, y += 14)
