@@ -534,7 +534,7 @@ static void ItemPc_MoveCursorFunc(s32 itemIndex, bool8 onInit, struct ListMenu *
         }
         sStateDataPtr->itemMenuIconSlot ^= 1;
         FillWindowPixelBuffer(1, 0);
-        ItemPc_AddTextPrinterParameterized(1, FONT_NORMAL, desc, 0, 3, 2, 0, 0, 3);
+        ItemPc_AddTextPrinterParameterized(1, FONT_NORMAL, desc, 0, 3, 2, 0, 0, 1);
     }
 }
 
