@@ -14,12 +14,14 @@ extern const struct OamData gOamData_AffineOff_ObjNormal_16x16;
 
 static void DecompressGlyph_NormalCopy1(u16 glyphId, bool32 isJapanese);
 static void DecompressGlyph_NormalCopy2(u16 glyphId, bool32 isJapanese);
+static void DecompressGlyph_NormalCopyXyi(u16 glyphId, bool32 isJapanese);
 static void DecompressGlyph_Male(u16 glyphId, bool32 isJapanese);
 static void DecompressGlyph_Bold(u16 glyphId);
 static s32 GetGlyphWidth_Small(u16 glyphId, bool32 isJapanese);
 static s32 GetGlyphWidth_NormalCopy1(u16 glyphId, bool32 isJapanese);
 static s32 GetGlyphWidth_Normal(u16 glyphId, bool32 isJapanese);
 static s32 GetGlyphWidth_NormalCopy2(u16 glyphId, bool32 isJapanese);
+static s32 GetGlyphWidth_NormalCopyXyi(u16 glyphId, bool32 isJapanese);
 static s32 GetGlyphWidth_Male(u16 glyphId, bool32 isJapanese);
 static s32 GetGlyphWidth_Female(u16 glyphId, bool32 isJapanese);
 static void SpriteCB_TextCursor(struct Sprite *sprite);
@@ -45,6 +47,7 @@ static const struct GlyphWidthFunc sGlyphWidthFuncs[] = {
     { FONT_NORMAL_COPY_1, GetGlyphWidth_NormalCopy1 },
     { FONT_NORMAL,        GetGlyphWidth_Normal },
     { FONT_NORMAL_COPY_2, GetGlyphWidth_NormalCopy2 },
+    { FONT_NORMAL_COPY_XYI, GetGlyphWidth_NormalCopyXyi },
     { FONT_MALE,          GetGlyphWidth_Male },
     { FONT_FEMALE,        GetGlyphWidth_Female },
     { FONT_BRAILLE,       GetGlyphWidth_Braille }
@@ -427,6 +430,18 @@ u16 FontFunc_NormalCopy2(struct TextPrinter *textPrinter)
     if (subStruct->hasGlyphIdBeenSet == 0)
     {
         textPrinter->subUnion.sub.glyphId = FONT_NORMAL_COPY_2;
+        subStruct->hasGlyphIdBeenSet = 1;
+    }
+    return RenderText(textPrinter);
+}
+
+u16 FontFunc_NormalCopyXyi(struct TextPrinter* textPrinter)
+{
+    struct TextPrinterSubStruct* subStruct = &textPrinter->subUnion.sub;
+
+    if (subStruct->hasGlyphIdBeenSet == 0)
+    {
+        textPrinter->subUnion.sub.glyphId = FONT_NORMAL_COPY_XYI;
         subStruct->hasGlyphIdBeenSet = 1;
     }
     return RenderText(textPrinter);
@@ -828,6 +843,9 @@ u16 RenderText(struct TextPrinter *textPrinter)
             break;
         case FONT_NORMAL_COPY_2:
             DecompressGlyph_NormalCopy2(currChar, textPrinter->japanese);
+            break;
+        case FONT_NORMAL_COPY_XYI:
+            DecompressGlyph_NormalCopyXyi(currChar, textPrinter->japanese);
             break;
         case FONT_MALE:
             DecompressGlyph_Male(currChar, textPrinter->japanese);
@@ -1536,7 +1554,50 @@ static void DecompressGlyph_NormalCopy2(u16 glyphId, bool32 isJapanese)
         DecompressGlyph_Normal(glyphId, isJapanese);
 }
 
+static void DecompressGlyph_NormalCopyXyi(u16 glyphId, bool32 isJapanese)
+{
+    const u16* glyphs;
+    int i;
+    u8 lastColor;
+
+    if (isJapanese == TRUE)
+    {
+        if (glyphId == 0)
+        {
+            lastColor = GetLastTextColor(2);
+
+            for (i = 0; i < 0x80; i++)
+            {
+                gGlyphInfo.pixels[i] = lastColor | lastColor << 4;
+                // Game Freak, please. writing the same values over and over...
+                gGlyphInfo.width = 10;
+                gGlyphInfo.height = 12;
+            }
+        }
+        else
+        {
+            glyphs = sFontNormalJapaneseGlyphs + (0x100 * (glyphId >> 0x3)) + (0x10 * (glyphId & 0x7));
+            DecompressGlyphTile(glyphs, (u16*)gGlyphInfo.pixels);
+            DecompressGlyphTile(glyphs + 0x8, (u16*)(gGlyphInfo.pixels + 0x20));
+            DecompressGlyphTile(glyphs + 0x80, (u16*)(gGlyphInfo.pixels + 0x40));
+            DecompressGlyphTile(glyphs + 0x88, (u16*)(gGlyphInfo.pixels + 0x60));
+            gGlyphInfo.width = 10;
+            gGlyphInfo.height = 12;
+        }
+    }
+    else
+        DecompressGlyph_Normal(glyphId, isJapanese);
+}
+
 static s32 GetGlyphWidth_NormalCopy2(u16 glyphId, bool32 isJapanese)
+{
+    if (isJapanese == TRUE)
+        return 10;
+    else
+        return sFontNormalLatinGlyphWidths[glyphId];
+}
+
+static s32 GetGlyphWidth_NormalCopyXyi(u16 glyphId, bool32 isJapanese)
 {
     if (isJapanese == TRUE)
         return 10;

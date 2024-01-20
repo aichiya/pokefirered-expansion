@@ -17,6 +17,7 @@ enum {
     FONT_NORMAL_COPY_1,
     FONT_NORMAL,
     FONT_NORMAL_COPY_2,
+    FONT_NORMAL_COPY_XYI,
     FONT_MALE,
     FONT_FEMALE,
     FONT_BRAILLE,
@@ -164,6 +165,7 @@ u16 FontFunc_Small(struct TextPrinter *textPrinter);
 u16 FontFunc_NormalCopy1(struct TextPrinter *textPrinter);
 u16 FontFunc_Normal(struct TextPrinter *textPrinter);
 u16 FontFunc_NormalCopy2(struct TextPrinter *textPrinter);
+u16 FontFunc_NormalCopyXyi(struct TextPrinter* textPrinter);
 u16 FontFunc_Male(struct TextPrinter *textPrinter);
 u16 FontFunc_Female(struct TextPrinter *textPrinter);
 u16 FontFunc_Braille(struct TextPrinter *textPrinter);

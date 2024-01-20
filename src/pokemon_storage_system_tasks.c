@@ -212,6 +212,14 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .height = 8,
         .paletteNum = 15,
         .baseBlock = 0x014
+    }, {
+        .bg = 1,
+        .tilemapLeft = 0,
+        .tilemapTop = 11,
+        .width = 9,
+        .height = 7,
+        .paletteNum = 3,
+        .baseBlock = 0x0c0
     },
     DUMMY_WIN_TEMPLATE
 };
@@ -2293,7 +2301,7 @@ static void PrintDisplayMonInfo(void)
     {
         for (i = 0, y = 0; i < 3; i++, y += 14)
                                                                                 //i is the level
-            AddTextPrinterParameterized(0, FONT_NORMAL, gStorage->displayMonTexts[i], i == 2 ? 10 : 6, y, TEXT_SKIP_DRAW, NULL);
+            AddTextPrinterParameterized(0, FONT_NORMAL_COPY_XYI, gStorage->displayMonTexts[i], i == 2 ? 10 : 6, y, TEXT_SKIP_DRAW, NULL);
                                                                            //3 is the item text. Disabled for now
         //AddTextPrinterParameterized(0, FONT_SMALL, gStorage->displayMonTexts[3], 6, y + 2, TEXT_SKIP_DRAW, NULL);
     }
@@ -2301,7 +2309,7 @@ static void PrintDisplayMonInfo(void)
     {
         AddTextPrinterParameterized(0, FONT_SMALL, gStorage->displayMonTexts[3], 6, 0, TEXT_SKIP_DRAW, NULL);
         for (i = 0, y = 15; i < 3; i++, y += 14)
-            AddTextPrinterParameterized(0, FONT_NORMAL, gStorage->displayMonTexts[i], i == 2 ? 10 : 6, y, TEXT_SKIP_DRAW, NULL);
+            AddTextPrinterParameterized(0, FONT_NORMAL_COPY_XYI, gStorage->displayMonTexts[i], i == 2 ? 10 : 6, y, TEXT_SKIP_DRAW, NULL);
     }
 
     CopyWindowToVram(0, COPYWIN_GFX);

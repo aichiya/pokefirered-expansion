@@ -127,6 +127,7 @@ static void DrawStdFrameWithCustomTile(u8 windowId, bool8 copyToVram, u16 baseTi
         CopyWindowToVram(windowId, COPYWIN_FULL);
 }
 
+//Multichoice menu and such. PC, Dialogue, Etc.
 static void WindowFunc_DrawStdFrameWithCustomTileAndPalette(u8 bg, u8 tilemapLeft, u8 tilemapTop, u8 width, u8 height, u8 paletteNum)
 {
     FillBgTilemapBufferRect(bg, sTileNum,     tilemapLeft - 1,     tilemapTop - 1,      1,     1,      sPaletteNum);
