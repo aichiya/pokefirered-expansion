@@ -2559,6 +2559,16 @@ static void InitPokeStorageBg0(void)
     CopyBgTilemapBufferToVram(0);
 }
 
+static const u8 sFontColorTable[][3] =
+{
+    {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_LIGHT_GRAY, TEXT_COLOR_DARK_GRAY},  // Default
+    {TEXT_COLOR_TRANSPARENT, TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_LIGHT_GRAY},  // Black text with light gray shadow.
+    {TEXT_COLOR_TRANSPARENT, TEXT_DYNAMIC_COLOR_2,  TEXT_DYNAMIC_COLOR_3},  // Gender symbol
+    {TEXT_COLOR_WHITE,       TEXT_COLOR_DARK_GRAY,  TEXT_COLOR_LIGHT_GRAY}, // Selection actions
+    {TEXT_COLOR_WHITE,       TEXT_COLOR_BLUE,       TEXT_COLOR_LIGHT_BLUE}, // Field moves
+    {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_WHITE,      TEXT_COLOR_DARK_GRAY},  // Unused
+};
+
 static void PrintStorageMessage(u8 id)
 {
     u8 *txtPtr;
@@ -2594,7 +2604,8 @@ static void PrintStorageMessage(u8 id)
 
     DynamicPlaceholderTextUtil_ExpandPlaceholders(gStorage->actionText, sMessages[id].text);
     FillWindowPixelBuffer(1, PIXEL_FILL(1));
-    AddTextPrinterParameterized(1, FONT_NORMAL_COPY_1, gStorage->actionText, 0, 2, TEXT_SKIP_DRAW, NULL);
+    //AddTextPrinterParameterized(1, FONT_NORMAL_COPY_1, gStorage->actionText, 0, 2, TEXT_SKIP_DRAW, NULL);
+    AddTextPrinterParameterized3(1, FONT_NORMAL_COPY_1, 0, 2, sFontColorTable[1], TEXT_SKIP_DRAW, gStorage->actionText);
     DrawTextBorderOuter(1, 2, 13);
     PutWindowTilemap(1);
     CopyWindowToVram(1, COPYWIN_GFX);

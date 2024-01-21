@@ -134,7 +134,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 1,
         .width = 19,
         .height = 12,
-        .paletteNum = 15,
+        .paletteNum = 0,
         .baseBlock = 0x02bf
     }, {
         .bg = 0,
@@ -142,7 +142,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 14,
         .width = 25,
         .height = 6,
-        .paletteNum = 13,
+        .paletteNum = 0,
         .baseBlock = 0x0229
     }, {
         .bg = 0,
@@ -150,7 +150,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 1,
         .width = 5,
         .height = 4,
-        .paletteNum = 15,
+        .paletteNum = 0,
         .baseBlock = 0x0215
     }, {
         .bg = 0,
@@ -158,7 +158,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 15,
         .width = 5,
         .height = 4,
-        .paletteNum = 15,
+        .paletteNum = 0,
         .baseBlock = 0x0201
     }, {
         .bg = 0,
@@ -166,7 +166,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 13,
         .width = 7,
         .height = 6,
-        .paletteNum = 15,
+        .paletteNum = 0,
         .baseBlock = 0x01d7
     }, {
         .bg = 0,
@@ -174,7 +174,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 15,
         .width = 26,
         .height = 4,
-        .paletteNum = 11,
+        .paletteNum = 0,
         .baseBlock = 0x016f
     }, DUMMY_WIN_TEMPLATE
 };
@@ -186,7 +186,7 @@ static const struct WindowTemplate sSubwindowTemplates[] = {
         .tilemapTop = 15,
         .width = 14,
         .height = 4,
-        .paletteNum = 12,
+        .paletteNum = 0,
         .baseBlock = 0x0137
     }, {
         .bg = 0,
@@ -194,7 +194,7 @@ static const struct WindowTemplate sSubwindowTemplates[] = {
         .tilemapTop = 15,
         .width = 16,
         .height = 4,
-        .paletteNum = 12,
+        .paletteNum = 0,
         .baseBlock = 0x0137
     }, {
         .bg = 0,
@@ -202,7 +202,7 @@ static const struct WindowTemplate sSubwindowTemplates[] = {
         .tilemapTop = 15,
         .width = 23,
         .height = 4,
-        .paletteNum = 12,
+        .paletteNum = 0,
         .baseBlock = 0x009b
     }
 };

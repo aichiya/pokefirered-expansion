@@ -11,9 +11,9 @@
 static const u16 sBagWindowPalF[] = INCBIN_U16("graphics/item_menu/bag_window_pal.gbapal");
 
 static const u8 sTextColors[][3] = {
-    {0, 2, 3},
-    {0, 2, 3},
-    {0, 2, 3},
+    {0, 4, 5},
+    {0, 4, 5},
+    {0, 4, 5},
     {0, 8, 9}
 };
 
@@ -24,7 +24,7 @@ static const struct WindowTemplate sDefaultBagWindowsStd[] = {
         .tilemapTop = 1,
         .width = 18,
         .height = 12,
-        .paletteNum = 15,
+        .paletteNum = 0,
         .baseBlock = 0x008a
     }, {
         .bg = 0,
@@ -32,7 +32,7 @@ static const struct WindowTemplate sDefaultBagWindowsStd[] = {
         .tilemapTop = 14,
         .width = 25,
         .height = 6,
-        .paletteNum = 15,
+        .paletteNum = 0,
         .baseBlock = 0x0162
     }, {
         .bg = 0,
@@ -40,7 +40,7 @@ static const struct WindowTemplate sDefaultBagWindowsStd[] = {
         .tilemapTop = 1,
         .width = 9,
         .height = 2,
-        .paletteNum = 15,
+        .paletteNum = 0,
         .baseBlock = 0x01f8
     }, DUMMY_WIN_TEMPLATE
 };
@@ -52,7 +52,7 @@ static const struct WindowTemplate sDefaultBagWindowsDeposit[] = {
         .tilemapTop = 1,
         .width = 18,
         .height = 12,
-        .paletteNum = 15,
+        .paletteNum = 0,
         .baseBlock = 0x008a
     }, {
         .bg = 0,
@@ -60,7 +60,7 @@ static const struct WindowTemplate sDefaultBagWindowsDeposit[] = {
         .tilemapTop = 14,
         .width = 25,
         .height = 6,
-        .paletteNum = 15,
+        .paletteNum = 0,
         .baseBlock = 0x0162
     }, {
         .bg = 0,
@@ -68,7 +68,7 @@ static const struct WindowTemplate sDefaultBagWindowsDeposit[] = {
         .tilemapTop = 1,
         .width = 8,
         .height = 2,
-        .paletteNum = 12,
+        .paletteNum = 0,
         .baseBlock = 0x01f8
     }, DUMMY_WIN_TEMPLATE
 };
@@ -80,7 +80,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 15,
         .width = 5,
         .height = 4,
-        .paletteNum = 15,
+        .paletteNum = 0,
         .baseBlock = 0x242
     }, {
         .bg = 0,
@@ -88,7 +88,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 9,
         .width = 12,
         .height = 4,
-        .paletteNum = 15,
+        .paletteNum = 0,
         .baseBlock = 0x242
     }, {
         .bg = 0,
@@ -96,7 +96,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 1,
         .width = 8,
         .height = 3,
-        .paletteNum = 12,
+        .paletteNum = 0,
         .baseBlock = 0x272
     }, {
         .bg = 0,
@@ -104,7 +104,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 15,
         .width = 6,
         .height = 4,
-        .paletteNum = 15,
+        .paletteNum = 0,
         .baseBlock = 0x28a
     }, {
         .bg = 0,
@@ -112,7 +112,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 9,
         .width = 6,
         .height = 4,
-        .paletteNum = 15,
+        .paletteNum = 0,
         .baseBlock = 0x28a
     }, {
         .bg = 0,
@@ -120,7 +120,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 15,
         .width = 26,
         .height = 4,
-        .paletteNum = 15,
+        .paletteNum = 0,
         .baseBlock = 0x2a2
     }, {
         .bg = 0,
@@ -128,7 +128,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 15,
         .width = 14,
         .height = 4,
-        .paletteNum = 12,
+        .paletteNum = 0,
         .baseBlock = 0x2a2
     }, {
         .bg = 0,
@@ -136,7 +136,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 15,
         .width = 15,
         .height = 4,
-        .paletteNum = 12,
+        .paletteNum = 0,
         .baseBlock = 0x2da
     }, {
         .bg = 0,
@@ -144,7 +144,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 15,
         .width = 16,
         .height = 4,
-        .paletteNum = 12,
+        .paletteNum = 0,
         .baseBlock = 0x316
     }, {
         .bg = 0,
@@ -152,7 +152,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 15,
         .width = 23,
         .height = 4,
-        .paletteNum = 12,
+        .paletteNum = 0,
         .baseBlock = 0x356
     }, {
         .bg = 0,
@@ -160,7 +160,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 17,
         .width = 7,
         .height = 2,
-        .paletteNum = 15,
+        .paletteNum = 0,
         .baseBlock = 0x20a
     }, {
         .bg = 0,
@@ -168,7 +168,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 15,
         .width = 7,
         .height = 4,
-        .paletteNum = 15,
+        .paletteNum = 0,
         .baseBlock = 0x20a
     }, {
         .bg = 0,
@@ -176,7 +176,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 13,
         .width = 7,
         .height = 6,
-        .paletteNum = 15,
+        .paletteNum = 0,
         .baseBlock = 0x20a
     }, {
         .bg = 0,
@@ -184,7 +184,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 11,
         .width = 7,
         .height = 8,
-        .paletteNum = 15,
+        .paletteNum = 0,
         .baseBlock = 0x20a
     }
 };
@@ -220,7 +220,7 @@ void InitBagWindows(void)
 
 void BagPrintTextOnWindow(u8 windowId, u8 fontId, const u8 * str, u8 x, u8 y, u8 letterSpacing, u8 lineSpacing, u8 speed, u8 colorIdx)
 {
-    AddTextPrinterParameterized4(windowId, fontId, x, y, letterSpacing, lineSpacing, sTextColors[colorIdx], speed, str);
+    AddTextPrinterParameterized4(windowId, fontId, x, y, letterSpacing, lineSpacing, sTextColors[0], speed, str);
 }
 
 void BagPrintTextOnWin1CenteredColor0(const u8 * str, u8 unused)
