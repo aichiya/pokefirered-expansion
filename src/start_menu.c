@@ -176,7 +176,7 @@ static const struct WindowTemplate sSaveStatsWindowTemplate = {
     .tilemapTop = 1,
     .width = 14,
     .height = 9,
-    .paletteNum = 13,
+    .paletteNum = 15,
     .baseBlock = 0x008
 };
 
