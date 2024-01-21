@@ -2598,9 +2598,9 @@ void DisplayPartyMenuStdMessage(u32 stringId)
             else if (!ShouldUseChooseMonText())
                 stringId = PARTY_MSG_CHOOSE_MON_OR_CANCEL;
         }
-        DrawStdFrameWithCustomTileAndPalette(*windowPtr, FALSE, 0x58, 15);
+        DrawStdFrameWithCustomTileAndPalette(*windowPtr, FALSE, 0x58, 0);
         StringExpandPlaceholders(gStringVar4, sActionStringTable[stringId]);
-        AddTextPrinterParameterized(*windowPtr, FONT_NORMAL, gStringVar4, 0, 2, 0, 0);
+        AddTextPrinterParameterized3(*windowPtr, FONT_NORMAL, 0, 2, sFontColorTable[1], 0, gStringVar4);
         ScheduleBgCopyTilemapToVram(2);
     }
 }
