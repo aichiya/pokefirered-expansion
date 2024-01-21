@@ -54,6 +54,6 @@ https://www.pokecommunity.com/threads/red-blue-g1s.525470/
 I have personally played through both Red and Blue to completion, however, there is always a chance a new breaking bug can appear. Please use mGBA or a comparable emulator, do not use VBA.
 
 Credits:
-CHAMBER, SOLOO993, BLUE EMERALD, LAKE, NESLUG, PIKACHU25 for the Pokemon party sprites used in party menu and storage system.
-TheXaman for the Gen4 style Pokemon party menu.
-Moylend for helping with testing and poiting out various issues.
+Thank you to CHAMBER, SOLOO993, BLUE EMERALD, LAKE, NESLUG, PIKACHU25 for the Pokemon party icon sprite sheet available through PRET tutorials, 
+TheXaman for the wonderful Gen4-style party menu, Moylend for playing my project and reporting issues, 
+Meister_anon and GriffinR for answering my questions on Discord!

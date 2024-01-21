@@ -9,3 +9,9 @@ Replaced naming screen Rival sprite.
 Partially replaced naming screen graphics.
 Partially replaced trade screen graphics.
 Enabled and fixed link trading, it is now possible to trade Pokemon!
+
+-V5-
+Fixed NidoranM, Nidorino, and Nidoking backsprite graphics having a visible blank space at the bottom of the image.
+Fixed Pokemon Storage System showing gray boxes when no Pokemon was selected.
+Replaced some item sprites with new custom sprites.
+Fixed dialogue window using vertically flipped tiles at the bottom.

@@ -1,4 +1,6 @@
 
+ITEMFINDER description must be shortened by "when it is used, it emits a signal."
+
 -Global-
 PC shows "What would you like to do?" when it shouldn't.
 Door animation incorrect palette/sprite.
@@ -7,7 +9,6 @@ Red doesn't turn to face approaching trainer.
 Ingame trade success texts not tested.
 All cut bush flags must be checked.
 COOLTRAINER class not gendered.
-menu_message needs data adjustment, bottom corner tiles use mirrored top corner tiles.
 Map has an offset of 4 tiles downwards, can't figure out a fix. 
 Pokedex not altered whatsoever.
 Area name popups not disabled.
