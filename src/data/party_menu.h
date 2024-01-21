@@ -129,7 +129,7 @@ static const u32 sCancelButton_Tilemap[] = INCBIN_U32("graphics/party_menu/cance
 static const u8 sFontColorTable[][3] =
 {
     {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_LIGHT_GRAY, TEXT_COLOR_DARK_GRAY},  // Default
-    {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_WHITE,      TEXT_COLOR_GREEN},      // Unused
+    {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_LIGHT_GRAY,      TEXT_COLOR_DARK_GRAY},      // Unused
     {TEXT_COLOR_TRANSPARENT, TEXT_DYNAMIC_COLOR_2,  TEXT_DYNAMIC_COLOR_3},  // Gender symbol
     {TEXT_COLOR_WHITE,       TEXT_COLOR_DARK_GRAY,  TEXT_COLOR_LIGHT_GRAY}, // Selection actions
     {TEXT_COLOR_WHITE,       TEXT_COLOR_BLUE,       TEXT_COLOR_LIGHT_BLUE}, // Field moves
@@ -200,6 +200,15 @@ static const struct WindowTemplate sSinglePartyMenuWindowTemplate[] =
         .height = 4,
         .paletteNum = 14,
         .baseBlock = 0x1DF,
+    },
+    {
+        .bg = 0,
+        .tilemapLeft = 1,
+        .tilemapTop = 3,
+        .width = 10,
+        .height = 7,
+        .paletteNum = 0,
+        .baseBlock = 0x63,
     },
     DUMMY_WIN_TEMPLATE,
 };
@@ -474,7 +483,7 @@ static const struct WindowTemplate sCancelButtonWindowTemplate =
     .tilemapTop = 17,
     .width = 6,
     .height = 2,
-    .paletteNum = 3,
+    .paletteNum = 0,
     .baseBlock = 0x207, //0x1C7,  //Custom party menu
 };
 
@@ -485,7 +494,7 @@ static const struct WindowTemplate sMultiCancelButtonWindowTemplate =
     .tilemapTop = 18,
     .width = 6,
     .height = 2,
-    .paletteNum = 3,
+    .paletteNum = 0,
     .baseBlock = 0x213, //0x1D3,  //Custom party menu
 };
 

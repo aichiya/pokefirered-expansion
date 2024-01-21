@@ -2224,13 +2224,13 @@ static void CreateCancelConfirmWindows(bool8 chooseMultiple)
         // Branches are functionally identical. Second branch is never reached, Spin Trade wasnt fully implemented
         if (gPartyMenu.menuType != PARTY_MENU_TYPE_SPIN_TRADE)
         {
-            offset += (48 - GetStringWidth(FONT_SMALL, gFameCheckerText_Cancel, 0)) / 2;
-            AddTextPrinterParameterized3(cancelWindowId, FONT_SMALL, offset, 1, sFontColorTable[0], -1, gFameCheckerText_Cancel);
+            offset += (36 - GetStringWidth(FONT_SMALL, gFameCheckerText_Cancel, 0)) / 2;
+            AddTextPrinterParameterized3(cancelWindowId, FONT_SMALL, offset, 1, sFontColorTable[1], -1, gFameCheckerText_Cancel); //xyixyi
         }
         else
         {
-            offset += (48 - GetStringWidth(FONT_SMALL, gOtherText_Exit, 0)) / 2;
-            AddTextPrinterParameterized3(cancelWindowId, FONT_SMALL, offset, 1, sFontColorTable[0], -1, gOtherText_Exit);
+            offset += (36 - GetStringWidth(FONT_SMALL, gOtherText_Exit, 0)) / 2;
+            AddTextPrinterParameterized3(cancelWindowId, FONT_SMALL, offset, 1, sFontColorTable[1], -1, gOtherText_Exit);
         }
         PutWindowTilemap(cancelWindowId);
         CopyWindowToVram(cancelWindowId, COPYWIN_GFX);
