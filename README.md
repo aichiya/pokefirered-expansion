@@ -38,7 +38,7 @@ Too many projects promised greatness then died due to disinterest, showed amazin
 
 ![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/BulkPromo5.png "Shop, bag, pokemon storage, item storage.")
 
-![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/MapPromo.png "Kanto Map")
+![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/Overworld_V1.png "Kanto Map")
 
 **Ensure your base ROM matches one of the hashes below. Rev0 patches are for FRLG 1.0 while Rev1 patches are for FRLG 1.1.**
 
