@@ -1,4 +1,4 @@
-# Pokémon Red & Blue Gen1Style V4
+# Pokémon Red & Blue Gen1Style V5
 
 ![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/RedTitlePromo.png "Red Title Screen")
 
@@ -9,19 +9,19 @@
 This project started when I decided that I dislike the vanilla FireRed art style enough to create a sprite replacement hack.
 This idea eventually grew through feature creep into a total re-de-make that aims to bring Red & Blue to the GBA, complete with widescreen and menus that don't suck!
 
-![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/BattlePromo.png "Battle Screen")
+![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/BulkPromo1.png "Battle, safari, trainer challenge, level up.")
 
 **Why not play a colorization hack?**
 
 The tiny screen of the GBC makes me sad, your view is very limited and menus are necessarily cramped. I wanted widescreen, I wanted the ability to connect to DS projects, I wanted good menus and full color.
 
-![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/ViridianForestPromo.png "Viridian Forest Screen")
+![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/BulkPromo2.png "Trade, map, summary, pokedex.")
 
 **What's changed?**
 
 Trainer parties, move stats, item prices and availability, learnsets, TMs, world layout, scripted events, dialogue, and more all match NTSC Red & Blue as closely as I can manage. I have played through the original games and G1S side-by-side 3 times in order to match the experience as closely as possible.
 
-![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/PokemonInfoPromo.png "Pokemon Info Screen")
+![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/BulkPromo3.png "Bicycle, fishing, surfing, standing.")
 
 **Why the Progressing Hacks category?**
 
@@ -29,14 +29,14 @@ Although the project is 99% done, there are still some very important changes to
 and more testing to be done before declaring the project fully finished.
 National Dex event and other post E4 events have not been completely erased/modified/verified.
 
-![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/BoxPromo.png "Pokemon Storage System Screen")
+![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/BulkPromo4.png "Forest, dark cave, power plant, game corner.")
 
 **Is this yet another eternal beta?**
 
 The current version is playable all the way through Cerulean Cave. It's 99% done.
 Too many projects promised greatness then died due to disinterest, showed amazing work and then fizzled out. I decided to develop G1S in secret until it was ready for the general public to play.
 
-![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/PokedexPromo.png "Pokedex Screen")
+![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/BulkPromo5.png "Shop, bag, pokemon storage, item storage.")
 
 ![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/MapPromo.png "Kanto Map")
 

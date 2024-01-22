@@ -14,4 +14,6 @@ Enabled and fixed link trading, it is now possible to trade Pokemon!
 Fixed NidoranM, Nidorino, and Nidoking backsprite graphics having a visible blank space at the bottom of the image.
 Fixed Pokemon Storage System showing gray boxes when no Pokemon was selected.
 Replaced some item sprites with new custom sprites.
-Fixed dialogue window using vertically flipped tiles at the bottom.
+Fixed some dialogue windows using vertically flipped tiles at the bottom.
+A lot of text now uses the correct black primary with light gray secondary colors.
+Fixed item storage palette swap issue.
