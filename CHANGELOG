@@ -18,3 +18,5 @@ Fixed some dialogue windows using vertically flipped tiles at the bottom.
 A lot of text now uses the correct black primary with light gray secondary colors.
 Fixed item storage palette swap issue.
 Doors now have custom animation graphics.
+
+-V6-
