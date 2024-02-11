@@ -5,8 +5,8 @@ PalletTown_RivalsHouse_Text_HiBrothersAtLab::
 
 PalletTown_RivalsHouse_Text_HeardYouBattledRival::
     .string "DAISY: Hi {PLAYER}!\n"
-    .string "{RIVAL} is out\p"
-    .string "at Grandpa's lab.$"
+    .string "{RIVAL} is out at\p"
+    .string "Grandpa's lab.$"
 
 PalletTown_RivalsHouse_Text_ErrandForGrandpaThisWillHelp::
     .string "Grandpa asked you to run an\n"
@@ -33,8 +33,8 @@ PalletTown_RivalsHouse_Text_PleaseGiveMonsRest::
     .string "them a rest.$"
 
 PalletTown_RivalsHouse_Text_ItsBigMapOfKanto::
-    .string "It's a big map !\n"
-    .string "This would be useful!$"
+    .string "It's a big map!\n"
+    .string "This is useful!$"
 
 PalletTown_RivalsHouse_Text_ShelvesCrammedFullOfBooks::
     .string "The shelves are crammed full of\n"

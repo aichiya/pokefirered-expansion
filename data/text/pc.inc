@@ -1,5 +1,6 @@
 Text_BootedUpPC::
-	.string "{PLAYER} turned on the PC.$"
+	.string "{PLAYER} turned on\n"
+	.string "the PC.$"
 
 Text_AccessWhichPC::
 	.string "Which PC should be accessed?$"

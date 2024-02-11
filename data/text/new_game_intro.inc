@@ -166,40 +166,49 @@ gPikachuIntro_Text_Page3::
 
 gOakSpeech_Text_WelcomeToTheWorld::
     .string "Hello there!\n"
-    .string "Welcome to the world of POKéMON!\p"
+    .string "Welcome to the\l"
+    .string "world of POKéMON!\p"
     .string "My name is OAK!\n"
-    .string "People call me the POKéMON PROF!\p$"
+    .string "People call me\p"
+    .string "the POKéMON PROF!$"
 
 gOakSpeech_Text_ThisWorld::
-    .string "This world is inhabited by\n"
-    .string "creatures called POKéMON!\p$"
+    .string "This world is\n"
+    .string "inhabited by\l"
+    .string "creatures called\p"
+    .string "POKéMON!$"
 
 gOakSpeech_Text_IsInhabitedFarAndWide::
     .string "WIP$"
 
 gOakSpeech_Text_IStudyPokemon::
-    .string "For some people, POKéMON are pets.\n"
-    .string "Others use them for fights.\p"
-    .string "Myself. . .\p"
-    .string "I study POKéMON as a profession.\p$"
+    .string "For some people,\n"
+    .string "POKéMON are\l"
+    .string "pets. Others use\l"
+    .string "them for fights.\p"
+    .string "Myself...\n"
+    .string "I study POKéMON\p"
+    .string "as a profession.\p$"
 
 gOakSpeech_Text_TellMeALittleAboutYourself::
-    .string "But first, tell me a little about\n"
-    .string "yourself.\p$"
+    .string "But first, tell me a\n"
+    .string "little about yourself.\p$"
 
 gOakSpeech_Text_YourNameWhatIsIt::
-    .string "First, what is your name?\n"
-    .string "\p$"
+    .string "First, what is\n"
+    .string "your name?$"
 
 gOakSpeech_Text_SoYourNameIsPlayer::
-    .string "Right!\n"
-    .string "So your name is {PLAYER}!$"
+    .string "Right! So your\n"
+    .string "name is {PLAYER}!$"
 
 gOakSpeech_Text_WhatWasHisName::
-    .string "This is my grand-son.\p"
-    .string "He's been your rival since\n"
+    .string "This is my grand-\n"
+    .string "son. He's been\l"
+    .string "your rival since\l"
     .string "you were a baby.\p"
-    .string ". . .Erm, what is his name again?$"
+    .string "...Erm, what is\n"
+    .string "his name again?\p$"
 
 gOakSpeech_Text_YourRivalsNameWhatWasIt::
     .string "Your rival's name, what was it now?$"
@@ -208,12 +217,16 @@ gOakSpeech_Text_ConfirmRivalName::
     .string "…Er, was it {RIVAL}?$"
 
 gOakSpeech_Text_RememberRivalsName::
-    .string "That's right! I remember now!\n"
-    .string "His name is {RIVAL}!\p$"
+    .string "That's right! I\n"
+    .string "remember now! His\l"
+    .string "name is {RIVAL}!$"
 
 gOakSpeech_Text_LetsGo::
     .string "{PLAYER}!\p"
-    .string "Your very own POKéMON legend is\n"
+    .string "Your very own\n"
+    .string "POKéMON legend is\l"
     .string "about to unfold!\p"
-    .string "A world of dreams and adventures\n"
-    .string "with POKéMON awaits! Let's go!$"
+    .string "A world of dreams\n"
+    .string "and adventures\l"
+    .string "with POKéMON\p"
+    .string "awaits! Let's go!$"

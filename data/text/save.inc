@@ -1,12 +1,14 @@
 gText_WouldYouLikeToSaveTheGame::
-	.string "Would you like to save the game?$"
+	.string "Would you like to\n" 
+	.string "save the game?$"
 
 gText_AlreadySaveFile_WouldLikeToOverwrite::
-	.string "There is already a saved file.\n"
-	.string "Is it okay to overwrite it?$"
+	.string "There is already a\n"
+	.string "saved file. Is it okay\n"
+	.string "to overwrite it?$"
 
 gText_SavingDontTurnOffThePower::
-	.string "SAVING…\n"
+	.string "SAVING...\n"
 	.string "DON'T TURN OFF THE POWER.$"
 
 gText_PlayerSavedTheGame::
@@ -16,11 +18,5 @@ gText_SaveFailed2::
 	.string "セーブに　しっぱい　しました‥$"
 
 gText_DifferentGameFile::
-	.string "WARNING!\p"
-	.string "There is a different game file that\n"
-	.string "is already saved.\p"
-	.string "If you save now, the other file's\n"
-	.string "adventure, including items and\l"
-	.string "POKéMON, will be entirely lost.\p"
-	.string "Are you sure you want to save now\n"
-	.string "and overwrite the other save file?$"
+	.string "The older file will be\p"
+	.string "erased to save. Okay?$"
