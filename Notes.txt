@@ -1,9 +1,6 @@
 
-ITEMFINDER description must be shortened by "when it is used, it emits a signal."
-
 -Global-
 PC shows "What would you like to do?" when it shouldn't.
-Door animation incorrect palette/sprite.
 Special Atk & Special Def not combined.
 Red doesn't turn to face approaching trainer.
 Ingame trade success texts not tested.

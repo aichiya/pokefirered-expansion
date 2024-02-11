@@ -20,3 +20,6 @@ Fixed item storage palette swap issue.
 Doors now have custom animation graphics.
 
 -V6-
+Shortened ITEMFINDER description.
+Slot machine primary graphics changed to 16 colors.
+Fixed fishing encounters not using correct background.
