@@ -869,7 +869,8 @@ Text_TrainerSchoolEmail::
 	.string "‥‥　‥‥　‥‥$"
 
 Text_PlayerBootedUpPC::
-	.string "{PLAYER} turned on the PC.$"
+	.string "{PLAYER} turned on\n"
+	.string "the PC.$"
 
 @ Unused
 Text_LinkWasCanceled::
@@ -926,7 +927,8 @@ Text_HandedOverItem::
 	.string "{STR_VAR_1}.$"
 
 Text_GiveNicknameToThisMon::
-	.string "Do you want to give a nickname\n"
+	.string "Do you want to\n"
+	.string "give a nickname\l"
 	.string "to {STR_VAR_1}?$"
 
 	.include "data/text/itemfinder.inc"
