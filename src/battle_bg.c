@@ -439,67 +439,67 @@ static const u32 sBattleTerrainTilemap_Indoor[] = INCBIN_U32("graphics/battle_te
 static const struct BattleBackground sBattleTerrainTable[] = {
     [BATTLE_TERRAIN_GRASS] =
     {
-        .tileset = sBattleTerrainTiles_Grass,
-        .tilemap = sBattleTerrainTilemap_Grass,
-        .entryTileset = sBattleTerrainAnimTiles_Grass,
-        .entryTilemap = sBattleTerrainAnimTilemap_Grass,
-        .palette = sBattleTerrainPalette_Grass
+        .tileset = sBattleTerrainTiles_Building,
+        .tilemap = sBattleTerrainTilemap_Building,
+        .entryTileset = sBattleTerrainAnimTiles_Building,
+        .entryTilemap = sBattleTerrainAnimTilemap_Building,
+        .palette = sBattleTerrainPalette_Building
     },
     [BATTLE_TERRAIN_LONG_GRASS] =
     {
-        .tileset = sBattleTerrainTiles_LongGrass,
-        .tilemap = sBattleTerrainTilemap_LongGrass,
-        .entryTileset = sBattleTerrainAnimTiles_LongGrass,
-        .entryTilemap = sBattleTerrainAnimTilemap_LongGrass,
-        .palette = sBattleTerrainPalette_LongGrass
+        .tileset = sBattleTerrainTiles_Building,
+        .tilemap = sBattleTerrainTilemap_Building,
+        .entryTileset = sBattleTerrainAnimTiles_Building,
+        .entryTilemap = sBattleTerrainAnimTilemap_Building,
+        .palette = sBattleTerrainPalette_Building
     },
     [BATTLE_TERRAIN_SAND] =
     {
-        .tileset = sBattleTerrainTiles_Sand,
-        .tilemap = sBattleTerrainTilemap_Sand,
-        .entryTileset = sBattleTerrainAnimTiles_Sand,
-        .entryTilemap = sBattleTerrainAnimTilemap_Sand,
-        .palette = sBattleTerrainPalette_Sand
+        .tileset = sBattleTerrainTiles_Building,
+        .tilemap = sBattleTerrainTilemap_Building,
+        .entryTileset = sBattleTerrainAnimTiles_Building,
+        .entryTilemap = sBattleTerrainAnimTilemap_Building,
+        .palette = sBattleTerrainPalette_Building
     },
     [BATTLE_TERRAIN_UNDERWATER] =
     {
-        .tileset = sBattleTerrainTiles_Underwater,
-        .tilemap = sBattleTerrainTilemap_Underwater,
-        .entryTileset = sBattleTerrainAnimTiles_Underwater,
-        .entryTilemap = sBattleTerrainAnimTilemap_Underwater,
-        .palette = sBattleTerrainPalette_Underwater
+        .tileset = sBattleTerrainTiles_Building,
+        .tilemap = sBattleTerrainTilemap_Building,
+        .entryTileset = sBattleTerrainAnimTiles_Building,
+        .entryTilemap = sBattleTerrainAnimTilemap_Building,
+        .palette = sBattleTerrainPalette_Building
     },
     [BATTLE_TERRAIN_WATER] =
     {
-        .tileset = sBattleTerrainTiles_Water,
-        .tilemap = sBattleTerrainTilemap_Water,
-        .entryTileset = sBattleTerrainAnimTiles_Water,
-        .entryTilemap = sBattleTerrainAnimTilemap_Water,
-        .palette = sBattleTerrainPalette_Water
+        .tileset = sBattleTerrainTiles_Building,
+        .tilemap = sBattleTerrainTilemap_Building,
+        .entryTileset = sBattleTerrainAnimTiles_Building,
+        .entryTilemap = sBattleTerrainAnimTilemap_Building,
+        .palette = sBattleTerrainPalette_Building
     },
     [BATTLE_TERRAIN_POND] =
     {
-        .tileset = sBattleTerrainTiles_Pond,
-        .tilemap = sBattleTerrainTilemap_Pond,
-        .entryTileset = sBattleTerrainAnimTiles_Pond,
-        .entryTilemap = sBattleTerrainAnimTilemap_Pond,
-        .palette = sBattleTerrainPalette_Pond
+        .tileset = sBattleTerrainTiles_Building,
+        .tilemap = sBattleTerrainTilemap_Building,
+        .entryTileset = sBattleTerrainAnimTiles_Building,
+        .entryTilemap = sBattleTerrainAnimTilemap_Building,
+        .palette = sBattleTerrainPalette_Building
     },
     [BATTLE_TERRAIN_MOUNTAIN] =
     {
-        .tileset = sBattleTerrainTiles_Mountain,
-        .tilemap = sBattleTerrainTilemap_Mountain,
-        .entryTileset = sBattleTerrainAnimTiles_Mountain,
-        .entryTilemap = sBattleTerrainAnimTilemap_Mountain,
-        .palette = sBattleTerrainPalette_Mountain
+        .tileset = sBattleTerrainTiles_Building,
+        .tilemap = sBattleTerrainTilemap_Building,
+        .entryTileset = sBattleTerrainAnimTiles_Building,
+        .entryTilemap = sBattleTerrainAnimTilemap_Building,
+        .palette = sBattleTerrainPalette_Building
     },
     [BATTLE_TERRAIN_CAVE] =
     {
-        .tileset = sBattleTerrainTiles_Cave,
-        .tilemap = sBattleTerrainTilemap_Cave,
-        .entryTileset = sBattleTerrainAnimTiles_Cave,
-        .entryTilemap = sBattleTerrainAnimTilemap_Cave,
-        .palette = sBattleTerrainPalette_Cave
+        .tileset = sBattleTerrainTiles_Building,
+        .tilemap = sBattleTerrainTilemap_Building,
+        .entryTileset = sBattleTerrainAnimTiles_Building,
+        .entryTilemap = sBattleTerrainAnimTilemap_Building,
+        .palette = sBattleTerrainPalette_Building
     },
     [BATTLE_TERRAIN_BUILDING] =
     {
@@ -515,7 +515,7 @@ static const struct BattleBackground sBattleTerrainTable[] = {
         .tilemap = sBattleTerrainTilemap_Building,
         .entryTileset = sBattleTerrainAnimTiles_Building,
         .entryTilemap = sBattleTerrainAnimTilemap_Building,
-        .palette = sBattleTerrainPalette_Plain
+        .palette = sBattleTerrainPalette_Building
     },
     [BATTLE_TERRAIN_LINK] =
     {
@@ -523,7 +523,7 @@ static const struct BattleBackground sBattleTerrainTable[] = {
         .tilemap = sBattleTerrainTilemap_Building,
         .entryTileset = sBattleTerrainAnimTiles_Building,
         .entryTilemap = sBattleTerrainAnimTilemap_Building,
-        .palette = sBattleTerrainPalette_Link
+        .palette = sBattleTerrainPalette_Building
     },
     [BATTLE_TERRAIN_GYM] =
     {
@@ -531,7 +531,7 @@ static const struct BattleBackground sBattleTerrainTable[] = {
         .tilemap = sBattleTerrainTilemap_Building,
         .entryTileset = sBattleTerrainAnimTiles_Building,
         .entryTilemap = sBattleTerrainAnimTilemap_Building,
-        .palette = sBattleTerrainPalette_Gym
+        .palette = sBattleTerrainPalette_Building
     },
     [BATTLE_TERRAIN_LEADER] =
     {
@@ -539,63 +539,63 @@ static const struct BattleBackground sBattleTerrainTable[] = {
         .tilemap = sBattleTerrainTilemap_Building,
         .entryTileset = sBattleTerrainAnimTiles_Building,
         .entryTilemap = sBattleTerrainAnimTilemap_Building,
-        .palette = sBattleTerrainPalette_Leader
+        .palette = sBattleTerrainPalette_Building
     },
     [BATTLE_TERRAIN_INDOOR_2] =
     {
-        .tileset = sBattleTerrainTiles_Indoor,
-        .tilemap = sBattleTerrainTilemap_Indoor,
+        .tileset = sBattleTerrainTiles_Building,
+        .tilemap = sBattleTerrainTilemap_Building,
         .entryTileset = sBattleTerrainAnimTiles_Building,
         .entryTilemap = sBattleTerrainAnimTilemap_Building,
-        .palette = sBattleTerrainPalette_Indoor2
+        .palette = sBattleTerrainPalette_Building
     },
     [BATTLE_TERRAIN_INDOOR_1] =
     {
-        .tileset = sBattleTerrainTiles_Indoor,
-        .tilemap = sBattleTerrainTilemap_Indoor,
+        .tileset = sBattleTerrainTiles_Building,
+        .tilemap = sBattleTerrainTilemap_Building,
         .entryTileset = sBattleTerrainAnimTiles_Building,
         .entryTilemap = sBattleTerrainAnimTilemap_Building,
-        .palette = sBattleTerrainPalette_Indoor1
+        .palette = sBattleTerrainPalette_Building
     },
     [BATTLE_TERRAIN_LORELEI] =
     {
-        .tileset = sBattleTerrainTiles_Indoor,
-        .tilemap = sBattleTerrainTilemap_Indoor,
+        .tileset = sBattleTerrainTiles_Building,
+        .tilemap = sBattleTerrainTilemap_Building,
         .entryTileset = sBattleTerrainAnimTiles_Building,
         .entryTilemap = sBattleTerrainAnimTilemap_Building,
-        .palette = sBattleTerrainPalette_Lorelei
+        .palette = sBattleTerrainPalette_Building
     },
     [BATTLE_TERRAIN_BRUNO] =
     {
-        .tileset = sBattleTerrainTiles_Indoor,
-        .tilemap = sBattleTerrainTilemap_Indoor,
+        .tileset = sBattleTerrainTiles_Building,
+        .tilemap = sBattleTerrainTilemap_Building,
         .entryTileset = sBattleTerrainAnimTiles_Building,
         .entryTilemap = sBattleTerrainAnimTilemap_Building,
-        .palette = sBattleTerrainPalette_Bruno
+        .palette = sBattleTerrainPalette_Building
     },
     [BATTLE_TERRAIN_AGATHA] =
     {
-        .tileset = sBattleTerrainTiles_Indoor,
-        .tilemap = sBattleTerrainTilemap_Indoor,
+        .tileset = sBattleTerrainTiles_Building,
+        .tilemap = sBattleTerrainTilemap_Building,
         .entryTileset = sBattleTerrainAnimTiles_Building,
         .entryTilemap = sBattleTerrainAnimTilemap_Building,
-        .palette = sBattleTerrainPalette_Agatha
+        .palette = sBattleTerrainPalette_Building
     },
     [BATTLE_TERRAIN_LANCE] =
     {
-        .tileset = sBattleTerrainTiles_Indoor,
-        .tilemap = sBattleTerrainTilemap_Indoor,
+        .tileset = sBattleTerrainTiles_Building,
+        .tilemap = sBattleTerrainTilemap_Building,
         .entryTileset = sBattleTerrainAnimTiles_Building,
         .entryTilemap = sBattleTerrainAnimTilemap_Building,
-        .palette = sBattleTerrainPalette_Lance
+        .palette = sBattleTerrainPalette_Building
     },
     [BATTLE_TERRAIN_CHAMPION] =
     {
-        .tileset = sBattleTerrainTiles_Indoor,
-        .tilemap = sBattleTerrainTilemap_Indoor,
+        .tileset = sBattleTerrainTiles_Building,
+        .tilemap = sBattleTerrainTilemap_Building,
         .entryTileset = sBattleTerrainAnimTiles_Building,
         .entryTilemap = sBattleTerrainAnimTilemap_Building,
-        .palette = sBattleTerrainPalette_Champion
+        .palette = sBattleTerrainPalette_Building
     }
 };
 
