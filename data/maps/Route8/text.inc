@@ -116,7 +116,7 @@ Route8_Text_JuliaDefeat::
 Route8_Text_JuliaPostBattle::
     .string "I heard that\n"
     .string "CLEFAIRY evolves\l"
-    .string "when it` exposed\l"
+    .string "when it`s exposed\l"
     .string "to a MOON STONE.$"
 
 Route8_Text_UndergroundPathSign::

@@ -25,7 +25,7 @@ Route12_FishingHouse_Text_IfYouCatchBigMagikarpShowMe::
     .string "one!$"
 
 Route12_FishingHouse_Text_OhThatsDisappointing::
-    .string "Oh... That` so\n"
+    .string "Oh... That`s so\n"
     .string "disappointing...$"
 
 Route12_FishingHouse_Text_TryFishingBringMeMagikarp::

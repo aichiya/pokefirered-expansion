@@ -1,31 +1,37 @@
 Route21_North_Text_RonaldIntro::
-	.string "You want to know if the fish\n"
-	.string "are biting?$"
+	.string "You want to know\n"
+	.string "if the fish are\l"
+	.string "biting?$"
 
 Route21_North_Text_RonaldDefeat::
 	.string "FISHERMAN: Dang!$"
 
 Route21_North_Text_RonaldPostBattle::
-	.string "I can't catch anything good!$"
+	.string "I can't catch\n"
+	.string "anything good!$"
 
 Route21_North_Text_WadeIntro::
 	.string "I got a big haul!\n"
 	.string "Wanna go for it?$"
 
 Route21_North_Text_WadeDefeat::
-	.string "FIGHERMAN: Darn MAGIKARP!$"
+	.string "FIGHERMAN: Darn\n"
+	.string "MAGIKARP!$"
 
 Route21_North_Text_WadePostBattle::
-	.string "I seem to only catch MAGIKARP!$"
+	.string "I seem to only\n"
+	.string "catch MAGIKARP!$""
 
 Route21_North_Text_SpencerIntro::
-	.string "The sea cleanses my body and soul!$"
+	.string "The sea cleanses\n"
+	.string "my body and soul!$"
 
 Route21_North_Text_SpencerDefeat::
 	.string "SWIMMER: Ayah!$"
 
 Route21_North_Text_SpencerPostBattle::
-	.string "I like the mountains too!$"
+	.string "I like the\n"
+	.string "mountains too!$"
 
 @ Below is the battle text for the Cue Ball that was on Route 21 in Gen 1.
 @ This trainer wasnt used in Gen 3 so their text goes unused/untranslated

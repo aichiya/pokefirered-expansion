@@ -22,7 +22,7 @@ Route12_NorthEntrance_2F_Text_ReceivedTM39FromLittleGirl::
 Route12_NorthEntrance_2F_Text_ExplainTM39::
     .string "TM39 is a move\n"
     .string "called SWIFT.\p"
-    .string "It` very accurate.\n"
+    .string "It`s very accurate.\n"
     .string "so use it during\l"
     .string "battles you can't\l"
     .string "afford to lose.$"

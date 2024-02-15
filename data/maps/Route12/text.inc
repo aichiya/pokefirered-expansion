@@ -8,18 +8,17 @@ Text_SnorlaxWokeUp::
     .string "grumpy rage!$"
 
 Text_SnorlaxReturnedToMountains::
-    .string "SNORLAX calmed\n"
-    .string "down! With a big\l"
-    .string "yawn, it retuned\l"
+    .string "With a big yawn\n"
+    .string "SNORLAX retuned\l"
     .string "to the mountains!$"
 
 Text_WantToUsePokeFlute::
-    .string "Want to use the\n"
-    .string "POKé FLUTE?$"
+    .string "Want to use\n"
+    .string "the FLUTE?$"
 
 Text_PlayedPokeFlute::
-    .string "{PLAYER} played\n"
-    .string "the POKé FLUTE.$"
+    .string "Played the\n"
+    .string "FLUTE.$"
 
 Route12_Text_NedIntro::
     .string "Yeah! I got a\n"

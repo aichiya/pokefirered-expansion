@@ -1,78 +1,88 @@
 Route19_Text_RichardIntro::
-    .string "Have to warm up before\n"
-    .string "my swim!$"
+    .string "Have to warm up\n"
+    .string "before my swim!$"
 
 Route19_Text_RichardDefeat::
-    .string "SWIMMER: All warmed up!$"
+    .string "SWIMMER: All\n"
+    .string "warmed up!$"
 
 Route19_Text_RichardPostBattle::
-    .string "Thanks, kid!\n"
-    .string "I'm ready for a swim!$"
+    .string "Thanks, kid! I'm\n"
+    .string "ready for a swim!$"
 
 Route19_Text_ReeceIntro::
     .string "Wait!\n"
-    .string "You'll have a heart attack!$"
+    .string "You'll have\l"
+    .string "a heart attack!$"
 
 Route19_Text_ReeceDefeat::
     .string "SWIMMER: Ooh!\n"
     .string "That's chilly!$"
 
 Route19_Text_ReecePostBattle::
-    .string "Watch out for TENTACOOL!$"
+    .string "Watch out for\n"
+    .string "TENTACOOL!$"
 
 Route19_Text_MatthewIntro::
     .string "I love swimming!\n"
     .string "What about you?$"
 
 Route19_Text_MatthewDefeat::
-    .string "SWIMMER: Belly flop!$"
+    .string "SWIMMER: Belly\n"
+    .string "flop!$"
 
 Route19_Text_MatthewPostBattle::
     .string "I can beat POKéMON\n"
     .string "at swimming!$"
 
 Route19_Text_DouglasIntro::
-    .string "What's beyond the horizon?$"
+    .string "What's beyond the\n"
+    .string "horizon?$"
 
 Route19_Text_DouglasDefeat::
     .string "SWIMMER: Glub!$"
 
 Route19_Text_DouglasPostBattle::
-    .string "I see a couple of islands!$"
+    .string "I see a couple of\n"
+    .string "islands!$"
 
 Route19_Text_DavidIntro::
-    .string "I tried diving for POKéMON, but it\n"
-    .string "was a no go!$"
+    .string "I tried diving\n"
+    .string "for POKéMON, but\l"
+    .string "it was a no go!$"
 
 Route19_Text_DavidDefeat::
     .string "SWIMMER: Help!$"
 
 Route19_Text_DavidPostBattle::
-    .string "You have to fish for\n"
-    .string "sea POKéMON!$"
+    .string "You have to fish\n"
+    .string "for sea POKéMON!$"
 
 Route19_Text_TonyIntro::
-    .string "I look at the sea to forget all\n"
-    .string "the bad things that happened.$"
+    .string "I look at the\n"
+    .string "sea to forget!$"
 
 Route19_Text_TonyDefeat::
     .string "Ooh!\n"
     .string "Traumatic!$"
 
 Route19_Text_TonyPostBattle::
-    .string "I'm looking at the sea to forget\n"
-    .string "the bad thing that happened!$"
+    .string "I'm looking at the\n"
+    .string "sea to forget!$"
 
 Route19_Text_AnyaIntro::
-    .string "Oh, I just love your ride!\n"
-    .string "Can I have it if I win?$"
+    .string "Oh, I just love\n"
+    .string "your ride! Can I\l"
+    .string "have it if I win?$"
 
 Route19_Text_AnyaDefeat::
-    .string "BEAUTY: Oh! I lost!$"
+    .string "BEAUTY: Oh!\n"
+    .string "I lost!$"
 
 Route19_Text_AnyaPostBattle::
-    .string "It's still a long way to go\n"
-    .string "to SEAFOAM ISLANDS.$"
+    .string "It's still a long\n"
+    .string "way to go to\l"
+    .string "SEAFOAM ISLANDS.$"
 
 Route19_Text_AliceIntro::
     .string "Swimming's great!\n"
@@ -82,11 +92,13 @@ Route19_Text_AliceDefeat::
     .string "BEAUTY: Shocker!$"
 
 Route19_Text_AlicePostBattle::
-    .string "My boy friend wanted to swim\n"
-    .string "TO SEAFOAM ISLANDS.$"
+    .string "My boy friend\n"
+    .string "wanted to swim to\l"
+    .string "SEAFOAM ISLANDS.$"
 
 Route19_Text_AxleIntro::
-    .string "These waters are treacherous!$"
+    .string "These waters are\n"
+    .string "treacherous!$"
 
 Route19_Text_AxleDefeat::
     .string "SWIMMER: Ooh!\n"
@@ -97,18 +109,22 @@ Route19_Text_AxlePostBattle::
     .string "Glub, glub...$"
 
 Route19_Text_ConnieIntro::
-    .string "I swam here , but I'm tired.$"
+    .string "I swam here , but\n"
+    .string "I'm tired.$"
 
 Route19_Text_ConnieDefeat::
-    .string "BEAUTY: I'm exhausted...$"
+    .string "BEAUTY: I'm\n"
+    .string "exhausted...$"
 
 Route19_Text_ConniePostBattle::
-    .string "LAPRAS is so big, it must\n"
-    .string "keep you dry on water.$"
+    .string "LAPRAS is so big,\n"
+    .string "it must keep you\l"
+    .string "dry on water.$"
 
 Route19_Text_RouteSign::
     .string "SEA ROUTE 19\n"
-    .string "FUCHSIA CITY - SEAFOAM ISLANDS$"
+    .string "FUCHSIA CITY -\l"
+    .string "SEAFOAM ISLANDS$"
 
 Route19_Text_LiaIntro::
     .string "LIA: I'm looking after my brother.\n"

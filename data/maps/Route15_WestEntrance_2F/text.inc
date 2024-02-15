@@ -1,32 +1,49 @@
 Route15_WestEntrance_2F_Text_GiveItemIfCaughtEnough::
     .string "Hi! Remember me?\n"
-    .string "I'm PROF.OAK's AIDE!\p"
-    .string "If you caught {STR_VAR_1} kinds\n"
-    .string "of POKéMON, I'm supposed to\p"
-    .string "give you an {STR_VAR_2}!\l"
-    .string "So, {PLAYER}, have you caught at\n"
-    .string "least {STR_VAR_1} kinds of POKéMON?$"
+    .string "I'm PROF.OAK's\l"
+    .string "AIDE!\p"
+    .string "If you caught {STR_VAR_1}\n"
+    .string "kinds of POKéMON,\l"
+    .string "I'm supposed to\l"
+    .string "give you an\l"
+    .string "EXP.ALL\p"
+    .string "So, {PLAYER}! Have\n"
+    .string "you caught at\l"
+    .string "least {STR_VAR_1}\l"
+    .string "kinds of POKéMON?$"
 
 Route15_WestEntrance_2F_Text_GreatHereYouGo::
-    .string "Great! You have caught\n"
-    .string "{STR_VAR_3} kinds of POKéMON!\p"
+    .string "Great! You have\n"
+    .string "caught {STR_VAR_3} kinds\l"
+    .string "of POKéMON!\p"
     .string "Congratulations!\n"
     .string "Here you go!$"
 
 Route15_WestEntrance_2F_Text_ReceivedItemFromAide::
-    .string "{PLAYER} got the {STR_VAR_2}!$"
+    .string "{PLAYER} got the\n"
+    .string "{STR_VAR_2}!$"
 
 Route15_WestEntrance_2F_Text_ExplainExpShare::
-    .string "EXP.ALL gives EXP points to all\n"
-    .string "the POKéMON with you, even if\p"
-    .string "they don't fight.$"
+    .string "EXP.ALL gives\n"
+    .string "EXP points to all\l"
+    .string "the POKéMON with\l"
+    .string "you, even if they\l"
+    .string "don't fight.\p"
+    .string "It does, however\n"
+    .string "reduce the amount\l"
+    .string "of EXP for each\l"
+    .string "POKéMON$"
 
 Route15_WestEntrance_2F_Text_LargeShiningBird::
-    .string "Looked into the binoculars...\n"
-    .string "A large, shining bird is flying\p"
+    .string "Looked into the\n"
+    .string "binoculars.\p"
+    .string "A large, shining\n"
+    .string "bird is flying\l"
     .string "toward the sea.$"
 
 Route15_WestEntrance_2F_Text_SmallIslandOnHorizon::
-    .string "Looked into the binoculars.\n"
-    .string "It looks like a small island!$"
+    .string "Looked into the\n"
+    .string "binoculars.\p"
+    .string "It looks like a\n"
+    .string "small island!$"
 
