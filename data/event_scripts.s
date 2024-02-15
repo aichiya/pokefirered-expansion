@@ -886,20 +886,24 @@ gText_PkmnFainted3::
 	.string "$"
 
 Text_WelcomeWantToHealPkmn::
-	.string "Welcome to our POKéMON CENTER!\p"
-	.string "We heal your POKéMON\n"
-	.string "back to perfect health!$"
+	.string "Welcome to our\n"
+	.string "POKéMON CENTER!\p"
+	.string "We heal your\n"
+	.string "POKéMON back to\l"
+	.string "perfect health!$"
 
 Text_TakeYourPkmnForFewSeconds::
-	.string "OK.\n"
-	.string "We'll need your POKéMON.$"
+	.string "OK. We'll need\n"
+	.string "your POKéMON.$"
 
 Text_WeHopeToSeeYouAgain::
-	.string "We hope to see you again!$"
+	.string "We hope to see\n"
+	.string "you again!$"
 
 Text_RestoredPkmnToFullHealth::
 	.string "Thank you!\n"
-	.string "Your POKéMON are fighting fit!$"
+	.string "Your POKéMON are\l"
+	.string "fighting fit!$"
 
 	.include "data/text/surf.inc"
 

@@ -4,93 +4,113 @@ Route12_Text_MonSprawledOutInSlumber::
 
 Text_SnorlaxWokeUp::
     .string "SNORLAX woke up!\p"
-    .string "It attacked in a grumpy rage!$"
+    .string "It attacked in a\n"
+    .string "grumpy rage!$"
 
 Text_SnorlaxReturnedToMountains::
-    .string "SNORLAX calmed down!\n"
-    .string "With a big yawn, it retuned\l"
+    .string "SNORLAX calmed\n"
+    .string "down! With a big\l"
+    .string "yawn, it retuned\l"
     .string "to the mountains!$"
 
 Text_WantToUsePokeFlute::
-    .string "Want to use the POKé FLUTE?$"
+    .string "Want to use the\n"
+    .string "POKé FLUTE?$"
 
 Text_PlayedPokeFlute::
-    .string "{PLAYER} played the POKé FLUTE.$"
+    .string "{PLAYER} played\n"
+    .string "the POKé FLUTE.$"
 
 Route12_Text_NedIntro::
-    .string "Yeah!\n"
-    .string "I got a bite, here!$"
+    .string "Yeah! I got a\n"
+    .string "bite, here!$"
 
 Route12_Text_NedDefeat::
     .string "FISHERMAN: Tch!\n"
     .string "Just a small fry!$"
 
 Route12_Text_NedPostBattle::
-    .string "Hang on!\n"
-    .string "My line's snagged!$"
+    .string "Hang on! My line`\n"
+    .string "snagged!$"
 
 Route12_Text_ChipIntro::
     .string "Be patient!\n"
-    .string "Fishing is a waiting game!$"
+    .string "Fishing is a\l"
+    .string "waiting game!$"
 
 Route12_Text_ChipDefeat::
-    .string "FISHERMAN: That one got away!$"
+    .string "FISHERMAN: That\n"
+    .string "one got away!$"
 
 Route12_Text_ChipPostBattle::
-    .string "With a better ROD, I could\n"
-    .string "catch better POKéMON!$"
+    .string "With a better ROD,\n"
+    .string "I could catch"
+    .string "better POKéMON!$"
 
 Route12_Text_JustinIntro::
-    .string "Have you found a MOON STONE?$"
+    .string "Have you found a\n"
+    .string "MOON STONE?$"
 
 Route12_Text_JustinDefeat::
     .string "JR.TRAINER♂: Oww!$"
 
 Route12_Text_JustinPostBattle::
-    .string "I could have made my POKéMON\n"
-    .string "evolve with MOON STONE!$"
+    .string "I could have made\n"
+    .string "my POKéMON evolve\l"
+    .string "with MOON STONE!$"
 
 Route12_Text_LucaIntro::
-    .string "Electricity is my specialty!$"
+    .string "Electricity is my\n"
+    .string "specialty!$"
 
 Route12_Text_LucaDefeat::
     .string "ROCKER: Unplugged!$"
 
 Route12_Text_LucaPostBattle::
-    .string "Water conducts electricity, so\n"
-    .string "you should zap sea POKéMON!$"
+    .string "Water conducts\n"
+    .string "electricity, so\l"
+    .string "you should zap\l"
+    .string "sea POKéMON!$"
 
 Route12_Text_HankIntro::
-    .string "The FISHING FOOL vs.\n"
-    .string "POKéMON KID!$"
+    .string "The FISHING FOOL\n"
+    .string "vs. POKéMON KID!$"
 
 Route12_Text_HankDefeat::
-    .string "FISHERMAN: Too much!$"
+    .string "FISHERMAN: Too\n"
+    .string "much!$"
 
 Route12_Text_HankPostBattle::
-    .string "You beat me at POKéMON,\n"
-    .string "but I'm good at fishing!$"
+    .string "You beat me at\n"
+    .string "POKéMON, but I'm\l"
+    .string "good at fishing!$"
 
 Route12_Text_ElliotIntro::
-    .string "I'd rather be working!$"
+    .string "I'd rather be\n"
+    .string "working!$"
 
 Route12_Text_ElliotDefeat::
-    .string "FISHERMAN: It's not easy...$"
+    .string "FISHERMAN: It`\n"
+    .string "not easy...$"
 
 Route12_Text_ElliotPostBattle::
     .string "It's all right.\n"
-    .string "Losing doesn't bug me any more.$"
+    .string "Losing doesn't\l"
+    .string "bug me any more.$"
 
 Route12_Text_AndrewIntro::
-    .string "You never know what you\n"
-    .string "could catch!$"
+    .string "You never know\n"
+    .string "what you could\l"
+    .string "catch!$"
 
 Route12_Text_AndrewDefeat::
-    .string "FISHERMAN: Lost it!$"
+    .string "FISHERMAN: Lost\n"
+    .string "it!$"
 
 Route12_Text_AndrewPostBattle::
-    .string "I catch MAGIKARP all the time,\n"
-    .string "but they're so weak!$"
+    .string "I catch MAGIKARP\n"
+    .string "all the time, but\l"
+    .string "they're so weak!$"
 
 Route12_Text_RouteSign::
     .string "ROUTE 12 \n"

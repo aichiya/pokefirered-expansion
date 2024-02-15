@@ -1,6 +1,8 @@
 PewterCity_Museum_1F_Text_Its50YForChildsTicket::
-    .string "It's ¥50 for a child's ticket.\n"
-    .string "Would you like to come in?$"
+    .string "It's ¥50 for a\n"
+    .string "child's ticket.\p"
+    .string "Would you like to\n"
+    .string "come in?$"
 
 PewterCity_Museum_1F_Text_ComeAgain::
     .string "Come again!$"
@@ -32,7 +34,8 @@ PewterCity_Museum_1F_Text_PleaseGoAround::
     .string "あちらへ　おまわりください$"
 
 PewterCity_Museum_1F_Text_ShouldBeGratefulForLongLife::
-    .string "That is one magnificent \n"
+    .string "That is one\n"
+    .string "magnificent\l"
     .string "fossil!$"
 
 PewterCity_Museum_1F_Text_WantYouToGetAmberExamined::
@@ -66,9 +69,11 @@ PewterCity_Museum_1F_Text_BeautifulPieceOfAmber::
 
 PewterCity_Museum_1F_Text_AerodactylFossil::
     .string "AERODACTYL Fossil\n"
-    .string "A primitive and rare POKéMON.$"
+    .string "A primitive and\l"
+    .string "rare POKéMON.$"
 
 PewterCity_Museum_1F_Text_KabutopsFossil::
     .string "KABUTOPS Fossil\n"
-    .string "A primitive and rare POKéMON.$"
+    .string "A primitive and\l"
+    .string "rare POKéMON.$"
 

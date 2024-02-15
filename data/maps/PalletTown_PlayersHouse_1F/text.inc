@@ -15,18 +15,21 @@ PalletTown_PlayersHouse_1F_Text_AllGirlsLeaveOakLookingForYou::
     .string "looking for you.$"
 
 PalletTown_PlayersHouse_1F_Text_YouShouldTakeQuickRest::
-    .string "MOM: {PLAYER}! You should\n"
-    .string "take a quick rest.$"
+    .string "MOM: {PLAYER}!\n"
+    .string "You should take a\l"
+    .string "quick rest.$"
 
 PalletTown_PlayersHouse_1F_Text_LookingGreatTakeCare::
-    .string "MOM: Oh good! You and your\n"
-    .string "POKéMON are looking great!\l"
+    .string "MOM: Oh good!\n"
+    .string "You and your\l"
+    .string "POKéMON are\l"
+    .string "looking great!"
     .string "Take care now!$"
 
 PalletTown_PlayersHouse_1F_Text_MovieOnTVFourBoysOnRailroad::
     .string "There's a movie\n"
-    .string "on TV.\p"
-    .string "Four boys\n"
+    .string "on TV.\l"
+    .string "Four boys\l"
     .string "are walking on\l"
     .string "railroad tracks.\p"
     .string "I better go too.$"

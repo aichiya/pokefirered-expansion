@@ -15,7 +15,6 @@ Route1_EventScript_MartClerk::
 	waitmessage
 	waitfanfare
 	additem ITEM_POTION
-	msgbox Route1_Text_PutPotionAway
 	call EventScript_RestorePrevTextColor
 	setflag FLAG_GOT_POTION_ON_ROUTE_1
 	release

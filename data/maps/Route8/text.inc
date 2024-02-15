@@ -1,55 +1,66 @@
 Route8_Text_AidanIntro::
-    .string "You look good at POKéMON,\n"
-    .string "but how's your chem?$"
+    .string "You look good at\n"
+    .string "POKéMON, but\l"
+    .string "how's your chem?$"
 
 Route8_Text_AidanDefeat::
     .string "SUPER NERD: Ow!\n"
     .string "Meltdown!$"
 
 Route8_Text_AidanPostBattle::
-    .string "I am better at school than this!$"
+    .string "I am better at\n"
+    .string "school than this!$"
 
 Route8_Text_StanIntro::
-    .string "All right!\n"
-    .string "Let's roll the dice!$"
+    .string "All right! Let`\n"
+    .string "roll the dice!$"
 
 Route8_Text_StanDefeat::
     .string "GAMBLER: Drat!\n"
     .string "Came up short!$"
 
 Route8_Text_StanPostBattle::
-    .string "Lady Luck's not with me today!$"
+    .string "Lady Luck's not\n"
+    .string "with me today!$"
 
 Route8_Text_GlennIntro::
-    .string "You need strategy to win at this!$"
+    .string "You need strategy\n"
+    .string "to win at this!$"
 
 Route8_Text_GlennDefeat::
-    .string "SUPER NERD: It's not logical!$"
+    .string "SUPER NERD: It`\n"
+    .string "not logical!$"
 
 Route8_Text_GlennPostBattle::
-    .string "Go with GRIMER first...\n"
-    .string "and...and...then...$"
+    .string "Go with GRIMER\n"
+    .string "first...and...\l"
+    .string "and...then...$"
 
 Route8_Text_PaigeIntro::
-    .string "I like NIDORAN, so I collect them!$"
+    .string "I like NIDORAN, so\n"
+    .string "I collect them!$"
 
 Route8_Text_PaigeDefeat::
-    .string "LASS: Why?\n"
-    .string "Why??$"
+    .string "LASS: Why? Why??$"
 
 Route8_Text_PaigePostBattle::
-    .string "When POKéMON grow up they get\n"
-    .string "ugly! They shouldn't evolve!$"
+    .string "When POKéMON grow\n"
+    .string "up they get ugly!\l"
+    .string "They shouldn't\l"
+    .string "evolve!$"
 
 Route8_Text_LeslieIntro::
-    .string "School is fun, but so are POKéMON.$"
+    .string "School is fun, but\n"
+    .string "so are POKéMON.$"
 
 Route8_Text_LeslieDefeat::
-    .string "SUPER NERD: I'll stay with school.$"
+    .string "SUPER NERD: I'll\n"
+    .string "stay with school.$"
 
 Route8_Text_LesliePostBattle::
-    .string "We're stuck here because of\n"
-    .string "the gates at SAFFRON.$"
+    .string "We're stuck here\n"
+    .string "because of the\l"
+    .string "gates at SAFFRON.$"
 
 Route8_Text_AndreaIntro::
     .string "MEOWTH is so cute,\n"
@@ -59,46 +70,59 @@ Route8_Text_AndreaDefeat::
     .string "LASS: Meow!$"
 
 Route8_Text_AndreaPostBattle::
-    .string "I think PIDGEY and RATTATA\n"
+    .string "I think PIDGEY\n"
+    .string "and RATTATA\l"
     .string "are cute too!$"
 
 Route8_Text_MeganIntro::
-    .string "We must look silly standing\n"
+    .string "We must look\n"
+    .string "silly standing\l"
     .string "here like this!$"
 
 Route8_Text_MeganDefeat::
-    .string "LASS: Look what you did!$"
+    .string "LASS: Look what\n"
+    .string "you did!$"
 
 Route8_Text_MeganPostBattle::
-    .string "SAFFRON's gate keeper\n"
-    .string "won't let us through.\p"
+    .string "SAFFRON's gate\n"
+    .string "keeper won't let\l"
+    .string "us through.\l"
     .string "He's so mean!$"
 
 Route8_Text_RichIntro::
-    .string "I'm a rambling, gambling dude!$"
+    .string "I'm a rambling,n"
+    .string "gambling dude!$"
 
 Route8_Text_RichDefeat::
-    .string "GAMBLER: Missed the big score!$"
+    .string "GAMBLER: Missed\n"
+    .string "the big score!$"
 
 Route8_Text_RichPostBattle::
-    .string "Gambling and POKéMON are like\n"
-    .string "eating peanuts! Just can't stop!$"
+    .string "Gambling and\n"
+    .string "POKéMON are like\l"
+    .string "eating peanuts!\l"
+    .string "Just can't stop!$"
 
 Route8_Text_JuliaIntro::
-    .string "What's a cute, round and\n"
-    .string "fluffy POKéMON?$"
+    .string "What's a cute,\n"
+    .string "round and fluffy\l"
+    .string "POKéMON?$"
 
 Route8_Text_JuliaDefeat::
     .string "LASS: Stop!\p"
-    .string "Don't be so mean to my CLEFAIRY!$"
+    .string "Don't be so mean\n"
+    .string "to my CLEFAIRY!$"
 
 Route8_Text_JuliaPostBattle::
-    .string "I heard that CLEFAIRY evolves when\n"
-    .string "it's exposed to a MOON STONE.$"
+    .string "I heard that\n"
+    .string "CLEFAIRY evolves\l"
+    .string "when it` exposed\l"
+    .string "to a MOON STONE.$"
 
 Route8_Text_UndergroundPathSign::
     .string "UNDERGROUND PATH\n"
-    .string "CELADON CITY - LAVENDER TOWN$"
+    .string "CELADON CITY -\l"
+    .string "LAVENDER TOWN$"
 
 Route8_Text_EliIntro::
     .string "ELI: Twin power is fantastic.\n"

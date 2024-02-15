@@ -1,3 +1,4 @@
 Route12_NorthEntrance_1F_Text_LookoutSpotUpstairs::
-    .string "There's a lookout spot upstairs.$"
+    .string "There's a lookout\n"
+    .string "spot upstairs.$"
 

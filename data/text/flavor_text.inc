@@ -31,7 +31,8 @@ Text_Snacks::
 	.string "There's a pile of snacks here.$"
 
 Text_PokemartSign::
-	.string "All your item needs fulfilled!\n"
+	.string "All your item\n"
+	.string "needs fulfilled!\p"
 	.string "POKéMON MART$"
 
 Text_PokecenterSign::

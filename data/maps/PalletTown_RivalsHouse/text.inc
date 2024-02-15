@@ -9,13 +9,14 @@ PalletTown_RivalsHouse_Text_HeardYouBattledRival::
     .string "Grandpa's lab.$"
 
 PalletTown_RivalsHouse_Text_ErrandForGrandpaThisWillHelp::
-    .string "Grandpa asked you to run an\n"
-    .string "errand?\p"
-    .string "Gee, that's lazy of him.\n"
-    .string "Here, this will help you.$"
+    .string "Grandpa asked you\n"
+    .string "to run an errand?\l"
+    .string "Here, this will\p"
+    .string "help you!$"
 
 PalletTown_RivalsHouse_Text_ReceivedTownMapFromDaisy::
-    .string "{PLAYER} received a TOWN MAP!$"
+    .string "{PLAYER} got a\n"
+    .string "TOWN MAP!$"
 
 PalletTown_RivalsHouse_Text_DontHaveSpaceForThis::
     .string "You don't have space for this in\n"
@@ -27,9 +28,9 @@ PalletTown_RivalsHouse_Text_ExplainTownMap::
     .string "names of places.$"
 
 PalletTown_RivalsHouse_Text_PleaseGiveMonsRest::
-    .string "DAISY: Just like people, POKéMON\n"
-    .string "are living things.\p"
-    .string "When they get tired, please give\n"
+    .string "POKéMON are living\n"
+    .string "things! If they\l"
+    .string "get tired, give\l"
     .string "them a rest.$"
 
 PalletTown_RivalsHouse_Text_ItsBigMapOfKanto::

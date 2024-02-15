@@ -9,7 +9,8 @@ Text_PutItemAway::
 	.string "in the {STR_VAR_3}.$"
 
 Text_FoundOneItem::
-	.string "{PLAYER} found {STR_VAR_2}!$"
+	.string "{PLAYER} found\n"
+	.string "{STR_VAR_2}!$"
 
 Text_TooBadBagFull::
 	.string "Too bad!\n"

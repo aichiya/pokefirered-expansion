@@ -1,7 +1,10 @@
 Route10_PokemonCenter_1F_Text_EveryTypeStrongerThanOthers::
-    .string "The element types of POKéMON\n"
-    .string "make them stronger than some\l"
-    .string "types and weaker than others!$"
+    .string "The element types\n"
+    .string "of POKéMON make\l"
+    .string "them stronger\l"
+    .string "than some types\l"
+    .string "and weaker than\l"
+    .string "others!$"
 
 Route10_PokemonCenter_1F_Text_NuggetUselessSoldFor5000::
     .string "I sold a useless\n"

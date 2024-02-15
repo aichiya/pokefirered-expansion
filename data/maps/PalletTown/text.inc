@@ -25,7 +25,7 @@ PalletTown_Text_CanStoreItemsAndMonsInPC::
     .string "incredible!\p"
     .string "You can now store\n"
     .string "and recall items\l"
-    .string "and POKéMON as\p"
+    .string "and POKéMON as\l"
     .string "data via PC!$"
 
 PalletTown_Text_OakPokemonResearchLab::

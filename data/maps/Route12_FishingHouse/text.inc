@@ -1,30 +1,43 @@
 Route12_FishingHouse_Text_DoYouLikeToFish::
-    .string "I'm the FISHING GURU's brother!\n"
-    .string "I simply Looove fishing!\p"
-    .string "Do you like to fish?$"
+    .string "I'm the FISHING\n"
+    .string "GURU's brother!\p"
+    .string "I simply Looove\n"
+    .string "fishing!\p"
+    .string "Do you like to\n"
+    .string "fish?$"
 
 Route12_FishingHouse_Text_TakeThisAndFish::
-    .string "Grand! I like your style!\n"
-    .string "Take this and fish, young one!$"
+    .string "Grand! I like\n"
+    .string "your style!\p"
+    .string "Take this and\n"
+    .string "fish, young one!$"
 
 Route12_FishingHouse_Text_ReceivedSuperRod::
-    .string "{PLAYER} received a SUPER ROD!$"
+    .string "{PLAYER} received\n"
+    .string "a SUPER ROD!$"
 
 Route12_FishingHouse_Text_IfYouCatchBigMagikarpShowMe::
-    .string "Fishing is a way of life!\n"
-    .string "From the seas to rivers, go out\p"
-    .string "and land the big one!$"
+    .string "Fishing is a way\n"
+    .string "of life!\p"
+    .string "From the seas to\n"
+    .string "rivers, go out\l"
+    .string "and land the big\n"
+    .string "one!$"
 
 Route12_FishingHouse_Text_OhThatsDisappointing::
-    .string "Oh...\n"
-    .string "That's so disappointing...$"
+    .string "Oh... That` so\n"
+    .string "disappointing...$"
 
 Route12_FishingHouse_Text_TryFishingBringMeMagikarp::
-    .string "Hello there, {PLAYER}!\n"
-    .string "Use the SUPER ROD in any water!\n"
-    .string "You can find different kinds\n"
+    .string "Hello there,\n"
+    .string "{PLAYER}!\p"
+    .string "Use the SUPER ROD\n"
+    .string "in any water!\l"
+    .string "You can catch\l"
+    .string "different kinds\l"
     .string "of POKéMON.\p"
-    .string "Try fishing wherever you can!$"
+    .string "Try fishing\n"
+    .string "wherever you can!$"
 
 Route12_FishingHouse_Text_OhMagikarpAllowMeToSee::
     .string "Oh? {PLAYER}?\n"
@@ -61,7 +74,8 @@ Route12_FishingHouse_Text_DoesntLookLikeMagikarp::
 
 Route12_FishingHouse_Text_NoRoomForGift::
     .string "Oh, no!\p"
-    .string "I had a gift for you, but you have\n"
+    .string "I had a gift for\n"
+    .string "you, but you have\l"
     .string "no room for it.$"
 
 Route12_FishingHouse_Text_MostGiganticMagikarpXInches::

@@ -50,11 +50,11 @@ static const u8 sText_Trainer1WinText[] = _("{B_TRAINER1_WIN_TEXT}");
 static const u8 sText_Trainer1RecallPkmn2[] = _("{B_TRAINER1_NAME}: {B_OPPONENT_MON2_NAME}, come back!");
 static const u8 sText_Trainer1RecallBoth[] = _("{B_TRAINER1_NAME}: {B_OPPONENT_MON1_NAME} and\n{B_OPPONENT_MON2_NAME}, come back!");
 static const u8 sText_Trainer2WinText[] = _("{B_TRAINER2_WIN_TEXT}");
-static const u8 sText_PkmnGainedEXP[] = _("{B_BUFF1} gained{B_BUFF2}\n{B_BUFF3} EXP. Points!\p");
+static const u8 sText_PkmnGainedEXP[] = _("{B_BUFF1} gained\n{B_BUFF2}{B_BUFF3} EXP. Points!\p");
 static const u8 sText_PkmnGainedEXPAll[] = _("All others in party gained at least\n{B_BUFF3} EXP due to EXP.ALL.\p");
 static const u8 sText_EmptyString4[] = _("");
 static const u8 sText_ABoosted[] = _(" a boosted");
-static const u8 sText_PkmnGrewToLv[] = _("{B_BUFF1} grew to\nLV. {B_BUFF2}!{WAIT_SE}\p");
+static const u8 sText_PkmnGrewToLv[] = _("{B_BUFF1} grew\nto level {B_BUFF2}!{WAIT_SE}\p");
 static const u8 sText_PkmnLearnedMove[] = _("{B_BUFF1} learned\n{B_BUFF2}!{WAIT_SE}\p");
 static const u8 sText_TryToLearnMove1[] = _("{B_BUFF1} is trying to\nlearn {B_BUFF2}.\p");
 static const u8 sText_TryToLearnMove2[] = _("But, {B_BUFF1} can't learn\nmore than four moves.\p");
@@ -1273,7 +1273,7 @@ const u16 gTrappingMoves[NUM_TRAPPING_MOVES + 1] =
     0xFFFF // Never read
 };
 
-const u8 gText_PkmnIsEvolving[] = _("What?\n{STR_VAR_1} is evolving!");
+const u8 gText_PkmnIsEvolving[] = _("What? {STR_VAR_1}\nis evolving!");
 const u8 gText_CongratsPkmnEvolved[] = _("Congratulations! Your {STR_VAR_1}\nevolved into {STR_VAR_2}!{WAIT_SE}\p");
 const u8 gText_PkmnStoppedEvolving[] = _("Huh? {STR_VAR_1}\nstopped evolving!\p");
 const u8 gText_EllipsisQuestionMark[] = _("……?\p");

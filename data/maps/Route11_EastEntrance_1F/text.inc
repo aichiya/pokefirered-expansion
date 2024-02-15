@@ -4,12 +4,16 @@ Route11_EastEntrance_1F_Text_BagIsFull::
     .string "いっぱい　みたい　だね$"
 
 Route11_EastEntrance_1F_Text_ManInLavenderRatesNames::
-    .string "When you catch lots of POKéMON,\n"
-    .string "isn't it hard to think up names?\p"
-    .string "In LAVENDER TOWN, there's a man\n"
-    .string "who rates POKéMON nicknames.\p"
-    .string "He'll help you rename\n"
-    .string "them too!$"
+    .string "When you catch\n"
+    .string "lots of POKéMON,\l"
+    .string "isn't it hard to\l"
+    .string "think up names?\p"
+    .string "In LAVENDER TOWN,\n"
+    .string "there's a man who\l"
+    .string "rates POKéMON\l"
+    .string "nicknames.\p"
+    .string "He'll help you\n"
+    .string "rename them too!$"
 
 Route11_EastEntrance_1F_Text_RockTunnelToReachLavender::
     .string "If you're aiming to reach LAVENDER\n"

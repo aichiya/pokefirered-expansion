@@ -1,10 +1,15 @@
 PewterCity_House2_Text_MonsLearnTechniquesAsTheyGrow::
-    .string "POKéMON learn new techniques\n"
-    .string "as they grow!\p"
-    .string "But, some moves must be\n"
-    .string "taught by the trainer!$"
+    .string "POKéMON learn new\n"
+    .string "techniques as\l"
+    .string "they grow!\p"
+    .string "But, some moves\n"
+    .string "must be taught by\l"
+    .string "the trainer!$"
 
 PewterCity_House2_Text_MonsEasierCatchIfStatused::
-    .string "POKéMON become easier to catch\n"
-    .string "when they are hurt or asleep!\p"
-    .string "But, it's not a sure thing!$"
+    .string "POKéMON become\n"
+    .string "easier to catch\l"
+    .string "when they are\l"
+    .string "hurt or asleep!\p"
+    .string "But, it's not a\n"
+    .string "sure thing!$"

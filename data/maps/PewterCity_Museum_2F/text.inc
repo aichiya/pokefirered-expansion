@@ -23,13 +23,15 @@ Text_SeismicTossTaught::
 
 PewterCity_Museum_1F_Text_WhatsSpecialAboutMoonStone::
     .string "MOON STONE?\p"
-    .string "What's so special about it?$"
+    .string "What's so special\n"
+    .string "about it?$"
 
 PewterCity_Museum_1F_Text_BoughtColorTVForMoonLanding::
     .string "July 20, 1969!\p"
-    .string "The 1st lunar landing!\n"
-    .string "I bought a color TV\l"
-    .string "just to watch it!$"
+    .string "The 1st lunar\n"
+    .string "landing!\p"
+    .string "I bought a color\n"
+    .string "TV to watch it!$"
 
 PewterCity_Museum_1F_Text_RunningSpaceExhibitThisMonth::
     .string "We have a space\n"
@@ -38,16 +40,19 @@ PewterCity_Museum_1F_Text_RunningSpaceExhibitThisMonth::
 PewterCity_Museum_1F_Text_AskedDaddyToCatchPikachu::
     .string "I want a PIKACHU!\n"
     .string "It's so cute!\p"
-    .string "I asked my Daddy to catch me one!$"
+    .string "I asked my Daddy\n"
+    .string "to catch me one!$"
 
 PewterCity_Museum_1F_Text_PikachuSoonIPromise::
-    .string "Yeah, a PIKACHU soon, I promise!$"
+    .string "Yeah, a PIKACHU\n"
+    .string "soon, I promise!$"
 
 PewterCity_Museum_1F_Text_SpaceShuttle::
     .string "SPACE SHUTTLE\n"
     .string "COLOMBIA$"
 
 PewterCity_Museum_1F_Text_MeteoriteThatFellOnMtMoon::
-    .string "Meteorite that fell on MT.MOON.\n"
-    .string "(MOON STONE?).$"
+    .string "Meteorite that\n"
+    .string "fell on MT.MOON.\l"
+    .string "(MOON STONE?)$"
 

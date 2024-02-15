@@ -1,14 +1,18 @@
 Route2_ViridianForest_NorthEntrance_Text_ManyMonsOnlyInForests::
-    .string "Many POKéMON live only in\n"
-    .string "forests and caves.\p"
-    .string "You need to look everywhere\n"
-    .string "to get different kinds!$"
+    .string "Many POKéMON live\n"
+    .string "only in forests\l"
+    .string "and caves.\p"
+    .string "You need to look\n"
+    .string "everywhere to get\l"
+    .string "different kinds!$"
 
 Route2_ViridianForest_NorthEntrance_Text_CanCutSkinnyTrees::
-    .string "Have you noticed the bushes\n"
-    .string "on the roadside?\p"
-    .string "They can be cut down by\n"
-    .string "a special POKéMON move.$"
+    .string "Have you noticed\n"
+    .string "the bushes on the\l"
+    .string "roadside?\p"
+    .string "They can be cut\n"
+    .string "down by a special\l"
+    .string "POKéMON move.$"
 
 Route2_ViridianForest_NorthEntrance_Text_CanCancelEvolution::
     .string "Do you know the evolution-cancel\n"
