@@ -1,13 +1,19 @@
 VermilionCity_PokemonCenter_1F_Text_TrainerMonsStrongerThanWild::
-    .string "Even if they are the same\n"
-    .string "level, POKéMON can have\l"
-    .string "very different abilities.\p"
-    .string "A POKéMON raised by a trainer is\n"
-    .string "stronger than one in the wild.$"
+    .string "Even if they are\n"
+    .string "the same level,\l"
+    .string "POKéMON can have\l"
+    .string "very different\l"
+    .string "abilities.\p"
+    .string "A POKéMON raised\n"
+    .string "by a trainer is\l"
+    .string "stronger than one\l"
+    .string "in the wild.$"
 
 VermilionCity_PokemonCenter_1F_Text_PoisonedMonFaintedWhileWalking::
-    .string "My POKéMON was poisoned!\n"
-    .string "It fainted while we were walking!$"
+    .string "My POKéMON was\n"
+    .string "poisoned! It\l"
+    .string "fainted while we\l"
+    .string "were walking!$"
 
 VermilionCity_PokemonCenter_1F_Text_AllMonWeakToSpecificTypes::
     .string "It is true that a higher level\n"

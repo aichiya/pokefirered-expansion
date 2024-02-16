@@ -1,33 +1,41 @@
 VermilionCity_House1_Text_ImFishingGuruDoYouLikeToFish::
-    .string "I'm the FISHING GURU!\n"
-    .string "I simply looove fishing!\p"
-    .string "I can't bear to go without.\n"
-    .string "Tell me, do you like to fish?$"
+    .string "I'm the FISHING\n"
+    .string "GURU!\p"
+    .string "I simply Looove\n"
+    .string "fishing!\p"
+    .string "Do you like to\n"
+    .string "fish?$"
 
 VermilionCity_House1_Text_TakeThisAndFish::
-    .string "Grand! I like your style.\n"
-    .string "I think we can be friends.\p"
-    .string "Take this and fish, young friend!$"
+    .string "Grand! I like\n"
+    .string "your style.\p"
+    .string "Take this and\n"
+    .string "fish, young one!$"
 
 VermilionCity_House1_Text_ReceivedOldRodFromFishingGuru::
-    .string "{PLAYER} received an OLD ROD!$"
+    .string "{PLAYER} received an\n"
+    .string "OLD ROD!$"
 
 VermilionCity_House1_Text_FishingIsAWayOfLife::
-    .string "Fishing is a way of life!\n"
-    .string "It is like the finest poetry.\p"
-    .string "From the seas to rivers, go out\n"
-    .string "and land the big one, my friend.$"
+    .string "Fishing is a way\n"
+    .string "of life!\p"
+    .string "From the seas to\n"
+    .string "rivers, go out\l"
+    .string "and land the big\l"
+    .string "one, young one!$"
 
 VermilionCity_House1_Text_OhThatsSoDisappointing::
-    .string "Oh...\n"
-    .string "That's so disappointing...$"
+    .string "Oh... That's so\n"
+    .string "disappointing...$"
 
 VermilionCity_House1_Text_HowAreTheFishBiting::
-    .string "Hello there, {PLAYER}!\p"
-    .string "How are the fish biting?$"
+    .string "Hello there,\n"
+    .string "{PLAYER}!\p"
+    .string "How are the fish\n"
+    .string "biting?$"
 
 VermilionCity_House1_Text_NoRoomForNiceGift::
     .string "Oh, no!\p"
-    .string "I had a nice gift for you, but you\n"
-    .string "have no room for it!$"
+    .string "You have no room\n"
+    .string "for my gift!$"
 

@@ -1,75 +1,97 @@
 VermilionCity_Text_GrimerMultipliesInSludge::
-    .string "We're careful about pollution!\p"
-    .string "We've heard GRIMER multiplies\n"
-    .string "in toxic sludge!$"
+    .string "We're careful\n"
+    .string "about pollution!\p"
+    .string "We've heard GRIMER\n"
+    .string "multiplies in\l"
+    .string "toxic sludge!$"
 
 VermilionCity_Text_DidYouSeeSSAnneInHarbor::
-    .string "Did you see the S.S.ANNE\n"
-    .string "moored in the harbor?$"
+    .string "Did you see the S.S.\n"
+    .string "ANNE moored in\l"
+    .string "the harbor?$"
 
 VermilionCity_Text_SSAnneHasDepartedForYear::
-    .string "So, the S.S.ANNE has departed?\p"
-    .string "She'll be back in VERMILION about\n"
-    .string "this time next year.$"
+    .string "So, the S.S.ANNE has\n"
+    .string "departed!\p"
+    .string "She'll be back in\n"
+    .string "about a year.$"
 
 VermilionCity_Text_BuildingOnThisLand::
-    .string "I'm putting up a building\n"
-    .string "on this plot of land.\p"
-    .string "My POKéMON is tamping\n"
-    .string "the land.$"
+    .string "I'm putting up a\n"
+    .string "building on this\l"
+    .string "plot of land.\p"
+    .string "My POKéMON is\n"
+    .string "tamping the land.$"
 
 VermilionCity_Text_Machop::
-    .string "MACHOP: Guoh! Gogogoh!$"
+    .string "MACHOP: Guoh!\n"
+    .string "Gogogoh!$"
 
 VermilionCity_Text_MachopStompingLandFlat::
-    .string "A MACHOP is stomping the land flat.$"
+    .string "A MACHOP is\n"
+    .string "stomping the land\l"
+    .string "flat.$"
 
 VermilionCity_Text_SSAnneVisitsOnceAYear::
-    .string "The S.S.ANNE is a famous\n"
-    .string "luxury cruise ship.\p"
-    .string "We visit VERMILION once a year.$"
+    .string "S.S.ANNE is a\n"
+    .string "famous luxury\l"
+    .string "cruise ship.\p"
+    .string "We visit VERMILION\n"
+    .string "once a year.$"
 
 VermilionCity_Text_CitySign::
     .string "VERMILION CITY\n"
-    .string "The Port of Exquisite Sunsets$"
+    .string "The Port of\l"
+    .string "Exquisite Sunsets$"
 
 VermilionCity_Text_SnorlaxBlockingRoute12::
     .string "NOTICE!\p"
-    .string "ROUTE 12 may be blocked off by a\n"
+    .string "ROUTE 12 may be\n"
+    .string "blocked off by a\l"
     .string "sleeping POKéMON.\p"
-    .string "Detour through ROCK TUNNEL to\n"
+    .string "Detour through\n"
+    .string "ROCK TUNNEL to\l"
     .string "LAVENDER TOWN.\p"
     .string "VERMILION POLICE$"
 
 VermilionCity_Text_PokemonFanClubSign::
     .string "POKéMON FAN CLUB\n"
-    .string "All POKéMON fans welcome!$"
+    .string "All POKéMON fans\l"
+    .string "welcome!$"
 
 VermilionCity_Text_GymSign::
-    .string "VERMILION CITY POKéMON GYM\n"
-    .string "LEADER: LT.SURGE\l"
-    .string "The Lightning American!$"
+    .string "VERMILION CITY\n"
+    .string "POKéMON GYM\l"
+    .string "LEADER: LT.SURGE\p"
+    .string "The Lightning\n"
+    .string "American!$"
 
 VermilionCity_Text_VermilionHarbor::
     .string "VERMILION HARBOR$"
 
 VermilionCity_Text_WelcomeToTheSSAnne::
-    .string "Welcome to the S.S. ANNE!$"
+    .string "Welcome to S.S.\n"
+    .string "ANNE!$"
 
 VermilionCity_Text_DoYouHaveATicket::
-    .string "Welcome to the S.S.ANNE!\p"
-    .string "Excuse me, do you have a ticket?$"
+    .string "Welcome to S.S.\n"
+    .string "ANNE!\l"
+    .string "Excuse me, do you\n"
+    .string "have a ticket?$"
 
 VermilionCity_Text_FlashedSSTicket::
-    .string "{FONT_NORMAL}{PLAYER} flashed the S.S.TICKET!\p"
-    .string "Great!\n"
-    .string "Welcome to S.S.ANNE!$"
+    .string "{PLAYER} flashed\n"
+    .string "the S.S.TICKET!\p"
+    .string "Great! Welcome to\n"
+    .string "S.S.ANNE!$"
 
 VermilionCity_Text_DontHaveNeededSSTicket::
-    .string "{FONT_NORMAL}{PLAYER} doesn't have the needed\n"
-    .string "S.S. TICKET.\p"
+    .string "{PLAYER} doesn't\n"
+    .string "have the needed\l"
+    .string "S.S.TICKET.\p"
     .string "Sorry!\p"
-    .string "You need a ticket to get aboard.$"
+    .string "You need a ticket\n"
+    .string "to get aboard.$"
 
 VermilionCity_Text_TheShipSetSail::
     .string "The ship set sail.$"

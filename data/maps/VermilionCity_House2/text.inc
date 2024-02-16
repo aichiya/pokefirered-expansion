@@ -1,20 +1,23 @@
 VermilionCity_House2_Text_DoYouHaveMonWantToTradeForMyMon::
-	.string "Hi!\n"
-	.string "Do you have {STR_VAR_1}?\p"
-	.string "Want to trade it for\n"
-	.string "{STR_VAR_2}?$"
+	.string "Hi! Do you have\n"
+	.string "{STR_VAR_1}?\p"
+	.string "Want to trade it\n"
+	.string "for {STR_VAR_2}?$"
 
 VermilionCity_House2_Text_ThatsTooBad::
 	.string "That's too bad.$"
 
 VermilionCity_House2_Text_ThisIsNoMon::
-	.string "...This is no {STR_VAR_1}.\p"
-	.string "If you get one, trade\n"
-	.string "it with me!$"
+	.string "...This is no\n"
+	.string "{STR_VAR_1}."
+	.string "If you get one,\n"
+	.string "trade it with me!$"
 
 VermilionCity_House2_Text_ThankYou::
 	.string "Thank you!$"
 
 VermilionCity_House2_Text_HowIsMyOldMon::
-	.string "How is my old {STR_VAR_2}?\p"
-	.string "My {STR_VAR_1} is doing great!$"
+	.string "How is my old\n"
+	.string "{STR_VAR_2}?"
+	.string "My {STR_VAR_1}\n"
+	.string "is doing great!$"
