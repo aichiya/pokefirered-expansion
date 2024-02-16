@@ -1,40 +1,48 @@
 SilphCo_8F_Text_WonderIfSilphIsFinished::
-    .string "I wonder if SILPH is finished...$"
+    .string "I wonder if SILPH\n"
+    .string "is finished...$"
 
 SilphCo_8F_Text_ThanksForSavingUs::
-    .string "Thanks for saving us!$"
+    .string "Thanks for saving\n"
+    .string "us!$"
 
 SilphCo_8F_Text_Grunt1Intro::
-    .string "That's as far as you'll go!$"
+    .string "That's as far as\n"
+    .string "you'll go!$"
 
 SilphCo_8F_Text_Grunt1Defeat::
-    .string "ROCKET: Not enough grit!$"
+    .string "ROCKET: Not\n"
+    .string "enough grit!$"
 
 SilphCo_8F_Text_Grunt1PostBattle::
-    .string "If you don't turn back,\n"
-    .string "I'll call for backup!$"
+    .string "If you don't turn\n"
+    .string "back, I'll call"
+    .string "for backup!$"
 
 SilphCo_8F_Text_ParkerIntro::
-    .string "You're causing us problems!$"
+    .string "You're causing us\n"
+    .string "problems!$"
 
 SilphCo_8F_Text_ParkerDefeat::
     .string "SCIENTIST: Huh?\n"
     .string "I lost?$"
 
 SilphCo_8F_Text_ParkerPostBattle::
-    .string "So, what do you think of SILPH\n"
+    .string "So, what do you\n"
+    .string "think of SILPH\l"
     .string "BUILDING's maze?$"
 
 SilphCo_8F_Text_Grunt2Intro::
-    .string "I am one of the 4 ROCKET\n"
-    .string "BROTHERS!$"
+    .string "I am one of the 4\n"
+    .string "ROCKET BROTHERS!$"
 
 SilphCo_8F_Text_Grunt2Defeat::
     .string "ROCKET: Whoo!\n"
     .string "Oh brothers!$"
 
 SilphCo_8F_Text_Grunt2PostBattle::
-    .string "I'll leave you up to my brothers!$"
+    .string "I'll leave you up\n"
+    .string "to my brothers!$"
 
 SilphCo_8F_Text_FloorSign::
     .string "SILPH CO. HEAD OFFICE\n"

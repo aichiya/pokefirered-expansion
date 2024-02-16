@@ -3,30 +3,38 @@ SilphCo_3F_Text_WhatAmIToDo::
     .string "What am I to do?$"
 
 SilphCo_3F_Text_YouAndYourMonsSavedUs::
-    .string "{PLAYER}!\n"
-    .string "You and your POKéMON saved us!$"
+    .string "{PLAYER}! You and\n"
+    .string "your POKéMON\l"
+    .string "saved us!$"
 
 SilphCo_3F_Text_GruntIntro::
-    .string "Quit messing with us, kid!$"
+    .string "Quit messing with\n"
+    .string "us, kid!$"
 
 SilphCo_3F_Text_GruntDefeat::
-    .string "ROCKET: I give up!$"
+    .string "ROCKET: I give\n"
+    .string "up!$"
 
 SilphCo_3F_Text_GruntPostBattle::
-    .string "A hint? You can open doors with\n"
-    .string "a CARD KEY!$"
+    .string "A hint? You can\n"
+    .string "open doors with a\l"
+    .string "CARD KEY!$"
 
 SilphCo_3F_Text_JoseIntro::
-    .string "I support TEAM ROCKET more than\n"
+    .string "I support TEAM\n"
+    .string "ROCKET more than\l"
     .string "I support SILPH!$"
 
 SilphCo_3F_Text_JoseDefeat::
-    .string "SCIENTIST: You really got me!$"
+    .string "SCIENTIST: You\n"
+    .string "really got me!$"
 
 SilphCo_3F_Text_JosePostBattle::
     .string "Humph...\p"
-    .string "TEAM ROCKET said that if I helped\n"
-    .string "them, they'd let me study POKéMON!$"
+    .string "TEAM ROCKET said\n"
+    .string "that if I helped\l"
+    .string "them, they'd let\l"
+    .string "me study POKéMON!$"
 
 SilphCo_3F_Text_FloorSign::
     .string "SILPH CO. HEAD OFFICE\n"

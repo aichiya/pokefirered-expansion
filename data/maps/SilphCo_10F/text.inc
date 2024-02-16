@@ -1,22 +1,28 @@
 SilphCo_10F_Text_GruntIntro::
-    .string "Welcome to the 10F!\n"
-    .string "So good of you to join me!$"
+    .string "Welcome to the\n"
+    .string "10F! So good of\l"
+    .string "you to join me!$"
 
 SilphCo_10F_Text_GruntDefeat::
-    .string "ROCKET: I'm stunned!$"
+    .string "ROCKET: I'm\n"
+    .string "stunned!$"
 
 SilphCo_10F_Text_GruntPostBattle::
-    .string "Nice try, but the boardroom is up\n"
+    .string "Nice try, but the\n"
+    .string "boardroom is up\l"
     .string "one more floor!$"
 
 SilphCo_10F_Text_TravisIntro::
-    .string "Enough of your silly games!$"
+    .string "Enough of your\n"
+    .string "silly games!$"
 
 SilphCo_10F_Text_TravisDefeat::
-    .string "SCIENTIST: No continues left!$"
+    .string "SCIENTIST: No\n"
+    .string "continues left!$"
 
 SilphCo_10F_Text_TravisPostBattle::
-    .string "Are you satisfied with beating me?\n"
+    .string "Are you satisfied\n"
+    .string "with beating me?\l"
     .string "Then go on home!$"
 
 SilphCo_10F_Text_WaaaImScared::
@@ -24,8 +30,8 @@ SilphCo_10F_Text_WaaaImScared::
     .string "I'm scared!$"
 
 SilphCo_10F_Text_KeepMeCryingASecret::
-    .string "Please keep quiet about\n"
-    .string "my crying!$"
+    .string "Please keep quiet\n"
+    .string "about my crying!$"
 
 SilphCo_10F_Text_FloorSign::
     .string "SILPH CO. HEAD OFFICE\n"

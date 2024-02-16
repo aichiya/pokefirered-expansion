@@ -1,38 +1,44 @@
 SilphCo_5F_Text_RocketsInUproarAboutIntruder::
-    .string "TEAM ROCKET is in an uproar over\n"
-    .string "some intruder.\p"
-    .string "That's you, right?$"
+    .string "TEAM ROCKET is\n"
+    .string "in an uproar over\l"
+    .string "some intruder.\l"
+    .string "That`s you right?$"
 
 SilphCo_5F_Text_YoureOurHeroThankYou::
-    .string "TEAM ROCKET took off!\n"
-    .string "You're our hero! Thank you!$"
+    .string "TEAM ROCKET took\n"
+    .string "off! You're our\l"
+    .string "hero! Thank you!$"
 
 SilphCo_5F_Text_Grunt1Intro::
-    .string "I heard a kid was wandering\n"
-    .string "around.$"
+    .string "I heard a kid was\n"
+    .string "wandering around.$"
 
 SilphCo_5F_Text_Grunt1Defeat::
     .string "ROCKET: Boom!$"
 
 SilphCo_5F_Text_Grunt1PostBattle::
-    .string "It's not smart to pick a fight with\n"
-    .string "TEAM ROCKET!$"
+    .string "It's not smart\n"
+    .string "to pick a fight\l"
+    .string "with TEAM ROCKET!$"
 
 SilphCo_5F_Text_BeauIntro::
-    .string "We study POKé BALL technology on\n"
-    .string "this floor!$"
+    .string "We study POKé\n"
+    .string "BALL technology\l"
+    .string "on this floor!$"
 
 SilphCo_5F_Text_BeauDefeat::
     .string "SCIENTIST: Dang!\n"
     .string "Blast it!$"
 
 SilphCo_5F_Text_BeauPostBattle::
-    .string "We worked on the ultimate POKé\n"
-    .string "BALL which would catch anything!$"
+    .string "We worked on the\n"
+    .string "ultimate POKé\l"
+    .string "BALL which would\l"
+    .string "catch anything!$"
 
 SilphCo_5F_Text_DaltonIntro::
-    .string "Whaaat?\p"
-    .string "There shouldn't be any\n"
+    .string "Whaaat? There\n"
+    .string "shouldn't be any\n"
     .string "children here?$"
 
 SilphCo_5F_Text_DaltonDefeat::

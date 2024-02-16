@@ -1,52 +1,76 @@
 SilphCo_11F_Text_ThanksForSavingMeDearBoy::
-    .string "PRESIDENT: Thank you for\n"
-    .string "saving SILPH!\p"
-    .string "I will never forget you saved us\n"
-    .string "in our moment of peril!\p"
-    .string "I have to thank you in some way!\p"
-    .string "Because I am rich, I can give\n"
-    .string "you anything!\p"
-    .string "Here, maybe this will do!$"
+    .string "PRESIDENT: Thank\n"
+    .string "you for saving\l"
+    .string "SILPH!\p"
+    .string "I will never\n"
+    .string "forget you saved\l"
+    .string "us in our moment\l"
+    .string "of peril!\p"
+    .string "I have to thank\n"
+    .string "you in some way!\p"
+    .string "Because I am rich,\n"
+    .string "I can give you\l"
+    .string "anything!\p"
+    .string "Here, maybe this\n"
+    .string "will do!$"
 
 SilphCo_11F_Text_ThanksForSavingMeDearGirl::
-    .string "PRESIDENT: Oh, dear girl!\n"
-    .string "Thank you for saving SILPH.\p"
-    .string "I will never forget you saved us in\n"
-    .string "our moment of peril.\p"
-    .string "I have to thank you in some way.\p"
-    .string "Because I am rich, I can give you\n"
-    .string "anything.\p"
-    .string "Here, maybe this will do.$"
+    .string "PRESIDENT: Thank\n"
+    .string "you for saving\l"
+    .string "SILPH!\p"
+    .string "I will never\n"
+    .string "forget you saved\l"
+    .string "us in our moment\l"
+    .string "of peril!\p"
+    .string "I have to thank\n"
+    .string "you in some way!\p"
+    .string "Because I am rich,\n"
+    .string "I can give you\l"
+    .string "anything!\p"
+    .string "Here, maybe this\n"
+    .string "will do!$"
 
 SilphCo_11F_Text_ObtainedMasterBallFromPresident::
-    .string "{PLAYER} got a MASTER BALL!$"
+    .string "{PLAYER} got a\n"
+    .string "MASTER BALL!$"
 
 SilphCo_11F_Text_ThatsOurSecretPrototype::
-    .string "PRESIDENT: You can't buy\n"
-    .string "that anywhere!\p"
-    .string "It's our secret prototype\n"
-    .string "MASTER BALL!\p"
-    .string "It will catch any POKéMON\n"
-    .string "without fail!\p"
-    .string "You should be quiet about using\n"
+    .string "PRESIDENT: You\n"
+    .string "can't buy that\l"
+    .string "anywhere!\p"
+    .string "It's our secret\n"
+    .string "prototype MASTER\l"
+    .string "BALL!\p"
+    .string "It will catch any\n"
+    .string "POKéMON without\l"
+    .string "fail!\p"
+    .string "You should be\n"
+    .string "quiet about using\l"
     .string "it, though.$"
 
 SilphCo_11F_Text_YouHaveNoRoomForThis::
-    .string "You have no room for this.$"
+    .string "You have no\n"
+    .string "room for this.$"
 
 SilphCo_11F_Text_ThanksForRescuingUs::
-    .string "SECRETARY: Thank you for rescuing\n"
+    .string "SECRETARY: Thank\n"
+    .string "you for rescuing\l"
     .string "all of us!\p"
-    .string "We admire your courage.$"
+    .string "We admire your\n"
+    .string "courage.$"
 
 SilphCo_11F_Text_GiovanniIntro::
     .string "Ah {PLAYER}!\n"
     .string "So we meet again!\p"
-    .string "The PRESIDENT and I are discussing\n"
-    .string "a vital business proposition.\p"
-    .string "Keep your nose out of grown-up\n"
+    .string "The PRESIDENT and\n"
+    .string "I are discussing\l"
+    .string "a vital business\l"
+    .string "proposition.\p"
+    .string "Keep your nose\n"
+    .string "out of grown-up\l"
     .string "matters...\p"
-    .string "Or, experience a world of pain!$"
+    .string "Or, experience a\n"
+    .string "world of pain!$"
 
 SilphCo_11F_Text_GiovanniDefeat::
     .string "GIOVANNI: Arrgh!!\n"
@@ -54,11 +78,16 @@ SilphCo_11F_Text_GiovanniDefeat::
 
 SilphCo_11F_Text_GiovanniPostBattle::
     .string "Blast it all!\n"
-    .string "You ruined our plans for SILPH!\p"
-    .string "But, TEAM ROCKET will never fall!\p"
-    .string "{PLAYER}! Never forget that all\n"
-    .string "POKéMON exist for TEAM ROCKET!\p"
-    .string "I must go, but I shall return!$"
+    .string "You ruined our\l"
+    .string "plans for SILPH!\p"
+    .string "But, TEAM ROCKET\n"
+    .string "will never fall!\p"
+    .string "{PLAYER}! Never\n"
+    .string "forget that all\l"
+    .string "POKéMON exist\l"
+    .string "for TEAM ROCKET!\p"
+    .string "I must go, but I\n"
+    .string "shall return!$"
 
 SilphCo_11F_Text_Grunt2Intro::
     .string "Stop right there!\n"
@@ -69,22 +98,26 @@ SilphCo_11F_Text_Grunt2Defeat::
     .string "Please!$"
 
 SilphCo_11F_Text_Grunt2PostBattle::
-    .string "So, you want to see my BOSS?$"
+    .string "So, you want to\n"
+    .string "see my BOSS?$"
 
 SilphCo_11F_Text_Grunt1Intro::
-    .string "Halt! Do you have an appointment\n"
+    .string "Halt! Do you have\n"
+    .string "an appointment\l"
     .string "with my BOSS?$"
 
 SilphCo_11F_Text_Grunt1Defeat::
-    .string "Gaah!\n"
+    .string "ROCKET: Gaah!\n"
     .string "Demolished!$"
 
 SilphCo_11F_Text_Grunt1PostBattle::
-    .string "Watch your step...\n"
-    .string "My BOSS likes his POKéMON tough!$"
+    .string "Watch your step,\n"
+    .string "My BOSS likes his\l"
+    .string "POKéMON tough!$"
 
 SilphCo_11F_Text_MonitorHasMonsOnIt::
-    .string "The monitor has POKéMON on it!$"
+    .string "The monitor has\n"
+    .string "POKéMON on it!$"
 
 SilphCo_11F_Text_FloorSign::
     .string "SILPH CO. HEAD OFFICE\n"
