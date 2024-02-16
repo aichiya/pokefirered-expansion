@@ -1,8 +1,10 @@
 SSAnne_1F_Room4_Text_WaiterCherryPiePlease::
-    .string "Waiter, I would like a cherry pie,\n"
+    .string "Waiter, I would\n"
+    .string "like a cherry pie\l"
     .string "please!$"
 
 SSAnne_1F_Room4_Text_WaitressCherryPiePlease::
-    .string "Waitress, I would like\n"
-    .string "a cherry pie please!$"
+    .string "Waiter, I would\n"
+    .string "like a cherry pie\l"
+    .string "please!$"
 

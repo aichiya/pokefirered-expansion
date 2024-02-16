@@ -7,21 +7,27 @@ SSAnne_1F_Room2_Text_TylerDefeat::
     .string "You're great!$"
 
 SSAnne_1F_Room2_Text_TylerPostBattle::
-    .string "Let me be your friend, OK?\n"
-    .string "Then we can trade POKéMON!$"
+    .string "Let me be your\n"
+    .string "friend, OK?\p"
+    .string "Then we can trade\n"
+    .string "POKéMON!$"
 
 SSAnne_1F_Room2_Text_AnnIntro::
-    .string "I collected these POKéMON\n"
-    .string "from all around the world!$"
+    .string "I collected these\n"
+    .string "POKéMON from all\l"
+    .string "around the world!$"
 
 SSAnne_1F_Room2_Text_AnnDefeat::
     .string "LASS: Oh no!\n"
-    .string "I went around the world for these!$"
+    .string "I went around the\l"
+    .string "world for these!$"
 
 SSAnne_1F_Room2_Text_AnnPostBattle::
-    .string "You hurt my poor worldly POKéMON!\p"
-    .string "I demand that you heal them\n"
-    .string "at a POKéMON CENTER!$"
+    .string "You hurt my poor\n"
+    .string "worldly POKéMON!\p"
+    .string "I demand that you\n"
+    .string "heal them at a\l"
+    .string "POKéMON CENTER!$"
 
 SSAnne_1F_Room2_Text_CruisingAroundWorld::
     .string "We are cruising around the world.$"

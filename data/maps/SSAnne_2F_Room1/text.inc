@@ -1,5 +1,8 @@
 SSAnne_2F_Room1_Text_SleepingMonLookedLikeThis::
-    .string "In all my travels I've never seen\n"
-    .string "any POKéMON sleep like this one!\p"
-    .string "It was something like this!$"
+    .string "In all my travels\n"
+    .string "I've never seen\l"
+    .string "any POKéMON sleep\l"
+    .string "like this one!\p"
+    .string "It was something\n"
+    .string "like this!$"
 
