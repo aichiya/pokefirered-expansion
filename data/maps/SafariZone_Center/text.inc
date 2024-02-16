@@ -3,8 +3,9 @@ SafariZone_Center_Text_RestHouse::
 
 SafariZone_Center_Text_PressStartToCheckTime::
     .string "TRAINER TIPS\p"
-    .string "Press the START Button to\n"
-    .string "check remaining time!$"
+    .string "Press the START\n"
+    .string "Button to check\l"
+    .string "remaining time!$"
 
 SafariZone_Center_Text_CenterArea::
     .string "CENTER AREA$"

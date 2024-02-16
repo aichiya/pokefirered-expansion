@@ -7,15 +7,19 @@ SafariZone_West_Text_KogaPatrolsSafariEverySoOften::
     .string "knowing that we're safe.$"
 
 SafariZone_West_Text_RocksMakeMonRunButEasierCatch::
-    .string "Tossing ROCKs at POKéMON might\n"
-    .string "make them run, but they'll be\l"
+    .string "Tossing ROCKs at\n"
+    .string "POKéMON might\l"
+    .string "make them run,\l"
+    .string "but they'll be\l"
     .string "easier to catch.$"
 
 SafariZone_West_Text_BaitMakesMonStickAround::
-    .string "Using BAIT will make POKéMON\n"
+    .string "Using BAIT will\n"
+    .string "make POKéMON\l"
     .string "easier to catch.$"
 
 SafariZone_West_Text_HikedLotsDidntSeeMonIWanted::
-    .string "I hiked a lot, but I didn't see\n"
-    .string "and POKéMON I wanted.$"
+    .string "I hiked a lot, but\n"
+    .string "I didn't see any\l"
+    .string "POKéMON I wanted.$"
 
