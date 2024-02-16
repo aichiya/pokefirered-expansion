@@ -49,6 +49,7 @@ House1 incorrectly uses generic house layout, somehow linked to all others. Must
 
 -Saffron City-
 Fainting in Master fight doesn't re-enable battle trigger.
+Copycat is move tutor, needs to gift item instead.
 
 -Rocket Hideout-
 B4F Grunt drops lift key immediately, should require talking to him first.
