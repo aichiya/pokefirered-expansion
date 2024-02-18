@@ -1,32 +1,40 @@
 CeladonCity_DepartmentStore_3F_Text_OTStandsForOriginalTrainer::
-    .string "Captured POKéMON are registered\n"
-    .string "with an ID No. and the OT,\p"
-    .string "the name of the Original\n"
-    .string "Trainer that caught it!$"
+    .string "Captured POKéMON\n"
+    .string "are registered\l"
+    .string "with an ID No.\l"
+    .string "and OT, the name\l"
+    .string "of the Original\l"
+    .string "Trainer that\l"
+    .string "caught it!$"
 
 CeladonCity_DepartmentStore_3F_Text_BuddyTradingKangaskhanForHaunter::
     .string "All right!\p"
-    .string "My buddy's going to trade me his\n"
-    .string "KANGASKHAN for my GRAVELER!$"
+    .string "My buddy`s going\n"
+    .string "to trade me his\l"
+    .string "KANGASKHAN for my\l"
+    .string "GRAVELER!$"
 
 CeladonCity_DepartmentStore_3F_Text_HaunterEvolvedOnTrade::
     .string "Come on GRAVELER!\p"
     .string "I love GRAVELER!\n"
     .string "I collect them!\p"
     .string "Huh?\p"
-    .string "GRAVELER turned into a\n"
-    .string "different POKéMON!$"
+    .string "GRAVELER turned\n"
+    .string "into a different\l"
+    .string "POKéMON!$"
 
 CeladonCity_DepartmentStore_3F_Text_CanIdentifyTradeMonsByID::
-    .string "You can identify POKéMON you got\n"
-    .string "in trades by their ID Numbers!$"
+    .string "You can identify\n"
+    .string "POKéMON you got\l"
+    .string "in trades by\l"
+    .string "their ID Numbers!$"
 
 CeladonCity_DepartmentStore_3F_Text_ItsSuperNES::
     .string "It's an SNES!$"
 
 CeladonCity_DepartmentStore_3F_Text_AnRPG::
-    .string "An RPG!\n"
-    .string "There's no time for that!$"
+    .string "An RPG! There`s\n"
+    .string "no time for that!$"
 
 CeladonCity_DepartmentStore_3F_Text_SportsGame::
     .string "A sports game!\n"
@@ -48,10 +56,11 @@ CeladonCity_DepartmentStore_3F_Text_RedGreenBothArePokemon::
     .string "Both are POKéMON!$"
 
 Text_CounterTeach::
-    .string "Oh, hi!\n"
-    .string "I finally finished POKéMON!\p"
+    .string "Oh, hi! I finally\n"
+    .string "finished POKéMON!\p"
     .string "Not done yet?\n"
-    .string "This might be useful!$"
+    .string "This might be\l"
+    .string "useful!$"
 
 Text_CounterDeclined::
     .string "You're not interested? Come see\n"

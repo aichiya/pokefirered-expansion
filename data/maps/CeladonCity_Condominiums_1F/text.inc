@@ -12,8 +12,10 @@ CeladonCity_Condominiums_1F_Text_NothingBeatsThirstLikeTea::
     .string "It really is the best.$"
 
 CeladonCity_Condominiums_1F_Text_MyDearMonsKeepMeCompany::
-    .string "My dear POKéMON keep me company.\n"
-    .string "MEOWTH even brings money home!$"
+    .string "My dear POKéMON\n"
+    .string "keep me company.\p"
+    .string "MEOWTH even brings\n"
+    .string "money home!$"
 
 CeladonCity_Condominiums_1F_Text_DaisyComesToBuyTea::
     .string "Oh, hello, dearie.\n"
@@ -26,12 +28,14 @@ CeladonCity_Condominiums_1F_Text_DaisyComesToBuyTea::
     .string "to buy some TEA.$"
 
 CeladonCity_Condominiums_1F_Text_Clefairy::
-    .string "CLEFAIRY: Pi pippippi!$"
+    .string "CLEFAIRY: Pi\n"
+    .string "pippippi!$"
 
 CeladonCity_Condominiums_1F_Text_Nidoran::
-    .string "NIDORAN: Kya kyaoo!$"
+    .string "NIDORAN: Kya\n"
+    .string "kyaoo!$"
 
 CeladonCity_Condominiums_1F_Text_ManagersSuite::
     .string "CELADON MANSION\n"
-    .string "Manager's Suite$"
+    .string "Manager`s Suite$"
 
