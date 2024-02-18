@@ -3,10 +3,10 @@ ViridianCity_Mart_Text_YouCameFromPallet::
     .string "PALLET TOWN?$"
 
 ViridianCity_Mart_Text_TakeThisToProfOak::
-    .string "You know PROF.\p"
+    .string "You know PROF.\n"
     .string "OAK, right?\p"
     .string "His order came in.\n"
-    .string "Will you take it\p"
+    .string "Will you take it\l"
     .string "to him?$"
 
 ViridianCity_Mart_Text_ReceivedOaksParcelFromClerk::

@@ -3,7 +3,7 @@ ViridianCity_House_Text_NicknamingIsFun::
     .string "nicknames is fun,\l"
     .string "but hard.\p"
     .string "Simple names are\n"
-    .string "the easiest to\p"
+    .string "the easiest to\l"
     .string "remember.$"
 
 ViridianCity_House_Text_MyDaddyLovesMonsToo::

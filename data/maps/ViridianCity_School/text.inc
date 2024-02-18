@@ -1,12 +1,12 @@
 ViridianCity_School_Text_TryingToMemorizeNotes::
     .string "Whew! I'm trying\n"
-    .string "to memorize all\p"
+    .string "to memorize all\l"
     .string "my notes.$"
 
 ViridianCity_School_Text_ReadBlackboardCarefully::
     .string "Okay!\p"
     .string "Be sure to read\n"
-    .string "the blackboard\p"
+    .string "the blackboard\l"
     .string "carefully!$"
 
 ViridianCity_School_Text_NotebookFirstPage::
@@ -20,7 +20,7 @@ ViridianCity_School_Text_NotebookFirstPage::
     .string "can be carried.\p"
     .string "People who raise\n"
     .string "and make POKéMON\l"
-    .string "fight are called\p"
+    .string "fight are called\l"
     .string "POKéMON trainers.$"
 
 ViridianCity_School_Text_NotebookSecondPage::
@@ -30,7 +30,7 @@ ViridianCity_School_Text_NotebookSecondPage::
     .string "catch, so weaken\l"
     .string "it first!\p"
     .string "Poison, burns and\n"
-    .string "other damage are\p"
+    .string "other damage are\l"
     .string "effective!$"
 
 ViridianCity_School_Text_NotebookThirdPage::
@@ -40,7 +40,7 @@ ViridianCity_School_Text_NotebookThirdPage::
     .string "engage in POKéMON\l"
     .string "fights.\p"
     .string "Battles are\n"
-    .string "constantly fought\p"
+    .string "constantly fought\l"
     .string "at POKéMON GYMs.$"
 
 ViridianCity_School_Text_NotebookFourthPage::
@@ -52,7 +52,7 @@ ViridianCity_School_Text_NotebookFourthPage::
     .string "GYM LEADERs.\p"
     .string "Do so to earn the\n"
     .string "right to face...\l"
-    .string "The ELITE FOUR of\n"
+    .string "The ELITE FOUR of\l"
     .string "POKéMON LEAGUE!$"
 
 ViridianCity_School_Text_TurnThePage::
@@ -65,7 +65,7 @@ ViridianCity_School_Text_HeyDontLookAtMyNotes::
 ViridianCity_School_Text_BlackboardListsStatusProblems::
     .string "The blackboard\n"
     .string "describes POKéMON\l"
-    .string "STATUS changes\p"
+    .string "STATUS changes\l"
     .string "during battles.$"
 
 ViridianCity_School_Text_ReadWhichTopic::
@@ -84,8 +84,8 @@ ViridianCity_School_Text_ExplainSleep::
 
 ViridianCity_School_Text_ExplainBurn::
     .string "A burn reduces\n"
-    .string "power and speed.\p"
-    .string "It also causes\n"
+    .string "power and speed.\l"
+    .string "It also causes\l"
     .string "ongoing damage.\p"
     .string "Burns remain\n"
     .string "after battles.\p"

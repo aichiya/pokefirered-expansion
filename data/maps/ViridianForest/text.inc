@@ -6,12 +6,12 @@ ViridianForest_Text_FriendsItchingToBattle::
 
 ViridianForest_Text_RickIntro::
     .string "Hey! You have\n"
-    .string "POKéMON! Come on!\p"
+    .string "POKéMON! Come on!\l"
     .string "Let's battle'em!$"
 
 ViridianForest_Text_RickDefeat::
     .string "BUG CATCHER: No!\n"
-    .string "CATERPIE can't\p"
+    .string "CATERPIE can't\l"
     .string "cut it!$"
 
 ViridianForest_Text_RickPostBattle::
@@ -82,17 +82,19 @@ ViridianForest_Text_RanOutOfPokeBalls::
 
 ViridianForest_Text_AvoidGrassyAreasWhenWeak::
     .string "TRAINER TIPS\p"
-    .string "If you want to avoid battles,\n"
-    .string "stay away from grassy areas!$"
+    .string "If you want to\n"
+    .string "avoid battles,\l"
+    .string "stay away from\l"
+    .string "grassy areas!$"
 
 ViridianForest_Text_UseAntidoteForPoison::
     .string "For poison, use\n"
-    .string "ANTIDOTE! Get it\p"
+    .string "ANTIDOTE! Get it\l"
     .string "at POKéMON MARTs!$"
 
 ViridianForest_Text_ContactOakViaPCToRatePokedex::
     .string "TRAINER TIPS\p"
-    .string "Contact PROF.OAK\l"
+    .string "Contact PROF.OAK\n"
     .string "via a PC to get\l"
     .string "your POKéDEX\l"
     .string "evaluated!$"

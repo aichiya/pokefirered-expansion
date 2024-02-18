@@ -1,11 +1,12 @@
 ViridianCity_PokemonCenter_1F_Text_FeelFreeToUsePC::
     .string "You can use that\n"
     .string "PC in the corner.\p"
-    .string "The receptionist told me.\n"
-    .string "So kind!$"
+    .string "The receptionist\n"
+    .string "told me. So kind!$"
 
 ViridianCity_PokemonCenter_1F_Text_PokeCenterInEveryTown::
-    .string "There's a POKéMON CENTER in every\n"
+    .string "There's a POKéMON\n"
+    .string "CENTER in every\l"
     .string "town ahead.\p"
     .string "They don't charge\n"
     .string "any money either!$"
