@@ -1,56 +1,70 @@
 VictoryRoad_2F_Text_DawsonIntro::
-    .string "If you can get through here,\n"
-    .string "you can go meet the ELITE FOUR.$"
+    .string "If you can get\n"
+    .string "through here, you\l"
+    .string "can go meet the\l"
+    .string "ELITE FOUR.$"
 
 VictoryRoad_2F_Text_DawsonDefeat::
-    .string "No!\n"
+    .string "SUPER NERD: No!\n"
     .string "Unbelievable!$"
 
 VictoryRoad_2F_Text_DawsonPostBattle::
-    .string "I can beat you when it comes to\n"
-    .string "knowledge about POKéMON!$"
+    .string "I can beat you\n"
+    .string "when it comes to\l"
+    .string "knowledge about\l"
+    .string "POKéMON!$"
 
 VictoryRoad_2F_Text_DaisukeIntro::
-    .string "VICTORY ROAD is the final\n"
-    .string "test for trainers!$"
+    .string "VICTORY ROAD is\n"
+    .string "the final test\l"
+    .string "for trainers!$"
 
 VictoryRoad_2F_Text_DaisukeDefeat::
     .string "BLACKBELT: Aiyah!$"
 
 VictoryRoad_2F_Text_DaisukePostBattle::
-    .string "If you get stuck, try moving\n"
-    .string "some boulders around!$"
+    .string "If you get stuck,\n"
+    .string "try moving some\l"
+    .string "boulders around!$"
 
 VictoryRoad_2F_Text_NelsonIntro::
-    .string "Ah, so you wish to challenge\n"
-    .string "the ELITE FOUR?$"
+    .string "Ah, so you wish\n"
+    .string "to challenge the\l"
+    .string "ELITE FOUR?$"
 
 VictoryRoad_2F_Text_NelsonDefeat::
-    .string "JUGGLER: You got me!$"
+    .string "COOLTRAINER♂: You\n"
+    .string "got me!$"
 
 VictoryRoad_2F_Text_NelsonPostBattle::
-    .string "{RIVAL} also came through here!$"
+    .string "{RIVAL} also came\n"
+    .string "through here!$"
 
 VictoryRoad_2F_Text_VincentIntro::
     .string "Come on!\n"
     .string "I'll whip you!$"
 
 VictoryRoad_2F_Text_VincentDefeat::
-    .string "TAMER: I got whipped!$"
+    .string "TAMER: I got\n"
+    .string "whipped!$"
 
 VictoryRoad_2F_Text_VincentPostBattle::
-    .string "You earned the right to be\n"
-    .string "on VICTORY ROAD!$"
+    .string "You earned the\n"
+    .string "right to be on\l"
+    .string "VICTORY ROAD!$"
 
 VictoryRoad_2F_Text_GregoryIntro::
-    .string "Is VICTORY ROAD too tough?$"
+    .string "Is VICTORY ROAD\n"
+    .string "too tough?$"
 
 VictoryRoad_2F_Text_GregoryDefeat::
-    .string "JUGGLER: Well done!$"
+    .string "COOLTRAINER♂: Well\n"
+    .string "done!$"
 
 VictoryRoad_2F_Text_GregoryPostBattle::
-    .string "Many trainers give up the\n"
-    .string "challenge here.$"
+    .string "Many trainers give\n"
+    .string "up the challenge\l"
+    .string "here.$"
 
 @ Unused, old text for Moltres
 VictoryRoad_2F_Text_Gyaoo::

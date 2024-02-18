@@ -22,17 +22,20 @@ Text_DoubleEdgeTaught::
     .string "out!$"
 
 VictoryRoad_3F_Text_GeorgeIntro::
-    .string "I heard rumors of a child prodigy!$"
+    .string "I heard rumors of\n"
+    .string "a child prodigy!$"
 
 VictoryRoad_3F_Text_GeorgeDefeat::
-    .string "COOLTRAINER♂: The rumors were true!$"
+    .string "COOLTRAINER♂: The\n"
+    .string "rumors were true!$"
 
 VictoryRoad_3F_Text_GeorgePostBattle::
-    .string "You beat GIOVANNI of\n"
-    .string "TEAM ROCKET?$"
+    .string "You beat GIOVANNI\n"
+    .string "of TEAM ROCKET?$"
 
 VictoryRoad_3F_Text_AlexaIntro::
-    .string "TRAINERS live to seek stronger\n"
+    .string "TRAINERS live to\n"
+    .string "seek stronger\l"
     .string "opponents!$"
 
 VictoryRoad_3F_Text_AlexaDefeat::
@@ -40,29 +43,34 @@ VictoryRoad_3F_Text_AlexaDefeat::
     .string "So strong!$"
 
 VictoryRoad_3F_Text_AlexaPostBattle::
-    .string "By fighting tough battles, you\n"
-    .string "get stronger!$"
+    .string "By fighting tough\n"
+    .string "battles, you get\l"
+    .string "stronger!$"
 
 VictoryRoad_3F_Text_CarolineIntro::
-    .string "I'll show you just how good\n"
-    .string "you are!$"
+    .string "I'll show you just\n"
+    .string "how good you are!$"
 
 VictoryRoad_3F_Text_CarolineDefeat::
-    .string "COOLTRAINER♀: I'm furious!$"
+    .string "COOLTRAINER♀: I'm\n"
+    .string "furious!$"
 
 VictoryRoad_3F_Text_CarolinePostBattle::
-    .string "You showed me just how good\n"
-    .string "I was!$"
+    .string "You showed me just\n"
+    .string "how good I was!$"
 
 VictoryRoad_3F_Text_ColbyIntro::
-    .string "Only the chosen can pass here!$"
+    .string "Only the chosen\n"
+    .string "can pass here!$"
 
 VictoryRoad_3F_Text_ColbyDefeat::
-    .string "COOLTRAINER♂: I don't believe it!$"
+    .string "COOLTRAINER♂: I\n"
+    .string "don't believe it!$"
 
 VictoryRoad_3F_Text_ColbyPostBattle::
-    .string "All trainers here are headed to\n"
-    .string "the POKéMON LEAGUE!\p"
+    .string "All trainers here\n"
+    .string "are headed to the\l"
+    .string "POKéMON LEAGUE!\l"
     .string "Be careful!$"
 
 VictoryRoad_3F_Text_RayIntro::
