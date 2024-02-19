@@ -1,14 +1,20 @@
 CeruleanCity_PokemonCenter_1F_Text_BillDoesWhateverForRareMons::
     .string "That BILL!\p"
-    .string "I heard that he'll do whatever it\n"
-    .string "takes to get rare POKéMON!$"
+    .string "I heard that\n"
+    .string "he'll do whatever\l"
+    .string "it takes to get\l"
+    .string "rare POKéMON!$"
 
 CeruleanCity_PokemonCenter_1F_Text_EveryoneCallsBillPokemaniac::
-    .string "Have you heard about BILL?\p"
-    .string "Everyone calls him a POKéMANIAC!\p"
-    .string "I think people are just jealous of\n"
-    .string "BILL, though.\p"
-    .string "Who wouldn't want to boast about\n"
+    .string "Have you heard\n"
+    .string "about BILL?\p"
+    .string "Everyone calls\n"
+    .string "him a POKéMANIAC!\p"
+    .string "I think people\n"
+    .string "are just jealous\l"
+    .string "of BILL, though.\p"
+    .string "Who wouldn't want\n"
+    .string "to boast about\l"
     .string "their POKéMON?$"
 
 CeruleanCity_PokemonCenter_1F_Text_BillCollectsRareMons::
