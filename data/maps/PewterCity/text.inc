@@ -1,21 +1,3 @@
-ViridianCity_Text_TakeTM42::
-    .string "Yawn!\n"
-    .string "I must have dozed off in the sun.\p"
-    .string "I had this dream about a\n"
-    .string "DROWZEE eating my dream.\p"
-    .string "What's this?\n"
-    .string "Where did this TM come from?\p"
-    .string "This is spooky! Here,\n"
-    .string "you can have this TM.$"
-
-ViridianCity_Text_PutTM42Away::
-    .string "{PLAYER} put TM42 away in\n"
-    .string "the BAG's TM CASE.$"
-
-ViridianCity_Text_TM42_Contains::
-    .string "TM42 contains DREAM EATER...\n"
-    .string "...Snore...$"
-
 PewterCity_Text_ClefairyCameFromMoon::
     .string "It's rumored that\n"
     .string "CLEFAIRYs came\l"

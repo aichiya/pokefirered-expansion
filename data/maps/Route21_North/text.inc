@@ -20,7 +20,7 @@ Route21_North_Text_WadeDefeat::
 
 Route21_North_Text_WadePostBattle::
 	.string "I seem to only\n"
-	.string "catch MAGIKARP!$""
+	.string "catch MAGIKARP!$"
 
 Route21_North_Text_SpencerIntro::
 	.string "The sea cleanses\n"

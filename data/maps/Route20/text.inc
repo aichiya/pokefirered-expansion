@@ -23,7 +23,7 @@ Route20_Text_ShirleyPostBattle::
 
 Route20_Text_TiffanyIntro::
     .string "I love floating\n"
-    .string "with the fishes!$""
+    .string "with the fishes!$"
 
 Route20_Text_TiffanyDefeat::
     .string "BEAUTY: Yowch!$"
