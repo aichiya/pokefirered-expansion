@@ -1,25 +1,31 @@
 FuchsiaCity_Text_DidYouTrySafariGame::
-    .string "Did you try the SAFARI GAME?\p"
-    .string "Some POKéMON can only be\n"
-    .string "caught there.$"
+    .string "Did you try the\n"
+    .string "SAFARI GAME? Some\l"
+    .string "POKéMON can only\l"
+    .string "be caught there.$"
 
 FuchsiaCity_Text_SafariZoneZooInFront::
-    .string "SAFARI ZONE has a zoo in front\n"
-    .string "of the entrance.\p"
-    .string "Out back is the SAFARI GAME for\n"
+    .string "SAFARI ZONE has a\n"
+    .string "zoo in front of\l"
+    .string "the entrance.\p"
+    .string "Out back is the\n"
+    .string "SAFARI GAME for\l"
     .string "catching POKéMON.$"
 
 FuchsiaCity_Text_WheresSara::
-    .string "ERIK: Where's SARA?\n"
-    .string "I said I'd meet her here.$"
+    .string "ERIK: Where`s\n"
+    .string "SARA? I said I'd\l"
+    .string "meet her here.$"
 
 FuchsiaCity_Text_ItemBallInThere::
-    .string "That item ball in there\n"
-    .string "is really a POKéMON$"
+    .string "That item ball in\n"
+    .string "there is really a\l"
+    .string "POKéMON$"
 
 FuchsiaCity_Text_CitySign::
     .string "FUCHSIA CITY\n"
-    .string "Behold! It's Passion Pink!$"
+    .string "Behold! It`s\l"
+    .string "Passion Pink!$"
 
 FuchsiaCity_Text_SafariZoneSign::
     .string "POKéMON PARADISE\n"
@@ -39,44 +45,54 @@ FuchsiaCity_Text_SafariZoneOfficeSign::
     .string "SAFARI ZONE OFFICE$"
 
 FuchsiaCity_Text_GymSign::
-    .string "FUCHSIA CITY POKéMON GYM\n"
-    .string "LEADER: KOGA\l"
-    .string "The Poisonous Ninja Master$"
+    .string "FUCHSIA CITY\n"
+    .string "POKéMON GYM\l"
+    .string "LEADER: KOGA\p"
+    .string "The Poisonous\n"
+    .string "Ninja Master$"
 
 FuchsiaCity_Text_ChanseySign::
-    .string "Name: CHANSEY\n"
-    .string "Catching one is all up to chance.$"
+    .string "Name: CHANSEY\p"
+    .string "Catching one is\n"
+    .string "all up to chance.$"
 
 FuchsiaCity_Text_VoltorbSign::
-    .string "Name: VOLTORB\n"
-    .string "The very image of a POKé BALL.$"
+    .string "Name: VOLTORB\p"
+    .string "The very image of\n"
+    .string "a POKé BALL.$"
 
 FuchsiaCity_Text_KangaskhanSign::
     .string "Name: KANGASKHAN\p"
-    .string "A maternal POKéMON that raises its\n"
-    .string "young in a pouch on its belly.$"
+    .string "A maternal POKéMON\n"
+    .string "that raises its\l"
+    .string "young in a pouch\l"
+    .string "on its belly.$"
 
 FuchsiaCity_Text_SlowpokeSign::
-    .string "Name: SLOWPOKE\n"
-    .string "Friendly and very slow moving.$"
+    .string "Name: SLOWPOKE\p"
+    .string "Friendly and very\n"
+    .string "slow moving.$"
 
 FuchsiaCity_Text_LaprasSign::
-    .string "Name: LAPRAS\n"
-    .string "A.K.A. the king of the seas.$"
+    .string "Name: LAPRAS\p"
+    .string "A.K.A. the king\n"
+    .string "of the seas.$"
 
 FuchsiaCity_Text_OmanyteSign::
-    .string "Name: OMANYTE\n"
-    .string "An extremely rare POKéMON that was\l"
-    .string "resurrected from a fossil.$"
+    .string "Name: OMANYTE\p"
+    .string "A POKéMON that\n"
+    .string "was resurrected\l"
+    .string "from a fossil.$"
 
 FuchsiaCity_Text_KabutoSign::
-    .string "Name: KABUTO\n"
-    .string "An extremely rare POKéMON that was\l"
-    .string "resurrected from a fossil.$"
+    .string "Name: KABUTO\p"
+    .string "A POKéMON that\n"
+    .string "was resurrected\l"
+    .string "from a fossil.$"
 
 @ Unused. May have been meant to be the placeholder text for the zoo mons, similar to RB's "!" text
 FuchsiaCity_Text_Ellipsis::
-    .string "……$"
+    .string "...$"
 
 Text_SubstituteTeach::
     .string "Aww, I wish I was a KANGASKHAN\n"
