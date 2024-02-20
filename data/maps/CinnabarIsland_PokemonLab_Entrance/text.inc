@@ -1,18 +1,19 @@
 CinnabarIsland_Gym_Text_PhotoOfBlaineAndFuji::
-    .string "It's a photo of BLAINE and\n"
-    .string "MR. FUJI.\p"
-    .string "They're standing shoulder to\n"
-    .string "shoulder with big grins.$"
+    .string "A photo of the\n"
+    .string "LAB`s founder,\l"
+    .string "DR.FUJI!$"
 
 CinnabarIsland_PokemonLab_Entrance_Text_StudyMonsExtensively::
-    .string "We study POKéMON extensively\n"
-    .string "here.\p"
-    .string "People often bring us rare\n"
-    .string "POKéMON for examination.$"
+    .string "We study POKéMON\n"
+    .string "extensively here.\p"
+    .string "People often bring\n"
+    .string "us rare POKéMON\l"
+    .string "for examination.$"
 
 CinnabarIsland_PokemonLab_Entrance_Text_PhotoOfLabFounderDrFuji::
-    .string "A photo of the LAB's\n"
-    .string "founder, DR.FUJI!$"
+    .string "A photo of the\n"
+    .string "LAB`s founder,\l"
+    .string "DR.FUJI!$"
 
 CinnabarIsland_PokemonLab_Entrance_Text_MeetingRoomSign::
     .string "POKéMON LAB\n"

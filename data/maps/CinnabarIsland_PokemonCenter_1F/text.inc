@@ -1,19 +1,27 @@
 CinnabarIsland_PokemonCenter_1F_Text_CinnabarGymLocked::
-    .string "POKéMON can still learn techniques\n"
-    .string "after cancelling evolution.\p"
-    .string "Evolution can wait until new\n"
-    .string "moves have been learned.$"
+    .string "POKéMON can still\n"
+    .string "learn techniques\l"
+    .string "after cancelling\l"
+    .string "evolution.\p"
+    .string "Evolution can wait\n"
+    .string "until new moves\l"
+    .string "have been learned.$"
 
 CinnabarIsland_PokemonCenter_1F_Text_VisitUnionRoom::
-    .string "Do you have any friends?\p"
-    .string "POKéMON you get in trades\n"
-    .string "grow very quickly.\p"
-    .string "I think it's worth a try!$"
+    .string "Do you have any\n"
+    .string "friends?\p"
+    .string "POKéMON you get\n"
+    .string "in trades grow\l"
+    .string "very quickly.\p"
+    .string "I think it`s\n"
+    .string "worth a try!$"
 
 CinnabarIsland_PokemonCenter_1F_Text_EvolutionCanWaitForNewMoves::
-    .string "You can cancel evolution.\n"
-    .string "When a POKéMON is evolving,\p"
-    .string "you can stop it and leave\n"
+    .string "You can cancel\n"
+    .string "evolution.\p"
+    .string "When a POKéMON is\n"
+    .string "evolving, you can\l"
+    .string "stop it and leave\l"
     .string "it the way it is.$"
 
 CinnabarIsland_PokemonCenter_1F_Text_ReadyToSailToOneIsland::

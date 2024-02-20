@@ -1,29 +1,33 @@
 CinnabarIsland_Text_DoorIsLocked::
-    .string "The door is locked…$"
+    .string "The door is\n"
+    .string "locked...$"
 
 CinnabarIsland_Text_BlaineLivedHereSinceBeforeLab::
-    .string "CINNABAR GYM's BLAINE is quite the\n"
-    .string "odd fellow.\p"
-    .string "He's lived on the island since way\n"
-    .string "before the LAB was built.$"
+    .string "CINNABAR GYM`s\n"
+    .string "BLAINE is an odd\l"
+    .string "man who has lived\l"
+    .string "here for decades.$"
 
 CinnabarIsland_Text_ScientistsExperimentInMansion::
-    .string "Scientists conduct experiments \n"
-    .string "in the burned-out building.\p"
-    .string "You know, the one they call the\n"
-    .string "POKéMON MANSION.$"
+    .string "Scientists conduct\n"
+    .string "experiments in\l"
+    .string "the burned out\l"
+    .string "building.$"
 
 CinnabarIsland_Text_IslandSign::
     .string "CINNABAR ISLAND\n"
-    .string "The Fiery Town of Burning Desire$"
+    .string "The Fiery Town of\l"
+    .string "Burning Desire$"
 
 CinnabarIsland_Text_PokemonLab::
     .string "POKéMON LAB$"
 
 CinnabarIsland_Text_GymSign::
-    .string "CINNABAR ISLAND POKéMON GYM\n"
-    .string "LEADER: BLAINE\l"
-    .string "The Hot-Headed Quiz Master!$"
+    .string "CINNABAR ISLAND\n"
+    .string "POKéMON GYM\l"
+    .string "LEADER: BLAINE\p"
+    .string "The Hot-Headed\n"
+    .string "Quiz Master!$"
 
 CinnabarIsland_Text_HeyIfItIsntPlayer::
     .string "Huh?\n"

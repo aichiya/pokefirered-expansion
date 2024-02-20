@@ -21,14 +21,15 @@ Text_MetronomeTaught::
 
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_HaveYouAFossilForMe::
     .string "Hiya!\p"
-    .string "I am important doctor.\n"
-    .string "I study here rare POKéMON fossils!\p"
-    .string "You!\n"
-    .string "Have you a fossil for me?$"
+    .string "I am important\n"
+    .string "doctor!\p"
+    .string "I study here rare\n"
+    .string "POKéMON fossils!\p"
+    .string "You! Have you a\n"
+    .string "fossil for me?$"
 
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_NoIsTooBad::
-    .string "Aiyah!\n"
-    .string "You come again!$"
+    .string "No! Is too bad!$"
 
 @ Unused
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_TakesTimeGoForWalkJP::
@@ -38,36 +39,45 @@ CinnabarIsland_PokemonLab_ExperimentRoom_Text_TakesTimeGoForWalkJP::
 
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_FossilMonBackToLife::
     .string "Where were you?\p"
-    .string "Your fossil is back to life!\n"
-    .string "It was {STR_VAR_1} like I think!$"
+    .string "Your fossil is\n"
+    .string "back to life!\p"
+    .string "It was {STR_VAR_1}\n"
+    .string "like I think!$"
 
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_ReceivedMonFromDoctor::
-    .string "{PLAYER} got {STR_VAR_1}!$"
+    .string "{PLAYER} got\n"
+    .string "{STR_VAR_1}!$"
 
 @ Unused
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_NoRoomForPokemon::
     .string "ポケモン　いっぱいで　もてないね！$"
 
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_ThatFossilIsOfMonMakeItLiveAgain::
-    .string "Oh!\n"
-    .string "That is {STR_VAR_2}!\p"
-    .string "It is fossil of {STR_VAR_1},\n"
-    .string "a POKéMON that is already extinct!\p"
-    .string "My Resurrection Machine will make\n"
-    .string "that POKéMON live again!$"
+    .string "Oh! That is\n"
+    .string "{STR_VAR_2}!\p"
+    .string "It is fossil of\n"
+    .string "{STR_VAR_1}, a\l"
+    .string "POKéMON that is\l"
+    .string "already extinct!\p"
+    .string "My Resurrection\n"
+    .string "Machine will make\l"
+    .string "that POKéMON live\l"
+    .string "again!$"
 
 @ TODO: Resolve text dump error below?
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_HandedFossilToWeirdDoctor::
-    .string "So!\n"
-    .string "You hurry and give me that!\p"
-    .string "{FONT_NORMAL}{PLAYER} handed over\n"
+    .string "So! You hurry and\n"
+    .string "give me that!\p"
+    .string "{PLAYER} handed over\n"
     .string "{STR_VAR_2}$"
 
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_TakesTimeGoForWalk::
-    .string "I take a little time!\n"
-    .string "You go for walk a little while!$"
+    .string "I take a little\n"
+    .string "time!\p"
+    .string "You go for walk a\n"
+    .string "little while!$"
 
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_YouComeAgain::
-    .string "Aiyah!\n"
-    .string "You come again!$"
+    .string "Aiyah! You come\n"
+    .string "again!$"
 
