@@ -1,33 +1,43 @@
 LavenderTown_Text_DoYouBelieveInGhosts::
-    .string "Do you believe in GHOSTs?$"
+    .string "Do you believe in\n"
+    .string "GHOSTs?$"
 
 LavenderTown_Text_SoThereAreBelievers::
-    .string "Really?\n"
-    .string "So there are believers...$"
+    .string "Really? So there\n"
+    .string "are believers...$"
 
 LavenderTown_Text_JustImaginingWhiteHand::
-    .string "Hahaha, I guess not.\p"
-    .string "That white hand on your shoulder,\n"
-    .string "it's not real.$"
+    .string "Hahaha, I guess\n"
+    .string "not.\p"
+    .string "That white hand\n"
+    .string "on your shoulder,\l"
+    .string "it`s not real.$"
 
 LavenderTown_Text_TownKnownAsMonGraveSite::
-    .string "This town is known as the grave\n"
-    .string "site of POKéMON.\p"
-    .string "Memorial services are held in\n"
+    .string "This town is known\n"
+    .string "as the grave site\l"
+    .string "of POKéMON.\p"
+    .string "Memorial services\n"
+    .string "are held in\l"
     .string "POKéMON TOWER.$"
 
 LavenderTown_Text_GhostsAppearedInTower::
-    .string "GHOSTs appeared in POKéMON TOWER.\p"
-    .string "I think they're the spirits of\n"
-    .string "POKéMON that the ROCKETs killed.$"
+    .string "GHOSTs appeared\n"
+    .string "in POKéMON TOWER.\p"
+    .string "I think they're\n"
+    .string "the spirits of\l"
+    .string "POKéMON that the\l"
+    .string "ROCKETs killed.$"
 
 LavenderTown_Text_TownSign::
     .string "LAVENDER TOWN\n"
-    .string "The Noble Purple Town$"
+    .string "The Noble Purple\l"
+    .string "Town$"
 
 LavenderTown_Text_SilphScopeNotice::
-    .string "New SILPH SCOPE!\n"
-    .string "Make the Invisible Plain to See!\p"
+    .string "New SILPH SCOPE!\p"
+    .string "Make the Invisible\l"
+    .string "Plain to See!\o"
     .string "SILPH CO.$"
 
 LavenderTown_Text_VolunteerPokemonHouse::
@@ -35,7 +45,7 @@ LavenderTown_Text_VolunteerPokemonHouse::
     .string "POKéMON HOUSE$"
 
 LavenderTown_Text_PokemonTowerSign::
-    .string "May the Souls of POKéMON\n"
-    .string "Rest Easy\p"
+    .string "May the Souls of\n"
+    .string "POKéMON Rest Easy\p"
     .string "POKéMON TOWER$"
 

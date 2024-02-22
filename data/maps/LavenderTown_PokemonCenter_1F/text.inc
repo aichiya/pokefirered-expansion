@@ -1,10 +1,13 @@
 LavenderTown_PokemonCenter_1F_Text_RocketsDoAnythingForMoney::
-    .string "TEAM ROCKET will do anything\n"
-    .string "for the sake of gold!$"
+    .string "TEAM ROCKET will\n"
+    .string "do anything for\l"
+    .string "the sake of gold!$"
 
 LavenderTown_PokemonCenter_1F_Text_CubonesMotherKilledByRockets::
-    .string "I saw CUBONE's mother die trying\n"
-    .string "to escape from TEAM ROCKET!$"
+    .string "I saw CUBONE`s\n"
+    .string "mother die trying\l"
+    .string "to escape from\l"
+    .string "TEAM ROCKET!$"
 
 LavenderTown_PokemonCenter_1F_Text_PeoplePayForCuboneSkulls::
     .string "CUBONEs wear skulls, right?\n"
