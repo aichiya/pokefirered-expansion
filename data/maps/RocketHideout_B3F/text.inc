@@ -1,6 +1,7 @@
 RocketHideout_B3F_Text_Grunt1Intro::
-    .string "Stop meddling in TEAM\n"
-    .string "ROCKET's affairs!$"
+    .string "Stop meddling in\n"
+    .string "TEAM ROCKET's\l"
+    .string "affairs!$"
 
 RocketHideout_B3F_Text_Grunt1Defeat::
     .string "ROCKET: Oof!\n"
@@ -8,19 +9,22 @@ RocketHideout_B3F_Text_Grunt1Defeat::
 
 RocketHideout_B3F_Text_Grunt1PostBattle::
     .string "SILPH SCOPE?\n"
-    .string "The machine the BOSS stole.\p"
-    .string "It's here somewhere.$"
+    .string "The machine the\l"
+    .string "BOSS stole. It's\l"
+    .string "here somewhere.$"
 
 RocketHideout_B3F_Text_Grunt2Intro::
-    .string "We got word from upstairs\n"
-    .string "that you were coming!$"
+    .string "We got word from\n"
+    .string "upstairs that you\l"
+    .string "were coming!$"
 
 RocketHideout_B3F_Text_Grunt2Defeat::
     .string "ROCKET: What?\n"
     .string "I lost? No!$"
 
 RocketHideout_B3F_Text_Grunt2PostBattle::
-    .string "Go ahead and go!\p"
-    .string "But, you need the LIFT KEY\n"
-    .string "to run the elevator!$"
+    .string "Go ahead and go!\n"
+    .string "But, you need the\l"
+    .string "LIFT KEY to run\l"
+    .string "the elevator!$"
 
