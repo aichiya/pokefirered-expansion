@@ -10,24 +10,29 @@ PokemonMansion_Text_NotQuiteYet::
 
 PokemonMansion_1F_Text_ArnieIntro::
     .string "I can't get out!\n"
-    .string "This old place is one big puzzle!$"
+    .string "This old place is\l"
+    .string "one big puzzle!$"
 
 PokemonMansion_1F_Text_ArnieDefeat::
     .string "BURGLAR: Oh no!\n"
     .string "My bag of loot!$"
 
 PokemonMansion_1F_Text_ArniePostBattle::
-    .string "switches open and close\n"
-    .string "alternating sets of doors!$"
+    .string "Switches open and\n"
+    .string "close alternating\l"
+    .string "sets of doors!$"
 
 PokemonMansion_1F_Text_NewMonDiscoveredInGuyanaJungle::
     .string "Diary: July 5\n"
-    .string "Guyana, South America\p"
-    .string "A new POKéMON was discovered deep\n"
+    .string "Guyana,\l"
+    .string "South America\p"
+    .string "A new POKéMON was\n"
+    .string "discovered deep\l"
     .string "in the jungle.$"
 
 PokemonMansion_1F_Text_ChristenedDiscoveredMonMew::
     .string "Diary: July 10\n"
-    .string "We christened the newly discovered\l"
+    .string "We christened the\l"
+    .string "newly discovered\l"
     .string "POKéMON, MEW.$"
 

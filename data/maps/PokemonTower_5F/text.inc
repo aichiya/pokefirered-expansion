@@ -1,7 +1,7 @@
 PokemonTower_5F_Text_RestHereInPurifiedSpace::
-    .string "Come, child!\n"
-    .string "I sealed this space\l"
-    .string "with white magic!$"
+    .string "Come, child! I\n"
+    .string "sealed this space\l"
+    .string "with white magic!\p"
     .string "You can rest here!$"
 
 PokemonTower_5F_Text_TammyIntro::
@@ -9,17 +9,19 @@ PokemonTower_5F_Text_TammyIntro::
     .string "your...soul...$"
 
 PokemonTower_5F_Text_TammyDefeat::
-    .string "Gasp!$"
+    .string "CHANNELER: Gasp!$"
 
 PokemonTower_5F_Text_TammyPostBattle::
-    .string "I was under possession!$"
+    .string "I was under\n"
+    .string "possession!$"
 
 PokemonTower_5F_Text_RuthIntro::
     .string "You...shall...\n"
     .string "join...us...$"
 
 PokemonTower_5F_Text_RuthDefeat::
-    .string "CHANNELER: What a nightmare!$"
+    .string "CHANNELER: What\n"
+    .string "a nightmare!$"
 
 PokemonTower_5F_Text_RuthPostBattle::
     .string "I was possessed!$"
@@ -31,7 +33,8 @@ PokemonTower_5F_Text_KarinaDefeat::
     .string "CHANNELER: Ha?$"
 
 PokemonTower_5F_Text_KarinaPostBattle::
-    .string "I regained my senses!$"
+    .string "I regained my\n"
+    .string "senses!$"
 
 PokemonTower_5F_Text_JanaeIntro::
     .string "Urgah...\n"
@@ -41,10 +44,13 @@ PokemonTower_5F_Text_JanaeDefeat::
     .string "CHANNELER: Whoo!$"
 
 PokemonTower_5F_Text_JanaePostBattle::
-    .string "I fell to evil spirits\n"
-    .string "despite my training!$"
+    .string "I fell to evil\n"
+    .string "spirits despite\l"
+    .string "my training!$"
 
 PokemonTower_5F_Text_PurifiedZoneMonsFullyHealed::
-    .string "Entered purified, protected zone!\n"
-    .string "{PLAYER}'s POKéMON are fully healed!$"
+    .string "Entered purified,\n"
+    .string "protected zone!\p"
+    .string "{PLAYER}'s POKéMON\n"
+    .string "are fully healed!$"
 

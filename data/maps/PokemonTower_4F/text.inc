@@ -3,21 +3,24 @@ PokemonTower_4F_Text_PaulaIntro::
     .string "Kwaaah!$"
 
 PokemonTower_4F_Text_PaulaDefeat::
-    .string "CHANNELER: Where is the ghost?$"
+    .string "CHANNELER: Where\n"
+    .string "is the ghost?$"
 
 PokemonTower_4F_Text_PaulaPostBattle::
-    .string "I must have been dreaming...$"
+    .string "I must have been\n"
+    .string "dreaming...$"
 
 PokemonTower_4F_Text_LaurelIntro::
-    .string "Be cursed with me!\n"
-    .string "Kwaaah!$"
+    .string "Be cursed with\n"
+    .string "me! Kwaaah!$"
 
 PokemonTower_4F_Text_LaurelDefeat::
     .string "CHANNELER: What!$"
 
 PokemonTower_4F_Text_LaurelPostBattle::
-    .string "We can't crack the identity\n"
-    .string "of the GHOSTs.$"
+    .string "We can't crack\n"
+    .string "the identity of\l"
+    .string "the GHOSTs.$"
 
 PokemonTower_4F_Text_JodyIntro::
     .string "Huhuhu...\n"
@@ -28,6 +31,7 @@ PokemonTower_4F_Text_JodyDefeat::
     .string "Who? What?$"
 
 PokemonTower_4F_Text_JodyPostBattle::
-    .string "May the departed sould of \n"
-    .string "POKéMON rest in peace...$"
+    .string "May the departed\n"
+    .string "souls of POKéMON\l"
+    .string "rest in peace...$"
 
