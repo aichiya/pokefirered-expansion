@@ -110,7 +110,7 @@ Route14_Text_IsaacPostBattle::
 
 Route14_Text_GeraldIntro::
     .string "We ride out here\n"
-    .string "because there`\l"
+    .string "because there's\l"
     .string "more room!$"
 
 Route14_Text_GeraldDefeat::

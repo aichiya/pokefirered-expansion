@@ -13,7 +13,7 @@ SSAnne_2F_Corridor_Text_RivalIntro::
     .string "you here!\p"
     .string "{PLAYER}, were you\n"
     .string "really invited?\p"
-    .string "So how`s your\n"
+    .string "So how's your\n"
     .string "POKéDEX coming?\p"
     .string "I already caught\n"
     .string "40 kinds, pal!\p"

@@ -1,5 +1,5 @@
 LavenderTown_Mart_Text_SearchingForStatRaiseItems::
-    .string "I`m searching for\n"
+    .string "I'm searching for\n"
     .string "items that raise\l"
     .string "the abilities of\l"
     .string "POKéMON during a\l"

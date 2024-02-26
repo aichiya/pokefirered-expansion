@@ -12,7 +12,7 @@ SilphCo_7F_Text_ObtainedLaprasFromEmployee::
     .string "LAPRAS.$"
 
 SilphCo_7F_Text_ExplainLapras::
-    .string "It`s` LAPRAS. It`s\n"
+    .string "It's's LAPRAS. It's\n"
     .string "very intelligent.\p"
     .string "We kept it in our\n"
     .string "lab, but it will\l"
@@ -26,7 +26,7 @@ SilphCo_7F_Text_ExplainLapras::
     .string "give you a lift!$"
 
 SilphCo_7F_Text_RocketBossWentToBoardroom::
-    .string "TEAM ROCKET`s\n"
+    .string "TEAM ROCKET's\n"
     .string "BOSS went to the\l"
     .string "boardroom! Is our\l"
     .string "PRESIDENT OK?$"
@@ -61,7 +61,7 @@ SilphCo_7F_Text_WowYouChasedOffTeamRocket::
     .string "all by yourself?$"
 
 SilphCo_7F_Text_ReallyDangerousHere::
-    .string "You! It`s really\n"
+    .string "You! It's really\n"
     .string "dangerous here!\l"
     .string "You came to save\l"
     .string "me? You can't!$"
@@ -159,7 +159,7 @@ SilphCo_7F_Text_RivalPostBattle::
     .string "By checking my\n"
     .string "POKéDEX, I'm\l"
     .string "starting to see\l"
-    .string "what`s strong and\l"
+    .string "what's strong and\l"
     .string "how they evolve!\p"
     .string "I'm going to the\n"
     .string "POKéMON LEAGUE\l"

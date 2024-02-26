@@ -178,7 +178,7 @@ ViridianCity_Gym_Text_GymGuyAdvice::
     .string "Yo! Champ in\n"
     .string "making!\p"
     .string "Even I don't know\n"
-    .string "VIRIDIAN LEADER`s\l"
+    .string "VIRIDIAN LEADER's\l"
     .string "identity!\p"
     .string "This will be the\n"
     .string "toughest of all\l"

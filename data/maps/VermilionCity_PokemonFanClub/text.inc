@@ -1,6 +1,6 @@
 VermilionCity_PokemonFanClub_Text_AdmirePikachusTail::
     .string "Won't you admire\n"
-    .string "my PIKACHU`s\l"
+    .string "my PIKACHU's\l"
     .string "adorable tail?$"
 
 VermilionCity_PokemonFanClub_Text_PikachuTwiceAsCute::
@@ -44,7 +44,7 @@ VermilionCity_PokemonFanClub_Text_ChairmansStory::
     .string "Then listen up!\p"
     .string "My favorite\n"
     .string "RAPIDASH...\p"
-    .string "It`s...cute...\n"
+    .string "It's...cute...\n"
     .string "lovely...smart...\l"
     .string "plus...amazing...\l"
     .string "you think so?..."
@@ -101,7 +101,7 @@ VermilionCity_PokemonFanClub_Text_ChairmanVeryVocalAboutPokemon::
     .string "POKéMON.$"
 
 VermilionCity_PokemonFanClub_Text_ListenPolitelyToOtherTrainers::
-    .string "Let`s all listen\n"
+    .string "Let's all listen\n"
     .string "politely to other\l"
     .string "trainers!$"
 

@@ -10,7 +10,7 @@ CeladonCity_Restaurant_Text_OftenGoToDrugstore::
     .string "DRUG STORE.$"
 
 CeladonCity_Restaurant_Text_PsstBasementUnderGameCorner::
-    .string "Psst! There`s a\n"
+    .string "Psst! There's a\n"
     .string "basement under\l"
     .string "the GAME CORNER!$"
 

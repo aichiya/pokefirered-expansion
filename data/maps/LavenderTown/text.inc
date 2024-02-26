@@ -11,7 +11,7 @@ LavenderTown_Text_JustImaginingWhiteHand::
     .string "not.\p"
     .string "That white hand\n"
     .string "on your shoulder,\l"
-    .string "it`s not real.$"
+    .string "it's not real.$"
 
 LavenderTown_Text_TownKnownAsMonGraveSite::
     .string "This town is known\n"
@@ -37,7 +37,7 @@ LavenderTown_Text_TownSign::
 LavenderTown_Text_SilphScopeNotice::
     .string "New SILPH SCOPE!\p"
     .string "Make the Invisible\l"
-    .string "Plain to See!\o"
+    .string "Plain to See!\l"
     .string "SILPH CO.$"
 
 LavenderTown_Text_VolunteerPokemonHouse::

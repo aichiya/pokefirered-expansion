@@ -140,7 +140,7 @@ VermilionCity_Gym_Text_GymStatuePlayerWon::
     .string "{RIVAL}, {PLAYER}$"
 
 VermilionCity_Gym_Text_NopeOnlyTrashHere::
-    .string "Nope, there`s\n"
+    .string "Nope, there's\n"
     .string "only trash here.$"
 
 VermilionCity_Gym_Text_SwitchUnderTrashFirstLockOpened::
@@ -164,7 +164,7 @@ VermilionCity_Gym_Text_SecondLockOpened::
     .string "opened!$"
 
 VermilionCity_Gym_Text_OnlyTrashLocksWereReset::
-    .string "Nope, there`s\n"
+    .string "Nope, there's\n"
     .string "only trash here.\l"
     .string "Hey! The electric\l"
     .string "locks were reset!$"

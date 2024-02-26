@@ -22,7 +22,7 @@ SSAnne_2F_Room2_Text_DaleDefeat::
 
 SSAnne_2F_Room2_Text_DalePostBattle::
     .string "Party?\p"
-    .string "The cruise ship`s\n"
+    .string "The cruise ship's\n"
     .string "party should be\l"
     .string "over by now.$"
 

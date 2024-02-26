@@ -133,7 +133,7 @@ SaffronCity_Gym_Text_TashaPostBattle::
 
 SaffronCity_Gym_Text_CameronIntro::
     .string "SABRINA is young,\n"
-    .string "but she`s also\l"
+    .string "but she's also\l"
     .string "our LEADER!\p"
     .string "You won't reach\n"
     .string "her easily!$"

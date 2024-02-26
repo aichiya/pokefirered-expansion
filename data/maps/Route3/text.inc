@@ -63,7 +63,7 @@ Route3_Text_GregPostBattle::
 
 Route3_Text_SallyIntro::
     .string "That look you\n"
-    .string "gave me, it`s so\l"
+    .string "gave me, it's so\l"
     .string "intriguing!$"
 
 Route3_Text_SallyDefeat::

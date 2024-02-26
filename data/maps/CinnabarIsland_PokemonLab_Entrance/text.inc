@@ -1,6 +1,6 @@
 CinnabarIsland_Gym_Text_PhotoOfBlaineAndFuji::
     .string "A photo of the\n"
-    .string "LAB`s founder,\l"
+    .string "LAB's founder,\l"
     .string "DR.FUJI!$"
 
 CinnabarIsland_PokemonLab_Entrance_Text_StudyMonsExtensively::
@@ -12,7 +12,7 @@ CinnabarIsland_PokemonLab_Entrance_Text_StudyMonsExtensively::
 
 CinnabarIsland_PokemonLab_Entrance_Text_PhotoOfLabFounderDrFuji::
     .string "A photo of the\n"
-    .string "LAB`s founder,\l"
+    .string "LAB's founder,\l"
     .string "DR.FUJI!$"
 
 CinnabarIsland_PokemonLab_Entrance_Text_MeetingRoomSign::

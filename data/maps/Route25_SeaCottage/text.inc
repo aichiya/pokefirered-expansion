@@ -5,7 +5,7 @@ Route25_SeaCottage_Text_ImBillHelpMeOutPal::
     .string "Call me BILL!\n"
     .string "I'm a true blue\l"
     .string "POKéMANIAC! Hey!\l"
-    .string "What`s with that\l"
+    .string "What's with that\l"
     .string "skeptical look?\p"
     .string "I'm not joshing\n"
     .string "you, I screwed up\l"
@@ -22,7 +22,7 @@ Route25_SeaCottage_Text_ImBillHelpMeOutLady::
     .string "Call me BILL!\n"
     .string "I'm a true blue\l"
     .string "POKéMANIAC! Hey!\l"
-    .string "What`s with that\l"
+    .string "What's with that\l"
     .string "skeptical look?\p"
     .string "I'm not joshing\n"
     .string "you, I screwed up\l"
@@ -115,7 +115,7 @@ Route25_SeaCottage_Text_TeleporterIsDisplayed::
 
 Route25_SeaCottage_Text_InitiatedTeleportersCellSeparator::
     .string "{PLAYER} initiated\n"
-    .string "TELEPORTER`s Cell\l"
+    .string "TELEPORTER's Cell\l"
     .string "Separator!$"
 
 Route25_SeaCottage_Text_BillsFavoriteMonList::

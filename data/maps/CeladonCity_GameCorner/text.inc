@@ -36,7 +36,7 @@ CeladonCity_GameCorner_Text_HereAreYourCoins::
 
 CeladonCity_GameCorner_Text_RumoredTeamRocketRunsThisPlace::
     .string "Keep this quiet.\p"
-    .string "It`s rumored that\n"
+    .string "It's rumored that\n"
     .string "this place is run\l"
     .string "by TEAM ROCKET.$"
 
@@ -70,7 +70,7 @@ CeladonCity_GameCorner_Text_GymGuyAdvice::
     .string "You have better\n"
     .string "things to do,\l"
     .string "champ in making!\p"
-    .string "CELADON GYM`s\n"
+    .string "CELADON GYM's\n"
     .string "LEADER is ERIKA!\l"
     .string "She uses grass-\l"
     .string "type POKéMON!\p"
@@ -92,7 +92,7 @@ CeladonCity_GameCorner_Text_SoEasyToGetHooked::
     .string "get hooked!$"
 
 CeladonCity_GameCorner_Text_WantSomeCoins::
-    .string "What`s up?\n"
+    .string "What's up?\n"
     .string "Want some coins?$"
 
 CeladonCity_GameCorner_Text_Received20CoinsFromNiceGuy::
@@ -167,6 +167,6 @@ CeladonCity_GameCorner_Text_OutToLunch::
     .string "This is reserved.$"
 
 CeladonCity_GameCorner_Text_SomeonesKeys::
-    .string "Someone`s keys!\n"
+    .string "Someone's keys!\n"
     .string "They'll be back.$"
 

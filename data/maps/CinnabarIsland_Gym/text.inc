@@ -76,7 +76,7 @@ CinnabarIsland_Gym_Text_QuinnDefeat::
 CinnabarIsland_Gym_Text_QuinnPostBattle::
     .string "I can't help\n"
     .string "stealing other\l"
-    .string "people`s POKéMON!$"
+    .string "people's POKéMON!$"
 
 CinnabarIsland_Gym_Text_AveryIntro::
     .string "You can't win!\n"

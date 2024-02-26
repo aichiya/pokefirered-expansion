@@ -3,7 +3,7 @@ CinnabarIsland_Text_DoorIsLocked::
     .string "locked...$"
 
 CinnabarIsland_Text_BlaineLivedHereSinceBeforeLab::
-    .string "CINNABAR GYM`s\n"
+    .string "CINNABAR GYM's\n"
     .string "BLAINE is an odd\l"
     .string "man who has lived\l"
     .string "here for decades.$"

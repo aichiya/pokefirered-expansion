@@ -7,13 +7,13 @@ CeladonCity_Text_GotMyKoffingInCinnabar::
 
 CeladonCity_Text_GymIsGreatFullOfWomen::
     .string "Heheh! This GYM\n"
-    .string "is great! It`s\l"
+    .string "is great! It's\l"
     .string "full of women!$"
 
 CeladonCity_Text_GameCornerIsBadForCitysImage::
     .string "The GAME CORNER\n"
     .string "is bad for our\l"
-    .string "city`s image.$"
+    .string "city's image.$"
 
 CeladonCity_Text_BlewItAllAtSlots::
     .string "Moan! I blew it\n"
@@ -39,7 +39,7 @@ CeladonCity_Text_GetLostOrIllPunchYou::
 
 CeladonCity_Text_KeepOutOfTeamRocketsWay::
     .string "Keep out of TEAM\n"
-    .string "ROCKET`s way!$"
+    .string "ROCKET's way!$"
 
 CeladonCity_Text_ExplainXAccuracyDireHit::
     .string "TRAINER TIPS\p"

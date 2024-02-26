@@ -61,7 +61,7 @@ PokemonLeague_ChampionsRoom_Text_Defeat::
     .string "LEAGUE champ?\p"
     .string "My reign is over\n"
     .string "already?\l"
-    .string "It`s not fair!$"
+    .string "It's not fair!$"
 
 PokemonLeague_ChampionsRoom_Text_Victory::
     .string "はーはッ！\n"

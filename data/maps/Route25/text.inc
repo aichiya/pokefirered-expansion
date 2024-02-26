@@ -9,7 +9,7 @@ Route25_Text_JoeyDefeat::
 
 Route25_Text_JoeyPostBattle::
     .string "All POKéMON have\n"
-    .string "weaknesses. It`s\l"
+    .string "weaknesses. It's\l"
     .string "best to raise\l"
     .string "different kinds.$"
 
@@ -112,7 +112,7 @@ Route25_Text_NobPostBattle::
 Route25_Text_WayneIntro::
     .string "You're going to\n"
     .string "see BILL? First,\l"
-    .string "let`s fight!$"
+    .string "let's fight!$"
 
 Route25_Text_WayneDefeat::
     .string "HIKER: You're\n"

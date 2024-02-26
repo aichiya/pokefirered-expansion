@@ -12,7 +12,7 @@ Route8_Text_AidanPostBattle::
     .string "school than this!$"
 
 Route8_Text_StanIntro::
-    .string "All right! Let`\n"
+    .string "All right! Let's\n"
     .string "roll the dice!$"
 
 Route8_Text_StanDefeat::
@@ -28,7 +28,7 @@ Route8_Text_GlennIntro::
     .string "to win at this!$"
 
 Route8_Text_GlennDefeat::
-    .string "SUPER NERD: It`\n"
+    .string "SUPER NERD: It's\n"
     .string "not logical!$"
 
 Route8_Text_GlennPostBattle::
@@ -116,7 +116,7 @@ Route8_Text_JuliaDefeat::
 Route8_Text_JuliaPostBattle::
     .string "I heard that\n"
     .string "CLEFAIRY evolves\l"
-    .string "when it`s exposed\l"
+    .string "when it's exposed\l"
     .string "to a MOON STONE.$"
 
 Route8_Text_UndergroundPathSign::

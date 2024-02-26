@@ -13,7 +13,7 @@ CinnabarIsland_PokemonCenter_1F_Text_VisitUnionRoom::
     .string "POKéMON you get\n"
     .string "in trades grow\l"
     .string "very quickly.\p"
-    .string "I think it`s\n"
+    .string "I think it's\n"
     .string "worth a try!$"
 
 CinnabarIsland_PokemonCenter_1F_Text_EvolutionCanWaitForNewMoves::

@@ -10,7 +10,7 @@ SaffronCity_MrPsychicsHouse_Text_ReceivedTM29FromMrPsychic::
 SaffronCity_MrPsychicsHouse_Text_ExplainTM29::
     .string "TM29 is PSYCHIC!\p"
     .string "It's can lower the\n"
-    .string "target`s SPECIAL\l"
+    .string "target's SPECIAL\l"
     .string "abilities.$"
 
 SaffronCity_MrPsychicsHouse_Text_YouveNoRoom::

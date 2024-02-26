@@ -39,7 +39,7 @@ CeladonCity_Condominiums_3F_Text_ItsTheGameProgram::
     .string "out the game!$"
 
 CeladonCity_Condominiums_3F_Text_SomeonesPlayingGame::
-    .string "Someone`s playing\n"
+    .string "Someone's playing\n"
     .string "a game instead of\l"
     .string "working!$"
 

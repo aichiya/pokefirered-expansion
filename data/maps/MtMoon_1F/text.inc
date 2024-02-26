@@ -26,7 +26,7 @@ MtMoon_1F_Text_JoshPostBattle::
     .string "girls.$"
 
 MtMoon_1F_Text_MiriamIntro::
-    .string "Wow! It`s way\n"
+    .string "Wow! It's way\n"
     .string "bigger in here\l"
     .string "than I thought!$"
 

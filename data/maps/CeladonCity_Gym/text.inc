@@ -1,6 +1,6 @@
 CeladonCity_Gym_Text_ErikaIntro::
     .string "Hello. Lovely\n"
-    .string "weather isn`t it?\l"
+    .string "weather isn't it?\l"
     .string "It's so pleasant.\p"
     .string "...Oh dear...\n"
     .string "I must have dozed\l"
@@ -135,7 +135,7 @@ CeladonCity_Gym_Text_LisaDefeat::
 CeladonCity_Gym_Text_LisaPostBattle::
     .string "Our LEADER, ERIKA,\n"
     .string "might be quiet,\l"
-    .string "but she`s also\l"
+    .string "but she's also\l"
     .string "very skilled!$"
 
 CeladonCity_Gym_Text_LoriIntro::

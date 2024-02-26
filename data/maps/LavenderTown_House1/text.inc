@@ -4,7 +4,7 @@ LavenderTown_House1_Text_Cubone::
 LavenderTown_House1_Text_RocketsKilledCubonesMother::
     .string "I hate those\n"
     .string "horrible ROCKETs!\p"
-    .string "That poor CUBONE`s\n"
+    .string "That poor CUBONE's\n"
     .string "mother...\p"
     .string "It was killed\n"
     .string "trying to escape\l"

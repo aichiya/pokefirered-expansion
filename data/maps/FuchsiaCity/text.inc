@@ -13,7 +13,7 @@ FuchsiaCity_Text_SafariZoneZooInFront::
     .string "catching POKéMON.$"
 
 FuchsiaCity_Text_WheresSara::
-    .string "ERIK: Where`s\n"
+    .string "ERIK: Where's\n"
     .string "SARA? I said I'd\l"
     .string "meet her here.$"
 
@@ -24,7 +24,7 @@ FuchsiaCity_Text_ItemBallInThere::
 
 FuchsiaCity_Text_CitySign::
     .string "FUCHSIA CITY\n"
-    .string "Behold! It`s\l"
+    .string "Behold! It's\l"
     .string "Passion Pink!$"
 
 FuchsiaCity_Text_SafariZoneSign::

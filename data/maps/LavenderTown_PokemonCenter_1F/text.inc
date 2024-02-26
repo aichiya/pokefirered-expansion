@@ -4,7 +4,7 @@ LavenderTown_PokemonCenter_1F_Text_RocketsDoAnythingForMoney::
     .string "the sake of gold!$"
 
 LavenderTown_PokemonCenter_1F_Text_CubonesMotherKilledByRockets::
-    .string "I saw CUBONE`s\n"
+    .string "I saw CUBONE's\n"
     .string "mother die trying\l"
     .string "to escape from\l"
     .string "TEAM ROCKET!$"

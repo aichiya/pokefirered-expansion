@@ -33,7 +33,7 @@ Route17_Text_VirgilDefeat::
 
 Route17_Text_VirgilPostBattle::
     .string "I love racing\n"
-    ,string "downhill!$"
+    .string "downhill!$"
 
 Route17_Text_BillyIntro::
     .string "We're BIKERs!\n"

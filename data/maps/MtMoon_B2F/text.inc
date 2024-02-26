@@ -20,7 +20,7 @@ MtMoon_B2F_Text_ThenThisFossilIsMine::
 MtMoon_B2F_Text_LabOnCinnabarRegeneratesFossils::
     .string "Far away, on\n"
     .string "CINNABAR ISLAND,\l"
-    .string "there`s a POKéMON\l"
+    .string "there's a POKéMON\l"
     .string "LAB.\p"
     .string "They do research\n"
     .string "on regenerating\l"

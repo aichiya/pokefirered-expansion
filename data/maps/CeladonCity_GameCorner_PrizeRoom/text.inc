@@ -1,7 +1,7 @@
 CeladonCity_GameCorner_PrizeRoom_Text_FancyThatPorygon::
     .string "I sure do fancy\n"
     .string "that PORYGON!\p"
-    .string "But, it`s hard to\n"
+    .string "But, it's hard to\n"
     .string "win at slots!$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_RakedItInToday::

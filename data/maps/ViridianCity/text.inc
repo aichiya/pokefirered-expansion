@@ -14,7 +14,7 @@ ViridianCity_Text_GymClosedWonderWhoLeaderIs::
     .string "LEADER is?$"
 
 ViridianCity_Text_ViridiansGymLeaderReturned::
-    .string "VIRIDIAN GYM`s\n"
+    .string "VIRIDIAN GYM's\n"
     .string "LEADER returned!$"
 
 ViridianCity_Text_WantToKnowAboutCaterpillarMons::
@@ -138,4 +138,4 @@ ViridianCity_Text_TM42_Contains::
     .string "TM42 contains\n"
     .string "DREAM EATER...\l"
     .string "...Snore...$"
-    
+

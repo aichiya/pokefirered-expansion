@@ -58,7 +58,7 @@ SaffronCity_Text_Pidgeot::
 SaffronCity_Text_SawRocketBossEscaping::
     .string "I saw the ROCKET\n"
     .string "BOSS escaping\l"
-    .string "SILPH`s building.$"
+    .string "SILPH's building.$"
 
 SaffronCity_Text_ImASecurityGuard::
     .string "I'm a security\n"

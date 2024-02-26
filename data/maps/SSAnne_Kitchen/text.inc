@@ -38,7 +38,7 @@ SSAnne_Kitchen_Text_IAmLeChefMainCourseIs::
 SSAnne_Kitchen_Text_SalmonDuSalad::
     .string "Salmon du Salad!\p"
     .string "Les guests may\n"
-    .string "gripe it`s fish\l"
+    .string "gripe it's fish\l"
     .string "again, however!$"
 
 SSAnne_Kitchen_Text_EelsAuBarbecue::

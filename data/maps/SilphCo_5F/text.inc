@@ -2,7 +2,7 @@ SilphCo_5F_Text_RocketsInUproarAboutIntruder::
     .string "TEAM ROCKET is\n"
     .string "in an uproar over\l"
     .string "some intruder.\l"
-    .string "That`s you right?$"
+    .string "That's you right?$"
 
 SilphCo_5F_Text_YoureOurHeroThankYou::
     .string "TEAM ROCKET took\n"

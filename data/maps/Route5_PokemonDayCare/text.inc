@@ -55,7 +55,7 @@ Route5_PokemonDayCare_Text_WhatWillYouBattleWith::
 Route5_PokemonDayCare_Text_MonHasGrownByXLevels::
 	.string "Your {STR_VAR_1}\n"
 	.string "has grown a lot!\p"
-	.string "By level, it`\n"
+	.string "By level, it's\n"
 	.string "grown by {STR_VAR_2}!\l"
 	.string "Aren't I great?$"
 

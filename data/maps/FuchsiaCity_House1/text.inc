@@ -1,5 +1,5 @@
 FuchsiaCity_House1_Text_WardenIsOldHasFalseTeeth::
-    .string "SAFARI ZONE`s\n"
+    .string "SAFARI ZONE's\n"
     .string "WARDEN is old,\l"
     .string "but still active!\p"
     .string "All his teeth are\n"
@@ -8,7 +8,7 @@ FuchsiaCity_House1_Text_WardenIsOldHasFalseTeeth::
 FuchsiaCity_House1_Text_BillIsMyGrandson::
     .string "Hmm? You've met\n"
     .string "BILL?\p"
-    .string "He`s my grandson!\p"
+    .string "He's my grandson!\p"
     .string "He always liked\n"
     .string "collecting things\l"
     .string "even as a child!$"

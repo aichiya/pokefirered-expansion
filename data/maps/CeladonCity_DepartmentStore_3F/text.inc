@@ -9,7 +9,7 @@ CeladonCity_DepartmentStore_3F_Text_OTStandsForOriginalTrainer::
 
 CeladonCity_DepartmentStore_3F_Text_BuddyTradingKangaskhanForHaunter::
     .string "All right!\p"
-    .string "My buddy`s going\n"
+    .string "My buddy's going\n"
     .string "to trade me his\l"
     .string "KANGASKHAN for my\l"
     .string "GRAVELER!$"
@@ -33,7 +33,7 @@ CeladonCity_DepartmentStore_3F_Text_ItsSuperNES::
     .string "It's an SNES!$"
 
 CeladonCity_DepartmentStore_3F_Text_AnRPG::
-    .string "An RPG! There`s\n"
+    .string "An RPG! There's\n"
     .string "no time for that!$"
 
 CeladonCity_DepartmentStore_3F_Text_SportsGame::

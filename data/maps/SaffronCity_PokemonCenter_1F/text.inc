@@ -5,7 +5,7 @@ SaffronCity_PokemonCenter_1F_Text_GrowthRatesDifferBySpecies::
 
 SaffronCity_PokemonCenter_1F_Text_SilphCoVictimOfFame::
     .string "SILPH CO. is very\n"
-    .string "famous. That`s\l"
+    .string "famous. That's\l"
     .string "why it attracted\l"
     .string "TEAM ROCKET!$"
 

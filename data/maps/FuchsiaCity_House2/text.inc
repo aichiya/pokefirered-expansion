@@ -1,6 +1,6 @@
 FuchsiaCity_House2_Text_DoYouLikeToFish::
     .string "I'm the FISHING\n"
-    .string "GURU`s older\l"
+    .string "GURU's older\l"
     .string "brother!\p"
     .string "I simply Looove\n"
     .string "fishing!\p"
@@ -27,7 +27,7 @@ FuchsiaCity_House2_Text_GoodRodCanCatchBetterMons::
     .string "catch much better POKéMON.$"
 
 FuchsiaCity_House2_Text_OhThatsDisappointing::
-    .string "Oh... that`s so\n"
+    .string "Oh... that's so\n"
     .string "disappointing...$"
 
 FuchsiaCity_House2_Text_HowAreTheFishBiting::

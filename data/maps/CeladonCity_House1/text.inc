@@ -13,7 +13,7 @@ CeladonCity_House1_Text_DontTouchGameCornerPoster::
     .string "Don't touch the\n"
     .string "poster at the\l"
     .string "GAME CORNER!\p"
-    .string "There`s no secret\n"
+    .string "There's no secret\n"
     .string "switch behind it!$"
 
 @ Text for the replaced altars in the rocket chiefs house / celadon mansion

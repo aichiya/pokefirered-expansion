@@ -29,7 +29,7 @@ Route12_Text_NedDefeat::
     .string "Just a small fry!$"
 
 Route12_Text_NedPostBattle::
-    .string "Hang on! My line`\n"
+    .string "Hang on! My line's\n"
     .string "snagged!$"
 
 Route12_Text_ChipIntro::
@@ -89,7 +89,7 @@ Route12_Text_ElliotIntro::
     .string "working!$"
 
 Route12_Text_ElliotDefeat::
-    .string "FISHERMAN: It`\n"
+    .string "FISHERMAN: It's\n"
     .string "not easy...$"
 
 Route12_Text_ElliotPostBattle::

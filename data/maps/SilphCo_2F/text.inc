@@ -13,7 +13,7 @@ SilphCo_2F_Text_ConnorPostBattle::
     .string "ROCKET!$"
 
 SilphCo_2F_Text_JerryIntro::
-    .string "It`s off limits\n"
+    .string "It's off limits\n"
     .string "here! Go home!$"
 
 SilphCo_2F_Text_JerryDefeat::
@@ -65,7 +65,7 @@ SilphCo_2F_Text_PutTM36Away::
 SilphCo_2F_Text_TM36_Contains::
     .string "TM36 is\n"
     .string "SELFDESTRUCT!\p"
-    .string "It`s powerful, but\n"
+    .string "It's powerful, but\n"
     .string "the POKéMON that\l"
     .string "uses it faints!\l"
     .string "Be careful.$"

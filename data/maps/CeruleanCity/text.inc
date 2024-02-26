@@ -20,14 +20,14 @@ CeruleanCity_Text_RivalDefeat::
 CeruleanCity_Text_RivalPostBattle::
     .string "{RIVAL}: Hey,\n"
     .string "guess what?\p"
-    .string "I went to BILL`s\n"
+    .string "I went to BILL's\n"
     .string "and got him to\l"
     .string "show me his rare\l"
     .string "POKéMON!\p"
     .string "That added a lot\n"
     .string "of pages to my\l"
     .string "POKéDEX!\p"
-    .string "After all, BILL`s\n"
+    .string "After all, BILL's\n"
     .string "world famous as a\l"
     .string "POKéMANIAC!\p"
     .string "He invented the\n"
@@ -94,7 +94,7 @@ CeruleanCity_Text_MakeRoomForThisCantRun::
 CeruleanCity_Text_TrainerLifeIsToughIsntIt::
     .string "You're a trainer\n"
     .string "too? Collecting,\l"
-    .string "fighting, it`s a\l"
+    .string "fighting, it's a\l"
     .string "tough life.$"
 
 CeruleanCity_Text_YouCanCutDownSmallTrees::
@@ -151,7 +151,7 @@ CeruleanCity_Text_HardToControlMonsObedience::
     .string "No! That's wrong!\p"
     .string "It's so hard to\n"
     .string "control POKéMON!\p"
-    .string "Your POKéMON`s\n"
+    .string "Your POKéMON's\n"
     .string "obedience depends\l"
     .string "on your abilities\l"
     .string "as a trainer!$"

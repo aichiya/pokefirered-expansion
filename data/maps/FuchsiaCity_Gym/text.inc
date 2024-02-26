@@ -56,7 +56,7 @@ FuchsiaCity_Gym_Text_MakeSpaceForThis::
     .string "this, child!$"
 
 FuchsiaCity_Gym_Text_KaydenIntro::
-    .string "Strength isn`t\n"
+    .string "Strength isn't\n"
     .string "the key for\l"
     .string "POKéMON!\p"
     .string "It's strategy!\p"
@@ -161,7 +161,7 @@ FuchsiaCity_Gym_Text_GymGuyAdvice::
     .string "riddled with\l"
     .string "invisible walls!\p"
     .string "KOGA might appear\n"
-    .string "close, but he`s\l"
+    .string "close, but he's\l"
     .string "blocked off!\p"
     .string "You have to find\n"
     .string "gaps in the walls\l"

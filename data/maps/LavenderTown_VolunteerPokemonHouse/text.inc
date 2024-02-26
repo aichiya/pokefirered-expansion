@@ -16,7 +16,7 @@ LavenderTown_VolunteerPokemonHouse_Text_MrFujiWasPrayingForCubonesMother::
 LavenderTown_VolunteerPokemonHouse_Text_MrFujiLooksAfterOrphanedMons::
     .string "This is really\n"
     .string "MR.FUJI's house.\p"
-    .string "He`s really kind!\p"
+    .string "He's really kind!\p"
     .string "He looks after\n"
     .string "abandoned and\l"
     .string "orphaned POKéMON!$"
@@ -67,7 +67,7 @@ LavenderTown_VolunteerPokemonHouse_Text_GrandPrizeDrawingClipped::
     .string "Drawing!\p"
     .string "The application\n"
     .string "form is...\p"
-    .string "Gone! It`s been\n"
+    .string "Gone! It's been\n"
     .string "clipped out!$"
 
 LavenderTown_VolunteerPokemonHouse_Text_PokemonMagazinesLineShelf::

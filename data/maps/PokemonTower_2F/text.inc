@@ -6,7 +6,7 @@ PokemonTower_2F_Text_RivalIntro::
     .string "don't look dead!\p"
     .string "I can at least\n"
     .string "make them faint!\l"
-    .string "Let`s go, pal!$"
+    .string "Let's go, pal!$"
 
 PokemonTower_2F_Text_RivalDefeat::
     .string "{RIVAL}: What?\n"

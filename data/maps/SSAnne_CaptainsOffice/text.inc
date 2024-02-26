@@ -5,7 +5,7 @@ SSAnne_CaptainsOffice_Text_CaptainIFeelSeasick::
 
 SSAnne_CaptainsOffice_Text_RubbedCaptainsBack::
     .string "{PLAYER} rubbed\n"
-    .string "the CAPTAIN`s\l"
+    .string "the CAPTAIN's\l"
     .string "back!\p"
     .string "Rub-rub...\n"
     .string "Rub-rub...$"
@@ -53,6 +53,6 @@ SSAnne_CaptainsOffice_Text_YuckShouldntHaveLooked::
 SSAnne_CaptainsOffice_Text_HowToConquerSeasickness::
     .string "How to Conquer\n"
     .string "Seasickness...\l"
-    .string "The CAPTAIN`s\l"
+    .string "The CAPTAIN's\l"
     .string "reading this!$"
 
