@@ -23,7 +23,7 @@ PalletTown_PlayersHouse_1F_Text_LookingGreatTakeCare::
     .string "MOM: Oh good!\n"
     .string "You and your\l"
     .string "POKéMON are\l"
-    .string "looking great!"
+    .string "looking great!\l"
     .string "Take care now!$"
 
 PalletTown_PlayersHouse_1F_Text_MovieOnTVFourBoysOnRailroad::

@@ -1284,56 +1284,67 @@ TwoIsland_JoyfulGameCorner_EventScript_ShowDodrioBerryPickingRecords::
 	end
 
 CableClub_Text_WelcomeWhichCableClubService::
-	.string "Welcome to the POKéMON CABLE\n"
-	.string "CLUB.\p"
-	.string "Which of our services do you wish\n"
-	.string "to use?$"
+	.string "Welcome to the\n"
+	.string "Cable Club.\p"
+	.string "Which of our\n"
+	.string "services do you\l"
+	.string "wish to use?$"
 
 CableClub_Text_WhichService::
-	.string "Which of our services do you wish\n"
-	.string "to use?$"
+	.string "Which of our\n"
+	.string "services do you\l"
+	.string "wish to use?$"
 
 CableClub_Text_TradeMonsUsingLinkCable::
-	.string "Trade POKéMON with another player\n"
-	.string "using a GBA Game Link cable.$"
+	.string "Trade POKéMON\n"
+	.string "with another\l"
+	.string "player using a\l"
+	.string "Game Link cable.$"
 
 CableClub_Text_BattleUsingLinkCable::
-	.string "You may battle another TRAINER\n"
-	.string "using a GBA Game Link cable.$"
+	.string "You may battle\n"
+	.string "another player\l"
+	.string "using a Game\l"
+	.string "Link cable.$"
 
 @ Unused, translated in Emerald
 CableClub_Text_CloseThisMenu::
 	.string "おわります$"
 
 CableClub_Text_NeedTwoMonsForDoubleBattle::
-	.string "For a DOUBLE BATTLE, you must\n"
-	.string "have at least two POKéMON.$"
+	.string "For a DOUBLE BATTLE,\n"
+	.string "you must have at\l"
+	.string "least two POKéMON.$"
 
 CableClub_Text_NeedTwoMonsToTrade::
-	.string "For trading, you must have at\n"
-	.string "least two POKéMON with you.$"
+	.string "For trading, you\n"
+	.string "must have at least\l"
+	.string "two POKéMON.$"
 
 CableClub_Text_CantTradeEnigmaBerry::
-	.string "A POKéMON holding the {STR_VAR_1}\n"
-	.string "BERRY can't be traded.$"
+	.string "A POKéMON holding\n"
+	.string "{STR_VAR_1} can't\l"
+	.string "be traded.$"
 
 CableClub_Text_PleaseWaitBCancel::
 	.string "Please wait.\n"
 	.string "… … B Button: Cancel$"
 
 CableClub_Text_WhenAllPlayersReadyAConfirmBCancel::
-	.string "When all players are ready…\n"
-	.string "A Button: Confirm\l"
-	.string "B Button: Cancel$"
+	.string "When all players\n"
+	.string "are ready...\l"
+	.string "A: Confirm\l"
+	.string "B: Cancel$"
 
 CableClub_Text_StartLinkWithXPlayersAConfirmBCancel::
-	.string "Start link with {STR_VAR_1} players.\n"
-	.string "A Button: Confirm\l"
-	.string "B Button: Cancel$"
+	.string "Start link with\n"
+	.string "{STR_VAR_1} players.\l"
+	.string "A: Confirm\l"
+	.string "B: Cancel$"
 
 CableClub_Text_AwaitingLinkupBCancel::
-	.string "Awaiting linkup…\n"
-	.string "… … B Button: Cancel$"
+	.string "Awaiting link...\n"
+	.string "... B: Cancel$"
 
 @ Unused, translated in Emerald
 CableClub_Text_OkayToSaveProgress::

@@ -7,11 +7,14 @@ PewterCity_Text_ClefairyCameFromMoon::
     .string "fell on MT.MOON.$"
 
 PewterCity_Text_BrockOnlySeriousTrainerHere::
-    .string "There aren't many serious POKéMON\n"
+    .string "There aren't many\n"
+    .string "serious POKéMON\l"
     .string "trainers here!\p"
-    .string "They're all like BUG CATCHERs,\n"
-    .string "but PEWTER GYM's BROCK\l"
-    .string "is totally into it!$"
+    .string "They're all like\n"
+    .string "BUG CATCHERs,\l"
+    .string "but PEWTER GYM's\l"
+    .string "BROCK is totally\l"
+    .string "into it!$"
 
 PewterCity_Text_DidYouCheckOutMuseum::
     .string "Did you check out\n"
