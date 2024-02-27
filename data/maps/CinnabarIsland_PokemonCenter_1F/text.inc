@@ -13,7 +13,7 @@ CinnabarIsland_PokemonCenter_1F_Text_VisitUnionRoom::
     .string "POKéMON you get\n"
     .string "in trades grow\l"
     .string "very quickly.\p"
-    .string "I think it's\n"
+    .string "I think itÙ\n"
     .string "worth a try!$"
 
 CinnabarIsland_PokemonCenter_1F_Text_EvolutionCanWaitForNewMoves::
@@ -29,9 +29,9 @@ CinnabarIsland_PokemonCenter_1F_Text_ReadyToSailToOneIsland::
     .string "Ready to set sail to ONE ISLAND?$"
 
 CinnabarIsland_PokemonCenter_1F_Text_OhNotDoneYet::
-    .string "Oh, you're still not done yet?$"
+    .string "Oh, youàe still not done yet?$"
 
 CinnabarIsland_PokemonCenter_1F_Text_LetsGo::
-    .string "Well, that's it.\n"
-    .string "Let's go!$"
+    .string "Well, thatÙ it.\n"
+    .string "LetÙ go!$"
 

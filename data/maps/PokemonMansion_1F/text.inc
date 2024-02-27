@@ -1,13 +1,13 @@
 PokemonMansion_1F_Text_TedIntro::
     .string "Who are you?\n"
-    .string "There shouldn't be anyone here.$"
+    .string "There shouldnÑ be anyone here.$"
 
 PokemonMansion_1F_Text_TedDefeat::
     .string "SCIENTIST: Ouch!$"
 
 PokemonMansion_1F_Text_TedPostBattle::
-    .string "A key? I don't know what\n"
-    .string "you're talking about.$"
+    .string "A key? I donÑ know what\n"
+    .string "youàe talking about.$"
 
 PokemonMansion_1F_Text_JohnsonIntro::
     .string "W-w-waah! You startled me!\n"
@@ -15,7 +15,7 @@ PokemonMansion_1F_Text_JohnsonIntro::
 
 PokemonMansion_1F_Text_JohnsonDefeat::
     .string "Tch!\n"
-    .string "I can't get any wins.$"
+    .string "I canÑ get any wins.$"
 
 PokemonMansion_1F_Text_JohnsonPostBattle::
     .string "I was exploring here by myself,\n"

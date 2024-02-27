@@ -5,7 +5,7 @@ VermilionCity_House2_Text_DoYouHaveMonWantToTradeForMyMon::
 	.string "for {STR_VAR_2}?$"
 
 VermilionCity_House2_Text_ThatsTooBad::
-	.string "That's too bad.$"
+	.string "ThatÙ too bad.$"
 
 VermilionCity_House2_Text_ThisIsNoMon::
 	.string "...This is no\n"

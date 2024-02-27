@@ -27,7 +27,7 @@ RockTunnel_B1F_Text_CooperIntro::
 
 RockTunnel_B1F_Text_CooperDefeat::
     .string "POKéMANIAC: Shoot!\n"
-    .string "I'm so jealous!$"
+    .string "Iá so jealous!$"
 
 RockTunnel_B1F_Text_CooperPostBattle::
     .string "When you finish your POKéDEX,\n"
@@ -38,7 +38,7 @@ RockTunnel_B1F_Text_SteveIntro::
     .string "costume players?$"
 
 RockTunnel_B1F_Text_SteveDefeat::
-    .string "POKéMANIAC: Well, that's that.$"
+    .string "POKéMANIAC: Well, thatÙ that.$"
 
 RockTunnel_B1F_Text_StevePostBattle::
     .string "Costume players dress up\n"
@@ -50,14 +50,14 @@ RockTunnel_B1F_Text_AllenIntro::
 
 RockTunnel_B1F_Text_AllenDefeat::
     .string "HIKER: I give!\n"
-    .string "You're a better technician!$"
+    .string "Youàe a better technician!$"
 
 RockTunnel_B1F_Text_AllenPostBattle::
-    .string "In mountains, you'll often find\n"
+    .string "In mountains, youÛl often find\n"
     .string "rock-type POKéMON.$"
 
 RockTunnel_B1F_Text_MarthaIntro::
-    .string "I don't often come here,\n"
+    .string "I donÑ often come here,\n"
     .string "but I will fight you.$"
 
 RockTunnel_B1F_Text_MarthaDefeat::
@@ -75,17 +75,17 @@ RockTunnel_B1F_Text_EricDefeat::
     .string "HIKER: Fired away!$"
 
 RockTunnel_B1F_Text_EricPostBattle::
-    .string "I'll raise my POKéMON to\n"
+    .string "IÛl raise my POKéMON to\n"
     .string "beat yours, kid!$"
 
 RockTunnel_B1F_Text_WinstonIntro::
     .string "I draw POKéMON\n"
-    .string "when I'm home.$"
+    .string "when Iá home.$"
 
 RockTunnel_B1F_Text_WinstonDefeat::
     .string "POKéMANIAC: Whew!\n"
-    .string "I'm exhausted!$"
+    .string "Iá exhausted!$"
 
 RockTunnel_B1F_Text_WinstonPostBattle::
-    .string "I'm an artist, not a fighter.$"
+    .string "Iá an artist, not a fighter.$"
 

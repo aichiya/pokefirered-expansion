@@ -11,5 +11,5 @@ PewterCity_House2_Text_MonsEasierCatchIfStatused::
     .string "easier to catch\l"
     .string "when they are\l"
     .string "hurt or asleep!\p"
-    .string "But, it's not a\n"
+    .string "But, itÙ not a\n"
     .string "sure thing!$"

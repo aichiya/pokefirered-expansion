@@ -1,7 +1,7 @@
 VermilionCity_Text_GrimerMultipliesInSludge::
-    .string "We're careful\n"
+    .string "Weàe careful\n"
     .string "about pollution!\p"
-    .string "We've heard GRIMER\n"
+    .string "Weße heard GRIMER\n"
     .string "multiplies in\l"
     .string "toxic sludge!$"
 
@@ -13,11 +13,11 @@ VermilionCity_Text_DidYouSeeSSAnneInHarbor::
 VermilionCity_Text_SSAnneHasDepartedForYear::
     .string "So, the S.S.ANNE has\n"
     .string "departed!\p"
-    .string "She'll be back in\n"
+    .string "SheÛl be back in\n"
     .string "about a year.$"
 
 VermilionCity_Text_BuildingOnThisLand::
-    .string "I'm putting up a\n"
+    .string "Iá putting up a\n"
     .string "building on this\l"
     .string "plot of land.\p"
     .string "My POKéMON is\n"
@@ -86,7 +86,7 @@ VermilionCity_Text_FlashedSSTicket::
     .string "S.S.ANNE!$"
 
 VermilionCity_Text_DontHaveNeededSSTicket::
-    .string "{PLAYER} doesn't\n"
+    .string "{PLAYER} doesnÑ\n"
     .string "have the needed\l"
     .string "S.S.TICKET.\p"
     .string "Sorry!\p"
@@ -102,7 +102,7 @@ VermilionCity_Text_BoardSeagallopTriPass::
     .string "a SEAGALLOP ferry?$"
 
 VermilionCity_Text_Seagallop7Departing::
-    .string "Okay, everything's in order.\p"
+    .string "Okay, everythingÙ in order.\p"
     .string "SEAGALLOP HI-SPEED 7 will be\n"
     .string "departing immediately.$"
 
@@ -112,15 +112,15 @@ VermilionCity_Text_BoardSeagallopRainbowPass::
     .string "a SEAGALLOP ferry?$"
 
 VermilionCity_Text_OhMysticTicketTakeYouToNavelRock::
-    .string "Oh! That's a MYSTICTICKET!\n"
+    .string "Oh! ThatÙ a MYSTICTICKET!\n"
     .string "Now that is rare.\p"
-    .string "We'll be happy to take you to\n"
+    .string "WeÛl be happy to take you to\n"
     .string "NAVEL ROCK anytime.$"
 
 VermilionCity_Text_OhAuroraTicketTakeYouToBirthIsland::
-    .string "Oh! That's an AURORATICKET!\n"
+    .string "Oh! ThatÙ an AURORATICKET!\n"
     .string "Now that is rare.\p"
-    .string "We'll be happy to take you to\n"
+    .string "WeÛl be happy to take you to\n"
     .string "BIRTH ISLAND anytime.$"
 
 VermilionCity_Text_BoardSeagallopFerry::
@@ -128,13 +128,13 @@ VermilionCity_Text_BoardSeagallopFerry::
     .string "a SEAGALLOP ferry?$"
 
 VermilionCity_Text_Seagallop10Departing::
-    .string "Okay, everything's in order for you\n"
+    .string "Okay, everythingÙ in order for you\n"
     .string "to board a special ferry.\p"
     .string "SEAGALLOP HI-SPEED 10 will be\n"
     .string "departing immediately.$"
 
 VermilionCity_Text_Seagallop12Departing::
-    .string "Okay, everything's in order for you\n"
+    .string "Okay, everythingÙ in order for you\n"
     .string "to board a special ferry.\p"
     .string "SEAGALLOP HI-SPEED 12 will be\n"
     .string "departing immediately.$"
@@ -142,12 +142,12 @@ VermilionCity_Text_Seagallop12Departing::
 VermilionCity_Text_Route2AideHasPackageForYou::
     .string "Oh, hello, {PLAYER}!\n"
     .string "How are you doing?\p"
-    .string "It's me, one of PROF. OAK's AIDES.\p"
+    .string "ItÙ me, one of PROF. OAKÙ AIDES.\p"
     .string "Did you meet the other AIDE?\p"
     .string "He had a package from PROF. OAK\n"
     .string "for you, {PLAYER}.\p"
-    .string "He said he'd look for you around\n"
+    .string "He said heÚ look for you around\n"
     .string "ROUTE 2, {PLAYER}.\p"
-    .string "If you're in the ROUTE 2 area,\n"
+    .string "If youàe in the ROUTE 2 area,\n"
     .string "please look for him.$"
 

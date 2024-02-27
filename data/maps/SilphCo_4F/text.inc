@@ -1,6 +1,6 @@
 SilphCo_4F_Text_CantYouSeeImHiding::
-    .string "Sssh! Can't you\n"
-    .string "see I'm hiding?$"
+    .string "Sssh! CanÑ you\n"
+    .string "see Iá hiding?$"
 
 SilphCo_4F_Text_TeamRocketIsGone::
     .string "Huh? TEAM ROCKET\n"

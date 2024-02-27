@@ -1,5 +1,5 @@
 CeladonCity_DepartmentStore_Roof_Text_ImThirstyGiveHerDrink::
-    .string "I'm thirsty!\n"
+    .string "Iá thirsty!\n"
     .string "I want something\l"
     .string "to drink!\p"
     .string "Give her a drink?$"
@@ -50,24 +50,24 @@ CeladonCity_DepartmentStore_Roof_Text_ExplainTM49::
     .string "TRI ATTACK!$"
 
 CeladonCity_DepartmentStore_Roof_Text_DontHaveSpaceForThis::
-    .string "You don't have\n"
+    .string "You donÑ have\n"
     .string "space for this!$"
 
 CeladonCity_DepartmentStore_Roof_Text_ImNotThirstyAfterAll::
     .string "No thank you!\n"
-    .string "I'm not thirsty\l"
+    .string "Iá not thirsty\l"
     .string "after all!$"
 
 CeladonCity_DepartmentStore_Roof_Text_MySisterIsImmature::
     .string "My sister is a\n"
     .string "trainer, believe\l"
     .string "it or not.\p"
-    .string "But, she's so\n"
+    .string "But, sheÙ so\n"
     .string "immature, she\l"
     .string "drives me nuts!$"
 
 CeladonCity_DepartmentStore_Roof_Text_ImThirstyIWantDrink::
-    .string "I'm thirsty!\n"
+    .string "Iá thirsty!\n"
     .string "I want something\l"
     .string "to drink!$"
 
@@ -77,7 +77,7 @@ CeladonCity_DepartmentStore_Roof_Text_FloorSign::
 
 CeladonCity_DepartmentStore_Roof_Text_VendingMachineWhatDoesItHave::
     .string "A vending machine!\n"
-    .string "Here's the menu!$"
+    .string "HereÙ the menu!$"
 
 CeladonCity_DepartmentStore_Roof_Text_NotEnoughMoney::
     .string "Oops, not enough\n"
@@ -87,7 +87,7 @@ CeladonCity_DepartmentStore_Roof_Text_DrinkCanPoppedOut::
     .string "{STR_VAR_1} popped out!$"
 
 CeladonCity_DepartmentStore_Roof_Text_NoMoreRoomForStuff::
-    .string "There's no more\n"
+    .string "ThereÙ no more\n"
     .string "room for stuff!$"
 
 CeladonCity_DepartmentStore_Roof_Text_NotThirsty::

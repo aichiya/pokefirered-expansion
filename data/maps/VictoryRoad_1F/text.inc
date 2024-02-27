@@ -12,7 +12,7 @@ VictoryRoad_1F_Text_NaomiPostBattle::
     .string "lose to anybody!$"
 
 VictoryRoad_1F_Text_RolandoIntro::
-    .string "I can see you're\n"
+    .string "I can see youàe\n"
     .string "good! Let me see\l"
     .string "exactly how good!$"
 
@@ -21,6 +21,6 @@ VictoryRoad_1F_Text_RolandoDefeat::
     .string "had a chance...$"
 
 VictoryRoad_1F_Text_RolandoPostBattle::
-    .string "I concede, you're\n"
+    .string "I concede, youàe\n"
     .string "better than me!$"
 

@@ -1,6 +1,6 @@
 OneIsland_TreasureBeach_Text_AmaraIntro::
     .string "Lying back, rocked by the waves…\n"
-    .string "It's exquisite.$"
+    .string "ItÙ exquisite.$"
 
 OneIsland_TreasureBeach_Text_AmaraDefeat::
     .string "I lost…\n"
@@ -13,6 +13,6 @@ OneIsland_TreasureBeach_Text_AmaraPostBattle::
 OneIsland_TreasureBeach_Text_GoodThingsWashUpOnBeach::
     .string "Good things get washed up by the\n"
     .string "ocean current onto this beach.\p"
-    .string "That's why I often come here for\n"
+    .string "ThatÙ why I often come here for\n"
     .string "some beachcombing.$"
 

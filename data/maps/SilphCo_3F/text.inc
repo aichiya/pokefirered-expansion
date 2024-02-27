@@ -33,7 +33,7 @@ SilphCo_3F_Text_JosePostBattle::
     .string "Humph...\p"
     .string "TEAM ROCKET said\n"
     .string "that if I helped\l"
-    .string "them, they'd let\l"
+    .string "them, theyÚ let\l"
     .string "me study POKéMON!$"
 
 SilphCo_3F_Text_FloorSign::

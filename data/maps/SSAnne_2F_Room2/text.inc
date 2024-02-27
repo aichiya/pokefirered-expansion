@@ -17,12 +17,12 @@ SSAnne_2F_Room2_Text_DaleIntro::
     .string "fished up!$"
 
 SSAnne_2F_Room2_Text_DaleDefeat::
-    .string "FISHERMAN: I'm\n"
+    .string "FISHERMAN: Iá\n"
     .string "all out!$"
 
 SSAnne_2F_Room2_Text_DalePostBattle::
     .string "Party?\p"
-    .string "The cruise ship's\n"
+    .string "The cruise shipÙ\n"
     .string "party should be\l"
     .string "over by now.$"
 

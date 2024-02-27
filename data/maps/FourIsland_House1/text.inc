@@ -22,5 +22,5 @@ JPText_BodySlamTaught::
 
 FourIsland_House1_Text_YoureAwfullyHeavy::
     .string "There! Boing!\n"
-    .string "You're awfully heavy!$"
+    .string "Youàe awfully heavy!$"
 

@@ -5,7 +5,7 @@ RocketHideout_B4F_Text_GiovanniIntro::
 
 RocketHideout_B4F_Text_GiovanniDefeat::
     .string "WHAT!\n"
-    .string "This can't be!$"
+    .string "This canÑ be!$"
 
 RocketHideout_B4F_Text_GiovanniPostBattle::
     .string "I see that you\n"
@@ -43,12 +43,12 @@ RocketHideout_B4F_Text_Grunt3Defeat::
     .string "ROCKET: Ayaya!$"
 
 RocketHideout_B4F_Text_Grunt3PostBattle::
-    .string "BOSS! I'm sorry I\n"
+    .string "BOSS! Iá sorry I\n"
     .string "failed you!$"
 
 RocketHideout_B4F_Text_Grunt1Intro::
     .string "The elevator\n"
-    .string "doesn't work? Who\l"
+    .string "doesnÑ work? Who\l"
     .string "has the LIFT KEY?$"
 
 RocketHideout_B4F_Text_Grunt1Defeat::

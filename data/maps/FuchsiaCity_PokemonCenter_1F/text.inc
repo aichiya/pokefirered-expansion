@@ -1,13 +1,13 @@
 FuchsiaCity_PokemonCenter_1F_Text_CantBecomeGoodTrainerWithOneMon::
-    .string "You can't win\n"
+    .string "You canÑ win\n"
     .string "with just one\l"
     .string "strong POKéMON.\p"
-    .string "It's tough, but\n"
+    .string "ItÙ tough, but\n"
     .string "you have to raise\l"
     .string "them evenly.$"
 
 FuchsiaCity_PokemonCenter_1F_Text_PokemonLeagueWestOfViridian::
-    .string "There's a narrow\n"
+    .string "ThereÙ a narrow\n"
     .string "trail west of\l"
     .string "VIRIDIAN CITY.\p"
     .string "It goes to POKéMON\n"
@@ -16,7 +16,7 @@ FuchsiaCity_PokemonCenter_1F_Text_PokemonLeagueWestOfViridian::
     .string "all TRAINERS.$"
 
 FuchsiaCity_PokemonCenter_1F_Text_VisitSafariZoneForPokedex::
-    .string "If you're studying POKéMON,\n"
+    .string "If youàe studying POKéMON,\n"
     .string "visit the SAFARI ZONE.\p"
     .string "It has all sorts of rare POKéMON.$"
 

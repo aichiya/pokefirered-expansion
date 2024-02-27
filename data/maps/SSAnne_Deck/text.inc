@@ -1,5 +1,5 @@
 SSAnne_Deck_Text_ShipDepartingSoon::
-    .string "The party's over.\n"
+    .string "The partyÙ over.\n"
     .string "The ship will be\l"
     .string "departing soon.$"
 
@@ -14,11 +14,11 @@ SSAnne_Deck_Text_FeelSeasick::
 
 SSAnne_Deck_Text_EdmondIntro::
     .string "Hey matey!\p"
-    .string "Let's do a little\n"
+    .string "LetÙ do a little\n"
     .string "jig!$"
 
 SSAnne_Deck_Text_EdmondDefeat::
-    .string "SAILOR: You're\n"
+    .string "SAILOR: Youàe\n"
     .string "impressive!$"
 
 SSAnne_Deck_Text_EdmondPostBattle::

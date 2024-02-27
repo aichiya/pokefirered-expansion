@@ -27,7 +27,7 @@ LavenderTown_House2_Text_FromNowOnShallBeKnownAsName::
     .string "OK! This POKéMON\n"
     .string "has been renamed\l"
     .string "{STR_VAR_1}!\p"
-    .string "That's a better\n"
+    .string "ThatÙ a better\n"
     .string "name than before!$"
 
 LavenderTown_House2_Text_ISeeComeVisitAgain::

@@ -16,7 +16,7 @@ Route5_PokemonDayCare_Text_ComeAnytimeYouLike::
 	.string "come again.$"
 
 Route5_PokemonDayCare_Text_LookAfterMonForAWhile::
-	.string "Fine, I'll look\n"
+	.string "Fine, IÛl look\n"
 	.string "after {STR_VAR_1}\l"
 	.string "for a while.$"
 
@@ -37,7 +37,7 @@ Route5_PokemonDayCare_Text_OweMeXForMonsReturn::
 
 Route5_PokemonDayCare_Text_ThankYouHeresMon::
 	.string "Thank you!\n"
-	.string "Here's your POKéMON!$"
+	.string "HereÙ your POKéMON!$"
 
 Route5_PokemonDayCare_Text_PlayerGotMonBack::
 	.string "{PLAYER} got\n"
@@ -55,17 +55,17 @@ Route5_PokemonDayCare_Text_WhatWillYouBattleWith::
 Route5_PokemonDayCare_Text_MonHasGrownByXLevels::
 	.string "Your {STR_VAR_1}\n"
 	.string "has grown a lot!\p"
-	.string "By level, it's\n"
+	.string "By level, itÙ\n"
 	.string "grown by {STR_VAR_2}!\l"
-	.string "Aren't I great?$"
+	.string "ArenÑ I great?$"
 
 Route5_PokemonDayCare_Text_YouveGotNoRoomForIt::
-	.string "You can't take this\n"
-	.string "POKéMON back if you've\l"
+	.string "You canÑ take this\n"
+	.string "POKéMON back if youße\l"
 	.string "got no room for it.$"
 
 Route5_PokemonDayCare_Text_DontHaveEnoughMoney::
-	.string "You don't have\n"
+	.string "You donÑ have\n"
 	.string "enough money.$"
 
 Route5_PokemonDayCare_Text_WantMeToTakeALookAtYours::

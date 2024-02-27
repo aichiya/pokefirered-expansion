@@ -4,7 +4,7 @@ SSAnne_B1F_Room2_Text_HueyIntro::
 
 SSAnne_B1F_Room2_Text_HueyDefeat::
     .string "SAILOR: OK, \n"
-    .string "you're not bad.$"
+    .string "youàe not bad.$"
 
 SSAnne_B1F_Room2_Text_HueyPostBattle::
     .string "We caught all our\n"

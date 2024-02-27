@@ -11,7 +11,7 @@ LavenderTown_Text_JustImaginingWhiteHand::
     .string "not.\p"
     .string "That white hand\n"
     .string "on your shoulder,\l"
-    .string "it's not real.$"
+    .string "itÙ not real.$"
 
 LavenderTown_Text_TownKnownAsMonGraveSite::
     .string "This town is known\n"
@@ -24,7 +24,7 @@ LavenderTown_Text_TownKnownAsMonGraveSite::
 LavenderTown_Text_GhostsAppearedInTower::
     .string "GHOSTs appeared\n"
     .string "in POKéMON TOWER.\p"
-    .string "I think they're\n"
+    .string "I think theyàe\n"
     .string "the spirits of\l"
     .string "POKéMON that the\l"
     .string "ROCKETs killed.$"

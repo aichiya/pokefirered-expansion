@@ -11,19 +11,19 @@ Text_SeismicTossTeach::
 
 Text_SeismicTossDeclined::
     .string "Is that so?\n"
-    .string "I'm sure you'll be back for it.$"
+    .string "Iá sure youÛl be back for it.$"
 
 Text_SeismicTossWhichMon::
     .string "Which POKéMON wants to learn\n"
     .string "SEISMIC TOSS?$"
 
 Text_SeismicTossTaught::
-    .string "I hope you won't toss in the towel.\n"
+    .string "I hope you wonÑ toss in the towel.\n"
     .string "Keep it up.$"
 
 PewterCity_Museum_1F_Text_WhatsSpecialAboutMoonStone::
     .string "MOON STONE?\p"
-    .string "What's so special\n"
+    .string "WhatÙ so special\n"
     .string "about it?$"
 
 PewterCity_Museum_1F_Text_BoughtColorTVForMoonLanding::
@@ -39,7 +39,7 @@ PewterCity_Museum_1F_Text_RunningSpaceExhibitThisMonth::
 
 PewterCity_Museum_1F_Text_AskedDaddyToCatchPikachu::
     .string "I want a PIKACHU!\n"
-    .string "It's so cute!\p"
+    .string "ItÙ so cute!\p"
     .string "I asked my Daddy\n"
     .string "to catch me one!$"
 

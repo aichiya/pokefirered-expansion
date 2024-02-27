@@ -3,13 +3,13 @@ PokemonMansion_Text_PressSecretSwitch::
     .string "Press it?$"
 
 PokemonMansion_Text_WhoWouldnt::
-    .string "Who wouldn't?$"
+    .string "Who wouldnÑ?$"
 
 PokemonMansion_Text_NotQuiteYet::
     .string "Not quite yet!$"
 
 PokemonMansion_1F_Text_ArnieIntro::
-    .string "I can't get out!\n"
+    .string "I canÑ get out!\n"
     .string "This old place is\l"
     .string "one big puzzle!$"
 

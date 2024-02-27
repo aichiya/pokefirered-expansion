@@ -6,7 +6,7 @@ PokemonTower_7F_Text_Grunt1Defeat::
     .string "ROCKET: I give up!$"
 
 PokemonTower_7F_Text_Grunt1PostBattle::
-    .string "I'm not going to\n"
+    .string "Iá not going to\n"
     .string "forget this!$"
 
 PokemonTower_7F_Text_Grunt2Intro::
@@ -14,7 +14,7 @@ PokemonTower_7F_Text_Grunt2Intro::
     .string "and complained\l"
     .string "about us harming\l"
     .string "useless POKéMON!\p"
-    .string "We're talking it\n"
+    .string "Weàe talking it\n"
     .string "over as adults!$"
 
 PokemonTower_7F_Text_Grunt2Defeat::
@@ -29,15 +29,15 @@ PokemonTower_7F_Text_Grunt2PostBattle::
     .string "business!$"
 
 PokemonTower_7F_Text_Grunt3Intro::
-    .string "You're not saving\n"
+    .string "Youàe not saving\n"
     .string "anyone, kid!$"
 
 PokemonTower_7F_Text_Grunt3Defeat::
-    .string "ROCKET: Don't\n"
+    .string "ROCKET: DonÑ\n"
     .string "fight us ROCKETs!$"
 
 PokemonTower_7F_Text_Grunt3PostBattle::
-    .string "You're not getting\n"
+    .string "Youàe not getting\n"
     .string "away with this!$"
 
 PokemonTower_7F_Text_MrFujiThankYouFollowMe::
@@ -48,8 +48,8 @@ PokemonTower_7F_Text_MrFujiThankYouFollowMe::
     .string "own free will.\p"
     .string "I came to calm\n"
     .string "the soul of\l"
-    .string "CUBONE's mother.\p"
-    .string "I think MAROWAK's\n"
+    .string "CUBONEÙ mother.\p"
+    .string "I think MAROWAKÙ\n"
     .string "spirit has gone\l"
     .string "to the afterlife.\p"
     .string "I must thank you\n"

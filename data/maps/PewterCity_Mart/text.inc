@@ -3,7 +3,7 @@ PewterCity_Mart_Text_BoughtWeirdFishFromShadyGuy::
     .string "got me to but\l"
     .string "this really weird\l"
     .string "fish POKéMON!\p"
-    .string "It's totally weak\n"
+    .string "ItÙ totally weak\n"
     .string "and it cost ¥500!$"
 
 PewterCity_Mart_Text_GoodThingsIfRaiseMonsDiligently::

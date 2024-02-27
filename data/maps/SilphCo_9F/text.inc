@@ -4,7 +4,7 @@ SilphCo_9F_Text_YouShouldTakeQuickNap::
     .string "quick nap!$"
 
 SilphCo_9F_Text_DontGiveUp::
-    .string "Don't give up!$"
+    .string "DonÑ give up!$"
 
 SilphCo_9F_Text_ThankYouSoMuch::
     .string "Thank you so\n"

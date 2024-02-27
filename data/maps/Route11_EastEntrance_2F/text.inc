@@ -1,10 +1,10 @@
 Route11_EastEntrance_2F_Text_GiveItemfinderIfCaught30::
     .string "Hi! Remember me?\n"
-    .string "I'm PROF.OAK's\l"
+    .string "Iá PROF.OAKÙ\l"
     .string "AIDE!\p"
     .string "If you caught {STR_VAR_1}\n"
     .string "kinds of POKéMON,\l"
-    .string "I'm supposed to\l"
+    .string "Iá supposed to\l"
     .string "give you an\l"
     .string "ITEMFINDER!\p"
     .string "So, {PLAYER}! Have\n"
@@ -26,11 +26,11 @@ Route11_EastEntrance_2F_Text_ReceivedItemfinderFromAide::
 Route11_EastEntrance_2F_Text_ExplainItemfinder::
     .string "There are items on\n"
     .string "the ground that\l"
-    .string "can't be seen.\p"
+    .string "canÑ be seen.\p"
     .string "ITEMFINDER will\n"
     .string "detect an item\l"
     .string "close to you.\p"
-    .string "It can't pinpoint\n"
+    .string "It canÑ pinpoint\n"
     .string "it, so you have\l"
     .string "to look yourself!$"
 
@@ -43,7 +43,7 @@ Route11_EastEntrance_2F_Text_BigMonAsleepOnRoad::
 Route11_EastEntrance_2F_Text_WhatABreathtakingView::
     .string "Looked into the\n"
     .string "binoculars.\p"
-    .string "It's a beautiful\n"
+    .string "ItÙ a beautiful\n"
     .string "view!$"
 
 Route11_EastEntrance_2F_Text_RockTunnelGoodRouteToLavender::

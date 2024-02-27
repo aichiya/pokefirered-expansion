@@ -1,10 +1,10 @@
 CeruleanCity_Text_RivalIntro::
     .string "{RIVAL}: Yo!\n"
     .string "{PLAYER}!\p"
-    .string "You're still\n"
+    .string "Youàe still\n"
     .string "struggling along\l"
     .string "back here?\p"
-    .string "I'm doing great!\n"
+    .string "Iá doing great!\n"
     .string "I caught a bunch\l"
     .string "of strong and\l"
     .string "smart POKéMON!\p"
@@ -20,20 +20,20 @@ CeruleanCity_Text_RivalDefeat::
 CeruleanCity_Text_RivalPostBattle::
     .string "{RIVAL}: Hey,\n"
     .string "guess what?\p"
-    .string "I went to BILL's\n"
+    .string "I went to BILLÙ\n"
     .string "and got him to\l"
     .string "show me his rare\l"
     .string "POKéMON!\p"
     .string "That added a lot\n"
     .string "of pages to my\l"
     .string "POKéDEX!\p"
-    .string "After all, BILL's\n"
+    .string "After all, BILLÙ\n"
     .string "world famous as a\l"
     .string "POKéMANIAC!\p"
     .string "He invented the\n"
     .string "POKéMON Storage\l"
     .string "System on PC!\p"
-    .string "Since you're using\n"
+    .string "Since youàe using\n"
     .string "his system, go\l"
     .string "thank him!\p"
     .string "Well, I better\n"
@@ -43,38 +43,38 @@ CeruleanCity_Text_RivalPostBattle::
 CeruleanCity_Text_OhRightLittlePresentAsFavor::
     .string "Oh, yeah, right.\p"
     .string "I feel sorry for you. No, really.\n"
-    .string "You're always plodding behind me.\p"
-    .string "So here, I'll give you a little\n"
+    .string "Youàe always plodding behind me.\p"
+    .string "So here, IÛl give you a little\n"
     .string "present as a favor.$"
 
 CeruleanCity_Text_ExplainFameCheckerSmellYa::
     .string "A chatty gossip like you…\n"
-    .string "That thing's perfect.\p"
-    .string "I don't need it because I don't\n"
+    .string "That thingÙ perfect.\p"
+    .string "I donÑ need it because I donÑ\n"
     .string "give a hoot about others.\p"
     .string "All right, this time I really am\n"
     .string "gone. Smell ya!$"
 
-@ RB translation: "Heh! You're no match for my genius!"
+@ RB translation: "Heh! Youàe no match for my genius!"
 CeruleanCity_Text_RivalVictory::
     .string "なんたって！\n"
     .string "おれは　てんさい　だからよ！$"
 
 CeruleanCity_Text_GruntIntro::
     .string "Hey! Stay out!\n"
-    .string "It's not your\l"
+    .string "ItÙ not your\l"
     .string "yard! Huh? me?\p"
-    .string "I'm an innocent\n"
-    .string "bystander! Don't\l"
+    .string "Iá an innocent\n"
+    .string "bystander! DonÑ\l"
     .string "you believe me?{PLAY_BGM}{MUS_ENCOUNTER_ROCKET}$"
 
 CeruleanCity_Text_GruntDefeat::
     .string "ROCKET: Stop!\n"
-    .string "I give up! I'll\l"
+    .string "I give up! IÛl\l"
     .string "leave quietly!$"
 
 CeruleanCity_Text_OkayIllReturnStolenTM::
-    .string "OK! I'll return\n"
+    .string "OK! IÛl return\n"
     .string "the TM I stole!$"
 
 CeruleanCity_Text_RecoveredTM28FromGrunt::
@@ -88,13 +88,13 @@ CeruleanCity_Text_BetterGetMovingBye::
 CeruleanCity_Text_MakeRoomForThisCantRun::
     .string "Make room for\n"
     .string "this!\p"
-    .string "I can't run until\n"
+    .string "I canÑ run until\n"
     .string "I give it to you!$"
 
 CeruleanCity_Text_TrainerLifeIsToughIsntIt::
-    .string "You're a trainer\n"
+    .string "Youàe a trainer\n"
     .string "too? Collecting,\l"
-    .string "fighting, it's a\l"
+    .string "fighting, itÙ a\l"
     .string "tough life.$"
 
 CeruleanCity_Text_YouCanCutDownSmallTrees::
@@ -102,7 +102,7 @@ CeruleanCity_Text_YouCanCutDownSmallTrees::
     .string "small trees?\p"
     .string "Even that small tree in front of\n"
     .string "the shop can be CUT down.\p"
-    .string "I think there's a way around it,\n"
+    .string "I think thereÙ a way around it,\n"
     .string "though.$"
 
 CeruleanCity_Text_IfSlowbroWasntThereCouldCutTree::
@@ -113,7 +113,7 @@ CeruleanCity_Text_IfSlowbroWasntThereCouldCutTree::
     .string "way around.$\p"
 
 CeruleanCity_Text_PokemonEncyclopediaAmusing::
-    .string "You're making an\n"
+    .string "Youàe making an\n"
     .string "encyclopedia on\l"
     .string "POKéMON? That\l"
     .string "sounds amusing.$"
@@ -121,7 +121,7 @@ CeruleanCity_Text_PokemonEncyclopediaAmusing::
 CeruleanCity_Text_PeopleHereWereRobbed::
     .string "The people here\n"
     .string "were robbed.\p"
-    .string "It's obvious that\n"
+    .string "ItÙ obvious that\n"
     .string "TEAM ROCKET is\l"
     .string "behind this most\l"
     .string "heinous crime!\p"
@@ -148,10 +148,10 @@ CeruleanCity_Text_SlowbroWithdraw::
     .string "SLOWBRO, WITHDRAW!$"
 
 CeruleanCity_Text_HardToControlMonsObedience::
-    .string "No! That's wrong!\p"
-    .string "It's so hard to\n"
+    .string "No! ThatÙ wrong!\p"
+    .string "ItÙ so hard to\n"
     .string "control POKéMON!\p"
-    .string "Your POKéMON's\n"
+    .string "Your POKéMONÙ\n"
     .string "obedience depends\l"
     .string "on your abilities\l"
     .string "as a trainer!$"
@@ -175,8 +175,8 @@ CeruleanCity_Text_SlowbroIgnoredOrders::
 CeruleanCity_Text_WantBrightRedBicycle::
     .string "I want a bright\n"
     .string "red bicycle!\p"
-    .string "I'll keep it at\n"
-    .string "home, so it won't\l"
+    .string "IÛl keep it at\n"
+    .string "home, so it wonÑ\l"
     .string "get dirty!$"
 
 CeruleanCity_Text_ThisIsCeruleanCave::

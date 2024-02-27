@@ -36,9 +36,9 @@ SilphCo_11F_Text_ObtainedMasterBallFromPresident::
 
 SilphCo_11F_Text_ThatsOurSecretPrototype::
     .string "PRESIDENT: You\n"
-    .string "can't buy that\l"
+    .string "canÑ buy that\l"
     .string "anywhere!\p"
-    .string "It's our secret\n"
+    .string "ItÙ our secret\n"
     .string "prototype MASTER\l"
     .string "BALL!\p"
     .string "It will catch any\n"
@@ -91,10 +91,10 @@ SilphCo_11F_Text_GiovanniPostBattle::
 
 SilphCo_11F_Text_Grunt2Intro::
     .string "Stop right there!\n"
-    .string "Don't you move!$"
+    .string "DonÑ you move!$"
 
 SilphCo_11F_Text_Grunt2Defeat::
-    .string "ROCKET: Don't...\n"
+    .string "ROCKET: DonÑ...\n"
     .string "Please!$"
 
 SilphCo_11F_Text_Grunt2PostBattle::

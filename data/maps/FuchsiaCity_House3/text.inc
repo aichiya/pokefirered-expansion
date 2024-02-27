@@ -1,6 +1,6 @@
 FuchsiaCity_House3_Text_WouldYouLikeToForgetMove::
     .string "Uh…\n"
-    .string "Oh, yes, I'm the MOVE DELETER.\p"
+    .string "Oh, yes, Iá the MOVE DELETER.\p"
     .string "I can make POKéMON forget their\n"
     .string "moves.\p"
     .string "Would you like me to do that?$"
@@ -17,7 +17,7 @@ FuchsiaCity_House3_Text_MonOnlyKnowsOneMove::
     .string "move…$"
 
 FuchsiaCity_House3_Text_MonsMoveShouldBeForgotten::
-    .string "Hm! {STR_VAR_1}'s {STR_VAR_2}?\n"
+    .string "Hm! {STR_VAR_1}Ù {STR_VAR_2}?\n"
     .string "That move should be forgotten?$"
 
 FuchsiaCity_House3_Text_MonHasForgottenMoveCompletely::

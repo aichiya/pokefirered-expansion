@@ -1,6 +1,6 @@
 MtMoon_1F_Text_MarcosIntro::
     .string "WHOA! You shocked\n"
-    .string "me! Oh, you're\l"
+    .string "me! Oh, youàe\l"
     .string "just a kid!$"
 
 MtMoon_1F_Text_MarcosDefeat::
@@ -9,7 +9,7 @@ MtMoon_1F_Text_MarcosDefeat::
 
 MtMoon_1F_Text_MarcosPostBattle::
     .string "Kids like you\n"
-    .string "shouldn't be\l"
+    .string "shouldnÑ be\l"
     .string "here!$"
 
 MtMoon_1F_Text_JoshIntro::
@@ -26,7 +26,7 @@ MtMoon_1F_Text_JoshPostBattle::
     .string "girls.$"
 
 MtMoon_1F_Text_MiriamIntro::
-    .string "Wow! It's way\n"
+    .string "Wow! ItÙ way\n"
     .string "bigger in here\l"
     .string "than I thought!$"
 
@@ -39,19 +39,19 @@ MtMoon_1F_Text_MiriamPostBattle::
     .string "out of here?$"
 
 MtMoon_1F_Text_JovanIntro::
-    .string "What! Don't sneak\n"
+    .string "What! DonÑ sneak\n"
     .string "up on me!$"
 
 MtMoon_1F_Text_JovanDefeat::
     .string "SUPER NERD: My\n"
-    .string "POKéMON won't do!$"
+    .string "POKéMON wonÑ do!$"
 
 MtMoon_1F_Text_JovanPostBattle::
     .string "I have to find\n"
     .string "stronger POKéMON.$"
 
 MtMoon_1F_Text_IrisIntro::
-    .string "What? I'm waiting\n"
+    .string "What? Iá waiting\n"
     .string "for my freinds to\l"
     .string "find me here.$"
 
@@ -73,8 +73,8 @@ MtMoon_1F_Text_KentDefeat::
     .string "got me!$"
 
 MtMoon_1F_Text_KentPostBattle::
-    .string "I saw them! I'm\n"
-    .string "sure they're from\l"
+    .string "I saw them! Iá\n"
+    .string "sure theyàe from\l"
     .string "TEAM ROCKET!$"
 
 MtMoon_1F_Text_RobbyIntro::
@@ -97,7 +97,7 @@ MtMoon_1F_Text_ZubatIsABloodsucker::
     .string "a blood sucker!$"
 
 MtMoon_1F_Text_BrockHelpsExcavateFossils::
-    .string "Hi, I'm excavating for fossils here\n"
+    .string "Hi, Iá excavating for fossils here\n"
     .string "under MT. MOON.\p"
     .string "Sometimes, BROCK of PEWTER GYM\n"
     .string "lends me a hand.$"

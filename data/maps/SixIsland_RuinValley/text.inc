@@ -1,14 +1,14 @@
 SixIsland_RuinValley_Text_CantFigureOutHowToGetInside::
-    .string "I can't figure out how I'm supposed\n"
+    .string "I canÑ figure out how Iá supposed\n"
     .string "to get inside.$"
 
 SixIsland_RuinValley_Text_IFoundThisPlace::
     .string "Let me tell you, I found this\n"
     .string "place.\p"
-    .string "Don't look so envious, will you?$"
+    .string "DonÑ look so envious, will you?$"
 
 SixIsland_RuinValley_Text_CheckDoorMoreThoroughly::
-    .string "The door doesn't budge at all.\n"
+    .string "The door doesnÑ budge at all.\n"
     .string "Check it more thoroughly?$"
 
 SixIsland_RuinValley_Text_LeftDoorAlone::
@@ -34,11 +34,11 @@ SixIsland_RuinValley_Text_StanlyPostBattle::
     .string "mysteries of our world once a day.$"
 
 SixIsland_RuinValley_Text_FosterIntro::
-    .string "I'm curious, what compelled you to\n"
+    .string "Iá curious, what compelled you to\n"
     .string "come here?$"
 
 SixIsland_RuinValley_Text_FosterDefeat::
-    .string "It's been so long since I battled,\n"
+    .string "ItÙ been so long since I battled,\n"
     .string "my instincts are off.$"
 
 SixIsland_RuinValley_Text_FosterPostBattle::
@@ -48,7 +48,7 @@ SixIsland_RuinValley_Text_FosterPostBattle::
     .string "a long way.$"
 
 SixIsland_RuinValley_Text_LarryIntro::
-    .string "It's been said that there are\n"
+    .string "ItÙ been said that there are\n"
     .string "mysterious stones on this island.\p"
     .string "I suspect it has something to do\n"
     .string "with the ruins here.$"
@@ -58,7 +58,7 @@ SixIsland_RuinValley_Text_LarryDefeat::
 
 SixIsland_RuinValley_Text_LarryPostBattle::
     .string "Those ruins over there…\p"
-    .string "I haven't had any luck in finding\n"
+    .string "I havenÑ had any luck in finding\n"
     .string "how I can get inside.$"
 
 SixIsland_RuinValley_Text_DarylIntro::
@@ -72,16 +72,16 @@ SixIsland_RuinValley_Text_DarylPostBattle::
     .string "Experience the joy of climbing!$"
 
 SixIsland_RuinValley_Text_HectorIntro::
-    .string "I'm pretty familiar with the land\n"
+    .string "Iá pretty familiar with the land\n"
     .string "around these parts.$"
 
 SixIsland_RuinValley_Text_HectorDefeat::
-    .string "You don't need to be so pushy.\n"
-    .string "I'll be happy to tell you.$"
+    .string "You donÑ need to be so pushy.\n"
+    .string "IÛl be happy to tell you.$"
 
 SixIsland_RuinValley_Text_HectorPostBattle::
     .string "The door to the ruins…\n"
     .string "It has these strange patterns\l"
     .string "engraved on the outside.\p"
-    .string "I don't know what they mean,\n"
+    .string "I donÑ know what they mean,\n"
     .string "though.$"

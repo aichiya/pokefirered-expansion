@@ -1,15 +1,15 @@
 CeladonCity_Condominiums_3F_Text_ImTheProgrammer::
-    .string "Me? I'm the\n"
+    .string "Me? Iá the\n"
     .string "programmer!$"
 
 CeladonCity_Condominiums_3F_Text_ImTheGraphicArtist::
-    .string "I'm the graphic\n"
+    .string "Iá the graphic\n"
     .string "artist!\l"
     .string "I drew you!$"
 
 CeladonCity_Condominiums_3F_Text_IWroteTheStory::
     .string "I wrote the story!\n"
-    .string "Isn't ERIKA cute?\p"
+    .string "IsnÑ ERIKA cute?\p"
     .string "I like MISTY a\n"
     .string "lot too!\p"
     .string "Oh, and SABRINA,\n"
@@ -17,11 +17,11 @@ CeladonCity_Condominiums_3F_Text_IWroteTheStory::
 
 CeladonCity_Condominiums_3F_Text_ImGameDesignerShowMeFinishedPokedex::
     .string "Is that right?\p"
-    .string "I'm the game\n"
+    .string "Iá the game\n"
     .string "designer!\p"
     .string "Filling up your\n"
     .string "POKéDEX is tough,\l"
-    .string "but don't quit!\p"
+    .string "but donÑ quit!\p"
     .string "When you finish,\n"
     .string "come tell me!$"
 
@@ -33,18 +33,18 @@ CeladonCity_Condominiums_3F_Text_CompletedPokedexCongratulations::
     .string "...$"
 
 CeladonCity_Condominiums_3F_Text_ItsTheGameProgram::
-    .string "It's the game\n"
+    .string "ItÙ the game\n"
     .string "program! Messing\l"
     .string "with it could bug\l"
     .string "out the game!$"
 
 CeladonCity_Condominiums_3F_Text_SomeonesPlayingGame::
-    .string "Someone's playing\n"
+    .string "SomeoneÙ playing\n"
     .string "a game instead of\l"
     .string "working!$"
 
 CeladonCity_Condominiums_3F_Text_ItsScriptBetterNotLookAtEnding::
-    .string "It's the script!\n"
+    .string "ItÙ the script!\n"
     .string "Better not look\l"
     .string "at the ending!$"
 

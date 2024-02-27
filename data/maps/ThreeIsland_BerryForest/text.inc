@@ -5,12 +5,12 @@ ThreeIsland_BerryForest_Text_HelpScaryPokemon::
     .string "a little while ago.\p"
     .string "It kept scaring.\n"
     .string "It made LOSTELLE scared.\p"
-    .string "I'm too scared to move!\n"
+    .string "Iá too scared to move!\n"
     .string "But I want to go home…$"
 
 ThreeIsland_BerryForest_Text_HereItComesAgain::
     .string "Oh! Here it comes again!\n"
-    .string "No! Go away! It's scaring me!\p"
+    .string "No! Go away! ItÙ scaring me!\p"
     .string "Waaaaaaah!\n"
     .string "I want my daddy!$"
 
@@ -22,15 +22,15 @@ ThreeIsland_BerryForest_Text_ThankYouHaveThis::
     .string "You can have this!$"
 
 ThreeIsland_BerryForest_Text_LetsGoHome::
-    .string "What's your name?\p"
-    .string "LOSTELLE's scared, so can I go\n"
-    .string "with you to my daddy's house?\p"
+    .string "WhatÙ your name?\p"
+    .string "LOSTELLEÙ scared, so can I go\n"
+    .string "with you to my daddyÙ house?\p"
     .string "Okay!\n"
-    .string "Let's go home!$"
+    .string "LetÙ go home!$"
 
 ThreeIsland_BerryForest_Text_BerryPouchIsFull::
     .string "Your BERRY POUCH is full.\n"
-    .string "I guess you don't want this.$"
+    .string "I guess you donÑ want this.$"
 
 ThreeIsland_BerryForest_Text_WelcomeToBerryForest::
     .string "Welcome to the BERRY FOREST\p"

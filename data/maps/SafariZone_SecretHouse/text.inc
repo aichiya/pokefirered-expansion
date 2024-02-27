@@ -1,6 +1,6 @@
 SafariZone_SecretHouse_Text_CongratsYouveWon::
     .string "Ah! Finally!\p"
-    .string "You're the first\n"
+    .string "Youàe the first\n"
     .string "person to reach\l"
     .string "the SECRET HOUSE!\p"
     .string "I was getting\n"
@@ -19,16 +19,16 @@ SafariZone_SecretHouse_Text_ExplainSurf::
     .string "POKéMON will be\n"
     .string "able to ferry you\l"
     .string "across water!\p"
-    .string "And, this HM isn't\n"
+    .string "And, this HM isnÑ\n"
     .string "disposable! You\l"
     .string "can use it over\l"
     .string "and over!\p"
-    .string "You're super lucky\n"
+    .string "Youàe super lucky\n"
     .string "for winning this\l"
     .string "fabulous prize!$"
 
 SafariZone_SecretHouse_Text_DontHaveRoomForPrize::
-    .string "You don't have\n"
+    .string "You donÑ have\n"
     .string "room for this\l"
     .string "fabulous prize!$"
 

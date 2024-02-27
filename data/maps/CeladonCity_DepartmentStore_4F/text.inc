@@ -1,5 +1,5 @@
 CeladonCity_DepartmentStore_4F_Text_GettingPokeDollAsPresent::
-    .string "I'm getting a\n"
+    .string "Iá getting a\n"
     .string "POKé DOLL for my\l"
     .string "girl friend!$"
 

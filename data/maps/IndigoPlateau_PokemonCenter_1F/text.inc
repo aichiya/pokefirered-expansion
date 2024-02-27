@@ -20,7 +20,7 @@ IndigoPlateau_PokemonCenter_1F_Text_FaceEliteFourGoodLuck::
     .string "Good luck!$"
 
 IndigoPlateau_PokemonCenter_1F_Text_LoreleiIsAbsentClosedForTimeBeing::
-    .string "I am so sorry, but you've wasted\n"
+    .string "I am so sorry, but youße wasted\n"
     .string "your time coming here.\p"
     .string "LORELEI of the ELITE FOUR is\n"
     .string "absent, you see.\p"
@@ -28,21 +28,21 @@ IndigoPlateau_PokemonCenter_1F_Text_LoreleiIsAbsentClosedForTimeBeing::
     .string "closed for the time being.$"
 
 IndigoPlateau_PokemonCenter_1F_Text_AgathaWhuppedUs::
-    .string "AGATHA's GHOST-type POKéMON are\n"
+    .string "AGATHAÙ GHOST-type POKéMON are\n"
     .string "horrifically terrifying in toughness.\p"
     .string "I took my FIGHTING-type POKéMON\n"
     .string "and raised them to the max.\p"
     .string "I went at AGATHA feeling pretty\n"
     .string "confident, but she whupped us.\p"
-    .string "That old lady's also got a really\n"
+    .string "That old ladyÙ also got a really\n"
     .string "short fuse, too.\p"
-    .string "It doesn't take anything to get\n"
+    .string "It doesnÑ take anything to get\n"
     .string "that scary lady hollering.$"
 
 IndigoPlateau_PokemonCenter_1F_Text_LancesCousinGymLeaderFarAway::
     .string "Maybe becoming an ELITE FOUR\n"
     .string "member is in the blood.\p"
-    .string "From what I've heard, LANCE has\n"
-    .string "a cousin who's a GYM LEADER\l"
+    .string "From what Iße heard, LANCE has\n"
+    .string "a cousin whoÙ a GYM LEADER\l"
     .string "somewhere far away.$"
 

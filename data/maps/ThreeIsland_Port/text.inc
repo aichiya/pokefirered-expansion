@@ -1,7 +1,7 @@
 ThreeIsland_Port_Text_WereKantoRiderFederation::
-    .string "We're the KANTO RIDER FEDERATION!\n"
+    .string "Weàe the KANTO RIDER FEDERATION!\n"
     .string "Vroom! Vavavavooom! Vroom!\p"
-    .string "My bike's wimpy, so I have to\n"
+    .string "My bikeÙ wimpy, so I have to\n"
     .string "make exhaust noises myself!$"
 
 ThreeIsland_Port_Text_ForkOverMoney::
@@ -11,7 +11,7 @@ ThreeIsland_Port_Text_ForkOverMoney::
 ThreeIsland_Port_Text_IllCallThePolice::
     .string "Aiyeeh!\p"
     .string "Wh-who are you?!\n"
-    .string "I… I'll call the police!$"
+    .string "I… IÛl call the police!$"
 
 ThreeIsland_Port_Text_ThankGoodnessBikersGone::
     .string "Those BIKERS…\n"

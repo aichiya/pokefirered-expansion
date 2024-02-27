@@ -1,10 +1,10 @@
 VermilionCity_Gym_Text_LtSurgeIntro::
     .string "Hey, kid! What do\n"
-    .string "you think you're\l"
+    .string "you think youàe\l"
     .string "doing here?\p"
-    .string "You won't live\n"
+    .string "You wonÑ live\n"
     .string "long in combat!\l"
-    .string "That's for sure!\p"
+    .string "ThatÙ for sure!\p"
     .string "I tell you kid,\n"
     .string "electric POKéMON\l"
     .string "saved me during\l"
@@ -12,7 +12,7 @@ VermilionCity_Gym_Text_LtSurgeIntro::
     .string "They zapped my\n"
     .string "enemies into\l"
     .string "paralysis!\p"
-    .string "The same as I'll\n"
+    .string "The same as IÛl\n"
     .string "do to you!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 
 VermilionCity_Gym_Text_LtSurgePostBattle::
@@ -20,18 +20,18 @@ VermilionCity_Gym_Text_LtSurgePostBattle::
     .string "advice, kid!\p"
     .string "Electricity is\n"
     .string "sure powerful!\p"
-    .string "But, it's useless\n"
+    .string "But, itÙ useless\n"
     .string "against ground-\l"
     .string "type POKéMON!$"
 
 VermilionCity_Gym_Text_ExplainThunderBadgeTakeThis::
     .string "The THUNDERBADGE\n"
     .string "cranks up your\l"
-    .string "POKéMON's SPEED!\p"
+    .string "POKéMONÙ SPEED!\p"
     .string "It also lets your\n"
     .string "POKéMON FLY any\l"
     .string "time, kid!\p"
-    .string "You're special,\n"
+    .string "Youàe special,\n"
     .string "kid! Take this!$"
 
 VermilionCity_Gym_Text_ReceivedTM24FromLtSurge::
@@ -50,7 +50,7 @@ VermilionCity_Gym_Text_MakeRoomInYourBag::
 
 VermilionCity_Gym_Text_LtSurgeDefeat::
     .string "LT.SURGE: Whoa!\p"
-    .string "You're the real\n"
+    .string "Youàe the real\n"
     .string "deal, kid!\p"
     .string "Fine then, take\n"
     .string "the THUNDERBADGE!$"
@@ -62,24 +62,24 @@ VermilionCity_Gym_Text_TuckerIntro::
 
 VermilionCity_Gym_Text_TuckerDefeat::
     .string "GENTLEMAN: Stop!\n"
-    .string "You're very good!$"
+    .string "Youàe very good!$"
 
 VermilionCity_Gym_Text_TuckerPostBattle::
-    .string "The door won't\n"
+    .string "The door wonÑ\n"
     .string "open?\p"
     .string "LT.SURGE always\n"
     .string "was cautious!$"
 
 VermilionCity_Gym_Text_BailyIntro::
-    .string "I'm a lightweight,\n"
-    .string "but I'm good with\l"
+    .string "Iá a lightweight,\n"
+    .string "but Iá good with\l"
     .string "electricity!$"
 
 VermilionCity_Gym_Text_BailyDefeat::
     .string "ROCKER: Fried!$"
 
 VermilionCity_Gym_Text_BailyPostBattle::
-    .string "OK, I'll talk!\p"
+    .string "OK, IÛl talk!\p"
     .string "LT.SURGE said he\n"
     .string "hid door switches\l"
     .string "inside something!$"
@@ -95,7 +95,7 @@ VermilionCity_Gym_Text_DwayneDefeat::
 VermilionCity_Gym_Text_DwaynePostBattle::
     .string "LT.SURGE set up\n"
     .string "double locks!\l"
-    .string "Here's a hint!\p"
+    .string "HereÙ a hint!\p"
     .string "When you open the\n"
     .string "1st lock, the 2nd\l"
     .string "lock is right\l"
@@ -109,7 +109,7 @@ VermilionCity_Gym_Text_GymGuyAdvice::
     .string "refer to him as\l"
     .string "the Lightning\l"
     .string "American!\p"
-    .string "He's an expert on\n"
+    .string "HeÙ an expert on\n"
     .string "electric POKéMON!\p"
     .string "Birds and water\n"
     .string "POKéMON are at\l"
@@ -117,7 +117,7 @@ VermilionCity_Gym_Text_GymGuyAdvice::
     .string "paralysis too!\p"
     .string "LT.SURGE is very\n"
     .string "cautious!\p"
-    .string "You'll have to\n"
+    .string "YouÛl have to\n"
     .string "break a code to\l"
     .string "get to him!$"
 
@@ -140,11 +140,11 @@ VermilionCity_Gym_Text_GymStatuePlayerWon::
     .string "{RIVAL}, {PLAYER}$"
 
 VermilionCity_Gym_Text_NopeOnlyTrashHere::
-    .string "Nope, there's\n"
+    .string "Nope, thereÙ\n"
     .string "only trash here.$"
 
 VermilionCity_Gym_Text_SwitchUnderTrashFirstLockOpened::
-    .string "Hey! There's a\n"
+    .string "Hey! ThereÙ a\n"
     .string "switch under the\l"
     .string "trash!\l"
     .string "Turn it on!\p"
@@ -164,7 +164,7 @@ VermilionCity_Gym_Text_SecondLockOpened::
     .string "opened!$"
 
 VermilionCity_Gym_Text_OnlyTrashLocksWereReset::
-    .string "Nope, there's\n"
+    .string "Nope, thereÙ\n"
     .string "only trash here.\l"
     .string "Hey! The electric\l"
     .string "locks were reset!$"

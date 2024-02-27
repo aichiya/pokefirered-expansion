@@ -2,7 +2,7 @@ PewterCity_PokemonCenter_1F_Text_TeamRocketMtMoonImOnPhone::
     .string "What!?\p"
     .string "TEAM ROCKET is\n"
     .string "at MT.MOON? Huh?\l"
-    .string "I'm on the phone!\p"
+    .string "Iá on the phone!\p"
     .string "Scram!$"
 
 PewterCity_PokemonCenter_1F_Text_Jigglypuff::
@@ -18,11 +18,11 @@ PewterCity_PokemonCenter_1F_Text_WhenJiggylypuffSingsMonsGetDrowsy::
     .string "Snore...$"
 
 PewterCity_PokemonCenter_1F_Text_TradingMyClefairyForPikachu::
-    .string "I really want a PIKACHU, so I'm\n"
+    .string "I really want a PIKACHU, so Iá\n"
     .string "trading my CLEFAIRY for one.$"
 
 PewterCity_PokemonCenter_1F_Text_TradingPikachuWithKid::
-    .string "I'm trading POKéMON with that kid\n"
+    .string "Iá trading POKéMON with that kid\n"
     .string "there.\p"
     .string "I had two PIKACHU, so I figured\n"
     .string "I might as well trade one.$"

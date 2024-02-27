@@ -1,6 +1,6 @@
 CeladonCity_Restaurant_Text_TakingBreakRightNow::
     .string "Hi!\p"
-    .string "We're taking a\n"
+    .string "Weàe taking a\n"
     .string "break now.$"
 
 CeladonCity_Restaurant_Text_OftenGoToDrugstore::
@@ -10,7 +10,7 @@ CeladonCity_Restaurant_Text_OftenGoToDrugstore::
     .string "DRUG STORE.$"
 
 CeladonCity_Restaurant_Text_PsstBasementUnderGameCorner::
-    .string "Psst! There's a\n"
+    .string "Psst! ThereÙ a\n"
     .string "basement under\l"
     .string "the GAME CORNER!$"
 
@@ -22,12 +22,12 @@ CeladonCity_Restaurant_Text_ManLostItAllAtSlots::
 
 CeladonCity_Restaurant_Text_TakeThisImBusted::
     .string "Go ahead! Laugh!\p"
-    .string "I'm flat out\n"
+    .string "Iá flat out\n"
     .string "busted!\p"
     .string "No more slots for\n"
-    .string "me! I'm going\l"
+    .string "me! Iá going\l"
     .string "straight!\p"
-    .string "Here! I won't be\n"
+    .string "Here! I wonÑ be\n"
     .string "needing this any-\l"
     .string "more!$"
 

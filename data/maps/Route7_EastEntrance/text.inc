@@ -1,11 +1,11 @@
 Route7_EastEntrance_Text_ThirstyOnGuardDuty::
-    .string "I'm on guard duty.\n"
-    .string "Gee, I'm thirsty, though!\p"
-    .string "Oh wait there, the road's closed.$"
+    .string "Iá on guard duty.\n"
+    .string "Gee, Iá thirsty, though!\p"
+    .string "Oh wait there, the roadÙ closed.$"
 
 Route7_EastEntrance_Text_ThatTeaLooksTasty::
     .string "Whoa, boy!\n"
-    .string "I'm parched!$"
+    .string "Iá parched!$"
 
 Route7_EastEntrance_Text_ThanksIllShareTeaWithGuards::
     .string "...\n"
@@ -19,7 +19,7 @@ Route7_EastEntrance_Text_ThanksIllShareTeaWithGuards::
     .string "SAFFRON CITY...\l"
     .string "...\n"
     .string "You can go on through.\p"
-    .string "I'll share this with the\n"
+    .string "IÛl share this with the\n"
     .string "other guards!$"
 
 Route7_EastEntrance_Text_HiHowsItGoing::

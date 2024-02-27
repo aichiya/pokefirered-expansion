@@ -4,7 +4,7 @@ SSAnne_1F_Room2_Text_TylerIntro::
 
 SSAnne_1F_Room2_Text_TylerDefeat::
     .string "YOUNGSTER: Wow!\n"
-    .string "You're great!$"
+    .string "Youàe great!$"
 
 SSAnne_1F_Room2_Text_TylerPostBattle::
     .string "Let me be your\n"

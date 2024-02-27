@@ -19,7 +19,7 @@ PokemonMansion_B1F_Text_IvanDefeat::
 
 PokemonMansion_B1F_Text_IvanPostBattle::
     .string "I like it here!\n"
-    .string "It's conducive\l"
+    .string "ItÙ conducive\l"
     .string "to my studies!$"
 
 PokemonMansion_B1F_Text_MewtwoIsFarTooPowerful::

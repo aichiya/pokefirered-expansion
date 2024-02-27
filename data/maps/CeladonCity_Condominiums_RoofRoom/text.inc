@@ -44,7 +44,7 @@ CeladonCity_Condominiums_RoofRoom_Text_ExplainUnionRoom::
     .string "POKéMON.$"
 
 CeladonCity_Condominiums_RoofRoom_Text_PamphletOnTMs::
-    .string "It's a pamphlet on TMs.\p"
+    .string "ItÙ a pamphlet on TMs.\p"
     .string "...\p"
     .string "There are 50 TMs in all.\p"
     .string "There are also 5 HMs that\n"

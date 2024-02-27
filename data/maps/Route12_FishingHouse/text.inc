@@ -1,6 +1,6 @@
 Route12_FishingHouse_Text_DoYouLikeToFish::
-    .string "I'm the FISHING\n"
-    .string "GURU's brother!\p"
+    .string "Iá the FISHING\n"
+    .string "GURUÙ brother!\p"
     .string "I simply Looove\n"
     .string "fishing!\p"
     .string "Do you like to\n"
@@ -25,7 +25,7 @@ Route12_FishingHouse_Text_IfYouCatchBigMagikarpShowMe::
     .string "one!$"
 
 Route12_FishingHouse_Text_OhThatsDisappointing::
-    .string "Oh... That's so\n"
+    .string "Oh... ThatÙ so\n"
     .string "disappointing...$"
 
 Route12_FishingHouse_Text_TryFishingBringMeMagikarp::
@@ -41,7 +41,7 @@ Route12_FishingHouse_Text_TryFishingBringMeMagikarp::
 
 Route12_FishingHouse_Text_OhMagikarpAllowMeToSee::
     .string "Oh? {PLAYER}?\n"
-    .string "Why, if it isn't a MAGIKARP!\p"
+    .string "Why, if it isnÑ a MAGIKARP!\p"
     .string "Allow me to see it, quick!$"
 
 Route12_FishingHouse_Text_WhoaXInchesTakeThis::
@@ -53,7 +53,7 @@ Route12_FishingHouse_Text_WhoaXInchesTakeThis::
     .string "I insist!$"
 
 Route12_FishingHouse_Text_LookForwardToGreaterRecords::
-    .string "I'll look forward to seeing greater\n"
+    .string "IÛl look forward to seeing greater\n"
     .string "records from you!$"
 
 Route12_FishingHouse_Text_HuhXInchesSameSizeAsLast::
@@ -65,11 +65,11 @@ Route12_FishingHouse_Text_HuhXInchesSameSizeAsLast::
 Route12_FishingHouse_Text_HmmXInchesDoesntMeasureUp::
     .string "Hmm…\n"
     .string "This one is {STR_VAR_2} inches long.\p"
-    .string "It doesn't measure up to the\n"
+    .string "It doesnÑ measure up to the\n"
     .string "{STR_VAR_3}-inch one you brought before.$"
 
 Route12_FishingHouse_Text_DoesntLookLikeMagikarp::
-    .string "Uh… That doesn't look much like\n"
+    .string "Uh… That doesnÑ look much like\n"
     .string "a MAGIKARP.$"
 
 Route12_FishingHouse_Text_NoRoomForGift::
@@ -84,7 +84,7 @@ Route12_FishingHouse_Text_MostGiganticMagikarpXInches::
     .string "{STR_VAR_3} inches!$"
 
 Route12_FishingHouse_Text_BlankChartOfSomeSort::
-    .string "It's a blank chart of some sort.\p"
+    .string "ItÙ a blank chart of some sort.\p"
     .string "It has spaces for writing in\n"
     .string "records of some kind.$"
 

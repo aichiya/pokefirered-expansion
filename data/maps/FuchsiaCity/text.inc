@@ -13,8 +13,8 @@ FuchsiaCity_Text_SafariZoneZooInFront::
     .string "catching POKéMON.$"
 
 FuchsiaCity_Text_WheresSara::
-    .string "ERIK: Where's\n"
-    .string "SARA? I said I'd\l"
+    .string "ERIK: WhereÙ\n"
+    .string "SARA? I said IÚ\l"
     .string "meet her here.$"
 
 FuchsiaCity_Text_ItemBallInThere::
@@ -24,7 +24,7 @@ FuchsiaCity_Text_ItemBallInThere::
 
 FuchsiaCity_Text_CitySign::
     .string "FUCHSIA CITY\n"
-    .string "Behold! It's\l"
+    .string "Behold! ItÙ\l"
     .string "Passion Pink!$"
 
 FuchsiaCity_Text_SafariZoneSign::
@@ -90,17 +90,17 @@ FuchsiaCity_Text_KabutoSign::
     .string "was resurrected\l"
     .string "from a fossil.$"
 
-@ Unused. May have been meant to be the placeholder text for the zoo mons, similar to RB's "!" text
+@ Unused. May have been meant to be the placeholder text for the zoo mons, similar to RBÙ "!" text
 FuchsiaCity_Text_Ellipsis::
     .string "...$"
 
 Text_SubstituteTeach::
     .string "Aww, I wish I was a KANGASKHAN\n"
     .string "baby.\p"
-    .string "I'd love to be a substitute for the\n"
+    .string "IÚ love to be a substitute for the\n"
     .string "baby…\p"
     .string "And snuggle in the mother\n"
-    .string "KANGASKHAN's belly pouch.\p"
+    .string "KANGASKHANÙ belly pouch.\p"
     .string "But only POKéMON can use the\n"
     .string "technique SUBSTITUTE…\p"
     .string "Want me to teach SUBSTITUTE to\n"
@@ -115,12 +115,12 @@ Text_SubstituteWhichMon::
     .string "SUBSTITUTE?$"
 
 Text_SubstituteTaught::
-    .string "Boy, what I'd give to crawl inside\n"
+    .string "Boy, what IÚ give to crawl inside\n"
     .string "a KANGASKHAN belly pouch…$"
 
 FuchsiaCity_Text_MyFatherIsGymLeader::
     .string "My father is the GYM LEADER of\n"
     .string "this town.\p"
-    .string "I'm training to use POISON POKéMON\n"
+    .string "Iá training to use POISON POKéMON\n"
     .string "as well as my father.$"
 

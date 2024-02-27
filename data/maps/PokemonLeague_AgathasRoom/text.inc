@@ -1,7 +1,7 @@
 PokemonLeague_AgathasRoom_Text_Intro::
     .string "I am AGATHA of\n"
     .string "the ELITE FOUR!\p"
-    .string "OAK's taken a lot\n"
+    .string "OAKÙ taken a lot\n"
     .string "of interest in\l"
     .string "you, child!\p"
     .string "That old duff was\n"
@@ -10,17 +10,17 @@ PokemonLeague_AgathasRoom_Text_Intro::
     .string "was decades ago!\p"
     .string "Now he just wants\n"
     .string "to fiddle with\l"
-    .string "his POKéDEX! He's\l"
+    .string "his POKéDEX! HeÙ\l"
     .string "wrong! POKéMON\l"
     .string "are for fighting!\p"
-    .string "{PLAYER}! I'll show\n"
+    .string "{PLAYER}! IÛl show\n"
     .string "you how a real\l"
     .string "trainer fights!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 
 PokemonLeague_AgathasRoom_Text_RematchIntro::
     .string "I am AGATHA of\n"
     .string "the ELITE FOUR!\p"
-    .string "OAK's taken a lot\n"
+    .string "OAKÙ taken a lot\n"
     .string "of interest in\l"
     .string "you, child!\p"
     .string "That old duff was\n"
@@ -29,16 +29,16 @@ PokemonLeague_AgathasRoom_Text_RematchIntro::
     .string "was decades ago!\p"
     .string "Now he just wants\n"
     .string "to fiddle with\l"
-    .string "his POKéDEX! He's\l"
+    .string "his POKéDEX! HeÙ\l"
     .string "wrong! POKéMON\l"
     .string "are for fighting!\p"
-    .string "{PLAYER}! I'll show\n"
+    .string "{PLAYER}! IÛl show\n"
     .string "you how a real\l"
     .string "trainer fights!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 
 PokemonLeague_AgathasRoom_Text_Defeat::
     .string "Oh ho!\n"
-    .string "You're something\l"
+    .string "Youàe something\l"
     .string "special, child!$"
 
 PokemonLeague_AgathasRoom_Text_PostBattle::

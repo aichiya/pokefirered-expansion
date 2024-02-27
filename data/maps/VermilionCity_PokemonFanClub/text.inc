@@ -1,6 +1,6 @@
 VermilionCity_PokemonFanClub_Text_AdmirePikachusTail::
-    .string "Won't you admire\n"
-    .string "my PIKACHU's\l"
+    .string "WonÑ you admire\n"
+    .string "my PIKACHUÙ\l"
     .string "adorable tail?$"
 
 VermilionCity_PokemonFanClub_Text_PikachuTwiceAsCute::
@@ -31,7 +31,7 @@ VermilionCity_PokemonFanClub_Text_DidYouComeToHearAboutMyMons::
     .string "POKéMON Fan Club!\p"
     .string "I have collected\n"
     .string "over 100 POKéMON!\p"
-    .string "I'm very fussy\n"
+    .string "Iá very fussy\n"
     .string "when it comes to\l"
     .string "POKéMON!\p"
     .string "So...\p"
@@ -44,7 +44,7 @@ VermilionCity_PokemonFanClub_Text_ChairmansStory::
     .string "Then listen up!\p"
     .string "My favorite\n"
     .string "RAPIDASH...\p"
-    .string "It's...cute...\n"
+    .string "ItÙ...cute...\n"
     .string "lovely...smart...\l"
     .string "plus...amazing...\l"
     .string "you think so?..."
@@ -71,10 +71,10 @@ VermilionCity_PokemonFanClub_Text_ReceivedBikeVoucherFromChairman::
 VermilionCity_PokemonFanClub_Text_ExplainBikeVoucher::
     .string "Exchange that for\n"
     .string "a BICYCLE!\p"
-    .string "Don't worry, my\n"
+    .string "DonÑ worry, my\n"
     .string "FEAROW will FLY\l"
     .string "me anywhere!\p"
-    .string "So, I don't need a\n"
+    .string "So, I donÑ need a\n"
     .string "BICYCLE!\p"
     .string "I hope you like\n"
     .string "cycling!$"
@@ -101,7 +101,7 @@ VermilionCity_PokemonFanClub_Text_ChairmanVeryVocalAboutPokemon::
     .string "POKéMON.$"
 
 VermilionCity_PokemonFanClub_Text_ListenPolitelyToOtherTrainers::
-    .string "Let's all listen\n"
+    .string "LetÙ all listen\n"
     .string "politely to other\l"
     .string "trainers!$"
 

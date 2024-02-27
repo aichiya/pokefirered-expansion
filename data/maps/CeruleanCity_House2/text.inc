@@ -11,7 +11,7 @@ CeruleanCity_House2_Text_RocketsStoleTMForDig::
     .string "bundle, it did!$"
 
 CeruleanCity_House2_Text_TeachDiglettDigWithoutTM::
-    .string "I figure what's\n"
+    .string "I figure whatÙ\n"
     .string "lost is lost!\p"
     .string "I decided to teach\n"
     .string "DIGLETT how to\l"

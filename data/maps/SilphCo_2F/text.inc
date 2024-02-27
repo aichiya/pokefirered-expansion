@@ -1,5 +1,5 @@
 SilphCo_2F_Text_ConnorIntro::
-    .string "Help! I'm a SILPH\n"
+    .string "Help! Iá a SILPH\n"
     .string "employee.$"
 
 SilphCo_2F_Text_ConnorDefeat::
@@ -13,11 +13,11 @@ SilphCo_2F_Text_ConnorPostBattle::
     .string "ROCKET!$"
 
 SilphCo_2F_Text_JerryIntro::
-    .string "It's off limits\n"
+    .string "ItÙ off limits\n"
     .string "here! Go home!$"
 
 SilphCo_2F_Text_JerryDefeat::
-    .string "SCIENTIST: You're\n"
+    .string "SCIENTIST: Youàe\n"
     .string "good.$"
 
 SilphCo_2F_Text_JerryPostBattle::
@@ -35,7 +35,7 @@ SilphCo_2F_Text_Grunt1PostBattle::
     .string "Diamond shaped\n"
     .string "tiles are\l"
     .string "teleport blocks!\p"
-    .string "They're hi-tech\n"
+    .string "Theyàe hi-tech\n"
     .string "transporters!$"
 SilphCo_2F_Text_Grunt2Intro::
     .string "Hey kid! What are\n"
@@ -52,20 +52,20 @@ SilphCo_2F_Text_Grunt2PostBattle::
 SilphCo_2F_Text_TakeTM36::
     .string "Eeek!\n"
     .string "No! Stop! Help!\p"
-    .string "Oh, you're not\n"
+    .string "Oh, youàe not\n"
     .string "with TEAM ROCKET.\l"
     .string "I thought...\l"
-    .string "I'm sorry. Here,\l"
+    .string "Iá sorry. Here,\l"
     .string "please take this!$"
 
 SilphCo_2F_Text_PutTM36Away::
     .string "{PLAYER} put TM36 away in\n"
-    .string "the BAG's TM CASE.$"
+    .string "the BAGÙ TM CASE.$"
 
 SilphCo_2F_Text_TM36_Contains::
     .string "TM36 is\n"
     .string "SELFDESTRUCT!\p"
-    .string "It's powerful, but\n"
+    .string "ItÙ powerful, but\n"
     .string "the POKéMON that\l"
     .string "uses it faints!\l"
     .string "Be careful.$"

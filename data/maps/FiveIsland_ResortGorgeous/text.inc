@@ -4,7 +4,7 @@ FiveIsland_ResortGorgeous_Text_DaisyIntro::
 
 FiveIsland_ResortGorgeous_Text_DaisyDefeat::
     .string "The shame of this…\n"
-    .string "I'm red-faced…$"
+    .string "Iá red-faced…$"
 
 FiveIsland_ResortGorgeous_Text_DaisyPostBattle::
     .string "Uh-oh, my paint tubes have\n"
@@ -12,17 +12,17 @@ FiveIsland_ResortGorgeous_Text_DaisyPostBattle::
 
 FiveIsland_ResortGorgeous_Text_CelinaIntro::
     .string "Excuse me!\n"
-    .string "I'm trying to paint.\l"
+    .string "Iá trying to paint.\l"
     .string "Please keep out of my sight!$"
 
 FiveIsland_ResortGorgeous_Text_CelinaDefeat::
     .string "This loss…\n"
-    .string "I feel like I'm whiting out…$"
+    .string "I feel like Iá whiting out…$"
 
 FiveIsland_ResortGorgeous_Text_CelinaPostBattle::
     .string "GILLIAN?\n"
     .string "Please tilt your head slightly…\l"
-    .string "There! That's the look I want!$"
+    .string "There! ThatÙ the look I want!$"
 
 FiveIsland_ResortGorgeous_Text_RaynaIntro::
     .string "Hmm…\n"
@@ -39,7 +39,7 @@ FiveIsland_ResortGorgeous_Text_RaynaPostBattle::
     .string "them difficult to capture.$"
 
 FiveIsland_ResortGorgeous_Text_JackiIntro::
-    .string "I am visiting my friend's retreat,\n"
+    .string "I am visiting my friendÙ retreat,\n"
     .string "if you must know.$"
 
 FiveIsland_ResortGorgeous_Text_JackiDefeat::
@@ -50,7 +50,7 @@ FiveIsland_ResortGorgeous_Text_JackiPostBattle::
     .string "battle in the gentle sea breeze.$"
 
 FiveIsland_ResortGorgeous_Text_GillianIntro::
-    .string "I'm thinking of having a pool\n"
+    .string "Iá thinking of having a pool\n"
     .string "made specially for POKéMON.$"
 
 FiveIsland_ResortGorgeous_Text_GillianDefeat::
@@ -61,8 +61,8 @@ FiveIsland_ResortGorgeous_Text_GillianPostBattle::
     .string "say, a sun-room may be sublime.$"
 
 FiveIsland_ResortGorgeous_Text_DestinIntro::
-    .string "I'm a good runner.\n"
-    .string "I'm really fast!$"
+    .string "Iá a good runner.\n"
+    .string "Iá really fast!$"
 
 FiveIsland_ResortGorgeous_Text_DestinDefeat::
     .string "Oops!\n"
@@ -77,7 +77,7 @@ FiveIsland_ResortGorgeous_Text_TobyIntro::
     .string "this resort agrees with me.$"
 
 FiveIsland_ResortGorgeous_Text_TobyDefeat::
-    .string "That's a shocker!\n"
+    .string "ThatÙ a shocker!\n"
     .string "You must be joking.$"
 
 FiveIsland_ResortGorgeous_Text_TobyPostBattle::

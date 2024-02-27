@@ -27,7 +27,7 @@ PalletTown_PlayersHouse_1F_Text_LookingGreatTakeCare::
     .string "Take care now!$"
 
 PalletTown_PlayersHouse_1F_Text_MovieOnTVFourBoysOnRailroad::
-    .string "There's a movie\n"
+    .string "ThereÙ a movie\n"
     .string "on TV.\l"
     .string "Four boys\l"
     .string "are walking on\l"
@@ -35,7 +35,7 @@ PalletTown_PlayersHouse_1F_Text_MovieOnTVFourBoysOnRailroad::
     .string "I better go too.$"
 
 PalletTown_PlayersHouse_1F_Text_MovieOnTVGirlOnBrickRoad::
-    .string "There's a movie on TV.\p"
+    .string "ThereÙ a movie on TV.\p"
     .string "A girl with her hair in\n"
     .string "pigtails is walking up a\l"
     .string "brick road.\p"

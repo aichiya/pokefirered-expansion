@@ -4,12 +4,12 @@ Route25_Text_JoeyIntro::
     .string "practice!$"
 
 Route25_Text_JoeyDefeat::
-    .string "YOUNGSTER: You're\n"
+    .string "YOUNGSTER: Youàe\n"
     .string "decent.$"
 
 Route25_Text_JoeyPostBattle::
     .string "All POKéMON have\n"
-    .string "weaknesses. It's\l"
+    .string "weaknesses. ItÙ\l"
     .string "best to raise\l"
     .string "different kinds.$"
 
@@ -20,7 +20,7 @@ Route25_Text_DanIntro::
     .string "VERMILION CITY!$"
 
 Route25_Text_DanDefeat::
-    .string "YOUNGSTER: I'm\n"
+    .string "YOUNGSTER: Iá\n"
     .string "not mad!$"
 
 Route25_Text_DanPostBattle::
@@ -29,8 +29,8 @@ Route25_Text_DanPostBattle::
     .string "around the world.$"
 
 Route25_Text_FlintIntro::
-    .string "I'm a cool guy.\n"
-    .string "I've got a girl\l"
+    .string "Iá a cool guy.\n"
+    .string "Iße got a girl\l"
     .string "friend!$"
 
 Route25_Text_FlintDefeat::
@@ -59,7 +59,7 @@ Route25_Text_ChadIntro::
 
 Route25_Text_ChadDefeat::
     .string "YOUNGSTER: I knew\n"
-    .string "I'd lose too!$"
+    .string "IÚ lose too!$"
 
 Route25_Text_ChadPostBattle::
     .string "If your POKéMON\n"
@@ -70,10 +70,10 @@ Route25_Text_ChadPostBattle::
 Route25_Text_HaleyIntro::
     .string "My friend has a\n"
     .string "cute POKéMON.\l"
-    .string "I'm so jealous!$"
+    .string "Iá so jealous!$"
 
 Route25_Text_HaleyDefeat::
-    .string "LASS: I'm\n"
+    .string "LASS: Iá\n"
     .string "not so jealous!$"
 
 Route25_Text_HaleyPostBattle::
@@ -84,7 +84,7 @@ Route25_Text_HaleyPostBattle::
 Route25_Text_FranklinIntro::
     .string "I just got down\n"
     .string "from MT.MOON,\l"
-    .string "but I'm ready!$"
+    .string "but Iá ready!$"
 
 Route25_Text_FranklinDefeat::
     .string "HIKER: You\n"
@@ -96,7 +96,7 @@ Route25_Text_FranklinPostBattle::
     .string "back in there.$"
 
 Route25_Text_NobIntro::
-    .string "I'm off to see a\n"
+    .string "Iá off to see a\n"
     .string "POKéMON collector\l"
     .string "at the cape!$"
 
@@ -110,12 +110,12 @@ Route25_Text_NobPostBattle::
     .string "of POKéMON.$"
 
 Route25_Text_WayneIntro::
-    .string "You're going to\n"
+    .string "Youàe going to\n"
     .string "see BILL? First,\l"
-    .string "let's fight!$"
+    .string "letÙ fight!$"
 
 Route25_Text_WayneDefeat::
-    .string "HIKER: You're\n"
+    .string "HIKER: Youàe\n"
     .string "something.$"
 
 Route25_Text_WaynePostBattle::
@@ -134,6 +134,6 @@ Route25_Text_MistyHighHopesAboutThisPlace::
 
 Route25_Text_AreYouHereAlone::
     .string "Hello, are you here alone?\p"
-    .string "If you're out at CERULEAN's cape…\n"
+    .string "If youàe out at CERULEANÙ cape…\n"
     .string "Well, it should be as a couple.$"
 

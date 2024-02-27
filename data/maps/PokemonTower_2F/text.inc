@@ -3,10 +3,10 @@ PokemonTower_2F_Text_RivalIntro::
     .string "{PLAYER}! What\l"
     .string "brings you here?\l"
     .string "Your POKéMON\l"
-    .string "don't look dead!\p"
+    .string "donÑ look dead!\p"
     .string "I can at least\n"
     .string "make them faint!\l"
-    .string "Let's go, pal!$"
+    .string "LetÙ go, pal!$"
 
 PokemonTower_2F_Text_RivalDefeat::
     .string "{RIVAL}: What?\n"
@@ -23,17 +23,17 @@ PokemonTower_2F_Text_RivalVictory::
     .string "もっと　ちゃんと　そだてて　やれよ$"
 
 PokemonTower_2F_Text_RivalPostBattle::
-    .string "How's your POKéDEX\n"
+    .string "HowÙ your POKéDEX\n"
     .string "coming, pal?\l"
     .string "I just caught a\l"
     .string "CUBONE!\p"
-    .string "I can't find the\n"
+    .string "I canÑ find the\n"
     .string "grown-up MAROWAK\l"
     .string "yet!\p"
     .string "I doubt there are\n"
     .string "any left! Well, I\l"
     .string "better get going!\l"
-    .string "I've got a lot to\l"
+    .string "Iße got a lot to\l"
     .string "accomplish, pal!\p"
     .string "Smell ya later!$"
 

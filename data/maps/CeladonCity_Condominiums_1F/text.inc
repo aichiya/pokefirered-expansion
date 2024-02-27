@@ -2,7 +2,7 @@ CeladonCity_Condominiums_1F_Text_Meowth::
     .string "MEOWTH: Meow!$"
 
 CeladonCity_Condominiums_1F_Text_TryThisDrinkInstead::
-    .string "You shouldn't spend all your money\n"
+    .string "You shouldnÑ spend all your money\n"
     .string "on drinks.\p"
     .string "Try this instead.$"
 
@@ -37,5 +37,5 @@ CeladonCity_Condominiums_1F_Text_Nidoran::
 
 CeladonCity_Condominiums_1F_Text_ManagersSuite::
     .string "CELADON MANSION\n"
-    .string "Manager's Suite$"
+    .string "ManagerÙ Suite$"
 

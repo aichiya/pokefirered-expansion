@@ -22,7 +22,7 @@ Text_AllowMeToTeachMonUltimateMove::
 
 Text_YouRejectIt::
     .string "Gaah! You reject it?\n"
-    .string "No, I won't be dissuaded!$"
+    .string "No, I wonÑ be dissuaded!$"
 
 Text_LetMeConferUltimateMove::
     .string "You will allow it?\p"
@@ -32,7 +32,7 @@ Text_LetMeConferUltimateMove::
 
 Text_TaughtMove::
     .string "Gasp, gasp, gasp…\p"
-    .string "I didn't think I could teach that\n"
+    .string "I didnÑ think I could teach that\n"
     .string "move while I still lived…$"
 
 Text_MakeBestUseOfMove::
@@ -42,7 +42,7 @@ Text_MakeBestUseOfMove::
 Text_PassedOnEverythingIKnow::
     .string "Gasp, gasp, gasp…\p"
     .string "I have no regrets now.\n"
-    .string "I've passed on everything I know.\p"
+    .string "Iße passed on everything I know.\p"
     .string "Now I can live out my life knowing\n"
     .string "my work is done.$"
 

@@ -4,7 +4,7 @@ PokemonTower_3F_Text_HopeIntro::
 
 PokemonTower_3F_Text_HopeDefeat::
     .string "CHANNELER: Hwa!\n"
-    .string "I'm saved!$"
+    .string "Iá saved!$"
 
 PokemonTower_3F_Text_HopePostBattle::
     .string "The GHOSSTs can be\n"

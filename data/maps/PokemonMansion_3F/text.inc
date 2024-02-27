@@ -28,7 +28,7 @@ PokemonMansion_1F_Text_BraydonDefeat::
     .string "Overwhelming!$"
 
 PokemonMansion_1F_Text_BraydonPostBattle::
-    .string "So, you're stuck?\n"
+    .string "So, youàe stuck?\n"
     .string "Try jumping off\l"
     .string "over there!$"
 

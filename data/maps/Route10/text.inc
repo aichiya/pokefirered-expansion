@@ -6,7 +6,7 @@ Route10_Text_MarkIntro::
 
 Route10_Text_MarkDefeat::
     .string "POKéMANIAC: Humph.\n"
-    .string "I'm not angry!$"
+    .string "Iá not angry!$"
 
 Route10_Text_MarkPostBattle::
     .string "I have more rare\n"
@@ -35,11 +35,11 @@ Route10_Text_HermanDefeat::
     .string "My POKéMON!$"
 
 Route10_Text_HermanPostBattle::
-    .string "I don't like you\n"
+    .string "I donÑ like you\n"
     .string "for beating me!$"
 
 Route10_Text_HeidiIntro::
-    .string "I've been to a\n"
+    .string "Iße been to a\n"
     .string "POKéMON GYM a few\l"
     .string "times. But, I\l"
     .string "lost each time.$"
@@ -67,12 +67,12 @@ Route10_Text_TrentPostBattle::
     .string "mountain air!$"
 
 Route10_Text_CarolIntro::
-    .string "I'm feeling a bit\n"
+    .string "Iá feeling a bit\n"
     .string "faint from this"
     .string "tough hike.$"
 
 Route10_Text_CarolDefeat::
-    .string "JR.TRAINER♂: I'm\n"
+    .string "JR.TRAINER♂: Iá\n"
     .string "not up for it!$"
 
 Route10_Text_CarolPostBattle::

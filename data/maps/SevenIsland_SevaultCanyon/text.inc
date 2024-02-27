@@ -1,22 +1,22 @@
 SevenIsland_SevaultCanyon_Text_CyndyIntro::
-    .string "My conditioning's in top form!$"
+    .string "My conditioningÙ in top form!$"
 
 SevenIsland_SevaultCanyon_Text_CyndyDefeat::
     .string "Huh?\n"
-    .string "Something's not right…$"
+    .string "SomethingÙ not right…$"
 
 SevenIsland_SevaultCanyon_Text_CyndyPostBattle::
     .string "The way I am now, I may have to\n"
     .string "hold off on TRAINER TOWER…$"
 
 SevenIsland_SevaultCanyon_Text_EvanIntro::
-    .string "It doesn't matter if you happen to\n"
+    .string "It doesnÑ matter if you happen to\n"
     .string "have the strongest POKéMON…\p"
-    .string "It doesn't mean a thing if you don't\n"
+    .string "It doesnÑ mean a thing if you donÑ\n"
     .string "know how to use them properly!$"
 
 SevenIsland_SevaultCanyon_Text_EvanDefeat::
-    .string "You're a master at this.$"
+    .string "Youàe a master at this.$"
 
 SevenIsland_SevaultCanyon_Text_EvanPostBattle::
     .string "You see them every so often,\n"
@@ -30,7 +30,7 @@ SevenIsland_SevaultCanyon_Text_JacksonIntro::
     .string "In turn, nature protects me!$"
 
 SevenIsland_SevaultCanyon_Text_JacksonDefeat::
-    .string "Whoa! You're tough!\n"
+    .string "Whoa! Youàe tough!\n"
     .string "How about protecting me?$"
 
 SevenIsland_SevaultCanyon_Text_JacksonPostBattle::
@@ -44,7 +44,7 @@ SevenIsland_SevaultCanyon_Text_KatelynIntro::
     .string "snazzy.$"
 
 SevenIsland_SevaultCanyon_Text_KatelynDefeat::
-    .string "You're hot stuff in spite of your\n"
+    .string "Youàe hot stuff in spite of your\n"
     .string "cute looks.$"
 
 SevenIsland_SevaultCanyon_Text_KatelynPostBattle::
@@ -58,7 +58,7 @@ SevenIsland_SevaultCanyon_Text_LeroyIntro::
 
 SevenIsland_SevaultCanyon_Text_LeroyDefeat::
     .string "I knew it!\n"
-    .string "You're as tough as I thought!$"
+    .string "Youàe as tough as I thought!$"
 
 SevenIsland_SevaultCanyon_Text_LeroyPostBattle::
     .string "The way you battle has given me\n"
@@ -68,16 +68,16 @@ SevenIsland_SevaultCanyon_Text_LeroyPostBattle::
 SevenIsland_SevaultCanyon_Text_MichelleIntro::
     .string "I was given the best possible\n"
     .string "education to become this strong.\p"
-    .string "I don't want to lose to anyone!$"
+    .string "I donÑ want to lose to anyone!$"
 
 SevenIsland_SevaultCanyon_Text_MichelleDefeat::
-    .string "Thank you. I feel like I've been\n"
+    .string "Thank you. I feel like Iße been\n"
     .string "set free by losing to you.$"
 
 SevenIsland_SevaultCanyon_Text_MichellePostBattle::
     .string "For some reason, I get furious\n"
     .string "over the slightest thing.\p"
-    .string "I'll calm myself by breathing\n"
+    .string "IÛl calm myself by breathing\n"
     .string "deeply.$"
 
 SevenIsland_SevaultCanyon_Text_LexIntro::
@@ -98,22 +98,22 @@ SevenIsland_SevaultCanyon_Text_LexNotEnoughMons::
     .string "both of us at the same time?$"
 
 SevenIsland_SevaultCanyon_Text_NyaIntro::
-    .string "NYA: I'll do my best so I won't\n"
+    .string "NYA: IÛl do my best so I wonÑ\n"
     .string "drag down my mentor, LEX!$"
 
 SevenIsland_SevaultCanyon_Text_NyaDefeat::
     .string "NYA: Oh, no…\n"
-    .string "I'm so sorry, I…$"
+    .string "Iá so sorry, I…$"
 
 SevenIsland_SevaultCanyon_Text_NyaPostBattle::
-    .string "NYA: I think I'm going to need\n"
+    .string "NYA: I think Iá going to need\n"
     .string "much more seasoning and tutoring\l"
     .string "under LEX…\p"
     .string "…So, LEX, please, may I stay with\n"
     .string "you like this?$"
 
 SevenIsland_SevaultCanyon_Text_NyaNotEnoughMons::
-    .string "NYA: I'm sorry, but may we battle\n"
+    .string "NYA: Iá sorry, but may we battle\n"
     .string "in two-on-two style?$"
 
 SevenIsland_SevaultCanyon_Text_RouteSign::
@@ -123,7 +123,7 @@ SevenIsland_SevaultCanyon_Text_RouteSign::
 SevenIsland_SevaultCanyon_Text_BrunoTrainedWithBrawly::
     .string "Training by oneself is certainly\n"
     .string "not a bad thing.\p"
-    .string "But it's also not bad to aim for\n"
+    .string "But itÙ also not bad to aim for\n"
     .string "the top with a partner.\p"
     .string "Even BRUNO…\n"
     .string "He trained with a fellow by the\l"

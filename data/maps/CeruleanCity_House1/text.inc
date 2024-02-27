@@ -66,7 +66,7 @@ CeruleanCity_House1_Text_ObeyLv70RockSmash::
     .string "become unruly!$"
 
 CeruleanCity_House1_Text_SpStatsWaterfall::
-    .string "Your POKéMON's\n"
+    .string "Your POKéMONÙ\n"
     .string "SPECIAL abilities\l"
     .string "increase a bit.$"
 

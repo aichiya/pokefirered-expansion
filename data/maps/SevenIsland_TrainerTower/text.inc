@@ -20,7 +20,7 @@ SevenIsland_TrainerTower_Text_RodetteDefeat::
 SevenIsland_TrainerTower_Text_RodettePostBattle::
     .string "Somewhere on this island, peculiar\n"
     .string "POKéMON are sleeping.\p"
-    .string "Could it be that they're waiting\n"
+    .string "Could it be that theyàe waiting\n"
     .string "for you?$"
 
 SevenIsland_TrainerTower_Text_TrainerTowerSign::

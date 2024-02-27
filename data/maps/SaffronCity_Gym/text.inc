@@ -13,11 +13,11 @@ SaffronCity_Gym_Text_SabrinaIntro::
     .string "you my powers!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 
 SaffronCity_Gym_Text_SabrinaDefeat::
-    .string "SABRINA: I'm\n"
+    .string "SABRINA: Iá\n"
     .string "shocked!\l"
     .string "But, a loss is a\l"
     .string "loss.\p"
-    .string "I admit I didn't\n"
+    .string "I admit I didnÑ\n"
     .string "work hard enough\l"
     .string "to win!\p"
     .string "You earned the\n"
@@ -26,7 +26,7 @@ SaffronCity_Gym_Text_SabrinaDefeat::
 SaffronCity_Gym_Text_SabrinaPostBattle::
     .string "Everyone has\n"
     .string "psychic power!\p"
-    .string "People just don't\n"
+    .string "People just donÑ\n"
     .string "realize it!$"
 
 SaffronCity_Gym_Text_ExplainMarshBadgeTakeThis::
@@ -37,7 +37,7 @@ SaffronCity_Gym_Text_ExplainMarshBadgeTakeThis::
     .string "will become wild,\l"
     .string "ignoring your\l"
     .string "orders in battle!\p"
-    .string "Just don't raise\n"
+    .string "Just donÑ raise\n"
     .string "your POKéMON too\l"
     .string "too much!\p"
     .string "Wait, please take\n"
@@ -106,11 +106,11 @@ SaffronCity_Gym_Text_StacyPostBattle::
 
 SaffronCity_Gym_Text_TyronIntro::
     .string "You know that\n"
-    .string "power alone isn't\l"
+    .string "power alone isnÑ\l"
     .string "enough!$"
 
 SaffronCity_Gym_Text_TyronDefeat::
-    .string "PSYCHIC: I don't\n"
+    .string "PSYCHIC: I donÑ\n"
     .string "believe this!$"
 
 SaffronCity_Gym_Text_TyronPostBattle::
@@ -133,9 +133,9 @@ SaffronCity_Gym_Text_TashaPostBattle::
 
 SaffronCity_Gym_Text_CameronIntro::
     .string "SABRINA is young,\n"
-    .string "but she's also\l"
+    .string "but sheÙ also\l"
     .string "our LEADER!\p"
-    .string "You won't reach\n"
+    .string "You wonÑ reach\n"
     .string "her easily!$"
 
 SaffronCity_Gym_Text_CameronDefeat::
@@ -164,14 +164,14 @@ SaffronCity_Gym_Text_PrestonDefeat::
     .string "PSYCHIC: Arrrgh!$"
 
 SaffronCity_Gym_Text_PrestonPostBattle::
-    .string "That's right! I\n"
+    .string "ThatÙ right! I\n"
     .string "used telepathy to\l"
     .string "read your mind!$"
 
 SaffronCity_Gym_Text_GymGuyAdvice::
     .string "Yo! Chemp in\n"
     .string "making!\p"
-    .string "SABRINA's POKéMON\n"
+    .string "SABRINAÙ POKéMON\n"
     .string "use psychic power\l"
     .string "instead of force!\p"
     .string "Fighting POKéMON\n"
@@ -185,7 +185,7 @@ SaffronCity_Gym_Text_GymGuyPostVictory::
     .string "Psychic power,\n"
     .string "huh?\p"
     .string "If I had that,\n"
-    .string "I'd make a bundle\l"
+    .string "IÚ make a bundle\l"
     .string "at the slots!$"
 
 SaffronCity_Gym_Text_GymStatue::

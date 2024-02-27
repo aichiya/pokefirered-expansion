@@ -1,8 +1,8 @@
 FourIsland_Mart_Text_LoreleiGrewUpOnThisIsland::
-    .string "We've had a great and powerful\n"
+    .string "Weße had a great and powerful\n"
     .string "TRAINER grow up on this island.\p"
-    .string "I bet even you'd know her.\n"
-    .string "It's LORELEI of the ELITE FOUR!\p"
+    .string "I bet even youÚ know her.\n"
+    .string "ItÙ LORELEI of the ELITE FOUR!\p"
     .string "When LORELEI was just a tyke,\n"
     .string "I taught her about POKéMON.$"
 

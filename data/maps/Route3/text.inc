@@ -22,11 +22,11 @@ Route3_Text_ColtonPostBattle::
 
 Route3_Text_BenIntro::
     .string "Hi! I like shorts!\n"
-    .string "They're comfy and\l"
+    .string "Theyàe comfy and\l"
     .string "easy to wear!$"
 
 Route3_Text_BenDefeat::
-    .string "YOUNGSTER: I don't\n"
+    .string "YOUNGSTER: I donÑ\n"
     .string "believe it!$"
 
 Route3_Text_BenPostBattle::
@@ -37,25 +37,25 @@ Route3_Text_BenPostBattle::
 
 Route3_Text_JaniceIntro::
     .string "You looked at me,\n"
-    .string "didn't you?$"
+    .string "didnÑ you?$"
 
 Route3_Text_JaniceDefeat::
-    .string "LASS: You're\n"
+    .string "LASS: Youàe\n"
     .string "mean!$"
 
 Route3_Text_JanicePostBattle::
     .string "Quit staring if\n"
-    .string "you don't want to\l"
+    .string "you donÑ want to\l"
     .string "fight!$"
 
 Route3_Text_GregIntro::
     .string "Are you a trainer?\n"
-    .string "Let's fight!$"
+    .string "LetÙ fight!$"
 
 Route3_Text_GregDefeat::
     .string "BUG CATCHER: If I\n"
     .string "had new POKéMON I\l"
-    .string "would've won!$"
+    .string "wouldße won!$"
 
 Route3_Text_GregPostBattle::
     .string "If a POKéMON BOX on the PC gets\n"
@@ -63,7 +63,7 @@ Route3_Text_GregPostBattle::
 
 Route3_Text_SallyIntro::
     .string "That look you\n"
-    .string "gave me, it's so\l"
+    .string "gave me, itÙ so\l"
     .string "intriguing!$"
 
 Route3_Text_SallyDefeat::
@@ -75,7 +75,7 @@ Route3_Text_SallyPostBattle::
     .string "people see you!$"
 
 Route3_Text_CalvinIntro::
-    .string "Hey! You're not\n"
+    .string "Hey! Youàe not\n"
     .string "wearing shorts!$"
 
 Route3_Text_CalvinDefeat::
@@ -105,7 +105,7 @@ Route3_Text_RobinIntro::
     .string "touch me?$"
 
 Route3_Text_RobinDefeat::
-    .string "LASS: That's it?$"
+    .string "LASS: ThatÙ it?$"
 
 Route3_Text_RobinPostBattle::
     .string "ROUTE 4 is at the\n"

@@ -1,6 +1,6 @@
 SSAnne_Kitchen_Text_BusyOutOfTheWay::
     .string "You, mon petit!\n"
-    .string "We're busy here!\l"
+    .string "Weàe busy here!\l"
     .string "Out of the way!$"
 
 SSAnne_Kitchen_Text_SawOddBerryInTrash::
@@ -8,7 +8,7 @@ SSAnne_Kitchen_Text_SawOddBerryInTrash::
     .string "in the trash.$"
 
 SSAnne_Kitchen_Text_SoBusyImDizzy::
-    .string "I'm so busy I'm\n"
+    .string "Iá so busy Iá\n"
     .string "getting dizzy!$"
 
 SSAnne_Kitchen_Text_PeelSpudsEveryDay::
@@ -38,7 +38,7 @@ SSAnne_Kitchen_Text_IAmLeChefMainCourseIs::
 SSAnne_Kitchen_Text_SalmonDuSalad::
     .string "Salmon du Salad!\p"
     .string "Les guests may\n"
-    .string "gripe it's fish\l"
+    .string "gripe itÙ fish\l"
     .string "again, however!$"
 
 SSAnne_Kitchen_Text_EelsAuBarbecue::

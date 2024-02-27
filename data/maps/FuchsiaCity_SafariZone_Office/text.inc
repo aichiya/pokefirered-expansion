@@ -14,9 +14,9 @@ FuchsiaCity_SafariZone_Office_Text_WardenIsVeryKnowledgeable::
 
 FuchsiaCity_SafariZone_Office_Text_CouldntUnderstandWarden::
     .string "SLOWPOKE came in,\n"
-    .string "but I coulnd't\l"
+    .string "but I coulndÑ\l"
     .string "understand him.\p"
-    .string "I think he's got\n"
+    .string "I think heÙ got\n"
     .string "a speech problem!$"
 
 FuchsiaCity_SafariZone_Office_Text_PrizeInSafariZone::
@@ -24,6 +24,6 @@ FuchsiaCity_SafariZone_Office_Text_PrizeInSafariZone::
     .string "promotion campaign right now.\p"
     .string "Try to get to the farthest corner\n"
     .string "of the SAFARI ZONE.\p"
-    .string "If you can make it, you'll win a\n"
+    .string "If you can make it, youÛl win a\n"
     .string "very convenient prize.$"
 

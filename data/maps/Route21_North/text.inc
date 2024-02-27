@@ -7,7 +7,7 @@ Route21_North_Text_RonaldDefeat::
 	.string "FISHERMAN: Dang!$"
 
 Route21_North_Text_RonaldPostBattle::
-	.string "I can't catch\n"
+	.string "I canÑ catch\n"
 	.string "anything good!$"
 
 Route21_North_Text_WadeIntro::
@@ -38,7 +38,7 @@ Route21_North_Text_SpencerPostBattle::
 @ Interestingly they did add a rematch intro text for this trainer
 @ English translations from RB are listed
 
-@ "What's wrong with me swimming?"
+@ "WhatÙ wrong with me swimming?"
 Route21_North_Text_CueBallIntro::
 	.string "おれだって　たまには\n"
 	.string "およぎに　くるぜ！$"

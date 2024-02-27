@@ -7,17 +7,17 @@ Route19_Text_RichardDefeat::
     .string "warmed up!$"
 
 Route19_Text_RichardPostBattle::
-    .string "Thanks, kid! I'm\n"
+    .string "Thanks, kid! Iá\n"
     .string "ready for a swim!$"
 
 Route19_Text_ReeceIntro::
     .string "Wait!\n"
-    .string "You'll have\l"
+    .string "YouÛl have\l"
     .string "a heart attack!$"
 
 Route19_Text_ReeceDefeat::
     .string "SWIMMER: Ooh!\n"
-    .string "That's chilly!$"
+    .string "ThatÙ chilly!$"
 
 Route19_Text_ReecePostBattle::
     .string "Watch out for\n"
@@ -36,7 +36,7 @@ Route19_Text_MatthewPostBattle::
     .string "at swimming!$"
 
 Route19_Text_DouglasIntro::
-    .string "What's beyond the\n"
+    .string "WhatÙ beyond the\n"
     .string "horizon?$"
 
 Route19_Text_DouglasDefeat::
@@ -67,7 +67,7 @@ Route19_Text_TonyDefeat::
     .string "Traumatic!$"
 
 Route19_Text_TonyPostBattle::
-    .string "I'm looking at the\n"
+    .string "Iá looking at the\n"
     .string "sea to forget!$"
 
 Route19_Text_AnyaIntro::
@@ -80,13 +80,13 @@ Route19_Text_AnyaDefeat::
     .string "I lost!$"
 
 Route19_Text_AnyaPostBattle::
-    .string "It's still a long\n"
+    .string "ItÙ still a long\n"
     .string "way to go to\l"
     .string "SEAFOAM ISLANDS.$"
 
 Route19_Text_AliceIntro::
-    .string "Swimming's great!\n"
-    .string "Sunburns aren't!$"
+    .string "SwimmingÙ great!\n"
+    .string "Sunburns arenÑ!$"
 
 Route19_Text_AliceDefeat::
     .string "BEAUTY: Shocker!$"
@@ -110,10 +110,10 @@ Route19_Text_AxlePostBattle::
 
 Route19_Text_ConnieIntro::
     .string "I swam here , but\n"
-    .string "I'm tired.$"
+    .string "Iá tired.$"
 
 Route19_Text_ConnieDefeat::
-    .string "BEAUTY: I'm\n"
+    .string "BEAUTY: Iá\n"
     .string "exhausted...$"
 
 Route19_Text_ConniePostBattle::
@@ -127,23 +127,23 @@ Route19_Text_RouteSign::
     .string "SEAFOAM ISLANDS$"
 
 Route19_Text_LiaIntro::
-    .string "LIA: I'm looking after my brother.\n"
+    .string "LIA: Iá looking after my brother.\n"
     .string "He just became a TRAINER.$"
 
 Route19_Text_LiaDefeat::
-    .string "LIA: That's no way to treat my\n"
+    .string "LIA: ThatÙ no way to treat my\n"
     .string "little brother!$"
 
 Route19_Text_LiaPostBattle::
     .string "LIA: Do you have a younger\n"
     .string "brother?\p"
-    .string "I hope you're teaching him all\n"
+    .string "I hope youàe teaching him all\n"
     .string "sorts of things.$"
 
 Route19_Text_LiaNotEnoughMons::
     .string "LIA: I want to battle together\n"
     .string "with my little brother.\p"
-    .string "Don't you have two POKéMON?$"
+    .string "DonÑ you have two POKéMON?$"
 
 Route19_Text_LucIntro::
     .string "LUC: My big sis taught me how\n"
@@ -155,9 +155,9 @@ Route19_Text_LucDefeat::
 
 Route19_Text_LucPostBattle::
     .string "LUC: My big sis is strong and nice.\n"
-    .string "I think she's awesome!$"
+    .string "I think sheÙ awesome!$"
 
 Route19_Text_LucNotEnoughMons::
-    .string "LUC: I don't want to if I can't\n"
+    .string "LUC: I donÑ want to if I canÑ\n"
     .string "battle you with my big sis.\p"
-    .string "Don't you have two POKéMON?$"
+    .string "DonÑ you have two POKéMON?$"

@@ -1,5 +1,5 @@
 SSAnne_B1F_Room1_Text_PhillipIntro::
-    .string "Matey, you're\n"
+    .string "Matey, youàe\n"
     .string "walking the plank\l"
     .string "if you lose!$"
 

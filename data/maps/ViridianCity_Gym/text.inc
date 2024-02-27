@@ -7,7 +7,7 @@ ViridianCity_Gym_Text_GiovanniIntro::
     .string "But, you have\n"
     .string "caught me again!\l"
     .string "So be it! This\l"
-    .string "time, I'm not\l"
+    .string "time, Iá not\l"
     .string "holding back!\p"
     .string "Once more, you\n"
     .string "shall face\l"
@@ -82,7 +82,7 @@ ViridianCity_Gym_Text_YujiPostBattle::
     .string "GYM LEADER!$"
 
 ViridianCity_Gym_Text_AtsushiIntro::
-    .string "Rrrroar! I'm\n"
+    .string "Rrrroar! Iá\n"
     .string "working myself\l"
     .string "into a rage!$"
 
@@ -90,7 +90,7 @@ ViridianCity_Gym_Text_AtsushiDefeat::
     .string "BLACKBELT: Wargh!$"
 
 ViridianCity_Gym_Text_AtsushiPostBattle::
-    .string "I'm still not\n"
+    .string "Iá still not\n"
     .string "worthy!$"
 
 ViridianCity_Gym_Text_JasonIntro::
@@ -133,7 +133,7 @@ ViridianCity_Gym_Text_WarrenPostBattle::
     .string "scold me!$"
 
 ViridianCity_Gym_Text_TakashiIntro::
-    .string "I'm the KARATE\n"
+    .string "Iá the KARATE\n"
     .string "KING! Your fate\l"
     .string "rests with me!$"
 
@@ -142,7 +142,7 @@ ViridianCity_Gym_Text_TakashiDefeat::
 
 ViridianCity_Gym_Text_TakashiPostBattle::
     .string "POKéMON LEAGUE?\n"
-    .string "You? Don't get\l"
+    .string "You? DonÑ get\l"
     .string "cocky!$"
 
 ViridianCity_Gym_Text_ColeIntro::
@@ -177,8 +177,8 @@ ViridianCity_Gym_Text_SamuelPostBattle::
 ViridianCity_Gym_Text_GymGuyAdvice::
     .string "Yo! Champ in\n"
     .string "making!\p"
-    .string "Even I don't know\n"
-    .string "VIRIDIAN LEADER's\l"
+    .string "Even I donÑ know\n"
+    .string "VIRIDIAN LEADERÙ\l"
     .string "identity!\p"
     .string "This will be the\n"
     .string "toughest of all\l"

@@ -16,7 +16,7 @@ SilphCo_6F_Text_WeGotEngaged::
     .string "Heheh!$"
 
 SilphCo_6F_Text_ThatManIsSuchACoward::
-    .string "Look at him! He's\n"
+    .string "Look at him! HeÙ\n"
     .string "such a coward!$"
 
 SilphCo_6F_Text_NeedsMeToLookAfterHim::
@@ -61,7 +61,7 @@ SilphCo_6F_Text_Grunt1PostBattle::
 SilphCo_6F_Text_TaylorIntro::
     .string "That rotten\n"
     .string "PRESIDENT!\p"
-    .string "He shouldn't have\n"
+    .string "He shouldnÑ have\n"
     .string "sent me to the\l"
     .string "TIKSI BRANCH!$"
 
@@ -70,8 +70,8 @@ SilphCo_6F_Text_TaylorDefeat::
 
 SilphCo_6F_Text_TaylorPostBattle::
     .string "TIKSI BRANCH?\n"
-    .string "It's in Russian\l"
-    .string "no man's-land!$"
+    .string "ItÙ in Russian\l"
+    .string "no manÙ-land!$"
 
 SilphCo_6F_Text_Grunt2Intro::
     .string "You dare betray\n"

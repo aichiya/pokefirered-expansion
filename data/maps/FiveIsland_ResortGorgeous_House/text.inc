@@ -1,7 +1,7 @@
 FiveIsland_ResortGorgeous_House_Text_PleaseHearMyWish::
     .string "SELPHY: Oh?\n"
     .string "Do I know you from somewhere?\p"
-    .string "Oh, but that doesn't matter.\p"
+    .string "Oh, but that doesnÑ matter.\p"
     .string "I am exquisitely bored.\n"
     .string "Please, hear my wish.$"
 
@@ -12,10 +12,10 @@ FiveIsland_ResortGorgeous_House_Text_WishToSeeMonPlease::
     .string "Please, make my wish come true.$"
 
 FiveIsland_ResortGorgeous_House_Text_OhImTiredOfWaiting::
-    .string "SELPHY: Oh, I'm tired of this.\n"
-    .string "I'm tired of waiting for you.\p"
-    .string "I'll forgive you this time, but\n"
-    .string "please don't fail me next time.$"
+    .string "SELPHY: Oh, Iá tired of this.\n"
+    .string "Iá tired of waiting for you.\p"
+    .string "IÛl forgive you this time, but\n"
+    .string "please donÑ fail me next time.$"
 
 FiveIsland_ResortGorgeous_House_Text_MonYouCaughtForMeThankYou::
     .string "SELPHY: Oh, hello, there.\p"

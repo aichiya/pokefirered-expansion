@@ -17,7 +17,7 @@ PokemonTower_1F_Text_ComeToPayRespectsGirl::
 PokemonTower_1F_Text_CameToPrayForDepartedClefairy::
     .string "I came to pray\n"
     .string "for my CLEFAIRY.\p"
-    .string "Sniff! I can't\n"
+    .string "Sniff! I canÑ\n"
     .string "stop crying...$"
 
 PokemonTower_1F_Text_GrowlitheWhyDidYouDie::

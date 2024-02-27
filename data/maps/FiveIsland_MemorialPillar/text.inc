@@ -1,5 +1,5 @@
 FiveIsland_MemorialPillar_Text_MiloIntro::
-    .string "I'm the eldest of the BIRD\n"
+    .string "Iá the eldest of the BIRD\n"
     .string "BROTHERS.\p"
     .string "The best thing about birds…\n"
     .string "It has to be the beak.$"
@@ -12,7 +12,7 @@ FiveIsland_MemorialPillar_Text_MiloPostBattle::
     .string "here.$"
 
 FiveIsland_MemorialPillar_Text_ChazIntro::
-    .string "I'm the middle kid of the BIRD\n"
+    .string "Iá the middle kid of the BIRD\n"
     .string "BROTHERS.\p"
     .string "The best thing about birds…\n"
     .string "It has to be the wings.$"
@@ -25,7 +25,7 @@ FiveIsland_MemorialPillar_Text_ChazPostBattle::
     .string "over that way.$"
 
 FiveIsland_MemorialPillar_Text_HaroldIntro::
-    .string "I'm the youngest of the BIRD\n"
+    .string "Iá the youngest of the BIRD\n"
     .string "BROTHERS.\p"
     .string "The best thing about birds…\n"
     .string "It has to be the down.$"
@@ -65,11 +65,11 @@ FiveIsland_MemorialPillar_Text_PlacedCanOfLemonade::
 
 FiveIsland_MemorialPillar_Text_ThankYouPleaseTakeThis::
     .string "Th-thank you…\p"
-    .string "That was my TECTONIX's favorite\n"
+    .string "That was my TECTONIXÙ favorite\n"
     .string "drink…\p"
-    .string "I don't even know you, but your\n"
+    .string "I donÑ even know you, but your\n"
     .string "act of kindness…\p"
-    .string "It's uplifted me a little.\p"
+    .string "ItÙ uplifted me a little.\p"
     .string "Can you please take this as my\n"
     .string "thanks?$"
 
@@ -78,11 +78,11 @@ FiveIsland_MemorialPillar_Text_BeGoodToYourMonsToo::
     .string "too.$"
 
 FiveIsland_MemorialPillar_Text_DontHaveRoomForIt::
-    .string "If you don't have room for it,\n"
-    .string "I'll hold it for you till next time.$"
+    .string "If you donÑ have room for it,\n"
+    .string "IÛl hold it for you till next time.$"
 
 FiveIsland_MemorialPillar_Text_StillHaveThingAsMyThanks::
-    .string "Oh, it's you from that time…\p"
+    .string "Oh, itÙ you from that time…\p"
     .string "I still have that thing I wanted\n"
     .string "you to have as my thanks.$"
 

@@ -9,7 +9,7 @@ CeladonCity_DepartmentStore_3F_Text_OTStandsForOriginalTrainer::
 
 CeladonCity_DepartmentStore_3F_Text_BuddyTradingKangaskhanForHaunter::
     .string "All right!\p"
-    .string "My buddy's going\n"
+    .string "My buddyÙ going\n"
     .string "to trade me his\l"
     .string "KANGASKHAN for my\l"
     .string "GRAVELER!$"
@@ -30,15 +30,15 @@ CeladonCity_DepartmentStore_3F_Text_CanIdentifyTradeMonsByID::
     .string "their ID Numbers!$"
 
 CeladonCity_DepartmentStore_3F_Text_ItsSuperNES::
-    .string "It's an SNES!$"
+    .string "ItÙ an SNES!$"
 
 CeladonCity_DepartmentStore_3F_Text_AnRPG::
-    .string "An RPG! There's\n"
+    .string "An RPG! ThereÙ\n"
     .string "no time for that!$"
 
 CeladonCity_DepartmentStore_3F_Text_SportsGame::
     .string "A sports game!\n"
-    .string "Dad'll like that!$"
+    .string "DadÛl like that!$"
 
 CeladonCity_DepartmentStore_3F_Text_PuzzleGame::
     .string "A puzzle game!\n"
@@ -63,7 +63,7 @@ Text_CounterTeach::
     .string "useful!$"
 
 Text_CounterDeclined::
-    .string "You're not interested? Come see\n"
+    .string "Youàe not interested? Come see\n"
     .string "me if you change your mind.$"
 
 Text_CounterWhichMon::

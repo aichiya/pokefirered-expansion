@@ -2,7 +2,7 @@ CeladonCity_DepartmentStore_2F_Text_SuperRepelMorePowerfulRepel::
     .string "SUPER REPEL keeps\n"
     .string "weak POKéMON at\l"
     .string "bay...\p"
-    .string "Hmm, it's a more\n"
+    .string "Hmm, itÙ a more\n"
     .string "powerful REPEL!$"
 
 CeladonCity_DepartmentStore_2F_Text_BuyReviveForLongOutings::
@@ -19,12 +19,12 @@ CeladonCity_DepartmentStore_3F_Text_TakeTM18::
 
 CeladonCity_DepartmentStore_3F_Text_PutTM18Away::
     .string "{PLAYER} put TM18 away in\n"
-    .string "the BAG's TM CASE.$"
+    .string "the BAGÙ TM CASE.$"
 
 CeladonCity_DepartmentStore_3F_Text_TM18_Contains::
     .string "TM18 is COUNTER!\n"
     .string "Not like the one\l"
-    .string "I'm leaning on,\l"
+    .string "Iá leaning on,\l"
     .string "mind you!$"
 
 CeladonCity_DepartmentStore_2F_Text_FloorSign::

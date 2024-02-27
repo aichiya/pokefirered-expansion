@@ -3,7 +3,7 @@ CinnabarIsland_Text_DoorIsLocked::
     .string "locked...$"
 
 CinnabarIsland_Text_BlaineLivedHereSinceBeforeLab::
-    .string "CINNABAR GYM's\n"
+    .string "CINNABAR GYMÙ\n"
     .string "BLAINE is an odd\l"
     .string "man who has lived\l"
     .string "here for decades.$"
@@ -31,46 +31,46 @@ CinnabarIsland_Text_GymSign::
 
 CinnabarIsland_Text_HeyIfItIsntPlayer::
     .string "Huh?\n"
-    .string "Hey, if it isn't {PLAYER}!$"
+    .string "Hey, if it isnÑ {PLAYER}!$"
 
 CinnabarIsland_Text_ComeWithMeToOneIsland::
-    .string "Look, it's me, BILL.\n"
+    .string "Look, itÙ me, BILL.\n"
     .string "Long time no see!\p"
-    .string "I hope you're still using my\n"
+    .string "I hope youàe still using my\n"
     .string "PC system.\p"
     .string "Well, listen, since we met up here,\n"
     .string "how about spending time with me?\p"
-    .string "There's this little island in the far\n"
+    .string "ThereÙ this little island in the far\n"
     .string "south called ONE ISLAND.\p"
-    .string "A friend invited me, so I'm on my\n"
+    .string "A friend invited me, so Iá on my\n"
     .string "way out there.\p"
     .string "How about it?\n"
     .string "Do you feel like coming with me?$"
 
 CinnabarIsland_Text_AllRightLetsGo::
     .string "All right, then.\n"
-    .string "Let's go!$"
+    .string "LetÙ go!$"
 
 CinnabarIsland_Text_IllBeWaitingInPokeCenter::
     .string "What, are you too busy?\p"
     .string "Well, all right.\n"
-    .string "The boat hasn't arrived yet anyway.\p"
-    .string "I'll be waiting at the POKéMON\n"
+    .string "The boat hasnÑ arrived yet anyway.\p"
+    .string "IÛl be waiting at the POKéMON\n"
     .string "CENTER over there.\p"
-    .string "Come see me when you're done with\n"
+    .string "Come see me when youàe done with\n"
     .string "your business here.$"
 
 CinnabarIsland_Text_MyPalsBoatArrived::
-    .string "Looks like my pal's boat arrived,\n"
+    .string "Looks like my palÙ boat arrived,\n"
     .string "too.\p"
     .string "He sent it specially here to\n"
     .string "CINNABAR to pick me up.$"
 
 CinnabarIsland_Text_IfYouHaveTriPassYouCanGoAgain::
-    .string "Hey, wasn't that a long cruise?\p"
+    .string "Hey, wasnÑ that a long cruise?\p"
     .string "My buddy CELIO seemed to enjoy\n"
     .string "your company.\p"
-    .string "I'm sure he'd welcome you if you\n"
+    .string "Iá sure heÚ welcome you if you\n"
     .string "were to visit him again.\p"
     .string "If you have a TRI-PASS, you can\n"
     .string "always take a ferry there from\l"

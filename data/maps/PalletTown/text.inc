@@ -1,9 +1,9 @@
 PalletTown_Text_OakDontGoOut::
     .string "OAK: Hey! Wait!\n"
-    .string "Don't go out!$"
+    .string "DonÑ go out!$"
 
 PalletTown_Text_OakGrassUnsafeNeedMon::
-    .string "OAK: It's unsafe!\n"
+    .string "OAK: ItÙ unsafe!\n"
     .string "Wild POKéMON live\l"
     .string "in tall grass!\p"
     .string "You need your own\n"
@@ -14,7 +14,7 @@ PalletTown_Text_OakGrassUnsafeNeedMon::
     .string "me!$"
 
 PalletTown_Text_RaisingMonsToo::
-    .string "I'm raising\n"
+    .string "Iá raising\n"
     .string "POKéMON, too!\p"
     .string "When they get\n"
     .string "strong, they can\l"
@@ -33,10 +33,10 @@ PalletTown_Text_OakPokemonResearchLab::
     .string "RESEARCH LAB$"
 
 PalletTown_Text_PlayersHouse::
-    .string "{PLAYER}'s house$"
+    .string "{PLAYER}Ù house$"
 
 PalletTown_Text_RivalsHouse::
-    .string "{RIVAL}'s house$"
+    .string "{RIVAL}Ù house$"
 
 PalletTown_Text_TownSign::
     .string "PALLET TOWN\n"
@@ -45,25 +45,25 @@ PalletTown_Text_TownSign::
 
 PalletTown_Text_OakLetMeSeePokedex::
     .string "OAK: Ah, {PLAYER}!\n"
-    .string "You're back, are you?\l"
+    .string "Youàe back, are you?\l"
     .string "How much have you filled\p"
     .string "in your POKéDEX?\n"
     .string "May I see it?\p"
-    .string "Let's see...$"
+    .string "LetÙ see...$"
 
 PalletTown_Text_CaughtXPuttingInHonestEffort::
-    .string "You've caught {STR_VAR_2}...\p"
+    .string "Youße caught {STR_VAR_2}...\p"
     .string "Hm, it looks as if\n"
-    .string "you're putting in an\n"
+    .string "youàe putting in an\n"
     .string "honest effort.\p"
     .string "When you manage to fill\n"
     .string "it some more, come show\l"
     .string "me, please.$"
 
 PalletTown_Text_CaughtXImpressiveFollowMe::
-    .string "You've caught... {STR_VAR_2}!?\n"
+    .string "Youße caught... {STR_VAR_2}!?\n"
     .string "Now, this is impressive!\p"
-    .string "There's something I\n"
+    .string "ThereÙ something I\n"
     .string "wanted to ask of you,\l"
     .string "{PLAYER}.\p"
     .string "Come.\n"

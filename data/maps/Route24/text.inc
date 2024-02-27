@@ -10,25 +10,25 @@ Route24_Text_ReceivedNuggetFromMysteryTrainer::
     .string "a NUGGET!$"
 
 Route24_Text_YouDontHaveAnyRoom::
-    .string "You don't have\n"
+    .string "You donÑ have\n"
     .string "any room!$"
 
 Route24_Text_JoinTeamRocket::
     .string "By the way, would\n"
     .string "you like to join\l"
     .string "TEAM ROCKET?\p"
-    .string "We're a group\n"
+    .string "Weàe a group\n"
     .string "dedicated to evil\l"
     .string "using POKéMON!\p"
     .string "Want to join?\p"
     .string "Are you sure?\p"
     .string "Come on, join us!\p"
-    .string "I'm telling you\n"
+    .string "Iá telling you\n"
     .string "to join!\p"
     .string "OK, you need\n"
     .string "convincing!\p"
-    .string "I'll make you an\n"
-    .string "offer you can't\l"
+    .string "IÛl make you an\n"
+    .string "offer you canÑ\l"
     .string "refuse!$"
 
 Route24_Text_RocketDefeat::
@@ -55,8 +55,8 @@ Route24_Text_ShanePostBattle::
     .string "bridge scared me!$"
 
 Route24_Text_EthanIntro::
-    .string "OK! I'm No. 5!\n"
-    .string "I'll stomp you!$"
+    .string "OK! Iá No. 5!\n"
+    .string "IÛl stomp you!$"
 
 Route24_Text_EthanDefeat::
     .string "JR.TRAINER♂: Whoa!\n"
@@ -67,7 +67,7 @@ Route24_Text_EthanPostBattle::
     .string "have no regrets!$"
 
 Route24_Text_ReliIntro::
-    .string "I'm No. 4!\n"
+    .string "Iá No. 4!\n"
     .string "Getting tired?$"
 
 Route24_Text_ReliDefeat::
@@ -79,8 +79,8 @@ Route24_Text_ReliPostBattle::
     .string "I have no regrets!$"
 
 Route24_Text_TimmyIntro::
-    .string "Here's No. 3!\n"
-    .string "I won't be easy!$"
+    .string "HereÙ No. 3!\n"
+    .string "I wonÑ be easy!$"
 
 Route24_Text_TimmyDefeat::
     .string "YOUNGSTER: Ow!\n"
@@ -91,8 +91,8 @@ Route24_Text_TimmyPostBattle::
     .string "have no regrets!$"
 
 Route24_Text_AliIntro::
-    .string "I'm second!\n"
-    .string "Now it's serious!$"
+    .string "Iá second!\n"
+    .string "Now itÙ serious!$"
 
 Route24_Text_AliDefeat::
     .string "LASS: How could I\n"

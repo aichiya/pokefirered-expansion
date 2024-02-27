@@ -37,7 +37,7 @@ PokemonLeague_LoreleisRoom_Text_Defeat::
     .string "dare you!$"
 
 PokemonLeague_LoreleisRoom_Text_PostBattle::
-    .string "You're better\n"
+    .string "Youàe better\n"
     .string "than I thought!\l"
     .string "Go on ahead!\p"
     .string "You only got a\n"

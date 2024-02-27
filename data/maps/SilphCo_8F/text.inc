@@ -7,20 +7,20 @@ SilphCo_8F_Text_ThanksForSavingUs::
     .string "us!$"
 
 SilphCo_8F_Text_Grunt1Intro::
-    .string "That's as far as\n"
-    .string "you'll go!$"
+    .string "ThatÙ as far as\n"
+    .string "youÛl go!$"
 
 SilphCo_8F_Text_Grunt1Defeat::
     .string "ROCKET: Not\n"
     .string "enough grit!$"
 
 SilphCo_8F_Text_Grunt1PostBattle::
-    .string "If you don't turn\n"
-    .string "back, I'll call"
+    .string "If you donÑ turn\n"
+    .string "back, IÛl call"
     .string "for backup!$"
 
 SilphCo_8F_Text_ParkerIntro::
-    .string "You're causing us\n"
+    .string "Youàe causing us\n"
     .string "problems!$"
 
 SilphCo_8F_Text_ParkerDefeat::
@@ -30,7 +30,7 @@ SilphCo_8F_Text_ParkerDefeat::
 SilphCo_8F_Text_ParkerPostBattle::
     .string "So, what do you\n"
     .string "think of SILPH\l"
-    .string "BUILDING's maze?$"
+    .string "BUILDINGÙ maze?$"
 
 SilphCo_8F_Text_Grunt2Intro::
     .string "I am one of the 4\n"
@@ -41,7 +41,7 @@ SilphCo_8F_Text_Grunt2Defeat::
     .string "Oh brothers!$"
 
 SilphCo_8F_Text_Grunt2PostBattle::
-    .string "I'll leave you up\n"
+    .string "IÛl leave you up\n"
     .string "to my brothers!$"
 
 SilphCo_8F_Text_FloorSign::
@@ -49,7 +49,7 @@ SilphCo_8F_Text_FloorSign::
     .string "8F$"
 
 SilphCo_8F_Text_ToRocketBossMonsAreTools::
-    .string "TEAM ROCKET's BOSS is terribly\n"
+    .string "TEAM ROCKETÙ BOSS is terribly\n"
     .string "cruel!\p"
     .string "To him, POKéMON are just tools to\n"
     .string "be used.\p"

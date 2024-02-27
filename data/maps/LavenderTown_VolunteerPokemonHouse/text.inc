@@ -1,28 +1,28 @@
 LavenderTown_PokemonCenter_1F_Text_HearMrFujiNotFromAroundHere::
     .string "I recently moved to this town.\p"
-    .string "I hear that MR. FUJI's not from\n"
+    .string "I hear that MR. FUJIÙ not from\n"
     .string "these parts originally, either.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_WhereDidMrFujiGo::
-    .string "That's odd, MR.FUJI\n"
-    .string "isn't here.\l"
-    .string "Where'd he go?$"
+    .string "ThatÙ odd, MR.FUJI\n"
+    .string "isnÑ here.\l"
+    .string "WhereÚ he go?$"
 
 LavenderTown_VolunteerPokemonHouse_Text_MrFujiWasPrayingForCubonesMother::
     .string "MR.FUJI had been\n"
     .string "praying alone for\l"
-    .string "CUBONE's mother.$"
+    .string "CUBONEÙ mother.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_MrFujiLooksAfterOrphanedMons::
     .string "This is really\n"
-    .string "MR.FUJI's house.\p"
-    .string "He's really kind!\p"
+    .string "MR.FUJIÙ house.\p"
+    .string "HeÙ really kind!\p"
     .string "He looks after\n"
     .string "abandoned and\l"
     .string "orphaned POKéMON!$"
 
 LavenderTown_VolunteerPokemonHouse_Text_MonsNiceToHug::
-    .string "It's so warm!\n"
+    .string "ItÙ so warm!\n"
     .string "POKéMON are so\l"
     .string "nice to hug.$"
 
@@ -67,7 +67,7 @@ LavenderTown_VolunteerPokemonHouse_Text_GrandPrizeDrawingClipped::
     .string "Drawing!\p"
     .string "The application\n"
     .string "form is...\p"
-    .string "Gone! It's been\n"
+    .string "Gone! ItÙ been\n"
     .string "clipped out!$"
 
 LavenderTown_VolunteerPokemonHouse_Text_PokemonMagazinesLineShelf::

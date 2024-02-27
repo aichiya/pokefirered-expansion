@@ -1,19 +1,19 @@
 CeladonCity_Text_GotMyKoffingInCinnabar::
     .string "I got my KOFFING\n"
     .string "in CINNABAR!\p"
-    .string "It's nice, but it\n"
+    .string "ItÙ nice, but it\n"
     .string "breathes poison\l"
-    .string "when it's angry!$"
+    .string "when itÙ angry!$"
 
 CeladonCity_Text_GymIsGreatFullOfWomen::
     .string "Heheh! This GYM\n"
-    .string "is great! It's\l"
+    .string "is great! ItÙ\l"
     .string "full of women!$"
 
 CeladonCity_Text_GameCornerIsBadForCitysImage::
     .string "The GAME CORNER\n"
     .string "is bad for our\l"
-    .string "city's image.$"
+    .string "cityÙ image.$"
 
 CeladonCity_Text_BlewItAllAtSlots::
     .string "Moan! I blew it\n"
@@ -39,7 +39,7 @@ CeladonCity_Text_GetLostOrIllPunchYou::
 
 CeladonCity_Text_KeepOutOfTeamRocketsWay::
     .string "Keep out of TEAM\n"
-    .string "ROCKET's way!$"
+    .string "ROCKETÙ way!$"
 
 CeladonCity_Text_ExplainXAccuracyDireHit::
     .string "TRAINER TIPS\p"
@@ -104,15 +104,15 @@ CeladonCity_Text_ScaldedTongueOnTea::
 
 CeladonCity_Text_TakeTM41::
     .string "Hello, there!\p"
-    .string "I've seen you,\n"
+    .string "Iße seen you,\n"
     .string "but I never had a\l"
     .string "chance to talk!\p"
-    .string "Here's a gift for\n"
+    .string "HereÙ a gift for\n"
     .string "dropping by!$"
 
 CeladonCity_Text_PutTM41Away::
     .string "{PLAYER} put TM41 away in\n"
-    .string "the BAG's TM CASE.$"
+    .string "the BAGÙ TM CASE.$"
 
 CeladonCity_Text_TM41_Contains::
     .string "TM41 teaches\n"
@@ -126,7 +126,7 @@ CeladonCity_Text_SomeoneStoleSilphScope::
     .string "Oh, what am I to do…\p"
     .string "Someone stole our SILPH SCOPE.\p"
     .string "The thief came running this way,\n"
-    .string "I'm sure of it.\p"
+    .string "Iá sure of it.\p"
     .string "But I lost sight of him!\n"
-    .string "Where'd he go?$"
+    .string "WhereÚ he go?$"
 

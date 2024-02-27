@@ -4,7 +4,7 @@ CinnabarIsland_PokemonLab_ResearchRoom_Text_EeveeCanEvolveIntroThreeMons::
     .string "of POKéMON.$"
 
 CinnabarIsland_PokemonLab_ResearchRoom_Text_LegendaryBirdEmail::
-    .string "There's an e-mail\n"
+    .string "ThereÙ an e-mail\n"
     .string "message!\p"
     .string "...\p"
     .string "The 3 legendary\n"

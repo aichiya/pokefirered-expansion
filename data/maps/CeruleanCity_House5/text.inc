@@ -11,7 +11,7 @@ CeruleanCity_House1_Text_HaveJustTheThing::
     .string "just the thing.$"
 
 CeruleanCity_House1_Text_GoCrushBerriesAtDirectCorner::
-    .string "There's something new on the second\n"
+    .string "ThereÙ something new on the second\n"
     .string "floor of POKéMON CENTERS, at the\l"
     .string "DIRECT CORNER.\p"
     .string "They installed a Wireless Adapter\n"
@@ -21,11 +21,11 @@ CeruleanCity_House1_Text_GoCrushBerriesAtDirectCorner::
     .string "I can entrust only to you.\p"
     .string "Could you make BERRY POWDER for\n"
     .string "me using that machine?\p"
-    .string "Don't forget, the machine is at the\n"
+    .string "DonÑ forget, the machine is at the\n"
     .string "DIRECT CORNER of POKéMON CENTERS.\p"
-    .string "I'll concoct medicine for you if\n"
+    .string "IÛl concoct medicine for you if\n"
     .string "you bring me some BERRY POWDER.\p"
-    .string "Don't forget, crush BERRIES into\n"
+    .string "DonÑ forget, crush BERRIES into\n"
     .string "BERRY POWDER and bring it to me.$"
 
 CeruleanCity_House1_Text_WhyMustYouLieNoBerries::
@@ -35,7 +35,7 @@ CeruleanCity_House1_Text_WhyMustYouLieNoBerries::
 
 CeruleanCity_House1_Text_TakeInterestInAllSortsOfThings::
     .string "You have no interest in BERRIES?\p"
-    .string "Young one, it's important to take an\n"
+    .string "Young one, itÙ important to take an\n"
     .string "interest in all sorts of things.$"
 
 CeruleanCity_House1_Text_HaveYouBroughtBerryPowder::
@@ -47,11 +47,11 @@ CeruleanCity_House5_Text_ExchangeWithWhat::
     .string "exchange it?$"
 
 CeruleanCity_House1_Text_YoullExchangeBerryPowderForItem::
-    .string "Fine, you'll exchange your BERRY\n"
+    .string "Fine, youÛl exchange your BERRY\n"
     .string "POWDER for one {STR_VAR_1}?$"
 
 CeruleanCity_House1_Text_DontHaveEnoughBerryPowder::
-    .string "Hm? You don't have enough\n"
+    .string "Hm? You donÑ have enough\n"
     .string "BERRY POWDER.$"
 
 CeruleanCity_House1_Text_TradeMoreBerryPowder::
@@ -61,10 +61,10 @@ CeruleanCity_House1_Text_TradeMoreBerryPowder::
     .string "POWDER for something else?$"
 
 CeruleanCity_House1_Text_HopeToSeeYouAgain::
-    .string "That's fine, then.\n"
-    .string "I'll hope to see you back again.$"
+    .string "ThatÙ fine, then.\n"
+    .string "IÛl hope to see you back again.$"
 
 CeruleanCity_House1_Text_SeeMeIfYoudLikeToTradePowder::
-    .string "Come see me if you'd like to trade\n"
+    .string "Come see me if youÚ like to trade\n"
     .string "your BERRY POWDER.$"
 

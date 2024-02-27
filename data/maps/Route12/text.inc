@@ -29,7 +29,7 @@ Route12_Text_NedDefeat::
     .string "Just a small fry!$"
 
 Route12_Text_NedPostBattle::
-    .string "Hang on! My line's\n"
+    .string "Hang on! My lineÙ\n"
     .string "snagged!$"
 
 Route12_Text_ChipIntro::
@@ -81,20 +81,20 @@ Route12_Text_HankDefeat::
 
 Route12_Text_HankPostBattle::
     .string "You beat me at\n"
-    .string "POKéMON, but I'm\l"
+    .string "POKéMON, but Iá\l"
     .string "good at fishing!$"
 
 Route12_Text_ElliotIntro::
-    .string "I'd rather be\n"
+    .string "IÚ rather be\n"
     .string "working!$"
 
 Route12_Text_ElliotDefeat::
-    .string "FISHERMAN: It's\n"
+    .string "FISHERMAN: ItÙ\n"
     .string "not easy...$"
 
 Route12_Text_ElliotPostBattle::
-    .string "It's all right.\n"
-    .string "Losing doesn't\l"
+    .string "ItÙ all right.\n"
+    .string "Losing doesnÑ\l"
     .string "bug me any more.$"
 
 Route12_Text_AndrewIntro::
@@ -109,7 +109,7 @@ Route12_Text_AndrewDefeat::
 Route12_Text_AndrewPostBattle::
     .string "I catch MAGIKARP\n"
     .string "all the time, but\l"
-    .string "they're so weak!$"
+    .string "theyàe so weak!$"
 
 Route12_Text_RouteSign::
     .string "ROUTE 12 \n"
@@ -119,11 +119,11 @@ Route12_Text_SportfishingArea::
     .string "SPORT FISHING AREA$"
 
 Route12_Text_JesIntro::
-    .string "JES: If I win, I'm going to\n"
+    .string "JES: If I win, Iá going to\n"
     .string "propose to GIA.$"
 
 Route12_Text_JesDefeat::
-    .string "JES: Oh, please, why couldn't you\n"
+    .string "JES: Oh, please, why couldnÑ you\n"
     .string "let us win?$"
 
 Route12_Text_JesPostBattle::
@@ -131,14 +131,14 @@ Route12_Text_JesPostBattle::
     .string "my love!$"
 
 Route12_Text_JesNotEnoughMons::
-    .string "JES: GIA and I, we'll be\n"
+    .string "JES: GIA and I, weÛl be\n"
     .string "together forever.\p"
-    .string "We won't battle unless you have\n"
+    .string "We wonÑ battle unless you have\n"
     .string "two POKéMON of your own.$"
 
 Route12_Text_GiaIntro::
     .string "GIA: Hey, JES…\p"
-    .string "If we win, I'll marry you!$"
+    .string "If we win, IÛl marry you!$"
 
 Route12_Text_GiaDefeat::
     .string "GIA: Oh, but why?$"
@@ -148,6 +148,6 @@ Route12_Text_GiaPostBattle::
     .string "You ruined this!$"
 
 Route12_Text_GiaNotEnoughMons::
-    .string "GIA: I can't bear to battle\n"
+    .string "GIA: I canÑ bear to battle\n"
     .string "without my JES!\p"
-    .string "Don't you have one more POKéMON?$"
+    .string "DonÑ you have one more POKéMON?$"

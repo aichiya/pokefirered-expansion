@@ -18,7 +18,7 @@ RocketHideout_B1F_Text_Grunt2Defeat::
     .string "ROCKET: Burnt!$"
 
 RocketHideout_B1F_Text_Grunt2PostBattle::
-    .string "You're not going\n"
+    .string "Youàe not going\n"
     .string "to get away with\l"
     .string "this, brat!$"
 
@@ -27,11 +27,11 @@ RocketHideout_B1F_Text_Grunt3Intro::
 
 RocketHideout_B1F_Text_Grunt3Defeat::
     .string "ROCKET: I\n"
-    .string "can't do it!$"
+    .string "canÑ do it!$"
 
 RocketHideout_B1F_Text_Grunt3PostBattle::
     .string "SILPH SCOPE?\n"
-    .string "I don't know\l"
+    .string "I donÑ know\l"
     .string "where it is!$"
 
 RocketHideout_B1F_Text_Grunt4Intro::
@@ -40,10 +40,10 @@ RocketHideout_B1F_Text_Grunt4Intro::
 
 RocketHideout_B1F_Text_Grunt4Defeat::
     .string "ROCKET: This\n"
-    .string "won't do!$"
+    .string "wonÑ do!$"
 
 RocketHideout_B1F_Text_Grunt4PostBattle::
-    .string "Okay, I'll talk!\n"
+    .string "Okay, IÛl talk!\n"
     .string "Take the elevator\l"
     .string "to see my BOSS!$"
 

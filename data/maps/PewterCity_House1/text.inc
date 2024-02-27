@@ -5,8 +5,8 @@ PewterCity_House1_Text_NidoranSit::
     .string "NIDORAN sit!$"
 
 PewterCity_House1_Text_TradeMonsAreFinicky::
-    .string "Our POKéMON's an\n"
-    .string "outsider, so it's\l"
+    .string "Our POKéMONÙ an\n"
+    .string "outsider, so itÙ\l"
     .string "hard to handle.\p"
     .string "An outsider is a\n"
     .string "POKéMON that you\l"

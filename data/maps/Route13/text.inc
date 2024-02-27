@@ -12,7 +12,7 @@ Route13_Text_SebastianPostBattle::
     .string "they lost.$"
 
 Route13_Text_SusieIntro::
-    .string "I'm told I'm good\n"
+    .string "Iá told Iá good\n"
     .string "for a kid!$"
 
 Route13_Text_SusieDefeat::
@@ -22,7 +22,7 @@ Route13_Text_SusieDefeat::
 Route13_Text_SusiePostBattle::
     .string "I want to become\n"
     .string "a good trainer.\l"
-    .string "I'll train hard.$"
+    .string "IÛl train hard.$"
 
 Route13_Text_ValerieIntro::
     .string "Wow! Your BADGEs\n"
@@ -65,7 +65,7 @@ Route13_Text_AlmaPostBattle::
     .string "POKéMON.$"
 
 Route13_Text_PerryIntro::
-    .string "The wind's blowing\n"
+    .string "The windÙ blowing\n"
     .string "my way!$"
 
 Route13_Text_PerryDefeat::
@@ -73,11 +73,11 @@ Route13_Text_PerryDefeat::
     .string "wind turned!$"
 
 Route13_Text_PerryPostBattle::
-    .string "I'm beat. I guess\n"
-    .string "I'll FLY home.$"
+    .string "Iá beat. I guess\n"
+    .string "IÛl FLY home.$"
 
 Route13_Text_LolaIntro::
-    .string "Sure, I'll play\n"
+    .string "Sure, IÛl play\n"
     .string "with you!$"
 
 Route13_Text_LolaDefeat::
@@ -94,17 +94,17 @@ Route13_Text_SheilaIntro::
     .string "POKéMON with me?$"
 
 Route13_Text_SheilaDefeat::
-    .string "BEAUTY: It's over\n"
+    .string "BEAUTY: ItÙ over\n"
     .string "already?$"
 
 Route13_Text_SheilaPostBattle::
-    .string "I don't know\n"
+    .string "I donÑ know\n"
     .string "anything about\l"
     .string "POKéMON. I just\l"
     .string "like cool ones!$"
 
 Route13_Text_JaredIntro::
-    .string "What're you\n"
+    .string "Whatàe you\n"
     .string "lookin' at?$"
 
 Route13_Text_JaredDefeat::

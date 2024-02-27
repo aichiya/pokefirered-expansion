@@ -18,7 +18,7 @@ PokemonTower_4F_Text_LaurelDefeat::
     .string "CHANNELER: What!$"
 
 PokemonTower_4F_Text_LaurelPostBattle::
-    .string "We can't crack\n"
+    .string "We canÑ crack\n"
     .string "the identity of\l"
     .string "the GHOSTs.$"
 

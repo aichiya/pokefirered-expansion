@@ -1,5 +1,5 @@
 SilphCo_7F_Text_HaveMonForSavingUs::
-    .string "Oh! Hi! You're\n"
+    .string "Oh! Hi! Youàe\n"
     .string "not a ROCKET! You\l"
     .string "came to save us?\l"
     .string "Why, thank you!\p"
@@ -12,7 +12,7 @@ SilphCo_7F_Text_ObtainedLaprasFromEmployee::
     .string "LAPRAS.$"
 
 SilphCo_7F_Text_ExplainLapras::
-    .string "It's's LAPRAS. It's\n"
+    .string "ItÙÙ LAPRAS. ItÙ\n"
     .string "very intelligent.\p"
     .string "We kept it in our\n"
     .string "lab, but it will\l"
@@ -21,12 +21,12 @@ SilphCo_7F_Text_ExplainLapras::
     .string "I think you will\n"
     .string "be a good trainer\l"
     .string "for LAPRAS!\p"
-    .string "It's a good\n"
-    .string "swimmer. It'll\l"
+    .string "ItÙ a good\n"
+    .string "swimmer. ItÛl\l"
     .string "give you a lift!$"
 
 SilphCo_7F_Text_RocketBossWentToBoardroom::
-    .string "TEAM ROCKET's\n"
+    .string "TEAM ROCKETÙ\n"
     .string "BOSS went to the\l"
     .string "boardroom! Is our\l"
     .string "PRESIDENT OK?$"
@@ -61,10 +61,10 @@ SilphCo_7F_Text_WowYouChasedOffTeamRocket::
     .string "all by yourself?$"
 
 SilphCo_7F_Text_ReallyDangerousHere::
-    .string "You! It's really\n"
+    .string "You! ItÙ really\n"
     .string "dangerous here!\l"
     .string "You came to save\l"
-    .string "me? You can't!$"
+    .string "me? You canÑ!$"
 
 SilphCo_7F_Text_ThankYouSoMuch::
     .string "Safe at last!\n"
@@ -79,7 +79,7 @@ SilphCo_7F_Text_Grunt3Defeat::
     .string "out!$"
 
 SilphCo_7F_Text_Grunt3PostBattle::
-    .string "You won't find my\n"
+    .string "You wonÑ find my\n"
     .string "BOSS by just\l"
     .string "scurrying around!$"
 
@@ -89,7 +89,7 @@ SilphCo_7F_Text_JoshuaIntro::
     .string "a SILPH worker?$"
 
 SilphCo_7F_Text_JoshuaDefeat::
-    .string "SCIENTIST: I'm\n"
+    .string "SCIENTIST: Iá\n"
     .string "done!$"
 
 SilphCo_7F_Text_JoshuaPostBattle::
@@ -106,7 +106,7 @@ SilphCo_7F_Text_Grunt1Defeat::
     .string "Brothers, I lost!$"
 
 SilphCo_7F_Text_Grunt1PostBattle::
-    .string "Doesn't matter.\n"
+    .string "DoesnÑ matter.\n"
     .string "My brothers will\l"
     .string "repay the favor!$"
 
@@ -129,7 +129,7 @@ SilphCo_7F_Text_RivalWhatKeptYou::
 
 SilphCo_7F_Text_RivalIntro::
     .string "{RIVAL}: Hahaha!\n"
-    .string "I thought you'd\l"
+    .string "I thought youÚ\l"
     .string "turn up if I\l"
     .string "waited here!\p"
     .string "I guess TEAM\n"
@@ -154,23 +154,23 @@ SilphCo_7F_Text_RivalVictory::
 
 SilphCo_7F_Text_RivalPostBattle::
     .string "Well, {PLAYER}!\p"
-    .string "I'm moving on up\n"
+    .string "Iá moving on up\n"
     .string "and ahead!\p"
     .string "By checking my\n"
-    .string "POKéDEX, I'm\l"
+    .string "POKéDEX, Iá\l"
     .string "starting to see\l"
-    .string "what's strong and\l"
+    .string "whatÙ strong and\l"
     .string "how they evolve!\p"
-    .string "I'm going to the\n"
+    .string "Iá going to the\n"
     .string "POKéMON LEAGUE\l"
     .string "to boot out the\l"
     .string "ELITE FOUR!\p"
-    .string "I'll become the\n"
-    .string "world's most\l"
+    .string "IÛl become the\n"
+    .string "worldÙ most\l"
     .string "powerful trainer!\p"
     .string "{PLAYER}, well\n"
     .string "good luck to you!\l"
-    .string "Don't sweat it!\l"
+    .string "DonÑ sweat it!\l"
     .string "Smell ya!$"
 
 SilphCo_7F_Text_FloorSign::

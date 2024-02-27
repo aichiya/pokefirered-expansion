@@ -1,6 +1,6 @@
 PewterCity_Museum_1F_Text_Its50YForChildsTicket::
-    .string "It's ¥50 for a\n"
-    .string "child's ticket.\p"
+    .string "ItÙ ¥50 for a\n"
+    .string "childÙ ticket.\p"
     .string "Would you like to\n"
     .string "come in?$"
 
@@ -12,18 +12,18 @@ PewterCity_Museum_1F_Text_Right50YThankYou::
     .string "Thank you!$"
 
 PewterCity_Museum_1F_Text_DontHaveEnoughMoney::
-    .string "You don't have enough money.$"
+    .string "You donÑ have enough money.$"
 
 PewterCity_Museum_1F_Text_PleaseEnjoyYourself::
     .string "Please enjoy yourself.$"
 
 PewterCity_Museum_1F_Text_DoYouKnowWhatAmberIs::
-    .string "You can't sneak in the back way!\n"
+    .string "You canÑ sneak in the back way!\n"
     .string "Oh, whatever!\p"
     .string "Do you know what AMBER is?$"
 
 PewterCity_Museum_1F_Text_AmberContainsGeneticMatter::
-    .string "There's a lab somewhere trying to\n"
+    .string "ThereÙ a lab somewhere trying to\n"
     .string "resurrect ancient POKéMON from AMBER.$"
 
 PewterCity_Museum_1F_Text_AmberIsFossilizedSap::
@@ -57,7 +57,7 @@ PewterCity_Museum_1F_Text_GetOldAmberChecked::
     .string "Get the OLD AMBER checked!$"
 
 PewterCity_Museum_1F_Text_DontHaveSpaceForThis::
-    .string "You don't have space for this!$"
+    .string "You donÑ have space for this!$"
 
 PewterCity_Museum_1F_Text_WeHaveTwoFossilsOnExhibit::
     .string "We are proud of 2 fossils of\n"

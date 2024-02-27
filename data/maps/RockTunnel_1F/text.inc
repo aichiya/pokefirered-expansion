@@ -11,7 +11,7 @@ RockTunnel_1F_Text_LennyPostBattle::
 
 RockTunnel_1F_Text_OliverIntro::
     .string "Hmm.\n"
-    .string "Maybe I'm lost in here...$"
+    .string "Maybe Iá lost in here...$"
 
 RockTunnel_1F_Text_OliverDefeat::
     .string "HIKER: Ease up!\n"
@@ -30,7 +30,7 @@ RockTunnel_1F_Text_LucasDefeat::
     .string "HIKER: I give!$"
 
 RockTunnel_1F_Text_LucasPostBattle::
-    .string "You're talented enough to hike!$"
+    .string "Youàe talented enough to hike!$"
 
 RockTunnel_1F_Text_AshtonIntro::
     .string "POKéMON fight!\n"
@@ -40,11 +40,11 @@ RockTunnel_1F_Text_AshtonDefeat::
     .string "POKéMANIAC: Game over!$"
 
 RockTunnel_1F_Text_AshtonPostBattle::
-    .string "Oh well, I'll get a ZUBAT as I go!$"
+    .string "Oh well, IÛl get a ZUBAT as I go!$"
 
 RockTunnel_1F_Text_LeahIntro::
     .string "Eek!\p"
-    .string "Don't try anything funny in the\n"
+    .string "DonÑ try anything funny in the\n"
     .string "dark!$"
 
 RockTunnel_1F_Text_LeahDefeat::
@@ -58,21 +58,21 @@ RockTunnel_1F_Text_DanaIntro::
     .string "for POKéMON!$"
 
 RockTunnel_1F_Text_DanaDefeat::
-    .string "JR.TRAINER♂: I'm out of POKéMON!$"
+    .string "JR.TRAINER♂: Iá out of POKéMON!$"
 
 RockTunnel_1F_Text_DanaPostBattle::
     .string "You looked cute and harmless!$"
 
 RockTunnel_1F_Text_ArianaIntro::
     .string "You have POKéMON!\n"
-    .string "Let's start!$"
+    .string "LetÙ start!$"
 
 RockTunnel_1F_Text_ArianaDefeat::
     .string "JR.TRAINER♂: You play hard!$"
 
 RockTunnel_1F_Text_ArianaPostBattle::
     .string "Whew!\n"
-    .string "I'm all sweaty now!$"
+    .string "Iá all sweaty now!$"
 
 RockTunnel_1F_Text_RouteSign::
     .string "ROCK TUNNEL\n"

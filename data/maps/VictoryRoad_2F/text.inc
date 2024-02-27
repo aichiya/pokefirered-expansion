@@ -42,7 +42,7 @@ VictoryRoad_2F_Text_NelsonPostBattle::
 
 VictoryRoad_2F_Text_VincentIntro::
     .string "Come on!\n"
-    .string "I'll whip you!$"
+    .string "IÛl whip you!$"
 
 VictoryRoad_2F_Text_VincentDefeat::
     .string "TAMER: I got\n"

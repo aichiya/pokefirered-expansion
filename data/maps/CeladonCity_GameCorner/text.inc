@@ -10,7 +10,7 @@ CeladonCity_GameCorner_Text_WelcomeBuySomeCoins::
     .string "GAME CORNER!\p"
     .string "Do you need some\n"
     .string "game coins?\p"
-    .string "It's ¥1000 for 50\n"
+    .string "ItÙ ¥1000 for 50\n"
     .string "coins. Would you\l"
     .string "like some?$"
 
@@ -19,7 +19,7 @@ CeladonCity_GameCorner_Text_ComePlaySometime::
     .string "play sometime!$"
 
 CeladonCity_GameCorner_Text_SorryDontHaveCoinCase::
-    .string "You don't have a\n"
+    .string "You donÑ have a\n"
     .string "COIN CASE!$"
 
 CeladonCity_GameCorner_Text_CoinCaseIsFull::
@@ -27,7 +27,7 @@ CeladonCity_GameCorner_Text_CoinCaseIsFull::
     .string "CASE is full.$"
 
 CeladonCity_GameCorner_Text_CantAffordCoins::
-    .string "You can't afford\n"
+    .string "You canÑ afford\n"
     .string "the COINS!$"
 
 CeladonCity_GameCorner_Text_HereAreYourCoins::
@@ -36,7 +36,7 @@ CeladonCity_GameCorner_Text_HereAreYourCoins::
 
 CeladonCity_GameCorner_Text_RumoredTeamRocketRunsThisPlace::
     .string "Keep this quiet.\p"
-    .string "It's rumored that\n"
+    .string "ItÙ rumored that\n"
     .string "this place is run\l"
     .string "by TEAM ROCKET.$"
 
@@ -54,7 +54,7 @@ CeladonCity_GameCorner_Text_Received10CoinsFromMan::
     .string "10 coins!$"
 
 CeladonCity_GameCorner_Text_DontNeedMyCoins::
-    .string "You don't need my\n"
+    .string "You donÑ need my\n"
     .string "coins!$"
 
 CeladonCity_GameCorner_Text_WinsComeAndGo::
@@ -62,7 +62,7 @@ CeladonCity_GameCorner_Text_WinsComeAndGo::
     .string "and go.$"
 
 CeladonCity_GameCorner_Text_WinOrLoseItsOnlyLuck::
-    .string "I'm having a\n"
+    .string "Iá having a\n"
     .string "wonderful time!$"
 
 CeladonCity_GameCorner_Text_GymGuyAdvice::
@@ -70,12 +70,12 @@ CeladonCity_GameCorner_Text_GymGuyAdvice::
     .string "You have better\n"
     .string "things to do,\l"
     .string "champ in making!\p"
-    .string "CELADON GYM's\n"
+    .string "CELADON GYMÙ\n"
     .string "LEADER is ERIKA!\l"
     .string "She uses grass-\l"
     .string "type POKéMON!\p"
     .string "She might appear\n"
-    .string "docile, but don't\l"
+    .string "docile, but donÑ\l"
     .string "be fooled!$"
 
 CeladonCity_GameCorner_Text_RareMonsForCoins::
@@ -83,16 +83,16 @@ CeladonCity_GameCorner_Text_RareMonsForCoins::
     .string "POKéMON that can\l"
     .string "be exchanged for\l"
     .string "your coins.\p"
-    .string "But, I just can't\n"
+    .string "But, I just canÑ\n"
     .string "seem to win!$"
 
 CeladonCity_GameCorner_Text_SoEasyToGetHooked::
     .string "Games are scary!\n"
-    .string "It's so easy to\l"
+    .string "ItÙ so easy to\l"
     .string "get hooked!$"
 
 CeladonCity_GameCorner_Text_WantSomeCoins::
-    .string "What's up?\n"
+    .string "WhatÙ up?\n"
     .string "Want some coins?$"
 
 CeladonCity_GameCorner_Text_Received20CoinsFromNiceGuy::
@@ -109,7 +109,7 @@ CeladonCity_GameCorner_Text_NeedMoreCoinsForMonIWant::
     .string "POKéMON I want!$"
 
 CeladonCity_GameCorner_Text_HereAreSomeCoinsShoo::
-    .string "Hey, what? You're\n"
+    .string "Hey, what? Youàe\n"
     .string "throwing me off!\l"
     .string "Here are some\l"
     .string "coins, shoo!$"
@@ -119,7 +119,7 @@ CeladonCity_GameCorner_Text_Received20CoinsFromMan::
     .string "20 coins!$"
 
 CeladonCity_GameCorner_Text_YouveGotPlentyCoins::
-    .string "You've got your\n"
+    .string "Youße got your\n"
     .string "own coins!$"
 
 CeladonCity_GameCorner_Text_WatchReelsClosely::
@@ -128,7 +128,7 @@ CeladonCity_GameCorner_Text_WatchReelsClosely::
     .string "closely.$"
 
 CeladonCity_GameCorner_Text_GruntIntro::
-    .string "I'm guarding this\n"
+    .string "Iá guarding this\n"
     .string "poster!\l"
     .string "Go away, or else!$"
 
@@ -144,7 +144,7 @@ CeladonCity_GameCorner_Text_SwitchBehindPosterPushIt::
     .string "Hey!\p"
     .string "A switch behind\n"
     .string "the poster!?\l"
-    .string "Let's push it!$"
+    .string "LetÙ push it!$"
 
 CeladonCity_GameCorner_Text_CoinCaseIsRequired::
     .string "A COIN CASE is\n"
@@ -167,6 +167,6 @@ CeladonCity_GameCorner_Text_OutToLunch::
     .string "This is reserved.$"
 
 CeladonCity_GameCorner_Text_SomeonesKeys::
-    .string "Someone's keys!\n"
-    .string "They'll be back.$"
+    .string "SomeoneÙ keys!\n"
+    .string "TheyÛl be back.$"
 

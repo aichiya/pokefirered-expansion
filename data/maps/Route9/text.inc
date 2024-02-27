@@ -1,7 +1,7 @@
 Route9_Text_AliciaIntro::
     .string "You have POKéMON\n"
     .string "with you!\l"
-    .string "You're mine!$"
+    .string "Youàe mine!$"
 
 Route9_Text_AliciaDefeat::
     .string "JR.TRAINER♀: You\n"
@@ -13,7 +13,7 @@ Route9_Text_AliciaPostBattle::
     .string "dark tunnel ahead.$"
 
 Route9_Text_ChrisIntro::
-    .string "Who's that walking\n"
+    .string "WhoÙ that walking\n"
     .string "with those good"
     .string "looking POKéMON?$"
 
@@ -25,12 +25,12 @@ Route9_Text_ChrisPostBattle::
     .string "Keep walking!$"
 
 Route9_Text_DrewIntro::
-    .string "I'm taking ROCK\n"
+    .string "Iá taking ROCK\n"
     .string "TUNNEL to go to\l"
     .string "LAVENDER...$"
 
 Route9_Text_DrewDefeat::
-    .string "JR.TRAINER♂: Can't\n"
+    .string "JR.TRAINER♂: CanÑ\n"
     .string "measure up!$"
 
 Route9_Text_DrewPostBattle::
@@ -38,15 +38,15 @@ Route9_Text_DrewPostBattle::
     .string "ROCK TUNNEL too?$"
 
 Route9_Text_CaitlinIntro::
-    .string "Don't you dare\n"
+    .string "DonÑ you dare\n"
     .string "condescend me!$"
 
 Route9_Text_CaitlinDefeat::
     .string "JR.TRAINER♀: No!\n"
-    .string "You're too much!$"
+    .string "Youàe too much!$"
 
 Route9_Text_CaitlinPostBattle::
-    .string "You're obviously\n"
+    .string "Youàe obviously\n"
     .string "talented! Good\l"
     .string "luck to you!$"
 
@@ -58,7 +58,7 @@ Route9_Text_JeremyIntro::
 Route9_Text_JeremyDefeat::
     .string "HIKER: Keep it\n"
     .string "coming, eh!\p"
-    .string "Oh wait. I'm out\n"
+    .string "Oh wait. Iá out\n"
     .string "of POKéMON!$"
 
 Route9_Text_JeremyPostBattle::
@@ -68,11 +68,11 @@ Route9_Text_JeremyPostBattle::
 
 Route9_Text_BriceIntro::
     .string "Hahaha!\n"
-    .string "Aren't you a\l"
+    .string "ArenÑ you a\l"
     .string "little toughie!$"
 
 Route9_Text_BriceDefeat::
-    .string "HIKER: What's\n"
+    .string "HIKER: WhatÙ\n"
     .string "that?$"
 
 Route9_Text_BricePostBattle::
@@ -117,7 +117,7 @@ Route9_Text_ConnerDefeat::
     .string "bugs...$"
 
 Route9_Text_ConnerPostBattle::
-    .string "If you don't like\n"
+    .string "If you donÑ like\n"
     .string "bug POKéMON, you"
     .string "bug me!$"
 

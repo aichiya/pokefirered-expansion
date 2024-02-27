@@ -2,7 +2,7 @@ ViridianCity_Text_CanCarryMonsAnywhere::
     .string "Those POKé BALLs\n"
     .string "at your waist!\l"
     .string "You have POKéMON!\p"
-    .string "It's great that\n"
+    .string "ItÙ great that\n"
     .string "you can carry and\l"
     .string "use POKéMON any\l"
     .string "time, anywhere!$"
@@ -14,7 +14,7 @@ ViridianCity_Text_GymClosedWonderWhoLeaderIs::
     .string "LEADER is?$"
 
 ViridianCity_Text_ViridiansGymLeaderReturned::
-    .string "VIRIDIAN GYM's\n"
+    .string "VIRIDIAN GYMÙ\n"
     .string "LEADER returned!$"
 
 ViridianCity_Text_WantToKnowAboutCaterpillarMons::
@@ -34,9 +34,9 @@ ViridianCity_Text_ExplainCaterpieWeedle::
     .string "POISON STING!$"
 
 ViridianCity_Text_GrandpaHasntHadCoffeeYet::
-    .string "Oh Grandpa! Don't\n"
+    .string "Oh Grandpa! DonÑ\n"
     .string "be so mean!\l"
-    .string "He hasn't had his\l"
+    .string "He hasnÑ had his\l"
     .string "coffee yet.$"
 
 ViridianCity_Text_GoShoppingInPewterOccasionally::
@@ -47,13 +47,13 @@ ViridianCity_Text_GoShoppingInPewterOccasionally::
     .string "VIRIDIAN FOREST.$"
 
 ViridianCity_Text_ThisIsPrivateProperty::
-    .string "You can't go\n"
+    .string "You canÑ go\n"
     .string "through here!\p"
     .string "This is private\n"
     .string "property!$"
 
 ViridianCity_Text_HadMyCoffee::
-    .string "Ahh, I've had my\n"
+    .string "Ahh, Iße had my\n"
     .string "coffee now and I\l"
     .string "feel great!\p"
     .string "Sure you can go\n"
@@ -62,16 +62,16 @@ ViridianCity_Text_HadMyCoffee::
     .string "hurry?$"
 
 ViridianCity_Text_ShowYouHowToCatchMons::
-    .string "I see you're using\n"
+    .string "I see youàe using\n"
     .string "a POKéDEX.\p"
     .string "When you catch a\n"
     .string "POKéMON, POKéDEX\l"
     .string "is automatically\l"
     .string "updated.\p"
-    .string "What? don't you\n"
+    .string "What? donÑ you\n"
     .string "know how to catch\l"
     .string "POKéMON?\p"
-    .string "I'll show you\n"
+    .string "IÛl show you\n"
     .string "how to then.$"
 
 ViridianCity_Text_DeclineTutorial::
@@ -113,7 +113,7 @@ ViridianCity_Text_GymSign::
     .string "POKéMON GYM$"
 
 ViridianCity_Text_GymDoorsAreLocked::
-    .string "The GYM's doors\n"
+    .string "The GYMÙ doors\n"
     .string "are locked...$"
 
 ViridianCity_Text_TakeTM42::
@@ -123,7 +123,7 @@ ViridianCity_Text_TakeTM42::
     .string "I had this dream\n"
     .string "about a DROWZEE\l"
     .string "eating my dream.\l"
-    .string "What's this?\l"
+    .string "WhatÙ this?\l"
     .string "Where did this TM\l"
     .string "come from?\p"
     .string "This is spooky!\n"
@@ -132,7 +132,7 @@ ViridianCity_Text_TakeTM42::
 
 ViridianCity_Text_PutTM42Away::
     .string "{PLAYER} put TM42 away in\n"
-    .string "the BAG's TM CASE.$"
+    .string "the BAGÙ TM CASE.$"
 
 ViridianCity_Text_TM42_Contains::
     .string "TM42 contains\n"

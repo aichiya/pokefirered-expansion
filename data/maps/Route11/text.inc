@@ -3,7 +3,7 @@ Route11_Text_HugoIntro::
 
 Route11_Text_HugoDefeat::
     .string "GAMBLER: Atcha!\n"
-    .string "Didn't go my way!$"
+    .string "DidnÑ go my way!$"
 
 Route11_Text_HugoPostBattle::
     .string "POKéMON is life!\n"
@@ -12,24 +12,24 @@ Route11_Text_HugoPostBattle::
 
 Route11_Text_JasperIntro::
     .string "Competition! I\n"
-    .string "can't get enough!$"
+    .string "canÑ get enough!$"
 
 Route11_Text_JasperDefeat::
     .string "GAMBLER: I had\n"
     .string "a chance!$"
 
 Route11_Text_JasperPostBattle::
-    .string "You can't be a\n"
+    .string "You canÑ be a\n"
     .string "coward in the\l"
     .string "world of POKéMON!$"
 
 Route11_Text_EddieIntro::
-    .string "Let's go, but\n"
-    .string "don't cheat!$"
+    .string "LetÙ go, but\n"
+    .string "donÑ cheat!$"
 
 Route11_Text_EddieDefeat::
     .string "YOUNGSTER: Huh?\n"
-    .string "That's not right!$"
+    .string "ThatÙ not right!$"
 
 Route11_Text_EddiePostBattle::
     .string "I did my best! I\n"
@@ -37,7 +37,7 @@ Route11_Text_EddiePostBattle::
 
 Route11_Text_BraxtonIntro::
     .string "Careful!\n"
-    .string "I'm laying down\l"
+    .string "Iá laying down\l"
     .string "some cables!$"
 
 Route11_Text_BraxtonDefeat::
@@ -55,7 +55,7 @@ Route11_Text_DillonIntro::
 
 Route11_Text_DillonDefeat::
     .string "YOUNGSTER: My\n"
-    .string "POKéMON couldn't!$"
+    .string "POKéMON couldnÑ!$"
 
 Route11_Text_DillonPostBattle::
     .string "What do you want?\n"
@@ -82,11 +82,11 @@ Route11_Text_DarianDefeat::
     .string "this coming...$"
 
 Route11_Text_DarianPostBattle::
-    .string "It's just luck.\n"
+    .string "ItÙ just luck.\n"
     .string "Luck of the draw.$"
 
 Route11_Text_YasuIntro::
-    .string "I'm the best in\n"
+    .string "Iá the best in\n"
     .string "my class!$"
 
 Route11_Text_YasuDefeat::
@@ -95,11 +95,11 @@ Route11_Text_YasuDefeat::
     .string "POKéMON stronger!$"
 
 Route11_Text_YasuPostBattle::
-    .string "There's a fat\n"
+    .string "ThereÙ a fat\n"
     .string "POKéMON that\l"
     .string "comed down from\l"
     .string "the mountains.\p"
-    .string "It's strong if\n"
+    .string "ItÙ strong if\n"
     .string "you can get it.$"
 
 Route11_Text_BernieIntro::

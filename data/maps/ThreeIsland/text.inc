@@ -8,16 +8,16 @@ ThreeIsland_Text_IslandBelongsToUs::
     .string "belongs to us!$"
 
 ThreeIsland_Text_GoBackToKanto::
-    .string "We don't need you people bringing\n"
+    .string "We donÑ need you people bringing\n"
     .string "your noise and trouble here!\p"
-    .string "We're asking you to go back to\n"
+    .string "Weàe asking you to go back to\n"
     .string "KANTO!$"
 
 ThreeIsland_Text_BossIsOnHisWay::
     .string "Hey, go cry somewhere else.\n"
     .string "Our boss is on his way.\p"
-    .string "When he gets here, we'll give you\n"
-    .string "a k-rad motorbike show you won't\l"
+    .string "When he gets here, weÛl give you\n"
+    .string "a k-rad motorbike show you wonÑ\l"
     .string "soon forget!$"
 
 ThreeIsland_Text_GetOffIslandNow::
@@ -25,7 +25,7 @@ ThreeIsland_Text_GetOffIslandNow::
     .string "Get off the island now!$"
 
 ThreeIsland_Text_WhosGonnaMakeMe::
-    .string "Who's gonna make me?$"
+    .string "WhoÙ gonna make me?$"
 
 ThreeIsland_Text_AreYouBossGoBackToKanto::
     .string "Are you the boss?\n"
@@ -34,18 +34,18 @@ ThreeIsland_Text_AreYouBossGoBackToKanto::
 ThreeIsland_Text_JustGotHerePal::
     .string "Hah?\p"
     .string "I just got here, pal.\p"
-    .string "What's with the hostile attitude?\n"
-    .string "It's mighty cold of you!$"
+    .string "WhatÙ with the hostile attitude?\n"
+    .string "ItÙ mighty cold of you!$"
 
 ThreeIsland_Text_FollowersRaisingHavoc::
     .string "Your gang of followers have been\n"
     .string "raising havoc on their bikes.\p"
     .string "Do you have any idea how much\n"
-    .string "trouble they've caused us on the\l"
+    .string "trouble theyße caused us on the\l"
     .string "island?$"
 
 ThreeIsland_Text_OughtToBeThankingUs::
-    .string "No, man, I don't get it at all.\p"
+    .string "No, man, I donÑ get it at all.\p"
     .string "Look at this place.\n"
     .string "What do you do for entertainment?\p"
     .string "You ought to be thanking us for\n"
@@ -59,17 +59,17 @@ ThreeIsland_Text_YouCowardsToughInPack::
 
 ThreeIsland_Text_WannaMakeSomethingOfYourStaring::
     .string "You, what are you staring at?\n"
-    .string "Don't you know it's not polite?\p"
+    .string "DonÑ you know itÙ not polite?\p"
     .string "You wanna make something of it\n"
     .string "or what?$"
 
 ThreeIsland_Text_ThatsSmart::
-    .string "That's smart.\n"
+    .string "ThatÙ smart.\n"
     .string "Keep your nose out of this.$"
 
 ThreeIsland_Text_Biker1Intro::
     .string "Heh, I like your guts.\n"
-    .string "You'll be losing money to me, but…$"
+    .string "YouÛl be losing money to me, but…$"
 
 ThreeIsland_Text_Biker1Defeat::
     .string "Wha…\n"
@@ -77,17 +77,17 @@ ThreeIsland_Text_Biker1Defeat::
 
 ThreeIsland_Text_Biker1PostBattle::
     .string "Aww, man…\n"
-    .string "Don't you dare laugh!$"
+    .string "DonÑ you dare laugh!$"
 
 ThreeIsland_Text_Biker2Intro::
-    .string "Aren't you from KANTO?\n"
+    .string "ArenÑ you from KANTO?\n"
     .string "You should be on our side!$"
 
 ThreeIsland_Text_Biker2Defeat::
     .string "Stop fooling around!$"
 
 ThreeIsland_Text_Biker2PostBattle::
-    .string "What's the matter with you,\n"
+    .string "WhatÙ the matter with you,\n"
     .string "getting all hot like that?\p"
     .string "Totally uncool, man!$"
 
@@ -100,21 +100,21 @@ ThreeIsland_Text_Biker3Defeat::
     .string "… … …   … … …$"
 
 ThreeIsland_Text_Biker3PostBattle::
-    .string "Boss, I'm telling you, you've gotta\n"
+    .string "Boss, Iá telling you, youße gotta\n"
     .string "do something about this kid!$"
 
 ThreeIsland_Text_PaxtonIntro::
-    .string "I've been watching you, and I'd say\n"
-    .string "you've done enough.\p"
+    .string "Iße been watching you, and IÚ say\n"
+    .string "youße done enough.\p"
     .string "What are you, their friend or\n"
     .string "something?\p"
-    .string "Then I guess you'll be battling me\n"
+    .string "Then I guess youÛl be battling me\n"
     .string "in their place.$"
 
 ThreeIsland_Text_PaxtonDefeat::
     .string "All right, enough!\n"
-    .string "We'll leave like you wanted!\p"
-    .string "We'll be happy to see the last of\n"
+    .string "WeÛl leave like you wanted!\p"
+    .string "WeÛl be happy to see the last of\n"
     .string "this boring island!$"
 
 ThreeIsland_Text_PaxtonPostBattle::
@@ -136,16 +136,16 @@ ThreeIsland_Text_OhYourBagIsFull::
     .string "Your BAG is full.$"
 
 ThreeIsland_Text_YouveGotImpressiveMons::
-    .string "You've got seriously impressive\n"
+    .string "Youße got seriously impressive\n"
     .string "POKéMON with you.$"
 
 ThreeIsland_Text_LostelleWentOffTowardsBondBridge::
-    .string "It'd be fantastic if someone as\n"
+    .string "ItÚ be fantastic if someone as\n"
     .string "strong as you lived here.\p"
-    .string "I hope you'll at least stay here\n"
+    .string "I hope youÛl at least stay here\n"
     .string "a while.\p"
     .string "…I beg your pardon?\n"
-    .string "You're looking for LOSTELLE?\p"
+    .string "Youàe looking for LOSTELLE?\p"
     .string "LOSTELLE went off towards BOND\n"
     .string "BRIDGE a while ago.$"
 
@@ -153,13 +153,13 @@ ThreeIsland_Text_WouldntWantToSeeBikersHereAgain::
     .string "THREE ISLAND is actually the most\n"
     .string "populous of the islands here.\p"
     .string "Still, it could be less sleepy.\p"
-    .string "But I wouldn't want to see goons\n"
+    .string "But I wouldnÑ want to see goons\n"
     .string "like those BIKERS here again.$"
 
 ThreeIsland_Text_WhenDodouEvolvesGoingToPlayGame::
-    .string "I'm going to train my DODUO in the\n"
+    .string "Iá going to train my DODUO in the\n"
     .string "BERRY FOREST.\p"
-    .string "When it evolves, I'm going to play\n"
+    .string "When it evolves, Iá going to play\n"
     .string "a game on TWO ISLAND.$"
 
 ThreeIsland_Text_Doduo::

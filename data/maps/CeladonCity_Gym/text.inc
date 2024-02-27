@@ -1,7 +1,7 @@
 CeladonCity_Gym_Text_ErikaIntro::
     .string "Hello. Lovely\n"
-    .string "weather isn't it?\l"
-    .string "It's so pleasant.\p"
+    .string "weather isnÑ it?\l"
+    .string "ItÙ so pleasant.\p"
     .string "...Oh dear...\n"
     .string "I must have dozed\l"
     .string "off. Welcome.\p"
@@ -12,7 +12,7 @@ CeladonCity_Gym_Text_ErikaIntro::
     .string "flower arranging.\l"
     .string "My POKéMON are of\l"
     .string "the grass-type.\p"
-    .string "Oh, I'm sorry, I\n"
+    .string "Oh, Iá sorry, I\n"
     .string "had no idea that\l"
     .string "you wished to\l"
     .string "challenge me.\p"
@@ -30,7 +30,7 @@ CeladonCity_Gym_Text_ErikaDefeat::
 CeladonCity_Gym_Text_ErikaPostBattle::
     .string "You are cataloging\n"
     .string "POKéMON? I must\l"
-    .string "say I'm impressed.\p"
+    .string "say Iá impressed.\p"
     .string "I would never\n"
     .string "collect POKéMON\l"
     .string "if they were\l"
@@ -69,7 +69,7 @@ CeladonCity_Gym_Text_KayIntro::
     .string "allowed in here!$"
 
 CeladonCity_Gym_Text_KayDefeat::
-    .string "LASS: You're\n"
+    .string "LASS: Youàe\n"
     .string "too rough!$"
 
 CeladonCity_Gym_Text_KayPostBattle::
@@ -94,22 +94,22 @@ CeladonCity_Gym_Text_BridgetPostBattle::
     .string "ground POKéMON!$"
 
 CeladonCity_Gym_Text_TinaIntro::
-    .string "Aren't you the\n"
+    .string "ArenÑ you the\n"
     .string "peeping Tom?$"
 
 CeladonCity_Gym_Text_TinaDefeat::
-    .string "JR.TRAINER♀: I'm\n"
+    .string "JR.TRAINER♀: Iá\n"
     .string "in shock!$"
 
 CeladonCity_Gym_Text_TinaPostBattle::
-    .string "Oh, you weren't\n"
+    .string "Oh, you werenÑ\n"
     .string "peeping? We get a\l"
     .string "lot of gawkers!$"
 
 CeladonCity_Gym_Text_TamiaIntro::
     .string "Look at my grass\n"
     .string "POKéMON!\p"
-    .string "They're easy\n"
+    .string "Theyàe easy\n"
     .string "to raise!$"
 
 CeladonCity_Gym_Text_TamiaDefeat::
@@ -124,7 +124,7 @@ CeladonCity_Gym_Text_TamiaPostBattle::
     .string "arrangements!$"
 
 CeladonCity_Gym_Text_LisaIntro::
-    .string "Don't bring any\n"
+    .string "DonÑ bring any\n"
     .string "bugs or fire\l"
     .string "POKéMON in here!$"
 
@@ -135,7 +135,7 @@ CeladonCity_Gym_Text_LisaDefeat::
 CeladonCity_Gym_Text_LisaPostBattle::
     .string "Our LEADER, ERIKA,\n"
     .string "might be quiet,\l"
-    .string "but she's also\l"
+    .string "but sheÙ also\l"
     .string "very skilled!$"
 
 CeladonCity_Gym_Text_LoriIntro::
@@ -165,9 +165,9 @@ CeladonCity_Gym_Text_MaryDefeat::
     .string "Beaten!$"
 
 CeladonCity_Gym_Text_MaryPostBattle::
-    .string "I didn't bring my\n"
+    .string "I didnÑ bring my\n"
     .string "best POKéMON!\p"
-    .string "Wait 'til next\n"
+    .string "Wait Ñil next\n"
     .string "time!$"
 
 CeladonCity_Gym_Text_GymStatue::

@@ -1,5 +1,5 @@
 VermilionCity_House1_Text_ImFishingGuruDoYouLikeToFish::
-    .string "I'm the FISHING\n"
+    .string "Iá the FISHING\n"
     .string "GURU!\p"
     .string "I simply Looove\n"
     .string "fishing!\p"
@@ -25,7 +25,7 @@ VermilionCity_House1_Text_FishingIsAWayOfLife::
     .string "one, young one!$"
 
 VermilionCity_House1_Text_OhThatsSoDisappointing::
-    .string "Oh... That's so\n"
+    .string "Oh... ThatÙ so\n"
     .string "disappointing...$"
 
 VermilionCity_House1_Text_HowAreTheFishBiting::

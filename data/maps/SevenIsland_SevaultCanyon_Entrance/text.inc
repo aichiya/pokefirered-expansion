@@ -1,22 +1,22 @@
 SevenIsland_SevaultCanyon_Entrance_Text_MiahIntro::
     .string "Kyahaha!\n"
-    .string "I'll flick you away effortlessly!$"
+    .string "IÛl flick you away effortlessly!$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MiahDefeat::
     .string "Tch!\n"
     .string "Too strong for me!$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MiahPostBattle::
-    .string "What's that?\n"
-    .string "I don't act the way I look?\p"
-    .string "Heh, that's a part of my strategy!$"
+    .string "WhatÙ that?\n"
+    .string "I donÑ act the way I look?\p"
+    .string "Heh, thatÙ a part of my strategy!$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MasonIntro::
     .string "Howdy!\n"
     .string "Are you a member of my fan club?$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MasonDefeat::
-    .string "Oh, so you're not a fan…\p"
+    .string "Oh, so youàe not a fan…\p"
     .string "Well, I can change that.\n"
     .string "Let me sing for you!$"
 
@@ -27,7 +27,7 @@ SevenIsland_SevaultCanyon_Entrance_Text_MasonPostBattle::
 
 SevenIsland_SevaultCanyon_Entrance_Text_NicolasIntro::
     .string "This island is too spread out…\n"
-    .string "It's not easy patrolling the place.$"
+    .string "ItÙ not easy patrolling the place.$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_NicolasDefeat::
     .string "Uh-huh…$"
@@ -35,23 +35,23 @@ SevenIsland_SevaultCanyon_Entrance_Text_NicolasDefeat::
 SevenIsland_SevaultCanyon_Entrance_Text_NicolasPostBattle::
     .string "TRAINERS like you from cities,\n"
     .string "they sure are tough.\p"
-    .string "You'll be headed for the TOWER,\n"
-    .string "won't you?$"
+    .string "YouÛl be headed for the TOWER,\n"
+    .string "wonÑ you?$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MadelineIntro::
     .string "I punish people who abuse\n"
     .string "POKéMON!$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MadelineDefeat::
-    .string "You don't seem to be a problem\n"
+    .string "You donÑ seem to be a problem\n"
     .string "TRAINER.$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MadelinePostBattle::
     .string "If you treat your POKéMON with\n"
-    .string "kindness, they'll understand.$"
+    .string "kindness, theyÛl understand.$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_EveIntro::
-    .string "EVE: I'll team up with JON and\n"
+    .string "EVE: IÛl team up with JON and\n"
     .string "battle together.$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_EveDefeat::
@@ -59,7 +59,7 @@ SevenIsland_SevaultCanyon_Entrance_Text_EveDefeat::
     .string "Ehehe.$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_EvePostBattle::
-    .string "EVE: I'm going to work harder with\n"
+    .string "EVE: Iá going to work harder with\n"
     .string "JON.$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_EveNotEnoughMons::
@@ -68,22 +68,22 @@ SevenIsland_SevaultCanyon_Entrance_Text_EveNotEnoughMons::
     .string "Come back with two POKéMON, okay?$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_JonIntro::
-    .string "JON: When I'm with EVE, it feels\n"
+    .string "JON: When Iá with EVE, it feels\n"
     .string "like we could never lose.$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_JonDefeat::
-    .string "JON: When I'm with EVE,\n"
-    .string "it doesn't feel like I've lost!$"
+    .string "JON: When Iá with EVE,\n"
+    .string "it doesnÑ feel like Iße lost!$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_JonPostBattle::
-    .string "JON: When I'm with EVE, I feel\n"
+    .string "JON: When Iá with EVE, I feel\n"
     .string "giddy whether I win or lose.\p"
-    .string "It's magical!$"
+    .string "ItÙ magical!$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_JonNotEnoughMons::
-    .string "JON: If it's with EVE, I'll be\n"
+    .string "JON: If itÙ with EVE, IÛl be\n"
     .string "happy to battle with you.\p"
-    .string "So, I'd like to make it a\n"
+    .string "So, IÚ like to make it a\n"
     .string "two-on-two battle, if I may.$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_RouteSign::

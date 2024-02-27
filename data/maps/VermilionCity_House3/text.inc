@@ -1,5 +1,5 @@
 VermilionCity_House3_Text_PidgeyFlyLetterToSaffron::
-    .string "I'm getting my\n"
+    .string "Iá getting my\n"
     .string "PIDGEY to fly a\l"
     .string "letter to SAFFRON\l"
     .string "in the north!$"

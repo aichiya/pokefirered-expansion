@@ -4,12 +4,12 @@ SevenIsland_TanobyRuins_Text_BrandonIntro::
 
 SevenIsland_TanobyRuins_Text_BrandonDefeat::
     .string "That was uncalled for.\n"
-    .string "You didn't have to be so rough.$"
+    .string "You didnÑ have to be so rough.$"
 
 SevenIsland_TanobyRuins_Text_BrandonPostBattle::
     .string "The TANOBY RUINS date back at\n"
     .string "least 1,500 years.\p"
-    .string "But it's a baffling mystery as to\n"
+    .string "But itÙ a baffling mystery as to\n"
     .string "why it was built in the first place.$"
 
 SevenIsland_TanobyRuins_Text_BenjaminIntro::
@@ -17,7 +17,7 @@ SevenIsland_TanobyRuins_Text_BenjaminIntro::
     .string "inside here.$"
 
 SevenIsland_TanobyRuins_Text_BenjaminDefeat::
-    .string "I'm not much good in battle.$"
+    .string "Iá not much good in battle.$"
 
 SevenIsland_TanobyRuins_Text_BenjaminPostBattle::
     .string "I hear there are other ruins like\n"

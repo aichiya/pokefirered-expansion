@@ -21,7 +21,7 @@ TrainerTower_Lobby_Text_LikeToChallengeTrainers::
     .string "waiting TRAINERS?$"
 
 TrainerTower_Lobby_Text_StartClockGetSetGo::
-    .string "Okay, I'll get the clock started,\n"
+    .string "Okay, IÛl get the clock started,\n"
     .string "so give it everything you have.\p"
     .string "On your marks…\p"
     .string "Get set…\p"
@@ -44,7 +44,7 @@ TrainerTower_Lobby_Text_MoveCounterHereWhenTrainersSwitch::
     .string "the movement can be hectic.\p"
     .string "To avoid the stampede, we moved\n"
     .string "the reception counter here.\p"
-    .string "I'm sorry for the inconvenience.$"
+    .string "Iá sorry for the inconvenience.$"
 
 TrainerTower_Roof_Text_ImOwnerBattledPerfectly::
     .string "Hello…\p"
@@ -52,7 +52,7 @@ TrainerTower_Roof_Text_ImOwnerBattledPerfectly::
     .string "How the sky soars above this\n"
     .string "rooftop…\p"
     .string "The caress of the winds up here…\p"
-    .string "It's all so perfect…\p"
+    .string "ItÙ all so perfect…\p"
     .string "The way you battled…\n"
     .string "It, too, was perfection…$"
 
@@ -62,11 +62,11 @@ TrainerTower_Roof_Text_ThisIsForYou::
 TrainerTower_Roof_Text_DoneItInRecordTime::
     .string "Oh!\n"
     .string "Stupendous!\p"
-    .string "It's marvelous how you've come up\n"
+    .string "ItÙ marvelous how youße come up\n"
     .string "here so quickly.\p"
-    .string "The fact is, you've done it in\n"
+    .string "The fact is, youße done it in\n"
     .string "record time…\p"
-    .string "I'll have your record posted at\n"
+    .string "IÛl have your record posted at\n"
     .string "the reception counter.$"
 
 TrainerTower_Roof_Text_TookSweetTimeGettingHere::
@@ -76,7 +76,7 @@ TrainerTower_Roof_Text_TookSweetTimeGettingHere::
 TrainerTower_Roof_Text_IdLikeToSeeBetterTime::
     .string "What I would like to see is a\n"
     .string "better time out of you…\p"
-    .string "I'm counting on you.\p"
+    .string "Iá counting on you.\p"
     .string "Until then, farewell…$"
 
 TrainerTower_Text_XMinYZSec::
@@ -107,14 +107,14 @@ TrainerTower_Lobby_Text_ThanksForCompeting::
     .string "Thank you for competing!$"
 
 TrainerTower_Lobby_Text_WonderWhatKindsOfTrainers::
-    .string "I'm here to see how good I am.\p"
+    .string "Iá here to see how good I am.\p"
     .string "I wonder what kinds of TRAINERS\n"
     .string "are waiting for me?\p"
-    .string "It's nerve-racking!$"
+    .string "ItÙ nerve-racking!$"
 
 TrainerTower_Lobby_Text_StairsTougherThanAnyBattle::
     .string "Gasp, gasp…\n"
     .string "Gasp…\p"
     .string "Never mind battling! These stairs…\n"
-    .string "They're tougher than any battle…$"
+    .string "Theyàe tougher than any battle…$"
 

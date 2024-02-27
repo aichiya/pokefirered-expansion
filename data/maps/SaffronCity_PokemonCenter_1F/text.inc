@@ -5,7 +5,7 @@ SaffronCity_PokemonCenter_1F_Text_GrowthRatesDifferBySpecies::
 
 SaffronCity_PokemonCenter_1F_Text_SilphCoVictimOfFame::
     .string "SILPH CO. is very\n"
-    .string "famous. That's\l"
+    .string "famous. ThatÙ\l"
     .string "why it attracted\l"
     .string "TEAM ROCKET!$"
 
@@ -16,5 +16,5 @@ SaffronCity_PokemonCenter_1F_Text_GreatIfEliteFourCameBeatRockets::
 SaffronCity_PokemonCenter_1F_Text_TeamRocketTookOff::
     .string "TEAM ROCKET took off!\n"
     .string "We can go out safely again!\l"
-    .string "That's great!$"
+    .string "ThatÙ great!$"
 

@@ -4,7 +4,7 @@ SilphCo_10F_Text_GruntIntro::
     .string "you to join me!$"
 
 SilphCo_10F_Text_GruntDefeat::
-    .string "ROCKET: I'm\n"
+    .string "ROCKET: Iá\n"
     .string "stunned!$"
 
 SilphCo_10F_Text_GruntPostBattle::
@@ -27,7 +27,7 @@ SilphCo_10F_Text_TravisPostBattle::
 
 SilphCo_10F_Text_WaaaImScared::
     .string "Waaaaa!\n"
-    .string "I'm scared!$"
+    .string "Iá scared!$"
 
 SilphCo_10F_Text_KeepMeCryingASecret::
     .string "Please keep quiet\n"

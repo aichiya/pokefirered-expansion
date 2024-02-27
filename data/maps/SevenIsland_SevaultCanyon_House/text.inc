@@ -15,7 +15,7 @@ SevenIsland_SevaultCanyon_House_Text_DancedChanseyDance::
 
 SevenIsland_SevaultCanyon_House_Text_YoureAllChipperNow::
     .string "Ahahahaha!\p"
-    .string "There, you're all chipper now!\n"
+    .string "There, youàe all chipper now!\n"
     .string "Lucky!$"
 
 SevenIsland_SevaultCanyon_House_Text_Chansey::

@@ -2,13 +2,13 @@ Route16_Text_LaoIntro::
     .string "What do you want?$"
 
 Route16_Text_LaoDefeat::
-    .string "BIKER: Don't you\n"
+    .string "BIKER: DonÑ you\n"
     .string "dare laugh!$"
 
 Route16_Text_LaoPostBattle::
     .string "We like just\n"
     .string "hanging here,\l"
-    .string "what's it to you?$"
+    .string "whatÙ it to you?$"
 
 Route16_Text_KojiIntro::
     .string "Nice BIKE!\n"
@@ -48,7 +48,7 @@ Route16_Text_HideoPostBattle::
     .string "coastal road.$"
 
 Route16_Text_CamronIntro::
-    .string "I'm feeling\n"
+    .string "Iá feeling\n"
     .string "hungry and mean!$"
 
 Route16_Text_CamronDefeat::
@@ -61,10 +61,10 @@ Route16_Text_CamronPostBattle::
     .string "tear up enemies!$"
 
 Route16_Text_RubenIntro::
-    .string "Sure, I'll go!$"
+    .string "Sure, IÛl go!$"
 
 Route16_Text_RubenDefeat::
-    .string "BIKER: Don't make\n"
+    .string "BIKER: DonÑ make\n"
     .string "me mad!$"
 
 Route16_Text_RubenPostBattle::
@@ -87,7 +87,7 @@ Route16_Text_RouteSign::
 
 Route16_Text_JedIntro::
     .string "JED: Our love knows no bounds.\n"
-    .string "We're in love and we show it!$"
+    .string "Weàe in love and we show it!$"
 
 Route16_Text_JedDefeat::
     .string "JED: Oh, no!\n"
@@ -110,11 +110,11 @@ Route16_Text_LeaDefeat::
     .string "even in a loss!$"
 
 Route16_Text_LeaPostBattle::
-    .string "LEA: Ehehe, I'm sorry.\n"
+    .string "LEA: Ehehe, Iá sorry.\n"
     .string "JED is so cool.$"
 
 Route16_Text_LeaNotEnoughMons::
-    .string "LEA: Oh, you don't have two\n"
+    .string "LEA: Oh, you donÑ have two\n"
     .string "POKéMON with you?\p"
-    .string "Doesn't it feel lonely for you or\n"
+    .string "DoesnÑ it feel lonely for you or\n"
     .string "your POKéMON?$"

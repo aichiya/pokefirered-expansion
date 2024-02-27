@@ -2,11 +2,11 @@ SilphCo_5F_Text_RocketsInUproarAboutIntruder::
     .string "TEAM ROCKET is\n"
     .string "in an uproar over\l"
     .string "some intruder.\l"
-    .string "That's you right?$"
+    .string "ThatÙ you right?$"
 
 SilphCo_5F_Text_YoureOurHeroThankYou::
     .string "TEAM ROCKET took\n"
-    .string "off! You're our\l"
+    .string "off! Youàe our\l"
     .string "hero! Thank you!$"
 
 SilphCo_5F_Text_Grunt1Intro::
@@ -17,7 +17,7 @@ SilphCo_5F_Text_Grunt1Defeat::
     .string "ROCKET: Boom!$"
 
 SilphCo_5F_Text_Grunt1PostBattle::
-    .string "It's not smart\n"
+    .string "ItÙ not smart\n"
     .string "to pick a fight\l"
     .string "with TEAM ROCKET!$"
 
@@ -38,15 +38,15 @@ SilphCo_5F_Text_BeauPostBattle::
 
 SilphCo_5F_Text_DaltonIntro::
     .string "Whaaat? There\n"
-    .string "shouldn't be any\n"
+    .string "shouldnÑ be any\n"
     .string "children here?$"
 
 SilphCo_5F_Text_DaltonDefeat::
     .string "JUGGLER: Oh goodness!$"
 
 SilphCo_5F_Text_DaltonPostBattle::
-    .string "You're only on 5F.\n"
-    .string "It's a long way to my BOSS!$"
+    .string "Youàe only on 5F.\n"
+    .string "ItÙ a long way to my BOSS!$"
 
 SilphCo_5F_Text_Grunt2Intro::
     .string "Show TEAM ROCKET a little respect!$"
@@ -60,17 +60,17 @@ SilphCo_5F_Text_Grunt2PostBattle::
     .string "KOFFING evolves into WEEZING!$"
 
 SilphCo_5F_Text_PorygonFirstVRMon::
-    .string "It's a POKéMON REPORT!\p"
+    .string "ItÙ a POKéMON REPORT!\p"
     .string "POKéMON LAB created PORYGON,\n"
     .string "the first virtual reality POKéMON.$"
 
 SilphCo_5F_Text_Over350TechniquesConfirmed::
-    .string "It's a POKéMON REPORT!\p"
+    .string "ItÙ a POKéMON REPORT!\p"
     .string "Over 160 POKéMON techniques have\n"
     .string "been confirmed.$"
 
 SilphCo_5F_Text_SomeMonsEvolveWhenTraded::
-    .string "It's a POKéMON REPORT!\p"
+    .string "ItÙ a POKéMON REPORT!\p"
     .string "4 POKéMON evolve only when traded\n"
     .string "by link-cable.$"
 

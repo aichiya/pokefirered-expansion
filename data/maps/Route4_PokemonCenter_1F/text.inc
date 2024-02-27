@@ -1,5 +1,5 @@
 Route4_PokemonCenter_1F_Text_CanHaveSixMonsWithYou::
-    .string "I've 6 POKé BALLs\n"
+    .string "Iße 6 POKé BALLs\n"
     .string "set in my belt.\p"
     .string "At most, you can\n"
     .string "carry 6 POKéMON.$"
@@ -16,7 +16,7 @@ Route4_PokemonCenter_1F_Text_LaddieBuyMagikarpForJust500::
     .string "MAN: Hello there!\n"
     .string "Have I got a deal\l"
     .string "just for you!\p"
-    .string "I'll let you have\n"
+    .string "IÛl let you have\n"
     .string "a swell MAGIKARP\l"
     .string "for just ¥500!\l"
     .string "What do you say?$"
@@ -24,7 +24,7 @@ Route4_PokemonCenter_1F_Text_LaddieBuyMagikarpForJust500::
 Route4_PokemonCenter_1F_Text_SweetieBuyMagikarpForJust500::
     .string "MAN: Hello there!\n"
     .string "Have I got a deal just for you!\p"
-    .string "I'll let you have a swell\n"
+    .string "IÛl let you have a swell\n"
     .string "MAGIKARP for just ¥500!\p"
     .string "What do you say?$"
 
@@ -33,19 +33,19 @@ Route4_PokemonCenter_1F_Text_PaidOutrageouslyForMagikarp::
     .string "and bought the MAGIKARP...$"
 
 Route4_PokemonCenter_1F_Text_OnlyDoingThisAsFavorToYou::
-    .string "No? I'm only\n"
+    .string "No? Iá only\n"
     .string "doing this as a\l"
     .string "favor to you!$"
 
 Route4_PokemonCenter_1F_Text_NoRoomForMorePokemon::
-    .string "There's no more room for any more\n"
+    .string "ThereÙ no more room for any more\n"
     .string "POKéMON, it looks like.$"
 
 Route4_PokemonCenter_1F_Text_YoullNeedMoreMoney::
-    .string "You'll need more money than that!$"
+    .string "YouÛl need more money than that!$"
 
 Route4_PokemonCenter_1F_Text_IDontGiveRefunds::
-    .string "MAN: Well, I don't\n"
+    .string "MAN: Well, I donÑ\n"
     .string "give refunds!$"
 
 Route4_PokemonCenter_1F_Text_ShouldStoreMonsUsingPC::
@@ -55,5 +55,5 @@ Route4_PokemonCenter_1F_Text_ShouldStoreMonsUsingPC::
     .string "via PC!$"
 
 Route4_PokemonCenter_1F_Text_ItsANewspaper::
-    .string "It's a newspaper.$"
+    .string "ItÙ a newspaper.$"
 

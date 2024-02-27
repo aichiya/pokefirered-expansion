@@ -4,10 +4,10 @@ SaffronCity_CopycatsHouse_2F_Text_MimickingFavoriteHobbyMale::
     .string "{PLAYER}: Uh no, I\n"
     .string "just asked you.\p"
     .string "{PLAYER}: Huh?\n"
-    .string "You're strange!\p"
+    .string "Youàe strange!\p"
     .string "COPYCAT: Hmm?\n"
     .string "Quit mimicking?\p"
-    .string "But, that's my\n"
+    .string "But, thatÙ my\n"
     .string "favorite hobby!$"
 
 SaffronCity_CopycatsHouse_2F_Text_MimickingFavoriteHobbyFemale::
@@ -16,10 +16,10 @@ SaffronCity_CopycatsHouse_2F_Text_MimickingFavoriteHobbyFemale::
     .string "{PLAYER}: Uh no, I\n"
     .string "just asked you.\p"
     .string "{PLAYER}: Huh?\n"
-    .string "You're strange!\p"
+    .string "Youàe strange!\p"
     .string "COPYCAT: Hmm?\n"
     .string "Quit mimicking?\p"
-    .string "But, that's my\n"
+    .string "But, thatÙ my\n"
     .string "favorite hobby!$"
 
 Text_MimicTeach::
@@ -31,11 +31,11 @@ Text_MimicTeach::
     .string "this, then!$"
 
 Text_MimicDeclined::
-    .string "Don't you like MIMIC?$"
+    .string "DonÑ you like MIMIC?$"
 
 Text_MimicWhichMon::
     .string "I really love MIMIC!\n"
-    .string "Who's going to learn it?$"
+    .string "WhoÙ going to learn it?$"
 
 Text_MimicTaughtMale::
     .string "{PLAYER}: Hi!\n"
@@ -44,7 +44,7 @@ Text_MimicTaughtMale::
     .string "{PLAYER}: Is it that fun to mimic my\n"
     .string "every move?\p"
     .string "COPYCAT: You bet!\n"
-    .string "It's a scream!$"
+    .string "ItÙ a scream!$"
 
 Text_MimicTaughtFemale::
     .string "{PLAYER}: Hi!\n"
@@ -53,7 +53,7 @@ Text_MimicTaughtFemale::
     .string "{PLAYER}: Is it really that fun to\n"
     .string "copy what I say and do?\p"
     .string "COPYCAT: You bet!\n"
-    .string "It's a scream!$"
+    .string "ItÙ a scream!$"
 
 SaffronCity_CopycatsHouse_2F_Text_TooMuchInBag::
     .string "にもつが　いっぱいね！$"
@@ -89,7 +89,7 @@ SaffronCity_CopycatsHouse_2F_Text_Doduo::
 
 SaffronCity_CopycatsHouse_2F_Text_RareMonOnlyDoll::
     .string "This is a rare POKéMON!\n"
-    .string "Huh? It's only a doll!$"
+    .string "Huh? ItÙ only a doll!$"
 
 SaffronCity_CopycatsHouse_2F_Text_MarioWearingABucket::
     .string "A game with MARIO wearing a bucket\n"

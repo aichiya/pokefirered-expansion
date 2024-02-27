@@ -10,7 +10,7 @@ CeruleanCity_Mart_Text_RepelWorksOnWeakMons::
 CeruleanCity_Mart_Text_DoYouKnowAboutRareCandy::
     .string "Have you seen any\n"
     .string "RARE CANDY?\p"
-    .string "It's supposed to\n"
+    .string "ItÙ supposed to\n"
     .string "make POKéMON go\l"
     .string "up one level!$"
 

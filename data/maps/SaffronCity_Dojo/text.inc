@@ -39,13 +39,13 @@ SaffronCity_Dojo_Text_MikeDefeat::
     .string "up!$"
 
 SaffronCity_Dojo_Text_MikePostBattle::
-    .string "You wait 'til you\n"
+    .string "You wait Ñil you\n"
     .string "see our Master!\p"
-    .string "I'm a small fry\n"
+    .string "Iá a small fry\n"
     .string "compared to him!$"
 
 SaffronCity_Dojo_Text_HidekiIntro::
-    .string "I hear you're\n"
+    .string "I hear youàe\n"
     .string "good! Show me!$"
 
 SaffronCity_Dojo_Text_HidekiDefeat::
@@ -73,7 +73,7 @@ SaffronCity_Dojo_Text_AaronPostBattle::
 
 SaffronCity_Dojo_Text_HitoshiIntro::
     .string "Hoohah!\p"
-    .string "You're trespassing\n"
+    .string "Youàe trespassing\n"
     .string "in our FIGHTING\l"
     .string "DOJO!$"
 

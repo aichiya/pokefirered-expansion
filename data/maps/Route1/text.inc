@@ -1,11 +1,11 @@
 Route1_Text_WorkAtPokeMartTakeSample::
     .string "Hi! I work at a\n"
     .string "POKéMON MART.\p"
-    .string "It's a convenient\n"
+    .string "ItÙ a convenient\n"
     .string "shop, so please\l"
     .string "visit us in\l"
     .string "VIRIDIAN CITY.\p"
-    .string "I know, I'll give\n"
+    .string "I know, IÛl give\n"
     .string "you a sample!\p"
     .string "Here you go!$"
 
@@ -16,12 +16,12 @@ Route1_Text_ComeSeeUsIfYouNeedPokeBalls::
 
 Route1_Text_PutPotionAway::
     .string "{PLAYER} put the POTION away in\n"
-    .string "the BAG's ITEMS POCKET.$"
+    .string "the BAGÙ ITEMS POCKET.$"
 
 Route1_Text_CanJumpFromLedges::
     .string "See those ledges\n"
     .string "along the road?\p"
-    .string "It's a bit scary,\n"
+    .string "ItÙ a bit scary,\n"
     .string "but you can jump\l"
     .string "from them.\p"
     .string "You can get back\n"

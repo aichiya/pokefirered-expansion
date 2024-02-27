@@ -6,10 +6,10 @@ FiveIsland_House1_JPText_HusbandWentOffFishing::
     .string "しんじて　いいのかねえ$"
 
 FiveIsland_House1_Text_HusbandWentOffFishing::
-    .string "Don't worry about buying anything\n"
+    .string "DonÑ worry about buying anything\n"
     .string "for dinner tonight!\p"
-    .string "…That's what my husband said when\n"
+    .string "…ThatÙ what my husband said when\n"
     .string "he went off fishing today.\p"
-    .string "I'm not sure if I can count on him\n"
+    .string "Iá not sure if I can count on him\n"
     .string "to live up to that promise.$"
 

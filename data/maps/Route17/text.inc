@@ -1,5 +1,5 @@
 Route17_Text_RaulIntro::
-    .string "There's no money in\n"
+    .string "ThereÙ no money in\n"
     .string "fighting kids.$"
 
 Route17_Text_RaulDefeat::
@@ -36,7 +36,7 @@ Route17_Text_VirgilPostBattle::
     .string "downhill!$"
 
 Route17_Text_BillyIntro::
-    .string "We're BIKERs!\n"
+    .string "Weàe BIKERs!\n"
     .string "Highway stars!$"
 
 Route17_Text_BillyDefeat::
@@ -60,7 +60,7 @@ Route17_Text_NikolasPostBattle::
     .string "POWER PLANT.$"
 
 Route17_Text_ZeekIntro::
-    .string "my POKéMON  won't\n"
+    .string "my POKéMON  wonÑ\n"
     .string "evolve! Why?$"
 
 Route17_Text_ZeekDefeat::
@@ -81,7 +81,7 @@ Route17_Text_JamalDefeat::
     .string "Good workout!$"
 
 Route17_Text_JamalPostBattle::
-    .string "I'm sure I lost\n"
+    .string "Iá sure I lost\n"
     .string "weight there!$"
 
 Route17_Text_CoreyIntro::
@@ -96,7 +96,7 @@ Route17_Text_CoreyPostBattle::
 
 Route17_Text_JaxonIntro::
     .string "Nice BIKE!\n"
-    .string "How's it handle?$"
+    .string "HowÙ it handle?$"
 
 Route17_Text_JaxonDefeat::
     .string "BIKER: Shoot!$"
@@ -107,7 +107,7 @@ Route17_Text_JaxonPostBattle::
 
 Route17_Text_WilliamIntro::
     .string "Get lost kid!\n"
-    .string "I'm bushed!$"
+    .string "Iá bushed!$"
 
 Route17_Text_WilliamDefeat::
     .string "BIKER: Are\n"
@@ -118,7 +118,7 @@ Route17_Text_WilliamPostBattle::
     .string "a few Zs!$"
 
 Route17_Text_WatchOutForDiscardedItems::
-    .string "It's a notice!\p"
+    .string "ItÙ a notice!\p"
     .string "Watch out for\n"
     .string "discarded items!$"
 
@@ -144,8 +144,8 @@ Route17_Text_RouteSign::
     .string "FUCHSIA CITY$"
 
 Route17_Text_DontThrowGameThrowBalls::
-    .string "It's a notice!\p"
-    .string "Don't throw the\n"
+    .string "ItÙ a notice!\p"
+    .string "DonÑ throw the\n"
     .string "game, throw POKé\l"
     .string "BALLs instead!$"
 

@@ -1,7 +1,7 @@
 Route8_Text_AidanIntro::
     .string "You look good at\n"
     .string "POKéMON, but\l"
-    .string "how's your chem?$"
+    .string "howÙ your chem?$"
 
 Route8_Text_AidanDefeat::
     .string "SUPER NERD: Ow!\n"
@@ -12,7 +12,7 @@ Route8_Text_AidanPostBattle::
     .string "school than this!$"
 
 Route8_Text_StanIntro::
-    .string "All right! Let's\n"
+    .string "All right! LetÙ\n"
     .string "roll the dice!$"
 
 Route8_Text_StanDefeat::
@@ -20,7 +20,7 @@ Route8_Text_StanDefeat::
     .string "Came up short!$"
 
 Route8_Text_StanPostBattle::
-    .string "Lady Luck's not\n"
+    .string "Lady LuckÙ not\n"
     .string "with me today!$"
 
 Route8_Text_GlennIntro::
@@ -28,7 +28,7 @@ Route8_Text_GlennIntro::
     .string "to win at this!$"
 
 Route8_Text_GlennDefeat::
-    .string "SUPER NERD: It's\n"
+    .string "SUPER NERD: ItÙ\n"
     .string "not logical!$"
 
 Route8_Text_GlennPostBattle::
@@ -46,7 +46,7 @@ Route8_Text_PaigeDefeat::
 Route8_Text_PaigePostBattle::
     .string "When POKéMON grow\n"
     .string "up they get ugly!\l"
-    .string "They shouldn't\l"
+    .string "They shouldnÑ\l"
     .string "evolve!$"
 
 Route8_Text_LeslieIntro::
@@ -54,11 +54,11 @@ Route8_Text_LeslieIntro::
     .string "so are POKéMON.$"
 
 Route8_Text_LeslieDefeat::
-    .string "SUPER NERD: I'll\n"
+    .string "SUPER NERD: IÛl\n"
     .string "stay with school.$"
 
 Route8_Text_LesliePostBattle::
-    .string "We're stuck here\n"
+    .string "Weàe stuck here\n"
     .string "because of the\l"
     .string "gates at SAFFRON.$"
 
@@ -84,13 +84,13 @@ Route8_Text_MeganDefeat::
     .string "you did!$"
 
 Route8_Text_MeganPostBattle::
-    .string "SAFFRON's gate\n"
-    .string "keeper won't let\l"
+    .string "SAFFRONÙ gate\n"
+    .string "keeper wonÑ let\l"
     .string "us through.\l"
-    .string "He's so mean!$"
+    .string "HeÙ so mean!$"
 
 Route8_Text_RichIntro::
-    .string "I'm a rambling,n"
+    .string "Iá a rambling,n"
     .string "gambling dude!$"
 
 Route8_Text_RichDefeat::
@@ -101,22 +101,22 @@ Route8_Text_RichPostBattle::
     .string "Gambling and\n"
     .string "POKéMON are like\l"
     .string "eating peanuts!\l"
-    .string "Just can't stop!$"
+    .string "Just canÑ stop!$"
 
 Route8_Text_JuliaIntro::
-    .string "What's a cute,\n"
+    .string "WhatÙ a cute,\n"
     .string "round and fluffy\l"
     .string "POKéMON?$"
 
 Route8_Text_JuliaDefeat::
     .string "LASS: Stop!\p"
-    .string "Don't be so mean\n"
+    .string "DonÑ be so mean\n"
     .string "to my CLEFAIRY!$"
 
 Route8_Text_JuliaPostBattle::
     .string "I heard that\n"
     .string "CLEFAIRY evolves\l"
-    .string "when it's exposed\l"
+    .string "when itÙ exposed\l"
     .string "to a MOON STONE.$"
 
 Route8_Text_UndergroundPathSign::
@@ -137,42 +137,42 @@ Route8_Text_EliPostBattle::
     .string "ANNE!$"
 
 Route8_Text_EliNotEnoughMons::
-    .string "ELI: We can't battle if you don't\n"
+    .string "ELI: We canÑ battle if you donÑ\n"
     .string "have two POKéMON.$"
 
 Route8_Text_AnneIntro::
-    .string "ANNE: We'll shock you with our twin\n"
+    .string "ANNE: WeÛl shock you with our twin\n"
     .string "power!$"
 
 Route8_Text_AnneDefeat::
     .string "ANNE: Our twin power…$"
 
 Route8_Text_AnnePostBattle::
-    .string "ANNE: I'm raising POKéMON with\n"
+    .string "ANNE: Iá raising POKéMON with\n"
     .string "ELI.$"
 
 Route8_Text_AnneNotEnoughMons::
-    .string "ANNE: Hi, hi! Let's battle!\n"
+    .string "ANNE: Hi, hi! LetÙ battle!\n"
     .string "But bring two POKéMON.$"
 
 Route8_Text_RicardoIntro::
-    .string "My bike's acting up, man.$"
+    .string "My bikeÙ acting up, man.$"
 
 Route8_Text_RicardoDefeat::
     .string "Aww, man.\n"
-    .string "I'm not into this.$"
+    .string "Iá not into this.$"
 
 Route8_Text_RicardoPostBattle::
     .string "I got grass caught up in my\n"
     .string "spokes, man.$"
 
 Route8_Text_JarenIntro::
-    .string "Clear the way, or I'll run you\n"
+    .string "Clear the way, or IÛl run you\n"
     .string "down!$"
 
 Route8_Text_JarenDefeat::
     .string "You for real, kid?$"
 
 Route8_Text_JarenPostBattle::
-    .string "Don't think you're all special and\n"
+    .string "DonÑ think youàe all special and\n"
     .string "all just because of this.$"

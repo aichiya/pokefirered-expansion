@@ -19,7 +19,7 @@ CinnabarIsland_Gym_Text_FireBlastIsUltimateFireMove::
     .string "FIRE BLAST is the\n"
     .string "ultimate fire\l"
     .string "technique!\p"
-    .string "Don't waste it on\n"
+    .string "DonÑ waste it on\n"
     .string "water POKéMON!$"
 
 CinnabarIsland_Gym_Text_ExplainVolcanoBadge::
@@ -74,12 +74,12 @@ CinnabarIsland_Gym_Text_QuinnDefeat::
     .string "surrender!$"
 
 CinnabarIsland_Gym_Text_QuinnPostBattle::
-    .string "I can't help\n"
+    .string "I canÑ help\n"
     .string "stealing other\l"
-    .string "people's POKéMON!$"
+    .string "peopleÙ POKéMON!$"
 
 CinnabarIsland_Gym_Text_AveryIntro::
-    .string "You can't win!\n"
+    .string "You canÑ win!\n"
     .string "I have studied\l"
     .string "POKéMON totally!$"
 
@@ -103,7 +103,7 @@ CinnabarIsland_Gym_Text_RamonDefeat::
 CinnabarIsland_Gym_Text_RamonPostBattle::
     .string "I wish there was\n"
     .string "a thief POKéMON!\l"
-    .string "I'd use that!$"
+    .string "IÚ use that!$"
 
 CinnabarIsland_Gym_Text_DerekIntro::
     .string "I know why BLAINE\n"
@@ -122,7 +122,7 @@ CinnabarIsland_Gym_Text_DerekPostBattle::
     .string "his way down!$"
 
 CinnabarIsland_Gym_Text_DustyIntro::
-    .string "I've been to many\n"
+    .string "Iße been to many\n"
     .string "GYMs, but this is\l"
     .string "my favorite!$"
 
@@ -156,7 +156,7 @@ CinnabarIsland_Gym_Text_GymGuyAdvice::
     .string "POKéMON pro!\p"
     .string "Douse his spirits\n"
     .string "with water!\p"
-    .string "You'd better take\n"
+    .string "YouÚ better take\n"
     .string "some BURN HEALs!$"
 
 CinnabarIsland_Gym_Text_GymGuyPostVictory::
@@ -221,7 +221,7 @@ CinnabarIsland_Gym_Text_QuizQuestion6::
     .string "TOMBSTONER?$"
 
 CinnabarIsland_Gym_Text_CorrectGoOnThrough::
-    .string "You're absolutely\n"
+    .string "Youàe absolutely\n"
     .string "correct!\p"
     .string "Go on through!$"
 

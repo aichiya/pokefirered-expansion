@@ -1,15 +1,15 @@
 MtMoon_B2F_Text_MiguelIntro::
     .string "Hey, stop!\p"
     .string "I found these\n"
-    .string "fossils! They're\l"
+    .string "fossils! Theyàe\l"
     .string "both mine!$"
 
 MtMoon_B2F_Text_MiguelDefeat::
     .string "SUPER NERD: Ok!\n"
-    .string "I'll share!$"
+    .string "IÛl share!$"
 
 MtMoon_B2F_Text_WellEachTakeAFossil::
-    .string "We'll each take\n"
+    .string "WeÛl each take\n"
     .string "one!\l"
     .string "No being greedy!$"
 
@@ -20,7 +20,7 @@ MtMoon_B2F_Text_ThenThisFossilIsMine::
 MtMoon_B2F_Text_LabOnCinnabarRegeneratesFossils::
     .string "Far away, on\n"
     .string "CINNABAR ISLAND,\l"
-    .string "there's a POKéMON\l"
+    .string "thereÙ a POKéMON\l"
     .string "LAB.\p"
     .string "They do research\n"
     .string "on regenerating\l"
@@ -34,7 +34,7 @@ MtMoon_B2F_Text_Grunt1Intro::
 
 MtMoon_B2F_Text_Grunt1Defeat::
     .string "ROCKET: Urgh!\n"
-    .string "Now I'm mad!$"
+    .string "Now Iá mad!$"
 
 MtMoon_B2F_Text_Grunt1PostBattle::
     .string "You made me mad!\n"
@@ -52,11 +52,11 @@ MtMoon_B2F_Text_Grunt2Defeat::
 
 MtMoon_B2F_Text_Grunt2PostBattle::
     .string "Darn it all! My\n"
-    .string "associates won't\l"
+    .string "associates wonÑ\l"
     .string "stand for this!$"
 
 MtMoon_B2F_Text_Grunt3Intro::
-    .string "We're pulling a\n"
+    .string "Weàe pulling a\n"
     .string "big job here!\l"
     .string "Get lost, kid!$"
 
@@ -75,7 +75,7 @@ MtMoon_B2F_Text_Grunt4Intro::
     .string "grown-ups alone!$"
 
 MtMoon_B2F_Text_Grunt4Defeat::
-    .string "ROCKET: I'm\n"
+    .string "ROCKET: Iá\n"
     .string "steamed!$"
 
 MtMoon_B2F_Text_Grunt4PostBattle::

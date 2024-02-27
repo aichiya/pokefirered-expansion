@@ -1,6 +1,6 @@
 SafariZone_East_Text_HowManyDidYouCatch::
     .string "How many did you\n"
-    .string "catch? I'm bushed\l"
+    .string "catch? Iá bushed\l"
     .string "from the work!$"
 
 SafariZone_East_Text_CaughtChanseyAllWorthwhile::
@@ -10,6 +10,6 @@ SafariZone_East_Text_CaughtChanseyAllWorthwhile::
     .string "all worthwhile!$"
 
 SafariZone_East_Text_TiredFromAllTheFun::
-    .string "Whew! I'm tired\n"
+    .string "Whew! Iá tired\n"
     .string "from all the fun!$"
 

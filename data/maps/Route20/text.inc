@@ -17,7 +17,7 @@ Route20_Text_ShirleyDefeat::
     .string "BEAUTY: Quit it!$"
 
 Route20_Text_ShirleyPostBattle::
-    .string "There's a huge\n"
+    .string "ThereÙ a huge\n"
     .string "cavern underneath\l"
     .string "this island.$"
 
@@ -52,14 +52,14 @@ Route20_Text_DeanDefeat::
     .string "SWIMMER: Wimpy!$"
 
 Route20_Text_DeanPostBattle::
-    .string "I should've been\n"
+    .string "I shouldße been\n"
     .string "buffing up my\l"
     .string "POKéMON, not me!$"
 
 Route20_Text_DarrinIntro::
     .string "Why are you\n"
     .string "riding a POKéMON?\l"
-    .string "Can't you swim?$"
+    .string "CanÑ you swim?$"
 
 Route20_Text_DarrinDefeat::
     .string "SWIMMER: Ouch!\n"
@@ -78,7 +78,7 @@ Route20_Text_RogerDefeat::
     .string "no!$"
 
 Route20_Text_RogerPostBattle::
-    .string "My birds can't\n"
+    .string "My birds canÑ\n"
     .string "FLY me back!$"
 
 Route20_Text_NoraIntro::
@@ -86,7 +86,7 @@ Route20_Text_NoraIntro::
     .string "me big pearls!$"
 
 Route20_Text_NoraDefeat::
-    .string "BEAUTY: Don't\n"
+    .string "BEAUTY: DonÑ\n"
     .string "touch my pearls!$"
 
 Route20_Text_NoraPostBattle::
@@ -99,7 +99,7 @@ Route20_Text_MissyIntro::
     .string "CINNABAR ISLAND.$"
 
 Route20_Text_MissyDefeat::
-    .string "BEAUTY: I'm\n"
+    .string "BEAUTY: Iá\n"
     .string "so disappointed!$"
 
 Route20_Text_MissyPostBattle::

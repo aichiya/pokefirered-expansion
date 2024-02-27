@@ -1,13 +1,13 @@
 Route5_SouthEntrance_Text_ThirstyOnGuardDuty::
-    .string "I'm on guard duty.\n"
-    .string "Gee, I'm thirsty,\l"
+    .string "Iá on guard duty.\n"
+    .string "Gee, Iá thirsty,\l"
     .string "though!\p"
     .string "Oh wait there,\n"
-    .string "the road's closed.$"
+    .string "the roadÙ closed.$"
 
 Route5_SouthEntrance_Text_ThatTeaLooksTasty::
     .string "Whoa, boy!\n"
-    .string "I'm parched!$"
+    .string "Iá parched!$"
 
 Route5_SouthEntrance_Text_ThanksIllShareTeaWithGuards::
     .string "...\n"
@@ -22,7 +22,7 @@ Route5_SouthEntrance_Text_ThanksIllShareTeaWithGuards::
     .string "to SAFFRON CITY...\l"
     .string "...\p"
     .string "You can go on\l"
-    .string "through. I'll\l"
+    .string "through. IÛl\l"
     .string "share this with\l"
     .string "the other guards!$"
 

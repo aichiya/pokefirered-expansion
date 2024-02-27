@@ -9,7 +9,7 @@ CeladonCity_DepartmentStore_5F_Text_ExplainStatEnhancers::
     .string "increase SPEED.$"
 
 CeladonCity_DepartmentStore_5F_Text_HereForStatEnhancers::
-    .string "I'm here for\n"
+    .string "Iá here for\n"
     .string "POKéMON ability\l"
     .string "enhancers.\p"
     .string "PROTEIN increases\n"

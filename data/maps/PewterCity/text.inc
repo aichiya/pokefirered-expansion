@@ -1,5 +1,5 @@
 PewterCity_Text_ClefairyCameFromMoon::
-    .string "It's rumored that\n"
+    .string "ItÙ rumored that\n"
     .string "CLEFAIRYs came\l"
     .string "from the moon!\p"
     .string "They appeared\n"
@@ -7,12 +7,12 @@ PewterCity_Text_ClefairyCameFromMoon::
     .string "fell on MT.MOON.$"
 
 PewterCity_Text_BrockOnlySeriousTrainerHere::
-    .string "There aren't many\n"
+    .string "There arenÑ many\n"
     .string "serious POKéMON\l"
     .string "trainers here!\p"
-    .string "They're all like\n"
+    .string "Theyàe all like\n"
     .string "BUG CATCHERs,\l"
-    .string "but PEWTER GYM's\l"
+    .string "but PEWTER GYMÙ\l"
     .string "BROCK is totally\l"
     .string "into it!$"
 
@@ -21,7 +21,7 @@ PewterCity_Text_DidYouCheckOutMuseum::
     .string "the MUSEUM?$"
 
 PewterCity_Text_WerentThoseFossilsAmazing::
-    .string "Weren't those\n"
+    .string "WerenÑ those\n"
     .string "fossils from MT.\l"
     .string "MOON amazing?$"
 
@@ -31,29 +31,29 @@ PewterCity_Text_ReallyYouHaveToGo::
     .string "have to go!$"
 
 PewterCity_Text_ThisIsTheMuseum::
-    .string "It's right here!\n"
+    .string "ItÙ right here!\n"
     .string "You have to pay\l"
     .string "to get in, but\l"
-    .string "it's worth it!\l"
+    .string "itÙ worth it!\l"
     .string "See you around!$"
 
 PewterCity_Text_DoYouKnowWhatImDoing::
     .string "Psssst!\n"
     .string "Do you know what\l"
-    .string "I'm doing?$"
+    .string "Iá doing?$"
 
 PewterCity_Text_ThatsRightItsHardWork::
-    .string "That's right!\n"
-    .string "It's hard work!$"
+    .string "ThatÙ right!\n"
+    .string "ItÙ hard work!$"
 
 PewterCity_Text_SprayingRepelToKeepWildMonsOut::
-    .string "I'm spraying REPEL\n"
+    .string "Iá spraying REPEL\n"
     .string "to keep POKéMON\l"
     .string "out of my garden!$"
 
 PewterCity_Text_BrocksLookingForChallengersFollowMe::
-    .string "You're a trainer\n"
-    .string "right? BROCK's\l"
+    .string "Youàe a trainer\n"
+    .string "right? BROCKÙ\l"
     .string "looking for new\l"
     .string "challengers!\l"
     .string "Follow me!$"
@@ -121,9 +121,9 @@ PewterCity_Text_OhPlayer::
     .string "Oh, {PLAYER}{KUN}!$"
 
 PewterCity_Text_AskedToDeliverThis::
-    .string "I'm glad I caught up to you.\n"
-    .string "I'm PROF. OAK's AIDE.\p"
-    .string "I've been asked to deliver this,\n"
+    .string "Iá glad I caught up to you.\n"
+    .string "Iá PROF. OAKÙ AIDE.\p"
+    .string "Iße been asked to deliver this,\n"
     .string "so here you go.$"
 
 PewterCity_Text_ReceivedRunningShoesFromAide::
@@ -136,7 +136,7 @@ PewterCity_Text_SwitchedShoesWithRunningShoes::
 
 PewterCity_Text_ExplainRunningShoes::
     .string "Press the B Button to run.\n"
-    .string "But only where there's room to run!$"
+    .string "But only where thereÙ room to run!$"
 
 PewterCity_Text_MustBeGoingBackToLab::
     .string "Well, I must be going back to\n"
@@ -144,11 +144,11 @@ PewterCity_Text_MustBeGoingBackToLab::
     .string "Bye-bye!$"
 
 PewterCity_Text_RunningShoesLetterFromMom::
-    .string "There's a letter attached…\p"
+    .string "ThereÙ a letter attached…\p"
     .string "Dear {PLAYER},\p"
     .string "Here is a pair of RUNNING SHOES\n"
     .string "for my beloved challenger.\p"
-    .string "Remember, I'll always cheer for\n"
-    .string "you! Don't ever give up!\p"
+    .string "Remember, IÛl always cheer for\n"
+    .string "you! DonÑ ever give up!\p"
     .string "From Mom$"
 

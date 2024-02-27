@@ -1,5 +1,5 @@
 SaffronCity_MrPsychicsHouse_Text_YouWantedThis::
-    .string "...Wait! Don't\n"
+    .string "...Wait! DonÑ\n"
     .string "say a word!\p"
     .string "You wanted this!$"
 
@@ -9,8 +9,8 @@ SaffronCity_MrPsychicsHouse_Text_ReceivedTM29FromMrPsychic::
 
 SaffronCity_MrPsychicsHouse_Text_ExplainTM29::
     .string "TM29 is PSYCHIC!\p"
-    .string "It's can lower the\n"
-    .string "target's SPECIAL\l"
+    .string "ItÙ can lower the\n"
+    .string "targetÙ SPECIAL\l"
     .string "abilities.$"
 
 SaffronCity_MrPsychicsHouse_Text_YouveNoRoom::

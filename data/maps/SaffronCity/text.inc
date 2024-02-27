@@ -3,7 +3,7 @@ SaffronCity_Text_WhatDoYouWantGetLost::
     .string "Get lost!$"
 
 SaffronCity_Text_BossTakeTownForTeamRocket::
-    .string "BOSS said he'll\n"
+    .string "BOSS said heÛl\n"
     .string "take this town!$"
 
 SaffronCity_Text_DontGetDefiantOrIllHurtYou::
@@ -20,7 +20,7 @@ SaffronCity_Text_CriminalLifeMakesMeFeelAlive::
 
 SaffronCity_Text_WatchWhereYoureWalking::
     .string "Ow! Watch where\n"
-    .string "you're walking!$"
+    .string "youàe walking!$"
 
 SaffronCity_Text_WeCanExploitMonsAroundWorld::
     .string "With SILPH under\n"
@@ -31,12 +31,12 @@ SaffronCity_Text_WeCanExploitMonsAroundWorld::
 SaffronCity_Text_YouBeatTeamRocket::
     .string "You beat TEAM\n"
     .string "ROCKET all alone?\l"
-    .string "That's amazing!$"
+    .string "ThatÙ amazing!$"
 
 SaffronCity_Text_SafeToGoOutAgain::
     .string "Yeah! TEAM ROCKET\n"
     .string "is gone!\l"
-    .string "It's safe to go\l"
+    .string "ItÙ safe to go\l"
     .string "out again!$"
 
 SaffronCity_Text_PeopleComingBackToSaffron::
@@ -48,7 +48,7 @@ SaffronCity_Text_FlewHereOnPidgeot::
     .string "I flew here on my\n"
     .string "PIDGEOT when I\l"
     .string "read about SILPH.\p"
-    .string "It's already over?\n"
+    .string "ItÙ already over?\n"
     .string "I missed the\l"
     .string "media action.$"
 
@@ -58,18 +58,18 @@ SaffronCity_Text_Pidgeot::
 SaffronCity_Text_SawRocketBossEscaping::
     .string "I saw the ROCKET\n"
     .string "BOSS escaping\l"
-    .string "SILPH's building.$"
+    .string "SILPHÙ building.$"
 
 SaffronCity_Text_ImASecurityGuard::
-    .string "I'm a security\n"
+    .string "Iá a security\n"
     .string "guard.\p"
     .string "Suspicious kids I\n"
-    .string "don't allow in!$"
+    .string "donÑ allow in!$"
 
 SaffronCity_Text_HesTakingASnooze::
     .string "...\n"
     .string "Snore...\p"
-    .string "Hah! He's taking\n"
+    .string "Hah! HeÙ taking\n"
     .string "a snooze!$"
 
 SaffronCity_Text_CitySign::
@@ -93,7 +93,7 @@ SaffronCity_Text_FullHealCuresStatus::
     .string "all ailments like\l"
     .string "sleep and burns.\p"
     .string "It costs a bit\n"
-    .string "more, but it's\l"
+    .string "more, but itÙ\l"
     .string "more convenient$"
 
 SaffronCity_Text_GreatBallImprovedCatchRate::
@@ -114,7 +114,7 @@ SaffronCity_Text_MrPsychicsHouse::
     .string "HOUSE$"
 
 SaffronCity_Text_SilphsLatestProduct::
-    .string "SILPH's latest\n"
+    .string "SILPHÙ latest\n"
     .string "product!\p"
     .string "Release to be\n"
     .string "determined...$"
@@ -130,6 +130,6 @@ SaffronCity_Text_HowCanClubNotRecognizeLance::
     .string "How could they not recognize\n"
     .string "the brilliance that is LANCE?\p"
     .string "He stands for justice!\n"
-    .string "He's cool, and yet passionate!\l"
-    .string "He's the greatest, LANCE!$"
+    .string "HeÙ cool, and yet passionate!\l"
+    .string "HeÙ the greatest, LANCE!$"
 

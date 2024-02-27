@@ -3,15 +3,15 @@ Text_ExplosionTeach::
     .string "If this volcano were to erupt?\p"
     .string "The explosion would be the end of\n"
     .string "us. How terrifying is that?\p"
-    .string "While we're terrified, would you\n"
+    .string "While weàe terrified, would you\n"
     .string "like me to teach EXPLOSION?$"
 
 Text_ExplosionDeclined::
-    .string "Yeah, you're right.\n"
+    .string "Yeah, youàe right.\n"
     .string "It is too terrifying.$"
 
 Text_ExplosionWhichMon::
-    .string "You're terribly brave!\p"
+    .string "Youàe terribly brave!\p"
     .string "Which POKéMON should I teach\n"
     .string "EXPLOSION?$"
 
@@ -43,48 +43,48 @@ Text_ExplosionTaughtJP::
 
 MtEmber_Exterior_Text_WellTryDiggingHere::
     .string "Over here.\n"
-    .string "We'll try digging here.\p"
-    .string "That treasure the ADMINS've been\n"
+    .string "WeÛl try digging here.\p"
+    .string "That treasure the ADMINSße been\n"
     .string "talking about should be here.$"
 
 MtEmber_Exterior_Text_YoureInTheWayGetLost::
     .string "What the…?\n"
-    .string "You're in the way. Get lost.$"
+    .string "Youàe in the way. Get lost.$"
 
 MtEmber_Exterior_Text_PunchedThroughAtLast::
     .string "Whew, punched through at last.\n"
-    .string "Let's go treasure hunting!$"
+    .string "LetÙ go treasure hunting!$"
 
 MtEmber_Exterior_Text_WhatsPasswordAgain::
     .string "Any treasure we find, we haul back\n"
     .string "to the WAREHOUSE, understood?\p"
-    .string "…Oh, and what're the passwords?\n"
+    .string "…Oh, and whatàe the passwords?\n"
     .string "At the ROCKET WAREHOUSE, I mean.$"
 
 MtEmber_Exterior_Text_FirstPasswordGoldeen::
     .string "What, you forgot the password?\n"
-    .string "There're actually two.\p"
-    .string "The first one's “GOLDEEN need\n"
+    .string "Thereàe actually two.\p"
+    .string "The first oneÙ “GOLDEEN need\n"
     .string "log.”\p"
     .string "And the second one is…$"
 
 MtEmber_Exterior_Text_SnoopsBeenListeningIn::
     .string "Hey!\n"
-    .string "This snoop's been listening in!$"
+    .string "This snoopÙ been listening in!$"
 
 MtEmber_Exterior_Text_Grunt1Intro::
-    .string "You've been eavesdropping on us,\n"
-    .string "haven't you?$"
+    .string "Youße been eavesdropping on us,\n"
+    .string "havenÑ you?$"
 
 MtEmber_Exterior_Text_Grunt1Defeat::
     .string "Huh, what?$"
 
 MtEmber_Exterior_Text_Grunt1PostBattle::
-    .string "Why'd you have to win?$"
+    .string "WhyÚ you have to win?$"
 
 MtEmber_Exterior_Text_Grunt2Intro::
     .string "Trying to horn in on our treasure?\n"
-    .string "Don't bet on it!$"
+    .string "DonÑ bet on it!$"
 
 MtEmber_Exterior_Text_Grunt2Defeat::
     .string "Wait!\n"
@@ -96,22 +96,22 @@ MtEmber_Exterior_Text_Grunt2PostBattle::
 
 MtEmber_Exterior_Text_WellRegroupDontStepInsideThere::
     .string "What a setback…\n"
-    .string "We'll have to regroup.\p"
-    .string "You! Don't even think about taking\n"
+    .string "WeÛl have to regroup.\p"
+    .string "You! DonÑ even think about taking\n"
     .string "a step inside here!\p"
-    .string "If you know what's good for you,\n"
-    .string "don't even think about this!$"
+    .string "If you know whatÙ good for you,\n"
+    .string "donÑ even think about this!$"
 
 MtEmber_Exterior_Text_LoganIntro::
-    .string "An active volcano is one that's\n"
+    .string "An active volcano is one thatÙ\n"
     .string "erupting, or about to.$"
 
 MtEmber_Exterior_Text_LoganDefeat::
     .string "Whew… That was hot!\n"
-    .string "Sweat's erupting from me!$"
+    .string "SweatÙ erupting from me!$"
 
 MtEmber_Exterior_Text_LoganPostBattle::
-    .string "They say there're over 1,500\n"
+    .string "They say thereàe over 1,500\n"
     .string "active volcanoes in the world.\p"
     .string "Just thinking about them makes me\n"
     .string "feel all hot and gooey inside!$"
@@ -122,7 +122,7 @@ MtEmber_Exterior_Text_BethIntro::
 
 MtEmber_Exterior_Text_BethDefeat::
     .string "Atchah!\n"
-    .string "You're shockingly good!$"
+    .string "Youàe shockingly good!$"
 
 MtEmber_Exterior_Text_BethPostBattle::
     .string "When lava at the surface of magma\n"
@@ -130,7 +130,7 @@ MtEmber_Exterior_Text_BethPostBattle::
     .string "out, caverns are left behind.$"
 
 MtEmber_Exterior_Text_JocelynIntro::
-    .string "I've been in training so I can mend\n"
+    .string "Iße been in training so I can mend\n"
     .string "my broken heart…\p"
     .string "It toughened me up physically at\n"
     .string "least! Hi-yah!$"

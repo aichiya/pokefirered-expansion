@@ -1,5 +1,5 @@
 ViridianCity_School_Text_TryingToMemorizeNotes::
-    .string "Whew! I'm trying\n"
+    .string "Whew! Iá trying\n"
     .string "to memorize all\l"
     .string "my notes.$"
 
@@ -59,7 +59,7 @@ ViridianCity_School_Text_TurnThePage::
     .string "Turn the page?$"
 
 ViridianCity_School_Text_HeyDontLookAtMyNotes::
-    .string "GIRL: Hey! Don't\n"
+    .string "GIRL: Hey! DonÑ\n"
     .string "look at my notes!$"
 
 ViridianCity_School_Text_BlackboardListsStatusProblems::
@@ -73,8 +73,8 @@ ViridianCity_School_Text_ReadWhichTopic::
     .string "you want to read?$"
 
 ViridianCity_School_Text_ExplainSleep::
-    .string "A POKéMON can't\n"
-    .string "attack if it's\l"
+    .string "A POKéMON canÑ\n"
+    .string "attack if itÙ\l"
     .string "asleep!\p"
     .string "POKéMON will stay\n"
     .string "asleep even after\l"
@@ -94,7 +94,7 @@ ViridianCity_School_Text_ExplainBurn::
 
 ViridianCity_School_Text_ExplainPoison::
     .string "When poisoned, a\n"
-    .string "POKéMON's health\l"
+    .string "POKéMONÙ health\l"
     .string "steadily drops.\p"
     .string "Poison lingers\n"
     .string "after battles.\p"

@@ -21,7 +21,7 @@ CeruleanCity_House4_Text_IncredibleNewsHaveBerries::
     .string "Hmm…\p"
     .string "Amazing!\n"
     .string "What an incredible piece of news!\p"
-    .string "I haven't seen a news story this\n"
+    .string "I havenÑ seen a news story this\n"
     .string "incredible in too long a time!\p"
     .string "Thanks for sharing this fantastic\n"
     .string "news. Have a bunch of BERRIES!$"
@@ -33,28 +33,28 @@ CeruleanCity_House4_Text_WishCouldShareNewsWithOthers::
     .string "Let others know the news…$"
 
 CeruleanCity_House4_Text_ThanksForSpreadingNewsTakeThis::
-    .string "Ah, you've spread the news for me?\p"
+    .string "Ah, youße spread the news for me?\p"
     .string "Good news becomes worthwhile when\n"
     .string "all sorts of people share it.\p"
     .string "As my thanks for your spreading\n"
     .string "the news, take this!$"
 
 CeruleanCity_House4_Text_MagnificentNewsSpreadHaveBerries::
-    .string "You've spread the news some more?\n"
+    .string "Youße spread the news some more?\n"
     .string "Magnificent!\p"
     .string "That piece of news must be\n"
     .string "delighted to be passed around so.\p"
     .string "Yes, indeed!\p"
     .string "Consider this a show of\n"
     .string "appreciation from me and the news.\p"
-    .string "I'll give you more BERRIES than\n"
+    .string "IÛl give you more BERRIES than\n"
     .string "I usually do.$"
 
 CeruleanCity_House4_Text_EnjoyingMyselfWithAllSortsOfNews::
-    .string "I'm quite enjoying myself with all\n"
+    .string "Iá quite enjoying myself with all\n"
     .string "sorts of news.\p"
     .string "Yes, I am satisfied!\n"
-    .string "I won't be bored for a while.$"
+    .string "I wonÑ be bored for a while.$"
 
 CeruleanCity_House4_Text_YourBerryPouchIsFull::
     .string "Hm? Your BERRY POUCH is full.\n"

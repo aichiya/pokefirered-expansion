@@ -12,7 +12,7 @@ SSAnne_B1F_Room4_Text_LeonardPostBattle::
     .string "a sailor, mate?$"
 
 SSAnne_B1F_Room4_Text_DuncanIntro::
-    .string "My sailor's pride\n"
+    .string "My sailorÙ pride\n"
     .string "is at stake!$"
 
 SSAnne_B1F_Room4_Text_DuncanDefeat::

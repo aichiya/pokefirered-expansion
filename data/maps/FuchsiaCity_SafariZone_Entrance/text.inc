@@ -11,7 +11,7 @@ FuchsiaCity_SafariZone_Entrance_Text_PlaySafariGameFor500::
     .string "join the hunt?$"
 
 FuchsiaCity_SafariZone_Entrance_Text_ThatllBe500WeOnlyUseSpecialBalls::
-    .string "That'll be ¥500,\n"
+    .string "ThatÛl be ¥500,\n"
     .string "please!\p"
     .string "We only use a\n"
     .string "special POKé BALL\l"
@@ -22,7 +22,7 @@ FuchsiaCity_SafariZone_Entrance_Text_PlayerReceived30SafariBalls::
     .string "30 SAFARI BALLS!$"
 
 FuchsiaCity_SafariZone_Entrance_Text_CallYouOnPAWhenYouRunOut::
-    .string "We'll call you on\n"
+    .string "WeÛl call you on\n"
     .string "the PA when you\l"
     .string "run out of time\l"
     .string "or SAFARI BALLS!$"
@@ -65,15 +65,15 @@ FuchsiaCity_SafariZone_Entrance_Text_ExplainSafariZone::
     .string "catch them!\p"
     .string "When you run out\n"
     .string "of time or SAFARI\l"
-    .string "BALLS, it's game\l"
+    .string "BALLS, itÙ game\l"
     .string "over for you!\p"
     .string "Before you go,\n"
     .string "open an unused\l"
     .string "POKéMON BOX so\l"
-    .string "there's room for\l"
+    .string "thereÙ room for\l"
     .string "new POKéMON!$"
 
 FuchsiaCity_SafariZone_Entrance_Text_SorryYoureARegularHere::
-    .string "Sorry, you're a\n"
+    .string "Sorry, youàe a\n"
     .string "regular here!$"
 

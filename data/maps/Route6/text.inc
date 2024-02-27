@@ -1,11 +1,11 @@
 Route6_Text_RickyIntro::
-    .string "Who's there?\n"
+    .string "WhoÙ there?\n"
     .string "Quit listening in\l"
     .string "on us!$"
 
 Route6_Text_RickyDefeat::
     .string "JR.TRAINER♂: I\n"
-    .string "just can't win!$"
+    .string "just canÑ win!$"
 
 Route6_Text_RickyPostBattle::
     .string "Whisper...\n"
@@ -25,16 +25,16 @@ Route6_Text_NancyPostBattle::
     .string "Whisper...$"
 
 Route6_Text_KeigoIntro::
-    .string "There aren't many\n"
+    .string "There arenÑ many\n"
     .string "bugs out here.$"
 
 Route6_Text_KeigoDefeat::
     .string "BUG CATCHER: No!\n"
-    .string "You're kidding!$"
+    .string "Youàe kidding!$"
 
 Route6_Text_KeigoPostBattle::
     .string "I like bugs, so\n"
-    .string "I'm going back to\l"
+    .string "Iá going back to\l"
     .string "VIRIDIAN FOREST.$"
 
 Route6_Text_JeffIntro::
@@ -43,7 +43,7 @@ Route6_Text_JeffIntro::
 
 Route6_Text_JeffDefeat::
     .string "JR.TRAINER♂: I\n"
-    .string "didn't start it!$"
+    .string "didnÑ start it!$"
 
 Route6_Text_JeffPostBattle::
     .string "I should carry\n"
@@ -52,11 +52,11 @@ Route6_Text_JeffPostBattle::
 
 Route6_Text_IsabelleIntro::
     .string "Me? Well, OK.\n"
-    .string "I'll play!$"
+    .string "IÛl play!$"
 
 Route6_Text_IsabelleDefeat::
     .string "JR.TRAINER♀: Just\n"
-    .string "didn't work!$"
+    .string "didnÑ work!$"
 
 Route6_Text_IsabellePostBattle::
     .string "I want to get\n"
@@ -64,7 +64,7 @@ Route6_Text_IsabellePostBattle::
     .string "your secret?$"
 
 Route6_Text_ElijahIntro::
-    .string "I've never seen\n"
+    .string "Iße never seen\n"
     .string "you around!\l"
     .string "Are you good?$"
 

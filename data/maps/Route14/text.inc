@@ -10,7 +10,7 @@ Route14_Text_CarterDefeat::
 Route14_Text_CarterPostBattle::
     .string "You have some HMs\n"
     .string "right? POKéMON\l"
-    .string "can't ever forget\l"
+    .string "canÑ ever forget\l"
     .string "those moves.$"
 
 Route14_Text_MitchIntro::
@@ -62,7 +62,7 @@ Route14_Text_DonaldIntro::
 
 Route14_Text_DonaldDefeat::
     .string "BIRD KEEPER: Why?\n"
-    .string "Why'd I lose?$"
+    .string "WhyÚ I lose?$"
 
 Route14_Text_DonaldPostBattle::
     .string "The 3 legendary\n"
@@ -70,8 +70,8 @@ Route14_Text_DonaldPostBattle::
     .string "birds of prey.$"
 
 Route14_Text_BennyIntro::
-    .string "I'm not into it,\n"
-    .string "but OK! Let's go!$"
+    .string "Iá not into it,\n"
+    .string "but OK! LetÙ go!$"
 
 Route14_Text_BennyDefeat::
     .string "BIRD KEEPER: I\l"
@@ -79,13 +79,13 @@ Route14_Text_BennyDefeat::
 
 Route14_Text_BennyPostBattle::
     .string "Winning, losing,\n"
-    .string "it doesn't matter\l"
+    .string "it doesnÑ matter\l"
     .string "in the long run!$"
 
 Route14_Text_LukasIntro::
-    .string "C'mon, c'mon.\n"
-    .string "Let's go, let's\l"
-    .string "go, let's go!$"
+    .string "Cáon, cáon.\n"
+    .string "LetÙ go, letÙ\l"
+    .string "go, letÙ go!$"
 
 Route14_Text_LukasDefeat::
     .string "BIKER: Arrg!\n"
@@ -110,14 +110,14 @@ Route14_Text_IsaacPostBattle::
 
 Route14_Text_GeraldIntro::
     .string "We ride out here\n"
-    .string "because there's\l"
+    .string "because thereÙ\l"
     .string "more room!$"
 
 Route14_Text_GeraldDefeat::
     .string "BIKER: Wipe out!$"
 
 Route14_Text_GeraldPostBattle::
-    .string "It's cool you\n"
+    .string "ItÙ cool you\n"
     .string "made your POKéMON\l"
     .string "so strong!\p"
     .string "Might is right!\n"
@@ -132,7 +132,7 @@ Route14_Text_MalikDefeat::
     .string "away!$"
 
 Route14_Text_MalikPostBattle::
-    .string "You know who'd\n"
+    .string "You know whoÚ\n"
     .string "win, you and me\l"
     .string "one on one!$"
 
@@ -142,12 +142,12 @@ Route14_Text_RouteSign::
     .string "CITY$"
 
 Route14_Text_KiriIntro::
-    .string "KIRI: JAN, let's try really,\n"
+    .string "KIRI: JAN, letÙ try really,\n"
     .string "really hard together.$"
 
 Route14_Text_KiriDefeat::
     .string "KIRI: Whimper…\n"
-    .string "We lost, didn't we?$"
+    .string "We lost, didnÑ we?$"
 
 Route14_Text_KiriPostBattle::
     .string "KIRI: Did we lose because of me?$"
@@ -165,9 +165,9 @@ Route14_Text_JanDefeat::
     .string "No fair!$"
 
 Route14_Text_JanPostBattle::
-    .string "JAN: KIRI, don't cry!\n"
-    .string "We'll just try harder next time.$"
+    .string "JAN: KIRI, donÑ cry!\n"
+    .string "WeÛl just try harder next time.$"
 
 Route14_Text_JanNotEnoughMons::
     .string "JAN: You want to battle?\n"
-    .string "You don't have enough POKéMON.$"
+    .string "You donÑ have enough POKéMON.$"

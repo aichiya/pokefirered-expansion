@@ -14,7 +14,7 @@ SevenIsland_House_Room1_Text_SlightBreezeAroundBox::
 SevenIsland_House_Room1_Text_ChallengeVisitingTrainer::
     .string "Ah!\n"
     .string "Welcome, my friend!\p"
-    .string "Let me tell you something. There's\n"
+    .string "Let me tell you something. ThereÙ\n"
     .string "a hidden room in the basement.\p"
     .string "A TRAINER named {STR_VAR_1} is\n"
     .string "waiting there now.\p"
@@ -23,7 +23,7 @@ SevenIsland_House_Room1_Text_ChallengeVisitingTrainer::
 
 SevenIsland_House_Room1_Text_OhYouWontBattle::
     .string "Oh…\n"
-    .string "You won't battle…\p"
+    .string "You wonÑ battle…\p"
     .string "I see, I see.\n"
     .string "… …\p"
     .string "Well, perhaps if you change your\n"
@@ -47,7 +47,7 @@ SevenIsland_House_Room1_Text_SaveProgressBeforeBattle::
 
 SevenIsland_House_Room1_Text_DontHoldAnythingBack::
     .string "All right.\n"
-    .string "Don't hold anything back!$"
+    .string "DonÑ hold anything back!$"
 
 @ Unused
 SevenIsland_House_Room1_Text_StrVar1_1::
@@ -60,7 +60,7 @@ SevenIsland_House_Room1_Text_DrawWasIt::
     .string "A draw, was it?\p"
     .string "However, let me say that it was\n"
     .string "a worthy spectacle.\p"
-    .string "I'd say it was a wonderful battle\n"
+    .string "IÚ say it was a wonderful battle\n"
     .string "with a real sense of depth!$"
 
 @ Unused

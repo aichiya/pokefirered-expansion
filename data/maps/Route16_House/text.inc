@@ -1,9 +1,9 @@
 Route16_House_Text_FoundMySecretRetreat::
-    .string "Oh, you've found my\n"
+    .string "Oh, youße found my\n"
     .string "secret retreat!\p"
-    .string "Please don't tell\n"
-    .string "anyone I'm here.\l"
-    .string "I'll make it up\l"
+    .string "Please donÑ tell\n"
+    .string "anyone Iá here.\l"
+    .string "IÛl make it up\l"
     .string "to you with this!$"
 
 Route16_House_Text_ReceivedHM02FromGirl::
@@ -18,7 +18,7 @@ Route16_House_Text_ExplainHM02::
     .string "use.$"
 
 Route16_House_Text_DontHaveAnyRoomForThis::
-    .string "You don't have any\n"
+    .string "You donÑ have any\n"
     .string "room for this.$"
 
 Route16_House_Text_Fearow::

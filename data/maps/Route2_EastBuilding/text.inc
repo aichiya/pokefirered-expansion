@@ -1,8 +1,8 @@
 Route2_EastBuilding_Text_GiveHM05IfSeen10Mons::
     .string "Hi! Remember me?\n"
-    .string "I'm PROF.OAK's AIDE!\p"
+    .string "Iá PROF.OAKÙ AIDE!\p"
     .string "If you caught 10 kinds of\n"
-    .string "POKéMON, I'm supposed to\p"
+    .string "POKéMON, Iá supposed to\p"
     .string "give you an HM05!\l"
     .string "So, {PLAYER}!\n"
     .string "Have you caught at least\p"

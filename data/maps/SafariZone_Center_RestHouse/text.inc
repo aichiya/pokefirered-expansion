@@ -4,7 +4,7 @@ SafariZone_Center_Text_WhereDidErikGo::
     .string "ERIK, go?$"
 
 SafariZone_Center_Text_CatchingMonsAsGifts::
-    .string "I'm catching\n"
+    .string "Iá catching\n"
     .string "POKéMON to take\l"
     .string "home as gifts!$"
 

@@ -5,7 +5,7 @@ SSAnne_CaptainsOffice_Text_CaptainIFeelSeasick::
 
 SSAnne_CaptainsOffice_Text_RubbedCaptainsBack::
     .string "{PLAYER} rubbed\n"
-    .string "the CAPTAIN's\l"
+    .string "the CAPTAINÙ\l"
     .string "back!\p"
     .string "Rub-rub...\n"
     .string "Rub-rub...$"
@@ -17,7 +17,7 @@ SSAnne_CaptainsOffice_Text_ThankYouHaveHMForCut::
     .string "You want to see\n"
     .string "my CUT technique?\p"
     .string "I could show you\n"
-    .string "if I wasn't ill...\p"
+    .string "if I wasnÑ ill...\p"
     .string "I know! You can\n"
     .string "have this!\p"
     .string "Teach it to your\n"
@@ -37,9 +37,9 @@ SSAnne_CaptainsOffice_Text_ExplainCut::
 
 SSAnne_CaptainsOffice_Text_SSAnneWillSetSailSoon::
     .string "CAPTAIN: Whew!\p"
-    .string "Now that I'm not\n"
+    .string "Now that Iá not\n"
     .string "sick any more, I\l"
-    .string "guess it's time.$"
+    .string "guess itÙ time.$"
 
 SSAnne_CaptainsOffice_Text_YouHaveNoRoomForThis::
     .string "Oh, no!\n"
@@ -48,11 +48,11 @@ SSAnne_CaptainsOffice_Text_YouHaveNoRoomForThis::
 
 SSAnne_CaptainsOffice_Text_YuckShouldntHaveLooked::
     .string "Yuck!\n"
-    .string "Shouldn't have looked!$"
+    .string "ShouldnÑ have looked!$"
 
 SSAnne_CaptainsOffice_Text_HowToConquerSeasickness::
     .string "How to Conquer\n"
     .string "Seasickness...\l"
-    .string "The CAPTAIN's\l"
+    .string "The CAPTAINÙ\l"
     .string "reading this!$"
 

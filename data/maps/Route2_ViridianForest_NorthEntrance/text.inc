@@ -19,6 +19,6 @@ Route2_ViridianForest_NorthEntrance_Text_CanCancelEvolution::
     .string "technique?\p"
     .string "When a POKéMON is evolving, you\n"
     .string "can stop the process.\p"
-    .string "It's a technique for raising\n"
+    .string "ItÙ a technique for raising\n"
     .string "POKéMON the way they are.$"
 

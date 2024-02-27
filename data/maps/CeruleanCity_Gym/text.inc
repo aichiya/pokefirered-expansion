@@ -1,5 +1,5 @@
 CeruleanCity_Gym_Text_MistyIntro::
-    .string "Hi, you're a new\n"
+    .string "Hi, youàe a new\n"
     .string "face!\p"
     .string "Trainers who want\n"
     .string "to turn pro have\l"
@@ -25,7 +25,7 @@ CeruleanCity_Gym_Text_ExplainCascadeBadge::
     .string "up to L30 obey!\p"
     .string "That includes\n"
     .string "even outsiders!\p"
-    .string "There's more, you\n"
+    .string "ThereÙ more, you\n"
     .string "can now use CUT\l"
     .string "any time!\p"
     .string "You can CUT down\n"
@@ -44,14 +44,14 @@ CeruleanCity_Gym_Text_BetterMakeRoomForThis::
 
 CeruleanCity_Gym_Text_MistyDefeat::
     .string "MISTY: Wow!\n"
-    .string "You're too much!\p"
+    .string "Youàe too much!\p"
     .string "All right!\p"
     .string "You can have the\n"
     .string "CASCADEBADGE to\l"
     .string "show you beat me!$"
 
 CeruleanCity_Gym_Text_DianaIntro::
-    .string "I'm more than good\n"
+    .string "Iá more than good\n"
     .string "enough for you!\p"
     .string "MISTY can wait!$"
 
@@ -67,23 +67,23 @@ CeruleanCity_Gym_Text_DianaPostBattle::
 
 CeruleanCity_Gym_Text_LuisIntro::
     .string "Splash!\p"
-    .string "I'm first up!\n"
-    .string "Let's do it!$"
+    .string "Iá first up!\n"
+    .string "LetÙ do it!$"
 
 CeruleanCity_Gym_Text_LuisDefeat::
     .string "SWIMMER: That\n"
-    .string "can't be!$"
+    .string "canÑ be!$"
 
 CeruleanCity_Gym_Text_LuisPostBattle::
     .string "MISTY is going to\n"
     .string "keep improving.\p"
-    .string "She won't lose to\n"
+    .string "She wonÑ lose to\n"
     .string "someone like you!$"
 
 CeruleanCity_Gym_Text_GymGuyAdvice::
     .string "Yo! Champ in\n"
     .string "making!\p"
-    .string "Here's my advice!\p"
+    .string "HereÙ my advice!\p"
     .string "The LEADER, MISTY,\n"
     .string "is a pro who uses\l"
     .string "water POKéMON!\p"
@@ -95,7 +95,7 @@ CeruleanCity_Gym_Text_GymGuyAdvice::
 
 CeruleanCity_Gym_Text_WeMakePrettyGoodTeam::
     .string "You beat MISTY!\n"
-    .string "What'd I tell ya?\p"
+    .string "WhatÚ I tell ya?\p"
     .string "You and me kid,\n"
     .string "we make a pretty\l"
     .string "darn good team!$"

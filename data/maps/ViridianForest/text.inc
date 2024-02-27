@@ -1,27 +1,27 @@
 ViridianForest_Text_FriendsItchingToBattle::
     .string "I came here with\n"
     .string "some friends!\p"
-    .string "They're out for\n"
+    .string "Theyàe out for\n"
     .string "POKéMON fights!$"
 
 ViridianForest_Text_RickIntro::
     .string "Hey! You have\n"
     .string "POKéMON! Come on!\l"
-    .string "Let's battle'em!$"
+    .string "LetÙ battle'em!$"
 
 ViridianForest_Text_RickDefeat::
     .string "BUG CATCHER: No!\n"
-    .string "CATERPIE can't\l"
+    .string "CATERPIE canÑ\l"
     .string "cut it!$"
 
 ViridianForest_Text_RickPostBattle::
-    .string "Ssh! You'll scare\n"
+    .string "Ssh! YouÛl scare\n"
     .string "the bugs away!\l"
     .string "Another time, okay?$"
 
 ViridianForest_Text_DougIntro::
-    .string "Yo! You can't jam\n"
-    .string "out if you're a\l"
+    .string "Yo! You canÑ jam\n"
+    .string "out if youàe a\l"
     .string "POKéMON trainer!$"
 
 ViridianForest_Text_DougDefeat::
@@ -30,29 +30,29 @@ ViridianForest_Text_DougDefeat::
     .string "POKéMON!$"
 
 ViridianForest_Text_DougPostBattle::
-    .string "Darn! I'm going\n"
+    .string "Darn! Iá going\n"
     .string "to catch some\l"
     .string "stronger ones!$"
 
 ViridianForest_Text_SammyIntro::
     .string "Hey, wait up!\n"
-    .string "What's the hurry?$"
+    .string "WhatÙ the hurry?$"
 
 ViridianForest_Text_SammyDefeat::
     .string "BUG CATCHER: I\n"
-    .string "give! You're good\l"
+    .string "give! Youàe good\l"
     .string "at this!$"
 
 ViridianForest_Text_SammyPostBattle::
     .string "Sometimes, you\n"
     .string "can find stuff on\l"
     .string "the ground!\p"
-    .string "I'm looking for\n"
+    .string "Iá looking for\n"
     .string "the stuff I\l"
     .string "dropped!$"
 
 ViridianForest_Text_AnthonyIntro::
-    .string "I might be little, but I won't like\n"
+    .string "I might be little, but I wonÑ like\n"
     .string "it if you go easy on me!$"
 
 ViridianForest_Text_AnthonyDefeat::
@@ -71,7 +71,7 @@ ViridianForest_Text_CharlieDefeat::
 
 ViridianForest_Text_CharliePostBattle::
     .string "BUG POKéMON evolve quickly.\n"
-    .string "They're a lot of fun!$"
+    .string "Theyàe a lot of fun!$"
 
 ViridianForest_Text_RanOutOfPokeBalls::
     .string "I ran out of POKé\n"

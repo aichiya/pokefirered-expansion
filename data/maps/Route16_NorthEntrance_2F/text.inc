@@ -1,29 +1,29 @@
 Route16_NorthEntrance_2F_Text_OnBikeRideWithGirlfriend::
-    .string "I'm going for a\n"
+    .string "Iá going for a\n"
     .string "ride with my girl\l"
     .string "friend!$"
 
 Route16_NorthEntrance_2F_Text_RidingTogetherOnNewBikes::
-    .string "We're going\n"
+    .string "Weàe going\n"
     .string "riding together!$"
 
 Route16_NorthEntrance_2F_Text_ItsCeladonDeptStore::
     .string "Looked into the\n"
     .string "binoculars.\p"
-    .string "It's the CELADON DEPT.\n"
+    .string "ItÙ the CELADON DEPT.\n"
     .string "STORE!$"
 
 Route16_NorthEntrance_2F_Text_LongPathOverWater::
     .string "Looked into the\n"
     .string "binoculars.\p"
-    .string "There's a long\n"
+    .string "ThereÙ a long\n"
     .string "path over water!$"
 
 Route16_NorthEntrance_2F_Text_GiveAmuletCoinIfCaught40::
     .string "Hi! Remember me?\n"
-    .string "I'm PROF.OAK's AIDE!\p"
+    .string "Iá PROF.OAKÙ AIDE!\p"
     .string "If your POKéDEX has complete data\n"
-    .string "on 40 species, I'm supposed to\p"
+    .string "on 40 species, Iá supposed to\p"
     .string "give you a reward.\l"
     .string "So, {PLAYER}, let me ask you.\n"
     .string "Have you gathered data on at least\p"

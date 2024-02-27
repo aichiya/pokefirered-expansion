@@ -9,5 +9,5 @@ SSAnne_B1F_Room3_Text_DylanDefeat::
 SSAnne_B1F_Room3_Text_DylanPostBattle::
     .string "Sea POKéMON live\n"
     .string "in deep water.\l"
-    .string "You'll need a ROD!$"
+    .string "YouÛl need a ROD!$"
 

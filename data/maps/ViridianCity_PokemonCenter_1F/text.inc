@@ -5,10 +5,10 @@ ViridianCity_PokemonCenter_1F_Text_FeelFreeToUsePC::
     .string "told me. So kind!$"
 
 ViridianCity_PokemonCenter_1F_Text_PokeCenterInEveryTown::
-    .string "There's a POKéMON\n"
+    .string "ThereÙ a POKéMON\n"
     .string "CENTER in every\l"
     .string "town ahead.\p"
-    .string "They don't charge\n"
+    .string "They donÑ charge\n"
     .string "any money either!$"
 
 ViridianCity_PokemonCenter_1F_Text_PokeCentersHealMons::

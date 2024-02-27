@@ -56,11 +56,11 @@ FuchsiaCity_Gym_Text_MakeSpaceForThis::
     .string "this, child!$"
 
 FuchsiaCity_Gym_Text_KaydenIntro::
-    .string "Strength isn't\n"
+    .string "Strength isnÑ\n"
     .string "the key for\l"
     .string "POKéMON!\p"
-    .string "It's strategy!\p"
-    .string "I'll show you how\n"
+    .string "ItÙ strategy!\p"
+    .string "IÛl show you how\n"
     .string "strategy can beat\l"
     .string "brute strength!$"
 
@@ -79,7 +79,7 @@ FuchsiaCity_Gym_Text_KirkIntro::
     .string "joined this GYM!$"
 
 FuchsiaCity_Gym_Text_KirkDefeat::
-    .string "ROCKER: I'm done\n"
+    .string "ROCKER: Iá done\n"
     .string "for!$"
 
 FuchsiaCity_Gym_Text_KirkPostBattle::
@@ -89,7 +89,7 @@ FuchsiaCity_Gym_Text_KirkPostBattle::
     .string "master!$"
 
 FuchsiaCity_Gym_Text_NateIntro::
-    .string "Let's see you\n"
+    .string "LetÙ see you\n"
     .string "beat my special\l"
     .string "techniques!$"
 
@@ -111,11 +111,11 @@ FuchsiaCity_Gym_Text_PhilIntro::
 
 FuchsiaCity_Gym_Text_PhilDefeat::
     .string "TAMER: Whoa!\n"
-    .string "He's got it!$"
+    .string "HeÙ got it!$"
 
 FuchsiaCity_Gym_Text_PhilPostBattle::
     .string "You impressed me!\n"
-    .string "Here's a hint!\p"
+    .string "HereÙ a hint!\p"
     .string "Look very closely\n"
     .string "for gaps in the\l"
     .string "invisible walls!$"
@@ -161,14 +161,14 @@ FuchsiaCity_Gym_Text_GymGuyAdvice::
     .string "riddled with\l"
     .string "invisible walls!\p"
     .string "KOGA might appear\n"
-    .string "close, but he's\l"
+    .string "close, but heÙ\l"
     .string "blocked off!\p"
     .string "You have to find\n"
     .string "gaps in the walls\l"
     .string "to reach him!$"
 
 FuchsiaCity_Gym_Text_GymGuyPostVictory::
-    .string "It's amazing how\n"
+    .string "ItÙ amazing how\n"
     .string "ninja can terrify\l"
     .string "even now!$"
 

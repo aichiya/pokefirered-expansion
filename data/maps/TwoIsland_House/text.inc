@@ -1,11 +1,11 @@
 TwoIsland_House_Text_TeachMonMoveForMushroom::
-    .string "I'm the POKéMON MOVE MANIAC.\p"
+    .string "Iá the POKéMON MOVE MANIAC.\p"
     .string "I know every single move that\n"
     .string "POKéMON learn growing up.\p"
-    .string "I'm also a mushroom maniac.\p"
+    .string "Iá also a mushroom maniac.\p"
     .string "Bring me two TINYMUSHROOMS,\n"
     .string "or one BIG MUSHROOM.\p"
-    .string "If you do that for me, I'll teach\n"
+    .string "If you do that for me, IÛl teach\n"
     .string "a move to one POKéMON.$"
 
 TwoIsland_House_Text_WantMeToTeachMove::
@@ -22,11 +22,11 @@ TwoIsland_House_Text_TeachWhichMove::
 
 TwoIsland_House_Text_NoMoveICanTeachThatMon::
     .string "Sorry…\p"
-    .string "It doesn't appear as if I have a\n"
+    .string "It doesnÑ appear as if I have a\n"
     .string "move I can teach that POKéMON.$"
 
 TwoIsland_House_Text_IllNeedMushroomOrTwo::
-    .string "Then, I'll need a MUSHROOM or two.\n"
+    .string "Then, IÛl need a MUSHROOM or two.\n"
     .string "What are you going to give me?$"
 
 TwoIsland_House_Text_HandedOverTwoTinyMushrooms::
@@ -42,6 +42,6 @@ TwoIsland_House_Text_NeedMushroomOrTwoToLearnMove::
     .string "move, I need a MUSHROOM or two.$"
 
 TwoIsland_House_Text_CantTeachAnEgg::
-    .string "Hunh? There isn't a single move\n"
+    .string "Hunh? There isnÑ a single move\n"
     .string "that I can teach an EGG.$"
 

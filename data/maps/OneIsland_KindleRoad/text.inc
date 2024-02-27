@@ -1,19 +1,19 @@
 OneIsland_KindleRoad_Text_MariaIntro::
-    .string "The weather's gorgeous!\n"
+    .string "The weatherÙ gorgeous!\n"
     .string "Perfect for a battle!$"
 
 OneIsland_KindleRoad_Text_MariaDefeat::
     .string "Aiyeeeeh!$"
 
 OneIsland_KindleRoad_Text_MariaPostBattle::
-    .string "Please don't splash my face!\n"
-    .string "You'll ruin the makeup.$"
+    .string "Please donÑ splash my face!\n"
+    .string "YouÛl ruin the makeup.$"
 
 OneIsland_KindleRoad_Text_AbigailIntro::
-    .string "I'm beginning to get a sunburn…$"
+    .string "Iá beginning to get a sunburn…$"
 
 OneIsland_KindleRoad_Text_AbigailDefeat::
-    .string "Oh, you're so awful.$"
+    .string "Oh, youàe so awful.$"
 
 OneIsland_KindleRoad_Text_AbigailPostBattle::
     .string "I like that cap you have.\n"
@@ -24,7 +24,7 @@ OneIsland_KindleRoad_Text_FinnIntro::
     .string "into the sky.$"
 
 OneIsland_KindleRoad_Text_FinnDefeat::
-    .string "Well, aren't you tough?$"
+    .string "Well, arenÑ you tough?$"
 
 OneIsland_KindleRoad_Text_FinnPostBattle::
     .string "The sky is immense around these\n"
@@ -36,7 +36,7 @@ OneIsland_KindleRoad_Text_GarrettIntro::
 
 OneIsland_KindleRoad_Text_GarrettDefeat::
     .string "Hey, what the…\n"
-    .string "You're good, you!$"
+    .string "Youàe good, you!$"
 
 OneIsland_KindleRoad_Text_GarrettPostBattle::
     .string "Instead of using SURF all the time,\n"
@@ -44,10 +44,10 @@ OneIsland_KindleRoad_Text_GarrettPostBattle::
 
 OneIsland_KindleRoad_Text_TommyIntro::
     .string "Wait! Wait a second!\n"
-    .string "I think I've hooked a big one!$"
+    .string "I think Iße hooked a big one!$"
 
 OneIsland_KindleRoad_Text_TommyDefeat::
-    .string "I've lost it all again…$"
+    .string "Iße lost it all again…$"
 
 OneIsland_KindleRoad_Text_TommyPostBattle::
     .string "Not only did I lose, the big one\n"
@@ -61,18 +61,18 @@ OneIsland_KindleRoad_Text_SharonDefeat::
     .string "You were a cut above me.$"
 
 OneIsland_KindleRoad_Text_SharonPostBattle::
-    .string "It's clear that you're skilled.\n"
+    .string "ItÙ clear that youàe skilled.\n"
     .string "I like you!$"
 
 OneIsland_KindleRoad_Text_TanyaIntro::
-    .string "There isn't a day in which we don't\n"
+    .string "There isnÑ a day in which we donÑ\n"
     .string "train!$"
 
 OneIsland_KindleRoad_Text_TanyaDefeat::
-    .string "I'm such a fool!$"
+    .string "Iá such a fool!$"
 
 OneIsland_KindleRoad_Text_TanyaPostBattle::
-    .string "I'll train even harder from now on!$"
+    .string "IÛl train even harder from now on!$"
 
 OneIsland_KindleRoad_Text_SheaIntro::
     .string "Every morning, before breakfast,\n"
@@ -83,7 +83,7 @@ OneIsland_KindleRoad_Text_SheaDefeat::
     .string "Gasp…$"
 
 OneIsland_KindleRoad_Text_SheaPostBattle::
-    .string "I lost because I'm pooped from all\n"
+    .string "I lost because Iá pooped from all\n"
     .string "the running I did…$"
 
 OneIsland_KindleRoad_Text_HughIntro::
@@ -99,7 +99,7 @@ OneIsland_KindleRoad_Text_HughPostBattle::
 
 OneIsland_KindleRoad_Text_BryceIntro::
     .string "You know, everything tastes great\n"
-    .string "when you're out in the wild.$"
+    .string "when youàe out in the wild.$"
 
 OneIsland_KindleRoad_Text_BryceDefeat::
     .string "Awww, blown!$"
@@ -125,7 +125,7 @@ OneIsland_KindleRoad_Text_KiaIntro::
 
 OneIsland_KindleRoad_Text_KiaDefeat::
     .string "KIA: Huh?!\n"
-    .string "I can't believe it!$"
+    .string "I canÑ believe it!$"
 
 OneIsland_KindleRoad_Text_KiaPostBattle::
     .string "KIA: How could there be anyone\n"
@@ -137,12 +137,12 @@ OneIsland_KindleRoad_Text_KiaNotEnoughMons::
     .string "POKéMON with you.$"
 
 OneIsland_KindleRoad_Text_MikIntro::
-    .string "MIK: Together with KIA, I'm afraid\n"
+    .string "MIK: Together with KIA, Iá afraid\n"
     .string "of nothing!$"
 
 OneIsland_KindleRoad_Text_MikDefeat::
     .string "MIK: Whoa!\n"
-    .string "That's too much!$"
+    .string "ThatÙ too much!$"
 
 OneIsland_KindleRoad_Text_MikPostBattle::
     .string "MIK: How could my combination\n"
