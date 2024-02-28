@@ -169,13 +169,14 @@ gOakSpeech_Text_WelcomeToTheWorld::
     .string "Welcome to the\l"
     .string "world of POKéMON!\p"
     .string "My name is OAK!\n"
-    .string "People call me\p"
-    .string "the POKéMON PROF!$"
+    .string "People call me\l"
+    .string "the POKéMON PROF!\p"
+    .string "$"
 
 gOakSpeech_Text_ThisWorld::
     .string "This world is\n"
     .string "inhabited by\l"
-    .string "creatures called\p"
+    .string "creatures called\l"
     .string "POKéMON!$"
 
 gOakSpeech_Text_IsInhabitedFarAndWide::
@@ -187,16 +188,19 @@ gOakSpeech_Text_IStudyPokemon::
     .string "pets. Others use\l"
     .string "them for fights.\p"
     .string "Myself...\n"
-    .string "I study POKéMON\p"
-    .string "as a profession.\p$"
+    .string "I study POKéMON\l"
+    .string "as a profession.\p"
+    .string "$"
 
 gOakSpeech_Text_TellMeALittleAboutYourself::
     .string "But first, tell me a\n"
-    .string "little about yourself.\p$"
+    .string "little about yourself.\p"
+    .string "$"
 
 gOakSpeech_Text_YourNameWhatIsIt::
     .string "First, what is\n"
-    .string "your name?$"
+    .string "your name?\p"
+    .string "$"
 
 gOakSpeech_Text_SoYourNameIsPlayer::
     .string "Right! So your\n"
@@ -208,13 +212,15 @@ gOakSpeech_Text_WhatWasHisName::
     .string "your rival since\l"
     .string "you were a baby.\p"
     .string "...Erm, what is\n"
-    .string "his name again?\p$"
+    .string "his name again?$"
 
 gOakSpeech_Text_YourRivalsNameWhatWasIt::
-    .string "Your rival's name, what was it now?$"
+    .string "Your rival's name,\n"
+    .string "what was it now?$"
 
 gOakSpeech_Text_ConfirmRivalName::
-    .string "…Er, was it {RIVAL}?$"
+    .string "...Er, was it\n"
+    .string "{RIVAL}?$"
 
 gOakSpeech_Text_RememberRivalsName::
     .string "That's right! I\n"
@@ -230,3 +236,4 @@ gOakSpeech_Text_LetsGo::
     .string "and adventures\l"
     .string "with POKéMON\p"
     .string "awaits! Let's go!$"
+
