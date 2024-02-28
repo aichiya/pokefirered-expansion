@@ -949,17 +949,17 @@ Text_ItNeedsCardKey::
 	.string "It needs a CARD KEY!$"
 
 Text_AccessedProfOaksPC::
-	.string "Accessed PROF.OAK's PC.\p"
+	.string "Accessed PROF.OAKÙ PC.\p"
 	.string "Accessed POKéDEX Rating System.$"
 
 Text_HavePokedexRated::
 	.string "Want to have your POKéDEX rated?$"
 
 Text_ClosedLinkToProfOaksPC::
-	.string "Closed link to PROF.OAK's PC.$"
+	.string "Closed link to PROF.OAKÙ PC.$"
 
 Text_VoiceRangOutDontRunAway::
-	.string "Someone's voice rang out,\n"
+	.string "SomeoneÙ voice rang out,\n"
 	.string "“Don't run away!”$"
 
 @ Uncear what the below unused JP texts were for
