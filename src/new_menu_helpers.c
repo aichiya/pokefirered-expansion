@@ -48,9 +48,9 @@ static const struct WindowTemplate sStandardTextBox_WindowTemplates[] =
 static const struct WindowTemplate sYesNo_WindowTemplate = 
 {
     .bg = 0,
-    .tilemapLeft = 21,
+    .tilemapLeft = 20,
     .tilemapTop = 9,
-    .width = 6,
+    .width = 4,
     .height = 4,
     .paletteNum = DLG_WINDOW_PALETTE_NUM,
     .baseBlock = 0x125,
