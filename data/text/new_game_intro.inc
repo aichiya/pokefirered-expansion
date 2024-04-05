@@ -225,7 +225,8 @@ gOakSpeech_Text_ConfirmRivalName::
 gOakSpeech_Text_RememberRivalsName::
     .string "That's right! I\n"
     .string "remember now! His\l"
-    .string "name is {RIVAL}!$"
+    .string "name is {RIVAL}!\p"
+    .string "$"
 
 gOakSpeech_Text_LetsGo::
     .string "{PLAYER}!\p"
@@ -235,5 +236,6 @@ gOakSpeech_Text_LetsGo::
     .string "A world of dreams\n"
     .string "and adventures\l"
     .string "with POKéMON\p"
-    .string "awaits! Let's go!$"
+    .string "awaits! Let's go!\p"
+    .string "$"
 
