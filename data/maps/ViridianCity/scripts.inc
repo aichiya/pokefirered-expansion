@@ -101,6 +101,7 @@ ViridianCity_EventScript_OldManGymLeaderReturned::
 ViridianCity_EventScript_TutorialOldMan::
 	lock
 	faceplayer
+	goto_if_unset FLAG_SYS_POKEDEX_GET, ViridianCity_EventScript_RoadBlocked
 	goto_if_set FLAG_OLD_MAN_CATCH_TUTORIAL, ViridianCity_EventScript_TutorialCompleted
 	msgbox ViridianCity_Text_HadMyCoffee, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, ViridianCity_EventScript_DeclineTutorial
@@ -190,7 +191,7 @@ ViridianCity_EventScript_AlreadyGotTM42::
 
 ViridianCity_EventScript_RoadBlocked::
 	lockall
-	textcolor NPC_TEXT_COLOR_MALE
+	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox ViridianCity_Text_ThisIsPrivateProperty
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, ViridianCity_Movement_WalkDown
@@ -204,7 +205,7 @@ ViridianCity_Movement_WalkDown::
 
 ViridianCity_EventScript_TutorialTriggerLeft::
 	lockall
-	textcolor NPC_TEXT_COLOR_MALE
+	textcolor NPC_TEXT_COLOR_NEUTRAL
 	applymovement LOCALID_TUTORIAL_MAN, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
@@ -215,7 +216,7 @@ ViridianCity_EventScript_TutorialTriggerLeft::
 
 ViridianCity_EventScript_TutorialTriggerRight::
 	lockall
-	textcolor NPC_TEXT_COLOR_MALE
+	textcolor NPC_TEXT_COLOR_NEUTRAL
 	applymovement LOCALID_TUTORIAL_MAN, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
