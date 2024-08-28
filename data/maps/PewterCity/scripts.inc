@@ -185,7 +185,7 @@ PewterCity_EventScript_GymGuideTriggerRight::
 	end
 
 PewterCity_EventScript_GymGuideTrigger::
-	textcolor NPC_TEXT_COLOR_MALE
+	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox PewterCity_Text_BrocksLookingForChallengersFollowMe
 	closemessage
 	playbgm MUS_FOLLOW_ME, 0

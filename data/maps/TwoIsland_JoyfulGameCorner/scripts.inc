@@ -37,7 +37,7 @@ TwoIsland_JoyfulGameCorner_OnFrame::
 
 TwoIsland_JoyfulGameCorner_EventScript_FoundLostelleScene::
 	lockall
-	textcolor NPC_TEXT_COLOR_MALE
+	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox TwoIsland_JoyfulGameCorner_Text_YouRescuedLostelle
 	textcolor NPC_TEXT_COLOR_FEMALE
 	special BufferBigGuyOrBigGirlString
@@ -51,7 +51,7 @@ TwoIsland_JoyfulGameCorner_EventScript_FoundLostelleScene::
 
 TwoIsland_JoyfulGameCorner_EventScript_HelpFindLostelleScene::
 	lockall
-	textcolor NPC_TEXT_COLOR_MALE
+	textcolor NPC_TEXT_COLOR_NEUTRAL
 	applymovement LOCALID_DADDY, TwoIsland_JoyfulGameCorner_Movement_DaddyPacing
 	waitmovement 0
 	msgbox TwoIsland_JoyfulGameCorner_Text_WhereHasLostelleGottenTo

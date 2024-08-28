@@ -19,7 +19,7 @@ PalletTown_OnFrame::
 @ Oak approaches player after exiting their house post Elite Four to check if they should receieve the National Dex
 PalletTown_EventScript_OakRatingScene::
 	lockall
-	textcolor NPC_TEXT_COLOR_MALE
+	textcolor NPC_TEXT_COLOR_NEUTRAL
 	setobjectxyperm LOCALID_PROF_OAK, 14, 14
 	setobjectmovementtype LOCALID_PROF_OAK, MOVEMENT_TYPE_FACE_LEFT
 	addobject LOCALID_PROF_OAK
@@ -158,7 +158,6 @@ PalletTown_EventScript_OakTriggerRight::
 
 PalletTown_EventScript_OakTrigger::
 	famechecker FAMECHECKER_OAK, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
-	textcolor NPC_TEXT_COLOR_MALE
 	delay 30
 	playbgm MUS_OAK, 0
 	message PalletTown_Text_OakDontGoOut

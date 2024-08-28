@@ -25,7 +25,7 @@ Route22_EventScript_EarlyRivalTriggerBottom::
 	end
 
 Route22_EventScript_EarlyRival::
-	textcolor NPC_TEXT_COLOR_MALE
+	textcolor NPC_TEXT_COLOR_NEUTRAL
 	playbgm MUS_ENCOUNTER_RIVAL, 0
 	addobject LOCALID_RIVAL
 	call_if_eq VAR_TEMP_1, 0, Route22_EventScript_EarlyRivalApproach
@@ -170,7 +170,7 @@ Route22_EventScript_LateRivalTriggerBottom::
 	end
 
 Route22_EventScript_LateRival::
-	textcolor NPC_TEXT_COLOR_MALE
+	textcolor NPC_TEXT_COLOR_NEUTRAL
 	playbgm MUS_ENCOUNTER_RIVAL, 0
 	addobject LOCALID_RIVAL
 	call_if_eq VAR_TEMP_1, 0, Route22_EventScript_LateRivalApproach

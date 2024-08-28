@@ -17,7 +17,7 @@ OneIsland_Harbor_OnFrame::
 
 OneIsland_Harbor_EventScript_PlayerEnterHarborFirstTime::
 	lockall
-	textcolor NPC_TEXT_COLOR_MALE
+	textcolor NPC_TEXT_COLOR_NEUTRAL
 	applymovement OBJ_EVENT_ID_PLAYER, OneIsland_Harbor_Movement_PlayerExitHarbor
 	waitmovement 0
 	setvar VAR_MAP_SCENE_ONE_ISLAND_HARBOR, 2

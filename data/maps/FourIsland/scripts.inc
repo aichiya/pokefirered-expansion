@@ -28,7 +28,7 @@ FourIsland_OnFrame::
 
 FourIsland_EventScript_RivalScene::
 	lockall
-	textcolor NPC_TEXT_COLOR_MALE
+	textcolor NPC_TEXT_COLOR_NEUTRAL
 	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	playbgm MUS_ENCOUNTER_RIVAL, 0

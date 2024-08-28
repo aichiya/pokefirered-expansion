@@ -59,7 +59,7 @@ FiveIsland_MemorialPillar_EventScript_PlaceLemonade::
 	delay 45
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
-	textcolor NPC_TEXT_COLOR_MALE
+	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox FiveIsland_MemorialPillar_Text_ThankYouPleaseTakeThis
 	giveitem ITEM_TM42
 	goto_if_eq VAR_RESULT, FALSE, FiveIsland_MemorialPillar_EventScript_NoRoomForTM42
