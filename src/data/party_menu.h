@@ -71,12 +71,12 @@ static const struct PartyMenuBoxInfoRects sPartyBoxInfoRects[] =
         BlitBitmapToPartyWindow_Equal, 
         {
             //The below are the x, y, width, and height for each of the following info
-            33,  1, 40, 13, // Nickname
-            3, 25, 32,  8, // Level 85,  1, 32,  8,
-           100,  1,  8,  8, // Gender 79,  1,  8,  8, 
-            33, 11, 24,  8, // HP
-            48, 11, 24,  8, // Max HP
-            48, 26, 56,  3  // HP bar
+            33,  4, 40, 13, // Nickname
+            8, 21, 32,  8, // Level 85,  1, 32,  8,
+           100,  4,  8,  8, // Gender 79,  1,  8,  8, 
+            33, 14, 24,  8, // HP
+            48, 14, 24,  8, // Max HP
+            47, 28, 56,  3  // HP bar
         }, 
         33, 13, 64, 16      // Description text (e.g. NO USE)
     },//
@@ -87,11 +87,11 @@ static const u8 sPartyMenuSpriteCoords[PARTY_LAYOUT_COUNT][PARTY_SIZE][4 * 2] =
     [PARTY_LAYOUT_SINGLE] = 
     {
         // pokemon coords, held item coords, status coords, pokeball coords
-        { 24,  14,  38,  33, 104,  19,  24,  18},
+        { 24,  14,  108,  11, 102,  21,  24,  18}, //Xyi X offset right, Y offset down.
         {136,  22, 150,  41, 216,  27, 136,  26},
-        { 24,  54,  38,  73, 104,  59,  24,  58},
+        { 24,  54,  108,  51, 102,  61,  24,  58},
         {136,  62, 150,  81, 216,  67, 136,  66},
-        { 24,  94,  38, 113, 104,  99,  24,  98},
+        { 24,  94,  108, 91, 102,  101,  24,  98},
         {136, 102, 150, 121, 216, 107, 136, 106},
     },
     [PARTY_LAYOUT_DOUBLE] = 
@@ -128,12 +128,12 @@ static const u32 sCancelButton_Tilemap[] = INCBIN_U32("graphics/party_menu/cance
 
 static const u8 sFontColorTable[][3] =
 {
-    {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_LIGHT_GRAY, TEXT_COLOR_DARK_GRAY},  // Default
-    {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_LIGHT_GRAY, TEXT_DYNAMIC_COLOR_2},  // Black text with light gray shadow.
-    {TEXT_COLOR_TRANSPARENT, TEXT_DYNAMIC_COLOR_2,  TEXT_DYNAMIC_COLOR_3},  // Gender symbol
-    {TEXT_COLOR_WHITE,       TEXT_COLOR_DARK_GRAY,  TEXT_COLOR_LIGHT_GRAY}, // Selection actions
-    {TEXT_COLOR_WHITE,       TEXT_COLOR_BLUE,       TEXT_COLOR_LIGHT_BLUE}, // Field moves
-    {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_WHITE,      TEXT_COLOR_DARK_GRAY},  // Unused
+    {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_TRANSPARENT},  // Default
+    {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_LIGHT_GRAY, TEXT_COLOR_TRANSPARENT},  // Black text with light gray shadow.
+    {TEXT_COLOR_TRANSPARENT, TEXT_DYNAMIC_COLOR_2,  TEXT_COLOR_TRANSPARENT},  // Gender symbol
+    {TEXT_COLOR_WHITE,       TEXT_COLOR_DARK_GRAY,  TEXT_COLOR_TRANSPARENT}, // Selection actions
+    {TEXT_COLOR_WHITE,       TEXT_COLOR_BLUE,       TEXT_COLOR_TRANSPARENT}, // Field moves
+    {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_WHITE,      TEXT_COLOR_TRANSPARENT},  // Unused
 };
 
 static const struct WindowTemplate sSinglePartyMenuWindowTemplate[] =
@@ -524,7 +524,7 @@ static const struct WindowTemplate sDefaultPartyMsgWindowTemplate =
 static const u8 sEqualMainSlotTileNums[] =      {43, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 45,
                                                  49, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 50,
                                                  49, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 50,
-                                                 49, 33, 33, 33, 52, 53, 51, 51, 51, 51, 51, 51, 51, 54,
+                                                 49, 33, 33, 33, 52, 53, 51, 51, 51, 51, 51, 51, 58, 54,
                                                  55, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 57};
 
 static const u8 sEqualMainSlotTileNums_Egg[] =  {43, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 45,
