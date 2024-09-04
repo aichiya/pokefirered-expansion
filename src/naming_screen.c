@@ -39,7 +39,7 @@ enum {
 };
 
 #define KBROW_COUNT 4
-#define KBCOL_COUNT 8
+#define KBCOL_COUNT 9
 
 enum {
     GFXTAG_BACK_BUTTON,
@@ -376,35 +376,35 @@ static const struct WindowTemplate sWindowTemplates[WIN_COUNT + 1] =
 // The keys shown on the keyboard are handled separately by sNamingScreenKeyboardText
 static const u8 sKeyboardChars[KBPAGE_COUNT][KBROW_COUNT][KBCOL_COUNT] = {
     [KEYBOARD_LETTERS_LOWER] = {
-        __("abcdef ."),
-        __("ghijkl ,"),
-        __("mnopqrs"),
-        __("tuvwxyz"),
+        __("abcdefghi"),
+        __("jklmnopqr"),
+        __("stuvwxyz "),
+        __("ÙÚÛÑßàáé "),
     },
     [KEYBOARD_LETTERS_UPPER] = {
-        __("ABCDEF ."),
-        __("GHIJKL ,"),
-        __("MNOPQRS"),
-        __("TUVWXYZ"),
+        __("ABCDEFGHI"),
+        __("JKLMNOPQR"),
+        __("STUVWXYZ "),
+        __("{PO}{KE}{BL}{OC}{CK}{PK}{MN}{LV} "),
     },
     [KEYBOARD_SYMBOLS] = {
-        __("01234"),
-        __("56789"),
-        __("!?♂♀/-"),
-        __("…“”‘'"),
+        __("012345678"),
+        __("9+×=-/♂♀¥"),
+        __("…:;{PARENTHESIS_L}{PARENTHESIS_R}<>¿¡"),
+        __("!?,.“”‘’ "),
     }
 };
 
 static const u8 sPageColumnCounts[] = {
     [KEYBOARD_LETTERS_LOWER] = KBCOL_COUNT,
     [KEYBOARD_LETTERS_UPPER] = KBCOL_COUNT,
-    [KEYBOARD_SYMBOLS]       = 6
+    [KEYBOARD_SYMBOLS]       = 9
 };
 
 static const u8 sPageColumnXPos[KBPAGE_COUNT][KBCOL_COUNT] = {
-    [KEYBOARD_LETTERS_LOWER] = {0, 12, 24, 56, 68, 80, 92, 123},
-    [KEYBOARD_LETTERS_UPPER] = {0, 12, 24, 56, 68, 80, 92, 123},
-    [KEYBOARD_SYMBOLS]       = {0, 22, 44, 66, 88, 110}
+    [KEYBOARD_LETTERS_LOWER] = {0, 14, 28, 42, 56, 70, 84, 98, 112},
+    [KEYBOARD_LETTERS_UPPER] = {0, 14, 28, 42, 56, 70, 84, 98, 112},
+    [KEYBOARD_SYMBOLS]       = {0, 14, 28, 42, 56, 70, 84, 98, 112}
 };
 
 void DoNamingScreen(u8 templateNum, u8 *destBuffer, u16 monSpecies, u16 monGender, u32 monPersonality, MainCallback returnCallback)
