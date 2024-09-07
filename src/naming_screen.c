@@ -366,7 +366,7 @@ static const struct WindowTemplate sWindowTemplates[WIN_COUNT + 1] =
         .tilemapTop = 0,
         .width = 30,
         .height = 2,
-        .paletteNum = 11,
+        .paletteNum = 3,
         .baseBlock = 0x006c
     },
     DUMMY_WIN_TEMPLATE
@@ -1911,11 +1911,11 @@ struct TextColor   // Needed because of alignment
     u8 colors[3][4];
 };
 
-static const struct TextColor sTextColorStruct = {
+static const struct TextColor sTextColorStruct = { //Xyi set text color for the 3 keyboard panels here.
     {
-        {TEXT_DYNAMIC_COLOR_4, TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GRAY},
-        {TEXT_DYNAMIC_COLOR_5, TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GRAY},
-        {TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GRAY}
+        {TEXT_DYNAMIC_COLOR_4, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_DARK_GRAY},
+        {TEXT_DYNAMIC_COLOR_5, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_DARK_GRAY},
+        {TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_DARK_GRAY}
     }
 };
 
@@ -1979,11 +1979,11 @@ static void DrawKeyboardPageOnDeck(void)
 
 static void PrintControls(void)
 {
-    const u8 color[3] = { TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GRAY };
-    int strwidth = GetStringWidth(FONT_SMALL, gText_MoveOkBack, 0);
+    const u8 color[3] = { TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_DARK_GRAY }; //Xyi check back here
+    int strwidth = GetStringWidth(FONT_NORMAL, gText_MoveOkBack, 0);
 
-    FillWindowPixelBuffer(sNamingScreen->windows[WIN_BANNER], PIXEL_FILL(15));
-    AddTextPrinterParameterized3(sNamingScreen->windows[WIN_BANNER], FONT_SMALL, DISPLAY_WIDTH - 4 - strwidth, 0, color, 0, gText_MoveOkBack);
+    FillWindowPixelBuffer(sNamingScreen->windows[WIN_BANNER], PIXEL_FILL(1));
+    AddTextPrinterParameterized3(sNamingScreen->windows[WIN_BANNER], FONT_NORMAL, DISPLAY_WIDTH - 4 - strwidth, 0, color, 0, gText_MoveOkBack);
     PutWindowTilemap(sNamingScreen->windows[WIN_BANNER]);
     CopyWindowToVram(sNamingScreen->windows[WIN_BANNER], COPYWIN_FULL);
 }
