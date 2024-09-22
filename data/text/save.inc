@@ -1,6 +1,6 @@
 gText_WouldYouLikeToSaveTheGame::
 	.string "Would you like to\n" 
-	.string "save the game?$"
+	.string "SAVE the game?$"
 
 gText_AlreadySaveFile_WouldLikeToOverwrite::
 	.string "There is already\n"
