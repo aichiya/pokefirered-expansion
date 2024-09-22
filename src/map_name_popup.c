@@ -26,26 +26,26 @@ static u8 *MapNamePopupAppendFloorNum(u8 *dest, s8 flags);
 
 void ShowMapNamePopup(bool32 palIntoFadedBuffer)
 {
-    u8 taskId;
-    if (FlagGet(FLAG_DONT_SHOW_MAP_NAME_POPUP) != TRUE && !QL_IS_PLAYBACK_STATE)
-    {
-        taskId = FindTaskIdByFunc(Task_MapNamePopup);
-        if (taskId == TASK_NONE)
-        {
-            taskId = CreateTask(Task_MapNamePopup, 90);
-            ChangeBgX(0,  0x0000, 0);
-            ChangeBgY(0, -0x1081, 0);
-            gTasks[taskId].tState = 0;
-            gTasks[taskId].tPos = 0;
-            gTasks[taskId].tPalIntoFadedBuffer = palIntoFadedBuffer;
-        }
-        else
-        {
-            if (gTasks[taskId].tState != 4)
-                gTasks[taskId].tState = 4;
-            gTasks[taskId].tReshow = TRUE;
-        }
-    }
+//    u8 taskId;
+//    if (FlagGet(FLAG_DONT_SHOW_MAP_NAME_POPUP) != TRUE && !QL_IS_PLAYBACK_STATE)
+//    {
+//        taskId = FindTaskIdByFunc(Task_MapNamePopup);
+//        if (taskId == TASK_NONE)
+//        {
+//            taskId = CreateTask(Task_MapNamePopup, 90);
+//            ChangeBgX(0,  0x0000, 0);
+//            ChangeBgY(0, -0x1081, 0);
+//            gTasks[taskId].tState = 0;
+//            gTasks[taskId].tPos = 0;
+//            gTasks[taskId].tPalIntoFadedBuffer = palIntoFadedBuffer;
+//        }
+//        else
+//        {
+//            if (gTasks[taskId].tState != 4)
+//                gTasks[taskId].tState = 4;
+//            gTasks[taskId].tReshow = TRUE;
+//        }
+//    }
 }
 
 static void Task_MapNamePopup(u8 taskId)
