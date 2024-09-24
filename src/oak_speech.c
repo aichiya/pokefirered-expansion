@@ -1236,7 +1236,7 @@ static void Task_OakSpeech_TellMeALittleAboutYourself(u8 taskId)
         }
         else
         {
-            OakSpeechPrintMessage(gOakSpeech_Text_TellMeALittleAboutYourself, sOakSpeechResources->textSpeed);
+            //OakSpeechPrintMessage(gOakSpeech_Text_TellMeALittleAboutYourself, sOakSpeechResources->textSpeed);
             gTasks[taskId].func = Task_OakSpeech_FadeOutOak;
         }
     }
