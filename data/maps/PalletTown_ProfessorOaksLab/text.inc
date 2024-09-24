@@ -34,16 +34,17 @@ PalletTown_ProfessorOaksLab_Text_RivalMyMonLooksTougher::
 
 PalletTown_ProfessorOaksLab_Text_RivalLetsCheckOutMons::
     .string "{RIVAL}: Wait\n"
-    .string "{PLAYER}!\p"
-    .string "LetÙ check out\n"
+    .string "{PLAYER}!\l"
+    .string "LetÙ check out\l"
     .string "out POKéMON!\p"
-    .string "Come on, IÛl take\p"
+    .string "Come on, IÛl take\n"
     .string "you on!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalDefeat::
     .string "WHAT?\n"
-    .string "Unbelievable!\p"
-    .string "I picked the wrong POKéMON!$"
+    .string "Unbelievable!\l"
+    .string "I picked the\l"
+    .string "wrong POKéMON!$"
 
 @ Also used for early Route 22 battle
 Text_RivalVictory::
@@ -67,7 +68,7 @@ PalletTown_ProfessorOaksLab_Text_RivalWhatDidYouCallMeFor::
 
 PalletTown_ProfessorOaksLab_Text_RivalLeaveItToMeGramps::
     .string "{RIVAL}: Alright\n"
-    .string "Gramps! Leave it\p"
+    .string "Gramps! Leave it\l"
     .string "all to me!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalTellSisNotToGiveYouMap::
@@ -198,24 +199,31 @@ PalletTown_ProfessorOaksLab_Text_ReceivedPokedexFromOak::
     .string "POKéDEX from OAK!$"
 
 PalletTown_ProfessorOaksLab_Text_OakCatchMonsForDataTakeThese::
-    .string "OAK: You canÑ get detailed data\n"
-    .string "on POKéMON by just seeing them.\p"
-    .string "You must catch them to obtain\n"
-    .string "complete data.\p"
-    .string "So, here are some tools for\n"
-    .string "catching wild POKéMON.$"
+    .string "OAK: You canÑ get\n"
+    .string "detailed data on\l"
+    .string "POKéMON by just\l"
+    .string "seeing them.\p"
+    .string "You must catch\n"
+    .string "them! Use these\l"
+    .string "to capture wild\l"
+    .string "POKéMON.$"
 
 PalletTown_ProfessorOaksLab_Text_ReceivedFivePokeBalls::
-    .string "{PLAYER} received five POKé BALLS.$"
+    .string "{PLAYER} got 5\n"
+    .string "POKé BALLS.$"
 
 PalletTown_ProfessorOaksLab_Text_OakExplainCatching::
-    .string "When a wild POKéMON appears,\n"
+    .string "When a wild\n"
+    .string "POKéMON appears,\l"
     .string "itÙ fair game.\p"
-    .string "Just throw a POKé BALL at it and\n"
-    .string "try to catch it!\p"
-    .string "This wonÑ always work, however.\p"
-    .string "A healthy POKéMON can escape.\n"
-    .string "You have to be lucky!$"
+    .string "Just throw a POKé\n"
+    .string "BALL at it and try\l"
+    .string "to catch it!\p"
+    .string "This wonÑ always\n"
+    .string "work, though.\p"
+    .string "A healthy POKéMON\n"
+    .string "could escape. You\l"
+    .string "have to be lucky!$"
 
 PalletTown_ProfessorOaksLab_Text_OakCompleteMonGuideWasMyDream::
     .string "To make a complete\n"
