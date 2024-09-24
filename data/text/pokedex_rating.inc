@@ -1,7 +1,9 @@
 PokedexRating_Text_HowIsPokedexComingAlong::
-	.string "OAK: Good to see you!\n"
-	.string "How is your POKéDEX coming along?\p"
-	.string "Here, let me take a look.$"
+	.string "OAK: Good to see\n"
+	.string "you! How is your\l"
+	.string "POKéDEX coming?\l"
+	.string "Here, let me take\l"
+	.string "a look!$"
 
 PokedexRating_Text_SeenXOwnedY::
 	.string "POKéDEX ompletion is:\p"
