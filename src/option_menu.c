@@ -92,7 +92,7 @@ static const struct WindowTemplate sOptionMenuWinTemplates[] =
         .tilemapTop = 0,
         .width = 30,
         .height = 2,
-        .paletteNum = 15,
+        .paletteNum = 1,
         .baseBlock = 0x16e
     },
     DUMMY_WIN_TEMPLATE
@@ -167,8 +167,8 @@ static const u8 *const sSoundOptions[] =
     gText_SoundStereo
 };
 
-static const u8 sOptionMenuPickSwitchCancelTextColor[] = {TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GRAY};
-static const u8 sOptionMenuTextColor[] = {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_LIGHT_RED, TEXT_COLOR_RED};
+static const u8 sOptionMenuPickSwitchCancelTextColor[] = {TEXT_COLOR_WHITE, TEXT_DYNAMIC_COLOR_5, TEXT_COLOR_WHITE};
+static const u8 sOptionMenuTextColor[] = {TEXT_COLOR_WHITE, TEXT_DYNAMIC_COLOR_5, TEXT_COLOR_WHITE};
 
 // Functions
 static void CB2_InitOptionMenu(void)
@@ -306,9 +306,9 @@ static void InitOptionMenuBg(void)
 static void OptionMenu_PickSwitchCancel(void)
 {
     s32 x;
-    x = 0xE4 - GetStringWidth(FONT_SMALL, gText_PickSwitchCancel, 0);
+    x = 0xE4 - GetStringWidth(FONT_NORMAL, gText_PickSwitchCancel, 0);
     FillWindowPixelBuffer(2, PIXEL_FILL(15)); 
-    AddTextPrinterParameterized3(2, FONT_SMALL, x, 0, sOptionMenuPickSwitchCancelTextColor, 0, gText_PickSwitchCancel);
+    AddTextPrinterParameterized3(2, FONT_NORMAL, x, 0, sOptionMenuPickSwitchCancelTextColor, 0, gText_PickSwitchCancel);
     PutWindowTilemap(2);
     CopyWindowToVram(2, COPYWIN_FULL);
 }
