@@ -12,6 +12,8 @@ ViridianCity_PokemonCenter_1F_Text_PokeCenterInEveryTown::
     .string "any money either!$"
 
 ViridianCity_PokemonCenter_1F_Text_PokeCentersHealMons::
-    .string "POKéMON CENTERs heal your tired,\n"
-    .string "hurt or fainted POKéMON!$"
+    .string "POKéMON CENTERs\n"
+    .string "heal your tired,\l"
+    .string "hurt or fainted\l"
+    .string "POKéMON!$"
 
