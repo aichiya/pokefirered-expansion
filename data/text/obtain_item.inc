@@ -1,6 +1,10 @@
 Text_ObtainedTheX::
 	.string "Obtained the {STR_VAR_2}!$"
 
+Text_GotX::
+	.string "{PLAYER} got\n"
+	.string "{STR_VAR_2}!$"
+
 Text_BagIsFull::
 	.string "The BAG is full...$"
 
