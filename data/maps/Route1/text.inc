@@ -6,7 +6,7 @@ Route1_Text_WorkAtPokeMartTakeSample::
     .string "visit us in\l"
     .string "VIRIDIAN CITY.\p"
     .string "I know, IÛl give\n"
-    .string "you a sample!\p"
+    .string "you a sample!\l"
     .string "Here you go!$"
 
 Route1_Text_ComeSeeUsIfYouNeedPokeBalls::

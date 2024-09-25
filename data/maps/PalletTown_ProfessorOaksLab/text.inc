@@ -244,7 +244,7 @@ PalletTown_ProfessorOaksLab_Text_OakCompleteMonGuideWasMyDream::
 
 PalletTown_ProfessorOaksLab_Text_OakMonsAroundWorldWait::
     .string "POKéMON around the\n"
-    .string "world wait for\p"
+    .string "world wait for\l"
     .string "you, {PLAYER}!$"
 
 PalletTown_ProfessorOaksLab_Text_OakAddedNothingToPokedex::
@@ -290,8 +290,10 @@ PalletTown_ProfessorOaksLab_Text_SaveOptionInMenu::
     .string "screen.$"
 
 PalletTown_ProfessorOaksLab_Text_AllMonTypesHaveStrongAndWeakPoints::
-    .string "All POKéMON types have strong and\n"
-    .string "weak points against others.$"
+    .string "All POKéMON types\n"
+    .string "have strong and\l"
+    .string "weak points\l"
+    .string "against others.$"
 
 PalletTown_ProfessorOaksLab_Text_EmailMessage::
     .string "ThereÙ an e-mail\n"
