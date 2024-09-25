@@ -61,8 +61,8 @@ EventScript_BufferBerryPouch::
 EventScript_ObtainedItem::
 	message Text_ObtainedTheX
 	waitfanfare
-	waitmessage
-	msgbox Text_PutItemAway
+	@ waitmessage
+	@ msgbox Text_PutItemAway
 	setvar VAR_RESULT, 1
 	return
 
@@ -127,8 +127,8 @@ EventScript_PickUpItem::
 	call_if_eq VAR_0x8008, TRUE, EventScript_FoundTMHM
 	call_if_eq VAR_0x8008, FALSE, EventScript_FoundItem
 	waitfanfare
-	waitmessage
-	msgbox Text_PutItemAway
+	@ waitmessage
+	@ msgbox Text_PutItemAway
 	return
 
 EventScript_FoundTMHM::
@@ -167,8 +167,8 @@ EventScript_PickedUpHiddenItem::
 	call_if_eq VAR_0x8006, 1, EventScript_FoundSingleItem
 	call_if_ne VAR_0x8006, 1, EventScript_FoundMultipleItems
 	waitfanfare
-	waitmessage
-	msgbox Text_PutItemAway
+	@ waitmessage
+	@ msgbox Text_PutItemAway
 	special SetHiddenItemFlag
 	releaseall
 	end
