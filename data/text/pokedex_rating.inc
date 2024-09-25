@@ -6,84 +6,97 @@ PokedexRating_Text_HowIsPokedexComingAlong::
 	.string "a look!$"
 
 PokedexRating_Text_SeenXOwnedY::
-	.string "POKéDEX ompletion is:\p"
+	.string "POKéDEX completion\n"
+	.string "is:\p"
 	.string "{STR_VAR_1} POKéMON seen\n"
 	.string "{STR_VAR_2} POKéMON owned.\p"
-	.string "{FONT_NORMAL}PROF.OAK's rating:$"
+	.string "PROF.OAKÙ rating:$"
 
 PokedexRating_Text_LessThan10::
-	.string "You still have lots to do.\p"
-	.string "Go into every patch of grass you\n"
-	.string "see and look for POKéMON!$"
+	.string "You still have\n"
+	.string "lots to do.\l"
+	.string "Look for POKéMON\l"
+	.string "in grassy areas!$"
 
 PokedexRating_Text_LessThan20::
-	.string "It looks as if you're getting on\n"
-	.string "the right track!\p"
-	.string "I've given one of my AIDES a FLASH\n"
-	.string "HM. Make sure you go get it!$"
+	.string "You're on the\n"
+	.string "right track!\l"
+	.string "Get a FLASH HM\l"
+	.string "from my AIDE!$"
 
 PokedexRating_Text_LessThan30::
-	.string "Your POKéDEX could use a bit more\n"
-	.string "volume still!\p"
-	.string "Try to catch other species of\n"
-	.string "POKéMON!$"
+	.string "You still need\n"
+	.string "more POKéMON!\l"
+	.string "Try to catch\l"
+	.string "other species!$"
 
 PokedexRating_Text_LessThan40::
-	.string "Good, you're trying hard!\n"
-	.string "Get an ITEMFINDER\n"
+	.string "Good, you're\n"
+	.string "trying hard!\l"
+	.string "Get an ITEMFINDER\l"
 	.string "from my AIDE!$"
 
 PokedexRating_Text_LessThan50::
-	.string "Your POKéDEX is coming along quite\n"
-	.string "well!\p"
-	.string "I've given one of my AIDES an\n"
-	.string "AMULET COIN. Be sure to get it!$"
+	.string "Looking good!\n"
+	.string "Go find my AIDE\l"
+	.string "when you get 50!$"
 
 PokedexRating_Text_LessThan60::
-	.string "Ah, you've finally topped 50\n"
-	.string "species!\p"
-	.string "I've given one of my AIDES an EXP.\n"
-	.string "SHARE. Be sure to go get it!$"
+	.string "You finally got at\n"
+	.string "least 50 species!\l"
+	.string "Be sure to get\l"
+	.string "EXP.ALL from my\l"
+	.string "AIDE!$"
 
 PokedexRating_Text_LessThan70::
-	.string "Hoho! This is turning into quite the\n"
-	.string "respectable POKéDEX!$"
+	.string "Ho! This is geting\n"
+	.string "even better!$"
 
 PokedexRating_Text_LessThan80::
-	.string "Very good!\p"
-	.string "I think you'll collect even more\n"
-	.string "POKéMON by going fishing!$"
+	.string "Very good!\n"
+	.string "Go fish for some\l"
+	.string "marine POKéMON!$"
 
 PokedexRating_Text_LessThan90::
-	.string "Wonderful! Let me guess… You\n"
-	.string "like to collect things, don't you?$"
+	.string "Wonderful!\n"
+	.string "Do you like to\l"
+	.string "collect things?$"
 
 PokedexRating_Text_LessThan100::
 	.string "I'm impressed!\n"
-	.string "It must have been difficult to do!$"
+	.string "It must have been\l"
+	.string "difficult to do!$"
 
 PokedexRating_Text_LessThan110::
-	.string "You've finally hit 100 species!\n"
-	.string "I can't believe how good you are!$"
+	.string "You finally got at\n"
+	.string "least 100 species!\l"
+	.string "I can't believe\l"
+	.string "how good you are!$"
 
 PokedexRating_Text_LessThan120::
-	.string "You even have the evolved forms\n"
-	.string "of POKéMON! Super!$"
+	.string "You even have the\n"
+	.string "evolved forms of\l"
+	.string "POKéMON! Super!$"
 
 PokedexRating_Text_LessThan130::
-	.string "Excellent! Trade with friends to\n"
+	.string "Excellent! Trade\n"
+	.string "with friends to\l"
 	.string "get some more!$"
 
 PokedexRating_Text_LessThan140::
 	.string "Outstanding!\n"
-	.string "You've become a real pro at this!$"
+	.string "You've become a\l"
+	.string "real pro at this!$"
 
 PokedexRating_Text_LessThan150::
-	.string "I have nothing left to say!\n"
-	.string "You're the POKéMON PROFESSOR now!$"
+	.string "I have nothing\n"
+	.string "left to say!\l"
+	.string "You're the\l"
+	.string "authority now!$"
 
 PokedexRating_Text_Complete::
-	.string "Your POKéDEX is entirely complete!\n"
+	.string "Your POKéDEX is\n"
+	.string "entirely complete!\l"
 	.string "Congratulations!!$"
 
 PokedexRating_Text_NationalDexSeenXOwnedY::
