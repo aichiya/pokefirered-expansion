@@ -604,7 +604,7 @@ Help_Text_MovingItems::
 	.string "  Moving items$"
 
 Help_Text_UsingPlayersPC::
-	.string " Using “{PLAYER}'s PC”$"
+	.string " Using “{PLAYER}Ù PC”$"
 
 Help_Text_UsingWithdrawItem::
 	.string "  Using “WITHDRAW ITEM”$"
@@ -884,7 +884,7 @@ Help_Text_HowToMoveItems::
 	.string "   to the BAG with the A Button.$"
 
 Help_Text_HowToUsePlayersPC::
-	.string "{CIRCLE_1} Select “{PLAYER}'s PC” on the PC.\n"
+	.string "{CIRCLE_1} Select “{PLAYER}Ù PC” on the PC.\n"
 	.string "{CIRCLE_2} Select either “ITEM STORAGE” or\n"
 	.string "   “MAILBOX.”\n"
 	.string "You may store things in your own PC\n"

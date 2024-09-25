@@ -949,14 +949,18 @@ Text_ItNeedsCardKey::
 	.string "It needs a CARD KEY!$"
 
 Text_AccessedProfOaksPC::
-	.string "Accessed PROF.OAKÙ PC.\p"
-	.string "Accessed POKéDEX Rating System.$"
+	.string "Accessed PROF.OAKÙ\n"
+	.string "PC.\p"
+	.string "Accessed POKéDEX\n"
+	.string "Rating System.$"
 
 Text_HavePokedexRated::
-	.string "Want to have your POKéDEX rated?$"
+	.string "Want to have your\n"
+	.string "POKéDEX rated?$"
 
 Text_ClosedLinkToProfOaksPC::
-	.string "Closed link to PROF.OAKÙ PC.$"
+	.string "Closed link to\n"
+	.string "PROF.OAKÙ PC.$"
 
 Text_VoiceRangOutDontRunAway::
 	.string "SomeoneÙ voice rang out,\n"

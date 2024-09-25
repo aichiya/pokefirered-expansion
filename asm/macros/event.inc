@@ -556,33 +556,33 @@
 	.2byte \itemId
 	.endm
 
-	@ Adds quantity of the specified item to the player's PC.
+	@ Adds quantity of the specified item to the playerÙ PC.
 	.macro addpcitem itemId:req, quantity=1
 	.byte 0x49
 	.2byte \itemId
 	.2byte \quantity
 	.endm
 
-	@ Checks for quantity of the specified item in the player's PC.
+	@ Checks for quantity of the specified item in the playerÙ PC.
 	.macro checkpcitem itemId:req, quantity=1
 	.byte 0x4a
 	.2byte \itemId
 	.2byte \quantity
 	.endm
 
-	@ In FRLG, this command is a nop. In RSE, adds a decoration to the player's PC.
+	@ In FRLG, this command is a nop. In RSE, adds a decoration to the playerÙ PC.
 	.macro adddecoration decoration:req
 	.byte 0x4b
 	.2byte \decoration
 	.endm
 
-	@ In FRLG, this command is a nop. In RSE, removes a decoration from the player's PC.
+	@ In FRLG, this command is a nop. In RSE, removes a decoration from the playerÙ PC.
 	.macro removedecoration decoration:req
 	.byte 0x4c
 	.2byte \decoration
 	.endm
 
-	@ In FRLG, this command is a nop. In RSE, checks for decoration in the player's PC.
+	@ In FRLG, this command is a nop. In RSE, checks for decoration in the playerÙ PC.
 	.macro checkdecor decoration:req
 	.byte 0x4d
 	.2byte \decoration
