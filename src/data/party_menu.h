@@ -87,12 +87,12 @@ static const u8 sPartyMenuSpriteCoords[PARTY_LAYOUT_COUNT][PARTY_SIZE][4 * 2] =
     [PARTY_LAYOUT_SINGLE] = 
     {
         // pokemon coords, held item coords, status coords, pokeball coords
-        { 24,  14,  108,  11, 102,  21,  24,  18}, //Xyi X offset right, Y offset down.
-        {136,  22, 150,  41, 216,  27, 136,  26},
-        { 24,  54,  108,  51, 102,  61,  24,  58},
-        {136,  62, 150,  81, 216,  67, 136,  66},
-        { 24,  94,  108, 91, 102,  101,  24,  98},
-        {136, 102, 150, 121, 216, 107, 136, 106},
+        { 24,  14,  108,  12, 102,  21,  24,  18}, //Xyi X offset right, Y offset down.
+        {136,  22, 220,  20, 214,  29, 136,  26},
+        { 24,  54,  108,  52, 102,  61,  24,  58},
+        {136,  62, 220,  60, 214,  69, 136,  66},
+        { 24,  94,  108, 92, 102,  101,  24,  98},
+        {136, 102, 220, 100, 214, 109, 136, 106},
     },
     [PARTY_LAYOUT_DOUBLE] = 
     {
