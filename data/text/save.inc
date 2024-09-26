@@ -9,13 +9,11 @@ gText_AlreadySaveFile_WouldLikeToOverwrite::
 	.string "overwrite it?$"
 
 gText_SavingDontTurnOffThePower::
-	.string "SAVING...\n"
-	.string "DON'T TURN OFF\l"
-	.string "THE POWER.$"
+	.string "Now saving...$"
 
 gText_PlayerSavedTheGame::
 	.string "{PLAYER} saved\n"
-	.string "the game.$"
+	.string "the game!$"
 
 gText_SaveFailed2::
 	.string "セーブに　しっぱい　しました‥$"
