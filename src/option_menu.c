@@ -307,7 +307,7 @@ static void OptionMenu_PickSwitchCancel(void)
 {
     s32 x;
     x = 0xE4 - GetStringWidth(FONT_NORMAL, gText_PickSwitchCancel, 0);
-    FillWindowPixelBuffer(2, PIXEL_FILL(15)); 
+    FillWindowPixelBuffer(2, PIXEL_FILL(1)); 
     AddTextPrinterParameterized3(2, FONT_NORMAL, x, 0, sOptionMenuPickSwitchCancelTextColor, 0, gText_PickSwitchCancel);
     PutWindowTilemap(2);
     CopyWindowToVram(2, COPYWIN_FULL);
@@ -460,7 +460,7 @@ static void BufferOptionMenuString(u8 selection)
     u8 dst[3];
     u8 x, y;
     
-    memcpy(dst, sOptionMenuTextColor, 3);
+    memcpy(dst, sOptionMenuTextColor, 9);
     x = 0x82;
     y = ((GetFontAttribute(FONT_NORMAL, FONTATTR_MAX_LETTER_HEIGHT) - 1) * selection) + 2;
     FillWindowPixelRect(1, 1, x, y, 0x46, GetFontAttribute(FONT_NORMAL, FONTATTR_MAX_LETTER_HEIGHT));
