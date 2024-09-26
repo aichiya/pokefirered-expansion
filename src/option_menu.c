@@ -460,7 +460,7 @@ static void BufferOptionMenuString(u8 selection)
     u8 dst[3];
     u8 x, y;
     
-    memcpy(dst, sOptionMenuTextColor, 9);
+    memcpy(dst, sOptionMenuTextColor, 3);
     x = 0x82;
     y = ((GetFontAttribute(FONT_NORMAL, FONTATTR_MAX_LETTER_HEIGHT) - 1) * selection) + 2;
     FillWindowPixelRect(1, 1, x, y, 0x46, GetFontAttribute(FONT_NORMAL, FONTATTR_MAX_LETTER_HEIGHT));
