@@ -1296,16 +1296,12 @@ CableClub_Text_WhichService::
 	.string "wish to use?$"
 
 CableClub_Text_TradeMonsUsingLinkCable::
-	.string "Trade POKéMON\n"
-	.string "with another\l"
-	.string "player using a\l"
-	.string "Game Link cable.$"
+	.string "Trade POKéMON with\n"
+	.string "a Game Link cable.$"
 
 CableClub_Text_BattleUsingLinkCable::
-	.string "You may battle\n"
-	.string "another player\l"
-	.string "using a Game\l"
-	.string "Link cable.$"
+	.string "Battle using a\n"
+	.string "Game Link cable.$"
 
 @ Unused, translated in Emerald
 CableClub_Text_CloseThisMenu::
@@ -1481,7 +1477,8 @@ CableClub_Text_CanMixRecords::
 	.string "あそびかたを　せつめいします$"
 
 CableClub_Text_CancelSelectedItem::
-	.string "Cancels the selected MENU item.$"
+	.string "Cancels the menu\n"
+	.string "item selection.$"
 
 @ Unused, translated in Emerald
 CableClub_Text_WhichBattleMode::
@@ -1620,8 +1617,7 @@ CableClub_Text_TradePokemon::
 	.string "Would you like to trade POKéMON?$"
 
 CableClub_Text_PlayWhichBattleMode::
-	.string "Which Battle Mode would you like\n"
-	.string "to play?$"
+	.string "Which Battle Mode?$"
 
 CableClub_Text_UseBerryCrush::
 	.string "Would you like to use the\n"
