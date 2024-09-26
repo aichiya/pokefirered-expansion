@@ -16,8 +16,7 @@ ViridianForest_Text_RickDefeat::
 
 ViridianForest_Text_RickPostBattle::
     .string "Ssh! YouÛl scare\n"
-    .string "the bugs away!\l"
-    .string "Another time, okay?$"
+    .string "the bugs away!$"
 
 ViridianForest_Text_DougIntro::
     .string "Yo! You canÑ jam\n"
