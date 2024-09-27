@@ -31,9 +31,6 @@ PewterCity_EventScript_GymGuide::
 	end
 
 PewterCity_EventScript_WalkToGymEast::
-	applymovement OBJ_EVENT_ID_PLAYER, PewterCity_Movement_PlayerWaitForGuideEast
-	applymovement LOCALID_GYM_GUIDE, PewterCity_Movement_GuideMoveToLeadEast
-	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, PewterCity_Movement_PlayerWalkToGymEast
 	applymovement LOCALID_GYM_GUIDE, PewterCity_Movement_GuideWalkToGymEast
 	waitmovement 0
@@ -83,22 +80,11 @@ PewterCity_EventScript_WalkToGymEast::
 .macro walk_to_gym_alt
 .endm
 
-PewterCity_Movement_PlayerWaitForGuideEast::
-	delay_16
-	delay_16
-	delay_4
-	walk_in_place_faster_down
-	step_end
-
 PewterCity_Movement_PlayerWalkToGymEast::
+	walk_right
+	walk_down
 	walk_down
 	walk_to_gym
-	step_end
-
-PewterCity_Movement_PlayerWaitForGuideWest::
-	step_end
-
-PewterCity_Movement_PlayerWalkToGymWest::
 	step_end
 
 PewterCity_Movement_PlayerWaitForGuideNorth::
@@ -110,14 +96,9 @@ PewterCity_Movement_PlayerWalkToGymNorth::
 	walk_to_gym
 	step_end
 
-PewterCity_Movement_GuideMoveToLeadEast::
-	walk_down
-	walk_left
-	walk_in_place_faster_up
-	walk_in_place_up
-	step_end
-
 PewterCity_Movement_GuideWalkToGymEast::
+	walk_down
+	walk_down
 	walk_to_gym
 	walk_right
 	walk_in_place_faster_left
