@@ -18,7 +18,7 @@ GAME FREAK splash screen needs improvements.
 Player name no preset choices.
 
 -Oak's Lab-
-Red and Rival sprites during intro sequence are wrong, use SGB style.
+Red and Rival sprites during intro sequence are wrong, use Pikachu palette.
 
 -Battle-
 UI layout not finished.
@@ -37,6 +37,9 @@ Binding effect not altered.
 
 -Pallet Town-
 Daisy is supposed to wander after the elite 4 is defeated.
+
+-Pewter City-
+Gym guide event pathing incorrect if directly talked to.
 
 -Route9-
 Day Care man dialogue for level up not checked.
