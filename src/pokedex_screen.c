@@ -523,7 +523,7 @@ static const struct ListMenuTemplate sListMenuTemplate_OrderedListMenu = {
     .lettersSpacing = 1,
     .itemVerticalPadding = 0,
     .scrollMultiple = 1,
-    .fontId = FONT_NORMAL,
+    .fontId = FONT_SMALL,
     .cursorKind = 0,
 };
 
@@ -2864,7 +2864,7 @@ void DexScreen_PrintMonFlavorText(u8 windowId, u16 species, u8 x, u8 y)
     {
         printerTemplate.currentChar = gPokedexEntries[species].description;
         printerTemplate.windowId = windowId;
-        printerTemplate.fontId = FONT_NORMAL;
+        printerTemplate.fontId = FONT_SMALL;
         printerTemplate.letterSpacing = 1;
         printerTemplate.lineSpacing = 0;
         printerTemplate.unk = 0;
@@ -2872,7 +2872,7 @@ void DexScreen_PrintMonFlavorText(u8 windowId, u16 species, u8 x, u8 y)
         printerTemplate.bgColor = 0;
         printerTemplate.shadowColor = 2;
 
-        length = GetStringWidth(FONT_NORMAL, gPokedexEntries[species].description, 0);
+        length = GetStringWidth(FONT_SMALL, gPokedexEntries[species].description, 0);
         xCenter = x + (240 - length) / 2;
 
         if (xCenter > 0)
@@ -2941,7 +2941,7 @@ static u8 DexScreen_DrawMonDexPage(bool8 justRegistered)
     // Species stats
     FillWindowPixelBuffer(sPokedexScreenData->windowIds[1], PIXEL_FILL(0));
     DexScreen_PrintMonDexNo(sPokedexScreenData->windowIds[1], FONT_SMALL, sPokedexScreenData->dexSpecies, 0, 8);
-    DexScreen_AddTextPrinterParameterized(sPokedexScreenData->windowIds[1], FONT_NORMAL, gSpeciesNames[sPokedexScreenData->dexSpecies], 28, 8, 0);
+    DexScreen_AddTextPrinterParameterized(sPokedexScreenData->windowIds[1], FONT_SMALL, gSpeciesNames[sPokedexScreenData->dexSpecies], 28, 8, 0);
     DexScreen_PrintMonCategory(sPokedexScreenData->windowIds[1], sPokedexScreenData->dexSpecies, 0, 24);
     DexScreen_PrintMonHeight(sPokedexScreenData->windowIds[1], sPokedexScreenData->dexSpecies, 0, 36);
     DexScreen_PrintMonWeight(sPokedexScreenData->windowIds[1], sPokedexScreenData->dexSpecies, 0, 48);
