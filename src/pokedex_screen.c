@@ -356,7 +356,7 @@ static const struct ListMenuTemplate sListMenuTemplate_KantoDexModeSelect = {
     .lettersSpacing = 1,
     .itemVerticalPadding = 0,
     .scrollMultiple = 0,
-    .fontId = FONT_NORMAL,
+    .fontId = FONT_SMALL,
     .cursorKind = 0,
 };
 
@@ -400,7 +400,7 @@ static const struct ListMenuTemplate sListMenuTemplate_NatDexModeSelect = {
     .lettersSpacing = 1,
     .itemVerticalPadding = 0,
     .scrollMultiple = 0,
-    .fontId = FONT_NORMAL,
+    .fontId = FONT_SMALL,
     .cursorKind = 0,
 };
 
@@ -1153,9 +1153,9 @@ static void DexScreen_InitGfxForTopMenu(void)
         listMenuTemplate.windowId = sPokedexScreenData->modeSelectWindowId;
         sPokedexScreenData->modeSelectListMenuId = ListMenuInit(&listMenuTemplate, sPokedexScreenData->modeSelectCursorPos, sPokedexScreenData->modeSelectItemsAbove);
         FillWindowPixelBuffer(sPokedexScreenData->dexCountsWindowId, PIXEL_FILL(0));
-        DexScreen_AddTextPrinterParameterized(sPokedexScreenData->dexCountsWindowId, FONT_NORMAL_COPY_1, gText_Seen, 0, 9, 0);
+        DexScreen_AddTextPrinterParameterized(sPokedexScreenData->dexCountsWindowId, FONT_SMALL, gText_Seen, 0, 9, 0);
         DexScreen_PrintNum3RightAlign(sPokedexScreenData->dexCountsWindowId, 1, sPokedexScreenData->numSeenKanto, 32, 21, 2);
-        DexScreen_AddTextPrinterParameterized(sPokedexScreenData->dexCountsWindowId, FONT_NORMAL_COPY_1, gText_Owned, 0, 37, 0);
+        DexScreen_AddTextPrinterParameterized(sPokedexScreenData->dexCountsWindowId, FONT_SMALL, gText_Owned, 0, 37, 0);
         DexScreen_PrintNum3RightAlign(sPokedexScreenData->dexCountsWindowId, 1, sPokedexScreenData->numOwnedKanto, 32, 49, 2);
     }
     FillWindowPixelBuffer(0, PIXEL_FILL(15));
@@ -2331,7 +2331,7 @@ bool8 DexScreen_DrawMonPicInCategoryPage(u16 species, u8 slot, u8 numSlots)
             sPokedexScreenData->categoryMonInfoWindowIds[slot] = AddWindow(&template);
             CopyToWindowPixelBuffer(sPokedexScreenData->categoryMonInfoWindowIds[slot], sCategoryMonInfoBgTiles, 0, 0);
             DexScreen_PrintMonDexNo(sPokedexScreenData->categoryMonInfoWindowIds[slot], FONT_SMALL, species, 12, 0);
-            DexScreen_AddTextPrinterParameterized(sPokedexScreenData->categoryMonInfoWindowIds[slot], FONT_NORMAL, gSpeciesNames[species], 2, 13, 0);
+            DexScreen_AddTextPrinterParameterized(sPokedexScreenData->categoryMonInfoWindowIds[slot], FONT_SMALL, gSpeciesNames[species], 2, 13, 0);
             if (DexScreen_GetSetPokedexFlag(species, FLAG_GET_CAUGHT, TRUE))
                 BlitBitmapRectToWindow(sPokedexScreenData->categoryMonInfoWindowIds[slot], sDexScreen_CaughtIcon, 0, 0, 8, 8, 2, 3, 8, 8);
             PutWindowTilemap(sPokedexScreenData->categoryMonInfoWindowIds[slot]);
@@ -3081,7 +3081,7 @@ u8 DexScreen_DrawMonAreaPage(void)
     // Print species name
     FillWindowPixelBuffer(sPokedexScreenData->windowIds[8], PIXEL_FILL(0));
     DexScreen_PrintMonDexNo(sPokedexScreenData->windowIds[8], FONT_SMALL, species, 0, 0);
-    DexScreen_AddTextPrinterParameterized(sPokedexScreenData->windowIds[8], FONT_NORMAL, gSpeciesNames[species], 3, 12, 0);
+    DexScreen_AddTextPrinterParameterized(sPokedexScreenData->windowIds[8], FONT_SMALL, gSpeciesNames[species], 3, 12, 0);
     PutWindowTilemap(sPokedexScreenData->windowIds[8]);
     CopyWindowToVram(sPokedexScreenData->windowIds[8], COPYWIN_GFX);
 
@@ -3440,13 +3440,13 @@ void DexScreen_PrintStringWithAlignment(const u8 * str, s32 mode)
         x = 8;
         break;
     case TEXT_CENTER:
-        x = (u32)(240 - GetStringWidth(FONT_NORMAL, str, 0)) / 2;
+        x = (u32)(240 - GetStringWidth(FONT_SMALL, str, 0)) / 2;
         break;
     case TEXT_RIGHT:
     default:
-        x = 232 - GetStringWidth(FONT_NORMAL, str, 0);
+        x = 232 - GetStringWidth(FONT_SMALL, str, 0);
         break;
     }
 
-    DexScreen_AddTextPrinterParameterized(0, FONT_NORMAL, str, x, 2, 4);
+    DexScreen_AddTextPrinterParameterized(0, FONT_SMALL, str, x, 2, 4);
 }
