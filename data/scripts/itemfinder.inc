@@ -12,7 +12,7 @@ EventScript_DigUpItemPutInPocket::
 	waitfanfare
 	waitmessage
 	delay 60
-	msgbox Text_PutItemAway
+	@ msgbox Text_PutItemAway
 	special SetHiddenItemFlag
 	releaseall
 	end
