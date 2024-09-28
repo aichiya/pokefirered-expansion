@@ -12,10 +12,12 @@ PewterCity_Museum_1F_Text_Right50YThankYou::
     .string "Thank you!$"
 
 PewterCity_Museum_1F_Text_DontHaveEnoughMoney::
-    .string "You donÑ have enough money.$"
+    .string "You donÑ have\n"
+    .string "enough money.$"
 
 PewterCity_Museum_1F_Text_PleaseEnjoyYourself::
-    .string "Please enjoy yourself.$"
+    .string "Please enjoy\n"
+    .string "yourself.$"
 
 PewterCity_Museum_1F_Text_DoYouKnowWhatAmberIs::
     .string "You canÑ sneak in the back way!\n"
