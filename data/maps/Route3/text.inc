@@ -58,8 +58,10 @@ Route3_Text_GregDefeat::
     .string "wouldße won!$"
 
 Route3_Text_GregPostBattle::
-    .string "If a POKéMON BOX on the PC gets\n"
-    .string "full, just switch to another BOX!$"
+    .string "If a POKéMON BOX\n"
+    .string "on the PC gets\l"
+    .string "full, just switch\l"
+    .string "to another BOX!$"
 
 Route3_Text_SallyIntro::
     .string "That look you\n"
