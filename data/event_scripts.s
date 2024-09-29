@@ -1003,7 +1003,8 @@ Text_TheresBedLetsRest::
 	.string "やすんでいこう$"
 
 Text_FoundTMHMContainsMove::
-	.string "{PLAYER} found {STR_VAR_2}!$"
+	.string "{PLAYER} found\n"
+	.string "{STR_VAR_2}!$"
 
 	.include "data/text/seagallop.inc"
 
