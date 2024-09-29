@@ -1274,7 +1274,7 @@ const u16 gTrappingMoves[NUM_TRAPPING_MOVES + 1] =
 };
 
 const u8 gText_PkmnIsEvolving[] = _("What? {STR_VAR_1}\nis evolving!");
-const u8 gText_CongratsPkmnEvolved[] = _("Congratulations! Your {STR_VAR_1}\nevolved into {STR_VAR_2}!{WAIT_SE}\p");
+const u8 gText_CongratsPkmnEvolved[] = _("{STR_VAR_1} evolved\ninto {STR_VAR_2}!{WAIT_SE}\p"); //"Congratulations! Your {STR_VAR_1}\nevolved into {STR_VAR_2}!{WAIT_SE}\p"
 const u8 gText_PkmnStoppedEvolving[] = _("Huh? {STR_VAR_1}\nstopped evolving!\p");
 const u8 gText_EllipsisQuestionMark[] = _("……?\p");
 const u8 gText_WhatWillPkmnDo[] = _("");
