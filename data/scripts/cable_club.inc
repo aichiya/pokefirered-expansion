@@ -97,7 +97,7 @@ CableClub_EventScript_CloseLinkAndExitLinkRoom::
 	special HelpSystem_Enable
 	special QuestLog_StartRecordingInputsAfterDeferredEvent
 	setvar VAR_CABLE_CLUB_STATE, 0
-	textcolor NPC_TEXT_COLOR_FEMALE
+	@ textcolor NPC_TEXT_COLOR_FEMALE
 	goto_if_eq VAR_0x8007, 0, CableClub_EventScript_PlayerExitLinkRoom
 	applymovement VAR_0x8007, Movement_AttendantMoveUpRight
 	waitmovement 0
@@ -121,7 +121,7 @@ CableClub_EventScript_PlayerExitTradeCenter::
 	special HelpSystem_Enable
 	special QuestLog_StartRecordingInputsAfterDeferredEvent
 	setvar VAR_CABLE_CLUB_STATE, 0
-	textcolor NPC_TEXT_COLOR_FEMALE
+	@ textcolor NPC_TEXT_COLOR_FEMALE
 	goto_if_eq VAR_0x8007, 0, CableClub_EventScript_PlayerExitLinkRoom
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerFaceAttendantRight
 	waitmovement 0
@@ -143,7 +143,7 @@ CableClub_EventScript_PlayerExitUnionRoom::
 	special HelpSystem_Enable
 	special QuestLog_StartRecordingInputsAfterDeferredEvent
 	setvar VAR_CABLE_CLUB_STATE, 0
-	textcolor NPC_TEXT_COLOR_FEMALE
+	@ textcolor NPC_TEXT_COLOR_FEMALE
 	goto_if_eq VAR_0x8007, 0, CableClub_EventScript_PlayerExitLinkRoom
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerFaceAttendantRight
 	waitmovement 0
@@ -171,7 +171,7 @@ CableClub_EventScript_PlayerExitLinkRoom::
 
 CableClub_EventScript_Tutorial::
 	lockall
-	textcolor NPC_TEXT_COLOR_FEMALE
+	@ textcolor NPC_TEXT_COLOR_FEMALE
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox CableClub_Text_FirstTimeRightThisWay
@@ -1367,7 +1367,8 @@ CableClub_Text_PlayersMadeDifferentSelections::
 	.string "made different selections.$"
 
 CableClub_Text_PleaseVisitAgain::
-	.string "Please do visit again.$"
+	.string "Please do visit\n"
+	.string "again.$"
 
 CableClub_Text_IncorrectNumberOfParticipants::
 	.string "The number of participants is\n"

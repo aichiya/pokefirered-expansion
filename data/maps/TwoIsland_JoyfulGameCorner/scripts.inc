@@ -39,7 +39,7 @@ TwoIsland_JoyfulGameCorner_EventScript_FoundLostelleScene::
 	lockall
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox TwoIsland_JoyfulGameCorner_Text_YouRescuedLostelle
-	textcolor NPC_TEXT_COLOR_FEMALE
+	@ textcolor NPC_TEXT_COLOR_FEMALE
 	special BufferBigGuyOrBigGirlString
 	msgbox TwoIsland_JoyfulGameCorner_Text_LostelleItsOkayDaddy
 	closemessage

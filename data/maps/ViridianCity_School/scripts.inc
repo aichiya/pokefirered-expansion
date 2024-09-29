@@ -38,7 +38,7 @@ ViridianCity_School_EventScript_Notebook::
 	msgbox ViridianCity_School_Text_NotebookFourthPage
 	applymovement LOCALID_LASS, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
-	textcolor NPC_TEXT_COLOR_FEMALE
+	@ textcolor NPC_TEXT_COLOR_FEMALE
 	msgbox ViridianCity_School_Text_HeyDontLookAtMyNotes
 	releaseall
 	end

@@ -1,6 +1,6 @@
 EventScript_AfterWhiteOutHeal::
 	lockall
-	textcolor NPC_TEXT_COLOR_FEMALE
+	@ textcolor NPC_TEXT_COLOR_FEMALE
 	call EventScript_PkmnCenterNurse_TakeAndHealPkmn
 	call_if_unset FLAG_DEFEATED_BROCK, EventScript_AfterWhiteOutHealMsgPreBrock
 	call_if_set FLAG_DEFEATED_BROCK, EventScript_AfterWhiteOutHealMsg
@@ -22,7 +22,7 @@ EventScript_AfterWhiteOutHealMsg::
 
 EventScript_AfterWhiteOutMomHeal::
 	lockall
-	textcolor NPC_TEXT_COLOR_FEMALE
+	@ textcolor NPC_TEXT_COLOR_FEMALE
 	applymovement LOCALID_MOM, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	msgbox Text_HadQuiteAnExperienceTakeRest

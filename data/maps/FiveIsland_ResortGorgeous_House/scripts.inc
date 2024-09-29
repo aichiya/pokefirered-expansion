@@ -46,7 +46,7 @@ FiveIsland_ResortGorgeous_House_EventScript_ShowRequestedMon::
 	msgbox FiveIsland_ResortGorgeous_House_Text_ButlerYesMyLady
 	applymovement LOCALID_SELPHY, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
-	textcolor NPC_TEXT_COLOR_FEMALE
+	@ textcolor NPC_TEXT_COLOR_FEMALE
 	msgbox FiveIsland_ResortGorgeous_House_Text_SelphyGiveTokenOfAppreciation
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox FiveIsland_ResortGorgeous_House_Text_ButlerIShallDoAsYouBid
@@ -95,7 +95,7 @@ FiveIsland_ResortGorgeous_House_EventScript_ButlerApproachPlayerWest::
 FiveIsland_ResortGorgeous_House_EventScript_NoRoomForReward::
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox FiveIsland_ResortGorgeous_House_Text_ButlerBagAppearsToBeFull
-	textcolor NPC_TEXT_COLOR_FEMALE
+	@ textcolor NPC_TEXT_COLOR_FEMALE
 	msgbox FiveIsland_ResortGorgeous_House_Text_OhHowDisappointing
 	setflag SHOWN_REQUESTED_MON
 	setvar VAR_RESORT_GORGEOUS_REQUESTED_MON, SPECIES_NONE
