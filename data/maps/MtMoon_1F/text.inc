@@ -52,7 +52,7 @@ MtMoon_1F_Text_JovanPostBattle::
 
 MtMoon_1F_Text_IrisIntro::
     .string "What? Iá waiting\n"
-    .string "for my freinds to\l"
+    .string "for my friends to\l"
     .string "find me here.$"
 
 MtMoon_1F_Text_IrisDefeat::
