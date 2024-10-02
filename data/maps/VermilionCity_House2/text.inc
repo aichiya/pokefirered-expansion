@@ -9,7 +9,7 @@ VermilionCity_House2_Text_ThatsTooBad::
 
 VermilionCity_House2_Text_ThisIsNoMon::
 	.string "...This is no\n"
-	.string "{STR_VAR_1}."
+	.string "{STR_VAR_1}.\p"
 	.string "If you get one,\n"
 	.string "trade it with me!$"
 

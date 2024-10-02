@@ -18,8 +18,10 @@ CeruleanCity_PokemonCenter_1F_Text_EveryoneCallsBillPokemaniac::
     .string "their POKéMON?$"
 
 CeruleanCity_PokemonCenter_1F_Text_BillCollectsRareMons::
-    .string "BILL has lots of POKéMON!\n"
-    .string "He collects rare ones, too!$"
+    .string "BILL has lots of\n"
+    .string "POKéMON!\p"
+    .string "He collects rare\n"
+    .string "ones too!$"
 
 CeruleanCity_PokemonCenter_1F_Text_TryTradingUpstairs::
     .string "Why donÑ you go upstairs and try\n"

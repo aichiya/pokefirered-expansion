@@ -8,7 +8,7 @@ VermilionCity_Mart_Text_TeamRocketAreWickedPeople::
     .string "POKéMON.\p"
     .string "They also abandon\n"
     .string "POKéMON that they\l"
-    .string "they consider not to\l"
+    .string "consider not to\l"
     .string "be popular or\l"
     .string "useful.$"
 

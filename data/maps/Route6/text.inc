@@ -60,7 +60,7 @@ Route6_Text_IsabelleDefeat::
 
 Route6_Text_IsabellePostBattle::
     .string "I want to get\n"
-    .string "stronger! What"
+    .string "stronger! WhatÙ\l"
     .string "your secret?$"
 
 Route6_Text_ElijahIntro::

@@ -34,7 +34,7 @@ Route25_SeaCottage_Text_ImBillHelpMeOutLady::
 
 Route25_SeaCottage_Text_RunCellSeparationOnPC::
     .string "When Iá in the\n"
-    .string "TELEPORTER, got to\l"
+    .string "TELEPORTER, go to\l"
     .string "my PC and run the\l"
     .string "Cell Separation\l"
     .string "System!$"
@@ -91,7 +91,7 @@ Route25_SeaCottage_Text_YouveGotTooMuchStuff::
 
 Route25_SeaCottage_Text_SSAnnePartyYouGoInstead::
     .string "That cruise ship,\n"
-    .string "S.S.ANNE, is on\l"
+    .string "S.S.ANNE, is in\l"
     .string "VERMILION CITY.\l"
     .string "ItÙ passengers\l"
     .string "are all trainers!\p"

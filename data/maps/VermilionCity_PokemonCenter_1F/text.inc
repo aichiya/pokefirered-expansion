@@ -16,11 +16,16 @@ VermilionCity_PokemonCenter_1F_Text_PoisonedMonFaintedWhileWalking::
     .string "were walking!$"
 
 VermilionCity_PokemonCenter_1F_Text_AllMonWeakToSpecificTypes::
-    .string "It is true that a higher level\n"
-    .string "POKéMON will be more powerful...\p"
-    .string "But, all POKéMON will have weak\n"
-    .string "points against specific types.\p"
-    .string "So, there is no universally\n"
+    .string "It is true that a\n"
+    .string "higher level\l"
+    .string "POKéMON will be\l"
+    .string "more powerful...\p"
+    .string "But, all POKéMON\n"
+    .string "will have weak\l"
+    .string "points against\l"
+    .string "specific types.\p"
+    .string "So, there is no\n"
+    .string "universally\l"
     .string "strong POKéMON.$"
 
 VermilionCity_PokemonCenter_1F_Text_UrgeToBattleSomeoneAgain::

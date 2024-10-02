@@ -6,7 +6,7 @@ VermilionCity_Text_GrimerMultipliesInSludge::
     .string "toxic sludge!$"
 
 VermilionCity_Text_DidYouSeeSSAnneInHarbor::
-    .string "Did you see the S.S.\n"
+    .string "Did you see S.S.\n"
     .string "ANNE moored in\l"
     .string "the harbor?$"
 

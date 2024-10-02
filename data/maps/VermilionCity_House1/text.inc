@@ -13,7 +13,7 @@ VermilionCity_House1_Text_TakeThisAndFish::
     .string "fish, young one!$"
 
 VermilionCity_House1_Text_ReceivedOldRodFromFishingGuru::
-    .string "{PLAYER} received an\n"
+    .string "{PLAYER} got an\n"
     .string "OLD ROD!$"
 
 VermilionCity_House1_Text_FishingIsAWayOfLife::

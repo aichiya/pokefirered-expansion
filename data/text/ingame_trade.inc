@@ -1,5 +1,5 @@
 Trade_Text_LookingForMonWannaTradeForMon::
-	.string "I'm looking for\n"
+	.string "Iá looking for\n"
 	.string "{STR_VAR_1}!\p"
 	.string "Wanna trade one for\n"
 	.string "{STR_VAR_2}?$"
@@ -10,7 +10,7 @@ Trade_Text_AwwOhWell::
 
 Trade_Text_WhatThatsNoMon::
 	.string "What?\n"
-	.string "That's not {STR_VAR_1}!\p"
+	.string "ThatÙ not {STR_VAR_1}!\p"
 	.string "If you get one,\n"
 	.string "come back here!$"
 
@@ -18,19 +18,24 @@ Trade_Text_HeyThanks::
 	.string "Hey, thanks!$"
 
 Trade_Text_IsntMyOldMonGreat::
-	.string "Isn't my old {STR_VAR_2} great?$"
+	.string "isnÑ my old\n"
+	.string "{STR_VAR_2} great?$"
 
 Trade_Text_DoYouHaveMonWouldYouTradeForMon::
-	.string "Hello there! Do you want to trade\n"
-	.string "your {STR_VAR_1} for {STR_VAR_2}?$"
+	.string "Hello there! Do\n"
+	.string "you want to trade\l"
+	.string "your {STR_VAR_1}\l"
+	.string "for {STR_VAR_2}?$"
 
 Trade_Text_WellIfYouDontWantTo::
-	.string "Well, if you don't want to...$"
+	.string "Well, if you\n"
+	.string "donÑ want to...$"
 
 Trade_Text_ThisIsntMon::
-	.string "Hmmm?\n"
-	.string "This isn't a {STR_VAR_1}.\p"
-	.string "Think of me if you get one.$"
+	.string "Hmmm? This isnÑ\n"
+	.string "{STR_VAR_1}.\p"
+	.string "Think of me when\n"
+	.string "you get one.$"
 
 Trade_Text_Thanks::
 	.string "Thanks!$"
@@ -40,21 +45,25 @@ Trade_Text_HasTradedMonGrownStronger::
 	.string "has it grown stronger?$"
 
 Trade_Text_DoYouHaveMonWantToTradeForMon::
-	.string "Hi!\n"
-	.string "Do you have {STR_VAR_1}?\p"
-	.string "Want to trade it for\n"
-	.string "{STR_VAR_2}?$"
+	.string "Hi! Do you have\n"
+	.string "{STR_VAR_1}?\p"
+	.string "Want to trade it\n"
+	.string "for {STR_VAR_2}?$"
 
 Trade_Text_ThatsTooBad::
-	.string "That's too bad.$"
+	.string "ThatÙ too bad.$"
 
 Trade_Text_ThisIsNoMon::
-	.string "...This is no {STR_VAR_1}.\p"
-	.string "If you get one, trade it with me!$"
+	.string "...This is no\n"
+	.string "{STR_VAR_1}.\p"
+	.string "If you get one,\n"
+	.string "trade it with me!$"
 
 Trade_Text_ThanksYoureAPal::
-	.string "Thanks, you're a pal!$"
+	.string "Thanks pal!$"
 
 Trade_Text_HowIsMyOldMon::
-	.string "How is my old {STR_VAR_2}?\n"
-	.string "My {STR_VAR_1} is doing great!$"
+	.string "How is my old\n"
+	.string "{STR_VAR_2}?\p"
+	.string "{STR_VAR_1} is\n"
+	.string "doing great!$"

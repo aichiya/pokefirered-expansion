@@ -48,11 +48,11 @@ CeruleanCity_House1_Text_ObeyLv50Strength::
     .string "Any higher, they\n"
     .string "become unruly!\p"
     .string "It also lets you\n"
-    .string "use STRENGTH out-$"
+    .string "use STRENGTH out-\l"
     .string "side of battle."
 
 CeruleanCity_House1_Text_DefenseStatSurf::
-    .string "The DEFENSE all\n"
+    .string "The DEFENSE of all\n"
     .string "POKéMON increases\l"
     .string "a little bit.\p"
     .string "It also lets you\n"
