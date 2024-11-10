@@ -1,7 +1,9 @@
 Route8_WestEntrance_Text_ThirstyOnGuardDuty::
     .string "Iá on guard duty.\n"
-    .string "Gee, Iá thirsty, though!\p"
-    .string "Oh wait there, the roadÙ closed.$"
+    .string "Gee, Iá thirsty,\l"
+    .string "though!\p"
+    .string "Oh wait there,\n"
+    .string "the roadÙ closed.$"
 
 Route8_WestEntrance_Text_ThatTeaLooksTasty::
     .string "Whoa, boy!\n"
@@ -9,19 +11,22 @@ Route8_WestEntrance_Text_ThatTeaLooksTasty::
 
 Route8_WestEntrance_Text_ThanksIllShareTeaWithGuards::
     .string "...\n"
-    .string "Huh? I can have this drink?\p"
-    .string "Gee, thanks!\l"
-    .string "...\n"
-    .string "Glug, glug...\p"
+    .string "Huh? I can have\l"
+    .string "this drink?\p"
+    .string "Gee, thanks!\n"
     .string "...\l"
-    .string "Gulp...\n"
-    .string "If you want to go to\p"
-    .string "SAFFRON CITY...\l"
-    .string "...\n"
-    .string "You can go on through.\p"
-    .string "IÛl share this with the\n"
-    .string "other guards!$"
+    .string "Glug, glug...\l"
+    .string "...\l"
+    .string "Gulp...\p"
+    .string "If you want to go\n"
+    .string "to SAFFRON CITY...\l"
+    .string "...\p"
+    .string "You can go on\l"
+    .string "through. IÛl\l"
+    .string "share this with\l"
+    .string "the other guards!$"
 
 Route8_WestEntrance_Text_HiHowsItGoing::
-    .string "Hi, thanks for the cool drinks!$"
+    .string "Hi, thanks for\n"
+    .string "the cool drinks!$"
 

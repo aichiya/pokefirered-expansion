@@ -90,7 +90,7 @@ Route8_Text_MeganPostBattle::
     .string "HeÙ so mean!$"
 
 Route8_Text_RichIntro::
-    .string "Iá a rambling,n"
+    .string "Iá a rambling,\n"
     .string "gambling dude!$"
 
 Route8_Text_RichDefeat::

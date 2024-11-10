@@ -32,7 +32,7 @@ CeladonCity_Restaurant_Text_TakeThisImBusted::
     .string "more!$"
 
 CeladonCity_Restaurant_Text_ReceivedCoinCaseFromMan::
-    .string "{PLAYER} received a\n"
+    .string "{PLAYER} received\n"
     .string "COIN CASE!$"
 
 CeladonCity_Restaurant_Text_MakeRoomForThis::

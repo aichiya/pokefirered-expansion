@@ -1,7 +1,7 @@
 SSAnne_1F_Corridor_Text_LeStrongSilentType::
     .string "Bonjour!\n"
     .string "I am le waiter on\l"
-    .string "this ship!\l"
+    .string "this ship!\p"
     .string "I will be happy\n"
     .string "to serve you any-\l"
     .string "thing you please!\p"

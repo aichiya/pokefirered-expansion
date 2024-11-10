@@ -16,7 +16,7 @@ RocketHideout_B4F_Text_GiovanniPostBattle::
     .string "understand what I\l"
     .string "hope to achieve.\p"
     .string "I shall step\n"
-    .string "aside this time!"
+    .string "aside this time!\p"
     .string "I hope we meet\n"
     .string "again...$"
 

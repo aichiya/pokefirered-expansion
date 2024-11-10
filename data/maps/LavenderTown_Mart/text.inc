@@ -4,7 +4,6 @@ LavenderTown_Mart_Text_SearchingForStatRaiseItems::
     .string "the abilities of\l"
     .string "POKéMON during a\l"
     .string "single battle.\p"
-    .string "of a single battle.\p"
     .string "X ATTACK, X\n"
     .string "DEFEND, X SPEED\l"
     .string "and X SPECIAL are\l"

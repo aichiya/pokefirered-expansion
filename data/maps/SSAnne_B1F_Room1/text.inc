@@ -13,8 +13,8 @@ SSAnne_B1F_Room1_Text_PhillipPostBattle::
     .string "the ship.$"
 
 SSAnne_B1F_Room1_Text_BarnyIntro::
-    .string "Hello stranger!\p"
-    .string "Stop and chat!\n"
+    .string "Hello stranger!\n"
+    .string "Stop and chat!\p"
     .string "All my POKéMON\n"
     .string "are from the sea!$"
 

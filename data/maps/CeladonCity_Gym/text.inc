@@ -155,7 +155,7 @@ CeladonCity_Gym_Text_LoriPostBattle::
 
 CeladonCity_Gym_Text_MaryIntro::
     .string "Welcome to\n"
-    .string "CELADON GYM!\l"
+    .string "CELADON GYM!\p"
     .string "You better not\n"
     .string "underestimate\l"
     .string "girl power!$"
@@ -171,13 +171,15 @@ CeladonCity_Gym_Text_MaryPostBattle::
     .string "time!$"
 
 CeladonCity_Gym_Text_GymStatue::
-    .string "CELADON POKéMON GYM\n"
+    .string "CELADON CITY\n"
+    .string "POKéMON GYM\l"
     .string "LEADER: ERIKA\p"
     .string "WINNING TRAINERS:\n"
     .string "{RIVAL}$"
 
 CeladonCity_Gym_Text_GymStatuePlayerWon::
-    .string "CELADON POKéMON GYM\n"
+    .string "CELADON CITY\n"
+    .string "POKéMON GYM\l"
     .string "LEADER: ERIKA\p"
     .string "WINNING TRAINERS:\n"
     .string "{RIVAL}, {PLAYER}$"

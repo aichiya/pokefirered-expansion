@@ -10,6 +10,7 @@ CeladonCity_PokemonCenter_1F_Text_RodeHereFromFuchsia::
     .string "FUCHSIA!$"
 
 CeladonCity_PokemonCenter_1F_Text_GoToCyclingRoadIfIHadBike::
-    .string "If I had a BIKE, I would\n"
-    .string "go to CYCLING ROAD!$"
+    .string "If I had a BIKE,\n"
+    .string "I would go to\l"
+    .string "CYCLING ROAD!$"
 

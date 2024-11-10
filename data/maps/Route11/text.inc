@@ -97,7 +97,7 @@ Route11_Text_YasuDefeat::
 Route11_Text_YasuPostBattle::
     .string "ThereÙ a fat\n"
     .string "POKéMON that\l"
-    .string "comed down from\l"
+    .string "comes down from\l"
     .string "the mountains.\p"
     .string "ItÙ strong if\n"
     .string "you can get it.$"
@@ -120,7 +120,7 @@ Route11_Text_DaveIntro::
 
 Route11_Text_DaveDefeat::
     .string "YOUNGSTER: Too\n"
-    .string "much, yoo young!$"
+    .string "much, too young!$"
 
 Route11_Text_DavePostBattle::
     .string "I better go find\n"

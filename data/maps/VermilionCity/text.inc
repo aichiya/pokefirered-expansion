@@ -75,7 +75,7 @@ VermilionCity_Text_WelcomeToTheSSAnne::
 
 VermilionCity_Text_DoYouHaveATicket::
     .string "Welcome to S.S.\n"
-    .string "ANNE!\l"
+    .string "ANNE!\p"
     .string "Excuse me, do you\n"
     .string "have a ticket?$"
 

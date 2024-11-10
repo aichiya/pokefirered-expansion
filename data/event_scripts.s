@@ -851,7 +851,8 @@ Text_MakingPreparations::
 	.string "じゅんびちゅうです！$"
 
 Text_WantWhichFloor::
-	.string "Which floor do you want?$"
+	.string "Which floor do\n"
+	.string "you want?$"
 
 Text_BagItemCanBeRegistered::
 	.string "An item in the BAG can be\n"

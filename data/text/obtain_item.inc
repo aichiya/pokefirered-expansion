@@ -41,7 +41,8 @@ Text_FoundXItems::
 	.string "{STR_VAR_1} {STR_VAR_2}(s)!$"
 
 Text_ObtainedTheDecor::
-	.string "Obtained the {STR_VAR_2}!$"
+	.string "Obtained the\n"
+	.string "{STR_VAR_2}!$"
 
 Text_NoRoomForAnotherDecor::
 	.string "Too bad! There's no room left for\n"

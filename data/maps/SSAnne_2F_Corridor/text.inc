@@ -1,7 +1,7 @@
 SSAnne_2F_Corridor_Text_ThisShipIsLuxuryLiner::
     .string "This ship, she is\n"
     .string "a luxury liner\l"
-    .string "for trainerss!\p"
+    .string "for trainers!\p"
     .string "At every port, we\n"
     .string "hold parties with\l"
     .string "invited trainers!$"
@@ -41,7 +41,7 @@ SSAnne_2F_Corridor_Text_RivalPostBattle::
     .string "But, he was just a\n"
     .string "seasick, old man!\p"
     .string "But, CUT itself is\n"
-    .string "really useful!\l"
+    .string "really useful!\p"
     .string "You should go see\n"
     .string "him! Smell ya!$"
 

@@ -11,7 +11,8 @@ Route10_PokemonCenter_1F_Text_NuggetUselessSoldFor5000::
     .string "NUGGET for ¥5000!$"
 
 Route10_PokemonCenter_1F_Text_HeardGhostsHauntLavender::
-    .string "I heard that GHOSTSs haunt\n"
+    .string "I heard that\n"
+    .string "GHOSTs haunt\l"
     .string "LAVENDER TOWN!$"
 
 Route10_PokemonCenter_1F_Text_GiveEverstoneIfCaught20Mons::

@@ -68,7 +68,7 @@ Route10_Text_TrentPostBattle::
 
 Route10_Text_CarolIntro::
     .string "Iá feeling a bit\n"
-    .string "faint from this"
+    .string "faint from this\l"
     .string "tough hike.$"
 
 Route10_Text_CarolDefeat::
@@ -77,7 +77,7 @@ Route10_Text_CarolDefeat::
 
 Route10_Text_CarolPostBattle::
     .string "The POKéMON here\n"
-    .string "are so chunky!\l"
+    .string "are so chunky!\p"
     .string "There should be a\n"
     .string "pink one with a\l"
     .string "floral pattern!$"

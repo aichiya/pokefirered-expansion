@@ -10,6 +10,8 @@ LavenderTown_PokemonCenter_1F_Text_CubonesMotherKilledByRockets::
     .string "TEAM ROCKET!$"
 
 LavenderTown_PokemonCenter_1F_Text_PeoplePayForCuboneSkulls::
-    .string "CUBONEs wear skulls, right?\n"
-    .string "People will pay a lot for one!$"
+    .string "CUBONEs wear\n"
+    .string "skulls, right?\p"
+    .string "People will pay a\n"
+    .string "lot for one!$"
 

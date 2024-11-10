@@ -43,7 +43,7 @@ Route12_Text_ChipDefeat::
 
 Route12_Text_ChipPostBattle::
     .string "With a better ROD,\n"
-    .string "I could catch"
+    .string "I could catch\l"
     .string "better POKéMON!$"
 
 Route12_Text_JustinIntro::

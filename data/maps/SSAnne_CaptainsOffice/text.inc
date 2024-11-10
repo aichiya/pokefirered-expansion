@@ -47,8 +47,8 @@ SSAnne_CaptainsOffice_Text_YouHaveNoRoomForThis::
     .string "for this!$"
 
 SSAnne_CaptainsOffice_Text_YuckShouldntHaveLooked::
-    .string "Yuck!\n"
-    .string "ShouldnÑ have looked!$"
+    .string "Yuck! ShouldnÑ\n"
+    .string "have looked!$"
 
 SSAnne_CaptainsOffice_Text_HowToConquerSeasickness::
     .string "How to Conquer\n"

@@ -36,7 +36,7 @@ LavenderTown_Text_TownSign::
 
 LavenderTown_Text_SilphScopeNotice::
     .string "New SILPH SCOPE!\p"
-    .string "Make the Invisible\l"
+    .string "Make the Invisible\n"
     .string "Plain to See!\l"
     .string "SILPH CO.$"
 

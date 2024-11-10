@@ -14,7 +14,7 @@ Route9_Text_AliciaPostBattle::
 
 Route9_Text_ChrisIntro::
     .string "WhoÙ that walking\n"
-    .string "with those good"
+    .string "with those good\l"
     .string "looking POKéMON?$"
 
 Route9_Text_ChrisDefeat::
@@ -86,18 +86,18 @@ Route9_Text_BrentIntro::
     .string "from cocoons!$"
 
 Route9_Text_BrentDefeat::
-    .string "BUG CATCHER: WHAT?\p"
+    .string "BUG CATCHER: WHAT?\n"
     .string "What a total\l"
     .string "waste of time!$"
 
 Route9_Text_BrentPostBattle::
     .string "I have to collect\n"
-    .string "more than bugs to"
+    .string "more than bugs to\l"
     .string "get stronger...$"
 
 Route9_Text_AlanIntro::
     .string "Hahahaha!\n"
-    .string "Come on, dude!!$"
+    .string "Come on, dude!$"
 
 Route9_Text_AlanDefeat::
     .string "HIKER: Hahahaha!\n"
@@ -118,7 +118,7 @@ Route9_Text_ConnerDefeat::
 
 Route9_Text_ConnerPostBattle::
     .string "If you donÑ like\n"
-    .string "bug POKéMON, you"
+    .string "bug POKéMON, you\l"
     .string "bug me!$"
 
 Route9_Text_RouteSign::

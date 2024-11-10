@@ -1,6 +1,6 @@
 LavenderTown_House2_Text_WantMeToRateNicknames::
     .string "Hello, hello!\n"
-    .string "I am the official\n"
+    .string "I am the official\l"
     .string "NAME RATER!\p"
     .string "Want me to rate\n"
     .string "the nicknames of\l"
