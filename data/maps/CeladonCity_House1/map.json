@@ -1,7 +1,7 @@
 {
   "id": "MAP_CELADON_CITY_HOUSE1",
   "name": "CeladonCity_House1",
-  "layout": "LAYOUT_HOUSE5",
+  "layout": "LAYOUT_CELADON_CITY_ROCKET_HOUSE",
   "music": "MUS_CELADON",
   "region_map_section": "MAPSEC_CELADON_CITY",
   "requires_flash": false,
@@ -17,7 +17,7 @@
   "object_events": [
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_2",
+      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
       "x": 4,
       "y": 2,
       "elevation": 3,
@@ -36,7 +36,7 @@
       "x": 1,
       "y": 4,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 5,
       "trainer_type": "TRAINER_TYPE_NONE",

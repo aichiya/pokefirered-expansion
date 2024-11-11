@@ -302,6 +302,18 @@
       "blockdata_filepath": "data/layouts/CeladonCity_GameCorner/map.bin"
     },
     {
+      "id": "LAYOUT_CELADON_CITY_ROCKET_HOUSE",
+      "name": "CeladonCity_RocketHouse_Layout",
+      "width": 7,
+      "height": 8,
+      "border_width": 1,
+      "border_height": 1,
+      "primary_tileset": "gTileset_RB_General",
+      "secondary_tileset": "gTileset_RB_Condo",
+      "border_filepath": "data/layouts/CeladonCity_RocketHouse/border.bin",
+      "blockdata_filepath": "data/layouts/CeladonCity_RocketHouse/map.bin"
+    },
+    {
       "id": "LAYOUT_PEWTER_CITY_GYM",
       "name": "PewterCity_Gym_Layout",
       "width": 10,
