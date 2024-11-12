@@ -10,11 +10,14 @@ SaffronCity_PokemonCenter_1F_Text_SilphCoVictimOfFame::
     .string "TEAM ROCKET!$"
 
 SaffronCity_PokemonCenter_1F_Text_GreatIfEliteFourCameBeatRockets::
-    .string "It would be great if the ELITE FOUR\n"
-    .string "came and stomped TEAM ROCKET!$"
+    .string "It would be great\n"
+    .string "if the ELITE FOUR\l"
+    .string "came and stomped\l"
+    .string "TEAM ROCKET!$"
 
 SaffronCity_PokemonCenter_1F_Text_TeamRocketTookOff::
-    .string "TEAM ROCKET took off!\n"
-    .string "We can go out safely again!\l"
+    .string "TEAM ROCKET took\n"
+    .string "off! We can go\l"
+    .string "out safely again!\l"
     .string "ThatÙ great!$"
 

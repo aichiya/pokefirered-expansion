@@ -94,7 +94,7 @@ SaffronCity_Text_FullHealCuresStatus::
     .string "sleep and burns.\p"
     .string "It costs a bit\n"
     .string "more, but itÙ\l"
-    .string "more convenient$"
+    .string "more convenient.$"
 
 SaffronCity_Text_GreatBallImprovedCatchRate::
     .string "TRAINER TIPS\p"

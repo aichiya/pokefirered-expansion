@@ -21,7 +21,7 @@ Route6_NorthEntrance_Text_ThanksIllShareTeaWithGuards::
     .string "If you want to go\n"
     .string "to SAFFRON CITY...\l"
     .string "...\p"
-    .string "You can go on\l"
+    .string "You can go on\n"
     .string "through. IÛl\l"
     .string "share this with\l"
     .string "the other guards!$"
