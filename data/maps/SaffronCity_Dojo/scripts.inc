@@ -5,7 +5,7 @@ SaffronCity_Dojo_MapScripts::
 
 SaffronCity_Dojo_EventScript_TriggerMasterBattleLeft::
 	lockall
-	setvar VAR_MAP_SCENE_SAFFRON_CITY_DOJO, 1
+	setvar VAR_MAP_SCENE_SAFFRON_CITY_DOJO, 0
 	applymovement LOCALID_KARATE_MASTER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	releaseall
@@ -13,7 +13,7 @@ SaffronCity_Dojo_EventScript_TriggerMasterBattleLeft::
 
 SaffronCity_Dojo_EventScript_TriggerMasterBattleRight::
 	lockall
-	setvar VAR_MAP_SCENE_SAFFRON_CITY_DOJO, 1
+	setvar VAR_MAP_SCENE_SAFFRON_CITY_DOJO, 0
 	applymovement LOCALID_KARATE_MASTER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	releaseall
