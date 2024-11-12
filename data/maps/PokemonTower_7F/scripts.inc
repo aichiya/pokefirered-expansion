@@ -28,15 +28,10 @@ PokemonTower_7F_EventScript_DefeatedGrunt1::
 	msgbox PokemonTower_7F_Text_Grunt1PostBattle
 	closemessage
 	getplayerxy VAR_0x8004, VAR_0x8005
-	goto_if_eq VAR_0x8004, 8, PokemonTower_7F_EventScript_Grunt1ExitRight
-	goto_if_eq VAR_0x8004, 10, PokemonTower_7F_EventScript_Grunt1ExitLeft
-	applymovement LOCALID_GRUNT1, PokemonTower_7F_Movement_Grunt1Exit
-	waitmovement 0
-	goto PokemonTower_7F_EventScript_RemoveGrunt1
-	end
-
-PokemonTower_7F_EventScript_Grunt1ExitRight::
-	applymovement LOCALID_GRUNT1, PokemonTower_7F_Movement_Grunt1ExitRight
+	goto_if_eq VAR_0x8004, 8, PokemonTower_7F_EventScript_Grunt1ExitLeft
+	goto_if_eq VAR_0x8004, 9, PokemonTower_7F_EventScript_Grunt1ExitMiddle
+	goto_if_eq VAR_0x8004, 10, PokemonTower_7F_EventScript_Grunt1ExitRight
+	applymovement LOCALID_GRUNT1, PokemonTower_7F_Movement_Grunt1ExitDown
 	waitmovement 0
 	goto PokemonTower_7F_EventScript_RemoveGrunt1
 	end
@@ -49,12 +44,36 @@ PokemonTower_7F_EventScript_Grunt1ExitLeft::
 	goto PokemonTower_7F_EventScript_RemoveGrunt1
 	end
 
+PokemonTower_7F_EventScript_Grunt1ExitMiddle::
+	applymovement LOCALID_GRUNT1, PokemonTower_7F_Movement_Grunt1ExitMiddle
+	waitmovement 0
+	playse SE_EXIT
+	delay 25
+	goto PokemonTower_7F_EventScript_RemoveGrunt1
+	end
+
+PokemonTower_7F_EventScript_Grunt1ExitRight::
+	applymovement LOCALID_GRUNT1, PokemonTower_7F_Movement_Grunt1ExitRight
+	waitmovement 0
+	playse SE_EXIT
+	delay 25
+	goto PokemonTower_7F_EventScript_RemoveGrunt1
+	end
+
+PokemonTower_7F_EventScript_Grunt1ExitDown::
+	applymovement LOCALID_GRUNT1, PokemonTower_7F_Movement_Grunt1ExitDown
+	waitmovement 0
+	playse SE_EXIT
+	delay 25
+	goto PokemonTower_7F_EventScript_RemoveGrunt1
+	end
+
 PokemonTower_7F_EventScript_RemoveGrunt1::
 	removeobject LOCALID_GRUNT1
 	release
 	end
 
-PokemonTower_7F_Movement_Grunt1ExitRight::
+PokemonTower_7F_Movement_Grunt1ExitLeft::
 	walk_down
 	walk_right
 	walk_down
@@ -64,7 +83,7 @@ PokemonTower_7F_Movement_Grunt1ExitRight::
 	walk_left
 	step_end
 
-PokemonTower_7F_Movement_Grunt1Exit::
+PokemonTower_7F_Movement_Grunt1ExitMiddle::
 	walk_down
 	walk_down
 	walk_down
@@ -73,13 +92,23 @@ PokemonTower_7F_Movement_Grunt1Exit::
 	walk_left
 	step_end
 
-PokemonTower_7F_Movement_Grunt1ExitLeft::
+PokemonTower_7F_Movement_Grunt1ExitRight::
 	walk_down
 	walk_down
 	walk_down
 	walk_down
 	walk_down
 	walk_left
+	walk_left
+	step_end
+
+PokemonTower_7F_Movement_Grunt1ExitDown::
+	walk_right
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
 	walk_left
 	step_end
 
@@ -93,15 +122,22 @@ PokemonTower_7F_EventScript_DefeatedGrunt2::
 	msgbox PokemonTower_7F_Text_Grunt2PostBattle
 	closemessage
 	getplayerxy VAR_0x8004, VAR_0x8005
-	goto_if_eq VAR_0x8004, 9, PokemonTower_7F_EventScript_Grunt2ExitLeft
-	goto_if_eq VAR_0x8004, 10, PokemonTower_7F_EventScript_Grunt2ExitRight
-	applymovement LOCALID_GRUNT2, PokemonTower_7F_Movement_Grunt2Exit
+	goto_if_eq VAR_0x8004, 7, PokemonTower_7F_EventScript_Grunt2ExitLeft
+	goto_if_eq VAR_0x8004, 8, PokemonTower_7F_EventScript_Grunt2ExitMiddle
+	goto_if_eq VAR_0x8004, 9, PokemonTower_7F_EventScript_Grunt2ExitRight
+	applymovement LOCALID_GRUNT2, PokemonTower_7F_Movement_Grunt2ExitDown
 	waitmovement 0
 	goto PokemonTower_7F_EventScript_RemoveGrunt2
 	end
 
 PokemonTower_7F_EventScript_Grunt2ExitLeft::
 	applymovement LOCALID_GRUNT2, PokemonTower_7F_Movement_Grunt2ExitLeft
+	waitmovement 0
+	goto PokemonTower_7F_EventScript_RemoveGrunt2
+	end
+
+PokemonTower_7F_EventScript_Grunt2ExitMiddle::
+	applymovement LOCALID_GRUNT2, PokemonTower_7F_Movement_Grunt2ExitMiddle
 	waitmovement 0
 	goto PokemonTower_7F_EventScript_RemoveGrunt2
 	end
@@ -121,13 +157,14 @@ PokemonTower_7F_Movement_Grunt2ExitLeft::
 	walk_down
 	walk_down
 	walk_down
-	walk_left
+	walk_down
 	walk_down
 	walk_down
 	walk_down
 	step_end
 
-PokemonTower_7F_Movement_Grunt2Exit::
+PokemonTower_7F_Movement_Grunt2ExitMiddle::
+	walk_down
 	walk_down
 	walk_down
 	walk_down
@@ -137,6 +174,17 @@ PokemonTower_7F_Movement_Grunt2Exit::
 	step_end
 
 PokemonTower_7F_Movement_Grunt2ExitRight::
+	walk_down
+	walk_down
+	walk_down
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+PokemonTower_7F_Movement_Grunt2ExitDown::
 	walk_left
 	walk_down
 	walk_down
@@ -156,21 +204,28 @@ PokemonTower_7F_EventScript_DefeatedGrunt3::
 	msgbox PokemonTower_7F_Text_Grunt3PostBattle
 	closemessage
 	getplayerxy VAR_0x8004, VAR_0x8005
-	goto_if_eq VAR_0x8004, 8, PokemonTower_7F_EventScript_Grunt3ExitRight
-	goto_if_eq VAR_0x8004, 7, PokemonTower_7F_EventScript_Grunt3ExitLeft
-	applymovement LOCALID_GRUNT3, PokemonTower_7F_Movement_Grunt3Exit
-	waitmovement 0
-	goto PokemonTower_7F_EventScript_RemoveGrunt3
-	end
-
-PokemonTower_7F_EventScript_Grunt3ExitRight::
-	applymovement LOCALID_GRUNT3, PokemonTower_7F_Movement_Grunt3ExitRight
+	goto_if_eq VAR_0x8004, 8, PokemonTower_7F_EventScript_Grunt3ExitLeft
+	goto_if_eq VAR_0x8004, 9, PokemonTower_7F_EventScript_Grunt3ExitMiddle
+	goto_if_eq VAR_0x8004, 10, PokemonTower_7F_EventScript_Grunt3ExitRight
+	applymovement LOCALID_GRUNT3, PokemonTower_7F_Movement_Grunt3ExitDown
 	waitmovement 0
 	goto PokemonTower_7F_EventScript_RemoveGrunt3
 	end
 
 PokemonTower_7F_EventScript_Grunt3ExitLeft::
 	applymovement LOCALID_GRUNT3, PokemonTower_7F_Movement_Grunt3ExitLeft
+	waitmovement 0
+	goto PokemonTower_7F_EventScript_RemoveGrunt3
+	end
+
+PokemonTower_7F_EventScript_Grunt3ExitMiddle::
+	applymovement LOCALID_GRUNT3, PokemonTower_7F_Movement_Grunt3ExitMiddle
+	waitmovement 0
+	goto PokemonTower_7F_EventScript_RemoveGrunt3
+	end
+
+PokemonTower_7F_EventScript_Grunt3ExitRight::
+	applymovement LOCALID_GRUNT3, PokemonTower_7F_Movement_Grunt3ExitRight
 	waitmovement 0
 	goto PokemonTower_7F_EventScript_RemoveGrunt3
 	end
@@ -184,7 +239,7 @@ PokemonTower_7F_EventScript_Unused::
 	release
 	end
 
-PokemonTower_7F_Movement_Grunt3ExitRight::
+PokemonTower_7F_Movement_Grunt3ExitLeft::
 	walk_down
 	walk_down
 	walk_down
@@ -192,18 +247,30 @@ PokemonTower_7F_Movement_Grunt3ExitRight::
 	walk_down
 	walk_right
 	walk_down
-	step_end
-
-PokemonTower_7F_Movement_Grunt3Exit::
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
 	walk_down
 	step_end
 
-PokemonTower_7F_Movement_Grunt3ExitLeft::
+PokemonTower_7F_Movement_Grunt3ExitMiddle::
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+PokemonTower_7F_Movement_Grunt3ExitRight::
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+PokemonTower_7F_Movement_Grunt3ExitDown::
 	walk_right
 	walk_down
 	walk_down
