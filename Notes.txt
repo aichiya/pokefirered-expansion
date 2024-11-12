@@ -22,13 +22,7 @@ Red and Rival sprites during intro sequence are wrong, use Pikachu palette.
 
 -Battle-
 UI layout not finished.
-POKeMON not changed to PKMN.
-BAG not changed to ITEM.
-ITEM and PKMN should be swapped.
 PP is above move type, should be below.
-Titles like LEADER not excluded from trainer names. battle_message.c
-TEAM ROCKET GRUNT should be ROCKET.
-Pokeball arrow goes offscreen instead of starting and ending onscreen.
 ELITE FOUR title not removed from trainers.
 Mimic not altered, doesn't match gen 1.
 Hyper Beam recharge feature not added.
@@ -44,14 +38,10 @@ Gym guide event pathing incorrect if directly talked to.
 -Route9-
 Day Care man dialogue for level up not checked.
 
--LAVENDER TOWN-
-THE GHOST instead of GHOST appeared.
-
--Celadon City-
-House1 incorrectly uses generic house layout, somehow linked to all others. Must use custom layout.
+-S.S.ANNE-
+Room doors use incorrect opening animation, use wood board graphics instead of red panel graphics. Also opens to the wrong side.
 
 -Saffron City-
-Fainting in Master fight doesn't re-enable battle trigger.
 Copycat is move tutor, needs to gift item instead.
 
 -Rocket Hideout-
