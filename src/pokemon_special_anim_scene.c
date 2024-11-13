@@ -1556,6 +1556,6 @@ void DrawLevelUpWindowPg2(u16 windowId, u16 *currStats, u8 bgColor, u8 fgColor, 
         ConvertIntToDecimalStringN(textbuf, statsRearrange[i], STR_CONV_MODE_LEFT_ALIGN, ndigits);
         x = 4 * (4 - ndigits);
         AddTextPrinterParameterized3(windowId, FONT_NORMAL, 0, i * 15, textColor, TEXT_SKIP_DRAW, sLevelUpWindowStatNames[i]);
-        AddTextPrinterParameterized3(windowId, FONT_NORMAL, 56 + x, i * 15, textColor, TEXT_SKIP_DRAW, textbuf);
+        AddTextPrinterParameterized3(windowId, FONT_NORMAL, 52 + x, i * 15, textColor, TEXT_SKIP_DRAW, textbuf);
     }
 }
