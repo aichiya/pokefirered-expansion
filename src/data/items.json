@@ -1254,7 +1254,7 @@
       "price": 950,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
-      "description_english": "Raises Accuracy in 1 Battle.",
+      "description_english": "Raises Accuracy in\\n1 Battle.",
       "importance": 0,
       "registrability": 0,
       "pocket": "POCKET_ITEMS",

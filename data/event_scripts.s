@@ -942,12 +942,13 @@ Text_GiveNicknameToThisMon::
 	.include "data/text/ingame_trade.inc"
 
 Text_CardKeyOpenedDoor::
-	.string "Bingo!\n"
-	.string "The CARD KEY opened the door!$"
+	.string "Bingo!\p"
+	.string "The CARD KEY\n"
+	.string "opened the door!$"
 
 Text_ItNeedsCardKey::
-	.string "No!\n"
-	.string "It needs a CARD KEY!$"
+	.string "No! It needs\n"
+	.string "a CARD KEY!$"
 
 Text_AccessedProfOaksPC::
 	.string "Accessed PROF.OAKÙ\n"

@@ -16,7 +16,7 @@ SilphCo_8F_Text_Grunt1Defeat::
 
 SilphCo_8F_Text_Grunt1PostBattle::
     .string "If you donÑ turn\n"
-    .string "back, IÛl call"
+    .string "back, IÛl call\l"
     .string "for backup!$"
 
 SilphCo_8F_Text_ParkerIntro::

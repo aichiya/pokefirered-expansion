@@ -20,16 +20,22 @@ PewterCity_Museum_1F_Text_PleaseEnjoyYourself::
     .string "yourself.$"
 
 PewterCity_Museum_1F_Text_DoYouKnowWhatAmberIs::
-    .string "You canÑ sneak in the back way!\n"
-    .string "Oh, whatever!\p"
-    .string "Do you know what AMBER is?$"
+    .string "You canÑ sneak\n"
+    .string "in the back way!\p"
+    .string "Oh, whatever!\n"
+    .string "Do you know what\l"
+    .string "AMBER is?$"
 
 PewterCity_Museum_1F_Text_AmberContainsGeneticMatter::
-    .string "ThereÙ a lab somewhere trying to\n"
-    .string "resurrect ancient POKéMON from AMBER.$"
+    .string "ThereÙ a lab\n"
+    .string "somewhere trying\l"
+    .string "to resurrect\l"
+    .string "ancient POKéMON\l"
+    .string "from AMBER.$"
 
 PewterCity_Museum_1F_Text_AmberIsFossilizedSap::
-    .string "AMBER is fossilized tree sap.$"
+    .string "AMBER is fossil-\n"
+    .string "ized tree sap.$"
 
 @ Unused
 PewterCity_Museum_1F_Text_PleaseGoAround::
@@ -41,33 +47,43 @@ PewterCity_Museum_1F_Text_ShouldBeGratefulForLongLife::
     .string "fossil!$"
 
 PewterCity_Museum_1F_Text_WantYouToGetAmberExamined::
-    .string "Ssh! I think that this chunk of\n"
-    .string "AMBER contains POKéMON DNA!\p"
-    .string "It would be great if POKéMON\n"
-    .string "could be resurrected from it!\p"
-    .string "But, my colleagues just\n"
-    .string "ignore me!\p"
-    .string "So I have a favor to ask!\n"
-    .string "Take this to a POKéMON LAB\n"
-    .string "and get it examined!$"
+    .string "Ssh! I think that\n"
+    .string "this chunk of\l"
+    .string "AMBER contains\l"
+    .string "POKéMON DNA!\p"
+    .string "It would be great\n"
+    .string "if POKéMON could\l"
+    .string "be resurrected\l"
+    .string "from it!\p"
+    .string "But, my colleagues\n"
+    .string "just ignore me!\p"
+    .string "So I have a favor\n"
+    .string "to ask!\p"
+    .string "Take this to a\n"
+    .string "POKéMON LAB and\l"
+    .string "get it examined!$"
 
 PewterCity_Museum_1F_Text_ReceivedOldAmberFromMan::
-    .string "{PLAYER} received OLD AMBER!$"
+    .string "{PLAYER} received\n"
+    .string "OLD AMBER!$"
 
 PewterCity_Museum_1F_Text_GetOldAmberChecked::
-    .string "Ssh!\n"
-    .string "Get the OLD AMBER checked!$"
+    .string "Ssh! Get the OLD\n"
+    .string "AMBER checked!$"
 
 PewterCity_Museum_1F_Text_DontHaveSpaceForThis::
-    .string "You donÑ have space for this!$"
+    .string "You donÑ have\n"
+    .string "space for this!$"
 
 PewterCity_Museum_1F_Text_WeHaveTwoFossilsOnExhibit::
-    .string "We are proud of 2 fossils of\n"
-    .string "very rare, prehistoric POKéMON!$"
+    .string "We are proud of 2\n"
+    .string "fossils of very\l"
+    .string "rare, prehistoric\l"
+    .string "POKéMON!$"
 
 PewterCity_Museum_1F_Text_BeautifulPieceOfAmber::
-    .string "There is a beautiful piece of\n"
-    .string "AMBER in a clear gold color.$"
+    .string "The AMBER is\n"
+    .string "clear and gold!$"
 
 PewterCity_Museum_1F_Text_AerodactylFossil::
     .string "AERODACTYL Fossil\n"

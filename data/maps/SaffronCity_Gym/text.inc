@@ -120,7 +120,8 @@ SaffronCity_Gym_Text_TyronPostBattle::
 
 SaffronCity_Gym_Text_TashaIntro::
     .string "You and I, our\n"
-    .string "POKéMON shall fight!$"
+    .string "POKéMON shall\l"
+    .string "fight!$"
 
 SaffronCity_Gym_Text_TashaDefeat::
     .string "CHANNELER: I lost\n"

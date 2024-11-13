@@ -38,40 +38,51 @@ SilphCo_5F_Text_BeauPostBattle::
 
 SilphCo_5F_Text_DaltonIntro::
     .string "Whaaat? There\n"
-    .string "shouldnÑ be any\n"
+    .string "shouldnÑ be any\l"
     .string "children here?$"
 
 SilphCo_5F_Text_DaltonDefeat::
-    .string "JUGGLER: Oh goodness!$"
+    .string "JUGGLER: Oh\n"
+    .string "goodness!$"
 
 SilphCo_5F_Text_DaltonPostBattle::
     .string "Youàe only on 5F.\n"
-    .string "ItÙ a long way to my BOSS!$"
+    .string "ItÙ a long way\l"
+    .string "to my BOSS!$"
 
 SilphCo_5F_Text_Grunt2Intro::
-    .string "Show TEAM ROCKET a little respect!$"
+    .string "Show TEAM ROCKET\n"
+    .string "a little respect!$"
 
 SilphCo_5F_Text_Grunt2Defeat::
-    .string "Cough...\n"
+    .string "ROCKET: Cough...\n"
     .string "Cough...$"
 
 SilphCo_5F_Text_Grunt2PostBattle::
-    .string "ROCKET: Which reminds me.\p"
-    .string "KOFFING evolves into WEEZING!$"
+    .string "Which reminds me.\p"
+    .string "KOFFING evolves\n"
+    .string "into WEEZING!$"
 
 SilphCo_5F_Text_PorygonFirstVRMon::
-    .string "ItÙ a POKéMON REPORT!\p"
-    .string "POKéMON LAB created PORYGON,\n"
-    .string "the first virtual reality POKéMON.$"
+    .string "ItÙ a POKéMON\n"
+    .string "REPORT!\p"
+    .string "POKéMON LAB\n"
+    .string "created PORYGON,\l"
+    .string "the first virtual\l"
+    .string "reality POKéMON.$"
 
 SilphCo_5F_Text_Over350TechniquesConfirmed::
-    .string "ItÙ a POKéMON REPORT!\p"
-    .string "Over 160 POKéMON techniques have\n"
+    .string "ItÙ a POKéMON\n"
+    .string "REPORT!\p"
+    .string "Over 160 POKéMON\n"
+    .string "techniques have\l"
     .string "been confirmed.$"
 
 SilphCo_5F_Text_SomeMonsEvolveWhenTraded::
-    .string "ItÙ a POKéMON REPORT!\p"
-    .string "4 POKéMON evolve only when traded\n"
+    .string "ItÙ a POKéMON\n"
+    .string "REPORT!\p"
+    .string "4 POKéMON evolve\n"
+    .string "only when traded\l"
     .string "by link-cable.$"
 
 SilphCo_5F_Text_FloorSign::

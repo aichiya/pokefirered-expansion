@@ -12,7 +12,7 @@ SilphCo_7F_Text_ObtainedLaprasFromEmployee::
     .string "LAPRAS.$"
 
 SilphCo_7F_Text_ExplainLapras::
-    .string "ItÙÙ LAPRAS. ItÙ\n"
+    .string "ItÙ LAPRAS. ItÙ\n"
     .string "very intelligent.\p"
     .string "We kept it in our\n"
     .string "lab, but it will\l"
@@ -62,8 +62,8 @@ SilphCo_7F_Text_WowYouChasedOffTeamRocket::
 
 SilphCo_7F_Text_ReallyDangerousHere::
     .string "You! ItÙ really\n"
-    .string "dangerous here!\l"
-    .string "You came to save\l"
+    .string "dangerous here!\p"
+    .string "You came to save\n"
     .string "me? You canÑ!$"
 
 SilphCo_7F_Text_ThankYouSoMuch::
