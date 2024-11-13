@@ -2,8 +2,7 @@
 #define GUARD_METATILE_LABELS_H
 
 // gTileset_Building
-#define METATILE_Building_PCOff  0x285
-#define METATILE_Building_PCOn   0x285
+#define METATILE_Building_PCOn  0x285
 
 // gTileset_Cave
 #define METATILE_Cave_Floor               0x28B
@@ -165,7 +164,7 @@
 #define METATILE_PokemonMansion_Wall_EndPost_Bottom                      0x2AD
 #define METATILE_PokemonMansion_Wall_EndPost_Mid                         0x2A5
 
-// gTileset_RB
+// gTileset_RB_Mansion
 #define METATILE_RB_Mansion_EncounterTile  0x373
 
 // gTileset_SSAnne
