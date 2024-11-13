@@ -32,7 +32,7 @@ Route16_Text_LukeDefeat::
 
 Route16_Text_LukePostBattle::
     .string "I hate losing!\n"
-    .string "Get away form me!$"
+    .string "Get away from me!$"
 
 Route16_Text_HideoIntro::
     .string "Hey, you just\n"

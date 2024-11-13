@@ -3,7 +3,8 @@ SafariZone_East_Text_RestHouse::
 
 SafariZone_East_Text_TimeDeclinesOnlyWhileYouWalk::
     .string "TRAINER TIPS\p"
-    .string "The remaining time declines only\n"
+    .string "The remaining time\n"
+    .string "declines only\l"
     .string "while you walk!$"
 
 SafariZone_East_Text_AreaSign::

@@ -5,7 +5,7 @@ SafariZone_SecretHouse_Text_CongratsYouveWon::
     .string "the SECRET HOUSE!\p"
     .string "I was getting\n"
     .string "worried that no\l"
-    .string "one would win out\l"
+    .string "one would win our\l"
     .string "campaign prize.\p"
     .string "Congratulations!\n"
     .string "You have won!$"

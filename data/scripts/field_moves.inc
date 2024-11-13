@@ -153,7 +153,7 @@ EventScript_CantMoveBoulder::
 	end
 
 EventScript_AlreadyUsedStrength::
-	msgbox Text_StrengthMadeMovingBouldersPossible, MSGBOX_SIGN
+	@ msgbox Text_StrengthMadeMovingBouldersPossible, MSGBOX_SIGN
 	end
 
 EventScript_DontUseStrength::
@@ -162,17 +162,16 @@ EventScript_DontUseStrength::
 	end
 
 Text_UseStrength::
-	.string "It's a big boulder, but a POKéMON\n"
-	.string "may be able to push it aside.\p"
-	.string "Would you like to use STRENGTH?$"
+	.string "Would you like\n"
+	.string "to use STRENGTH?$"
 
 Text_MonUsedStrengthCanMoveBoulders::
-	.string "{STR_VAR_1} used STRENGTH!\p"
-	.string "{STR_VAR_1}'s STRENGTH made it\n"
-	.string "possible to move boulders around!$"
+	.string "{STR_VAR_1} can\n"
+	.string "move boulders!$"
 
 Text_MonMayPushBoulder::
-	.string "This requires STRENGTH to move!$"
+	.string "This requires\n"
+	.string "STRENGTH to move!$"
 
 Text_StrengthMadeMovingBouldersPossible::
 	.string "STRENGTH made it possible to move\n"

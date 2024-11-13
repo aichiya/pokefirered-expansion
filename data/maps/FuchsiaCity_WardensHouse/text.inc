@@ -56,7 +56,7 @@ FuchsiaCity_WardensHouse_Text_ExplainStrength::
     .string "when youàe out-\l"
     .string "side of battle.\p"
     .string "Oh yes, did you\n"
-    .string "find the SECRET HOUSE\l"
+    .string "find SECRET HOUSE\l"
     .string "in SAFARI ZONE?\p"
     .string "If you do, you\n"
     .string "win an HM!\p"

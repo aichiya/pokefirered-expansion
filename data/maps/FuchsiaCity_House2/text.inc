@@ -20,11 +20,10 @@ FuchsiaCity_House2_Text_ReceivedGoodRod::
 FuchsiaCity_House2_Text_GoodRodCanCatchBetterMons::
     .string "Fishing is a way\n"
     .string "of life!\p"
-    .string "It is like the finest poetry.\p"
-    .string "A crummy OLD ROD could only catch\n"
-    .string "MAGIKARP, yes?\p"
-    .string "But with a GOOD ROD, you can\n"
-    .string "catch much better POKéMON.$"
+    .string "From the seas to\n"
+    .string "rivers, go out\l"
+    .string "and land the big\l"
+    .string "one!$"
 
 FuchsiaCity_House2_Text_OhThatsDisappointing::
     .string "Oh... thatÙ so\n"

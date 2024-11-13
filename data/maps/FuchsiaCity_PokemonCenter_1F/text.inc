@@ -16,7 +16,9 @@ FuchsiaCity_PokemonCenter_1F_Text_PokemonLeagueWestOfViridian::
     .string "all TRAINERS.$"
 
 FuchsiaCity_PokemonCenter_1F_Text_VisitSafariZoneForPokedex::
-    .string "If youàe studying POKéMON,\n"
-    .string "visit the SAFARI ZONE.\p"
-    .string "It has all sorts of rare POKéMON.$"
+    .string "If youàe studying\n"
+    .string "POKéMON, visit\l"
+    .string "the SAFARI ZONE.\p"
+    .string "It has all sorts\n"
+    .string "of rare POKéMON.$"
 

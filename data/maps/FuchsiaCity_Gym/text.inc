@@ -151,7 +151,7 @@ FuchsiaCity_Gym_Text_ShawnPostBattle::
     .string "light, there is\l"
     .string "shadow!\p"
     .string "Light and shadow!\n"
-    .string "Which do you\n"
+    .string "Which do you\l"
     .string "choose?$"
 
 FuchsiaCity_Gym_Text_GymGuyAdvice::

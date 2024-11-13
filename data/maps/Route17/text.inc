@@ -60,7 +60,7 @@ Route17_Text_NikolasPostBattle::
     .string "POWER PLANT.$"
 
 Route17_Text_ZeekIntro::
-    .string "my POKéMON  wonÑ\n"
+    .string "my POKéMON wonÑ\n"
     .string "evolve! Why?$"
 
 Route17_Text_ZeekDefeat::

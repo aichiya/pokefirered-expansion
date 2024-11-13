@@ -20,7 +20,7 @@ FuchsiaCity_Text_WheresSara::
 FuchsiaCity_Text_ItemBallInThere::
     .string "That item ball in\n"
     .string "there is really a\l"
-    .string "POKéMON$"
+    .string "POKéMON.$"
 
 FuchsiaCity_Text_CitySign::
     .string "FUCHSIA CITY\n"
