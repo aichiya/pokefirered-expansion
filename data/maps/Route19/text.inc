@@ -109,7 +109,7 @@ Route19_Text_AxlePostBattle::
     .string "Glub, glub...$"
 
 Route19_Text_ConnieIntro::
-    .string "I swam here , but\n"
+    .string "I swam here, but\n"
     .string "Iá tired.$"
 
 Route19_Text_ConnieDefeat::

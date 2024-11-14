@@ -9,7 +9,7 @@ Route15_Text_KindraDefeat::
 
 Route15_Text_KindraPostBattle::
     .string "You canÑ change\n"
-    .string "the nickname o\l"
+    .string "the nickname of\l"
     .string "any POKéMON you\l"
     .string "get in a trade.\p"
     .string "Only the Original\n"

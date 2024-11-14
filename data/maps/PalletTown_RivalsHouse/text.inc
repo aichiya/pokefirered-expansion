@@ -5,13 +5,13 @@ PalletTown_RivalsHouse_Text_HiBrothersAtLab::
 
 PalletTown_RivalsHouse_Text_HeardYouBattledRival::
     .string "DAISY: Hi {PLAYER}!\n"
-    .string "{RIVAL} is out at\p"
+    .string "{RIVAL} is out at\l"
     .string "GrandpaÙ lab.$"
 
 PalletTown_RivalsHouse_Text_ErrandForGrandpaThisWillHelp::
     .string "Grandpa asked you\n"
     .string "to run an errand?\l"
-    .string "Here, this will\p"
+    .string "Here, this will\l"
     .string "help you!$"
 
 PalletTown_RivalsHouse_Text_ReceivedTownMapFromDaisy::
@@ -19,13 +19,13 @@ PalletTown_RivalsHouse_Text_ReceivedTownMapFromDaisy::
     .string "TOWN MAP!$"
 
 PalletTown_RivalsHouse_Text_DontHaveSpaceForThis::
-    .string "You donÑ have space for this in\n"
-    .string "your BAG.$"
+    .string "You donÑ have space\n"
+    .string "for this.$"
 
 PalletTown_RivalsHouse_Text_ExplainTownMap::
-    .string "You can use the TOWN MAP to find\n"
-    .string "out where you are, or check the\l"
-    .string "names of places.$"
+    .string "Use the TOWN MAP\n"
+    .string "to find out where\l"
+    .string "you are.$"
 
 PalletTown_RivalsHouse_Text_PleaseGiveMonsRest::
     .string "POKéMON are living\n"
@@ -38,8 +38,8 @@ PalletTown_RivalsHouse_Text_ItsBigMapOfKanto::
     .string "This is useful!$"
 
 PalletTown_RivalsHouse_Text_ShelvesCrammedFullOfBooks::
-    .string "The shelves are crammed full of\n"
-    .string "books on POKéMON.$"
+    .string "Crammed full of\n"
+    .string "POKéMON books!$"
 
 PalletTown_RivalsHouse_Text_LikeMeToGroomMon::
     .string "POKéMON are living things!\p"
@@ -58,7 +58,7 @@ PalletTown_RivalsHouse_Text_LookingNiceInNoTime::
     .string "nice in no time.$"
 
 PalletTown_RivalsHouse_Text_ThereYouGoAllDone::
-    .string "{FONT_NORMAL}{STR_VAR_1} looks dreamily content...\p"
+    .string "{STR_VAR_1} looks dreamily content...\p"
     .string "DAISY: There you go! All done.\n"
     .string "See? DoesnÑ it look nice?\p"
     .string "Giggle...\n"

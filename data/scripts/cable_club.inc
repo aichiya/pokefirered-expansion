@@ -1324,23 +1324,23 @@ CableClub_Text_CantTradeEnigmaBerry::
 
 CableClub_Text_PleaseWaitBCancel::
 	.string "Please wait.\n"
-	.string "… … B Button: Cancel$"
+	.string "B Button: Cancel$"
 
 CableClub_Text_WhenAllPlayersReadyAConfirmBCancel::
 	.string "When all players\n"
 	.string "are ready...\l"
-	.string "A: Confirm\l"
-	.string "B: Cancel$"
+	.string "A Button: Confirm\l"
+	.string "B Button: Cancel$"
 
 CableClub_Text_StartLinkWithXPlayersAConfirmBCancel::
 	.string "Start link with\n"
 	.string "{STR_VAR_1} players.\l"
-	.string "A: Confirm\l"
-	.string "B: Cancel$"
+	.string "A Button: Confirm\l"
+	.string "B Button: Cancel$"
 
 CableClub_Text_AwaitingLinkupBCancel::
 	.string "Awaiting link...\n"
-	.string "... B: Cancel$"
+	.string "B: Cancel$"
 
 @ Unused, translated in Emerald
 CableClub_Text_OkayToSaveProgress::
@@ -1413,12 +1413,12 @@ Text_LookedAtPlayersTrainerCardColored::
 	.string "It's a {STR_VAR_2} card!$"
 
 Text_TakeSeatStartBattle::
-	.string "Please take your seat and start\n"
-	.string "your battle.$"
+	.string "Please take your\n"
+	.string "seat.$"
 
 Text_TakeSeatStartTrade::
-	.string "Please take your seat and start\n"
-	.string "your trade.$"
+	.string "Please take your\n"
+	.string "seat.$"
 
 @ Unused, leftover from RS
 RecordCorner_Text_ThanksForComing::

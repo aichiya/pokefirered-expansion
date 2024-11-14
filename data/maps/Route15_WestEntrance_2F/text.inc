@@ -6,7 +6,7 @@ Route15_WestEntrance_2F_Text_GiveItemIfCaughtEnough::
     .string "kinds of POKéMON,\l"
     .string "Iá supposed to\l"
     .string "give you an\l"
-    .string "EXP.ALL\p"
+    .string "EXP.ALL!\p"
     .string "So, {PLAYER}! Have\n"
     .string "you caught at\l"
     .string "least {STR_VAR_1}\l"
