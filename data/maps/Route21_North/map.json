@@ -104,8 +104,8 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
-      "x": 13,
-      "y": -3,
+      "x": -3,
+      "y": 23,
       "elevation": 2,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -190,6 +190,14 @@
       "script": "Route21_South_EventScript_Nolan",
       "flag": "0",
       "in_connection": false
+    },
+    {
+      "type": "clone",
+      "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
+      "x": 17,
+      "y": -4,
+      "target_local_id": 2,
+      "target_map": "MAP_PALLET_TOWN"
     }
   ],
   "warp_events": [
