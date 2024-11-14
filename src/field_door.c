@@ -490,16 +490,16 @@ void FieldSetDoorClosed(int x, int y)
 
 s8 FieldAnimateDoorClose(int x, int y)
 {
-    if (!MetatileBehavior_IsWarpDoor_2(MapGridGetMetatileBehaviorAt((s16)x, (s16)y)))
-        return -1;
-    return StartDoorCloseAnimation(sDoorGraphics, x, y);
+    //if (!MetatileBehavior_IsWarpDoor_2(MapGridGetMetatileBehaviorAt((s16)x, (s16)y)))
+    //    return -1;
+    //return StartDoorCloseAnimation(sDoorGraphics, x, y);
 }
 
 s8 FieldAnimateDoorOpen(int x, int y)
 {
-    if (!MetatileBehavior_IsWarpDoor_2(MapGridGetMetatileBehaviorAt((s16)x, (s16)y)))
-        return -1;
-    return AnimateDoorOpenInternal(sDoorGraphics, x, y);
+    //if (!MetatileBehavior_IsWarpDoor_2(MapGridGetMetatileBehaviorAt((s16)x, (s16)y)))
+    //    return -1;
+    //return AnimateDoorOpenInternal(sDoorGraphics, x, y);
 }
 
 bool8 FieldIsDoorAnimationRunning(void)
