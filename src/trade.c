@@ -1021,10 +1021,10 @@ static void CB2_CreateTradeMenu(void)
         // Create Cancel text sprites
         temp = sSpriteTemplate_MenuText;
         temp.tileTag += GFXTAG_CANCEL_L;
-        CreateSprite(&temp, 215, 151, 1);
+        CreateSprite(&temp, 200, 151, 1);
         temp = sSpriteTemplate_MenuText;
         temp.tileTag += GFXTAG_CANCEL_R;
-        CreateSprite(&temp, 215 + 32, 151, 1);
+        CreateSprite(&temp, 200 + 32, 151, 1);
 
         // Create Choose a Pokémon text sprites (only 3 are needed, other 3 are empty)
         for (i = 0; i < NUM_CHOOSE_PKMN_SPRITES; i++)
@@ -1219,10 +1219,10 @@ void CB2_ReturnToTradeMenuFromSummary(void)
         // Create Cancel text sprites
         temp = sSpriteTemplate_MenuText;
         temp.tileTag += GFXTAG_CANCEL_L;
-        CreateSprite(&temp, 215, 151, 1);
+        CreateSprite(&temp, 200, 151, 1);
         temp = sSpriteTemplate_MenuText;
         temp.tileTag += GFXTAG_CANCEL_R;
-        CreateSprite(&temp, 215 + 32, 151, 1);
+        CreateSprite(&temp, 200 + 32, 151, 1);
 
         // Create Choose a Pokémon text sprites
         for (i = 0; i < NUM_CHOOSE_PKMN_SPRITES; i++)
