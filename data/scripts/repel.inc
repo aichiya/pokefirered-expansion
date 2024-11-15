@@ -3,4 +3,5 @@ EventScript_RepelWoreOff::
 	end
 
 Text_RepelWoreOff::
-	.string "REPEL's effect wore off…$"
+	.string "REPELÙ effect\n"
+	.string "wore off.$"

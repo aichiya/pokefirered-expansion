@@ -928,8 +928,8 @@ Text_AppearsToBeUndergoingAdjustments::
 	.string "adjustments...$"
 
 Text_HandedOverItem::
-	.string "{PLAYER} handed over the\n"
-	.string "{STR_VAR_1}.$"
+	.string "{PLAYER} handed\n"
+	.string "over {STR_VAR_1}.$"
 
 Text_GiveNicknameToThisMon::
 	.string "Do you want to\n"

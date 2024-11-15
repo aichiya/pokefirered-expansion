@@ -1,17 +1,21 @@
 CinnabarIsland_Gym_Text_BlaineIntro::
     .string "Hah!\p"
+
     .string "I am BLAINE! I\n"
     .string "am the LEADER of\l"
     .string "CINNEBAR GYM!\p"
+
     .string "My fiery POKéMON\n"
     .string "will incinerate\l"
     .string "all challengers!\p"
-    .string "Hah! You better\l\n"
+
+    .string "Hah! You better\n"
     .string "have BURN HEAL!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 
 CinnabarIsland_Gym_Text_BlaineDefeat::
     .string "BLAINE: I have\n"
     .string "burnt out!\p"
+
     .string "You have earned\n"
     .string "the VOLCANOBADGE!$"
 
@@ -19,15 +23,18 @@ CinnabarIsland_Gym_Text_FireBlastIsUltimateFireMove::
     .string "FIRE BLAST is the\n"
     .string "ultimate fire\l"
     .string "technique!\p"
+
     .string "DonÑ waste it on\n"
     .string "water POKéMON!$"
 
 CinnabarIsland_Gym_Text_ExplainVolcanoBadge::
     .string "Hah!\p"
+
     .string "The VOLCANOBADGE\n"
     .string "heightens the\l"
     .string "SPECIAL abilities\l"
     .string "of your POKéMON!\p"
+
     .string "Here, you can\n"
     .string "have this too!$"
 
@@ -38,8 +45,10 @@ CinnabarIsland_Gym_Text_ReceivedTM38FromBlaine::
 CinnabarIsland_Gym_Text_BlainePostBattle::
     .string "TM38 contains\n"
     .string "FIRE BLAST!\p"
+
     .string "Teach it to fire-\n"
     .string "type POKéMON!\p"
+
     .string "CHARMELEON or\n"
     .string "PONYTA would be\l"
     .string "be good bets!$"
@@ -61,6 +70,7 @@ CinnabarIsland_Gym_Text_ErikPostBattle::
     .string "Fire, or to be\n"
     .string "more precise,\l"
     .string "combustion...\p"
+
     .string "Blah, blah, blah,\n"
     .string "blah...$"
 
@@ -117,6 +127,7 @@ CinnabarIsland_Gym_Text_DerekPostBattle::
     .string "in the mountains\l"
     .string "when a fiery bird\l"
     .string "POKéMON appeared.\p"
+
     .string "Its light enabled\n"
     .string "BLAINE to find\l"
     .string "his way down!$"
@@ -145,17 +156,21 @@ CinnabarIsland_Gym_Text_ZacDefeat::
 
 CinnabarIsland_Gym_Text_ZacPostBattle::
     .string "Water beats fire!\p"
-    .string "But, fire melts\l"
+
+    .string "But, fire melts\n"
     .string "ice POKéMON!$"
 
 CinnabarIsland_Gym_Text_GymGuyAdvice::
     .string "Yo! Champ in\n"
     .string "making!\p"
+
     .string "The hot-headed\n"
     .string "BLAINE is a fire\l"
     .string "POKéMON pro!\p"
+
     .string "Douse his spirits\n"
     .string "with water!\p"
+
     .string "YouÚ better take\n"
     .string "some BURN HEALs!$"
 
@@ -167,6 +182,7 @@ CinnabarIsland_Gym_Text_GymStatue::
     .string "CINNABAR ISLAND\n"
     .string "POKéMON GYM\l"
     .string "LEADER: BLAINE\p"
+
     .string "WINNING TRAINERS:\n"
     .string "{RIVAL}$"
 
@@ -174,20 +190,25 @@ CinnabarIsland_Gym_Text_GymStatuePlayerWon::
     .string "CINNABAR ISLAND\n"
     .string "POKéMON GYM\l"
     .string "LEADER: BLAINE\p"
+
     .string "WINNING TRAINERS:\n"
     .string "{RIVAL}, {PLAYER}$"
 
 CinnabarIsland_Gym_Text_PokemonQuizRules::
     .string "POKéMON Quiz!\p"
+
     .string "Get it right and\n"
     .string "the door opens to\l"
     .string "the next room!\p"
+
     .string "Get it wrong and\n"
     .string "face a trainer!\p"
+
     .string "If you want to\n"
     .string "conserve your\l"
     .string "POKéMON for the\l"
     .string "GYM LEADER...\p"
+
     .string "Then get it right!\n"
     .string "Here we go!$"
 
@@ -223,6 +244,7 @@ CinnabarIsland_Gym_Text_QuizQuestion6::
 CinnabarIsland_Gym_Text_CorrectGoOnThrough::
     .string "Youàe absolutely\n"
     .string "correct!\p"
+
     .string "Go on through!$"
 
 CinnabarIsland_Gym_Text_SorryBadCall::
