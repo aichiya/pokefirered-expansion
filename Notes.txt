@@ -4,11 +4,7 @@ PC shows "What would you like to do?" when it shouldn't.
 Special Atk & Special Def not combined.
 Red doesn't turn to face approaching trainer.
 Ingame trade success texts not tested.
-All cut bush flags must be checked.
-COOLTRAINER class not gendered.
 Map has an offset of 4 tiles downwards, can't figure out a fix. 
-Pokedex not altered whatsoever.
-Area name popups not disabled.
 EXP.ALL use requires multiple button presses to free bag cursor.
 EXP.ALL cannot be registered.
 National dex Oak script not removed.
@@ -32,23 +28,14 @@ Binding effect not altered.
 -Pallet Town-
 Daisy is supposed to wander after the elite 4 is defeated.
 
--Pewter City-
-Gym guide event pathing incorrect if directly talked to.
-
 -Route9-
 Day Care man dialogue for level up not checked.
-
--S.S.ANNE-
-Room doors use incorrect opening animation, use wood board graphics instead of red panel graphics. Also opens to the wrong side.
 
 -Saffron City-
 Copycat is move tutor, needs to gift item instead.
 
 -Rocket Hideout-
 B4F Grunt drops lift key immediately, should require talking to him first.
-
--Fuchsia City-
-Safari Zone borders are all wrong, supposed to be plain grass.
 
 -Silph Co-
 7F Lapras guy has no dialogue switch after Rockets leave.
