@@ -741,7 +741,7 @@
 #define FLAG_TUTOR_SEISMIC_TOSS                          0x2CA
 #define FLAG_GOT_TM18_IN_DEPT_STORE_3F                               0x2CB
 #define FLAG_TUTOR_METRONOME                             0x2CC
-#define FLAG_TUTOR_MIMIC                                 0x2CD
+#define FLAG_GOT_TM31_IN_SAFFRON_CITY                                 0x2CD
 #define FLAG_TUTOR_BODY_SLAM                             0x2CE
 #define FLAG_VISITED_OAKS_LAB                            0x2CF
 #define FLAG_FOUGHT_POWER_PLANT_ELECTRODE_1              0x2D0

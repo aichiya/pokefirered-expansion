@@ -22,21 +22,32 @@ SaffronCity_CopycatsHouse_2F_EventScript_Copycat::
 	special QuestLog_CutRecording
 	lock
 	faceplayer
+	goto_if_set FLAG_GOT_TM31_IN_SAFFRON_CITY, SaffronCity_CopycatsHouse_2F_EventScript_AlreadyGotTM31
 	checkitem ITEM_POKE_DOLL
-	goto_if_eq VAR_RESULT, TRUE, EventScript_MimicTutor
-	checkplayergender
-	call_if_eq VAR_RESULT, MALE, SaffronCity_CopycatsHouse_2F_EventScript_MimicPlayerMale
-	call_if_eq VAR_RESULT, FEMALE, SaffronCity_CopycatsHouse_2F_EventScript_MimicPlayerFemale
+	goto_if_eq VAR_RESULT, TRUE, SaffronCity_CopycatsHouse_2F_EventScript_TM31Gift
+	msgbox SaffronCity_CopycatsHouse_2F_Text_MimickingFavoriteHobby
 	release
 	end
 
-SaffronCity_CopycatsHouse_2F_EventScript_MimicPlayerMale::
-	msgbox SaffronCity_CopycatsHouse_2F_Text_MimickingFavoriteHobbyMale
-	return
+SaffronCity_CopycatsHouse_2F_EventScript_TM31Gift::
+	msgbox SaffronCity_CopycatsHouse_2F_Text_TakeTM31
+	checkitemspace ITEM_TM31
+	goto_if_eq VAR_RESULT, FALSE, EventScript_BagIsFull
+	bufferitemname STR_VAR_2, ITEM_TM31
+	playfanfare MUS_LEVEL_UP
+	message Text_ObtainedTheX
+	waitmessage
+	waitfanfare
+	additem ITEM_TM31
+	removeitem ITEM_POKE_DOLL
+	setflag FLAG_GOT_TM31_IN_SAFFRON_CITY
+	release
+	end
 
-SaffronCity_CopycatsHouse_2F_EventScript_MimicPlayerFemale::
-	msgbox SaffronCity_CopycatsHouse_2F_Text_MimickingFavoriteHobbyFemale
-	return
+SaffronCity_CopycatsHouse_2F_EventScript_AlreadyGotTM31::
+	msgbox SaffronCity_CopycatsHouse_2F_Text_TM31_Contains
+	release
+	end
 
 SaffronCity_CopycatsHouse_2F_EventScript_Computer::
 	msgbox SaffronCity_CopycatsHouse_2F_Text_MySecrets, MSGBOX_SIGN

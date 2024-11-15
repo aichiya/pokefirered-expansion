@@ -232,43 +232,6 @@ EventScript_MetronomeTaught::
 	release
 	end
 
-EventScript_MimicTutor::
-	goto_if_set FLAG_TUTOR_MIMIC, EventScript_MimicTaught
-	msgbox Text_MimicTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, EventScript_MimicDeclined
-	call EventScript_CanOnlyBeLearnedOnce
-	goto_if_eq VAR_RESULT, NO, EventScript_MimicDeclined
-	msgbox Text_MimicWhichMon
-	setvar VAR_0x8005, MOVETUTOR_MIMIC
-	call EventScript_ChooseMoveTutorMon
-	lock
-	faceplayer
-	goto_if_eq VAR_RESULT, 0, EventScript_MimicDeclined
-	removeitem ITEM_POKE_DOLL
-	setflag FLAG_TUTOR_MIMIC
-	goto EventScript_MimicTaught
-	end
-
-EventScript_MimicDeclined::
-	msgbox Text_MimicDeclined
-	release
-	end
-
-EventScript_MimicTaught::
-	checkplayergender
-	call_if_eq VAR_RESULT, MALE, EventScript_MimicTaughtMale
-	call_if_eq VAR_RESULT, FEMALE, EventScript_MimicTaughtFemale
-	release
-	end
-
-EventScript_MimicTaughtMale::
-	msgbox Text_MimicTaughtMale
-	return
-
-EventScript_MimicTaughtFemale::
-	msgbox Text_MimicTaughtFemale
-	return
-
 FourIsland_House1_EventScript_BodySlamTutor::
 	lock
 	faceplayer
