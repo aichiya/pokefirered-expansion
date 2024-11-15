@@ -19,7 +19,7 @@
 #define METATILE_CeruleanCity_Door  0x298
 
 // gTileset_CinnabarGym
-#define METATILE_CinnabarGym_Floor                  0x358
+#define METATILE_CinnabarGym_Floor                  0x38E
 #define METATILE_CinnabarGym_Floor_ShadeDiagonal    0x282
 #define METATILE_CinnabarGym_Floor_ShadeFull        0x289
 #define METATILE_CinnabarGym_Floor_WallLeftCorner   0x2C7
