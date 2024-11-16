@@ -759,18 +759,7 @@ static const u8 *const sDescriptionStringTable[] =
 
 static const u8 *const sFieldMoveDescriptionTable[] =
 {
-    [FIELD_MOVE_FLASH]       = gText_LightUpDarkness,
-    [FIELD_MOVE_CUT]         = gText_CutATreeOrGrass,
-    [FIELD_MOVE_FLY]         = gText_FlyToAKnownTown,
-    [FIELD_MOVE_STRENGTH]    = gText_MoveHeavyBoulders,
-    [FIELD_MOVE_SURF]        = gText_TravelOnWater,
-    [FIELD_MOVE_ROCK_SMASH]  = gText_ShatterACrackedRock,
     [FIELD_MOVE_WATERFALL]   = gText_ClimbAWaterfall,
-    [FIELD_MOVE_TELEPORT]    = gText_ReturnToAHealingSpot,
-    [FIELD_MOVE_DIG]         = gText_EscapeFromHere,
-    [FIELD_MOVE_MILK_DRINK]  = gText_ShareHp,
-    [FIELD_MOVE_SOFT_BOILED] = gText_ShareHp,
-    [FIELD_MOVE_SWEET_SCENT] = gText_LureWildPokemon,
 };
 
 static const u32 sHeldItemGfx[] = INCBIN_U32("graphics/party_menu/hold_icons.4bpp");
