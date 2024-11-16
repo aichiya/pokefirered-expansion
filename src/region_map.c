@@ -816,7 +816,7 @@ static const u8 sWinRegs[][2] = {
     {REG_OFFSET_WIN1V, REG_OFFSET_WIN1H}
 };
 
-static const u8 sTextColors[] = {TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GRAY};
+static const u8 sTextColors[] = {TEXT_COLOR_WHITE, TEXT_DYNAMIC_COLOR_5, TEXT_COLOR_DARK_GRAY};
 
 #include "data/region_map/region_map_entries.h"
 

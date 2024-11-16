@@ -252,7 +252,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_19",
-      "name": "ROUTE 19",
+      "name": "SEA ROUTE 19",
       "x": 12,
       "y": 13,
       "width": 1,
@@ -260,7 +260,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_20",
-      "name": "ROUTE 20",
+      "name": "SEA ROUTE 20",
       "x": 5,
       "y": 14,
       "width": 7,
@@ -268,7 +268,7 @@
     },
     {
       "map_section": "MAPSEC_ROUTE_21",
-      "name": "ROUTE 21",
+      "name": "SEA ROUTE 21",
       "x": 4,
       "y": 12,
       "width": 1,
@@ -316,7 +316,7 @@
     },
     {
       "map_section": "MAPSEC_MT_MOON",
-      "name": "MT. MOON",
+      "name": "MT.MOON",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -324,7 +324,7 @@
     },
     {
       "map_section": "MAPSEC_S_S_ANNE",
-      "name": "S.S. ANNE",
+      "name": "S.S.ANNE",
       "x": 0,
       "y": 0,
       "width": 1,
