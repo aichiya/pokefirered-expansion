@@ -723,7 +723,7 @@ static const struct WindowTemplate sWindowTemplates_Permanent_Bg1[] =
     },
     [POKESUM_WIN_CONTROLS] = {
         .bg = 1,
-        .tilemapLeft = 19,
+        .tilemapLeft = 14,
         .tilemapTop = 0,
         .width = 11,
         .height = 2,
@@ -824,21 +824,23 @@ static const struct WindowTemplate sWindowTemplates_Skills[] =
         .paletteNum = 6,
         .baseBlock = 0x0001
     },
+    // Has the text "EXP. POINTS" and "NEXT LV"
     [POKESUM_WIN_SKILLS_4 - 3] = {
         .bg = 0,
-        .tilemapLeft = 6,
-        .tilemapTop = 12,
+        .tilemapLeft = 1,
+        .tilemapTop = 14,
         .width = 14,
         .height = 4,
         .paletteNum = 6,
         .baseBlock = 0x008d
     },
+    // Has the text "No special ability."
     [POKESUM_WIN_SKILLS_5 - 3] = {
         .bg = 0,
         .tilemapLeft = 1,
-        .tilemapTop = 16,
+        .tilemapTop = 18,
         .width = 29,
-        .height = 4,
+        .height = 2,
         .paletteNum = 6,
         .baseBlock = 0x00c5
     },
@@ -2843,12 +2845,12 @@ static void PokeSum_PrintTrainerMemo_Egg(void)
 static void PokeSum_PrintExpPoints_NextLv(void)
 {
     AddTextPrinterParameterized3(sMonSummaryScreen->windowIds[POKESUM_WIN_TRAINER_MEMO], FONT_NORMAL,
-                                 24, 16,
+                                 8, 0,
                                  sLevelNickTextColors[0], TEXT_SKIP_DRAW,
                                  gText_PokeSum_ExpPoints);
 
     AddTextPrinterParameterized3(sMonSummaryScreen->windowIds[POKESUM_WIN_TRAINER_MEMO], FONT_NORMAL,
-                                 24, 24,
+                                 8, 16,
                                  sLevelNickTextColors[0], TEXT_SKIP_DRAW,
                                  gText_PokeSum_NextLv);
 }
@@ -2904,7 +2906,7 @@ static void PokeSum_PrintAbilityNameAndDesc(void)
     //                             64, 8, sLevelNickTextColors[0], TEXT_SKIP_DRAW, sMonSummaryScreen->summary.abilityNameStrBuf);
 
     AddTextPrinterParameterized3(sMonSummaryScreen->windowIds[5], FONT_NORMAL,
-                                 8, 8, sLevelNickTextColors[0], TEXT_SKIP_DRAW, sMonSummaryScreen->summary.abilityDescStrBuf);
+                                 8, 0, sLevelNickTextColors[0], TEXT_SKIP_DRAW, sMonSummaryScreen->summary.abilityDescStrBuf);
 
 }
 
@@ -3347,10 +3349,10 @@ static void PokeSum_DrawPageProgressTiles(void)
             FillBgTilemapBufferRect(3,  1 + PAGE_PROGRESS_BASE_TILE_NUM, 10, 0, 1, 1, 0);
             FillBgTilemapBufferRect(3, 19 + PAGE_PROGRESS_BASE_TILE_NUM, 10, 1, 1, 1, 0);
         }
-        FillBgTilemapBufferRect(3, 50 + PAGE_PROGRESS_BASE_TILE_NUM, 9, 0, 1, 1, 0);
-        FillBgTilemapBufferRect(3, 66 + PAGE_PROGRESS_BASE_TILE_NUM, 9, 1, 1, 1, 0);
-        FillBgTilemapBufferRect(3, 48 + PAGE_PROGRESS_BASE_TILE_NUM, 8, 0, 1, 1, 0);
-        FillBgTilemapBufferRect(3, 64 + PAGE_PROGRESS_BASE_TILE_NUM, 8, 1, 1, 1, 0);
+        FillBgTilemapBufferRect(3, 50 + PAGE_PROGRESS_BASE_TILE_NUM, 11, 0, 1, 1, 0);
+        FillBgTilemapBufferRect(3, 66 + PAGE_PROGRESS_BASE_TILE_NUM, 11, 1, 1, 1, 0);
+        FillBgTilemapBufferRect(3, 48 + PAGE_PROGRESS_BASE_TILE_NUM, 12, 0, 1, 1, 0);
+        FillBgTilemapBufferRect(3, 64 + PAGE_PROGRESS_BASE_TILE_NUM, 12, 1, 1, 1, 0);
         break;
     }
 }
@@ -4220,7 +4222,7 @@ static void CreateMoveSelectionCursorObjs(u16 tileTag, u16 palTag)
         LoadSpriteSheet(&sheet);
         LoadSpritePalette(&palette);
 
-        spriteId = CreateSprite(&template, 64 * (i % 2) + 152, sMoveSelectionCursorPos * 28 + 34, i % 2);
+        spriteId = CreateSprite(&template, 64 * (i % 2) + 152, sMoveSelectionCursorPos * 28 + 32, i % 2);
         sMoveSelectionCursorObjs[i]->sprite = &gSprites[spriteId];
         sMoveSelectionCursorObjs[i]->whichSprite = i;
         sMoveSelectionCursorObjs[i]->tileTag = tileTag + i;
@@ -4253,7 +4255,7 @@ static void SpriteCB_MoveSelectionCursor(struct Sprite *sprite)
         if (sMonSummaryScreen->isSwappingMoves == TRUE && i > 1)
             continue;
 
-        sMoveSelectionCursorObjs[i]->sprite->y = sMoveSelectionCursorPos * 28 + 34;
+        sMoveSelectionCursorObjs[i]->sprite->y = sMoveSelectionCursorPos * 28 + 32;
     }
 
     if (sMonSummaryScreen->isSwappingMoves != TRUE)
