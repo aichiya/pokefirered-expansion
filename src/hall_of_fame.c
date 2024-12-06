@@ -701,7 +701,7 @@ static void SetWarpsToRollCredits(void)
     VarSet(VAR_MAP_SCENE_INDIGO_PLATEAU_EXTERIOR, 1);
     FlagSet(FLAG_DONT_SHOW_MAP_NAME_POPUP);
     gDisableMapMusicChangeOnMapLoad = 2;
-    SetWarpDestination(MAP_GROUP(INDIGO_PLATEAU_EXTERIOR), MAP_NUM(INDIGO_PLATEAU_EXTERIOR), -1, 11, 6);
+    SetWarpDestination(MAP_GROUP(INDIGO_PLATEAU_EXTERIOR), MAP_NUM(INDIGO_PLATEAU_EXTERIOR), -1, 10, 5);
     DoWarp();
     ResetInitialPlayerAvatarState();
 }
@@ -760,7 +760,7 @@ static void Task_HofPC_CopySaveData(u8 taskId)
     u16 i;
     struct HallofFameTeam* savedTeams;
 
-    CreateTopBarWindowLoadPalette(0, 30, 0, 0x0C, 0x226);
+    CreateTopBarWindowLoadPalette(0, 30, 0, 12, 0x226);
     if (LoadGameSave(SAVE_HALL_OF_FAME) != SAVE_STATUS_OK)
     {
         gTasks[taskId].func = Task_HofPC_PrintDataIsCorrupted;
@@ -983,7 +983,7 @@ static void Task_HofPC_ExitOnButtonPress(u8 taskId)
 
 static void HallOfFame_PrintWelcomeText(u8 not, u8 used)
 {
-    u8 x = (0xD0 - GetStringWidth(FONT_NORMAL, gText_WelcomeToHOF, 0)) / 2;
+    u8 x = (128 - GetStringWidth(FONT_NORMAL, gText_WelcomeToHOF, 0)) / 2;
     FillWindowPixelBuffer(0, PIXEL_FILL(0));
     PutWindowTilemap(0);
     AddTextPrinterParameterized3(0, FONT_NORMAL, x, 1, sTextColors[0], 0, gText_WelcomeToHOF);
@@ -1021,7 +1021,7 @@ static void HallOfFame_PrintMonInfo(struct HallofFameMon* currMon, u8 unused1, u
         }
         text[3] = EOS;
         StringAppend(text2, text);
-        AddTextPrinterParameterized3(0, FONT_NORMAL, 16, 1, sTextColors[0], 0, text2);
+        AddTextPrinterParameterized3(0, FONT_NORMAL, 0, 1, sTextColors[0], 0, text2);
     }
 
     // nick, species names, gender and lvl
@@ -1036,42 +1036,19 @@ static void HallOfFame_PrintMonInfo(struct HallofFameMon* currMon, u8 unused1, u
     text[i] = EOS;
     width = GetStringWidth(FONT_NORMAL, text, GetFontAttribute(FONT_NORMAL, FONTATTR_LETTER_SPACING));
     if (currMon->species == SPECIES_EGG)
-        x = 0x80 - width / 2;
+        x = 144 - width / 2;
     else
-        x = 0x80 - width;
+        x = 144 - width;
     AddTextPrinterParameterized3(0, FONT_NORMAL, x, 1, sTextColors[0], 0, text);
     if (currMon->species != SPECIES_EGG)
     {
-        text[0] = CHAR_SLASH;
-        stringPtr = StringCopy(text + 1, gSpeciesNames[currMon->species]);
-
-        if (currMon->species == SPECIES_NIDORAN_M || currMon->species == SPECIES_NIDORAN_F)
-            gender = MON_GENDERLESS;
-        else
-            gender = GetGenderFromSpeciesAndPersonality(currMon->species, currMon->personality);
-        switch (gender)
-        {
-        case MON_MALE:
-            *stringPtr++ = CHAR_MALE;
-            break;
-        case MON_FEMALE:
-            *stringPtr++ = CHAR_FEMALE;
-            break;
-        default:
-            *stringPtr++ = CHAR_SPACE;
-            break;
-        }
-        *stringPtr = EOS;
-
-        AddTextPrinterParameterized3(0, FONT_NORMAL, 0x80, 1, sTextColors[0], 0, text);
-
         stringPtr = StringCopy(text, gText_Level);
         ConvertIntToDecimalStringN(stringPtr, currMon->lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
-        AddTextPrinterParameterized3(0, FONT_NORMAL, 0x20, 0x11, sTextColors[0], 0, text);
+        AddTextPrinterParameterized3(0, FONT_NORMAL, 0, 17, sTextColors[0], 0, text);
 
         stringPtr = StringCopy(text, gText_IDNumber);
         ConvertIntToDecimalStringN(stringPtr, (u16)(currMon->tid), STR_CONV_MODE_LEADING_ZEROS, 5);
-        AddTextPrinterParameterized3(0, FONT_NORMAL, 0x60, 0x11, sTextColors[0], 0, text);
+        AddTextPrinterParameterized3(0, FONT_NORMAL, 64, 17, sTextColors[0], 0, text);
 
     }
     CopyWindowToVram(0, COPYWIN_FULL);
@@ -1098,7 +1075,7 @@ static void HallOfFame_PrintPlayerInfo(u8 unused1, u8 unused2)
     text[3] = (trainerId % 100) / 10 + CHAR_0;
     text[4] = (trainerId % 10) / 1 + CHAR_0;
     text[5] = EOS;
-    AddTextPrinterParameterized3(1, FONT_NORMAL, textWidth - 30, 18, sTextColors[1], 0, text);
+    AddTextPrinterParameterized3(1, FONT_NORMAL, textWidth - 40, 18, sTextColors[1], 0, text);
 
     AddTextPrinterParameterized3(1, FONT_NORMAL, 4, 32, sTextColors[1], 0, gText_MainMenuTime);
     text[0] = (gSaveBlock2Ptr->playTimeHours / 100) + CHAR_0;
@@ -1115,7 +1092,7 @@ static void HallOfFame_PrintPlayerInfo(u8 unused1, u8 unused2)
     text[5] = (gSaveBlock2Ptr->playTimeMinutes % 10) + CHAR_0;
     text[6] = EOS;
 
-    AddTextPrinterParameterized3(1, FONT_NORMAL, textWidth - 36, 32, sTextColors[1], 0, text);
+    AddTextPrinterParameterized3(1, FONT_NORMAL, textWidth - 48, 32, sTextColors[1], 0, text);
 
     CopyWindowToVram(1, COPYWIN_FULL);
 }

@@ -632,13 +632,13 @@ static u8 GetTrainerBattleTransition(void)
     if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_ELITE_FOUR)
     {
         if (gTrainerBattleOpponent_A == TRAINER_ELITE_FOUR_LORELEI || gTrainerBattleOpponent_A == TRAINER_ELITE_FOUR_LORELEI_2)
-            return B_TRANSITION_LORELEI;
+            return B_TRANSITION_BIG_POKEBALL;
         if (gTrainerBattleOpponent_A == TRAINER_ELITE_FOUR_BRUNO || gTrainerBattleOpponent_A == TRAINER_ELITE_FOUR_BRUNO_2)
-            return B_TRANSITION_BRUNO;
+            return B_TRANSITION_BIG_POKEBALL;
         if (gTrainerBattleOpponent_A == TRAINER_ELITE_FOUR_AGATHA || gTrainerBattleOpponent_A == TRAINER_ELITE_FOUR_AGATHA_2)
-            return B_TRANSITION_AGATHA;
+            return B_TRANSITION_BIG_POKEBALL;
         if (gTrainerBattleOpponent_A == TRAINER_ELITE_FOUR_LANCE || gTrainerBattleOpponent_A == TRAINER_ELITE_FOUR_LANCE_2)
-            return B_TRANSITION_LANCE;
+            return B_TRANSITION_BIG_POKEBALL;
         return B_TRANSITION_BLUE;
     }
     if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_CHAMPION)

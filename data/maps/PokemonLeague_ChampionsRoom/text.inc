@@ -1,53 +1,69 @@
 PokemonLeague_ChampionsRoom_Text_Intro::
     .string "{RIVAL}: Hey!\p"
+
     .string "I was looking\n"
     .string "forward to seeing\l"
     .string "you, {PLAYER}!\p"
+
     .string "My rival should\n"
     .string "be strong to keep\l"
     .string "me sharp!\p"
+
     .string "While working on\n"
     .string "POKéDEX, I looked\l"
     .string "all over for\l"
     .string "powerful POKéMON!\p"
+
     .string "Not only that, I\n"
     .string "assembled teams\l"
     .string "that would beat\l"
     .string "any POKéMON type!\p"
+
     .string "And now!\p"
+
     .string "Iá the POKéMON\n"
     .string "LEAGUE champion!\p"
+
     .string "{PLAYER}! Do you\n"
     .string "know what that\l"
     .string "means?\p"
+    
     .string "IÛl tell you!\p"
+
     .string "I am the most\n"
     .string "powerful trainer\l"
     .string "in the world!$"
 
 PokemonLeague_ChampionsRoom_Text_RematchIntro::
     .string "{RIVAL}: Hey!\p"
+
     .string "I was looking\n"
     .string "forward to seeing\l"
     .string "you, {PLAYER}!\p"
+
     .string "My rival should\n"
     .string "be strong to keep\l"
     .string "me sharp!\p"
+
     .string "While working on\n"
     .string "POKéDEX, I looked\l"
     .string "all over for\l"
     .string "powerful POKéMON!\p"
+
     .string "Not only that, I\n"
     .string "assembled teams\l"
     .string "that would beat\l"
     .string "any POKéMON type!\p"
+
     .string "And now!\p"
     .string "Iá the POKéMON\n"
     .string "LEAGUE champion!\p"
+
     .string "{PLAYER}! Do you\n"
     .string "know what that\l"
     .string "means?\p"
     .string "IÛl tell you!\p"
+
     .string "I am the most\n"
     .string "powerful trainer\l"
     .string "in the world!$"
@@ -56,9 +72,11 @@ PokemonLeague_ChampionsRoom_Text_Defeat::
     .string "{RIVAL}: NO!\n"
     .string "That canÑ be!\l"
     .string "You beat my best!\p"
+
     .string "After all that\n"
     .string "work to become\l"
     .string "LEAGUE champ?\p"
+
     .string "My reign is over\n"
     .string "already?\l"
     .string "ItÙ not fair!$"
@@ -77,12 +95,15 @@ PokemonLeague_ChampionsRoom_Text_Victory::
 PokemonLeague_ChampionsRoom_Text_PostBattle::
     .string "Why?\n"
     .string "Why did I lose?\p"
+
     .string "I never made any\n"
     .string "mistakes raising\l"
     .string "my POKéMON...\p"
+
     .string "Darn it! Youàe\n"
     .string "the new POKéMON\l"
     .string "LEAGUE champion!\p"
+
     .string "Although I donÑ\n"
     .string "like to admit it.$"
 
@@ -91,26 +112,32 @@ PokemonLeague_ChampionsRoom_Text_OakPlayer::
 
 PokemonLeague_ChampionsRoom_Text_OakCongratulations::
     .string "OAK: So, you won!\n"
-    .string "Congratulations!\l"
+    .string "Congratulations!\p"
+
     .string "Youàe the new\n"
     .string "POKéMON LEAGUE\l"
     .string "champion!\p"
+
     .string "Youße grown up so\n"
     .string "much since you\l"
     .string "first left with\l"
     .string "{STR_VAR_1}!\p"
+
     .string "{PLAYER}, you have\n"
     .string "come of age!$"
 
 PokemonLeague_ChampionsRoom_Text_OakImDisappointedRival::
     .string "OAK: {RIVAL}!\n"
     .string "Iá disappointed!\p"
+
     .string "I came when I\n"
     .string "heard you beat\l"
     .string "the ELITE FOUR!\p"
+
     .string "But, when I got\n"
     .string "here, you had\l"
     .string "already lost!\p"
+
     .string "{RIVAL}! Do you\n"
     .string "understand why\l"
     .string "you lost?\p"
@@ -118,6 +145,7 @@ PokemonLeague_ChampionsRoom_Text_OakImDisappointedRival::
     .string "to treat your\l"
     .string "POKéMON with\l"
     .string "trust and love!\p"
+
     .string "Without them, you\n"
     .string "will never become\l"
     .string "a champ again!$"
@@ -128,9 +156,11 @@ PokemonLeague_ChampionsRoom_Text_OakPlayerComeWithMe::
     .string "that your victory\l"
     .string "was not just your\l"
     .string "own doing!\p"
+
     .string "The bond you share\n"
     .string "with your POKéMON\l"
     .string "is marvelous!\p"
+
     .string "{PLAYER}!\n"
     .string "Come with me!$"
 

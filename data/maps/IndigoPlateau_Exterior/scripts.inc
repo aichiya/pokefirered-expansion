@@ -29,14 +29,14 @@ IndigoPlateau_Exterior_EventScript_Credits::
 	delay 105
 
 	@ Rival exits building. Spawn a dummy object to lock the camera.
-	opendoor 11, 6
+	opendoor 10, 6
 	waitdooranim
 	special SpawnCameraObject
 	addobject LOCALID_RIVAL
 	applymovement LOCALID_RIVAL, IndigoPlateau_Exterior_Movement_RivalExitBuilding
 	applymovement OBJ_EVENT_ID_PLAYER, IndigoPlateau_Exterior_Movement_PushPlayerOutOfWay
 	waitmovement 0
-	closedoor 11, 6
+	closedoor 10, 6
 	waitdooranim
 
 	@ Rival runs off
@@ -46,12 +46,12 @@ IndigoPlateau_Exterior_EventScript_Credits::
 	delay 100
 
 	@ Oak exits building
-	opendoor 11, 6
+	opendoor 10, 6
 	waitdooranim
 	addobject LOCALID_PROF_OAK
 	applymovement LOCALID_PROF_OAK, IndigoPlateau_Exterior_Movement_OakExitBuilding
 	waitmovement 0
-	closedoor 11, 6
+	closedoor 10, 6
 	waitdooranim
 	delay 160
 

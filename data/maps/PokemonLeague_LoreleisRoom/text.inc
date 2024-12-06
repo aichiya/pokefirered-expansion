@@ -1,34 +1,44 @@
 PokemonLeague_LoreleisRoom_Text_Intro::
     .string "Welcome to\n"
     .string "POKéMON LEAGUE!\p"
+
     .string "I am LORELEI of\n"
     .string "the ELITE FOUR!\p"
+
     .string "No one can best\n"
-    .string "me when it copmes\l"
+    .string "me when it comes\l"
     .string "to icy POKéMON!\p"
+
     .string "Freezing moves\n"
     .string "are powerful!\p"
+
     .string "Your POKéMON will\n"
     .string "be at my mercy\l"
     .string "when they are\l"
     .string "frozen solid!\p"
+
     .string "Hahaha!\n"
     .string "Are you ready?{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 
 PokemonLeague_LoreleisRoom_Text_RematchIntro::
     .string "Welcome to\n"
     .string "POKéMON LEAGUE!\p"
+
     .string "I am LORELEI of\n"
     .string "the ELITE FOUR!\p"
+
     .string "No one can best\n"
-    .string "me when it copmes\l"
+    .string "me when it comes\l"
     .string "to icy POKéMON!\p"
+
     .string "Freezing moves\n"
     .string "are powerful!\p"
+
     .string "Your POKéMON will\n"
     .string "be at my mercy\l"
     .string "when they are\l"
     .string "frozen solid!\p"
+
     .string "Hahaha!\n"
     .string "Are you ready?{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 
@@ -40,6 +50,7 @@ PokemonLeague_LoreleisRoom_Text_PostBattle::
     .string "Youàe better\n"
     .string "than I thought!\l"
     .string "Go on ahead!\p"
+    
     .string "You only got a\n"
     .string "taste of POKéMON\l"
     .string "LEAGUE power!$"
