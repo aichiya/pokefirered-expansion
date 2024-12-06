@@ -1,13 +1,17 @@
 Route22_Text_EarlyRivalIntro::
 	.string "{RIVAL}: Hey!\n"
 	.string "{PLAYER}!\p"
+	
 	.string "Youàe going to\n"
 	.string "POKéMON LEAGUE?\p"
+
 	.string "Forget it! You\n"
 	.string "probably donÑ\l"
 	.string "have any BADGEs!\p"
+
 	.string "The guard wonÑ\n"
 	.string "let you through!\p"
+
 	.string "By the way, did\n"
 	.string "your POKéMON\l"
 	.string "get any stronger?$"
@@ -21,9 +25,11 @@ Route22_Text_EarlyRivalPostBattle::
 	.string "I heard POKéMON\n"
 	.string "LEAGUE has many\l"
 	.string "tough trainers!\p"
+
 	.string "I have to figure\n"
 	.string "out how to get\l"
 	.string "past them!\p"
+
 	.string "You should quit\n"
 	.string "dawdling and get\l"
 	.string "a move on!$"
@@ -41,28 +47,34 @@ Route22_Text_LateRivalIntro::
 	.string "{PLAYER}! What a\l"
 	.string "surprise to see\l"
 	.string "you here!\p"
+
 	.string "So youàe going to\n"
 	.string "POKéMON LEAGUE?\p"
+
 	.string "You collected all\n"
 	.string "the BADGEs too?\l"
 	.string "ThatÙ cool!\p"
+
 	.string "Then IÛl whip you\n"
 	.string "{PLAYER} as a\l"
 	.string "a warm up for\l"
 	.string "POKéMON LEAGUE!\p"
+
 	.string "Come on!$"
 
 Route22_Text_LateRivalDefeat::
 	.string "What!?\n"
-	.string "I was just\p"
+	.string "I was just\l"
 	.string "careless!$"
 
 Route22_Text_LateRivalPostBattle::
 	.string "That loosened me\n"
 	.string "up! Iá ready for\l"
 	.string "POKéMON LEAGUE!\p"
+
 	.string "{PLAYER}, you need\n"
 	.string "more practice!\p"
+
 	.string "But hey, you know\n"
 	.string "that! Iá out of\l"
 	.string "here. Smell ya!$"
