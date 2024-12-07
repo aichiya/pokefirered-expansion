@@ -169,7 +169,6 @@ ViridianCity_EventScript_TM42Gift::
 	faceplayer
 	goto_if_set FLAG_GOT_TM42_IN_VIRIDIAN_CITY, ViridianCity_EventScript_AlreadyGotTM42
 	msgbox ViridianCity_Text_TakeTM42
-	textcolor NPC_TEXT_COLOR_NEUTRAL
 	checkitemspace ITEM_TM42
 	goto_if_eq VAR_RESULT, FALSE, EventScript_BagIsFull
 	bufferitemname STR_VAR_2, ITEM_TM42
@@ -178,8 +177,6 @@ ViridianCity_EventScript_TM42Gift::
 	waitmessage
 	waitfanfare
 	additem ITEM_TM42
-	msgbox ViridianCity_Text_PutTM42Away
-	call EventScript_RestorePrevTextColor
 	setflag FLAG_GOT_TM42_IN_VIRIDIAN_CITY
 	release
 	end
@@ -191,7 +188,6 @@ ViridianCity_EventScript_AlreadyGotTM42::
 
 ViridianCity_EventScript_RoadBlocked::
 	lockall
-	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox ViridianCity_Text_ThisIsPrivateProperty
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, ViridianCity_Movement_WalkDown
@@ -205,7 +201,6 @@ ViridianCity_Movement_WalkDown::
 
 ViridianCity_EventScript_TutorialTriggerLeft::
 	lockall
-	textcolor NPC_TEXT_COLOR_NEUTRAL
 	applymovement LOCALID_TUTORIAL_MAN, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
@@ -216,7 +211,6 @@ ViridianCity_EventScript_TutorialTriggerLeft::
 
 ViridianCity_EventScript_TutorialTriggerRight::
 	lockall
-	textcolor NPC_TEXT_COLOR_NEUTRAL
 	applymovement LOCALID_TUTORIAL_MAN, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterLeft

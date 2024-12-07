@@ -20,7 +20,7 @@ ViridianCity_Gym_Text_GiovanniDefeat::
     .string "intense fight!\l"
     .string "You have won!\l"
     .string "As proof, here is\l"
-    .string "the EARTHBADGE!\l"
+    .string "the EARTHBADGE!\p"
     .string "{PAUSE_MUSIC}{PLAY_BGM}{MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}$"
 
 ViridianCity_Gym_Text_GiovanniPostBattle::
