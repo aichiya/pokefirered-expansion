@@ -2717,7 +2717,6 @@ static void ToggleFieldMoveDescriptionWindow(u8 action)
     u8 letterSpacing;
     struct PartyMenuInternal *ptr = sPartyMenuInternal;
 
-    if (action < CURSOR_OPTION_FIELD_MOVES)
     {
         if (ptr->windowId[2] != WINDOW_NONE)
         {
@@ -2726,16 +2725,6 @@ static void ToggleFieldMoveDescriptionWindow(u8 action)
             ptr->windowId[2] = WINDOW_NONE;
             ScheduleBgCopyTilemapToVram(2);
         }
-    }
-    else
-    {
-        if (ptr->windowId[2] == WINDOW_NONE)
-            ptr->windowId[2] = AddWindow(&sFieldMoveDescriptionWindowTemplate);
-        DrawHelpMessageWindowTilesById(ptr->windowId[2]);
-        letterSpacing = GetFontAttribute(FONT_NORMAL, FONTATTR_LETTER_SPACING);
-        AddTextPrinterParameterized4(ptr->windowId[2], FONT_NORMAL, 3, 6, letterSpacing, 0, sFontColorTable[5], 0, sFieldMoveDescriptionTable[action - CURSOR_OPTION_FIELD_MOVES]);
-        PutWindowTilemap(ptr->windowId[2]);
-        ScheduleBgCopyTilemapToVram(2);
     }
 }
 
