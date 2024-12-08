@@ -597,13 +597,13 @@ static void BuyMenuPrintItemDescriptionAndShowItemIcon(s32 item, bool8 onInit, s
             CreateItemMenuIcon(ITEMS_COUNT, gShopData.itemSlot);
         
         gShopData.itemSlot ^= 1;
-        BuyMenuPrint(5, FONT_NORMAL, description, 0, 3, 2, 1, 0, 0);
+        BuyMenuPrint(5, FONT_NORMAL, description, 0, 8, 2, 1, 0, 0);
     }
     else //TM Mart
     {
         FillWindowPixelBuffer(6, PIXEL_FILL(0));
         LoadTmHmNameInMart(item);
-        BuyMenuPrint(5, FONT_NORMAL, description, 2, 3, 1, 0, 0, 0);
+        BuyMenuPrint(5, FONT_NORMAL, description, 2, 8, 1, 0, 0, 0);
     }
 }
 

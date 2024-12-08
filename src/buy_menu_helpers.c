@@ -151,7 +151,7 @@ static const struct WindowTemplate sShopBuyMenuYesNoWindowTemplate =
 
 static const u8 sShopBuyMenuTextColors[][3] =
 {
-    {0, 1, 2},
+    {0, 2, 2},
     {0, 2, 3},
     {0, 3, 2}
 };
