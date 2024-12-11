@@ -30,9 +30,13 @@ CeladonCity_GameCorner_Text_CantAffordCoins::
     .string "You canÑ afford\n"
     .string "the COINS!$"
 
-CeladonCity_GameCorner_Text_HereAreYourCoins::
+CeladonCity_GameCorner_Text_HereAreYour50Coins::
     .string "Thanks! Here are\n"
     .string "your 50 coins!$"
+
+CeladonCity_GameCorner_Text_HereAreYour500Coins::
+    .string "Thanks! Here are\n"
+    .string "your 500 coins!$"
 
 CeladonCity_GameCorner_Text_RumoredTeamRocketRunsThisPlace::
     .string "Keep this quiet.\p"

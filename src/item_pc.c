@@ -130,28 +130,28 @@ static const u8 sTextColors[][3] = {
 static const struct WindowTemplate sWindowTemplates[] = {
     {
         .bg = 0,
-        .tilemapLeft = 7,
+        .tilemapLeft = 10,
         .tilemapTop = 1,
-        .width = 19,
+        .width = 19, //Item list textbox.
         .height = 12,
         .paletteNum = 0,
         .baseBlock = 0x02bf
     }, {
         .bg = 0,
         .tilemapLeft = 5,
-        .tilemapTop = 14,
-        .width = 25,
-        .height = 6,
+        .tilemapTop = 15,
+        .width = 25, //Item description textbox.
+        .height = 4,
         .paletteNum = 0,
         .baseBlock = 0x0229
     }, {
         .bg = 0,
         .tilemapLeft = 1,
         .tilemapTop = 1,
-        .width = 5,
+        .width = 8, //WITHDRAW textbox.
         .height = 4,
         .paletteNum = 0,
-        .baseBlock = 0x0215
+        .baseBlock = 521
     }, {
         .bg = 0,
         .tilemapLeft = 24,
@@ -540,19 +540,19 @@ static void ItemPc_MoveCursorFunc(s32 itemIndex, bool8 onInit, struct ListMenu *
 
 static void ItemPc_ItemPrintFunc(u8 windowId, u32 itemId, u8 y)
 {
-    if (sStateDataPtr->moveModeOrigPos != 0xFF)
+    if (sStateDataPtr->moveModeOrigPos != 255)
     {
         if (sStateDataPtr->moveModeOrigPos == (u8)itemId)
             ItemPc_PrintOrRemoveCursorAt(y, 2);
         else
-            ItemPc_PrintOrRemoveCursorAt(y, 0xFF);
+            ItemPc_PrintOrRemoveCursorAt(y, 255);
     }
     if (itemId != -2)
     {
         u16 quantity = ItemPc_GetItemQuantityBySlotId(itemId);
         ConvertIntToDecimalStringN(gStringVar1, quantity, STR_CONV_MODE_RIGHT_ALIGN, 3);
         StringExpandPlaceholders(gStringVar4, gText_TimesStrVar1);
-        ItemPc_AddTextPrinterParameterized(windowId, FONT_SMALL, gStringVar4, 110, y, 0, 0, 0xFF, 1);
+        ItemPc_AddTextPrinterParameterized(windowId, FONT_NORMAL, gStringVar4, 110, y, 0, 0, 255, 1);
     }
 }
 
@@ -563,7 +563,7 @@ static void ItemPc_PrintOrRemoveCursor(u8 listMenuId, u8 colorIdx)
 
 static void ItemPc_PrintOrRemoveCursorAt(u8 y, u8 colorIdx)
 {
-    if (colorIdx == 0xFF)
+    if (colorIdx == 255)
     {
         u8 maxWidth = GetFontAttribute(FONT_NORMAL, FONTATTR_MAX_LETTER_WIDTH);
         u8 maxHeight = GetFontAttribute(FONT_NORMAL, FONTATTR_MAX_LETTER_HEIGHT);
@@ -577,7 +577,7 @@ static void ItemPc_PrintOrRemoveCursorAt(u8 y, u8 colorIdx)
 
 static void ItemPc_PrintWithdrawItem(void)
 {
-    ItemPc_AddTextPrinterParameterized(2, FONT_SMALL, gText_WithdrawItem, 0, 1, 0, 1, 0, 1);
+    ItemPc_AddTextPrinterParameterized(2, FONT_NORMAL, gText_WithdrawItem, 0, 1, 0, 1, 0, 1);
 }
 
 static void ItemPc_PlaceTopMenuScrollIndicatorArrows(void)
@@ -961,7 +961,7 @@ static void ItemPc_WithdrawMultipleInitWindow(u16 slotId)
     ConvertIntToDecimalStringN(gStringVar1, 1, STR_CONV_MODE_LEADING_ZEROS, 3);
     StringExpandPlaceholders(gStringVar4, gText_TimesStrVar1);
     ItemPc_SetBorderStyleOnWindow(3);
-    ItemPc_AddTextPrinterParameterized(3, FONT_SMALL, gStringVar4, 8, 10, 1, 0, 0, 1);
+    ItemPc_AddTextPrinterParameterized(3, FONT_NORMAL, gStringVar4, 8, 10, 1, 0, 0, 1);
     ScheduleBgCopyTilemapToVram(0);
 }
 
@@ -970,7 +970,7 @@ static void UpdateWithdrawQuantityDisplay(s16 quantity)
     FillWindowPixelRect(3, PIXEL_FILL(1), 10, 10, 28, 12);
     ConvertIntToDecimalStringN(gStringVar1, quantity, STR_CONV_MODE_LEADING_ZEROS, 3);
     StringExpandPlaceholders(gStringVar4, gText_TimesStrVar1);
-    ItemPc_AddTextPrinterParameterized(3, FONT_SMALL, gStringVar4, 8, 10, 1, 0, 0, 1);
+    ItemPc_AddTextPrinterParameterized(3, FONT_NORMAL, gStringVar4, 8, 10, 1, 0, 0, 1);
 }
 
 static void Task_ItemPcHandleWithdrawMultiple(u8 taskId)

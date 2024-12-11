@@ -47,7 +47,7 @@ CeladonCity_GameCorner_EventScript_Buy500Coins::
 	goto_if_eq VAR_RESULT, FALSE, CeladonCity_GameCorner_EventScript_ClerkNotEnoughMoney
 	addcoins 500
 	removemoney 10000
-	goto CeladonCity_GameCorner_EventScript_BoughtCoins
+	goto CeladonCity_GameCorner_EventScript_Bought500Coins
 	end
 
 CeladonCity_GameCorner_EventScript_Buy50Coins::
@@ -57,14 +57,22 @@ CeladonCity_GameCorner_EventScript_Buy50Coins::
 	goto_if_eq VAR_RESULT, FALSE, CeladonCity_GameCorner_EventScript_ClerkNotEnoughMoney
 	addcoins 50
 	removemoney 1000
-	goto CeladonCity_GameCorner_EventScript_BoughtCoins
+	goto CeladonCity_GameCorner_EventScript_Bought50Coins
 	end
 
-CeladonCity_GameCorner_EventScript_BoughtCoins::
+CeladonCity_GameCorner_EventScript_Bought500Coins::
 	updatemoneybox
 	updatecoinsbox 0, 5
 	playse SE_SHOP
-	msgbox CeladonCity_GameCorner_Text_HereAreYourCoins
+	msgbox CeladonCity_GameCorner_Text_HereAreYour500Coins
+	goto CeladonCity_GameCorner_EventScript_ClerkEnd
+	end
+
+CeladonCity_GameCorner_EventScript_Bought50Coins::
+	updatemoneybox
+	updatecoinsbox 0, 5
+	playse SE_SHOP
+	msgbox CeladonCity_GameCorner_Text_HereAreYour50Coins
 	goto CeladonCity_GameCorner_EventScript_ClerkEnd
 	end
 

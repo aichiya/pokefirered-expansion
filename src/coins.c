@@ -53,15 +53,15 @@ static void PrintCoinsString_Parameterized(u8 windowId, u32 coinAmount, u8 x, u8
 {
     ConvertIntToDecimalStringN(gStringVar1, coinAmount, STR_CONV_MODE_RIGHT_ALIGN, 4);
     StringExpandPlaceholders(gStringVar4, gText_Coins);
-    AddTextPrinterParameterized(windowId, FONT_SMALL, gStringVar4, x, y, speed, NULL);
+    AddTextPrinterParameterized(windowId, FONT_NORMAL, gStringVar4, x, y, speed, NULL);
 }
 
 // Unused
 static void ShowCoinsWindow_Parameterized(u8 windowId, u16 tileStart, u8 palette, u32 coinAmount)
 {
     DrawStdFrameWithCustomTileAndPalette(windowId, FALSE, tileStart, palette);
-    AddTextPrinterParameterized(windowId, FONT_NORMAL, gText_Coins_2, 0, 0, 0xFF, 0);
-    PrintCoinsString_Parameterized(windowId, coinAmount, 0x10, 0xC, 0);
+    AddTextPrinterParameterized(windowId, FONT_NORMAL, gText_Coins_2, 0, 0, 255, 0);
+    PrintCoinsString_Parameterized(windowId, coinAmount, 16, 12, 0);
 }
 
 void PrintCoinsString(u32 coinAmount)
@@ -71,22 +71,22 @@ void PrintCoinsString(u32 coinAmount)
 
     ConvertIntToDecimalStringN(gStringVar1, coinAmount, STR_CONV_MODE_RIGHT_ALIGN, 4);
     StringExpandPlaceholders(gStringVar4, gText_Coins);
-    width = GetStringWidth(FONT_SMALL, gStringVar4, 0);
+    width = GetStringWidth(FONT_NORMAL, gStringVar4, 0);
     windowId = sCoinsWindowId;
-    AddTextPrinterParameterized(windowId, FONT_SMALL, gStringVar4, 64 - width, 0xC, 0, NULL);
+    AddTextPrinterParameterized(windowId, FONT_NORMAL, gStringVar4, 64 - width, 12, 0, NULL);
 }
 
 void ShowCoinsWindow(u32 coinAmount, u8 x, u8 y)
 {
     struct WindowTemplate template;
 
-    template = SetWindowTemplateFields(0, x + 1, y + 1, 8, 3, 0xF, 0x20);
+    template = SetWindowTemplateFields(0, x + 1, y + 1, 8, 3, 15, 32);
     sCoinsWindowId = AddWindow(&template);
     FillWindowPixelBuffer(sCoinsWindowId, 0);
     PutWindowTilemap(sCoinsWindowId);
-    LoadStdWindowGfx(sCoinsWindowId, 0x21D, BG_PLTT_ID(13));
-    DrawStdFrameWithCustomTileAndPalette(sCoinsWindowId, FALSE, 0x21D, 13);
-    AddTextPrinterParameterized(sCoinsWindowId, FONT_NORMAL, gText_Coins_2, 0, 0, 0xFF, 0);
+    LoadStdWindowGfx(sCoinsWindowId, 541, BG_PLTT_ID(13));
+    DrawStdFrameWithCustomTileAndPalette(sCoinsWindowId, FALSE, 541, 13);
+    AddTextPrinterParameterized(sCoinsWindowId, FONT_NORMAL, gText_Coins_2, 0, 0, 255, 0);
     PrintCoinsString(coinAmount);
 }
 

@@ -293,20 +293,20 @@ u8 GetBagWindow(u8 whichWindow)
 
 void BagCreateYesNoMenuBottomRight(u8 taskId, const struct YesNoFuncTable * ptrs)
 {
-    CreateYesNoMenuWithCallbacks(taskId, &sWindowTemplates[3], FONT_NORMAL, 0, 2, 0x064, 14, ptrs);
+    CreateYesNoMenuWithCallbacks(taskId, &sWindowTemplates[3], FONT_NORMAL, 0, 2, 100, 14, ptrs);
 }
 
 void BagCreateYesNoMenuTopRight(u8 taskId, const struct YesNoFuncTable * ptrs)
 {
-    CreateYesNoMenuWithCallbacks(taskId, &sWindowTemplates[4], FONT_NORMAL, 0, 2, 0x064, 14, ptrs);
+    CreateYesNoMenuWithCallbacks(taskId, &sWindowTemplates[4], FONT_NORMAL, 0, 2, 100, 14, ptrs);
 }
 
 void BagPrintMoneyAmount(void)
 {
-    PrintMoneyAmountInMoneyBoxWithBorder(ShowBagWindow(2, 0), 0x081, 0x0C, GetMoney(&gSaveBlock1Ptr->money));
+    PrintMoneyAmountInMoneyBoxWithBorder(ShowBagWindow(2, 0), 129, 12, GetMoney(&gSaveBlock1Ptr->money));
 }
 
 void BagDrawTextBoxOnWindow(u8 windowId)
 {
-    DrawTextBorderOuter(windowId, 0x064, 14);
+    DrawTextBorderOuter(windowId, 101, 14);
 }
