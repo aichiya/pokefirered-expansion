@@ -50,9 +50,9 @@ static const struct WindowTemplate sShopBuyMenuWindowTemplatesNormal[] =
     },
     {
         .bg = 0,
-        .tilemapLeft = 11,
+        .tilemapLeft = 10,
         .tilemapTop = 1,
-        .width = 17,
+        .width = 18,
         .height = 12,
         .paletteNum = 14,
         .baseBlock = 0xF1,
@@ -60,11 +60,11 @@ static const struct WindowTemplate sShopBuyMenuWindowTemplatesNormal[] =
     {
         .bg = 0,
         .tilemapLeft = 5,
-        .tilemapTop = 14,
-        .width = 25,
-        .height = 6,
+        .tilemapTop = 15,
+        .width = 24,
+        .height = 4,
         .paletteNum = 15,
-        .baseBlock = 0x1BD,
+        .baseBlock = 457,
     },
     DUMMY_WIN_TEMPLATE,
 };
@@ -76,7 +76,7 @@ static const struct WindowTemplate sShopBuyMenuWindowTemplatesTM[] =
         .bg = 0,
         .tilemapLeft = 1,
         .tilemapTop = 1,
-        .width = 8,
+        .width = 8, //Money window.
         .height = 3,
         .paletteNum = 15,
         .baseBlock = 0x27,
@@ -85,7 +85,7 @@ static const struct WindowTemplate sShopBuyMenuWindowTemplatesTM[] =
         .bg = 0,
         .tilemapLeft = 1,
         .tilemapTop = 11,
-        .width = 13,
+        .width = 13, //In Bag window.
         .height = 2,
         .paletteNum = 15,
         .baseBlock = 0x3F,
@@ -94,7 +94,7 @@ static const struct WindowTemplate sShopBuyMenuWindowTemplatesTM[] =
         .bg = 0,
         .tilemapLeft = 2,
         .tilemapTop = 15,
-        .width = 26,
+        .width = 26, //How many? window.
         .height = 4,
         .paletteNum = 14,
         .baseBlock = 0x59,
@@ -103,7 +103,7 @@ static const struct WindowTemplate sShopBuyMenuWindowTemplatesTM[] =
         .bg = 0,
         .tilemapLeft = 17,
         .tilemapTop = 9,
-        .width = 12,
+        .width = 12, //Number to buy window.
         .height = 4,
         .paletteNum = 14,
         .baseBlock = 0xC1,
@@ -112,17 +112,17 @@ static const struct WindowTemplate sShopBuyMenuWindowTemplatesTM[] =
         .bg = 0,
         .tilemapLeft = 11,
         .tilemapTop = 1,
-        .width = 17,
+        .width = 17, //TM number and price textbox.
         .height = 10,
         .paletteNum = 14,
         .baseBlock = 0xF1,
     },
     {
         .bg = 0,
-        .tilemapLeft = 12,
-        .tilemapTop = 12,
-        .width = 18,
-        .height = 8,
+        .tilemapLeft = 13,
+        .tilemapTop = 13,
+        .width = 16, //TM description text box.
+        .height = 6,
         .paletteNum = 14,
         .baseBlock = 0x19B,
     },
@@ -130,7 +130,7 @@ static const struct WindowTemplate sShopBuyMenuWindowTemplatesTM[] =
         .bg = 0,
         .tilemapLeft = 1,
         .tilemapTop = 14,
-        .width = 10,
+        .width = 12, //TM name text box.
         .height = 4,
         .paletteNum = 14,
         .baseBlock = 0x22B,
@@ -163,9 +163,9 @@ void BuyMenuInitWindows(bool32 isSellingTM)
     else
         InitWindows(sShopBuyMenuWindowTemplatesTM);
     DeactivateAllTextPrinters();
-    LoadUserWindowGfx(0, 0x1, BG_PLTT_ID(13));
-    LoadMenuMessageWindowGfx(0, 0x13, BG_PLTT_ID(14));
-    LoadStdWindowGfx(0, 0xA, BG_PLTT_ID(15));
+    LoadUserWindowGfx(0, 1, BG_PLTT_ID(13));
+    LoadMenuMessageWindowGfx(0, 19, BG_PLTT_ID(14));
+    LoadStdWindowGfx(0, 10, BG_PLTT_ID(15));
     PutWindowTilemap(0);
     PutWindowTilemap(4);
     PutWindowTilemap(5);
@@ -175,7 +175,7 @@ void BuyMenuInitWindows(bool32 isSellingTM)
 
 void BuyMenuDrawMoneyBox(void)
 {
-    PrintMoneyAmountInMoneyBoxWithBorder(0, 0xA, 0xF, GetMoney(&gSaveBlock1Ptr->money));
+    PrintMoneyAmountInMoneyBoxWithBorder(0, 10, 15, GetMoney(&gSaveBlock1Ptr->money));
 }
 
 void BuyMenuPrint(u8 windowId, u8 font, const u8 *text, u8 x, u8 y, u8 letterSpacing, u8 lineSpacing, u8 speed, u8 color)
@@ -185,18 +185,18 @@ void BuyMenuPrint(u8 windowId, u8 font, const u8 *text, u8 x, u8 y, u8 letterSpa
 
 void BuyMenuDisplayMessage(u8 taskId, const u8 *text, TaskFunc callback)
 {
-    DisplayMessageAndContinueTask(taskId, 2, 0x13, 0xE, GetMartFontId(), GetTextSpeedSetting(), text, callback);
+    DisplayMessageAndContinueTask(taskId, 2, 19, 14, GetMartFontId(), GetTextSpeedSetting(), text, callback);
     ScheduleBgCopyTilemapToVram(0);
 }
 
 void BuyMenuQuantityBoxNormalBorder(u8 windowId, bool8 copyToVram)
 {
-    DrawStdFrameWithCustomTileAndPalette(windowId, copyToVram, 0x1, 13);
+    DrawStdFrameWithCustomTileAndPalette(windowId, copyToVram, 1, 13);
 }
 
 void BuyMenuQuantityBoxThinBorder(u8 windowId, bool8 copyToVram)
 {
-    DrawStdFrameWithCustomTileAndPalette(windowId, copyToVram, 0xA, 15);
+    DrawStdFrameWithCustomTileAndPalette(windowId, copyToVram, 10, 15);
 }
 
 void BuyMenuConfirmPurchase(u8 taskId, const struct YesNoFuncTable *yesNo)

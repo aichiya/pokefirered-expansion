@@ -284,14 +284,14 @@ static void Task_ShopMenu(u8 taskId)
 
 static void Task_HandleShopMenuBuy(u8 taskId)
 {
-    SetWordTaskArg(taskId, 0xE, (u32)CB2_InitBuyMenu);
+    SetWordTaskArg(taskId, 14, (u32)CB2_InitBuyMenu);
     FadeScreen(FADE_TO_BLACK, 0);
     gTasks[taskId].func = Task_GoToBuyOrSellMenu;
 }
 
 static void Task_HandleShopMenuSell(u8 taskId)
 {
-    SetWordTaskArg(taskId, 0xE, (u32)CB2_GoToSellMenu);
+    SetWordTaskArg(taskId, 14, (u32)CB2_GoToSellMenu);
     FadeScreen(FADE_TO_BLACK, 0);
     gTasks[taskId].func = Task_GoToBuyOrSellMenu;    
 }
@@ -322,7 +322,7 @@ static void Task_GoToBuyOrSellMenu(u8 taskId)
     if (gPaletteFade.active)
         return;
     
-    SetMainCallback2((void *)GetWordTaskArg(taskId, 0xE));
+    SetMainCallback2((void *)GetWordTaskArg(taskId, 14));
     FreeAllWindowBuffers();
     DestroyTask(taskId);
 }
@@ -597,13 +597,13 @@ static void BuyMenuPrintItemDescriptionAndShowItemIcon(s32 item, bool8 onInit, s
             CreateItemMenuIcon(ITEMS_COUNT, gShopData.itemSlot);
         
         gShopData.itemSlot ^= 1;
-        BuyMenuPrint(5, FONT_NORMAL, description, 0, 8, 2, 1, 0, 0);
+        BuyMenuPrint(5, FONT_NORMAL, description, 0, 0, 2, 1, 0, 0);
     }
     else //TM Mart
     {
         FillWindowPixelBuffer(6, PIXEL_FILL(0));
         LoadTmHmNameInMart(item);
-        BuyMenuPrint(5, FONT_NORMAL, description, 2, 8, 1, 0, 0, 0);
+        BuyMenuPrint(5, FONT_NORMAL, description, 16, 0, 1, -3, 0, 0); //Change the 4th digit from 0 to -3 in order to fit 4 lines of text in the description box.
     }
 }
 
@@ -620,8 +620,16 @@ static void BuyMenuPrintPriceInList(u8 windowId, u32 item, u8 y)
         while (x-- != 0)
             *loc++ = 0;
         StringExpandPlaceholders(loc, gText_PokedollarVar1);
-        BuyMenuPrint(windowId, FONT_SMALL, gStringVar4, 0x69, y, 0, 0, TEXT_SKIP_DRAW, 1);
+        if (gShopData.martType == MART_TYPE_TMHM)
+        {
+            BuyMenuPrint(windowId, FONT_NORMAL, gStringVar4, 94, y, 0, 0, TEXT_SKIP_DRAW, 1);
+        }
+        else
+        {
+            BuyMenuPrint(windowId, FONT_NORMAL, gStringVar4, 104, y, 0, 0, TEXT_SKIP_DRAW, 1);
+        }
     }
+    
 }
 
 static void LoadTmHmNameInMart(s32 item)
@@ -631,14 +639,14 @@ static void LoadTmHmNameInMart(s32 item)
         ConvertIntToDecimalStringN(gStringVar1, item - ITEM_DEVON_SCOPE, 2, 2);
         StringCopy(gStringVar4, gText_NumberClear01);
         StringAppend(gStringVar4, gStringVar1);
-        BuyMenuPrint(6, FONT_SMALL, gStringVar4, 0, 0, 0, 0, TEXT_SKIP_DRAW, 1);
+        BuyMenuPrint(6, FONT_NORMAL, gStringVar4, 0, 0, 0, 0, TEXT_SKIP_DRAW, 1);
         StringCopy(gStringVar4, gMoveNames[ItemIdToBattleMoveId(item)]);
-        BuyMenuPrint(6, FONT_NORMAL, gStringVar4, 0, 0x10, 0, 0, 0, 1);
+        BuyMenuPrint(6, FONT_NORMAL, gStringVar4, 0, 16, 0, 0, 0, 1);
     }
     else
     {
-        BuyMenuPrint(6, FONT_SMALL, gText_ThreeHyphens, 0, 0, 0, 0, TEXT_SKIP_DRAW, 1);
-        BuyMenuPrint(6, FONT_NORMAL, gText_SevenHyphens, 0, 0x10, 0, 0, 0, 1);
+        BuyMenuPrint(6, FONT_NORMAL, gText_ThreeHyphens, 0, 0, 0, 0, TEXT_SKIP_DRAW, 1);
+        BuyMenuPrint(6, FONT_NORMAL, gText_SevenHyphens, 0, 16, 0, 0, 0, 1);
     }
 }
 
@@ -873,10 +881,10 @@ static void BuyMenuPrintItemQuantityAndPrice(u8 taskId)
     s16 *data = gTasks[taskId].data;
     
     FillWindowPixelBuffer(3, PIXEL_FILL(1));
-    PrintMoneyAmount(3, 0x36, 0xA, gShopData.itemPrice, TEXT_SKIP_DRAW);
+    PrintMoneyAmount(3, 34, 10, gShopData.itemPrice, TEXT_SKIP_DRAW);
     ConvertIntToDecimalStringN(gStringVar1, tItemCount, STR_CONV_MODE_LEADING_ZEROS, 2);
     StringExpandPlaceholders(gStringVar4, gText_TimesStrVar1);
-    BuyMenuPrint(3, FONT_SMALL, gStringVar4, 2, 0xA, 0, 0, 0, 1);
+    BuyMenuPrint(3, FONT_NORMAL, gStringVar4, 2, 10, 0, 0, 0, 1);
 }
 
 static void Task_BuyMenu(u8 taskId)

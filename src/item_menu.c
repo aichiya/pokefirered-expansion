@@ -1874,7 +1874,7 @@ static void Task_InitSaleQuantitySelectInterface(u8 taskId)
 
 static void UpdateSalePriceDisplay(s32 amount)
 {
-    PrintMoneyAmount(GetBagWindow(0), 56, 10, amount, 0);
+    PrintMoneyAmount(GetBagWindow(0), 32, 10, amount, 0);
 }
 
 static void Task_SelectQuantityToSell(u8 taskId)
