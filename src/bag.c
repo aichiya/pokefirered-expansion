@@ -29,16 +29,16 @@ static const struct WindowTemplate sDefaultBagWindowsStd[] = {
     }, {
         .bg = 0,
         .tilemapLeft = 5,
-        .tilemapTop = 14,
-        .width = 25,
-        .height = 6,
+        .tilemapTop = 15,
+        .width = 24, //Item description textbox.
+        .height = 4,
         .paletteNum = 0,
         .baseBlock = 0x0162
     }, {
         .bg = 0,
         .tilemapLeft = 1,
         .tilemapTop = 1,
-        .width = 9,
+        .width = 9, //Bag pocket name textbox.
         .height = 2,
         .paletteNum = 0,
         .baseBlock = 0x01f8
@@ -124,9 +124,9 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .baseBlock = 0x2a2
     }, {
         .bg = 0,
-        .tilemapLeft = 6,
+        .tilemapLeft = 4,
         .tilemapTop = 15,
-        .width = 14,
+        .width = 14, //{ITEM} is selected window.
         .height = 4,
         .paletteNum = 0,
         .baseBlock = 0x2a2
@@ -164,9 +164,9 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .baseBlock = 0x20a
     }, {
         .bg = 0,
-        .tilemapLeft = 22,
+        .tilemapLeft = 20,
         .tilemapTop = 15,
-        .width = 7,
+        .width = 9, //USE REGISTER contextual selection window.
         .height = 4,
         .paletteNum = 0,
         .baseBlock = 0x20a
