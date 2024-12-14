@@ -218,7 +218,8 @@ static const struct MenuAction sItemMenuContextActions[] = {
 static const u8 sContextMenuItems_Field[][4] = {
     {
         ITEMMENUACTION_USE,
-        ITEMMENUACTION_TOSS
+        ITEMMENUACTION_TOSS,
+        ITEMMENUACTION_CANCEL
     }, {
         ITEMMENUACTION_USE,
         ITEMMENUACTION_REGISTER,
@@ -1407,7 +1408,7 @@ static void OpenContextMenu(u8 taskId)
                 break;
             case OPEN_BAG_POKEBALLS:
                 sContextMenuItemsPtr = sContextMenuItems_Field[gBagMenuState.pocket];
-                sContextMenuNumItems = 3;
+                sContextMenuNumItems = 2;
                 break;
             }
         }
