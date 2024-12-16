@@ -51,7 +51,7 @@ static u8 ListMenuAddCursorObject(struct ListMenu *list, u32 cursorKind);
 
 static const struct MoveMenuInfoIcon sMenuInfoIcons[] =
 {   // { width, height, offset }
-    [MENU_INFO_ICON_CAUGHT] = { 12, 12, 0x00 },
+    [MENU_INFO_ICON_CAUGHT] = { 16, 16, 0x00 },
     [TYPE_NORMAL + 1]   = { 32, 12, 0x20 },
     [TYPE_FIGHTING + 1] = { 32, 12, 0x64 },
     [TYPE_FLYING + 1]   = { 32, 12, 0x60 },
