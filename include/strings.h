@@ -105,6 +105,7 @@ extern const u8 gText_TMCaseType[];
 extern const u8 gText_TMCasePower[];
 extern const u8 gText_TMCaseAccuracy[];
 extern const u8 gText_TMCasePP[];
+extern const u8 gText_Money[];
 extern const u8 gText_Close[];
 extern const u8 gText_TMCaseWillBePutAway[];
 extern const u8 gText_FontSmall[];
