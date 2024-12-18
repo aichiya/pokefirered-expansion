@@ -68,7 +68,7 @@ endif
 
 SHELL := /bin/bash -o pipefail
 
-ROM := poke$(BUILD_NAME).gba
+ROM := $(BUILD_NAME).gba
 OBJ_DIR := build/$(BUILD_NAME)
 
 ELF = $(ROM:.gba=.elf)
@@ -342,23 +342,15 @@ $(ROM): $(ELF)
 	$(OBJCOPY) -O binary --gap-fill 0xFF --pad-to 0x9000000 $< $@
 
 # "friendly" target names for convenience sake
-firered:                ; @$(MAKE) GAME_VERSION=FIRERED
-firered_rev1:           ; @$(MAKE) GAME_VERSION=FIRERED GAME_REVISION=1
-leafgreen:              ; @$(MAKE) GAME_VERSION=LEAFGREEN
-leafgreen_rev1:         ; @$(MAKE) GAME_VERSION=LEAFGREEN GAME_REVISION=1
-
-red:                ; @$(MAKE) GAME_VERSION=FIRERED
-blue:              ; @$(MAKE) GAME_VERSION=LEAFGREEN
+red:                ; @$(MAKE) GAME_VERSION=FIRERED GAME_REVISION=1
+blue:              ; @$(MAKE) GAME_VERSION=LEAFGREEN GAME_REVISION=1
+red_modern:                ; @$(MAKE) GAME_VERSION=FIRERED GAME_REVISION=1 MODERN=1
+blue_modern:              ; @$(MAKE) GAME_VERSION=LEAFGREEN GAME_REVISION=1 MODERN=1
 
 compare_firered:        ; @$(MAKE) GAME_VERSION=FIRERED COMPARE=1
 compare_firered_rev1:   ; @$(MAKE) GAME_VERSION=FIRERED GAME_REVISION=1 COMPARE=1
 compare_leafgreen:      ; @$(MAKE) GAME_VERSION=LEAFGREEN COMPARE=1
 compare_leafgreen_rev1: ; @$(MAKE) GAME_VERSION=LEAFGREEN GAME_REVISION=1 COMPARE=1
-
-firered_modern:        ; @$(MAKE) GAME_VERSION=FIRERED MODERN=1
-firered_rev1_modern:   ; @$(MAKE) GAME_VERSION=FIRERED GAME_REVISION=1 MODERN=1
-leafgreen_modern:      ; @$(MAKE) GAME_VERSION=LEAFGREEN MODERN=1
-leafgreen_rev1_modern: ; @$(MAKE) GAME_VERSION=LEAFGREEN GAME_REVISION=1 MODERN=1
 
 modern: ; @$(MAKE) MODERN=1
 

@@ -13,12 +13,12 @@ MAKER_CODE  := 01
 ifeq ($(GAME_VERSION),FIRERED)
 TITLE       := POKEMON RED
 GAME_CODE   := BPR
-BUILD_NAME  := firered
+BUILD_NAME  := RED_G1S
 else
 ifeq ($(GAME_VERSION),LEAFGREEN)
 TITLE       := POKEMON BLUE
 GAME_CODE   := BPG
-BUILD_NAME  := leafgreen
+BUILD_NAME  := BLUE_G1S
 else
 $(error unknown version $(GAME_VERSION))
 endif
@@ -26,10 +26,10 @@ endif
 
 # Revision
 ifeq ($(GAME_REVISION),0)
-BUILD_NAME  := $(BUILD_NAME)
+BUILD_NAME  := $(BUILD_NAME)_rev0
 else
 ifeq ($(GAME_REVISION),1)
-BUILD_NAME  := $(BUILD_NAME)_rev1
+BUILD_NAME  := $(BUILD_NAME)
 else
 $(error unknown revision $(GAME_REVISION))
 endif

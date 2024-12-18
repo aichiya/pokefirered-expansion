@@ -45,6 +45,8 @@ and more testing to be done before declaring the project fully finished. I canno
 - _pokeleafgreen sha1_: 574fa542ffebb14be69902d1d36f1ec0a4afd71e
 - _pokeleafgreen_rev1_ sha1: 7862c67bdecbe21d1d69ce082ce34327e1c6ed5e
 
+Build options: 'red' 'blue'
+
 
 Thank you to CHAMBER, SOLOO993, BLUE EMERALD, LAKE, NESLUG, PIKACHU25 for the Pokemon party icon sprite sheet available through PRET tutorials, TheXaman for the wonderful Gen4-style party menu, Moylend for playing my project and reporting issues, Meister_anon and GriffinR for answering my questions on Discord!
 
