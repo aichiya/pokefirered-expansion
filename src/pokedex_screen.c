@@ -2718,7 +2718,7 @@ void DexScreen_PrintMonCategory(u8 windowId, u16 species, u8 x, u8 y)
 
     DexScreen_AddTextPrinterParameterized(windowId, FONT_NORMAL, categoryStr, x, y, 0);
     x += GetStringWidth(FONT_NORMAL, categoryStr, 0);
-    DexScreen_AddTextPrinterParameterized(windowId, FONT_NORMAL, gText_PokedexPokemon, x, y, 0);
+    //DexScreen_AddTextPrinterParameterized(windowId, FONT_NORMAL, gText_PokedexPokemon, x, y, 0);
 }
 
 void DexScreen_PrintMonHeight(u8 windowId, u16 species, u8 x, u8 y)
