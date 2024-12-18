@@ -1491,7 +1491,7 @@ static bool8 KeyboardKeyHandler_Character(u8 input)
     {
         bool8 textFull = AddTextCharacter();
 
-        //SquishCursor(); 
+        SquishCursor();
         if (textFull)
         {
             SetInputState(INPUT_STATE_DISABLED);
