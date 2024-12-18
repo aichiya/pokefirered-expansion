@@ -234,8 +234,8 @@ static const u8 sText_SingleSpace[] = _(" ");
 static ALIGNED(4) const u16 sPal3Override[] = {RGB(8, 8, 8), RGB(30, 16, 6)};
 
 static const u8 sTextColors[][3] = {
-    [COLOR_LIGHT] = {0, 1, 2},
-    [COLOR_DARK] = {0, 2, 3},
+    [COLOR_LIGHT] = {0, 14, 0},
+    [COLOR_DARK] = {0, 2, 0},
     [COLOR_CURSOR_SELECTED] = {0, 3, 6},
     [COLOR_MOVE_INFO] = {0, 14, 10},
 };
@@ -243,20 +243,20 @@ static const u8 sTextColors[][3] = {
 static const struct WindowTemplate sWindowTemplates[] = {
     [WIN_LIST] = {
         .bg = 0,
-        .tilemapLeft = 10,
+        .tilemapLeft = 9,
         .tilemapTop = 1,
         .width = 19,
         .height = 10,
-        .paletteNum = 15,
+        .paletteNum = 13,
         .baseBlock = 0x081
     },
     [WIN_DESCRIPTION] = {
         .bg = 0,
-        .tilemapLeft = 12,
+        .tilemapLeft = 14,
         .tilemapTop = 12,
-        .width = 18,
+        .width = 14,
         .height = 8,
-        .paletteNum = 10,
+        .paletteNum = 13,
         .baseBlock = 0x13f
     },
     [WIN_SELECTED_MSG] = {
@@ -274,26 +274,26 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 1,
         .width = 10,
         .height = 2,
-        .paletteNum = 15,
+        .paletteNum = 13,
         .baseBlock = 0x235
     },
     [WIN_MOVE_INFO_LABELS] = {
         .bg = 0,
         .tilemapLeft = 1,
         .tilemapTop = 13,
-        .width = 5,
+        .width = 8,
         .height = 6,
         .paletteNum = 12,
         .baseBlock = 0x249
     },
     [WIN_MOVE_INFO] = {
         .bg = 0,
-        .tilemapLeft = 7,
+        .tilemapLeft = 9,
         .tilemapTop = 13,
-        .width = 5,
+        .width = 4,
         .height = 6,
         .paletteNum = 12,
-        .baseBlock = 0x267
+        .baseBlock = 633
     },
     [WIN_MESSAGE] = {
         .bg = 1,
@@ -310,7 +310,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 9,
         .width = 12,
         .height = 4,
-        .paletteNum = 15,
+        .paletteNum = 13,
         .baseBlock = 0x2ed
     },
     [WIN_MONEY] = {
@@ -331,7 +331,7 @@ static const struct WindowTemplate sYesNoWindowTemplate = {
     .tilemapTop = 9,
     .width = 6,
     .height = 4,
-    .paletteNum = 15,
+    .paletteNum = 13,
     .baseBlock = 0x335
 };
 
@@ -342,7 +342,7 @@ static const struct WindowTemplate sWindowTemplates_ContextMenu[] = {
         .tilemapTop = 13,
         .width = 7,
         .height = 6,
-        .paletteNum = 15,
+        .paletteNum = 13,
         .baseBlock = 0x1cf
     },
     [WIN_GIVE_EXIT] = {
@@ -351,7 +351,7 @@ static const struct WindowTemplate sWindowTemplates_ContextMenu[] = {
         .tilemapTop = 15,
         .width = 7,
         .height = 4,
-        .paletteNum = 15,
+        .paletteNum = 13,
         .baseBlock = 0x1cf
     },
 };
@@ -617,7 +617,7 @@ static bool8 HandleLoadTMCaseGraphicsAndPalettes(void)
         if (gSaveBlock2Ptr->playerGender == MALE)
             LoadCompressedPalette(gTMCaseMenu_Male_Pal, BG_PLTT_ID(0), 4 * PLTT_SIZE_4BPP);
         else
-            LoadCompressedPalette(gTMCaseMenu_Female_Pal, BG_PLTT_ID(0), 4 * PLTT_SIZE_4BPP);
+            LoadCompressedPalette(gTMCaseMenu_Male_Pal, BG_PLTT_ID(0), 4 * PLTT_SIZE_4BPP);
         sTMCaseDynamicResources->seqId++;
         break;
     case 4:
@@ -676,17 +676,17 @@ static void InitTMCaseListMenuItems(void)
 
 static void GetTMNumberAndMoveString(u8 * dest, u16 itemId)
 {
-    StringCopy(gStringVar4, gText_FontSmall);
+    StringCopy(gStringVar4, gText_FontNormal);
     if (itemId >= ITEM_HM01)
     {
         StringAppend(gStringVar4, sText_ClearTo18);
-        StringAppend(gStringVar4, gText_NumberClear01);
+        //StringAppend(gStringVar4, gText_NumberClear01);
         ConvertIntToDecimalStringN(gStringVar1, itemId - ITEM_HM01 + 1, STR_CONV_MODE_LEADING_ZEROS, 1);
         StringAppend(gStringVar4, gStringVar1);
     }
     else
     {
-        StringAppend(gStringVar4, gText_NumberClear01);
+        //StringAppend(gStringVar4, gText_NumberClear01);
         ConvertIntToDecimalStringN(gStringVar1, itemId - ITEM_TM01 + 1, STR_CONV_MODE_LEADING_ZEROS, 2);
         StringAppend(gStringVar4, gStringVar1);
     }
@@ -720,7 +720,7 @@ static void List_ItemPrintFunc(u8 windowId, u32 itemIndex, u8 y)
     {
         if (!IS_HM(BagGetItemIdByPocketPosition(POCKET_TM_CASE, itemIndex)))
         {
-            ConvertIntToDecimalStringN(gStringVar1, BagGetQuantityByPocketPosition(POCKET_TM_CASE, itemIndex), STR_CONV_MODE_RIGHT_ALIGN, 3);
+            ConvertIntToDecimalStringN(gStringVar1, BagGetQuantityByPocketPosition(POCKET_TM_CASE, itemIndex), STR_CONV_MODE_RIGHT_ALIGN, 2);
             StringExpandPlaceholders(gStringVar4, gText_TimesStrVar1);
             TMCase_Print(windowId, FONT_NORMAL, gStringVar4, 126, y, 0, 0, TEXT_SKIP_DRAW, COLOR_DARK);
         }
@@ -739,7 +739,7 @@ static void PrintDescription(s32 itemIndex)
     else
         str = gText_TMCaseWillBePutAway;
     FillWindowPixelBuffer(WIN_DESCRIPTION, 0);
-    TMCase_Print(WIN_DESCRIPTION, FONT_NORMAL, str, 2, 3, 1, 0, 0, COLOR_LIGHT);
+    TMCase_Print(WIN_DESCRIPTION, FONT_NORMAL, str, 0, 4, 1, -1, 0, COLOR_DARK);
 }
 
 // Darkens (or subsequently lightens) the blue bg tiles around the description window when a TM/HM is selected.
@@ -917,7 +917,7 @@ static void Task_HandleListInput(u8 taskId)
                     break;
                 default:
                     PlaySE(SE_SELECT);
-                    SetDescriptionWindowShade(1);
+                    //SetDescriptionWindowShade(1);
                     RemoveScrollArrows();
                     PrintListCursor(tListTaskId, COLOR_CURSOR_SELECTED);
                     tSelection = input;
@@ -933,7 +933,7 @@ static void Task_HandleListInput(u8 taskId)
 
 static void ReturnToList(u8 taskId)
 {
-    SetDescriptionWindowShade(0);
+    //SetDescriptionWindowShade(0);
     CreateListScrollArrows();
     gTasks[taskId].func = Task_HandleListInput;
 }
@@ -1366,7 +1366,7 @@ static void Task_Pokedude_Run(u8 taskId)
     {
     case 0:
         BeginNormalPaletteFade(0xFFFF8405, 4, 0, 6, 0);
-        SetDescriptionWindowShade(1);
+        //SetDescriptionWindowShade(1);
         tPokedudeState++;
         break;
     case 1:
@@ -1417,7 +1417,7 @@ static void Task_Pokedude_Run(u8 taskId)
         }
         break;
     case 8:
-        SetDescriptionWindowShade(1);
+        //SetDescriptionWindowShade(1);
         PrintMessageWithFollowupTask(taskId, FONT_MALE, gPokedudeText_TMTypes, NULL);
         gTasks[taskId].func = Task_Pokedude_Run;
         tPokedudeState++;
@@ -1431,7 +1431,7 @@ static void Task_Pokedude_Run(u8 taskId)
     case 10:
         if (JOY_NEW(A_BUTTON | B_BUTTON))
         {
-            SetDescriptionWindowShade(0);
+            //SetDescriptionWindowShade(0);
             BeginNormalPaletteFade(0x00000400, 0, 6, 0, 0);
             ClearDialogWindowAndFrameToTransparent(WIN_MESSAGE, FALSE);
             ScheduleBgCopyTilemapToVram(1);
@@ -1439,7 +1439,7 @@ static void Task_Pokedude_Run(u8 taskId)
         }
         break;
     case 18:
-        SetDescriptionWindowShade(1);
+        //SetDescriptionWindowShade(1);
         PrintMessageWithFollowupTask(taskId, FONT_MALE, gPokedudeText_ReadTMDescription, NULL);
         gTasks[taskId].func = Task_Pokedude_Run; // this function
         tPokedudeState++;
@@ -1524,15 +1524,15 @@ static void PrintMessageWithFollowupTask(u8 taskId, u8 fontId, const u8 * str, T
 static void PrintTitle(void)
 {
     u32 distance = 72 - GetStringWidth(FONT_NORMAL_COPY_1, gText_TMCase, 0);
-    AddTextPrinterParameterized3(WIN_TITLE, FONT_NORMAL_COPY_1, distance / 2, 1, sTextColors[COLOR_LIGHT], 0, gText_TMCase);
+    AddTextPrinterParameterized3(WIN_TITLE, FONT_NORMAL_COPY_1, distance / 2, 1, sTextColors[COLOR_DARK], 0, gText_TMCase);
 }
 
 static void DrawMoveInfoLabels(void)
 {
-    BlitMenuInfoIcon(WIN_MOVE_INFO_LABELS, MENU_INFO_ICON_TYPE, 0, 0);
-    BlitMenuInfoIcon(WIN_MOVE_INFO_LABELS, MENU_INFO_ICON_POWER, 0, 12);
-    BlitMenuInfoIcon(WIN_MOVE_INFO_LABELS, MENU_INFO_ICON_ACCURACY, 0, 24);
-    BlitMenuInfoIcon(WIN_MOVE_INFO_LABELS, MENU_INFO_ICON_PP, 0, 36);
+    AddTextPrinterParameterized3(WIN_MOVE_INFO_LABELS, FONT_NORMAL_COPY_2, 0, 0, sTextColors[COLOR_LIGHT], 0, gText_TMCaseType);
+    AddTextPrinterParameterized3(WIN_MOVE_INFO_LABELS, FONT_NORMAL_COPY_2, 0, 12, sTextColors[COLOR_LIGHT], 0, gText_TMCasePower);
+    AddTextPrinterParameterized3(WIN_MOVE_INFO_LABELS, FONT_NORMAL_COPY_2, 0, 24, sTextColors[COLOR_LIGHT], 0, gText_TMCaseAccuracy);
+    AddTextPrinterParameterized3(WIN_MOVE_INFO_LABELS, FONT_NORMAL_COPY_2, 0, 36, sTextColors[COLOR_LIGHT], 0, gText_TMCasePP);
     CopyWindowToVram(WIN_MOVE_INFO_LABELS, COPYWIN_GFX);
 }
 
