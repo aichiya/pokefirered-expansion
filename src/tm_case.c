@@ -245,7 +245,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .bg = 0,
         .tilemapLeft = 9,
         .tilemapTop = 1,
-        .width = 19,
+        .width = 20,
         .height = 10,
         .paletteNum = 13,
         .baseBlock = 0x081
@@ -253,11 +253,11 @@ static const struct WindowTemplate sWindowTemplates[] = {
     [WIN_DESCRIPTION] = {
         .bg = 0,
         .tilemapLeft = 14,
-        .tilemapTop = 12,
-        .width = 14,
-        .height = 8,
+        .tilemapTop = 13,
+        .width = 15,
+        .height = 6,
         .paletteNum = 13,
-        .baseBlock = 0x13f
+        .baseBlock = 329
     },
     [WIN_SELECTED_MSG] = {
         .bg = 1,
@@ -272,7 +272,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .bg = 0,
         .tilemapLeft = 0,
         .tilemapTop = 1,
-        .width = 10,
+        .width = 9,
         .height = 2,
         .paletteNum = 13,
         .baseBlock = 0x235
@@ -720,9 +720,9 @@ static void List_ItemPrintFunc(u8 windowId, u32 itemIndex, u8 y)
     {
         if (!IS_HM(BagGetItemIdByPocketPosition(POCKET_TM_CASE, itemIndex)))
         {
-            ConvertIntToDecimalStringN(gStringVar1, BagGetQuantityByPocketPosition(POCKET_TM_CASE, itemIndex), STR_CONV_MODE_RIGHT_ALIGN, 2);
+            ConvertIntToDecimalStringN(gStringVar1, BagGetQuantityByPocketPosition(POCKET_TM_CASE, itemIndex), STR_CONV_MODE_LEFT_ALIGN, 2);
             StringExpandPlaceholders(gStringVar4, gText_TimesStrVar1);
-            TMCase_Print(windowId, FONT_NORMAL, gStringVar4, 126, y, 0, 0, TEXT_SKIP_DRAW, COLOR_DARK);
+            TMCase_Print(windowId, FONT_NORMAL, gStringVar4, 136, y, 0, 0, TEXT_SKIP_DRAW, COLOR_DARK);
         }
         else
         {
@@ -739,7 +739,7 @@ static void PrintDescription(s32 itemIndex)
     else
         str = gText_TMCaseWillBePutAway;
     FillWindowPixelBuffer(WIN_DESCRIPTION, 0);
-    TMCase_Print(WIN_DESCRIPTION, FONT_NORMAL, str, 0, 4, 1, -1, 0, COLOR_DARK);
+    TMCase_Print(WIN_DESCRIPTION, FONT_NORMAL, str, 0, 0, 1, -2, 0, COLOR_DARK);
 }
 
 // Darkens (or subsequently lightens) the blue bg tiles around the description window when a TM/HM is selected.
