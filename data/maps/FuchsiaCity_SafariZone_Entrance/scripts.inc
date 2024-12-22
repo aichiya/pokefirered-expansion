@@ -53,7 +53,7 @@ FuchsiaCity_SafariZone_Entrance_EventScript_ReturnToSafariZone::
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, FuchsiaCity_SafariZone_Entrance_Movement_ReEnter
 	waitmovement 0
-	warp MAP_SAFARI_ZONE_CENTER, 26, 30
+	warp MAP_SAFARI_ZONE_CENTER, 22, 30
 	waitstate
 	end
 
