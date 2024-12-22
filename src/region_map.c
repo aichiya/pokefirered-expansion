@@ -468,10 +468,10 @@ static const struct WindowTemplate sRegionMapWindowTemplates[] = {
         .bg = 3,
         .tilemapLeft = 3,
         .tilemapTop = 2,
-        .width = 15,
+        .width = 16,
         .height = 2,
         .paletteNum = 12,
-        .baseBlock = 0x001
+        .baseBlock = 1
     }, 
     [WIN_DUNGEON_NAME] =
     {
@@ -481,7 +481,7 @@ static const struct WindowTemplate sRegionMapWindowTemplates[] = {
         .width = 15,
         .height = 2,
         .paletteNum = 12,
-        .baseBlock = 0x01f
+        .baseBlock = 33
     }, 
     [WIN_MAP_PREVIEW] =
     {
@@ -491,27 +491,27 @@ static const struct WindowTemplate sRegionMapWindowTemplates[] = {
         .width = 25,
         .height = 11,
         .paletteNum = 12,
-        .baseBlock = 0x03d
+        .baseBlock = 63
     },
     [WIN_TOPBAR_LEFT] =
     {
         .bg = 3,
-        .tilemapLeft = 18,
+        .tilemapLeft = 16,
         .tilemapTop = 0,
         .width = 5,
         .height = 2,
         .paletteNum = 12,
-        .baseBlock = 0x150
+        .baseBlock = 338
     }, 
     [WIN_TOPBAR_RIGHT] =
     {
         .bg = 3,
-        .tilemapLeft = 24,
+        .tilemapLeft = 22,
         .tilemapTop = 0,
-        .width = 5,
+        .width = 6,
         .height = 2,
         .paletteNum = 12,
-        .baseBlock = 0x15a
+        .baseBlock = 348
     }, DUMMY_WIN_TEMPLATE
 };
 
@@ -1446,7 +1446,7 @@ static void DisplayCurrentMapName(void)
     else
     {
         GetMapName(sRegionMap->mapName, GetMapsecUnderCursor(), 0);
-        AddTextPrinterParameterized3(WIN_MAP_NAME, FONT_NORMAL, 2, 2, sTextColor_White, 0, sRegionMap->mapName);
+        AddTextPrinterParameterized3(WIN_MAP_NAME, FONT_NORMAL, 0, 0, sTextColor_White, 0, sRegionMap->mapName);
         PutWindowTilemap(WIN_MAP_NAME);
         CopyWindowToVram(WIN_MAP_NAME, COPYWIN_GFX);
         SetGpuWindowDims(0, &sMapsecNameWindowDims[WIN_MAP_NAME]);
@@ -1478,7 +1478,7 @@ static void DisplayCurrentDungeonName(void)
          sRegionMap->dungeonWinBottom = 48;
          FillWindowPixelBuffer(WIN_DUNGEON_NAME, PIXEL_FILL(0));
          StringCopy(sRegionMap->dungeonName, sMapNames[descOffset]);
-         AddTextPrinterParameterized3(WIN_DUNGEON_NAME, FONT_NORMAL, 12, 2, sTextColorTable[GetSelectedMapsecType(LAYER_DUNGEON) - 2], 0, sRegionMap->dungeonName);
+         AddTextPrinterParameterized3(WIN_DUNGEON_NAME, FONT_NORMAL, 0, 0, sTextColorTable[GetSelectedMapsecType(LAYER_DUNGEON) - 2], 0, sRegionMap->dungeonName);
          PutWindowTilemap(WIN_DUNGEON_NAME);
          CopyWindowToVram(WIN_DUNGEON_NAME, COPYWIN_FULL);
     }
@@ -3842,7 +3842,7 @@ static void PrintTopBarTextLeft(const u8 *str)
         FillWindowPixelBuffer(WIN_TOPBAR_LEFT, PIXEL_FILL(0));
     else
         FillWindowPixelBuffer(WIN_TOPBAR_LEFT, PIXEL_FILL(15));
-    AddTextPrinterParameterized3(WIN_TOPBAR_LEFT, FONT_SMALL, 0, 0, sTextColors, 0, str);
+    AddTextPrinterParameterized3(WIN_TOPBAR_LEFT, FONT_NORMAL, 0, 0, sTextColors, 0, str);
     CopyWindowToVram(WIN_TOPBAR_LEFT, COPYWIN_GFX);
 }
 
@@ -3852,7 +3852,7 @@ static void PrintTopBarTextRight(const u8 *str)
         FillWindowPixelBuffer(WIN_TOPBAR_RIGHT, PIXEL_FILL(0));
     else
         FillWindowPixelBuffer(WIN_TOPBAR_RIGHT, PIXEL_FILL(15));
-    AddTextPrinterParameterized3(WIN_TOPBAR_RIGHT, FONT_SMALL, 0, 0, sTextColors, 0, str);
+    AddTextPrinterParameterized3(WIN_TOPBAR_RIGHT, FONT_NORMAL, 0, 0, sTextColors, 0, str);
     CopyWindowToVram(WIN_TOPBAR_RIGHT, COPYWIN_FULL);
 }
 
