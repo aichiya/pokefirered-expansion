@@ -32,7 +32,7 @@ Route15_WestEntrance_2F_Text_ExplainExpShare::
     .string "It does, however\n"
     .string "reduce the amount\l"
     .string "of EXP for each\l"
-    .string "POKéMON$"
+    .string "POKéMON.$"
 
 Route15_WestEntrance_2F_Text_LargeShiningBird::
     .string "Looked into the\n"

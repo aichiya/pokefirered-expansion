@@ -9,8 +9,9 @@ Text_BagIsFull::
 	.string "The BAG is full...$"
 
 Text_PutItemAway::
-	.string "{PLAYER} put the {STR_VAR_2}\n"
-	.string "in the {STR_VAR_3}.$"
+	.string "{PLAYER} put the\n"
+	.string "{STR_VAR_2} in\l"
+	.string "the {STR_VAR_3}.$"
 
 Text_FoundOneItem::
 	.string "{PLAYER} found\n"
@@ -25,7 +26,8 @@ Text_FoundXCoins::
 	.string "{STR_VAR_1} {STR_VAR_2}!$"
 
 Text_PutCoinsAwayInCoinCase::
-	.string "{PLAYER} put the COINS away in\n"
+	.string "{PLAYER} put the\n"
+	.string "COINS away in\l"
 	.string "the COIN CASE.$"
 
 Text_CoinCaseIsFull::
