@@ -341,11 +341,13 @@ void ItemUseOutOfBattle_ExpShare(u8 taskId)
     {
         FlagSet(FLAG_EXP_SHARE);
         PlaySE(SE_EXP_MAX);
+        DisplayItemMessageInBag(taskId, FONT_NORMAL, gText_ExpShareTurnOn, Task_ReturnToBagFromContextMenu);
     }
     else
     {
         FlagClear(FLAG_EXP_SHARE);
         PlaySE(SE_PC_OFF);
+        DisplayItemMessageInBag(taskId, FONT_NORMAL, gText_ExpShareTurnOff, Task_ReturnToBagFromContextMenu);
     }
 }
 
