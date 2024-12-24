@@ -1288,7 +1288,7 @@ static void Task_TradeEvolutionScene(u8 taskId)
             PlayFanfare(MUS_LEVEL_UP);
             BattleStringExpandPlaceholdersToDisplayedString(gBattleStringsTable[STRINGID_PKMNLEARNEDMOVE - BATTLESTRINGS_TABLE_START]);
             DrawTextOnTradeWindow(0, gDisplayedStringBattle, 1);
-            gTasks[taskId].tLearnsFirstMove = 0x40; // re-used as a counter
+            gTasks[taskId].tLearnsFirstMove = 64; // re-used as a counter
             gTasks[taskId].tState++;
         }
         break;
@@ -1331,8 +1331,8 @@ static void Task_TradeEvolutionScene(u8 taskId)
         case T_MVSTATE_PRINT_YES_NO:
             if (!IsTextPrinterActive(0) && !IsSEPlaying())
             {
-                LoadUserWindowGfx2(0, 0xA8, BG_PLTT_ID(14));
-                CreateYesNoMenu(&gTradeEvolutionSceneYesNoWindowTemplate, FONT_NORMAL_COPY_2, 0, 2, 0xA8, 14, 0);
+                LoadUserWindowGfx2(0, 168, BG_PLTT_ID(14));
+                CreateYesNoMenu(&gTradeEvolutionSceneYesNoWindowTemplate, FONT_NORMAL, 0, 2, 168, 14, 0);
                 sEvoCursorPos = 0;
                 gTasks[taskId].tLearnMoveState++;
                 sEvoCursorPos = 0;
@@ -1347,7 +1347,7 @@ static void Task_TradeEvolutionScene(u8 taskId)
                 DrawTextOnTradeWindow(0, gDisplayedStringBattle, 1);
                 gTasks[taskId].tLearnMoveState = gTasks[taskId].tLearnMoveYesState;
                 if (gTasks[taskId].tLearnMoveState == T_MVSTATE_SHOW_MOVE_SELECT)
-                    BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
+                    BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
                 break;
             case 1: // NO
             case MENU_B_PRESSED:
