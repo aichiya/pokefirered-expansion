@@ -1108,8 +1108,8 @@ static void SetDisplayMonData(void *pokemon, u8 mode)
         txtPtr = gStorage->displayMonNicknameText;
         *(txtPtr++) = EXT_CTRL_CODE_BEGIN;
         *(txtPtr++) = EXT_CTRL_CODE_COLOR_HIGHLIGHT_SHADOW;
-        *(txtPtr++) = TEXT_COLOR_LIGHT_GRAY;
         *(txtPtr++) = TEXT_COLOR_DARK_GRAY;
+        *(txtPtr++) = TEXT_COLOR_WHITE;
         *(txtPtr++) = TEXT_COLOR_WHITE;
         StringCopyPadded(txtPtr, gStorage->displayMonNickname, CHAR_SPACE, 5);
 
@@ -1117,8 +1117,8 @@ static void SetDisplayMonData(void *pokemon, u8 mode)
         txtPtr = gStorage->displayMonSpeciesNameText;
         *(txtPtr++) = EXT_CTRL_CODE_BEGIN;
         *(txtPtr++) = EXT_CTRL_CODE_COLOR_HIGHLIGHT_SHADOW;
-        *(txtPtr++) = TEXT_COLOR_LIGHT_GRAY;
         *(txtPtr++) = TEXT_COLOR_DARK_GRAY;
+        *(txtPtr++) = TEXT_COLOR_WHITE;
         *(txtPtr++) = TEXT_COLOR_WHITE;
         //*(txtPtr)++ = CHAR_SLASH;
         StringCopyPadded(txtPtr, gSpeciesNames[gStorage->displayMonSpecies], CHAR_SPACE, 5);
@@ -1144,8 +1144,8 @@ static void SetDisplayMonData(void *pokemon, u8 mode)
         default:
             *(txtPtr)++ = TEXT_COLOR_DARK_GRAY;
             //This DARK_GRAY controls the gender symbol background color, DG is WHITE
-            *(txtPtr)++ = TEXT_COLOR_DARK_GRAY;
-            *(txtPtr)++ = TEXT_COLOR_LIGHT_GRAY;
+            *(txtPtr)++ = TEXT_COLOR_WHITE;
+            *(txtPtr)++ = TEXT_COLOR_WHITE;
             *(txtPtr)++ = CHAR_SPACE;
             break;
         }
@@ -1153,9 +1153,9 @@ static void SetDisplayMonData(void *pokemon, u8 mode)
         *(txtPtr++) = EXT_CTRL_CODE_BEGIN;
         *(txtPtr++) = EXT_CTRL_CODE_COLOR_HIGHLIGHT_SHADOW;
         //Replacing DARK_GRAY with WHITE sets the " Lv26" text PRIMARY color to dark gray
-        *(txtPtr++) = TEXT_COLOR_LIGHT_GRAY;
-        //Replacing WHITE with DARK_GRAY sets the " Lv26" text background color to white
         *(txtPtr++) = TEXT_COLOR_DARK_GRAY;
+        //Replacing WHITE with DARK_GRAY sets the " Lv26" text background color to white
+        *(txtPtr++) = TEXT_COLOR_WHITE;
         //Replacing LIGHT_GRAY with WHITE sets the " Lv26" text shadow color to
         *(txtPtr++) = TEXT_COLOR_WHITE;
         *(txtPtr++) = CHAR_SPACE;
@@ -2085,7 +2085,7 @@ void InitMenu(void)
     gStorage->menuItemsCount = 0;
     gStorage->menuWidth = 0;
     gStorage->menuWindow.bg = 0;
-    gStorage->menuWindow.paletteNum = 15;
+    gStorage->menuWindow.paletteNum = 13;
     gStorage->menuWindow.baseBlock = 92;
 }
 
@@ -2123,6 +2123,7 @@ void AddMenu(void)
     gStorage->menuWindowId = AddWindow(&gStorage->menuWindow);
     ClearWindowTilemap(gStorage->menuWindowId);
     DrawStdFrameWithCustomTileAndPalette(gStorage->menuWindowId, FALSE, 11, 14);
+    //TAKE, BAG, INFO, CANCEL.
     PrintTextArray(gStorage->menuWindowId, FONT_NORMAL, 8, 2, 16, gStorage->menuItemsCount, (void *)gStorage->menuItems);
     Menu_InitCursor(gStorage->menuWindowId, FONT_NORMAL, 0, 2, 16, gStorage->menuItemsCount, 0);
     ScheduleBgCopyTilemapToVram(0);

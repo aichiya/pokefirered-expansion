@@ -194,7 +194,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 11,
         .width = 9, //Name, nickname, level textbox.
         .height = 7,
-        .paletteNum = 3,
+        .paletteNum = 13,
         .baseBlock = 192
     }, {
         .bg = 0,
@@ -320,7 +320,7 @@ static const struct WindowTemplate sYesNoWindowTemplate = {
     .tilemapTop = 11,
     .width = 5,
     .height = 4,
-    .paletteNum = 15,
+    .paletteNum = 13,
     .baseBlock = 92
 };
 
@@ -2296,12 +2296,12 @@ static void PrintDisplayMonInfo(void)
 {
     u16 i;
     u16 y;
-    FillWindowPixelBuffer(0, PIXEL_FILL(2));
+    FillWindowPixelBuffer(0, PIXEL_FILL(1));
     if (gStorage->boxOption != OPTION_MOVE_ITEMS)
     {
         for (i = 0, y = 0; i < 3; i++, y += 14)
                                                                                 //i is the level
-            AddTextPrinterParameterized(0, FONT_NORMAL_COPY_XYI, gStorage->displayMonTexts[i], i == 2 ? 10 : 1, y, TEXT_SKIP_DRAW, NULL);
+            AddTextPrinterParameterized(0, FONT_SMALL, gStorage->displayMonTexts[i], i == 2 ? 10 : 1, y, TEXT_SKIP_DRAW, NULL);
                                                                            //3 is the item text. Disabled for now
         //AddTextPrinterParameterized(0, FONT_SMALL, gStorage->displayMonTexts[3], 6, y + 2, TEXT_SKIP_DRAW, NULL);
     }
@@ -2309,7 +2309,7 @@ static void PrintDisplayMonInfo(void)
     {
         AddTextPrinterParameterized(0, FONT_SMALL, gStorage->displayMonTexts[3], 6, 0, TEXT_SKIP_DRAW, NULL);
         for (i = 0, y = 15; i < 3; i++, y += 14)
-            AddTextPrinterParameterized(0, FONT_NORMAL, gStorage->displayMonTexts[i], i == 2 ? 10 : 6, y, TEXT_SKIP_DRAW, NULL);
+            AddTextPrinterParameterized(0, FONT_SMALL, gStorage->displayMonTexts[i], i == 2 ? 10 : 6, y, TEXT_SKIP_DRAW, NULL);
     }
 
     CopyWindowToVram(0, COPYWIN_GFX);
@@ -2561,12 +2561,12 @@ static void InitPokeStorageBg0(void)
 
 static const u8 sFontColorTable[][3] =
 {
-    {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_LIGHT_GRAY, TEXT_COLOR_DARK_GRAY},  // Default
-    {TEXT_COLOR_TRANSPARENT, TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_LIGHT_GRAY},  // Black text with light gray shadow.
-    {TEXT_COLOR_TRANSPARENT, TEXT_DYNAMIC_COLOR_2,  TEXT_DYNAMIC_COLOR_3},  // Gender symbol
-    {TEXT_COLOR_WHITE,       TEXT_COLOR_DARK_GRAY,  TEXT_COLOR_LIGHT_GRAY}, // Selection actions
-    {TEXT_COLOR_WHITE,       TEXT_COLOR_BLUE,       TEXT_COLOR_LIGHT_BLUE}, // Field moves
-    {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_WHITE,      TEXT_COLOR_DARK_GRAY},  // Unused
+    {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_TRANSPARENT},  // Default
+    {TEXT_COLOR_TRANSPARENT, TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_TRANSPARENT},  // Black text with light gray shadow.
+    {TEXT_COLOR_TRANSPARENT, TEXT_DYNAMIC_COLOR_2,  TEXT_COLOR_TRANSPARENT},  // Gender symbol
+    {TEXT_COLOR_WHITE,       TEXT_COLOR_DARK_GRAY,  TEXT_COLOR_TRANSPARENT}, // Selection actions
+    {TEXT_COLOR_WHITE,       TEXT_COLOR_BLUE,       TEXT_COLOR_TRANSPARENT}, // Field moves
+    {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_WHITE,      TEXT_COLOR_TRANSPARENT},  // Unused
 };
 
 static void PrintStorageMessage(u8 id)
@@ -2604,8 +2604,8 @@ static void PrintStorageMessage(u8 id)
 
     DynamicPlaceholderTextUtil_ExpandPlaceholders(gStorage->actionText, sMessages[id].text);
     FillWindowPixelBuffer(1, PIXEL_FILL(1));
-    //AddTextPrinterParameterized(1, FONT_NORMAL_COPY_1, gStorage->actionText, 0, 2, TEXT_SKIP_DRAW, NULL);
-    AddTextPrinterParameterized3(1, FONT_NORMAL_COPY_1, 0, 2, sFontColorTable[1], TEXT_SKIP_DRAW, gStorage->actionText);
+    //AddTextPrinterParameterized(1, FONT_NORMAL, gStorage->actionText, 0, 2, TEXT_SKIP_DRAW, NULL);
+    AddTextPrinterParameterized3(1, FONT_SMALL, 0, 2, sFontColorTable[1], TEXT_SKIP_DRAW, gStorage->actionText);
     DrawTextBorderOuter(1, 2, 13);
     PutWindowTilemap(1);
     CopyWindowToVram(1, COPYWIN_GFX);
@@ -2614,7 +2614,7 @@ static void PrintStorageMessage(u8 id)
 
 static void ShowYesNoWindow(s8 cursorPos)
 {
-    CreateYesNoMenu(&sYesNoWindowTemplate, FONT_NORMAL_COPY_1, 0, 2, 11, 14, 1);
+    CreateYesNoMenu(&sYesNoWindowTemplate, FONT_NORMAL, 0, 2, 11, 14, 1);
     Menu_MoveCursorNoWrapAround(cursorPos);
 }
 
