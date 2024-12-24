@@ -838,7 +838,7 @@ Text_PleaseComeAgain::
 @ Unused
 Text_HavingDiscountSaleToday::
 	.string "Welcome!\p"
-	.string "We're having a discount sale today!$"
+	.string "Weàe having a discount sale today!$"
 
 @ Unused
 Text_PlayerWhatCanIDoForYou::
@@ -966,7 +966,7 @@ Text_ClosedLinkToProfOaksPC::
 
 Text_VoiceRangOutDontRunAway::
 	.string "SomeoneÙ voice rang out,\n"
-	.string "“Don't run away!”$"
+	.string "“DonÑ run away!”$"
 
 @ Uncear what the below unused JP texts were for
 Text_IdLikeToSeeRequest::
