@@ -20,6 +20,64 @@ Fixed item storage palette swap issue.
 Doors now have custom animation graphics.
 
 -V6-
-Shortened ITEMFINDER description.
-Slot machine primary graphics changed to 16 colors.
-Fixed fishing encounters not using correct background.
+Totally revamped standard and TM shop menus.
+Totally revamped TM Case menus.
+Totally revamped Summary Screen menus.
+Totally revamped Trainer Card screens.
+Revamped Item Storage menus.
+Revamped Pokedex menus.
+Revamped Text Entry menus, keyboards now show more and different characters!
+Revamped party menu.
+Revamped Game Corner Coin Clerk menus.
+Revamped Save Game window.
+Replaced original small font with classic Red & Blue style BIG font.
+Resized overworld textboxes to match the size of that of Red & Blue.
+Rewrote all 151 accessible Pokedex entries in order to match those of Red & Blue as closely as possible.
+Rewrote all 354 move descriptions in order to adhere to font and textbox size constraints.
+Rewrote most accessible dialogue in the game in order to match Red & Blue as closely as possible.
+Overhauled graphics for most accessible items, they now sport a retro style!
+Added pre-set name selections for players starting a new game.
+Disabled door animations.
+Disabled icon for cured Pokerus.
+Pokemon Centers automatically update the Pokemon on the back of the Trainer Card.
+EXP.ALL now has (de)activation text.
+Removed item animations.
+Modified build script to create Rev1 ROMs by default, as well as replace FireRed and LeafGreen targets with Red and Blue.
+Added new dialogue for Game Corner Coin Clerk selling 500 coins to the player.
+Changed plural from Coins to Coin. Likely temporary.
+Shiny pokemon now have their original monochrome colors!
+HM moves besides Waterfall no longer show a description window when a Pokemon with said moves is selected in the Party Menu.
+Kabuto and Omanyte now use classic overworld sprites.
+Mimic move tutor now gifts a TM instead, matching Red & Blue.
+Battle UI is slightly modified, notably the decorative arrow and the move info box.
+
+Fixed: Leaving Safari Zone then answering No to the clerk's question put the player back on the wrong tile.
+Fixed: Party Menu Cancel button did not fully highlight when selected.
+Fixed: Golduck's front sprite had colors 2 and 3 swapped.
+Fixed: Text windows had gray where they should have had black.
+Fixed: PC sometimes displayed "What would you like to do?" when changing between menus.
+Fixed: Victory Road Badge Guard incorrect dialogue.
+Fixed: Activating EXP.ALL locks the bag menu until the player press A 3 times.
+Fixed: Saffron City incorrect collision allowed players to walk under roof tiles.
+Fixed: Cinnabar Gym gates were replaced with incorrect floor tiles when the path was opened.
+Fixed: Pallet Town Fat Man NPC was incorrectly visible from Route 21.
+Fixed: Route 21 Fisherman NPCs couldn't be interacted with from the water.
+Fixed: Daisy would offer to groom Pokemon after the player defeats the Elite Four.
+Fixed: Unused Fat Man NPC in Route 21 was visible.
+Fixed: Small Level Up menu text color changed based on PP text color.
+Fixed: Incorrect Fucshia City warp arrow tile trapped players in a small house.
+Fixed: Cycling Road didn't automatically move players downwards.
+Fixed: Rocket House used generic layout instead of unique layout.
+Fixed: Saffron City West Gate missing entrance warp tile.
+Fixed: Route 6 minor incorrect collision.
+Fixed: Cerulean City eastern Cut Tree not working or not appearing.
+Fixed: Something to do with trainer names and classes, can't even remember.
+Fixed: Incorrect text for when a Pokemon evolves.
+Fixed: Getting an item sometimes showed unwanted dialogue.
+Fixed: Pewter City Gym Guide had incorrect variable pathing.
+Fixed: Pokemon Tower Rockets had incomplete variable pathing.
+Fixed: Viridian City Gym's doors were not always locked when they should have been.
+Fixed: Viridian City Drunk used incorrect script when the player talks to them.
+Fixed: Nidorina back sprite was visibly too high.
+
+Many, many more changes, large and small!
