@@ -1,128 +1,59 @@
 gOtherText_NewName::
     .string "NEW NAME$"
 
-gNameChoice_Green::
+gNameChoice_BLUE::
     .string "BLUE$"
 
-gNameChoice_Red::
+gNameChoice_RED::
     .string "RED$"
 
-gNameChoice_Leaf::
-    .string "LEAF$"
-
-gNameChoice_Fire::
-    .string "FIRE$"
-
-gNameChoice_Gary::
+gNameChoice_GARY::
     .string "GARY$"
 
-gNameChoice_Kaz::
+gNameChoice_JOHN::
     .string "JOHN$"
 
-gNameChoice_Toru::
-    .string "TORU$"
-
-gNameChoice_Ash::
+gNameChoice_ASH::
     .string "ASH$"
 
-gNameChoice_Kene::
+gNameChoice_JACK::
     .string "JACK$"
 
-gNameChoice_Geki::
-    .string "GEKI$"
+gNameChoice_TEST1::
+    .string "TEST1$"
 
-gNameChoice_Jak::
-    .string "JAK$"
+gNameChoice_TEST2::
+    .string "TEST2$"
 
-gNameChoice_Janne::
-    .string "JANNE$"
+gNameChoice_TEST3::
+    .string "TEST3$"
 
-gNameChoice_Jonn::
-    .string "JONN$"
+gNameChoice_TEST4::
+    .string "TEST4$"
 
-gNameChoice_Kamon::
-    .string "KAMON$"
+gNameChoice_TEST5::
+    .string "TEST5$"
 
-gNameChoice_Karl::
-    .string "KARL$"
+gNameChoice_TEST6::
+    .string "TEST6$"
 
-gNameChoice_Taylor::
-    .string "TAYLOR$"
+gNameChoice_TEST7::
+    .string "TEST7$"
 
-gNameChoice_Oscar::
-    .string "OSCAR$"
+gNameChoice_TEST8::
+    .string "TEST8$"
 
-gNameChoice_Hiro::
-    .string "HIRO$"
+gNameChoice_TEST9::
+    .string "TEST9$"
 
-gNameChoice_Max::
-    .string "MAX$"
+gNameChoice_TEST10::
+    .string "TEST10$"
 
-gNameChoice_Jon::
-    .string "JON$"
+gNameChoice_TEST11::
+    .string "TEST11$"
 
-gNameChoice_Ralph::
-    .string "RALPH$"
-
-gNameChoice_Kay::
-    .string "KAY$"
-
-gNameChoice_Tosh::
-    .string "TOSH$"
-
-gNameChoice_Roak::
-    .string "ROAK$"
-
-gNameChoice_Omi::
-    .string "OMI$"
-
-gNameChoice_Jodi::
-    .string "JODI$"
-
-gNameChoice_Amanda::
-    .string "AMANDA$"
-
-gNameChoice_Hillary::
-    .string "HILLARY$"
-
-gNameChoice_Makey::
-    .string "MAKEY$"
-
-gNameChoice_Michi::
-    .string "MICHI$"
-
-gNameChoice_Paula::
-    .string "PAULA$"
-
-gNameChoice_June::
-    .string "JUNE$"
-
-gNameChoice_Cassie::
-    .string "CASSIE$"
-
-gNameChoice_Rey::
-    .string "REY$"
-
-gNameChoice_Seda::
-    .string "SEDA$"
-
-gNameChoice_Kiko::
-    .string "KIKO$"
-
-gNameChoice_Mina::
-    .string "MINA$"
-
-gNameChoice_Norie::
-    .string "NORIE$"
-
-gNameChoice_Sai::
-    .string "SAI$"
-
-gNameChoice_Momo::
-    .string "MOMO$"
-
-gNameChoice_Suzi::
-    .string "SUZI$"
+gNameChoice_TEST12::
+    .string "TEST12$"
 
 gControlsGuide_Text_Intro::
     .string "The various buttons will be explained in\n"
@@ -197,7 +128,7 @@ gOakSpeech_Text_TellMeALittleAboutYourself::
     .string "little about yourself.\p"
     .string "$"
 
-gOakSpeech_Text_YourNameWhatIsIt::
+gOakSpeech_Text_AskPlayersName::
     .string "First, what is\n"
     .string "your name?\p"
     .string "$"
@@ -218,6 +149,10 @@ gOakSpeech_Text_YourRivalsNameWhatWasIt::
     .string "Your rival's name,\n"
     .string "what was it now?$"
 
+gOakSpeech_Text_ConfirmPlayerName::
+    .string "...Er, was it\n"
+    .string "{PLAYER}?$"
+
 gOakSpeech_Text_ConfirmRivalName::
     .string "...Er, was it\n"
     .string "{RIVAL}?$"
@@ -225,7 +160,8 @@ gOakSpeech_Text_ConfirmRivalName::
 gOakSpeech_Text_RememberRivalsName::
     .string "That's right! I\n"
     .string "remember now! His\l"
-    .string "name is {RIVAL}!$"
+    .string "name is {RIVAL}!\p"
+    .string "$"
 
 gOakSpeech_Text_LetsGo::
     .string "{PLAYER}!\p"
