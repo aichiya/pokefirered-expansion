@@ -47,7 +47,6 @@ static const struct GlyphWidthFunc sGlyphWidthFuncs[] = {
     { FONT_NORMAL_COPY_1, GetGlyphWidth_NormalCopy1 },
     { FONT_NORMAL,        GetGlyphWidth_Normal },
     { FONT_NORMAL_COPY_2, GetGlyphWidth_NormalCopy2 },
-    { FONT_NORMAL_COPY_XYI, GetGlyphWidth_NormalCopyXyi },
     { FONT_MALE,          GetGlyphWidth_Male },
     { FONT_FEMALE,        GetGlyphWidth_Female },
     { FONT_BRAILLE,       GetGlyphWidth_Braille }
@@ -495,18 +494,6 @@ u16 FontFunc_NormalCopy2(struct TextPrinter *textPrinter)
     return RenderText(textPrinter);
 }
 
-u16 FontFunc_NormalCopyXyi(struct TextPrinter* textPrinter)
-{
-    struct TextPrinterSubStruct* subStruct = &textPrinter->subUnion.sub;
-
-    if (subStruct->hasGlyphIdBeenSet == 0)
-    {
-        textPrinter->subUnion.sub.glyphId = FONT_NORMAL_COPY_XYI;
-        subStruct->hasGlyphIdBeenSet = 1;
-    }
-    return RenderText(textPrinter);
-}
-
 u16 FontFunc_Male(struct TextPrinter *textPrinter)
 {
     struct TextPrinterSubStruct *subStruct = &textPrinter->subUnion.sub;
@@ -903,9 +890,6 @@ u16 RenderText(struct TextPrinter *textPrinter)
             break;
         case FONT_NORMAL_COPY_2:
             DecompressGlyph_NormalCopy2(currChar, textPrinter->japanese);
-            break;
-        case FONT_NORMAL_COPY_XYI:
-            DecompressGlyph_NormalCopyXyi(currChar, textPrinter->japanese);
             break;
         case FONT_MALE:
             DecompressGlyph_Male(currChar, textPrinter->japanese);
