@@ -5,6 +5,7 @@ TwoIsland_PokemonCenter_1F_MapScripts::
 
 TwoIsland_PokemonCenter_1F_OnTransition::
 	setrespawn SPAWN_TWO_ISLAND
+	call EventScript_PrintPhoto
 	end
 
 TwoIsland_PokemonCenter_1F_EventScript_Nurse::

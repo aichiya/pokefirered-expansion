@@ -5,6 +5,7 @@ SevenIsland_PokemonCenter_1F_MapScripts::
 
 SevenIsland_PokemonCenter_1F_OnTransition::
 	setrespawn SPAWN_SEVEN_ISLAND
+	call EventScript_PrintPhoto
 	end
 
 SevenIsland_PokemonCenter_1F_EventScript_Nurse::

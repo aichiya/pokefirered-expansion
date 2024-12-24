@@ -21,6 +21,11 @@ CeladonCity_GameCorner_EventScript_PhotoPrinter::
 	case 3, CeladonCity_GameCorner_EventScript_PrintTypeSepia
 	end
 
+EventScript_PhotoPrinter::
+	setvar VAR_0x8004, MON_ICON_TINT_NORMAL
+	goto EventScript_PrintPhoto
+	end
+
 CeladonCity_GameCorner_EventScript_PrintTypeNormal::
 	setvar VAR_0x8004, MON_ICON_TINT_NORMAL
 	goto CeladonCity_GameCorner_EventScript_PrintPhoto
@@ -39,6 +44,11 @@ CeladonCity_GameCorner_EventScript_PrintTypePink::
 CeladonCity_GameCorner_EventScript_PrintTypeSepia::
 	setvar VAR_0x8004, MON_ICON_TINT_SEPIA
 	goto CeladonCity_GameCorner_EventScript_PrintPhoto
+	end
+
+EventScript_PrintPhoto::
+	setvar VAR_0x8004, MON_ICON_TINT_NORMAL
+	special UpdateTrainerCardPhotoIcons
 	end
 
 CeladonCity_GameCorner_EventScript_PrintPhoto::

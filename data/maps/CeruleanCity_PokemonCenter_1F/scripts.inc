@@ -5,6 +5,7 @@ CeruleanCity_PokemonCenter_1F_MapScripts::
 
 CeruleanCity_PokemonCenter_1F_OnTransition::
 	setrespawn SPAWN_CERULEAN_CITY
+	call EventScript_PrintPhoto
 	end
 
 CeruleanCity_PokemonCenter_1F_EventScript_Nurse::

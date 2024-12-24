@@ -5,6 +5,7 @@ ViridianCity_PokemonCenter_1F_MapScripts::
 
 ViridianCity_PokemonCenter_1F_OnTransition::
 	setrespawn SPAWN_VIRIDIAN_CITY
+	call EventScript_PrintPhoto
 	end
 
 ViridianCity_PokemonCenter_1F_EventScript_Nurse::

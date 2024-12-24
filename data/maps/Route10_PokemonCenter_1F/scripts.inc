@@ -8,6 +8,7 @@ Route10_PokemonCenter_1F_MapScripts::
 Route10_PokemonCenter_1F_OnTransition::
 	setworldmapflag FLAG_WORLD_MAP_ROUTE10_POKEMON_CENTER_1F
 	setrespawn SPAWN_ROUTE10
+	call EventScript_PrintPhoto
 	end
 
 Route10_PokemonCenter_1F_EventScript_Nurse::

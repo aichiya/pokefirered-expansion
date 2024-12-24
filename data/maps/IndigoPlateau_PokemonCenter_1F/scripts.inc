@@ -7,6 +7,7 @@ IndigoPlateau_PokemonCenter_1F_MapScripts::
 
 IndigoPlateau_PokemonCenter_1F_OnTransition::
 	setrespawn SPAWN_INDIGO_PLATEAU
+	call EventScript_PrintPhoto
 	specialvar VAR_RESULT, IsNationalPokedexEnabled
 	call_if_eq VAR_RESULT, TRUE, IndigoPlateau_PokemonCenter_1F_EventScript_CheckBlockDoor
 	end
