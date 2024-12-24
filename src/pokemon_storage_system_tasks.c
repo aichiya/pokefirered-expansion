@@ -192,10 +192,10 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .bg = 1,
         .tilemapLeft = 0,
         .tilemapTop = 11,
-        .width = 9,
+        .width = 9, //Name, nickname, level textbox.
         .height = 7,
         .paletteNum = 3,
-        .baseBlock = 0x0c0
+        .baseBlock = 192
     }, {
         .bg = 0,
         .tilemapLeft = 11,
@@ -203,7 +203,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .width = 18,
         .height = 2,
         .paletteNum = 13,
-        .baseBlock = 0x014
+        .baseBlock = 20
     }, {
         .bg = 0,
         .tilemapLeft = 0,
@@ -211,7 +211,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .width = 25,
         .height = 8,
         .paletteNum = 15,
-        .baseBlock = 0x014
+        .baseBlock = 20
     }, {
         .bg = 1,
         .tilemapLeft = 0,
@@ -219,7 +219,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .width = 9,
         .height = 7,
         .paletteNum = 3,
-        .baseBlock = 0x0c0
+        .baseBlock = 192
     },
     DUMMY_WIN_TEMPLATE
 };
@@ -232,7 +232,7 @@ static const struct BgTemplate sBgTemplates[] = {
         .screenSize = 0,
         .paletteMode = 0,
         .priority = 0,
-        .baseTile = 0x000
+        .baseTile = 0
     }, {
         .bg = 1,
         .charBaseIndex = 1,
@@ -240,7 +240,7 @@ static const struct BgTemplate sBgTemplates[] = {
         .screenSize = 0,
         .paletteMode = 0,
         .priority = 1,
-        .baseTile = 0x100
+        .baseTile = 256
     }, {
         .bg = 2,
         .charBaseIndex = 2,
@@ -248,7 +248,7 @@ static const struct BgTemplate sBgTemplates[] = {
         .screenSize = 1,
         .paletteMode = 0,
         .priority = 2,
-        .baseTile = 0x000
+        .baseTile = 0
     }, {
         .bg = 3,
         .charBaseIndex = 3,
@@ -256,7 +256,7 @@ static const struct BgTemplate sBgTemplates[] = {
         .screenSize = 0,
         .paletteMode = 0,
         .priority = 3,
-        .baseTile = 0x000
+        .baseTile = 0
     }
 };
 
@@ -265,7 +265,7 @@ static const struct SpritePalette sMiscSpritePalette = {
 };
 
 static const struct SpriteSheet sWaveformSpriteSheet = {
-    sWaveform_Gfx, 0x01C0, GFXTAG_WAVEFORM
+    sWaveform_Gfx, 448, GFXTAG_WAVEFORM
 };
 
 static const struct OamData sOamData_DisplayMon;
@@ -321,7 +321,7 @@ static const struct WindowTemplate sYesNoWindowTemplate = {
     .width = 5,
     .height = 4,
     .paletteNum = 15,
-    .baseBlock = 0x05c
+    .baseBlock = 92
 };
 
 static const struct OamData sOamData_DisplayMon = {
@@ -334,7 +334,7 @@ static const struct OamData sOamData_DisplayMon = {
     .x = 0,
     .matrixNum = 0,
     .size = SPRITE_SIZE(64x64),
-    .tileNum = 0x000,
+    .tileNum = 0,
     .priority = 0,
     .paletteNum = 0
 };
@@ -351,7 +351,7 @@ static const struct OamData sOamData_Waveform = {
     .x = 0,
     .matrixNum = 0,
     .size = SPRITE_SIZE(16x8),
-    .tileNum = 0x000,
+    .tileNum = 0,
     .priority = 0,
     .paletteNum = 0
 };
@@ -472,7 +472,7 @@ static void ResetForPokeStorage(void)
     FreeSpriteTileRanges();
     FreeAllSpritePalettes();
     ClearDma3Requests();
-    gReservedSpriteTileCount = 0x280;
+    gReservedSpriteTileCount = 640;
     UnkUtil_Init(&gStorage->unkUtil, gStorage->unkUtilData, ARRAY_COUNT(gStorage->unkUtilData));
     gKeyRepeatStartDelay = 20;
     ClearScheduledBgCopiesToVram();
@@ -541,8 +541,8 @@ static void Task_InitPokeStorage(u8 taskId)
     case 2:
         PutWindowTilemap(0);
         ClearWindowTilemap(1);
-        CpuFill32(0, (void *)VRAM, 0x200);
-        LoadUserWindowGfx(1, 0xB, BG_PLTT_ID(14));
+        CpuFill32(0, (void *)VRAM, 512);
+        LoadUserWindowGfx(1, 11, BG_PLTT_ID(14));
         break;
     case 3:
         ResetAllBgCoords();
@@ -636,7 +636,7 @@ static void Task_ReshowPokeStorage(u8 taskId)
     switch (gStorage->state)
     {
     case 0:
-        BeginNormalPaletteFade(PALETTES_ALL, -1, 0x10, 0, RGB_BLACK);
+        BeginNormalPaletteFade(PALETTES_ALL, -1, 16, 0, RGB_BLACK);
         gStorage->state++;
         break;
     case 1:
@@ -2244,7 +2244,7 @@ static void CreateDisplayMonSprite(void)
 
     for (i = 0; i < MON_PIC_SIZE; i++)
         gStorage->tileBuffer[i] = 0;
-    for (i = 0; i < 0x10; i++)
+    for (i = 0; i < 16; i++)
         gStorage->displayMonPalBuffer[i] = 0;
 
     gStorage->displayMonSprite = NULL;
@@ -2256,7 +2256,7 @@ static void CreateDisplayMonSprite(void)
             break;
 
         palSlot = LoadSpritePalette(&palette);
-        if (palSlot == 0xFF)
+        if (palSlot == 255)
             break;
 
         spriteId = CreateSprite(&template, 40, 48, 0);
@@ -2301,7 +2301,7 @@ static void PrintDisplayMonInfo(void)
     {
         for (i = 0, y = 0; i < 3; i++, y += 14)
                                                                                 //i is the level
-            AddTextPrinterParameterized(0, FONT_NORMAL_COPY_XYI, gStorage->displayMonTexts[i], i == 2 ? 10 : 6, y, TEXT_SKIP_DRAW, NULL);
+            AddTextPrinterParameterized(0, FONT_NORMAL_COPY_XYI, gStorage->displayMonTexts[i], i == 2 ? 10 : 1, y, TEXT_SKIP_DRAW, NULL);
                                                                            //3 is the item text. Disabled for now
         //AddTextPrinterParameterized(0, FONT_SMALL, gStorage->displayMonTexts[3], 6, y + 2, TEXT_SKIP_DRAW, NULL);
     }
@@ -2309,7 +2309,7 @@ static void PrintDisplayMonInfo(void)
     {
         AddTextPrinterParameterized(0, FONT_SMALL, gStorage->displayMonTexts[3], 6, 0, TEXT_SKIP_DRAW, NULL);
         for (i = 0, y = 15; i < 3; i++, y += 14)
-            AddTextPrinterParameterized(0, FONT_NORMAL_COPY_XYI, gStorage->displayMonTexts[i], i == 2 ? 10 : 6, y, TEXT_SKIP_DRAW, NULL);
+            AddTextPrinterParameterized(0, FONT_NORMAL, gStorage->displayMonTexts[i], i == 2 ? 10 : 6, y, TEXT_SKIP_DRAW, NULL);
     }
 
     CopyWindowToVram(0, COPYWIN_GFX);
@@ -2416,7 +2416,7 @@ static bool8 HidePartyMenu(void)
         gStorage->partyMenuY--;
         TilemapUtil_Move(TILEMAP_PARTY_MENU, 3, -1);
         TilemapUtil_Update(TILEMAP_PARTY_MENU);
-        FillBgTilemapBufferRect_Palette0(1, 0x100, 10, gStorage->partyMenuY, 12, 1);
+        FillBgTilemapBufferRect_Palette0(1, 256, 10, gStorage->partyMenuY, 12, 1);
         MovePartySprites(-8);
         if (++gStorage->partyMenuMoveTimer != 20)
         {
@@ -2731,7 +2731,7 @@ static void SetPokeStorageQuestLogEvent(u8 action)
         questLogData->species1 = species1;
         questLogData->species2 = SPECIES_NONE;
         questLogData->box1 = box1;
-        questLogData->box2 = 0xFF;
+        questLogData->box2 = 255;
         if (sInPartyMenu)
         {
             if (box1 == TOTAL_BOXES_COUNT)

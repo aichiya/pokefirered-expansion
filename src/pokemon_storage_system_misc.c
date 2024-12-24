@@ -60,7 +60,7 @@ static const struct WindowTemplate sWindowTemplate_MultiMove = {
     .width = 20,
     .height = 18,
     .paletteNum = 9,
-    .baseBlock = 0x00a
+    .baseBlock = 10
 };
 
 bool8 MultiMove_Init(void)
