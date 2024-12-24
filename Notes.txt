@@ -4,7 +4,6 @@ Special Atk & Special Def not combined.
 Red doesn't turn to face approaching trainer.
 Ingame trade success texts not tested.
 Map has an offset of 4 tiles downwards, can't figure out a fix. 
-EXP.ALL use requires multiple button presses to free bag cursor.
 EXP.ALL cannot be registered.
 National dex Oak script not removed.
 
