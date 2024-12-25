@@ -81,3 +81,6 @@ Fixed: Viridian City Drunk used incorrect script when the player talks to them.
 Fixed: Nidorina back sprite was visibly too high.
 
 Many, many more changes, large and small!
+
+-V7-
+Fixed: Empty party menu slots had jumbled graphics.
