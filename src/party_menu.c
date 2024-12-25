@@ -2287,7 +2287,7 @@ static void BlitBitmapToPartyWindow_RightColumn(u8 windowId, u8 x, u8 y, u8 widt
 static void DrawEmptySlot(u8 windowId)
 {
     if (gPartyMenu.layout == PARTY_LAYOUT_SINGLE) //Custom party menu
-        BlitBitmapToPartyWindow(windowId, sEqualEmptySlotTileNums, 14, 0, 0, 14, 5);//
+        BlitBitmapToPartyWindow(windowId, sEqualEmptySlotTileNums, 15, 0, 0, 15, 5);//
     else
     BlitBitmapToPartyWindow(windowId, sSlotTilemap_WideEmpty, 18, 0, 0, 18, 3);
 }
@@ -2307,7 +2307,7 @@ static void BlitBitmapToPartyWindow_Equal(u8 windowId, u8 x, u8 y, u8 width, u8 
 }
 static void DrawEmptySlot_Equal(u8 windowId)
 {
-    BlitBitmapToPartyWindow(windowId, sEqualEmptySlotTileNums, 15, 0, 0, 14, 5);
+    BlitBitmapToPartyWindow(windowId, sEqualEmptySlotTileNums, 15, 0, 0, 15, 5);
 }//
 
 #define LOAD_PARTY_BOX_PAL(paletteIds, paletteOffsets)                                                    \
