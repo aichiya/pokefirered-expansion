@@ -1,6 +1,7 @@
 PalletTown_ProfessorOaksLab_Text_RivalGrampsIsntAround::
-    .string "{RIVAL}: Yo {PLAYER}!\n"
-    .string "Gramps isnÑ around!$"
+    .string "{RIVAL}: Yo\n"
+    .string "{PLAYER}! Gramps\p"
+    .string "isnÑ around!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalFedUpWithWaiting::
     .string "{RIVAL}: Gramps!\n"
