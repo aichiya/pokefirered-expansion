@@ -32,7 +32,6 @@ CeladonCity_EventScript_TM41Gift::
 	faceplayer
 	goto_if_set FLAG_GOT_TM41_IN_CELADON_CITY, CeladonCity_EventScript_AlreadyGotTM41
 	msgbox CeladonCity_Text_TakeTM41
-	textcolor NPC_TEXT_COLOR_NEUTRAL
 	checkitemspace ITEM_TM41
 	goto_if_eq VAR_RESULT, FALSE, EventScript_BagIsFull
 	bufferitemname STR_VAR_2, ITEM_TM41
@@ -41,8 +40,6 @@ CeladonCity_EventScript_TM41Gift::
 	waitmessage
 	waitfanfare
 	additem ITEM_TM41
-	msgbox CeladonCity_Text_PutTM41Away
-	call EventScript_RestorePrevTextColor
 	setflag FLAG_GOT_TM41_IN_CELADON_CITY
 	release
 	end

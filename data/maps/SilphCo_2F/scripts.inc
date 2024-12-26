@@ -12,7 +12,6 @@ SilphCo_2F_EventScript_TM36Gift::
 	faceplayer
 	goto_if_set FLAG_GOT_TM36_IN_SILPH_CO, SilphCo_2F_EventScript_AlreadyGotTM36
 	msgbox SilphCo_2F_Text_TakeTM36
-	textcolor NPC_TEXT_COLOR_NEUTRAL
 	checkitemspace ITEM_TM36
 	goto_if_eq VAR_RESULT, FALSE, EventScript_BagIsFull
 	bufferitemname STR_VAR_2, ITEM_TM36
@@ -21,8 +20,6 @@ SilphCo_2F_EventScript_TM36Gift::
 	waitmessage
 	waitfanfare
 	additem ITEM_TM36
-	msgbox SilphCo_2F_Text_PutTM36Away
-	call EventScript_RestorePrevTextColor
 	setflag FLAG_GOT_TM36_IN_SILPH_CO
 	release
 	end
