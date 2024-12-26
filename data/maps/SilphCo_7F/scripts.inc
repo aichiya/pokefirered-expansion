@@ -128,6 +128,7 @@ SilphCo_7F_Movement_RivalExitBottom::
 SilphCo_7F_EventScript_LaprasGuy::
 	lock
 	faceplayer
+	goto_if_set FLAG_HIDE_SAFFRON_ROCKETS, SilphCo_7F_EventScript_SavedAtLast
 	goto_if_set FLAG_GOT_LAPRAS_FROM_SILPH, SilphCo_7F_EventScript_AlreadyGotLapras
 	msgbox SilphCo_7F_Text_HaveMonForSavingUs
 	setvar VAR_TEMP_1, SPECIES_LAPRAS
@@ -179,6 +180,11 @@ SilphCo_7F_EventScript_EndReceiveLapras::
 
 SilphCo_7F_EventScript_AlreadyGotLapras::
 	msgbox SilphCo_7F_Text_RocketBossWentToBoardroom
+	release
+	end
+
+SilphCo_7F_EventScript_SavedAtLast::
+	msgbox SilphCo_7F_Text_SavedAtLast
 	release
 	end
 

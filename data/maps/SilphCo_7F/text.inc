@@ -35,7 +35,8 @@ SilphCo_7F_Text_OhNo::
     .string "あ‥　もう　もてないぞ$"
 
 SilphCo_7F_Text_SavedAtLast::
-    .string "たすかったよ　ありがと！$"
+    .string "Saved at last!\n"
+    .string "Thank you!$"
 
 SilphCo_7F_Text_RocketsAfterMasterBall::
     .string "TEAM ROCKET was\n"
