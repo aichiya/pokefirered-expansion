@@ -223,7 +223,7 @@
 #define METATILE_SilphCo_ElevatorWindow_Top0            0x2E8
 #define METATILE_SilphCo_ElevatorWindow_Top1            0x2E9
 #define METATILE_SilphCo_ElevatorWindow_Top2            0x2EA
-#define METATILE_SilphCo_Floor                          0x358
+#define METATILE_SilphCo_Floor                          0x39E
 #define METATILE_SilphCo_Floor_ShadeFull                0x350
 #define METATILE_SilphCo_Floor_WallLeftCorner           0x339
 #define METATILE_SilphCo_Floor_WallRightCorner          0x33A
