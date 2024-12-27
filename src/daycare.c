@@ -119,7 +119,7 @@ static const struct ListMenuTemplate sDaycareListMenuLevelTemplate =
     .lettersSpacing = 1,
     .itemVerticalPadding = 0,
     .scrollMultiple = 0,
-    .fontId = FONT_NORMAL_COPY_2,
+    .fontId = FONT_NORMAL,
     .cursorKind = 0
 };
 
@@ -305,9 +305,9 @@ static const struct WindowTemplate sWinTemplates_EggHatch[2] =
 {
     {
         .bg = 0,
-        .tilemapLeft = 2,
+        .tilemapLeft = 5,
         .tilemapTop = 15,
-        .width = 26,
+        .width = 20,
         .height = 4,
         .paletteNum = 0,
         .baseBlock = 64
@@ -1439,7 +1439,7 @@ static void DaycareAddTextPrinter(u8 windowId, const u8 *text, u32 x, u32 y)
 
     printer.currentChar = text;
     printer.windowId = windowId;
-    printer.fontId = FONT_NORMAL_COPY_2;
+    printer.fontId = FONT_NORMAL;
     printer.x = x;
     printer.y = y;
     printer.currentX = x;
@@ -1479,7 +1479,7 @@ static void DaycarePrintMonLvl(struct DayCare *daycare, u8 windowId, u32 daycare
     level = GetLevelAfterDaycareSteps(&daycare->mons[daycareSlotId].mon, daycare->mons[daycareSlotId].steps);
     ConvertIntToDecimalStringN(intText, level, STR_CONV_MODE_LEFT_ALIGN, 3);
     StringAppend(lvlText, intText);
-    x = 132 - GetStringWidth(FONT_NORMAL_COPY_2, lvlText, 0);
+    x = 132 - GetStringWidth(FONT_NORMAL, lvlText, 0);
     DaycareAddTextPrinter(windowId, lvlText, x, y);
 }
 
@@ -1949,7 +1949,7 @@ static void CB2_EggHatch_1(void)
         if (!IsTextPrinterActive(sEggHatchData->windowId))
         {
             LoadUserWindowGfx2(sEggHatchData->windowId, 0x140, BG_PLTT_ID(14));
-            CreateYesNoMenu(&sYesNoWinTemplate, FONT_NORMAL_COPY_2, 0, 2, 0x140, 14, 0);
+            CreateYesNoMenu(&sYesNoWinTemplate, FONT_NORMAL, 0, 2, 0x140, 14, 0);
             sEggHatchData->CB2_state++;
         }
         break;
@@ -2148,8 +2148,8 @@ static void CreateEggShardSprite(u8 x, u8 y, s16 data1, s16 data2, s16 data3, u8
 static void EggHatchPrintMessage(u8 windowId, u8 *string, u8 x, u8 y, u8 speed)
 {
     FillWindowPixelBuffer(windowId, 0xFF);
-    sEggHatchData->textColor[0] = 0;
-    sEggHatchData->textColor[1] = 5;
-    sEggHatchData->textColor[2] = 6;
-    AddTextPrinterParameterized4(windowId, FONT_NORMAL_COPY_2, x, y, 1, 1, sEggHatchData->textColor, speed, string);
+    sEggHatchData->textColor[0] = 1;
+    sEggHatchData->textColor[1] = 2;
+    sEggHatchData->textColor[2] = 1;
+    AddTextPrinterParameterized4(windowId, FONT_NORMAL, x, y, 1, 1, sEggHatchData->textColor, speed, string);
 }
