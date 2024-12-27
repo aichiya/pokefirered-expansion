@@ -3,8 +3,7 @@
 Special Atk & Special Def not combined.
 Red doesn't turn to face approaching trainer.
 Ingame trade success texts not tested.
-Map has an offset of 4 tiles downwards, can't figure out a fix. 
-EXP.ALL cannot be registered.
+Map has an offset of 4 tiles downwards, can't figure out a fix.
 National dex Oak script not removed.
 
 -Oak's Lab-
@@ -19,17 +18,11 @@ Hyper Beam recharge feature not added.
 Unfreeze not altered.
 Binding effect not altered.
 
--Pallet Town-
-Daisy is supposed to wander after the elite 4 is defeated.
-
 -Route9-
 Day Care man dialogue for level up not checked.
 
 -Saffron City-
 Copycat is move tutor, needs to gift item instead.
-
--Silph Co-
-7F Lapras guy has no dialogue switch after Rockets leave.
 
 -Pokemon League-
 Don't Leave script doesn't play, door tiles removed instead.
