@@ -1,5 +1,5 @@
 Route5_PokemonDayCare_Text_WantMeToRaiseMon::
-	.string "I run a DAYCARE.\p"
+	.string "I run a DAYCARE.\n"
 	.string "Would you like me\l"
 	.string "to raise one of\l"
 	.string "your POKéMON?$"
@@ -25,8 +25,8 @@ Route5_PokemonDayCare_Text_ComeSeeMeInAWhile::
 	.string "a while.$"
 
 Route5_PokemonDayCare_Text_MonNeedsToSpendMoreTime::
-	.string "Back already?\p"
-	.string "Your {STR_VAR_1}\n"
+	.string "Back already?\n"
+	.string "Your {STR_VAR_1}\l"
 	.string "needs some more\l"
 	.string "time with me.$"
 
@@ -36,8 +36,8 @@ Route5_PokemonDayCare_Text_OweMeXForMonsReturn::
 	.string "of this POKéMON.$"
 
 Route5_PokemonDayCare_Text_ThankYouHeresMon::
-	.string "Thank you!\n"
-	.string "HereÙ your POKéMON!$"
+	.string "Thank you! HereÙ\n"
+	.string "your POKéMON!$"
 
 Route5_PokemonDayCare_Text_PlayerGotMonBack::
 	.string "{PLAYER} got\n"
