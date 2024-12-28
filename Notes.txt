@@ -1,7 +1,5 @@
 
 -Global-
-Special Atk & Special Def not combined.
-Red doesn't turn to face approaching trainer.
 Ingame trade success texts not tested.
 Map has an offset of 4 tiles downwards, can't figure out a fix.
 National dex Oak script not removed.
@@ -15,8 +13,6 @@ PP is above move type, should be below.
 ELITE FOUR title not removed from trainers.
 Mimic not altered, doesn't match gen 1.
 Hyper Beam recharge feature not added.
-Unfreeze not altered.
-Binding effect not altered.
 
 -Route9-
 Day Care man dialogue for level up not checked.
