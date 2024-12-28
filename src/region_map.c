@@ -466,18 +466,18 @@ static const struct WindowTemplate sRegionMapWindowTemplates[] = {
     [WIN_MAP_NAME] = 
     {
         .bg = 3,
-        .tilemapLeft = 3,
-        .tilemapTop = 2,
+        .tilemapLeft = 1,
+        .tilemapTop = 0,
         .width = 16,
         .height = 2,
-        .paletteNum = 12,
+        .paletteNum = 13,
         .baseBlock = 1
     }, 
     [WIN_DUNGEON_NAME] =
     {
         .bg = 3,
         .tilemapLeft = 3,
-        .tilemapTop = 4,
+        .tilemapTop = 2,
         .width = 15,
         .height = 2,
         .paletteNum = 12,
@@ -496,7 +496,7 @@ static const struct WindowTemplate sRegionMapWindowTemplates[] = {
     [WIN_TOPBAR_LEFT] =
     {
         .bg = 3,
-        .tilemapLeft = 16,
+        .tilemapLeft = 17,
         .tilemapTop = 0,
         .width = 5,
         .height = 2,
@@ -506,7 +506,7 @@ static const struct WindowTemplate sRegionMapWindowTemplates[] = {
     [WIN_TOPBAR_RIGHT] =
     {
         .bg = 3,
-        .tilemapLeft = 22,
+        .tilemapLeft = 23,
         .tilemapTop = 0,
         .width = 6,
         .height = 2,
@@ -515,9 +515,9 @@ static const struct WindowTemplate sRegionMapWindowTemplates[] = {
     }, DUMMY_WIN_TEMPLATE
 };
 
-ALIGNED(4) const u8 sTextColor_White[] = {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_WHITE,       TEXT_COLOR_DARK_GRAY};
-ALIGNED(4) const u8 sTextColor_Green[] = {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_LIGHT_GREEN, TEXT_COLOR_DARK_GRAY};
-ALIGNED(4) const u8 sTextColor_Red[]   = {TEXT_COLOR_TRANSPARENT, TEXT_DYNAMIC_COLOR_1,   TEXT_COLOR_DARK_GRAY};
+ALIGNED(4) const u8 sTextColor_Black[] = {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_TRANSPARENT};
+ALIGNED(4) const u8 sTextColor_Green[] = {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_LIGHT_GREEN, TEXT_COLOR_TRANSPARENT};
+ALIGNED(4) const u8 sTextColor_Red[]   = {TEXT_COLOR_TRANSPARENT, TEXT_DYNAMIC_COLOR_1, TEXT_COLOR_TRANSPARENT};
 
 static const u8 *const sTextColorTable[] = {
     [MAPSECTYPE_VISITED - 2]     = sTextColor_Green,
@@ -617,8 +617,8 @@ ALIGNED(4) static const bool8 sRegionMapPermissions[REGIONMAP_TYPE_COUNT][MAPPER
 };
 
 static const struct GpuWindowParams sMapsecNameWindowDims[3] = {
-    [WIN_MAP_NAME]     = {.left = 24, .top = 16, .right = 144, .bottom = 32},
-    [WIN_DUNGEON_NAME] = {.left = 24, .top = 32, .right = 144, .bottom = 48},
+    [WIN_MAP_NAME]     = {.left = 0, .top = 0, .right = 0, .bottom = 0},
+    [WIN_DUNGEON_NAME] = {.left = 24, .top = 16, .right = 146, .bottom = 32},
     [CLEAR_NAME]       = {.left =  0, .top =  0, .right =   0, .bottom =  0}
 };
 
@@ -1446,7 +1446,7 @@ static void DisplayCurrentMapName(void)
     else
     {
         GetMapName(sRegionMap->mapName, GetMapsecUnderCursor(), 0);
-        AddTextPrinterParameterized3(WIN_MAP_NAME, FONT_NORMAL, 0, 0, sTextColor_White, 0, sRegionMap->mapName);
+        AddTextPrinterParameterized3(WIN_MAP_NAME, FONT_NORMAL, 0, 0, sTextColor_Black, 0, sRegionMap->mapName);
         PutWindowTilemap(WIN_MAP_NAME);
         CopyWindowToVram(WIN_MAP_NAME, COPYWIN_GFX);
         SetGpuWindowDims(0, &sMapsecNameWindowDims[WIN_MAP_NAME]);
@@ -1478,7 +1478,7 @@ static void DisplayCurrentDungeonName(void)
          sRegionMap->dungeonWinBottom = 48;
          FillWindowPixelBuffer(WIN_DUNGEON_NAME, PIXEL_FILL(0));
          StringCopy(sRegionMap->dungeonName, sMapNames[descOffset]);
-         AddTextPrinterParameterized3(WIN_DUNGEON_NAME, FONT_NORMAL, 0, 0, sTextColorTable[GetSelectedMapsecType(LAYER_DUNGEON) - 2], 0, sRegionMap->dungeonName);
+         AddTextPrinterParameterized3(WIN_DUNGEON_NAME, FONT_NORMAL, 1, 0, sTextColorTable[GetSelectedMapsecType(LAYER_DUNGEON) - 2], 0, sRegionMap->dungeonName);
          PutWindowTilemap(WIN_DUNGEON_NAME);
          CopyWindowToVram(WIN_DUNGEON_NAME, COPYWIN_FULL);
     }
@@ -2061,7 +2061,7 @@ static void Task_DrawDungeonMapPreviewFlavorText(u8 taskId)
         if (sDungeonMapPreview->timer > 25)
         {
             AddTextPrinterParameterized3(WIN_MAP_PREVIEW, FONT_NORMAL, 4, 0, sTextColor_Green, -1, GetDungeonName(GetDungeonMapsecUnderCursor()));
-            AddTextPrinterParameterized3(WIN_MAP_PREVIEW, FONT_NORMAL, 2, 14, sTextColor_White, -1, GetDungeonFlavorText(GetDungeonMapsecUnderCursor()));
+            AddTextPrinterParameterized3(WIN_MAP_PREVIEW, FONT_NORMAL, 2, 14, sTextColor_Black, -1, GetDungeonFlavorText(GetDungeonMapsecUnderCursor()));
             CopyWindowToVram(WIN_MAP_PREVIEW, COPYWIN_FULL);
             sDungeonMapPreview->drawState++;
         }
