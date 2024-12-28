@@ -2,7 +2,6 @@
 -Global-
 Ingame trade success texts not tested.
 Map has an offset of 4 tiles downwards, can't figure out a fix.
-National dex Oak script not removed.
 
 -Oak's Lab-
 Red and Rival sprites during intro sequence are wrong, use Pikachu palette.
@@ -13,12 +12,6 @@ PP is above move type, should be below.
 ELITE FOUR title not removed from trainers.
 Mimic not altered, doesn't match gen 1.
 Hyper Beam recharge feature not added.
-
--Route9-
-Day Care man dialogue for level up not checked.
-
--Saffron City-
-Copycat is move tutor, needs to gift item instead.
 
 -Pokemon League-
 Don't Leave script doesn't play, door tiles removed instead.
