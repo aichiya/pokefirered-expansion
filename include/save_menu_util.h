@@ -11,6 +11,7 @@ enum SaveStat
     SAVE_STAT_TIME_HR_RT_ALIGN
 };
 
-void SaveStatToString(u8 a0, u8 *a1, u8 a2);
+void SaveStatToStringLeftAligned(u8 a0, u8 *a1, u8 a2);
+void SaveStatToStringRightAligned(u8 a0, u8 *a1, u8 a2);
 
 #endif //GUARD_SAVE_MENU_UTIL_H
