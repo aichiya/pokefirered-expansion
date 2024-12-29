@@ -1351,66 +1351,81 @@ CableClub_Text_PleaseEnter::
 	.string "Please enter.$"
 
 CableClub_Text_DirectYouToYourRoom::
-	.string "I'll direct you to your room now.$"
+	.string "I'll direct you to\n"
+	.string "your room now.$"
 
 CableClub_Text_SomeoneIsNotReadyToLink::
-	.string "Someone is not ready to link.\p"
-	.string "Please come back after everyone\n"
-	.string "has made preparations.$"
+	.string "Someone is not ready\n"
+	.string "to link. Please come\l"
+	.string "back after everyone\l"
+	.string "has prepared.$"
 
 CableClub_Text_LinkErrorPleaseReset::
-	.string "Sorry, we have a link error…\n"
-	.string "Please reset and try again.$"
+	.string "Sorry, we have a\n"
+	.string "link error...\p"
+	.string "Please reset and try\n"
+	.string "again.$"
 
 CableClub_Text_PlayersMadeDifferentSelections::
-	.string "The link partners appear to have\n"
-	.string "made different selections.$"
+	.string "The link partners\n"
+	.string "appear to have made\l"
+	.string "different selections.$"
 
 CableClub_Text_PleaseVisitAgain::
 	.string "Please do visit\n"
 	.string "again.$"
 
 CableClub_Text_IncorrectNumberOfParticipants::
-	.string "The number of participants is\n"
+	.string "The number of\n"
+	.string "participants is\l"
 	.string "incorrect.$"
 
 CableClub_Text_CantSingleBattleWithXPlayers::
-	.string "The SINGLE BATTLE Mode can't be\n"
-	.string "played by {STR_VAR_1} players.$"
+	.string "The SINGLE BATTLE\n"
+	.string "Mode can't be played\l"
+	.string "by {STR_VAR_1} players.$"
 
 CableClub_Text_CantDoubleBattleWithXPlayers::
-	.string "The DOUBLE BATTLE Mode can't be\n"
-	.string "played by {STR_VAR_1} players.$"
+	.string "The DOUBLE BATTLE\n"
+	.string "Mode can't be played\l"
+	.string "by {STR_VAR_1} players.$"
 
 CableClub_Text_NeedFourPlayers::
-	.string "There must be four players to play\n"
+	.string "There must be four\n"
+	.string "players to play\l"
 	.string "this Battle Mode.$"
 
 CableClub_Text_PleaseConfirmNumberAndRestart::
-	.string "Please confirm the number of\n"
-	.string "players and start again.$"
+	.string "Please confirm the\n"
+	.string "number of players\l"
+	.string "and start again.$"
 
 Text_TerminateLinkIfYouLeaveRoom::
-	.string "The link will be terminated if you\n"
-	.string "leave the room. Is that okay?$"
+	.string "The link will be\n"
+	.string "terminated if you\l"
+	.string "leave the room.\l"
+	.string "Is that okay?$"
 
 Text_TerminateLinkConfirmation::
-	.string "Terminating link…\n"
-	.string "You will be escorted out of\l"
-	.string "the room. Please wait.$"
+	.string "Terminating link..\n"
+	.string "You will be escorted\l"
+	.string "out of the room.\l"
+	.string "Please wait.$"
 
 Text_TrainerTooBusyToNotice::
-	.string "This TRAINER is too busy to\n"
-	.string "notice…$"
+	.string "This TRAINER is too\n"
+	.string "busy to notice...$"
 
 Text_LookedAtPlayersTrainerCard::
-	.string "Score! Got to look at {STR_VAR_1}'s\n"
+	.string "Score! Got to look\n"
+	.string "at {STR_VAR_1}'s"
 	.string "TRAINER CARD!$"
 
 Text_LookedAtPlayersTrainerCardColored::
-	.string "Score! Got to look at {STR_VAR_1}'s\n"
-	.string "TRAINER CARD!\p"
-	.string "It's a {STR_VAR_2} card!$"
+	.string "Score! Got to look\n"
+	.string "at {STR_VAR_1}'s\l"
+	.string "TRAINER CARD! It's\l"
+	.string "a {STR_VAR_2} card!$"
 
 Text_TakeSeatStartBattle::
 	.string "Please take your\n"
@@ -1425,11 +1440,13 @@ RecordCorner_Text_ThanksForComing::
 	.string "ごりよう　ありがとう　ございました$"
 
 CableClub_Text_TrainerCardDataOverwritten::
-	.string "The TRAINER CARD data will\n"
-	.string "be overwritten.$"
+	.string "The TRAINER CARD\n"
+	.string "data will be\l"
+	.string "overwritten.$"
 
 CableClub_Text_HopeToSeeYouAgain::
-	.string "I hope to see you again!$"
+	.string "I hope to see you\n"
+	.string "again!$"
 
 CableClub_Text_NotSetUpForFarAwayRegion::
 	.string "I'm awfully sorry.\p"
@@ -1438,19 +1455,22 @@ CableClub_Text_NotSetUpForFarAwayRegion::
 	.string "region yet…$"
 
 CableClub_Text_OtherTrainerNotReady::
-	.string "The other TRAINER is not ready.$"
+	.string "The other TRAINER is\n"
+	.string "not ready.$"
 
 CableClub_Text_YouHaveAMonThatCantBeTaken::
-	.string "You have at least one POKéMON\n"
-	.string "that can't be taken.$"
+	.string "You have at least\n"
+	.string "one POKéMON that\l"
+	.string "can't be taken.$"
 
 CableClub_Text_AdapterNotConnected::
-	.string "The Wireless Adapter is not\n"
-	.string "connected properly.$"
+	.string "The Wireless Adapter\n"
+	.string "is not connected.$"
 
 CableClub_Text_ParticipantsStepUpToCounter::
-	.string "Participants are asked to step up\n"
-	.string "to the reception counter.$"
+	.string "Participants are\n"
+	.string "asked to move to the\l"
+	.string "reception counter.$"
 
 @ Unused, translated in Emerald
 CableClub_Text_Hello::
@@ -1461,16 +1481,18 @@ CableClub_Text_PleaseWait::
 	.string "しょうしょう　おまちください$"
 
 CableClub_Text_YouMayTradeHere::
-	.string "You may trade your POKéMON here\n"
-	.string "with another TRAINER.$"
+	.string "You may trade your\n"
+	.string "POKéMON here with\l"
+	.string "another TRAINER.$"
 
 CableClub_Text_YouMayBattleHere::
-	.string "You may battle with your friends\n"
-	.string "here.$"
+	.string "You may battle with\n"
+	.string "your friends here.$"
 
 CableClub_Text_CanMakeBerryPowder::
-	.string "Two to five TRAINERS can make\n"
-	.string "BERRY POWDER together.$"
+	.string "Two to five TRAINERS\n"
+	.string "can make BERRY\l"
+	.string "POWDER together.$"
 
 @ Unused, Record Mix nopped
 CableClub_Text_CanMixRecords::
@@ -1490,23 +1512,30 @@ CableClub_Text_ReturnsToPreviousStep::
 	.string "ひとつ　まえに　もどります$"
 
 CableClub_Text_NeedBerryForBerryCrush::
-	.string "To use the BERRY CRUSH service,\n"
-	.string "you must have at least one BERRY.$"
+	.string "To use the BERRY\n"
+	.string "CRUSH service, you\l"
+	.string "must have at least\l"
+	.string "one BERRY.$"
 
 CableClub_Text_NeedTwoMonsForUnionRoom::
-	.string "To enter the UNION ROOM, you must\n"
-	.string "have at least two POKéMON.$"
+	.string "To enter the UNION\n"
+	.string "ROOM, you must have\l"
+	.string "at least two POKéMON.$"
 
 CableClub_Text_NoEnigmaBerryInUnionRoom::
-	.string "No POKéMON holding the {STR_VAR_1}\n"
-	.string "BERRY may enter the UNION ROOM.$"
+	.string "No POKéMON holding\n"
+	.string "the {STR_VAR_1} BERRY\l"
+	.string "may enter the\l"
+	.string "UNION ROOM.$
 
 CableClub_Text_UnionRoomAdapterNotConnected::
-	.string "This is the POKéMON WIRELESS CLUB\n"
-	.string "UNION ROOM.\p"
-	.string "Unfortunately, your Wireless\n"
-	.string "Adapter is not connected properly.\p"
-	.string "Please do come again.$"
+	.string "This is the POKéMON\n"
+	.string "WIRELESS CLUB UNION\l"
+	.string "ROOM.\p"
+	.string "Unfortunately, your\n"
+	.string "Wireless Adapter is\l"
+	.string "not connected.\l"
+	.string "Please come again.$"
 
 @ Unused, translated in Emerald
 CableClub_Text_OhExcuseMe::
@@ -1514,14 +1543,17 @@ CableClub_Text_OhExcuseMe::
 	.string "おきゃくさま！$"
 
 Text_PlayerIsPlayingRightNowGoForIt::
-	.string "It appears as if {STR_VAR_1} is playing\n"
+	.string "It appears as if\n"
+	.string "{STR_VAR_1} is playing\l"
 	.string "right now.\l"
 	.string "Go for it!$"
 
 Text_DescribeWhichGame::
-	.string "I can explain game rules to you,\n"
-	.string "if you'd like.\p"
-	.string "Which game should I describe?$"
+	.string "I can explain game\n"
+	.string "rules to you, if\l"
+	.string "you'd like.\p"
+	.string "Which game should I\l"
+	.string "describe?$
 
 Text_PokemonJumpInfo::
 	.string "“POKéMON JUMP”\p"
