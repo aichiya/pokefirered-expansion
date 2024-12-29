@@ -1152,7 +1152,7 @@ void PrintItemDescription(void)
 void InitItemInfoWindow(void)
 {
     gStorage->itemInfoWindowOffset = 25;
-    LoadBgTiles(0, sItemInfoFrame_Gfx, 0x80, 0x1A4);
+    LoadBgTiles(0, sItemInfoFrame_Gfx, 128, 420);
     DrawItemInfoWindow(0);
 }
 
@@ -1166,7 +1166,7 @@ bool8 UpdateItemInfoWindowSlideIn(void)
     gStorage->itemInfoWindowOffset--;
     pos = 25 - gStorage->itemInfoWindowOffset;
     for (i = 0; i < pos; i++)
-        WriteSequenceToBgTilemapBuffer(0, GetBgAttribute(0, BG_ATTR_BASETILE) + 0x14 + gStorage->itemInfoWindowOffset + i, i, 12, 1, 8, 15, 25);
+        WriteSequenceToBgTilemapBuffer(0, GetBgAttribute(0, BG_ATTR_BASETILE) + 20 + gStorage->itemInfoWindowOffset + i, i, 12, 1, 8, 15, 25);
 
     DrawItemInfoWindow(pos);
     return (gStorage->itemInfoWindowOffset != 0);
@@ -1185,7 +1185,7 @@ bool8 UpdateItemInfoWindowSlideOut(void)
     gStorage->itemInfoWindowOffset++;
     pos = 25 - gStorage->itemInfoWindowOffset;
     for (i = 0; i < pos; i++)
-        WriteSequenceToBgTilemapBuffer(0, GetBgAttribute(0, BG_ATTR_BASETILE) + 0x14 + gStorage->itemInfoWindowOffset + i, i, 12, 1, 8, 15, 25);
+        WriteSequenceToBgTilemapBuffer(0, GetBgAttribute(0, BG_ATTR_BASETILE) + 20 + gStorage->itemInfoWindowOffset + i, i, 12, 1, 8, 15, 25);
 
     DrawItemInfoWindow(pos);
 
@@ -1197,12 +1197,12 @@ static void DrawItemInfoWindow(u32 x)
 {
     if (x != 0)
     {
-        FillBgTilemapBufferRect(0, 0x1A4, 0, 0xB, x, 1, 15);
-        FillBgTilemapBufferRect(0, 0x9A4, 0, 0x14, x, 1, 15);
+        FillBgTilemapBufferRect(0, 420, 0, 11, x, 1, 15);
+        FillBgTilemapBufferRect(0, 2468, 0, 20, x, 1, 15);
     }
-    FillBgTilemapBufferRect(0, 0x1A5, x, 0xC, 1, 8, 15);
-    FillBgTilemapBufferRect(0, 0x1A6, x, 0xB, 1, 1, 15);
-    FillBgTilemapBufferRect(0, 0x1A7, x, 0x14, 1, 1, 15);
+    FillBgTilemapBufferRect(0, 421, x, 12, 1, 8, 15);
+    FillBgTilemapBufferRect(0, 422, x, 11, 1, 1, 15);
+    FillBgTilemapBufferRect(0, 423, x, 20, 1, 1, 15);
     ScheduleBgCopyTilemapToVram(0);
 }
 
