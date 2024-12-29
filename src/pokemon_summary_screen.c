@@ -3370,10 +3370,10 @@ static void PokeSum_PrintMonTypeIcons(void)
     case PSS_PAGE_INFO:
         if (!sMonSummaryScreen->isEgg)
         {
-            BlitMenuInfoIcon(sMonSummaryScreen->windowIds[POKESUM_WIN_RIGHT_PANE], sMonSummaryScreen->monTypes[0] + 1, 40, 18);
+            BlitMenuInfoIcon(sMonSummaryScreen->windowIds[POKESUM_WIN_RIGHT_PANE], sMonSummaryScreen->monTypes[1] + 1, 72, 18);
 
             if (sMonSummaryScreen->monTypes[0] != sMonSummaryScreen->monTypes[1])
-                BlitMenuInfoIcon(sMonSummaryScreen->windowIds[POKESUM_WIN_RIGHT_PANE], sMonSummaryScreen->monTypes[1] + 1, 72, 18);
+                BlitMenuInfoIcon(sMonSummaryScreen->windowIds[POKESUM_WIN_RIGHT_PANE], sMonSummaryScreen->monTypes[0] + 1, 40, 18);
         }
         break;
     case PSS_PAGE_SKILLS:
