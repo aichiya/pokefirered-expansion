@@ -349,153 +349,155 @@ static const struct SpritePalette sSpritePalette_MenuText = {
 static const u8 sCursorMoveDestinations[(PARTY_SIZE * 2) + 1][4][PARTY_SIZE] = {
     // Player's party
     [0] = {
-        [DIR_UP]    = { 4,  2, 12, 12,  0,  0},
-        [DIR_DOWN]  = { 2,  4, 12, 12,  0,  0},
-        [DIR_LEFT]  = { 7,  6,  1,  0,  0,  0},
-        [DIR_RIGHT] = { 1,  6,  7,  0,  0,  0}
+        [DIR_UP]    = { 0,  2, 12, 12,  0,  0},
+        [DIR_DOWN]  = { 1,  4, 12, 12,  0,  0},
+        [DIR_LEFT]  = { 0,  6,  1,  0,  0,  0},
+        [DIR_RIGHT] = { 6,  6,  7,  0,  0,  0}
     },
     [1] = {
-        [DIR_UP]    = { 5,  3, 12, 12,  0,  0},
-        [DIR_DOWN]  = { 3,  5, 12, 12,  0,  0},
-        [DIR_LEFT]  = { 0,  7,  6,  1,  0,  0},
-        [DIR_RIGHT] = { 6,  7,  0,  1,  0,  0}
+        [DIR_UP]    = { 0,  3, 12, 12,  0,  0},
+        [DIR_DOWN]  = { 2,  5, 12, 12,  0,  0},
+        [DIR_LEFT]  = { 1,  7,  6,  1,  0,  0},
+        [DIR_RIGHT] = { 7,  7,  0,  1,  0,  0}
     },
     [2] = {
-        [DIR_UP]    = { 0,  0,  0,  0,  0,  0},
-        [DIR_DOWN]  = { 4,  0,  0,  0,  0,  0},
-        [DIR_LEFT]  = { 9,  8,  7,  6,  0,  0},
-        [DIR_RIGHT] = { 3,  1,  0,  0,  0,  0}
+        [DIR_UP]    = { 1,  0,  0,  0,  0,  0},
+        [DIR_DOWN]  = { 3,  0,  0,  0,  0,  0},
+        [DIR_LEFT]  = { 2,  8,  7,  6,  0,  0},
+        [DIR_RIGHT] = { 8,  1,  0,  0,  0,  0}
     },
     [3] = {
-        [DIR_UP]    = { 1,  1,  1,  1,  0,  0},
-        [DIR_DOWN]  = { 5,  1,  1,  1,  0,  0},
-        [DIR_LEFT]  = { 2,  9,  8,  7,  0,  0},
-        [DIR_RIGHT] = { 8,  9,  6,  6,  0,  0}
+        [DIR_UP]    = { 2,  1,  1,  1,  0,  0},
+        [DIR_DOWN]  = { 4,  1,  1,  1,  0,  0},
+        [DIR_LEFT]  = { 3,  9,  8,  7,  0,  0},
+        [DIR_RIGHT] = { 9,  9,  6,  6,  0,  0}
     },
     [4] = {
-        [DIR_UP]    = { 2,  2,  2,  2,  0,  0},
-        [DIR_DOWN]  = { 0,  0,  0,  0,  0,  0},
-        [DIR_LEFT]  = {11, 10,  9,  8,  7,  6},
-        [DIR_RIGHT] = { 5,  3,  1,  0,  0,  0}
+        [DIR_UP]    = { 3,  2,  2,  2,  0,  0},
+        [DIR_DOWN]  = { 5,  0,  0,  0,  0,  0},
+        [DIR_LEFT]  = { 4, 10,  9,  8,  7,  6},
+        [DIR_RIGHT] = { 10,  3,  1,  0,  0,  0}
     },
     [5] = {
-        [DIR_UP]    = { 3,  3,  3,  3,  0,  0},
-        [DIR_DOWN]  = { 1,  1,  1,  1,  0,  0},
-        [DIR_LEFT]  = { 4,  4,  4,  4,  0,  0},
-        [DIR_RIGHT] = {10,  8,  6,  0,  0,  0}
+        [DIR_UP]    = { 4,  3,  3,  3,  0,  0},
+        [DIR_DOWN]  = { 5,  1,  1,  1,  0,  0},
+        [DIR_LEFT]  = { 5,  4,  4,  4,  0,  0},
+        [DIR_RIGHT] = {11,  8,  6,  0,  0,  0}
     },
     // Partner's party
     [6] = {
-        [DIR_UP]    = {10,  8, 12,  0,  0,  0},
-        [DIR_DOWN]  = { 8, 10, 12,  0,  0,  0},
-        [DIR_LEFT]  = { 1,  0,  0,  0,  0,  0},
-        [DIR_RIGHT] = { 7,  0,  1,  0,  0,  0}
+        [DIR_UP]    = { 6,  8, 12,  0,  0,  0},
+        [DIR_DOWN]  = { 7, 10, 12,  0,  0,  0},
+        [DIR_LEFT]  = { 0,  0,  0,  0,  0,  0},
+        [DIR_RIGHT] = { 6,  0,  1,  0,  0,  0}
     },
     [7] = {
-        [DIR_UP]    = {12,  0,  0,  0,  0,  0},
-        [DIR_DOWN]  = { 9, 12,  0,  0,  0,  0},
-        [DIR_LEFT]  = { 6,  0,  0,  0,  0,  0},
-        [DIR_RIGHT] = { 0,  0,  0,  0,  0,  0}
+        [DIR_UP]    = { 6,  0,  0,  0,  0,  0},
+        [DIR_DOWN]  = { 8, 12,  0,  0,  0,  0},
+        [DIR_LEFT]  = { 1,  0,  0,  0,  0,  0},
+        [DIR_RIGHT] = { 7,  0,  0,  0,  0,  0}
     },
     [8] = {
-        [DIR_UP]    = { 6,  0,  0,  0,  0,  0},
-        [DIR_DOWN]  = {10,  6,  0,  0,  0,  0},
-        [DIR_LEFT]  = { 3,  2,  1,  0,  0,  0},
-        [DIR_RIGHT] = { 9,  7,  0,  0,  0,  0}
+        [DIR_UP]    = { 7,  0,  0,  0,  0,  0},
+        [DIR_DOWN]  = { 9,  6,  0,  0,  0,  0},
+        [DIR_LEFT]  = { 2,  2,  1,  0,  0,  0},
+        [DIR_RIGHT] = { 8,  7,  0,  0,  0,  0}
     },
     [9] = {
-        [DIR_UP]    = { 7,  0,  0,  0,  0,  0},
-        [DIR_DOWN]  = {11, 12,  0,  0,  0,  0},
-        [DIR_LEFT]  = { 8,  0,  0,  0,  0,  0},
-        [DIR_RIGHT] = { 2,  1,  0,  0,  0,  0}
+        [DIR_UP]    = { 8,  0,  0,  0,  0,  0},
+        [DIR_DOWN]  = {10, 12,  0,  0,  0,  0},
+        [DIR_LEFT]  = { 3,  0,  0,  0,  0,  0},
+        [DIR_RIGHT] = { 9,  1,  0,  0,  0,  0}
     },
     [10] = {
-        [DIR_UP]    = { 8,  0,  0,  0,  0,  0},
-        [DIR_DOWN]  = { 6,  0,  0,  0,  0,  0},
-        [DIR_LEFT]  = { 5,  4,  3,  2,  1,  0},
-        [DIR_RIGHT] = {11,  9,  7,  0,  0,  0}
+        [DIR_UP]    = { 9,  0,  0,  0,  0,  0},
+        [DIR_DOWN]  = {11,  0,  0,  0,  0,  0},
+        [DIR_LEFT]  = { 4,  4,  3,  2,  1,  0},
+        [DIR_RIGHT] = {10,  9,  7,  0,  0,  0}
     },
     [11] = {
-        [DIR_UP]    = { 9,  0,  0,  0,  0,  0},
+        [DIR_UP]    = {10,  0,  0,  0,  0,  0},
         [DIR_DOWN]  = {12,  0,  0,  0,  0,  0},
-        [DIR_LEFT]  = {10,  0,  0,  0,  0,  0},
-        [DIR_RIGHT] = { 4,  2,  0,  0,  0,  0}
+        [DIR_LEFT]  = { 5,  0,  0,  0,  0,  0},
+        [DIR_RIGHT] = {11,  2,  0,  0,  0,  0}
     },
     // Cancel
     [12] = {
         [DIR_UP]    = {11,  9,  7,  6,  0,  0},
-        [DIR_DOWN]  = { 7,  6,  0,  0,  0,  0},
+        [DIR_DOWN]  = {12,  6,  0,  0,  0,  0},
         [DIR_LEFT]  = {12,  0,  0,  0,  0,  0},
         [DIR_RIGHT] = {12,  0,  0,  0,  0,  0}
     }
 };
 
-#define COL0_X 1
-#define COL1_X 8
-#define COL2_X 16
-#define COL3_X 23
-#define ROW0_Y 5
-#define ROW1_Y 10
-#define ROW2_Y 15
-#define ROW3_Y 18
+#define COL0_X 0
+#define COL1_X 16
+#define COL3_X 20
+#define ROW0_Y 2
+#define ROW1_Y 5
+#define ROW2_Y 8
+#define ROW3_Y 11
+#define ROW4_Y 14
+#define ROW5_Y 17
+#define ROW6_Y 19
 
 static const u8 sTradeMonSpriteCoords[(PARTY_SIZE * 2) + 1][2] = {
     [TRADE_PLAYER] =
         {COL0_X, ROW0_Y},
-        {COL1_X, ROW0_Y},
         {COL0_X, ROW1_Y},
-        {COL1_X, ROW1_Y},
         {COL0_X, ROW2_Y},
-        {COL1_X, ROW2_Y},
+        {COL0_X, ROW3_Y},
+        {COL0_X, ROW4_Y},
+        {COL0_X, ROW5_Y},
     [TRADE_PARTNER * PARTY_SIZE] =
-        {COL2_X, ROW0_Y},
-        {COL3_X, ROW0_Y},
-        {COL2_X, ROW1_Y},
-        {COL3_X, ROW1_Y},
-        {COL2_X, ROW2_Y},
-        {COL3_X, ROW2_Y},
+        {COL1_X, ROW0_Y},
+        {COL1_X, ROW1_Y},
+        {COL1_X, ROW2_Y},
+        {COL1_X, ROW3_Y},
+        {COL1_X, ROW4_Y},
+        {COL1_X, ROW5_Y},
     // Cancel
-    {COL3_X, ROW3_Y},
+    {COL3_X, ROW6_Y},
 };
 
 static const u8 sTradeMonLevelCoords[PARTY_SIZE * 2][2] = {
     [TRADE_PLAYER] =
-        { 5,  4},
-        {12,  4},
-        { 5,  9},
-        {12,  9},
-        { 5, 14},
-        {12, 14},
+        { 11,  2},
+        { 11,  5},
+        { 11,  8},
+        { 11, 11},
+        { 11, 14},
+        { 11, 17},
     [TRADE_PARTNER * PARTY_SIZE] =
-        {20,  4},
-        {27,  4},
-        {20,  9},
-        {27,  9},
-        {20, 14},
+        {27,  2},
+        {27,  5},
+        {27,  8},
+        {27, 11},
         {27, 14},
+        {27, 17},
 };
 
 static const u8 sTradeMonBoxCoords[PARTY_SIZE * 2][2] = {
     [TRADE_PLAYER] =
-        { 1,  3},
-        { 8,  3},
-        { 1,  8},
-        { 8,  8},
-        { 1, 13},
-        { 8, 13},
+        { 0,  0},
+        { 0,  3},
+        { 0,  6},
+        { 0,  9},
+        { 0, 12},
+        { 0, 15},
     [TRADE_PARTNER * PARTY_SIZE] =
+        {16,  0},
         {16,  3},
-        {23,  3},
-        {16,  8},
-        {23,  8},
-        {16, 13},
-        {23, 13},
+        {16,  6},
+        {16,  9},
+        {16, 12},
+        {16, 15},
 };
 
 // x,y offset for player name, x/y offset for partner name
 static const u8 sPlayerNameCoords[][4] = {
     {60, 9, 180, 9}, // Unused. For JP characters?
-    {48, 9, 168, 9},
+    {48, 16, 168, 16},
 };
 
 static const u8 sUnusedCoords[][2] =
@@ -555,7 +557,7 @@ static const u8 *const sMessages[] = {
     [MSG_FRIENDS_MON_CANT_BE_TRADED] = gText_OtherTrainersPkmnCantBeTraded
 };
 
-static const u8 sTextColor_PartyMonNickname[] = { TEXT_COLOR_TRANSPARENT, TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GRAY };
+static const u8 sTextColor_PartyMonNickname[] = { TEXT_COLOR_TRANSPARENT, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_TRANSPARENT };
 
 static const struct BgTemplate sBgTemplates[] = {
     {
@@ -565,7 +567,7 @@ static const struct BgTemplate sBgTemplates[] = {
         .screenSize = 0,
         .paletteMode = 0,
         .priority = 0,
-        .baseTile = 0x000
+        .baseTile = 0
     }, {
         .bg = 1,
         .charBaseIndex = 0,
@@ -573,7 +575,7 @@ static const struct BgTemplate sBgTemplates[] = {
         .screenSize = 0,
         .paletteMode = 0,
         .priority = 1,
-        .baseTile = 0x000
+        .baseTile = 0
     }, {
         .bg = 2,
         .charBaseIndex = 0,
@@ -581,7 +583,7 @@ static const struct BgTemplate sBgTemplates[] = {
         .screenSize = 0,
         .paletteMode = 0,
         .priority = 2,
-        .baseTile = 0x000
+        .baseTile = 0
     }, {
         .bg = 3,
         .charBaseIndex = 0,
@@ -589,166 +591,166 @@ static const struct BgTemplate sBgTemplates[] = {
         .screenSize = 0,
         .paletteMode = 0,
         .priority = 3,
-        .baseTile = 0x000
+        .baseTile = 0
     }
 };
 
 static const struct WindowTemplate sWindowTemplates[] = {
     {
         .bg = 0,
-        .tilemapLeft = 4,
+        .tilemapLeft = 8,
         .tilemapTop = 7,
-        .width = 22,
+        .width = 14, // "Connecting, please wait!" textbox.
         .height = 4,
-        .paletteNum = 15,
-        .baseBlock = 0x01e
+        .paletteNum = 14,
+        .baseBlock = 30
     }, {
         .bg = 0,
-        .tilemapLeft = 17,
+        .tilemapLeft = 21,
         .tilemapTop = 15,
-        .width = 12,
+        .width = 8, // SUMMARY/TRADE window.
         .height = 4,
-        .paletteNum = 15,
-        .baseBlock = 0x076
+        .paletteNum = 14,
+        .baseBlock = 118
     }, {
         .bg = 0,
         .tilemapLeft = 0,
-        .tilemapTop = 5,
-        .width = 8,
+        .tilemapTop = 0,
+        .width = 14, // Slot1
         .height = 2,
-        .paletteNum = 13,
-        .baseBlock = 0x0a6
-    }, {
-        .bg = 0,
-        .tilemapLeft = 7,
-        .tilemapTop = 5,
-        .width = 8,
-        .height = 2,
-        .paletteNum = 13,
-        .baseBlock = 0x0b6
+        .paletteNum = 14,
+        .baseBlock = 150
     }, {
         .bg = 0,
         .tilemapLeft = 0,
-        .tilemapTop = 10,
-        .width = 8,
+        .tilemapTop = 3,
+        .width = 14, // Slot2
         .height = 2,
-        .paletteNum = 13,
-        .baseBlock = 0x0c6
+        .paletteNum = 14,
+        .baseBlock = 178
     }, {
         .bg = 0,
-        .tilemapLeft = 7,
-        .tilemapTop = 10,
-        .width = 8,
+        .tilemapLeft = 0,
+        .tilemapTop = 6,
+        .width = 14, // Slot3
         .height = 2,
-        .paletteNum = 13,
-        .baseBlock = 0x0d6
+        .paletteNum = 14,
+        .baseBlock = 206
+    }, {
+        .bg = 0,
+        .tilemapLeft = 0,
+        .tilemapTop = 9,
+        .width = 14, // Slot4
+        .height = 2,
+        .paletteNum = 14,
+        .baseBlock = 234
+    }, {
+        .bg = 0,
+        .tilemapLeft = 0,
+        .tilemapTop = 12,
+        .width = 14, // Slot5
+        .height = 2,
+        .paletteNum = 14,
+        .baseBlock = 260
     }, {
         .bg = 0,
         .tilemapLeft = 0,
         .tilemapTop = 15,
-        .width = 8,
+        .width = 14, // Slot6
         .height = 2,
-        .paletteNum = 13,
-        .baseBlock = 0x0e6
+        .paletteNum = 14,
+        .baseBlock = 286
     }, {
         .bg = 0,
-        .tilemapLeft = 7,
+        .tilemapLeft = 16,
+        .tilemapTop = 0,
+        .width = 14, // Slot7
+        .height = 2,
+        .paletteNum = 14,
+        .baseBlock = 312
+    }, {
+        .bg = 0,
+        .tilemapLeft = 16,
+        .tilemapTop = 3,
+        .width = 14, // Slot8
+        .height = 2,
+        .paletteNum = 14,
+        .baseBlock = 338
+    }, {
+        .bg = 0,
+        .tilemapLeft = 16,
+        .tilemapTop = 6,
+        .width = 14, // Slot9
+        .height = 2,
+        .paletteNum = 14,
+        .baseBlock = 364
+    }, {
+        .bg = 0,
+        .tilemapLeft = 16,
+        .tilemapTop = 9,
+        .width = 14, // Slot10
+        .height = 2,
+        .paletteNum = 14,
+        .baseBlock = 390
+    }, {
+        .bg = 0,
+        .tilemapLeft = 16,
+        .tilemapTop = 12,
+        .width = 14, // Slot11
+        .height = 2,
+        .paletteNum = 14,
+        .baseBlock = 416
+    }, {
+        .bg = 0,
+        .tilemapLeft = 16,
         .tilemapTop = 15,
-        .width = 8,
+        .width = 14, // Slot12
         .height = 2,
-        .paletteNum = 13,
-        .baseBlock = 0x0f6
+        .paletteNum = 14,
+        .baseBlock = 442
     }, {
         .bg = 0,
-        .tilemapLeft = 15,
-        .tilemapTop = 5,
-        .width = 8,
+        .tilemapLeft = 1,
+        .tilemapTop = 6,
+        .width = 12, //Selected pokemon 1's nickname textbox.
         .height = 2,
-        .paletteNum = 13,
-        .baseBlock = 0x106
+        .paletteNum = 14,
+        .baseBlock = 470
     }, {
         .bg = 0,
-        .tilemapLeft = 22,
-        .tilemapTop = 5,
-        .width = 8,
-        .height = 2,
-        .paletteNum = 13,
-        .baseBlock = 0x116
-    }, {
-        .bg = 0,
-        .tilemapLeft = 15,
-        .tilemapTop = 10,
-        .width = 8,
-        .height = 2,
-        .paletteNum = 13,
-        .baseBlock = 0x126
-    }, {
-        .bg = 0,
-        .tilemapLeft = 22,
-        .tilemapTop = 10,
-        .width = 8,
-        .height = 2,
-        .paletteNum = 13,
-        .baseBlock = 0x136
-    }, {
-        .bg = 0,
-        .tilemapLeft = 15,
-        .tilemapTop = 15,
-        .width = 8,
-        .height = 2,
-        .paletteNum = 13,
-        .baseBlock = 0x146
-    }, {
-        .bg = 0,
-        .tilemapLeft = 22,
-        .tilemapTop = 15,
-        .width = 8,
-        .height = 2,
-        .paletteNum = 13,
-        .baseBlock = 0x156
-    }, {
-        .bg = 0,
-        .tilemapLeft = 2,
-        .tilemapTop = 5,
-        .width = 14,
-        .height = 2,
-        .paletteNum = 13,
-        .baseBlock = 0x166
-    }, {
-        .bg = 0,
-        .tilemapLeft = 3,
-        .tilemapTop = 8,
-        .width = 11,
+        .tilemapLeft = 1,
+        .tilemapTop = 9,
+        .width = 13, //Selected pokemon 1's moves textbox.
         .height = 8,
-        .paletteNum = 15,
-        .baseBlock = 0x182
+        .paletteNum = 14,
+        .baseBlock = 494
     }, {
         .bg = 0,
-        .tilemapLeft = 17,
-        .tilemapTop = 5,
-        .width = 14,
+        .tilemapLeft = 16,
+        .tilemapTop = 6,
+        .width = 12, // Selected pokemon 2's nickname textbox.
         .height = 2,
-        .paletteNum = 15,
-        .baseBlock = 0x1da
+        .paletteNum = 14,
+        .baseBlock = 598
     }, {
         .bg = 0,
-        .tilemapLeft = 18,
-        .tilemapTop = 8,
-        .width = 11,
+        .tilemapLeft = 16,
+        .tilemapTop = 9,
+        .width = 13, //Selected pokemon 2's moves textbox.
         .height = 8,
-        .paletteNum = 15,
-        .baseBlock = 0x1f6
+        .paletteNum = 14,
+        .baseBlock = 622
     }, DUMMY_WIN_TEMPLATE
 };
 
 static const struct WindowTemplate sWindowTemplate_YesNo = {
     .bg = 0,
-    .tilemapLeft = 21,
+    .tilemapLeft = 24,
     .tilemapTop = 13,
-    .width = 6,
+    .width = 5,
     .height = 4,
-    .paletteNum = 15,
-    .baseBlock = 0x24e
+    .paletteNum = 14,
+    .baseBlock = 726
 };
 
 static const u8 sDebug_Messages[][13] = {
@@ -950,8 +952,8 @@ static void CB2_CreateTradeMenu(void)
             struct Pokemon * mon = &gPlayerParty[i];
             sTradeMenu->partySpriteIds[TRADE_PLAYER][i] = CreateMonIcon(GetMonData(mon, MON_DATA_SPECIES_OR_EGG),
                                                                 SpriteCB_MonIcon,
-                                                                (sTradeMonSpriteCoords[i][0] * 8) + 14,
-                                                                (sTradeMonSpriteCoords[i][1] * 8) - 12,
+                                                                (sTradeMonSpriteCoords[i][0] * 8) + 16,
+                                                                (sTradeMonSpriteCoords[i][1] * 8) - 6,
                                                                 1,
                                                                 GetMonData(mon, MON_DATA_PERSONALITY),
                                                                 TRUE);
@@ -962,8 +964,8 @@ static void CB2_CreateTradeMenu(void)
             struct Pokemon * mon = &gEnemyParty[i];
             sTradeMenu->partySpriteIds[TRADE_PARTNER][i] = CreateMonIcon(GetMonData(mon, MON_DATA_SPECIES_OR_EGG, NULL),
                                                                 SpriteCB_MonIcon,
-                                                                (sTradeMonSpriteCoords[i + PARTY_SIZE][0] * 8) + 14,
-                                                                (sTradeMonSpriteCoords[i + PARTY_SIZE][1] * 8) - 12,
+                                                                (sTradeMonSpriteCoords[i + PARTY_SIZE][0] * 8) + 16,
+                                                                (sTradeMonSpriteCoords[i + PARTY_SIZE][1] * 8) - 6,
                                                                 1,
                                                                 GetMonData(mon, MON_DATA_PERSONALITY),
                                                                 FALSE);
@@ -995,7 +997,7 @@ static void CB2_CreateTradeMenu(void)
     case 12:
         // Create player's name text sprites
         name = gSaveBlock2Ptr->playerName;
-        width = GetStringWidth(FONT_NORMAL_COPY_1, name, 0);
+        width = GetStringWidth(FONT_NORMAL, name, 0);
         xPos = (56 - width) / 2;
         for (i = 0; i < NUM_PLAYER_NAME_SPRITES; i++)
         {
@@ -1007,7 +1009,7 @@ static void CB2_CreateTradeMenu(void)
         // Create partner's name text sprites
         id = GetMultiplayerId();
         name = gLinkPlayers[id ^ 1].name;
-        width = GetStringWidth(FONT_NORMAL_COPY_1, name, 0);
+        width = GetStringWidth(FONT_NORMAL, name, 0);
         xPos = (56 - width) / 2;
         for (i = 0; i < NUM_PARTNER_NAME_SPRITES; i++)
         {
@@ -1021,17 +1023,17 @@ static void CB2_CreateTradeMenu(void)
         // Create Cancel text sprites
         temp = sSpriteTemplate_MenuText;
         temp.tileTag += GFXTAG_CANCEL_L;
-        CreateSprite(&temp, 200, 151, 1);
+        CreateSprite(&temp, 200, 152, 1);
         temp = sSpriteTemplate_MenuText;
         temp.tileTag += GFXTAG_CANCEL_R;
-        CreateSprite(&temp, 200 + 32, 151, 1);
+        CreateSprite(&temp, 200 + 32, 152, 1);
 
         // Create Choose a Pokémon text sprites (only 3 are needed, other 3 are empty)
         for (i = 0; i < NUM_CHOOSE_PKMN_SPRITES; i++)
         {
             temp = sSpriteTemplate_MenuText;
             temp.tileTag += i + GFXTAG_CHOOSE_PKMN_L;
-            CreateSprite(&temp, (i * 32) + 24, 150, 1);
+            CreateSprite(&temp, (i * 32) + 24, 152, 1);
         }
 
         sTradeMenu->cursorSpriteId = CreateSprite(&sSpriteTemplate_Cursor, sTradeMonSpriteCoords[0][0] * 8 + 32, sTradeMonSpriteCoords[0][1] * 8, 2);
@@ -1147,8 +1149,8 @@ void CB2_ReturnToTradeMenuFromSummary(void)
             sTradeMenu->partySpriteIds[TRADE_PLAYER][i] = CreateMonIcon(
                 GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG, NULL),
                 SpriteCB_MonIcon,
-                sTradeMonSpriteCoords[i][0] * 8 + 14,
-                sTradeMonSpriteCoords[i][1] * 8 - 12,
+                sTradeMonSpriteCoords[i][0] * 8 + 16,
+                sTradeMonSpriteCoords[i][1] * 8 - 6,
                 1,
                 GetMonData(&gPlayerParty[i], MON_DATA_PERSONALITY),
                 TRUE
@@ -1159,8 +1161,8 @@ void CB2_ReturnToTradeMenuFromSummary(void)
             sTradeMenu->partySpriteIds[TRADE_PARTNER][i] = CreateMonIcon(
                 GetMonData(&gEnemyParty[i], MON_DATA_SPECIES_OR_EGG, NULL),
                 SpriteCB_MonIcon,
-                sTradeMonSpriteCoords[i + PARTY_SIZE][0] * 8 + 14,
-                sTradeMonSpriteCoords[i + PARTY_SIZE][1] * 8 - 12,
+                sTradeMonSpriteCoords[i + PARTY_SIZE][0] * 8 + 16,
+                sTradeMonSpriteCoords[i + PARTY_SIZE][1] * 8 - 6,
                 1,
                 GetMonData(&gEnemyParty[i], MON_DATA_PERSONALITY),
                 FALSE
@@ -1193,7 +1195,7 @@ void CB2_ReturnToTradeMenuFromSummary(void)
     case 12:
         // Create player's name text sprites
         name = gSaveBlock2Ptr->playerName;
-        width = GetStringWidth(FONT_NORMAL_COPY_1, name, 0);
+        width = GetStringWidth(FONT_NORMAL, name, 0);
         xPos = (56 - width) / 2;
         for (i = 0; i < NUM_PLAYER_NAME_SPRITES; i++)
         {
@@ -1205,7 +1207,7 @@ void CB2_ReturnToTradeMenuFromSummary(void)
         // Create partner's name text sprites
         id = GetMultiplayerId();
         name = gLinkPlayers[id ^ 1].name;
-        width = GetStringWidth(FONT_NORMAL_COPY_1, name, 0);
+        width = GetStringWidth(FONT_NORMAL, name, 0);
         xPos = (56 - width) / 2;
         for (i = 0; i < NUM_PARTNER_NAME_SPRITES; i++)
         {
@@ -1219,17 +1221,17 @@ void CB2_ReturnToTradeMenuFromSummary(void)
         // Create Cancel text sprites
         temp = sSpriteTemplate_MenuText;
         temp.tileTag += GFXTAG_CANCEL_L;
-        CreateSprite(&temp, 200, 151, 1);
+        CreateSprite(&temp, 200, 152, 1);
         temp = sSpriteTemplate_MenuText;
         temp.tileTag += GFXTAG_CANCEL_R;
-        CreateSprite(&temp, 200 + 32, 151, 1);
+        CreateSprite(&temp, 200 + 32, 152, 1);
 
         // Create Choose a Pokémon text sprites
         for (i = 0; i < NUM_CHOOSE_PKMN_SPRITES; i++)
         {
             temp = sSpriteTemplate_MenuText;
             temp.tileTag += i + GFXTAG_CHOOSE_PKMN_L;
-            CreateSprite(&temp, (i * 32) + 24, 150, 1);
+            CreateSprite(&temp, (i * 32) + 24, 152, 1);
         }
 
         if (sTradeMenu->cursorPosition < PARTY_SIZE)
@@ -1849,8 +1851,8 @@ static void CB_ProcessMenuInput(void)
             // Selected pokemon in player's party
             DrawTextBorderOuter(1, 1, 14);
             FillWindowPixelBuffer(1, PIXEL_FILL(1));
-            PrintMenuTable(1, FONT_NORMAL_COPY_2, 16, ARRAY_COUNT(sMenuAction_SummaryTrade), sMenuAction_SummaryTrade);
-            Menu_InitCursor(1, FONT_NORMAL_COPY_2, 0, 0, 16, 2, 0);
+            PrintMenuTable(1, FONT_NORMAL, 16, ARRAY_COUNT(sMenuAction_SummaryTrade), sMenuAction_SummaryTrade);
+            Menu_InitCursor(1, FONT_NORMAL, 0, 0, 16, 2, 0);
             PutWindowTilemap(1);
             CopyWindowToVram(1, COPYWIN_FULL);
             sTradeMenu->callbackId = CB_SELECTED_MON;
@@ -1864,7 +1866,7 @@ static void CB_ProcessMenuInput(void)
         else if (sTradeMenu->cursorPosition == PARTY_SIZE * 2)
         {
             // Selected Cancel
-            CreateYesNoMenu(&sWindowTemplate_YesNo, FONT_NORMAL_COPY_2, 0, 2, 0x001, 14, 0);
+            CreateYesNoMenu(&sWindowTemplate_YesNo, FONT_NORMAL, 0, 2, 0x001, 14, 0);
             sTradeMenu->callbackId = CB_CANCEL_TRADE_PROMPT;
             DrawBottomRowText(sActionTexts[TEXT_CANCEL_TRADE], (void *)OBJ_VRAM0 + sTradeMenu->bottomTextTileStart * 32, 24);
         }
@@ -2085,7 +2087,7 @@ static void CB_InitConfirmTradePrompt(void)
     sTradeMenu->timer++;
     if (sTradeMenu->timer > 120)
     {
-        CreateYesNoMenu(&sWindowTemplate_YesNo, FONT_NORMAL_COPY_2, 0, 2, 1, 14, 0);
+        CreateYesNoMenu(&sWindowTemplate_YesNo, FONT_NORMAL, 0, 2, 1, 14, 0);
         sTradeMenu->timer = 0;
         sTradeMenu->callbackId = CB_CONFIRM_TRADE_PROMPT;
     }
@@ -2268,13 +2270,13 @@ static void DrawSelectedMonScreen(u8 whichParty)
         // Move the selected pokemon to the center
         gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].data[0] = 20;
         gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].data[2] = (sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE][0]
-                                                                                  + sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE + 1][0]) / 2 * 8 + 14;
-        gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].data[4] = (sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE][1] * 8) - 12;
+                                                                                  + sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE + 1][0]) / 2 * 8 + 16;
+        gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].data[4] = (sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE][1] * 8) - 6;
         StoreSpriteCallbackInData6(&gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]], SpriteCB_MonIcon);
         sTradeMenu->drawSelectedMonState[whichParty]++;
         Trade_MoveSelectedMonToTarget(&gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]]);
         
-        CopyToBgTilemapBufferRect_ChangePalette(1, sTradePartyBoxTilemap, whichParty * 15, 0, 15, 17, 0);
+        CopyToBgTilemapBufferRect_ChangePalette(1, sTradePartyBoxTilemap, whichParty * 15, 0, 15, 18, 0);
         CopyBgTilemapBufferToVram(1);
         CopyBgTilemapBufferToVram(0);
 
@@ -2288,21 +2290,21 @@ static void DrawSelectedMonScreen(u8 whichParty)
         break;
     case 3:
         // Redisplay the bg box
-        CopyToBgTilemapBufferRect_ChangePalette(1, sTradeMovesBoxTilemap, selectedMonParty * 15, 0, 15, 17, 0);
+        CopyToBgTilemapBufferRect_ChangePalette(1, sTradeMovesBoxTilemap, selectedMonParty * 15, 0, 15, 18, 0);
         CopyBgTilemapBufferToVram(1);
 
         // Finalize the selected pokemon's position
         gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].x = (sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE][0]
-                                                                            + sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE + 1][0]) / 2 * 8 + 14;
-        gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].y = (sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE][1] * 8) - 12;
+                                                                            + sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE + 1][0]) / 2 * 8 + 16;
+        gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].y = (sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE][1] * 8) - 6;
         gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].x2 = 0;
         gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].y2 = 0;
 
         // Print selected pokemon's name and moves
         nameStringWidth = GetMonNicknameWidth(nickname, selectedMonParty, partyIdx);
-        AddTextPrinterParameterized3((whichParty * 2) + 14, FONT_SMALL, (80 - nameStringWidth) / 2, 4, sTextColor_PartyMonNickname, 0, nickname);
+        AddTextPrinterParameterized3((whichParty * 2) + 14, FONT_NORMAL, (80 - nameStringWidth) / 2, 4, sTextColor_PartyMonNickname, 0, nickname);
         BufferMovesString(movesString, selectedMonParty, partyIdx);
-        AddTextPrinterParameterized4((whichParty * 2) + 15, FONT_NORMAL_COPY_1, 0, 0, 0, 0, sTextColor_PartyMonNickname, 0, movesString);
+        AddTextPrinterParameterized4((whichParty * 2) + 15, FONT_NORMAL, 4, 0, 0, 0, sTextColor_PartyMonNickname, 0, movesString);
         PutWindowTilemap((whichParty * 2) + 14);
         CopyWindowToVram((whichParty * 2) + 14, COPYWIN_FULL);
         PutWindowTilemap((whichParty * 2) + 15);
@@ -2370,8 +2372,8 @@ static void PrintPartyMonNickname(u8 whichParty, u8 windowId, const u8 *str)
     s8 speed;
     windowId += (whichParty * PARTY_SIZE) + 2;
     speed = 0;
-    xPos = (64u - GetStringWidth(FONT_SMALL, str, GetFontAttribute(FONT_SMALL, FONTATTR_LETTER_SPACING))) / 2;
-    AddTextPrinterParameterized3(windowId, FONT_SMALL, xPos, 4, sTextColor_PartyMonNickname, speed, str);
+    xPos = (105u - GetStringWidth(FONT_NORMAL, str, GetFontAttribute(FONT_NORMAL, FONTATTR_LETTER_SPACING))); //64u and ))) / 2;
+    AddTextPrinterParameterized3(windowId, FONT_NORMAL, xPos, 0, sTextColor_PartyMonNickname, speed, str);
     PutWindowTilemap(windowId);
     CopyWindowToVram(windowId, COPYWIN_FULL);
 }
@@ -2397,7 +2399,7 @@ static void PrintLevelAndGender(u8 whichParty, u8 monIdx, u8 x, u8 y, u8 winLeft
     u8 gender;
     u8 nickname[POKEMON_NAME_LENGTH];
 
-    CopyToBgTilemapBufferRect_ChangePalette(1, gTradeMenuMonBox_Tilemap, winLeft, winTop, 6, 3, 0);
+    CopyToBgTilemapBufferRect_ChangePalette(1, gTradeMenuMonBox_Tilemap, winLeft, winTop, 0, 0, 0);
     CopyBgTilemapBufferToVram(1);
 
     if (whichParty == TRADE_PLAYER)
@@ -2475,8 +2477,8 @@ static void ShowTradePartyMonIcons(u8 whichParty)
     for (i = 0; i < sTradeMenu->partyCounts[whichParty]; i++)
     {
         gSprites[sTradeMenu->partySpriteIds[whichParty][i]].invisible = FALSE;
-        gSprites[sTradeMenu->partySpriteIds[whichParty][i]].x = sTradeMonSpriteCoords[(whichParty * PARTY_SIZE) + i][0] * 8 + 14;
-        gSprites[sTradeMenu->partySpriteIds[whichParty][i]].y = sTradeMonSpriteCoords[(whichParty * PARTY_SIZE) + i][1] * 8 - 12;
+        gSprites[sTradeMenu->partySpriteIds[whichParty][i]].x = sTradeMonSpriteCoords[(whichParty * PARTY_SIZE) + i][0] * 8 + 16;
+        gSprites[sTradeMenu->partySpriteIds[whichParty][i]].y = sTradeMonSpriteCoords[(whichParty * PARTY_SIZE) + i][1] * 4 - 6;
         gSprites[sTradeMenu->partySpriteIds[whichParty][i]].x2 = 0;
         gSprites[sTradeMenu->partySpriteIds[whichParty][i]].y2 = 0;
     }
@@ -2491,7 +2493,7 @@ static void PrintTradePartnerPartyNicknames(void)
 // Returning to the party selection screen from the "is this trade ok?" screen
 static void RedrawPartyWindow(u8 whichParty)
 {
-    CopyToBgTilemapBufferRect_ChangePalette(1, sTradePartyBoxTilemap, 15 * whichParty, 0, 15, 17, 0);
+    CopyToBgTilemapBufferRect_ChangePalette(1, sTradePartyBoxTilemap, 15 * whichParty, 0, 15, 18, 0);
     CopyBgTilemapBufferToVram(1);
     PrintPartyLevelsAndGenders(whichParty);
     PrintPartyNicknames(whichParty);
@@ -2577,7 +2579,7 @@ static void DoQueuedActions(void)
 static void PrintTradeMessage(u8 messageId)
 {
     FillWindowPixelBuffer(0, PIXEL_FILL(1));
-    AddTextPrinterParameterized(0, FONT_NORMAL_COPY_2, sMessages[messageId], 0, 2, TEXT_SKIP_DRAW, NULL);
+    AddTextPrinterParameterized(0, FONT_NORMAL, sMessages[messageId], 0, 2, TEXT_SKIP_DRAW, NULL);
     DrawTextBorderOuter(0, 0x014, 12);
     PutWindowTilemap(0);
     CopyWindowToVram(0, COPYWIN_FULL);
