@@ -1407,9 +1407,10 @@ Text_TerminateLinkIfYouLeaveRoom::
 	.string "Is that okay?$"
 
 Text_TerminateLinkConfirmation::
-	.string "Terminating link..\n"
-	.string "You will be escorted\l"
-	.string "out of the room.\l"
+	.string "Terminating link..\p"
+	.string "You will be\n"
+	.string "escorted out of\l"
+	.string "the room.\l"
 	.string "Please wait.$"
 
 Text_TrainerTooBusyToNotice::
@@ -1526,7 +1527,7 @@ CableClub_Text_NoEnigmaBerryInUnionRoom::
 	.string "No POKéMON holding\n"
 	.string "the {STR_VAR_1} BERRY\l"
 	.string "may enter the\l"
-	.string "UNION ROOM.$
+	.string "UNION ROOM.$"
 
 CableClub_Text_UnionRoomAdapterNotConnected::
 	.string "This is the POKéMON\n"
@@ -1553,7 +1554,7 @@ Text_DescribeWhichGame::
 	.string "rules to you, if\l"
 	.string "you'd like.\p"
 	.string "Which game should I\l"
-	.string "describe?$
+	.string "describe?$"
 
 Text_PokemonJumpInfo::
 	.string "“POKéMON JUMP”\p"
