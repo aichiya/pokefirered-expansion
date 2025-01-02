@@ -349,7 +349,7 @@ static const struct SpritePalette sSpritePalette_MenuText = {
 static const u8 sCursorMoveDestinations[(PARTY_SIZE * 2) + 1][4][PARTY_SIZE] = {
     // Player's party
     [0] = {
-        [DIR_UP]    = { 0,  2, 12, 12,  0,  0},
+        [DIR_UP]    = { 12,  2, 12, 12,  0,  0},
         [DIR_DOWN]  = { 1,  4, 12, 12,  0,  0},
         [DIR_LEFT]  = { 0,  6,  1,  0,  0,  0},
         [DIR_RIGHT] = { 6,  6,  7,  0,  0,  0}
@@ -380,13 +380,13 @@ static const u8 sCursorMoveDestinations[(PARTY_SIZE * 2) + 1][4][PARTY_SIZE] = {
     },
     [5] = {
         [DIR_UP]    = { 4,  3,  3,  3,  0,  0},
-        [DIR_DOWN]  = { 5,  1,  1,  1,  0,  0},
+        [DIR_DOWN]  = { 12,  1,  1,  1,  0,  0},
         [DIR_LEFT]  = { 5,  4,  4,  4,  0,  0},
         [DIR_RIGHT] = {11,  8,  6,  0,  0,  0}
     },
     // Partner's party
     [6] = {
-        [DIR_UP]    = { 6,  8, 12,  0,  0,  0},
+        [DIR_UP]    = { 12,  8, 12,  0,  0,  0},
         [DIR_DOWN]  = { 7, 10, 12,  0,  0,  0},
         [DIR_LEFT]  = { 0,  0,  0,  0,  0,  0},
         [DIR_RIGHT] = { 6,  0,  1,  0,  0,  0}
@@ -462,19 +462,19 @@ static const u8 sTradeMonSpriteCoords[(PARTY_SIZE * 2) + 1][2] = {
 
 static const u8 sTradeMonLevelCoords[PARTY_SIZE * 2][2] = {
     [TRADE_PLAYER] =
-        { 11,  2},
-        { 11,  5},
-        { 11,  8},
-        { 11, 11},
-        { 11, 14},
-        { 11, 17},
+        { 11,  1},
+        { 11,  4},
+        { 11,  7},
+        { 11, 10},
+        { 11, 13},
+        { 11, 16},
     [TRADE_PARTNER * PARTY_SIZE] =
-        {27,  2},
-        {27,  5},
-        {27,  8},
-        {27, 11},
-        {27, 14},
-        {27, 17},
+        {27,  1},
+        {27,  4},
+        {27,  7},
+        {27, 10},
+        {27, 13},
+        {27, 16},
 };
 
 static const u8 sTradeMonBoxCoords[PARTY_SIZE * 2][2] = {
@@ -497,7 +497,7 @@ static const u8 sTradeMonBoxCoords[PARTY_SIZE * 2][2] = {
 // x,y offset for player name, x/y offset for partner name
 static const u8 sPlayerNameCoords[][4] = {
     {60, 9, 180, 9}, // Unused. For JP characters?
-    {48, 16, 168, 16},
+    {44, 16, 172, 16},
 };
 
 static const u8 sUnusedCoords[][2] =
@@ -719,27 +719,27 @@ static const struct WindowTemplate sWindowTemplates[] = {
     }, {
         .bg = 0,
         .tilemapLeft = 1,
-        .tilemapTop = 9,
+        .tilemapTop = 8,
         .width = 13, //Selected pokemon 1's moves textbox.
-        .height = 8,
+        .height = 10,
         .paletteNum = 14,
         .baseBlock = 494
     }, {
         .bg = 0,
-        .tilemapLeft = 16,
+        .tilemapLeft = 17,
         .tilemapTop = 6,
         .width = 12, // Selected pokemon 2's nickname textbox.
         .height = 2,
         .paletteNum = 14,
-        .baseBlock = 598
+        .baseBlock = 624
     }, {
         .bg = 0,
-        .tilemapLeft = 16,
-        .tilemapTop = 9,
+        .tilemapLeft = 17,
+        .tilemapTop = 8,
         .width = 13, //Selected pokemon 2's moves textbox.
-        .height = 8,
+        .height = 10,
         .paletteNum = 14,
-        .baseBlock = 622
+        .baseBlock = 648
     }, DUMMY_WIN_TEMPLATE
 };
 
@@ -750,7 +750,7 @@ static const struct WindowTemplate sWindowTemplate_YesNo = {
     .width = 5,
     .height = 4,
     .paletteNum = 14,
-    .baseBlock = 726
+    .baseBlock = 780
 };
 
 static const u8 sDebug_Messages[][13] = {
@@ -773,8 +773,8 @@ static const u8 sDebug_TradeResultTexts[][14] = {
 
 // Position of level/gender when just the pokemon to trade are displayed
 static const u8 sSelectedMonLevelGenderCoords[][2] = {
-    [TRADE_PLAYER]  = { 4,  3},
-    [TRADE_PARTNER] = {19,  3}
+    [TRADE_PLAYER]  = { 6,  5},
+    [TRADE_PARTNER] = {22,  5}
 };
 
 static void InitTradeMenu(void)
@@ -805,7 +805,7 @@ static void InitTradeMenu(void)
             ClearWindowTilemap(i);
             FillWindowPixelBuffer(i, PIXEL_FILL(0));
         }
-        FillBgTilemapBufferRect(0, 0, 0, 0, 30, 20, 15);
+        FillBgTilemapBufferRect(0, 0, 0, 0, 32, 20, 15);
         LoadStdWindowGfx(0, 0x014, BG_PLTT_ID(12));
         LoadUserWindowGfx(2, 0x001, BG_PLTT_ID(14));
         LoadMonIconPalettes();
@@ -1201,7 +1201,7 @@ void CB2_ReturnToTradeMenuFromSummary(void)
         {
             temp = sSpriteTemplate_MenuText;
             temp.tileTag += i + GFXTAG_PLAYER_NAME_L;
-            CreateSprite(&temp, xPos + sPlayerNameCoords[1][0] + (i * 32), sPlayerNameCoords[1][1], 1);
+            //CreateSprite(&temp, xPos + sPlayerNameCoords[1][0] + (i * 32), sPlayerNameCoords[1][1], 1);
         }
 
         // Create partner's name text sprites
@@ -1213,7 +1213,7 @@ void CB2_ReturnToTradeMenuFromSummary(void)
         {
             temp = sSpriteTemplate_MenuText;
             temp.tileTag += i + GFXTAG_PARTNER_NAME_L;
-            CreateSprite(&temp, xPos + sPlayerNameCoords[1][2] + (i * 32), sPlayerNameCoords[1][3], 1);
+            //CreateSprite(&temp, xPos + sPlayerNameCoords[1][2] + (i * 32), sPlayerNameCoords[1][3], 1);
         }
         gMain.state++;
         break;
@@ -1381,8 +1381,8 @@ static void LoadTradeBgGfx(u8 state)
         break;
     case 1:
         LoadBgTilemap(3, sTradeStripesBG3Tilemap, 0x800, 0);
-        PrintPartyLevelsAndGenders(TRADE_PLAYER);
-        PrintPartyLevelsAndGenders(TRADE_PARTNER);
+        //PrintPartyLevelsAndGenders(TRADE_PLAYER);
+        //PrintPartyLevelsAndGenders(TRADE_PARTNER);
         CopyBgTilemapBufferToVram(1);
         break;
     case 2:
@@ -2269,14 +2269,14 @@ static void DrawSelectedMonScreen(u8 whichParty)
 
         // Move the selected pokemon to the center
         gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].data[0] = 20;
-        gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].data[2] = (sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE][0]
-                                                                                  + sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE + 1][0]) / 2 * 8 + 16;
-        gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].data[4] = (sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE][1] * 8) - 6;
+        gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].data[2] = (sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE][0] + 4
+                                                                                  + sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE + 1][0]) / 2 * 8;
+        gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].data[4] = (sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE][1] * 8) + 30;
         StoreSpriteCallbackInData6(&gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]], SpriteCB_MonIcon);
         sTradeMenu->drawSelectedMonState[whichParty]++;
         Trade_MoveSelectedMonToTarget(&gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]]);
         
-        CopyToBgTilemapBufferRect_ChangePalette(1, sTradePartyBoxTilemap, whichParty * 15, 0, 15, 18, 0);
+        CopyToBgTilemapBufferRect_ChangePalette(1, sTradePartyBoxTilemap, whichParty * 0, 0, 32, 20, 0);
         CopyBgTilemapBufferToVram(1);
         CopyBgTilemapBufferToVram(0);
 
@@ -2290,13 +2290,13 @@ static void DrawSelectedMonScreen(u8 whichParty)
         break;
     case 3:
         // Redisplay the bg box
-        CopyToBgTilemapBufferRect_ChangePalette(1, sTradeMovesBoxTilemap, selectedMonParty * 15, 0, 15, 18, 0);
+        CopyToBgTilemapBufferRect_ChangePalette(1, sTradeMovesBoxTilemap, selectedMonParty * 0, 0, 32, 20, 0);
         CopyBgTilemapBufferToVram(1);
 
         // Finalize the selected pokemon's position
-        gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].x = (sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE][0]
-                                                                            + sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE + 1][0]) / 2 * 8 + 16;
-        gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].y = (sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE][1] * 8) - 6;
+        gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].x = (sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE][0] + 4
+                                                                            + sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE + 1][0]) / 2 * 8;
+        gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].y = (sTradeMonSpriteCoords[selectedMonParty * PARTY_SIZE][1] * 8) + 30;
         gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].x2 = 0;
         gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].y2 = 0;
 
@@ -2304,7 +2304,8 @@ static void DrawSelectedMonScreen(u8 whichParty)
         nameStringWidth = GetMonNicknameWidth(nickname, selectedMonParty, partyIdx);
         AddTextPrinterParameterized3((whichParty * 2) + 14, FONT_NORMAL, (80 - nameStringWidth) / 2, 4, sTextColor_PartyMonNickname, 0, nickname);
         BufferMovesString(movesString, selectedMonParty, partyIdx);
-        AddTextPrinterParameterized4((whichParty * 2) + 15, FONT_NORMAL, 4, 0, 0, 0, sTextColor_PartyMonNickname, 0, movesString);
+        AddTextPrinterParameterized4((whichParty * 2) + 15, FONT_NORMAL, 0, 0, 0, 0, sTextColor_PartyMonNickname, 0, gTradeText_Moves);
+        AddTextPrinterParameterized4((whichParty * 2) + 15, FONT_NORMAL, 0, 16, 0, 0, sTextColor_PartyMonNickname, 0, movesString);
         PutWindowTilemap((whichParty * 2) + 14);
         CopyWindowToVram((whichParty * 2) + 14, COPYWIN_FULL);
         PutWindowTilemap((whichParty * 2) + 15);
@@ -2410,9 +2411,9 @@ static void PrintLevelAndGender(u8 whichParty, u8 monIdx, u8 x, u8 y, u8 winLeft
     if (!sTradeMenu->isEgg[whichParty][monIdx])
     {
         if (level / 10 != 0)
-            sTradeMenu->tilemapBuffer[x + (y * 32)] = (level / 10) + 0x60;
+            sTradeMenu->tilemapBuffer[x + (y * 32)] = (level / 10) + 96;
 
-        sTradeMenu->tilemapBuffer[x + (y * 32) + 1] = (level % 10) + 0x70;
+        sTradeMenu->tilemapBuffer[x + (y * 32) + 1] = (level % 10) + 112;
     }
     else
     {
@@ -2440,13 +2441,13 @@ static void PrintLevelAndGender(u8 whichParty, u8 monIdx, u8 x, u8 y, u8 winLeft
         switch (gender)
         {
         case MON_MALE:
-            symbolTile = !NameHasGenderSymbol(nickname, MON_MALE) ? 0x84 : 0x83;
+            symbolTile = !NameHasGenderSymbol(nickname, MON_MALE) ? 132 : 131;
             break;
         case MON_FEMALE:
-            symbolTile = !NameHasGenderSymbol(nickname, MON_FEMALE) ? 0x85 : 0x83;
+            symbolTile = !NameHasGenderSymbol(nickname, MON_FEMALE) ? 133 : 131;
             break;
         default:
-            symbolTile = 0x83;
+            symbolTile = 131;
             break;
         }
     }
@@ -2478,7 +2479,7 @@ static void ShowTradePartyMonIcons(u8 whichParty)
     {
         gSprites[sTradeMenu->partySpriteIds[whichParty][i]].invisible = FALSE;
         gSprites[sTradeMenu->partySpriteIds[whichParty][i]].x = sTradeMonSpriteCoords[(whichParty * PARTY_SIZE) + i][0] * 8 + 16;
-        gSprites[sTradeMenu->partySpriteIds[whichParty][i]].y = sTradeMonSpriteCoords[(whichParty * PARTY_SIZE) + i][1] * 4 - 6;
+        gSprites[sTradeMenu->partySpriteIds[whichParty][i]].y = sTradeMonSpriteCoords[(whichParty * PARTY_SIZE) + i][1] * 8 - 6;
         gSprites[sTradeMenu->partySpriteIds[whichParty][i]].x2 = 0;
         gSprites[sTradeMenu->partySpriteIds[whichParty][i]].y2 = 0;
     }
@@ -2493,9 +2494,9 @@ static void PrintTradePartnerPartyNicknames(void)
 // Returning to the party selection screen from the "is this trade ok?" screen
 static void RedrawPartyWindow(u8 whichParty)
 {
-    CopyToBgTilemapBufferRect_ChangePalette(1, sTradePartyBoxTilemap, 15 * whichParty, 0, 15, 18, 0);
+    CopyToBgTilemapBufferRect_ChangePalette(1, sTradePartyBoxTilemap, 0, 0, 32, 20, 0);
     CopyBgTilemapBufferToVram(1);
-    PrintPartyLevelsAndGenders(whichParty);
+    //PrintPartyLevelsAndGenders(whichParty);
     PrintPartyNicknames(whichParty);
     ShowTradePartyMonIcons(whichParty);
     DrawBottomRowText(sActionTexts[TEXT_CHOOSE_MON], (void *)OBJ_VRAM0 + 32 * sTradeMenu->bottomTextTileStart, 24);
@@ -2504,13 +2505,13 @@ static void RedrawPartyWindow(u8 whichParty)
 
 static void Task_DrawSelectionSummary(u8 taskId)
 {
-    FillBgTilemapBufferRect_Palette0(0, 0, 0, 0, 30, 20);
+    FillBgTilemapBufferRect_Palette0(0, 0, 0, 0, 32, 20);
     CopyBgTilemapBufferToVram(0);
 }
 
 static void Task_DrawSelectionTrade(u8 taskId)
 {
-    FillBgTilemapBufferRect_Palette0(0, 0, 0, 0, 30, 20);
+    FillBgTilemapBufferRect_Palette0(0, 0, 0, 0, 32, 20);
     CopyBgTilemapBufferToVram(0);
 }
 

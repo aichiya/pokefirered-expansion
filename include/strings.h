@@ -859,6 +859,7 @@ extern const u8 gTradeText_Cancel[];
 extern const u8 gTradeText_ChooseAPokemon[];
 extern const u8 gTradeText_Summary[];
 extern const u8 gTradeText_Trade[];
+extern const u8 gTradeText_Moves[];
 extern const u8 gText_CancelTrade[];
 extern const u8 gTradeText_PressBButtonToExit[];
 extern const u8 gText_TradeAction_Summary[];

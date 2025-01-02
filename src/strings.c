@@ -1237,6 +1237,7 @@ const u8 gTradeText_Cancel[] = _("CANCEL");
 const u8 gTradeText_ChooseAPokemon[] = _("Choose a POKéMON.");
 const u8 gTradeText_Summary[] = _("SUMMARY");
 const u8 gTradeText_Trade[] = _("TRADE");
+const u8 gTradeText_Moves[] = _("MOVES /");
 const u8 gText_CancelTrade[] = _("Cancel trade?");
 const u8 gTradeText_PressBButtonToExit[] = _("Press the B Button to exit.");
 const u8 gText_TradeAction_Summary[] = _("SUMMARY");
