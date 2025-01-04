@@ -1009,3 +1009,14 @@ const struct Tileset gTileset_RB_Roof =
     .metatileAttributes = gMetatileAttributes_RB_Roof,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_RB_CableClub =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_RB_CableClub,
+    .palettes = gTilesetPalettes_RB_CableClub,
+    .metatiles = gMetatiles_RB_CableClub,
+    .metatileAttributes = gMetatileAttributes_RB_CableClub,
+    .callback = NULL,
+};

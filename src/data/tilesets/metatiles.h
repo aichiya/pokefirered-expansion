@@ -272,3 +272,6 @@ const u32 gMetatileAttributes_RB_General[] = INCBIN_U32("data/tilesets/primary/r
 
 const u16 gMetatiles_RB_Roof[] = INCBIN_U16("data/tilesets/secondary/rb_roof/metatiles.bin");
 const u32 gMetatileAttributes_RB_Roof[] = INCBIN_U32("data/tilesets/secondary/rb_roof/metatile_attributes.bin");
+
+const u16 gMetatiles_RB_CableClub[] = INCBIN_U16("data/tilesets/secondary/rb_cable_club/metatiles.bin");
+const u32 gMetatileAttributes_RB_CableClub[] = INCBIN_U32("data/tilesets/secondary/rb_cable_club/metatile_attributes.bin");

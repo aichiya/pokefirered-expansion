@@ -440,8 +440,8 @@
       "height": 9,
       "border_width": 2,
       "border_height": 2,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_CableClub",
+      "primary_tileset": "gTileset_RB_General",
+      "secondary_tileset": "gTileset_RB_CableClub",
       "border_filepath": "data/layouts/BattleColosseum_2P/border.bin",
       "blockdata_filepath": "data/layouts/BattleColosseum_2P/map.bin"
     },
@@ -452,8 +452,8 @@
       "height": 9,
       "border_width": 2,
       "border_height": 2,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_CableClub",
+      "primary_tileset": "gTileset_RB_General",
+      "secondary_tileset": "gTileset_RB_CableClub",
       "border_filepath": "data/layouts/TradeCenter/border.bin",
       "blockdata_filepath": "data/layouts/TradeCenter/map.bin"
     },
@@ -476,8 +476,8 @@
       "height": 9,
       "border_width": 2,
       "border_height": 2,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_CableClub",
+      "primary_tileset": "gTileset_RB_General",
+      "secondary_tileset": "gTileset_RB_CableClub",
       "border_filepath": "data/layouts/BattleColosseum_4P/border.bin",
       "blockdata_filepath": "data/layouts/BattleColosseum_4P/map.bin"
     },
