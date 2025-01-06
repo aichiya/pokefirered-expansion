@@ -349,8 +349,11 @@ static const u8 sTrainerCardTimeHoursXPositions[] = {48, 48};
 static const u8 sTrainerCardTimeHoursYPositions[] = {72, 30};
 static const u8 sTrainerCardTimeMinutesXPositions[] = {80, 80};
 static const u8 sTrainerCardTimeMinutesYPositions[] = {30, 30};
-static const u8 sTrainerCardProfilePhraseXPositions[] = {0, 0};
-static const u8 sTrainerCardProfilePhraseYPositions[] = {64, 64};
+//WTF Section Starts
+static const u8 sTrainerCardProfilePhraseXPositions[] = {99, 99}; //First value controls the Y of the first half of the phrase. Second value controls the Y of the first half of the phrase.
+//Set values above to 99 to move the first half offscreen.
+static const u8 sTrainerCardProfilePhraseYPositions[] = {64, 64}; //First value controls the Y of the second half of the phrase. Second value seems to do nothing at all.
+//WTF Section Ends
 static const u8 sTrainerCardBackNameXPositions[] = {16, 16};
 static const u8 sTrainerCardBackNameYPositions[] = {0, 0};
 static const u8 sTrainerCardHofDebutXPositions[] = {8, 8, 8, 8};
