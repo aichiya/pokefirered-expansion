@@ -1419,14 +1419,15 @@ Text_TrainerTooBusyToNotice::
 
 Text_LookedAtPlayersTrainerCard::
 	.string "Score! Got to look\n"
-	.string "at {STR_VAR_1}'s"
+	.string "at {STR_VAR_1}'s\l"
 	.string "TRAINER CARD!$"
 
 Text_LookedAtPlayersTrainerCardColored::
 	.string "Score! Got to look\n"
 	.string "at {STR_VAR_1}'s\l"
-	.string "TRAINER CARD! It's\l"
-	.string "a {STR_VAR_2} card!$"
+	.string "TRAINER CARD!\p"
+	.string "It's a {STR_VAR_2}\n"
+	.string "card!$"
 
 Text_TakeSeatStartBattle::
 	.string "Please take your\n"
