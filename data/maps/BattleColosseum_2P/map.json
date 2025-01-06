@@ -18,7 +18,7 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_UNION_ROOM_RECEPTIONIST",
-      "x": 9,
+      "x": 10,
       "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -49,7 +49,7 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 3,
+      "x": 5,
       "y": 5,
       "elevation": 3,
       "var": "VAR_TEMP_0",
@@ -58,7 +58,7 @@
     },
     {
       "type": "trigger",
-      "x": 10,
+      "x": 8,
       "y": 5,
       "elevation": 3,
       "var": "VAR_TEMP_0",
