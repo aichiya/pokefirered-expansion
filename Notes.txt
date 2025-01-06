@@ -1,10 +1,7 @@
 
 -Global-
 Ingame trade success texts not tested.
-Map has an offset of 4 tiles downwards, can't figure out a fix.
-
--Oak's Lab-
-Red and Rival sprites during intro sequence are wrong, use Pikachu palette.
+All object_events are supposed to be offset 4 pixels down, but aren't.
 
 -Battle-
 UI layout not finished.
