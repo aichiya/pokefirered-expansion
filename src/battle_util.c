@@ -1310,25 +1310,15 @@ u8 AtkCanceller_UnableToUseMove(void)
         case CANCELLER_FROZEN: // check being frozen
             if (gBattleMons[gBattlerAttacker].status1 & STATUS1_FREEZE)
             {
-                if (Random() % 5)
+                if (gBattleMoves[gCurrentMove].effect != EFFECT_THAW_HIT) // unfreezing via a move effect happens in case 13
                 {
-                    if (gBattleMoves[gCurrentMove].effect != EFFECT_THAW_HIT) // unfreezing via a move effect happens in case 13
-                    {
-                        gBattlescriptCurrInstr = BattleScript_MoveUsedIsFrozen;
-                        gHitMarker |= HITMARKER_NO_ATTACKSTRING;
-                    }
-                    else
-                    {
-                        gBattleStruct->atkCancellerTracker++;
-                        break;
-                    }
+                    gBattlescriptCurrInstr = BattleScript_MoveUsedIsFrozen;
+                    gHitMarker |= HITMARKER_NO_ATTACKSTRING;
                 }
-                else // unfreeze
+                else
                 {
-                    gBattleMons[gBattlerAttacker].status1 &= ~STATUS1_FREEZE;
-                    BattleScriptPushCursor();
-                    gBattlescriptCurrInstr = BattleScript_MoveUsedUnfroze;
-                    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_DEFROSTED;
+                    gBattleStruct->atkCancellerTracker++;
+                    break;
                 }
                 effect = 2;
             }
