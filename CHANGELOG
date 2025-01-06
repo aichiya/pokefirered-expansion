@@ -84,6 +84,7 @@ Many, many more changes, large and small!
 
 -V7-
 Daisy will now wander up and down after gifing Town Map to the player.
+FRZ status condition no longer wears off over time. Thank you to Shakela for this commit!
 
 Fixed: Empty party menu slots had jumbled graphics.
 Fixed: Text windows shown when hatching eggs and trading pokemon had white text on white background.
