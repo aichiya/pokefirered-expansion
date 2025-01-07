@@ -57,6 +57,6 @@ Can I play with vanilla games? * 50/50. Trading is possible and confirmed to wor
 Build options: 'red' 'blue'
 Defaults to Rev1, modern not supported.
 
-Thank you to CHAMBER, SOLOO993, BLUE EMERALD, LAKE, NESLUG, PIKACHU25 for the Pokemon party icon sprite sheet available through PRET tutorials, TheXaman for the wonderful Gen4-style party menu, Moylend for playing my project and reporting issues, Meister_anon and GriffinR for answering my questions on Discord, Shakela for a commit removing FRZ thawing over time!
+All credits moved to CREDITS.md!
 
 https://www.pokecommunity.com/threads/red-blue-g1s.525470/
