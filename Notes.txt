@@ -1,14 +1,9 @@
 
 -Global-
 Ingame trade success texts not tested.
-All object_events are supposed to be offset 4 pixels down, but aren't.
 
 -Battle-
-UI layout not finished.
 PP is above move type, should be below.
-ELITE FOUR title not removed from trainers.
-Mimic not altered, doesn't match gen 1.
-Hyper Beam recharge feature not added.
 
 -Pokemon League-
 Don't Leave script doesn't play, door tiles removed instead.
