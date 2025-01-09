@@ -1807,9 +1807,9 @@ static bool8 Fishing8(struct Task *task)
 
     AlignFishingAnimationFrames(&gSprites[gPlayerAvatar.spriteId]);
     task->tFrameCounter++;
-    if (task->tFrameCounter >= reelTimeouts[task->tFishingRod])
-        task->tStep = FISHING_GOT_AWAY;
-    else if (gMain.newKeys & A_BUTTON)
+//    if (task->tFrameCounter >= reelTimeouts[task->tFishingRod])
+//        task->tStep = FISHING_GOT_AWAY;
+//    else if (gMain.newKeys & A_BUTTON)
         task->tStep++;
     return FALSE;
 }
