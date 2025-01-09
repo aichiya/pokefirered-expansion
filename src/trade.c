@@ -193,9 +193,9 @@ static void DrawSelectedMonScreen(u8 side);
 static u8 GetMonNicknameWidth(u8 *str, u8 whichParty, u8 partyIdx);
 static void BufferMovesString(u8 *str, u8 whichParty, u8 partyIdx);
 static void PrintPartyNicknames(u8 side);
-static void PrintLevelAndGender(u8 whichParty, u8 monIdx, u8 x, u8 y, u8 winLeft, u8 winTop);
-static void PrintPartyLevelsAndGenders(u8 side);
+static void PrintPartyLevels(u8 side);
 static void PrintTradePartnerPartyNicknames(void);
+static void PrintTradePartnerPartyLevels(void);
 static void RedrawPartyWindow(u8 whichParty);
 static void Task_DrawSelectionSummary(u8 taskId);
 static void Task_DrawSelectionTrade(u8 taskId);
@@ -349,7 +349,7 @@ static const struct SpritePalette sSpritePalette_MenuText = {
 static const u8 sCursorMoveDestinations[(PARTY_SIZE * 2) + 1][4][PARTY_SIZE] = {
     // Player's party
     [0] = {
-        [DIR_UP]    = { 12,  2, 12, 12,  0,  0},
+        [DIR_UP]    = {12,  2, 12, 12,  0,  0},
         [DIR_DOWN]  = { 1,  4, 12, 12,  0,  0},
         [DIR_LEFT]  = { 0,  6,  1,  0,  0,  0},
         [DIR_RIGHT] = { 6,  6,  7,  0,  0,  0}
@@ -380,13 +380,13 @@ static const u8 sCursorMoveDestinations[(PARTY_SIZE * 2) + 1][4][PARTY_SIZE] = {
     },
     [5] = {
         [DIR_UP]    = { 4,  3,  3,  3,  0,  0},
-        [DIR_DOWN]  = { 12,  1,  1,  1,  0,  0},
+        [DIR_DOWN]  = {12,  1,  1,  1,  0,  0},
         [DIR_LEFT]  = { 5,  4,  4,  4,  0,  0},
         [DIR_RIGHT] = {11,  8,  6,  0,  0,  0}
     },
     // Partner's party
     [6] = {
-        [DIR_UP]    = { 12,  8, 12,  0,  0,  0},
+        [DIR_UP]    = {12,  8, 12,  0,  0,  0},
         [DIR_DOWN]  = { 7, 10, 12,  0,  0,  0},
         [DIR_LEFT]  = { 0,  0,  0,  0,  0,  0},
         [DIR_RIGHT] = { 6,  0,  1,  0,  0,  0}
@@ -596,7 +596,7 @@ static const struct BgTemplate sBgTemplates[] = {
 };
 
 #define POKEMON_SLOT_WIDTH 14
-#define POKEMON_SLOT_HEIGHT 2
+#define POKEMON_SLOT_HEIGHT 3
 #define POKEMON_SLOT_LEFT_P1 0
 #define POKEMON_SLOT_LEFT_P2 16
 #define POKEMON_SLOT_TOP_1 0
@@ -624,7 +624,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .width = 8,
         .height = 4,
         .paletteNum = 14,
-        .baseBlock = 118
+        .baseBlock = 87
     },
     {// Slot1
         .bg = 0,
@@ -633,7 +633,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .width = POKEMON_SLOT_WIDTH,
         .height = POKEMON_SLOT_HEIGHT,
         .paletteNum = POKEMON_SLOT_PALETTE,
-        .baseBlock = 150
+        .baseBlock = 120
     }, 
     {// Slot2
         .bg = 0,
@@ -642,7 +642,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .width = POKEMON_SLOT_WIDTH,
         .height = POKEMON_SLOT_HEIGHT,
         .paletteNum = POKEMON_SLOT_PALETTE,
-        .baseBlock = 178
+        .baseBlock = 163
     }, 
     {// Slot3
         .bg = 0,
@@ -660,7 +660,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .width = POKEMON_SLOT_WIDTH,
         .height = POKEMON_SLOT_HEIGHT,
         .paletteNum = POKEMON_SLOT_PALETTE,
-        .baseBlock = 234
+        .baseBlock = 249
     }, 
     {// Slot5
         .bg = 0,
@@ -669,7 +669,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .width = POKEMON_SLOT_WIDTH,
         .height = POKEMON_SLOT_HEIGHT,
         .paletteNum = POKEMON_SLOT_PALETTE,
-        .baseBlock = 262
+        .baseBlock = 292
     }, 
     {// Slot6
         .bg = 0,
@@ -678,7 +678,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .width = POKEMON_SLOT_WIDTH,
         .height = POKEMON_SLOT_HEIGHT,
         .paletteNum = POKEMON_SLOT_PALETTE,
-        .baseBlock = 290
+        .baseBlock = 335
     }, 
     {// Slot7
         .bg = 0,
@@ -687,7 +687,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .width = POKEMON_SLOT_WIDTH,
         .height = POKEMON_SLOT_HEIGHT,
         .paletteNum = POKEMON_SLOT_PALETTE,
-        .baseBlock = 318
+        .baseBlock = 378
     }, 
     {// Slot8
         .bg = 0,
@@ -696,7 +696,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .width = POKEMON_SLOT_WIDTH,
         .height = POKEMON_SLOT_HEIGHT,
         .paletteNum = POKEMON_SLOT_PALETTE,
-        .baseBlock = 346
+        .baseBlock = 421
     }, 
     {// Slot9
         .bg = 0,
@@ -705,7 +705,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .width = POKEMON_SLOT_WIDTH,
         .height = POKEMON_SLOT_HEIGHT,
         .paletteNum = POKEMON_SLOT_PALETTE,
-        .baseBlock = 374
+        .baseBlock = 464
     }, 
     {// Slot10
         .bg = 0,
@@ -714,7 +714,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .width = POKEMON_SLOT_WIDTH, 
         .height = POKEMON_SLOT_HEIGHT,
         .paletteNum = POKEMON_SLOT_PALETTE,
-        .baseBlock = 402
+        .baseBlock = 507
     }, 
     {// Slot11
         .bg = 0,
@@ -723,7 +723,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .width = POKEMON_SLOT_WIDTH,
         .height = POKEMON_SLOT_HEIGHT,
         .paletteNum = POKEMON_SLOT_PALETTE,
-        .baseBlock = 430
+        .baseBlock = 550
     }, 
     {// Slot12
         .bg = 0,
@@ -732,7 +732,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .width = POKEMON_SLOT_WIDTH,
         .height = POKEMON_SLOT_HEIGHT,
         .paletteNum = POKEMON_SLOT_PALETTE,
-        .baseBlock = 458
+        .baseBlock = 593
     }, 
     {//Selected pokemon 1's nickname textbox.
         .bg = 0,
@@ -741,7 +741,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .width = 12,
         .height = 2,
         .paletteNum = 14,
-        .baseBlock = 488
+        .baseBlock = 636
     }, 
     {//Selected pokemon 1's moves textbox.
         .bg = 0,
@@ -750,7 +750,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .width = 13,
         .height = 10,
         .paletteNum = 14,
-        .baseBlock = 514
+        .baseBlock = 660
     }, 
     {// Selected pokemon 2's nickname textbox.
         .bg = 0,
@@ -759,7 +759,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .width = 12,
         .height = 2,
         .paletteNum = 14,
-        .baseBlock = 646
+        .baseBlock = 790
     }, 
     {//Selected pokemon 2's moves textbox.
         .bg = 0,
@@ -768,7 +768,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .width = 13,
         .height = 10,
         .paletteNum = 14,
-        .baseBlock = 672
+        .baseBlock = 814
     }, DUMMY_WIN_TEMPLATE
 };
 
@@ -779,7 +779,7 @@ static const struct WindowTemplate sWindowTemplate_YesNo = {
     .width = 5,
     .height = 4,
     .paletteNum = 14,
-    .baseBlock = 806
+    .baseBlock = 944
 };
 
 static const u8 sDebug_Messages[][13] = {
@@ -798,12 +798,6 @@ static const u8 sText_ShedinjaJP[] = _("ヌケニン");
 static const u8 sDebug_TradeResultTexts[][14] = {
     _("こうかんせいりつ     "), // "trade successful"
     _("だめだたらしいよ     "), // "it seems like it didn't work"
-};
-
-// Position of level/gender when just the pokemon to trade are displayed
-static const u8 sSelectedMonLevelGenderCoords[][2] = {
-    [TRADE_PLAYER]  = { 6,  5},
-    [TRADE_PARTNER] = {22,  5}
 };
 
 static void InitTradeMenu(void)
@@ -1410,8 +1404,8 @@ static void LoadTradeBgGfx(u8 state)
         break;
     case 1:
         LoadBgTilemap(3, sTradeStripesBG3Tilemap, 0x800, 0);
-        PrintPartyLevelsAndGenders(TRADE_PLAYER);
-        PrintPartyLevelsAndGenders(TRADE_PARTNER);
+        PrintPartyLevels(TRADE_PLAYER);
+        PrintPartyLevels(TRADE_PARTNER);
         CopyBgTilemapBufferToVram(1);
         break;
     case 2:
@@ -2269,6 +2263,7 @@ static void DrawSelectedMonScreen(u8 whichParty)
 {
     s8 nameStringWidth;
     u8 nickname[20];
+    u8 level[20];
     u8 movesString[56];
     u8 i;
     u8 partyIdx;
@@ -2343,11 +2338,6 @@ static void DrawSelectedMonScreen(u8 whichParty)
         sTradeMenu->drawSelectedMonState[whichParty]++;
         break;
     case 4:
-        PrintLevelAndGender(whichParty, partyIdx,
-            sSelectedMonLevelGenderCoords[whichParty][0] + 4,
-            sSelectedMonLevelGenderCoords[whichParty][1] + 1,
-            sSelectedMonLevelGenderCoords[whichParty][0],
-            sSelectedMonLevelGenderCoords[whichParty][1]);
         sTradeMenu->drawSelectedMonState[whichParty]++;
         break;
     }
@@ -2422,81 +2412,29 @@ static void PrintPartyNicknames(u8 whichParty)
     }
 }
 
-static void PrintLevelAndGender(u8 whichParty, u8 monIdx, u8 x, u8 y, u8 winLeft, u8 winTop)
+static void PrintPartyMonLevel(u8 whichParty, u8 windowId, u8 level)
 {
-    u8 level;
-    u32 symbolTile;
-    u8 gender;
-    u8 nickname[POKEMON_NAME_LENGTH];
-
-    //CopyToBgTilemapBufferRect_ChangePalette(1, gTradeMenuMonBox_Tilemap, winLeft, winTop, 14, 3, 0);
-    //CopyBgTilemapBufferToVram(1);
-
-    if (whichParty == TRADE_PLAYER)
-        level = GetMonData(&gPlayerParty[monIdx], MON_DATA_LEVEL, NULL);
-    else
-        level = GetMonData(&gEnemyParty[monIdx], MON_DATA_LEVEL, NULL);
-
-    if (!sTradeMenu->isEgg[whichParty][monIdx])
-    {
-        if (level / 10 != 0)
-            sTradeMenu->tilemapBuffer[x + (y * 32)] = (level / 10) + 96;
-
-        sTradeMenu->tilemapBuffer[x + (y * 32) + 1] = (level % 10) + 112;
-    }
-    else
-    {
-        sTradeMenu->tilemapBuffer[x + (y * 32) - 32] = sTradeMenu->tilemapBuffer[x + (y * 32) - 33];
-        sTradeMenu->tilemapBuffer[x + (y * 32) - 31] = sTradeMenu->tilemapBuffer[x + (y * 32) - 36] | 0x400;
-    }
-
-//    if (sTradeMenu->isEgg[whichParty][monIdx])
-//    {
-//        symbolTile = 0x480;
-//    }
-//    else
-//    {
-//        if (whichParty == TRADE_PLAYER)
-//        {
-//            gender = GetMonGender(&gPlayerParty[monIdx]);
-//            GetMonData(&gPlayerParty[monIdx], MON_DATA_NICKNAME, nickname);
-//        }
-//        else
-//        {
-//            gender = GetMonGender(&gEnemyParty[monIdx]);
-//            GetMonData(&gEnemyParty[monIdx], MON_DATA_NICKNAME, nickname);
-//        }
-
-//        switch (gender)
-//        {
-//        case MON_MALE:
-//            symbolTile = !NameHasGenderSymbol(nickname, MON_MALE) ? 132 : 131;
-//            break;
-//        case MON_FEMALE:
-//            symbolTile = !NameHasGenderSymbol(nickname, MON_FEMALE) ? 133 : 131;
-//            break;
-//        default:
-//            symbolTile = 131;
-//            break;
-//        }
-//    }
-//    sTradeMenu->tilemapBuffer[(y - 1) * 32 + x + 1] = symbolTile;
+    u8 xPos;
+    s8 speed;
+    u8 levelStr[8];
+    windowId += (whichParty * PARTY_SIZE) + 2;
+    speed = 0;
+    levelStr[0] = CHAR_LV;
+    ConvertIntToDecimalStringN(levelStr + 1, level, STR_CONV_MODE_LEFT_ALIGN, 3);
+    xPos = (105u - GetStringWidth(FONT_NORMAL, levelStr, GetFontAttribute(FONT_NORMAL, FONTATTR_LETTER_SPACING)));
+    AddTextPrinterParameterized3(windowId, FONT_NORMAL, xPos, 8, sTextColor_PartyMonNickname, speed, levelStr);
+    PutWindowTilemap(windowId);
+    CopyWindowToVram(windowId, COPYWIN_FULL);
 }
 
-static void PrintPartyLevelsAndGenders(u8 whichParty)
+static void PrintPartyLevels(u8 whichParty)
 {
-    s32 i;
+    struct Pokemon * party = (whichParty == TRADE_PLAYER) ? gPlayerParty : gEnemyParty;
+    u8 i;
     for (i = 0; i < sTradeMenu->partyCounts[whichParty]; i++)
     {
-        s32 j = i + PARTY_SIZE * whichParty;
-        PrintLevelAndGender(
-            whichParty,
-            i,
-            sTradeMonLevelCoords[j][0],
-            sTradeMonLevelCoords[j][1],
-            sTradeMonBoxCoords[j][0],
-            sTradeMonBoxCoords[j][1]
-        );
+        u8 level = GetMonData(&party[i], MON_DATA_LEVEL, NULL);
+        PrintPartyMonLevel(whichParty, i, level);
     }
 }
 
@@ -2520,12 +2458,18 @@ static void PrintTradePartnerPartyNicknames(void)
     PrintPartyNicknames(1);
 }
 
+static void PrintTradePartnerPartyLevels(void)
+{
+    rbox_fill_rectangle(1);
+    PrintPartyLevels(1);
+}
+
 // Returning to the party selection screen from the "is this trade ok?" screen
 static void RedrawPartyWindow(u8 whichParty)
 {
     CopyToBgTilemapBufferRect_ChangePalette(1, sTradePartyBoxTilemap, 0, 0, 32, 20, 0);
     CopyBgTilemapBufferToVram(1);
-    PrintPartyLevelsAndGenders(whichParty);
+    PrintPartyLevels(whichParty);
     PrintPartyNicknames(whichParty);
     ShowTradePartyMonIcons(whichParty);
     DrawBottomRowText(sActionTexts[TEXT_CHOOSE_MON], (void *)OBJ_VRAM0 + 32 * sTradeMenu->bottomTextTileStart, 24);
