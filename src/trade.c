@@ -595,148 +595,177 @@ static const struct BgTemplate sBgTemplates[] = {
     }
 };
 
+#define POKEMON_SLOT_WIDTH 14
+#define POKEMON_SLOT_HEIGHT 2
+#define POKEMON_SLOT_LEFT_P1 0
+#define POKEMON_SLOT_LEFT_P2 16
+#define POKEMON_SLOT_TOP_1 0
+#define POKEMON_SLOT_TOP_2 3
+#define POKEMON_SLOT_TOP_3 6
+#define POKEMON_SLOT_TOP_4 9
+#define POKEMON_SLOT_TOP_5 12
+#define POKEMON_SLOT_TOP_6 15
+#define POKEMON_SLOT_PALETTE 14
+
 static const struct WindowTemplate sWindowTemplates[] = {
-    {
+    {// "Connecting, please wait!" textbox.
         .bg = 0,
         .tilemapLeft = 8,
         .tilemapTop = 7,
-        .width = 14, // "Connecting, please wait!" textbox.
+        .width = 14,
         .height = 4,
         .paletteNum = 14,
         .baseBlock = 30
-    }, {
+    },
+    {// SUMMARY/TRADE window.
         .bg = 0,
         .tilemapLeft = 21,
         .tilemapTop = 15,
-        .width = 8, // SUMMARY/TRADE window.
+        .width = 8,
         .height = 4,
         .paletteNum = 14,
         .baseBlock = 118
-    }, {
+    },
+    {// Slot1
         .bg = 0,
-        .tilemapLeft = 0,
-        .tilemapTop = 0,
-        .width = 14, // Slot1
-        .height = 2,
-        .paletteNum = 14,
+        .tilemapLeft = POKEMON_SLOT_LEFT_P1,
+        .tilemapTop = POKEMON_SLOT_TOP_1,
+        .width = POKEMON_SLOT_WIDTH,
+        .height = POKEMON_SLOT_HEIGHT,
+        .paletteNum = POKEMON_SLOT_PALETTE,
         .baseBlock = 150
-    }, {
+    }, 
+    {// Slot2
         .bg = 0,
-        .tilemapLeft = 0,
-        .tilemapTop = 3,
-        .width = 14, // Slot2
-        .height = 2,
-        .paletteNum = 14,
+        .tilemapLeft = POKEMON_SLOT_LEFT_P1,
+        .tilemapTop = POKEMON_SLOT_TOP_2,
+        .width = POKEMON_SLOT_WIDTH,
+        .height = POKEMON_SLOT_HEIGHT,
+        .paletteNum = POKEMON_SLOT_PALETTE,
         .baseBlock = 178
-    }, {
+    }, 
+    {// Slot3
         .bg = 0,
-        .tilemapLeft = 0,
-        .tilemapTop = 6,
-        .width = 14, // Slot3
-        .height = 2,
-        .paletteNum = 14,
+        .tilemapLeft = POKEMON_SLOT_LEFT_P1,
+        .tilemapTop = POKEMON_SLOT_TOP_3,
+        .width = POKEMON_SLOT_WIDTH,
+        .height = POKEMON_SLOT_HEIGHT,
+        .paletteNum = POKEMON_SLOT_PALETTE,
         .baseBlock = 206
-    }, {
+    }, 
+    {// Slot4
         .bg = 0,
-        .tilemapLeft = 0,
-        .tilemapTop = 9,
-        .width = 14, // Slot4
-        .height = 2,
-        .paletteNum = 14,
+        .tilemapLeft = POKEMON_SLOT_LEFT_P1,
+        .tilemapTop = POKEMON_SLOT_TOP_4,
+        .width = POKEMON_SLOT_WIDTH,
+        .height = POKEMON_SLOT_HEIGHT,
+        .paletteNum = POKEMON_SLOT_PALETTE,
         .baseBlock = 234
-    }, {
+    }, 
+    {// Slot5
         .bg = 0,
-        .tilemapLeft = 0,
-        .tilemapTop = 12,
-        .width = 14, // Slot5
-        .height = 2,
-        .paletteNum = 14,
+        .tilemapLeft = POKEMON_SLOT_LEFT_P1,
+        .tilemapTop = POKEMON_SLOT_TOP_5,
+        .width = POKEMON_SLOT_WIDTH,
+        .height = POKEMON_SLOT_HEIGHT,
+        .paletteNum = POKEMON_SLOT_PALETTE,
         .baseBlock = 262
-    }, {
+    }, 
+    {// Slot6
         .bg = 0,
-        .tilemapLeft = 0,
-        .tilemapTop = 15,
-        .width = 14, // Slot6
-        .height = 2,
-        .paletteNum = 14,
+        .tilemapLeft = POKEMON_SLOT_LEFT_P1,
+        .tilemapTop = POKEMON_SLOT_TOP_6,
+        .width = POKEMON_SLOT_WIDTH,
+        .height = POKEMON_SLOT_HEIGHT,
+        .paletteNum = POKEMON_SLOT_PALETTE,
         .baseBlock = 290
-    }, {
+    }, 
+    {// Slot7
         .bg = 0,
-        .tilemapLeft = 16,
-        .tilemapTop = 0,
-        .width = 14, // Slot7
-        .height = 2,
-        .paletteNum = 14,
+        .tilemapLeft = POKEMON_SLOT_LEFT_P2,
+        .tilemapTop = POKEMON_SLOT_TOP_1,
+        .width = POKEMON_SLOT_WIDTH,
+        .height = POKEMON_SLOT_HEIGHT,
+        .paletteNum = POKEMON_SLOT_PALETTE,
         .baseBlock = 318
-    }, {
+    }, 
+    {// Slot8
         .bg = 0,
-        .tilemapLeft = 16,
-        .tilemapTop = 3,
-        .width = 14, // Slot8
-        .height = 2,
-        .paletteNum = 14,
+        .tilemapLeft = POKEMON_SLOT_LEFT_P2,
+        .tilemapTop = POKEMON_SLOT_TOP_2,
+        .width = POKEMON_SLOT_WIDTH,
+        .height = POKEMON_SLOT_HEIGHT,
+        .paletteNum = POKEMON_SLOT_PALETTE,
         .baseBlock = 346
-    }, {
+    }, 
+    {// Slot9
         .bg = 0,
-        .tilemapLeft = 16,
-        .tilemapTop = 6,
-        .width = 14, // Slot9
-        .height = 2,
-        .paletteNum = 14,
+        .tilemapLeft = POKEMON_SLOT_LEFT_P2,
+        .tilemapTop = POKEMON_SLOT_TOP_3,
+        .width = POKEMON_SLOT_WIDTH,
+        .height = POKEMON_SLOT_HEIGHT,
+        .paletteNum = POKEMON_SLOT_PALETTE,
         .baseBlock = 374
-    }, {
+    }, 
+    {// Slot10
         .bg = 0,
-        .tilemapLeft = 16,
-        .tilemapTop = 9,
-        .width = 14, // Slot10
-        .height = 2,
-        .paletteNum = 14,
+        .tilemapLeft = POKEMON_SLOT_LEFT_P2,
+        .tilemapTop = POKEMON_SLOT_TOP_4,
+        .width = POKEMON_SLOT_WIDTH, 
+        .height = POKEMON_SLOT_HEIGHT,
+        .paletteNum = POKEMON_SLOT_PALETTE,
         .baseBlock = 402
-    }, {
+    }, 
+    {// Slot11
         .bg = 0,
-        .tilemapLeft = 16,
-        .tilemapTop = 12,
-        .width = 14, // Slot11
-        .height = 2,
-        .paletteNum = 14,
+        .tilemapLeft = POKEMON_SLOT_LEFT_P2,
+        .tilemapTop = POKEMON_SLOT_TOP_5,
+        .width = POKEMON_SLOT_WIDTH,
+        .height = POKEMON_SLOT_HEIGHT,
+        .paletteNum = POKEMON_SLOT_PALETTE,
         .baseBlock = 430
-    }, {
+    }, 
+    {// Slot12
         .bg = 0,
-        .tilemapLeft = 16,
-        .tilemapTop = 15,
-        .width = 14, // Slot12
-        .height = 2,
-        .paletteNum = 14,
+        .tilemapLeft = POKEMON_SLOT_LEFT_P2,
+        .tilemapTop = POKEMON_SLOT_TOP_6,
+        .width = POKEMON_SLOT_WIDTH,
+        .height = POKEMON_SLOT_HEIGHT,
+        .paletteNum = POKEMON_SLOT_PALETTE,
         .baseBlock = 458
-    }, {
+    }, 
+    {//Selected pokemon 1's nickname textbox.
         .bg = 0,
         .tilemapLeft = 1,
         .tilemapTop = 6,
-        .width = 12, //Selected pokemon 1's nickname textbox.
+        .width = 12,
         .height = 2,
         .paletteNum = 14,
         .baseBlock = 488
-    }, {
+    }, 
+    {//Selected pokemon 1's moves textbox.
         .bg = 0,
         .tilemapLeft = 1,
         .tilemapTop = 8,
-        .width = 13, //Selected pokemon 1's moves textbox.
+        .width = 13,
         .height = 10,
         .paletteNum = 14,
         .baseBlock = 514
-    }, {
+    }, 
+    {// Selected pokemon 2's nickname textbox.
         .bg = 0,
         .tilemapLeft = 17,
         .tilemapTop = 6,
-        .width = 12, // Selected pokemon 2's nickname textbox.
+        .width = 12,
         .height = 2,
         .paletteNum = 14,
         .baseBlock = 646
-    }, {
+    }, 
+    {//Selected pokemon 2's moves textbox.
         .bg = 0,
         .tilemapLeft = 17,
         .tilemapTop = 8,
-        .width = 13, //Selected pokemon 2's moves textbox.
+        .width = 13,
         .height = 10,
         .paletteNum = 14,
         .baseBlock = 672
