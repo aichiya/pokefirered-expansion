@@ -43,32 +43,37 @@ RocketHideout_B4F_EventScript_Giovanni::
 RocketHideout_B4F_EventScript_SilphScope::
 	lock
 	faceplayer
+	checkitemspace ITEM_SILPH_SCOPE
+	goto_if_eq VAR_RESULT, FALSE, EventScript_BagIsFull
 	removeobject LOCALID_SILPH_SCOPE
 	giveitem ITEM_SILPH_SCOPE
-	goto_if_eq VAR_RESULT, FALSE, EventScript_BagIsFull
 	release
 	end
 
 RocketHideout_B4F_EventScript_Grunt1::
-	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_18, RocketHideout_B4F_Text_Grunt1Intro, RocketHideout_B4F_Text_Grunt1Defeat, RocketHideout_B4F_EventScript_DefeatedGrunt1
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_18, RocketHideout_B4F_Text_Grunt1Intro, RocketHideout_B4F_Text_Grunt1Defeat
 	msgbox RocketHideout_B4F_Text_Grunt1PostBattle
+	call_if_set FLAG_HIDE_LIFT_KEY, RocketHideout_B4F_EventScript_DefeatedGrunt1
 	release
 	end
 
 RocketHideout_B4F_EventScript_DefeatedGrunt1::
-	msgbox RocketHideout_B4F_Text_Grunt1PostBattle
+	call_if_unset FLAG_CAN_USE_ROCKET_HIDEOUT_LIFT, RocketHideout_B4F_EventScript_ShowLiftKey
+	return
+
+RocketHideout_B4F_EventScript_ShowLiftKey::
 	addobject LOCALID_LIFT_KEY
 	clearflag FLAG_HIDE_LIFT_KEY
-	release
-	end
+	return
 
 RocketHideout_B4F_EventScript_LiftKey::
 	lock
 	faceplayer
+	checkitemspace ITEM_LIFT_KEY
+	goto_if_eq VAR_RESULT, FALSE, EventScript_BagIsFull
 	setflag FLAG_CAN_USE_ROCKET_HIDEOUT_LIFT
 	removeobject LOCALID_LIFT_KEY
 	giveitem ITEM_LIFT_KEY
-	goto_if_eq VAR_RESULT, FALSE, EventScript_BagIsFull
 	release
 	end
 
