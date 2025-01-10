@@ -17,7 +17,7 @@ PokemonLeague_EventScript_AgathasOpenDoor::
 	return
 
 PokemonLeague_EventScript_EnterRoom::
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp5
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp6
 	waitmovement 0
 	setflag FLAG_TEMP_2
 	playse SE_UNLOCK
@@ -26,7 +26,7 @@ PokemonLeague_EventScript_EnterRoom::
 	return
 
 PokemonLeague_EventScript_EnterAgathasRoom::
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp5
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkUp6
 	waitmovement 0
 	setflag FLAG_TEMP_2
 	playse SE_UNLOCK
