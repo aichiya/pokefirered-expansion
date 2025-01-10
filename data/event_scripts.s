@@ -855,8 +855,9 @@ Text_WantWhichFloor::
 	.string "you want?$"
 
 Text_BagItemCanBeRegistered::
-	.string "An item in the BAG can be\n"
-	.string "registered to SELECT for easy use.$"
+	.string "An item in the BAG\n"
+	.string "can be registered\l"
+	.string "for easy use.$"
 
 @ Unused (email from R/S Rivals computer)
 Text_TrainerSchoolEmail::
@@ -920,11 +921,13 @@ Text_BigHoleInTheWall::
 
 Text_WirelessClubUndergoingAdjustments::
 	.string "I'm terribly sorry.\n"
-	.string "The POKéMON WIRELESS CLUB is\l"
-	.string "undergoing adjustments now.$"
+	.string "The POKéMON WIRELESS\l"
+	.string "CLUB is undergoing\l"
+	.string "adjustments now.$"
 
 Text_AppearsToBeUndergoingAdjustments::
-	.string "It appears to be undergoing\n"
+	.string "It appears to be\n"
+	.string "undergoing\l"
 	.string "adjustments...$"
 
 Text_HandedOverItem::
@@ -965,8 +968,8 @@ Text_ClosedLinkToProfOaksPC::
 	.string "PROF.OAKÙ PC.$"
 
 Text_VoiceRangOutDontRunAway::
-	.string "SomeoneÙ voice rang out,\n"
-	.string "“DonÑ run away!”$"
+	.string "SomeoneÙ voice:\n"
+	.string "DonÑ run away!$"
 
 @ Uncear what the below unused JP texts were for
 Text_IdLikeToSeeRequest::
