@@ -6,6 +6,4 @@ Ingame trade success texts not tested.
 PP is above move type, should be below.
 
 -Pokemon League-
-Don't Leave script doesn't play, door tiles removed instead.
-Member doesn't face up after battle.
 Record machine animation skipped entirely, must restore playing sound.
