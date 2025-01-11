@@ -2381,6 +2381,97 @@ static void DeleteFirstMoveAndGiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 mo
 #define ShouldGetStatBadgeBoost(flag, battler)\
     (!(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_EREADER_TRAINER)) && FlagGet(flag) && GetBattlerSide(battler) == B_SIDE_PLAYER)
 
+static void GetSpecialStat(u16 species, u16 specialAttack, u16 specialDefense, u16* special, u16* specialStatIndex)
+{
+    switch (species)
+    {
+        case SPECIES_SQUIRTLE:
+        case SPECIES_WARTORTLE:
+        case SPECIES_BLASTOISE:
+        case SPECIES_WEEDLE:
+        case SPECIES_KAKUNA:
+        case SPECIES_BEEDRILL:
+        case SPECIES_RATTATA:
+        case SPECIES_RATICATE:
+        case SPECIES_EKANS:
+        case SPECIES_ARBOK:
+        case SPECIES_PIKACHU:
+        case SPECIES_RAICHU:
+        case SPECIES_NIDORAN_F:
+        case SPECIES_NIDORINA:
+        case SPECIES_NIDOQUEEN:
+        case SPECIES_CLEFAIRY:
+        case SPECIES_CLEFABLE:
+        case SPECIES_ODDISH:
+        case SPECIES_GLOOM:
+        case SPECIES_VILEPLUME:
+        case SPECIES_VENONAT:
+        case SPECIES_VENOMOTH:
+        case SPECIES_MANKEY:
+        case SPECIES_PRIMEAPE:
+        case SPECIES_POLIWAG:
+        case SPECIES_POLIWHIRL:
+        case SPECIES_POLIWRATH:
+        case SPECIES_ABRA:
+        case SPECIES_KADABRA:
+        case SPECIES_ALAKAZAM:
+        case SPECIES_MACHOP:
+        case SPECIES_MACHOKE:
+        case SPECIES_MACHAMP:
+        case SPECIES_BELLSPROUT:
+        case SPECIES_WEEPINBELL:
+        case SPECIES_VICTREEBEL:
+        case SPECIES_GEODUDE:
+        case SPECIES_GRAVELER:
+        case SPECIES_GOLEM:
+        case SPECIES_MAGNEMITE:
+        case SPECIES_MAGNETON:
+        case SPECIES_FARFETCHD:
+        case SPECIES_GRIMER:
+        case SPECIES_MUK:
+        case SPECIES_SHELLDER:
+        case SPECIES_CLOYSTER:
+        case SPECIES_GASTLY:
+        case SPECIES_HAUNTER:
+        case SPECIES_GENGAR:
+        case SPECIES_ONIX:
+        case SPECIES_EXEGGCUTE:
+        case SPECIES_EXEGGUTOR:
+        case SPECIES_CUBONE:
+        case SPECIES_MAROWAK:
+        case SPECIES_HITMONLEE:
+        case SPECIES_HITMONCHAN:
+        case SPECIES_LICKITUNG:
+        case SPECIES_KOFFING:
+        case SPECIES_WEEZING:
+        case SPECIES_TANGELA:
+        case SPECIES_KANGASKHAN:
+        case SPECIES_HORSEA:
+        case SPECIES_SEADRA:
+        case SPECIES_STARYU:
+        case SPECIES_STARMIE:
+        case SPECIES_MR_MIME:
+        case SPECIES_SCYTHER:
+        case SPECIES_PINSIR:
+        case SPECIES_VAPOREON:
+        case SPECIES_JOLTEON:
+        case SPECIES_OMANYTE:
+        case SPECIES_OMASTAR:
+        case SPECIES_AERODACTYL:
+        case SPECIES_SNORLAX:
+        case SPECIES_ZAPDOS:
+        case SPECIES_MOLTRES:
+        case SPECIES_MEWTWO:
+            *special = specialAttack;
+            *specialStatIndex = STAT_SPATK;
+            break;
+        default:
+            *special = specialDefense;
+            *specialStatIndex = STAT_SPDEF;
+            break;
+    }
+}
+
 
 s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *defender, u32 move, u16 sideStatus, u16 powerOverride, u8 typeOverride, u8 battlerIdAtk, u8 battlerIdDef)
 {
@@ -2390,6 +2481,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     u8 type;
     u16 attack, defense;
     u16 spAttack, spDefense;
+    u16 spAttackStatId, spDefenseStatId;
     u8 defenderHoldEffect;
     u8 defenderHoldEffectParam;
     u8 attackerHoldEffect;
@@ -2407,8 +2499,9 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
 
     attack = attacker->attack;
     defense = defender->defense;
-    spAttack = attacker->spAttack;
-    spDefense = defender->spDefense;
+
+    GetSpecialStat(attacker->species, attacker->spAttack, attacker->spDefense, &spAttack, &spAttackStatId);
+    GetSpecialStat(defender->species, defender->spAttack, defender->spDefense, &spDefense, &spDefenseStatId);
 
     // Get attacker hold item info
     if (attacker->item == ITEM_ENIGMA_BERRY)
@@ -2566,13 +2659,13 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         if (gCritMultiplier == 2)
         {
             // Critical hit, if attacker has lost sp. attack stat stages then ignore stat drop
-            if (attacker->statStages[STAT_SPATK] > DEFAULT_STAT_STAGE)
-                APPLY_STAT_MOD(damage, attacker, spAttack, STAT_SPATK)
+            if (attacker->statStages[spAttackStatId] > DEFAULT_STAT_STAGE)
+                APPLY_STAT_MOD(damage, attacker, spAttack, spAttackStatId)
             else
                 damage = spAttack;
         }
         else
-            APPLY_STAT_MOD(damage, attacker, spAttack, STAT_SPATK)
+            APPLY_STAT_MOD(damage, attacker, spAttack, spAttackStatId)
 
         damage = damage * gBattleMovePower;
         damage *= (2 * attacker->level / 5 + 2);
@@ -2580,13 +2673,13 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         if (gCritMultiplier == 2)
         {
             // Critical hit, if defender has gained sp. defense stat stages then ignore stat increase
-            if (defender->statStages[STAT_SPDEF] < DEFAULT_STAT_STAGE)
-                APPLY_STAT_MOD(damageHelper, defender, spDefense, STAT_SPDEF)
+            if (defender->statStages[spDefenseStatId] < DEFAULT_STAT_STAGE)
+                APPLY_STAT_MOD(damageHelper, defender, spDefense, spDefenseStatId)
             else
                 damageHelper = spDefense;
         }
         else
-            APPLY_STAT_MOD(damageHelper, defender, spDefense, STAT_SPDEF)
+            APPLY_STAT_MOD(damageHelper, defender, spDefense, spDefenseStatId)
 
         damage = (damage / damageHelper);
         damage /= 50;
@@ -4134,6 +4227,8 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                 gBattleMons[gActiveBattler].statStages[STAT_SPATK] += itemEffect[cmdIndex] & ITEM2_X_SPATK;
                 if (gBattleMons[gActiveBattler].statStages[STAT_SPATK] > MAX_STAT_STAGE)
                     gBattleMons[gActiveBattler].statStages[STAT_SPATK] = MAX_STAT_STAGE;
+
+                gBattleMons[gActiveBattler].statStages[STAT_SPDEF] = gBattleMons[gActiveBattler].statStages[STAT_SPATK];
                 retVal = FALSE;
             }
             break;
