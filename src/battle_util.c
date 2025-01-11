@@ -2664,8 +2664,10 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
                 break;
             case HOLD_EFFECT_SP_ATTACK_UP:
                 TRY_EAT_STAT_UP_BERRY(STAT_SPATK);
+                TRY_EAT_STAT_UP_BERRY(STAT_SPDEF);
                 break;
             case HOLD_EFFECT_SP_DEFENSE_UP:
+                TRY_EAT_STAT_UP_BERRY(STAT_SPATK);
                 TRY_EAT_STAT_UP_BERRY(STAT_SPDEF);
                 break;
             case HOLD_EFFECT_CRITICAL_UP:
