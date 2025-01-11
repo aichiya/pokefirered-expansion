@@ -1,5 +1,5 @@
 
-*Pokemon Icon Sprites*
+
 CHAMBER
 SOLOO993
 BLUE EMERALD
@@ -7,15 +7,33 @@ LAKE
 NESLUG
 PIKACHU25
 
-*Gen4-style Party Menu Code*
+* Pokemon Icon Sprites
+
+- - -
+
 TheXaman
 
-*Playtesting*
+* Gen4-style Party Menu Code
+
+- - -
+
 Moylend
 
-*Question Answers*
+* Playtesting
+
+- - -
+
 Meister_anon
 GriffinR
 
-*FRZ Thaw Mechanics*
+* Question Answers
+
+- - -
+
 Shakela
+
+* FRZ Thaw Mechanics
+
+* SP.ATK SP.DEF mechanic merge.
+
+* Lift Key guard scripting fix.
