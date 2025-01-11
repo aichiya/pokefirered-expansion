@@ -433,7 +433,7 @@ static void Task_RushInjuredPokemonToCenter(u8 taskId)
         if (FieldFadeTransitionBackgroundEffectIsFinished() == TRUE)
         {
             DestroyTask(taskId);
-            ScriptContext_SetupScript(EventScript_AfterWhiteOutMomHeal);
+            ScriptContext_SetupScript(EventScript_AfterWhiteOutHeal);
         }
         break;
     }

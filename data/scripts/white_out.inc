@@ -1,11 +1,5 @@
 EventScript_AfterWhiteOutHeal::
 	lockall
-	@ textcolor NPC_TEXT_COLOR_FEMALE
-	call EventScript_PkmnCenterNurse_TakeAndHealPkmn
-	call_if_unset FLAG_DEFEATED_BROCK, EventScript_AfterWhiteOutHealMsgPreBrock
-	call_if_set FLAG_DEFEATED_BROCK, EventScript_AfterWhiteOutHealMsg
-	applymovement VAR_LAST_TALKED, Movement_Bow
-	waitmovement 0
 	fadedefaultbgm
 	releaseall
 	end

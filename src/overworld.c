@@ -1540,7 +1540,7 @@ void CB2_WhiteOut(void)
         StopMapMusic();
         ResetSafariZoneFlag_();
         DoWhiteOut();
-        SetInitialPlayerAvatarStateWithDirection(DIR_NORTH);
+        SetInitialPlayerAvatarStateWithDirection(DIR_SOUTH);
         ScriptContext_Init();
         UnlockPlayerFieldControls();
         gFieldCallback = FieldCB_RushInjuredPokemonToCenter;
