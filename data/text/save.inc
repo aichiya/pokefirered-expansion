@@ -19,6 +19,6 @@ gText_SaveFailed2::
 	.string "セーブに　しっぱい　しました‥$"
 
 gText_DifferentGameFile::
-	.string "The older file will\n"
-	.string "be erased to save.\l"
-	.string "Okay?$"
+	.string "The older file\n"
+	.string "will be erased\l"
+	.string "to save. Okay?$"
