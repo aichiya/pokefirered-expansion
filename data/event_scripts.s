@@ -920,10 +920,11 @@ Text_BigHoleInTheWall::
 	.string "おおきな　あなが　あいている！$"
 
 Text_WirelessClubUndergoingAdjustments::
-	.string "I'm terribly sorry.\n"
-	.string "The POKéMON WIRELESS\l"
-	.string "CLUB is undergoing\l"
-	.string "adjustments now.$"
+	.string "Welcome to the\n"
+	.string "Cable Club!\l"
+	.string "We're making\n"
+	.string "preparations.\l"
+	.string "Please wait.$"
 
 Text_AppearsToBeUndergoingAdjustments::
 	.string "It appears to be\n"
