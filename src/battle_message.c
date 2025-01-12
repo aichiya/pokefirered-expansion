@@ -124,8 +124,8 @@ static const u8 sText_PkmnChangedType[] = _("{B_ATK_NAME_WITH_PREFIX} transforme
 static const u8 sText_PkmnFlinched[] = _("{B_ATK_NAME_WITH_PREFIX} flinched!");
 static const u8 sText_PkmnRegainedHealth[] = _("{B_DEF_NAME_WITH_PREFIX} regained\nhealth!");
 static const u8 sText_PkmnHPFull[] = _("{B_DEF_NAME_WITH_PREFIX}Ù\nHP is full!");
-static const u8 sText_PkmnRaisedSpDef[] = _("{B_ATK_PREFIX2}Ù {B_CURRENT_MOVE}\nraised SP. DEF!");
-static const u8 sText_PkmnRaisedSpDefALittle[] = _("{B_ATK_PREFIX2}Ù {B_CURRENT_MOVE}\nraised SP. DEF a little!");
+static const u8 sText_PkmnRaisedSpDef[] = _("{B_ATK_PREFIX2}Ù {B_CURRENT_MOVE}\nraised SPECIAL!");
+static const u8 sText_PkmnRaisedSpDefALittle[] = _("{B_ATK_PREFIX2}Ù {B_CURRENT_MOVE}\nraised SPECIAL a little!");
 static const u8 sText_PkmnRaisedDef[] = _("{B_ATK_PREFIX2}Ù {B_CURRENT_MOVE}\nraised DEFENSE!");
 static const u8 sText_PkmnRaisedDefALittle[] = _("{B_ATK_PREFIX2}Ù {B_CURRENT_MOVE}\nraised DEFENSE a little!");
 static const u8 sText_PkmnCoveredByVeil[] = _("{B_ATK_PREFIX2}Ù party is covered\nby a veil!");
@@ -430,8 +430,8 @@ static const u8 sText_HP2[] = _("HP");
 static const u8 sText_Attack2[] = _("ATTACK");
 static const u8 sText_Defense2[] = _("DEFENSE");
 static const u8 sText_Speed[] = _("SPEED");
-static const u8 sText_SpAtk2[] = _("SP. ATK");
-static const u8 sText_SpDef2[] = _("SP. DEF");
+static const u8 sText_SpAtk2[] = _("SPECIAL");
+static const u8 sText_SpDef2[] = _("SPECIAL");
 static const u8 sText_Accuracy[] = _("accuracy");
 static const u8 sText_Evasiveness[] = _("evasiveness");
 
@@ -1297,8 +1297,8 @@ static const u8 sText_Dash[] = _("-");
 static const u8 sText_MaxHP[] = _("{FONT_SMALL}Max{FONT_NORMAL} HP");
 static const u8 sText_Attack[] = _("ATTACK ");
 static const u8 sText_Defense[] = _("DEFENSE");
-static const u8 sText_SpAtk[] = _("SP. ATK");
-static const u8 sText_SpDef[] = _("SP. DEF");
+static const u8 sText_SpAtk[] = _("SPECIAL");
+static const u8 sText_SpDef[] = _("SPECIAL");
 
 // Unused
 static const u8 *const sStatNamesTable2[] =
