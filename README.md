@@ -1,4 +1,5 @@
-# Pokémon Red & Blue Gen1Style V6
+# Pokémon Red & Blue Gen1Style
+# V7 has entered private testing!
 
 ![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/BulkPromoTitleAndBattle.png "Title And Battle Screens")
 
