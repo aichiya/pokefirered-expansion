@@ -81,7 +81,7 @@ const u8 gCaterpiePokedexText[] = _(
     "Its short feet are tipped\n"
     "with suction pads that\n"
     "enable it to tirelessly\n"
-    "climb slops and walls.");
+    "climb slopes and walls.");
 
 const u8 gCaterpiePokedexTextUnused[] = _("");
 
