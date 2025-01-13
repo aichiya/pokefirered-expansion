@@ -99,9 +99,11 @@ gOakSpeech_Text_WelcomeToTheWorld::
     .string "Hello there!\n"
     .string "Welcome to the\l"
     .string "world of POKéMON!\p"
+    
     .string "My name is OAK!\n"
     .string "People call me\l"
     .string "the POKéMON PROF!\p"
+
     .string "$"
 
 gOakSpeech_Text_ThisWorld::
@@ -118,19 +120,23 @@ gOakSpeech_Text_IStudyPokemon::
     .string "POKéMON are\l"
     .string "pets. Others use\l"
     .string "them for fights.\p"
+
     .string "Myself...\n"
     .string "I study POKéMON\l"
     .string "as a profession.\p"
+
     .string "$"
 
 gOakSpeech_Text_TellMeALittleAboutYourself::
     .string "But first, tell me a\n"
     .string "little about yourself.\p"
+
     .string "$"
 
 gOakSpeech_Text_AskPlayersName::
     .string "First, what is\n"
     .string "your name?\p"
+
     .string "$"
 
 gOakSpeech_Text_SoYourNameIsPlayer::
@@ -139,14 +145,15 @@ gOakSpeech_Text_SoYourNameIsPlayer::
 
 gOakSpeech_Text_WhatWasHisName::
     .string "This is my grand-\n"
-    .string "son. He's been\l"
+    .string "son. HeÙ been\l"
     .string "your rival since\l"
     .string "you were a baby.\p"
+
     .string "...Erm, what is\n"
     .string "his name again?$"
 
 gOakSpeech_Text_YourRivalsNameWhatWasIt::
-    .string "Your rival's name,\n"
+    .string "Your rivalÙ name,\n"
     .string "what was it now?$"
 
 gOakSpeech_Text_ConfirmPlayerName::
@@ -158,17 +165,20 @@ gOakSpeech_Text_ConfirmRivalName::
     .string "{RIVAL}?$"
 
 gOakSpeech_Text_RememberRivalsName::
-    .string "That's right! I\n"
+    .string "ThatÙ right! I\n"
     .string "remember now! His\l"
     .string "name is {RIVAL}!\p"
+
     .string "$"
 
 gOakSpeech_Text_LetsGo::
     .string "{PLAYER}!\p"
+
     .string "Your very own\n"
     .string "POKéMON legend is\l"
     .string "about to unfold!\p"
+
     .string "A world of dreams\n"
     .string "and adventures\l"
     .string "with POKéMON\l"
-    .string "awaits! Let's go!$"
+    .string "awaits! LetÙ go!$"
