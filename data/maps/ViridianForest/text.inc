@@ -1,6 +1,7 @@
 ViridianForest_Text_FriendsItchingToBattle::
     .string "I came here with\n"
     .string "some friends!\p"
+    
     .string "Theyàe out for\n"
     .string "POKéMON fights!$"
 
@@ -46,6 +47,7 @@ ViridianForest_Text_SammyPostBattle::
     .string "Sometimes, you\n"
     .string "can find stuff on\l"
     .string "the ground!\p"
+
     .string "Iá looking for\n"
     .string "the stuff I\l"
     .string "dropped!$"
@@ -76,11 +78,13 @@ ViridianForest_Text_RanOutOfPokeBalls::
     .string "I ran out of POKé\n"
     .string "BALLs to catch\l"
     .string "POKéMON with!\p"
+
     .string "You should carry\n"
     .string "extras!$"
 
 ViridianForest_Text_AvoidGrassyAreasWhenWeak::
     .string "TRAINER TIPS\p"
+
     .string "If you want to\n"
     .string "avoid battles,\l"
     .string "stay away from\l"
@@ -93,6 +97,7 @@ ViridianForest_Text_UseAntidoteForPoison::
 
 ViridianForest_Text_ContactOakViaPCToRatePokedex::
     .string "TRAINER TIPS\p"
+
     .string "Contact PROF.OAK\n"
     .string "via a PC to get\l"
     .string "your POKéDEX\l"
@@ -100,6 +105,7 @@ ViridianForest_Text_ContactOakViaPCToRatePokedex::
 
 ViridianForest_Text_CantCatchOwnedMons::
     .string "TRAINER TIPS\p"
+
     .string "No stealing of\n"
     .string "POKéMON from\l"
     .string "other trainers!\l"
@@ -108,6 +114,7 @@ ViridianForest_Text_CantCatchOwnedMons::
 
 ViridianForest_Text_WeakenMonsBeforeCapture::
     .string "TRAINER TIPS\p"
+
     .string "Weaken POKéMON\n"
     .string "before attempting\l"
     .string "capture!\l"
@@ -115,6 +122,7 @@ ViridianForest_Text_WeakenMonsBeforeCapture::
     .string "they may escape!$"
 
 ViridianForest_Text_LeavingViridianForest::
-    .string "LEAVING VIRIDIAN FOREST\n"
+    .string "LEAVING\n"
+    .string "VIRIDIAN FOREST\l"
     .string "PEWTER CITY AHEAD$"
 
