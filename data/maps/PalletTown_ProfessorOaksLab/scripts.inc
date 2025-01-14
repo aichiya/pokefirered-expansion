@@ -62,7 +62,6 @@ PalletTown_ProfessorOaksLab_OnFrame::
 PalletTown_ProfessorOaksLab_EventScript_EnterForNationalDexScene:: @ 8169002 
 	lockall
 	setvar VAR_FACING, DIR_NORTH
-	textcolor NPC_TEXT_COLOR_NEUTRAL
 	applymovement LOCALID_PROF_OAK, PalletTown_ProfessorOaksLab_Movement_OakEnter
 	waitmovement 0
 	removeobject LOCALID_PROF_OAK
@@ -86,10 +85,8 @@ PalletTown_ProfessorOaksLab_EventScript_NationalDexScene::
 	msgbox PalletTown_ProfessorOaksLab_Text_OakNeedYourHelpTooNeedToSeePokedexes
 	call_if_eq VAR_FACING, DIR_NORTH, PalletTown_ProfessorOaksLab_EventScript_PlayerFaceOakNorth
 	call_if_eq VAR_FACING, DIR_WEST, PalletTown_ProfessorOaksLab_EventScript_PlayerFaceOakWest
-	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox PalletTown_ProfessorOaksLab_Text_OakTookBothPokedexUnits
 	closemessage
-	call EventScript_RestorePrevTextColor
 	call_if_eq VAR_FACING, DIR_NORTH, PalletTown_ProfessorOaksLab_EventScript_OakBringDexesToDeskNorth
 	call_if_eq VAR_FACING, DIR_SOUTH, PalletTown_ProfessorOaksLab_EventScript_OakBringDexesToDeskSouth
 	call_if_eq VAR_FACING, DIR_EAST, PalletTown_ProfessorOaksLab_EventScript_OakBringDexesToDeskEast
@@ -106,12 +103,10 @@ PalletTown_ProfessorOaksLab_EventScript_NationalDexScene::
 	call_if_eq VAR_FACING, DIR_SOUTH, PalletTown_ProfessorOaksLab_EventScript_OakBringDexesOverSouth
 	call_if_eq VAR_FACING, DIR_EAST, PalletTown_ProfessorOaksLab_EventScript_OakBringDexesOverEast
 	call_if_eq VAR_FACING, DIR_WEST, PalletTown_ProfessorOaksLab_EventScript_OakBringDexesOverWest
-	textcolor NPC_TEXT_COLOR_NEUTRAL
 	playfanfare MUS_OBTAIN_KEY_ITEM
 	message PalletTown_ProfessorOaksLab_Text_PlayersPokedexWasUpgraded
 	waitmessage
 	waitfanfare
-	call EventScript_RestorePrevTextColor
 	special EnableNationalPokedex
 	msgbox PalletTown_ProfessorOaksLab_Text_OakMustReallyWorkToFillPokedex
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalIllCompleteThePokedex
@@ -206,7 +201,6 @@ PalletTown_ProfessorOaksLab_Movement_OakBringDexesToDeskSouth::
 
 PalletTown_ProfessorOaksLab_ChooseStarterScene::
 	lockall
-	textcolor NPC_TEXT_COLOR_NEUTRAL
 	applymovement LOCALID_PROF_OAK, PalletTown_ProfessorOaksLab_Movement_OakEnter
 	waitmovement 0
 	removeobject LOCALID_PROF_OAK
@@ -261,7 +255,6 @@ PalletTown_ProfessorOaksLab_Movement_RivalReact::
 
 PalletTown_ProfessorOaksLab_EventScript_LeaveStarterSceneTrigger::
 	lockall
-	textcolor NPC_TEXT_COLOR_NEUTRAL
 	applymovement LOCALID_PROF_OAK, Common_Movement_FaceDown
 	waitmovement 0
 	msgbox PalletTown_ProfessorOaksLab_Text_OakHeyDontGoAwayYet
@@ -294,7 +287,6 @@ PalletTown_ProfessorOaksLab_EventScript_RivalBattleTriggerRight::
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_RivalBattle::
-	textcolor NPC_TEXT_COLOR_NEUTRAL
 	playbgm MUS_ENCOUNTER_RIVAL, 0
 	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
@@ -583,12 +575,10 @@ PalletTown_ProfessorOaksLab_EventScript_OakBattleMonForItToGrow::
 
 PalletTown_ProfessorOaksLab_EventScript_ReceiveDexScene::
 	msgbox PalletTown_ProfessorOaksLab_Text_OakHaveSomethingForMe
-	textcolor NPC_TEXT_COLOR_NEUTRAL
 	playfanfare MUS_OBTAIN_TMHM
 	message PalletTown_ProfessorOaksLab_Text_DeliveredOaksParcel
 	waitmessage
 	waitfanfare
-	call EventScript_RestorePrevTextColor
 	removeitem ITEM_OAKS_PARCEL
 	msgbox PalletTown_ProfessorOaksLab_Text_OakCustomBallIOrdered
 	playbgm MUS_ENCOUNTER_RIVAL, 0
@@ -613,38 +603,21 @@ PalletTown_ProfessorOaksLab_EventScript_ReceiveDexScene::
 	call_if_eq VAR_FACING, DIR_NORTH, PalletTown_ProfessorOaksLab_EventScript_DexSceneOakFacePlayerAndRivalNorth
 	msgbox PalletTown_ProfessorOaksLab_Text_OakHaveRequestForYouTwo
 	closemessage
-	call_if_eq VAR_FACING, DIR_NORTH, PalletTown_ProfessorOaksLab_EventScript_DexSceneOakWalkToDeskNorth
-	call_if_eq VAR_FACING, DIR_SOUTH, PalletTown_ProfessorOaksLab_EventScript_DexSceneOakWalkToDeskSouth
-	call_if_eq VAR_FACING, DIR_EAST, PalletTown_ProfessorOaksLab_EventScript_DexSceneOakWalkToDeskEast
-	call_if_eq VAR_FACING, DIR_WEST, PalletTown_ProfessorOaksLab_EventScript_DexSceneOakWalkToDeskWest
 	msgbox PalletTown_ProfessorOaksLab_Text_OakPokedexOnDesk
 	closemessage
-	delay 40
+	delay 20
 	msgbox PalletTown_ProfessorOaksLab_Text_OakTakeTheseWithYou
 	closemessage
-	applymovement LOCALID_PROF_OAK, Common_Movement_WalkInPlaceFasterLeft
-	waitmovement 0
 	removeobject LOCALID_POKEDEX_1
-	delay 10
 	removeobject LOCALID_POKEDEX_2
 	delay 25
-	call_if_eq VAR_FACING, DIR_NORTH, PalletTown_ProfessorOaksLab_EventScript_OakBringDexesOverNorth
-	call_if_eq VAR_FACING, DIR_SOUTH, PalletTown_ProfessorOaksLab_EventScript_OakBringDexesOverSouth
-	call_if_eq VAR_FACING, DIR_EAST, PalletTown_ProfessorOaksLab_EventScript_OakBringDexesOverEast
-	call_if_eq VAR_FACING, DIR_WEST, PalletTown_ProfessorOaksLab_EventScript_OakBringDexesOverWest
-	delay 10
-	textcolor NPC_TEXT_COLOR_NEUTRAL
 	playfanfare MUS_OBTAIN_KEY_ITEM
 	message PalletTown_ProfessorOaksLab_Text_ReceivedPokedexFromOak
 	waitmessage
 	waitfanfare
-	call EventScript_RestorePrevTextColor
 	setflag FLAG_SYS_POKEDEX_GET
 	special SetUnlockedPokedexFlags
 	setvar VAR_MAP_SCENE_POKEMON_CENTER_TEALA, 1
-	msgbox PalletTown_ProfessorOaksLab_Text_OakCatchMonsForDataTakeThese
-	giveitem_msg PalletTown_ProfessorOaksLab_Text_ReceivedFivePokeBalls, ITEM_POKE_BALL, 5
-	msgbox PalletTown_ProfessorOaksLab_Text_OakExplainCatching
 	famechecker FAMECHECKER_OAK, 1
 	msgbox PalletTown_ProfessorOaksLab_Text_OakCompleteMonGuideWasMyDream
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalLeaveItToMeGramps
@@ -1070,7 +1043,6 @@ PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice::
 	applymovement LOCALID_PROF_OAK, Common_Movement_FaceRight
 	waitmovement 0
 	showmonpic PLAYER_STARTER_SPECIES, 10, 3
-	textcolor NPC_TEXT_COLOR_NEUTRAL
 	goto_if_eq PLAYER_STARTER_NUM, 0, PalletTown_ProfessorOaksLab_EventScript_ConfirmBulbasaur
 	goto_if_eq PLAYER_STARTER_NUM, 1, PalletTown_ProfessorOaksLab_EventScript_ConfirmSquirtle
 	goto_if_eq PLAYER_STARTER_NUM, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmCharmander
@@ -1103,7 +1075,6 @@ PalletTown_ProfessorOaksLab_EventScript_ChoseStarter::
 	hidemonpic
 	removeobject VAR_LAST_TALKED
 	msgbox PalletTown_ProfessorOaksLab_Text_OakThisMonIsEnergetic
-	call EventScript_RestorePrevTextColor
 	setflag FLAG_SYS_POKEMON_GET
 	givemon PLAYER_STARTER_SPECIES, 5
 	copyvar VAR_STARTER_MON, PLAYER_STARTER_NUM
@@ -1149,10 +1120,8 @@ PalletTown_ProfessorOaksLab_EventScript_RivalWalksToBulbasaur::
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_RivalTakesStarter::
-	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalIllTakeThisOneThen
 	removeobject RIVAL_STARTER_ID
-	textcolor NPC_TEXT_COLOR_NEUTRAL
 	bufferspeciesname STR_VAR_1, RIVAL_STARTER_SPECIES
 	message PalletTown_ProfessorOaksLab_Text_RivalReceivedMonFromOak
 	waitmessage
