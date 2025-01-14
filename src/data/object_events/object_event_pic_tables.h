@@ -788,7 +788,7 @@ static const struct SpriteFrameImage sPicTable_UnusedMaleReceptionist[] = {
 };
 
 static const struct SpriteFrameImage sPicTable_ItemBall[] = {
-    overworld_frame(gObjectEventPic_ItemBall, 2, 2, 0),
+    overworld_frame(gObjectEventPic_ItemBall, 2, 4, 0),
 };
 
 static const struct SpriteFrameImage sPicTable_ProfOak[] = {
