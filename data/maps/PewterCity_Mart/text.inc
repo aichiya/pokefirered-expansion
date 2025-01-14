@@ -1,8 +1,9 @@
 PewterCity_Mart_Text_BoughtWeirdFishFromShadyGuy::
     .string "A shady, old man\n"
-    .string "got me to but\l"
+    .string "got me to buy\l"
     .string "this really weird\l"
     .string "fish POKéMON!\p"
+    
     .string "ItÙ totally weak\n"
     .string "and it cost ¥500!$"
 
