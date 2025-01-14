@@ -5,6 +5,7 @@ ViridianCity_Mart_Text_YouCameFromPallet::
 ViridianCity_Mart_Text_TakeThisToProfOak::
     .string "You know PROF.\n"
     .string "OAK, right?\p"
+    
     .string "His order came in.\n"
     .string "Will you take it\l"
     .string "to him?$"
