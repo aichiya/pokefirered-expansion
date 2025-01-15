@@ -1,5 +1,6 @@
 MtMoon_B2F_Text_MiguelIntro::
     .string "Hey, stop!\p"
+    
     .string "I found these\n"
     .string "fossils! Theyàe\l"
     .string "both mine!$"
@@ -22,6 +23,7 @@ MtMoon_B2F_Text_LabOnCinnabarRegeneratesFossils::
     .string "CINNABAR ISLAND,\l"
     .string "thereÙ a POKéMON\l"
     .string "LAB.\p"
+
     .string "They do research\n"
     .string "on regenerating\l"
     .string "fossils.$"
@@ -85,7 +87,7 @@ MtMoon_B2F_Text_Grunt4PostBattle::
 
 MtMoon_B2F_Text_YouWantDomeFossil::
     .string "You want the\n"
-    .string "HELIX FOSSIL?$"
+    .string "DOME FOSSIL?$"
 
 MtMoon_B2F_Text_YouWantHelixFossil::
     .string "You want the\n"
