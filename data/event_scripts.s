@@ -884,8 +884,8 @@ Text_GiveNicknameToReceivedMon::
 	.string "{STR_VAR_2} you received?$"
 
 gText_PkmnFainted3::
-	.string "{STR_VAR_1} fainted...\p"
-	.string "$"
+	.string "{STR_VAR_1}\n"
+	.string "fainted!$"
 
 Text_WelcomeWantToHealPkmn::
 	.string "Welcome to our\n"
