@@ -11,11 +11,13 @@ VermilionCity_PokemonFanClub_Text_PikachuTwiceAsCute::
 VermilionCity_PokemonFanClub_Text_AdoreMySeel::
     .string "I just love my\n"
     .string "SEEL!\p"
+
     .string "It squeals when I\n"
     .string "hug it!$"
 
 VermilionCity_PokemonFanClub_Text_SeelFarMoreAttractive::
     .string "Oh dear!\p"
+
     .string "My SEEL is far\n"
     .string "more attractive!$"
 
@@ -29,12 +31,16 @@ VermilionCity_PokemonFanClub_Text_Seel::
 VermilionCity_PokemonFanClub_Text_DidYouComeToHearAboutMyMons::
     .string "I chair the\n"
     .string "POKéMON Fan Club!\p"
+
     .string "I have collected\n"
     .string "over 100 POKéMON!\p"
+
     .string "Iá very fussy\n"
     .string "when it comes to\l"
     .string "POKéMON!\p"
+
     .string "So...\p"
+
     .string "Did you come\n"
     .string "visit to hear\l"
     .string "about my POKéMON?$"
@@ -42,16 +48,19 @@ VermilionCity_PokemonFanClub_Text_DidYouComeToHearAboutMyMons::
 VermilionCity_PokemonFanClub_Text_ChairmansStory::
     .string "Good!\n"
     .string "Then listen up!\p"
+    
     .string "My favorite\n"
     .string "RAPIDASH...\p"
+
     .string "ItÙ...cute...\n"
     .string "lovely...smart...\l"
     .string "plus...amazing...\l"
-    .string "you think so?..."
+    .string "you think so?...\l"
     .string "oh yes...it...\l"
     .string "stunning...\l"
     .string "kindly...\l"
     .string "love it!\p"
+
     .string "Hug it...when...\n"
     .string "sleeping...warm\l"
     .string "and cuddly...\l"
@@ -60,6 +69,7 @@ VermilionCity_PokemonFanClub_Text_ChairmansStory::
     .string "...Oops! Look at\l"
     .string "the time! I kept\l"
     .string "you too long!\p"
+
     .string "Thanks for hearing\n"
     .string "me out! I want\l"
     .string "you to have this!$"
@@ -71,11 +81,14 @@ VermilionCity_PokemonFanClub_Text_ReceivedBikeVoucherFromChairman::
 VermilionCity_PokemonFanClub_Text_ExplainBikeVoucher::
     .string "Exchange that for\n"
     .string "a BICYCLE!\p"
+
     .string "DonÑ worry, my\n"
     .string "FEAROW will FLY\l"
     .string "me anywhere!\p"
+
     .string "So, I donÑ need a\n"
     .string "BICYCLE!\p"
+
     .string "I hope you like\n"
     .string "cycling!$"
 
@@ -86,9 +99,11 @@ VermilionCity_PokemonFanClub_Text_ComeBackToHearStory::
 
 VermilionCity_PokemonFanClub_Text_DidntComeToSeeAboutMonsAgain::
     .string "Hello, {PLAYER}!\p"
+
     .string "Did you come see\n"
     .string "me about my\l"
     .string "POKéMON again?\p"
+
     .string "No? Too bad!$"
 
 VermilionCity_PokemonFanClub_Text_MakeRoomForThis::
@@ -112,5 +127,6 @@ VermilionCity_PokemonFanClub_Text_SomeoneBragsBragBack::
 VermilionCity_PokemonFanClub_Text_ChairmanReallyAdoresHisMons::
     .string "Our CHAIRMAN really does adore his\n"
     .string "POKéMON.\p"
+
     .string "But the person who is most liked by\n"
     .string "POKéMON is DAISY, I think.$"
