@@ -167,7 +167,7 @@ TOOLDIRS := $(filter-out tools/agbcc tools/binutils tools/analyze_source,$(wildc
 TOOLBASE = $(TOOLDIRS:tools/%=%)
 TOOLS = $(foreach tool,$(TOOLBASE),tools/$(tool)/$(tool)$(EXE))
 
-ALL_BUILDS := firered firered_rev1 leafgreen leafgreen_rev1
+ALL_BUILDS := red blue
 ALL_BUILDS += $(ALL_BUILDS:%=%_modern)
 
 .PHONY: all rom tools clean-tools mostlyclean clean compare tidy syms $(TOOLDIRS) $(ALL_BUILDS) $(ALL_BUILDS:%=compare_%) modern
@@ -189,10 +189,6 @@ tools: $(TOOLDIRS)
 
 $(TOOLDIRS):
 	@$(MAKE) -C $@
-
-# For contributors to make sure a change didn't affect the contents of the ROM.
-compare:
-	@$(MAKE) COMPARE=1
 
 mostlyclean: tidy
 	rm -f $(SAMPLE_SUBDIR)/*.bin
@@ -344,13 +340,6 @@ $(ROM): $(ELF)
 # "friendly" target names for convenience sake
 red:                ; @$(MAKE) GAME_VERSION=FIRERED GAME_REVISION=1
 blue:              ; @$(MAKE) GAME_VERSION=LEAFGREEN GAME_REVISION=1
-red_modern:                ; @$(MAKE) GAME_VERSION=FIRERED GAME_REVISION=1 MODERN=1
-blue_modern:              ; @$(MAKE) GAME_VERSION=LEAFGREEN GAME_REVISION=1 MODERN=1
-
-compare_firered:        ; @$(MAKE) GAME_VERSION=FIRERED COMPARE=1
-compare_firered_rev1:   ; @$(MAKE) GAME_VERSION=FIRERED GAME_REVISION=1 COMPARE=1
-compare_leafgreen:      ; @$(MAKE) GAME_VERSION=LEAFGREEN COMPARE=1
-compare_leafgreen_rev1: ; @$(MAKE) GAME_VERSION=LEAFGREEN GAME_REVISION=1 COMPARE=1
 
 modern: ; @$(MAKE) MODERN=1
 
