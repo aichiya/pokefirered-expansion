@@ -926,8 +926,8 @@ void DexScreen_LoadResources(void)
     else
         LoadPalette(sKantoDexPalette, BG_PLTT_ID(0), sizeof(sKantoDexPalette));
     FillBgTilemapBufferRect(3, 0x001, 0,  0, 32, 32, 0);
-    FillBgTilemapBufferRect(2, 0x000, 0,  0, 32, 32, 17);
-    FillBgTilemapBufferRect(1, 0x000, 0,  0, 32, 32, 17);
+    FillBgTilemapBufferRect(2, 0x000, 0,  0, 32, 32, 15);
+    //FillBgTilemapBufferRect(1, 0x000, 0,  0, 32, 32, 17); //Enabling this causes the Color2 issue.
     FillBgTilemapBufferRect(0, 0x003, 0,  0, 32,  2, 15);
     FillBgTilemapBufferRect(0, 0x000, 0,  2, 32, 16, 17);
     FillBgTilemapBufferRect(0, 0x003, 0, 18, 32,  2, 15);
@@ -1826,8 +1826,8 @@ static void Task_DexScreen_CategorySubmenu(u8 taskId)
     case 23:
         if (JOY_NEW(A_BUTTON))
         {
-            FillBgTilemapBufferRect_Palette0(2, 0x000, 0, 2, 30, 16);
-            FillBgTilemapBufferRect_Palette0(1, 0x000, 0, 2, 30, 16);
+            FillBgTilemapBufferRect_Palette0(2, 0x000, 0, 2, 30, 15); //Affects blank space, not fill.
+            //FillBgTilemapBufferRect_Palette0(1, 0x000, 0, 2, 30, 16); //Uncommenting fills BG1 blank space with white.
             FillBgTilemapBufferRect_Palette0(0, 0x000, 0, 2, 30, 16);
             CopyBgTilemapBufferToVram(2);
             CopyBgTilemapBufferToVram(1);
@@ -1836,8 +1836,8 @@ static void Task_DexScreen_CategorySubmenu(u8 taskId)
         }
         else if (JOY_NEW(B_BUTTON))
         {
-            FillBgTilemapBufferRect_Palette0(2, 0x000, 0, 2, 30, 16);
-            FillBgTilemapBufferRect_Palette0(1, 0x000, 0, 2, 30, 16);
+            FillBgTilemapBufferRect_Palette0(2, 0x000, 0, 2, 30, 15);
+            //FillBgTilemapBufferRect_Palette0(1, 0x000, 0, 2, 30, 16); //Uncommenting fills BG1 blank space with white.
             FillBgTilemapBufferRect_Palette0(0, 0x000, 0, 2, 30, 16);
             CopyBgTilemapBufferToVram(2);
             CopyBgTilemapBufferToVram(1);
@@ -1945,7 +1945,7 @@ static void Task_DexScreen_ShowMonPage(u8 taskId)
         if (JOY_NEW(A_BUTTON))
         {
             RemoveDexPageWindows();
-            FillBgTilemapBufferRect_Palette0(1, 0x000, 0, 2, 30, 16);
+            //FillBgTilemapBufferRect_Palette0(1, 0x000, 0, 2, 30, 16); //Uncommenting fills BG1 blank space with white.
             CopyBgTilemapBufferToVram(1);
             sPokedexScreenData->state = 7;
         }
@@ -2368,7 +2368,7 @@ static bool8 DexScreen_CreateCategoryListGfx(bool8 justRegistered)
 {
     FillBgTilemapBufferRect_Palette0(3, 2, 0, 0, 30, 20);
     FillBgTilemapBufferRect_Palette0(2, 0, 0, 0, 32, 20);
-    FillBgTilemapBufferRect_Palette0(1, 0, 0, 0, 32, 20);
+    //FillBgTilemapBufferRect_Palette0(1, 0, 0, 0, 32, 20); //Uncommenting this fills BG1 blank space with tan.
     DexScreen_CreateCategoryPageSpeciesList(sPokedexScreenData->category, sPokedexScreenData->pageNum);
     FillWindowPixelBuffer(0, PIXEL_FILL(0));
     if (justRegistered)
@@ -2943,7 +2943,7 @@ static u8 DexScreen_DrawMonDexPage(bool8 justRegistered)
 {
     DexScreen_DexPageZoomEffectFrame(3, 6);
     FillBgTilemapBufferRect_Palette0(2, 0, 0, 0, 30, 20);
-    FillBgTilemapBufferRect_Palette0(1, 0, 0, 0, 30, 20);
+    //FillBgTilemapBufferRect_Palette0(1, 0, 0, 0, 30, 20); //Uncommenting this fills BG1 blank space with tan.
     FillBgTilemapBufferRect_Palette0(0, 0, 0, 2, 30, 16);
 
     sPokedexScreenData->windowIds[0] = AddWindow(&sWindowTemplate_DexEntry_MonPic);
@@ -3380,7 +3380,7 @@ static void Task_DexScreen_RegisterMonToPokedex(u8 taskId)
         gPaletteFade.bufferTransferDisabled = 0;
         BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, 0xffff);
         ShowBg(3);
-        ShowBg(2);
+        //ShowBg(2);
         ShowBg(1);
         ShowBg(0);
 
