@@ -84,7 +84,18 @@ Many, many more changes, large and small!
 
 -V7-
 Daisy will now wander up and down after gifing Town Map to the player.
-FRZ status condition no longer wears off over time. Thank you to Shakela for this commit!
+FRZ status condition no longer wears off over time.
+SPECIAL stats are effectively merged, keeping save and trade compatibility.
+Trade menus have a new old look!
+Lift Key Guard now correctly keeps the lift key until after talking to him after defeating him.
+The player now has preset name selection in the new game sequence!
 
 Fixed: Empty party menu slots had jumbled graphics.
 Fixed: Text windows shown when hatching eggs and trading pokemon had white text on white background.
+Fixed: Dome Fossil called Helix Fossil in Mt.Moon.
+Fixed: Oak's Parcel sequence had the clerk animate.
+Fixed: Pokedex Acquisition sequence had Oak animate.
+Fixed: Pokedex screens shown when registering a Pokemon used incorrect graphics.
+Fixed: Cerulean City Badge guide had broken dialogue.
+Fixed: Text shown when a Pokemon fainted outside of battle was incorrectly formatted.
+Fixed: Many typos.
