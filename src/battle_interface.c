@@ -327,30 +327,6 @@ static const struct Subsprite sStatusSummaryBar_Subsprites_Exit[] = {
         .size = SPRITE_SIZE(32x8),
         .tileOffset = 8,
         .priority = 1
-    },
-    {
-        .x = 0,
-        .y = 0,
-        .shape = SPRITE_SHAPE(32x8),
-        .size = SPRITE_SIZE(32x8),
-        .tileOffset = 8,
-        .priority = 1
-    },
-    {
-        .x = 32,
-        .y = 0,
-        .shape = SPRITE_SHAPE(32x8),
-        .size = SPRITE_SIZE(32x8),
-        .tileOffset = 8,
-        .priority = 1
-    },
-    {
-        .x = 64,
-        .y = 0,
-        .shape = SPRITE_SHAPE(32x8),
-        .size = SPRITE_SIZE(32x8),
-        .tileOffset = 12,
-        .priority = 1
     }
 };
 
