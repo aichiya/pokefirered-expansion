@@ -27,7 +27,7 @@ SSAnne_CaptainsOffice_Text_ThankYouHaveHMForCut::
 
 SSAnne_CaptainsOffice_Text_ObtainedHM01FromCaptain::
     .string "{PLAYER} got\n"
-    .string "HM01$"
+    .string "HM01!$"
 
 SSAnne_CaptainsOffice_Text_ExplainCut::
     .string "Using CUT, you can chop down\n"
