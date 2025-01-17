@@ -1186,7 +1186,7 @@ static const struct SpriteFrameImage sPicTable_Sapphire[] = {
 };
 
 static const struct SpriteFrameImage sPicTable_OldAmber[] = {
-    overworld_frame(gObjectEventPic_OldAmber, 2, 2, 0),
+    overworld_frame(gObjectEventPic_OldAmber, 2, 4, 0),
 };
 
 static const struct SpriteFrameImage sPicTable_GymSign[] = {
