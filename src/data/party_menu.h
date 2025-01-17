@@ -129,7 +129,7 @@ static const u32 sCancelButton_Tilemap[] = INCBIN_U32("graphics/party_menu/cance
 static const u8 sFontColorTable[][3] =
 {
     {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_TRANSPARENT},  // Default
-    {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_LIGHT_GRAY, TEXT_COLOR_TRANSPARENT},  // Black text with light gray shadow.
+    {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_TRANSPARENT},  // Black text with light gray shadow.
     {TEXT_COLOR_TRANSPARENT, TEXT_DYNAMIC_COLOR_2,  TEXT_COLOR_TRANSPARENT},  // Gender symbol
     {TEXT_COLOR_WHITE,       TEXT_COLOR_DARK_GRAY,  TEXT_COLOR_TRANSPARENT}, // Selection actions
     {TEXT_COLOR_WHITE,       TEXT_COLOR_BLUE,       TEXT_COLOR_TRANSPARENT}, // Field moves
@@ -577,7 +577,7 @@ static const struct WindowTemplate sWhichMoveMsgWindowTemplate =
     .bg = 2,
     .tilemapLeft = 1,
     .tilemapTop = 17,
-    .width = 15,
+    .width = 14,
     .height = 2,
     .paletteNum = 15,
     .baseBlock = 665,
@@ -608,9 +608,9 @@ static const struct WindowTemplate sMailReadTakeWindowTemplate =
 static const struct WindowTemplate sMoveSelectWindowTemplate =
 {
     .bg = 2,
-    .tilemapLeft = 18,
+    .tilemapLeft = 17,
     .tilemapTop = 11,
-    .width = 11,
+    .width = 12,
     .height = 8,
     .paletteNum = 14,
     .baseBlock = 703,
