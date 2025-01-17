@@ -391,8 +391,8 @@ static const struct SpriteTemplate sSpriteTemplate_CableEnd = {
 };
 
 static const struct OamData sOamData_GbaScreen = {
-    .shape = SPRITE_SHAPE(64x32),
-    .size = SPRITE_SIZE(64x32),
+    .shape = SPRITE_SHAPE(32x16),
+    .size = SPRITE_SIZE(32x16),
     .priority = 1
 };
 
@@ -1434,7 +1434,7 @@ static bool8 DoTradeAnim_Cable(void)
         if (++sTradeAnim->timer > 20)
         {
             SetTradeBGAffine();
-            sTradeAnim->connectionSpriteId2 = CreateSprite(&sSpriteTemplate_GbaScreenFlash_Long, 120, 80, 0);
+            sTradeAnim->connectionSpriteId2 = CreateSprite(&sSpriteTemplate_GbaScreenFlash_Long, -32, -32, 0); //120, 80
             sTradeAnim->state++;
         }
         break;
@@ -1635,7 +1635,7 @@ static bool8 DoTradeAnim_Cable(void)
         }
         break;
     case STATE_GBA_FLASH_RECV:
-        sTradeAnim->connectionSpriteId2 = CreateSprite(&sSpriteTemplate_GbaScreenFlash_Long, 120, 80, 0);
+        sTradeAnim->connectionSpriteId2 = CreateSprite(&sSpriteTemplate_GbaScreenFlash_Long, -32, -32, 0); //120, 80
         sTradeAnim->state = STATE_GBA_STOP_FLASH_RECV;
         break;
     case STATE_GBA_STOP_FLASH_RECV:
@@ -2138,7 +2138,7 @@ static bool8 DoTradeAnim_Wireless(void)
         }
         break;
     case STATE_GBA_FLASH_RECV:
-        sTradeAnim->connectionSpriteId2 = CreateSprite(&sSpriteTemplate_GbaScreenFlash_Long, 120, 80, 0);
+        sTradeAnim->connectionSpriteId2 = CreateSprite(&sSpriteTemplate_GbaScreenFlash_Long, -32, -32, 0); //120, 80
         sTradeAnim->state = STATE_GBA_STOP_FLASH_RECV;
         break;
     case STATE_GBA_STOP_FLASH_RECV:
@@ -2777,7 +2777,7 @@ void DrawTextOnTradeWindow(u8 windowId, const u8 *str, s8 speed)
 {
     FillWindowPixelBuffer(windowId, PIXEL_FILL(15));
     sTradeAnim->textColor[0] = 15;
-    sTradeAnim->textColor[1] = 1;
+    sTradeAnim->textColor[1] = 2;
     sTradeAnim->textColor[2] = 6;
     AddTextPrinterParameterized4(windowId, FONT_NORMAL, 0, 2, 0, 2, sTradeAnim->textColor, speed, str);
     CopyWindowToVram(windowId, COPYWIN_FULL);
