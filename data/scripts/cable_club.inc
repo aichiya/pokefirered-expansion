@@ -213,7 +213,7 @@ CableClub_EventScript_SelectCableClubRoom::
 
 CableClub_EventScript_Colosseum::
 	copyvar VAR_0x8007, VAR_LAST_TALKED
-	goto CableClub_EventScript_SelectBattleMode
+	goto CableClub_EventScript_SingleBattleMode
 	end
 
 CableClub_EventScript_SelectBattleMode::
