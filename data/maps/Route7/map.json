@@ -40,6 +40,14 @@
       "script": "0x0",
       "flag": "0",
       "in_connection": true
+    },
+    {
+      "type": "clone",
+      "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
+      "x": -3,
+      "y": 12,
+      "target_local_id": 10,
+      "target_map": "MAP_CELADON_CITY"
     }
   ],
   "warp_events": [
