@@ -7,7 +7,7 @@ PokemonTower_3F_Text_HopeDefeat::
     .string "Iá saved!$"
 
 PokemonTower_3F_Text_HopePostBattle::
-    .string "The GHOSSTs can be\n"
+    .string "The GHOSTs can be\n"
     .string "identified by the\l"
     .string "SILPH SCOPE.$"
 
