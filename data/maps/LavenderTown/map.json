@@ -80,7 +80,7 @@
   "warp_events": [
     {
       "x": 14,
-      "y": 6,
+      "y": 5,
       "elevation": 0,
       "dest_map": "MAP_POKEMON_TOWER_1F",
       "dest_warp_id": "0"
