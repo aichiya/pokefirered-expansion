@@ -5384,7 +5384,7 @@ void ItemUseCB_EvolutionStone(u8 taskId, TaskFunc func)
     }
     else
     {    
-        UseEvolutionStone();
+        Task_DoUseItemAnim(taskId);
     }
 }
 

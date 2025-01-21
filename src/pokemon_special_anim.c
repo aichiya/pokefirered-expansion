@@ -91,6 +91,11 @@ static struct PokemonSpecialAnim * AllocPSA(u8 slotId, u16 itemId, MainCallback 
         moveId = ItemIdToBattleMoveId(itemId);
         StringCopy(ptr->nameOfMoveToTeach, gMoveNames[moveId]);
     }
+
+    if ((itemId >= ITEM_SUN_STONE) && (itemId <= ITEM_LEAF_STONE)) {
+        ptr->state = 13; // Start from evolution animation
+    }
+
     return ptr;
 }
 
@@ -247,24 +252,27 @@ static void Task_UseItem_Normal(u8 taskId)
     case 12:
         if (JOY_NEW(A_BUTTON | B_BUTTON))
         {
-            if (CheckIfItemIsTMHMOrEvolutionStone(ptr->itemId) != 2) // evo stone
-            {
-                BeginNormalPaletteFade(PALETTES_ALL, -1, 0, 16, RGB_BLACK);
-                ptr->state++;
-            }
-            else
-            {
-                ptr->state += 2;
-            }
+            ptr->state++;
         }
         break;
     case 13:
+        if (CheckIfItemIsTMHMOrEvolutionStone(ptr->itemId) != 2) // evo stone
+        {
+            BeginNormalPaletteFade(PALETTES_ALL, -1, 0, 16, RGB_BLACK);
+            ptr->state++;
+        }
+        else
+        {
+            ptr->state += 2;
+        }
+        break;
+    case 14:
         if (!gPaletteFade.active)
         {
             ptr->state++;
         }
         break;
-    case 14:
+    case 15:
         SetMainCallback2(ptr->savedCallback);
         PSA_FreeWindowBuffers();
         Free(ptr);
