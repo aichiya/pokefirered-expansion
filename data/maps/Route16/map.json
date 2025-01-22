@@ -16,12 +16,12 @@
   "connections": [
     {
       "map": "MAP_ROUTE17",
-      "offset": 0,
+      "offset": 6,
       "direction": "down"
     },
     {
       "map": "MAP_CELADON_CITY",
-      "offset": -8,
+      "offset": -2,
       "direction": "right"
     }
   ],
@@ -29,8 +29,8 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
-      "x": 17,
-      "y": 12,
+      "x": 23,
+      "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -38,14 +38,13 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Route16_EventScript_Lao",
-      "flag": "0",
-      "in_connection": false
+      "flag": "0"
     },
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
-      "x": 14,
-      "y": 13,
+      "x": 20,
+      "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
@@ -53,14 +52,13 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route16_EventScript_Koji",
-      "flag": "0",
-      "in_connection": false
+      "flag": "0"
     },
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
-      "x": 11,
-      "y": 12,
+      "x": 17,
+      "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
@@ -68,14 +66,13 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route16_EventScript_Luke",
-      "flag": "0",
-      "in_connection": false
+      "flag": "0"
     },
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
-      "x": 3,
-      "y": 12,
+      "x": 9,
+      "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
@@ -83,14 +80,13 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route16_EventScript_Ruben",
-      "flag": "0",
-      "in_connection": false
+      "flag": "0"
     },
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
-      "x": 9,
-      "y": 11,
+      "x": 15,
+      "y": 17,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -98,14 +94,13 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route16_EventScript_Hideo",
-      "flag": "0",
-      "in_connection": false
+      "flag": "0"
     },
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BIKER",
-      "x": 6,
-      "y": 10,
+      "x": 12,
+      "y": 16,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
@@ -113,14 +108,13 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Route16_EventScript_Camron",
-      "flag": "0",
-      "in_connection": false
+      "flag": "0"
     },
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CUT_TREE",
-      "x": 34,
-      "y": 9,
+      "x": 40,
+      "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -134,8 +128,8 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SNORLAX",
-      "x": 26,
-      "y": 10,
+      "x": 32,
+      "y": 16,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
@@ -149,57 +143,57 @@
   ],
   "warp_events": [
     {
-      "x": 7,
-      "y": 5,
+      "x": 13,
+      "y": 11,
       "elevation": 0,
       "dest_map": "MAP_ROUTE16_HOUSE",
       "dest_warp_id": "0"
     },
     {
-      "x": 17,
-      "y": 5,
+      "x": 23,
+      "y": 11,
       "elevation": 3,
       "dest_map": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
       "dest_warp_id": "0"
     },
     {
-      "x": 24,
-      "y": 5,
+      "x": 30,
+      "y": 11,
       "elevation": 3,
       "dest_map": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
       "dest_warp_id": "1"
     },
     {
-      "x": 17,
-      "y": 11,
+      "x": 23,
+      "y": 17,
       "elevation": 3,
       "dest_map": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
       "dest_warp_id": "6"
     },
     {
-      "x": 24,
-      "y": 10,
+      "x": 30,
+      "y": 16,
       "elevation": 3,
       "dest_map": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
       "dest_warp_id": "3"
     },
     {
-      "x": 24,
-      "y": 4,
+      "x": 30,
+      "y": 10,
       "elevation": 3,
       "dest_map": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
       "dest_warp_id": "7"
     },
     {
-      "x": 17,
-      "y": 4,
+      "x": 23,
+      "y": 10,
       "elevation": 3,
       "dest_map": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
       "dest_warp_id": "8"
     },
     {
-      "x": 17,
-      "y": 10,
+      "x": 23,
+      "y": 16,
       "elevation": 3,
       "dest_map": "MAP_ROUTE16_NORTH_ENTRANCE_1F",
       "dest_warp_id": "2"
@@ -211,24 +205,24 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 5,
-      "y": 17,
+      "x": 11,
+      "y": 23,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route16_EventScript_RouteSign"
     },
     {
       "type": "sign",
-      "x": 27,
-      "y": 11,
+      "x": 33,
+      "y": 17,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route16_EventScript_CyclingRoadSign"
     },
     {
       "type": "hidden_item",
-      "x": 26,
-      "y": 10,
+      "x": 32,
+      "y": 16,
       "elevation": 3,
       "item": "ITEM_LEFTOVERS",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE16_LEFTOVERS",

@@ -1048,8 +1048,8 @@
     {
       "id": "LAYOUT_ROUTE16",
       "name": "Route16_Layout",
-      "width": 40,
-      "height": 18,
+      "width": 46,
+      "height": 24,
       "border_width": 1,
       "border_height": 1,
       "primary_tileset": "gTileset_RB_General",
