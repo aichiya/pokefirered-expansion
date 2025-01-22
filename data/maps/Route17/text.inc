@@ -60,7 +60,7 @@ Route17_Text_NikolasPostBattle::
     .string "POWER PLANT.$"
 
 Route17_Text_ZeekIntro::
-    .string "my POKéMON wonÑ\n"
+    .string "My POKéMON wonÑ\n"
     .string "evolve! Why?$"
 
 Route17_Text_ZeekDefeat::
@@ -119,13 +119,16 @@ Route17_Text_WilliamPostBattle::
 
 Route17_Text_WatchOutForDiscardedItems::
     .string "ItÙ a notice!\p"
+
     .string "Watch out for\n"
     .string "discarded items!$"
 
 Route17_Text_SameSpeciesGrowDifferentRates::
     .string "TRAINER TIPS\p"
+
     .string "All POKéMON are\n"
     .string "unique.\p"
+
     .string "Even POKéMON of\n"
     .string "the same type and\l"
     .string "level grow at\l"
@@ -133,6 +136,7 @@ Route17_Text_SameSpeciesGrowDifferentRates::
 
 Route17_Text_PressBToStayInPlace::
     .string "TRAINER TIPS\p"
+
     .string "Press the A or B\n"
     .string "Button to stay in\l"
     .string "place while on a\l"
@@ -145,6 +149,7 @@ Route17_Text_RouteSign::
 
 Route17_Text_DontThrowGameThrowBalls::
     .string "ItÙ a notice!\p"
+    
     .string "DonÑ throw the\n"
     .string "game, throw POKé\l"
     .string "BALLs instead!$"
