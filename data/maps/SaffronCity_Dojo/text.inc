@@ -1,11 +1,14 @@
 SaffronCity_Dojo_Text_MasterKoichiIntro::
     .string "Grunt!\p"
+    
     .string "I am the KARATE\n"
     .string "MASTER! I am the\l"
     .string "LEADER here!\p"
+
     .string "You wish to\n"
     .string "challenge us?\l"
     .string "Expect no mercy!\p"
+
     .string "Fwaaa!$"
 
 SaffronCity_Dojo_Text_MasterKoichiDefeat::
@@ -15,18 +18,22 @@ SaffronCity_Dojo_Text_MasterKoichiDefeat::
 SaffronCity_Dojo_Text_ChoosePrizedFightingMon::
     .string "Indeed, I have\n"
     .string "lost!\p"
+
     .string "But, I beseech\n"
     .string "you, do not take\l"
     .string "our emblem as\l"
     .string "your trophy!\p"
+
     .string "In return, I will\n"
     .string "give you a prized\l"
     .string "fighting POKéMON!\p"
+
     .string "Choose whichever\n"
     .string "one you like!$"
 
 SaffronCity_Dojo_Text_StayAndTrainWithUs::
     .string "Ho!\p"
+
     .string "Stay and train at\n"
     .string "Karate with us!$"
 
@@ -41,6 +48,7 @@ SaffronCity_Dojo_Text_MikeDefeat::
 SaffronCity_Dojo_Text_MikePostBattle::
     .string "You wait Ñil you\n"
     .string "see our Master!\p"
+
     .string "Iá a small fry\n"
     .string "compared to him!$"
 
@@ -59,6 +67,7 @@ SaffronCity_Dojo_Text_HidekiPostBattle::
 SaffronCity_Dojo_Text_AaronIntro::
     .string "Nothing tough\n"
     .string "frightens me!\p"
+
     .string "I break boulders\n"
     .string "for training!$"
 
@@ -73,6 +82,7 @@ SaffronCity_Dojo_Text_AaronPostBattle::
 
 SaffronCity_Dojo_Text_HitoshiIntro::
     .string "Hoohah!\p"
+
     .string "Youàe trespassing\n"
     .string "in our FIGHTING\l"
     .string "DOJO!$"
@@ -109,10 +119,12 @@ SaffronCity_Dojo_Text_BetterNotGetGreedy::
     .string "greedy...$"
 
 SaffronCity_Dojo_Text_EnemiesOnEverySide::
-    .string "Enemies on every side!$"
+    .string "Enemies on every\n"
+    .string "side!$"
 
 SaffronCity_Dojo_Text_GoesAroundComesAround::
-    .string "What goes around comes around!$"
+    .string "What goes around\n"
+    .string "comes around!$"
 
 SaffronCity_Dojo_Text_FightingDojo::
     .string "FIGHTING DOJO$"
