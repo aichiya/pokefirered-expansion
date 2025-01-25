@@ -19,7 +19,7 @@ Route14_Text_MitchIntro::
     .string "for battle.$"
 
 Route14_Text_MitchDefeat::
-    .string "BIRD KEEPER: Not\l"
+    .string "BIRD KEEPER: Not\n"
     .string "ready yet!$"
 
 Route14_Text_MitchPostBattle::
@@ -28,7 +28,8 @@ Route14_Text_MitchPostBattle::
 
 Route14_Text_BeckIntro::
     .string "TMs are on sale\n"
-    .string "in CELEDON!\l"
+    .string "in CELEDON!\p"
+
     .string "But, only a few\n"
     .string "people have HMs!$"
 
@@ -120,6 +121,7 @@ Route14_Text_GeraldPostBattle::
     .string "ItÙ cool you\n"
     .string "made your POKéMON\l"
     .string "so strong!\p"
+    
     .string "Might is right!\n"
     .string "And you know it!$"
 
