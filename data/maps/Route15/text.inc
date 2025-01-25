@@ -12,6 +12,7 @@ Route15_Text_KindraPostBattle::
     .string "the nickname of\l"
     .string "any POKéMON you\l"
     .string "get in a trade.\p"
+    
     .string "Only the Original\n"
     .string "Trainer can.$"
 
@@ -52,7 +53,7 @@ Route15_Text_ChesterDefeat::
     .string "as I thought!$"
 
 Route15_Text_ChesterPostBattle::
-    .string "Did you know that moves\n"
+    .string "Did you know moves\n"
     .string "like EARTHQUAKE\l"
     .string "donÑ have any\l"
     .string "effect on birds?$"
