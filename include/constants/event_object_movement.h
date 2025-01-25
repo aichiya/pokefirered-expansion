@@ -282,7 +282,11 @@
 #define ANIM_STD_GO_FASTEST_NORTH 17
 #define ANIM_STD_GO_FASTEST_WEST  18
 #define ANIM_STD_GO_FASTEST_EAST  19
-#define ANIM_STD_COUNT            20
+#define ANIM_STD_GO_SLOW_SOUTH    20
+#define ANIM_STD_GO_SLOW_NORTH    21
+#define ANIM_STD_GO_SLOW_WEST     22
+#define ANIM_STD_GO_SLOW_EAST     23
+#define ANIM_STD_COUNT            24
 
 #define ANIM_RUN_SOUTH                   (ANIM_STD_COUNT + 0)
 #define ANIM_RUN_NORTH                   (ANIM_STD_COUNT + 1)
