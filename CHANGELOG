@@ -89,6 +89,8 @@ SPECIAL stats are effectively merged, keeping save and trade compatibility.
 Trade menus have a new old look!
 Lift Key Guard now correctly keeps the lift key until after talking to him after defeating him.
 The player now has preset name selection in the new game sequence!
+Bicycle animation now plays at half speed, meaning it looks accurate to the 30 FPS animations of the original games.
+A few areas are more colorful! Map and tileset data has been updated in a few instances.
 
 Fixed: Empty party menu slots had jumbled graphics.
 Fixed: Text windows shown when hatching eggs and trading pokemon had white text on white background.
@@ -98,4 +100,12 @@ Fixed: Pokedex Acquisition sequence had Oak animate.
 Fixed: Pokedex screens shown when registering a Pokemon used incorrect graphics.
 Fixed: Cerulean City Badge guide had broken dialogue.
 Fixed: Text shown when a Pokemon fainted outside of battle was incorrectly formatted.
+Fixed: Silph Co 11F computer did not function as a PokeCenter PC.
+Fixed: Cycling Road's southern gatehouse kicks the player off of the bike.
+Fixed: Some trainers lacked Clone Objects, making them visually pop into existence on screen.
+Fixed: Safari Zone incorrectly listed the starting step count as 600.
+Fixed: Immediately consequtive evolution stone evolutions would crash the game.
+Fixed: SilphCo's Giovanni encounter scripting would rotate the player in the wrong direction, rotate the player when the wrong activator is triggered.
+Fixed: Rock Tunnel had a sign lacking collision.
+Fixed: A lot of incorrect textbox formatting.
 Fixed: Many typos.

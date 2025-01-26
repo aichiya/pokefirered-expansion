@@ -37,3 +37,5 @@ Shakela
 * SP.ATK SP.DEF mechanic merge.
 
 * Lift Key guard scripting fix.
+
+* Element Stone evolution crash issue fix.
