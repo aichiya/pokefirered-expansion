@@ -90,6 +90,7 @@ SilphCo_11F_EventScript_GiovanniApproachLeft::
 
 SilphCo_11F_EventScript_GiovanniApproachRight::
 	applymovement LOCALID_GIOVANNI, SilphCo_11F_Movement_GiovanniApproachRight
+	applymovement OBJ_EVENT_ID_PLAYER, SilphCo_11F_Movement_PlayerFaceGiovanni
 	waitmovement 0
 	return
 
@@ -113,7 +114,7 @@ SilphCo_11F_Movement_PlayerFaceGiovanni::
 	delay_16
 	delay_8
 	delay_4
-	walk_in_place_faster_right
+	walk_in_place_faster_left
 	step_end
 
 @ Unused
