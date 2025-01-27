@@ -3,8 +3,8 @@
 
 const u8 gMoveDescription_Pound[] = _("No special\neffect.");
 const u8 gMoveDescription_KarateChop[] = _("Has a high\ncritical-hit\nratio.");
-const u8 gMoveDescription_DoubleSlap[] = _("No special\neffect.");
-const u8 gMoveDescription_CometPunch[] = _("No special\neffect.");
+const u8 gMoveDescription_DoubleSlap[] = _("Hits 2 to\n5 times.");
+const u8 gMoveDescription_CometPunch[] = _("Hits 2 to\n5 times.");
 const u8 gMoveDescription_MegaPunch[] = _("No special\neffect.");
 const u8 gMoveDescription_PayDay[] = _("Money is earned\nafter battle.");
 const u8 gMoveDescription_FirePunch[] = _("May leave the\nfoe with a burn.");
