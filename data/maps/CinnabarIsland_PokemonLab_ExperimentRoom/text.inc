@@ -73,7 +73,7 @@ CinnabarIsland_PokemonLab_ExperimentRoom_Text_HandedFossilToWeirdDoctor::
     .string "give me that!\p"
 
     .string "{PLAYER} handed\n"
-    .string "over {STR_VAR_2}$"
+    .string "over {STR_VAR_2}.$"
 
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_TakesTimeGoForWalk::
     .string "I take a little\n"
