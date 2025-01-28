@@ -1,8 +1,26 @@
 CinnabarIsland_PokemonLab_ResearchRoom_MapScripts::
 	.byte 0
 
-CinnabarIsland_PokemonLab_ResearchRoom_EventScript_MetronomeTutor::
-	goto EventScript_MetronomeTutor
+CinnabarIsland_PokemonLab_ResearchRoom_EventScript_TM35Gift::
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_TM35_IN_CINNABAR_ISLAND, CinnabarIsland_EventScript_AlreadyGotTM35
+	msgbox CinnabarIsland_PokemonLab_ExperimentRoom_Text_TakeTM35
+	checkitemspace ITEM_TM35
+	goto_if_eq VAR_RESULT, FALSE, EventScript_BagIsFull
+	bufferitemname STR_VAR_2, ITEM_TM35
+	playfanfare MUS_LEVEL_UP
+	message Text_ObtainedTheX
+	waitmessage
+	waitfanfare
+	additem ITEM_TM35
+	setflag FLAG_GOT_TM35_IN_CINNABAR_ISLAND
+	release
+	end
+	
+CinnabarIsland_EventScript_AlreadyGotTM35::
+	msgbox CinnabarIsland_PokemonLab_ExperimentRoom_Text_TM35_Contains
+	release
 	end
 
 CinnabarIsland_PokemonLab_ResearchRoom_EventScript_Scientist::

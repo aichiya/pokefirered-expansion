@@ -1,23 +1,19 @@
-Text_MetronomeTeach::
+CinnabarIsland_PokemonLab_ExperimentRoom_Text_TakeTM35::
     .string "Tch-tch-tch!\n"
-    .string "IÛl teach you a nifty move.\p"
-    .string "Teach it to a POKéMON, and watch\n"
-    .string "the fun unfold!\p"
-    .string "ItÙ a move called METRONOME.\n"
-    .string "Does it strike your fancy?$"
+    .string "I made a cool TM!\p"
 
-Text_MetronomeDeclined::
-    .string "I tell you, itÙ a lot of fun!$"
+    .string "It can cause all\n"
+    .string "kinds of fun!$"
 
-Text_MetronomeWhichMon::
-    .string "Okay!\n"
-    .string "Which POKéMON should I teach?$"
-
-Text_MetronomeTaught::
+CinnabarIsland_PokemonLab_ExperimentRoom_Text_TM35_Contains::
     .string "Tch-tch-tch!\n"
-    .string "ThatÙ the sound of a METRONOME.\p"
-    .string "It tweaks your POKéMONÙ brain into\n"
-    .string "using moves it doesnÑ even know.$"
+    .string "ThatÙ the sound\l"
+    .string "of a METRONOME!\p"
+
+    .string "It tweaks your\n"
+    .string "POKéMONÙ brain\l"
+    .string "into using moves\l"
+    .string "it doesnÑ know!$"
 
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_HaveYouAFossilForMe::
     .string "Hiya!\p"

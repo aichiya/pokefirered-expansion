@@ -206,32 +206,6 @@ EventScript_SeismicTossTaught::
 	release
 	end
 
-EventScript_MetronomeTutor::
-	lock
-	faceplayer
-	goto_if_set FLAG_TUTOR_METRONOME, EventScript_MetronomeTaught
-	msgbox Text_MetronomeTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, EventScript_MetronomeDeclined
-	call EventScript_CanOnlyBeLearnedOnce
-	goto_if_eq VAR_RESULT, NO, EventScript_MetronomeDeclined
-	msgbox Text_MetronomeWhichMon
-	setvar VAR_0x8005, MOVETUTOR_METRONOME
-	call EventScript_ChooseMoveTutorMon
-	goto_if_eq VAR_RESULT, FALSE, EventScript_MetronomeDeclined
-	setflag FLAG_TUTOR_METRONOME
-	goto EventScript_MetronomeTaught
-	end
-
-EventScript_MetronomeDeclined::
-	msgbox Text_MetronomeDeclined
-	release
-	end
-
-EventScript_MetronomeTaught::
-	msgbox Text_MetronomeTaught
-	release
-	end
-
 FourIsland_House1_EventScript_BodySlamTutor::
 	lock
 	faceplayer
