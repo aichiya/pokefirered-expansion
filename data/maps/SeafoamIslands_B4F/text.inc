@@ -20,8 +20,9 @@ Text_RockSlideTaught::
     .string "tunnel…$"
 
 SeafoamIslands_B4F_Text_BouldersMightChangeWaterFlow::
-    .string "Boulders might change the\n"
-    .string "flow of water!$"
+    .string "Boulders might\n"
+    .string "change the flow\l"
+    .string "of water!$"
 
 SeafoamIslands_B4F_Text_DangerFastCurrent::
     .string "DANGER\n"
