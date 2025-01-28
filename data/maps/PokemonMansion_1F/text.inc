@@ -8,7 +8,7 @@ PokemonMansion_1F_Text_TedDefeat::
 
 PokemonMansion_1F_Text_TedPostBattle::
     .string "A key? I donÑ\n"
-    .string "know what youàe"
+    .string "know what youàe\l"
     .string "talking about.$"
 
 PokemonMansion_1F_Text_JohnsonIntro::
