@@ -20,7 +20,7 @@ Trade_Text_HeyThanks::
 	.string "Hey, thanks!$"
 
 Trade_Text_IsntMyOldMonGreat::
-	.string "isnÑ my old\n"
+	.string "IsnÑ my old\n"
 	.string "{STR_VAR_2} great?$"
 
 Trade_Text_DoYouHaveMonWouldYouTradeForMon::
