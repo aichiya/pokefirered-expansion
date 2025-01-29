@@ -1,7 +1,4 @@
 
--Global-
-Ingame trade success texts not tested.
-
 -Battle-
 PP is above move type, should be below.
 
