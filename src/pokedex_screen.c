@@ -1827,7 +1827,7 @@ static void Task_DexScreen_CategorySubmenu(u8 taskId)
         if (JOY_NEW(A_BUTTON))
         {
             FillBgTilemapBufferRect_Palette0(2, 0x000, 0, 2, 30, 15); //Affects blank space, not fill.
-            //FillBgTilemapBufferRect_Palette0(1, 0x000, 0, 2, 30, 16); //Uncommenting fills BG1 blank space with white.
+            FillBgTilemapBufferRect_Palette0(1, 8, 0, 2, 30, 16);
             FillBgTilemapBufferRect_Palette0(0, 0x000, 0, 2, 30, 16);
             CopyBgTilemapBufferToVram(2);
             CopyBgTilemapBufferToVram(1);
@@ -1837,7 +1837,7 @@ static void Task_DexScreen_CategorySubmenu(u8 taskId)
         else if (JOY_NEW(B_BUTTON))
         {
             FillBgTilemapBufferRect_Palette0(2, 0x000, 0, 2, 30, 15);
-            //FillBgTilemapBufferRect_Palette0(1, 0x000, 0, 2, 30, 16); //Uncommenting fills BG1 blank space with white.
+            FillBgTilemapBufferRect_Palette0(1, 8, 0, 2, 30, 16);
             FillBgTilemapBufferRect_Palette0(0, 0x000, 0, 2, 30, 16);
             CopyBgTilemapBufferToVram(2);
             CopyBgTilemapBufferToVram(1);
@@ -1945,7 +1945,7 @@ static void Task_DexScreen_ShowMonPage(u8 taskId)
         if (JOY_NEW(A_BUTTON))
         {
             RemoveDexPageWindows();
-            //FillBgTilemapBufferRect_Palette0(1, 0x000, 0, 2, 30, 16); //Uncommenting fills BG1 blank space with white.
+            FillBgTilemapBufferRect_Palette0(1, 8, 0, 2, 30, 16);
             CopyBgTilemapBufferToVram(1);
             sPokedexScreenData->state = 7;
         }
@@ -2368,7 +2368,7 @@ static bool8 DexScreen_CreateCategoryListGfx(bool8 justRegistered)
 {
     FillBgTilemapBufferRect_Palette0(3, 2, 0, 0, 30, 20);
     FillBgTilemapBufferRect_Palette0(2, 0, 0, 0, 32, 20);
-    //FillBgTilemapBufferRect_Palette0(1, 0, 0, 0, 32, 20); //Uncommenting this fills BG1 blank space with tan.
+    FillBgTilemapBufferRect_Palette0(1, 8, 0, 0, 32, 20);
     DexScreen_CreateCategoryPageSpeciesList(sPokedexScreenData->category, sPokedexScreenData->pageNum);
     FillWindowPixelBuffer(0, PIXEL_FILL(0));
     if (justRegistered)
@@ -2942,8 +2942,9 @@ void DexScreen_DrawMonFootprint(u8 windowId, u16 species, u8 x, u8 y)
 static u8 DexScreen_DrawMonDexPage(bool8 justRegistered)
 {
     DexScreen_DexPageZoomEffectFrame(3, 6);
+
     FillBgTilemapBufferRect_Palette0(2, 0, 0, 0, 30, 20);
-    //FillBgTilemapBufferRect_Palette0(1, 0, 0, 0, 30, 20); //Uncommenting this fills BG1 blank space with tan.
+    FillBgTilemapBufferRect_Palette0(1, 8, 0, 0, 30, 20);
     FillBgTilemapBufferRect_Palette0(0, 0, 0, 2, 30, 16);
 
     sPokedexScreenData->windowIds[0] = AddWindow(&sWindowTemplate_DexEntry_MonPic);
