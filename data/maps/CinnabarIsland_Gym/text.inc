@@ -51,7 +51,7 @@ CinnabarIsland_Gym_Text_BlainePostBattle::
 
     .string "CHARMELEON or\n"
     .string "PONYTA would be\l"
-    .string "be good bets!$"
+    .string "good bets!$"
 
 CinnabarIsland_Gym_Text_MakeSpaceForThis::
     .string "Make rrom for my\n"
