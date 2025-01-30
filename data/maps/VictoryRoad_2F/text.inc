@@ -33,7 +33,7 @@ VictoryRoad_2F_Text_NelsonIntro::
     .string "ELITE FOUR?$"
 
 VictoryRoad_2F_Text_NelsonDefeat::
-    .string "COOLTRAINER♂: You\n"
+    .string "JUGGLER: You\n"
     .string "got me!$"
 
 VictoryRoad_2F_Text_NelsonPostBattle::
@@ -58,7 +58,7 @@ VictoryRoad_2F_Text_GregoryIntro::
     .string "too tough?$"
 
 VictoryRoad_2F_Text_GregoryDefeat::
-    .string "COOLTRAINER♂: Well\n"
+    .string "JUGGLER: Well\n"
     .string "done!$"
 
 VictoryRoad_2F_Text_GregoryPostBattle::
