@@ -75,7 +75,7 @@ Route14_Text_BennyIntro::
     .string "but OK! LetÙ go!$"
 
 Route14_Text_BennyDefeat::
-    .string "BIRD KEEPER: I\l"
+    .string "BIRD KEEPER: I\n"
     .string "knew it!$"
 
 Route14_Text_BennyPostBattle::
