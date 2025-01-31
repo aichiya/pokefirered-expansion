@@ -167,6 +167,9 @@
 // gTileset_RB_Mansion
 #define METATILE_RB_Mansion_EncounterTile  0x373
 
+// gTileset_RB_Museum
+#define METATILE_RB_Museum_Door 0x370
+
 // gTileset_SSAnne
 #define METATILE_SSAnne_Door  0x281
 
