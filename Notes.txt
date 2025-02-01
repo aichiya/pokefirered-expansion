@@ -4,3 +4,6 @@ PP is above move type, should be below.
 
 -Pokemon League-
 Record machine animation skipped entirely, must restore playing sound.
+
+-General-
+Set FLAG_SYS_CAN_LINK_WITH_RS at game start.
