@@ -170,6 +170,9 @@
 // gTileset_RB_Museum
 #define METATILE_RB_Museum_Door 0x370
 
+// gTileset_Roof
+#define METATILE_RB_Roof_GreyDoor 0x0C5
+
 // gTileset_SSAnne
 #define METATILE_SSAnne_Door  0x281
 
