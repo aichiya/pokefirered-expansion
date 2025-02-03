@@ -20,8 +20,10 @@ static void AnimSolarBeamSmallOrb(struct Sprite *);
 static void AnimSolarBeamSmallOrb_Step(struct Sprite *);
 static void AnimSolarBeamBigOrb(struct Sprite *);
 static void AnimPowerAbsorptionOrb(struct Sprite *);
-static void AnimAbsorptionOrb(struct Sprite *);
-static void AnimAbsorptionOrb_Step(struct Sprite *);
+static void AnimAbsorptionOrbCombine(struct Sprite *);
+static void AnimAbsorptionOrbCombine_Step(struct Sprite *);
+static void AnimAbsorptionOrbProjectile(struct Sprite *);
+static void AnimAbsorptionOrbProjectile_Step(struct Sprite *);
 static void AnimHyperBeamOrb(struct Sprite *);
 static void AnimHyperBeamOrb_Step(struct Sprite *);
 static void AnimMimicOrb(struct Sprite *);
@@ -246,7 +248,13 @@ static const union AnimCmd sSolarBeamSmallOrbAnimCms[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sPowerAbsorptionOrbAnimCmds[] =
+static const union AnimCmd sAnim_AbsorptionOrbCombine[] =
+{
+    ANIMCMD_FRAME(1, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_AbsorptionOrbProjectile[] =
 {
     ANIMCMD_FRAME(8, 1),
     ANIMCMD_END,
@@ -268,9 +276,14 @@ static const union AnimCmd *const sSolarBeamSmallOrbAnimTable[] =
     sSolarBeamSmallOrbAnimCms,
 };
 
-static const union AnimCmd *const sPowerAbsorptionOrbAnimTable[] =
+static const union AnimCmd *const sPowerAbsorptionOrbCombine[] =
 {
-    sPowerAbsorptionOrbAnimCmds,
+    sAnim_AbsorptionOrbCombine,
+};
+
+static const union AnimCmd *const sPowerAbsorptionOrbProjectile[] =
+{
+    sAnim_AbsorptionOrbProjectile,
 };
 
 static const union AffineAnimCmd sPowerAbsorptionOrbAffineAnimCmds[] =
@@ -289,7 +302,7 @@ const struct SpriteTemplate gPowerAbsorptionOrbSpriteTemplate =
     .tileTag = ANIM_TAG_ORBS,
     .paletteTag = ANIM_TAG_ORBS,
     .oam = &gOamData_AffineNormal_ObjBlend_16x16,
-    .anims = sPowerAbsorptionOrbAnimTable,
+    .anims = sPowerAbsorptionOrbProjectile,
     .images = NULL,
     .affineAnims = sPowerAbsorptionOrbAffineAnimTable,
     .callback = AnimPowerAbsorptionOrb,
@@ -342,24 +355,35 @@ const struct SpriteTemplate gStockpileAbsorptionOrbSpriteTemplate =
 
 static const union AffineAnimCmd sAbsorptionOrbAffineAnimCmds[] =
 {
-    AFFINEANIMCMD_FRAME(-5, -5, 0, 1),
+    AFFINEANIMCMD_FRAME(0, 0, 0, 1),
     AFFINEANIMCMD_JUMP(0),
 };
 
-static const union AffineAnimCmd *const sAbsorptionOrbAffineAnimTable[] =
+static const union AffineAnimCmd *const sAffineAnims_AbsorptionOrbProjectile[] =
 {
     sAbsorptionOrbAffineAnimCmds,
 };
 
-const struct SpriteTemplate gAbsorptionOrbSpriteTemplate =
+const struct SpriteTemplate gAbsorptionOrbCombineSpriteTemplate =
 {
     .tileTag = ANIM_TAG_ORBS,
     .paletteTag = ANIM_TAG_ORBS,
-    .oam = &gOamData_AffineNormal_ObjBlend_16x16,
-    .anims = sPowerAbsorptionOrbAnimTable,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sPowerAbsorptionOrbCombine,
     .images = NULL,
-    .affineAnims = sAbsorptionOrbAffineAnimTable,
-    .callback = AnimAbsorptionOrb,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimAbsorptionOrbCombine,
+};
+
+const struct SpriteTemplate gAbsorptionOrbProjectileSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sPowerAbsorptionOrbProjectile,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimAbsorptionOrbProjectile,
 };
 
 const struct SpriteTemplate gHyperBeamOrbSpriteTemplate =
@@ -655,7 +679,7 @@ const struct SpriteTemplate gMimicOrbSpriteTemplate =
     .tileTag = ANIM_TAG_ORBS,
     .paletteTag = ANIM_TAG_ORBS,
     .oam = &gOamData_AffineDouble_ObjNormal_16x16,
-    .anims = sPowerAbsorptionOrbAnimTable,
+    .anims = sPowerAbsorptionOrbProjectile,
     .images = NULL,
     .affineAnims = sMimicOrbAffineAnimTable,
     .callback = AnimMimicOrb,
@@ -2349,23 +2373,30 @@ void AnimTask_CreateSmallSolarBeamOrbs(u8 taskId)
         DestroyAnimVisualTask(taskId);
 }
 
-// Moves an orb from the target mon to the attacking mon in an arc-like fashion.
-// arg 0: initial x pixel offset
-// arg 1: initial y pixel offset
-// arg 2: wave amplitude
-// arg 3: wave period (lower means faster wave)
-static void AnimAbsorptionOrb(struct Sprite* sprite)
+static void AnimAbsorptionOrbCombine(struct Sprite* sprite)
 {
     InitSpritePosToAnimTarget(sprite, TRUE);
-    sprite->data[0] = gBattleAnimArgs[3];
-    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
-    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET);
-    sprite->data[5] = gBattleAnimArgs[2];
-    InitAnimArcTranslation(sprite);
-    sprite->callback = AnimAbsorptionOrb_Step;
+    sprite->data[0] = gBattleAnimArgs[2];
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
+    sprite->callback = StartAnimLinearTranslation;
+    StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
 }
 
-static void AnimAbsorptionOrb_Step(struct Sprite* sprite)
+static void AnimAbsorptionOrbProjectile(struct Sprite* sprite)
+{
+    if (!gBattleAnimArgs[3])
+        StartSpriteAnim(sprite, 2);
+    InitSpritePosToAnimTarget(sprite, 1);
+    sprite->data[0] = gBattleAnimArgs[2];
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2) + 8;
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET) - 8;
+    sprite->data[5] = -30;
+    InitAnimArcTranslation(sprite);
+    sprite->callback = AnimAbsorptionOrbProjectile_Step;
+}
+
+static void AnimAbsorptionOrbProjectile_Step(struct Sprite* sprite)
 {
     if (TranslateAnimHorizontalArc(sprite))
         DestroyAnimSprite(sprite);
