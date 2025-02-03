@@ -6077,32 +6077,15 @@ SludgeBombProjectile:
 Move_ACID:
 	loadspritegfx ANIM_TAG_POISON_BUBBLE
 	monbg ANIM_DEF_PARTNER
-	createsprite gAcidPoisonBubbleSpriteTemplate, ANIM_TARGET, 2, 20, 0, 40, 1, 0, 0
 	playsewithpan SE_M_BUBBLE3, SOUND_PAN_ATTACKER
-	delay 5
-	createsprite gAcidPoisonBubbleSpriteTemplate, ANIM_TARGET, 2, 20, 0, 40, 1, 24, 0
-	playsewithpan SE_M_BUBBLE3, SOUND_PAN_ATTACKER
-	delay 5
-	createsprite gAcidPoisonBubbleSpriteTemplate, ANIM_TARGET, 2, 20, 0, 40, 1, -24, 0
-	playsewithpan SE_M_BUBBLE3, SOUND_PAN_ATTACKER
-	delay 15
-	createvisualtask AnimTask_ShakeMon2, 5, ANIM_TARGET, 2, 0, 10, 1
-	createvisualtask AnimTask_ShakeMon2, 5, ANIM_DEF_PARTNER, 2, 0, 10, 1
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_DEF_SIDE, 2, 2, 0, 12, RGB(30, 0, 31)
-	createsprite gAcidPoisonDropletSpriteTemplate, ANIM_TARGET, 2, 0, -22, 0, 15, 55
+	createsprite gSludgeProjectileSpriteTemplate, ANIM_TARGET, 2, 20, 0, 40, 0
+	waitforvisualfinish
+	createsprite gAcidPoisonDropletSpriteTemplate, ANIM_TARGET, 2, -4, 8, 0, 6, 16
 	playsewithpan SE_M_BUBBLE, SOUND_PAN_TARGET
 	delay 10
-	createsprite gAcidPoisonDropletSpriteTemplate, ANIM_TARGET, 2, -26, -24, 0, 15, 55
+	createsprite gAcidPoisonDropletSpriteTemplate, ANIM_TARGET, 2, 4, 8, 0, 6, 16
 	playsewithpan SE_M_BUBBLE, SOUND_PAN_TARGET
 	delay 10
-	createsprite gAcidPoisonDropletSpriteTemplate, ANIM_TARGET, 2, 15, -27, 0, 15, 50
-	playsewithpan SE_M_BUBBLE, SOUND_PAN_TARGET
-	delay 10
-	createsprite gAcidPoisonDropletSpriteTemplate, ANIM_TARGET, 2, -15, -17, 0, 10, 45
-	playsewithpan SE_M_BUBBLE, SOUND_PAN_TARGET
-	delay 10
-	createsprite gAcidPoisonDropletSpriteTemplate, ANIM_TARGET, 2, 27, -22, 0, 15, 50
-	playsewithpan SE_M_BUBBLE, SOUND_PAN_TARGET
 	waitforvisualfinish
 	clearmonbg ANIM_DEF_PARTNER
 	end

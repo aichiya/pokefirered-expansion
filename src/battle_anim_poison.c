@@ -101,7 +101,7 @@ const struct SpriteTemplate gSludgeProjectileSpriteTemplate =
     .oam = &gOamData_AffineDouble_ObjNormal_16x16,
     .anims = sAnims_PoisonProjectile,
     .images = NULL,
-    .affineAnims = sAffineAnims_PoisonProjectile,
+    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSludgeProjectile,
 };
 
@@ -143,10 +143,10 @@ const struct SpriteTemplate gAcidPoisonDropletSpriteTemplate =
 {
     .tileTag = ANIM_TAG_POISON_BUBBLE,
     .paletteTag = ANIM_TAG_POISON_BUBBLE,
-    .oam = &gOamData_AffineDouble_ObjNormal_16x16,
+    .oam = &gOamData_AffineDouble_ObjNormal_8x8,
     .anims = sAnims_AcidPoisonDroplet,
     .images = NULL,
-    .affineAnims = gAffineAnims_Droplet,
+    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimAcidPoisonDroplet,
 };
 
