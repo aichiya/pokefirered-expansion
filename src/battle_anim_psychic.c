@@ -224,13 +224,7 @@ const struct SpriteTemplate gBentSpoonSpriteTemplate =
 
 static const union AnimCmd sAnim_QuestionMark[] =
 {
-    ANIMCMD_FRAME(0, 6),
-    ANIMCMD_FRAME(16, 6),
-    ANIMCMD_FRAME(32, 6),
-    ANIMCMD_FRAME(48, 6),
-    ANIMCMD_FRAME(64, 6),
-    ANIMCMD_FRAME(80, 6),
-    ANIMCMD_FRAME(96, 18),
+    ANIMCMD_FRAME(0, 30),
     ANIMCMD_END,
 };
 
@@ -239,25 +233,11 @@ static const union AnimCmd *const sAnims_QuestionMark[] =
     sAnim_QuestionMark,
 };
 
-static const union AffineAnimCmd sAffineAnim_QuestionMark[] =
-{
-    AFFINEANIMCMD_FRAME(0, 0, 4, 4),
-    AFFINEANIMCMD_FRAME(0, 0, -4, 8),
-    AFFINEANIMCMD_FRAME(0, 0, 4, 4),
-    AFFINEANIMCMD_LOOP(2),
-    AFFINEANIMCMD_END,
-};
-
-static const union AffineAnimCmd *const sAffineAnims_QuestionMark[] =
-{
-    sAffineAnim_QuestionMark,
-};
-
 const struct SpriteTemplate gQuestionMarkSpriteTemplate =
 {
     .tileTag = ANIM_TAG_AMNESIA,
     .paletteTag = ANIM_TAG_AMNESIA,
-    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
     .anims = sAnims_QuestionMark,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
@@ -596,46 +576,14 @@ static void AnimBentSpoon(struct Sprite *sprite)
 // Used by Amnesia
 static void AnimQuestionMark(struct Sprite *sprite)
 {
-    s16 x = GetBattlerSpriteCoordAttr(gBattleAnimAttacker, BATTLER_COORD_ATTR_WIDTH) /  2;
-    s16 y = GetBattlerSpriteCoordAttr(gBattleAnimAttacker, BATTLER_COORD_ATTR_HEIGHT) / -2;
-
-    if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_OPPONENT)
-        x = -x;
-    sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2) + x;
-    sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET) + y;
-    if (sprite->y < 16)
-        sprite->y = 16;
-    StoreSpriteCallbackInData6(sprite, AnimQuestionMark_Step1);
+    SetSpriteCoordsToAnimAttackerCoords(sprite);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        sprite->x -= gBattleAnimArgs[0];
+    else
+        sprite->x += gBattleAnimArgs[0];
+    sprite->y += gBattleAnimArgs[1];
     sprite->callback = RunStoredCallbackWhenAnimEnds;
-}
-
-static void AnimQuestionMark_Step1(struct Sprite *sprite)
-{
-    sprite->oam.affineMode = ST_OAM_AFFINE_NORMAL;
-    sprite->affineAnims = sAffineAnims_QuestionMark;
-    sprite->data[0] = 0;
-    InitSpriteAffineAnim(sprite);
-    sprite->callback = AnimQuestionMark_Step2;
-}
-
-static void AnimQuestionMark_Step2(struct Sprite *sprite)
-{
-    switch (sprite->data[0])
-    {
-    case 0:
-        if (sprite->affineAnimEnded)
-        {
-            FreeOamMatrix(sprite->oam.matrixNum);
-            sprite->oam.affineMode = ST_OAM_AFFINE_OFF;
-            sprite->data[1] = 18;
-            ++sprite->data[0];
-        }
-        break;
-    case 1:
-        if (--sprite->data[1] == -1)
-            DestroyAnimSprite(sprite);
-        break;
-    }
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
 }
 
 void AnimTask_MeditateStretchAttacker(u8 taskId)

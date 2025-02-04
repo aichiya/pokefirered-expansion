@@ -2893,14 +2893,23 @@ SkullBashAttack:
 
 Move_AMNESIA:
 	loadspritegfx ANIM_TAG_AMNESIA
-	call SetPsychicBackground
-	delay 8
-	createsprite gQuestionMarkSpriteTemplate, ANIM_ATTACKER, 20
+	monbg ANIM_ATTACKER
+	splitbgprio ANIM_ATTACKER
+	setalpha 8, 8
+	createsprite gQuestionMarkSpriteTemplate, ANIM_ATTACKER, 13, 16, -16
 	playsewithpan SE_M_METRONOME, SOUND_PAN_ATTACKER
-	delay 54
-	loopsewithpan SE_M_METRONOME, SOUND_PAN_ATTACKER, 16, 3
+	delay 15
+	createsprite gQuestionMarkSpriteTemplate, ANIM_ATTACKER, 13, 32, 0
+	playsewithpan SE_M_METRONOME, SOUND_PAN_ATTACKER
 	waitforvisualfinish
-	call UnsetPsychicBackground
+	createsprite gQuestionMarkSpriteTemplate, ANIM_ATTACKER, 13, 16, -16
+	playsewithpan SE_M_METRONOME, SOUND_PAN_ATTACKER
+	delay 15
+	createsprite gQuestionMarkSpriteTemplate, ANIM_ATTACKER, 13, 32, 0
+	playsewithpan SE_M_METRONOME, SOUND_PAN_ATTACKER
+	waitforvisualfinish
+	clearmonbg ANIM_ATTACKER
+	blendoff
 	end
 
 Move_KINESIS:
