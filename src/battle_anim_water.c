@@ -18,8 +18,7 @@ static void AnimWaterBubbleProjectile(struct Sprite *);
 static void AnimWaterBubbleProjectile_Step1(struct Sprite *);
 static void AnimWaterBubbleProjectile_Step2(struct Sprite *);
 static void AnimWaterBubbleProjectile_Step3(struct Sprite *);
-static void AnimAuroraBeamRings(struct Sprite *);
-static void AnimAuroraBeamRings_Step(struct Sprite *);
+static void AnimAuroraBeam(struct Sprite *);
 static void AnimToTargetInSinWave(struct Sprite *);
 static void AnimToTargetInSinWave_Step(struct Sprite *);
 static void AnimHydroCannonCharge(struct Sprite *);
@@ -120,45 +119,48 @@ const struct SpriteTemplate gWaterBubbleProjectileSpriteTemplate =
     .callback = AnimWaterBubbleProjectile,
 };
 
-static const union AnimCmd sAnim_AuroraBeamRing_0[] =
+static const union AnimCmd sAnim_AuroraBeamOrb[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_AuroraBeamRing_1[] =
+static const union AnimCmd *const sAnims_AuroraBeamOrb[] =
+{
+    sAnim_AuroraBeamOrb,
+};
+
+const struct SpriteTemplate gAuroraBeamOrbSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_RAINBOW_RINGS,
+    .paletteTag = ANIM_TAG_RAINBOW_RINGS,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sAnims_AuroraBeamOrb,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimAuroraBeam,
+};
+
+static const union AnimCmd sAnim_AuroraBeamTube[] =
 {
     ANIMCMD_FRAME(4, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd *const sAnims_AuroraBeamRing[] =
+static const union AnimCmd *const sAnims_AuroraBeamTube[] =
 {
-    sAnim_AuroraBeamRing_0,
-    sAnim_AuroraBeamRing_1,
+    sAnim_AuroraBeamTube,
 };
 
-static const union AffineAnimCmd sAffineAnim_AuroraBeamRing[] =
-{
-    AFFINEANIMCMD_FRAME(0x0, 0x0, 0, 1),
-    AFFINEANIMCMD_FRAME(0x60, 0x60, 0, 1),
-    AFFINEANIMCMD_END,
-};
-
-static const union AffineAnimCmd *const sAffineAnims_AuroraBeamRing[] =
-{
-    sAffineAnim_AuroraBeamRing,
-};
-
-const struct SpriteTemplate gAuroraBeamRingSpriteTemplate =
+const struct SpriteTemplate gAuroraBeamTubeSpriteTemplate =
 {
     .tileTag = ANIM_TAG_RAINBOW_RINGS,
     .paletteTag = ANIM_TAG_RAINBOW_RINGS,
-    .oam = &gOamData_AffineDouble_ObjNormal_8x16,
-    .anims = sAnims_AuroraBeamRing,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sAnims_AuroraBeamTube,
     .images = NULL,
-    .affineAnims = sAffineAnims_AuroraBeamRing,
-    .callback = AnimAuroraBeamRings,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimAuroraBeam,
 };
 
 static const union AnimCmd sAnim_WaterMudOrb[] =
@@ -585,35 +587,32 @@ static void AnimWaterBubbleProjectile_Step3(struct Sprite *sprite)
     StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
 }
 
-static void AnimAuroraBeamRings(struct Sprite *sprite)
+static void AnimAuroraBeam(struct Sprite *sprite)
 {
-    s16 unkArg;
-
-    InitSpritePosToAnimAttacker(sprite, TRUE);
-    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
-        unkArg = -gBattleAnimArgs[2];
-    else
-        unkArg = gBattleAnimArgs[2];
-    sprite->data[0] = gBattleAnimArgs[4];
-    sprite->data[1] = sprite->x;
-    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + unkArg;
-    sprite->data[3] = sprite->y;
-    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + gBattleAnimArgs[3];
-    InitAnimLinearTranslation(sprite);
-    sprite->callback = AnimAuroraBeamRings_Step;
-    sprite->affineAnimPaused = TRUE;
-    sprite->callback(sprite);
-}
-
-static void AnimAuroraBeamRings_Step(struct Sprite *sprite)
-{
-    if ((u16)gBattleAnimArgs[7] == 0xFFFF)
+    bool8 animType;
+    u8 coordType;
+    if (GetBattlerSide(gBattleAnimAttacker) == GetBattlerSide(gBattleAnimTarget))
     {
-        StartSpriteAnim(sprite, 1);
-        sprite->affineAnimPaused = FALSE;
+        gBattleAnimArgs[0] *= -1;
+        if (GetBattlerPosition(gBattleAnimAttacker) == B_POSITION_PLAYER_LEFT || GetBattlerPosition(gBattleAnimAttacker) == B_POSITION_OPPONENT_LEFT)
+            gBattleAnimArgs[0] *= -1;
     }
-    if (AnimTranslateLinear(sprite))
-        DestroyAnimSprite(sprite);
+    if ((gBattleAnimArgs[5] & 0xFF00) == 0)
+        animType = TRUE;
+    else
+        animType = FALSE;
+    if ((u8)gBattleAnimArgs[5] == 0)
+        coordType = BATTLER_COORD_Y_PIC_OFFSET;
+    else
+        coordType = 1;
+    InitSpritePosToAnimAttacker(sprite, animType);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+    sprite->data[0] = gBattleAnimArgs[4];
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + gBattleAnimArgs[2];
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, coordType) + gBattleAnimArgs[3];
+    sprite->callback = StartAnimLinearTranslation;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
 }
 
 // Updates the palette on the rainbow rings used in Aurora Beam to make them appear to be rotating counterclockwise

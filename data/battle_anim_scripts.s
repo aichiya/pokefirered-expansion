@@ -5479,39 +5479,31 @@ Move_WITHDRAW:
 
 Move_AURORA_BEAM:
 	loadspritegfx ANIM_TAG_RAINBOW_RINGS
-	fadetobg BG_AURORA
-	waitbgfadein
 	playsewithpan SE_M_BUBBLE_BEAM, SOUND_PAN_ATTACKER
-	setarg 7, 0
-	createvisualtask AnimTask_RotateAuroraRingColors, 10, 130
-	call AuroraBeamCreateRings
-	createvisualtask AnimTask_ShakeMon2, 5, ANIM_TARGET, 1, 0, 17, 1
-	call AuroraBeamCreateRings
-	call AuroraBeamCreateRings
-	call AuroraBeamCreateRings
-	setarg 7, 0xFFFF
-	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_BUBBLE_BEAM2, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 3, 6, 0, 10
-	createvisualtask AnimTask_ShakeMon2, 5, ANIM_TARGET, 2, 0, 40, 1
-	call AuroraBeamCreateRings
-	call AuroraBeamCreateRings
-	call AuroraBeamCreateRings
-	call AuroraBeamCreateRings
-	call AuroraBeamCreateRings
-	call AuroraBeamCreateRings
+	createsprite gAuroraBeamOrbSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	delay 1
+	call AuroraBeamCreateTube
 	waitforvisualfinish
-	restorebg
-	waitbgfadein
 	end
 
-AuroraBeamCreateRings:
-	createsprite gAuroraBeamRingSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 0, 17
+AuroraBeamCreateTube:
+	createsprite gAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
 	delay 1
-	createsprite gAuroraBeamRingSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 0, 17
+	createsprite gAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
 	delay 1
-	createsprite gAuroraBeamRingSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 0, 17
+	createsprite gAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
 	delay 1
-	createsprite gAuroraBeamRingSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 0, 17
+	createsprite gAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
 	delay 1
+	createsprite gAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	delay 1
+	createsprite gAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	delay 1
+	createsprite gAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	delay 1
+	createsprite gAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
+	delay 1
+	createsprite gAuroraBeamTubeSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
 	return
 
 Move_SOLARBEAM:
