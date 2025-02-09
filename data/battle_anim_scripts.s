@@ -5160,11 +5160,28 @@ Move_REFLECT:
 
 Move_BARRIER:
 	loadspritegfx ANIM_TAG_GRAY_LIGHT_WALL
-	setalpha 0, 16
+	monbg ANIM_ATTACKER
+	setalpha 12, 8
 	waitplaysewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER, 15
-	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 3, 40, 0, ANIM_TAG_GRAY_LIGHT_WALL
+	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0
 	waitforvisualfinish
 	delay 1
+	waitplaysewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER, 15
+	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0
+	waitforvisualfinish
+	delay 1
+	waitplaysewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER, 15
+	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0
+	waitforvisualfinish
+	delay 3
+	waitplaysewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER, 15
+	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0
+	waitforvisualfinish
+	delay 1
+	waitplaysewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER, 15
+	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0
+	waitforvisualfinish
+	clearmonbg ANIM_ATTACKER
 	blendoff
 	end
 

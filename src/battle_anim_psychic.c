@@ -12,10 +12,6 @@ static void AnimQuestionMark(struct Sprite *sprite);
 static void AnimRedX(struct Sprite *sprite);
 static void AnimSkillSwapOrb(struct Sprite *sprite);
 static void AnimPsychoBoost(struct Sprite *sprite);
-static void AnimDefensiveWall_Step2(struct Sprite *sprite);
-static void AnimDefensiveWall_Step3(struct Sprite *sprite);
-static void AnimDefensiveWall_Step4(struct Sprite *sprite);
-static void AnimDefensiveWall_Step5(struct Sprite *sprite);
 static void AnimQuestionMark_Step1(struct Sprite *sprite);
 static void AnimQuestionMark_Step2(struct Sprite *sprite);
 static void AnimTask_MeditateStretchAttacker_Step(u8 taskId);
@@ -81,12 +77,30 @@ const struct SpriteTemplate gMirrorCoatWallSpriteTemplate =
     .callback = AnimDefensiveWall,
 };
 
+static const union AnimCmd sAnim_BarrierWall_0[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_BarrierWall_1[] =
+{
+    ANIMCMD_FRAME(0, 15, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnims_BarrierWall[] =
+{
+    sAnim_BarrierWall_0,
+    sAnim_BarrierWall_1,
+};
+
 const struct SpriteTemplate gBarrierWallSpriteTemplate =
 {
     .tileTag = ANIM_TAG_GRAY_LIGHT_WALL,
     .paletteTag = ANIM_TAG_GRAY_LIGHT_WALL,
-    .oam = &gOamData_AffineOff_ObjBlend_64x64,
-    .anims = gDummySpriteAnimTable,
+    .oam = &gOamData_AffineOff_ObjNormal_64x64,
+    .anims = sAnims_BarrierWall,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimDefensiveWall,
@@ -398,120 +412,14 @@ const struct SpriteTemplate gPsychoBoostOrbSpriteTemplate =
 // For the rectangular wall sprite used by Reflect, Mirror Coat, etc
 static void AnimDefensiveWall(struct Sprite *sprite)
 {
-    if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER || IsContest())
-    {
-        sprite->oam.priority = 2;
-        sprite->subpriority = 200;
-    }
-    if (!IsContest())
-    {
-        u8 battlerCopy;
-        u8 battler = battlerCopy = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
-        u8 rank = GetBattlerSpriteBGPriorityRank(battler);
-        s32 var0 = 1;
-        bool8 toBG2 = (rank ^ var0) != 0;
-
-        if (IsBattlerSpriteVisible(battler))
-            MoveBattlerSpriteToBG(battler, toBG2);
-        battler = BATTLE_PARTNER(battlerCopy);
-        if (IsBattlerSpriteVisible(battler))
-            MoveBattlerSpriteToBG(battler, toBG2 ^ var0);
-    }
-    if (!IsContest() && IsDoubleBattle())
-    {
-        if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER)
-        {
-            sprite->x = 72;
-            sprite->y = 80;
-        }
-        else
-        {
-            sprite->x = 176;
-            sprite->y = 40;
-        }
-    }
+    if (gBattleAnimArgs[2] == ANIM_ATTACKER)
+        InitSpritePosToAnimAttacker(sprite, 0);
     else
-    {
-        if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
-            gBattleAnimArgs[0] = -gBattleAnimArgs[0];
-        sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X) + gBattleAnimArgs[0];
-        sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y) + gBattleAnimArgs[1];
-    }
-    if (IsContest())
-        sprite->y += 9;
-    sprite->data[0] = OBJ_PLTT_ID(IndexOfSpritePaletteTag(gBattleAnimArgs[2]));
-    sprite->callback = AnimDefensiveWall_Step2;
-    sprite->callback(sprite);
-}
-
-// AnimDefensiveWall_Step1 is removed in FRLG from the removal of Contest handling
-
-static void AnimDefensiveWall_Step2(struct Sprite *sprite)
-{
-    SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(sprite->data[3], 16 - sprite->data[3]));
-    if (sprite->data[3] == 13)
-        sprite->callback = AnimDefensiveWall_Step3;
-    else
-        ++sprite->data[3];
-}
-
-static void AnimDefensiveWall_Step3(struct Sprite *sprite)
-{
-    u16 color;
-    u16 startOffset;
-    s32 i;
-
-    if (++sprite->data[1] == 2)
-    {
-        sprite->data[1] = 0;
-        startOffset = sprite->data[0];
-        color = gPlttBufferFaded[startOffset + 8];
-        for (i = 8; i > 0; --i)
-            gPlttBufferFaded[startOffset + i] = gPlttBufferFaded[startOffset + i - 1];
-        gPlttBufferFaded[startOffset + 1] = color;
-        if (++sprite->data[2] == 16)
-            sprite->callback = AnimDefensiveWall_Step4;
-    }
-}
-
-static void AnimDefensiveWall_Step4(struct Sprite *sprite)
-{
-    SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(sprite->data[3], 16 - sprite->data[3]));
-    if (--sprite->data[3] == -1)
-    {
-        if (!IsContest())
-        {
-            u8 battlerCopy;
-            u8 battler = battlerCopy = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
-
-            if (IsBattlerSpriteVisible(battler))
-                gSprites[gBattlerSpriteIds[battler]].invisible = FALSE;
-            battler = BATTLE_PARTNER(battlerCopy);
-            if (IsBattlerSpriteVisible(battler))
-                gSprites[gBattlerSpriteIds[battler]].invisible = FALSE;
-        }
-        sprite->invisible = TRUE;
-        sprite->callback = AnimDefensiveWall_Step5;
-    }
-}
-
-static void AnimDefensiveWall_Step5(struct Sprite *sprite)
-{
-    if (!IsContest())
-    {
-        u8 battlerCopy;
-        u8 battler = battlerCopy = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
-        u8 rank = GetBattlerSpriteBGPriorityRank(battler);
-        s32 var0 = 1;
-        bool8 toBG2 = (rank ^ var0) != 0;
-
-        if (IsBattlerSpriteVisible(battler))
-            ResetBattleAnimBg(toBG2);
-        battler = battlerCopy ^ 2;
-        if (IsBattlerSpriteVisible(battler))
-            ResetBattleAnimBg(toBG2 ^ var0);
-    }
-    sprite->callback = DestroyAnimSprite;
+        InitSpritePosToAnimTarget(sprite, FALSE);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        StartSpriteAnim(sprite, 1);
+    sprite->callback = RunStoredCallbackWhenAnimEnds;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
 }
 
 // Animates the sparkle that appears during Reflect or Light Screen/Mirror Coat
