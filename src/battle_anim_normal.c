@@ -9,6 +9,7 @@ static void AnimConfusionDuck(struct Sprite *sprite);
 static void AnimSimplePaletteBlend(struct Sprite *sprite);
 static void AnimComplexPaletteBlend(struct Sprite *sprite);
 static void AnimCirclingSparkle(struct Sprite *sprite);
+static void AnimOrbSpiralInward(struct Sprite *sprite);
 static void AnimShakeMonOrBattleTerrain(struct Sprite *sprite);
 static void AnimHitSplatBasic(struct Sprite *sprite);
 static void AnimHitSplatHandleInvert(struct Sprite *sprite);
@@ -117,6 +118,28 @@ static const struct SpriteTemplate sCirclingSparkleSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimCirclingSparkle,
+};
+
+static const union AnimCmd sAnim_OrbSpiralSpread[] =
+{
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd *const sAnims_OrbSpiralSpread[] =
+{
+    sAnim_OrbSpiralSpread,
+};
+
+const struct SpriteTemplate gOrbSpiralInwardSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sAnims_OrbSpiralSpread,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimOrbSpiralInward,
 };
 
 const struct SpriteTemplate gShakeMonOrTerrainSpriteTemplate =
@@ -403,6 +426,18 @@ static void AnimCirclingSparkle(struct Sprite *sprite)
     sprite->data[4] = 112;
     sprite->data[5] = 0;
     StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
+    sprite->callback = TranslateSpriteInGrowingCircle;
+    sprite->callback(sprite);
+}
+
+static void AnimOrbSpiralInward(struct Sprite *sprite)
+{
+    sprite->data[0] = gBattleAnimArgs[0];
+    sprite->data[1] = 64; //How far out the orbs start?
+    sprite->data[2] = 16;
+    sprite->data[3] = 32;
+    sprite->data[4] = 0xFE00;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
     sprite->callback = TranslateSpriteInGrowingCircle;
     sprite->callback(sprite);
 }

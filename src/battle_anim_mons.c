@@ -438,10 +438,10 @@ void TranslateSpriteInGrowingCircle(struct Sprite *sprite)
         sprite->y2 = Cos(sprite->sCirclePos, (sprite->sAmplitudeChange >> 8) + sprite->sAmplitude);
         sprite->sCirclePos += sprite->sCircleSpeed;
         sprite->sAmplitudeChange += sprite->sAmplitudeSpeed;
-        if (sprite->sCirclePos >= 0x100)
-            sprite->sCirclePos -= 0x100;
+        if (sprite->sCirclePos >= 256)
+            sprite->sCirclePos -= 256;
         else if (sprite->sCirclePos < 0)
-            sprite->sCirclePos += 0x100;
+            sprite->sCirclePos += 256;
         sprite->sDuration--;
     }
     else
