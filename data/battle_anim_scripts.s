@@ -7177,24 +7177,30 @@ Move_POISON_GAS:
 	end
 
 Move_BIND:
-	createvisualtask AnimTask_SwayMon, 5, 0, 6, 3328, 4, ANIM_ATTACKER
-	goto BindWrap
-
-BindWrap:
-	playsewithpan SE_M_BIND, SOUND_PAN_TARGET
-	call BindWrapSqueezeTarget
-	call BindWrapSqueezeTarget
+	loadspritegfx ANIM_TAG_TENDRILS
+	monbg ANIM_TARGET
+	setalpha 12, 8
+	createsprite gBindTendrilsSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0
+	delay 15
+	createsprite gBindTendrilsSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0
 	waitforvisualfinish
+	clearmonbg ANIM_TARGET
+	blendoff
 	end
 
-BindWrapSqueezeTarget:
-	createvisualtask AnimTask_ScaleMonAndRestore, 5, 10, -5, 5, ANIM_TARGET, 0
-	delay 16
-	return
-
 Move_WRAP:
-	createvisualtask AnimTask_TranslateMonEllipticalRespectSide, 2, ANIM_ATTACKER, 6, 4, 2, 4
-	goto BindWrap
+	loadspritegfx ANIM_TAG_TENDRILS
+	monbg ANIM_TARGET
+	setalpha 12, 8
+	createsprite gBindTendrilsSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0
+	delay 15
+	createsprite gBindTendrilsSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0
+	delay 15
+	createsprite gBindTendrilsSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0
+	waitforvisualfinish
+	clearmonbg ANIM_TARGET
+	blendoff
+	end
 
 Move_PSYBEAM:
 	loadspritegfx ANIM_TAG_GOLD_RING
@@ -7680,19 +7686,16 @@ Move_MIMIC:
 
 Move_CONSTRICT:
 	loadspritegfx ANIM_TAG_TENDRILS
-	loopsewithpan SE_M_SCRATCH, SOUND_PAN_TARGET, 6, 4
-	createsprite gConstrictBindingSpriteTemplate, ANIM_TARGET, 4, 0, 16, 0, 2
-	delay 7
-	createsprite gConstrictBindingSpriteTemplate, ANIM_TARGET, 3, 0, 0, 0, 2
-	createsprite gConstrictBindingSpriteTemplate, ANIM_TARGET, 2, 0, 8, 1, 2
-	delay 7
-	createsprite gConstrictBindingSpriteTemplate, ANIM_TARGET, 3, 0, -8, 1, 2
-	delay 8
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 3, 0, 6, 1
-	delay 20
-	playsewithpan SE_M_BIND, SOUND_PAN_TARGET
-	setarg 7, 0xFFFF
+	monbg ANIM_TARGET
+	setalpha 12, 8
+	createsprite gBindTendrilsSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0
+	delay 15
+	createsprite gBindTendrilsSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0
+	delay 15
+	createsprite gBindTendrilsSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0
 	waitforvisualfinish
+	clearmonbg ANIM_TARGET
+	blendoff
 	end
 
 Move_CURSE:
