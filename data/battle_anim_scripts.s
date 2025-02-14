@@ -2218,19 +2218,25 @@ Move_THIEF:
 
 Move_BUBBLE_BEAM:
 	loadspritegfx ANIM_TAG_BUBBLE
-	loadspritegfx ANIM_TAG_SMALL_BUBBLES
-	monbg ANIM_TARGET
-	splitbgprio ANIM_TARGET
-	setalpha 12, 8
-	delay 1
-	call BulbblebeamCreateBubbles
-	createvisualtask AnimTask_SwayMon, 5, 0, 3, 3072, 8, ANIM_TARGET
-	call BulbblebeamCreateBubbles
-	call BulbblebeamCreateBubbles
+	@                                  Priority, Starting X, Starting Y, Ending X Offset, Ending Y Offset, ?, ?, ?
+	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
+	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 16, -16, -10, -16, 15, 128, 75
+	delay 5
+	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
+	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 16, -16, 14, -4, 15, 128, 75
+	delay 5
+	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
+	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 16, -16, -16, 16, 15, 128, 75
+	delay 5
+	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
+	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 16, -16, 10, 16, 15, 128, 75
+	delay 5
+	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
+	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 16, -16, -14, 4, 15, 128, 75
+	delay 5
+	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
+	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 16, -16, 16, -16, 15, 128, 75
 	waitforvisualfinish
-	call WaterBubblesEffectShort
-	waitforvisualfinish
-	clearmonbg ANIM_TARGET
 	blendoff
 	end
 
