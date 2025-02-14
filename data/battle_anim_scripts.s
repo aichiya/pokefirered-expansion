@@ -2366,56 +2366,26 @@ Move_SMOKESCREEN:
 	end
 
 Move_CONVERSION:
-	loadspritegfx ANIM_TAG_CONVERSION
-	monbg ANIM_ATK_PARTNER
-	splitbgprio ANIM_ATTACKER
-	setalpha 16, 0
-	delay 0
+	loadspritegfx ANIM_TAG_ORBS
+	monbg ANIM_DEF_PARTNER
+	splitbgprio_foes ANIM_TARGET
+	setalpha 12, 8
 	playsewithpan SE_M_SWIFT, SOUND_PAN_ATTACKER
-	createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, -24, -24
-	delay 3
-	createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, -8, -24
-	delay 3
-	createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, 8, -24
-	delay 3
-	createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, 24, -24
-	delay 3
-	playsewithpan SE_M_SWIFT, SOUND_PAN_ATTACKER
-	createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, -24, -8
-	delay 3
-	createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, -8, -8
-	delay 3
-	createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, 8, -8
-	delay 3
-	createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, 24, -8
-	delay 3
-	playsewithpan SE_M_SWIFT, SOUND_PAN_ATTACKER
-	createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, -24, 8
-	delay 3
-	createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, -8, 8
-	delay 3
-	createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, 8, 8
-	delay 3
-	createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, 24, 8
-	delay 3
-	playsewithpan SE_M_SWIFT, SOUND_PAN_ATTACKER
-	createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, -24, 24
-	delay 3
-	createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, -8, 24
-	delay 3
-	createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, 8, 24
-	delay 3
-	createsprite gConversionSpriteTemplate, ANIM_ATTACKER, 2, 24, 24
-	delay 20
-	playsewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER
-	createvisualtask AnimTask_FlashAnimTagWithColor, 2, ANIM_TAG_CONVERSION, 1, 1, RGB(31, 31, 13), 12, 0, 0
-	delay 6
-	createvisualtask AnimTask_ConversionAlphaBlend, 5
+	call ConversionEffect
 	waitforvisualfinish
-	delay 1
-	clearmonbg ANIM_ATK_PARTNER
+	clearmonbg ANIM_DEF_PARTNER
 	blendoff
 	end
+
+ConversionEffect:
+	createsprite gConversionSquareCombineSpriteTemplate, ANIM_TARGET, 2, -24, -24, 24
+	createsprite gConversionSquareCombineSpriteTemplate, ANIM_TARGET, 2, 24, -24, 24
+	createsprite gConversionSquareCombineSpriteTemplate, ANIM_TARGET, 2, -24, 24, 24
+	createsprite gConversionSquareCombineSpriteTemplate, ANIM_TARGET, 2, 24, 24, 24
+	@delay 22
+	playsewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER
+	@createsprite gConversionSquareProjectileSpriteTemplate, ANIM_TARGET, 2, 0, 5, 76, 76
+	return
 
 Move_CONVERSION_2:
 	loadspritegfx ANIM_TAG_CONVERSION
