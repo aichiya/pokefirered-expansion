@@ -7695,9 +7695,9 @@ Move_CONSTRICT:
 	monbg ANIM_TARGET
 	setalpha 12, 8
 	createsprite gBindTendrilsSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0
-	delay 15
+	delay 20
 	createsprite gBindTendrilsSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0
-	delay 15
+	delay 20
 	createsprite gBindTendrilsSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0
 	waitforvisualfinish
 	clearmonbg ANIM_TARGET
