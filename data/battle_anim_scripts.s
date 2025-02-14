@@ -5172,37 +5172,15 @@ Move_BARRIER:
 
 Move_BUBBLE:
 	loadspritegfx ANIM_TAG_BUBBLE
-	loadspritegfx ANIM_TAG_SMALL_BUBBLES
-	monbg ANIM_TARGET
-	setalpha 12, 8
-	delay 1
-	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 15, -15, 10, 128, 100
+	@                                  Priority, Starting X, Starting Y, Ending X Offset, Ending Y Offset, ?, ?, ?
 	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
-	waitplaysewithpan SE_M_BUBBLE2, SOUND_PAN_TARGET, 100
-	delay 6
-	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 35, 37, 40, 128, 100
-	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
-	waitplaysewithpan SE_M_BUBBLE2, SOUND_PAN_TARGET, 100
-	delay 6
-	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 10, -37, 30, 128, 100
-	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
-	waitplaysewithpan SE_M_BUBBLE2, SOUND_PAN_TARGET, 100
-	delay 6
-	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 30, 10, 15, 128, 100
-	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
-	waitplaysewithpan SE_M_BUBBLE2, SOUND_PAN_TARGET, 100
-	delay 6
-	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 20, 33, 20, 128, 100
-	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
-	waitplaysewithpan SE_M_BUBBLE2, SOUND_PAN_TARGET, 100
-	delay 6
-	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 25, -30, 10, 128, 100
-	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
-	waitplaysewithpan SE_M_BUBBLE2, SOUND_PAN_TARGET, 100
+	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 16, -16, -10, -16, 15, 128, 100
+	delay 5
+	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 16, -16, 14, -4, 15, 128, 100
+	delay 5
+	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 16, -16, -16, 16, 15, 128, 100
+	delay 5
 	waitforvisualfinish
-	call WaterBubblesEffectLong
-	waitforvisualfinish
-	clearmonbg ANIM_TARGET
 	blendoff
 	end
 

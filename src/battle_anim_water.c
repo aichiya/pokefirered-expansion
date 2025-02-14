@@ -98,8 +98,6 @@ static const union AffineAnimCmd *const sAffineAnims_WaterBubbleProjectile[] =
 static const union AnimCmd sAnim_WaterBubbleProjectile[] =
 {
     ANIMCMD_FRAME(0, 1),
-    ANIMCMD_FRAME(4, 5),
-    ANIMCMD_FRAME(8, 5),
     ANIMCMD_END,
 };
 
@@ -112,10 +110,10 @@ const struct SpriteTemplate gWaterBubbleProjectileSpriteTemplate =
 {
     .tileTag = ANIM_TAG_BUBBLE,
     .paletteTag = ANIM_TAG_BUBBLE,
-    .oam = &gOamData_AffineNormal_ObjBlend_16x16,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
     .anims = sAnims_WaterBubbleProjectile,
     .images = NULL,
-    .affineAnims = sAffineAnims_WaterBubbleProjectile,
+    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimWaterBubbleProjectile,
 };
 
