@@ -183,21 +183,18 @@ static const union AffineAnimCmd sAffineAnim_HitSplat_0[] =
 
 static const union AffineAnimCmd sAffineAnim_HitSplat_1[] =
 {
-    AFFINEANIMCMD_FRAME(0xD8, 0xD8, 0, 0),
     AFFINEANIMCMD_FRAME(0x0, 0x0, 0, 8),
     AFFINEANIMCMD_END,
 };
 
 static const union AffineAnimCmd sAffineAnim_HitSplat_2[] =
 {
-    AFFINEANIMCMD_FRAME(0xB0, 0xB0, 0, 0),
     AFFINEANIMCMD_FRAME(0x0, 0x0, 0, 8),
     AFFINEANIMCMD_END,
 };
 
 static const union AffineAnimCmd sAffineAnim_HitSplat_3[] =
 {
-    AFFINEANIMCMD_FRAME(0x80, 0x80, 0, 0),
     AFFINEANIMCMD_FRAME(0x0, 0x0, 0, 8),
     AFFINEANIMCMD_END,
 };
@@ -214,7 +211,7 @@ const struct SpriteTemplate gBasicHitSplatSpriteTemplate =
 {
     .tileTag = ANIM_TAG_IMPACT,
     .paletteTag = ANIM_TAG_IMPACT,
-    .oam = &gOamData_AffineNormal_ObjBlend_32x32,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
     .anims = gDummySpriteAnimTable,
     .images = NULL,
     .affineAnims = sAffineAnims_HitSplat,
