@@ -2109,23 +2109,35 @@ Move_WHIRLWIND:
 	end
 
 Move_CONFUSE_RAY:
-	loadspritegfx ANIM_TAG_YELLOW_BALL
-	monbg ANIM_DEF_PARTNER
-	fadetobg BG_GHOST
-	waitbgfadein
-	createvisualtask SoundTask_AdjustPanningVar, 2, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 2, 0
-	createvisualtask AnimTask_BlendColorCycleByTag, 2, ANIM_TAG_YELLOW_BALL, 0, 6, 0, 14, RGB(31, 10, 0)
-	createsprite gConfuseRayBallBounceSpriteTemplate, ANIM_TARGET, 2, 28, 0, 288
-	waitforvisualfinish
-	setalpha 8, 8
+	loadspritegfx ANIM_TAG_IMPACT
+	monbg ANIM_ATTACKER
+	setalpha 12, 8
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
 	playsewithpan SE_M_STRING_SHOT2, SOUND_PAN_TARGET
-	createsprite gConfuseRayBallSpiralSpriteTemplate, ANIM_TARGET, 2, 0, -16
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 16, -16, ANIM_ATTACKER, 1
+	delay 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 16, -16, ANIM_ATTACKER, 1
+	delay 5
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 36, -24, ANIM_ATTACKER, 1
+	delay 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 36, -24, ANIM_ATTACKER, 1
+	delay 5
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 66, -40, ANIM_ATTACKER, 1
+	delay 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 66, -40, ANIM_ATTACKER, 1
+	delay 5
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 88, -56, ANIM_ATTACKER, 1
+	delay 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 88, -56, ANIM_ATTACKER, 1
+	delay 5
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 118, -64, ANIM_ATTACKER, 1
+	delay 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 118, -64, ANIM_ATTACKER, 1
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	delay 50
 	waitforvisualfinish
-	delay 0
-	blendoff
-	clearmonbg ANIM_DEF_PARTNER
 	restorebg
-	waitbgfadein
+	clearmonbg ANIM_ATTACKER
 	end
 
 Move_LOCK_ON:
