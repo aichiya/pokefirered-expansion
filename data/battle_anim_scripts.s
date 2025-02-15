@@ -1708,16 +1708,22 @@ Explosion1:
 	return
 
 Move_DEFENSE_CURL:
-	loadspritegfx ANIM_TAG_ECLIPSING_ORB
-	loopsewithpan SE_M_TRI_ATTACK, SOUND_PAN_ATTACKER, 18, 3
-	createvisualtask AnimTask_SetGrayscaleOrOriginalPal, 5, ANIM_ATTACKER, 0
-	createvisualtask AnimTask_DefenseCurlDeformMon, 5
-	waitforvisualfinish
-	createsprite gEclipsingOrbSpriteTemplate, ANIM_ATTACKER, 2, 0, 6, 0, 1
-	waitforvisualfinish
-	createvisualtask AnimTask_SetGrayscaleOrOriginalPal, 5, ANIM_ATTACKER, 1
+	loadspritegfx ANIM_TAG_RED_BALL
+	call DefenseCurlOrbEffect
 	waitforvisualfinish
 	end
+
+DefenseCurlOrbEffect:
+	loopsewithpan SE_M_TRI_ATTACK, SOUND_PAN_ATTACKER, 18, 3
+	createsprite gDefenseCurlCombine1SpriteTemplate, ANIM_TARGET, 2, -32, -32, 24
+	createsprite gDefenseCurlCombine2SpriteTemplate, ANIM_TARGET, 2, 0, -32, 24
+	createsprite gDefenseCurlCombine3SpriteTemplate, ANIM_TARGET, 2, 32, -32, 24
+	createsprite gDefenseCurlCombine4SpriteTemplate, ANIM_TARGET, 2, -32, 0, 24
+	createsprite gDefenseCurlCombine5SpriteTemplate, ANIM_TARGET, 2, 32, 0, 24
+	createsprite gDefenseCurlCombine6SpriteTemplate, ANIM_TARGET, 2, -32, 32, 24
+	createsprite gDefenseCurlCombine7SpriteTemplate, ANIM_TARGET, 2, 0, 32, 24
+	createsprite gDefenseCurlCombine8SpriteTemplate, ANIM_TARGET, 2, 32, 32, 24
+	return
 
 Move_PROTECT:
 	loadspritegfx ANIM_TAG_PROTECT

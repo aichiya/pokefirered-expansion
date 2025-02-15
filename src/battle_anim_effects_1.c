@@ -376,6 +376,182 @@ const struct SpriteTemplate gAbsorptionOrbCombineSpriteTemplate =
     .callback = AnimAbsorptionOrbCombine,
 };
 
+static const union AnimCmd sAnim_DefenseCurl1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sDefenseCurlCombine1[] =
+{
+    sAnim_DefenseCurl1,
+};
+
+static const union AnimCmd sAnim_DefenseCurl2[] =
+{
+    ANIMCMD_FRAME(1, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sDefenseCurlCombine2[] =
+{
+    sAnim_DefenseCurl2,
+};
+
+static const union AnimCmd sAnim_DefenseCurl3[] =
+{
+    ANIMCMD_FRAME(0, 1, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sDefenseCurlCombine3[] =
+{
+    sAnim_DefenseCurl3,
+};
+
+static const union AnimCmd sAnim_DefenseCurl4[] =
+{
+    ANIMCMD_FRAME(4, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sDefenseCurlCombine4[] =
+{
+    sAnim_DefenseCurl4,
+};
+
+static const union AnimCmd sAnim_DefenseCurl5[] =
+{
+    ANIMCMD_FRAME(4, 1, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sDefenseCurlCombine5[] =
+{
+    sAnim_DefenseCurl5,
+};
+
+static const union AnimCmd sAnim_DefenseCurl6[] =
+{
+    ANIMCMD_FRAME(0, 1, .vFlip = TRUE),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sDefenseCurlCombine6[] =
+{
+    sAnim_DefenseCurl6,
+};
+
+static const union AnimCmd sAnim_DefenseCurl7[] =
+{
+    ANIMCMD_FRAME(1, 1, .vFlip = TRUE),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sDefenseCurlCombine7[] =
+{
+    sAnim_DefenseCurl7,
+};
+
+static const union AnimCmd sAnim_DefenseCurl8[] =
+{
+    ANIMCMD_FRAME(0, 1, .vFlip = TRUE, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sDefenseCurlCombine8[] =
+{
+    sAnim_DefenseCurl8,
+};
+
+const struct SpriteTemplate gDefenseCurlCombine1SpriteTemplate =
+{
+    .tileTag = ANIM_TAG_RED_BALL,
+    .paletteTag = ANIM_TAG_RED_BALL,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sDefenseCurlCombine1,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimAbsorptionOrbCombine,
+};
+
+const struct SpriteTemplate gDefenseCurlCombine2SpriteTemplate =
+{
+    .tileTag = ANIM_TAG_RED_BALL,
+    .paletteTag = ANIM_TAG_RED_BALL,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sDefenseCurlCombine2,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimAbsorptionOrbCombine,
+};
+
+const struct SpriteTemplate gDefenseCurlCombine3SpriteTemplate =
+{
+    .tileTag = ANIM_TAG_RED_BALL,
+    .paletteTag = ANIM_TAG_RED_BALL,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sDefenseCurlCombine3,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimAbsorptionOrbCombine,
+};
+
+const struct SpriteTemplate gDefenseCurlCombine4SpriteTemplate =
+{
+    .tileTag = ANIM_TAG_RED_BALL,
+    .paletteTag = ANIM_TAG_RED_BALL,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sDefenseCurlCombine4,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimAbsorptionOrbCombine,
+};
+
+const struct SpriteTemplate gDefenseCurlCombine5SpriteTemplate =
+{
+    .tileTag = ANIM_TAG_RED_BALL,
+    .paletteTag = ANIM_TAG_RED_BALL,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sDefenseCurlCombine5,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimAbsorptionOrbCombine,
+};
+
+const struct SpriteTemplate gDefenseCurlCombine6SpriteTemplate =
+{
+    .tileTag = ANIM_TAG_RED_BALL,
+    .paletteTag = ANIM_TAG_RED_BALL,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sDefenseCurlCombine6,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimAbsorptionOrbCombine,
+};
+
+const struct SpriteTemplate gDefenseCurlCombine7SpriteTemplate =
+{
+    .tileTag = ANIM_TAG_RED_BALL,
+    .paletteTag = ANIM_TAG_RED_BALL,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sDefenseCurlCombine7,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimAbsorptionOrbCombine,
+};
+
+const struct SpriteTemplate gDefenseCurlCombine8SpriteTemplate =
+{
+    .tileTag = ANIM_TAG_RED_BALL,
+    .paletteTag = ANIM_TAG_RED_BALL,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sDefenseCurlCombine8,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimAbsorptionOrbCombine,
+};
+
 const struct SpriteTemplate gAbsorptionOrbProjectileSpriteTemplate =
 {
     .tileTag = ANIM_TAG_ORBS,
