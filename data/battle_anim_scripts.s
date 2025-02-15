@@ -2708,44 +2708,30 @@ FissureDirtPlumeClose:
 
 Move_DIG:
 	choosetwoturnanim DigSetUp, DigUnleash
+
 DigEnd:
 	end
 
 DigSetUp:
-	loadspritegfx ANIM_TAG_MUD_SAND
-	loadspritegfx ANIM_TAG_DIRT_MOUND
-	createsprite gDirtMoundSpriteTemplate, ANIM_ATTACKER, 1, 0, 0, 180
-	createsprite gDirtMoundSpriteTemplate, ANIM_ATTACKER, 1, 0, 1, 180
-	monbg_static ANIM_ATTACKER
-	delay 1
-	createvisualtask AnimTask_DigDownMovement, 2, FALSE
-	delay 6
-	call DigThrowDirt
-	call DigThrowDirt
-	call DigThrowDirt
-	call DigThrowDirt
-	call DigThrowDirt
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 0, 20
 	waitforvisualfinish
-	clearmonbg_static ANIM_ATTACKER
-	delay 1
-	createvisualtask AnimTask_DigDownMovement, 2, TRUE
 	goto DigEnd
 
 DigUnleash:
 	loadspritegfx ANIM_TAG_IMPACT
-	loadspritegfx ANIM_TAG_DIRT_MOUND
-	createvisualtask AnimTask_DigUpMovement, 2, FALSE
+	monbg ANIM_TARGET
+	setalpha 12, 8
+	loopsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER, 9, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 8, ANIM_TARGET, 2
+	delay 10
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 2
+	delay 10
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 8, -8, ANIM_TARGET, 2
+	delay 10
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0, 0, 20
 	waitforvisualfinish
-	monbg ANIM_ATTACKER
-	createsprite gDirtMoundSpriteTemplate, ANIM_ATTACKER, 1, 0, 0, 48
-	createsprite gDirtMoundSpriteTemplate, ANIM_ATTACKER, 1, 0, 1, 48
-	delay 1
-	createvisualtask AnimTask_DigUpMovement, 2, TRUE
-	delay 16
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 0, ANIM_TARGET, 2
-	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 5, 0, 6, 1
-	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_ATTACKER
-	clearmonbg ANIM_ATTACKER
+	clearmonbg ANIM_TARGET
 	goto DigEnd
 
 DigThrowDirt:
