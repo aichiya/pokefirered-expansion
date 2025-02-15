@@ -7548,18 +7548,13 @@ RazorWindUnleash:
 	goto RazorWindEnd
 
 Move_DISABLE:
-	loadspritegfx ANIM_TAG_SPARKLE_4
-	monbg ANIM_TARGET
 	splitbgprio ANIM_TARGET
-	setalpha 8, 8
 	playsewithpan SE_M_DETECT, SOUND_PAN_ATTACKER
-	createsprite gSpinningSparkleSpriteTemplate, ANIM_ATTACKER, 13, 24, -16
-	waitforvisualfinish
-	createvisualtask AnimTask_GrowAndGrayscale, 5
-	loopsewithpan SE_M_BIND, SOUND_PAN_TARGET, 15, 4
-	waitforvisualfinish
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
 	delay 1
-	clearmonbg ANIM_TARGET
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	restorebg
+	waitforvisualfinish
 	blendoff
 	end
 
