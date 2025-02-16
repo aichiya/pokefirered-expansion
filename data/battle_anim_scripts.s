@@ -7367,27 +7367,14 @@ Move_NIGHT_SHADE:
 	end
 
 Move_EGG_BOMB:
+	loadspritegfx ANIM_TAG_BLACK_BALL_2
 	loadspritegfx ANIM_TAG_EXPLOSION
-	loadspritegfx ANIM_TAG_LARGE_FRESH_EGG
 	playsewithpan SE_M_TAIL_WHIP, SOUND_PAN_ATTACKER
-	createsprite gEggThrowSpriteTemplate, ANIM_TARGET, 2, 10, 0, 0, 0, 25, -32
+	createsprite gBarrageBallSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 0, 35, -25
 	waitforvisualfinish
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 16, 1
-	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 6, 5, 1, 0
+	delay 10
 	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
-	delay 3
-	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -16, -15, 1, 0
-	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
-	delay 3
-	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 16, -5, 1, 0
-	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
-	delay 3
-	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, -12, 18, 1, 0
-	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
-	delay 3
-	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 0, 5, 1, 0
-	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
-	delay 3
+	createsprite gExplosionSpriteTemplate, ANIM_TARGET, 4, 0, 0, 1, 0
 	waitforvisualfinish
 	end
 

@@ -633,7 +633,6 @@ static const union AnimCmd sExplosionAnimCmds[] =
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(16, 5),
     ANIMCMD_FRAME(32, 5),
-    ANIMCMD_FRAME(48, 5),
     ANIMCMD_END,
 };
 
