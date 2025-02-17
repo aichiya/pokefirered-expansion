@@ -1429,12 +1429,9 @@ DizzyPunchLunge:
 	return
 
 Move_FIRE_SPIN:
-	loadspritegfx ANIM_TAG_SMALL_EMBER
+	loadspritegfx ANIM_TAG_FIRE
 	playsewithpan SE_M_SACRED_FIRE2, SOUND_PAN_TARGET
-	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 2, 47, 1
-	call FireSpinEffect
-	call FireSpinEffect
-	call FireSpinEffect
+	call FlamethrowerHit
 	waitforvisualfinish
 	end
 
@@ -5336,10 +5333,10 @@ Move_DRAGON_RAGE:
 
 FlamethrowerHit:
 	createsprite gSlidingFlameSpriteTemplate, ANIM_TARGET, 2, -32, 16, 48, 30, 160, 0
-	delay 8
+	delay 16
 	createsprite gSlidingFlameSpriteTemplate, ANIM_TARGET, 2, -32, 16, 48, 30, 160, 0
 	createsprite gSlidingFlameSpriteTemplate, ANIM_TARGET, 2, -32, 0, 48, 30, 160, 0
-	delay 8
+	delay 16
 	createsprite gSlidingFlameSpriteTemplate, ANIM_TARGET, 2, -32, 16, 48, 30, 160, 0
 	createsprite gSlidingFlameSpriteTemplate, ANIM_TARGET, 2, -32, 0, 48, 30, 160, 0
 	createsprite gSlidingFlameSpriteTemplate, ANIM_TARGET, 2, -32, -16, 48, 30, 160, 0
