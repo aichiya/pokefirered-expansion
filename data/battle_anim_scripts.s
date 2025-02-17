@@ -861,36 +861,19 @@ Move_TWINEEDLE:
 	end
 
 Move_FIRE_BLAST:
-	loadspritegfx ANIM_TAG_SMALL_EMBER
-	createsoundtask SoundTask_FireBlast, SE_M_FLAME_WHEEL, SE_M_FLAME_WHEEL2
-	call FireBlastRing
-	call FireBlastRing
-	call FireBlastRing
-	delay 24
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 3, 0, 8, RGB_BLACK
+	loadspritegfx ANIM_TAG_FIRE
+	playsewithpan SE_M_DRAGON_RAGE, SOUND_PAN_ATTACKER
+	call FlamethrowerSpray
 	waitforvisualfinish
-	delay 19
-	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 5, 0, 20, 1
 	call FireBlastCross
-	delay 3
+	delay 16
 	call FireBlastCross
-	delay 3
-	call FireBlastCross
-	delay 3
-	call FireBlastCross
-	delay 3
-	call FireBlastCross
-	delay 3
-	call FireBlastCross
-	delay 3
-	call FireBlastCross
-	delay 3
-	call FireBlastCross
-	delay 3
-	call FireBlastCross
-	waitforvisualfinish
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 2, 8, 0, RGB_BLACK
-	waitforvisualfinish
+	delay 16
+	createsprite gSlidingFlameSpriteTemplate, ANIM_TARGET, 2, -32, 16, 48, 30, 160, 0
+	delay 16
+	createsprite gSlidingFlameSpriteTemplate, ANIM_TARGET, 2, -32, 16, 48, 30, 160, 0
+	createsprite gSlidingFlameSpriteTemplate, ANIM_TARGET, 2, -32, 0, 48, 30, 160, 0
+	delay 20
 	end
 
 FireBlastRing:
@@ -903,11 +886,18 @@ FireBlastRing:
 	return
 
 FireBlastCross:
-	createsprite gFireBlastCrossSpriteTemplate, ANIM_TARGET, 2, 0, 0, 10, 0, -2
-	createsprite gFireBlastCrossSpriteTemplate, ANIM_TARGET, 2, 0, 0, 13, -2, 0
-	createsprite gFireBlastCrossSpriteTemplate, ANIM_TARGET, 2, 0, 0, 13, 2, 0
-	createsprite gFireBlastCrossSpriteTemplate, ANIM_TARGET, 2, 0, 0, 15, -2, 2
-	createsprite gFireBlastCrossSpriteTemplate, ANIM_TARGET, 2, 0, 0, 15, 2, 2
+	createsoundtask SoundTask_FireBlast, SE_M_FLAME_WHEEL, SE_M_FLAME_WHEEL2
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, 0, -8, ANIM_TARGET, 1, 16
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, -8, -8, ANIM_TARGET, 1, 16
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, -16, -8, ANIM_TARGET, 1, 16
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, 8, -8, ANIM_TARGET, 1, 16
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, 16, -8, ANIM_TARGET, 1, 16
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, 0, 0, ANIM_TARGET, 1, 16
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, 0, -16, ANIM_TARGET, 1, 16
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, -8, 8, ANIM_TARGET, 1, 16
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, -16, 16, ANIM_TARGET, 1, 16
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, 8, 8, ANIM_TARGET, 1, 16
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, 16, 16, ANIM_TARGET, 1, 16
 	return
 
 Move_LEECH_SEED:

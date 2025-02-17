@@ -212,6 +212,7 @@ static const struct SpriteTemplate sUnusedEmberFirePlumeSpriteTemplate =
 
 static const union AnimCmd sAnim_SmallEmber[] =
 {
+    ANIMCMD_FRAME(0, 6),
     ANIMCMD_FRAME(2, 6),
     ANIMCMD_FRAME(3, 6),
     ANIMCMD_JUMP(0),
