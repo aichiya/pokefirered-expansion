@@ -2077,10 +2077,16 @@ Move_ATTRACT:
 	end
 
 Move_GROWTH:
-	call GrowthEffect
+	loadspritegfx ANIM_TAG_ORBS,
+	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200
+	delay 1
+	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200
+	delay 1
+	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200
+	delay 10
 	waitforvisualfinish
-	call GrowthEffect
-	waitforvisualfinish
+	clearmonbg ANIM_TARGET
+	blendoff
 	end
 
 GrowthEffect:
