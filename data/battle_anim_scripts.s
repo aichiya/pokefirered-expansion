@@ -926,18 +926,17 @@ Move_LEECH_SEED:
 	end
 
 Move_EMBER:
-	loadspritegfx ANIM_TAG_SMALL_EMBER
+	loadspritegfx ANIM_TAG_FIRE
 	loopsewithpan SE_M_EMBER, SOUND_PAN_ATTACKER, 5, 2
-	createsprite gEmberSpriteTemplate, ANIM_TARGET, 2, 20, 0, -16, 24, 20, 1
-	delay 4
-	createsprite gEmberSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 24, 20, 1
-	delay 4
-	createsprite gEmberSpriteTemplate, ANIM_TARGET, 2, 20, 0, 16, 24, 20, 1
-	delay 16
+	createsprite gLargeEmberSpriteTemplate, ANIM_TARGET, 3, -16, 16, ANIM_TARGET, 1, 30
 	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_TARGET
-	call EmberFireHit
-	call EmberFireHit
-	call EmberFireHit
+	delay 30
+	createsprite gLargeEmberSpriteTemplate, ANIM_TARGET, 3, 16, 16, ANIM_TARGET, 1, 30
+	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_TARGET
+	delay 30
+	createsprite gLargeEmberSpriteTemplate, ANIM_TARGET, 3, 0, 16, ANIM_TARGET, 1, 30
+	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_TARGET
+	waitforvisualfinish
 	end
 
 EmberFireHit:
