@@ -5060,14 +5060,14 @@ RoarEffect:
 	return
 
 Move_GROWL:
-	loadspritegfx ANIM_TAG_NOISE_LINE
+	loadspritegfx ANIM_TAG_MUSIC_NOTES
 	createvisualtask SoundTask_PlayDoubleCry, 2, ANIM_ATTACKER, DOUBLE_CRY_GROWL
-	call RoarEffect
-	delay 10
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 1, 0, 9, 1
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_DEF_PARTNER, 1, 0, 9, 1
-	waitforvisualfinish
-	createvisualtask SoundTask_WaitForCry, 5
+	createvisualtask AnimTask_StartSinAnimTimer, 5, 100
+	createsprite gMusicNoteSpriteTemplate, ANIM_TARGET, 3, 10, 10, 0, 16
+	delay 4
+	createsprite gMusicNoteSpriteTemplate, ANIM_TARGET, 3, 10, 10, 0, 16
+	delay 4
+	createsprite gMusicNoteSpriteTemplate, ANIM_TARGET, 3, 10, 10, 0, 16
 	waitforvisualfinish
 	end
 

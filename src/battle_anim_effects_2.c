@@ -17,6 +17,9 @@ static void AnimMovingClamp(struct Sprite *);
 static void AnimMovingClamp_Step(struct Sprite *);
 static void AnimMovingClamp_End(struct Sprite *);
 static void AnimTask_Withdraw_Step(u8);
+static void AnimToTargetInSinWave2(struct Sprite *);
+static void AnimToTargetInSinWave2_Step(struct Sprite *);
+static void AnimTask_RunSinAnimTimer2(u8);
 static void AnimSwordsDanceBlade(struct Sprite *);
 static void AnimSwordsDanceBlade_Step(struct Sprite *);
 static void AnimVoidLines(struct Sprite *);
@@ -1174,6 +1177,17 @@ const struct SpriteTemplate gJaggedMusicNoteSpriteTemplate =
     .callback = AnimJaggedMusicNote,
 };
 
+const struct SpriteTemplate gMusicNoteSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_MUSIC_NOTES,
+    .paletteTag = ANIM_TAG_MUSIC_NOTES,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimToTargetInSinWave2,
+};
+
 static const union AffineAnimCmd sPerishSongMusicNoteAffineAnimCmds1[] =
 {
     AFFINEANIMCMD_FRAME(0, 0, 0, 5),
@@ -2111,6 +2125,64 @@ static void AnimTask_Minimize_Step1(u8 taskId)
         DestroyAnimVisualTask(taskId);
         break;
     }
+}
+
+// For animating undulating beam attacks (e.g. Flamethrower, Hydro Pump, Signal Beam)
+static void AnimToTargetInSinWave2(struct Sprite *sprite)
+{
+    u16 retArg;
+
+    InitSpritePosToAnimAttacker(sprite, TRUE);
+    sprite->data[0] = 30;
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = 0xD200 / sprite->data[0];
+    sprite->data[7] = gBattleAnimArgs[3];
+    retArg = gBattleAnimArgs[7];
+    if (gBattleAnimArgs[7] > 127)
+    {
+        sprite->data[6] = (retArg - 127) * 256;
+        sprite->data[7] = -sprite->data[7];
+    }
+    else
+    {
+        sprite->data[6] = retArg * 256;
+    }
+    sprite->callback = AnimToTargetInSinWave2_Step;
+    sprite->callback(sprite);
+}
+
+static void AnimToTargetInSinWave2_Step(struct Sprite *sprite)
+{
+    if (AnimTranslateLinear(sprite))
+        DestroyAnimSprite(sprite);
+    sprite->y2 += Sin(sprite->data[6] >> 8, sprite->data[7]);
+    if ((sprite->data[6] + sprite->data[5]) >> 8 > 127)
+    {
+        sprite->data[6] = 0;
+        sprite->data[7] = -sprite->data[7];
+    }
+    else
+    {
+        sprite->data[6] += sprite->data[5];
+    }
+}
+
+void AnimTask_StartSinAnimTimer2(u8 taskId)
+{
+    gTasks[taskId].data[0] = gBattleAnimArgs[0];
+    gBattleAnimArgs[7] = 0;
+    gTasks[taskId].func = AnimTask_RunSinAnimTimer2;
+}
+
+static void AnimTask_RunSinAnimTimer2(u8 taskId)
+{
+    gBattleAnimArgs[7] = (gBattleAnimArgs[7] + 3) & 0xFF;
+    if (--gTasks[taskId].data[0] == 0)
+        DestroyAnimVisualTask(taskId);
 }
 
 static void CreateMinimizeSprite(struct Task* task, u8 taskId)
