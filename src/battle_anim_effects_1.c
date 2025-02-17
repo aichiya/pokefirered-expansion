@@ -2126,7 +2126,7 @@ const struct SpriteTemplate gHornHitSpriteTemplate =
 {
     .tileTag = ANIM_TAG_HORN_HIT,
     .paletteTag = ANIM_TAG_HORN_HIT,
-    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
     .anims = gDummySpriteAnimTable,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
@@ -5395,103 +5395,36 @@ void AnimTask_MoonlightEndFade_Step(u8 taskId)
     }
 }
 
-static void AnimHornHit(struct Sprite* sprite)
+static void AnimHornHit(struct Sprite *sprite)
 {
-    if (gBattleAnimArgs[2] < 2)
-        gBattleAnimArgs[2] = 2;
-
-    if (gBattleAnimArgs[2] > 0x7F)
-        gBattleAnimArgs[2] = 0x7F;
-
-    sprite->data[0] = 0;
-    sprite->data[1] = gBattleAnimArgs[2];
-    sprite->x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + gBattleAnimArgs[0];
-    sprite->y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + gBattleAnimArgs[1];
-    sprite->data[6] = sprite->x;
-    sprite->data[7] = sprite->y;
-    if (IsContest())
-    {
-        sprite->oam.matrixNum = ST_OAM_HFLIP;
-        sprite->x += 40;
-        sprite->y += 20;
-        sprite->data[2] = sprite->x << 7;
-        sprite->data[3] = -0x1400 / sprite->data[1];
-        sprite->data[4] = sprite->y << 7;
-        sprite->data[5] = -0xA00 / sprite->data[1];
-    }
-    else if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER)
-    {
-        sprite->x -= 40;
-        sprite->y += 20;
-        sprite->data[2] = sprite->x << 7;
-        sprite->data[3] = 0x1400 / sprite->data[1];
-        sprite->data[4] = sprite->y << 7;
-        sprite->data[5] = -0xA00 / sprite->data[1];
-    }
-    else
-    {
-        sprite->x += 40;
-        sprite->y -= 20;
-        sprite->data[2] = sprite->x << 7;
-        sprite->data[3] = -0x1400 / sprite->data[1];
-        sprite->data[4] = sprite->y << 7;
-        sprite->data[5] = 0xA00 / sprite->data[1];
-        sprite->oam.matrixNum = (ST_OAM_HFLIP | ST_OAM_VFLIP);
-    }
-
+    if (BATTLE_PARTNER(gBattleAnimAttacker) == gBattleAnimTarget && GetBattlerPosition(gBattleAnimTarget) < B_POSITION_PLAYER_RIGHT)
+        gBattleAnimArgs[0] *= -1;
+    InitSpritePosToAnimTarget(sprite, TRUE);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = sprite->x + gBattleAnimArgs[2];
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = sprite->y;
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = gBattleAnimArgs[5];
+    sprite->data[6] = gBattleAnimArgs[4];
+    sprite->data[7] = 0;
     sprite->callback = AnimHornHit_Step;
 }
 
-static void AnimHornHit_Step(struct Sprite* sprite)
+static void AnimHornHit_Step(struct Sprite *sprite)
 {
-    sprite->data[2] += sprite->data[3];
-    sprite->data[4] += sprite->data[5];
-    sprite->x = sprite->data[2] >> 7;
-    sprite->y = sprite->data[4] >> 7;
-    if (--sprite->data[1] == 1)
+    if (!AnimTranslateLinear(sprite))
     {
-        sprite->x = sprite->data[6];
-        sprite->y = sprite->data[7];
+        sprite->y2 += Sin(sprite->data[7] >> 8, sprite->data[5]);
+        sprite->data[7] += sprite->data[6];
     }
-
-    if (sprite->data[1] == 0)
-        DestroyAnimSprite(sprite);
-}
-
-void AnimTask_DoubleTeam(u8 taskId)
-{
-    u16 i;
-    int obj;
-    u16 r3;
-    u16 r4;
-    struct Task* task = &gTasks[taskId];
-    
-    task->data[0] = GetAnimBattlerSpriteId(ANIM_ATTACKER);
-    task->data[1] = AllocSpritePalette(ANIM_TAG_BENT_SPOON);
-    r3 = OBJ_PLTT_ID(task->data[1]);
-    r4 = OBJ_PLTT_ID2(gSprites[task->data[0]].oam.paletteNum);
-    for (i = 1; i < 16; i++)
-        gPlttBufferUnfaded[r3 + i] = gPlttBufferUnfaded[r4 + i];
-
-    BlendPalette(r3, 16, 11, RGB_BLACK);
-    task->data[3] = 0;
-    i = 0;
-    while (i < 2 && (obj = CloneBattlerSpriteWithBlend(0)) >= 0)
-    {
-        gSprites[obj].oam.paletteNum = task->data[1];
-        gSprites[obj].data[0] = 0;
-        gSprites[obj].data[1] = i << 7;
-        gSprites[obj].data[2] = taskId;
-        gSprites[obj].callback = AnimDoubleTeam;
-        task->data[3]++;
-        i++;
-    }
-
-    task->func = AnimTask_DoubleTeam_Step;
-    if (GetBattlerSpriteBGPriorityRank(gBattleAnimAttacker) == 1)
-        ClearGpuRegBits(REG_OFFSET_DISPCNT, DISPCNT_BG1_ON);
     else
-        ClearGpuRegBits(REG_OFFSET_DISPCNT, DISPCNT_BG2_ON);
+    {
+        DestroyAnimSprite(sprite);
+    }
 }
 
 static void AnimTask_DoubleTeam_Step(u8 taskId)

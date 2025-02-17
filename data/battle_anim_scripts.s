@@ -2489,29 +2489,29 @@ Move_HORN_ATTACK:
 	end
 
 Move_FURY_ATTACK:
-	loadspritegfx ANIM_TAG_IMPACT
 	loadspritegfx ANIM_TAG_HORN_HIT
-	createvisualtask AnimTask_RotateMonSpriteToSide, 2, 4, 256, ANIM_ATTACKER, 2
-	choosetwoturnanim FuryAttackRight, FuryAttackLeft
-
-FuryAttackContinue:
+	createsprite gHornHitSpriteTemplate, ANIM_ATTACKER, 2, -40, -8, 48, 8, 8, 0
+	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
+	delay 5
+	createsprite gHornHitSpriteTemplate, ANIM_ATTACKER, 2, -32, 0, 48, 8, 8, 0
+	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
+	delay 5
+	createsprite gHornHitSpriteTemplate, ANIM_ATTACKER, 2, -56, -16, 48, 8, 8, 0
+	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
+	delay 10
+	createsprite gHornHitSpriteTemplate, ANIM_ATTACKER, 2, -40, -8, 48, 8, 8, 0
+	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
+	delay 5
+	createsprite gHornHitSpriteTemplate, ANIM_ATTACKER, 2, -32, 0, 48, 8, 8, 0
+	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
+	delay 5
+	createsprite gHornHitSpriteTemplate, ANIM_ATTACKER, 2, -56, -16, 48, 8, 8, 0
+	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
+	delay 10
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 5, 0, 6, 1
+	delay 10
 	waitforvisualfinish
 	end
-
-FuryAttackRight:
-	createsprite gHornHitSpriteTemplate, ANIM_TARGET, 4, 8, 8, 10
-	waitforvisualfinish
-	createsprite gFlashingHitSplatSpriteTemplate, ANIM_TARGET, 3, 0, 0, ANIM_TARGET, 1
-	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
-	goto FuryAttackContinue
-
-FuryAttackLeft:
-	createsprite gHornHitSpriteTemplate, ANIM_TARGET, 4, -8, -8, 10
-	waitforvisualfinish
-	createsprite gFlashingHitSplatSpriteTemplate, ANIM_TARGET, 3, 0, 0, ANIM_TARGET, 1
-	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
-	goto FuryAttackContinue
 
 Move_HORN_DRILL:
 	loadspritegfx ANIM_TAG_IMPACT
