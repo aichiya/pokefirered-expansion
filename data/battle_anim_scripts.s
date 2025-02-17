@@ -6322,29 +6322,15 @@ Move_SURF:
 	end
 
 Move_FLAMETHROWER:
-	loadspritegfx ANIM_TAG_SMALL_EMBER
-	monbg ANIM_DEF_PARTNER
-	splitbgprio ANIM_TARGET
-	setalpha 12, 8
-	createvisualtask AnimTask_ShakeMon, 5, ANIM_ATTACKER, 0, 2, 46, 1
-	delay 6
-	createvisualtask AnimTask_StartSinAnimTimer, 5, 100
-	panse SE_M_FLAMETHROWER, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +2, 0
-	call FlamethrowerCreateFlames
-	call FlamethrowerCreateFlames
-	call FlamethrowerCreateFlames
-	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 3, 0, 43, 1
-	call FlamethrowerCreateFlames
-	call FlamethrowerCreateFlames
-	call FlamethrowerCreateFlames
-	call FlamethrowerCreateFlames
-	call FlamethrowerCreateFlames
-	call FlamethrowerCreateFlames
-	call FlamethrowerCreateFlames
-	call FlamethrowerCreateFlames
+	loadspritegfx ANIM_TAG_FIRE
+	playsewithpan SE_M_DRAGON_RAGE, SOUND_PAN_ATTACKER
+	call FlamethrowerSpray
 	waitforvisualfinish
-	clearmonbg ANIM_DEF_PARTNER
-	blendoff
+	createsprite gSlidingFlameSpriteTemplate, ANIM_TARGET, 2, -32, 16, 48, 30, 160, 0
+	delay 16
+	createsprite gSlidingFlameSpriteTemplate, ANIM_TARGET, 2, -32, 16, 48, 30, 160, 0
+	createsprite gSlidingFlameSpriteTemplate, ANIM_TARGET, 2, -32, 0, 48, 30, 160, 0
+	waitforvisualfinish
 	end
 
 FlamethrowerCreateFlames:
