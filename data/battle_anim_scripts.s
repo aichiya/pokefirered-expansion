@@ -2932,21 +2932,16 @@ Move_KINESIS:
 	end
 
 Move_GLARE:
-	loadspritegfx ANIM_TAG_SMALL_RED_EYE
-	loadspritegfx ANIM_TAG_EYE_SPARKLE
-	createvisualtask AnimTask_GlareEyeDots, 5, 0
-	playsewithpan SE_M_PSYBEAM2, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
 	waitforvisualfinish
-	createvisualtask AnimTask_BlendBattleAnimPal, 5, F_PAL_BG, 0, 0, 16, RGB_BLACK
+	delay 4
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
 	waitforvisualfinish
-	createsprite gEyeSparkleSpriteTemplate, ANIM_ATTACKER, 0, -16, -8
-	createsprite gEyeSparkleSpriteTemplate, ANIM_ATTACKER, 0, 16, -8
-	createvisualtask AnimTask_ScaryFace, 5
-	playsewithpan SE_M_LEER, SOUND_PAN_ATTACKER
-	delay 2
-	createvisualtask AnimTask_ShakeTargetInPattern, 3, 20, 1, FALSE
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
 	waitforvisualfinish
-	createvisualtask AnimTask_BlendBattleAnimPal, 5, F_PAL_BG, 0, 16, 0, RGB_BLACK
+	delay 4
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	waitforvisualfinish
 	end
 
 Move_BARRAGE:
