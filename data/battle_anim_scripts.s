@@ -7920,39 +7920,20 @@ Move_SLEEP_TALK:
 	end
 
 Move_HYPER_FANG:
-	loadspritegfx ANIM_TAG_FANG_ATTACK
-	playsewithpan SE_M_BITE, SOUND_PAN_TARGET
-	delay 1
-	delay 2
-	createvisualtask AnimTask_IsContest, 2
-	jumprettrue HyperFangInContest
-	createvisualtask AnimTask_IsTargetPlayerSide, 2
-	jumpretfalse HyperFangOnOpponent
-	goto HyperFangOnPlayer
-
-HyperFangContinue:
-	waitbgfadeout
-	createsprite gFangSpriteTemplate, ANIM_TARGET, 2
-	waitbgfadein
-	createvisualtask AnimTask_ShakeMon, 3, ANIM_TARGET, 0, 10, 10, 1
-	playsewithpan SE_M_LEER, SOUND_PAN_TARGET
-	delay 20
-	restorebg
-	waitbgfadein
+	loadspritegfx ANIM_TAG_IMPACT
+	monbg ANIM_TARGET
+	setalpha 12, 8
+	playsewithpan SE_M_DOUBLE_TEAM, SOUND_PAN_ATTACKER
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 16, 0, ANIM_TARGET, 1
+	delay 4
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -16, 0, ANIM_TARGET, 1
+	delay 4
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -4, 12, ANIM_TARGET, 1
 	waitforvisualfinish
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
+	waitforvisualfinish
+	clearmonbg ANIM_TARGET
 	end
-
-HyperFangOnOpponent:
-	fadetobg BG_IMPACT_OPPONENT
-	goto HyperFangContinue
-
-HyperFangOnPlayer:
-	fadetobg BG_IMPACT_PLAYER
-	goto HyperFangContinue
-
-HyperFangInContest:
-	fadetobg BG_IMPACT_CONTESTS
-	goto HyperFangContinue
 
 Move_TRI_ATTACK:
 	loadspritegfx ANIM_TAG_TRI_ATTACK_TRIANGLE
