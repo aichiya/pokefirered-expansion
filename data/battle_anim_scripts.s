@@ -7106,15 +7106,19 @@ PsybeamRings:
 	return
 
 Move_HYPNOSIS:
-	loadspritegfx ANIM_TAG_GOLD_RING
-	call SetPsychicBackground
-	call HypnosisRings
-	call HypnosisRings
-	call HypnosisRings
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 2, 2, 0, 12, RGB(31, 18, 31)
+	monbg ANIM_ATTACKER
+	setalpha 12, 8
+	playsewithpan SE_M_SUPERSONIC, SOUND_PAN_ATTACKER
+	call BlackFlashEffect
+	delay 8
+	playsewithpan SE_M_SUPERSONIC, SOUND_PAN_ATTACKER
+	call BlackFlashEffect
+	delay 8
+	playsewithpan SE_M_SUPERSONIC, SOUND_PAN_ATTACKER
+	call BlackFlashEffect
+	delay 8
+	clearmonbg ANIM_TARGET
 	waitforvisualfinish
-	delay 1
-	call UnsetPsychicBackground
 	end
 
 HypnosisRings:
