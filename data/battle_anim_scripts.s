@@ -2858,22 +2858,16 @@ Move_AMNESIA:
 	end
 
 Move_KINESIS:
-	loadspritegfx ANIM_TAG_ALERT
-	loadspritegfx ANIM_TAG_BENT_SPOON
-	playsewithpan SE_M_PSYBEAM, SOUND_PAN_ATTACKER
-	call SetPsychicBackground
-	createsprite gBentSpoonSpriteTemplate, ANIM_ATTACKER, 20
-	createsprite gKinesisZapEnergySpriteTemplate, ANIM_ATTACKER, 19, 32, -8, 0
-	createsprite gKinesisZapEnergySpriteTemplate, ANIM_ATTACKER, 19, 32, 16, 1
-	loopsewithpan SE_M_CONFUSE_RAY, SOUND_PAN_ATTACKER, 21, 2
-	delay 60
-	playsewithpan SE_M_DIZZY_PUNCH, SOUND_PAN_ATTACKER
-	delay 30
-	loopsewithpan SE_M_DIZZY_PUNCH, SOUND_PAN_ATTACKER, 20, 2
-	delay 70
-	playsewithpan SE_M_SWAGGER2, SOUND_PAN_ATTACKER
+	loadspritegfx ANIM_TAG_IMPACT
+	monbg ANIM_TARGET
+	setalpha 12, 8
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, -8, ANIM_TARGET, 2
+	playsewithpan SE_M_SUPERSONIC, SOUND_PAN_TARGET
+	delay 10
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 8, 8, ANIM_TARGET, 2
+	playsewithpan SE_M_SUPERSONIC, SOUND_PAN_TARGET
 	waitforvisualfinish
-	call UnsetPsychicBackground
+	clearmonbg ANIM_TARGET
 	end
 
 Move_GLARE:
