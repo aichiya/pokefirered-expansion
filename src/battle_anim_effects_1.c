@@ -251,7 +251,7 @@ static const union AnimCmd sSolarBeamSmallOrbAnimCms[] =
 
 static const union AnimCmd sAnim_AbsorptionOrbCombine[] =
 {
-    ANIMCMD_FRAME(1, 1),
+    ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
