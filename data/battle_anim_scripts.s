@@ -6400,20 +6400,25 @@ BounceUnleash:
 	goto BounceEnd
 
 Move_KARATE_CHOP:
-	loadspritegfx ANIM_TAG_HANDS_AND_FEET
 	loadspritegfx ANIM_TAG_IMPACT
-	monbg ANIM_DEF_PARTNER
-	splitbgprio ANIM_TARGET
+	monbg ANIM_TARGET
 	setalpha 12, 8
-	playsewithpan SE_M_DOUBLE_TEAM, SOUND_PAN_TARGET
-	createsprite gKarateChopSpriteTemplate, ANIM_ATTACKER, 2, -16, 0, 0, 0, 10, 1, 3, 0
+	playsewithpan SE_M_DOUBLE_TEAM, SOUND_PAN_ATTACKER
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 8, -12, ANIM_TARGET, 2
+	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET
+	delay 10
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 8, -4, ANIM_TARGET, 2
+	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET
+	delay 10
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 8, 4, ANIM_TARGET, 2
+	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET
+	delay 10
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 8, 12, ANIM_TARGET, 2
+	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET
+	delay 5
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
 	waitforvisualfinish
-	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, ANIM_TARGET, 2
-	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 4, 0, 6, 1
-	waitforvisualfinish
-	clearmonbg ANIM_DEF_PARTNER
-	blendoff
+	clearmonbg ANIM_TARGET
 	end
 
 Move_CROSS_CHOP:
