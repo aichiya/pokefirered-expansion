@@ -2458,18 +2458,16 @@ Move_ROLLING_KICK:
 
 Move_HEADBUTT:
 	loadspritegfx ANIM_TAG_IMPACT
-	createsprite gBowMonSpriteTemplate, ANIM_ATTACKER, 2, 0
+	monbg ANIM_TARGET
+	setalpha 12, 8
 	playsewithpan SE_M_HEADBUTT, SOUND_PAN_ATTACKER
-	waitforvisualfinish
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 2
 	delay 2
-	createsprite gBowMonSpriteTemplate, ANIM_ATTACKER, 2, 1
-	waitforvisualfinish
-	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_ATTACKER, 2, 0, 4, 1
-	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 5, 0, 6, 1
-	createsprite gBowMonSpriteTemplate, ANIM_ATTACKER, 2, 2
-	createsprite gFlashingHitSplatSpriteTemplate, ANIM_TARGET, 3, 0, 0, ANIM_TARGET, 1
-	playsewithpan SE_M_VITAL_THROW2, SOUND_PAN_TARGET
-	waitforvisualfinish
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	delay 2
+	clearmonbg ANIM_TARGET
+	blendoff
 	end
 
 Move_HORN_ATTACK:
