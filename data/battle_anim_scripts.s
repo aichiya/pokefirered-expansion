@@ -4633,10 +4633,22 @@ Move_SHOCK_WAVE:
 	end
 
 Move_HARDEN:
-	loopsewithpan SE_M_HARDEN, SOUND_PAN_ATTACKER, 28, 2
-	createvisualtask AnimTask_MetallicShine, 5, 0, 0, 0
+	loadspritegfx ANIM_TAG_RED_BALL
+	call HardenSquareEffect
 	waitforvisualfinish
 	end
+
+HardenSquareEffect:
+	loopsewithpan SE_M_HARDEN, SOUND_PAN_ATTACKER, 28, 2
+	createsprite gHardenCombine1SpriteTemplate, ANIM_TARGET, 2, -32, -32, 24
+	createsprite gHardenCombine2SpriteTemplate, ANIM_TARGET, 2, 0, -32, 24
+	createsprite gHardenCombine3SpriteTemplate, ANIM_TARGET, 2, 32, -32, 24
+	createsprite gHardenCombine4SpriteTemplate, ANIM_TARGET, 2, -32, 0, 24
+	createsprite gHardenCombine5SpriteTemplate, ANIM_TARGET, 2, 32, 0, 24
+	createsprite gHardenCombine6SpriteTemplate, ANIM_TARGET, 2, -32, 32, 24
+	createsprite gHardenCombine7SpriteTemplate, ANIM_TARGET, 2, 0, 32, 24
+	createsprite gHardenCombine8SpriteTemplate, ANIM_TARGET, 2, 32, 32, 24
+	return
 
 Move_BELLY_DRUM:
 	loadspritegfx ANIM_TAG_MUSIC_NOTES
