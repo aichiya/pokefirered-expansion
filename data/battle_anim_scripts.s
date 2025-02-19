@@ -6879,13 +6879,24 @@ MistCloud:
 	return
 
 Move_HAZE:
-	waitforvisualfinish
-	playsewithpan SE_M_HAZE, 0
-	createvisualtask AnimTask_HazeScrollingFog, 5
-	delay 30
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BATTLERS_2, 2, 0, 16, RGB_BLACK
-	delay 90
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BATTLERS_2, 1, 16, 0, RGB_BLACK
+	loadspritegfx ANIM_TAG_SPARKLE_6
+	monbg ANIM_DEF_PARTNER
+	splitbgprio_all
+	delay 0
+	createvisualtask AnimTask_BlendBattleAnimPalExclude, 10, ANIM_TARGET, 0, 0, 4, RGB_BLACK
+	createvisualtask AnimTask_GetTargetSide, 2
+	fadetobg BG_HIGHSPEED_PLAYER
+	waitbgfadeout
+	createvisualtask AnimTask_StartSlidingBg, 5, 1600, 0, 0, -1
+	@playsewithpan SE_M_GUST, SOUND_PAN_TARGET
+	delay 100
+	clearmonbg ANIM_DEF_PARTNER
+	delay 0
+	restorebg
+	waitbgfadeout
+	createvisualtask AnimTask_BlendBattleAnimPalExclude, 10, ANIM_TARGET, 0, 4, 0, RGB_BLACK
+	setarg 7, 0xFFFF
+	waitbgfadein
 	end
 
 Move_FIRE_PUNCH:
