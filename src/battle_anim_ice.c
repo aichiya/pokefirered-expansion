@@ -19,6 +19,7 @@ static void AnimUnusedIceCrystalThrow(struct Sprite *sprite);
 static void AnimUnusedIceCrystalThrow_Step(struct Sprite *sprite);
 static void AnimIcePunchSwirlingParticle(struct Sprite *sprite);
 static void AnimIceBeamParticle(struct Sprite *sprite);
+static void AnimSpriteRises(struct Sprite *sprite);
 static void AnimIceEffectParticle(struct Sprite *sprite);
 static void AnimFlickerIceEffectParticle(struct Sprite *sprite);
 static void AnimSwirlingSnowball(struct Sprite *sprite);
@@ -334,6 +335,17 @@ const struct SpriteTemplate gSmogCloudSpriteTemplate =
 static const u8 sHazeBlendAmounts[] =
 {
     0, 1, 2, 2, 2, 2, 3, 4, 4, 4, 5, 6, 6, 6, 6, 7, 8, 8, 8, 9,
+};
+
+const struct SpriteTemplate gIceCrystalSpriteTemplate =    
+{
+    .tileTag = ANIM_TAG_ICE_CRYSTALS,
+    .paletteTag = ANIM_TAG_ICE_CRYSTALS,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteRises,
 };
 
 const struct SpriteTemplate gMistBallSpriteTemplate =
@@ -1104,6 +1116,24 @@ static void AnimTask_MistBallFog_Step(u8 taskId)
         DestroyAnimVisualTask(taskId);
         break;
     }
+}
+
+void AnimSpriteRises(struct Sprite *sprite)
+{
+    bool8 r4;
+    u8 battlerId, coordType;
+
+    if (gBattleAnimArgs[2] != ANIM_ATTACKER)
+        InitSpritePosToAnimTarget(sprite, TRUE);
+    else
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+    sprite->data[0] = gBattleAnimArgs[4];
+    sprite->data[2] = sprite->x;
+    sprite->data[4] = sprite->y - 32;
+    sprite->callback = StartAnimLinearTranslation;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
 }
 
 // Initializes gas clouds in the Poison Gas animation.

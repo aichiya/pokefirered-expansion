@@ -4671,41 +4671,43 @@ MindReaderEyeSpikeEffect:
 	return
 
 Move_ICE_PUNCH:
-	monbg ANIM_DEF_PARTNER
-	setalpha 12, 8
 	loadspritegfx ANIM_TAG_ICE_CRYSTALS
 	loadspritegfx ANIM_TAG_IMPACT
-	loadspritegfx ANIM_TAG_HANDS_AND_FEET
-	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 0, 7, RGB_BLACK
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 2, 0, 9, RGB(12, 26, 31)
-	delay 20
-	playsewithpan SE_M_STRING_SHOT, SOUND_PAN_TARGET
-	createsprite gIceCrystalSpiralInwardSmall, ANIM_ATTACKER, 2, 0
-	createsprite gIceCrystalSpiralInwardSmall, ANIM_ATTACKER, 2, 64
-	createsprite gIceCrystalSpiralInwardSmall, ANIM_ATTACKER, 2, 128
-	createsprite gIceCrystalSpiralInwardSmall, ANIM_ATTACKER, 2, 192
-	delay 5
-	createsprite gIceCrystalSpiralInwardLarge, ANIM_ATTACKER, 2, 32
-	createsprite gIceCrystalSpiralInwardLarge, ANIM_ATTACKER, 2, 96
-	createsprite gIceCrystalSpiralInwardLarge, ANIM_ATTACKER, 2, 160
-	createsprite gIceCrystalSpiralInwardLarge, ANIM_ATTACKER, 2, 224
-	delay 17
-	createsprite gFistFootSpriteTemplate, ANIM_ATTACKER, 4, 0, -10, 8, 1, 0
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 3, 0, -10, ANIM_TARGET, 1
+	monbg ANIM_TARGET
 	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
-	delay 2
-	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 5, 3, 1
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 16, -8, ANIM_TARGET, 2
+	delay 10
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -16, 0, ANIM_TARGET, 2
+	delay 10
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 8, ANIM_TARGET, 2
 	waitforvisualfinish
-	delay 15
-	call IceCrystalEffectShort
-	delay 5
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 2, 9, 0, RGB(12, 26, 31)
-	waitforvisualfinish
-	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 0, 7, 0, RGB_BLACK
-	waitforvisualfinish
-	clearmonbg ANIM_DEF_PARTNER
-	blendoff
+	call IceCrystalWallEffect
+	delay 32
+	clearmonbg ANIM_TARGET
 	end
+
+IceCrystalWallEffect:
+	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, -24, 32, ANIM_TARGET, -32, 128, 0, 0
+	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, 24, 32, ANIM_TARGET, -32, 128, 0, 0
+	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
+	delay 24
+	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, -16, 32, ANIM_TARGET, -32, 128, 0, 0
+	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, 16, 32, ANIM_TARGET, -32, 128, 0, 0
+	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
+	delay 24
+	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, -24, 32, ANIM_TARGET, -32, 128, 0, 0
+	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, 24, 32, ANIM_TARGET, -32, 128, 0, 0
+	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, -8, 32, ANIM_TARGET, -32, 128, 0, 0
+	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, 8, 32, ANIM_TARGET, -32, 128, 0, 0
+	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
+	delay 24
+	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, -16, 32, ANIM_TARGET, -32, 128, 0, 0
+	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, 16, 32, ANIM_TARGET, -32, 128, 0, 0
+	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, 0, 32, ANIM_TARGET, -32, 128, 0, 0
+	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
+	return
 
 Move_REST:
 	playsewithpan SE_M_SNORE, SOUND_PAN_ATTACKER
