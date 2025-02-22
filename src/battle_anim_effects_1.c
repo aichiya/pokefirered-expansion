@@ -802,8 +802,7 @@ static const union AnimCmd sLeechSeedAnimCmds1[] =
 
 static const union AnimCmd sLeechSeedAnimCmds2[] =
 {
-    ANIMCMD_FRAME(4, 7),
-    ANIMCMD_FRAME(8, 7),
+    ANIMCMD_FRAME(4, 8),
     ANIMCMD_JUMP(0),
 };
 
