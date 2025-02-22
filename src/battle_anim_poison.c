@@ -5,6 +5,7 @@
 static void AnimSludgeProjectile(struct Sprite *sprite);
 static void AnimAcidPoisonBubble(struct Sprite *sprite);
 static void AnimSludgeBombHitParticle(struct Sprite *sprite);
+static void AnimSludgeSplat(struct Sprite *sprite);
 static void AnimAcidPoisonDroplet(struct Sprite *sprite);
 static void AnimBubbleEffect(struct Sprite *sprite);
 static void AnimSludgeProjectile_Step(struct Sprite *sprite);
@@ -114,6 +115,28 @@ const struct SpriteTemplate gAcidPoisonBubbleSpriteTemplate =
     .images = NULL,
     .affineAnims = sAffineAnims_PoisonProjectile,
     .callback = AnimAcidPoisonBubble,
+};
+
+static const union AnimCmd sAnim_SludgeSplat[] =
+{
+    ANIMCMD_FRAME(8, 8),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnims_SludgeSplat[] =
+{
+    sAnim_SludgeSplat,
+};
+
+const struct SpriteTemplate gSludgeSplatSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_POISON_BUBBLE,
+    .paletteTag = ANIM_TAG_POISON_BUBBLE,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sAnims_SludgeSplat,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSludgeSplat,
 };
 
 const struct SpriteTemplate gSludgeBombHitParticleSpriteTemplate =
@@ -238,6 +261,18 @@ static void AnimSludgeBombHitParticle(struct Sprite *sprite)
     sprite->data[5] = sprite->data[1] / gBattleAnimArgs[2];
     sprite->data[6] = sprite->data[2] / gBattleAnimArgs[2];
     sprite->callback = AnimSludgeBombHitParticle_Step;
+}
+
+static void AnimSludgeSplat(struct Sprite *sprite)
+{
+    SetAverageBattlerPositions(gBattleAnimTarget, TRUE, &sprite->x, &sprite->y);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        sprite->x -= gBattleAnimArgs[0];
+    else
+        sprite->x += gBattleAnimArgs[0];
+    sprite->y += gBattleAnimArgs[1];
+    sprite->callback = RunStoredCallbackWhenAnimEnds;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
 }
 
 static void AnimSludgeBombHitParticle_Step(struct Sprite *sprite)

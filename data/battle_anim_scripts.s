@@ -7290,12 +7290,18 @@ Move_SHADOW_BALL:
 	end
 
 Move_LICK:
-	loadspritegfx ANIM_TAG_LICK
-	delay 15
-	playsewithpan SE_M_LICK, SOUND_PAN_TARGET
-	createsprite gLickSpriteTemplate, ANIM_TARGET, 2, 0, 0
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 1, 0, 16, 1
+	loadspritegfx ANIM_TAG_POISON_BUBBLE
+	monbg ANIM_TARGET
+	playsewithpan SE_M_BUBBLE3, SOUND_PAN_ATTACKER
+	createsprite gSludgeSplatSpriteTemplate, ANIM_TARGET, 13, 0, 0
+	createsprite gAcidPoisonDropletSpriteTemplate, ANIM_TARGET, 2, -4, 8, 0, 6, 16
+	playsewithpan SE_M_BUBBLE, SOUND_PAN_TARGET
+	delay 10
+	createsprite gAcidPoisonDropletSpriteTemplate, ANIM_TARGET, 2, 4, 8, 0, 6, 16
+	playsewithpan SE_M_BUBBLE, SOUND_PAN_TARGET
+	delay 10
 	waitforvisualfinish
+	clearmonbg ANIM_TARGET
 	end
 
 Move_FOCUS_ENERGY:
