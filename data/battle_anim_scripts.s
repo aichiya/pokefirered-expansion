@@ -2680,13 +2680,9 @@ DigThrowDirt:
 	return
 
 Move_MEDITATE:
-	call SetPsychicBackground
-	createvisualtask AnimTask_MeditateStretchAttacker, 2
-	playsewithpan SE_M_HEADBUTT, SOUND_PAN_ATTACKER
-	delay 16
-	playsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER
+	loadspritegfx ANIM_TAG_RED_BALL
+	call HardenSquareEffect
 	waitforvisualfinish
-	call UnsetPsychicBackground
 	end
 
 Move_AGILITY:
