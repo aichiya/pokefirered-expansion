@@ -7747,16 +7747,11 @@ Move_SWEET_KISS:
 	end
 
 Move_LOVELY_KISS:
-	loadspritegfx ANIM_TAG_PINK_HEART
-	loadspritegfx ANIM_TAG_DEVIL
-	createsprite gDevilSpriteTemplate, ANIM_TARGET, 2, 0, -24
-	playsewithpan SE_M_PSYBEAM2, SOUND_PAN_TARGET
+	loadspritegfx ANIM_TAG_RED_ORB
+	createvisualtask SoundTask_PlayDoubleCry, 2, ANIM_ATTACKER, DOUBLE_CRY_GROWL
+	createvisualtask AnimTask_StartSinAnimTimer, 5, 100
+	createsprite gHeartSineWaveSpriteTemplate, ANIM_TARGET, 3, 10, 10, 0, 16
 	waitforvisualfinish
-	playsewithpan SE_M_ATTRACT, SOUND_PAN_TARGET
-	createsprite gPinkHeartSpriteTemplate, ANIM_TARGET, 3, -256, -42
-	createsprite gPinkHeartSpriteTemplate, ANIM_TARGET, 3, 128, -14
-	createsprite gPinkHeartSpriteTemplate, ANIM_TARGET, 3, 416, -38
-	createsprite gPinkHeartSpriteTemplate, ANIM_TARGET, 3, -128, -22
 	end
 
 Move_FURY_SWIPES:

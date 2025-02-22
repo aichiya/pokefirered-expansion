@@ -1188,6 +1188,17 @@ const struct SpriteTemplate gMusicNoteSpriteTemplate =
     .callback = AnimToTargetInSinWave2,
 };
 
+const struct SpriteTemplate gHeartSineWaveSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_RED_ORB,
+    .paletteTag = ANIM_TAG_RED_ORB,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimToTargetInSinWave2,
+};
+
 static const union AffineAnimCmd sPerishSongMusicNoteAffineAnimCmds1[] =
 {
     AFFINEANIMCMD_FRAME(0, 0, 0, 5),
