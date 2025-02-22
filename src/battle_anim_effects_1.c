@@ -170,10 +170,10 @@ static const union AnimCmd *const sPowderParticlesAnimTable[] =
 
 const struct SpriteTemplate gSleepPowderParticleSpriteTemplate =
 {
-    .tileTag = ANIM_TAG_SLEEP_POWDER,
-    .paletteTag = ANIM_TAG_SLEEP_POWDER,
-    .oam = &gOamData_AffineOff_ObjNormal_8x16,
-    .anims = sPowderParticlesAnimTable,
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = gDummySpriteAnimTable,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimMovePowderParticle,
@@ -181,10 +181,10 @@ const struct SpriteTemplate gSleepPowderParticleSpriteTemplate =
 
 const struct SpriteTemplate gStunSporeParticleSpriteTemplate =
 {
-    .tileTag = ANIM_TAG_STUN_SPORE,
-    .paletteTag = ANIM_TAG_STUN_SPORE,
-    .oam = &gOamData_AffineOff_ObjNormal_8x16,
-    .anims = sPowderParticlesAnimTable,
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = gDummySpriteAnimTable,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimMovePowderParticle,
@@ -192,10 +192,10 @@ const struct SpriteTemplate gStunSporeParticleSpriteTemplate =
 
 const struct SpriteTemplate gPoisonPowderParticleSpriteTemplate =
 {
-    .tileTag = ANIM_TAG_POISON_POWDER,
-    .paletteTag = ANIM_TAG_POISON_POWDER,
-    .oam = &gOamData_AffineOff_ObjNormal_8x16,
-    .anims = sPowderParticlesAnimTable,
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = gDummySpriteAnimTable,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimMovePowderParticle,

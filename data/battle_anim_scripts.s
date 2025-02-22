@@ -479,27 +479,28 @@ DoubleSlapRight:
 	goto DoubleSlapContinue
 
 Move_POISON_POWDER:
-	loadspritegfx ANIM_TAG_POISON_POWDER
+	loadspritegfx ANIM_TAG_ORBS
 	loadspritegfx ANIM_TAG_POISON_BUBBLE
 	loopsewithpan SE_M_POISON_POWDER, SOUND_PAN_TARGET, 10, 6
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -30, -22, 117, 80, 5, 1
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 10, -22, 117, 80, -5, 1
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -25, -22, 117, 112, 5, 3
-	delay 15
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -5, -22, 117, 80, -5, 1
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 5, -22, 117, 96, 5, 1
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 0, -22, 117, 69, -5, 1
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -15, -22, 117, 112, 5, 2
-	delay 30
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -15, -22, 117, 112, 5, 2
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 15, -22, 117, 80, -5, 1
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -10, -22, 117, 96, 7, 2
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -5, -22, 117, 90, -8, 0
-	delay 20
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -10, -22, 117, 80, -5, 1
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 0, -22, 117, 89, 5, 2
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 20, -22, 117, 112, -8, 2
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 5, -22, 117, 80, 5, 1
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -32, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -16, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 0, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 16, -16, 96, 80, 5, 2
+	delay 16
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -24, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -8, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 8, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 24, -16, 96, 80, 5, 2
+	delay 16
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -32, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -16, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 0, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 16, -16, 96, 80, 5, 2
+	delay 16
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -24, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -8, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 8, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 24, -16, 96, 80, 5, 2
 	waitforvisualfinish
 	end
 
@@ -6156,9 +6157,13 @@ Move_WING_ATTACK:
 
 Move_PECK:
 	loadspritegfx ANIM_TAG_IMPACT
-	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
-	createvisualtask AnimTask_RotateMonToSideAndRestore, 2, 3, -768, ANIM_TARGET, 2
-	createsprite gFlashingHitSplatSpriteTemplate, ANIM_TARGET, 3, -12, 0, ANIM_TARGET, 3
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, -8, ANIM_TARGET, 2
+	clearmonbg ANIM_TARGET
+	delay 10
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 12, 12, ANIM_TARGET, 2
+	clearmonbg ANIM_TARGET
+	waitforvisualfinish
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 4, 0, 6, 1
 	waitforvisualfinish
 	end
 
