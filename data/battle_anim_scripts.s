@@ -6908,21 +6908,15 @@ FireSpreadEffect:
 	return
 
 Move_LEER:
-	loadspritegfx ANIM_TAG_LEER
-	monbg ANIM_ATTACKER
-	splitbgprio ANIM_ATTACKER
-	setalpha 8, 8
-	playsewithpan SE_M_LEER, SOUND_PAN_ATTACKER
-	createsprite gLeerSpriteTemplate, ANIM_ATTACKER, 2, 24, -12
-	createvisualtask AnimTask_ScaleMonAndRestore, 5, -5, -5, 10, ANIM_ATTACKER, 1
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
 	waitforvisualfinish
-	delay 10
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 1, 0, 9, 1
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_DEF_PARTNER, 1, 0, 9, 1
+	delay 4
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
 	waitforvisualfinish
-	clearmonbg ANIM_ATTACKER
-	blendoff
-	delay 1
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	waitforvisualfinish
+	delay 4
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
 	waitforvisualfinish
 	end
 
