@@ -7253,22 +7253,29 @@ Move_METAL_CLAW:
 	end
 
 Move_NIGHT_SHADE:
-	monbg ANIM_ATTACKER
-	splitbgprio ANIM_ATTACKER
-	playsewithpan SE_M_PSYBEAM, SOUND_PAN_ATTACKER
-	fadetobg BG_GHOST
-	waitbgfadein
-	delay 10
-	playsewithpan SE_M_LEER, SOUND_PAN_ATTACKER
-	createvisualtask AnimTask_NightShadeClone, 5, 85
-	delay 70
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 12, 1
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 0, 2, 0, 13, RGB_BLACK
+	monbg ANIM_TARGET
+	setalpha 12, 8
+	playsewithpan SE_M_SUPERSONIC, SOUND_PAN_TARGET
+	createsprite gComplexPaletteBlendSpriteTemplate, ANIM_TARGET, 2, F_PAL_BG | F_PAL_BATTLERS, 3, 1, RGB_WHITE, 10, RGB_WHITE, 0
+	delay 20
+	createsprite gComplexPaletteBlendSpriteTemplate, ANIM_TARGET, 2, F_PAL_BG | F_PAL_BATTLERS, 3, 1, RGB_WHITE, 10, RGB_WHITE, 0
+	delay 20
+	createsprite gComplexPaletteBlendSpriteTemplate, ANIM_TARGET, 2, F_PAL_BG | F_PAL_BATTLERS, 3, 1, RGB_WHITE, 10, RGB_WHITE, 0
 	waitforvisualfinish
-	clearmonbg ANIM_ATTACKER
-	delay 1
-	restorebg
-	waitbgfadein
+	createvisualtask AnimTask_BlendMonInAndOut, 5, ANIM_TARGET, RGB(27, 27, 0), 12, 1, 1
+	createvisualtask AnimTask_ExtrasensoryDistortion, 5, 0
+	waitforvisualfinish
+	createvisualtask AnimTask_BlendMonInAndOut, 5, ANIM_TARGET, RGB(27, 27, 0), 12, 1, 1
+	createvisualtask AnimTask_ExtrasensoryDistortion, 5, 1
+	waitforvisualfinish
+	createvisualtask AnimTask_BlendMonInAndOut, 5, ANIM_TARGET, RGB(27, 27, 0), 12, 1, 1
+	createvisualtask AnimTask_ExtrasensoryDistortion, 5, 0
+	waitforvisualfinish
+	createvisualtask AnimTask_BlendMonInAndOut, 5, ANIM_TARGET, RGB(27, 27, 0), 12, 1, 1
+	createvisualtask AnimTask_ExtrasensoryDistortion, 5, 1
+	waitforvisualfinish
+	clearmonbg ANIM_TARGET
+	blendoff
 	end
 
 Move_EGG_BOMB:
