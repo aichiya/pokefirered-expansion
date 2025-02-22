@@ -5374,41 +5374,16 @@ Move_CLAMP:
 	end
 
 Move_ICE_BEAM:
-	monbg ANIM_TARGET
-	splitbgprio ANIM_TARGET
-	setalpha 12, 8
 	loadspritegfx ANIM_TAG_ICE_CRYSTALS
-	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 0, 7, RGB_BLACK
-	waitforvisualfinish
-	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_BUBBLE_BEAM2, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 4, 4, 0, 10
-	createsprite gIceBeamOuterCrystalSpriteTemplate, ANIM_ATTACKER, 2, 20, 12, 0, 12, 20
-	createsprite gIceBeamOuterCrystalSpriteTemplate, ANIM_ATTACKER, 2, 20, -12, 0, -12, 20
+	loadspritegfx ANIM_TAG_RAINBOW_RINGS
+	playsewithpan SE_M_BUBBLE_BEAM, SOUND_PAN_ATTACKER
+	createsprite gAuroraBeamOrbSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
 	delay 1
-	call IceBeamCreateCrystals
-	call IceBeamCreateCrystals
-	call IceBeamCreateCrystals
-	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_TARGET, -31, 0, 7, RGB(0, 20, 31)
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 25, 1
-	call IceBeamCreateCrystals
-	call IceBeamCreateCrystals
-	call IceBeamCreateCrystals
-	call IceBeamCreateCrystals
-	call IceBeamCreateCrystals
-	call IceBeamCreateCrystals
-	call IceBeamCreateCrystals
-	call IceBeamCreateCrystals
-	createsprite gIceBeamInnerCrystalSpriteTemplate, ANIM_ATTACKER, 2, 20, 0, 0, 0, 11
-	delay 1
-	createsprite gIceBeamInnerCrystalSpriteTemplate, ANIM_ATTACKER, 2, 20, 0, 0, 0, 11
+	call AuroraBeamCreateTube
 	waitforvisualfinish
-	delay 20
-	call IceCrystalEffectShort
-	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_TARGET, 5, 7, 0, RGB(0, 20, 31)
-	waitforvisualfinish
-	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 0, 7, 0, RGB_BLACK
-	waitforvisualfinish
+	call IceCrystalWallEffect
+	delay 32
 	clearmonbg ANIM_TARGET
-	blendoff
 	end
 
 IceBeamCreateCrystals:
