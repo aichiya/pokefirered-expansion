@@ -6845,22 +6845,24 @@ Move_OCTAZOOKA:
 	end
 
 Move_MIST:
-	loadspritegfx ANIM_TAG_MIST_CLOUD
-	monbg ANIM_ATK_PARTNER
-	setalpha 12, 8
-	loopsewithpan SE_M_MIST, SOUND_PAN_ATTACKER, 20, 15
-	call MistCloud
-	call MistCloud
-	call MistCloud
-	call MistCloud
-	call MistCloud
-	call MistCloud
-	call MistCloud
-	delay 32
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_ATK_SIDE, 8, 2, 0, 14, RGB_WHITE
-	waitforvisualfinish
-	clearmonbg ANIM_ATK_PARTNER
-	blendoff
+	loadspritegfx ANIM_TAG_SPARKLE_6
+	monbg ANIM_DEF_PARTNER
+	splitbgprio_all
+	delay 0
+	createvisualtask AnimTask_BlendBattleAnimPalExclude, 10, ANIM_TARGET, 0, 0, 4, RGB_BLACK
+	createvisualtask AnimTask_GetTargetSide, 2
+	fadetobg BG_HIGHSPEED_PLAYER
+	waitbgfadeout
+	createvisualtask AnimTask_StartSlidingBg, 5, 1600, 0, 0, -1
+	@playsewithpan SE_M_GUST, SOUND_PAN_TARGET
+	delay 100
+	clearmonbg ANIM_DEF_PARTNER
+	delay 0
+	restorebg
+	waitbgfadeout
+	createvisualtask AnimTask_BlendBattleAnimPalExclude, 10, ANIM_TARGET, 0, 4, 0, RGB_BLACK
+	setarg 7, 0xFFFF
+	waitbgfadein
 	end
 
 MistCloud:
