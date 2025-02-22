@@ -982,27 +982,26 @@ SetImpactContestsBG:
 
 Move_MEGA_KICK:
 	loadspritegfx ANIM_TAG_IMPACT
-	loadspritegfx ANIM_TAG_HANDS_AND_FEET
 	monbg ANIM_TARGET
-	delay 2
-	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 0, 0, 16, RGB_BLACK
 	setalpha 12, 8
-	playsewithpan SE_M_MEGA_KICK, SOUND_PAN_TARGET
-	createsprite gMegaPunchKickSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 1, 50
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 2, 0, 7, RGB_WHITE
-	delay 50
-	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET
-	call SetImpactBackground
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 0
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 22, 1
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 2, 0, 0, RGB_WHITE
-	createsprite gComplexPaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG | F_PAL_BATTLERS, 3, 1, RGB_BLACK, 8, RGB_BLACK, 0
-	waitforvisualfinish
+	playsewithpan SE_M_HEADBUTT, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 8, ANIM_TARGET, 2
+	delay 2
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	delay 2
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 2
+	delay 2
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	delay 2
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 8, -8, ANIM_TARGET, 2
+	delay 2
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	delay 2
 	clearmonbg ANIM_TARGET
 	blendoff
-	delay 2
-	restorebg
-	waitbgfadein
 	end
 
 Move_COMET_PUNCH:
