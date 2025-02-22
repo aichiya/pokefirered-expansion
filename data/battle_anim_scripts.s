@@ -6998,37 +6998,12 @@ DreamEaterAbsorb:
 	return
 
 Move_POISON_GAS:
-	loadspritegfx ANIM_TAG_PURPLE_GAS_CLOUD
-	loadspritegfx ANIM_TAG_POISON_BUBBLE
-	delay 0
-	monbg ANIM_DEF_PARTNER
-	splitbgprio_all
-	setalpha 12, 8
-	delay 0
-	playsewithpan SE_M_MIST, SOUND_PAN_ATTACKER
-	createsprite gPoisonGasCloudSpriteTemplate, ANIM_TARGET, 0, 64, 0, 0, -32, -6, 4192, 1072, 0
-	delay 4
-	playsewithpan SE_M_MIST, SOUND_PAN_ATTACKER
-	createsprite gPoisonGasCloudSpriteTemplate, ANIM_TARGET, 0, 64, 0, 0, -32, -6, 4192, 1072, 0
-	delay 4
-	playsewithpan SE_M_MIST, SOUND_PAN_ATTACKER
-	createsprite gPoisonGasCloudSpriteTemplate, ANIM_TARGET, 0, 64, 0, 0, -32, -6, 4192, 1072, 0
-	delay 4
-	playsewithpan SE_M_MIST, SOUND_PAN_ATTACKER
-	createsprite gPoisonGasCloudSpriteTemplate, ANIM_TARGET, 0, 64, 0, 0, -32, -6, 4192, 1072, 0
-	delay 4
-	playsewithpan SE_M_MIST, SOUND_PAN_ATTACKER
-	createsprite gPoisonGasCloudSpriteTemplate, ANIM_TARGET, 0, 64, 0, 0, -32, -6, 4192, 1072, 0
-	delay 4
-	playsewithpan SE_M_MIST, SOUND_PAN_ATTACKER
-	createsprite gPoisonGasCloudSpriteTemplate, ANIM_TARGET, 0, 64, 0, 0, -32, -6, 4192, 1072, 0
-	delay 40
-	loopsewithpan SE_M_MIST, SOUND_PAN_TARGET, 28, 6
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 6, 2, 0, 12, RGB(26, 0, 26)
+	loadspritegfx ANIM_TAG_MUSIC_NOTES
+	monbg ANIM_TARGET
+	playsewithpan SE_M_BUBBLE3, SOUND_PAN_ATTACKER
+	createsprite gGasCloudSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 0, 128, -25
 	waitforvisualfinish
-	blendoff
-	clearmonbg ANIM_DEF_PARTNER
-	delay 0
+	clearmonbg ANIM_TARGET
 	end
 
 Move_BIND:

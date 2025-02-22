@@ -106,6 +106,29 @@ const struct SpriteTemplate gSludgeProjectileSpriteTemplate =
     .callback = AnimSludgeProjectile,
 };
 
+static const union AnimCmd sAnim_GasCloud[] =
+{
+    ANIMCMD_FRAME(8, 8),
+    ANIMCMD_FRAME(8, 8, .hFlip = TRUE),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd *const sAnims_GasCloud[] =
+{
+    sAnim_GasCloud,
+};
+
+const struct SpriteTemplate gGasCloudSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_MUSIC_NOTES,
+    .paletteTag = ANIM_TAG_MUSIC_NOTES,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sAnims_GasCloud,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSludgeProjectile,
+};
+
 const struct SpriteTemplate gAcidPoisonBubbleSpriteTemplate =
 {
     .tileTag = ANIM_TAG_POISON_BUBBLE,
@@ -209,13 +232,13 @@ const struct SpriteTemplate gWaterBubbleSpriteTemplate =
 
 static void AnimSludgeProjectile(struct Sprite *sprite)
 {
-    if (!gBattleAnimArgs[3])
-        StartSpriteAnim(sprite, 2);
     InitSpritePosToAnimAttacker(sprite, 1);
-    sprite->data[0] = gBattleAnimArgs[2];
-    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
-    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
-    sprite->data[5] = -30;
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+    sprite->data[0] = gBattleAnimArgs[4];
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + gBattleAnimArgs[2];
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + gBattleAnimArgs[3];
+    sprite->data[5] = gBattleAnimArgs[5];
     InitAnimArcTranslation(sprite);
     sprite->callback = AnimSludgeProjectile_Step;
 }
