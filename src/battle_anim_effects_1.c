@@ -972,6 +972,29 @@ const struct SpriteTemplate gRazorLeafCutterSpriteTemplate =
     .callback = AnimTranslateLinearSingleSineWave,
 };
 
+static const union AnimCmd sPetalDanceAnimCmds[] =
+{
+    ANIMCMD_FRAME(1, 0),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd *const sPetalDanceAnimTable[] =
+{
+    sPetalDanceAnimCmds,
+};
+
+const struct SpriteTemplate gPetalDanceParticleSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FIRE,
+    .paletteTag = ANIM_TAG_FIRE,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sPetalDanceAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSporeParticle,
+};
+
+
 static const union AffineAnimCmd sSwiftStarAffineAnimCmds[] = 
 {
     AFFINEANIMCMD_FRAME(0, 0, 0, 1),
@@ -2897,11 +2920,12 @@ static void AnimLeechSeedSprouts(struct Sprite* sprite)
 // arg 4: blend (0 = off, 1 = on)
 static void AnimSporeParticle(struct Sprite* sprite)
 {
-    InitSpritePosToAnimTarget(sprite, TRUE);
-    StartSpriteAnim(sprite, gBattleAnimArgs[4]);
-    if (gBattleAnimArgs[4] == 1)
-        sprite->oam.objMode = ST_OAM_OBJ_BLEND;
-
+    if (gBattleAnimArgs[5] != ANIM_ATTACKER)
+        InitSpritePosToAnimTarget(sprite, TRUE);
+    else
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        gBattleAnimArgs[5] = -gBattleAnimArgs[5];
     sprite->data[0] = gBattleAnimArgs[3];
     sprite->data[1] = gBattleAnimArgs[2];
     sprite->callback = AnimSporeParticle_Step;

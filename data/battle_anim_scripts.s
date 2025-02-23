@@ -3944,25 +3944,10 @@ Move_MIST_BALL:
 	end
 
 Move_FEATHER_DANCE:
-	loadspritegfx ANIM_TAG_WHITE_FEATHER
-	monbg ANIM_DEF_PARTNER
-	splitbgprio_all
+	loadspritegfx ANIM_TAG_FIRE
 	playsewithpan SE_M_PETAL_DANCE, SOUND_PAN_TARGET
-	delay 0
-	createsprite gFallingFeatherSpriteTemplate, ANIM_TARGET, 0, 0, -16, 64, 2, 104, 11304, 32, 1
-	delay 6
-	createsprite gFallingFeatherSpriteTemplate, ANIM_TARGET, 0, 0, -16, 32, 2, 104, 11304, 32, 1
-	createsprite gFallingFeatherSpriteTemplate, ANIM_TARGET, 0, 0, -16, 0, 2, 104, 11304, 32, 1
-	delay 6
-	createsprite gFallingFeatherSpriteTemplate, ANIM_TARGET, 0, 0, -16, 224, 2, 104, 11304, 32, 1
-	createsprite gFallingFeatherSpriteTemplate, ANIM_TARGET, 0, 0, -16, 128, 2, 104, 11304, 32, 1
-	delay 6
-	createsprite gFallingFeatherSpriteTemplate, ANIM_TARGET, 0, 0, -16, 192, 2, 104, 11304, 32, 1
-	createsprite gFallingFeatherSpriteTemplate, ANIM_TARGET, 0, 0, -16, 160, 2, 104, 11304, 32, 1
-	delay 6
-	createsprite gFallingFeatherSpriteTemplate, ANIM_TARGET, 0, 0, -16, 96, 2, 104, 11304, 32, 1
+	createsprite gSporeParticleSpriteTemplate, ANIM_TARGET, 2, 0, -20, 85, 80, 0
 	waitforvisualfinish
-	clearmonbg ANIM_DEF_PARTNER
 	end
 
 Move_TEETER_DANCE:
@@ -6706,42 +6691,84 @@ CreateSpore:
 	return
 
 Move_PETAL_DANCE:
-	loadspritegfx ANIM_TAG_FLOWER
+	loadspritegfx ANIM_TAG_FIRE
 	loadspritegfx ANIM_TAG_IMPACT
-	monbg ANIM_DEF_PARTNER
-	setalpha 12, 8
 	playsewithpan SE_M_PETAL_DANCE, SOUND_PAN_ATTACKER
-	createvisualtask AnimTask_TranslateMonEllipticalRespectSide, 2, ANIM_ATTACKER, 12, 6, 6, 3
-	createsprite gPetalDanceBigFlowerSpriteTemplate, ANIM_ATTACKER, 2, 0, -24, 8, 140
-	createsprite gPetalDanceSmallFlowerSpriteTemplate, ANIM_ATTACKER, 2, 16, -24, 8, 100
-	createsprite gPetalDanceSmallFlowerSpriteTemplate, ANIM_ATTACKER, 2, -16, -24, 8, 100
-	delay 15
-	createsprite gPetalDanceBigFlowerSpriteTemplate, ANIM_ATTACKER, 2, 0, -24, 8, 140
-	createsprite gPetalDanceSmallFlowerSpriteTemplate, ANIM_ATTACKER, 2, 32, -24, 8, 100
-	createsprite gPetalDanceSmallFlowerSpriteTemplate, ANIM_ATTACKER, 2, -32, -24, 8, 100
-	delay 15
-	createsprite gPetalDanceBigFlowerSpriteTemplate, ANIM_ATTACKER, 2, 0, -24, 8, 140
-	createsprite gPetalDanceSmallFlowerSpriteTemplate, ANIM_ATTACKER, 2, 24, -24, 8, 100
-	createsprite gPetalDanceSmallFlowerSpriteTemplate, ANIM_ATTACKER, 2, -24, -24, 8, 100
-	delay 30
-	createsprite gPetalDanceSmallFlowerSpriteTemplate, ANIM_ATTACKER, 2, 16, -24, 0, 100
-	createsprite gPetalDanceSmallFlowerSpriteTemplate, ANIM_ATTACKER, 2, -16, -24, 0, 100
-	delay 30
-	createsprite gPetalDanceSmallFlowerSpriteTemplate, ANIM_ATTACKER, 2, 20, -16, 14, 80
-	createsprite gPetalDanceSmallFlowerSpriteTemplate, ANIM_ATTACKER, 2, -20, -14, 16, 80
+	call PetalDanceFoe
+	call PetalDancePlayer
 	waitforvisualfinish
-	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 24, 0, 0, 5
-	delay 3
-	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, ANIM_TARGET, 0
-	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 6, 0, 8, 1
-	waitforvisualfinish
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 8, ANIM_TARGET, 2
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
 	delay 8
-	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 7
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 2
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
+	delay 8
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 8, -8, ANIM_TARGET, 2
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
+	delay 8
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
 	waitforvisualfinish
-	clearmonbg ANIM_DEF_PARTNER
-	blendoff
 	end
+
+PetalDanceFoe:
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -48, -10, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -41, 15, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -30, 0, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -13, 22, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 0, -8, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 11, 0, 80, 0, ANIM_TARGET
+	delay 8
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 48, -10, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -41, -15, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 30, 0, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -13, -22, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 0, -8, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 11, 0, 80, 0, ANIM_TARGET
+	delay 8
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 48, 10, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 41, -15, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 30, 0, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 13, -22, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 0, 8, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -11, 0, 80, 0, ANIM_TARGET
+	delay 8
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -48, 10, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 41, 15, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -30, 0, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 13, 22, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 0, 8, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -11, 0, 80, 0, ANIM_TARGET
+	return
+
+PetalDancePlayer:
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -48, -10, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -41, 15, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -30, 0, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -13, 22, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, -8, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 11, 0, 80, 0, ANIM_ATTACKER
+	delay 8
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 48, -10, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -41, -15, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 30, 0, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -13, -22, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, -8, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 11, 0, 80, 0, ANIM_ATTACKER
+	delay 8
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 48, 10, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 41, -15, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 30, 0, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 13, -22, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 8, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -11, 0, 80, 0, ANIM_ATTACKER
+	delay 8
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -48, 10, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 41, 15, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -30, 0, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 13, 22, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 8, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -11, 0, 80, 0, ANIM_ATTACKER
+	return
 
 Move_RAZOR_LEAF:
 	loadspritegfx ANIM_TAG_LEAF
