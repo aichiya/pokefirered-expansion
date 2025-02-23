@@ -20,6 +20,9 @@ static void AnimTask_Withdraw_Step(u8);
 static void AnimToTargetInSinWave2(struct Sprite *);
 static void AnimToTargetInSinWave2_Step(struct Sprite *);
 static void AnimTask_RunSinAnimTimer2(u8);
+static void AnimToTargetInSinWave3(struct Sprite *);
+static void AnimToTargetInSinWave3_Step(struct Sprite *);
+static void AnimTask_RunSinAnimTimer3(u8);
 static void AnimSwordsDanceBlade(struct Sprite *);
 static void AnimSwordsDanceBlade_Step(struct Sprite *);
 static void AnimVoidLines(struct Sprite *);
@@ -1188,6 +1191,29 @@ const struct SpriteTemplate gMusicNoteSpriteTemplate =
     .callback = AnimToTargetInSinWave2,
 };
 
+static const union AnimCmd sSupersonicAnimCmds[] =
+{
+    ANIMCMD_FRAME(4, 4),
+    ANIMCMD_FRAME(4, 4, .vFlip = TRUE),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sSupersonicAnimTable[] =
+{
+    sSupersonicAnimCmds,
+};
+
+const struct SpriteTemplate gSupersonicSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_MUSIC_NOTES,
+    .paletteTag = ANIM_TAG_MUSIC_NOTES,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sSupersonicAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimToTargetInSinWave3,
+};
+
 const struct SpriteTemplate gHeartSineWaveSpriteTemplate =
 {
     .tileTag = ANIM_TAG_RED_ORB,
@@ -2190,6 +2216,63 @@ void AnimTask_StartSinAnimTimer2(u8 taskId)
 }
 
 static void AnimTask_RunSinAnimTimer2(u8 taskId)
+{
+    gBattleAnimArgs[7] = (gBattleAnimArgs[7] + 3) & 0xFF;
+    if (--gTasks[taskId].data[0] == 0)
+        DestroyAnimVisualTask(taskId);
+}
+
+static void AnimToTargetInSinWave3(struct Sprite *sprite)
+{
+    u16 retArg;
+
+    InitSpritePosToAnimAttacker(sprite, TRUE);
+    sprite->data[0] = 30;
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = (0xD200 / sprite->data[0]) * 2;
+    sprite->data[7] = gBattleAnimArgs[3] / 4;
+    retArg = gBattleAnimArgs[7];
+    if (gBattleAnimArgs[7] > 127)
+    {
+        sprite->data[6] = (retArg - 127) * 256;
+        sprite->data[7] = -sprite->data[7];
+    }
+    else
+    {
+        sprite->data[6] = retArg * 256;
+    }
+    sprite->callback = AnimToTargetInSinWave3_Step;
+    sprite->callback(sprite);
+}
+
+static void AnimToTargetInSinWave3_Step(struct Sprite *sprite)
+{
+    if (AnimTranslateLinear(sprite))
+        DestroyAnimSprite(sprite);
+    sprite->y2 += Sin(sprite->data[6] >> 8, sprite->data[7]);
+    if ((sprite->data[6] + sprite->data[5]) >> 8 > 127)
+    {
+        sprite->data[6] = 0;
+        sprite->data[7] = -sprite->data[7];
+    }
+    else
+    {
+        sprite->data[6] += sprite->data[5];
+    }
+}
+
+void AnimTask_StartSinAnimTimer3(u8 taskId)
+{
+    gTasks[taskId].data[0] = gBattleAnimArgs[0];
+    gBattleAnimArgs[7] = 0;
+    gTasks[taskId].func = AnimTask_RunSinAnimTimer3;
+}
+
+static void AnimTask_RunSinAnimTimer3(u8 taskId)
 {
     gBattleAnimArgs[7] = (gBattleAnimArgs[7] + 3) & 0xFF;
     if (--gTasks[taskId].data[0] == 0)

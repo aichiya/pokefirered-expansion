@@ -7075,29 +7075,12 @@ HypnosisRings:
 	return
 
 Move_PSYWAVE:
-	loadspritegfx ANIM_TAG_BLUE_RING
-	playsewithpan SE_M_PSYBEAM, SOUND_PAN_ATTACKER
-	call SetPsychicBackground
-	createvisualtask AnimTask_StartSinAnimTimer, 5, 100
+	loadspritegfx ANIM_TAG_MUSIC_NOTES
 	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_TELEPORT, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 2, 9, 0, 10
-	call PsywaveRings
-	call PsywaveRings
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 1, 4, 0, 12, RGB(31, 18, 31)
-	call PsywaveRings
-	call PsywaveRings
-	call PsywaveRings
-	call PsywaveRings
+	createvisualtask AnimTask_StartSinAnimTimer, 5, 100
+	createsprite gSupersonicSpriteTemplate, ANIM_TARGET, 3, 10, 10, 0, 32
 	waitforvisualfinish
-	delay 1
-	call UnsetPsychicBackground
 	end
-
-PsywaveRings:
-	createsprite gPsywaveRingSpriteTemplate, ANIM_TARGET, 3, 10, 10, 0, 16
-	delay 4
-	createsprite gPsywaveRingSpriteTemplate, ANIM_TARGET, 3, 10, 10, 0, 16
-	delay 4
-	return
 
 Move_ZAP_CANNON:
 	loadspritegfx ANIM_TAG_BLACK_BALL_2
