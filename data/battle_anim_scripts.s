@@ -6782,11 +6782,11 @@ Move_RAZOR_LEAF:
 	loadspritegfx ANIM_TAG_LEAF
 	loadspritegfx ANIM_TAG_RAZOR_LEAF
 	loopsewithpan SE_M_POISON_POWDER, SOUND_PAN_ATTACKER, 10, 3
-	createsprite gRazorLeafParticleSpriteTemplate, ANIM_TARGET, 2, 1, -1, 13
-	delay 2
-	createsprite gRazorLeafParticleSpriteTemplate, ANIM_TARGET, 2, 2, -1, 12
-	delay 2
-	createsprite gRazorLeafParticleSpriteTemplate, ANIM_TARGET, 2, 3, -1, 11
+	createsprite gRazorLeafParticleSpriteTemplate, ANIM_TARGET, 2, -2, -3, 13
+	delay 10
+	createsprite gRazorLeafParticleSpriteTemplate, ANIM_TARGET, 2, 0, -2, 12
+	delay 10
+	createsprite gRazorLeafParticleSpriteTemplate, ANIM_TARGET, 2, 2, -1, 11
 	waitforvisualfinish
 	playsewithpan SE_M_CUT, SOUND_PAN_TARGET
 	createsprite gCuttingSliceSpriteTemplate, ANIM_ATTACKER, 2, 56, -48, 0

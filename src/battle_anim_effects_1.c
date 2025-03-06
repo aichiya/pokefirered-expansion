@@ -201,6 +201,29 @@ const struct SpriteTemplate gPoisonPowderParticleSpriteTemplate =
     .callback = AnimMovePowderParticle,
 };
 
+static const union AnimCmd sFallingLeafAnimCmds[] =
+{
+    ANIMCMD_FRAME(1, 100),
+    ANIMCMD_FRAME(1, 100, .hFlip = TRUE),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd *const sFallingLeafAnimTable[] =
+{
+    sFallingLeafAnimCmds,
+};
+
+const struct SpriteTemplate gSmallLeafParticleSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FIRE,
+    .paletteTag = ANIM_TAG_FIRE,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sFallingLeafAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimMovePowderParticle,
+};
+
 static const union AnimCmd sSolarBeamBigOrbAnimCmds1[] =
 {
     ANIMCMD_FRAME(0, 1),
@@ -3056,8 +3079,8 @@ static void AnimPetalDanceSmallFlower_Step(struct Sprite* sprite)
 // arg 2: upward duration
 static void AnimRazorLeafParticle(struct Sprite* sprite)
 {
-    sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
-    sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET);
+    sprite->x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
+    sprite->y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
     sprite->data[0] = gBattleAnimArgs[0];
     sprite->data[1] = gBattleAnimArgs[1];
     sprite->data[2] = gBattleAnimArgs[2];
@@ -3092,7 +3115,7 @@ static void AnimRazorLeafParticle_Step1(struct Sprite* sprite)
 
 static void AnimRazorLeafParticle_Step2(struct Sprite* sprite)
 {
-    if (GetBattlerSide(gBattleAnimAttacker))
+    if (GetBattlerSide(gBattleAnimTarget))
         sprite->x2 = -Sin(sprite->data[0], 25);
     else
         sprite->x2 = Sin(sprite->data[0], 25);
