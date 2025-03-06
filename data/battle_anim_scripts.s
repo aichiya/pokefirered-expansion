@@ -5071,19 +5071,34 @@ Move_MIRROR_COAT:
 	end
 
 Move_REFLECT:
-	loadspritegfx ANIM_TAG_SPARKLE_4
-	loadspritegfx ANIM_TAG_BLUE_LIGHT_WALL
-	setalpha 0, 16
-	waitplaysewithpan SE_M_REFLECT, SOUND_PAN_ATTACKER, 15
-	createsprite gReflectWallSpriteTemplate, ANIM_ATTACKER, 1, 40, 0, ANIM_TAG_BLUE_LIGHT_WALL
-	delay 20
-	createsprite gReflectSparkleSpriteTemplate, ANIM_ATTACKER, 2, 30, 0, ANIM_ATTACKER, TRUE
-	delay 7
-	createsprite gReflectSparkleSpriteTemplate, ANIM_ATTACKER, 2, 19, -12, ANIM_ATTACKER, TRUE
-	delay 7
-	createsprite gReflectSparkleSpriteTemplate, ANIM_ATTACKER, 2, 10, 20, ANIM_ATTACKER, TRUE
+	loadspritegfx ANIM_TAG_GRAY_LIGHT_WALL
+	monbg ANIM_ATTACKER
+	setalpha 12, 8
+	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_ATTACKER, 1, 4, 0, 11, RGB(2, 2, 2)
+	waitplaysewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER, 15
+	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0
 	waitforvisualfinish
 	delay 1
+	waitplaysewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER, 15
+	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0
+	waitforvisualfinish
+	delay 1
+	waitplaysewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER, 15
+	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0
+	waitforvisualfinish
+	delay 3
+	waitplaysewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER, 15
+	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0
+	waitforvisualfinish
+	delay 1
+	waitplaysewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER, 15
+	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0
+	waitforvisualfinish
+	delay 1
+	waitplaysewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER, 15
+	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0
+	waitforvisualfinish
+	clearmonbg ANIM_ATTACKER
 	blendoff
 	end
 
@@ -6763,43 +6778,21 @@ PetalDancePlayer:
 	return
 
 Move_RAZOR_LEAF:
+	loadspritegfx ANIM_TAG_CUT
 	loadspritegfx ANIM_TAG_LEAF
 	loadspritegfx ANIM_TAG_RAZOR_LEAF
-	loadspritegfx ANIM_TAG_IMPACT
-	monbg ANIM_DEF_PARTNER
-	setalpha 12, 8
-	delay 1
-	loopsewithpan SE_M_POISON_POWDER, SOUND_PAN_ATTACKER, 10, 5
-	createsprite gRazorLeafParticleSpriteTemplate, ANIM_ATTACKER, 2, -3, -2, 10
+	loopsewithpan SE_M_POISON_POWDER, SOUND_PAN_ATTACKER, 10, 3
+	createsprite gRazorLeafParticleSpriteTemplate, ANIM_TARGET, 2, 1, -1, 13
 	delay 2
-	createsprite gRazorLeafParticleSpriteTemplate, ANIM_ATTACKER, 2, -1, -1, 15
+	createsprite gRazorLeafParticleSpriteTemplate, ANIM_TARGET, 2, 2, -1, 12
 	delay 2
-	createsprite gRazorLeafParticleSpriteTemplate, ANIM_ATTACKER, 2, -4, -4, 7
-	delay 2
-	createsprite gRazorLeafParticleSpriteTemplate, ANIM_ATTACKER, 2, 3, -3, 11
-	delay 2
-	createsprite gRazorLeafParticleSpriteTemplate, ANIM_ATTACKER, 2, -1, -6, 8
-	delay 2
-	createsprite gRazorLeafParticleSpriteTemplate, ANIM_ATTACKER, 2, 2, -1, 12
-	delay 2
-	createsprite gRazorLeafParticleSpriteTemplate, ANIM_ATTACKER, 2, -3, -4, 13
-	delay 2
-	createsprite gRazorLeafParticleSpriteTemplate, ANIM_ATTACKER, 2, 4, -5, 7
-	delay 2
-	createsprite gRazorLeafParticleSpriteTemplate, ANIM_ATTACKER, 2, 2, -6, 11
-	delay 2
-	createsprite gRazorLeafParticleSpriteTemplate, ANIM_ATTACKER, 2, -3, -5, 8
-	delay 60
-	playsewithpan SE_M_RAZOR_WIND2, SOUND_PAN_ATTACKER
-	createsprite gRazorLeafCutterSpriteTemplate, ANIM_TARGET, 3, 20, -10, 20, 0, 22, 20, 1
-	createsprite gRazorLeafCutterSpriteTemplate, ANIM_TARGET, 3, 20, -10, 20, 0, 22, -20, 1
-	delay 20
-	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 8, 1
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_DEF_PARTNER, 2, 0, 8, 1
+	createsprite gRazorLeafParticleSpriteTemplate, ANIM_TARGET, 2, 3, -1, 11
 	waitforvisualfinish
-	clearmonbg ANIM_DEF_PARTNER
-	blendoff
+	playsewithpan SE_M_CUT, SOUND_PAN_TARGET
+	createsprite gCuttingSliceSpriteTemplate, ANIM_ATTACKER, 2, 56, -48, 0
+	delay 5
+	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 3, 10, 1
+	waitforvisualfinish
 	end
 
 Move_NATURE_POWER:
