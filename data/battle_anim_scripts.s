@@ -4669,11 +4669,9 @@ IceCrystalWallEffect:
 Move_REST:
 	playsewithpan SE_M_SNORE, SOUND_PAN_ATTACKER
 	loadspritegfx ANIM_TAG_LETTER_Z
-	createsprite gSleepLetterZSpriteTemplate, ANIM_ATTACKER, 2, 4, -10, 16, 0, 0
-	delay 20
-	createsprite gSleepLetterZSpriteTemplate, ANIM_ATTACKER, 2, 4, -10, 16, 0, 0
-	delay 20
-	createsprite gSleepLetterZSpriteTemplate, ANIM_ATTACKER, 2, 4, -10, 16, 0, 0
+	createsprite gSleepLetterZSpriteTemplate, ANIM_ATTACKER, 2, 16, -8, -32, 30, 200, 0
+	waitforvisualfinish
+	createsprite gSleepLetterZSpriteTemplate, ANIM_ATTACKER, 2, 16, -8, -32, 30, 200, 0
 	waitforvisualfinish
 	end
 

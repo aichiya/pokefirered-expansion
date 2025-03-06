@@ -2005,10 +2005,10 @@ const struct SpriteTemplate gSleepLetterZSpriteTemplate =
 {
     .tileTag = ANIM_TAG_LETTER_Z,
     .paletteTag = ANIM_TAG_LETTER_Z,
-    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
-    .anims = sSleepLetterZAnimTable,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gDummySpriteAnimTable,
     .images = NULL,
-    .affineAnims = sSleepLetterZAffineAnimTable,
+    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSleepLetterZ,
 };
 
@@ -4713,34 +4713,36 @@ static void AnimBubbleBurst_Step(struct Sprite* sprite)
         DestroyAnimSprite(sprite);
 }
 
-static void AnimSleepLetterZ(struct Sprite* sprite)
+static void AnimSleepLetterZ(struct Sprite *sprite)
 {
-    SetSpriteCoordsToAnimAttackerCoords(sprite);
-    if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_PLAYER)
-    {
-        sprite->x += gBattleAnimArgs[0];
-        sprite->y += gBattleAnimArgs[1];
-        sprite->data[3] = 1;
-    }
-    else
-    {
-        sprite->x -= gBattleAnimArgs[0];
-        sprite->y += gBattleAnimArgs[1];
-        sprite->data[3] = 0xFFFF;
-        StartSpriteAffineAnim(sprite, 1);
-    }
-
+    if (BATTLE_PARTNER(gBattleAnimAttacker) == gBattleAnimTarget && GetBattlerPosition(gBattleAnimTarget) < B_POSITION_PLAYER_RIGHT)
+        gBattleAnimArgs[0] *= -1;
+    InitSpritePosToAnimTarget(sprite, TRUE);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = sprite->x + gBattleAnimArgs[2];
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = sprite->y;
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = gBattleAnimArgs[5];
+    sprite->data[6] = gBattleAnimArgs[4];
+    sprite->data[7] = 0;
     sprite->callback = AnimSleepLetterZ_Step;
 }
 
-static void AnimSleepLetterZ_Step(struct Sprite* sprite)
+static void AnimSleepLetterZ_Step(struct Sprite *sprite)
 {
-    sprite->y2 = -(sprite->data[0] / 0x28);
-    sprite->x2 = sprite->data[4] / 10;
-    sprite->data[4] += sprite->data[3] * 2;
-    sprite->data[0] += sprite->data[1];
-    if (++sprite->data[1] > 60)
-        DestroySpriteAndMatrix(sprite);
+    if (!AnimTranslateLinear(sprite))
+    {
+        sprite->y2 += Sin(sprite->data[7] >> 8, sprite->data[5]);
+        sprite->data[7] += sprite->data[6];
+    }
+    else
+    {
+        DestroyAnimSprite(sprite);
+    }
 }
 
 static void AnimLockOnTarget(struct Sprite* sprite)
