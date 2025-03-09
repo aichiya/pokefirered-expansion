@@ -68,8 +68,8 @@ static void AnimYawnCloud_Step(struct Sprite *);
 static void AnimTask_SquishAndSweatDroplets_Step(u8);
 static void CreateSweatDroplets(u8, bool8);
 static void AnimTask_FacadeColorBlend_Step(u8);
-static void AnimRoarNoiseLine(struct Sprite *);
-static void AnimRoarNoiseLine_Step(struct Sprite *);
+static void AnimRoarSonicboomWave(struct Sprite *);
+static void AnimRoarSonicboomWave_Step(struct Sprite *);
 static void AnimTask_GlareEyeDots_Step(u8);
 static void GetGlareEyeDotCoords(s16, s16, s16, s16, u8, u8, s16 *, s16 *);
 static void AnimTask_BarrageBall_Step(u8);
@@ -917,22 +917,13 @@ static const u16 sFacadeBlendColors[] =
 
 static const union AnimCmd sRoarNoiseLineAnimCmds1[] =
 {
-    ANIMCMD_FRAME(0, 3),
-    ANIMCMD_FRAME(16, 3),
-    ANIMCMD_JUMP(0),
-};
-
-static const union AnimCmd sRoarNoiseLineAnimCmds2[] =    
-{
-    ANIMCMD_FRAME(32, 3),
-    ANIMCMD_FRAME(48, 3),
-    ANIMCMD_JUMP(0),
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_END,
 };
 
 static const union AnimCmd *const sRoarNoiseLineAnimTable[] =
 {
     sRoarNoiseLineAnimCmds1,
-    sRoarNoiseLineAnimCmds2,
 };
 
 const struct SpriteTemplate gRoarNoiseLineSpriteTemplate =
@@ -943,7 +934,7 @@ const struct SpriteTemplate gRoarNoiseLineSpriteTemplate =
     .anims = sRoarNoiseLineAnimTable,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimRoarNoiseLine,
+    .callback = AnimRoarSonicboomWave,
 };
 
 const struct SpriteTemplate gGlareEyeDotSpriteTemplate =
@@ -3813,51 +3804,35 @@ void AnimTask_StatusClearedEffect(u8 taskId)
     StartMonScrollingBgMask(taskId, 0, 0x1A0, gBattleAnimAttacker, gBattleAnimArgs[0], 10, 2, 30, gCureBubblesGfx, gCureBubblesTilemap, gCureBubblesPal);
 }
 
-// Moves a noise line from the mon.
-// arg 0: initial x pixel offset
-// arg 1: initial y pixel offset
-// arg 2: which direction (0 = upward, 1 = downward, 2 = horizontal)
-static void AnimRoarNoiseLine(struct Sprite *sprite)
+static void AnimRoarSonicboomWave(struct Sprite *sprite)
 {
-    if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_OPPONENT)
-        gBattleAnimArgs[0] = -gBattleAnimArgs[0];
+    if (BATTLE_PARTNER(gBattleAnimAttacker) == gBattleAnimTarget && GetBattlerPosition(gBattleAnimTarget) < B_POSITION_PLAYER_RIGHT)
+        gBattleAnimArgs[0] *= -1;
+    InitSpritePosToAnimAttacker(sprite, TRUE);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = sprite->x + gBattleAnimArgs[2];
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = sprite->y;
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = gBattleAnimArgs[5];
+    sprite->data[6] = gBattleAnimArgs[4] / 2;
+    sprite->data[7] = 0;
+    sprite->callback = AnimRoarSonicboomWave_Step;
+}
 
-    sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X) + gBattleAnimArgs[0];
-    sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y) + gBattleAnimArgs[1];
-    if (gBattleAnimArgs[2] == 0)
+static void AnimRoarSonicboomWave_Step(struct Sprite *sprite)
+{
+    if (!AnimTranslateLinear(sprite))
     {
-        sprite->data[0] = 0x280;
-        sprite->data[1] = -0x280;
-    }
-    else if (gBattleAnimArgs[2] == 1)
-    {
-        sprite->vFlip = TRUE;
-        sprite->data[0] = 0x280;
-        sprite->data[1] = 0x280;
+        sprite->data[7] += sprite->data[6];
     }
     else
     {
-        StartSpriteAnim(sprite, 1);
-        sprite->data[0] = 0x280;
-    }
-
-    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
-    {
-        sprite->data[0] = -sprite->data[0];
-        sprite->hFlip = TRUE;
-    }
-
-    sprite->callback = AnimRoarNoiseLine_Step;
-}
-
-static void AnimRoarNoiseLine_Step(struct Sprite *sprite)
-{
-    sprite->data[6] += sprite->data[0];
-    sprite->data[7] += sprite->data[1];
-    sprite->x2 = sprite->data[6] >> 8;
-    sprite->y2 = sprite->data[7] >> 8;
-    if (++sprite->data[5] == 14)
         DestroyAnimSprite(sprite);
+    }
 }
 
 #define IDX_ACTIVE_SPRITES 10  // Used by the sprite callback to modify the number of active sprites

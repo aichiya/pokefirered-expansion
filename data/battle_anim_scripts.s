@@ -4950,17 +4950,13 @@ Move_DRAGON_BREATH:
 
 Move_ROAR:
 	loadspritegfx ANIM_TAG_NOISE_LINE
-	monbg ANIM_ATTACKER
-	splitbgprio ANIM_ATTACKER
-	setalpha 8, 8
 	createvisualtask SoundTask_PlayDoubleCry, 2, ANIM_ATTACKER, DOUBLE_CRY_ROAR
-	createvisualtask AnimTask_ScaleMonAndRestore, 5, -5, -5, 10, ANIM_ATTACKER, 1
-	call RoarEffect
+	createsprite gRoarNoiseLineSpriteTemplate, ANIM_ATTACKER, 2, 32, 0, -16, 20, 24, 257
+	waitforvisualfinish
+	createsprite gRoarNoiseLineSpriteTemplate, ANIM_ATTACKER, 2, 32, 0, -16, 20, 24, 257
+	waitforvisualfinish
 	delay 20
 	createvisualtask AnimTask_SlideOffScreen, 5, ANIM_TARGET, 2
-	waitforvisualfinish
-	clearmonbg ANIM_ATTACKER
-	blendoff
 	waitforvisualfinish
 	createvisualtask SoundTask_WaitForCry, 5
 	waitforvisualfinish
