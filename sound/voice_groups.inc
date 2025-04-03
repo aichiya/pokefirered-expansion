@@ -8071,3 +8071,2710 @@ voicegroup190::
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_directsound_no_resample 64, 104, DirectSoundWaveData_ethnic_flavours_atarigane, 255, 0, 255, 0
 	voice_directsound 63, 64, DirectSoundWaveData_sc88pro_taiko, 255, 0, 255, 0
+
+@@@ Start BW/2 Voicegroups @@@
+
+	.align 2
+voicegroup531::
+	voice_keysplit voicegroup595, KeySplitTableBW46 @ 0 | Multi | 
+	voice_keysplit voicegroup555, KeySplitTableBW07 @ 1 | Multi | 
+	voice_keysplit voicegroup556, KeySplitTableBW08 @ 2 | Multi | 
+	voice_keysplit voicegroup557, KeySplitTableBW09 @ 3 | Multi | 
+	voice_keysplit voicegroup558, KeySplitTableBW10 @ 4 | Multi | 
+	voice_keysplit voicegroup559, KeySplitTableBW11 @ 5 | Multi | 
+	voice_keysplit voicegroup560, KeySplitTableBW12 @ 6 | Multi | 
+	voice_keysplit voicegroup561, KeySplitTableBW13 @ 7 | Multi | 
+	voice_keysplit voicegroup562, KeySplitTableBW14 @ 8 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample279, 255, 240, 0, 185 @ 9 | Direct | 
+	voice_keysplit voicegroup564, KeySplitTableBW16 @ 10 | Multi | 
+	voice_keysplit voicegroup565, KeySplitTableBW17 @ 11 | Multi | 
+	voice_keysplit voicegroup566, KeySplitTableBW18 @ 12 | Multi | 
+	voice_keysplit voicegroup567, KeySplitTableBW19 @ 13 | Multi | 
+	voice_keysplit voicegroup553, KeySplitTableBW05 @ 14 | Multi | 
+	voice_keysplit voicegroup569, KeySplitTableBW21 @ 15 | Multi | 
+	voice_keysplit voicegroup570, KeySplitTableBW22 @ 16 | Multi | 
+	voice_keysplit voicegroup571, KeySplitTableBW23 @ 17 | Multi | 
+	voice_keysplit voicegroup572, KeySplitTableBW24 @ 18 | Multi | 
+	voice_keysplit voicegroup573, KeySplitTableBW25 @ 19 | Multi | 
+	voice_keysplit voicegroup574, KeySplitTableBW26 @ 20 | Multi | 
+	voice_keysplit voicegroup600, KeySplitTableBW51 @ 21 | Multi | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 22 | Multi | 
+	voice_keysplit voicegroup576, KeySplitTableBW28 @ 23 | Multi | 
+	voice_keysplit voicegroup577, KeySplitTableBW29 @ 24 | Multi | 
+	voice_keysplit voicegroup578, KeySplitTableBW30 @ 25 | Multi | 
+	voice_keysplit voicegroup579, KeySplitTableBW31 @ 26 | Multi | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 27 | Multi | 
+	voice_keysplit voicegroup581, KeySplitTableBW33 @ 28 | Multi | 
+	voice_keysplit voicegroup582, KeySplitTableBW34 @ 29 | Multi | 
+	voice_keysplit voicegroup583, KeySplitTableBW35 @ 30 | Multi | 
+	voice_keysplit voicegroup584, KeySplitTableBW36 @ 31 | Multi | 
+	voice_keysplit voicegroup596, KeySplitTableBW47 @ 32 | Multi | 
+	voice_keysplit voicegroup586, KeySplitTableBW38 @ 33 | Multi | 
+	voice_keysplit voicegroup587, KeySplitTableBW39 @ 34 | Multi | 
+	voice_keysplit voicegroup588, KeySplitTableBW40 @ 35 | Multi | 
+	voice_keysplit voicegroup589, KeySplitTableBW41 @ 36 | Multi | 
+	voice_keysplit voicegroup590, KeySplitTableBW42 @ 37 | Multi | 
+	voice_keysplit voicegroup591, KeySplitTableBW43 @ 38 | Multi | 
+	voice_keysplit_all voicegroup543 @ 39 | Drum | 
+	voice_keysplit_all voicegroup544 @ 40 | Drum | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample145, 255, 245, 130, 165 @ 41 | Direct | 
+	voice_keysplit voicegroup592, KeySplitTableBW44 @ 42 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 43 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample149, 255, 240, 110, 165 @ 44 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample150, 130, 45, 210, 240 @ 45 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample151, 255, 245, 110, 165 @ 46 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample152, 60, 240, 0, 80 @ 47 | Direct | 
+	voice_keysplit voicegroup576, KeySplitTableBW28 @ 48 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample195, 255, 245, 0, 165 @ 49 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample208, 145, 0, 145, 165 @ 50 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample209, 255, 245, 0, 165 @ 51 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample208, 145, 0, 145, 165 @ 52 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample210, 255, 245, 0, 165 @ 53 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample181, 255, 0, 255, 165 @ 54 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample153, 255, 245, 90, 185 @ 55 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample154, 255, 245, 90, 165 @ 56 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample155, 255, 245, 90, 165 @ 57 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 58 | Square-1 | --
+	voice_keysplit voicegroup578, KeySplitTableBW29 @ 59 | Multi | 
+	voice_keysplit_all voicegroup546 @ 60 | Drum | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample157, 255, 245, 210, 210 @ 61 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample158, 255, 250, 190, 185 @ 62 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample159, 255, 245, 200, 165 @ 63 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample160, 255, 250, 230, 225 @ 64 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample161, 255, 240, 130, 165 @ 65 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample159, 255, 250, 0, 165 @ 66 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample162, 255, 250, 235, 185 @ 67 | Direct | 
+	voice_keysplit voicegroup598, KeySplitTableBW49 @ 68 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample269, 185, 0, 185, 185 @ 69 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample212, 255, 0, 255, 165 @ 70 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample314, 255, 0, 255, 165 @ 71 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample211, 255, 245, 0, 165 @ 72 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample272, 255, 245, 0, 208 @ 73 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample273, 55, 0, 165, 165 @ 74 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample193, 255, 0, 255, 205 @ 75 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample190, 255, 245, 0, 165 @ 76 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample391, 255, 240, 110, 225 @ 77 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample177, 255, 0, 255, 165 @ 78 | Direct | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 79 | Multi | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 80 | Multi | 
+	voice_keysplit voicegroup596, KeySplitTableBW60 @ 81 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 82 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample282, 75, 0, 175, 255 @ 83 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample219, 255, 245, 0, 165 @ 84 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample254, 255, 0, 255, 165 @ 85 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample199, 255, 0, 255, 165 @ 86 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample197, 155, 0, 155, 165 @ 87 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample198, 145, 0, 145, 165 @ 88 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample185, 255, 0, 255, 165 @ 89 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample183, 255, 0, 255, 165 @ 90 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample187, 255, 0, 255, 165 @ 91 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample188, 255, 0, 255, 165 @ 92 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample189, 165, 0, 165, 165 @ 93 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample205, 165, 0, 165, 165 @ 94 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample206, 165, 0, 165, 165 @ 95 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample207, 255, 250, 0, 165 @ 96 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample170, 255, 0, 255, 235 @ 97 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample171, 255, 245, 0, 224 @ 98 | Direct | 
+	voice_keysplit voicegroup554, KeySplitTableBW06 @ 99 | Multi | 
+	voice_keysplit voicegroup594, KeySplitTableBW45 @ 100 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample191, 255, 0, 255, 165 @ 101 | Direct | 
+	voice_keysplit voicegroup597, KeySplitTableBW48 @ 102 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample194, 255, 0, 255, 165 @ 103 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample166, 15, 0, 165, 165 @ 104 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample255, 255, 0, 160, 205 @ 105 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample256, 200, 0, 200, 165 @ 106 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample257, 200, 0, 200, 165 @ 107 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample258, 255, 245, 0, 165 @ 108 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample182, 255, 0, 255, 165 @ 109 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample172, 255, 0, 255, 165 @ 110 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample173, 255, 250, 0, 224 @ 111 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample174, 255, 0, 255, 165 @ 112 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample175, 255, 0, 255, 165 @ 113 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample176, 255, 0, 255, 165 @ 114 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample178, 255, 0, 255, 165 @ 115 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample179, 255, 0, 255, 165 @ 116 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample180, 255, 0, 255, 165 @ 117 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample196, 224, 245, 0, 200 @ 118 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample201, 255, 0, 255, 165 @ 119 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample202, 255, 0, 255, 165 @ 120 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample203, 255, 0, 255, 165 @ 121 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample204, 165, 165, 0, 165 @ 122 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 123 | Square-1 | --
+	voice_keysplit voicegroup600, KeySplitTableBW51 @ 124 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample166, 255, 0, 225, 165 @ 125 | Direct | 
+	voice_keysplit voicegroup599, KeySplitTableBW50 @ 126 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample200, 255, 0, 255, 165 @ 127 | Direct | 
+
+	.align 2
+voicegroup532::
+	voice_keysplit voicegroup595, KeySplitTableBW46 @ 0 | Multi | 
+	voice_keysplit voicegroup555, KeySplitTableBW07 @ 1 | Multi | 
+	voice_keysplit voicegroup556, KeySplitTableBW08 @ 2 | Multi | 
+	voice_keysplit voicegroup557, KeySplitTableBW09 @ 3 | Multi | 
+	voice_keysplit voicegroup574, KeySplitTableBW26 @ 4 | Multi | 
+	voice_keysplit voicegroup555, KeySplitTableBW07 @ 5 | Multi | 
+	voice_keysplit voicegroup560, KeySplitTableBW12 @ 6 | Multi | 
+	voice_keysplit voicegroup595, KeySplitTableBW46 @ 7 | Multi | 
+	voice_keysplit voicegroup562, KeySplitTableBW14 @ 8 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample279, 255, 240, 0, 185 @ 9 | Direct | 
+	voice_keysplit voicegroup559, KeySplitTableBW11 @ 10 | Multi | 
+	voice_keysplit voicegroup560, KeySplitTableBW12 @ 11 | Multi | 
+	voice_keysplit voicegroup566, KeySplitTableBW18 @ 12 | Multi | 
+	voice_keysplit voicegroup561, KeySplitTableBW13 @ 13 | Multi | 
+	voice_keysplit voicegroup568, KeySplitTableBW20 @ 14 | Multi | 
+	voice_keysplit voicegroup569, KeySplitTableBW21 @ 15 | Multi | 
+	voice_keysplit voicegroup570, KeySplitTableBW22 @ 16 | Multi | 
+	voice_keysplit voicegroup565, KeySplitTableBW17 @ 17 | Multi | 
+	voice_keysplit voicegroup568, KeySplitTableBW20 @ 18 | Multi | 
+	voice_keysplit voicegroup573, KeySplitTableBW25 @ 19 | Multi | 
+	voice_keysplit voicegroup568, KeySplitTableBW20 @ 20 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample055, 255, 245, 0, 165 @ 21 | Direct | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 22 | Multi | 
+	voice_keysplit voicegroup576, KeySplitTableBW28 @ 23 | Multi | 
+	voice_keysplit voicegroup569, KeySplitTableBW21 @ 24 | Multi | 
+	voice_keysplit voicegroup573, KeySplitTableBW25 @ 25 | Multi | 
+	voice_keysplit voicegroup574, KeySplitTableBW26 @ 26 | Multi | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 27 | Multi | 
+	voice_keysplit voicegroup600, KeySplitTableBW51 @ 28 | Multi | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 29 | Multi | 
+	voice_keysplit voicegroup576, KeySplitTableBW56 @ 30 | Multi | 
+	voice_keysplit voicegroup584, KeySplitTableBW36 @ 31 | Multi | 
+	voice_keysplit voicegroup582, KeySplitTableBW34 @ 32 | Multi | 
+	voice_keysplit voicegroup578, KeySplitTableBW30 @ 33 | Multi | 
+	voice_keysplit voicegroup579, KeySplitTableBW31 @ 34 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample272, 255, 245, 0, 224 @ 35 | Direct | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 36 | Multi | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 37 | Multi | 
+	voice_keysplit voicegroup581, KeySplitTableBW33 @ 38 | Multi | 
+	voice_keysplit voicegroup582, KeySplitTableBW55 @ 39 | Multi | 
+	voice_keysplit voicegroup583, KeySplitTableBW35 @ 40 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample145, 255, 245, 130, 165 @ 41 | Direct | 
+	voice_keysplit voicegroup596, KeySplitTableBW47 @ 42 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 43 | Square-1 | --
+	voice_keysplit voicegroup586, KeySplitTableBW38 @ 44 | Multi | 
+	voice_keysplit voicegroup587, KeySplitTableBW39 @ 45 | Multi | 
+	voice_keysplit voicegroup594, KeySplitTableBW45 @ 46 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample152, 60, 240, 0, 80 @ 47 | Direct | 
+	voice_keysplit voicegroup588, KeySplitTableBW40 @ 48 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample195, 255, 245, 0, 165 @ 49 | Direct | 
+	voice_keysplit voicegroup598, KeySplitTableBW49 @ 50 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample181, 255, 0, 255, 165 @ 51 | Direct | 
+	voice_square_1_alt 60, 0, 0, 2, 0, 5, 4, 1 @ 52 | Square-1 | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 53 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 54 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample153, 255, 245, 90, 185 @ 55 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample154, 255, 245, 90, 185 @ 56 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample155, 255, 245, 90, 185 @ 57 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 58 | Square-1 | --
+	voice_keysplit voicegroup578, KeySplitTableBW29 @ 59 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample284, 255, 0, 160, 205 @ 60 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample283, 255, 245, 0, 165 @ 61 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample363, 255, 0, 255, 165 @ 62 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample363, 255, 0, 255, 165 @ 63 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample363, 255, 0, 255, 165 @ 64 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample363, 255, 0, 255, 165 @ 65 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 66 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 67 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 68 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 69 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 70 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 71 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 72 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 73 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 74 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 75 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 76 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 77 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 78 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 79 | Square-1 | --
+	voice_keysplit_all voicegroup543 @ 80 | Drum | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 81 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 82 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 83 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 84 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 85 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 86 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 87 | Square-1 | --
+	voice_keysplit voicegroup605, KeySplitTableBW58 @ 88 | Multi | 
+	voice_keysplit voicegroup605, KeySplitTableBW58 @ 89 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample340, 255, 0, 255, 165 @ 90 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample341, 255, 0, 255, 165 @ 91 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample342, 255, 0, 255, 165 @ 92 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample343, 255, 0, 255, 165 @ 93 | Direct | 
+	voice_keysplit voicegroup603, KeySplitTableBW54 @ 94 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample157, 255, 245, 210, 210 @ 95 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample367, 255, 0, 255, 165 @ 96 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 97 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 98 | Square-1 | --
+	voice_keysplit voicegroup604, KeySplitTableBW57 @ 99 | Multi | 
+	voice_keysplit voicegroup578, KeySplitTableBW30 @ 100 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 101 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 102 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 103 | Square-1 | --
+	voice_keysplit voicegroup579, KeySplitTableBW31 @ 104 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 105 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 106 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 107 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 108 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 109 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 110 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 111 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 112 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 113 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 114 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 115 | Square-1 | --
+	voice_keysplit voicegroup565, KeySplitTableBW59 @ 116 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample379, 165, 0, 165, 165 @ 117 | Direct | 
+	voice_keysplit voicegroup599, KeySplitTableBW50 @ 118 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample377, 255, 0, 255, 165 @ 119 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample370, 255, 0, 255, 165 @ 120 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample378, 255, 245, 0, 165 @ 121 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample365, 255, 0, 255, 165 @ 122 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample366, 255, 0, 255, 165 @ 123 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample364, 255, 0, 255, 165 @ 124 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample303, 165, 0, 165, 165 @ 125 | Direct | 
+	voice_keysplit_all voicegroup547 @ 126 | Drum | 
+	voice_keysplit_all voicegroup546 @ 127 | Drum | 
+
+	.align 2
+voicegroup533::
+	voice_keysplit voicegroup595, KeySplitTableBW46 @ 0 | Multi | 
+	voice_keysplit voicegroup555, KeySplitTableBW07 @ 1 | Multi | 
+	voice_keysplit voicegroup556, KeySplitTableBW08 @ 2 | Multi | 
+	voice_keysplit voicegroup557, KeySplitTableBW09 @ 3 | Multi | 
+	voice_keysplit voicegroup558, KeySplitTableBW10 @ 4 | Multi | 
+	voice_keysplit voicegroup559, KeySplitTableBW11 @ 5 | Multi | 
+	voice_keysplit voicegroup560, KeySplitTableBW12 @ 6 | Multi | 
+	voice_keysplit voicegroup561, KeySplitTableBW13 @ 7 | Multi | 
+	voice_keysplit voicegroup562, KeySplitTableBW14 @ 8 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample279, 255, 240, 0, 185 @ 9 | Direct | 
+	voice_keysplit voicegroup564, KeySplitTableBW16 @ 10 | Multi | 
+	voice_keysplit voicegroup565, KeySplitTableBW17 @ 11 | Multi | 
+	voice_keysplit voicegroup566, KeySplitTableBW18 @ 12 | Multi | 
+	voice_keysplit voicegroup567, KeySplitTableBW19 @ 13 | Multi | 
+	voice_keysplit voicegroup568, KeySplitTableBW20 @ 14 | Multi | 
+	voice_keysplit voicegroup569, KeySplitTableBW21 @ 15 | Multi | 
+	voice_keysplit voicegroup570, KeySplitTableBW22 @ 16 | Multi | 
+	voice_keysplit voicegroup571, KeySplitTableBW23 @ 17 | Multi | 
+	voice_keysplit voicegroup572, KeySplitTableBW24 @ 18 | Multi | 
+	voice_keysplit voicegroup573, KeySplitTableBW25 @ 19 | Multi | 
+	voice_keysplit voicegroup574, KeySplitTableBW26 @ 20 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample055, 255, 245, 0, 165 @ 21 | Direct | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 22 | Multi | 
+	voice_keysplit voicegroup576, KeySplitTableBW28 @ 23 | Multi | 
+	voice_keysplit voicegroup577, KeySplitTableBW29 @ 24 | Multi | 
+	voice_keysplit voicegroup578, KeySplitTableBW30 @ 25 | Multi | 
+	voice_keysplit voicegroup579, KeySplitTableBW31 @ 26 | Multi | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 27 | Multi | 
+	voice_keysplit voicegroup581, KeySplitTableBW33 @ 28 | Multi | 
+	voice_keysplit voicegroup582, KeySplitTableBW34 @ 29 | Multi | 
+	voice_keysplit voicegroup583, KeySplitTableBW35 @ 30 | Multi | 
+	voice_keysplit voicegroup584, KeySplitTableBW36 @ 31 | Multi | 
+	voice_keysplit voicegroup596, KeySplitTableBW47 @ 32 | Multi | 
+	voice_keysplit voicegroup586, KeySplitTableBW38 @ 33 | Multi | 
+	voice_keysplit voicegroup587, KeySplitTableBW39 @ 34 | Multi | 
+	voice_keysplit voicegroup588, KeySplitTableBW40 @ 35 | Multi | 
+	voice_keysplit voicegroup589, KeySplitTableBW41 @ 36 | Multi | 
+	voice_keysplit voicegroup590, KeySplitTableBW42 @ 37 | Multi | 
+	voice_keysplit voicegroup591, KeySplitTableBW43 @ 38 | Multi | 
+	voice_keysplit_all voicegroup543 @ 39 | Drum | 
+	voice_keysplit_all voicegroup544 @ 40 | Drum | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample145, 255, 245, 130, 165 @ 41 | Direct | 
+	voice_keysplit voicegroup592, KeySplitTableBW44 @ 42 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 43 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample149, 255, 240, 110, 165 @ 44 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample150, 130, 45, 210, 240 @ 45 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample151, 255, 245, 110, 165 @ 46 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample152, 60, 240, 0, 80 @ 47 | Direct | 
+	voice_keysplit voicegroup576, KeySplitTableBW28 @ 48 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample195, 255, 245, 0, 165 @ 49 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample307, 255, 245, 0, 165 @ 50 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample209, 255, 245, 0, 165 @ 51 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample208, 145, 0, 145, 165 @ 52 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample210, 255, 245, 0, 165 @ 53 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample181, 255, 0, 255, 165 @ 54 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample153, 255, 245, 90, 185 @ 55 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample154, 255, 245, 90, 165 @ 56 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample155, 255, 245, 90, 165 @ 57 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 58 | Square-1 | --
+	voice_keysplit voicegroup578, KeySplitTableBW29 @ 59 | Multi | 
+	voice_keysplit_all voicegroup546 @ 60 | Drum | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample157, 255, 245, 210, 210 @ 61 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample158, 255, 250, 190, 185 @ 62 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample159, 255, 245, 200, 165 @ 63 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample160, 255, 250, 230, 225 @ 64 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample309, 255, 250, 230, 225 @ 65 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample159, 255, 250, 0, 165 @ 66 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample162, 255, 250, 235, 185 @ 67 | Direct | 
+	voice_keysplit voicegroup598, KeySplitTableBW49 @ 68 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample269, 185, 0, 185, 185 @ 69 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample212, 255, 0, 255, 165 @ 70 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 71 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample211, 255, 245, 0, 165 @ 72 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample272, 255, 245, 0, 208 @ 73 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample273, 55, 0, 165, 165 @ 74 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample193, 255, 0, 255, 205 @ 75 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample190, 255, 245, 0, 165 @ 76 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 77 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample177, 255, 0, 255, 165 @ 78 | Direct | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 79 | Multi | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 80 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 81 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 82 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample282, 75, 0, 175, 255 @ 83 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample219, 255, 245, 0, 165 @ 84 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample254, 255, 0, 255, 165 @ 85 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample199, 255, 0, 255, 165 @ 86 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample197, 155, 0, 155, 165 @ 87 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample198, 145, 0, 145, 165 @ 88 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample185, 255, 0, 255, 165 @ 89 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample183, 255, 0, 255, 165 @ 90 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample187, 255, 0, 255, 165 @ 91 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample188, 255, 0, 255, 165 @ 92 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample189, 165, 0, 165, 165 @ 93 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample205, 165, 0, 165, 165 @ 94 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample206, 165, 0, 165, 165 @ 95 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample207, 255, 250, 0, 165 @ 96 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample170, 255, 0, 255, 235 @ 97 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample171, 255, 245, 0, 224 @ 98 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 99 | Square-1 | --
+	voice_keysplit voicegroup594, KeySplitTableBW45 @ 100 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample191, 255, 0, 255, 165 @ 101 | Direct | 
+	voice_keysplit voicegroup597, KeySplitTableBW48 @ 102 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample194, 255, 0, 255, 165 @ 103 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample169, 170, 160, 180, 210 @ 104 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample255, 255, 0, 160, 205 @ 105 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample256, 200, 0, 200, 165 @ 106 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample257, 200, 0, 200, 165 @ 107 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample258, 255, 245, 0, 165 @ 108 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample182, 255, 0, 255, 165 @ 109 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample172, 255, 0, 255, 165 @ 110 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample173, 255, 250, 0, 224 @ 111 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample174, 255, 0, 255, 165 @ 112 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample175, 255, 0, 255, 165 @ 113 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample309, 255, 0, 255, 165 @ 114 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample308, 255, 0, 255, 165 @ 115 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample179, 255, 0, 255, 165 @ 116 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample180, 255, 0, 255, 165 @ 117 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample196, 224, 245, 0, 200 @ 118 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample201, 255, 0, 255, 165 @ 119 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample202, 255, 0, 255, 165 @ 120 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample203, 255, 0, 255, 165 @ 121 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample204, 165, 165, 0, 165 @ 122 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 123 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 124 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample169, 170, 160, 180, 210 @ 125 | Direct | 
+	voice_keysplit voicegroup599, KeySplitTableBW50 @ 126 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample310, 165, 0, 165, 165 @ 127 | Direct | 
+	.align 2
+
+voicegroup534::
+	voice_keysplit voicegroup550, KeySplitTableBW02 @ 0 | Multi | 
+	voice_keysplit voicegroup555, KeySplitTableBW07 @ 1 | Multi | 
+	voice_keysplit voicegroup556, KeySplitTableBW08 @ 2 | Multi | 
+	voice_keysplit voicegroup557, KeySplitTableBW09 @ 3 | Multi | 
+	voice_keysplit voicegroup558, KeySplitTableBW10 @ 4 | Multi | 
+	voice_keysplit voicegroup559, KeySplitTableBW11 @ 5 | Multi | 
+	voice_keysplit voicegroup560, KeySplitTableBW12 @ 6 | Multi | 
+	voice_keysplit voicegroup561, KeySplitTableBW13 @ 7 | Multi | 
+	voice_keysplit voicegroup562, KeySplitTableBW14 @ 8 | Multi | 
+	voice_keysplit voicegroup563, KeySplitTableBW15 @ 9 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample316, 255, 246, 0, 165 @ 10 | Direct | 
+	voice_keysplit voicegroup565, KeySplitTableBW17 @ 11 | Multi | 
+	voice_keysplit voicegroup601, KeySplitTableBW52 @ 12 | Multi | 
+	voice_keysplit voicegroup567, KeySplitTableBW19 @ 13 | Multi | 
+	voice_keysplit voicegroup568, KeySplitTableBW20 @ 14 | Multi | 
+	voice_keysplit voicegroup569, KeySplitTableBW21 @ 15 | Multi | 
+	voice_keysplit voicegroup570, KeySplitTableBW22 @ 16 | Multi | 
+	voice_keysplit voicegroup571, KeySplitTableBW23 @ 17 | Multi | 
+	voice_keysplit voicegroup572, KeySplitTableBW24 @ 18 | Multi | 
+	voice_keysplit voicegroup573, KeySplitTableBW25 @ 19 | Multi | 
+	voice_keysplit voicegroup574, KeySplitTableBW26 @ 20 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample055, 255, 245, 0, 165 @ 21 | Direct | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 22 | Multi | 
+	voice_keysplit voicegroup576, KeySplitTableBW28 @ 23 | Multi | 
+	voice_keysplit voicegroup577, KeySplitTableBW29 @ 24 | Multi | 
+	voice_keysplit voicegroup593, KeySplitTableBW30 @ 25 | Multi | 
+	voice_keysplit voicegroup579, KeySplitTableBW31 @ 26 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample072, 220, 240, 0, 200 @ 27 | Direct | 
+	voice_keysplit voicegroup581, KeySplitTableBW33 @ 28 | Multi | 
+	voice_keysplit voicegroup582, KeySplitTableBW34 @ 29 | Multi | 
+	voice_keysplit voicegroup583, KeySplitTableBW35 @ 30 | Multi | 
+	voice_keysplit voicegroup584, KeySplitTableBW36 @ 31 | Multi | 
+	voice_keysplit voicegroup585, KeySplitTableBW37 @ 32 | Multi | 
+	voice_keysplit voicegroup586, KeySplitTableBW38 @ 33 | Multi | 
+	voice_keysplit voicegroup587, KeySplitTableBW39 @ 34 | Multi | 
+	voice_keysplit voicegroup588, KeySplitTableBW40 @ 35 | Multi | 
+	voice_keysplit voicegroup589, KeySplitTableBW41 @ 36 | Multi | 
+	voice_keysplit voicegroup590, KeySplitTableBW42 @ 37 | Multi | 
+	voice_keysplit voicegroup591, KeySplitTableBW43 @ 38 | Multi | 
+	voice_keysplit_all voicegroup543 @ 39 | Drum | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample368, 255, 0, 255, 165 @ 40 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample369, 255, 0, 255, 165 @ 41 | Direct | 
+	voice_keysplit voicegroup592, KeySplitTableBW44 @ 42 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample305, 165, 250, 0, 165 @ 43 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample149, 255, 240, 110, 165 @ 44 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample150, 130, 45, 210, 240 @ 45 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample151, 255, 245, 110, 165 @ 46 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample152, 60, 240, 0, 80 @ 47 | Direct | 
+	voice_square_2_alt 60, 0, 3, 0, 5, 4, 2 @ 48 | Square-2 | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 49 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 50 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample181, 255, 0, 255, 165 @ 51 | Direct | 
+	voice_square_1_alt 60, 0, 0, 2, 0, 5, 4, 1 @ 52 | Square-1 | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 53 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 54 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample153, 255, 245, 90, 185 @ 55 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample154, 255, 245, 90, 165 @ 56 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample155, 255, 245, 90, 165 @ 57 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 58 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample320, 255, 250, 0, 165 @ 59 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 60 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample157, 255, 245, 210, 210 @ 61 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 62 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 63 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample167, 255, 188, 220, 243 @ 64 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 65 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 66 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 67 | Square-1 | --
+	voice_keysplit voicegroup598, KeySplitTableBW49 @ 68 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 69 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 70 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 71 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 72 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 73 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 74 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample374, 255, 245, 0, 165 @ 75 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 76 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 77 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 78 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 79 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 80 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 81 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 82 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 83 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 84 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 85 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 86 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 87 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 88 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 89 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample340, 255, 0, 255, 165 @ 90 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample341, 255, 0, 255, 165 @ 91 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample342, 255, 0, 255, 165 @ 92 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample343, 255, 0, 255, 165 @ 93 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample338, 255, 245, 0, 165 @ 94 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample157, 255, 245, 210, 210 @ 95 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample337, 240, 200, 245, 220 @ 96 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 97 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample367, 255, 0, 255, 165 @ 98 | Direct | 
+	voice_keysplit voicegroup604, KeySplitTableBW57 @ 99 | Multi | 
+	voice_keysplit voicegroup594, KeySplitTableBW45 @ 100 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample319, 255, 245, 0, 165 @ 101 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample317, 185, 0, 185, 165 @ 102 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 103 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample353, 255, 0, 255, 165 @ 104 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample357, 255, 245, 0, 165 @ 105 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample356, 255, 0, 255, 165 @ 106 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample355, 255, 0, 255, 165 @ 107 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample354, 255, 0, 255, 165 @ 108 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 109 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample318, 255, 0, 255, 165 @ 110 | Direct | 
+	voice_keysplit_all voicegroup547 @ 111 | Drum | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 112 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 113 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 114 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 115 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 116 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 117 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 118 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 119 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 120 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 121 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample303, 165, 0, 165, 165 @ 122 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 123 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample373, 255, 0, 255, 165 @ 124 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 125 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 126 | Square-1 | --
+	voice_keysplit voicegroup582, KeySplitTableBW34 @ 127 | Multi | 
+
+	.align 2
+voicegroup535::
+	voice_keysplit voicegroup595, KeySplitTableBW46 @ 0 | Multi | 
+	voice_keysplit voicegroup555, KeySplitTableBW07 @ 1 | Multi | 
+	voice_keysplit voicegroup556, KeySplitTableBW08 @ 2 | Multi | 
+	voice_keysplit voicegroup557, KeySplitTableBW09 @ 3 | Multi | 
+	voice_keysplit voicegroup574, KeySplitTableBW26 @ 4 | Multi | 
+	voice_keysplit voicegroup555, KeySplitTableBW07 @ 5 | Multi | 
+	voice_keysplit voicegroup560, KeySplitTableBW12 @ 6 | Multi | 
+	voice_keysplit voicegroup595, KeySplitTableBW46 @ 7 | Multi | 
+	voice_keysplit voicegroup562, KeySplitTableBW14 @ 8 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample279, 255, 240, 0, 185 @ 9 | Direct | 
+	voice_keysplit voicegroup559, KeySplitTableBW11 @ 10 | Multi | 
+	voice_keysplit voicegroup560, KeySplitTableBW12 @ 11 | Multi | 
+	voice_keysplit voicegroup566, KeySplitTableBW18 @ 12 | Multi | 
+	voice_keysplit voicegroup561, KeySplitTableBW13 @ 13 | Multi | 
+	voice_keysplit voicegroup568, KeySplitTableBW20 @ 14 | Multi | 
+	voice_keysplit voicegroup569, KeySplitTableBW21 @ 15 | Multi | 
+	voice_keysplit voicegroup570, KeySplitTableBW22 @ 16 | Multi | 
+	voice_keysplit voicegroup565, KeySplitTableBW17 @ 17 | Multi | 
+	voice_keysplit voicegroup553, KeySplitTableBW05 @ 18 | Multi | 
+	voice_keysplit voicegroup573, KeySplitTableBW25 @ 19 | Multi | 
+	voice_keysplit voicegroup553, KeySplitTableBW05 @ 20 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample055, 255, 245, 0, 165 @ 21 | Direct | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 22 | Multi | 
+	voice_keysplit voicegroup576, KeySplitTableBW28 @ 23 | Multi | 
+	voice_keysplit voicegroup569, KeySplitTableBW21 @ 24 | Multi | 
+	voice_keysplit voicegroup573, KeySplitTableBW25 @ 25 | Multi | 
+	voice_keysplit voicegroup574, KeySplitTableBW26 @ 26 | Multi | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 27 | Multi | 
+	voice_keysplit voicegroup600, KeySplitTableBW51 @ 28 | Multi | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 29 | Multi | 
+	voice_keysplit voicegroup576, KeySplitTableBW28 @ 30 | Multi | 
+	voice_keysplit voicegroup584, KeySplitTableBW36 @ 31 | Multi | 
+	voice_keysplit voicegroup582, KeySplitTableBW34 @ 32 | Multi | 
+	voice_keysplit voicegroup578, KeySplitTableBW30 @ 33 | Multi | 
+	voice_keysplit voicegroup579, KeySplitTableBW31 @ 34 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample272, 255, 245, 0, 224 @ 35 | Direct | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 36 | Multi | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 37 | Multi | 
+	voice_keysplit voicegroup581, KeySplitTableBW33 @ 38 | Multi | 
+	voice_keysplit voicegroup582, KeySplitTableBW34 @ 39 | Multi | 
+	voice_keysplit voicegroup583, KeySplitTableBW35 @ 40 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample145, 255, 245, 130, 165 @ 41 | Direct | 
+	voice_keysplit voicegroup592, KeySplitTableBW44 @ 42 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 43 | Square-1 | --
+	voice_keysplit voicegroup586, KeySplitTableBW38 @ 44 | Multi | 
+	voice_keysplit voicegroup587, KeySplitTableBW39 @ 45 | Multi | 
+	voice_keysplit voicegroup594, KeySplitTableBW45 @ 46 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample152, 60, 240, 0, 80 @ 47 | Direct | 
+	voice_keysplit voicegroup588, KeySplitTableBW40 @ 48 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample195, 255, 255, 255, 165 @ 49 | Direct | 
+	voice_keysplit voicegroup598, KeySplitTableBW49 @ 50 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample181, 255, 0, 255, 165 @ 51 | Direct | 
+	voice_square_1_alt 60, 0, 0, 2, 0, 5, 4, 1 @ 52 | Square-1 | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 53 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 54 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample153, 255, 245, 90, 185 @ 55 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample154, 255, 245, 90, 165 @ 56 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample155, 255, 245, 90, 165 @ 57 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 58 | Square-1 | --
+	voice_keysplit voicegroup578, KeySplitTableBW29 @ 59 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample284, 255, 0, 160, 205 @ 60 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample283, 255, 245, 0, 165 @ 61 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 62 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample358, 255, 0, 255, 165 @ 63 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 64 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 65 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 66 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 67 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 68 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 69 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 70 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 71 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 72 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 73 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample358, 255, 0, 255, 165 @ 74 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample193, 255, 0, 255, 205 @ 75 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 76 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 77 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 78 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 79 | Square-1 | --
+	voice_keysplit_all voicegroup543 @ 80 | Drum | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 81 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 82 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 83 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 84 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 85 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample358, 255, 0, 255, 165 @ 86 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 87 | Square-1 | --
+	voice_keysplit voicegroup552, KeySplitTableBW04 @ 88 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample345, 255, 250, 0, 165 @ 89 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample340, 255, 0, 255, 165 @ 90 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample341, 255, 0, 255, 165 @ 91 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample342, 255, 245, 0, 165 @ 92 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample343, 255, 245, 0, 165 @ 93 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 94 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample157, 255, 245, 210, 210 @ 95 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 96 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 97 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample182, 255, 0, 255, 165 @ 98 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample166, 255, 0, 255, 165 @ 99 | Direct | 
+	voice_keysplit voicegroup578, KeySplitTableBW30 @ 100 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 101 | Square-1 | --
+	voice_keysplit voicegroup597, KeySplitTableBW48 @ 102 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 103 | Square-1 | --
+	voice_keysplit voicegroup579, KeySplitTableBW31 @ 104 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 105 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 106 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 107 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 108 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 109 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 110 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 111 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 112 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 113 | Square-1 | --
+	voice_keysplit_all voicegroup548 @ 114 | Drum | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 115 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 116 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 117 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 118 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 119 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 120 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 121 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 122 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample390, 165, 0, 165, 165 @ 123 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample306, 255, 0, 255, 165 @ 124 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample303, 165, 0, 165, 165 @ 125 | Direct | 
+	voice_keysplit_all voicegroup547 @ 126 | Drum | 
+	voice_keysplit_all voicegroup546 @ 127 | Drum | 
+
+	.align 2
+voicegroup536::
+	voice_keysplit voicegroup595, KeySplitTableBW46 @ 0 | Multi | 
+	voice_keysplit voicegroup555, KeySplitTableBW07 @ 1 | Multi | 
+	voice_keysplit voicegroup556, KeySplitTableBW08 @ 2 | Multi | 
+	voice_keysplit voicegroup557, KeySplitTableBW09 @ 3 | Multi | 
+	voice_keysplit voicegroup558, KeySplitTableBW10 @ 4 | Multi | 
+	voice_keysplit voicegroup559, KeySplitTableBW11 @ 5 | Multi | 
+	voice_keysplit voicegroup560, KeySplitTableBW12 @ 6 | Multi | 
+	voice_keysplit voicegroup561, KeySplitTableBW13 @ 7 | Multi | 
+	voice_keysplit voicegroup562, KeySplitTableBW14 @ 8 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample279, 255, 240, 0, 185 @ 9 | Direct | 
+	voice_keysplit voicegroup564, KeySplitTableBW16 @ 10 | Multi | 
+	voice_keysplit voicegroup565, KeySplitTableBW17 @ 11 | Multi | 
+	voice_keysplit voicegroup566, KeySplitTableBW18 @ 12 | Multi | 
+	voice_keysplit voicegroup567, KeySplitTableBW19 @ 13 | Multi | 
+	voice_keysplit voicegroup568, KeySplitTableBW20 @ 14 | Multi | 
+	voice_keysplit voicegroup569, KeySplitTableBW21 @ 15 | Multi | 
+	voice_keysplit voicegroup570, KeySplitTableBW22 @ 16 | Multi | 
+	voice_keysplit voicegroup571, KeySplitTableBW23 @ 17 | Multi | 
+	voice_keysplit voicegroup572, KeySplitTableBW24 @ 18 | Multi | 
+	voice_keysplit voicegroup573, KeySplitTableBW25 @ 19 | Multi | 
+	voice_keysplit voicegroup574, KeySplitTableBW26 @ 20 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample055, 255, 245, 0, 165 @ 21 | Direct | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 22 | Multi | 
+	voice_keysplit voicegroup576, KeySplitTableBW28 @ 23 | Multi | 
+	voice_keysplit voicegroup577, KeySplitTableBW29 @ 24 | Multi | 
+	voice_keysplit voicegroup578, KeySplitTableBW30 @ 25 | Multi | 
+	voice_keysplit voicegroup579, KeySplitTableBW31 @ 26 | Multi | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 27 | Multi | 
+	voice_keysplit voicegroup600, KeySplitTableBW51 @ 28 | Multi | 
+	voice_keysplit voicegroup582, KeySplitTableBW34 @ 29 | Multi | 
+	voice_keysplit voicegroup583, KeySplitTableBW35 @ 30 | Multi | 
+	voice_keysplit voicegroup584, KeySplitTableBW36 @ 31 | Multi | 
+	voice_keysplit voicegroup596, KeySplitTableBW47 @ 32 | Multi | 
+	voice_keysplit voicegroup586, KeySplitTableBW38 @ 33 | Multi | 
+	voice_keysplit voicegroup587, KeySplitTableBW39 @ 34 | Multi | 
+	voice_keysplit voicegroup588, KeySplitTableBW40 @ 35 | Multi | 
+	voice_keysplit voicegroup589, KeySplitTableBW41 @ 36 | Multi | 
+	voice_keysplit voicegroup590, KeySplitTableBW42 @ 37 | Multi | 
+	voice_keysplit voicegroup591, KeySplitTableBW43 @ 38 | Multi | 
+	voice_keysplit_all voicegroup543 @ 39 | Drum | 
+	voice_keysplit_all voicegroup544 @ 40 | Drum | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample145, 255, 245, 130, 165 @ 41 | Direct | 
+	voice_keysplit voicegroup592, KeySplitTableBW44 @ 42 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 43 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample149, 255, 240, 110, 165 @ 44 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample150, 130, 45, 210, 240 @ 45 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample151, 255, 245, 110, 165 @ 46 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample152, 60, 240, 0, 80 @ 47 | Direct | 
+	voice_keysplit voicegroup576, KeySplitTableBW28 @ 48 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample195, 255, 245, 0, 165 @ 49 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample301, 165, 245, 0, 165 @ 50 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample302, 255, 0, 255, 165 @ 51 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample208, 145, 0, 145, 165 @ 52 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample210, 255, 245, 0, 165 @ 53 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample181, 255, 0, 255, 165 @ 54 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample153, 255, 245, 90, 185 @ 55 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample154, 255, 245, 90, 165 @ 56 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample155, 255, 245, 90, 165 @ 57 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample307, 255, 245, 90, 165 @ 58 | Direct | 
+	voice_keysplit voicegroup578, KeySplitTableBW29 @ 59 | Multi | 
+	voice_keysplit_all voicegroup546 @ 60 | Drum | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample157, 255, 245, 210, 210 @ 61 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample158, 255, 250, 190, 185 @ 62 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample159, 255, 245, 200, 165 @ 63 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample160, 255, 250, 230, 225 @ 64 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample161, 255, 240, 130, 165 @ 65 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample159, 255, 250, 0, 165 @ 66 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 67 | Square-1 | --
+	voice_keysplit voicegroup598, KeySplitTableBW49 @ 68 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample269, 185, 0, 185, 185 @ 69 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample212, 255, 0, 255, 165 @ 70 | Direct | 
+	voice_keysplit voicegroup581, KeySplitTableBW33 @ 71 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample211, 255, 245, 0, 165 @ 72 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample272, 255, 245, 0, 208 @ 73 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample273, 55, 0, 165, 165 @ 74 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample345, 255, 0, 255, 205 @ 75 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample190, 255, 245, 0, 165 @ 76 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 77 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample177, 255, 0, 255, 165 @ 78 | Direct | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 79 | Multi | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 80 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample380, 255, 245, 0, 165 @ 81 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample381, 255, 245, 0, 165 @ 82 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample258, 255, 245, 0, 165 @ 83 | Direct | 
+	voice_keysplit voicegroup601, KeySplitTableBW52 @ 84 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample254, 255, 0, 255, 165 @ 85 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample199, 255, 0, 255, 165 @ 86 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample197, 155, 0, 155, 165 @ 87 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample198, 145, 0, 145, 165 @ 88 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample122, 255, 245, 0, 165 @ 89 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample183, 255, 0, 255, 165 @ 90 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample187, 255, 0, 255, 165 @ 91 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample188, 255, 0, 255, 165 @ 92 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample300, 185, 0, 185, 165 @ 93 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample205, 165, 0, 165, 165 @ 94 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample206, 165, 0, 165, 165 @ 95 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample207, 255, 250, 0, 165 @ 96 | Direct | 
+	voice_keysplit voicegroup602, KeySplitTableBW53 @ 97 | Multi | 
+	voice_keysplit voicegroup603, KeySplitTableBW54 @ 98 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample344, 255, 0, 255, 165 @ 99 | Direct | 
+	voice_keysplit voicegroup594, KeySplitTableBW45 @ 100 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample291, 255, 0, 255, 165 @ 101 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample291, 255, 0, 255, 165 @ 102 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample292, 165, 0, 165, 165 @ 103 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample293, 165, 0, 165, 165 @ 104 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample255, 255, 0, 160, 205 @ 105 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample256, 200, 0, 200, 165 @ 106 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample257, 200, 0, 200, 165 @ 107 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample299, 255, 0, 255, 165 @ 108 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample182, 165, 0, 165, 165 @ 109 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample298, 255, 0, 255, 165 @ 110 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample297, 255, 0, 255, 165 @ 111 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample296, 255, 0, 255, 165 @ 112 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample295, 255, 0, 255, 165 @ 113 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample176, 255, 0, 255, 165 @ 114 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample312, 145, 0, 145, 165 @ 115 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample311, 255, 245, 0, 165 @ 116 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample180, 255, 0, 255, 165 @ 117 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample196, 224, 245, 0, 200 @ 118 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample201, 255, 0, 255, 165 @ 119 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample202, 255, 0, 255, 165 @ 120 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample203, 255, 0, 255, 165 @ 121 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample286, 255, 245, 0, 165 @ 122 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 123 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample303, 165, 0, 165, 165 @ 124 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample169, 170, 160, 180, 210 @ 125 | Direct | 
+	voice_keysplit voicegroup599, KeySplitTableBW50 @ 126 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample305, 185, 0, 185, 165 @ 127 | Direct | 
+
+	.align 2
+voicegroup537::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample220, 255, 0, 255, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample221, 255, 0, 255, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample222, 255, 0, 255, 165 @ 2 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample223, 255, 0, 255, 165 @ 3 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample224, 255, 0, 255, 165 @ 4 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample225, 255, 0, 255, 165 @ 5 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample226, 255, 0, 255, 165 @ 6 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample227, 255, 0, 255, 165 @ 7 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample228, 255, 0, 255, 165 @ 8 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample229, 255, 0, 255, 165 @ 9 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample230, 55, 0, 255, 165 @ 10 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample231, 255, 0, 255, 165 @ 11 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample232, 255, 0, 255, 165 @ 12 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample233, 255, 0, 255, 165 @ 13 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample234, 255, 0, 255, 165 @ 14 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample235, 255, 0, 255, 165 @ 15 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample236, 255, 0, 255, 165 @ 16 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample237, 255, 0, 255, 165 @ 17 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample238, 255, 0, 255, 165 @ 18 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample239, 255, 0, 255, 165 @ 19 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample240, 255, 0, 255, 165 @ 20 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample241, 255, 0, 255, 165 @ 21 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample242, 255, 0, 255, 165 @ 22 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample243, 255, 0, 255, 165 @ 23 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample244, 255, 0, 255, 165 @ 24 | Direct | 
+	voice_keysplit voicegroup578, KeySplitTableBW30 @ 25 | Multi | 
+	voice_keysplit voicegroup579, KeySplitTableBW31 @ 26 | Multi | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 27 | Multi | 
+	voice_keysplit voicegroup581, KeySplitTableBW33 @ 28 | Multi | 
+	voice_keysplit voicegroup582, KeySplitTableBW34 @ 29 | Multi | 
+	voice_keysplit voicegroup583, KeySplitTableBW35 @ 30 | Multi | 
+	voice_keysplit voicegroup584, KeySplitTableBW36 @ 31 | Multi | 
+	voice_keysplit voicegroup585, KeySplitTableBW37 @ 32 | Multi | 
+	voice_keysplit voicegroup586, KeySplitTableBW38 @ 33 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample184, 250, 250, 250, 190 @ 34 | Direct | 
+	voice_keysplit voicegroup588, KeySplitTableBW40 @ 35 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample213, 255, 245, 0, 165 @ 36 | Direct | 
+	voice_keysplit voicegroup568, KeySplitTableBW20 @ 37 | Multi | 
+	voice_keysplit voicegroup591, KeySplitTableBW43 @ 38 | Multi | 
+	voice_keysplit_all voicegroup543 @ 39 | Drum | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample186, 170, 160, 180, 210 @ 40 | Direct | 
+	voice_directsound 61, 0, DirectSoundWaveData_BWInstrumentSample186, 170, 160, 180, 210 @ 41 | Direct | 
+	voice_directsound 62, 0, DirectSoundWaveData_BWInstrumentSample250, 255, 0, 255, 165 @ 42 | Direct | 
+	voice_directsound 63, 0, DirectSoundWaveData_BWInstrumentSample250, 255, 0, 255, 165 @ 43 | Direct | 
+	voice_directsound 64, 0, DirectSoundWaveData_BWInstrumentSample250, 255, 0, 255, 165 @ 44 | Direct | 
+	voice_directsound 65, 0, DirectSoundWaveData_BWInstrumentSample250, 255, 0, 255, 165 @ 45 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample251, 255, 0, 255, 165 @ 46 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample252, 255, 0, 255, 165 @ 47 | Direct | 
+	voice_directsound 61, 0, DirectSoundWaveData_BWInstrumentSample252, 255, 0, 255, 165 @ 48 | Direct | 
+	voice_directsound 62, 0, DirectSoundWaveData_BWInstrumentSample252, 255, 0, 255, 165 @ 49 | Direct | 
+	voice_directsound 63, 0, DirectSoundWaveData_BWInstrumentSample252, 255, 0, 255, 165 @ 50 | Direct | 
+	voice_directsound 64, 0, DirectSoundWaveData_BWInstrumentSample252, 255, 0, 255, 165 @ 51 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample253, 255, 0, 255, 165 @ 52 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample253, 255, 0, 255, 165 @ 53 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample253, 255, 0, 255, 165 @ 54 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample253, 255, 0, 255, 165 @ 55 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample154, 255, 245, 90, 165 @ 56 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample155, 255, 245, 90, 165 @ 57 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 58 | Square-1 | --
+	voice_keysplit voicegroup578, KeySplitTableBW29 @ 59 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample168, 255, 205, 220, 243 @ 60 | Direct | 
+	voice_keysplit voicegroup594, KeySplitTableBW45 @ 61 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample160, 255, 250, 230, 165 @ 62 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample157, 255, 245, 210, 165 @ 63 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample169, 170, 160, 180, 210 @ 64 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample167, 255, 188, 220, 243 @ 65 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 66 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 67 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 68 | Square-1 | --
+	voice_keysplit voicegroup564, KeySplitTableBW16 @ 69 | Multi | 
+	voice_keysplit voicegroup567, KeySplitTableBW19 @ 70 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 71 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 72 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 73 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 74 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 75 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 76 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 77 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 78 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 79 | Square-1 | --
+	voice_keysplit_all voicegroup545 @ 80 | Drum | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 81 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 82 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 83 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 84 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 85 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 86 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 87 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 88 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 89 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 90 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 91 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 92 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 93 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 94 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 95 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 96 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 97 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 98 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 99 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 100 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 101 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 102 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 103 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 104 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 105 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 106 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 107 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 108 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 109 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 110 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 111 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 112 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 113 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 114 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 115 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 116 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 117 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 118 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 119 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 120 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 121 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 122 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 123 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 124 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 125 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 126 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 127 | Square-1 | --
+
+	.align 2
+voicegroup538::
+	voice_keysplit voicegroup595, KeySplitTableBW46 @ 0 | Multi | 
+	voice_keysplit voicegroup555, KeySplitTableBW07 @ 1 | Multi | 
+	voice_keysplit voicegroup556, KeySplitTableBW08 @ 2 | Multi | 
+	voice_keysplit voicegroup557, KeySplitTableBW09 @ 3 | Multi | 
+	voice_keysplit voicegroup558, KeySplitTableBW10 @ 4 | Multi | 
+	voice_keysplit voicegroup559, KeySplitTableBW11 @ 5 | Multi | 
+	voice_keysplit voicegroup560, KeySplitTableBW12 @ 6 | Multi | 
+	voice_keysplit voicegroup561, KeySplitTableBW13 @ 7 | Multi | 
+	voice_keysplit voicegroup562, KeySplitTableBW14 @ 8 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample279, 255, 240, 0, 185 @ 9 | Direct | 
+	voice_keysplit voicegroup564, KeySplitTableBW16 @ 10 | Multi | 
+	voice_keysplit voicegroup565, KeySplitTableBW17 @ 11 | Multi | 
+	voice_keysplit voicegroup566, KeySplitTableBW18 @ 12 | Multi | 
+	voice_keysplit voicegroup567, KeySplitTableBW19 @ 13 | Multi | 
+	voice_keysplit voicegroup553, KeySplitTableBW05 @ 14 | Multi | 
+	voice_keysplit voicegroup569, KeySplitTableBW21 @ 15 | Multi | 
+	voice_keysplit voicegroup570, KeySplitTableBW22 @ 16 | Multi | 
+	voice_keysplit voicegroup571, KeySplitTableBW23 @ 17 | Multi | 
+	voice_keysplit voicegroup572, KeySplitTableBW24 @ 18 | Multi | 
+	voice_keysplit voicegroup573, KeySplitTableBW25 @ 19 | Multi | 
+	voice_keysplit voicegroup574, KeySplitTableBW26 @ 20 | Multi | 
+	voice_keysplit voicegroup600, KeySplitTableBW51 @ 21 | Multi | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 22 | Multi | 
+	voice_keysplit voicegroup576, KeySplitTableBW28 @ 23 | Multi | 
+	voice_keysplit voicegroup577, KeySplitTableBW29 @ 24 | Multi | 
+	voice_keysplit voicegroup578, KeySplitTableBW30 @ 25 | Multi | 
+	voice_keysplit voicegroup579, KeySplitTableBW31 @ 26 | Multi | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 27 | Multi | 
+	voice_keysplit voicegroup581, KeySplitTableBW33 @ 28 | Multi | 
+	voice_keysplit voicegroup582, KeySplitTableBW34 @ 29 | Multi | 
+	voice_keysplit voicegroup583, KeySplitTableBW35 @ 30 | Multi | 
+	voice_keysplit voicegroup584, KeySplitTableBW36 @ 31 | Multi | 
+	voice_keysplit voicegroup596, KeySplitTableBW47 @ 32 | Multi | 
+	voice_keysplit voicegroup586, KeySplitTableBW38 @ 33 | Multi | 
+	voice_keysplit voicegroup587, KeySplitTableBW39 @ 34 | Multi | 
+	voice_keysplit voicegroup588, KeySplitTableBW40 @ 35 | Multi | 
+	voice_keysplit voicegroup589, KeySplitTableBW41 @ 36 | Multi | 
+	voice_keysplit voicegroup590, KeySplitTableBW42 @ 37 | Multi | 
+	voice_keysplit voicegroup591, KeySplitTableBW43 @ 38 | Multi | 
+	voice_keysplit_all voicegroup543 @ 39 | Drum | 
+	voice_keysplit_all voicegroup544 @ 40 | Drum | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample145, 255, 245, 130, 165 @ 41 | Direct | 
+	voice_keysplit voicegroup592, KeySplitTableBW44 @ 42 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 43 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample149, 255, 240, 110, 165 @ 44 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample150, 130, 45, 210, 240 @ 45 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample151, 255, 245, 110, 165 @ 46 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample152, 60, 240, 0, 80 @ 47 | Direct | 
+	voice_keysplit voicegroup576, KeySplitTableBW28 @ 48 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample195, 255, 245, 0, 165 @ 49 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample208, 145, 0, 145, 165 @ 50 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample209, 255, 245, 0, 165 @ 51 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample208, 145, 0, 145, 165 @ 52 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample210, 255, 245, 0, 165 @ 53 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample181, 255, 0, 255, 165 @ 54 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample153, 255, 245, 90, 185 @ 55 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample154, 255, 245, 90, 165 @ 56 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample155, 255, 245, 90, 165 @ 57 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 58 | Square-1 | --
+	voice_keysplit voicegroup578, KeySplitTableBW29 @ 59 | Multi | 
+	voice_keysplit_all voicegroup546 @ 60 | Drum | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample157, 255, 245, 210, 210 @ 61 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample158, 255, 250, 190, 185 @ 62 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample159, 255, 245, 200, 165 @ 63 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample160, 255, 250, 230, 225 @ 64 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample161, 255, 240, 130, 165 @ 65 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample159, 255, 250, 0, 165 @ 66 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample162, 255, 250, 235, 185 @ 67 | Direct | 
+	voice_keysplit voicegroup598, KeySplitTableBW49 @ 68 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample269, 185, 0, 185, 185 @ 69 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample212, 255, 0, 255, 165 @ 70 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample314, 255, 0, 255, 165 @ 71 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample211, 255, 245, 0, 165 @ 72 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample272, 255, 245, 0, 208 @ 73 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample273, 55, 0, 165, 165 @ 74 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample193, 255, 0, 255, 205 @ 75 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample190, 255, 245, 0, 165 @ 76 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample391, 255, 240, 110, 225 @ 77 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample177, 255, 0, 255, 165 @ 78 | Direct | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 79 | Multi | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 80 | Multi | 
+	voice_keysplit voicegroup596, KeySplitTableBW60 @ 81 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 82 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample282, 75, 0, 175, 255 @ 83 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample219, 255, 245, 0, 165 @ 84 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample254, 255, 0, 255, 165 @ 85 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample199, 255, 0, 255, 165 @ 86 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample197, 155, 0, 155, 165 @ 87 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample198, 145, 0, 145, 165 @ 88 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample185, 255, 0, 255, 165 @ 89 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample183, 255, 0, 255, 165 @ 90 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample187, 255, 0, 255, 165 @ 91 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample188, 255, 0, 255, 165 @ 92 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample189, 165, 0, 165, 165 @ 93 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample205, 165, 0, 165, 165 @ 94 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample206, 165, 0, 165, 165 @ 95 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample207, 255, 250, 0, 165 @ 96 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample170, 255, 0, 255, 235 @ 97 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample171, 255, 245, 0, 224 @ 98 | Direct | 
+	voice_keysplit voicegroup554, KeySplitTableBW06 @ 99 | Multi | 
+	voice_keysplit voicegroup594, KeySplitTableBW45 @ 100 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample191, 255, 0, 255, 165 @ 101 | Direct | 
+	voice_keysplit voicegroup597, KeySplitTableBW48 @ 102 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample194, 255, 0, 255, 165 @ 103 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample166, 15, 0, 165, 165 @ 104 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample255, 255, 0, 160, 205 @ 105 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample256, 200, 0, 200, 165 @ 106 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample257, 200, 0, 200, 165 @ 107 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample258, 255, 245, 0, 165 @ 108 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample182, 255, 0, 255, 165 @ 109 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample172, 255, 0, 255, 165 @ 110 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample173, 255, 250, 0, 224 @ 111 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample174, 255, 0, 255, 165 @ 112 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample175, 255, 0, 255, 165 @ 113 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample176, 255, 0, 255, 165 @ 114 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample178, 255, 0, 255, 165 @ 115 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample179, 255, 0, 255, 165 @ 116 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample180, 255, 0, 255, 165 @ 117 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample196, 224, 245, 0, 200 @ 118 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample201, 255, 0, 255, 165 @ 119 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample202, 255, 0, 255, 165 @ 120 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample203, 255, 0, 255, 165 @ 121 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample204, 165, 165, 0, 165 @ 122 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 123 | Square-1 | --
+	voice_keysplit voicegroup600, KeySplitTableBW51 @ 124 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample166, 255, 0, 225, 165 @ 125 | Direct | 
+	voice_keysplit voicegroup599, KeySplitTableBW50 @ 126 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample200, 255, 0, 255, 165 @ 127 | Direct | 
+
+	.align 2
+voicegroup539::
+	voice_keysplit voicegroup595, KeySplitTableBW46 @ 0 | Multi | 
+	voice_keysplit voicegroup555, KeySplitTableBW07 @ 1 | Multi | 
+	voice_keysplit voicegroup556, KeySplitTableBW08 @ 2 | Multi | 
+	voice_keysplit voicegroup557, KeySplitTableBW09 @ 3 | Multi | 
+	voice_keysplit voicegroup574, KeySplitTableBW26 @ 4 | Multi | 
+	voice_keysplit voicegroup555, KeySplitTableBW07 @ 5 | Multi | 
+	voice_keysplit voicegroup560, KeySplitTableBW12 @ 6 | Multi | 
+	voice_keysplit voicegroup595, KeySplitTableBW46 @ 7 | Multi | 
+	voice_keysplit voicegroup562, KeySplitTableBW14 @ 8 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample279, 255, 240, 0, 185 @ 9 | Direct | 
+	voice_keysplit voicegroup559, KeySplitTableBW11 @ 10 | Multi | 
+	voice_keysplit voicegroup560, KeySplitTableBW12 @ 11 | Multi | 
+	voice_keysplit voicegroup566, KeySplitTableBW18 @ 12 | Multi | 
+	voice_keysplit voicegroup561, KeySplitTableBW13 @ 13 | Multi | 
+	voice_keysplit voicegroup568, KeySplitTableBW20 @ 14 | Multi | 
+	voice_keysplit voicegroup569, KeySplitTableBW21 @ 15 | Multi | 
+	voice_keysplit voicegroup570, KeySplitTableBW22 @ 16 | Multi | 
+	voice_keysplit voicegroup565, KeySplitTableBW17 @ 17 | Multi | 
+	voice_keysplit voicegroup553, KeySplitTableBW05 @ 18 | Multi | 
+	voice_keysplit voicegroup573, KeySplitTableBW25 @ 19 | Multi | 
+	voice_keysplit voicegroup553, KeySplitTableBW05 @ 20 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample055, 255, 245, 0, 165 @ 21 | Direct | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 22 | Multi | 
+	voice_keysplit voicegroup576, KeySplitTableBW28 @ 23 | Multi | 
+	voice_keysplit voicegroup569, KeySplitTableBW21 @ 24 | Multi | 
+	voice_keysplit voicegroup573, KeySplitTableBW25 @ 25 | Multi | 
+	voice_keysplit voicegroup574, KeySplitTableBW26 @ 26 | Multi | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 27 | Multi | 
+	voice_keysplit voicegroup600, KeySplitTableBW51 @ 28 | Multi | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 29 | Multi | 
+	voice_keysplit voicegroup576, KeySplitTableBW56 @ 30 | Multi | 
+	voice_keysplit voicegroup584, KeySplitTableBW36 @ 31 | Multi | 
+	voice_keysplit voicegroup582, KeySplitTableBW34 @ 32 | Multi | 
+	voice_keysplit voicegroup578, KeySplitTableBW30 @ 33 | Multi | 
+	voice_keysplit voicegroup579, KeySplitTableBW31 @ 34 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample272, 255, 245, 0, 224 @ 35 | Direct | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 36 | Multi | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 37 | Multi | 
+	voice_keysplit voicegroup581, KeySplitTableBW33 @ 38 | Multi | 
+	voice_keysplit voicegroup582, KeySplitTableBW55 @ 39 | Multi | 
+	voice_keysplit voicegroup583, KeySplitTableBW35 @ 40 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample145, 255, 245, 130, 165 @ 41 | Direct | 
+	voice_keysplit voicegroup596, KeySplitTableBW47 @ 42 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 43 | Square-1 | --
+	voice_keysplit voicegroup586, KeySplitTableBW38 @ 44 | Multi | 
+	voice_keysplit voicegroup587, KeySplitTableBW39 @ 45 | Multi | 
+	voice_keysplit voicegroup594, KeySplitTableBW45 @ 46 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample152, 60, 240, 0, 80 @ 47 | Direct | 
+	voice_keysplit voicegroup588, KeySplitTableBW40 @ 48 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample195, 255, 245, 0, 165 @ 49 | Direct | 
+	voice_keysplit voicegroup598, KeySplitTableBW49 @ 50 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample181, 255, 0, 255, 165 @ 51 | Direct | 
+	voice_square_1_alt 60, 0, 0, 2, 0, 5, 4, 1 @ 52 | Square-1 | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 53 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 54 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample153, 255, 245, 90, 185 @ 55 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample154, 255, 245, 90, 185 @ 56 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample155, 255, 245, 90, 185 @ 57 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 58 | Square-1 | --
+	voice_keysplit voicegroup578, KeySplitTableBW29 @ 59 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample284, 255, 0, 160, 205 @ 60 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample283, 255, 245, 0, 165 @ 61 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 62 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample358, 255, 0, 255, 165 @ 63 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 64 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 65 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 66 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 67 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 68 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 69 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 70 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 71 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 72 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 73 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample358, 255, 0, 255, 165 @ 74 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample193, 255, 0, 255, 205 @ 75 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 76 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 77 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 78 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 79 | Square-1 | --
+	voice_keysplit_all voicegroup543 @ 80 | Drum | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 81 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 82 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 83 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 84 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 85 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample358, 255, 0, 255, 165 @ 86 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 87 | Square-1 | --
+	voice_keysplit voicegroup552, KeySplitTableBW04 @ 88 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample345, 255, 250, 0, 165 @ 89 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample285, 255, 250, 0, 165 @ 90 | Direct | 
+	voice_keysplit voicegroup551, KeySplitTableBW03 @ 91 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample342, 255, 245, 0, 165 @ 92 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample343, 255, 245, 0, 165 @ 93 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 94 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample157, 255, 245, 210, 210 @ 95 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 96 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 97 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample182, 255, 0, 225, 165 @ 98 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample166, 255, 0, 225, 165 @ 99 | Direct | 
+	voice_keysplit voicegroup578, KeySplitTableBW03 @ 100 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 101 | Square-1 | --
+	voice_keysplit voicegroup597, KeySplitTableBW48 @ 102 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 103 | Square-1 | --
+	voice_keysplit voicegroup579, KeySplitTableBW31 @ 104 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 105 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 106 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 107 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 108 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 109 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 110 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 111 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 112 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 113 | Square-1 | --
+	voice_keysplit_all voicegroup548 @ 114 | Drum | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 115 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 116 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 117 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 118 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 119 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 120 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 121 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 122 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample390, 165, 0, 165, 165 @ 123 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample306, 255, 0, 255, 165 @ 124 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample303, 165, 0, 165, 165 @ 125 | Direct | 
+	voice_keysplit_all voicegroup547 @ 126 | Drum | 
+	voice_keysplit_all voicegroup546 @ 127 | Drum | 
+
+	.align 2
+voicegroup540::
+	voice_keysplit voicegroup595, KeySplitTableBW46 @ 0 | Multi | 
+	voice_keysplit voicegroup555, KeySplitTableBW07 @ 1 | Multi | 
+	voice_keysplit voicegroup603, KeySplitTableBW53 @ 2 | Multi | 
+	voice_keysplit voicegroup557, KeySplitTableBW09 @ 3 | Multi | 
+	voice_keysplit voicegroup603, KeySplitTableBW53 @ 4 | Multi | 
+	voice_keysplit voicegroup555, KeySplitTableBW07 @ 5 | Multi | 
+	voice_keysplit voicegroup560, KeySplitTableBW12 @ 6 | Multi | 
+	voice_keysplit voicegroup595, KeySplitTableBW46 @ 7 | Multi | 
+	voice_keysplit voicegroup562, KeySplitTableBW14 @ 8 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample279, 255, 240, 0, 185 @ 9 | Direct | 
+	voice_keysplit voicegroup559, KeySplitTableBW11 @ 10 | Multi | 
+	voice_keysplit voicegroup560, KeySplitTableBW12 @ 11 | Multi | 
+	voice_keysplit voicegroup566, KeySplitTableBW18 @ 12 | Multi | 
+	voice_keysplit voicegroup561, KeySplitTableBW13 @ 13 | Multi | 
+	voice_keysplit voicegroup568, KeySplitTableBW20 @ 14 | Multi | 
+	voice_keysplit voicegroup569, KeySplitTableBW21 @ 15 | Multi | 
+	voice_keysplit voicegroup570, KeySplitTableBW22 @ 16 | Multi | 
+	voice_keysplit voicegroup565, KeySplitTableBW17 @ 17 | Multi | 
+	voice_keysplit voicegroup553, KeySplitTableBW05 @ 18 | Multi | 
+	voice_keysplit voicegroup573, KeySplitTableBW25 @ 19 | Multi | 
+	voice_keysplit voicegroup553, KeySplitTableBW05 @ 20 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample055, 255, 245, 0, 165 @ 21 | Direct | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 22 | Multi | 
+	voice_keysplit voicegroup576, KeySplitTableBW28 @ 23 | Multi | 
+	voice_keysplit voicegroup569, KeySplitTableBW21 @ 24 | Multi | 
+	voice_keysplit voicegroup573, KeySplitTableBW25 @ 25 | Multi | 
+	voice_keysplit voicegroup574, KeySplitTableBW26 @ 26 | Multi | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 27 | Multi | 
+	voice_keysplit voicegroup600, KeySplitTableBW51 @ 28 | Multi | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 29 | Multi | 
+	voice_keysplit voicegroup576, KeySplitTableBW28 @ 30 | Multi | 
+	voice_keysplit voicegroup584, KeySplitTableBW36 @ 31 | Multi | 
+	voice_keysplit voicegroup582, KeySplitTableBW34 @ 32 | Multi | 
+	voice_keysplit voicegroup578, KeySplitTableBW30 @ 33 | Multi | 
+	voice_keysplit voicegroup579, KeySplitTableBW31 @ 34 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample272, 255, 245, 0, 224 @ 35 | Direct | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 36 | Multi | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 37 | Multi | 
+	voice_keysplit voicegroup581, KeySplitTableBW33 @ 38 | Multi | 
+	voice_keysplit_all voicegroup548 @ 39 | Drum | 
+	voice_keysplit voicegroup583, KeySplitTableBW35 @ 40 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample145, 255, 245, 130, 165 @ 41 | Direct | 
+	voice_keysplit voicegroup596, KeySplitTableBW47 @ 42 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 43 | Square-1 | --
+	voice_keysplit voicegroup586, KeySplitTableBW38 @ 44 | Multi | 
+	voice_keysplit voicegroup587, KeySplitTableBW39 @ 45 | Multi | 
+	voice_keysplit voicegroup594, KeySplitTableBW45 @ 46 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample152, 60, 240, 0, 80 @ 47 | Direct | 
+	voice_keysplit voicegroup588, KeySplitTableBW40 @ 48 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample195, 255, 255, 255, 165 @ 49 | Direct | 
+	voice_keysplit voicegroup598, KeySplitTableBW49 @ 50 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample181, 255, 0, 255, 165 @ 51 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 52 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 53 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 54 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample153, 255, 245, 90, 185 @ 55 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample154, 255, 245, 90, 165 @ 56 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample155, 255, 245, 90, 165 @ 57 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample307, 255, 245, 0, 165 @ 58 | Direct | 
+	voice_keysplit voicegroup578, KeySplitTableBW29 @ 59 | Multi | 
+	voice_keysplit_all voicegroup546 @ 60 | Drum | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample283, 255, 245, 0, 165 @ 61 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 62 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample358, 255, 0, 255, 165 @ 63 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 64 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 65 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 66 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 67 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 68 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 69 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 70 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 71 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 72 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 73 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample358, 255, 0, 255, 165 @ 74 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample193, 255, 0, 255, 205 @ 75 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 76 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 77 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample427, 255, 245, 0, 165 @ 78 | Direct | 
+	voice_keysplit_all voicegroup548 @ 79 | Drum | 
+	voice_keysplit_all voicegroup543 @ 80 | Drum | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample395, 255, 0, 255, 165 @ 81 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample395, 255, 0, 255, 165 @ 82 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample395, 255, 0, 255, 165 @ 83 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample425, 255, 0, 255, 165 @ 84 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample426, 255, 0, 255, 165 @ 85 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample358, 255, 0, 255, 165 @ 86 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 87 | Square-1 | --
+	voice_keysplit voicegroup552, KeySplitTableBW04 @ 88 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample345, 255, 250, 0, 165 @ 89 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample340, 255, 0, 255, 165 @ 90 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample341, 255, 0, 255, 165 @ 91 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample342, 255, 0, 255, 165 @ 92 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample426, 255, 0, 255, 165 @ 93 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 94 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample157, 255, 245, 210, 210 @ 95 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 96 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 97 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample182, 255, 0, 255, 165 @ 98 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample396, 255, 0, 255, 165 @ 99 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample397, 255, 0, 255, 165 @ 100 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample398, 255, 0, 255, 165 @ 101 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample399, 255, 0, 255, 165 @ 102 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample400, 255, 0, 255, 165 @ 103 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample401, 255, 0, 255, 165 @ 104 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample402, 255, 0, 255, 165 @ 105 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample403, 255, 0, 255, 165 @ 106 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample404, 255, 0, 255, 165 @ 107 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 108 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 109 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample405, 255, 0, 255, 165 @ 110 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample406, 255, 0, 255, 165 @ 111 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample407, 255, 0, 255, 165 @ 112 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample408, 255, 0, 255, 165 @ 113 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample409, 255, 0, 255, 165 @ 114 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample410, 255, 0, 255, 165 @ 115 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample411, 255, 0, 255, 165 @ 116 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample412, 255, 0, 255, 165 @ 117 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 118 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 119 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample413, 255, 0, 255, 165 @ 120 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample414, 255, 0, 255, 165 @ 121 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample415, 255, 0, 255, 165 @ 122 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample416, 255, 0, 255, 165 @ 123 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample417, 255, 0, 255, 165 @ 124 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample418, 255, 0, 255, 165 @ 125 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample419, 255, 0, 255, 165 @ 126 | Direct | 
+	voice_keysplit_all voicegroup546 @ 127 | Drum | 
+
+	.align 2
+voicegroup541::
+	voice_keysplit voicegroup595, KeySplitTableBW46 @ 0 | Multi | 
+	voice_keysplit voicegroup555, KeySplitTableBW07 @ 1 | Multi | 
+	voice_keysplit voicegroup556, KeySplitTableBW08 @ 2 | Multi | 
+	voice_keysplit voicegroup557, KeySplitTableBW09 @ 3 | Multi | 
+	voice_keysplit voicegroup574, KeySplitTableBW26 @ 4 | Multi | 
+	voice_keysplit voicegroup555, KeySplitTableBW07 @ 5 | Multi | 
+	voice_keysplit voicegroup560, KeySplitTableBW12 @ 6 | Multi | 
+	voice_keysplit voicegroup595, KeySplitTableBW46 @ 7 | Multi | 
+	voice_keysplit voicegroup562, KeySplitTableBW14 @ 8 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample279, 255, 240, 0, 185 @ 9 | Direct | 
+	voice_keysplit voicegroup559, KeySplitTableBW11 @ 10 | Multi | 
+	voice_keysplit voicegroup560, KeySplitTableBW12 @ 11 | Multi | 
+	voice_keysplit voicegroup566, KeySplitTableBW18 @ 12 | Multi | 
+	voice_keysplit voicegroup561, KeySplitTableBW13 @ 13 | Multi | 
+	voice_keysplit voicegroup568, KeySplitTableBW20 @ 14 | Multi | 
+	voice_keysplit voicegroup569, KeySplitTableBW21 @ 15 | Multi | 
+	voice_keysplit voicegroup570, KeySplitTableBW22 @ 16 | Multi | 
+	voice_keysplit voicegroup565, KeySplitTableBW17 @ 17 | Multi | 
+	voice_keysplit voicegroup553, KeySplitTableBW05 @ 18 | Multi | 
+	voice_keysplit voicegroup573, KeySplitTableBW25 @ 19 | Multi | 
+	voice_keysplit voicegroup553, KeySplitTableBW05 @ 20 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample055, 255, 245, 0, 165 @ 21 | Direct | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 22 | Multi | 
+	voice_keysplit voicegroup576, KeySplitTableBW28 @ 23 | Multi | 
+	voice_keysplit voicegroup569, KeySplitTableBW21 @ 24 | Multi | 
+	voice_keysplit voicegroup573, KeySplitTableBW25 @ 25 | Multi | 
+	voice_keysplit voicegroup574, KeySplitTableBW26 @ 26 | Multi | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 27 | Multi | 
+	voice_keysplit voicegroup600, KeySplitTableBW51 @ 28 | Multi | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 29 | Multi | 
+	voice_keysplit voicegroup576, KeySplitTableBW28 @ 30 | Multi | 
+	voice_keysplit voicegroup584, KeySplitTableBW36 @ 31 | Multi | 
+	voice_keysplit voicegroup582, KeySplitTableBW34 @ 32 | Multi | 
+	voice_keysplit voicegroup578, KeySplitTableBW30 @ 33 | Multi | 
+	voice_keysplit voicegroup579, KeySplitTableBW31 @ 34 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample272, 255, 245, 0, 224 @ 35 | Direct | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 36 | Multi | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 37 | Multi | 
+	voice_keysplit voicegroup581, KeySplitTableBW33 @ 38 | Multi | 
+	voice_keysplit voicegroup582, KeySplitTableBW34 @ 39 | Multi | 
+	voice_keysplit voicegroup583, KeySplitTableBW35 @ 40 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample145, 255, 245, 130, 165 @ 41 | Direct | 
+	voice_keysplit voicegroup596, KeySplitTableBW47 @ 42 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 43 | Square-1 | --
+	voice_keysplit voicegroup586, KeySplitTableBW38 @ 44 | Multi | 
+	voice_keysplit voicegroup587, KeySplitTableBW39 @ 45 | Multi | 
+	voice_keysplit voicegroup594, KeySplitTableBW45 @ 46 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample152, 60, 240, 0, 80 @ 47 | Direct | 
+	voice_keysplit voicegroup588, KeySplitTableBW40 @ 48 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample195, 255, 255, 255, 165 @ 49 | Direct | 
+	voice_keysplit voicegroup598, KeySplitTableBW49 @ 50 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample181, 255, 0, 255, 165 @ 51 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 52 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 53 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 54 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample153, 255, 245, 90, 185 @ 55 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample154, 255, 245, 90, 165 @ 56 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample155, 255, 245, 90, 165 @ 57 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 58 | Square-1 | --
+	voice_keysplit voicegroup578, KeySplitTableBW29 @ 59 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample284, 255, 0, 160, 205 @ 60 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample283, 255, 245, 0, 165 @ 61 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 62 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample358, 255, 0, 255, 165 @ 63 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 64 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample434, 165, 252, 0, 165 @ 65 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 66 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 67 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 68 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 69 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample428, 255, 0, 255, 165 @ 70 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample430, 255, 0, 255, 165 @ 71 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample431, 255, 0, 255, 165 @ 72 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample432, 255, 0, 255, 165 @ 73 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample435, 255, 0, 255, 165 @ 74 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample436, 255, 0, 255, 165 @ 75 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 76 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample371, 255, 0, 255, 165 @ 77 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 78 | Square-1 | --
+	voice_keysplit_all voicegroup548 @ 79 | Drum | 
+	voice_keysplit_all voicegroup543 @ 80 | Drum | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample430, 255, 250, 0, 165 @ 81 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample430, 255, 245, 0, 165 @ 82 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 83 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 84 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 85 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample358, 255, 0, 255, 165 @ 86 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 87 | Square-1 | --
+	voice_keysplit voicegroup552, KeySplitTableBW04 @ 88 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample345, 255, 250, 0, 165 @ 89 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample340, 255, 0, 255, 165 @ 90 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample341, 255, 0, 255, 165 @ 91 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample342, 255, 245, 0, 165 @ 92 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample343, 255, 245, 0, 165 @ 93 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample157, 255, 245, 210, 210 @ 94 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample157, 255, 245, 210, 210 @ 95 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 96 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 97 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample182, 255, 0, 255, 165 @ 98 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample166, 255, 0, 255, 165 @ 99 | Direct | 
+	voice_keysplit voicegroup578, KeySplitTableBW30 @ 100 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 101 | Square-1 | --
+	voice_keysplit voicegroup597, KeySplitTableBW48 @ 102 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample431, 255, 245, 0, 165 @ 103 | Direct | 
+	voice_keysplit voicegroup579, KeySplitTableBW31 @ 104 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 105 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 106 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 107 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample429, 165, 250, 0, 165 @ 108 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample433, 255, 0, 255, 165 @ 109 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 110 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 111 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 112 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 113 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 114 | Square-1 | --
+	voice_keysplit_all voicegroup548 @ 115 | Drum | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 116 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 117 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 118 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 119 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 120 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 121 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 122 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample390, 165, 0, 165, 165 @ 123 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample306, 255, 0, 255, 165 @ 124 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample303, 165, 0, 165, 165 @ 125 | Direct | 
+	voice_keysplit_all voicegroup547 @ 126 | Drum | 
+	voice_keysplit_all voicegroup546 @ 127 | Drum | 
+
+	.align 2
+voicegroup542::
+	voice_keysplit voicegroup595, KeySplitTableBW46 @ 0 | Multi | 
+	voice_keysplit voicegroup555, KeySplitTableBW07 @ 1 | Multi | 
+	voice_keysplit voicegroup556, KeySplitTableBW08 @ 2 | Multi | 
+	voice_keysplit voicegroup557, KeySplitTableBW09 @ 3 | Multi | 
+	voice_keysplit voicegroup574, KeySplitTableBW26 @ 4 | Multi | 
+	voice_keysplit voicegroup555, KeySplitTableBW07 @ 5 | Multi | 
+	voice_keysplit voicegroup560, KeySplitTableBW12 @ 6 | Multi | 
+	voice_keysplit voicegroup595, KeySplitTableBW46 @ 7 | Multi | 
+	voice_keysplit voicegroup562, KeySplitTableBW14 @ 8 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample279, 255, 240, 0, 185 @ 9 | Direct | 
+	voice_keysplit voicegroup559, KeySplitTableBW11 @ 10 | Multi | 
+	voice_keysplit voicegroup560, KeySplitTableBW12 @ 11 | Multi | 
+	voice_keysplit voicegroup551, KeySplitTableBW03 @ 12 | Multi | 
+	voice_keysplit voicegroup561, KeySplitTableBW13 @ 13 | Multi | 
+	voice_keysplit voicegroup568, KeySplitTableBW20 @ 14 | Multi | 
+	voice_keysplit voicegroup569, KeySplitTableBW21 @ 15 | Multi | 
+	voice_keysplit voicegroup570, KeySplitTableBW22 @ 16 | Multi | 
+	voice_keysplit voicegroup565, KeySplitTableBW17 @ 17 | Multi | 
+	voice_keysplit voicegroup553, KeySplitTableBW05 @ 18 | Multi | 
+	voice_keysplit voicegroup573, KeySplitTableBW25 @ 19 | Multi | 
+	voice_keysplit voicegroup553, KeySplitTableBW05 @ 20 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample055, 255, 245, 0, 165 @ 21 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample441, 165, 0, 165, 165 @ 22 | Direct | 
+	voice_keysplit voicegroup576, KeySplitTableBW28 @ 23 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample370, 255, 0, 255, 165 @ 24 | Direct | 
+	voice_keysplit voicegroup573, KeySplitTableBW25 @ 25 | Multi | 
+	voice_keysplit voicegroup574, KeySplitTableBW26 @ 26 | Multi | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 27 | Multi | 
+	voice_keysplit voicegroup600, KeySplitTableBW51 @ 28 | Multi | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 29 | Multi | 
+	voice_keysplit voicegroup576, KeySplitTableBW28 @ 30 | Multi | 
+	voice_keysplit voicegroup584, KeySplitTableBW36 @ 31 | Multi | 
+	voice_keysplit voicegroup582, KeySplitTableBW34 @ 32 | Multi | 
+	voice_keysplit voicegroup578, KeySplitTableBW30 @ 33 | Multi | 
+	voice_keysplit voicegroup579, KeySplitTableBW31 @ 34 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample272, 255, 245, 0, 224 @ 35 | Direct | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 36 | Multi | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 37 | Multi | 
+	voice_keysplit voicegroup581, KeySplitTableBW33 @ 38 | Multi | 
+	voice_keysplit voicegroup582, KeySplitTableBW34 @ 39 | Multi | 
+	voice_keysplit voicegroup583, KeySplitTableBW35 @ 40 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample145, 255, 245, 130, 165 @ 41 | Direct | 
+	voice_keysplit voicegroup596, KeySplitTableBW47 @ 42 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 43 | Square-1 | --
+	voice_keysplit voicegroup586, KeySplitTableBW38 @ 44 | Multi | 
+	voice_keysplit voicegroup587, KeySplitTableBW39 @ 45 | Multi | 
+	voice_keysplit voicegroup594, KeySplitTableBW45 @ 46 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample152, 60, 240, 0, 80 @ 47 | Direct | 
+	voice_keysplit voicegroup588, KeySplitTableBW40 @ 48 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample195, 255, 255, 255, 165 @ 49 | Direct | 
+	voice_keysplit voicegroup598, KeySplitTableBW49 @ 50 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample181, 255, 0, 255, 165 @ 51 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 52 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 53 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 54 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample153, 255, 245, 90, 185 @ 55 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample154, 255, 245, 90, 165 @ 56 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample155, 255, 245, 90, 165 @ 57 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 58 | Square-1 | --
+	voice_keysplit voicegroup578, KeySplitTableBW29 @ 59 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample284, 255, 0, 160, 205 @ 60 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample166, 255, 0, 225, 165 @ 61 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 62 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample358, 255, 0, 255, 165 @ 63 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 64 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 65 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 66 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 67 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 68 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 69 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample465, 255, 0, 255, 165 @ 70 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample466, 255, 0, 255, 165 @ 71 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 72 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 73 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample358, 255, 0, 255, 165 @ 74 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample193, 255, 0, 255, 205 @ 75 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 76 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 77 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 78 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 79 | Square-1 | --
+	voice_keysplit_all voicegroup543 @ 80 | Drum | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 81 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 82 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 83 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 84 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 85 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample460, 255, 0, 255, 165 @ 86 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample461, 255, 0, 255, 165 @ 87 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample462, 255, 0, 255, 165 @ 88 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample442, 255, 0, 255, 165 @ 89 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample443, 255, 0, 255, 165 @ 90 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample444, 255, 0, 255, 165 @ 91 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample445, 255, 0, 255, 165 @ 92 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample446, 255, 0, 255, 165 @ 93 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample447, 255, 0, 255, 165 @ 94 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample448, 255, 0, 255, 165 @ 95 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample449, 255, 0, 255, 165 @ 96 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample450, 255, 0, 255, 165 @ 97 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample451, 255, 0, 255, 165 @ 98 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample452, 255, 0, 255, 165 @ 99 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample453, 255, 0, 255, 165 @ 100 | Direct | 
+	voice_keysplit voicegroup551, KeySplitTableBW03 @ 101 | Multi | 
+	voice_keysplit voicegroup597, KeySplitTableBW48 @ 102 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 103 | Square-1 | --
+	voice_keysplit voicegroup579, KeySplitTableBW31 @ 104 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 105 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 106 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 107 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 108 | Square-1 | --
+	voice_keysplit_all voicegroup548 @ 109 | Drum | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 110 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 111 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 112 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 113 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 114 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 115 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 116 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 117 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 118 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 119 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 120 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 121 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 122 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample390, 165, 0, 165, 165 @ 123 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample306, 255, 0, 255, 165 @ 124 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample463, 255, 0, 255, 165 @ 125 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample454, 255, 0, 255, 165 @ 126 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample464, 255, 0, 255, 165 @ 127 | Direct | 
+
+	.align 2
+voicegroup543::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample214, 255, 0, 255, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample215, 255, 0, 255, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample216, 255, 0, 255, 165 @ 2 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample217, 255, 0, 255, 165 @ 3 | Direct | 
+	voice_directsound 61, 0, DirectSoundWaveData_BWInstrumentSample217, 255, 0, 255, 165 @ 4 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample218, 255, 0, 255, 165 @ 5 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample219, 255, 0, 255, 165 @ 6 | Direct | 
+	voice_directsound 48, 0, DirectSoundWaveData_BWInstrumentSample219, 255, 0, 255, 165 @ 7 | Direct | 
+	voice_directsound 72, 0, DirectSoundWaveData_BWInstrumentSample215, 255, 0, 255, 165 @ 8 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample259, 255, 0, 255, 165 @ 9 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample260, 255, 0, 255, 165 @ 10 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample261, 185, 0, 185, 165 @ 11 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample262, 185, 0, 185, 165 @ 12 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample263, 255, 0, 255, 165 @ 13 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample264, 255, 0, 255, 165 @ 14 | Direct | 
+	voice_directsound 61, 0, DirectSoundWaveData_BWInstrumentSample264, 255, 0, 255, 165 @ 15 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample265, 255, 0, 255, 165 @ 16 | Direct | 
+	voice_directsound 61, 0, DirectSoundWaveData_BWInstrumentSample265, 255, 0, 255, 165 @ 17 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample266, 255, 0, 255, 165 @ 18 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample267, 200, 0, 200, 165 @ 19 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample278, 255, 245, 0, 165 @ 20 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample278, 255, 245, 0, 165 @ 21 | Direct | 
+	voice_directsound 42, 0, DirectSoundWaveData_BWInstrumentSample118, 255, 150, 0, 165 @ 22 | Direct | 
+	voice_directsound 57, 0, DirectSoundWaveData_BWInstrumentSample294, 255, 245, 0, 165 @ 23 | Direct | 
+	voice_directsound 61, 0, DirectSoundWaveData_BWInstrumentSample261, 165, 0, 165, 165 @ 24 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample304, 165, 245, 0, 165 @ 25 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample313, 165, 245, 0, 165 @ 26 | Direct | 
+	voice_directsound 27, 0, DirectSoundWaveData_BWInstrumentSample107, 0, 0, 0, 0 @ 27 | Direct | 
+	voice_directsound 28, 0, DirectSoundWaveData_BWInstrumentSample107, 0, 0, 0, 0 @ 28 | Direct | 
+	voice_directsound 29, 0, DirectSoundWaveData_BWInstrumentSample107, 255, 245, 0, 165 @ 29 | Direct | 
+	voice_directsound 30, 0, DirectSoundWaveData_BWInstrumentSample108, 255, 245, 0, 165 @ 30 | Direct | 
+	voice_directsound 31, 0, DirectSoundWaveData_BWInstrumentSample109, 6, 247, 0, 216 @ 31 | Direct | 
+	voice_directsound 32, 0, DirectSoundWaveData_BWInstrumentSample110, 255, 245, 0, 165 @ 32 | Direct | 
+	voice_directsound 33, 0, DirectSoundWaveData_BWInstrumentSample110, 255, 245, 0, 165 @ 33 | Direct | 
+	voice_directsound 34, 0, DirectSoundWaveData_BWInstrumentSample111, 255, 245, 0, 165 @ 34 | Direct | 
+	voice_directsound 35, 0, DirectSoundWaveData_BWInstrumentSample112, 255, 245, 0, 165 @ 35 | Direct | 
+	voice_directsound 36, 0, DirectSoundWaveData_BWInstrumentSample113, 255, 230, 0, 165 @ 36 | Direct | 
+	voice_directsound 37, 0, DirectSoundWaveData_BWInstrumentSample114, 255, 245, 0, 165 @ 37 | Direct | 
+	voice_directsound 38, 0, DirectSoundWaveData_BWInstrumentSample115, 255, 245, 0, 165 @ 38 | Direct | 
+	voice_directsound 39, 0, DirectSoundWaveData_BWInstrumentSample116, 255, 245, 0, 165 @ 39 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample394, 255, 245, 0, 165 @ 40 | Direct | 
+	voice_directsound 41, 0, DirectSoundWaveData_BWInstrumentSample117, 255, 245, 0, 165 @ 41 | Direct | 
+	voice_directsound 42, 0, DirectSoundWaveData_BWInstrumentSample118, 255, 245, 0, 165 @ 42 | Direct | 
+	voice_directsound 43, 0, DirectSoundWaveData_BWInstrumentSample119, 255, 245, 0, 165 @ 43 | Direct | 
+	voice_directsound 44, 0, DirectSoundWaveData_BWInstrumentSample119, 255, 245, 0, 165 @ 44 | Direct | 
+	voice_directsound 45, 0, DirectSoundWaveData_BWInstrumentSample120, 255, 245, 0, 165 @ 45 | Direct | 
+	voice_directsound 46, 0, DirectSoundWaveData_BWInstrumentSample121, 255, 245, 0, 165 @ 46 | Direct | 
+	voice_directsound 47, 0, DirectSoundWaveData_BWInstrumentSample122, 255, 245, 0, 165 @ 47 | Direct | 
+	voice_directsound 48, 0, DirectSoundWaveData_BWInstrumentSample123, 255, 245, 0, 165 @ 48 | Direct | 
+	voice_directsound 49, 0, DirectSoundWaveData_BWInstrumentSample124, 255, 245, 0, 165 @ 49 | Direct | 
+	voice_directsound 50, 0, DirectSoundWaveData_BWInstrumentSample124, 255, 245, 0, 165 @ 50 | Direct | 
+	voice_directsound 51, 0, DirectSoundWaveData_BWInstrumentSample124, 255, 245, 0, 165 @ 51 | Direct | 
+	voice_directsound 52, 0, DirectSoundWaveData_BWInstrumentSample125, 255, 245, 0, 165 @ 52 | Direct | 
+	voice_directsound 53, 0, DirectSoundWaveData_BWInstrumentSample126, 255, 245, 0, 165 @ 53 | Direct | 
+	voice_directsound 54, 0, DirectSoundWaveData_BWInstrumentSample127, 255, 245, 0, 165 @ 54 | Direct | 
+	voice_directsound 55, 0, DirectSoundWaveData_BWInstrumentSample128, 255, 245, 0, 165 @ 55 | Direct | 
+	voice_directsound 56, 0, DirectSoundWaveData_BWInstrumentSample129, 255, 245, 0, 165 @ 56 | Direct | 
+	voice_directsound 57, 0, DirectSoundWaveData_BWInstrumentSample130, 255, 245, 0, 165 @ 57 | Direct | 
+	voice_directsound 58, 0, DirectSoundWaveData_BWInstrumentSample130, 255, 245, 0, 165 @ 58 | Direct | 
+	voice_directsound 59, 0, DirectSoundWaveData_BWInstrumentSample131, 255, 245, 0, 165 @ 59 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample132, 255, 245, 0, 165 @ 60 | Direct | 
+	voice_directsound 61, 0, DirectSoundWaveData_BWInstrumentSample133, 255, 245, 0, 165 @ 61 | Direct | 
+	voice_directsound 62, 0, DirectSoundWaveData_BWInstrumentSample134, 255, 245, 0, 165 @ 62 | Direct | 
+	voice_directsound 63, 0, DirectSoundWaveData_BWInstrumentSample135, 255, 245, 0, 165 @ 63 | Direct | 
+	voice_directsound 64, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 64 | Direct | 
+	voice_directsound 65, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 65 | Direct | 
+	voice_directsound 66, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 66 | Direct | 
+	voice_directsound 67, 0, DirectSoundWaveData_BWInstrumentSample137, 255, 220, 0, 165 @ 67 | Direct | 
+	voice_directsound 68, 0, DirectSoundWaveData_BWInstrumentSample138, 255, 245, 0, 165 @ 68 | Direct | 
+	voice_directsound 69, 0, DirectSoundWaveData_BWInstrumentSample139, 255, 245, 0, 165 @ 69 | Direct | 
+	voice_directsound 70, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 70 | Direct | 
+	voice_directsound 71, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 71 | Direct | 
+	voice_directsound 72, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 72 | Direct | 
+	voice_directsound 73, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 73 | Direct | 
+	voice_directsound 74, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 74 | Direct | 
+	voice_directsound 75, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 75 | Direct | 
+	voice_directsound 76, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 76 | Direct | 
+	voice_directsound 77, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 77 | Direct | 
+	voice_directsound 78, 0, DirectSoundWaveData_BWInstrumentSample140, 255, 245, 0, 165 @ 78 | Direct | 
+	voice_directsound 79, 0, DirectSoundWaveData_BWInstrumentSample140, 255, 245, 0, 165 @ 79 | Direct | 
+	voice_directsound 80, 0, DirectSoundWaveData_BWInstrumentSample141, 255, 230, 20, 100 @ 80 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample271, 255, 245, 0, 165 @ 81 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample346, 255, 245, 0, 165 @ 82 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample347, 255, 245, 0, 165 @ 83 | Direct | 
+	voice_directsound 69, 0, DirectSoundWaveData_BWInstrumentSample346, 255, 245, 0, 165 @ 84 | Direct | 
+	voice_directsound 69, 0, DirectSoundWaveData_BWInstrumentSample347, 255, 245, 0, 165 @ 85 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 86 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 87 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 88 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 89 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 90 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 91 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 92 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 93 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 94 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 95 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 96 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 97 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 98 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 99 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 100 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 101 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 102 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 103 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 104 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 105 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 106 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 107 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 108 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 109 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 110 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 111 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 112 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 113 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 114 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 115 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 116 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 117 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 118 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 119 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 120 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 121 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 122 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 123 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 124 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 125 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 126 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 127 | Square-1 | --
+
+	.align 2
+voicegroup544::
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 0 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 1 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 2 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 3 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 4 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 5 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 6 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 7 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 8 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 9 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 10 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 11 | Square-1 | --
+	voice_directsound 12, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 12 | Direct | 
+	voice_directsound 13, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 13 | Direct | 
+	voice_directsound 14, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 14 | Direct | 
+	voice_directsound 15, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 15 | Direct | 
+	voice_directsound 16, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 16 | Direct | 
+	voice_directsound 17, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 17 | Direct | 
+	voice_directsound 18, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 18 | Direct | 
+	voice_directsound 19, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 19 | Direct | 
+	voice_directsound 20, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 20 | Direct | 
+	voice_directsound 21, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 21 | Direct | 
+	voice_directsound 22, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 22 | Direct | 
+	voice_directsound 23, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 23 | Direct | 
+	voice_directsound 24, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 24 | Direct | 
+	voice_directsound 25, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 25 | Direct | 
+	voice_directsound 26, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 26 | Direct | 
+	voice_directsound 27, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 27 | Direct | 
+	voice_directsound 28, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 28 | Direct | 
+	voice_directsound 29, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 29 | Direct | 
+	voice_directsound 30, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 30 | Direct | 
+	voice_directsound 31, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 31 | Direct | 
+	voice_directsound 32, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 32 | Direct | 
+	voice_directsound 33, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 33 | Direct | 
+	voice_directsound 34, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 34 | Direct | 
+	voice_directsound 35, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 35 | Direct | 
+	voice_directsound 36, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 36 | Direct | 
+	voice_directsound 37, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 37 | Direct | 
+	voice_directsound 38, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 38 | Direct | 
+	voice_directsound 39, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 39 | Direct | 
+	voice_directsound 40, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 40 | Direct | 
+	voice_directsound 41, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 41 | Direct | 
+	voice_directsound 42, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 42 | Direct | 
+	voice_directsound 43, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 43 | Direct | 
+	voice_directsound 44, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 44 | Direct | 
+	voice_directsound 45, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 45 | Direct | 
+	voice_directsound 46, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 46 | Direct | 
+	voice_directsound 47, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 47 | Direct | 
+	voice_directsound 48, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 48 | Direct | 
+	voice_directsound 49, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 49 | Direct | 
+	voice_directsound 50, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 50 | Direct | 
+	voice_directsound 51, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 51 | Direct | 
+	voice_directsound 52, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 52 | Direct | 
+	voice_directsound 53, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 53 | Direct | 
+	voice_directsound 54, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 54 | Direct | 
+	voice_directsound 55, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 55 | Direct | 
+	voice_directsound 56, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 56 | Direct | 
+	voice_directsound 57, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 57 | Direct | 
+	voice_directsound 58, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 58 | Direct | 
+	voice_directsound 59, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 59 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 60 | Direct | 
+	voice_directsound 61, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 61 | Direct | 
+	voice_directsound 62, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 62 | Direct | 
+	voice_directsound 63, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 63 | Direct | 
+	voice_directsound 64, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 64 | Direct | 
+	voice_directsound 65, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 65 | Direct | 
+	voice_directsound 66, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 66 | Direct | 
+	voice_directsound 67, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 67 | Direct | 
+	voice_directsound 68, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 68 | Direct | 
+	voice_directsound 69, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 69 | Direct | 
+	voice_directsound 70, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 70 | Direct | 
+	voice_directsound 71, 0, DirectSoundWaveData_BWInstrumentSample142, 255, 245, 0, 165 @ 71 | Direct | 
+	voice_directsound 72, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 72 | Direct | 
+	voice_directsound 73, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 73 | Direct | 
+	voice_directsound 74, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 74 | Direct | 
+	voice_directsound 75, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 75 | Direct | 
+	voice_directsound 76, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 76 | Direct | 
+	voice_directsound 77, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 77 | Direct | 
+	voice_directsound 78, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 78 | Direct | 
+	voice_directsound 79, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 79 | Direct | 
+	voice_directsound 80, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 80 | Direct | 
+	voice_directsound 81, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 81 | Direct | 
+	voice_directsound 82, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 82 | Direct | 
+	voice_directsound 83, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 83 | Direct | 
+	voice_directsound 84, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 84 | Direct | 
+	voice_directsound 85, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 85 | Direct | 
+	voice_directsound 86, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 86 | Direct | 
+	voice_directsound 87, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 87 | Direct | 
+	voice_directsound 88, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 88 | Direct | 
+	voice_directsound 89, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 89 | Direct | 
+	voice_directsound 90, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 90 | Direct | 
+	voice_directsound 91, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 91 | Direct | 
+	voice_directsound 92, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 92 | Direct | 
+	voice_directsound 93, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 93 | Direct | 
+	voice_directsound 94, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 94 | Direct | 
+	voice_directsound 95, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 95 | Direct | 
+	voice_directsound 96, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 96 | Direct | 
+	voice_directsound 97, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 97 | Direct | 
+	voice_directsound 98, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 98 | Direct | 
+	voice_directsound 99, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 99 | Direct | 
+	voice_directsound 100, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 100 | Direct | 
+	voice_directsound 101, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 101 | Direct | 
+	voice_directsound 102, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 102 | Direct | 
+	voice_directsound 103, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 103 | Direct | 
+	voice_directsound 104, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 104 | Direct | 
+	voice_directsound 105, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 105 | Direct | 
+	voice_directsound 106, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 106 | Direct | 
+	voice_directsound 107, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 107 | Direct | 
+	voice_directsound 108, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 108 | Direct | 
+	voice_directsound 109, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 109 | Direct | 
+	voice_directsound 110, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 110 | Direct | 
+	voice_directsound 111, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 111 | Direct | 
+	voice_directsound 112, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 112 | Direct | 
+	voice_directsound 113, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 113 | Direct | 
+	voice_directsound 114, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 114 | Direct | 
+	voice_directsound 115, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 115 | Direct | 
+	voice_directsound 116, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 116 | Direct | 
+	voice_directsound 117, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 117 | Direct | 
+	voice_directsound 118, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 118 | Direct | 
+	voice_directsound 119, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 119 | Direct | 
+	voice_directsound 120, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 120 | Direct | 
+	voice_directsound 121, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 121 | Direct | 
+	voice_directsound 122, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 122 | Direct | 
+	voice_directsound 123, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 123 | Direct | 
+	voice_directsound 124, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 124 | Direct | 
+	voice_directsound 125, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 125 | Direct | 
+	voice_directsound 126, 0, DirectSoundWaveData_BWInstrumentSample143, 255, 245, 0, 165 @ 126 | Direct | 
+	voice_directsound 127, 0, DirectSoundWaveData_BWInstrumentSample144, 255, 245, 0, 165 @ 127 | Direct | 
+
+	.align 2
+voicegroup545::
+	voice_keysplit voicegroup549, KeySplitTableBW01 @ 0 | Multi | 
+	voice_keysplit voicegroup555, KeySplitTableBW07 @ 1 | Multi | 
+	voice_keysplit voicegroup556, KeySplitTableBW08 @ 2 | Multi | 
+	voice_keysplit voicegroup557, KeySplitTableBW09 @ 3 | Multi | 
+	voice_keysplit voicegroup558, KeySplitTableBW10 @ 4 | Multi | 
+	voice_keysplit voicegroup559, KeySplitTableBW11 @ 5 | Multi | 
+	voice_keysplit voicegroup560, KeySplitTableBW12 @ 6 | Multi | 
+	voice_keysplit voicegroup561, KeySplitTableBW13 @ 7 | Multi | 
+	voice_keysplit voicegroup562, KeySplitTableBW14 @ 8 | Multi | 
+	voice_keysplit voicegroup563, KeySplitTableBW15 @ 9 | Multi | 
+	voice_keysplit voicegroup564, KeySplitTableBW16 @ 10 | Multi | 
+	voice_keysplit voicegroup565, KeySplitTableBW17 @ 11 | Multi | 
+	voice_keysplit voicegroup566, KeySplitTableBW18 @ 12 | Multi | 
+	voice_keysplit voicegroup567, KeySplitTableBW19 @ 13 | Multi | 
+	voice_keysplit voicegroup568, KeySplitTableBW20 @ 14 | Multi | 
+	voice_keysplit voicegroup569, KeySplitTableBW21 @ 15 | Multi | 
+	voice_keysplit voicegroup570, KeySplitTableBW22 @ 16 | Multi | 
+	voice_keysplit voicegroup571, KeySplitTableBW23 @ 17 | Multi | 
+	voice_keysplit voicegroup572, KeySplitTableBW24 @ 18 | Multi | 
+	voice_keysplit voicegroup573, KeySplitTableBW25 @ 19 | Multi | 
+	voice_keysplit voicegroup574, KeySplitTableBW26 @ 20 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample055, 255, 245, 0, 165 @ 21 | Direct | 
+	voice_keysplit voicegroup575, KeySplitTableBW27 @ 22 | Multi | 
+	voice_keysplit voicegroup576, KeySplitTableBW28 @ 23 | Multi | 
+	voice_keysplit voicegroup577, KeySplitTableBW29 @ 24 | Multi | 
+	voice_keysplit voicegroup578, KeySplitTableBW30 @ 25 | Multi | 
+	voice_keysplit voicegroup579, KeySplitTableBW31 @ 26 | Multi | 
+	voice_keysplit voicegroup580, KeySplitTableBW32 @ 27 | Multi | 
+	voice_keysplit voicegroup581, KeySplitTableBW33 @ 28 | Multi | 
+	voice_keysplit voicegroup582, KeySplitTableBW34 @ 29 | Multi | 
+	voice_keysplit voicegroup583, KeySplitTableBW35 @ 30 | Multi | 
+	voice_keysplit voicegroup584, KeySplitTableBW36 @ 31 | Multi | 
+	voice_keysplit voicegroup585, KeySplitTableBW37 @ 32 | Multi | 
+	voice_keysplit voicegroup586, KeySplitTableBW38 @ 33 | Multi | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample245, 255, 0, 255, 165 @ 34 | Direct | 
+	voice_directsound 61, 0, DirectSoundWaveData_BWInstrumentSample245, 255, 0, 255, 165 @ 35 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample246, 255, 0, 255, 165 @ 36 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample247, 255, 0, 255, 165 @ 37 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample248, 255, 0, 255, 165 @ 38 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample249, 255, 0, 255, 165 @ 39 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample250, 255, 0, 255, 165 @ 40 | Direct | 
+	voice_directsound 61, 0, DirectSoundWaveData_BWInstrumentSample250, 255, 0, 255, 165 @ 41 | Direct | 
+	voice_directsound 62, 0, DirectSoundWaveData_BWInstrumentSample250, 255, 0, 255, 165 @ 42 | Direct | 
+	voice_directsound 63, 0, DirectSoundWaveData_BWInstrumentSample250, 255, 0, 255, 165 @ 43 | Direct | 
+	voice_directsound 64, 0, DirectSoundWaveData_BWInstrumentSample250, 255, 0, 255, 165 @ 44 | Direct | 
+	voice_directsound 65, 0, DirectSoundWaveData_BWInstrumentSample250, 255, 0, 255, 165 @ 45 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample251, 255, 0, 255, 165 @ 46 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample252, 255, 0, 255, 165 @ 47 | Direct | 
+	voice_directsound 61, 0, DirectSoundWaveData_BWInstrumentSample252, 255, 0, 255, 165 @ 48 | Direct | 
+	voice_directsound 62, 0, DirectSoundWaveData_BWInstrumentSample252, 255, 0, 255, 165 @ 49 | Direct | 
+	voice_directsound 63, 0, DirectSoundWaveData_BWInstrumentSample252, 255, 0, 255, 165 @ 50 | Direct | 
+	voice_directsound 64, 0, DirectSoundWaveData_BWInstrumentSample252, 255, 0, 255, 165 @ 51 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample253, 255, 0, 255, 165 @ 52 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample253, 255, 0, 255, 165 @ 53 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample253, 255, 0, 255, 165 @ 54 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample253, 255, 0, 255, 165 @ 55 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample154, 255, 245, 90, 165 @ 56 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample155, 255, 245, 90, 165 @ 57 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 58 | Square-1 | --
+	voice_keysplit voicegroup578, KeySplitTableBW29 @ 59 | Multi | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 60 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 61 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 62 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 63 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample156, 170, 180, 160, 235 @ 64 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 65 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 66 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 67 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 68 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 69 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 70 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 71 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 72 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 73 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 74 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 75 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 76 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 77 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 78 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 79 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 80 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 81 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 82 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 83 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 84 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 85 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 86 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 87 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 88 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 89 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 90 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 91 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 92 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 93 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 94 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 95 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 96 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 97 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 98 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 99 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 100 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 101 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 102 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 103 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 104 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 105 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 106 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 107 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 108 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 109 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 110 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 111 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 112 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 113 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 114 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 115 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 116 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 117 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 118 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 119 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 120 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 121 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 122 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 123 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 124 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 125 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 126 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 127 | Square-1 | --
+
+	.align 2
+voicegroup546::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample290, 255, 245, 0, 165 @ 0 | Direct | 
+	voice_directsound 62, 0, DirectSoundWaveData_BWInstrumentSample290, 255, 245, 0, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample382, 255, 245, 0, 165 @ 2 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample383, 255, 245, 0, 165 @ 3 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample384, 255, 245, 0, 165 @ 4 | Direct | 
+	voice_directsound 21, 0, DirectSoundWaveData_BWInstrumentSample130, 255, 245, 0, 165 @ 5 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 6 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 7 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 8 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 9 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 10 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 11 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 12 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 13 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 14 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 15 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 16 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 17 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 18 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 19 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 20 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 21 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 22 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 23 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 24 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 25 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 26 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 27 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 28 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 29 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 30 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 31 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 32 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 33 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 34 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 35 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample270, 255, 245, 255, 165 @ 36 | Direct | 
+	voice_directsound 61, 0, DirectSoundWaveData_BWInstrumentSample270, 255, 245, 255, 165 @ 37 | Direct | 
+	voice_directsound 38, 0, DirectSoundWaveData_BWInstrumentSample163, 255, 245, 255, 165 @ 38 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 39 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 40 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 41 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 42 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 43 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 44 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 45 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 46 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 47 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 48 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 49 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 50 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 51 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 52 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 53 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 54 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 55 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 56 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 57 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 58 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 59 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample339, 255, 245, 0, 165 @ 60 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 61 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 62 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 63 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 64 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 65 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 66 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 67 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 68 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 69 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 70 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 71 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 72 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 73 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 74 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 75 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 76 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 77 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 78 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 79 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 80 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 81 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 82 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 83 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 84 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 85 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 86 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 87 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 88 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 89 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 90 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 91 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 92 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 93 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 94 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 95 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 96 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 97 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 98 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 99 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 100 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 101 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 102 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 103 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 104 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 105 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 106 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 107 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 108 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 109 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 110 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 111 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 112 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 113 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 114 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 115 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 116 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 117 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 118 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 119 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 120 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 121 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 122 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 123 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 124 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 125 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 126 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 127 | Square-1 | --
+
+	.align 2
+voicegroup547::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample290, 255, 245, 0, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample215, 255, 0, 255, 165 @ 1 | Direct | 
+	voice_directsound 61, 0, DirectSoundWaveData_BWInstrumentSample215, 255, 0, 255, 165 @ 2 | Direct | 
+	voice_directsound 62, 0, DirectSoundWaveData_BWInstrumentSample215, 255, 0, 255, 165 @ 3 | Direct | 
+	voice_directsound 63, 0, DirectSoundWaveData_BWInstrumentSample215, 255, 0, 255, 165 @ 4 | Direct | 
+	voice_directsound 64, 0, DirectSoundWaveData_BWInstrumentSample215, 255, 0, 255, 165 @ 5 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 6 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 7 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 8 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 9 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 10 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 11 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample327, 255, 0, 255, 165 @ 12 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample328, 255, 0, 255, 165 @ 13 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample329, 255, 0, 255, 165 @ 14 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample330, 255, 0, 255, 165 @ 15 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample331, 255, 0, 255, 165 @ 16 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample332, 255, 0, 255, 165 @ 17 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample333, 255, 0, 255, 165 @ 18 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample334, 255, 0, 255, 165 @ 19 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample335, 255, 0, 255, 165 @ 20 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample336, 255, 0, 255, 165 @ 21 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample336, 255, 0, 255, 165 @ 22 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 23 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 24 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 25 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 26 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 27 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 28 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 29 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 30 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 31 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 32 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 33 | Square-1 | --
+	voice_directsound 35, 0, DirectSoundWaveData_BWInstrumentSample112, 255, 245, 0, 165 @ 34 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample394, 255, 245, 0, 165 @ 35 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample270, 255, 245, 255, 165 @ 36 | Direct | 
+	voice_directsound 61, 0, DirectSoundWaveData_BWInstrumentSample270, 255, 245, 255, 165 @ 37 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample324, 255, 245, 0, 165 @ 38 | Direct | 
+	voice_directsound 61, 0, DirectSoundWaveData_BWInstrumentSample324, 255, 245, 0, 165 @ 39 | Direct | 
+	voice_directsound 62, 0, DirectSoundWaveData_BWInstrumentSample324, 255, 245, 0, 165 @ 40 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 41 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample325, 255, 245, 0, 165 @ 42 | Direct | 
+	voice_directsound 61, 0, DirectSoundWaveData_BWInstrumentSample325, 255, 245, 0, 165 @ 43 | Direct | 
+	voice_directsound 62, 0, DirectSoundWaveData_BWInstrumentSample325, 255, 245, 0, 165 @ 44 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 45 | Square-1 | --
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample326, 255, 245, 0, 165 @ 46 | Direct | 
+	voice_directsound 61, 0, DirectSoundWaveData_BWInstrumentSample326, 255, 245, 0, 165 @ 47 | Direct | 
+	voice_directsound 48, 0, DirectSoundWaveData_BWInstrumentSample123, 255, 245, 0, 165 @ 48 | Direct | 
+	voice_directsound 49, 0, DirectSoundWaveData_BWInstrumentSample123, 255, 245, 0, 165 @ 49 | Direct | 
+	voice_directsound 50, 0, DirectSoundWaveData_BWInstrumentSample123, 255, 245, 0, 165 @ 50 | Direct | 
+	voice_directsound 51, 0, DirectSoundWaveData_BWInstrumentSample123, 255, 245, 0, 165 @ 51 | Direct | 
+	voice_directsound 52, 0, DirectSoundWaveData_BWInstrumentSample125, 255, 245, 0, 165 @ 52 | Direct | 
+	voice_directsound 53, 0, DirectSoundWaveData_BWInstrumentSample123, 255, 245, 0, 165 @ 53 | Direct | 
+	voice_directsound 54, 0, DirectSoundWaveData_BWInstrumentSample123, 255, 245, 0, 165 @ 54 | Direct | 
+	voice_directsound 55, 0, DirectSoundWaveData_BWInstrumentSample123, 255, 245, 0, 165 @ 55 | Direct | 
+	voice_directsound 56, 0, DirectSoundWaveData_BWInstrumentSample123, 255, 245, 0, 165 @ 56 | Direct | 
+	voice_directsound 57, 0, DirectSoundWaveData_BWInstrumentSample130, 255, 245, 0, 165 @ 57 | Direct | 
+	voice_directsound 58, 0, DirectSoundWaveData_BWInstrumentSample130, 255, 245, 0, 165 @ 58 | Direct | 
+	voice_directsound 59, 0, DirectSoundWaveData_BWInstrumentSample130, 255, 245, 0, 165 @ 59 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample130, 255, 245, 0, 165 @ 60 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 61 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 62 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 63 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 64 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 65 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 66 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 67 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 68 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 69 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 70 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 71 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 72 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 73 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 74 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 75 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 76 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 77 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 78 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 79 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 80 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 81 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 82 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 83 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 84 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 85 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 86 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 87 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 88 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 89 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 90 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 91 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 92 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 93 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 94 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 95 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 96 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 97 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 98 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 99 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 100 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 101 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 102 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 103 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 104 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 105 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 106 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 107 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 108 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 109 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 110 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 111 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 112 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 113 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 114 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 115 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 116 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 117 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 118 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 119 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 120 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 121 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 122 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 123 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 124 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 125 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 126 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 127 | Square-1 | --
+
+	.align 2
+voicegroup548::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample420, 255, 0, 255, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample421, 255, 0, 255, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample422, 255, 235, 0, 165 @ 2 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample423, 255, 0, 255, 165 @ 3 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample424, 255, 245, 0, 165 @ 4 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample455, 255, 0, 255, 165 @ 5 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample456, 255, 0, 255, 165 @ 6 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample457, 255, 0, 255, 165 @ 7 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample458, 255, 0, 255, 165 @ 8 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample459, 255, 0, 255, 165 @ 9 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample459, 255, 0, 255, 165 @ 10 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample437, 255, 0, 255, 165 @ 11 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample438, 255, 0, 255, 165 @ 12 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample439, 255, 245, 0, 165 @ 13 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample440, 255, 0, 255, 165 @ 14 | Direct | 
+	voice_directsound 61, 0, DirectSoundWaveData_BWInstrumentSample264, 255, 0, 255, 165 @ 15 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample265, 255, 0, 255, 165 @ 16 | Direct | 
+	voice_directsound 61, 0, DirectSoundWaveData_BWInstrumentSample265, 255, 0, 255, 165 @ 17 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample266, 255, 0, 255, 165 @ 18 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample267, 255, 0, 255, 165 @ 19 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample278, 255, 245, 0, 165 @ 20 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample278, 255, 245, 0, 165 @ 21 | Direct | 
+	voice_directsound 42, 0, DirectSoundWaveData_BWInstrumentSample118, 255, 150, 0, 165 @ 22 | Direct | 
+	voice_directsound 57, 0, DirectSoundWaveData_BWInstrumentSample294, 255, 245, 0, 165 @ 23 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample467, 255, 0, 255, 165 @ 24 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample468, 255, 0, 255, 165 @ 25 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample469, 255, 0, 255, 165 @ 26 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample470, 255, 0, 255, 165 @ 27 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample471, 255, 0, 255, 165 @ 28 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample472, 255, 0, 255, 165 @ 29 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample473, 255, 0, 255, 165 @ 30 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample474, 255, 0, 255, 165 @ 31 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample475, 255, 0, 255, 165 @ 32 | Direct | 
+	voice_directsound 33, 0, DirectSoundWaveData_BWInstrumentSample110, 255, 245, 0, 165 @ 33 | Direct | 
+	voice_directsound 34, 0, DirectSoundWaveData_BWInstrumentSample111, 255, 245, 0, 165 @ 34 | Direct | 
+	voice_directsound 35, 0, DirectSoundWaveData_BWInstrumentSample112, 255, 245, 0, 165 @ 35 | Direct | 
+	voice_directsound 36, 0, DirectSoundWaveData_BWInstrumentSample113, 255, 230, 0, 165 @ 36 | Direct | 
+	voice_directsound 37, 0, DirectSoundWaveData_BWInstrumentSample114, 255, 245, 0, 165 @ 37 | Direct | 
+	voice_directsound 38, 0, DirectSoundWaveData_BWInstrumentSample115, 255, 245, 0, 165 @ 38 | Direct | 
+	voice_directsound 39, 0, DirectSoundWaveData_BWInstrumentSample116, 255, 245, 0, 165 @ 39 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample394, 255, 245, 0, 165 @ 40 | Direct | 
+	voice_directsound 41, 0, DirectSoundWaveData_BWInstrumentSample117, 255, 245, 0, 165 @ 41 | Direct | 
+	voice_directsound 42, 0, DirectSoundWaveData_BWInstrumentSample118, 255, 245, 0, 165 @ 42 | Direct | 
+	voice_directsound 43, 0, DirectSoundWaveData_BWInstrumentSample119, 255, 245, 0, 165 @ 43 | Direct | 
+	voice_directsound 44, 0, DirectSoundWaveData_BWInstrumentSample119, 255, 245, 0, 165 @ 44 | Direct | 
+	voice_directsound 45, 0, DirectSoundWaveData_BWInstrumentSample120, 255, 245, 0, 165 @ 45 | Direct | 
+	voice_directsound 46, 0, DirectSoundWaveData_BWInstrumentSample121, 255, 245, 0, 165 @ 46 | Direct | 
+	voice_directsound 47, 0, DirectSoundWaveData_BWInstrumentSample122, 255, 245, 0, 165 @ 47 | Direct | 
+	voice_directsound 48, 0, DirectSoundWaveData_BWInstrumentSample123, 255, 245, 0, 165 @ 48 | Direct | 
+	voice_directsound 49, 0, DirectSoundWaveData_BWInstrumentSample124, 255, 245, 0, 165 @ 49 | Direct | 
+	voice_directsound 50, 0, DirectSoundWaveData_BWInstrumentSample124, 255, 245, 0, 165 @ 50 | Direct | 
+	voice_directsound 51, 0, DirectSoundWaveData_BWInstrumentSample124, 255, 245, 0, 165 @ 51 | Direct | 
+	voice_directsound 52, 0, DirectSoundWaveData_BWInstrumentSample125, 255, 245, 0, 165 @ 52 | Direct | 
+	voice_directsound 53, 0, DirectSoundWaveData_BWInstrumentSample126, 255, 245, 0, 165 @ 53 | Direct | 
+	voice_directsound 54, 0, DirectSoundWaveData_BWInstrumentSample127, 255, 245, 0, 165 @ 54 | Direct | 
+	voice_directsound 55, 0, DirectSoundWaveData_BWInstrumentSample128, 255, 245, 0, 165 @ 55 | Direct | 
+	voice_directsound 56, 0, DirectSoundWaveData_BWInstrumentSample129, 255, 245, 0, 165 @ 56 | Direct | 
+	voice_directsound 57, 0, DirectSoundWaveData_BWInstrumentSample130, 255, 245, 0, 165 @ 57 | Direct | 
+	voice_directsound 58, 0, DirectSoundWaveData_BWInstrumentSample130, 255, 245, 0, 165 @ 58 | Direct | 
+	voice_directsound 59, 0, DirectSoundWaveData_BWInstrumentSample131, 255, 245, 0, 165 @ 59 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample132, 255, 245, 0, 165 @ 60 | Direct | 
+	voice_directsound 61, 0, DirectSoundWaveData_BWInstrumentSample133, 255, 245, 0, 165 @ 61 | Direct | 
+	voice_directsound 62, 0, DirectSoundWaveData_BWInstrumentSample134, 255, 245, 0, 165 @ 62 | Direct | 
+	voice_directsound 63, 0, DirectSoundWaveData_BWInstrumentSample135, 255, 245, 0, 165 @ 63 | Direct | 
+	voice_directsound 64, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 64 | Direct | 
+	voice_directsound 65, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 65 | Direct | 
+	voice_directsound 66, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 66 | Direct | 
+	voice_directsound 67, 0, DirectSoundWaveData_BWInstrumentSample137, 255, 245, 0, 165 @ 67 | Direct | 
+	voice_directsound 68, 0, DirectSoundWaveData_BWInstrumentSample138, 255, 245, 0, 165 @ 68 | Direct | 
+	voice_directsound 69, 0, DirectSoundWaveData_BWInstrumentSample139, 255, 245, 0, 165 @ 69 | Direct | 
+	voice_directsound 70, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 70 | Direct | 
+	voice_directsound 71, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 71 | Direct | 
+	voice_directsound 72, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 72 | Direct | 
+	voice_directsound 73, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 73 | Direct | 
+	voice_directsound 74, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 74 | Direct | 
+	voice_directsound 75, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 75 | Direct | 
+	voice_directsound 76, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 76 | Direct | 
+	voice_directsound 77, 0, DirectSoundWaveData_BWInstrumentSample136, 255, 245, 0, 165 @ 77 | Direct | 
+	voice_directsound 78, 0, DirectSoundWaveData_BWInstrumentSample140, 255, 245, 0, 165 @ 78 | Direct | 
+	voice_directsound 79, 0, DirectSoundWaveData_BWInstrumentSample140, 255, 245, 0, 165 @ 79 | Direct | 
+	voice_directsound 80, 0, DirectSoundWaveData_BWInstrumentSample141, 255, 245, 0, 165 @ 80 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample271, 255, 245, 0, 165 @ 81 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample346, 255, 245, 0, 165 @ 82 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample347, 255, 245, 0, 165 @ 83 | Direct | 
+	voice_directsound 69, 0, DirectSoundWaveData_BWInstrumentSample346, 255, 245, 0, 165 @ 84 | Direct | 
+	voice_directsound 69, 0, DirectSoundWaveData_BWInstrumentSample347, 255, 245, 0, 165 @ 85 | Direct | 
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 86 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 87 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 88 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 89 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 90 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 91 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 92 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 93 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 94 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 95 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 96 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 97 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 98 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 99 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 100 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 101 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 102 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 103 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 104 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 105 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 106 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 107 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 108 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 109 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 110 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 111 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 112 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 113 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 114 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 115 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 116 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 117 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 118 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 119 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 120 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 121 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 122 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 123 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 124 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 125 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 126 | Square-1 | --
+	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0 @ 127 | Square-1 | --
+
+	.align 2
+voicegroup549::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample268, 185, 0, 185, 185 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample269, 185, 0, 185, 185 @ 1 | Direct | 
+
+	.align 2
+voicegroup550::
+	voice_directsound 36, 0, DirectSoundWaveData_BWInstrumentSample274, 255, 245, 0, 210 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample275, 255, 245, 0, 210 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample276, 255, 245, 0, 210 @ 2 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample277, 255, 245, 0, 210 @ 3 | Direct | 
+	voice_directsound 84, 0, DirectSoundWaveData_BWInstrumentSample001, 255, 245, 0, 215 @ 4 | Direct | 
+
+	.align 2
+voicegroup551::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample285, 255, 245, 0, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample286, 255, 245, 0, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample287, 255, 245, 0, 165 @ 2 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample288, 255, 245, 0, 165 @ 3 | Direct | 
+	voice_directsound 84, 0, DirectSoundWaveData_BWInstrumentSample289, 230, 230, 230, 230 @ 4 | Direct | 
+
+	.align 2
+voicegroup552::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample375, 255, 245, 0, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample376, 255, 245, 0, 165 @ 1 | Direct | 
+
+	.align 2
+voicegroup553::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample385, 255, 245, 0, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample385, 255, 245, 0, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample386, 255, 245, 0, 165 @ 2 | Direct | 
+
+	.align 2
+voicegroup554::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample392, 255, 0, 255, 200 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample393, 255, 0, 255, 200 @ 1 | Direct | 
+
+	.align 2
+voicegroup555::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample002, 255, 245, 20, 215 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample003, 255, 245, 20, 215 @ 1 | Direct | 
+
+	.align 2
+voicegroup556::
+	voice_directsound 36, 0, DirectSoundWaveData_BWInstrumentSample004, 255, 250, 5, 180 @ 0 | Direct | 
+	voice_directsound 48, 0, DirectSoundWaveData_BWInstrumentSample005, 255, 250, 5, 180 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample006, 255, 250, 5, 180 @ 2 | Direct | 
+	voice_directsound 72, 0, DirectSoundWaveData_BWInstrumentSample007, 255, 250, 5, 180 @ 3 | Direct | 
+
+	.align 2
+voicegroup557::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample008, 255, 250, 0, 195 @ 0 | Direct | 
+	voice_directsound 72, 0, DirectSoundWaveData_BWInstrumentSample009, 255, 250, 0, 195 @ 1 | Direct | 
+
+	.align 2
+voicegroup558::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample010, 255, 245, 0, 165 @ 0 | Direct | 
+	voice_directsound 72, 0, DirectSoundWaveData_BWInstrumentSample011, 255, 245, 0, 165 @ 1 | Direct | 
+
+	.align 2
+voicegroup559::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample012, 255, 245, 0, 205 @ 0 | Direct | 
+	voice_directsound 72, 0, DirectSoundWaveData_BWInstrumentSample013, 255, 245, 0, 205 @ 1 | Direct | 
+
+	.align 2
+voicegroup560::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample014, 255, 245, 5, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample015, 255, 245, 5, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample016, 255, 245, 5, 165 @ 2 | Direct | 
+
+	.align 2
+voicegroup561::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample017, 255, 245, 0, 215 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample018, 255, 245, 0, 215 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample019, 255, 245, 0, 215 @ 2 | Direct | 
+
+	.align 2
+voicegroup562::
+	voice_directsound 67, 0, DirectSoundWaveData_BWInstrumentSample020, 255, 245, 0, 235 @ 0 | Direct | 
+	voice_directsound 72, 0, DirectSoundWaveData_BWInstrumentSample021, 255, 245, 0, 235 @ 1 | Direct | 
+
+	.align 2
+voicegroup563::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample337, 240, 200, 245, 220 @ 0 | Direct | 
+
+	.align 2
+voicegroup564::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample022, 255, 240, 0, 155 @ 0 | Direct | 
+	voice_directsound 72, 0, DirectSoundWaveData_BWInstrumentSample023, 255, 240, 0, 155 @ 1 | Direct | 
+	voice_directsound 84, 0, DirectSoundWaveData_BWInstrumentSample024, 255, 240, 0, 155 @ 2 | Direct | 
+
+	.align 2
+voicegroup565::
+	voice_directsound 48, 0, DirectSoundWaveData_BWInstrumentSample025, 255, 245, 160, 212 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample026, 255, 245, 160, 212 @ 1 | Direct | 
+	voice_directsound 72, 0, DirectSoundWaveData_BWInstrumentSample027, 255, 245, 160, 212 @ 2 | Direct | 
+
+	.align 2
+voicegroup566::
+	voice_directsound 48, 0, DirectSoundWaveData_BWInstrumentSample028, 255, 245, 120, 200 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample029, 255, 245, 120, 200 @ 1 | Direct | 
+	voice_directsound 72, 0, DirectSoundWaveData_BWInstrumentSample030, 255, 245, 120, 200 @ 2 | Direct | 
+
+	.align 2
+voicegroup567::
+	voice_directsound 48, 0, DirectSoundWaveData_BWInstrumentSample387, 255, 245, 130, 200 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample388, 255, 245, 130, 200 @ 1 | Direct | 
+	voice_directsound 72, 0, DirectSoundWaveData_BWInstrumentSample389, 255, 245, 130, 200 @ 2 | Direct | 
+
+	.align 2
+voicegroup568::
+	voice_directsound 43, 0, DirectSoundWaveData_BWInstrumentSample031, 255, 245, 0, 165 @ 0 | Direct | 
+	voice_directsound 55, 0, DirectSoundWaveData_BWInstrumentSample032, 255, 245, 0, 165 @ 1 | Direct | 
+	voice_directsound 64, 0, DirectSoundWaveData_BWInstrumentSample033, 255, 245, 0, 165 @ 2 | Direct | 
+	voice_directsound 72, 0, DirectSoundWaveData_BWInstrumentSample034, 255, 245, 0, 165 @ 3 | Direct | 
+
+	.align 2
+voicegroup569::
+	voice_directsound 43, 0, DirectSoundWaveData_BWInstrumentSample035, 255, 245, 0, 200 @ 0 | Direct | 
+	voice_directsound 55, 0, DirectSoundWaveData_BWInstrumentSample036, 255, 245, 0, 200 @ 1 | Direct | 
+	voice_directsound 64, 0, DirectSoundWaveData_BWInstrumentSample037, 255, 245, 0, 200 @ 2 | Direct | 
+	voice_directsound 72, 0, DirectSoundWaveData_BWInstrumentSample038, 255, 245, 0, 200 @ 3 | Direct | 
+
+	.align 2
+voicegroup570::
+	voice_directsound 40, 0, DirectSoundWaveData_BWInstrumentSample039, 255, 250, 0, 215 @ 0 | Direct | 
+	voice_directsound 48, 0, DirectSoundWaveData_BWInstrumentSample040, 255, 250, 0, 215 @ 1 | Direct | 
+	voice_directsound 64, 0, DirectSoundWaveData_BWInstrumentSample041, 255, 250, 0, 215 @ 2 | Direct | 
+	voice_directsound 76, 0, DirectSoundWaveData_BWInstrumentSample042, 255, 250, 0, 215 @ 3 | Direct | 
+
+	.align 2
+voicegroup571::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample043, 255, 251, 0, 215 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample044, 255, 251, 0, 215 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample045, 255, 251, 0, 215 @ 2 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample046, 255, 251, 0, 215 @ 3 | Direct | 
+
+	.align 2
+voicegroup572::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample047, 255, 240, 5, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample048, 255, 240, 5, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample049, 255, 240, 5, 165 @ 2 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample050, 255, 240, 5, 165 @ 3 | Direct | 
+
+	.align 2
+voicegroup573::
+	voice_directsound 36, 0, DirectSoundWaveData_BWInstrumentSample051, 255, 245, 0, 165 @ 0 | Direct | 
+	voice_directsound 48, 0, DirectSoundWaveData_BWInstrumentSample052, 255, 245, 0, 165 @ 1 | Direct | 
+
+	.align 2
+voicegroup574::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample053, 255, 175, 175, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample054, 255, 175, 175, 165 @ 1 | Direct | 
+
+	.align 2
+voicegroup575::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample056, 255, 250, 0, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample057, 255, 250, 0, 165 @ 1 | Direct | 
+
+	.align 2
+voicegroup576::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample359, 255, 250, 175, 210 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample360, 255, 250, 175, 210 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample058, 255, 250, 175, 210 @ 2 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample059, 255, 250, 175, 210 @ 3 | Direct | 
+
+	.align 2
+voicegroup577::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample060, 255, 245, 140, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample061, 255, 245, 140, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample062, 255, 245, 140, 165 @ 2 | Direct | 
+
+	.align 2
+voicegroup578::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample063, 255, 235, 0, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample064, 255, 235, 0, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample065, 255, 235, 0, 165 @ 2 | Direct | 
+
+	.align 2
+voicegroup579::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample066, 255, 235, 0, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample067, 255, 235, 0, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample068, 255, 235, 0, 165 @ 2 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample069, 255, 235, 0, 165 @ 3 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample070, 255, 235, 0, 165 @ 4 | Direct | 
+
+	.align 2
+voicegroup580::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample071, 220, 240, 0, 200 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample072, 220, 240, 0, 200 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample073, 220, 240, 0, 200 @ 2 | Direct | 
+
+	.align 2
+voicegroup581::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample074, 255, 245, 0, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample075, 255, 245, 0, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample076, 255, 245, 0, 165 @ 2 | Direct | 
+
+	.align 2
+voicegroup582::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample361, 255, 245, 150, 215 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample362, 255, 245, 150, 215 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample077, 255, 245, 150, 215 @ 2 | Direct | 
+
+	.align 2
+voicegroup583::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample078, 255, 240, 90, 225 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample079, 255, 240, 90, 225 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample080, 255, 240, 90, 225 @ 2 | Direct | 
+
+	.align 2
+voicegroup584::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample081, 255, 245, 0, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample082, 255, 245, 0, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample083, 255, 245, 0, 165 @ 2 | Direct | 
+
+	.align 2
+voicegroup585::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample084, 255, 0, 185, 211 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample085, 255, 0, 185, 211 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample086, 255, 0, 185, 211 @ 2 | Direct | 
+
+	.align 2
+voicegroup586::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample087, 255, 250, 150, 220 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample088, 255, 250, 150, 220 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample089, 255, 250, 150, 220 @ 2 | Direct | 
+
+	.align 2
+voicegroup587::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample090, 255, 245, 140, 215 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample091, 255, 245, 140, 215 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample092, 255, 245, 140, 215 @ 2 | Direct | 
+
+	.align 2
+voicegroup588::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample093, 255, 240, 110, 225 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample094, 255, 240, 110, 225 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample095, 255, 240, 110, 225 @ 2 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample096, 255, 240, 110, 225 @ 3 | Direct | 
+
+	.align 2
+voicegroup589::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample097, 255, 245, 130, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample098, 255, 245, 130, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample099, 255, 245, 130, 165 @ 2 | Direct | 
+
+	.align 2
+voicegroup590::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample100, 255, 235, 0, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample101, 255, 235, 0, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample102, 255, 235, 0, 165 @ 2 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample103, 255, 235, 0, 165 @ 3 | Direct | 
+
+	.align 2
+voicegroup591::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample104, 255, 0, 160, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample105, 255, 0, 160, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample106, 255, 0, 160, 165 @ 2 | Direct | 
+
+	.align 2
+voicegroup592::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample146, 255, 242, 0, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample147, 255, 242, 0, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample148, 255, 242, 0, 165 @ 2 | Direct | 
+
+	.align 2
+voicegroup593::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample063, 255, 0, 255, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample064, 255, 0, 255, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample065, 255, 0, 255, 165 @ 2 | Direct | 
+
+	.align 2
+voicegroup594::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample164, 255, 245, 0, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample165, 255, 245, 0, 165 @ 1 | Direct | 
+
+	.align 2
+voicegroup595::
+	voice_directsound 36, 0, DirectSoundWaveData_BWInstrumentSample274, 255, 245, 0, 210 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample275, 255, 245, 0, 210 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample276, 255, 245, 0, 210 @ 2 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample277, 255, 245, 0, 210 @ 3 | Direct | 
+	voice_directsound 84, 0, DirectSoundWaveData_BWInstrumentSample001, 255, 245, 0, 210 @ 4 | Direct | 
+
+	.align 2
+voicegroup596::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample084, 255, 0, 185, 211 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample085, 255, 0, 185, 211 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample086, 255, 0, 185, 211 @ 2 | Direct | 
+
+	.align 2
+voicegroup597::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample192, 255, 205, 105, 100 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample280, 255, 205, 105, 100 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample281, 255, 205, 105, 100 @ 2 | Direct | 
+
+	.align 2
+voicegroup598::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample268, 185, 0, 185, 185 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample269, 185, 0, 185, 185 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample281, 255, 205, 105, 100 @ 2 | Direct | 
+
+	.align 2
+voicegroup599::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample285, 255, 245, 0, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample286, 255, 245, 0, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample287, 255, 245, 0, 165 @ 2 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample288, 255, 245, 0, 165 @ 3 | Direct | 
+
+	.align 2
+voicegroup600::
+	voice_directsound 36, 0, DirectSoundWaveData_BWInstrumentSample303, 165, 0, 165, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample315, 200, 0, 200, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample276, 255, 245, 0, 210 @ 2 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample277, 255, 245, 0, 210 @ 3 | Direct | 
+	voice_directsound 84, 0, DirectSoundWaveData_BWInstrumentSample001, 255, 240, 0, 215 @ 4 | Direct | 
+
+	.align 2
+voicegroup601::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample321, 165, 0, 165, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample322, 165, 0, 165, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample323, 165, 0, 165, 165 @ 2 | Direct | 
+
+	.align 2
+voicegroup602::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample348, 255, 240, 0, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample349, 255, 240, 0, 165 @ 1 | Direct | 
+
+	.align 2
+voicegroup603::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample350, 255, 0, 255, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample351, 255, 0, 255, 165 @ 1 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample352, 255, 0, 255, 165 @ 2 | Direct | 
+
+	.align 2
+voicegroup604::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample371, 255, 0, 255, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample372, 255, 0, 255, 165 @ 1 | Direct | 
+
+	.align 2
+voicegroup605::
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample375, 255, 0, 255, 165 @ 0 | Direct | 
+	voice_directsound 60, 0, DirectSoundWaveData_BWInstrumentSample376, 255, 0, 255, 165 @ 1 | Direct | 
+
+@@@ End BW/2 Voicegroups @@@
