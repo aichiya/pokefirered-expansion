@@ -996,19 +996,20 @@ CometPunchRight:
 	goto CometPunchContinue
 
 Move_SONIC_BOOM:
-	loadspritegfx ANIM_TAG_AIR_WAVE
+	loadspritegfx ANIM_TAG_GUST
 	loadspritegfx ANIM_TAG_IMPACT
-	monbg ANIM_DEF_PARTNER
-	splitbgprio ANIM_TARGET
-	setalpha 12, 8
-	call SonicBoomProjectile
-	call SonicBoomProjectile
-	call SonicBoomProjectile
-	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 3, 0, 10, 1
-	call SonicBoomHit
+	monbg ANIM_TARGET
+	playsewithpan SE_M_GUST, SOUND_PAN_TARGET
+	createsprite gGustTornadoSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 32, 257
+	playsewithpan SE_M_GUST2, SOUND_PAN_TARGET
 	waitforvisualfinish
-	clearmonbg ANIM_DEF_PARTNER
-	blendoff
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 16, -8, ANIM_TARGET, 2
+	delay 10
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -16, 0, ANIM_TARGET, 2
+	delay 10
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 8, ANIM_TARGET, 2
+	waitforvisualfinish
+	clearmonbg ANIM_TARGET
 	end
 
 SonicBoomProjectile:
