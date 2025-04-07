@@ -143,7 +143,7 @@ Rock Slide
 Rock Throw
 Rolling Kick
 *Sand Attack*
-*Scratch*
+Scratch
 *Screech*
 *Seismic Toss*
 *Self-Destruct*

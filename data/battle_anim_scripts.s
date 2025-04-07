@@ -4900,12 +4900,14 @@ Move_SACRED_FIRE:
 	end
 
 Move_SCRATCH:
-	loadspritegfx ANIM_TAG_SCRATCH
+	loadspritegfx ANIM_TAG_CUT
 	monbg ANIM_TARGET
 	setalpha 12, 8
 	playsewithpan SE_M_SCRATCH, SOUND_PAN_TARGET
-	createsprite gScratchSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0
-	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 3, 0, 6, 1
+	createsprite gCuttingSliceSpriteTemplate, ANIM_ATTACKER, 2, 16, -32, 0
+	createsprite gCuttingSliceSpriteTemplate, ANIM_ATTACKER, 2, 32, -32, 0
+	createsprite gCuttingSliceSpriteTemplate, ANIM_ATTACKER, 2, 48, -32, 0
+	delay 5
 	waitforvisualfinish
 	clearmonbg ANIM_TARGET
 	blendoff
