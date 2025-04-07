@@ -2990,8 +2990,8 @@ Move_ACID_ARMOR:
 	end
 
 Move_SHARPEN:
-	loadspritegfx ANIM_TAG_SPHERE_TO_CUBE
-	createsprite gSharpenSphereSpriteTemplate, ANIM_ATTACKER, 2
+	loadspritegfx ANIM_TAG_RED_BALL
+	call HardenSquareEffect
 	waitforvisualfinish
 	end
 
