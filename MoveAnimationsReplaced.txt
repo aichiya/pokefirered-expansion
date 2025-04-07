@@ -151,7 +151,7 @@ Sharpen
 *Sing*
 *Skull Bash*
 *Sky Attack*
-*Slam*
+Slam
 Slash
 Sleep Powder
 *Sludge*
@@ -163,7 +163,7 @@ Solar Beam
 *Spike Cannon*
 *Splash*
 Spore
-*Stomp*
+Stomp
 *Strength*
 *String Shot*
 *Struggle*
