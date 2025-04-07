@@ -141,7 +141,7 @@ Rest
 Roar
 Rock Slide
 Rock Throw
-*Rolling Kick*
+Rolling Kick
 *Sand Attack*
 *Scratch*
 *Screech*
