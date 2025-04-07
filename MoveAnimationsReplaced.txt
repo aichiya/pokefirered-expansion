@@ -147,27 +147,27 @@ Scratch
 Screech
 *Seismic Toss*
 Self-Destruct
-*Sharpen*
+Sharpen
 *Sing*
 *Skull Bash*
 *Sky Attack*
 *Slam*
 Slash
-*Sleep Powder*
+Sleep Powder
 *Sludge*
-*Smog*
+Smog
 *Smokescreen*
 *Soft-Boiled*
 Solar Beam
 *Sonic Boom*
 *Spike Cannon*
 *Splash*
-*Spore*
+Spore
 *Stomp*
 *Strength*
 *String Shot*
 *Struggle*
-*Stun Spore*
+Stun Spore
 *Submission*
 *Substitute*
 *Super Fang*

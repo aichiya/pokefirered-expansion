@@ -481,77 +481,44 @@ DoubleSlapRight:
 
 Move_POISON_POWDER:
 	loadspritegfx ANIM_TAG_ORBS
-	loadspritegfx ANIM_TAG_POISON_BUBBLE
-	loopsewithpan SE_M_POISON_POWDER, SOUND_PAN_TARGET, 10, 6
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -32, -16, 96, 80, 5, 2
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -16, -16, 96, 80, 5, 2
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 0, -16, 96, 80, 5, 2
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 16, -16, 96, 80, 5, 2
-	delay 16
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -24, -16, 96, 80, 5, 2
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -8, -16, 96, 80, 5, 2
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 8, -16, 96, 80, 5, 2
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 24, -16, 96, 80, 5, 2
-	delay 16
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -32, -16, 96, 80, 5, 2
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -16, -16, 96, 80, 5, 2
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 0, -16, 96, 80, 5, 2
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 16, -16, 96, 80, 5, 2
-	delay 16
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -24, -16, 96, 80, 5, 2
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -8, -16, 96, 80, 5, 2
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 8, -16, 96, 80, 5, 2
-	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 24, -16, 96, 80, 5, 2
+	call PowderParticleAnimation
 	waitforvisualfinish
 	end
 
 Move_STUN_SPORE:
-	loadspritegfx ANIM_TAG_STUN_SPORE
-	loopsewithpan SE_M_POISON_POWDER, SOUND_PAN_TARGET, 10, 6
-	createsprite gStunSporeParticleSpriteTemplate, ANIM_TARGET, 2, -30, -22, 117, 80, 5, 1
-	createsprite gStunSporeParticleSpriteTemplate, ANIM_TARGET, 2, 10, -22, 117, 80, -5, 1
-	createsprite gStunSporeParticleSpriteTemplate, ANIM_TARGET, 2, -25, -22, 117, 112, 5, 3
-	delay 15
-	createsprite gStunSporeParticleSpriteTemplate, ANIM_TARGET, 2, -5, -22, 117, 80, -5, 1
-	createsprite gStunSporeParticleSpriteTemplate, ANIM_TARGET, 2, 5, -22, 117, 96, 5, 1
-	createsprite gStunSporeParticleSpriteTemplate, ANIM_TARGET, 2, 0, -22, 117, 69, -5, 1
-	createsprite gStunSporeParticleSpriteTemplate, ANIM_TARGET, 2, -15, -22, 117, 112, 5, 2
-	delay 30
-	createsprite gStunSporeParticleSpriteTemplate, ANIM_TARGET, 2, -15, -22, 117, 112, 5, 2
-	createsprite gStunSporeParticleSpriteTemplate, ANIM_TARGET, 2, 15, -22, 117, 80, -5, 1
-	createsprite gStunSporeParticleSpriteTemplate, ANIM_TARGET, 2, -10, -22, 117, 96, 7, 2
-	createsprite gStunSporeParticleSpriteTemplate, ANIM_TARGET, 2, -5, -22, 117, 90, -8, 0
-	delay 20
-	createsprite gStunSporeParticleSpriteTemplate, ANIM_TARGET, 2, -10, -22, 117, 80, -5, 1
-	createsprite gStunSporeParticleSpriteTemplate, ANIM_TARGET, 2, 0, -22, 117, 89, 5, 2
-	createsprite gStunSporeParticleSpriteTemplate, ANIM_TARGET, 2, 20, -22, 117, 112, -8, 2
-	createsprite gStunSporeParticleSpriteTemplate, ANIM_TARGET, 2, 5, -22, 117, 80, 5, 1
+	loadspritegfx ANIM_TAG_ORBS
+	call PowderParticleAnimation
 	waitforvisualfinish
 	end
 
 Move_SLEEP_POWDER:
-	loadspritegfx ANIM_TAG_SLEEP_POWDER
-	loopsewithpan SE_M_POISON_POWDER, SOUND_PAN_TARGET, 10, 6
-	createsprite gSleepPowderParticleSpriteTemplate, ANIM_TARGET, 2, -30, -22, 117, 80, 5, 1
-	createsprite gSleepPowderParticleSpriteTemplate, ANIM_TARGET, 2, 10, -22, 117, 80, -5, 1
-	createsprite gSleepPowderParticleSpriteTemplate, ANIM_TARGET, 2, -25, -22, 117, 112, 5, 3
-	delay 15
-	createsprite gSleepPowderParticleSpriteTemplate, ANIM_TARGET, 2, -5, -22, 117, 80, -5, 1
-	createsprite gSleepPowderParticleSpriteTemplate, ANIM_TARGET, 2, 5, -22, 117, 96, 5, 1
-	createsprite gSleepPowderParticleSpriteTemplate, ANIM_TARGET, 2, 0, -22, 117, 69, -5, 1
-	createsprite gSleepPowderParticleSpriteTemplate, ANIM_TARGET, 2, -15, -22, 117, 112, 5, 2
-	delay 30
-	createsprite gSleepPowderParticleSpriteTemplate, ANIM_TARGET, 2, -15, -22, 117, 112, 5, 2
-	createsprite gSleepPowderParticleSpriteTemplate, ANIM_TARGET, 2, 15, -22, 117, 80, -5, 1
-	createsprite gSleepPowderParticleSpriteTemplate, ANIM_TARGET, 2, -10, -22, 117, 96, 7, 2
-	createsprite gSleepPowderParticleSpriteTemplate, ANIM_TARGET, 2, -5, -22, 117, 90, -8, 0
-	delay 20
-	createsprite gSleepPowderParticleSpriteTemplate, ANIM_TARGET, 2, -10, -22, 117, 80, -5, 1
-	createsprite gSleepPowderParticleSpriteTemplate, ANIM_TARGET, 2, 0, -22, 117, 89, 5, 2
-	createsprite gSleepPowderParticleSpriteTemplate, ANIM_TARGET, 2, 20, -22, 117, 112, -8, 2
-	createsprite gSleepPowderParticleSpriteTemplate, ANIM_TARGET, 2, 5, -22, 117, 80, 5, 1
+	loadspritegfx ANIM_TAG_ORBS
+	call PowderParticleAnimation
 	waitforvisualfinish
 	end
+
+PowderParticleAnimation:
+	loopsewithpan SE_M_POISON_POWDER, SOUND_PAN_TARGET, 10, 6
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -32, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -16, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 0, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 16, -16, 96, 80, 5, 2
+	delay 16
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -24, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -8, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 8, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 24, -16, 96, 80, 5, 2
+	delay 16
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -32, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -16, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 0, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 16, -16, 96, 80, 5, 2
+	delay 16
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -24, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -8, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 8, -16, 96, 80, 5, 2
+	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, 24, -16, 96, 80, 5, 2
+	return
 
 Move_SWIFT:
 	loadspritegfx ANIM_TAG_YELLOW_STAR
@@ -6627,28 +6594,10 @@ CreateCottonSpores:
 	return
 
 Move_SPORE:
-	loadspritegfx ANIM_TAG_SPORE
-	monbg ANIM_DEF_PARTNER
-	setalpha 12, 8
-	createvisualtask AnimTask_SporeDoubleBattle, 2
-	loopsewithpan SE_M_POISON_POWDER, SOUND_PAN_TARGET, 16, 11
-	call CreateSpore
-	call CreateSpore
-	call CreateSpore
+	loadspritegfx ANIM_TAG_ORBS
+	call PowderParticleAnimation
 	waitforvisualfinish
-	delay 1
-	clearmonbg ANIM_DEF_PARTNER
-	blendoff
 	end
-
-CreateSpore:
-	createsprite gSporeParticleSpriteTemplate, ANIM_TARGET, 2, 0, -20, 85, 80, 1
-	delay 12
-	createsprite gSporeParticleSpriteTemplate, ANIM_TARGET, 2, 0, -10, 170, 80, 1
-	delay 12
-	createsprite gSporeParticleSpriteTemplate, ANIM_TARGET, 2, 0, -15, 0, 80, 1
-	delay 12
-	return
 
 Move_PETAL_DANCE:
 	loadspritegfx ANIM_TAG_FIRE
