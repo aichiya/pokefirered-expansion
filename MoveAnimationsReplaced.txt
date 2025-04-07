@@ -158,7 +158,7 @@ Slash
 *Smog*
 *Smokescreen*
 *Soft-Boiled*
-*Solar Beam*
+Solar Beam
 *Sonic Boom*
 *Spike Cannon*
 *Splash*

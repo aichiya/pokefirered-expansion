@@ -451,6 +451,11 @@ static void AnimCirclingSparkle(struct Sprite *sprite)
 
 static void AnimOrbSpiralInward(struct Sprite *sprite)
 {
+    if (gBattleAnimArgs[1] == 0)
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    else
+        InitSpritePosToAnimTarget(sprite, TRUE);
+    
     sprite->data[0] = gBattleAnimArgs[0];
     sprite->data[1] = 64; //How far out the orbs start?
     sprite->data[2] = 16;
