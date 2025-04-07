@@ -99,8 +99,8 @@ const struct SpriteTemplate gSludgeProjectileSpriteTemplate =
 {
     .tileTag = ANIM_TAG_POISON_BUBBLE,
     .paletteTag = ANIM_TAG_POISON_BUBBLE,
-    .oam = &gOamData_AffineDouble_ObjNormal_16x16,
-    .anims = sAnims_PoisonProjectile,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sAnims_SludgeBombHit,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSludgeProjectile,
@@ -142,7 +142,7 @@ const struct SpriteTemplate gAcidPoisonBubbleSpriteTemplate =
 
 static const union AnimCmd sAnim_SludgeSplat[] =
 {
-    ANIMCMD_FRAME(8, 8),
+    ANIMCMD_FRAME(8, 24),
     ANIMCMD_END,
 };
 

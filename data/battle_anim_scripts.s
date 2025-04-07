@@ -5803,13 +5803,19 @@ ToxicBubbles:
 
 Move_SLUDGE:
 	loadspritegfx ANIM_TAG_POISON_BUBBLE
+	monbg ANIM_DEF_PARTNER
 	playsewithpan SE_M_BUBBLE3, SOUND_PAN_ATTACKER
-	createsprite gSludgeProjectileSpriteTemplate, ANIM_TARGET, 2, 20, 0, 40, 0
+	createsprite gSludgeProjectileSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 0, 64, -25
+	delay 62
+	createsprite gSludgeSplatSpriteTemplate, ANIM_TARGET, 13, 0, 0
+	createsprite gAcidPoisonDropletSpriteTemplate, ANIM_TARGET, 2, -4, 8, 0, 6, 16
+	playsewithpan SE_M_BUBBLE, SOUND_PAN_TARGET
+	delay 10
+	createsprite gAcidPoisonDropletSpriteTemplate, ANIM_TARGET, 2, 4, 8, 0, 6, 16
+	playsewithpan SE_M_BUBBLE, SOUND_PAN_TARGET
+	delay 10
 	waitforvisualfinish
-	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 3, 0, 5, 1
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 1, 2, 0, 12, RGB(30, 0, 31)
-	call PoisonBubblesEffect
-	waitforvisualfinish
+	clearmonbg ANIM_DEF_PARTNER
 	end
 
 Move_SLUDGE_BOMB:
@@ -5860,8 +5866,9 @@ Move_ACID:
 	loadspritegfx ANIM_TAG_POISON_BUBBLE
 	monbg ANIM_DEF_PARTNER
 	playsewithpan SE_M_BUBBLE3, SOUND_PAN_ATTACKER
-	createsprite gSludgeProjectileSpriteTemplate, ANIM_TARGET, 2, 20, 0, 40, 0
-	waitforvisualfinish
+	createsprite gSludgeProjectileSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 0, 64, -25
+	delay 62
+	createsprite gSludgeSplatSpriteTemplate, ANIM_TARGET, 13, 0, 0
 	createsprite gAcidPoisonDropletSpriteTemplate, ANIM_TARGET, 2, -4, 8, 0, 6, 16
 	playsewithpan SE_M_BUBBLE, SOUND_PAN_TARGET
 	delay 10

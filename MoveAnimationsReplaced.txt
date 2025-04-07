@@ -154,17 +154,17 @@ Sharpen
 Slam
 Slash
 Sleep Powder
-*Sludge*
+Sludge
 Smog
 *Smokescreen*
 *Soft-Boiled*
 Solar Beam
-*Sonic Boom*
-*Spike Cannon*
+Sonic Boom
+Spike Cannon
 *Splash*
 Spore
 Stomp
-*Strength*
+Strength
 *String Shot*
 *Struggle*
 Stun Spore
