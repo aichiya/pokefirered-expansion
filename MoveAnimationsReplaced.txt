@@ -144,7 +144,7 @@ Rock Throw
 Rolling Kick
 *Sand Attack*
 Scratch
-*Screech*
+Screech
 *Seismic Toss*
 Self-Destruct
 *Sharpen*

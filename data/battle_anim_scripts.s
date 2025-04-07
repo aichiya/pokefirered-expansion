@@ -650,12 +650,10 @@ SupersonicRing:
 	return
 
 Move_SCREECH:
-	loadspritegfx ANIM_TAG_PURPLE_RING
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_ATTACKER, 3, 0, 2, 1
-	call ScreechRing
-	call ScreechRing
-	delay 16
-	createvisualtask AnimTask_SwayMon, 5, 0, 6, 2048, 2, ANIM_TARGET
+	loadspritegfx ANIM_TAG_MUSIC_NOTES
+	createvisualtask SoundTask_PlayDoubleCry, 2, ANIM_ATTACKER, DOUBLE_CRY_GROWL
+	createvisualtask AnimTask_StartSinAnimTimer, 5, 100
+	createsprite gMusicNoteSpriteTemplate, ANIM_TARGET, 3, 10, 10, 0, 16
 	waitforvisualfinish
 	end
 
