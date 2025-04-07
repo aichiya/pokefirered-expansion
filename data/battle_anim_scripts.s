@@ -5174,25 +5174,17 @@ Move_BUBBLE:
 	end
 
 Move_SMOG:
-	loadspritegfx ANIM_TAG_PURPLE_GAS_CLOUD
-	monbg ANIM_DEF_PARTNER
-	splitbgprio_all
+	loadspritegfx ANIM_TAG_MUSIC_NOTES
+	monbg ANIM_TARGET
+	splitbgprio_foes ANIM_TARGET
 	setalpha 12, 8
-	loopsewithpan SE_M_MIST, SOUND_PAN_TARGET, 17, 10
-	call SmogCloud
-	call SmogCloud
-	call SmogCloud
-	call SmogCloud
-	call SmogCloud
-	call SmogCloud
-	call SmogCloud
-	delay 120
-	loopsewithpan SE_M_TOXIC, SOUND_PAN_TARGET, 18, 2
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 2, 2, 0, 12, RGB(26, 0, 26)
-	delay 10
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 15, 1
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 0, 4, RGB(12, 12, 12)
+	playsewithpan SE_M_BUBBLE3, SOUND_PAN_ATTACKER
+	createsprite gGasCloudSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 0, 128, -25
 	waitforvisualfinish
-	clearmonbg ANIM_DEF_PARTNER
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 4, 0, RGB(12, 12, 12)
+	delay 50
+	clearmonbg ANIM_TARGET
 	blendoff
 	end
 
