@@ -146,13 +146,13 @@ Rolling Kick
 Scratch
 *Screech*
 *Seismic Toss*
-*Self-Destruct*
+Self-Destruct
 *Sharpen*
 *Sing*
 *Skull Bash*
 *Sky Attack*
 *Slam*
-*Slash*
+Slash
 *Sleep Powder*
 *Sludge*
 *Smog*

@@ -1470,17 +1470,29 @@ FuryCutterStrongest:
 
 Move_SELF_DESTRUCT:
 	loadspritegfx ANIM_TAG_EXPLOSION
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 1, 0, 9, RGB_RED
-	createvisualtask AnimTask_ShakeMon2, 5, 4, 6, 0, 38, 1
-	createvisualtask AnimTask_ShakeMon2, 5, 5, 6, 0, 38, 1
-	createvisualtask AnimTask_ShakeMon2, 5, 6, 6, 0, 38, 1
-	createvisualtask AnimTask_ShakeMon2, 5, 7, 6, 0, 38, 1
-	createvisualtask AnimTask_ShakeMon2, 5, 8, 6, 0, 38, 1
-	call SelfDestructExplode
-	call SelfDestructExplode
+	loadspritegfx ANIM_TAG_IMPACT
+	createvisualtask AnimTask_ShakeMon2, 5, 4, 8, 0, 40, 1
+	createvisualtask AnimTask_ShakeMon2, 5, 5, 8, 0, 40, 1
+	createvisualtask AnimTask_ShakeMon2, 5, 6, 8, 0, 40, 1
+	createvisualtask AnimTask_ShakeMon2, 5, 7, 8, 0, 40, 1
+	createvisualtask AnimTask_ShakeMon2, 5, 8, 8, 0, 40, 1
+	call Explosion2
+	call Explosion2
 	waitforvisualfinish
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_ATTACKER, 1, 9, 0, RGB_RED
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 1, 16, 16, RGB_WHITE
+	loopsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER, 9, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 8, ANIM_TARGET, 2
+	delay 8
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 2
+	delay 8
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 8, -8, ANIM_TARGET, 2
+	delay 8
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 3, 16, 0, RGB_WHITE
+	delay 10
+	clearmonbg ANIM_TARGET
 	end
+
 
 SelfDestructExplode:
 	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_ATTACKER
@@ -1671,6 +1683,24 @@ Explosion1:
 	delay 6
 	playsewithpan SE_M_EXPLOSION, SOUND_PAN_ATTACKER
 	createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, 16, 16, 0, 1
+	delay 6
+	return
+
+Explosion2:
+	playsewithpan SE_M_EXPLOSION, SOUND_PAN_ATTACKER
+	createsprite gSelfdestructSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 0, 1
+	delay 6
+	playsewithpan SE_M_EXPLOSION, SOUND_PAN_ATTACKER
+	createsprite gSelfdestructSpriteTemplate, ANIM_ATTACKER, 3, 24, -24, 0, 1
+	delay 6
+	playsewithpan SE_M_EXPLOSION, SOUND_PAN_ATTACKER
+	createsprite gSelfdestructSpriteTemplate, ANIM_ATTACKER, 3, -16, 16, 0, 1
+	delay 6
+	playsewithpan SE_M_EXPLOSION, SOUND_PAN_ATTACKER
+	createsprite gSelfdestructSpriteTemplate, ANIM_ATTACKER, 3, -24, -12, 0, 1
+	delay 6
+	playsewithpan SE_M_EXPLOSION, SOUND_PAN_ATTACKER
+	createsprite gSelfdestructSpriteTemplate, ANIM_ATTACKER, 3, 16, 16, 0, 1
 	delay 6
 	return
 
@@ -2988,13 +3018,17 @@ Move_SUPER_FANG:
 	end
 
 Move_SLASH:
-	loadspritegfx ANIM_TAG_SLASH
-	createsprite gSlashSliceSpriteTemplate, ANIM_TARGET, 2, 1, -8, 0
-	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
-	delay 4
-	createsprite gSlashSliceSpriteTemplate, ANIM_TARGET, 2, 1, 8, 0
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 4, 0, 18, 1
-	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
+	loadspritegfx ANIM_TAG_CUT
+	monbg ANIM_TARGET
+	setalpha 12, 8
+	playsewithpan SE_M_SCRATCH, SOUND_PAN_TARGET
+	createsprite gCuttingSliceSpriteTemplate, ANIM_ATTACKER, 2, 16, -32, 0
+	createsprite gCuttingSliceSpriteTemplate, ANIM_ATTACKER, 2, 32, -32, 0
+	createsprite gCuttingSliceSpriteTemplate, ANIM_ATTACKER, 2, 48, -32, 0
+	delay 5
+	waitforvisualfinish
+	clearmonbg ANIM_TARGET
+	blendoff
 	waitforvisualfinish
 	end
 

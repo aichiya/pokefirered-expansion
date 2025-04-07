@@ -658,6 +658,30 @@ const struct SpriteTemplate gExplosionSpriteTemplate =
     .callback = AnimSpriteOnMonPos,
 };
 
+static const union AnimCmd sSelfdestructAnimCmds[] =
+{
+    ANIMCMD_FRAME(0, 7),
+    ANIMCMD_FRAME(16, 7),
+    ANIMCMD_FRAME(32, 7),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sSelfdestructAnimTable[] =
+{
+    sSelfdestructAnimCmds,
+};
+
+const struct SpriteTemplate gSelfdestructSpriteTemplate =    
+{
+    .tileTag = ANIM_TAG_EXPLOSION,
+    .paletteTag = ANIM_TAG_EXPLOSION,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = sSelfdestructAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteOnMonPos,
+};
+
 static const union AffineAnimCmd sSoftBoiledEggAffineAnimCmds1[] =
 {
     AFFINEANIMCMD_FRAME(0, 0, -8, 2),
