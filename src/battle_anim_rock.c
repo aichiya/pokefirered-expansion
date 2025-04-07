@@ -556,7 +556,10 @@ static void AnimFlyingSandCrescent(struct Sprite *sprite)
 static void AnimRaiseSprite(struct Sprite *sprite)
 {
     StartSpriteAnim(sprite, gBattleAnimArgs[4]);
-    InitSpritePosToAnimAttacker(sprite, 0);
+    if (gBattleAnimArgs[4] == 0)
+        InitSpritePosToAnimAttacker(sprite, 0);
+    else
+        InitSpritePosToAnimTarget(sprite, 0);
     sprite->data[0] = gBattleAnimArgs[3];
     sprite->data[2] = sprite->x;
     sprite->data[4] = sprite->y + gBattleAnimArgs[2];

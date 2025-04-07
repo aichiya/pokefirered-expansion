@@ -2144,22 +2144,9 @@ Move_MEAN_LOOK:
 
 Move_ROCK_THROW:
 	loadspritegfx ANIM_TAG_ROCKS
-	createsprite gShakeMonOrTerrainSpriteTemplate, ANIM_TARGET, 2, 6, 1, 15, 1
-	createsprite gFallingRockSpriteTemplate, ANIM_TARGET, 2, 0, 1, 0, 0
-	playsewithpan SE_M_ROCK_THROW, SOUND_PAN_TARGET
-	delay 6
-	createsprite gFallingRockSpriteTemplate, ANIM_TARGET, 2, 19, 1, 10, 0
-	playsewithpan SE_M_ROCK_THROW, SOUND_PAN_TARGET
-	delay 6
-	createsprite gFallingRockSpriteTemplate, ANIM_TARGET, 2, -23, 2, -10, 0
-	playsewithpan SE_M_ROCK_THROW, SOUND_PAN_TARGET
-	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 5, 20, 1
-	delay 6
-	createsprite gFallingRockSpriteTemplate, ANIM_TARGET, 2, -15, 1, -10, 0
-	playsewithpan SE_M_ROCK_THROW, SOUND_PAN_TARGET
-	delay 6
-	createsprite gFallingRockSpriteTemplate, ANIM_TARGET, 2, 23, 2, 10, 0
-	playsewithpan SE_M_ROCK_THROW, SOUND_PAN_TARGET
+	createsprite gAncientPowerRockSpriteTemplate, ANIM_TARGET, 2, -16, -32, 40, 32, 1, 2
+	createsprite gAncientPowerRockSpriteTemplate, ANIM_TARGET, 2,   0, -16, 40, 32, 1, 2
+	createsprite gAncientPowerRockSpriteTemplate, ANIM_TARGET, 2,  16, -24, 40, 32, 1, 2
 	waitforvisualfinish
 	end
 
@@ -2170,18 +2157,18 @@ Move_ROCK_SLIDE:
 	setalpha 12, 8
 	createvisualtask AnimTask_HorizontalShake, 5, (MAX_BATTLERS_COUNT + 1), 4, 10
 	createvisualtask AnimTask_HorizontalShake, 5, MAX_BATTLERS_COUNT, 4, 10
-	createsprite gAncientPowerRockSpriteTemplate, ANIM_ATTACKER, 2,  0, 24, -40, 40, 2
-	createsprite gAncientPowerRockSpriteTemplate, ANIM_ATTACKER, 2, 16, 16, -40, 40, 2
-	createsprite gAncientPowerRockSpriteTemplate, ANIM_ATTACKER, 2, 32, 32, -40, 40, 2
+	createsprite gAncientPowerRockSpriteTemplate, ANIM_ATTACKER, 2,  0, 24, -40, 40, 0, 2
+	createsprite gAncientPowerRockSpriteTemplate, ANIM_ATTACKER, 2, 16, 16, -40, 40, 0, 2
+	createsprite gAncientPowerRockSpriteTemplate, ANIM_ATTACKER, 2, 32, 32, -40, 40, 0, 2
 	playsewithpan SE_M_ROCK_THROW, SOUND_PAN_TARGET
 	delay 36
 	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
 	delay 2
 	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
 	delay 1
-	createsprite gRockProjectileSpriteTemplate, ANIM_TARGET, 2,  0,  -16, 16, -16, 24, 257
+	createsprite gRockProjectileSpriteTemplate, ANIM_TARGET, 2,  0, -16, 16, -16, 24, 257
 	createsprite gRockProjectileSpriteTemplate, ANIM_TARGET, 2, 16, -24,  8, -24, 24, 257
-	createsprite gRockProjectileSpriteTemplate, ANIM_TARGET, 2, 32,   -8, 32, -8, 24, 257
+	createsprite gRockProjectileSpriteTemplate, ANIM_TARGET, 2, 32,  -8, 32,  -8, 24, 257
 	waitforvisualfinish
 	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
 	delay 2
