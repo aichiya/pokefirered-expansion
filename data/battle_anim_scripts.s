@@ -2446,20 +2446,18 @@ Move_HORN_DRILL:
 
 Move_THRASH:
 	loadspritegfx ANIM_TAG_IMPACT
-	loadspritegfx ANIM_TAG_HANDS_AND_FEET
-	createvisualtask AnimTask_ThrashMoveMonHorizontal, 2
-	createvisualtask AnimTask_ThrashMoveMonVertical, 2
-	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 10, 0
-	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
-	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
-	delay 28
-	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 10, 1
-	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 7, 1
-	playsewithpan SE_M_VITAL_THROW2, SOUND_PAN_TARGET
-	delay 28
-	createsprite gFistFootRandomPosSpriteTemplate, ANIM_TARGET, 3, 1, 10, 3
-	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 8, 0, 16, 1
+	@loadspritegfx ANIM_TAG_RED_BALL
+	@call HardenSquareEffect
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_ATTACKER, -4, 1, 12, 1
+	waitforvisualfinish
 	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, -8, 8, ANIM_TARGET, 2
+	delay 8
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 0, 0, ANIM_TARGET, 2
+	delay 8
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 8, -8, ANIM_TARGET, 2
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, -4, 1, 12, 1
+	waitforvisualfinish
 	end
 
 Move_SING:
@@ -4495,14 +4493,14 @@ Move_HARDEN:
 
 HardenSquareEffect:
 	loopsewithpan SE_M_HARDEN, SOUND_PAN_ATTACKER, 28, 2
-	createsprite gHardenCombine1SpriteTemplate, ANIM_TARGET, 2, -32, -32, 24
-	createsprite gHardenCombine2SpriteTemplate, ANIM_TARGET, 2, 0, -32, 24
-	createsprite gHardenCombine3SpriteTemplate, ANIM_TARGET, 2, 32, -32, 24
-	createsprite gHardenCombine4SpriteTemplate, ANIM_TARGET, 2, -32, 0, 24
-	createsprite gHardenCombine5SpriteTemplate, ANIM_TARGET, 2, 32, 0, 24
-	createsprite gHardenCombine6SpriteTemplate, ANIM_TARGET, 2, -32, 32, 24
-	createsprite gHardenCombine7SpriteTemplate, ANIM_TARGET, 2, 0, 32, 24
-	createsprite gHardenCombine8SpriteTemplate, ANIM_TARGET, 2, 32, 32, 24
+	createsprite gHardenCombine1SpriteTemplate, ANIM_ATTACKER, 2, -32, -32, 24
+	createsprite gHardenCombine2SpriteTemplate, ANIM_ATTACKER, 2, 0, -32, 24
+	createsprite gHardenCombine3SpriteTemplate, ANIM_ATTACKER, 2, 32, -32, 24
+	createsprite gHardenCombine4SpriteTemplate, ANIM_ATTACKER, 2, -32, 0, 24
+	createsprite gHardenCombine5SpriteTemplate, ANIM_ATTACKER, 2, 32, 0, 24
+	createsprite gHardenCombine6SpriteTemplate, ANIM_ATTACKER, 2, -32, 32, 24
+	createsprite gHardenCombine7SpriteTemplate, ANIM_ATTACKER, 2, 0, 32, 24
+	createsprite gHardenCombine8SpriteTemplate, ANIM_ATTACKER, 2, 32, 32, 24
 	return
 
 Move_BELLY_DRUM:

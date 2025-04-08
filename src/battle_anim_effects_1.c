@@ -2817,10 +2817,18 @@ void AnimTask_CreateSmallSolarBeamOrbs(u8 taskId)
 
 static void AnimAbsorptionOrbCombine(struct Sprite* sprite)
 {
-    InitSpritePosToAnimTarget(sprite, TRUE);
+    if (gBattleAnimArgs[0] == ANIM_ATTACKER)
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    else
+        InitSpritePosToAnimTarget(sprite, TRUE);
+
     sprite->data[0] = gBattleAnimArgs[2];
-    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
-    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
+    sprite->data[2] = GetBattlerSpriteCoord(
+        (gBattleAnimArgs[0] == ANIM_ATTACKER) ? gBattleAnimAttacker : gBattleAnimTarget, 
+        BATTLER_COORD_X_2);
+    sprite->data[4] = GetBattlerSpriteCoord(
+        (gBattleAnimArgs[0] == ANIM_ATTACKER) ? gBattleAnimAttacker : gBattleAnimTarget, 
+        BATTLER_COORD_Y_PIC_OFFSET);
     sprite->callback = StartAnimLinearTranslation;
     StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
 }
