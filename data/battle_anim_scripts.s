@@ -6476,26 +6476,17 @@ Move_ROCK_SMASH:
 
 Move_SUBMISSION:
 	loadspritegfx ANIM_TAG_IMPACT
-	monbg ANIM_DEF_PARTNER
-	setalpha 12, 8
-	playsewithpan SE_M_DOUBLE_TEAM, SOUND_PAN_ATTACKER
-	waitplaysewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET, 10
-	waitplaysewithpan SE_M_DOUBLE_TEAM, SOUND_PAN_ATTACKER, 20
-	waitplaysewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET, 30
-	waitplaysewithpan SE_M_DOUBLE_TEAM, SOUND_PAN_ATTACKER, 40
-	waitplaysewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET, 50
-	waitplaysewithpan SE_M_DOUBLE_TEAM, SOUND_PAN_ATTACKER, 60
-	waitplaysewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET, 70
-	waitplaysewithpan SE_M_DOUBLE_TEAM, SOUND_PAN_ATTACKER, 80
-	waitplaysewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET, 90
-	createvisualtask AnimTask_TranslateMonElliptical, 2, 0, -18, 6, 6, 4
-	createvisualtask AnimTask_TranslateMonElliptical, 2, 1, 18, 6, 6, 4
-	call SubmissionHit
-	call SubmissionHit
-	call SubmissionHit
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, -96, 0, 0, 15
+	delay 15
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, -8, ANIM_TARGET, 2
+	playsewithpan SE_M_DOUBLE_SLAP, SOUND_PAN_TARGET
+	delay 10
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 8, 8, ANIM_TARGET, 2
+	playsewithpan SE_M_DOUBLE_SLAP, SOUND_PAN_TARGET
 	waitforvisualfinish
-	clearmonbg ANIM_DEF_PARTNER
-	blendoff
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0, 0, 1
+	waitforvisualfinish
 	end
 
 SubmissionHit:
