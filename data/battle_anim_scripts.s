@@ -1159,8 +1159,7 @@ Move_STOMP:
 	end
 
 Move_TAIL_WHIP:
-	loopsewithpan SE_M_TAIL_WHIP, SOUND_PAN_ATTACKER, 24, 3
-	createvisualtask AnimTask_TranslateMonEllipticalRespectSide, 2, ANIM_ATTACKER, 12, 4, 2, 3
+	createvisualtask AnimTask_TranslateMonEllipticalRespectSide, 2, ANIM_ATTACKER, 16, 0, 2, 4
 	waitforvisualfinish
 	end
 
