@@ -2914,22 +2914,23 @@ Move_SHARPEN:
 	end
 
 Move_SUPER_FANG:
-	loadspritegfx ANIM_TAG_FANG_ATTACK
-	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_ATTACKER, 1, 0, 20, 1
-	playsewithpan SE_M_DRAGON_RAGE, SOUND_PAN_ATTACKER
-	waitforvisualfinish
-	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_ATTACKER, 3, 0, 48, 1
-	createvisualtask AnimTask_BlendMonInAndOut, 2, ANIM_ATTACKER, RGB(31, 6, 1), 12, 4, 1
-	waitforvisualfinish
-	delay 20
-	createsprite gHorizontalLungeSpriteTemplate, ANIM_ATTACKER, 2, 4, 4
-	delay 4
-	createsprite gSuperFangSpriteTemplate, ANIM_TARGET, 2
-	playsewithpan SE_M_BITE, SOUND_PAN_TARGET
+	loadspritegfx ANIM_TAG_IMPACT
+	monbg ANIM_TARGET
+	setalpha 12, 8
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 8, ANIM_TARGET, 2
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
 	delay 8
-	createsprite gComplexPaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 3, 1, RGB(31, 2, 2), 14, RGB_WHITE, 14
-	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 7, 12, 1
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 2
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
+	delay 8
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 8, -8, ANIM_TARGET, 2
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, -4, 1, 12, 1
 	waitforvisualfinish
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	waitforvisualfinish
+	clearmonbg ANIM_TARGET
 	blendoff
 	end
 
