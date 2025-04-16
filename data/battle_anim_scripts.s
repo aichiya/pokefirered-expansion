@@ -1076,23 +1076,26 @@ Move_THUNDERBOLT:
 	end
 
 Move_THUNDER_WAVE:
-	loadspritegfx ANIM_TAG_SPARK
-	loadspritegfx ANIM_TAG_SPARK_2
-	loadspritegfx ANIM_TAG_SPARK_H
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 0, 6, RGB_BLACK
-	waitforvisualfinish
-	delay 10
-	createvisualtask AnimTask_ElectricBolt, 5, 0, -48, 0
-	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_TARGET
-	delay 20
-	loopsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_TARGET, 10, 4
-	createsprite gThunderWaveSpriteTemplate, ANIM_TARGET, 2, -16, -16
-	delay 4
-	createsprite gThunderWaveSpriteTemplate, ANIM_TARGET, 2, -16, 0
-	delay 4
-	createsprite gThunderWaveSpriteTemplate, ANIM_TARGET, 2, -16, 16
-	waitforvisualfinish
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 6, 0, RGB_BLACK
+	loadspritegfx ANIM_TAG_LIGHTNING
+	loadspritegfx ANIM_TAG_EXPLOSION
+	createsprite gRBLightningBallSpriteTemplate, ANIM_TARGET, 3, 0, 0, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  -4, -32, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  -4, -24, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,   4,  32, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,   4,  24, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -32,   4, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -24,   4, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  32,  -4, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  24,  -4, 0, 1
+	delay 3
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -20, -28, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -12, -20, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  20,  28, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  12,  20, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -20,  28, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -12,  20, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  20, -28, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  12, -20, 0, 1
 	waitforvisualfinish
 	end
 
