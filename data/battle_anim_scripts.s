@@ -4737,35 +4737,28 @@ Move_THUNDER:
 
 Move_THUNDER_PUNCH:
 	loadspritegfx ANIM_TAG_IMPACT
-	loadspritegfx ANIM_TAG_HANDS_AND_FEET
 	loadspritegfx ANIM_TAG_LIGHTNING
-	monbg ANIM_TARGET
-	setalpha 12, 8
-	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 2, 0, 16, RGB_BLACK
-	waitforvisualfinish
-	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
-	createsprite gFistFootSpriteTemplate, ANIM_TARGET, 4, 0, 0, 8, 1, 0
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 3, 0, 0, ANIM_TARGET, 1
-	delay 1
+	loadspritegfx ANIM_TAG_EXPLOSION
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 16, -8, ANIM_TARGET, 2
+	delay 8
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -16, 0, ANIM_TARGET, 2
+	delay 8
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 8, ANIM_TARGET, 2
+	delay 16
 	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, -48
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_ATTACKER, 2, 0, -16
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_ATTACKER, 2, 0, 16
-	delay 1
-	playsewithpan SE_M_TRI_ATTACK2, SOUND_PAN_TARGET
-	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	createsprite gRBThunderSpriteTemplate, ANIM_TARGET, 2, 0, -32, ANIM_TARGET, 64, 17, 0, 0
 	delay 2
-	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 3, 15, 1
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, ANIM_TARGET, 2
-	delay 1
-	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 2, 16, 0, RGB_BLACK
-	delay 20
+	createsprite gRBThunderSpriteTemplate, ANIM_TARGET, 2, 0, -32, ANIM_TARGET, 64, 17, 0, 0
+	delay 2
+	createsprite gRBThunderSpriteTemplate, ANIM_TARGET, 2, 0, -32, ANIM_TARGET, 64, 17, 0, 0
+	delay 2
+	createsprite gRBThunderSpriteTemplate, ANIM_TARGET, 2, 0, -32, ANIM_TARGET, 64, 17, 0, 0
+	delay 12
+	createsprite gRBLightningFizzle1SpriteTemplate, ANIM_TARGET, 2, 0, 32, ANIM_TARGET, 32, 15, -24, 0
+	createsprite gRBLightningFizzle2SpriteTemplate, ANIM_TARGET, 2, 0, 32, ANIM_TARGET, 32, 15,  24, 0
 	waitforvisualfinish
-	clearmonbg ANIM_TARGET
-	blendoff
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	waitforvisualfinish
 	end
 
 Move_SACRED_FIRE:
