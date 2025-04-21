@@ -4727,3 +4727,27 @@ DirectSoundWaveData_bw_nylonb3_relic::
 	.align 2
 DirectSoundWaveData_bw_nylone4_relic::
 	.incbin "sound/direct_sound_samples/bw_nylone4_relic.bin"
+
+	.align 2
+DirectSoundSynthData_Custom_1:: @ Copied parameters from Golden Sun 2
+    set_synth_custom 0x10, 0xF0, 0xE0, 0x80
+
+	.align 2
+DirectSoundSynthData_Custom_2:: @ Copied parameters from Golden Sun 2
+    set_synth_custom 0x60, 0x20, 0x40, 0x80
+
+	.align 2
+DirectSoundSynthData_Custom_3:: @ Copied parameters from Golden Sun 2
+    set_synth_custom 0x10, 0xF0, 0xE0, 0x80
+
+	.align 2
+DirectSoundSynthData_Type_1::
+    set_synth_25
+
+	.align 2
+DirectSoundSynthData_Type_2::
+    set_synth_50
+
+	.align 2
+DirectSoundSynthData_Custom_4:: @ Sounds like gunshot
+    set_synth_custom 0x00, 0x80, 0xA0, 0x80

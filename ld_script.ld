@@ -1699,6 +1699,7 @@ SECTIONS {
         sound/songs/midi/mus_bw_relic_song.o(.rodata);
         sound/songs/midi/mus_bw_vs_wcs_champion.o(.rodata);
         sound/songs/midi/mus_bw_obtain_berry.o(.rodata);
+        sound/songs/mus_thppordx_faith_gbc_style.o(.rodata);
     }
 
     lib_rodata :

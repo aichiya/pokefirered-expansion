@@ -144,3 +144,6 @@
 .include "sound/voicegroups/voicegroup330.inc"
 .include "sound/voicegroups/voicegroup331.inc"
 .include "sound/voicegroups/voicegroup332.inc"
+
+@ --Custom--
+.include "sound/voicegroups/voicegroup901.inc"

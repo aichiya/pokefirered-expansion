@@ -5953,7 +5953,7 @@ static u16 GetBattleBGM(void)
         case TRAINER_CLASS_GENTLEMAN:
         case TRAINER_CLASS_RIVAL_LATE:
         default:
-            return MUS_VS_TRAINER;
+            return MUS_THPPORDX_FAITH_GBC_STYLE;
         }
     }
     return MUS_VS_WILD;
