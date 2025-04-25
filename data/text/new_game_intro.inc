@@ -98,31 +98,32 @@ gPikachuIntro_Text_Page3::
 gOakSpeech_Text_WelcomeToTheWorld::
     .string "Hello there!\n"
     .string "Welcome to the\l"
-    .string "world of POKéMON!\p"
+    .string "world of fantasy!\p"
     
     .string "My name is OAK!\n"
     .string "People call me\l"
-    .string "the POKéMON PROF!\p"
+    .string "the PROFESSOR!\p"
 
     .string "$"
 
 gOakSpeech_Text_ThisWorld::
     .string "This world is\n"
     .string "inhabited by\l"
-    .string "creatures called\l"
-    .string "POKéMON!$"
+    .string "fragments of\l"
+    .string "dream, called\l"
+    .string "FRAGMON!$"
 
 gOakSpeech_Text_IsInhabitedFarAndWide::
     .string "WIP$"
 
 gOakSpeech_Text_IStudyPokemon::
     .string "For some people,\n"
-    .string "POKéMON are\l"
+    .string "FRAGMON are\l"
     .string "pets. Others use\l"
     .string "them for fights.\p"
 
     .string "Myself...\n"
-    .string "I study POKéMON\l"
+    .string "I study FRAGMON\l"
     .string "as a profession.\p"
 
     .string "$"
@@ -175,10 +176,10 @@ gOakSpeech_Text_LetsGo::
     .string "{PLAYER}!\p"
 
     .string "Your very own\n"
-    .string "POKéMON legend is\l"
-    .string "about to unfold!\p"
+    .string "legend is about\l"
+    .string "to unfold!\p"
 
     .string "A world of dreams\n"
     .string "and adventures\l"
-    .string "with POKéMON\l"
+    .string "with FRAGMON\l"
     .string "awaits! LetÙ go!$"
