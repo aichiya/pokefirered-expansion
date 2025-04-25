@@ -1,12 +1,12 @@
 	.align 2
 voicegroup901::
 	voice_keysplit_all voicegroup502                                                      @ 000 | Direct | RSE Drum 1 | VVVVV
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 001 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 002 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 003 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 004 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 005 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 006 | ---
+	voice_square_1_alt 60, 0, 0, 1, 0, 2, 7, 3                                            @ 001 | GB Square1 | Spring Lane Ch. 1
+	voice_square_2_alt 60, 0, 3, 0, 2, 7, 3                                               @ 002 | GB Square2 | Spring Lane Ch. 2
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_5, 0, 2, 7, 3                 @ 003 | GB Wave    | Spring Lane Ch. 3
+	voice_square_1_alt 60, 0, 0, 2, 0, 1, 5, 2                                            @ 004 | GB Square1 | Plain Asia Ch. 1
+	voice_square_2_alt 60, 0, 3, 0, 2, 7, 4                                               @ 005 | GB Square2 | Plain Asia Ch. 2
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_6, 0, 7, 15, 0                @ 006 | GB Wave    | Plain Asia Ch. 3
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 007 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 008 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 009 | ---
