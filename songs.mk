@@ -43,7 +43,7 @@ $(MID_SUBDIR)/mus_dex_rating.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G175 -V070 -P5
 
 $(MID_SUBDIR)/mus_obtain_key_item.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G178 -V077 -P5
+	$(MID) $< $@ -E -R$(STD_REVERB) -G901 -V097 -P5
 
 $(MID_SUBDIR)/mus_caught_intro.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G179 -V094 -P5

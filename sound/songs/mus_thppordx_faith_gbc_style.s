@@ -18,7 +18,7 @@ mus_thppordx_faith_gbc_style_0:
         .byte   TEMPO , 130/2
         .byte           VOICE , 30
         .byte           VOL   , 127*mus_thppordx_faith_gbc_style_mvl/mxv
-	.byte		MOD   , 3
+	.byte		MOD   , 2
         .byte           PAN   , c_v+63
         .byte           N04   , Bn3 , v100
         .byte   W04

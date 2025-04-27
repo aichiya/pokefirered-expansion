@@ -1702,6 +1702,7 @@ SECTIONS {
         sound/songs/mus_thppordx_faith_gbc_style.o(.rodata);
         sound/songs/mus_thpp_springlane_gbc_style.o(.rodata);
         sound/songs/mus_thpp_plainasia_gbc_style.o(.rodata);
+        sound/songs/mus_thpprf_girlssealingclub_gbc_style.o(.rodata);
     }
 
     lib_rodata :

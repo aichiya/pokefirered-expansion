@@ -111,7 +111,7 @@ PalletTown_ProfessorOaksLab_EventScript_NationalDexScene::
 	msgbox PalletTown_ProfessorOaksLab_Text_OakMustReallyWorkToFillPokedex
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalIllCompleteThePokedex
 	closemessage
-	playbgm MUS_RIVAL_EXIT, 0
+	playbgm MUS_THPPRF_GIRLS_SEALING_CLUB_GBC_STYLE, 0
 	call_if_eq VAR_FACING, DIR_NORTH, PalletTown_ProfessorOaksLab_EventScript_RivalExitNorth
 	call_if_eq VAR_FACING, DIR_SOUTH, PalletTown_ProfessorOaksLab_EventScript_RivalExit
 	call_if_eq VAR_FACING, DIR_EAST, PalletTown_ProfessorOaksLab_EventScript_RivalExit
@@ -125,7 +125,7 @@ PalletTown_ProfessorOaksLab_EventScript_NationalDexScene::
 PalletTown_ProfessorOaksLab_EventScript_NationalDexSceneRivalEnterNorth::
 	setobjectxyperm LOCALID_RIVAL, 5, 10
 	addobject LOCALID_RIVAL
-	playbgm MUS_ENCOUNTER_RIVAL, 0
+	playbgm MUS_THPPRF_GIRLS_SEALING_CLUB_GBC_STYLE, 0
 	applymovement OBJ_EVENT_ID_PLAYER, PalletTown_ProfessorOaksLab_Movement_WatchRivalEnterNorth
 	applymovement LOCALID_RIVAL, PalletTown_ProfessorOaksLab_Movement_RivalEnter
 	waitmovement 0
@@ -134,7 +134,7 @@ PalletTown_ProfessorOaksLab_EventScript_NationalDexSceneRivalEnterNorth::
 PalletTown_ProfessorOaksLab_EventScript_NationalDexSceneRivalEnterEastWest::
 	setobjectxyperm LOCALID_RIVAL, 5, 10
 	addobject LOCALID_RIVAL
-	playbgm MUS_ENCOUNTER_RIVAL, 0
+	playbgm MUS_THPPRF_GIRLS_SEALING_CLUB_GBC_STYLE, 0
 	applymovement LOCALID_PROF_OAK, Common_Movement_WalkInPlaceFasterDown
 	applymovement OBJ_EVENT_ID_PLAYER, PalletTown_ProfessorOaksLab_Movement_WatchRivalEnterEastWest
 	applymovement LOCALID_RIVAL, PalletTown_ProfessorOaksLab_Movement_RivalEnter
@@ -144,7 +144,7 @@ PalletTown_ProfessorOaksLab_EventScript_NationalDexSceneRivalEnterEastWest::
 PalletTown_ProfessorOaksLab_EventScript_NationalDexSceneRivalEnterSouth::
 	setobjectxyperm LOCALID_RIVAL, 5, 10
 	addobject LOCALID_RIVAL
-	playbgm MUS_ENCOUNTER_RIVAL, 0
+	playbgm MUS_THPPRF_GIRLS_SEALING_CLUB_GBC_STYLE, 0
 	applymovement LOCALID_PROF_OAK, Common_Movement_WalkInPlaceFasterDown
 	applymovement LOCALID_RIVAL, PalletTown_ProfessorOaksLab_Movement_RivalEnter
 	waitmovement 0
@@ -287,7 +287,7 @@ PalletTown_ProfessorOaksLab_EventScript_RivalBattleTriggerRight::
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_RivalBattle::
-	playbgm MUS_ENCOUNTER_RIVAL, 0
+	playbgm MUS_THPPRF_GIRLS_SEALING_CLUB_GBC_STYLE, 0
 	applymovement LOCALID_RIVAL, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
@@ -444,7 +444,7 @@ PalletTown_ProfessorOaksLab_EventScript_EndRivalBattle::
 	special HealPlayerParty
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalGoToughenMyMon
 	closemessage
-	playbgm MUS_RIVAL_EXIT, 0
+	playbgm MUS_THPPRF_GIRLS_SEALING_CLUB_GBC_STYLE, 0
 	call_if_eq VAR_TEMP_2, 1, PalletTown_ProfessorOaksLab_EventScript_RivalExitAfterBattleLeft
 	call_if_eq VAR_TEMP_2, 2, PalletTown_ProfessorOaksLab_EventScript_RivalExitAfterBattleMid
 	call_if_eq VAR_TEMP_2, 3, PalletTown_ProfessorOaksLab_EventScript_RivalExitAfterBattleRight
@@ -581,7 +581,7 @@ PalletTown_ProfessorOaksLab_EventScript_ReceiveDexScene::
 	waitfanfare
 	removeitem ITEM_OAKS_PARCEL
 	msgbox PalletTown_ProfessorOaksLab_Text_OakCustomBallIOrdered
-	playbgm MUS_ENCOUNTER_RIVAL, 0
+	playbgm MUS_THPPRF_GIRLS_SEALING_CLUB_GBC_STYLE, 0
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalGramps
 	closemessage
 	call_if_eq VAR_FACING, DIR_NORTH, PalletTown_ProfessorOaksLab_EventScript_DexSceneRivalEnterNorth
@@ -627,7 +627,7 @@ PalletTown_ProfessorOaksLab_EventScript_ReceiveDexScene::
 	call_if_eq VAR_FACING, DIR_WEST, PalletTown_ProfessorOaksLab_EventScript_DexSceneRivalFacePlayerEastWest
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalTellSisNotToGiveYouMap
 	closemessage
-	playbgm MUS_RIVAL_EXIT, 0
+	playbgm MUS_THPPRF_GIRLS_SEALING_CLUB_GBC_STYLE, 0
 	call_if_eq VAR_FACING, DIR_NORTH, PalletTown_ProfessorOaksLab_EventScript_RivalExitNorth
 	call_if_eq VAR_FACING, DIR_SOUTH, PalletTown_ProfessorOaksLab_EventScript_RivalExit
 	call_if_eq VAR_FACING, DIR_EAST, PalletTown_ProfessorOaksLab_EventScript_RivalExit

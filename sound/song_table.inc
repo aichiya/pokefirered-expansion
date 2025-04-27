@@ -1166,6 +1166,7 @@ gSongTable::
 	song mus_thppordx_faith_gbc_style, 0, 0
 	song mus_thpp_springlane_gbc_style, 0, 0
 	song mus_thpp_plainasia_gbc_style, 0, 0
+	song mus_thpprf_girlssealingclub_gbc_style, 0, 0
 
 dummy_song_header:
 	.byte 0, 0, 0, 0

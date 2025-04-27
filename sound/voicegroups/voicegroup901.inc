@@ -7,9 +7,9 @@ voicegroup901::
 	voice_square_1_alt 60, 0, 0, 2, 0, 1, 5, 2                                            @ 004 | GB Square1 | Plain Asia Ch. 1
 	voice_square_2_alt 60, 0, 3, 0, 2, 7, 4                                               @ 005 | GB Square2 | Plain Asia Ch. 2
 	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_6, 0, 7, 15, 0                @ 006 | GB Wave    | Plain Asia Ch. 3
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 007 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 008 | ---
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 009 | ---
+	voice_square_1_alt 60, 0, 0, 1, 0, 2, 7, 3                                            @ 007 | GB Square1 | Girls' Sealing Club Ch. 1
+	voice_square_2_alt 60, 0, 3, 0, 2, 7, 3                                               @ 008 | GB Square2 | Girls' Sealing Club Ch. 2
+	voice_programmable_wave_alt 60, 0, ProgrammableWaveData_5, 0, 2, 7, 3                 @ 009 | GB Wave    | Girls' Sealing Club Ch. 3
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 010 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 011 | ---
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0                                               @ 012 | ---
