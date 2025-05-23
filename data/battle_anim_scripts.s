@@ -1027,52 +1027,37 @@ Move_THUNDER_SHOCK:
 	end
 
 Move_THUNDERBOLT:
-	loadspritegfx ANIM_TAG_SPARK
-	loadspritegfx ANIM_TAG_SHOCK_3
-	loadspritegfx ANIM_TAG_SPARK_2
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 0, 6, RGB_BLACK
-	waitforvisualfinish
-	delay 10
-	createvisualtask AnimTask_ElectricBolt, 5, 24, -52, 0
-	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_TARGET
-	delay 7
-	createvisualtask AnimTask_ElectricBolt, 5, -24, -52, 0
-	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_TARGET
-	delay 7
-	createvisualtask AnimTask_ElectricBolt, 5, 0, -60, 1
-	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_TARGET
-	delay 9
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 0, 0, 13, RGB_BLACK
-	waitforvisualfinish
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 0, 13, 0, RGB_BLACK
-	waitforvisualfinish
-	delay 20
-	createsprite gThunderboltOrbSpriteTemplate, ANIM_TARGET, 3, 44, 0, 0, 3
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_TARGET, 4, 0, 0, 32, 44, 0, 40, 0, -32765
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_TARGET, 4, 0, 0, 32, 44, 64, 40, 1, -32765
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_TARGET, 4, 0, 0, 32, 44, 128, 40, 0, -32765
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_TARGET, 4, 0, 0, 32, 44, 192, 40, 2, -32765
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_TARGET, 4, 0, 0, 16, 44, 32, 40, 0, -32765
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_TARGET, 4, 0, 0, 16, 44, 96, 40, 1, -32765
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_TARGET, 4, 0, 0, 16, 44, 160, 40, 0, -32765
-	createsprite gSparkElectricityFlashingSpriteTemplate, ANIM_TARGET, 4, 0, 0, 16, 44, 224, 40, 2, -32765
-	playsewithpan SE_M_HYPER_BEAM, SOUND_PAN_TARGET
-	delay 0
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 2, 2, RGB_BLACK
+	loadspritegfx ANIM_TAG_LIGHTNING
+	loadspritegfx ANIM_TAG_EXPLOSION
+	monbg ANIM_TARGET
+	setalpha 12, 8
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	createsprite gRBLightningBallSpriteTemplate, ANIM_TARGET, 3, 0, 0, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  -4, -32, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  -4, -24, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,   4,  32, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,   4,  24, 0, 1
+	delay 1
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -32,   4, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -24,   4, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  32,  -4, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  24,  -4, 0, 1
+	delay 3
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -20, -28, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -12, -20, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  20,  28, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  12,  20, 0, 1
+	delay 1
+	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -20,  28, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3, -12,  20, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  20, -28, 0, 1
+	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  12, -20, 0, 1
 	delay 6
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 6, 6, RGB_BLACK
-	delay 6
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 2, 2, RGB_BLACK
-	delay 6
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 6, 6, RGB_BLACK
-	waitforvisualfinish
-	delay 20
-	waitplaysewithpan SE_M_THUNDERBOLT2, SOUND_PAN_TARGET, 19
-	call ElectricityEffect
-	waitforvisualfinish
-	delay 20
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 6, 0, RGB_BLACK
-	waitforvisualfinish
+	clearmonbg ANIM_TARGET
+	blendoff
 	end
 
 Move_THUNDER_WAVE:

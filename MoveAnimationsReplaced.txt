@@ -149,7 +149,7 @@ Screech
 Self-Destruct
 Sharpen
 *Sing*
-*Skull Bash*
+Skull Bash
 *Sky Attack*
 Slam
 Slash
@@ -161,16 +161,16 @@ Smog
 Solar Beam
 Sonic Boom
 Spike Cannon
-*Splash*
+Splash
 Spore
 Stomp
 Strength
 *String Shot*
-*Struggle*
+Struggle
 Stun Spore
-*Submission*
+Submission
 *Substitute*
-*Super Fang*
+Super Fang
 *Supersonic*
 *Surf*
 *Swift*
@@ -178,19 +178,19 @@ Stun Spore
 
 -T-
 Tackle
-*Tail Whip*
-*Take Down*
+Tail Whip
+Take Down
 *Teleport*
-*Thrash*
-*Thunder*
-*Thunder Punch*
-*Thunder Shock*
-*Thunder Wave*
-*Thunderbolt*
+Thrash
+Thunder
+Thunderpunch
+Thundershock
+Thunder Wave
+Thunderbolt
 *Toxic*
 *Transform*
 *Tri Attack*
-*Twineedle*
+Twineedle
 
 -V-
 *Vine Whip*
@@ -199,7 +199,7 @@ Tackle
 -W-
 *Water Gun*
 *Waterfall*
-*Whirlwind*
-*Wing Attack*
+Whirlwind
+Wing Attack
 *Withdraw*
 Wrap
