@@ -5713,14 +5713,35 @@ Move_SYNTHESIS:
 	end
 
 Move_TOXIC:
-	loadspritegfx ANIM_TAG_TOXIC_BUBBLE
+	loadspritegfx ANIM_TAG_SPARKLE_6
 	loadspritegfx ANIM_TAG_POISON_BUBBLE
-	call ToxicBubbles
-	call ToxicBubbles
+	monbg ANIM_TARGET
+	splitbgprio_all
+	delay 0
+	createvisualtask AnimTask_BlendBattleAnimPalExclude, 10, ANIM_TARGET, 0, 0, 4, RGB_BLACK
+	createvisualtask AnimTask_GetTargetSide, 2
+	fadetobg BG_HIGHSPEED_PLAYER
+	waitbgfadeout
+	createvisualtask AnimTask_StartSlidingBg, 5, 1600, 0, 0, -1
+	@playsewithpan SE_M_GUST, SOUND_PAN_TARGET
+	delay 100
+	clearmonbg ANIM_TARGET
+	delay 0
+	restorebg
+	waitbgfadeout
+	createvisualtask AnimTask_BlendBattleAnimPalExclude, 10, ANIM_TARGET, 0, 4, 0, RGB_BLACK
+	setarg 7, 0xFFFF
+	waitbgfadein
+	playsewithpan SE_M_BUBBLE3, SOUND_PAN_ATTACKER
+	createsprite gSludgeSplatSpriteTemplate, ANIM_TARGET, 13, 0, 0
+	createsprite gAcidPoisonDropletSpriteTemplate, ANIM_TARGET, 2, -4, 8, 0, 6, 16
+	playsewithpan SE_M_BUBBLE, SOUND_PAN_TARGET
+	delay 10
+	createsprite gAcidPoisonDropletSpriteTemplate, ANIM_TARGET, 2, 4, 8, 0, 6, 16
+	playsewithpan SE_M_BUBBLE, SOUND_PAN_TARGET
+	delay 10
 	waitforvisualfinish
-	delay 15
-	call PoisonBubblesEffect
-	waitforvisualfinish
+	clearmonbg ANIM_TARGET
 	end
 
 ToxicBubbles:
