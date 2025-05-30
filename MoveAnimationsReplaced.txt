@@ -180,7 +180,7 @@ Super Fang
 Tackle
 Tail Whip
 Take Down
-*Teleport*
+Teleport
 Thrash
 Thunder
 Thunderpunch

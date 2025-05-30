@@ -63,6 +63,7 @@ static void AnimTask_RolePlaySilhouette_Step1(u8);
 static void AnimTask_RolePlaySilhouette_Step2(u8);
 static void AnimTask_AcidArmor_Step(u8);
 static void AnimTask_DeepInhale_Step(u8);
+static void AnimTask_TeleportFlySquish_Step(u8);
 static void AnimYawnCloud(struct Sprite *);
 static void AnimYawnCloud_Step(struct Sprite *);
 static void AnimTask_SquishAndSweatDroplets_Step(u8);
@@ -772,6 +773,12 @@ static const union AffineAnimCmd sDeepInhaleAffineAnimCmds[] =
     AFFINEANIMCMD_FRAME(4, 0, 0, 4),
     AFFINEANIMCMD_FRAME(0, 0, 0, 24),
     AFFINEANIMCMD_FRAME(-5, 3, 0, 16),
+    AFFINEANIMCMD_END,
+};
+
+static const union AffineAnimCmd sTeleportFlySquishAffineAnimCmds[] =    
+{
+    AFFINEANIMCMD_FRAME(256, 0, 0, 20),
     AFFINEANIMCMD_END,
 };
 
@@ -3380,6 +3387,46 @@ void AnimTask_DeepInhale(u8 taskId)
 }
 
 static void AnimTask_DeepInhale_Step(u8 taskId)
+{
+    u16 var0;
+    struct Task *task = &gTasks[taskId];
+    
+    var0 = task->data[0];
+    task->data[0]++;
+    var0 -= 20;
+    if (var0 < 23)
+    {
+        if (++task->data[1] > 1)
+        {
+            task->data[1] = 0;
+            task->data[2]++;
+            if (task->data[2] & 1)
+                gSprites[task->data[15]].x2 = 1;
+            else
+                gSprites[task->data[15]].x2 = -1;
+        }
+    }
+    else
+    {
+        gSprites[task->data[15]].x2 = 0;
+    }
+
+    if (!RunAffineAnimFromTaskData(&gTasks[taskId]))
+        DestroyAnimVisualTask(taskId);
+}
+
+// arg 0: which battler
+void AnimTask_TeleportFlySquish(u8 taskId)
+{
+    struct Task *task = &gTasks[taskId];
+    
+    task->data[0] = 0;
+    task->data[15] = GetAnimBattlerSpriteId(gBattleAnimArgs[0]);
+    PrepareAffineAnimInTaskData(&gTasks[taskId], task->data[15], sTeleportFlySquishAffineAnimCmds);
+    task->func = AnimTask_TeleportFlySquish_Step;
+}
+
+static void AnimTask_TeleportFlySquish_Step(u8 taskId)
 {
     u16 var0;
     struct Task *task = &gTasks[taskId];

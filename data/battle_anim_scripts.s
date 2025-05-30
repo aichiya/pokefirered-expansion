@@ -2616,12 +2616,17 @@ Move_RAGE:
 	end
 
 Move_TELEPORT:
-	call SetPsychicBackground
-	createvisualtask AnimTask_Teleport, 2
-	playsewithpan SE_M_TELEPORT, SOUND_PAN_ATTACKER
-	delay 15
-	call UnsetPsychicBackground
+	loadspritegfx ANIM_TAG_ORBS
+	createvisualtask AnimTask_TeleportFlySquish, 2, 0
 	waitforvisualfinish
+	invisible ANIM_ATTACKER
+	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4, -16, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4,  -8, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4,   0, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4,   8, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4,  16, ANIM_ATTACKER, -64, 16, 0, 0
+	waitforvisualfinish
+	delay 20
 	end
 
 Move_DOUBLE_TEAM:

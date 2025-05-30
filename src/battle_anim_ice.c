@@ -147,6 +147,17 @@ static const union AffineAnimCmd *const sAffineAnims_IceCrystalSpiralInwardLarge
     sAffineAnim_IceCrystalSpiralInwardLarge,
 };
 
+static const union AnimCmd sAnim_TeleportFlyOrb[] =
+{
+    ANIMCMD_FRAME(0, 0),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnims_TeleportFlyOrb[] =
+{
+    sAnim_TeleportFlyOrb,
+};
+
 const struct SpriteTemplate gIceCrystalSpiralInwardLarge =
 {
     .tileTag = ANIM_TAG_ICE_CRYSTALS,
@@ -343,6 +354,17 @@ const struct SpriteTemplate gIceCrystalSpriteTemplate =
     .paletteTag = ANIM_TAG_ICE_CRYSTALS,
     .oam = &gOamData_AffineOff_ObjNormal_16x16,
     .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteRises,
+};
+
+const struct SpriteTemplate gFlyTeleportRisingOrbSpriteTemplate =    
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sAnims_TeleportFlyOrb,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSpriteRises,
