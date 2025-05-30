@@ -6159,7 +6159,7 @@ WhirlpoolEffect:
 	return
 
 Move_FLY:
-	loadspritegfx ANIM_TAG_ROUND_SHADOW
+	loadspritegfx ANIM_TAG_ORBS
 	loadspritegfx ANIM_TAG_IMPACT
 	choosetwoturnanim FlySetUp, FlyUnleash
 
@@ -6169,21 +6169,33 @@ FlyEnd:
 
 FlySetUp:
 	playsewithpan SE_M_FLY, SOUND_PAN_ATTACKER
-	createsprite gFlyBallUpSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 13, 336
+	createvisualtask AnimTask_TeleportFlySquish, 2, 0
+	waitforvisualfinish
+	invisible ANIM_ATTACKER
+	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4, -16, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4,  -8, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4,   0, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4,   8, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4,  16, ANIM_ATTACKER, -64, 16, 0, 0
+	waitforvisualfinish
+	delay 20
 	goto FlyEnd
 
 FlyUnleash:
-	monbg ANIM_DEF_PARTNER
+	monbg ANIM_TARGET
 	setalpha 12, 8
-	playsewithpan SE_M_DOUBLE_TEAM, SOUND_PAN_ATTACKER
-	createsprite gFlyBallAttackSpriteTemplate, ANIM_ATTACKER, 2, 20
-	delay 20
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 0
-	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 6, 0, 8, 1
-	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
+	playsewithpan SE_M_JUMP_KICK, SOUND_PAN_TARGET
+	delay 4
+	loopsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER, 9, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 8, ANIM_TARGET, 2
+	delay 8
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 2
+	delay 8
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 8, -8, ANIM_TARGET, 2
+	delay 8
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
 	waitforvisualfinish
-	clearmonbg ANIM_DEF_PARTNER
-	blendoff
+	clearmonbg ANIM_TARGET
 	goto FlyEnd
 
 Move_BOUNCE:

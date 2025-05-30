@@ -57,7 +57,7 @@ Fire Punch
 Fire spin
 Flamethrower
 =Flash=
-*Fly*
+Fly
 Focus Energy
 Fury Attack
 Fury Swipes
