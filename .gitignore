@@ -24,6 +24,9 @@
 *.id2
 *.latfont
 *.lz
+*.smol
+*.fastSmol
+*.smolTM
 *.map
 *.nam
 *.o
@@ -45,6 +48,7 @@ ld_script_ruby.txt
 ld_script_sapphire.txt
 sound/**/*.bin
 sound/songs/midi/*.s
+src/data/heal_locations.h
 src/data/wild_encounters.h
 src/data/region_map/region_map_entries.h
 src/data/region_map/region_map_entry_strings.h
@@ -64,6 +68,8 @@ prefabs.json
 src/data/map_group_count.h
 !/tools/mgba/mgba-rom-test.exe
 tools/trainerproc/trainerproc
+tools/compresSmol/compresSmol
+tools/compresSmol/compresSmolTilemap
 *.Identifier
 *.smol
 *.fastSmol

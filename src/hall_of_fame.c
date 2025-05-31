@@ -144,7 +144,7 @@ static const struct CompressedSpriteSheet sHallOfFame_ConfettiSpriteSheet[] = {
     {}
 };
 
-static const struct CompressedSpritePalette sHallOfFame_ConfettiSpritePalette[] = {
+static const struct SpritePalette sHallOfFame_ConfettiSpritePalette[] = {
     {gFile_graphics_misc_confetti_palette, 1001},
     {}
 };
@@ -704,7 +704,7 @@ static void SetWarpsToRollCredits(void)
     VarSet(VAR_MAP_SCENE_INDIGO_PLATEAU_EXTERIOR, 1);
     FlagSet(FLAG_DONT_SHOW_MAP_NAME_POPUP);
     gDisableMapMusicChangeOnMapLoad = 2;
-    SetWarpDestination(MAP_GROUP(INDIGO_PLATEAU_EXTERIOR), MAP_NUM(INDIGO_PLATEAU_EXTERIOR), -1, 11, 6);
+    SetWarpDestination(MAP_GROUP(MAP_INDIGO_PLATEAU_EXTERIOR), MAP_NUM(MAP_INDIGO_PLATEAU_EXTERIOR), -1, 11, 6);
     DoWarp();
     ResetInitialPlayerAvatarState();
 }
@@ -1161,7 +1161,7 @@ static void HofInit_ResetGpuBuffersAndLoadConfettiGfx(void)
     FreeAllSpritePalettes();
     gReservedSpritePaletteCount = 8;
     LoadCompressedSpriteSheet(sHallOfFame_ConfettiSpriteSheet);
-    LoadCompressedSpritePalette(sHallOfFame_ConfettiSpritePalette);
+    LoadSpritePalette(sHallOfFame_ConfettiSpritePalette);
 }
 
 static void Hof_InitBgs(void)

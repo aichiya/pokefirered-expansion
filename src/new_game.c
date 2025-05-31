@@ -11,7 +11,7 @@
 #include "quest_log.h"
 #include "wild_encounter.h"
 #include "event_data.h"
-#include "mail_data.h"
+#include "mail.h"
 #include "play_time.h"
 #include "money.h"
 #include "battle_records.h"
@@ -86,7 +86,7 @@ static void ClearBattleTower(void)
 
 static void WarpToPlayersRoom(void)
 {
-    SetWarpDestination(MAP_GROUP(PALLET_TOWN_PLAYERS_HOUSE_2F), MAP_NUM(PALLET_TOWN_PLAYERS_HOUSE_2F), -1, 6, 6);
+    SetWarpDestination(MAP_GROUP(MAP_PALLET_TOWN_PLAYERS_HOUSE_2F), MAP_NUM(MAP_PALLET_TOWN_PLAYERS_HOUSE_2F), -1, 6, 6);
     WarpIntoMap();
 }
 
@@ -143,7 +143,7 @@ void NewGameInitData(void)
     gPlayerPartyCount = 0;
     ZeroPlayerPartyMons();
     ResetPokemonStorageSystem();
-    ClearRoamerData();
+    DeactivateAllRoamers();
     gSaveBlock1Ptr->registeredItem = 0;
     ClearBag();
     NewGameInitPCItems();

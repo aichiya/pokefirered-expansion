@@ -192,7 +192,7 @@ static const struct CompressedSpriteSheet sBallParticleSpriteSheets[] =
     [BALL_CHERISH]  = {gBattleAnimSpriteGfx_Particles2,     0x100, TAG_PARTICLES_CHERISHBALL},
 };
 
-static const struct CompressedSpritePalette sBallParticlePalettes[] =
+static const struct SpritePalette sBallParticlePalettes[] =
 {
     [BALL_STRANGE]  = {gBattleAnimSpritePal_CircleImpact,   TAG_PARTICLES_STRANGEBALL},
     [BALL_POKE]     = {gBattleAnimSpritePal_CircleImpact,   TAG_PARTICLES_POKEBALL},
@@ -707,7 +707,7 @@ void AnimTask_UnusedLevelUpHealthBox(u8 taskId)
     GetBattleAnimBg1Data(&animBgData);
     AnimLoadCompressedBgTilemap(animBgData.bgId, UnusedLevelupAnimationTilemap);
     AnimLoadCompressedBgGfx(animBgData.bgId, UnusedLevelupAnimationGfx, animBgData.tilesOffset);
-    LoadCompressedPalette(gCureBubblesPal, BG_PLTT_ID(animBgData.paletteId), PLTT_SIZE_4BPP);
+    LoadPalette(gCureBubblesPal, BG_PLTT_ID(animBgData.paletteId), PLTT_SIZE_4BPP);
 
     gBattle_BG1_X = -gSprites[spriteId3].x + 32;
     gBattle_BG1_Y = -gSprites[spriteId3].y - 32;
@@ -911,7 +911,7 @@ void AnimTask_SwitchOutBallEffect(u8 taskId)
     u32 selectedPalettes;
 
     spriteId = gBattlerSpriteIds[gBattleAnimAttacker];
-    ballId = GetMonData(GetPartyBattlerData(gBattleAnimAttacker), MON_DATA_POKEBALL);
+    ballId = GetMonData(GetBattlerMon(gBattleAnimAttacker), MON_DATA_POKEBALL);
 
     switch (gTasks[taskId].data[0])
     {
@@ -1785,7 +1785,7 @@ static void LoadBallParticleGfx(u8 ballId)
     if (GetSpriteTileStartByTag(sBallParticleSpriteSheets[ballId].tag) == 0xFFFF)
     {
         LoadCompressedSpriteSheetUsingHeap(&sBallParticleSpriteSheets[ballId]);
-        LoadCompressedSpritePaletteUsingHeap(&sBallParticlePalettes[ballId]);
+        LoadSpritePalette(&sBallParticlePalettes[ballId]);
     }
 }
 
@@ -2337,7 +2337,7 @@ void AnimTask_SwapMonSpriteToFromSubstitute(u8 taskId)
     case 0:
         gTasks[taskId].data[11] = gBattleAnimArgs[0];
         gTasks[taskId].data[0] += 0x500;
-        if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        if (!IsOnPlayerSide(gBattleAnimAttacker))
             gSprites[spriteId].x2 += gTasks[taskId].data[0] >> 8;
         else
             gSprites[spriteId].x2 -= gTasks[taskId].data[0] >> 8;
@@ -2353,13 +2353,13 @@ void AnimTask_SwapMonSpriteToFromSubstitute(u8 taskId)
         break;
     case 2:
         gTasks[taskId].data[0] += 0x500;
-        if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        if (!IsOnPlayerSide(gBattleAnimAttacker))
             gSprites[spriteId].x2 -= gTasks[taskId].data[0] >> 8;
         else
             gSprites[spriteId].x2 += gTasks[taskId].data[0] >> 8;
 
         gTasks[taskId].data[0] &= 0xFF;
-        if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        if (!IsOnPlayerSide(gBattleAnimAttacker))
         {
             if (gSprites[spriteId].x2 <= 0)
             {
@@ -2459,7 +2459,7 @@ void TryShinyAnimation(u8 battler, struct Pokemon *mon)
             if (GetSpriteTileStartByTag(ANIM_TAG_GOLD_STARS) == 0xFFFF)
             {
                 LoadCompressedSpriteSheetUsingHeap(&gBattleAnimPicTable[ANIM_TAG_GOLD_STARS - ANIM_SPRITES_START]);
-                LoadCompressedSpritePaletteUsingHeap(&gBattleAnimPaletteTable[ANIM_TAG_GOLD_STARS - ANIM_SPRITES_START]);
+                LoadSpritePalette(&gBattleAnimPaletteTable[ANIM_TAG_GOLD_STARS - ANIM_SPRITES_START]);
             }
 
             taskCirc = CreateTask(Task_ShinyStars, 10);
@@ -2530,7 +2530,7 @@ static void Task_ShinyStars(u8 taskId)
         gSprites[spriteId].invisible = TRUE;
         if (gTasks[taskId].tStarIdx == 0)
         {
-            if (GetBattlerSide(battler) == B_SIDE_PLAYER)
+            if (IsOnPlayerSide(battler))
                 pan = -64;
             else
                 pan = 63;
@@ -2614,7 +2614,7 @@ void AnimTask_LoadBaitGfx(u8 taskId)
     u8 UNUSED paletteIndex;
 
     LoadCompressedSpriteSheetUsingHeap(&gBattleAnimPicTable[ANIM_TAG_SAFARI_BAIT - ANIM_SPRITES_START]);
-    LoadCompressedSpritePaletteUsingHeap(&gBattleAnimPaletteTable[ANIM_TAG_SAFARI_BAIT - ANIM_SPRITES_START]);
+    LoadSpritePalette(&gBattleAnimPaletteTable[ANIM_TAG_SAFARI_BAIT - ANIM_SPRITES_START]);
     paletteIndex = IndexOfSpritePaletteTag(ANIM_TAG_SAFARI_BAIT);
     DestroyAnimVisualTask(taskId);
 }

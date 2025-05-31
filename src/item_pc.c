@@ -53,7 +53,7 @@ static EWRAM_DATA struct ItemPcStaticResources sListMenuState = {};
 static EWRAM_DATA u8 sSubmenuWindowIds[3] = {};
 
 extern const struct CompressedSpriteSheet gBagSwapSpriteSheet;
-extern const struct CompressedSpritePalette gBagSwapSpritePalette;
+extern const struct SpritePalette gBagSwapSpritePalette;
 
 static void ItemPc_RunSetup(void);
 static bool8 ItemPc_DoGfxSetup(void);
@@ -439,12 +439,12 @@ static bool8 ItemPc_LoadGraphics(void)
     case 1:
         if (FreeTempTileDataBuffersIfPossible() != TRUE)
         {
-            LZDecompressWram(gItemPcTilemap, sBg1TilemapBuffer);
+            DecompressDataWithHeaderWram(gItemPcTilemap, sBg1TilemapBuffer);
             sStateDataPtr->data[0]++;
         }
         break;
     case 2:
-        LoadCompressedPalette(gItemPcBgPals, BG_PLTT_ID(0), 3 * PLTT_SIZE_4BPP);
+        LoadPalette(gItemPcBgPals, BG_PLTT_ID(0), 3 * PLTT_SIZE_4BPP);
         sStateDataPtr->data[0]++;
         break;
     case 3:
@@ -452,7 +452,7 @@ static bool8 ItemPc_LoadGraphics(void)
         sStateDataPtr->data[0]++;
         break;
     default:
-        LoadCompressedSpritePalette(&gBagSwapSpritePalette);
+        LoadSpritePalette(&gBagSwapSpritePalette);
         sStateDataPtr->data[0] = 0;
         return TRUE;
     }
@@ -483,7 +483,7 @@ static void ItemPc_BuildListMenuTemplate(void)
 
     for (i = 0; i < sStateDataPtr->nItems; i++)
     {
-        sListMenuItems[i].label = ItemId_GetName(gSaveBlock1Ptr->pcItems[i].itemId);
+        sListMenuItems[i].label = GetItemName(gSaveBlock1Ptr->pcItems[i].itemId);
         sListMenuItems[i].index = i;
     }
     sListMenuItems[i].label = gFameCheckerText_Cancel;
@@ -523,10 +523,10 @@ static void ItemPc_MoveCursorFunc(s32 itemIndex, bool8 onInit, struct ListMenu *
         {
             itemId = ItemPc_GetItemIdBySlotId(itemIndex);
             AddBagItemIconSprite(itemId, sStateDataPtr->itemMenuIconSlot);
-            if (ItemId_GetPocket(itemId) == POCKET_TM_HM)
+            if (GetItemPocket(itemId) == POCKET_TM_HM)
                 desc = gMovesInfo[ItemIdToBattleMoveId(itemId)].name;
             else
-                desc = ItemId_GetDescription(itemId);
+                desc = GetItemDescription(itemId);
         }
         else
         {
@@ -771,7 +771,7 @@ static void ItemPc_MoveItemModeInit(u8 taskId, s16 pos)
     ListMenuSetTemplateField(data[0], LISTFIELD_CURSORKIND, 1);
     data[1] = pos;
     sStateDataPtr->moveModeOrigPos = pos;
-    StringCopy(gStringVar1, ItemId_GetName(ItemPc_GetItemIdBySlotId(data[1])));
+    StringCopy(gStringVar1, GetItemName(ItemPc_GetItemIdBySlotId(data[1])));
     StringExpandPlaceholders(gStringVar4, gOtherText_WhereShouldTheStrVar1BePlaced);
     FillWindowPixelBuffer(1, 0x00);
     ItemPc_AddTextPrinterParameterized(1, FONT_NORMAL, gStringVar4, 0, 3, 2, 3, 0, 0);

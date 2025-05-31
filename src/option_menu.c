@@ -46,8 +46,8 @@ struct OptionMenu
 static EWRAM_DATA struct OptionMenu *sOptionMenuPtr = NULL;
 
 //Function Declarataions
-static void CB2_InitOptionMenu(void);
-static void VBlankCB_OptionMenu(void);
+static void MainCB2(void);
+static void VBlankCB(void);
 static void OptionMenu_InitCallbacks(void);
 static void OptionMenu_SetVBlankCallback(void);
 static void CB2_OptionMenu(void);
@@ -179,7 +179,7 @@ static const u8 sOptionMenuPickSwitchCancelTextColor[] = {TEXT_DYNAMIC_COLOR_6, 
 static const u8 sOptionMenuTextColor[] = {TEXT_COLOR_TRANSPARENT, TEXT_COLOR_LIGHT_RED, TEXT_COLOR_RED};
 
 // Functions
-static void CB2_InitOptionMenu(void)
+static void MainCB2(void)
 {
     RunTasks();
     AnimateSprites();
@@ -187,14 +187,14 @@ static void CB2_InitOptionMenu(void)
     UpdatePaletteFade();
 }
 
-static void VBlankCB_OptionMenu(void)
+static void VBlankCB(void)
 {
     LoadOam();
     ProcessSpriteCopyRequests();
     TransferPlttBuffer();
 }
 
-void CB2_OptionsMenuFromStartMenu(void)
+void CB2_InitOptionMenu(void)
 {
     u8 i;
     
@@ -229,7 +229,7 @@ static void OptionMenu_InitCallbacks(void)
 
 static void OptionMenu_SetVBlankCallback(void)
 {
-    SetVBlankCallback(VBlankCB_OptionMenu);
+    SetVBlankCallback(VBlankCB);
 }
 
 static void CB2_OptionMenu(void)
@@ -280,7 +280,7 @@ static void CB2_OptionMenu(void)
 static void SetOptionMenuTask(void)
 {
     CreateTask(Task_OptionMenu, 0);
-    SetMainCallback2(CB2_InitOptionMenu);
+    SetMainCallback2(MainCB2);
 }
 
 static void InitOptionMenuBg(void)
@@ -336,10 +336,10 @@ static bool8 LoadOptionMenuPalette(void)
     switch (sOptionMenuPtr->loadPaletteState)
     {
     case 0:
-        LoadBgTiles(1, GetUserWindowGraphics(sOptionMenuPtr->option[MENUITEM_FRAMETYPE])->tiles, 0x120, 0x1AA);
+        LoadBgTiles(1, GetWindowFrameTilesPal(sOptionMenuPtr->option[MENUITEM_FRAMETYPE])->tiles, 0x120, 0x1AA);
         break;
     case 1:
-        LoadPalette(GetUserWindowGraphics(sOptionMenuPtr->option[MENUITEM_FRAMETYPE])->pal, BG_PLTT_ID(2), PLTT_SIZE_4BPP);
+        LoadPalette(GetWindowFrameTilesPal(sOptionMenuPtr->option[MENUITEM_FRAMETYPE])->pal, BG_PLTT_ID(2), PLTT_SIZE_4BPP);
         break;
     case 2:
         LoadPalette(sOptionMenuPalette, BG_PLTT_ID(1), sizeof(sOptionMenuPalette));
@@ -380,8 +380,8 @@ static void Task_OptionMenu(u8 taskId)
             sOptionMenuPtr->loadState++;
             break;
         case 2:
-            LoadBgTiles(1, GetUserWindowGraphics(sOptionMenuPtr->option[MENUITEM_FRAMETYPE])->tiles, 0x120, 0x1AA);
-            LoadPalette(GetUserWindowGraphics(sOptionMenuPtr->option[MENUITEM_FRAMETYPE])->pal, BG_PLTT_ID(2), PLTT_SIZE_4BPP);
+            LoadBgTiles(1, GetWindowFrameTilesPal(sOptionMenuPtr->option[MENUITEM_FRAMETYPE])->tiles, 0x120, 0x1AA);
+            LoadPalette(GetWindowFrameTilesPal(sOptionMenuPtr->option[MENUITEM_FRAMETYPE])->pal, BG_PLTT_ID(2), PLTT_SIZE_4BPP);
             BufferOptionMenuString(sOptionMenuPtr->cursorPos);
             break;
         case 3:
@@ -411,7 +411,7 @@ static u8 OptionMenu_ProcessInput(void)
 { 
     u16 current;
     u16 *curr;
-    if (JOY_REPT(DPAD_RIGHT))
+    if (JOY_REPEAT(DPAD_RIGHT))
     {
         current = sOptionMenuPtr->option[(sOptionMenuPtr->cursorPos)];
         if (current == (sOptionMenuItemCounts[sOptionMenuPtr->cursorPos] - 1))
@@ -423,7 +423,7 @@ static u8 OptionMenu_ProcessInput(void)
         else
             return 4;
     }
-    else if (JOY_REPT(DPAD_LEFT))
+    else if (JOY_REPEAT(DPAD_LEFT))
     {
         curr = &sOptionMenuPtr->option[sOptionMenuPtr->cursorPos];
         if (*curr == 0)
@@ -436,7 +436,7 @@ static u8 OptionMenu_ProcessInput(void)
         else
             return 4;
     }
-    else if (JOY_REPT(DPAD_UP))
+    else if (JOY_REPEAT(DPAD_UP))
     {
         if (sOptionMenuPtr->cursorPos == MENUITEM_TEXTSPEED)
             sOptionMenuPtr->cursorPos = MENUITEM_CANCEL;
@@ -444,7 +444,7 @@ static u8 OptionMenu_ProcessInput(void)
             sOptionMenuPtr->cursorPos = sOptionMenuPtr->cursorPos - 1;
         return 3;        
     }
-    else if (JOY_REPT(DPAD_DOWN))
+    else if (JOY_REPEAT(DPAD_DOWN))
     {
         if (sOptionMenuPtr->cursorPos == MENUITEM_CANCEL)
             sOptionMenuPtr->cursorPos = MENUITEM_TEXTSPEED;

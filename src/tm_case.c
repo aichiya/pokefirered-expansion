@@ -114,7 +114,6 @@ static EWRAM_DATA struct {
 static EWRAM_DATA void *sTilemapBuffer = NULL;
 static EWRAM_DATA struct ListMenuItem * sListMenuItemsBuffer = NULL;
 static EWRAM_DATA u8 (* sListMenuStringsBuffer)[29] = NULL;
-static EWRAM_DATA u16 * sTMSpritePaletteBuffer = NULL;
 
 static void CB2_SetUpTMCaseUI_Blocking(void);
 static bool8 DoSetUpTMCaseUI(void);
@@ -176,7 +175,6 @@ static void TintDiscpriteByType(u8 type);
 static void SetDiscSpritePosition(struct Sprite *sprite, u8 tmIdx);
 static void SwapDisc(u8 spriteId, u16 itemId);
 static void SpriteCB_SwapDisc(struct Sprite *sprite);
-static void LoadDiscTypePalettes(void);
 
 static const struct BgTemplate sBGTemplates[] = {
     {
@@ -571,7 +569,6 @@ static void ResetBufferPointers_NoFree(void)
     sTilemapBuffer = NULL;
     sListMenuItemsBuffer = NULL;
     sListMenuStringsBuffer = NULL;
-    sTMSpritePaletteBuffer = NULL;
 }
 
 static void LoadBGTemplates(void)
@@ -604,19 +601,19 @@ static bool8 HandleLoadTMCaseGraphicsAndPalettes(void)
     case 1:
         if (FreeTempTileDataBuffersIfPossible() != TRUE)
         {
-            LZDecompressWram(gTMCaseMenu_Tilemap, sTilemapBuffer);
+            DecompressDataWithHeaderWram(gTMCaseMenu_Tilemap, sTilemapBuffer);
             sTMCaseDynamicResources->seqId++;
         }
         break;
     case 2:
-        LZDecompressWram(gTMCase_Tilemap, GetBgTilemapBuffer(1));
+        DecompressDataWithHeaderWram(gTMCase_Tilemap, GetBgTilemapBuffer(1));
         sTMCaseDynamicResources->seqId++;
         break;
     case 3:
         if (gSaveBlock2Ptr->playerGender == MALE)
-            LoadCompressedPalette(gTMCaseMenu_Male_Pal, BG_PLTT_ID(0), 4 * PLTT_SIZE_4BPP);
+            LoadPalette(gTMCaseMenu_Male_Pal, BG_PLTT_ID(0), 4 * PLTT_SIZE_4BPP);
         else
-            LoadCompressedPalette(gTMCaseMenu_Female_Pal, BG_PLTT_ID(0), 4 * PLTT_SIZE_4BPP);
+            LoadPalette(gTMCaseMenu_Female_Pal, BG_PLTT_ID(0), 4 * PLTT_SIZE_4BPP);
         sTMCaseDynamicResources->seqId++;
         break;
     case 4:
@@ -624,7 +621,6 @@ static bool8 HandleLoadTMCaseGraphicsAndPalettes(void)
         sTMCaseDynamicResources->seqId++;
         break;
     default:
-        LoadDiscTypePalettes();
         sTMCaseDynamicResources->seqId = 0;
         return TRUE;
     }
@@ -720,7 +716,7 @@ static void List_ItemPrintFunc(u8 windowId, u32 itemIndex, u8 y)
         u16 itemId = BagGetItemIdByPocketPosition(POCKET_TM_HM, itemIndex);
         if (!IsItemHM(itemId))
         {
-            if (!ItemId_GetImportance(itemId))
+            if (!GetItemImportance(itemId))
             {
                 ConvertIntToDecimalStringN(gStringVar1, BagGetQuantityByPocketPosition(POCKET_TM_HM, itemIndex), STR_CONV_MODE_RIGHT_ALIGN, 3);
                 StringExpandPlaceholders(gStringVar4, gText_TimesStrVar1);
@@ -742,7 +738,7 @@ static void PrintDescription(s32 itemIndex)
 {
     const u8 * str;
     if (itemIndex != LIST_CANCEL)
-        str = ItemId_GetDescription(BagGetItemIdByPocketPosition(POCKET_TM_HM, itemIndex));
+        str = GetItemDescription(BagGetItemIdByPocketPosition(POCKET_TM_HM, itemIndex));
     else
         str = gText_TMCaseWillBePutAway;
     FillWindowPixelBuffer(WIN_DESCRIPTION, 0);
@@ -866,8 +862,6 @@ static void DestroyTMCaseBuffers(void)
         Free(sListMenuItemsBuffer);
     if (sListMenuStringsBuffer != NULL)
         Free(sListMenuStringsBuffer);
-    if (sTMSpritePaletteBuffer != NULL)
-        Free(sTMSpritePaletteBuffer);
     FreeAllWindowBuffers();
 }
 
@@ -1055,7 +1049,7 @@ static void Action_Give(u8 taskId)
     PutWindowTilemap(WIN_MOVE_INFO);
     ScheduleBgCopyTilemapToVram(0);
     ScheduleBgCopyTilemapToVram(1);
-    if (!ItemId_GetImportance(itemId))
+    if (!GetItemImportance(itemId))
     {
         if (CalculatePlayerPartyCount() == 0)
         {
@@ -1132,7 +1126,7 @@ static void Task_SelectedTMHM_GiveParty(u8 taskId)
 {
     s16 * data = gTasks[taskId].data;
 
-    if (!ItemId_GetImportance(BagGetItemIdByPocketPosition(POCKET_TM_HM, tSelection)))
+    if (!GetItemImportance(BagGetItemIdByPocketPosition(POCKET_TM_HM, tSelection)))
     {
         sTMCaseDynamicResources->nextScreenCallback = CB2_GiveHoldItem;
         Task_BeginFadeOutFromTMCase(taskId);
@@ -1148,7 +1142,7 @@ static void Task_SelectedTMHM_GivePC(u8 taskId)
 {
     s16 * data = gTasks[taskId].data;
 
-    if (!ItemId_GetImportance(BagGetItemIdByPocketPosition(POCKET_TM_HM, tSelection)))
+    if (!GetItemImportance(BagGetItemIdByPocketPosition(POCKET_TM_HM, tSelection)))
     {
         sTMCaseDynamicResources->nextScreenCallback = CB2_ReturnToPokeStorage;
         Task_BeginFadeOutFromTMCase(taskId);
@@ -1164,7 +1158,7 @@ static void Task_SelectedTMHM_Sell(u8 taskId)
 {
     s16 * data = gTasks[taskId].data;
 
-    if (ItemId_GetImportance(gSpecialVar_ItemId))
+    if (GetItemImportance(gSpecialVar_ItemId))
     {
         // Can't sell TM/HMs with no price (by default this is just the HMs)
         CopyItemName(gSpecialVar_ItemId, gStringVar1);
@@ -1194,7 +1188,7 @@ static void Task_AskConfirmSaleWithAmount(u8 taskId)
 {
     s16 * data = gTasks[taskId].data;
 
-    ConvertIntToDecimalStringN(gStringVar3, ItemId_GetPrice(BagGetItemIdByPocketPosition(POCKET_TM_HM, tSelection)) / 2 * tQuantitySelected, STR_CONV_MODE_LEFT_ALIGN, 6);
+    ConvertIntToDecimalStringN(gStringVar3, GetItemPrice(BagGetItemIdByPocketPosition(POCKET_TM_HM, tSelection)) / 2 * tQuantitySelected, STR_CONV_MODE_LEFT_ALIGN, 6);
     StringExpandPlaceholders(gStringVar4, gText_ICanPayThisMuch_WouldThatBeOkay);
     PrintMessageWithFollowupTask(taskId, GetDialogBoxFontId(), gStringVar4, Task_PlaceYesNoBox);
 }
@@ -1229,7 +1223,7 @@ static void Task_InitQuantitySelectUI(u8 taskId)
     ConvertIntToDecimalStringN(gStringVar1, 1, STR_CONV_MODE_LEADING_ZEROS, 2);
     StringExpandPlaceholders(gStringVar4, gText_TimesStrVar1);
     TMCase_Print(WIN_SELL_QUANTITY, FONT_SMALL, gStringVar4, 4, 10, 1, 0, 0, COLOR_DARK);
-    SellTM_PrintQuantityAndSalePrice(1, ItemId_GetPrice(BagGetItemIdByPocketPosition(POCKET_TM_HM, tSelection)) / 2 * tQuantitySelected);
+    SellTM_PrintQuantityAndSalePrice(1, GetItemPrice(BagGetItemIdByPocketPosition(POCKET_TM_HM, tSelection)) / 2 * tQuantitySelected);
     PrintPlayersMoney();
     CreateQuantityScrollArrows();
     ScheduleBgCopyTilemapToVram(0);
@@ -1252,7 +1246,7 @@ static void Task_QuantitySelect_HandleInput(u8 taskId)
 
     if (AdjustQuantityAccordingToDPadInput(&tQuantitySelected, tQuantityOwned) == 1)
     {
-        SellTM_PrintQuantityAndSalePrice(tQuantitySelected, ItemId_GetPrice(BagGetItemIdByPocketPosition(POCKET_TM_HM, tSelection)) / 2 * tQuantitySelected);
+        SellTM_PrintQuantityAndSalePrice(tQuantitySelected, GetItemPrice(BagGetItemIdByPocketPosition(POCKET_TM_HM, tSelection)) / 2 * tQuantitySelected);
     }
     else if (JOY_NEW(A_BUTTON))
     {
@@ -1287,7 +1281,7 @@ static void Task_PrintSaleConfirmedText(u8 taskId)
     PutWindowTilemap(WIN_LIST);
     ScheduleBgCopyTilemapToVram(0);
     CopyItemName(gSpecialVar_ItemId, gStringVar1);
-    ConvertIntToDecimalStringN(gStringVar3, ItemId_GetPrice(BagGetItemIdByPocketPosition(POCKET_TM_HM, tSelection)) / 2 * tQuantitySelected, STR_CONV_MODE_LEFT_ALIGN, 6);
+    ConvertIntToDecimalStringN(gStringVar3, GetItemPrice(BagGetItemIdByPocketPosition(POCKET_TM_HM, tSelection)) / 2 * tQuantitySelected, STR_CONV_MODE_LEFT_ALIGN, 6);
     StringExpandPlaceholders(gStringVar4, gText_TurnedOverItemsWorthYen);
     PrintMessageWithFollowupTask(taskId, FONT_NORMAL, gStringVar4, Task_DoSaleOfTMs);
 }
@@ -1298,7 +1292,7 @@ static void Task_DoSaleOfTMs(u8 taskId)
 
     PlaySE(SE_SHOP);
     RemoveBagItem(gSpecialVar_ItemId, tQuantitySelected);
-    AddMoney(&gSaveBlock1Ptr->money, ItemId_GetPrice(gSpecialVar_ItemId) / 2 * tQuantitySelected);
+    AddMoney(&gSaveBlock1Ptr->money, GetItemPrice(gSpecialVar_ItemId) / 2 * tQuantitySelected);
     RecordItemTransaction(gSpecialVar_ItemId, tQuantitySelected, QL_EVENT_SOLD_ITEM - QL_EVENT_USED_POKEMART);
     DestroyListMenuTask(tListTaskId, &sTMCaseStaticResources.scrollOffset, &sTMCaseStaticResources.selectedRow);
     TMCaseSetup_GetTMCount();
@@ -1652,10 +1646,15 @@ static void SetDiscSpriteAnim(struct Sprite *sprite, u8 tmIdx)
         StartSpriteAnim(sprite, ANIM_TM);
 }
 
+#define NUM_TYPES_PER_PALETTE 16
+
 static void TintDiscpriteByType(u8 type)
 {
     u8 palOffset = PLTT_ID(IndexOfSpritePaletteTag(TAG_DISC));
-    LoadPalette(sTMSpritePaletteBuffer + sTMSpritePaletteOffsetByType[type], OBJ_PLTT_OFFSET + palOffset, PLTT_SIZE_4BPP);
+    u32 palTypeIndex = sTMSpritePaletteOffsetByType[type] / (NUM_TYPES_PER_PALETTE * PLTT_SIZE_4BPP);
+    u32 palTypeOffset = sTMSpritePaletteOffsetByType[type] % (NUM_TYPES_PER_PALETTE * PLTT_SIZE_4BPP);
+
+    LoadPalette(&gTMCaseDiscTypes_Pal[palTypeIndex][palTypeOffset], OBJ_PLTT_OFFSET + palOffset, PLTT_SIZE_4BPP);
     if (sTMCaseStaticResources.menuType == TMCASE_POKEDUDE)
         BlendPalettes(1 << (16 + palOffset), 4, RGB_BLACK);
 }
@@ -1725,19 +1724,4 @@ static void SpriteCB_SwapDisc(struct Sprite *sprite)
         else
             sprite->y2 -= DISC_Y_MOVE;
     }
-}
-
-// - 1 excludes TYPE_MYSTERY
-#define NUM_DISC_COLORS ((NUMBER_OF_MON_TYPES - 1) * 16)
-
-static void LoadDiscTypePalettes(void)
-{
-    struct SpritePalette spritePalette;
-
-    sTMSpritePaletteBuffer = Alloc(NUM_DISC_COLORS * sizeof(u16));
-    LZDecompressWram(gTMCaseDiscTypes1_Pal, sTMSpritePaletteBuffer); // Decompress the first 16
-    LZDecompressWram(gTMCaseDiscTypes2_Pal, sTMSpritePaletteBuffer + 0x100); // Decompress the rest (Only 17 total, this is just Dragon type)
-    spritePalette.data = sTMSpritePaletteBuffer + NUM_DISC_COLORS;
-    spritePalette.tag = TAG_DISC;
-    LoadSpritePalette(&spritePalette);
 }

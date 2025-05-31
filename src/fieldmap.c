@@ -827,7 +827,7 @@ static void CopyTilesetToVram(struct Tileset const *tileset, u16 numTiles, u16 o
         if (!tileset->isCompressed)
             LoadBgTiles(2, tileset->tiles, numTiles * 32, offset);
         else
-            DecompressAndCopyTileDataToVram2(2, tileset->tiles, numTiles * 32, offset, 0);
+            DecompressAndCopyTileDataToVram(2, tileset->tiles, numTiles * 32, offset, 0);
     }
 }
 
@@ -919,7 +919,7 @@ static void LoadTilesetPalette(struct Tileset const *tileset, u16 destOffset, u1
         }
         else
         {
-            LoadCompressedPalette((const u32 *)tileset->palettes, destOffset, size);
+            LoadPalette((const u32 *)tileset->palettes, destOffset, size);
             ApplyGlobalTintToPaletteEntries(destOffset, size >> 1);
         }
         // convert legacy light palette system to current
