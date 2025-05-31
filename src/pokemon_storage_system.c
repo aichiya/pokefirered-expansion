@@ -4,6 +4,7 @@
 #include "decompress.h"
 #include "dynamic_placeholder_text_util.h"
 #include "event_data.h"
+#include "event_object_movement.h"
 #include "field_fadetransition.h"
 #include "field_weather.h"
 #include "graphics.h"
@@ -11,7 +12,7 @@
 #include "item.h"
 #include "item_icon.h"
 #include "item_menu.h"
-#include "mail_data.h"
+#include "mail.h"
 #include "menu.h"
 #include "mon_markings.h"
 #include "naming_screen.h"
@@ -28,6 +29,7 @@
 #include "constants/help_system.h"
 #include "constants/item_menu.h"
 #include "constants/items.h"
+#include "constants/pokemon_icon.h"
 #include "constants/songs.h"
 
 
@@ -217,7 +219,7 @@ enum {
 
 enum
 {
-    PALTAG_MON_ICON_0 = 56000,
+    PALTAG_MON_ICON_0 = POKE_ICON_BASE_PAL_TAG,
     PALTAG_MON_ICON_1, // Used implicitly in CreateMonIconSprite
     PALTAG_MON_ICON_2, // Used implicitly in CreateMonIconSprite
     PALTAG_3, // Unused
@@ -484,7 +486,7 @@ struct PokemonStorageSystemData
     u8 cursorPrevPartyPos;
     u8 cursorFlipTimer;
     u8 cursorPalNums[2];
-    const u32 *displayMonPalette;
+    const u16 *displayMonPalette;
     u32 displayMonPersonality;
     u16 displayMonSpecies;
     u16 displayMonItemId;
@@ -537,7 +539,6 @@ struct PokemonStorageSystemData
     u16 displayMonPalOffset;
     u16 *displayMonTilePtr;
     struct Sprite *displayMonSprite;
-    u16 displayMonPalBuffer[0x20];
     u8 ALIGNED(4) tileBuffer[MON_PIC_SIZE * MAX_MON_PIC_FRAMES];
     u8 ALIGNED(4) itemIconBuffer[0x200];
     u8 wallpaperBgTilemapBuffer[0x1000];
@@ -747,7 +748,7 @@ static bool32 IsItemIconAtPosition(u8 cursorArea, u8 cursorPos);
 static u8 GetNewItemIconIdx(void);
 static u8 GetItemIconIdxByPosition(u8 cursorArea, u8 cursorPos);
 static void SetItemIconPosition(u8 id, u8 cursorArea, u8 cursorPos);
-static void LoadItemIconGfx(u8 id, const u32 * tiles, const u32 * pal);
+static void LoadItemIconGfx(u8 id, const u32 * tiles, const u16 * pal);
 static void SetItemIconAffineAnim(u8 id, u8 affineAnimNo);
 static void SetItemIconCallback(u8 id, u8 command, u8 cursorArea, u8 cursorPos);
 static void SetItemIconActive(u8 id, bool8 show);
@@ -3540,7 +3541,7 @@ static void SetScrollingBackground(void)
 {
     SetGpuReg(REG_OFFSET_BG3CNT, BGCNT_PRIORITY(3) | BGCNT_CHARBASE(3) | BGCNT_16COLOR | BGCNT_SCREENBASE(31));
     DecompressAndLoadBgGfxUsingHeap(3, sScrollingBg_Gfx, 0, 0, 0);
-    LZ77UnCompVram(sScrollingBg_Tilemap, (void *)BG_SCREEN_ADDR(31));
+    DecompressDataWithHeaderVram(sScrollingBg_Tilemap, (void *)BG_SCREEN_ADDR(31));
 }
 
 static void ScrollBackground(void)
@@ -3553,7 +3554,7 @@ static void LoadPokeStorageMenuGfx(void)
 {
     InitBgsFromTemplates(0, sBgTemplates, ARRAY_COUNT(sBgTemplates));
     DecompressAndLoadBgGfxUsingHeap(1, gPokeStorageMenu_Gfx, 0, 0, 0);
-    LZ77UnCompWram(sMenu_Tilemap, gStorage->menuTilemapBuffer);
+    DecompressDataWithHeaderWram(sMenu_Tilemap, gStorage->menuTilemapBuffer);
     SetBgTilemapBuffer(1, gStorage->menuTilemapBuffer);
     ShowBg(1);
     ScheduleBgCopyTilemapToVram(1);
@@ -3659,13 +3660,11 @@ static void CreateDisplayMonSprite(void)
     u8 palSlot;
     u8 spriteId;
     struct SpriteSheet sheet = {gStorage->tileBuffer, MON_PIC_SIZE, GFXTAG_DISPLAY_MON};
-    struct SpritePalette palette = {gStorage->displayMonPalBuffer, PALTAG_DISPLAY_MON};
+    struct SpritePalette palette = {gStorage->displayMonPalette, PALTAG_DISPLAY_MON};
     struct SpriteTemplate template = sSpriteTemplate_DisplayMon;
 
     for (i = 0; i < MON_PIC_SIZE; i++)
         gStorage->tileBuffer[i] = 0;
-    for (i = 0; i < 0x10; i++)
-        gStorage->displayMonPalBuffer[i] = 0;
 
     gStorage->displayMonSprite = NULL;
 
@@ -3703,9 +3702,8 @@ static void LoadDisplayMonGfx(u16 species, u32 personality)
     if (species != SPECIES_NONE)
     {
         HandleLoadSpecialPokePic(TRUE, gStorage->tileBuffer, species, personality);
-        LZ77UnCompWram(gStorage->displayMonPalette, gStorage->displayMonPalBuffer);
         CpuCopy32(gStorage->tileBuffer, gStorage->displayMonTilePtr, 0x800);
-        LoadPalette(gStorage->displayMonPalBuffer, gStorage->displayMonPalOffset, PLTT_SIZE_4BPP);
+        LoadPalette(gStorage->displayMonPalette, gStorage->displayMonPalOffset, PLTT_SIZE_4BPP);
         gStorage->displayMonSprite->invisible = FALSE;
     }
     else
@@ -3764,7 +3762,7 @@ static void UpdateWaveformAnimation(void)
 
 static void InitSupplementalTilemaps(void)
 {
-    LZ77UnCompWram(gPokeStoragePartyMenu_Tilemap, gStorage->partyMenuTilemapBuffer);
+    DecompressDataWithHeaderWram(gPokeStoragePartyMenu_Tilemap, gStorage->partyMenuTilemapBuffer);
     LoadPalette(gPokeStoragePartyMenu_Pal, BG_PLTT_ID(1), PLTT_SIZE_4BPP);
     TilemapUtil_SetTilemap(TILEMAP_PARTY_MENU, 1, gStorage->partyMenuTilemapBuffer, 12, 22);
     TilemapUtil_SetTilemap(TILEMAP_CLOSE_BUTTON, 1, sCloseBoxButton_Tilemap, 9, 4);
@@ -5153,7 +5151,7 @@ static void LoadWallpaperGfx(u8 boxId, s8 direction)
 
     wallpaperId = GetBoxWallpaper(gStorage->wallpaperLoadBoxId);
     wallpaper = &sWallpapers[wallpaperId];
-    LZ77UnCompWram(wallpaper->tileMap, gStorage->wallpaperTilemap);
+    DecompressDataWithHeaderWram(wallpaper->tileMap, gStorage->wallpaperTilemap);
     DrawWallpaper(gStorage->wallpaperBgTilemapBuffer, gStorage->wallpaperTilemap, gStorage->wallpaperLoadDir, gStorage->wallpaperOffset);
 
     if (gStorage->wallpaperLoadDir != 0)
@@ -6053,7 +6051,11 @@ static void DoTrySetDisplayMonData(void)
 static void SetMovedMonData(u8 boxId, u8 position)
 {
     if (boxId == TOTAL_BOXES_COUNT)
+    {
         gStorage->movingMon = gPlayerParty[sCursorPosition];
+        if (&gPlayerParty[sCursorPosition] == GetFirstLiveMon())
+            gFollowerSteps = 0;
+    }
     else
         BoxMonAtToMon(boxId, position, &gStorage->movingMon);
 
@@ -6068,7 +6070,12 @@ static void SetPlacedMonData(u8 boxId, u8 position)
         HealPokemon(&gStorage->movingMon);
     
     if (boxId == TOTAL_BOXES_COUNT)
+    {
         gPlayerParty[position] = gStorage->movingMon;
+        struct Pokemon *mon = &gPlayerParty[position];
+        if (mon == GetFirstLiveMon())
+            gFollowerSteps = 0;
+    }
     else
     {
         BoxMonRestorePP(&gStorage->movingMon.box);
@@ -6621,7 +6628,7 @@ static void SetDisplayMonData(void *pokemon, u8 mode)
 
         // Buffer item name
         if (gStorage->displayMonItemId != ITEM_NONE)
-            StringCopyPadded(gStorage->displayMonItemNameText, ItemId_GetName(gStorage->displayMonItemId), CHAR_SPACE, 8);
+            StringCopyPadded(gStorage->displayMonItemNameText, GetItemName(gStorage->displayMonItemId), CHAR_SPACE, 8);
         else
             StringFill(gStorage->displayMonItemNameText, CHAR_SPACE, 8);
     }
@@ -6659,7 +6666,7 @@ static u8 HandleInput_InBox_Normal(void)
         gStorage->cursorVerticalWrap = 0;
         gStorage->cursorHorizontalWrap = 0;
         gStorage->cursorFlipTimer = 0;
-        if (JOY_REPT(DPAD_UP))
+        if (JOY_REPEAT(DPAD_UP))
         {
             input = INPUT_MOVE_CURSOR;
             if (sCursorPosition >= IN_BOX_COLUMNS)
@@ -6671,7 +6678,7 @@ static u8 HandleInput_InBox_Normal(void)
             }
             break;
         }
-        else if (JOY_REPT(DPAD_DOWN))
+        else if (JOY_REPEAT(DPAD_DOWN))
         {
             input = INPUT_MOVE_CURSOR;
             cursorPosition += IN_BOX_COLUMNS;
@@ -6685,7 +6692,7 @@ static u8 HandleInput_InBox_Normal(void)
             }
             break;
         }
-        else if (JOY_REPT(DPAD_LEFT))
+        else if (JOY_REPEAT(DPAD_LEFT))
         {
             input = INPUT_MOVE_CURSOR;
             if (sCursorPosition % IN_BOX_COLUMNS != 0)
@@ -6697,7 +6704,7 @@ static u8 HandleInput_InBox_Normal(void)
             }
             break;
         }
-        else if (JOY_REPT(DPAD_RIGHT))
+        else if (JOY_REPEAT(DPAD_RIGHT))
         {
             input = INPUT_MOVE_CURSOR;
             if ((sCursorPosition + 1) % IN_BOX_COLUMNS != 0)
@@ -6782,7 +6789,7 @@ static u8 HandleInput_InBox_GrabbingMultiple(void)
 {
     if (JOY_HELD(A_BUTTON))
     {
-        if (JOY_REPT(DPAD_UP))
+        if (JOY_REPEAT(DPAD_UP))
         {
             if (sCursorPosition / IN_BOX_COLUMNS != 0)
             {
@@ -6792,7 +6799,7 @@ static u8 HandleInput_InBox_GrabbingMultiple(void)
             else
                 return INPUT_MULTIMOVE_UNABLE;
         }
-        else if (JOY_REPT(DPAD_DOWN))
+        else if (JOY_REPEAT(DPAD_DOWN))
         {
             if (sCursorPosition + IN_BOX_COLUMNS < IN_BOX_COUNT)
             {
@@ -6802,7 +6809,7 @@ static u8 HandleInput_InBox_GrabbingMultiple(void)
             else
                 return INPUT_MULTIMOVE_UNABLE;
         }
-        else if (JOY_REPT(DPAD_LEFT))
+        else if (JOY_REPEAT(DPAD_LEFT))
         {
             if (sCursorPosition % IN_BOX_COLUMNS != 0)
             {
@@ -6812,7 +6819,7 @@ static u8 HandleInput_InBox_GrabbingMultiple(void)
             else
                 return INPUT_MULTIMOVE_UNABLE;
         }
-        else if (JOY_REPT(DPAD_RIGHT))
+        else if (JOY_REPEAT(DPAD_RIGHT))
         {
             if ((sCursorPosition + 1) % IN_BOX_COLUMNS != 0)
             {
@@ -6845,7 +6852,7 @@ static u8 HandleInput_InBox_GrabbingMultiple(void)
 
 static u8 HandleInput_InBox_MovingMultiple(void)
 {
-    if (JOY_REPT(DPAD_UP))
+    if (JOY_REPEAT(DPAD_UP))
     {
         if (MultiMove_TryMoveGroup(0))
         {
@@ -6855,7 +6862,7 @@ static u8 HandleInput_InBox_MovingMultiple(void)
         else
             return INPUT_MULTIMOVE_UNABLE;
     }
-    else if (JOY_REPT(DPAD_DOWN))
+    else if (JOY_REPEAT(DPAD_DOWN))
     {
         if (MultiMove_TryMoveGroup(1))
         {
@@ -6865,7 +6872,7 @@ static u8 HandleInput_InBox_MovingMultiple(void)
         else
             return INPUT_MULTIMOVE_UNABLE;
     }
-    else if (JOY_REPT(DPAD_LEFT))
+    else if (JOY_REPEAT(DPAD_LEFT))
     {
         if (MultiMove_TryMoveGroup(2))
         {
@@ -6875,7 +6882,7 @@ static u8 HandleInput_InBox_MovingMultiple(void)
         else
             return INPUT_SCROLL_LEFT;
     }
-    else if (JOY_REPT(DPAD_RIGHT))
+    else if (JOY_REPEAT(DPAD_RIGHT))
     {
         if (MultiMove_TryMoveGroup(3))
         {
@@ -6930,7 +6937,7 @@ static u8 HandleInput_InParty(void)
         gotoBox = FALSE;
         input = INPUT_NONE;
 
-        if (JOY_REPT(DPAD_UP))
+        if (JOY_REPEAT(DPAD_UP))
         {
             if (--cursorPosition < 0)
                 cursorPosition = PARTY_SIZE;
@@ -6938,7 +6945,7 @@ static u8 HandleInput_InParty(void)
                 input = INPUT_MOVE_CURSOR;
             break;
         }
-        else if (JOY_REPT(DPAD_DOWN))
+        else if (JOY_REPEAT(DPAD_DOWN))
         {
             if (++cursorPosition > PARTY_SIZE)
                 cursorPosition = 0;
@@ -6946,14 +6953,14 @@ static u8 HandleInput_InParty(void)
                 input = INPUT_MOVE_CURSOR;
             break;
         }
-        else if (JOY_REPT(DPAD_LEFT) && sCursorPosition != 0)
+        else if (JOY_REPEAT(DPAD_LEFT) && sCursorPosition != 0)
         {
             input = INPUT_MOVE_CURSOR;
             gStorage->cursorPrevPartyPos = sCursorPosition;
             cursorPosition = 0;
             break;
         }
-        else if (JOY_REPT(DPAD_RIGHT))
+        else if (JOY_REPEAT(DPAD_RIGHT))
         {
             if (sCursorPosition == 0)
             {
@@ -7045,7 +7052,7 @@ static u8 HandleInput_BoxTitle(void)
         gStorage->cursorVerticalWrap = 0;
         gStorage->cursorFlipTimer = 0;
 
-        if (JOY_REPT(DPAD_UP))
+        if (JOY_REPEAT(DPAD_UP))
         {
             input = INPUT_MOVE_CURSOR;
             cursorArea = CURSOR_AREA_BUTTONS;
@@ -7053,7 +7060,7 @@ static u8 HandleInput_BoxTitle(void)
             gStorage->cursorFlipTimer = 1;
             break;
         }
-        else if (JOY_REPT(DPAD_DOWN))
+        else if (JOY_REPEAT(DPAD_DOWN))
         {
             input = INPUT_MOVE_CURSOR;
             cursorArea = CURSOR_AREA_IN_BOX;
@@ -7118,7 +7125,7 @@ static u8 HandleInput_OnButtons(void)
         gStorage->cursorVerticalWrap = 0;
         gStorage->cursorFlipTimer = 0;
 
-        if (JOY_REPT(DPAD_UP))
+        if (JOY_REPEAT(DPAD_UP))
         {
             input = INPUT_MOVE_CURSOR;
             cursorArea = CURSOR_AREA_IN_BOX;
@@ -7130,7 +7137,7 @@ static u8 HandleInput_OnButtons(void)
             gStorage->cursorFlipTimer = 1;
             break;
         }
-        else if (JOY_REPT(DPAD_DOWN | START_BUTTON))
+        else if (JOY_REPEAT(DPAD_DOWN | START_BUTTON))
         {
             input = INPUT_MOVE_CURSOR;
             cursorArea = CURSOR_AREA_BOX_TITLE;
@@ -7139,14 +7146,14 @@ static u8 HandleInput_OnButtons(void)
             break;
         }
 
-        if (JOY_REPT(DPAD_LEFT))
+        if (JOY_REPEAT(DPAD_LEFT))
         {
             input = INPUT_MOVE_CURSOR;
             if (--cursorPosition < 0)
                 cursorPosition = 1;
             break;
         }
-        else if (JOY_REPT(DPAD_RIGHT))
+        else if (JOY_REPEAT(DPAD_RIGHT))
         {
             input = INPUT_MOVE_CURSOR;
             if (++cursorPosition > 1)
@@ -7735,7 +7742,7 @@ static bool8 MultiMove_Function_Start(void)
     {
     case 0:
         HideBg(0);
-        LoadMonIconPalettesAt(BG_PLTT_ID(8));
+        TryLoadAllMonIconPalettesAtOffset(BG_PLTT_ID(8));
         sMultiMove->state++;
         break;
     case 1:
@@ -8337,7 +8344,7 @@ static void TryLoadItemIconAtPos(u8 cursorArea, u8 cursorPos)
     if (heldItem != ITEM_NONE)
     {
         const u32 *tiles = GetItemIconPic(heldItem);
-        const u32 *pal = GetItemIconPalette(heldItem);
+        const u16 *pal = GetItemIconPalette(heldItem);
         u8 id = GetNewItemIconIdx();
 
         SetItemIconPosition(id, cursorArea, cursorPos);
@@ -8389,7 +8396,7 @@ static void Item_FromMonToMoving(u8 cursorArea, u8 cursorPos)
 static void InitItemIconInCursor(u16 item)
 {
     const u32 *tiles = GetItemIconPic(item);
-    const u32 *pal = GetItemIconPalette(item);
+    const u16 *pal = GetItemIconPalette(item);
     u8 id = GetNewItemIconIdx();
 
     LoadItemIconGfx(id, tiles, pal);
@@ -8538,7 +8545,7 @@ static bool8 IsActiveItemMoving(void)
 
 static const u8 *GetMovingItemName(void)
 {
-    return ItemId_GetName(gStorage->movingItemId);
+    return GetItemName(gStorage->movingItemId);
 }
 
 static u16 GetMovingItem(void)
@@ -8641,7 +8648,7 @@ static void SetItemIconPosition(u8 id, u8 cursorArea, u8 cursorPos)
     gStorage->itemIcons[id].cursorPos = cursorPos;
 }
 
-static void LoadItemIconGfx(u8 id, const u32 *itemTiles, const u32 *itemPal)
+static void LoadItemIconGfx(u8 id, const u32 *itemTiles, const u16 *itemPal)
 {
     s32 i;
 
@@ -8649,13 +8656,12 @@ static void LoadItemIconGfx(u8 id, const u32 *itemTiles, const u32 *itemPal)
         return;
 
     CpuFastFill(0, gStorage->itemIconBuffer, 0x200);
-    LZ77UnCompWram(itemTiles, gStorage->tileBuffer);
+    DecompressDataWithHeaderWram(itemTiles, gStorage->tileBuffer);
     for (i = 0; i < 3; i++)
         CpuFastCopy(gStorage->tileBuffer + (i * 0x60), gStorage->itemIconBuffer + (i * 0x80), 0x60);
 
     CpuFastCopy(gStorage->itemIconBuffer, gStorage->itemIcons[id].tiles, 0x200);
-    LZ77UnCompWram(itemPal, gStorage->itemIconBuffer);
-    LoadPalette(gStorage->itemIconBuffer, gStorage->itemIcons[id].palIndex, PLTT_SIZE_4BPP);
+    LoadPalette(itemPal, gStorage->itemIcons[id].palIndex, PLTT_SIZE_4BPP);
 }
 
 static void SetItemIconAffineAnim(u8 id, u8 animNum)
@@ -8727,9 +8733,9 @@ static void PrintItemDescription(void)
     const u8 *description;
 
     if (IsActiveItemMoving())
-        description = ItemId_GetDescription(gStorage->movingItemId);
+        description = GetItemDescription(gStorage->movingItemId);
     else
-        description = ItemId_GetDescription(gStorage->displayMonItemId);
+        description = GetItemDescription(gStorage->displayMonItemId);
 
     FillWindowPixelBuffer(2, PIXEL_FILL(1));
     AddTextPrinterParameterized5(2, FONT_NORMAL, description, 2, 0, 0, NULL, 0, 0);

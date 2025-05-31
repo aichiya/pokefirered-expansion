@@ -101,16 +101,16 @@ const u16 gCard4Pal[] = INCBIN_U16("graphics/wonder_card/bg4.gbapal");
 const u16 gCard5Pal[] = INCBIN_U16("graphics/wonder_card/bg5.gbapal");
 static const u16 sCard6Pal[] = INCBIN_U16("graphics/wonder_card/bg6.gbapal");
 static const u16 sCard7Pal[] = INCBIN_U16("graphics/wonder_card/bg7.gbapal");
-static const u8 sCard0Gfx[] = INCBIN_U8("graphics/wonder_card/bg0.4bpp.lz");
-static const u8 sCard0Map[] = INCBIN_U8("graphics/wonder_card/bg0.bin.lz");
-static const u8 sCard1Gfx[] = INCBIN_U8("graphics/wonder_card/bg1.4bpp.lz");
-static const u8 sCard1Map[] = INCBIN_U8("graphics/wonder_card/bg1.bin.lz");
-static const u8 sCard2Gfx[] = INCBIN_U8("graphics/wonder_card/bg2.4bpp.lz");
-static const u8 sCard2Map[] = INCBIN_U8("graphics/wonder_card/bg2.bin.lz");
-static const u8 sCard6Gfx[] = INCBIN_U8("graphics/wonder_card/bg6.4bpp.lz");
-static const u8 sCard6Map[] = INCBIN_U8("graphics/wonder_card/bg6.bin.lz");
-static const u8 sCard7Gfx[] = INCBIN_U8("graphics/wonder_card/bg7.4bpp.lz");
-static const u8 sCard7Map[] = INCBIN_U8("graphics/wonder_card/bg7.bin.lz");
+static const u32 sCard0Gfx[] = INCBIN_U32("graphics/wonder_card/bg0.4bpp.lz");
+static const u32 sCard0Map[] = INCBIN_U32("graphics/wonder_card/bg0.bin.lz");
+static const u32 sCard1Gfx[] = INCBIN_U32("graphics/wonder_card/bg1.4bpp.lz");
+static const u32 sCard1Map[] = INCBIN_U32("graphics/wonder_card/bg1.bin.lz");
+static const u32 sCard2Gfx[] = INCBIN_U32("graphics/wonder_card/bg2.4bpp.lz");
+static const u32 sCard2Map[] = INCBIN_U32("graphics/wonder_card/bg2.bin.lz");
+static const u32 sCard6Gfx[] = INCBIN_U32("graphics/wonder_card/bg6.4bpp.lz");
+static const u32 sCard6Map[] = INCBIN_U32("graphics/wonder_card/bg6.bin.lz");
+static const u32 sCard7Gfx[] = INCBIN_U32("graphics/wonder_card/bg7.4bpp.lz");
+static const u32 sCard7Map[] = INCBIN_U32("graphics/wonder_card/bg7.bin.lz");
 static const u16 sStampShadowPal0[] = INCBIN_U16("graphics/wonder_card/stamp_shadow_0.gbapal");
 static const u16 sStampShadowPal1[] = INCBIN_U16("graphics/wonder_card/stamp_shadow_1.gbapal");
 static const u16 sStampShadowPal2[] = INCBIN_U16("graphics/wonder_card/stamp_shadow_2.gbapal");
@@ -215,7 +215,7 @@ s32 WonderCard_Enter(void)
                 return 0;
             gPaletteFade.bufferTransferDisabled = TRUE;
             LoadPalette(sWonderCardData->gfx->pal, BG_PLTT_ID(1), PLTT_SIZE_4BPP);
-            LZ77UnCompWram(sWonderCardData->gfx->map, sWonderCardData->bgTilemapBuffer);
+            DecompressDataWithHeaderWram(sWonderCardData->gfx->map, sWonderCardData->bgTilemapBuffer);
             CopyRectToBgTilemapBufferRect(2, sWonderCardData->bgTilemapBuffer, 0, 0, 30, 20, 0, 0, 30, 20, 1, 0x008, 0);
             CopyBgTilemapBufferToVram(2);
             break;
@@ -464,7 +464,7 @@ static void CreateCardSprites(void)
     // Create icon sprite
     if (sWonderCardData->cardMetadata.iconSpecies != SPECIES_NONE)
     {
-        sWonderCardData->monIconSpriteId = CreateMonIconNoPersonality(MailSpeciesToIconSpecies(sWonderCardData->cardMetadata.iconSpecies), SpriteCallbackDummy, 220, 20, 0);
+        sWonderCardData->monIconSpriteId = CreateMonIconNoPersonality(GetIconSpeciesNoPersonality(sWonderCardData->cardMetadata.iconSpecies), SpriteCallbackDummy, 220, 20, 0);
         gSprites[sWonderCardData->monIconSpriteId].oam.priority = 2;
     }
     
@@ -480,7 +480,7 @@ static void CreateCardSprites(void)
             sWonderCardData->stampSpriteIds[i][0] = CreateSprite(&sSpriteTemplate_StampShadow, 216 - 32 * i, 0x90, 8);
             if (sWonderCardData->cardMetadata.stampData[0][i] != 0)
             {
-                sWonderCardData->stampSpriteIds[i][1] = CreateMonIconNoPersonality(MailSpeciesToIconSpecies(sWonderCardData->cardMetadata.stampData[0][i]), SpriteCallbackDummy, 216 - 32 * i, 136, 0);
+                sWonderCardData->stampSpriteIds[i][1] = CreateMonIconNoPersonality(GetIconSpeciesNoPersonality(sWonderCardData->cardMetadata.stampData[0][i]), SpriteCallbackDummy, 216 - 32 * i, 136, 0);
                 gSprites[sWonderCardData->stampSpriteIds[i][1]].oam.priority = 2;
             }
         }
@@ -493,7 +493,7 @@ static void DestroyCardSprites(void)
     
     // Destroy icon sprite
     if (sWonderCardData->monIconSpriteId != SPRITE_NONE)
-        DestroyMonIcon(&gSprites[sWonderCardData->monIconSpriteId]);
+        FreeAndDestroyMonIconSprite(&gSprites[sWonderCardData->monIconSpriteId]);
     
     // Destroy stamp sprites
     if (sWonderCardData->card.maxStamps != 0 && sWonderCardData->card.type == CARD_TYPE_STAMP)
@@ -508,7 +508,7 @@ static void DestroyCardSprites(void)
             #else
                 if (sWonderCardData->stampSpriteIds[i][0] != SPRITE_NONE)
             #endif
-                    DestroyMonIcon(&gSprites[sWonderCardData->stampSpriteIds[i][1]]);
+                    FreeAndDestroyMonIconSprite(&gSprites[sWonderCardData->stampSpriteIds[i][1]]);
             }
         }
         FreeSpriteTilesByTag(TAG_STAMP_SHADOW);

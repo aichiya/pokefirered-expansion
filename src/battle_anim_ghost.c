@@ -1637,12 +1637,12 @@ static void AnimTask_GhostGetOut_Step1(u8 taskId)
         SetGpuReg(REG_OFFSET_BG2VOFS, gBattle_BG2_Y);
         GetBattleAnimBgData(&animBgData, 2);
         AnimLoadCompressedBgGfx(animBgData.bgId, gBattleAnimBgImage_ScaryFace, animBgData.tilesOffset);
-        LoadCompressedPalette(gBattleAnimBgPalette_ScaryFace, BG_PLTT_ID(animBgData.paletteId), PLTT_SIZE_4BPP);
+        LoadPalette(gBattleAnimBgPalette_ScaryFace, BG_PLTT_ID(animBgData.paletteId), PLTT_SIZE_4BPP);
         break;
     case 3:
         GetBattleAnimBgData(&animBgData, 2);
         gMonSpritesGfxPtr->buffer = AllocZeroed(0x2000);
-        LZDecompressWram(gBattleAnimBgTilemap_ScaryFacePlayer, gMonSpritesGfxPtr->buffer);
+        DecompressDataWithHeaderWram(gBattleAnimBgTilemap_ScaryFacePlayer, gMonSpritesGfxPtr->buffer);
         RelocateBattleBgPal(animBgData.paletteId, gMonSpritesGfxPtr->buffer, 256, 0);
         CopyToBgTilemapBufferRect_ChangePalette(animBgData.bgId, gMonSpritesGfxPtr->buffer, 0, 0, 0x20, 0x20, 0x11);
         CopyBgTilemapBufferToVram(2);
