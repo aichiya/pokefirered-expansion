@@ -6037,27 +6037,16 @@ AeroblastBeam:
 	return
 
 Move_WATER_GUN:
-	loadspritegfx ANIM_TAG_SMALL_BUBBLES
-	loadspritegfx ANIM_TAG_WATER_IMPACT
-	monbg ANIM_DEF_PARTNER
-	splitbgprio ANIM_TARGET
-	setalpha 12, 8
-	createsprite gWaterGunProjectileSpriteTemplate, ANIM_ATTACKER, 2, 20, 0, 0, 0, 40, -25
-	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
+	loadspritegfx ANIM_TAG_WATER_DROPLET
+	createsprite gWaterGunProjectileSpriteTemplate, ANIM_TARGET, 2, -16, -48, 0, 6, 82
+	createsprite gWaterGunProjectileSpriteTemplate, ANIM_TARGET, 2,   0, -32, 0, 6, 64
+	createsprite gWaterGunProjectileSpriteTemplate, ANIM_TARGET, 2,  16, -48, 0, 6, 82
+	delay 63
+	createsprite gWaterGunSplashSpriteTemplate, ANIM_TARGET, 3,   0, 32, ANIM_TARGET, 1, 16
+	delay 16
+	createsprite gWaterGunSplashSpriteTemplate, ANIM_TARGET, 3, -16, 32, ANIM_TARGET, 1, 16
+	createsprite gWaterGunSplashSpriteTemplate, ANIM_TARGET, 3,  16, 32, ANIM_TARGET, 1, 16
 	waitforvisualfinish
-	createvisualtask AnimTask_ShakeMon2, 5, ANIM_TARGET, 1, 0, 8, 1
-	createsprite gWaterHitSplatSpriteTemplate, ANIM_ATTACKER, 4, 0, 0, ANIM_TARGET, 2
-	createsprite gWaterGunDropletSpriteTemplate, ANIM_ATTACKER, 2, 0, -15, 0, 15, 55
-	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_TARGET
-	delay 10
-	createsprite gWaterGunDropletSpriteTemplate, ANIM_ATTACKER, 2, 15, -20, 0, 15, 50
-	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_TARGET
-	delay 10
-	createsprite gWaterGunDropletSpriteTemplate, ANIM_ATTACKER, 2, -15, -10, 0, 10, 45
-	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_TARGET
-	waitforvisualfinish
-	clearmonbg ANIM_DEF_PARTNER
-	blendoff
 	end
 
 Move_CRABHAMMER:

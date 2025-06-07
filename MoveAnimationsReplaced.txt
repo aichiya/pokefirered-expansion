@@ -197,7 +197,7 @@ Twineedle
 Vicegrip
 
 -W-
-*Water Gun*
+Water Gun
 *Waterfall*
 Whirlwind
 Wing Attack

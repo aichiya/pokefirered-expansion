@@ -25,6 +25,7 @@ static void AnimHydroCannonCharge(struct Sprite *);
 static void AnimHydroCannonCharge_Step(struct Sprite *);
 static void AnimHydroCannonBeam(struct Sprite *);
 static void AnimWaterGunDroplet(struct Sprite *);
+static void AnimWaterGunSplash(struct Sprite *);
 static void AnimSmallBubblePair(struct Sprite *);
 static void AnimSmallBubblePair_Step(struct Sprite *);
 static void AnimSmallDriftingBubbles(struct Sprite *);
@@ -308,40 +309,48 @@ static const union AnimCmd sAnim_WaterBubble[] =
 
 static const union AnimCmd sAnim_WaterGunDroplet[] =
 {
-    ANIMCMD_FRAME(4, 1),
+    ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
-const union AnimCmd *const gAnims_WaterBubble[] =
+static const union AnimCmd sAnim_WaterGunSplash[] =
 {
-    sAnim_WaterBubble,
+    ANIMCMD_FRAME(4, 4),
+    ANIMCMD_FRAME(8, 4),
+    ANIMCMD_FRAME(12, 4),
+    ANIMCMD_END,
 };
 
-static const union AnimCmd *const sAnims_WaterGunDroplet[] =
+const union AnimCmd *const gAnims_WaterGunDroplet[] =
 {
     sAnim_WaterGunDroplet,
 };
 
-const struct SpriteTemplate gWaterGunProjectileSpriteTemplate =
+static const union AnimCmd *const sAnims_WaterGunSplash[] =
 {
-    .tileTag = ANIM_TAG_SMALL_BUBBLES,
-    .paletteTag = ANIM_TAG_SMALL_BUBBLES,
-    .oam = &gOamData_AffineOff_ObjBlend_16x16,
-    .anims = gAnims_WaterBubble,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimThrowProjectile,
+    sAnim_WaterGunSplash,
 };
 
-const struct SpriteTemplate gWaterGunDropletSpriteTemplate =
+const struct SpriteTemplate gWaterGunProjectileSpriteTemplate =
 {
-    .tileTag = ANIM_TAG_SMALL_BUBBLES,
-    .paletteTag = ANIM_TAG_SMALL_BUBBLES,
-    .oam = &gOamData_AffineDouble_ObjBlend_16x16,
-    .anims = sAnims_WaterGunDroplet,
+    .tileTag = ANIM_TAG_WATER_DROPLET,
+    .paletteTag = ANIM_TAG_WATER_DROPLET,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gAnims_WaterGunDroplet,
     .images = NULL,
-    .affineAnims = gAffineAnims_Droplet,
+    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimWaterGunDroplet,
+};
+
+const struct SpriteTemplate gWaterGunSplashSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_WATER_DROPLET,
+    .paletteTag = ANIM_TAG_WATER_DROPLET,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sAnims_WaterGunSplash,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimWaterGunSplash,
 };
 
 const struct SpriteTemplate gSmallBubblePairSpriteTemplate =
@@ -758,17 +767,6 @@ static void AnimHydroCannonBeam(struct Sprite *sprite)
     sprite->data[0] = gBattleAnimArgs[4];
     sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + gBattleAnimArgs[2];
     sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, coordType) + gBattleAnimArgs[3];
-    sprite->callback = StartAnimLinearTranslation;
-    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
-}
-
-// Water droplet appears and drips down. Used by Water Gun on impact
-static void AnimWaterGunDroplet(struct Sprite *sprite)
-{
-    InitSpritePosToAnimTarget(sprite, TRUE);
-    sprite->data[0] = gBattleAnimArgs[4];
-    sprite->data[2] = sprite->x + gBattleAnimArgs[2];
-    sprite->data[4] = sprite->y + gBattleAnimArgs[4];
     sprite->callback = StartAnimLinearTranslation;
     StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
 }
@@ -1281,6 +1279,30 @@ static void AnimTask_WaterSpoutRain_Step(u8 taskId)
             DestroyAnimVisualTask(taskId);
         break;
     }
+}
+
+static void AnimWaterGunDroplet(struct Sprite *sprite)
+{
+    SetAverageBattlerPositions(gBattleAnimTarget, TRUE, &sprite->x, &sprite->y);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        gBattleAnimArgs[0] = -gBattleAnimArgs[0];
+    sprite->x += gBattleAnimArgs[0];
+    sprite->y += gBattleAnimArgs[1];
+    sprite->data[0] = gBattleAnimArgs[4];
+    sprite->data[2] = sprite->x + gBattleAnimArgs[2];
+    sprite->data[4] = sprite->y + sprite->data[0];
+    sprite->callback = StartAnimLinearTranslation;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+}
+
+static void AnimWaterGunSplash(struct Sprite *sprite)
+{
+    if (gBattleAnimArgs[2] == 0)
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    else
+        InitSpritePosToAnimTarget(sprite, TRUE);
+    sprite->data[0] = gBattleAnimArgs[4];
+    sprite->callback = DestroyAnimSpriteAfterTimer;
 }
 
 static void CreateWaterSpoutRainDroplet(struct Task *task, u8 taskId)
