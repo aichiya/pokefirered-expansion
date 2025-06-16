@@ -198,7 +198,7 @@ Vicegrip
 
 -W-
 Water Gun
-*Waterfall*
+Waterfall
 Whirlwind
 Wing Attack
 *Withdraw*
