@@ -6069,9 +6069,43 @@ Move_CRABHAMMER:
 	end
 
 Move_SURF:
-	createvisualtask AnimTask_CreateSurfWave, 2, FALSE
-	delay 24
-	panse SE_M_SURF, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +2, 0
+	loadspritegfx ANIM_TAG_SPARKLE_6
+	loadspritegfx ANIM_TAG_WATER_COLUMN
+	monbg ANIM_DEF_PARTNER
+	splitbgprio_all
+	delay 0
+	createvisualtask AnimTask_BlendBattleAnimPalExclude, 10, ANIM_TARGET, 0, 0, 4, RGB_BLACK
+	createvisualtask AnimTask_GetTargetSide, 2
+	fadetobg BG_HIGHSPEED_PLAYER
+	waitbgfadeout
+	createvisualtask AnimTask_StartSlidingBg, 5, 1600, 0, 0, -1
+	delay 100
+	clearmonbg ANIM_DEF_PARTNER
+	delay 0
+	restorebg
+	waitbgfadeout
+	createvisualtask AnimTask_BlendBattleAnimPalExclude, 10, ANIM_TARGET, 0, 4, 0, RGB_BLACK
+	setarg 7, 0xFFFF
+	waitbgfadein
+	createsprite gSurfGeyserTopSpriteTemplate, ANIM_TARGET, 2, -8, 32, ANIM_TARGET, -64, 32, 0, 0
+	delay 6
+	createsprite gSurfGeyserBottomSpriteTemplate, ANIM_TARGET, 2, -8, 32, ANIM_TARGET, -48, 32, 0, 0
+	delay 6
+	createsprite gSurfGeyserBottomSpriteTemplate, ANIM_TARGET, 2, -8, 32, ANIM_TARGET, -48, 32, 0, 0
+	delay 6
+	createsprite gSurfGeyserBottomSpriteTemplate, ANIM_TARGET, 2, -8, 32, ANIM_TARGET, -48, 32, 0, 0
+	delay 6
+	createsprite gSurfGeyserBottomSpriteTemplate, ANIM_TARGET, 2, -8, 32, ANIM_TARGET, -48, 32, 0, 0
+	waitforvisualfinish
+	createsprite gSurfGeyserTopSpriteTemplate, ANIM_TARGET, 2, 8, 32, ANIM_TARGET, -64, 32, 0, 0
+	delay 6
+	createsprite gSurfGeyserBottomSpriteTemplate, ANIM_TARGET, 2, 8, 32, ANIM_TARGET, -48, 32, 0, 0
+	delay 6
+	createsprite gSurfGeyserBottomSpriteTemplate, ANIM_TARGET, 2, 8, 32, ANIM_TARGET, -48, 32, 0, 0
+	delay 6
+	createsprite gSurfGeyserBottomSpriteTemplate, ANIM_TARGET, 2, 8, 32, ANIM_TARGET, -48, 32, 0, 0
+	delay 6
+	createsprite gSurfGeyserBottomSpriteTemplate, ANIM_TARGET, 2, 8, 32, ANIM_TARGET, -48, 32, 0, 0
 	waitforvisualfinish
 	end
 
