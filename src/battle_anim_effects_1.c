@@ -2833,7 +2833,7 @@ static void AnimAbsorptionOrbCombine(struct Sprite* sprite)
     StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
 }
 
-static void AnimConversionCubeCombine(struct Sprite* sprite)
+static void AnimAbsorptionOrbCombine(struct Sprite* sprite)
 {
     if (gBattleAnimArgs[0] == ANIM_ATTACKER)
         InitSpritePosToAnimAttacker(sprite, TRUE);
