@@ -2833,6 +2833,24 @@ static void AnimAbsorptionOrbCombine(struct Sprite* sprite)
     StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
 }
 
+static void AnimConversionCubeCombine(struct Sprite* sprite)
+{
+    if (gBattleAnimArgs[0] == ANIM_ATTACKER)
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    else
+        InitSpritePosToAnimTarget(sprite, TRUE);
+
+    sprite->data[0] = gBattleAnimArgs[2];
+    sprite->data[2] = GetBattlerSpriteCoord(
+        (gBattleAnimArgs[0] == ANIM_ATTACKER) ? gBattleAnimAttacker : gBattleAnimTarget, 
+        BATTLER_COORD_X_2);
+    sprite->data[4] = GetBattlerSpriteCoord(
+        (gBattleAnimArgs[0] == ANIM_ATTACKER) ? gBattleAnimAttacker : gBattleAnimTarget, 
+        BATTLER_COORD_Y_PIC_OFFSET);
+    sprite->callback = StartAnimLinearTranslation;
+    StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
+}
+
 static void AnimAbsorptionOrbProjectile(struct Sprite* sprite)
 {
     if (!gBattleAnimArgs[3])

@@ -2264,7 +2264,10 @@ Move_CONVERSION:
 	splitbgprio_foes ANIM_TARGET
 	setalpha 12, 8
 	playsewithpan SE_M_SWIFT, SOUND_PAN_ATTACKER
+	call BlackFlashEffect
 	call ConversionEffect
+	waitforvisualfinish
+	call BlackFlashEffect
 	waitforvisualfinish
 	clearmonbg ANIM_DEF_PARTNER
 	blendoff
@@ -7354,21 +7357,26 @@ RecoverAbsorbEffect:
 
 Move_MIMIC:
 	loadspritegfx ANIM_TAG_ORBS
-	monbg_static ANIM_DEF_PARTNER
-	setalpha 11, 5
-	panse SE_M_MINIMIZE, SOUND_PAN_TARGET, SOUND_PAN_ATTACKER, -3, 0
-	createvisualtask AnimTask_ShrinkTargetCopy, 5, 128, 24
-	delay 15
-	createsprite gMimicOrbSpriteTemplate, ANIM_TARGET, 2, -12, 24
-	delay 10
-	setarg 7, 0xFFFF
+	monbg ANIM_DEF_PARTNER
+	splitbgprio_foes ANIM_TARGET
+	setalpha 12, 8
+	playsewithpan SE_M_SWIFT, SOUND_PAN_ATTACKER
+	call MimicEffect
 	waitforvisualfinish
-	playsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_ATTACKER, 0, 2, 0, 11, RGB_WHITE
 	waitforvisualfinish
-	clearmonbg_static ANIM_DEF_PARTNER
+	clearmonbg ANIM_DEF_PARTNER
 	blendoff
 	end
+
+MimicEffect:
+	createsprite gConversionSquareCombineSpriteTemplate, ANIM_TARGET, 2, -24, -24, 24
+	createsprite gConversionSquareCombineSpriteTemplate, ANIM_TARGET, 2, 24, -24, 24
+	createsprite gConversionSquareCombineSpriteTemplate, ANIM_TARGET, 2, -24, 24, 24
+	createsprite gConversionSquareCombineSpriteTemplate, ANIM_TARGET, 2, 24, 24, 24
+	delay 22
+	playsewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER
+	createsprite gConversionSquareProjectileSpriteTemplate, ANIM_TARGET, 2, 0, 5, 76, 76
+	return
 
 Move_CONSTRICT:
 	loadspritegfx ANIM_TAG_TENDRILS
