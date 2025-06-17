@@ -2815,7 +2815,7 @@ void AnimTask_CreateSmallSolarBeamOrbs(u8 taskId)
         DestroyAnimVisualTask(taskId);
 }
 
-static void AnimAbsorptionOrbCombine(struct Sprite* sprite)
+static void AnimConversionCubeCombine(struct Sprite* sprite)
 {
     if (gBattleAnimArgs[0] == ANIM_ATTACKER)
         InitSpritePosToAnimAttacker(sprite, TRUE);

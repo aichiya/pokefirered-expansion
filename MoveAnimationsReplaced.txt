@@ -134,7 +134,7 @@ Quick Attack
 -R-
 Rage
 Razor Leaf
-*Razor Wind*
+Razor Wind
 Recover
 Reflect
 Rest

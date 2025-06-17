@@ -7280,35 +7280,28 @@ RazorWindEnd:
 	end
 
 RazorWindSetUp:
-	loadspritegfx ANIM_TAG_GUST
-	playsewithpan SE_M_GUST, SOUND_PAN_ATTACKER
-	createsprite gRazorWindTornadoSpriteTemplate, ANIM_ATTACKER, 2, 32, 0, 16, 16, 0, 7, 40
-	createsprite gRazorWindTornadoSpriteTemplate, ANIM_ATTACKER, 2, 32, 0, 16, 16, 85, 7, 40
-	createsprite gRazorWindTornadoSpriteTemplate, ANIM_ATTACKER, 2, 32, 0, 16, 16, 170, 7, 40
+	loadspritegfx ANIM_TAG_ORBS,
+	splitbgprio_foes ANIM_ATTACKER
+	loopsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER, 9, 2
+	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
+	delay 1
+	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
+	delay 1
+	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
 	waitforvisualfinish
-	playsewithpan SE_M_GUST2, SOUND_PAN_ATTACKER
-	goto RazorWindEnd
+	goto RazorWindUnleash
 
 RazorWindUnleash:
-	loadspritegfx ANIM_TAG_AIR_WAVE_2
-	loadspritegfx ANIM_TAG_IMPACT
+	loadspritegfx ANIM_TAG_CUT
 	monbg ANIM_TARGET
 	setalpha 12, 8
-	playsewithpan SE_M_RAZOR_WIND2, SOUND_PAN_ATTACKER
-	createsprite gAirWaveCrescentSpriteTemplate, ANIM_ATTACKER, 2, 14, 8, 0, 0, 22, 2, 1
-	delay 2
-	playsewithpan SE_M_RAZOR_WIND2, SOUND_PAN_ATTACKER
-	createsprite gAirWaveCrescentSpriteTemplate, ANIM_ATTACKER, 2, 14, -8, 16, 14, 22, 1, 1
-	delay 2
-	playsewithpan SE_M_RAZOR_WIND2, SOUND_PAN_ATTACKER
-	createsprite gAirWaveCrescentSpriteTemplate, ANIM_ATTACKER, 2, 14, 12, -16, -14, 22, 0, 1
-	delay 17
-	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 10, 1
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_DEF_PARTNER, 2, 0, 10, 1
+	playsewithpan SE_M_SCRATCH, SOUND_PAN_TARGET
+	createsprite gCuttingSliceSpriteTemplate, ANIM_ATTACKER, 2, 32, -32, 0
+	delay 5
 	waitforvisualfinish
 	clearmonbg ANIM_TARGET
 	blendoff
+	waitforvisualfinish
 	goto RazorWindEnd
 
 Move_DISABLE:
