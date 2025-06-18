@@ -5106,31 +5106,28 @@ Move_FAINT_ATTACK:
 	end
 
 Move_SAND_ATTACK:
-	loadspritegfx ANIM_TAG_MUD_SAND
-	monbg ANIM_ATK_PARTNER
-	splitbgprio ANIM_ATTACKER
-	setalpha 12, 8
+	loadspritegfx ANIM_TAG_MIST_CLOUD
 	playsewithpan SE_M_SAND_ATTACK, SOUND_PAN_ATTACKER
-	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, -10, 0, 0, 3
+	createsprite gSandAttackSpriteTemplate, ANIM_ATTACKER, 2, -64, 0, 48, 32, 16, 0, 0
+	createsprite gSandAttackSpriteTemplate, ANIM_ATTACKER, 2, -64, 8, 48, 32, 16, 0, 1
+	createsprite gSandAttackSpriteTemplate, ANIM_ATTACKER, 2, -64, 16, 48, 32, 16, 0, 2
+	delay 4
+	createsprite gSandAttackSpriteTemplate, ANIM_ATTACKER, 2, -64, 0, 48, 32, 16, 0, 0
+	createsprite gSandAttackSpriteTemplate, ANIM_ATTACKER, 2, -64, 8, 48, 32, 16, 0, 1
+	createsprite gSandAttackSpriteTemplate, ANIM_ATTACKER, 2, -64, 16, 48, 32, 16, 0, 2
+	delay 4
+	createsprite gSandAttackSpriteTemplate, ANIM_ATTACKER, 2, -64, 0, 48, 32, 16, 0, 0
+	createsprite gSandAttackSpriteTemplate, ANIM_ATTACKER, 2, -64, 8, 48, 32, 16, 0, 1
+	createsprite gSandAttackSpriteTemplate, ANIM_ATTACKER, 2, -64, 16, 48, 32, 16, 0, 2
 	waitforvisualfinish
-	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 2
-	call SandAttackDirt
-	call SandAttackDirt
-	call SandAttackDirt
-	call SandAttackDirt
-	call SandAttackDirt
-	call SandAttackDirt
-	waitforvisualfinish
-	clearmonbg ANIM_ATK_PARTNER
-	blendoff
 	end
 
 SandAttackDirt:
-	createsprite gSandAttackDirtSpriteTemplate, ANIM_TARGET, 2, 15, 15, 20, 0, 0
-	createsprite gSandAttackDirtSpriteTemplate, ANIM_TARGET, 2, 15, 15, 20, 10, 10
-	createsprite gSandAttackDirtSpriteTemplate, ANIM_TARGET, 2, 15, 15, 20, -10, -10
-	createsprite gSandAttackDirtSpriteTemplate, ANIM_TARGET, 2, 15, 15, 20, 20, 5
-	createsprite gSandAttackDirtSpriteTemplate, ANIM_TARGET, 2, 15, 15, 20, -20, -5
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, 15, 15, 20, 0, 0
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, 15, 15, 20, 10, 10
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, 15, 15, 20, -10, -10
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, 15, 15, 20, 20, 5
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, 15, 15, 20, -20, -5
 	delay 2
 	return
 

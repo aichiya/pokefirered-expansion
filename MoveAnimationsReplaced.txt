@@ -142,7 +142,7 @@ Roar
 Rock Slide
 Rock Throw
 Rolling Kick
-*Sand Attack*
+Sand Attack
 Scratch
 Screech
 *Seismic Toss*
