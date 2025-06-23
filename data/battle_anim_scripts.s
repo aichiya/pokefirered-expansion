@@ -5108,17 +5108,28 @@ Move_FAINT_ATTACK:
 Move_SAND_ATTACK:
 	loadspritegfx ANIM_TAG_MIST_CLOUD
 	playsewithpan SE_M_SAND_ATTACK, SOUND_PAN_ATTACKER
-	createsprite gSandAttackSpriteTemplate, ANIM_ATTACKER, 2, -64, 0, 48, 32, 16, 0, 0
-	createsprite gSandAttackSpriteTemplate, ANIM_ATTACKER, 2, -64, 8, 48, 32, 16, 0, 1
-	createsprite gSandAttackSpriteTemplate, ANIM_ATTACKER, 2, -64, 16, 48, 32, 16, 0, 2
-	delay 4
-	createsprite gSandAttackSpriteTemplate, ANIM_ATTACKER, 2, -64, 0, 48, 32, 16, 0, 0
-	createsprite gSandAttackSpriteTemplate, ANIM_ATTACKER, 2, -64, 8, 48, 32, 16, 0, 1
-	createsprite gSandAttackSpriteTemplate, ANIM_ATTACKER, 2, -64, 16, 48, 32, 16, 0, 2
-	delay 4
-	createsprite gSandAttackSpriteTemplate, ANIM_ATTACKER, 2, -64, 0, 48, 32, 16, 0, 0
-	createsprite gSandAttackSpriteTemplate, ANIM_ATTACKER, 2, -64, 8, 48, 32, 16, 0, 1
-	createsprite gSandAttackSpriteTemplate, ANIM_ATTACKER, 2, -64, 16, 48, 32, 16, 0, 2
+	@                                                         X,  Y, AnimFrame, FramePersist
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -64, 16, 0, 19, ANIM_TARGET
+	delay 1
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -56, 16, 1, 16, ANIM_TARGET
+	delay 1
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -48,  8, 0, 13, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -48, 16, 2, 13, ANIM_TARGET
+	delay 1
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -40,  8, 1, 10, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -40, 16, 3, 10, ANIM_TARGET
+	delay 1
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -32,  0, 0, 7, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -32,  8, 2, 7, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -32, 16, 2, 7, ANIM_TARGET
+	delay 1
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -24,  0, 1, 4, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -24,  8, 3, 4, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -24, 16, 3, 4, ANIM_TARGET
+	delay 1
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -16,  0, 4, 1, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -16,  8, 4, 1, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -16, 16, 4, 1, ANIM_TARGET
 	waitforvisualfinish
 	end
 

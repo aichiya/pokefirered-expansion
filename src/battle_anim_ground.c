@@ -8,7 +8,6 @@
 static void AnimBonemerangProjectile(struct Sprite *sprite);
 static void AnimBoneHitProjectile(struct Sprite *sprite);
 static void AnimSandAttack(struct Sprite *sprite);
-static void AnimSandAttack_Step(struct Sprite *sprite);
 static void AnimDirtScatter(struct Sprite *sprite);
 static void AnimMudSportDirt(struct Sprite *sprite);
 static void AnimDirtPlumeParticle(struct Sprite *sprite);
@@ -74,37 +73,31 @@ const struct SpriteTemplate gSpinningBoneSpriteTemplate =
 
 static const union AnimCmd sSandAttackAnim1Cmds[] =
 {
-    ANIMCMD_FRAME(0, 2),
-    ANIMCMD_FRAME(1, 2),
-    ANIMCMD_FRAME(2, 2),
-    ANIMCMD_FRAME(3, 2),
-    ANIMCMD_FRAME(4, 2),
-    ANIMCMD_FRAME(5, 2),
-    ANIMCMD_FRAME(6, 2),
+    ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sSandAttackAnim2Cmds[] =
 {
-    ANIMCMD_FRAME(7, 2),
-    ANIMCMD_FRAME(8, 2),
-    ANIMCMD_FRAME(9, 2),
-    ANIMCMD_FRAME(0xA, 2),
-    ANIMCMD_FRAME(0xB, 2),
-    ANIMCMD_FRAME(0xC, 2),
-    ANIMCMD_FRAME(0xD, 2),
+    ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
 };
 
 static const union AnimCmd sSandAttackAnim3Cmds[] =
 {
-    ANIMCMD_FRAME(0xE, 2),
-    ANIMCMD_FRAME(0xF, 2),
-    ANIMCMD_FRAME(10, 2),
-    ANIMCMD_FRAME(11, 2),
-    ANIMCMD_FRAME(12, 2),
-    ANIMCMD_FRAME(13, 2),
-    ANIMCMD_FRAME(14, 2),
+    ANIMCMD_FRAME(2, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sSandAttackAnim4Cmds[] =
+{
+    ANIMCMD_FRAME(3, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sSandAttackAnim5Cmds[] =
+{
+    ANIMCMD_FRAME(4, 1),
     ANIMCMD_END,
 };
 
@@ -113,6 +106,8 @@ static const union AnimCmd *const sSandAttackAnimTable[] =
     sSandAttackAnim1Cmds,
     sSandAttackAnim2Cmds,
     sSandAttackAnim3Cmds,
+    sSandAttackAnim4Cmds,
+    sSandAttackAnim5Cmds,
 };
 
 const struct SpriteTemplate gSandAttackSpriteTemplate =
@@ -561,40 +556,17 @@ static void AnimDirtPlumeParticle_Step(struct Sprite *sprite)
         DestroyAnimSprite(sprite);
 }
 
+// Same as basic hit splat but takes a length of time to persist for (arg4)
 static void AnimSandAttack(struct Sprite *sprite)
 {
-    if (BATTLE_PARTNER(gBattleAnimAttacker) == gBattleAnimTarget && GetBattlerPosition(gBattleAnimTarget) < B_POSITION_PLAYER_RIGHT)
-        gBattleAnimArgs[0] *= -1;
-    InitSpritePosToAnimTarget(sprite, TRUE);
-    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
-        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
-    
-    // Select the animation based on gBattleAnimArgs[6]
-    sprite->anims = &sSandAttackAnimTable[gBattleAnimArgs[6]];
-
-    sprite->data[0] = gBattleAnimArgs[3];
-    sprite->data[1] = sprite->x;
-    sprite->data[2] = sprite->x + gBattleAnimArgs[2];
-    sprite->data[3] = sprite->y;
-    sprite->data[4] = sprite->y;
-    InitAnimLinearTranslation(sprite);
-    sprite->data[5] = gBattleAnimArgs[5];
-    sprite->data[6] = gBattleAnimArgs[4];
-    sprite->data[7] = 0;
-    sprite->callback = AnimSandAttack_Step;
-}
-
-static void AnimSandAttack_Step(struct Sprite *sprite)
-{
-    if (!AnimTranslateLinear(sprite))
-    {
-        sprite->y2 += Sin(sprite->data[7] >> 8, sprite->data[5]);
-        sprite->data[7] += sprite->data[6];
-    }
+    StartSpriteAnim(sprite, gBattleAnimArgs[2]);
+    if (gBattleAnimArgs[4] == 0)
+        InitSpritePosToAnimAttacker(sprite, TRUE);
     else
-    {
-        DestroyAnimSprite(sprite);
-    }
+        InitSpritePosToAnimTarget(sprite, TRUE);
+    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->callback = RunStoredCallbackWhenAnimEnds;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSpriteAfterTimer);
 }
 
 // Displays the dirt mound seen in the move Dig for set duration.
