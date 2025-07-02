@@ -2235,27 +2235,37 @@ IcyWindSwirlingSnowballs:
 	return
 
 Move_SMOKESCREEN:
-	loadspritegfx ANIM_TAG_BLACK_SMOKE
-	loadspritegfx ANIM_TAG_BLACK_BALL
-	playsewithpan SE_M_DOUBLE_TEAM, SOUND_PAN_ATTACKER
-	createsprite gBlackBallSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 0, 35, -25
+	loadspritegfx ANIM_TAG_MIST_CLOUD
+	loadspritegfx ANIM_TAG_MUSIC_NOTES
+	playsewithpan SE_M_SAND_ATTACK, SOUND_PAN_ATTACKER
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -64, 16, 0, 19, ANIM_TARGET
+	delay 1
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -56, 16, 1, 16, ANIM_TARGET
+	delay 1
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -48,  8, 0, 13, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -48, 16, 2, 13, ANIM_TARGET
+	delay 1
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -40,  8, 1, 10, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -40, 16, 3, 10, ANIM_TARGET
+	delay 1
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -32,  0, 0, 7, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -32,  8, 2, 7, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -32, 16, 2, 7, ANIM_TARGET
+	delay 1
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -24,  0, 1, 4, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -24,  8, 3, 4, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -24, 16, 3, 4, ANIM_TARGET
+	delay 1
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -16,  0, 4, 1, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -16,  8, 4, 1, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -16, 16, 4, 1, ANIM_TARGET
 	waitforvisualfinish
-	createvisualtask AnimTask_SmokescreenImpact, 2
-	delay 2
-	playsewithpan SE_M_SAND_ATTACK, SOUND_PAN_TARGET
-	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, -12, 104, 0, 75
-	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, -12, 72, 1, 75
-	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, -6, 56, 1, 75
-	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, -6, 88, 0, 75
-	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, 0, 56, 0, 75
-	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, 0, 88, 1, 75
-	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, 6, 72, 0, 75
-	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, 6, 104, 1, 75
-	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, 12, 72, 0, 75
-	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, 12, 56, 1, 75
-	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, 18, 80, 0, 75
-	createsprite gBlackSmokeSpriteTemplate, ANIM_TARGET, 4, 0, 18, 72, 1, 75
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2, -8,  0,  -24, -16, 40, 0
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2,  8,  0,   24, -16, 40, 1
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2, -8,  16, -24,  32, 40, 2
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2,  8,  16,  24,  32, 40, 3
 	waitforvisualfinish
+	call BlackFlashEffect
 	end
 
 Move_CONVERSION:

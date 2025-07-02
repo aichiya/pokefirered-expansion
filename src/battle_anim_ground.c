@@ -556,7 +556,6 @@ static void AnimDirtPlumeParticle_Step(struct Sprite *sprite)
         DestroyAnimSprite(sprite);
 }
 
-// Same as basic hit splat but takes a length of time to persist for (arg4)
 static void AnimSandAttack(struct Sprite *sprite)
 {
     StartSpriteAnim(sprite, gBattleAnimArgs[2]);

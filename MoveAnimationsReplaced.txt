@@ -156,7 +156,7 @@ Slash
 Sleep Powder
 Sludge
 Smog
-*Smokescreen*
+Smokescreen
 *Soft-Boiled*
 Solar Beam
 Sonic Boom
