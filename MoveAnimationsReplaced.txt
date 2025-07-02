@@ -150,7 +150,7 @@ Self-Destruct
 Sharpen
 *Sing*
 Skull Bash
-*Sky Attack*
+Sky Attack
 Slam
 Slash
 Sleep Powder
