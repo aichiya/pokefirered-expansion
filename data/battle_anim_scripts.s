@@ -1243,17 +1243,14 @@ Move_SPIKE_CANNON:
 	end
 
 Move_SWORDS_DANCE:
-	loadspritegfx ANIM_TAG_SWORD
-	monbg ANIM_ATTACKER
-	setalpha 12, 8
+	loadspritegfx ANIM_TAG_SWORD_2
 	playsewithpan SE_M_SWORDS_DANCE, SOUND_PAN_ATTACKER
-	createvisualtask AnimTask_TranslateMonEllipticalRespectSide, 2, ANIM_ATTACKER, 16, 6, 1, 4
-	createsprite gSwordsDanceBladeSpriteTemplate, ANIM_ATTACKER, 2, 0, 0
-	delay 22
-	createvisualtask AnimTask_FlashAnimTagWithColor, 2, ANIM_TAG_SWORD, 2, 2, RGB(18, 31, 31), 16, 0, 0
+	createsprite gSwordsDanceBladeSpriteTemplate, ANIM_ATTACKER, 2, -32, -8, 48, 30, 160, 0
 	waitforvisualfinish
-	clearmonbg ANIM_ATTACKER
-	blendoff
+	createsprite gSwordsDanceBladeSpriteTemplate, ANIM_ATTACKER, 2, -32, -8, 48, 30, 160, 0
+	waitforvisualfinish
+	createsprite gSwordsDanceBladeSpriteTemplate, ANIM_ATTACKER, 2, -32, -8, 48, 30, 160, 0
+	waitforvisualfinish
 	delay 1
 	end
 

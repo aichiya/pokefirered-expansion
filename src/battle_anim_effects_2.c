@@ -16,6 +16,8 @@ static void AnimBouncingMusicNote_Step(struct Sprite *);
 static void AnimMovingClamp(struct Sprite *);
 static void AnimMovingClamp_Step(struct Sprite *);
 static void AnimMovingClamp_End(struct Sprite *);
+static void AnimSlidingSword(struct Sprite *);
+static void AnimSlidingSword_Step(struct Sprite *);
 static void AnimTask_Withdraw_Step(u8);
 static void AnimToTargetInSinWave2(struct Sprite *);
 static void AnimToTargetInSinWave2_Step(struct Sprite *);
@@ -247,13 +249,13 @@ static const union AffineAnimCmd *const sSwordsDanceBladeAffineAnimTable[] =
 
 const struct SpriteTemplate gSwordsDanceBladeSpriteTemplate =
 {
-    .tileTag = ANIM_TAG_SWORD,
-    .paletteTag = ANIM_TAG_SWORD,
-    .oam = &gOamData_AffineNormal_ObjBlend_32x64,
+    .tileTag = ANIM_TAG_SWORD_2,
+    .paletteTag = ANIM_TAG_SWORD_2,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
     .anims = gDummySpriteAnimTable,
     .images = NULL,
-    .affineAnims = sSwordsDanceBladeAffineAnimTable,
-    .callback = AnimSwordsDanceBlade,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSlidingSword,
 };
 
 const struct SpriteTemplate gSonicBoomSpriteTemplate =
@@ -2624,6 +2626,38 @@ void AnimTask_SketchDrawMon(u8 taskId)
     params.unused9 = 0;
     ScanlineEffect_SetParams(params);
     task->func = AnimTask_SketchDrawMon_Step;
+}
+
+static void AnimSlidingSword(struct Sprite *sprite)
+{
+    if (BATTLE_PARTNER(gBattleAnimAttacker) == gBattleAnimTarget && GetBattlerPosition(gBattleAnimTarget) < B_POSITION_PLAYER_RIGHT)
+        gBattleAnimArgs[0] *= -1;
+    InitSpritePosToAnimTarget(sprite, TRUE);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = sprite->x + gBattleAnimArgs[2];
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = sprite->y;
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = gBattleAnimArgs[5];
+    sprite->data[6] = gBattleAnimArgs[4];
+    sprite->data[7] = 0;
+    sprite->callback = AnimSlidingSword_Step;
+}
+
+static void AnimSlidingSword_Step(struct Sprite *sprite)
+{
+    if (!AnimTranslateLinear(sprite))
+    {
+        sprite->y2 += Sin(sprite->data[7] >> 8, sprite->data[5]);
+        sprite->data[7] += sprite->data[6];
+    }
+    else
+    {
+        DestroyAnimSprite(sprite);
+    }
 }
 
 static void AnimTask_SketchDrawMon_Step(u8 taskId)
