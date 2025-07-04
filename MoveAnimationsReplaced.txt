@@ -201,5 +201,5 @@ Water Gun
 Waterfall
 Whirlwind
 Wing Attack
-*Withdraw*
+Withdraw
 Wrap

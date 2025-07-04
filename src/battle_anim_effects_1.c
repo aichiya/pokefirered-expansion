@@ -18,6 +18,7 @@ static void AnimMovePowderParticle(struct Sprite *);
 static void AnimMovePowderParticle_Step(struct Sprite *);
 static void AnimPokeBallPuff(struct Sprite *);
 static void AnimPokeBallPuff_Step(struct Sprite *);
+static void AnimWithdraw(struct Sprite *);
 static void AnimSolarBeamSmallOrb(struct Sprite *);
 static void AnimSolarBeamSmallOrb_Step(struct Sprite *);
 static void AnimSolarBeamBigOrb(struct Sprite *);
@@ -1091,6 +1092,56 @@ const struct SpriteTemplate gSwiftStarSpriteTemplate =
     .images = NULL,
     .affineAnims = sSwiftStarAffineAnimTable,
     .callback = AnimTranslateLinearSingleSineWave,
+};
+
+static const union AnimCmd sWithdrawAnim1Cmds[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sWithdrawAnim2Cmds[] =
+{
+    ANIMCMD_FRAME(1, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sWithdrawAnim3Cmds[] =
+{
+    ANIMCMD_FRAME(4, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sWithdrawAnim4Cmds[] =
+{
+    ANIMCMD_FRAME(0, 1, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sWithdrawAnim5Cmds[] =
+{
+    ANIMCMD_FRAME(4, 1, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sWithdrawAnimTable[] =
+{
+    sWithdrawAnim1Cmds,
+    sWithdrawAnim2Cmds,
+    sWithdrawAnim3Cmds,
+    sWithdrawAnim4Cmds,
+    sWithdrawAnim5Cmds,
+};
+
+const struct SpriteTemplate gWithdrawSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_RED_BALL,
+    .paletteTag = ANIM_TAG_RED_BALL,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sWithdrawAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimWithdraw,
 };
 
 static const union AnimCmd sAnim_ConstrictBinding[] =
@@ -3746,6 +3797,18 @@ static void AnimPresentHealParticle(struct Sprite* sprite)
     sprite->y2 = sprite->data[1] * sprite->data[0];
     if (sprite->animEnded)
         DestroyAnimSprite(sprite);
+}
+
+static void AnimWithdraw(struct Sprite *sprite)
+{
+    StartSpriteAnim(sprite, gBattleAnimArgs[2]);
+    if (gBattleAnimArgs[4] == 0)
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    else
+        InitSpritePosToAnimTarget(sprite, TRUE);
+    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->callback = RunStoredCallbackWhenAnimEnds;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSpriteAfterTimer);
 }
 
 static void AnimItemSteal(struct Sprite* sprite)

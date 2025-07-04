@@ -5295,8 +5295,39 @@ IceBeamCreateCrystals:
 	return
 
 Move_WITHDRAW:
+	loadspritegfx ANIM_TAG_RED_BALL
 	playsewithpan SE_M_HEADBUTT, SOUND_PAN_ATTACKER
-	createvisualtask AnimTask_Withdraw, 5
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 0, 20
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 0, 4, RGB(31, 31, 25)
+	waitforvisualfinish
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  8, 2, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  0, 0, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  -8,  0, 1, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,   0,  0, 1, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,   8,  0, 1, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  16,  0, 3, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  16,  8, 4, 16, ANIM_ATTACKER
+	waitforvisualfinish
+	delay 4
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  8, 2, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  0, 0, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  -8,  0, 1, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,   0,  0, 1, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,   8,  0, 1, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  16,  0, 3, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  16,  8, 4, 16, ANIM_ATTACKER
+	waitforvisualfinish
+	delay 4
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  8, 2, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  0, 0, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  -8,  0, 1, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,   0,  0, 1, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,   8,  0, 1, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  16,  0, 3, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  16,  8, 4, 16, ANIM_ATTACKER
+	waitforvisualfinish
+	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 0, 0, 0, 0
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 0, 4, RGB(31, 31, 31)
 	waitforvisualfinish
 	end
 
