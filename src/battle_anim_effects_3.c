@@ -442,10 +442,10 @@ static const union AnimCmd *const sTriAttackTriangleAnimTable[] =
 
 static const union AffineAnimCmd sTriAttackTriangleAffineAnimCmds[] =
 {
-    AFFINEANIMCMD_FRAME(0, 0, 5, 40),
-    AFFINEANIMCMD_FRAME(0, 0, 10, 10),
-    AFFINEANIMCMD_FRAME(0, 0, 15, 10),
-    AFFINEANIMCMD_FRAME(0, 0, 20, 40),
+    AFFINEANIMCMD_FRAME(0, 0, 5, 30),
+    AFFINEANIMCMD_FRAME(0, 0, 10, 30),
+    AFFINEANIMCMD_FRAME(0, 0, 15, 30),
+    AFFINEANIMCMD_FRAME(0, 0, 20, 30),
     AFFINEANIMCMD_JUMP(0),
 };
 
@@ -458,7 +458,7 @@ const struct SpriteTemplate gTriAttackTriangleSpriteTemplate =
 {
     .tileTag = ANIM_TAG_TRI_ATTACK_TRIANGLE,
     .paletteTag = ANIM_TAG_TRI_ATTACK_TRIANGLE,
-    .oam = &gOamData_AffineDouble_ObjNormal_64x64,
+    .oam = &gOamData_AffineDouble_ObjNormal_16x16,
     .anims = sTriAttackTriangleAnimTable,
     .images = NULL,
     .affineAnims = sTriAttackTriangleAffineAnimTable,
@@ -1966,33 +1966,30 @@ static void TormentAttacker_Callback(struct Sprite *sprite)
 
 static void AnimTriAttackTriangle(struct Sprite *sprite)
 {
-    if (sprite->data[0] == 0)
-        InitSpritePosToAnimAttacker(sprite, FALSE);
-
-    if (++sprite->data[0] < 40)
+    bool8 animType;
+    u8 coordType;
+    if (GetBattlerSide(gBattleAnimAttacker) == GetBattlerSide(gBattleAnimTarget))
     {
-        u16 var = sprite->data[0];
-        if ((var & 1) == 0)
-            sprite->invisible = TRUE;
-        else
-            sprite->invisible = FALSE;
+        gBattleAnimArgs[0] *= -1;
+        if (GetBattlerPosition(gBattleAnimAttacker) == B_POSITION_PLAYER_LEFT || GetBattlerPosition(gBattleAnimAttacker) == B_POSITION_OPPONENT_LEFT)
+            gBattleAnimArgs[0] *= -1;
     }
-
-    if (sprite->data[0] > 30)
-        sprite->invisible = FALSE;
-
-    if (sprite->data[0] == 61)
-    {
-        StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
-        sprite->x += sprite->x2;
-        sprite->y += sprite->y2;
-        sprite->x2 = 0;
-        sprite->y2 = 0;
-        sprite->data[0] = 20;
-        sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
-        sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
-        sprite->callback = StartAnimLinearTranslation;
-    }
+    if ((gBattleAnimArgs[5] & 0xFF00) == 0)
+        animType = TRUE;
+    else
+        animType = FALSE;
+    if ((u8)gBattleAnimArgs[5] == 0)
+        coordType = BATTLER_COORD_Y_PIC_OFFSET;
+    else
+        coordType = 1;
+    InitSpritePosToAnimAttacker(sprite, animType);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+    sprite->data[0] = gBattleAnimArgs[4];
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + gBattleAnimArgs[2];
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, coordType) + gBattleAnimArgs[3];
+    sprite->callback = StartAnimLinearTranslation;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
 }
 
 void AnimTask_DefenseCurlDeformMon(u8 taskId)

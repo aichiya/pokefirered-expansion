@@ -7794,50 +7794,9 @@ Move_HYPER_FANG:
 
 Move_TRI_ATTACK:
 	loadspritegfx ANIM_TAG_TRI_ATTACK_TRIANGLE
-	createsprite gTriAttackTriangleSpriteTemplate, ANIM_TARGET, 2, 16, 0
+	call BlackFlashEffect
+	createsprite gTriAttackTriangleSpriteTemplate, ANIM_TARGET, 2, 16, 0, 24, -24, 60, 257
 	playsewithpan SE_M_TRI_ATTACK, SOUND_PAN_ATTACKER
-	delay 20
-	playsewithpan SE_M_TRI_ATTACK, SOUND_PAN_ATTACKER
-	delay 20
-	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_TRI_ATTACK, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 5, 6, 0, 7
-	waitforvisualfinish
-	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 2, 0, 16, RGB_BLACK
-	delay 16
-	loadspritegfx ANIM_TAG_FIRE
-	createsprite gLargeFlameScatterSpriteTemplate, ANIM_TARGET, 2, 0, 0, 30, 30, -1, 0
-	playsewithpan SE_M_FLAME_WHEEL2, SOUND_PAN_TARGET
-	createsprite gLargeFlameScatterSpriteTemplate, ANIM_TARGET, 2, 0, 0, 30, 30, 0, 1
-	delay 1
-	createsprite gLargeFlameScatterSpriteTemplate, ANIM_TARGET, 2, 0, 0, 30, 30, -1, -1
-	delay 1
-	createsprite gLargeFlameScatterSpriteTemplate, ANIM_TARGET, 2, 0, 0, 30, 30, 2, 1
-	delay 1
-	createsprite gLargeFlameScatterSpriteTemplate, ANIM_TARGET, 2, 0, 0, 30, 30, 1, -1
-	delay 1
-	createsprite gLargeFlameScatterSpriteTemplate, ANIM_TARGET, 2, 0, 0, 30, 30, -1, 1
-	delay 1
-	createsprite gLargeFlameScatterSpriteTemplate, ANIM_TARGET, 2, 0, 0, 30, 30, 1, -2
-	delay 1
-	createsprite gLargeFlameScatterSpriteTemplate, ANIM_TARGET, 2, 0, 0, 30, 30, 3, 1
-	delay 2
-	createvisualtask AnimTask_ShakeTargetInPattern, 2, 20, 3, TRUE, 1
-	waitforvisualfinish
-	loadspritegfx ANIM_TAG_LIGHTNING
-	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
-	playsewithpan SE_M_TRI_ATTACK2, SOUND_PAN_TARGET
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, -48
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, -16
-	delay 1
-	createsprite gLightningSpriteTemplate, ANIM_TARGET, 2, 0, 16
-	delay 20
-	createvisualtask AnimTask_ShakeTargetInPattern, 2, 20, 3, TRUE, 0
-	delay 2
-	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
-	waitforvisualfinish
-	loadspritegfx ANIM_TAG_ICE_CRYSTALS
-	call IceCrystalEffectShort
-	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 2, 16, 0, RGB_BLACK
 	waitforvisualfinish
 	end
 
