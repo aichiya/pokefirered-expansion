@@ -2103,8 +2103,7 @@ static void AnimTask_GrowAndGrayscale_Step(u8 taskId)
     }
 }
 
-// Shrinks and grows the attacking mon several times. Also creates transparent versions of the
-// mon's sprite while it is shrinking.
+// Shrinks the attacking mon once and ends the animation.
 // No args.
 void AnimTask_Minimize(u8 taskId)
 {
@@ -2113,13 +2112,9 @@ void AnimTask_Minimize(u8 taskId)
     
     task->data[0] = spriteId;
     PrepareBattlerSpriteForRotScale(spriteId, ST_OAM_OBJ_NORMAL);
-    task->data[1] = 0;
-    task->data[2] = 0;
-    task->data[3] = 0;
-    task->data[4] = 0x100;
-    task->data[5] = 0;
-    task->data[6] = 0;
-    task->data[7] = GetBattlerSpriteSubpriority(gBattleAnimAttacker);
+    task->data[1] = 0;  // Animation state
+    task->data[2] = 0;  // Frame counter
+    task->data[4] = 0x100;  // Initial scale
     task->func = AnimTask_Minimize_Step1;
 }
 
@@ -2129,62 +2124,19 @@ static void AnimTask_Minimize_Step1(u8 taskId)
     
     switch (task->data[1])
     {
-    case 0:
-        if (task->data[2] == 0 || task->data[2] == 3 || task->data[2] == 6)
-            CreateMinimizeSprite(task, taskId);
+    case 0:  // Shrinking phase
         task->data[2]++;
-        task->data[4] += 0x28;
+        task->data[4] += 0x3C;  // Gradually increase the scale
         SetSpriteRotScale(task->data[0], task->data[4], task->data[4], 0);
         SetBattlerSpriteYOffsetFromYScale(task->data[0]);
-        if (task->data[2] == 32)
+        if (task->data[2] == 30)  // End shrinking after 32 frames
         {
-            task->data[5]++;
-            task->data[1]++;
+            task->data[1]++;  // Move to the next phase
         }
         break;
-    case 1:
-        if (task->data[6] == 0)
-        {
-            if (task->data[5] == 3)
-            {
-                task->data[2] = 0;
-                task->data[1] = 3;
-            }
-            else
-            {
-                task->data[2] = 0;
-                task->data[3] = 0;
-                task->data[4] = 0x100;
-                SetSpriteRotScale(task->data[0], task->data[4], task->data[4], 0);
-                SetBattlerSpriteYOffsetFromYScale(task->data[0]);
-                task->data[1] = 2;
-            }
-        }
-        break;
-    case 2:
-        task->data[1] = 0;
-        break;
-    case 3:
-        if (++task->data[2] > 32)
-        {
-            task->data[2] = 0;
-            task->data[1]++;
-        }
-        break;
-    case 4:
-        task->data[2] += 2;
-        task->data[4] -= 0x50;
-        SetSpriteRotScale(task->data[0], task->data[4], task->data[4], 0);
-        SetBattlerSpriteYOffsetFromYScale(task->data[0]);
-        if (task->data[2] == 32)
-        {
-            task->data[2] = 0;
-            task->data[1]++;
-        }
-        break;
-    case 5:
+    case 1:  // Reset and end animation
         ResetSpriteRotScale(task->data[0]);
-        gSprites[task->data[15]].y2 = 0;
+        gSprites[task->data[0]].y2 = 0;
         DestroyAnimVisualTask(taskId);
         break;
     }

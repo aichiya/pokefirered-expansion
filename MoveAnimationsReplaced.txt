@@ -108,7 +108,7 @@ Mega Kick
 Mega Punch
 Metronome
 Mimic
-*Minimize*
+Minimize
 -Mirror Move-
 Mist
 
