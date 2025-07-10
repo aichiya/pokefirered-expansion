@@ -9168,76 +9168,18 @@ Move_ASTONISH:
 	end
 
 Move_SEISMIC_TOSS:
-	loadspritegfx ANIM_TAG_IMPACT
-	loadspritegfx ANIM_TAG_ROCKS
-	setarg 7, 0
-	monbg ANIM_DEF_PARTNER
-	setalpha 12, 8
+	loadspritegfx ANIM_TAG_ORB
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, -96, 0, 0, 15
+	createsprite gSeismicTossOrbUpSpriteTemplate, ANIM_TARGET, 2, 0, 0, ANIM_TARGET, -80, 30, 0, 0
+	invisible ANIM_TARGET
 	waitforvisualfinish
-	createvisualtask AnimTask_GetSeismicTossDamageLevel, 3
-	delay 1
-	fadetobg BG_IN_AIR
-	waitbgfadeout
-	createvisualtask AnimTask_MoveSeismicTossBg, 3
-	playsewithpan SE_M_SKY_UPPERCUT, 0
-	waitbgfadein
+	createsprite gSeismicTossOrbDownSpriteTemplate, ANIM_TARGET, 2, 0, -64, ANIM_TARGET, -80, 30, 0, 0
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0, 0, 15
 	waitforvisualfinish
-	createvisualtask AnimTask_SeismicTossBgAccelerateDownAtEnd, 3
-	jumpreteq 0, SeismicTossWeak
-	jumpreteq 1, SeismicTossMedium
-	jumpreteq 2, SeismicTossStrong
-SeismicTossContinue:
-	restorebg
-	waitbgfadeout
-	setarg 7, 0xFFF
-	waitbgfadein
-	clearmonbg ANIM_DEF_PARTNER
-	blendoff
+	visible ANIM_TARGET
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
+	waitforvisualfinish
 	end
-
-SeismicTossWeak:
-	call SeismicTossRockScatter1
-	delay 16
-	call SeismicTossRockScatter2
-	goto SeismicTossContinue
-
-SeismicTossMedium:
-	call SeismicTossRockScatter1
-	delay 14
-	call SeismicTossRockScatter2
-	delay 14
-	call SeismicTossRockScatter1
-	goto SeismicTossContinue
-
-SeismicTossStrong:
-	call SeismicTossRockScatter2
-	delay 10
-	call SeismicTossRockScatter1
-	delay 10
-	call SeismicTossRockScatter2
-	delay 10
-	call SeismicTossRockScatter1
-	goto SeismicTossContinue
-
-SeismicTossRockScatter1:
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 3, -10, -8, ANIM_TARGET, 1
-	playsewithpan SE_M_STRENGTH, SOUND_PAN_TARGET
-	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 3, 5, 1
-	createsprite gRockScatterSpriteTemplate, ANIM_TARGET, 2, -12, 27, 2, 3
-	createsprite gRockScatterSpriteTemplate, ANIM_TARGET, 2, 8, 28, 3, 4
-	createsprite gRockScatterSpriteTemplate, ANIM_TARGET, 2, -4, 30, 2, 3
-	createsprite gRockScatterSpriteTemplate, ANIM_TARGET, 2, 12, 25, 4, 4
-	return
-
-SeismicTossRockScatter2:
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 3, 10, -8, ANIM_TARGET, 1
-	playsewithpan SE_M_ROCK_THROW, SOUND_PAN_TARGET
-	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 0, 3, 5, 1
-	createsprite gRockScatterSpriteTemplate, ANIM_TARGET, 2, -12, 32, 3, 4
-	createsprite gRockScatterSpriteTemplate, ANIM_TARGET, 2, 8, 31, 2, 2
-	createsprite gRockScatterSpriteTemplate, ANIM_TARGET, 2, -4, 28, 2, 3
-	createsprite gRockScatterSpriteTemplate, ANIM_TARGET, 2, 12, 30, 4, 3
-	return
 
 Move_MAGIC_COAT:
 	loadspritegfx ANIM_TAG_ORANGE_LIGHT_WALL

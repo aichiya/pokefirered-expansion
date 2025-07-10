@@ -145,7 +145,7 @@ Rolling Kick
 Sand Attack
 Scratch
 Screech
-*Seismic Toss*
+Seismic Toss
 Self-Destruct
 Sharpen
 *Sing*

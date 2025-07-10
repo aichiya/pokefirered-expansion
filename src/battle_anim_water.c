@@ -55,6 +55,8 @@ static void AnimTask_WaterSport_Step(u8);
 static void CreateWaterSportDroplet(struct Task *);
 static void CreateWaterPulseRingBubbles(struct Sprite *, s32, s32);
 static void AnimSpriteRises2(struct Sprite *sprite);
+static void AnimSpriteRises3(struct Sprite *sprite);
+static void AnimSpriteFalls2(struct Sprite *sprite);
 
 static const u8 sUnusedWater_Gfx[] = INCBIN_U8("graphics/battle_anims/unused/water.4bpp");
 static const u8 sUnusedWater[] = INCBIN_U8("graphics/battle_anims/unused/water.bin");
@@ -120,6 +122,28 @@ const struct SpriteTemplate gSurfGeyserTopSpriteTemplate  =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSpriteRises2,
+};
+
+const struct SpriteTemplate gSeismicTossOrbUpSpriteTemplate  =
+{
+    .tileTag = ANIM_TAG_ORB,
+    .paletteTag = ANIM_TAG_ORB,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteRises3,
+};
+
+const struct SpriteTemplate gSeismicTossOrbDownSpriteTemplate  =
+{
+    .tileTag = ANIM_TAG_ORB,
+    .paletteTag = ANIM_TAG_ORB,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteFalls2,
 };
 
 const struct SpriteTemplate gSurfGeyserBottomSpriteTemplate  =
@@ -1407,6 +1431,42 @@ void AnimSpriteRises2(struct Sprite *sprite)
     sprite->data[0] = gBattleAnimArgs[4];
     sprite->data[2] = sprite->x;
     sprite->data[4] = sprite->y - 32;
+    sprite->callback = StartAnimLinearTranslation;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+}
+
+void AnimSpriteRises3(struct Sprite *sprite)
+{
+    bool8 r4;
+    u8 battlerId, coordType;
+
+    if (gBattleAnimArgs[2] != ANIM_ATTACKER)
+        InitSpritePosToAnimTarget(sprite, TRUE);
+    else
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+    sprite->data[0] = gBattleAnimArgs[4];
+    sprite->data[2] = sprite->x;
+    sprite->data[4] = sprite->y - 64;
+    sprite->callback = StartAnimLinearTranslation;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+}
+
+void AnimSpriteFalls2(struct Sprite *sprite)
+{
+    bool8 r4;
+    u8 battlerId, coordType;
+
+    if (gBattleAnimArgs[2] != ANIM_ATTACKER)
+        InitSpritePosToAnimTarget(sprite, TRUE);
+    else
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+    sprite->data[0] = gBattleAnimArgs[4];
+    sprite->data[2] = sprite->x;
+    sprite->data[4] = sprite->y + 64;
     sprite->callback = StartAnimLinearTranslation;
     StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
 }
