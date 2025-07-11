@@ -2431,37 +2431,11 @@ Move_THRASH:
 
 Move_SING:
 	loadspritegfx ANIM_TAG_MUSIC_NOTES
-	monbg ANIM_DEF_PARTNER
-	createvisualtask AnimTask_MusicNotesRainbowBlend, 2
+	createvisualtask SoundTask_PlayDoubleCry, 2, ANIM_ATTACKER, DOUBLE_CRY_GROWL
+	createvisualtask AnimTask_StartSinAnimTimer, 5, 100
+	createsprite gMusicNoteSpriteTemplate, ANIM_TARGET, 3, 10, 10, 0, 16
 	waitforvisualfinish
-	panse SE_M_SING, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +2, 0
-	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 7, 0, 12
-	delay 5
-	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 6, 1, 12
-	delay 5
-	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 1, 2, 12
-	delay 5
-	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 2, 3, 12
-	delay 5
-	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 3, 0, 12
-	delay 4
-	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 2, 1, 12
-	delay 4
-	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 5, 2, 12
-	delay 4
-	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 6, 3, 12
-	delay 4
-	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 2, 0, 12
-	delay 4
-	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 2, 1, 12
-	delay 4
-	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 1, 2, 12
-	delay 4
-	createsprite gWavyMusicNotesSpriteTemplate, ANIM_TARGET, 2, 5, 3, 12
-	delay 4
-	waitforvisualfinish
-	clearmonbg ANIM_DEF_PARTNER
-	createvisualtask AnimTask_MusicNotesClearRainbowBlend, 2
+	createsprite gMusicNote2SpriteTemplate, ANIM_TARGET, 2, 0, -20, 85, 100, 1
 	waitforvisualfinish
 	end
 

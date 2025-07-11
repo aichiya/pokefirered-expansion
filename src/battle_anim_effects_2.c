@@ -106,6 +106,8 @@ static void AnimPinkHeart(struct Sprite *);
 static void AnimDevil(struct Sprite *);
 static void AnimFurySwipes(struct Sprite *);
 static void AnimGuardRing(struct Sprite *);
+static void AnimMusicNoteAppear(struct Sprite *);
+static void AnimMusicNoteAppear_Step(struct Sprite *);
 
 // Unused
 static const struct SpriteTemplate sCirclingFingerSpriteTemplate =
@@ -1217,6 +1219,35 @@ const struct SpriteTemplate gMusicNoteSpriteTemplate =
     .callback = AnimToTargetInSinWave2,
 };
 
+static const union AnimCmd sMusicNoteAnim1Cmds[] =
+{
+    ANIMCMD_FRAME(0, 2),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sMusicNoteAnim2Cmds[] =
+{
+    ANIMCMD_FRAME(0, 2),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sMusicNoteAnimTable[] =
+{
+    sMusicNoteAnim1Cmds,
+    sMusicNoteAnim2Cmds,
+};
+
+const struct SpriteTemplate gMusicNote2SpriteTemplate =
+{
+    .tileTag = ANIM_TAG_MUSIC_NOTES,
+    .paletteTag = ANIM_TAG_MUSIC_NOTES,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sMusicNoteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimMusicNoteAppear,
+};
+
 static const union AnimCmd sSupersonicAnimCmds[] =
 {
     ANIMCMD_FRAME(4, 4),
@@ -1500,6 +1531,42 @@ static void AnimTask_Withdraw_Step(u8 taskId)
             gTasks[taskId].data[1]++;
         }
     }
+}
+
+static void AnimMusicNoteAppear(struct Sprite* sprite)
+{
+    InitSpritePosToAnimTarget(sprite, TRUE);
+    StartSpriteAnim(sprite, gBattleAnimArgs[4]);
+    if (gBattleAnimArgs[4] == 1)
+        sprite->oam.objMode = ST_OAM_OBJ_BLEND;
+
+    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->data[1] = gBattleAnimArgs[2];
+    sprite->callback = AnimMusicNoteAppear_Step;
+    sprite->callback(sprite);
+}
+
+static void AnimMusicNoteAppear_Step(struct Sprite* sprite)
+{
+    sprite->x2 = Sin(sprite->data[1], 32);
+    sprite->y2 = Cos(sprite->data[1], -3) + ((sprite->data[2] += 24) >> 8);
+    if ((u16)(sprite->data[1] - 0x40) < 0x80)
+    {
+        sprite->oam.priority = GetBattlerSpriteBGPriority(gBattleAnimTarget);
+    }
+    else
+    {
+        u8 priority = GetBattlerSpriteBGPriority(gBattleAnimTarget) + 1;
+        if (priority > 3)
+            priority = 3;
+
+        sprite->oam.priority = priority;
+    }
+
+    sprite->data[1] += 2;
+    sprite->data[1] &= 0xFF;
+    if (--sprite->data[0] == -1)
+        DestroyAnimSprite(sprite);
 }
 
 // Animates a "zap of energy" used in KINESIS.

@@ -148,7 +148,7 @@ Screech
 Seismic Toss
 Self-Destruct
 Sharpen
-*Sing*
+Sing
 Skull Bash
 Sky Attack
 Slam
