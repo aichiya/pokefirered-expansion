@@ -8492,8 +8492,17 @@ Move_POISON_FANG:
 	end
 
 Move_SUBSTITUTE:
+	loadspritegfx ANIM_TAG_MUSIC_NOTES
 	playsewithpan SE_M_ATTRACT, SOUND_PAN_ATTACKER
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, -96, 0, 0, 15
+	waitforvisualfinish
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0, 0, 1
 	createvisualtask AnimTask_MonToSubstitute, 2
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2, -8,  -8, -24, -16, 40, 0
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2,  8,  -8,  24, -16, 40, 1
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2, -8,   8, -24,  32, 40, 2
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2,  8,   8,  24,  32, 40, 3
+	waitforvisualfinish
 	end
 
 Move_FRENZY_PLANT:

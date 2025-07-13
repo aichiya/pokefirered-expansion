@@ -169,7 +169,7 @@ Strength
 Struggle
 Stun Spore
 Submission
-*Substitute*
+Substitute
 Super Fang
 *Supersonic*
 Surf
