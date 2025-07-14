@@ -577,20 +577,11 @@ Move_BODY_SLAM:
 	end
 
 Move_SUPERSONIC:
-	loadspritegfx ANIM_TAG_GOLD_RING
-	monbg ANIM_ATK_PARTNER
-	splitbgprio_foes ANIM_ATTACKER
-	setalpha 12, 8
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_ATTACKER, 2, 0, 8, 1
-	call SupersonicRing
-	call SupersonicRing
-	call SupersonicRing
-	call SupersonicRing
-	call SupersonicRing
-	call SupersonicRing
+	loadspritegfx ANIM_TAG_MUSIC_NOTES
+	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_SUPERSONIC, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 2, 9, 0, 10
+	createvisualtask AnimTask_StartSinAnimTimer, 5, 100
+	createsprite gSupersonicSpriteTemplate, ANIM_TARGET, 3, 10, 10, 0, 32
 	waitforvisualfinish
-	clearmonbg ANIM_ATK_PARTNER
-	blendoff
 	end
 
 SupersonicRing:
