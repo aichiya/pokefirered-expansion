@@ -686,47 +686,32 @@ const struct SpriteTemplate gSelfdestructSpriteTemplate =
     .callback = AnimSpriteOnMonPos,
 };
 
-static const union AffineAnimCmd sSoftBoiledEggAffineAnimCmds1[] =
+static const union AnimCmd sSoftBoiledEggAnimCmds[] =
 {
-    AFFINEANIMCMD_FRAME(0, 0, -8, 2),
-    AFFINEANIMCMD_FRAME(0, 0, 8, 4),
-    AFFINEANIMCMD_FRAME(0, 0, -8, 2),
-    AFFINEANIMCMD_JUMP(0),
+    ANIMCMD_FRAME(4, 12),
+    ANIMCMD_FRAME(8, 12),
+    ANIMCMD_FRAME(4, 12),
+    ANIMCMD_FRAME(0xC, 12),
+    ANIMCMD_FRAME(4, 12),
+    ANIMCMD_FRAME(8, 12),
+    ANIMCMD_FRAME(4, 12),
+    ANIMCMD_FRAME(0xC, 12),
+    ANIMCMD_END,
 };
 
-static const union AffineAnimCmd sSoftBoiledEggAffineAnimCmds2[] =
+static const union AnimCmd *const sSoftBoiledEggAnimTable[] =
 {
-    AFFINEANIMCMD_FRAME(256, 256, 0, 0),
-    AFFINEANIMCMD_END,
-};
-
-static const union AffineAnimCmd sSoftBoiledEggAffineAnimCmds3[] =
-{
-    AFFINEANIMCMD_FRAME(-8, 4, 0, 8),
-    AFFINEANIMCMD_LOOP(0),
-    AFFINEANIMCMD_FRAME(16, -8, 0, 8),
-    AFFINEANIMCMD_FRAME(-16, 8, 0, 8),
-    AFFINEANIMCMD_LOOP(1),
-    AFFINEANIMCMD_FRAME(256, 256, 0, 0),
-    AFFINEANIMCMD_FRAME(0, 0, 0, 15),
-    AFFINEANIMCMD_END,
-};
-
-static const union AffineAnimCmd *const sSoftBoiledEggAffineAnimTable[] =
-{
-    sSoftBoiledEggAffineAnimCmds1,
-    sSoftBoiledEggAffineAnimCmds2,
-    sSoftBoiledEggAffineAnimCmds3,
+    sSoftBoiledEggAnimCmds,
 };
 
 const struct SpriteTemplate gSoftBoiledEggSpriteTemplate =    
 {
-    .tileTag = ANIM_TAG_BREAKING_EGG,
-    .paletteTag = ANIM_TAG_BREAKING_EGG,
-    .oam = &gOamData_AffineDouble_ObjBlend_32x32,
-    .anims = gDummySpriteAnimTable,
+    .tileTag = ANIM_TAG_HORN_HIT,
+    .paletteTag = ANIM_TAG_HORN_HIT,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sSoftBoiledEggAnimTable,
     .images = NULL,
-    .affineAnims = sSoftBoiledEggAffineAnimTable,
+    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSoftBoiledEgg,
 };
 
@@ -2938,106 +2923,14 @@ static void AnimUproarRing(struct Sprite *sprite)
 
 static void AnimSoftBoiledEgg(struct Sprite *sprite)
 {
-    s16 r1;
-    
-    InitSpritePosToAnimAttacker(sprite, FALSE);
-    r1 = GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER ? -160 : 160;
-    sprite->data[0] = 0x380;
-    sprite->data[1] = r1;
-    sprite->data[7] = gBattleAnimArgs[2];
-    sprite->callback = AnimSoftBoiledEgg_Step1;
-}
-
-static void AnimSoftBoiledEgg_Step1(struct Sprite *sprite)
-{
-    s16 add;
-    
-    sprite->y2 -= (sprite->data[0] >> 8);
-    sprite->x2 = sprite->data[1] >> 8;
-    sprite->data[0] -= 32;
-    add = GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER ? -160 : 160;
-    sprite->data[1] += add;
-    if (sprite->y2 > 0)
-    {
-        sprite->y += sprite->y2;
-        sprite->x += sprite->x2;
-        sprite->y2 = 0;
-        sprite->x2 = 0;
-        sprite->data[0] = 0;
-        StartSpriteAffineAnim(sprite, 1);
-        sprite->callback = AnimSoftBoiledEgg_Step2;
-    }
-}
-
-static void AnimSoftBoiledEgg_Step2(struct Sprite *sprite)
-{
-    if (sprite->data[0]++ > 19)
-    {
-        StartSpriteAffineAnim(sprite, 2);
-        sprite->callback = AnimSoftBoiledEgg_Step3;
-    }
-}
-
-static void AnimSoftBoiledEgg_Step3(struct Sprite *sprite)
-{
-    if (sprite->affineAnimEnded)
-    {
-        StartSpriteAffineAnim(sprite, 1);
-        sprite->data[0] = 0;
-        if (sprite->data[7] == 0)
-        {
-            sprite->oam.tileNum += 16;
-            sprite->callback = AnimSoftBoiledEgg_Step3_Callback1;
-        }
-        else
-        {
-            sprite->oam.tileNum += 32;
-            sprite->callback = AnimSoftBoiledEgg_Step4;
-        }
-    }
-}
-
-static void AnimSoftBoiledEgg_Step3_Callback1(struct Sprite *sprite)
-{
-    sprite->y2 -= 2;
-    if (++sprite->data[0] == 9)
-    {
-        sprite->data[0] = 16;
-        sprite->data[1] = 0;
-        SetGpuReg(REG_OFFSET_BLDCNT, BLDCNT_TGT2_ALL | BLDCNT_EFFECT_BLEND);
-        SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND((u16)sprite->data[0], 0));
-        sprite->callback = AnimSoftBoiledEgg_Step3_Callback2;
-    }
-}
-
-static void AnimSoftBoiledEgg_Step3_Callback2(struct Sprite *sprite)
-{
-    if (sprite->data[1]++ % 3 == 0)
-    {
-        sprite->data[0]--;
-        SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(sprite->data[0], 16 - sprite->data[0]));
-        if (sprite->data[0] == 0)
-            sprite->callback = AnimSoftBoiledEgg_Step4;
-    }
-}
-
-static void AnimSoftBoiledEgg_Step4(struct Sprite *sprite)
-{
-    if ((u16)gBattleAnimArgs[7] == 0xFFFF)
-    {
-        sprite->invisible = TRUE;
-        if (sprite->data[7] == 0)
-            sprite->callback = AnimSoftBoiledEgg_Step4_Callback;
-        else
-            sprite->callback = DestroyAnimSprite;
-    }
-}
-
-static void AnimSoftBoiledEgg_Step4_Callback(struct Sprite *sprite)
-{
-    SetGpuReg(REG_OFFSET_BLDCNT, 0);
-    SetGpuReg(REG_OFFSET_BLDALPHA, 0);
-    DestroyAnimSprite(sprite);
+    StartSpriteAnim(sprite, gBattleAnimArgs[2]);
+    if (gBattleAnimArgs[4] == 0)
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    else
+        InitSpritePosToAnimTarget(sprite, TRUE);
+    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->callback = RunStoredCallbackWhenAnimEnds;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSpriteAfterTimer);
 }
 
 // Used by Extremespeed

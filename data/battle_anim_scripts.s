@@ -7417,26 +7417,21 @@ CurseStats1:
 	return
 
 Move_SOFT_BOILED:
-	loadspritegfx ANIM_TAG_BREAKING_EGG
-	loadspritegfx ANIM_TAG_THIN_RING
-	loadspritegfx ANIM_TAG_BLUE_STAR
-	monbg ANIM_ATK_PARTNER
-	playsewithpan SE_M_TAIL_WHIP, SOUND_PAN_ATTACKER
-	createvisualtask AnimTask_ShakeMon, 2, ANIM_ATTACKER, 0, 2, 6, 1
-	createsprite gSoftBoiledEggSpriteTemplate, ANIM_ATTACKER, 4, 0, 16, 0
-	createsprite gSoftBoiledEggSpriteTemplate, ANIM_ATTACKER, 4, 0, 16, 1
-	delay 120
-	delay 7
-	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_ATTACKER
-	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG | F_PAL_BATTLERS, 3, 10, 0, RGB(12, 24, 30)
-	createsprite gThinRingExpandingSpriteTemplate, ANIM_ATTACKER, 3, 31, 16, 0, 1
-	delay 8
-	createsprite gThinRingExpandingSpriteTemplate, ANIM_ATTACKER, 3, 31, 16, 0, 1
-	delay 60
-	setarg 7, 0xFFFF
+	loadspritegfx ANIM_TAG_HORN_HIT
+	loadspritegfx ANIM_TAG_ORBS
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, -48, 0, 0, 15
 	waitforvisualfinish
-	clearmonbg ANIM_ATK_PARTNER
-	call HealingEffect2
+	playsewithpan SE_M_TAIL_WHIP, SOUND_PAN_ATTACKER
+	createsprite gSoftBoiledEggSpriteTemplate, ANIM_TARGET, 2, 0, 0, 0, 0
+	waitforvisualfinish
+	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
+	delay 1
+	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
+	delay 1
+	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
+	waitforvisualfinish
+	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0, 0, 1
+	waitforvisualfinish
 	end
 
 Move_HEAL_BELL:
