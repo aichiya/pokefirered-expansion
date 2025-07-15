@@ -100,12 +100,23 @@ const struct SpriteTemplate gWebThreadSpriteTemplate =
     .callback = AnimTranslateWebThread,
 };
 
+static const union AnimCmd sAnim_StringWrap[] =
+{
+    ANIMCMD_FRAME(4, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnims_StringWrap[] =
+{
+    sAnim_StringWrap,
+};
+
 const struct SpriteTemplate gStringWrapSpriteTemplate =
 {
     .tileTag = ANIM_TAG_STRING,
     .paletteTag = ANIM_TAG_STRING,
-    .oam = &gOamData_AffineOff_ObjNormal_64x32,
-    .anims = gDummySpriteAnimTable,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sAnims_StringWrap,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimStringWrap,
@@ -282,25 +293,31 @@ static void AnimTranslateWebThread_Step(struct Sprite *sprite)
 
 static void AnimStringWrap(struct Sprite *sprite)
 {
-    SetAverageBattlerPositions(gBattleAnimTarget, 0, &sprite->x, &sprite->y);
+    if (BATTLE_PARTNER(gBattleAnimAttacker) == gBattleAnimTarget && GetBattlerPosition(gBattleAnimTarget) < B_POSITION_PLAYER_RIGHT)
+        gBattleAnimArgs[0] *= -1;
+    InitSpritePosToAnimTarget(sprite, TRUE);
     if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
-        sprite->x -= gBattleAnimArgs[0];
-    else
-        sprite->x += gBattleAnimArgs[0];
-    sprite->y += gBattleAnimArgs[1];
-    if (GetBattlerSide(gBattleAnimTarget) == B_SIDE_PLAYER)
-        sprite->y += 8;
+        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+    sprite->data[0] = gBattleAnimArgs[4];
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = sprite->x + gBattleAnimArgs[2];
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = sprite->y + gBattleAnimArgs[3];
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = gBattleAnimArgs[6];
+    sprite->data[6] = gBattleAnimArgs[5];
+    sprite->data[7] = 0;
     sprite->callback = AnimStringWrap_Step;
 }
 
 static void AnimStringWrap_Step(struct Sprite *sprite)
 {
-    if (++sprite->data[0] == 3)
+    if (!AnimTranslateLinear(sprite))
     {
-        sprite->data[0] = 0;
-        sprite->invisible ^= 1;
+        sprite->y2 += Sin(sprite->data[7] >> 8, sprite->data[5]);
+        sprite->data[7] += sprite->data[6];
     }
-    if (++sprite->data[1] == 51)
+    else
     {
         DestroyAnimSprite(sprite);
     }

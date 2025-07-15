@@ -7192,42 +7192,24 @@ BideUnleash:
 
 Move_STRING_SHOT:
 	loadspritegfx ANIM_TAG_STRING
-	loadspritegfx ANIM_TAG_WEB_THREAD
-	monbg ANIM_DEF_PARTNER
-	delay 0
-	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 5, F_PAL_BG, 2, 0, 9, RGB_BLACK
-	waitforvisualfinish
 	loopsewithpan SE_M_STRING_SHOT, SOUND_PAN_ATTACKER, 9, 6
-	call StringShotThread
-	call StringShotThread
-	call StringShotThread
-	call StringShotThread
-	call StringShotThread
-	call StringShotThread
-	call StringShotThread
-	call StringShotThread
-	call StringShotThread
-	call StringShotThread
-	call StringShotThread
-	call StringShotThread
-	call StringShotThread
-	call StringShotThread
-	call StringShotThread
-	call StringShotThread
-	call StringShotThread
-	call StringShotThread
+	createsprite gStringShotSpriteTemplate, ANIM_TARGET, 2, -64, 16, 0, 4, ANIM_TARGET
+	createsprite gStringShotSpriteTemplate, ANIM_TARGET, 2, -48,  8, 0, 4, ANIM_TARGET
+	createsprite gStringShotSpriteTemplate, ANIM_TARGET, 2, -32,  0, 0, 4, ANIM_TARGET
+	waitforvisualfinish
+	createsprite gStringShotSpriteTemplate, ANIM_TARGET, 2, -56, 24, 0, 4, ANIM_TARGET
+	createsprite gStringShotSpriteTemplate, ANIM_TARGET, 2, -40, 16, 0, 4, ANIM_TARGET
+	createsprite gStringShotSpriteTemplate, ANIM_TARGET, 2, -24,  8, 0, 4, ANIM_TARGET
+	waitforvisualfinish
+	createsprite gStringShotSpriteTemplate, ANIM_TARGET, 2, -48, 32, 0, 4, ANIM_TARGET
+	createsprite gStringShotSpriteTemplate, ANIM_TARGET, 2, -32, 24, 0, 4, ANIM_TARGET
+	createsprite gStringShotSpriteTemplate, ANIM_TARGET, 2, -16, 16, 0, 4, ANIM_TARGET
 	waitforvisualfinish
 	playsewithpan SE_M_STRING_SHOT2, SOUND_PAN_TARGET
-	createsprite gStringWrapSpriteTemplate, ANIM_TARGET, 2, 0, 10
-	delay 4
-	createsprite gStringWrapSpriteTemplate, ANIM_TARGET, 2, 0, -2
-	delay 4
-	createsprite gStringWrapSpriteTemplate, ANIM_TARGET, 2, 0, 22
+	createsprite gStringWrapSpriteTemplate, ANIM_TARGET, 2, 32, -16, -48, 8, 30, 100
+	createsprite gStringWrapSpriteTemplate, ANIM_TARGET, 2, 32,   0, -48, 8, 30, 100
+	createsprite gStringWrapSpriteTemplate, ANIM_TARGET, 2, 32,  16, -48, 8, 30, 100
 	waitforvisualfinish
-	clearmonbg ANIM_DEF_PARTNER
-	delay 1
-	waitforvisualfinish
-	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 5, F_PAL_BG, 2, 9, 0, RGB_BLACK
 	end
 
 StringShotThread:

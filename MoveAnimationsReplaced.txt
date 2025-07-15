@@ -165,7 +165,7 @@ Splash
 Spore
 Stomp
 Strength
-*String Shot*
+String Shot
 Struggle
 Stun Spore
 Submission
