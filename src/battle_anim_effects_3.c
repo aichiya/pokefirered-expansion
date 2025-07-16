@@ -2198,40 +2198,18 @@ void AnimTask_SwallowDeformMon(u8 taskId)
 
 void AnimTask_TransformMon(u8 taskId)
 {
-    int i, j;
     u8 position;
     struct BattleAnimBgData animBg;
     u8 *dest;
     u8 *src;
-    u16 *bgTilemap;
-    u16 stretch;
 
     switch (gTasks[taskId].data[0])
     {
     case 0:
-        SetGpuReg(REG_OFFSET_MOSAIC, 0);
-        if (GetBattlerSpriteBGPriorityRank(gBattleAnimAttacker) == 1)
-            SetAnimBgAttribute(1, BG_ANIM_MOSAIC, 1);
-        else
-            SetAnimBgAttribute(2, BG_ANIM_MOSAIC, 1);
-
-        gTasks[taskId].data[10] = gBattleAnimArgs[0];
-        gTasks[taskId].data[0]++;
-        break;
-    case 1:
-        if (gTasks[taskId].data[2]++ > 1)
-        {
-            gTasks[taskId].data[2] = 0;
-            gTasks[taskId].data[1]++;
-            stretch = gTasks[taskId].data[1];
-            SetGpuReg(REG_OFFSET_MOSAIC, (stretch << 4) | stretch);
-            if (stretch == 15)
-                gTasks[taskId].data[0]++;
-        }
-        break;
-    case 2:
-        HandleSpeciesGfxDataChange(gBattleAnimAttacker, gBattleAnimTarget, gTasks[taskId].data[10]);
+        // Instantly replace the attacker's sprite with the defender's sprite
+        HandleSpeciesGfxDataChange(gBattleAnimAttacker, gBattleAnimTarget, gBattleAnimArgs[0]);
         GetBattleAnimBgDataByPriorityRank(&animBg, gBattleAnimAttacker);
+
         if (IsContest())
             position = 0;
         else
@@ -2241,36 +2219,15 @@ void AnimTask_TransformMon(u8 taskId)
         dest = animBg.bgTiles;
         CpuCopy32(src, dest, MON_PIC_SIZE);
         LoadBgTiles(1, animBg.bgTiles, 0x800, animBg.tilesOffset);
-        gTasks[taskId].data[0]++;
-        break;
-    case 3:
-        if (gTasks[taskId].data[2]++ > 1)
-        {
-            gTasks[taskId].data[2] = 0;
-            gTasks[taskId].data[1]--;
-            stretch = gTasks[taskId].data[1];
-            SetGpuReg(REG_OFFSET_MOSAIC, (stretch << 4) | stretch);
 
-            if (stretch == 0)
-                gTasks[taskId].data[0]++;
-        }
-        break;
-    case 4:
-        SetGpuReg(REG_OFFSET_MOSAIC, 0);
-        if (GetBattlerSpriteBGPriorityRank(gBattleAnimAttacker) == 1)
-            SetAnimBgAttribute(1, BG_ANIM_MOSAIC, 0);
-        else
-            SetAnimBgAttribute(2, BG_ANIM_MOSAIC, 0);
-
-        if (!IsContest())
+        // Handle shadow sprite if necessary
+        if (!IsContest() && GetBattlerSide(gBattleAnimAttacker) == B_SIDE_OPPONENT)
         {
-            if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_OPPONENT)
-            {
-                if (gTasks[taskId].data[10] == 0)
-                    SetBattlerShadowSpriteCallback(gBattleAnimAttacker, gBattleSpritesDataPtr->battlerData[gBattleAnimAttacker].transformSpecies);
-            }
+            if (gBattleAnimArgs[0] == 0)
+                SetBattlerShadowSpriteCallback(gBattleAnimAttacker, gBattleSpritesDataPtr->battlerData[gBattleAnimAttacker].transformSpecies);
         }
 
+        // End the task immediately
         DestroyAnimVisualTask(taskId);
         break;
     }

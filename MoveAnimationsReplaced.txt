@@ -40,7 +40,7 @@ Dizzy Punch
 Double Kick
 Double Slap
 Double Team
-*Double-Edge*
+Double-Edge
 Dragon Rage
 Dream Eater
 Drill Peck
@@ -188,7 +188,7 @@ Thundershock
 Thunder Wave
 Thunderbolt
 Toxic
-*Transform*
+Transform
 *Tri Attack*
 Twineedle
 

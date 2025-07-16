@@ -2939,8 +2939,13 @@ static void AnimConversionCubeCombine(struct Sprite* sprite)
 
 static void AnimPokeBallPuff(struct Sprite *sprite)
 {
-    sprite->x += gBattleAnimArgs[0]; // Starting X offset
-    sprite->y += gBattleAnimArgs[1]; // Starting Y offset
+    if (gBattleAnimArgs[7] == ANIM_ATTACKER)
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    else
+        InitSpritePosToAnimTarget(sprite, TRUE);
+    
+    sprite->x += gBattleAnimArgs[0];
+    sprite->y += gBattleAnimArgs[1];
 
     sprite->data[0] = gBattleAnimArgs[4];
     sprite->data[1] = sprite->x;

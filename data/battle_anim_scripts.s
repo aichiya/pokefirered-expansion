@@ -2221,10 +2221,10 @@ Move_SMOKESCREEN:
 	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -16,  8, 4, 1, ANIM_TARGET
 	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -16, 16, 4, 1, ANIM_TARGET
 	waitforvisualfinish
-	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2, -8,  0,  -24, -16, 40, 0
-	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2,  8,  0,   24, -16, 40, 1
-	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2, -8,  16, -24,  32, 40, 2
-	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2,  8,  16,  24,  32, 40, 3
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2, -8,  0,  -24, -16, 40, 0, ANIM_TARGET
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2,  8,  0,   24, -16, 40, 1, ANIM_TARGET
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2, -8,  16, -24,  32, 40, 2, ANIM_TARGET
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2,  8,  16,  24,  32, 40, 3, ANIM_TARGET
 	waitforvisualfinish
 	call BlackFlashEffect
 	end
@@ -7941,9 +7941,16 @@ SwallowBest:
 	goto SwallowContinue
 
 Move_TRANSFORM:
-	monbg ANIM_ATTACKER
+	loadspritegfx ANIM_TAG_ORBS
+	loadspritegfx ANIM_TAG_MUSIC_NOTES
 	playsewithpan SE_M_TELEPORT, SOUND_PAN_ATTACKER
-	waitplaysewithpan SE_M_MINIMIZE, SOUND_PAN_ATTACKER, 48
+	call ConversionEffect
+	waitforvisualfinish
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2, -8,  -8,  -24, -16, 40, 0, ANIM_ATTACKER
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2,  8,  -8,   24, -16, 40, 1, ANIM_ATTACKER
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2, -8,   8, -24,  32, 40, 2, ANIM_ATTACKER
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2,  8,   8,  24,  32, 40, 3, ANIM_ATTACKER
+	waitforvisualfinish
 	createvisualtask AnimTask_TransformMon, 2, 0
 	waitforvisualfinish
 	clearmonbg ANIM_ATTACKER
@@ -8451,10 +8458,10 @@ Move_SUBSTITUTE:
 	waitforvisualfinish
 	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0, 0, 1
 	createvisualtask AnimTask_MonToSubstitute, 2
-	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2, -8,  -8, -24, -16, 40, 0
-	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2,  8,  -8,  24, -16, 40, 1
-	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2, -8,   8, -24,  32, 40, 2
-	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2,  8,   8,  24,  32, 40, 3
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2, -8,  -8, -24, -16, 40, 0, ANIM_TARGET
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2,  8,  -8,  24, -16, 40, 1, ANIM_TARGET
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2, -8,   8, -24,  32, 40, 2, ANIM_TARGET
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2,  8,   8,  24,  32, 40, 3, ANIM_TARGET
 	waitforvisualfinish
 	end
 
