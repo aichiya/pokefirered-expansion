@@ -150,6 +150,8 @@ static void AnimAirCutterSlice(struct Sprite *);
 static void AnimFlickeringPunch(struct Sprite *);
 static void AnimSlidingHit(struct Sprite *);
 static void AnimWhipHit(struct Sprite *);
+static void AnimBouncingSprite(struct Sprite *);
+static void AnimBouncingSprite_Step(struct Sprite *);
 
 static const u8 sUnused[] = {2, 4, 1, 3};
 
@@ -400,6 +402,28 @@ const struct SpriteTemplate gAbsorptionOrbCombineSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimAbsorptionOrbCombine,
+};
+
+static const union AnimCmd sCoinAnimCmds[] =
+{
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sCoinAnimTable[] =
+{
+    sCoinAnimCmds,
+};
+
+const struct SpriteTemplate gBouncingSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_COIN,
+    .paletteTag = ANIM_TAG_COIN,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sCoinAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimBouncingSprite,
 };
 
 static const union AnimCmd sPokeBallPuffAnimCmdsTL[] =
@@ -3975,6 +3999,23 @@ static void AnimTrickBag_Step3(struct Sprite* sprite)
 
     sprite->invisible = sprite->data[0] % 2;
     sprite->data[0]++;
+}
+
+static void AnimBouncingSprite(struct Sprite *sprite)
+{
+    s16 targetX;
+    s16 targetY;
+    
+    InitSpritePosToAnimTarget(sprite, TRUE);
+    targetX = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X);
+    targetY = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y);
+
+    sprite->data[6] = targetX + gBattleAnimArgs[2];
+    sprite->data[7] = targetY + gBattleAnimArgs[3];
+    InitItemBagData(sprite, 60);
+    sprite->data[3] = gBattleAnimArgs[4];
+    sprite->data[4] = gBattleAnimArgs[5];
+    sprite->callback = AnimItemSteal_Step1;
 }
 
 void AnimTask_LeafBlade(u8 taskId)

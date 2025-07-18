@@ -116,7 +116,7 @@ Mist
 Night Shade
 
 -P-
-*Pay Day*
+Pay Day
 Peck
 Petal Dance
 Pin Missile
@@ -189,7 +189,7 @@ Thunder Wave
 Thunderbolt
 Toxic
 Transform
-*Tri Attack*
+Tri Attack
 Twineedle
 
 -V-

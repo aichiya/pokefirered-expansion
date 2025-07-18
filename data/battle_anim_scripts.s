@@ -1798,19 +1798,17 @@ Move_GUILLOTINE:
 Move_PAY_DAY:
 	loadspritegfx ANIM_TAG_COIN
 	loadspritegfx ANIM_TAG_IMPACT
-	monbg ANIM_TARGET
-	splitbgprio ANIM_TARGET
-	setalpha 12, 8
-	playsewithpan SE_M_RAZOR_WIND2, SOUND_PAN_ATTACKER
-	createsprite gCoinThrowSpriteTemplate, ANIM_ATTACKER, 2, 20, 0, 0, 0, 1152
-	waitforvisualfinish
-	playsewithpan SE_M_PAY_DAY, SOUND_PAN_TARGET
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 1, 0, 0, ANIM_TARGET, 2
-	createsprite gFallingCoinSpriteTemplate, ANIM_ATTACKER, 2
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 1, 0, 6, 1
-	waitforvisualfinish
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, -8, -8, ANIM_TARGET, 2
 	clearmonbg ANIM_TARGET
-	blendoff
+	delay 10
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 12, 12, ANIM_TARGET, 2
+	waitforvisualfinish
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 4, 0, 6, 1
+	waitforvisualfinish
+	createvisualtask AnimTask_StartSinAnimTimer, 5, 100
+	@createsprite gBouncingSpriteTemplate, ANIM_TARGET, 2, 0, -16, -32, -16, 30, 15, ANIM_TARGET
+	createsprite gBouncingSpriteTemplate, ANIM_TARGET, 2, 0, 16, -48, 16, 3, 60, -1
+	waitforvisualfinish
 	end
 
 Move_OUTRAGE:
