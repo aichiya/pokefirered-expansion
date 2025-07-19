@@ -11,10 +11,7 @@ static void AnimFireSpiralInward(struct Sprite *sprite);
 static void AnimFireSpread(struct Sprite *sprite);
 static void AnimLargeFlame(struct Sprite *sprite);
 static void AnimFirePlume(struct Sprite *sprite);
-static void AnimFlamethrower(struct Sprite *sprite);
 static void AnimEmber(struct Sprite *sprite);
-static void AnimSlidingFlame(struct Sprite *sprite);
-static void AnimSlidingFlame_Step(struct Sprite *sprite);
 static void AnimSmallEmber(struct Sprite *sprite);
 static void AnimLargeEmber(struct Sprite *sprite);
 static void AnimSunlight(struct Sprite *sprite);
@@ -164,39 +161,6 @@ const struct SpriteTemplate gFirePlumeSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimFirePlume,
-};
-
-static const union AnimCmd sAnim_FireBigFlame[] =
-{
-    ANIMCMD_FRAME(12, 1),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd *const sAnims_FireBigFlame[] =
-{
-    sAnim_FireBigFlame,
-};
-
-const struct SpriteTemplate gFlamethrowerSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_FIRE,
-    .paletteTag = ANIM_TAG_FIRE,
-    .oam = &gOamData_AffineOff_ObjNormal_16x16,
-    .anims = sAnims_FireBigFlame,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimFlamethrower,
-};
-
-const struct SpriteTemplate gSlidingFlameSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_FIRE,
-    .paletteTag = ANIM_TAG_FIRE,
-    .oam = &gOamData_AffineOff_ObjNormal_16x16,
-    .anims = sAnims_FireBigFlame,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimSlidingFlame,
 };
 
 static const struct SpriteTemplate sUnusedEmberFirePlumeSpriteTemplate =
@@ -898,66 +862,6 @@ static void AnimTask_EruptionLaunchRocks_Step(u8 taskId)
         break;
     default:
         break;
-    }
-}
-
-static void AnimFlamethrower(struct Sprite *sprite)
-{
-    bool8 animType;
-    u8 coordType;
-    if (GetBattlerSide(gBattleAnimAttacker) == GetBattlerSide(gBattleAnimTarget))
-    {
-        gBattleAnimArgs[0] *= -1;
-        if (GetBattlerPosition(gBattleAnimAttacker) == B_POSITION_PLAYER_LEFT || GetBattlerPosition(gBattleAnimAttacker) == B_POSITION_OPPONENT_LEFT)
-            gBattleAnimArgs[0] *= -1;
-    }
-    if ((gBattleAnimArgs[5] & 0xFF00) == 0)
-        animType = TRUE;
-    else
-        animType = FALSE;
-    if ((u8)gBattleAnimArgs[5] == 0)
-        coordType = BATTLER_COORD_Y_PIC_OFFSET;
-    else
-        coordType = 1;
-    InitSpritePosToAnimAttacker(sprite, animType);
-    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
-        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
-    sprite->data[0] = gBattleAnimArgs[4];
-    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + gBattleAnimArgs[2];
-    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, coordType) + gBattleAnimArgs[3];
-    sprite->callback = StartAnimLinearTranslation;
-    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
-}
-
-static void AnimSlidingFlame(struct Sprite *sprite)
-{
-    if (BATTLE_PARTNER(gBattleAnimAttacker) == gBattleAnimTarget && GetBattlerPosition(gBattleAnimTarget) < B_POSITION_PLAYER_RIGHT)
-        gBattleAnimArgs[0] *= -1;
-    InitSpritePosToAnimTarget(sprite, TRUE);
-    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
-        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
-    sprite->data[0] = gBattleAnimArgs[3];
-    sprite->data[1] = sprite->x;
-    sprite->data[2] = sprite->x + gBattleAnimArgs[2];
-    sprite->data[3] = sprite->y;
-    sprite->data[4] = sprite->y;
-    InitAnimLinearTranslation(sprite);
-    sprite->data[5] = gBattleAnimArgs[5];
-    sprite->data[6] = gBattleAnimArgs[4];
-    sprite->data[7] = 0;
-    sprite->callback = AnimSlidingFlame_Step;
-}
-
-static void AnimSlidingFlame_Step(struct Sprite *sprite)
-{
-    if (!AnimTranslateLinear(sprite))
-    {
-        sprite->y2 += Sin(sprite->data[7] >> 8, sprite->data[5]);
-        sprite->data[7] += sprite->data[6];
-    }
-    else
-    {
-        DestroyAnimSprite(sprite);
     }
 }
 
