@@ -66,6 +66,17 @@ static const union AffineAnimCmd *const sAffineAnims_Generic0EndsAffine[] =
 //////////////////
 // NORMAL BEGIN //
 //////////////////
+const struct SpriteTemplate gBarrageBallSpriteTemplate =    
+{
+    .tileTag = ANIM_TAG_BLACK_BALL_2,
+    .paletteTag = ANIM_TAG_BLACK_BALL_2,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteProjectileParabolic,
+};
+
 static const union AnimCmd sAnim_Harden1[] =
 {
     ANIMCMD_FRAME(8, 1),

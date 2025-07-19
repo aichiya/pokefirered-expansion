@@ -3,13 +3,13 @@ https://bulbapedia.bulbagarden.net/wiki/Category:Generation_I_moves
 -A-
 ~Absorb
 ~Acid
-Acid Armor
-Agility
-Amnesia
-Aurora Beam
+~Acid Armor
+~Agility
+~Amnesia
+~Aurora Beam
 
 -B-
-Barrage
+~Barrage
 Barrier
 Bide
 Bind

@@ -73,7 +73,6 @@ static void AnimRoarSonicboomWave(struct Sprite *);
 static void AnimRoarSonicboomWave_Step(struct Sprite *);
 static void AnimTask_GlareEyeDots_Step(u8);
 static void GetGlareEyeDotCoords(s16, s16, s16, s16, u8, u8, s16 *, s16 *);
-static void AnimTask_BarrageBall_Step(u8);
 static void AnimSmellingSaltsHand(struct Sprite *);
 static void AnimSmellingSaltsHand_Step(struct Sprite *);
 static void AnimTask_SmellingSaltsSquish_Step(u8);
@@ -964,17 +963,6 @@ const struct SpriteTemplate gAssistPawprintSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimAssistPawprint,
-};
-
-const struct SpriteTemplate gBarrageBallSpriteTemplate =    
-{
-    .tileTag = ANIM_TAG_BLACK_BALL_2,
-    .paletteTag = ANIM_TAG_BLACK_BALL_2,
-    .oam = &gOamData_AffineOff_ObjNormal_16x16,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimThrowProjectile,
 };
 
 const struct SpriteTemplate gSmellingSaltsHandSpriteTemplate =
@@ -4014,78 +4002,6 @@ static void AnimAssistPawprint(struct Sprite *sprite)
     sprite->data[0] = gBattleAnimArgs[4];
     StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
     sprite->callback = InitAndRunAnimFastLinearTranslation;
-}
-
-// Moves a ball in an arc twoards the target, and rotates the ball while arcing.
-// No args.
-void AnimTask_BarrageBall(u8 taskId)
-{
-    struct Task *task = &gTasks[taskId];
-
-    task->data[11] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
-    task->data[12] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET);
-    task->data[13] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
-    task->data[14] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + GetBattlerSpriteCoordAttr(gBattleAnimTarget, BATTLER_COORD_ATTR_HEIGHT) / 4;
-    task->data[15] = CreateSprite(&gBarrageBallSpriteTemplate, task->data[11], task->data[12], GetBattlerSpriteSubpriority(gBattleAnimTarget) - 5);
-    if (task->data[15] != MAX_SPRITES)
-    {
-        gSprites[task->data[15]].data[0] = 16;
-        gSprites[task->data[15]].data[2] = task->data[13];
-        gSprites[task->data[15]].data[4] = task->data[14];
-        gSprites[task->data[15]].data[5] = -32;
-        InitAnimArcTranslation(&gSprites[task->data[15]]);
-        if (GetBattlerSide(gBattleAnimAttacker) == B_SIDE_OPPONENT)
-            StartSpriteAffineAnim(&gSprites[task->data[15]], 1);
-
-        task->func = AnimTask_BarrageBall_Step;
-    }
-    else
-    {
-        DestroyAnimVisualTask(taskId);
-    }
-}
-
-static void AnimTask_BarrageBall_Step(u8 taskId)
-{
-    struct Task *task = &gTasks[taskId];
-
-    switch (task->data[0])
-    {
-    case 0:
-        if (++task->data[1] > 1)
-        {
-            task->data[1] = 0;
-            TranslateAnimHorizontalArc(&gSprites[task->data[15]]);
-            if (++task->data[2] > 7)
-                task->data[0]++;
-        }
-        break;
-    case 1:
-        if (TranslateAnimHorizontalArc(&gSprites[task->data[15]]))
-        {
-            task->data[1] = 0;
-            task->data[2] = 0;
-            task->data[0]++;
-        }
-        break;
-    case 2:
-        if (++task->data[1] > 1)
-        {
-            task->data[1] = 0;
-            task->data[2]++;
-            gSprites[task->data[15]].invisible = task->data[2] & 1;
-            if (task->data[2] == 16)
-            {
-                FreeOamMatrix(gSprites[task->data[15]].oam.matrixNum);
-                DestroySprite(&gSprites[task->data[15]]);
-                task->data[0]++;
-            }
-        }
-        break;
-    case 3:
-        DestroyAnimVisualTask(taskId);
-        break;
-    }
 }
 
 // Moves a hand back and forth in a squishing motion.
