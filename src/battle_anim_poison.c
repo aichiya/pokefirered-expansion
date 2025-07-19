@@ -50,12 +50,6 @@ static const union AnimCmd sAnim_AcidPoisonDroplet[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_SludgeBombHit[] =
-{
-    ANIMCMD_FRAME(8, 1),
-    ANIMCMD_END,
-};
-
 static const union AnimCmd *const sAnims_PoisonProjectile[] =
 {
     sAnim_PoisonProjectile,
@@ -64,11 +58,6 @@ static const union AnimCmd *const sAnims_PoisonProjectile[] =
 static const union AnimCmd *const sAnims_AcidPoisonDroplet[] =
 {
     sAnim_AcidPoisonDroplet,
-};
-
-static const union AnimCmd *const sAnims_SludgeBombHit[] =
-{
-    sAnim_SludgeBombHit,
 };
 
 static const union AffineAnimCmd sAffineAnim_PoisonProjectile[] =
@@ -93,17 +82,6 @@ static const union AffineAnimCmd *const sAffineAnims_PoisonProjectile[] =
 static const union AffineAnimCmd *const sAffineAnims_SludgeBombHit[] =
 {
     sAffineAnim_SludgeBombHit,
-};
-
-const struct SpriteTemplate gSludgeProjectileSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_POISON_BUBBLE,
-    .paletteTag = ANIM_TAG_POISON_BUBBLE,
-    .oam = &gOamData_AffineOff_ObjNormal_16x16,
-    .anims = sAnims_SludgeBombHit,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimSludgeProjectile,
 };
 
 static const union AnimCmd sAnim_GasCloud[] =
@@ -138,39 +116,6 @@ const struct SpriteTemplate gAcidPoisonBubbleSpriteTemplate =
     .images = NULL,
     .affineAnims = sAffineAnims_PoisonProjectile,
     .callback = AnimAcidPoisonBubble,
-};
-
-static const union AnimCmd sAnim_SludgeSplat[] =
-{
-    ANIMCMD_FRAME(8, 24),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd *const sAnims_SludgeSplat[] =
-{
-    sAnim_SludgeSplat,
-};
-
-const struct SpriteTemplate gSludgeSplatSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_POISON_BUBBLE,
-    .paletteTag = ANIM_TAG_POISON_BUBBLE,
-    .oam = &gOamData_AffineOff_ObjNormal_16x16,
-    .anims = sAnims_SludgeSplat,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimSludgeSplat,
-};
-
-const struct SpriteTemplate gSludgeBombHitParticleSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_POISON_BUBBLE,
-    .paletteTag = ANIM_TAG_POISON_BUBBLE,
-    .oam = &gOamData_AffineNormal_ObjNormal_16x16,
-    .anims = sAnims_SludgeBombHit,
-    .images = NULL,
-    .affineAnims = sAffineAnims_SludgeBombHit,
-    .callback = AnimSludgeBombHitParticle,
 };
 
 static const union AffineAnimCmd sAffineAnim_AcidPoisonDroplet[] =

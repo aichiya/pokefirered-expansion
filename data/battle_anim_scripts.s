@@ -5783,41 +5783,6 @@ Move_SLUDGE:
 	end
 
 Move_SLUDGE_BOMB:
-	loadspritegfx ANIM_TAG_POISON_BUBBLE
-	call SludgeBombProjectile
-	call SludgeBombProjectile
-	call SludgeBombProjectile
-	call SludgeBombProjectile
-	call SludgeBombProjectile
-	call SludgeBombProjectile
-	call SludgeBombProjectile
-	call SludgeBombProjectile
-	call SludgeBombProjectile
-	call SludgeBombProjectile
-	createvisualtask AnimTask_ShakeMon2, 5, ANIM_TARGET, 3, 0, 15, 1
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 1, 2, 0, 12, RGB(30, 0, 31)
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, 42, 27, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, -27, 44, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, 39, -28, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, -42, -42, 20
-	playsewithpan SE_M_DIG, SOUND_PAN_TARGET
-	delay 5
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, 0, 40, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, -8, -44, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, -46, -28, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, 46, 9, 20
-	playsewithpan SE_M_DIG, SOUND_PAN_TARGET
-	delay 5
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, 42, 0, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, -43, -12, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, 16, -46, 20
-	createsprite gSludgeBombHitParticleSpriteTemplate, ANIM_TARGET, 2, -16, 44, 20
-	playsewithpan SE_M_DIG, SOUND_PAN_TARGET
-	delay 0
-	waitsound
-	waitforvisualfinish
-	call PoisonBubblesEffect
-	waitforvisualfinish
 	end
 
 SludgeBombProjectile:
@@ -5830,7 +5795,7 @@ Move_ACID:
 	loadspritegfx ANIM_TAG_POISON_BUBBLE
 	monbg ANIM_DEF_PARTNER
 	playsewithpan SE_M_BUBBLE3, SOUND_PAN_ATTACKER
-	createsprite gSludgeProjectileSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 0, 64, -25
+	createsprite gSludgeProjectileSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 0, -30, 64, ANIM_ATTACKER, 0
 	delay 62
 	createsprite gSludgeSplatSpriteTemplate, ANIM_TARGET, 13, 0, 0
 	createsprite gAcidPoisonDropletSpriteTemplate, ANIM_TARGET, 2, -4, 8, 0, 6, 16

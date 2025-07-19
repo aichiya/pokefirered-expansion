@@ -280,6 +280,59 @@ const struct SpriteTemplate gBlizzardIceLandedSpriteTemplate =
 // ICE END //
 /////////////
 
+////////////////////
+// FIGHTING BEGIN //
+////////////////////
+
+//////////////////
+// FIGHTING END //
+//////////////////
+
+//////////////////
+// POISON BEGIN //
+//////////////////
+static const union AnimCmd sAnim_SludgeSplat[] =
+{
+    ANIMCMD_FRAME(8, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd *const sAnims_SludgeSplat[] =
+{
+    sAnim_SludgeSplat,
+};
+const struct SpriteTemplate gSludgeProjectileSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_POISON_BUBBLE,
+    .paletteTag = ANIM_TAG_POISON_BUBBLE,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sAnims_SludgeSplat,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteProjectileParabolic,
+};
+
+const struct SpriteTemplate gSludgeSplatSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_POISON_BUBBLE,
+    .paletteTag = ANIM_TAG_POISON_BUBBLE,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sAnims_SludgeSplat,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteStatic,
+};
+////////////////
+// POISON END //
+////////////////
+
+//////////////////
+// GROUND BEGIN //
+//////////////////
+
+////////////////
+// GROUND END //
+////////////////
+
 //////////////////////////////////////////////////
 
 /////////////////////
@@ -415,13 +468,20 @@ static void AnimSpriteMoveToMonPos(struct Sprite* sprite)
 
 static void AnimSpriteProjectileParabolic(struct Sprite* sprite)
 {
-    if (!gBattleAnimArgs[3])
-        StartSpriteAnim(sprite, 2);
-    InitSpritePosToAnimTarget(sprite, 1);
-    sprite->data[0] = gBattleAnimArgs[2];
-    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2) + 8;
-    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET) - 8;
-    sprite->data[5] = -30;
+    if (gBattleAnimArgs[6] == ANIM_ATTACKER)
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    else
+        InitSpritePosToAnimTarget(sprite, TRUE);
+
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+
+    StartSpriteAnim(sprite, gBattleAnimArgs[7]); // Anim Number
+
+    sprite->data[0] = gBattleAnimArgs[5]; // Duration
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + gBattleAnimArgs[2];
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + gBattleAnimArgs[3];
+    sprite->data[5] = gBattleAnimArgs[4]; // Height
     InitAnimArcTranslation(sprite);
     sprite->callback = AnimSpriteProjectileParabolic_Step;
 }

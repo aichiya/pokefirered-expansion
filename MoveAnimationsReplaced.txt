@@ -1,8 +1,8 @@
 https://bulbapedia.bulbagarden.net/wiki/Category:Generation_I_moves
 
 -A-
-Absorb
-Acid
+~Absorb
+~Acid
 Acid Armor
 Agility
 Amnesia
