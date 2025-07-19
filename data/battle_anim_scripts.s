@@ -5339,14 +5339,17 @@ SolarBeamUnleash:
 
 Move_BLIZZARD:
 	loadspritegfx ANIM_TAG_ICE_CRYSTALS
-	monbg ANIM_DEF_PARTNER
-	createvisualtask AnimTask_GetAttackerSide, 2
-	jumprettrue BlizzardAgainstPlayer
-	fadetobg BG_HIGHSPEED_OPPONENT
+	@                                                                 X,   Y,   X,  Y, Sp, ?
+	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -72, -64, -24, 24, 20, 0
+	waitforvisualfinish
+	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -30, -64,   8, 24, 20, 0
+	waitforvisualfinish
+	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -56, -64,  -8, 24, 20, 0
+	waitforvisualfinish
+	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -24, -64,  24, 24, 20, 0
+	waitforvisualfinish
+	end
 BlizzardContinue:
-	waitbgfadeout
-	createvisualtask AnimTask_StartSlidingBg, 5, -2304, 0, 1, -1
-	waitbgfadein
 	waitforvisualfinish
 	panse SE_M_BLIZZARD, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +2, 0
 	call BlizzardIceCrystals
@@ -5355,12 +5358,6 @@ BlizzardContinue:
 	waitforvisualfinish
 	call IceCrystalEffectLong
 	waitforvisualfinish
-	clearmonbg ANIM_DEF_PARTNER
-	delay 20
-	restorebg
-	waitbgfadeout
-	setarg 7, 0xFFFF
-	waitbgfadein
 	end
 
 BlizzardIceCrystals:

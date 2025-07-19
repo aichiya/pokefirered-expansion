@@ -14,7 +14,7 @@ Barrier
 Bide
 Bind
 Bite
-*Blizzard*
+Blizzard
 Body Slam
 Bone Club
 Bonemerang
