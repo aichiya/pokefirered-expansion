@@ -5339,16 +5339,26 @@ SolarBeamUnleash:
 
 Move_BLIZZARD:
 	loadspritegfx ANIM_TAG_ICE_CRYSTALS
-	@                                                                 X,   Y,   X,  Y, Sp, ?
+
 	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -72, -64, -24, 24, 20, 0
-	waitforvisualfinish
-	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -30, -64,   8, 24, 20, 0
-	waitforvisualfinish
-	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -56, -64,  -8, 24, 20, 0
-	waitforvisualfinish
-	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -24, -64,  24, 24, 20, 0
+	delay 18
+	createsprite gBlizzardIceLandedSpriteTemplate, ANIM_TARGET, 2, -24, 16, 0, 100, ANIM_TARGET
+
+	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -30, -64, 8, 24, 20, 0
+	delay 18
+	createsprite gBlizzardIceLandedSpriteTemplate, ANIM_TARGET, 2, 8, 16, 0, 80, ANIM_TARGET
+
+	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -56, -64, -8, 24, 20, 0
+	delay 18
+	createsprite gBlizzardIceLandedSpriteTemplate, ANIM_TARGET, 2, -8, 16, 0, 60, ANIM_TARGET
+
+	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -24, -64, 24, 24, 20, 0
+	delay 18
+	createsprite gBlizzardIceLandedSpriteTemplate, ANIM_TARGET, 2, 24, 16, 0, 40, ANIM_TARGET
+
 	waitforvisualfinish
 	end
+
 BlizzardContinue:
 	waitforvisualfinish
 	panse SE_M_BLIZZARD, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, +2, 0

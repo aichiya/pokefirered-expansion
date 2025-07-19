@@ -9,30 +9,57 @@
 
 static void AnimSpriteMoveLinear(struct Sprite *);
 static void AnimSpriteMoveLinear_Step(struct Sprite *);
+static void AnimSpriteStatic(struct Sprite *);
 
+///////////////
 // ICE BEGIN //
-static const union AnimCmd sAnim_IceCrystal[] =
+///////////////
+static const union AnimCmd sAnim_IceCrystalFull[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd *const sAnims_IceCrystal[] =
+static const union AnimCmd *const sAnims_IceCrystalFull[] =
 {
-    sAnim_IceCrystal,
+    sAnim_IceCrystalFull,
+};
+
+static const union AnimCmd sAnim_IceCrystalHalf[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnims_IceCrystalHalf[] =
+{
+    sAnim_IceCrystalHalf,
 };
 
 const struct SpriteTemplate gBlizzardIceFallingSpriteTemplate =
 {
     .tileTag = ANIM_TAG_ICE_CRYSTALS,
     .paletteTag = ANIM_TAG_ICE_CRYSTALS,
-    .oam = &gOamData_AffineOff_ObjNormal_16x16,
-    .anims = sAnims_IceCrystal,
+    .oam = &gOamData_AffineOff_ObjNormal_8x16,
+    .anims = sAnims_IceCrystalFull,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSpriteMoveLinear,
 };
+
+const struct SpriteTemplate gBlizzardIceLandedSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ICE_CRYSTALS,
+    .paletteTag = ANIM_TAG_ICE_CRYSTALS,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sAnims_IceCrystalHalf,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteStatic,
+};
+/////////////
 // ICE END //
+/////////////
 
 static void AnimSpriteMoveLinear(struct Sprite *sprite)
 {
@@ -65,4 +92,18 @@ static void AnimSpriteMoveLinear_Step(struct Sprite *sprite)
     {
         DestroyAnimSprite(sprite);
     }
+}
+
+static void AnimSpriteStatic(struct Sprite *sprite)
+{
+    StartSpriteAnim(sprite, gBattleAnimArgs[2]);
+
+    if (gBattleAnimArgs[4] == 0)
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    else
+        InitSpritePosToAnimTarget(sprite, TRUE);
+
+    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->callback = RunStoredCallbackWhenAnimEnds;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSpriteAfterTimer);
 }
