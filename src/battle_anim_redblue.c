@@ -12,6 +12,7 @@ static void AnimSlidingFlame(struct Sprite *);
 static void AnimSlidingFlame_Step(struct Sprite *);
 static void AnimSpriteMoveLinear(struct Sprite *);
 static void AnimSpriteMoveLinear_Step(struct Sprite *);
+static void AnimSpriteMoveLinearWithXFlip(struct Sprite *);
 static void AnimSpriteMoveToMonPos(struct Sprite *);
 static void AnimSpriteProjectileParabolic(struct Sprite *);
 static void AnimSpriteProjectileParabolic_Step(struct Sprite *);
@@ -88,6 +89,26 @@ const struct SpriteTemplate gBarrageBallSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSpriteProjectileParabolic,
+};
+
+static const union AnimCmd sAnim_BindTendrils[] =
+{
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+static const union AnimCmd *const sAnims_BindTendrils[] =
+{
+    sAnim_BindTendrils,
+};
+const struct SpriteTemplate gBindTendrilsSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_TENDRILS,
+    .paletteTag = ANIM_TAG_TENDRILS,
+    .oam = &gOamData_AffineOff_ObjNormal_64x64,
+    .anims = sAnims_BindTendrils,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteOnMonPos,
 };
 
 static const union AnimCmd sAnim_Harden1[] =
@@ -287,7 +308,7 @@ const struct SpriteTemplate gBlizzardIceFallingSpriteTemplate =
     .anims = sAnims_IceCrystalFull,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimSpriteMoveLinear,
+    .callback = AnimSpriteMoveLinearWithXFlip,
 };
 
 const struct SpriteTemplate gBlizzardIceLandedSpriteTemplate =
@@ -529,6 +550,33 @@ static void AnimSpriteMoveLinear_Step(struct Sprite *sprite)
     {
         DestroyAnimSprite(sprite);
     }
+}
+
+static void AnimSpriteMoveLinearWithXFlip(struct Sprite *sprite)
+{
+    StartSpriteAnim(sprite, gBattleAnimArgs[6]); // Anim Number
+
+    if (gBattleAnimArgs[5] == ANIM_ATTACKER)
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    else
+        InitSpritePosToAnimTarget(sprite, TRUE);
+
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        {
+            gBattleAnimArgs[0] = -gBattleAnimArgs[0];
+            gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+        }
+
+    sprite->data[0] = gBattleAnimArgs[4]; // Duration
+    sprite->data[1] = sprite->x + gBattleAnimArgs[0]; // Starting X
+    sprite->data[2] = sprite->x + gBattleAnimArgs[2]; // Ending X
+    sprite->data[3] = sprite->y + gBattleAnimArgs[1]; // Starting Y
+    sprite->data[4] = sprite->y + gBattleAnimArgs[3]; // Ending Y
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = 0;
+    sprite->data[6] = 0;
+    sprite->data[7] = 0;
+    sprite->callback = AnimSpriteMoveLinear_Step;
 }
 
 static void AnimSpriteStatic(struct Sprite *sprite)

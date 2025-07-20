@@ -12,9 +12,9 @@ https://bulbapedia.bulbagarden.net/wiki/Category:Generation_I_moves
 ~Barrage
 ~Barrier
 ~Bide
-Bind
-Bite
-Blizzard
+~Bind
+~Bite
+~Blizzard
 Body Slam
 Bone Club
 Bonemerang

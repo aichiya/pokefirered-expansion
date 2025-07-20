@@ -5340,21 +5340,21 @@ SolarBeamUnleash:
 Move_BLIZZARD:
 	loadspritegfx ANIM_TAG_ICE_CRYSTALS
 
-	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -72, -64, -24, 24, 20, 0
+	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -72, -64, -24, 24, 20, ANIM_TARGET, 0
 	delay 18
-	createsprite gBlizzardIceLandedSpriteTemplate, ANIM_TARGET, 2, -24, 16, 0, 100, ANIM_TARGET
+	createsprite gBlizzardIceLandedSpriteTemplate, ANIM_TARGET, 2, -24, 20, 0, 100, ANIM_TARGET, 0
 
-	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -30, -64, 8, 24, 20, 0
+	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -30, -64, 8, 24, 20, ANIM_TARGET, 0
 	delay 18
-	createsprite gBlizzardIceLandedSpriteTemplate, ANIM_TARGET, 2, 8, 16, 0, 80, ANIM_TARGET
+	createsprite gBlizzardIceLandedSpriteTemplate, ANIM_TARGET, 2, 8, 20, 0, 80, ANIM_TARGET, 0
 
-	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -56, -64, -8, 24, 20, 0
+	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -56, -64, -8, 24, 20, ANIM_TARGET, 0
 	delay 18
-	createsprite gBlizzardIceLandedSpriteTemplate, ANIM_TARGET, 2, -8, 16, 0, 60, ANIM_TARGET
+	createsprite gBlizzardIceLandedSpriteTemplate, ANIM_TARGET, 2, -8, 20, 0, 60, ANIM_TARGET, 0
 
-	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -24, -64, 24, 24, 20, 0
+	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -24, -64, 24, 24, 20, ANIM_TARGET, 0
 	delay 18
-	createsprite gBlizzardIceLandedSpriteTemplate, ANIM_TARGET, 2, 24, 16, 0, 40, ANIM_TARGET
+	createsprite gBlizzardIceLandedSpriteTemplate, ANIM_TARGET, 2, 24, 20, 0, 40, ANIM_TARGET, 0
 
 	waitforvisualfinish
 	end

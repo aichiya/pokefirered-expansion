@@ -36,29 +36,6 @@ static void AnimTask_ShakeBattleTerrain_Step(u8 taskId);
 static void AnimFlashingHitSplat_Step(struct Sprite *sprite);
 static void AnimStringShot(struct Sprite *sprite);
 
-
-static const union AnimCmd sAnim_BindTendrils[] =
-{
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd *const sAnims_BindTendrils[] =
-{
-    sAnim_BindTendrils,
-};
-
-const struct SpriteTemplate gBindTendrilsSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_TENDRILS,
-    .paletteTag = ANIM_TAG_TENDRILS,
-    .oam = &gOamData_AffineOff_ObjNormal_64x64,
-    .anims = sAnims_BindTendrils,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimSpriteOnMonPos,
-};
-
 static const union AnimCmd sAnim_ConfusionDuck_0[] =
 {
     ANIMCMD_FRAME(0, 8),
