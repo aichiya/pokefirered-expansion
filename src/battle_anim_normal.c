@@ -176,17 +176,6 @@ static const union AnimCmd *const sAnims_OrbSpiralSpread[] =
     sAnim_OrbSpiralSpread,
 };
 
-const struct SpriteTemplate gOrbSpiralInwardSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_ORBS,
-    .paletteTag = ANIM_TAG_ORBS,
-    .oam = &gOamData_AffineOff_ObjNormal_8x8,
-    .anims = sAnims_OrbSpiralSpread,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimOrbSpiralInward,
-};
-
 const struct SpriteTemplate gShakeMonOrTerrainSpriteTemplate =
 {
     .tileTag = 0,

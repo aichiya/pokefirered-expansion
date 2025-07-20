@@ -4953,27 +4953,27 @@ Move_BARRIER:
 	monbg ANIM_ATTACKER
 	setalpha 12, 8
 	waitplaysewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER, 15
-	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0
+	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0, ANIM_ATTACKER, 0
 	waitforvisualfinish
 	delay 1
 	waitplaysewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER, 15
-	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0
+	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0, ANIM_ATTACKER, 0
 	waitforvisualfinish
 	delay 1
 	waitplaysewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER, 15
-	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0
+	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0, ANIM_ATTACKER, 0
 	waitforvisualfinish
 	delay 3
 	waitplaysewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER, 15
-	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0
+	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0, ANIM_ATTACKER, 0
 	waitforvisualfinish
 	delay 1
 	waitplaysewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER, 15
-	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0
+	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0, ANIM_ATTACKER, 0
 	waitforvisualfinish
 	delay 1
 	waitplaysewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER, 15
-	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0
+	createsprite gBarrierWallSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0, ANIM_ATTACKER, 0
 	waitforvisualfinish
 	clearmonbg ANIM_ATTACKER
 	blendoff
@@ -7123,11 +7123,11 @@ BideSetUp:
 	loadspritegfx ANIM_TAG_ORBS,
 	splitbgprio_foes ANIM_ATTACKER
 	loopsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER, 9, 2
-	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
+	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 16, 32, 0xFE00, 0, ANIM_ATTACKER, 0
 	delay 1
-	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
+	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 16, 32, 0xFE00, 0, ANIM_ATTACKER, 0
 	delay 1
-	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
+	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 16, 32, 0xFE00, 0, ANIM_ATTACKER, 0
 	waitforvisualfinish
 	end
 

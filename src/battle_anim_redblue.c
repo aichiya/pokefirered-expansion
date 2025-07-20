@@ -15,7 +15,9 @@ static void AnimSpriteMoveLinear_Step(struct Sprite *);
 static void AnimSpriteMoveToMonPos(struct Sprite *);
 static void AnimSpriteProjectileParabolic(struct Sprite *);
 static void AnimSpriteProjectileParabolic_Step(struct Sprite *);
+static void AnimSpriteSpiralToMonPos(struct Sprite *);
 static void AnimSpriteStatic(struct Sprite *);
+static void AnimSpriteStaticMirrored(struct Sprite *);
 
 ///////////////////
 // GENERIC BEGIN //
@@ -58,6 +60,17 @@ static const union AffineAnimCmd sGeneric0EndsAffine[] =
 static const union AffineAnimCmd *const sAffineAnims_Generic0EndsAffine[] =
 {
     sGeneric0EndsAffine,
+};
+
+const struct SpriteTemplate gOrbSpiralInwardSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteSpiralToMonPos,
 };
 /////////////////
 // GENERIC END //
@@ -344,6 +357,79 @@ const struct SpriteTemplate gSludgeSplatSpriteTemplate =
 // GROUND END //
 ////////////////
 
+//////////////////
+// FLYING BEGIN //
+//////////////////
+
+////////////////
+// FLYING END //
+////////////////
+
+///////////////////
+// PSYCHIC BEGIN //
+///////////////////
+static const union AnimCmd sAnim_BarrierWall0[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_BarrierWall1[] =
+{
+    ANIMCMD_FRAME(0, 15, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+static const union AnimCmd *const sAnims_BarrierWall[] =
+{
+    sAnim_BarrierWall0,
+    sAnim_BarrierWall1,
+};
+
+const struct SpriteTemplate gBarrierWallSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_GRAY_LIGHT_WALL,
+    .paletteTag = ANIM_TAG_GRAY_LIGHT_WALL,
+    .oam = &gOamData_AffineOff_ObjNormal_64x64,
+    .anims = sAnims_BarrierWall,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteStaticMirrored,
+};
+/////////////////
+// PSYCHIC END //
+/////////////////
+
+///////////////
+// BUG BEGIN //
+///////////////
+
+/////////////
+// BUG END //
+/////////////
+
+////////////////
+// ROCK BEGIN //
+////////////////
+
+//////////////
+// ROCK END //
+//////////////
+
+/////////////////
+// GHOST BEGIN //
+/////////////////
+
+///////////////
+// GHOST END //
+///////////////
+
+//////////////////
+// DRAGON BEGIN //
+//////////////////
+
+////////////////
+// DRAGON END //
+////////////////
+
 //////////////////////////////////////////////////
 
 /////////////////////
@@ -459,6 +545,33 @@ static void AnimSpriteStatic(struct Sprite *sprite)
     StoreSpriteCallbackInData6(sprite, DestroyAnimSpriteAfterTimer);
 }
 
+static void AnimSpriteStaticMirrored(struct Sprite *sprite)
+{
+    if (gBattleAnimArgs[3] == ANIM_ATTACKER)
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    else
+        InitSpritePosToAnimTarget(sprite, TRUE);
+    
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+    {
+        sprite->x -= gBattleAnimArgs[0];
+        StartSpriteAnim(sprite, 1);
+    }
+    else
+    {
+        sprite->x += gBattleAnimArgs[0];
+        StartSpriteAnim(sprite, 0);
+    }
+
+
+    sprite->data[0] = gBattleAnimArgs[2]; // Duration
+    sprite->data[1] = sprite->x + gBattleAnimArgs[0]; // Starting X
+    sprite->data[3] = sprite->y + gBattleAnimArgs[1]; // Starting Y
+    
+    sprite->callback = RunStoredCallbackWhenAnimEnds;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+}
+
 static void AnimSpriteMoveToMonPos(struct Sprite* sprite)
 {
     if (gBattleAnimArgs[3] == ANIM_ATTACKER)
@@ -501,6 +614,27 @@ static void AnimSpriteProjectileParabolic_Step(struct Sprite* sprite)
 {
     if (TranslateAnimHorizontalArc(sprite))
         DestroyAnimSprite(sprite);
+}
+
+static void AnimSpriteSpiralToMonPos(struct Sprite *sprite)
+{
+    if (gBattleAnimArgs[7] == ANIM_ATTACKER)
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    else
+        InitSpritePosToAnimTarget(sprite, TRUE);
+
+    StartSpriteAnim(sprite, gBattleAnimArgs[8]); // Anim Number
+    
+    sprite->x += gBattleAnimArgs[0];
+    sprite->y += gBattleAnimArgs[1];
+    sprite->data[0] = gBattleAnimArgs[6]; // Not duration
+    sprite->data[1] = gBattleAnimArgs[2]; // Initial radius
+    sprite->data[2] = gBattleAnimArgs[3]; // How much to circle the target
+    sprite->data[3] = gBattleAnimArgs[4]; // Starting Offset X
+    sprite->data[4] = gBattleAnimArgs[5]; // Angle increment
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+    sprite->callback = TranslateSpriteInGrowingCircle;
+    sprite->callback(sprite);
 }
 ///////////////////
 // CALLBACKS END //

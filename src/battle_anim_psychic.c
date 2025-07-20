@@ -77,35 +77,6 @@ const struct SpriteTemplate gMirrorCoatWallSpriteTemplate =
     .callback = AnimDefensiveWall,
 };
 
-static const union AnimCmd sAnim_BarrierWall_0[] =
-{
-    ANIMCMD_FRAME(0, 15),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd sAnim_BarrierWall_1[] =
-{
-    ANIMCMD_FRAME(0, 15, .hFlip = TRUE),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd *const sAnims_BarrierWall[] =
-{
-    sAnim_BarrierWall_0,
-    sAnim_BarrierWall_1,
-};
-
-const struct SpriteTemplate gBarrierWallSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_GRAY_LIGHT_WALL,
-    .paletteTag = ANIM_TAG_GRAY_LIGHT_WALL,
-    .oam = &gOamData_AffineOff_ObjNormal_64x64,
-    .anims = sAnims_BarrierWall,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimDefensiveWall,
-};
-
 const struct SpriteTemplate gMagicCoatWallSpriteTemplate =
 {
     .tileTag = ANIM_TAG_ORANGE_LIGHT_WALL,
