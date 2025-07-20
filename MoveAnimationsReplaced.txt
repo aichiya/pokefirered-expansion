@@ -15,11 +15,11 @@ https://bulbapedia.bulbagarden.net/wiki/Category:Generation_I_moves
 ~Bind
 ~Bite
 ~Blizzard
-Body Slam
-Bone Club
-Bonemerang
-Bubble
-Bubblebeam
+~Body Slam
+~Bone Club
+~Bonemerang
+~Bubble
+~Bubblebeam
 
 -C-
 Clamp
