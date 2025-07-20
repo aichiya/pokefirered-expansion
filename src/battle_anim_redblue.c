@@ -18,6 +18,7 @@ static void AnimSpriteProjectileParabolic(struct Sprite *);
 static void AnimSpriteProjectileParabolic_Step(struct Sprite *);
 static void AnimSpriteSpiralToMonPos(struct Sprite *);
 static void AnimSpriteStatic(struct Sprite *);
+static void AnimSpriteStaticWithXYFlip(struct Sprite *);
 static void AnimSpriteStaticMirrored(struct Sprite *);
 static void AnimWaterBubbleProjectile(struct Sprite *);
 static void AnimWaterBubbleProjectile_Step1(struct Sprite *);
@@ -65,6 +66,17 @@ static const union AffineAnimCmd sGeneric0EndsAffine[] =
 static const union AffineAnimCmd *const sAffineAnims_Generic0EndsAffine[] =
 {
     sGeneric0EndsAffine,
+};
+
+const struct SpriteTemplate gHitSplatWithXYFlipSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_IMPACT,
+    .paletteTag = ANIM_TAG_IMPACT,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = sGeneric0Ends,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteStaticWithXYFlip,
 };
 
 const struct SpriteTemplate gOrbSpiralInwardSpriteTemplate =
@@ -602,6 +614,28 @@ static void AnimSpriteStatic(struct Sprite *sprite)
         InitSpritePosToAnimTarget(sprite, TRUE);
 
     sprite->data[0] = gBattleAnimArgs[3];
+    sprite->callback = RunStoredCallbackWhenAnimEnds;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSpriteAfterTimer);
+}
+
+static void AnimSpriteStaticWithXYFlip(struct Sprite *sprite)
+{
+    StartSpriteAnim(sprite, gBattleAnimArgs[4]);
+
+    SetSpriteCoordsToAnimAttackerCoords(sprite);
+
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        {
+            sprite->x -= gBattleAnimArgs[0];
+            sprite->y -= gBattleAnimArgs[1];
+        }
+    else
+        {
+            sprite->x += gBattleAnimArgs[0];
+            sprite->y += gBattleAnimArgs[1];
+        }
+
+    sprite->data[0] = gBattleAnimArgs[3]; // Duration
     sprite->callback = RunStoredCallbackWhenAnimEnds;
     StoreSpriteCallbackInData6(sprite, DestroyAnimSpriteAfterTimer);
 }

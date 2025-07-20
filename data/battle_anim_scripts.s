@@ -1967,25 +1967,25 @@ Move_CONFUSE_RAY:
 	setalpha 12, 8
 	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
 	playsewithpan SE_M_STRING_SHOT2, SOUND_PAN_TARGET
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 16, -16, ANIM_ATTACKER, 1
+	createsprite gHitSplatWithXYFlipSpriteTemplate, ANIM_ATTACKER, 2, 16, -16, ANIM_ATTACKER, 2, 0
 	delay 2
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 16, -16, ANIM_ATTACKER, 1
+	createsprite gHitSplatWithXYFlipSpriteTemplate, ANIM_ATTACKER, 2, 16, -16, ANIM_ATTACKER, 2, 0
 	delay 5
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 36, -24, ANIM_ATTACKER, 1
+	createsprite gHitSplatWithXYFlipSpriteTemplate, ANIM_ATTACKER, 2, 36, -24, ANIM_ATTACKER, 2, 0
 	delay 2
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 36, -24, ANIM_ATTACKER, 1
+	createsprite gHitSplatWithXYFlipSpriteTemplate, ANIM_ATTACKER, 2, 36, -24, ANIM_ATTACKER, 2, 0
 	delay 5
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 66, -40, ANIM_ATTACKER, 1
+	createsprite gHitSplatWithXYFlipSpriteTemplate, ANIM_ATTACKER, 2, 66, -40, ANIM_ATTACKER, 2, 0
 	delay 2
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 66, -40, ANIM_ATTACKER, 1
+	createsprite gHitSplatWithXYFlipSpriteTemplate, ANIM_ATTACKER, 2, 66, -40, ANIM_ATTACKER, 2, 0
 	delay 5
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 88, -56, ANIM_ATTACKER, 1
+	createsprite gHitSplatWithXYFlipSpriteTemplate, ANIM_ATTACKER, 2, 88, -56, ANIM_ATTACKER, 2, 0
 	delay 2
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 88, -56, ANIM_ATTACKER, 1
+	createsprite gHitSplatWithXYFlipSpriteTemplate, ANIM_ATTACKER, 2, 88, -56, ANIM_ATTACKER, 2, 0
 	delay 5
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 118, -64, ANIM_ATTACKER, 1
+	createsprite gHitSplatWithXYFlipSpriteTemplate, ANIM_ATTACKER, 2, 118, -64, ANIM_ATTACKER, 2, 0
 	delay 2
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 118, -64, ANIM_ATTACKER, 1
+	createsprite gHitSplatWithXYFlipSpriteTemplate, ANIM_ATTACKER, 2, 118, -64, ANIM_ATTACKER, 2, 0
 	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
 	delay 50
 	waitforvisualfinish
