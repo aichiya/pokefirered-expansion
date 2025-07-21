@@ -664,50 +664,6 @@ const struct SpriteTemplate gAbsorptionOrbProjectileSpriteTemplate =
     .callback = AnimAbsorptionOrbProjectile,
 };
 
-static const union AnimCmd sConversionSquareAnimCmd[] =
-{
-    ANIMCMD_FRAME(1, 6),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd *const sPowerConversionSquareCombine[] =
-{
-    sConversionSquareAnimCmd,
-};
-
-static const union AnimCmd sConversionSquareProjectileAnimCmd[] =
-{
-    ANIMCMD_FRAME(4, 6),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd *const sPowerConversionSquareProjectile[] =
-{
-    sConversionSquareProjectileAnimCmd,
-};
-
-const struct SpriteTemplate gConversionSquareCombineSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_ORBS,
-    .paletteTag = ANIM_TAG_ORBS,
-    .oam = &gOamData_AffineOff_ObjNormal_8x8,
-    .anims = sPowerConversionSquareCombine,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimAbsorptionOrbCombine,
-};
-
-const struct SpriteTemplate gConversionSquareProjectileSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_ORBS,
-    .paletteTag = ANIM_TAG_ORBS,
-    .oam = &gOamData_AffineOff_ObjNormal_16x16,
-    .anims = sPowerConversionSquareProjectile,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimAbsorptionOrbProjectile,
-};
-
 const struct SpriteTemplate gHyperBeamOrbSpriteTemplate =
 {
     .tileTag = ANIM_TAG_ORBS,

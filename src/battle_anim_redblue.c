@@ -13,9 +13,11 @@ static void AnimSlidingFlame_Step(struct Sprite *);
 static void AnimSpriteMoveLinear(struct Sprite *);
 static void AnimSpriteMoveLinear_Step(struct Sprite *);
 static void AnimSpriteMoveLinearWithXFlip(struct Sprite *);
+static void AnimSpriteMoveLinearWithXYFlip(struct Sprite *);
 static void AnimSpriteMoveToMonPos(struct Sprite *);
 static void AnimSpriteProjectileParabolic(struct Sprite *);
 static void AnimSpriteProjectileParabolic_Step(struct Sprite *);
+static void AnimSpriteProjectileParabolicReversed(struct Sprite *);
 static void AnimSpriteSpiralToMonPos(struct Sprite *);
 static void AnimSpriteStatic(struct Sprite *);
 static void AnimSpriteStaticWithXYFlip(struct Sprite *);
@@ -125,6 +127,36 @@ const struct SpriteTemplate gBindTendrilsSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSpriteOnMonPos,
+};
+
+static const union AnimCmd sAnim_SolidSquare[] =
+{
+    ANIMCMD_FRAME(4, 6),
+    ANIMCMD_END,
+};
+static const union AnimCmd *const sAnims_SolidSquare[] =
+{
+    sAnim_SolidSquare,
+};
+const struct SpriteTemplate gSolidSquareProjectileSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sAnims_SolidSquare,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteProjectileParabolicReversed,
+};
+const struct SpriteTemplate gSolidSquareCombineSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sAnims_SolidSquare,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteMoveLinearWithXYFlip,
 };
 
 static const union AnimCmd sAnim_Harden1[] =
@@ -604,6 +636,44 @@ static void AnimSpriteMoveLinearWithXFlip(struct Sprite *sprite)
     sprite->callback = AnimSpriteMoveLinear_Step;
 }
 
+static void AnimSpriteMoveLinearWithXYFlip(struct Sprite *sprite)
+{
+    s16 origOffsetY = gBattleAnimArgs[1];
+
+    StartSpriteAnim(sprite, gBattleAnimArgs[6]); // Anim Number
+
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        gBattleAnimArgs[1] = -gBattleAnimArgs[1];
+
+    if (gBattleAnimArgs[5] == ANIM_ATTACKER)
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    else
+        InitSpritePosToAnimTarget(sprite,  TRUE);
+
+    gBattleAnimArgs[1] = origOffsetY;
+
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+    {
+        gBattleAnimArgs[0] = -gBattleAnimArgs[0];
+        gBattleAnimArgs[1] = -gBattleAnimArgs[1];
+        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+        gBattleAnimArgs[3] = -gBattleAnimArgs[3];
+    }
+
+    sprite->data[0] =  gBattleAnimArgs[4];             // Duration
+    sprite->data[1] =  sprite->x + gBattleAnimArgs[0]; // Start X
+    sprite->data[2] =  sprite->x + gBattleAnimArgs[2]; // End X
+    sprite->data[3] =  sprite->y + gBattleAnimArgs[1]; // Start Y
+    sprite->data[4] =  sprite->y + gBattleAnimArgs[3]; // End Y
+
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = 0;
+    sprite->data[6] = 0;
+    sprite->data[7] = 0;
+    sprite->callback  = AnimSpriteMoveLinear_Step;
+}
+
+
 static void AnimSpriteStatic(struct Sprite *sprite)
 {
     StartSpriteAnim(sprite, gBattleAnimArgs[2]);
@@ -709,6 +779,36 @@ static void AnimSpriteProjectileParabolic_Step(struct Sprite* sprite)
 {
     if (TranslateAnimHorizontalArc(sprite))
         DestroyAnimSprite(sprite);
+}
+
+static void AnimSpriteProjectileParabolicReversed(struct Sprite* sprite)
+{
+    if (gBattleAnimArgs[6] == ANIM_ATTACKER)
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    else
+        InitSpritePosToAnimTarget(sprite, TRUE);
+
+    SetSpriteCoordsToAnimAttackerCoords(sprite);
+
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        {
+            sprite->x -= gBattleAnimArgs[0];
+            sprite->y -= gBattleAnimArgs[1];
+        }
+    else
+        {
+            sprite->x += gBattleAnimArgs[0];
+            sprite->y += gBattleAnimArgs[1];
+        }
+
+    StartSpriteAnim(sprite, gBattleAnimArgs[7]); // Anim Number
+
+    sprite->data[0] = gBattleAnimArgs[5]; // Duration
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + gBattleAnimArgs[2];
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + gBattleAnimArgs[3];
+    sprite->data[5] = gBattleAnimArgs[4]; // Height
+    InitAnimArcTranslation(sprite);
+    sprite->callback = AnimSpriteProjectileParabolic_Step;
 }
 
 static void AnimSpriteSpiralToMonPos(struct Sprite *sprite)

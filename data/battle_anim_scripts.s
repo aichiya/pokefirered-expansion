@@ -2229,27 +2229,27 @@ Move_SMOKESCREEN:
 
 Move_CONVERSION:
 	loadspritegfx ANIM_TAG_ORBS
-	monbg ANIM_DEF_PARTNER
-	splitbgprio_foes ANIM_TARGET
-	setalpha 12, 8
+	@monbg ANIM_DEF_PARTNER
+	@splitbgprio_foes ANIM_TARGET
+	@setalpha 12, 8
 	playsewithpan SE_M_SWIFT, SOUND_PAN_ATTACKER
-	call BlackFlashEffect
+	@call BlackFlashEffect
 	call ConversionEffect
 	waitforvisualfinish
-	call BlackFlashEffect
+	@call BlackFlashEffect
 	waitforvisualfinish
 	clearmonbg ANIM_DEF_PARTNER
 	blendoff
 	end
 
 ConversionEffect:
-	createsprite gConversionSquareCombineSpriteTemplate, ANIM_TARGET, 2, -24, -24, 24
-	createsprite gConversionSquareCombineSpriteTemplate, ANIM_TARGET, 2, 24, -24, 24
-	createsprite gConversionSquareCombineSpriteTemplate, ANIM_TARGET, 2, -24, 24, 24
-	createsprite gConversionSquareCombineSpriteTemplate, ANIM_TARGET, 2, 24, 24, 24
-	@delay 22
+	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2,  88, -72, 108, -52, 30, ANIM_TARGET, 0
+	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2, 136, -72, 116, -52, 30, ANIM_TARGET, 0
+	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2,  88, -24, 108, -44, 30, ANIM_TARGET, 0
+	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2, 136, -24, 116, -44, 30, ANIM_TARGET, 0
+	delay 28
 	playsewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER
-	@createsprite gConversionSquareProjectileSpriteTemplate, ANIM_TARGET, 2, 0, 5, 76, 76
+	createsprite gSolidSquareProjectileSpriteTemplate, ANIM_ATTACKER, 2, 112, -48, 0, 0, -30, 64, ANIM_ATTACKER, 0
 	return
 
 Move_CONVERSION_2:
@@ -7299,13 +7299,13 @@ Move_MIMIC:
 	end
 
 MimicEffect:
-	createsprite gConversionSquareCombineSpriteTemplate, ANIM_TARGET, 2, -24, -24, 24
-	createsprite gConversionSquareCombineSpriteTemplate, ANIM_TARGET, 2, 24, -24, 24
-	createsprite gConversionSquareCombineSpriteTemplate, ANIM_TARGET, 2, -24, 24, 24
-	createsprite gConversionSquareCombineSpriteTemplate, ANIM_TARGET, 2, 24, 24, 24
+	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2, -24, -24, 24, ANIM_TARGET
+	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2,  24, -24, 24, ANIM_TARGET
+	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2, -24,  24, 24, ANIM_TARGET
+	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2,  24,  24, 24, ANIM_TARGET
 	delay 22
 	playsewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER
-	createsprite gConversionSquareProjectileSpriteTemplate, ANIM_TARGET, 2, 0, 5, 76, 76
+	createsprite gSolidSquareProjectileSpriteTemplate, ANIM_TARGET, 2, 0, 5, 76, 76
 	return
 
 Move_CONSTRICT:
