@@ -58,8 +58,8 @@ Dig
 ~Flamethrower
 =Flash=
 ~Fly
-Focus Energy
-Fury Attack
+~Focus Energy
+~Fury Attack
 Fury Swipes
 
 -G-

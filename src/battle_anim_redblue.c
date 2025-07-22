@@ -13,6 +13,7 @@ static void AnimSlidingFlame_Step(struct Sprite *);
 static void AnimSpriteMoveLinear(struct Sprite *);
 static void AnimSpriteMoveLinear_Step(struct Sprite *);
 static void AnimSpriteMoveLinearWithXFlip(struct Sprite *);
+static void AnimSpriteMoveLinearWithXFlipMirrored(struct Sprite *);
 static void AnimSpriteMoveLinearWithXYFlip(struct Sprite *);
 static void AnimSpriteMoveToMonPos(struct Sprite *);
 static void AnimSpriteProjectileParabolic(struct Sprite *);
@@ -80,6 +81,32 @@ const struct SpriteTemplate gHitSplatWithXYFlipSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSpriteStaticWithXYFlip,
+};
+
+static const union AnimCmd sAnim_HornEndsNormal[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_HornEndsFlipped[] =
+{
+    ANIMCMD_FRAME(0, 1, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+static const union AnimCmd *const sHornEndsAnimTable[] =
+{
+    sAnim_HornEndsNormal,
+    sAnim_HornEndsFlipped,
+};
+const struct SpriteTemplate gHornHitSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_HORN_HIT,
+    .paletteTag = ANIM_TAG_HORN_HIT,
+    .oam = &gOamData_AffineOff_ObjNormal_16x8,
+    .anims = sHornEndsAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteMoveLinearWithXFlipMirrored,
 };
 
 const struct SpriteTemplate gOrbSpiralInwardSpriteTemplate =
@@ -761,6 +788,39 @@ static void AnimSpriteMoveLinearWithXFlip(struct Sprite *sprite)
             gBattleAnimArgs[0] = -gBattleAnimArgs[0];
             gBattleAnimArgs[2] = -gBattleAnimArgs[2];
         }
+
+    sprite->data[0] = gBattleAnimArgs[4]; // Duration
+    sprite->data[1] = sprite->x + gBattleAnimArgs[0]; // Starting X
+    sprite->data[2] = sprite->x + gBattleAnimArgs[2]; // Ending X
+    sprite->data[3] = sprite->y + gBattleAnimArgs[1]; // Starting Y
+    sprite->data[4] = sprite->y + gBattleAnimArgs[3]; // Ending Y
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = 0;
+    sprite->data[6] = 0;
+    sprite->data[7] = 0;
+    sprite->callback = AnimSpriteMoveLinear_Step;
+}
+
+static void AnimSpriteMoveLinearWithXFlipMirrored(struct Sprite *sprite)
+{
+    StartSpriteAnim(sprite, gBattleAnimArgs[6]); // Anim Number
+
+    if (gBattleAnimArgs[5] == ANIM_ATTACKER)
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    else
+        InitSpritePosToAnimTarget(sprite, TRUE);
+
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        {
+            gBattleAnimArgs[0] = -gBattleAnimArgs[0];
+            gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+            StartSpriteAnim(sprite, 1);
+        }
+    else
+        {
+            StartSpriteAnim(sprite, 0);
+        }
+
 
     sprite->data[0] = gBattleAnimArgs[4]; // Duration
     sprite->data[1] = sprite->x + gBattleAnimArgs[0]; // Starting X

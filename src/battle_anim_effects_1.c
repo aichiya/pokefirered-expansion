@@ -2075,17 +2075,6 @@ const struct SpriteTemplate gHealingBlueStarSpriteTemplate =
     .callback = AnimSpriteOnMonPos,
 };
 
-const struct SpriteTemplate gHornHitSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_HORN_HIT,
-    .paletteTag = ANIM_TAG_HORN_HIT,
-    .oam = &gOamData_AffineOff_ObjNormal_16x16,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimHornHit,
-};
-
 static const union AnimCmd sSuperFangAnimCmds[] =
 {
     ANIMCMD_FRAME(0, 2),
