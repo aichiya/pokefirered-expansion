@@ -129,6 +129,68 @@ const struct SpriteTemplate gBindTendrilsSpriteTemplate =
     .callback = AnimSpriteOnMonPos,
 };
 
+static const union AnimCmd sAnim_DefenseCurl1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_DefenseCurl2[] =
+{
+    ANIMCMD_FRAME(1, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_DefenseCurl3[] =
+{
+    ANIMCMD_FRAME(0, 1, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_DefenseCurl4[] =
+{
+    ANIMCMD_FRAME(4, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_DefenseCurl5[] =
+{
+    ANIMCMD_FRAME(4, 1, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_DefenseCurl6[] =
+{
+    ANIMCMD_FRAME(0, 1, .vFlip = TRUE),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_DefenseCurl7[] =
+{
+    ANIMCMD_FRAME(1, 1, .vFlip = TRUE),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_DefenseCurl8[] =
+{
+    ANIMCMD_FRAME(0, 1, .vFlip = TRUE, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+static const union AnimCmd *const sDefenseCurlAnimTable[] =
+{
+    sAnim_DefenseCurl1,
+    sAnim_DefenseCurl2,
+    sAnim_DefenseCurl3,
+    sAnim_DefenseCurl4,
+    sAnim_DefenseCurl5,
+    sAnim_DefenseCurl6,
+    sAnim_DefenseCurl7,
+    sAnim_DefenseCurl8,
+};
+const struct SpriteTemplate gDefenseCurlCombineSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_RED_BALL,
+    .paletteTag = ANIM_TAG_RED_BALL,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sDefenseCurlAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteMoveLinear,
+};
+
 static const union AnimCmd sAnim_SolidSquare[] =
 {
     ANIMCMD_FRAME(4, 6),
@@ -430,7 +492,16 @@ const struct SpriteTemplate gSludgeSplatSpriteTemplate =
 //////////////////
 // GROUND BEGIN //
 //////////////////
-
+const struct SpriteTemplate gWhiteMaskSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_X_SIGN,
+    .paletteTag = ANIM_TAG_X_SIGN,
+    .oam = &gOamData_AffineOff_ObjNormal_64x64,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteStatic,
+};
 ////////////////
 // GROUND END //
 ////////////////

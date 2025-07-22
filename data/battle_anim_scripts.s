@@ -1573,14 +1573,14 @@ Move_DEFENSE_CURL:
 
 DefenseCurlOrbEffect:
 	loopsewithpan SE_M_TRI_ATTACK, SOUND_PAN_ATTACKER, 18, 3
-	createsprite gDefenseCurlCombine1SpriteTemplate, ANIM_TARGET, 2, -32, -32, 24
-	createsprite gDefenseCurlCombine2SpriteTemplate, ANIM_TARGET, 2, 0, -32, 24
-	createsprite gDefenseCurlCombine3SpriteTemplate, ANIM_TARGET, 2, 32, -32, 24
-	createsprite gDefenseCurlCombine4SpriteTemplate, ANIM_TARGET, 2, -32, 0, 24
-	createsprite gDefenseCurlCombine5SpriteTemplate, ANIM_TARGET, 2, 32, 0, 24
-	createsprite gDefenseCurlCombine6SpriteTemplate, ANIM_TARGET, 2, -32, 32, 24
-	createsprite gDefenseCurlCombine7SpriteTemplate, ANIM_TARGET, 2, 0, 32, 24
-	createsprite gDefenseCurlCombine8SpriteTemplate, ANIM_TARGET, 2, 32, 32, 24
+	createsprite gDefenseCurlCombineSpriteTemplate, ANIM_ATTACKER, 2, -32, -32, -6, -6, 24, ANIM_ATTACKER, 0
+	createsprite gDefenseCurlCombineSpriteTemplate, ANIM_ATTACKER, 2,   0, -32,  0, -6, 24, ANIM_ATTACKER, 1
+	createsprite gDefenseCurlCombineSpriteTemplate, ANIM_ATTACKER, 2,  32, -32,  6, -6, 24, ANIM_ATTACKER, 2
+	createsprite gDefenseCurlCombineSpriteTemplate, ANIM_ATTACKER, 2, -32,   0, -6,  0, 24, ANIM_ATTACKER, 3
+	createsprite gDefenseCurlCombineSpriteTemplate, ANIM_ATTACKER, 2,  32,   0,  6,  0, 24, ANIM_ATTACKER, 4
+	createsprite gDefenseCurlCombineSpriteTemplate, ANIM_ATTACKER, 2, -32,  32, -6,  6, 24, ANIM_ATTACKER, 5
+	createsprite gDefenseCurlCombineSpriteTemplate, ANIM_ATTACKER, 2,   0,  32,  0,  6, 24, ANIM_ATTACKER, 6
+	createsprite gDefenseCurlCombineSpriteTemplate, ANIM_ATTACKER, 2,  32,  32,  6,  6, 24, ANIM_ATTACKER, 7
 	return
 
 Move_PROTECT:
@@ -2483,7 +2483,8 @@ DigEnd:
 	end
 
 DigSetUp:
-	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 0, 20
+	@createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 0, 20
+	invisible ANIM_ATTACKER
 	waitforvisualfinish
 	goto DigEnd
 
@@ -2492,14 +2493,15 @@ DigUnleash:
 	monbg ANIM_TARGET
 	setalpha 12, 8
 	loopsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER, 9, 2
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 8, ANIM_TARGET, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, -8, 8, ANIM_TARGET, 2
 	delay 8
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 0, 0, ANIM_TARGET, 2
 	delay 8
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 8, -8, ANIM_TARGET, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 8, -8, ANIM_TARGET, 2
 	delay 8
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
-	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0, 0, 20
+	visible ANIM_ATTACKER
+	@createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 2
 	waitforvisualfinish
 	clearmonbg ANIM_TARGET
 	goto DigEnd

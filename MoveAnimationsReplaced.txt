@@ -28,12 +28,12 @@ https://bulbapedia.bulbagarden.net/wiki/Category:Generation_I_moves
 ~Confusion
 ~Constrict
 ~Conversion
-Counter
-Crabhammer
-Cut
+~Counter
+~Crabhammer
+~Cut
 
 -D-
-Defense Curl
+~Defense Curl
 Dig
 Disable
 Dizzy Punch
