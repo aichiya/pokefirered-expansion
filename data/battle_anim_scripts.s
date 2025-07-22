@@ -6734,13 +6734,13 @@ Move_FIRE_PUNCH:
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 8, ANIM_TARGET, 2
 	delay 16
 	loopsewithpan SE_M_EMBER, SOUND_PAN_ATTACKER, 5, 2
-	createsprite gLargeEmberSpriteTemplate, ANIM_TARGET, 3, -16, 16, ANIM_TARGET, 1, 30
+	createsprite gLargeEmberSpriteTemplate, ANIM_TARGET, 2, -16, 16, 0, 30, ANIM_TARGET, 0
 	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_TARGET
 	delay 30
-	createsprite gLargeEmberSpriteTemplate, ANIM_TARGET, 3, 16, 16, ANIM_TARGET, 1, 30
+	createsprite gLargeEmberSpriteTemplate, ANIM_TARGET, 2, 16, 16, 0, 30, ANIM_TARGET, 0
 	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_TARGET
 	delay 30
-	createsprite gLargeEmberSpriteTemplate, ANIM_TARGET, 3, 0, 16, ANIM_TARGET, 1, 30
+	createsprite gLargeEmberSpriteTemplate, ANIM_TARGET, 2, 0, 16, 0, 30, ANIM_TARGET, 0
 	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_TARGET
 	waitforvisualfinish
 	end

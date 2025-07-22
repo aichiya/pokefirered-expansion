@@ -53,7 +53,7 @@ Dig
 
 -F-
 ~Fire Blast
-Fire Punch
+~Fire Punch
 Fire spin
 Flamethrower
 =Flash=
