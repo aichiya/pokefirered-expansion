@@ -35,14 +35,14 @@ https://bulbapedia.bulbagarden.net/wiki/Category:Generation_I_moves
 -D-
 ~Defense Curl
 Dig
-Disable
-Dizzy Punch
-Double Kick
-Double Slap
-Double Team
-Double-Edge
-Dragon Rage
-Dream Eater
+~Disable
+~Dizzy Punch
+~Double Kick
+~Double Slap
+~Double Team
+~Double-Edge
+~Dragon Rage
+~Dream Eater
 Drill Peck
 
 -E-

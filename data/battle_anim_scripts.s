@@ -6897,8 +6897,6 @@ PsybeamRings:
 	return
 
 Move_HYPNOSIS:
-	monbg ANIM_ATTACKER
-	setalpha 12, 8
 	playsewithpan SE_M_SUPERSONIC, SOUND_PAN_ATTACKER
 	call BlackFlashEffect
 	delay 8
@@ -6907,8 +6905,6 @@ Move_HYPNOSIS:
 	delay 8
 	playsewithpan SE_M_SUPERSONIC, SOUND_PAN_ATTACKER
 	call BlackFlashEffect
-	delay 8
-	clearmonbg ANIM_TARGET
 	waitforvisualfinish
 	end
 
