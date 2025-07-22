@@ -60,14 +60,14 @@ Dig
 ~Fly
 ~Focus Energy
 ~Fury Attack
-Fury Swipes
+~Fury Swipes
 
 -G-
-Glare
-Growl
-Growth
-Guillotine
-Gust
+~Glare
+~Growl
+~Growth
+~Guillotine
+~Gust
 
 -H-
 Harden
