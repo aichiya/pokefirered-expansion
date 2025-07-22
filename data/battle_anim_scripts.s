@@ -798,13 +798,13 @@ Move_LEECH_SEED:
 Move_EMBER:
 	loadspritegfx ANIM_TAG_FIRE
 	loopsewithpan SE_M_EMBER, SOUND_PAN_ATTACKER, 5, 2
-	createsprite gLargeEmberSpriteTemplate, ANIM_TARGET, 3, -16, 16, ANIM_TARGET, 1, 30
+	createsprite gLargeEmberSpriteTemplate, ANIM_TARGET, 2, -16, 16, 0, 30, ANIM_TARGET, 0
 	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_TARGET
 	delay 30
-	createsprite gLargeEmberSpriteTemplate, ANIM_TARGET, 3, 16, 16, ANIM_TARGET, 1, 30
+	createsprite gLargeEmberSpriteTemplate, ANIM_TARGET, 2, 16, 16, 0, 30, ANIM_TARGET, 0
 	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_TARGET
 	delay 30
-	createsprite gLargeEmberSpriteTemplate, ANIM_TARGET, 3, 0, 16, ANIM_TARGET, 1, 30
+	createsprite gLargeEmberSpriteTemplate, ANIM_TARGET, 2, 0, 16, 0, 30, ANIM_TARGET, 0
 	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_TARGET
 	waitforvisualfinish
 	end
@@ -7062,7 +7062,7 @@ Move_EGG_BOMB:
 	loadspritegfx ANIM_TAG_BLACK_BALL_2
 	loadspritegfx ANIM_TAG_EXPLOSION
 	playsewithpan SE_M_TAIL_WHIP, SOUND_PAN_ATTACKER
-	createsprite gBarrageBallSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 0, 35, -25
+	createsprite gBarrageBallSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 0, -25, 25, ANIM_ATTACKER, 0
 	waitforvisualfinish
 	delay 10
 	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET

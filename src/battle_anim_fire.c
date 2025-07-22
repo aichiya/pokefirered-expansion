@@ -11,7 +11,6 @@ static void AnimFireSpiralInward(struct Sprite *sprite);
 static void AnimFireSpread(struct Sprite *sprite);
 static void AnimLargeFlame(struct Sprite *sprite);
 static void AnimFirePlume(struct Sprite *sprite);
-static void AnimEmber(struct Sprite *sprite);
 static void AnimSmallEmber(struct Sprite *sprite);
 static void AnimLargeEmber(struct Sprite *sprite);
 static void AnimSunlight(struct Sprite *sprite);
@@ -172,53 +171,6 @@ static const struct SpriteTemplate sUnusedEmberFirePlumeSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimFirePlume,
-};
-
-static const union AnimCmd sAnim_SmallEmber[] =
-{
-    ANIMCMD_FRAME(0, 6),
-    ANIMCMD_FRAME(2, 6),
-    ANIMCMD_FRAME(3, 6),
-    ANIMCMD_JUMP(0),
-};
-
-static const union AnimCmd *const sAnims_SmallEmber[] =
-{
-    sAnim_SmallEmber,
-};
-
-const struct SpriteTemplate gSmallEmberSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_FIRE,
-    .paletteTag = ANIM_TAG_FIRE,
-    .oam = &gOamData_AffineNormal_ObjNormal_8x8,
-    .anims = sAnims_SmallEmber,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimEmber,
-};
-
-static const union AnimCmd sAnim_LargeEmber[] =
-{
-    ANIMCMD_FRAME(8, 6),
-    ANIMCMD_FRAME(12, 6),
-    ANIMCMD_JUMP(0),
-};
-
-static const union AnimCmd *const sAnims_LargeEmber[] =
-{
-    sAnim_LargeEmber,
-};
-
-const struct SpriteTemplate gLargeEmberSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_FIRE,
-    .paletteTag = ANIM_TAG_FIRE,
-    .oam = &gOamData_AffineNormal_ObjNormal_16x16,
-    .anims = sAnims_LargeEmber,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimEmber,
 };
 
 static const union AffineAnimCmd sAffineAnim_SunlightRay[] =
@@ -558,16 +510,6 @@ static void AnimLargeFlame_Step(struct Sprite *sprite)
     }
     if (sprite->data[0] == sprite->data[1])
         DestroySpriteAndMatrix(sprite);
-}
-
-static void AnimEmber(struct Sprite *sprite)
-{
-    if (gBattleAnimArgs[2] == 0)
-        InitSpritePosToAnimAttacker(sprite, TRUE);
-    else
-        InitSpritePosToAnimTarget(sprite, TRUE);
-    sprite->data[0] = gBattleAnimArgs[4];
-    sprite->callback = DestroyAnimSpriteAfterTimer;
 }
 
 // Sunlight from Sunny Day / sunny weather

@@ -319,6 +319,49 @@ const struct SpriteTemplate gSlidingFlameSpriteTemplate =
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSlidingFlame,
 };
+
+static const union AnimCmd sAnim_LargeEmber[] =
+{
+    ANIMCMD_FRAME(8, 6),
+    ANIMCMD_FRAME(12, 6),
+    ANIMCMD_JUMP(0),
+};
+static const union AnimCmd *const sAnims_LargeEmber[] =
+{
+    sAnim_LargeEmber,
+};
+const struct SpriteTemplate gLargeEmberSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FIRE,
+    .paletteTag = ANIM_TAG_FIRE,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sAnims_LargeEmber,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteStatic,
+};
+
+static const union AnimCmd sAnim_SmallEmber[] =
+{
+    ANIMCMD_FRAME(0, 6),
+    ANIMCMD_FRAME(2, 6),
+    ANIMCMD_FRAME(3, 6),
+    ANIMCMD_JUMP(0),
+};
+static const union AnimCmd *const sAnims_SmallEmber[] =
+{
+    sAnim_SmallEmber,
+};
+const struct SpriteTemplate gSmallEmberSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FIRE,
+    .paletteTag = ANIM_TAG_FIRE,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sAnims_SmallEmber,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteStatic,
+};
 //////////////
 // FIRE END //
 //////////////
@@ -756,8 +799,7 @@ static void AnimSpriteStatic(struct Sprite *sprite)
         InitSpritePosToAnimTarget(sprite, TRUE);
 
     sprite->data[0] = gBattleAnimArgs[3];
-    sprite->callback = RunStoredCallbackWhenAnimEnds;
-    StoreSpriteCallbackInData6(sprite, DestroyAnimSpriteAfterTimer);
+    sprite->callback = DestroyAnimSpriteAfterTimer;
 }
 
 static void AnimSpriteStaticWithXYFlip(struct Sprite *sprite)

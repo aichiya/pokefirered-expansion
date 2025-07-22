@@ -43,12 +43,12 @@ Dig
 ~Double-Edge
 ~Dragon Rage
 ~Dream Eater
-Drill Peck
+~Drill Peck
 
 -E-
-Earthquake
-Egg Bomb
-Ember
+~Earthquake
+~Egg Bomb
+~Ember
 Explosion
 
 -F-
