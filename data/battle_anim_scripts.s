@@ -709,6 +709,8 @@ Move_DOUBLE_EDGE:
 	createsprite gOrbCombineSpriteTemplate, ANIM_ATTACKER, 2, -24,  24, 24, ANIM_ATTACKER
 	createsprite gOrbCombineSpriteTemplate, ANIM_ATTACKER, 2,  24,  24, 24, ANIM_ATTACKER
 	waitforvisualfinish
+	createsprite gLargeOrbStaticSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0, 10, ANIM_ATTACKER, 0
+	waitforvisualfinish
 	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 16, 0, 0, 2
 	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 0, 4, RGB(31, 31, 31)
 	delay 2

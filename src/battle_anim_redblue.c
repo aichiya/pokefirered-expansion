@@ -371,24 +371,34 @@ const struct SpriteTemplate gOrbCombineSpriteTemplate =
     .callback = AnimSpriteMoveToMonPos,
 };
 
-static const union AnimCmd sAnim_OrbProjectile[] =
+static const union AnimCmd sAnim_LargeOrb[] =
 {
     ANIMCMD_FRAME(8, 1),
     ANIMCMD_END,
 };
-static const union AnimCmd *const sOrbProjectile[] =
+static const union AnimCmd *const sLargeOrb[] =
 {
-    sAnim_OrbProjectile,
+    sAnim_LargeOrb,
 };
 const struct SpriteTemplate gOrbProjectileSpriteTemplate =
 {
     .tileTag = ANIM_TAG_ORBS,
     .paletteTag = ANIM_TAG_ORBS,
     .oam = &gOamData_AffineOff_ObjNormal_16x16,
-    .anims = sOrbProjectile,
+    .anims = sLargeOrb,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSpriteProjectileParabolic,
+};
+const struct SpriteTemplate gLargeOrbStaticSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sLargeOrb,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteStatic,
 };
 ///////////////
 // GRASS END //
@@ -492,16 +502,7 @@ const struct SpriteTemplate gSludgeSplatSpriteTemplate =
 //////////////////
 // GROUND BEGIN //
 //////////////////
-const struct SpriteTemplate gWhiteMaskSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_X_SIGN,
-    .paletteTag = ANIM_TAG_X_SIGN,
-    .oam = &gOamData_AffineOff_ObjNormal_64x64,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimSpriteStatic,
-};
+
 ////////////////
 // GROUND END //
 ////////////////
