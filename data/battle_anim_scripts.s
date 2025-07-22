@@ -2566,11 +2566,11 @@ Move_TELEPORT:
 	createvisualtask AnimTask_TeleportFlySquish, 2, 0
 	waitforvisualfinish
 	invisible ANIM_ATTACKER
-	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4, -16, ANIM_ATTACKER, -64, 16, 0, 0
-	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4,  -8, ANIM_ATTACKER, -64, 16, 0, 0
-	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4,   0, ANIM_ATTACKER, -64, 16, 0, 0
-	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4,   8, ANIM_ATTACKER, -64, 16, 0, 0
-	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4,  16, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gOrbRisingSpriteTemplate, ANIM_ATTACKER, 2, -4, -16, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gOrbRisingSpriteTemplate, ANIM_ATTACKER, 2, -4,  -8, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gOrbRisingSpriteTemplate, ANIM_ATTACKER, 2, -4,   0, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gOrbRisingSpriteTemplate, ANIM_ATTACKER, 2, -4,   8, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gOrbRisingSpriteTemplate, ANIM_ATTACKER, 2, -4,  16, ANIM_ATTACKER, -64, 16, 0, 0
 	waitforvisualfinish
 	delay 20
 	end
@@ -2786,11 +2786,11 @@ SkyAttackUnleash:
 	waitforvisualfinish
 	invisible ANIM_ATTACKER
 	playsewithpan SE_M_FLY, SOUND_PAN_ATTACKER
-	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4, -16, ANIM_ATTACKER, -64, 16, 0, 0
-	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4,  -8, ANIM_ATTACKER, -64, 16, 0, 0
-	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4,   0, ANIM_ATTACKER, -64, 16, 0, 0
-	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4,   8, ANIM_ATTACKER, -64, 16, 0, 0
-	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4,  16, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gOrbRisingSpriteTemplate, ANIM_ATTACKER, 2, -4, -16, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gOrbRisingSpriteTemplate, ANIM_ATTACKER, 2, -4,  -8, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gOrbRisingSpriteTemplate, ANIM_ATTACKER, 2, -4,   0, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gOrbRisingSpriteTemplate, ANIM_ATTACKER, 2, -4,   8, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gOrbRisingSpriteTemplate, ANIM_ATTACKER, 2, -4,  16, ANIM_ATTACKER, -64, 16, 0, 0
 	waitforvisualfinish
 	delay 20
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 8, ANIM_TARGET, 2
@@ -6165,11 +6165,11 @@ FlySetUp:
 	createvisualtask AnimTask_TeleportFlySquish, 2, 0
 	waitforvisualfinish
 	invisible ANIM_ATTACKER
-	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4, -16, ANIM_ATTACKER, -64, 16, 0, 0
-	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4,  -8, ANIM_ATTACKER, -64, 16, 0, 0
-	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4,   0, ANIM_ATTACKER, -64, 16, 0, 0
-	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4,   8, ANIM_ATTACKER, -64, 16, 0, 0
-	createsprite gFlyTeleportRisingOrbSpriteTemplate, ANIM_ATTACKER, 2, -4,  16, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gOrbRisingSpriteTemplate, ANIM_ATTACKER, 2, -4, -16, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gOrbRisingSpriteTemplate, ANIM_ATTACKER, 2, -4,  -8, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gOrbRisingSpriteTemplate, ANIM_ATTACKER, 2, -4,   0, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gOrbRisingSpriteTemplate, ANIM_ATTACKER, 2, -4,   8, ANIM_ATTACKER, -64, 16, 0, 0
+	createsprite gOrbRisingSpriteTemplate, ANIM_ATTACKER, 2, -4,  16, ANIM_ATTACKER, -64, 16, 0, 0
 	waitforvisualfinish
 	delay 20
 	goto FlyEnd

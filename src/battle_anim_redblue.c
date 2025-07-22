@@ -18,6 +18,7 @@ static void AnimSpriteMoveToMonPos(struct Sprite *);
 static void AnimSpriteProjectileParabolic(struct Sprite *);
 static void AnimSpriteProjectileParabolic_Step(struct Sprite *);
 static void AnimSpriteProjectileParabolicReversed(struct Sprite *);
+static void AnimSpriteRises(struct Sprite *);
 static void AnimSpriteSpiralToMonPos(struct Sprite *);
 static void AnimSpriteStatic(struct Sprite *);
 static void AnimSpriteStaticWithXYFlip(struct Sprite *);
@@ -90,6 +91,17 @@ const struct SpriteTemplate gOrbSpiralInwardSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSpriteSpiralToMonPos,
+};
+
+const struct SpriteTemplate gOrbRisingSpriteTemplate =    
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteRises,
 };
 /////////////////
 // GENERIC END //
@@ -492,6 +504,17 @@ const struct SpriteTemplate gBlizzardIceLandedSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSpriteStatic,
+};
+
+const struct SpriteTemplate gIceCrystalSpriteTemplate =    
+{
+    .tileTag = ANIM_TAG_ICE_CRYSTALS,
+    .paletteTag = ANIM_TAG_ICE_CRYSTALS,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteRises,
 };
 /////////////
 // ICE END //
@@ -923,6 +946,24 @@ static void AnimSpriteProjectileParabolicReversed(struct Sprite* sprite)
     sprite->data[5] = gBattleAnimArgs[4]; // Height
     InitAnimArcTranslation(sprite);
     sprite->callback = AnimSpriteProjectileParabolic_Step;
+}
+
+static void AnimSpriteRises(struct Sprite *sprite)
+{
+    bool8 r4;
+    u8 battlerId, coordType;
+
+    if (gBattleAnimArgs[2] != ANIM_ATTACKER)
+        InitSpritePosToAnimTarget(sprite, TRUE);
+    else
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+    sprite->data[0] = gBattleAnimArgs[4];
+    sprite->data[2] = sprite->x;
+    sprite->data[4] = sprite->y - 32;
+    sprite->callback = StartAnimLinearTranslation;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
 }
 
 static void AnimSpriteSpiralToMonPos(struct Sprite *sprite)
