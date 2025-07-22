@@ -49,10 +49,10 @@ Dig
 ~Earthquake
 ~Egg Bomb
 ~Ember
-Explosion
+~Explosion
 
 -F-
-Fire Blast
+~Fire Blast
 Fire Punch
 Fire spin
 Flamethrower

@@ -767,17 +767,17 @@ FireBlastRing:
 
 FireBlastCross:
 	createsoundtask SoundTask_FireBlast, SE_M_FLAME_WHEEL, SE_M_FLAME_WHEEL2
-	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, 0, -8, ANIM_TARGET, 1, 16
-	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, -8, -8, ANIM_TARGET, 1, 16
-	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, -16, -8, ANIM_TARGET, 1, 16
-	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, 8, -8, ANIM_TARGET, 1, 16
-	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, 16, -8, ANIM_TARGET, 1, 16
-	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, 0, 0, ANIM_TARGET, 1, 16
-	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, 0, -16, ANIM_TARGET, 1, 16
-	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, -8, 8, ANIM_TARGET, 1, 16
-	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, -16, 16, ANIM_TARGET, 1, 16
-	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, 8, 8, ANIM_TARGET, 1, 16
-	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, 16, 16, ANIM_TARGET, 1, 16
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3,   0,  -8, 0, 16, ANIM_TARGET, 0
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3,  -8,  -8, 0, 16, ANIM_TARGET, 0
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, -16,  -8, 0, 16, ANIM_TARGET, 0
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3,   8,  -8, 0, 16, ANIM_TARGET, 0
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3,  16,  -8, 0, 16, ANIM_TARGET, 0
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3,   0,   0, 0, 16, ANIM_TARGET, 0
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3,   0, -16, 0, 16, ANIM_TARGET, 0
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3,  -8,   8, 0, 16, ANIM_TARGET, 0
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, -16,  16, 0, 16, ANIM_TARGET, 0
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3,   8,   8, 0, 16, ANIM_TARGET, 0
+	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3,  16,  16, 0, 16, ANIM_TARGET, 0
 	return
 
 Move_LEECH_SEED:
