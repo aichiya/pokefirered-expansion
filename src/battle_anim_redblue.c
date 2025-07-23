@@ -251,6 +251,16 @@ const struct SpriteTemplate gSolidSquareProjectileSpriteTemplate =
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSpriteProjectileParabolicReversed1,
 };
+const struct SpriteTemplate gSolidSquareProjectileReversedSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sAnims_SolidSquare,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteProjectileParabolicReversed2,
+};
 const struct SpriteTemplate gSolidSquareCombineSpriteTemplate =
 {
     .tileTag = ANIM_TAG_ORBS,

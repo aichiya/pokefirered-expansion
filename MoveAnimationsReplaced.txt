@@ -94,20 +94,20 @@ Harden
 
 -L-
 ~Leech Life
-Leech Seed
-Leer
-Lick
-Light Screen
-Lovely Kiss
-Low Kick
+~Leech Seed
+~Leer
+~Lick
+~Light Screen
+~Lovely Kiss
+~Low Kick
 
 -M-
 Meditate
-Mega Drain
-Mega Kick
-Mega Punch
-Metronome
-Mimic
+~Mega Drain
+~Mega Kick
+~Mega Punch
+~Metronome
+~Mimic
 Minimize
 -Mirror Move-
 Mist

@@ -7300,13 +7300,13 @@ Move_MIMIC:
 	end
 
 MimicEffect:
-	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2, -24, -24, 24, ANIM_TARGET
-	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2,  24, -24, 24, ANIM_TARGET
-	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2, -24,  24, 24, ANIM_TARGET
-	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2,  24,  24, 24, ANIM_TARGET
+	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2, -24, -24, -4, -4, 24, ANIM_TARGET, 0
+	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2,  24, -24,  4, -4, 24, ANIM_TARGET, 0
+	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2, -24,  24, -4,  4, 24, ANIM_TARGET, 0
+	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2,  24,  24,  4,  4, 24, ANIM_TARGET, 0
 	delay 22
 	playsewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER
-	createsprite gSolidSquareProjectileSpriteTemplate, ANIM_TARGET, 2, 0, 5, 76, 76
+	createsprite gSolidSquareProjectileReversedSpriteTemplate, ANIM_ATTACKER, 2, 112, -48, -108, 44, -30, 64, ANIM_ATTACKER, 0
 	return
 
 Move_CONSTRICT:
