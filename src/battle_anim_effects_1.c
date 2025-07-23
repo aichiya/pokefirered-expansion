@@ -23,8 +23,6 @@ static void AnimSolarBeamSmallOrb(struct Sprite *);
 static void AnimSolarBeamSmallOrb_Step(struct Sprite *);
 static void AnimSolarBeamBigOrb(struct Sprite *);
 static void AnimPowerAbsorptionOrb(struct Sprite *);
-static void AnimAbsorptionOrbCombine(struct Sprite *);
-static void AnimAbsorptionOrbCombine_Step(struct Sprite *);
 static void AnimAbsorptionOrbProjectile(struct Sprite *);
 static void AnimAbsorptionOrbProjectile_Step(struct Sprite *);
 static void AnimPowerConversionSquare(struct Sprite *);
@@ -380,28 +378,6 @@ const struct SpriteTemplate gStockpileAbsorptionOrbSpriteTemplate =
     .images = NULL,
     .affineAnims = sStockpileAbsorptionOrbAffineAnimTable,
     .callback = AnimPowerAbsorptionOrb,
-};
-
-static const union AffineAnimCmd sAbsorptionOrbAffineAnimCmds[] =
-{
-    AFFINEANIMCMD_FRAME(0, 0, 0, 1),
-    AFFINEANIMCMD_JUMP(0),
-};
-
-static const union AffineAnimCmd *const sAffineAnims_AbsorptionOrbProjectile[] =
-{
-    sAbsorptionOrbAffineAnimCmds,
-};
-
-const struct SpriteTemplate gAbsorptionOrbCombineSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_ORBS,
-    .paletteTag = ANIM_TAG_ORBS,
-    .oam = &gOamData_AffineOff_ObjNormal_8x8,
-    .anims = sPowerAbsorptionOrbCombine,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimAbsorptionOrbCombine,
 };
 
 static const union AnimCmd sCoinAnimCmds[] =
@@ -2583,24 +2559,6 @@ static void AnimPokeBallPuff_Step(struct Sprite *sprite)
     sprite->data[2] -= sprite->data[6];
     if (!sprite->data[0])
         DestroyAnimSprite(sprite);
-}
-
-static void AnimAbsorptionOrbCombine(struct Sprite* sprite)
-{
-    if (gBattleAnimArgs[3] == ANIM_ATTACKER)
-        InitSpritePosToAnimAttacker(sprite, TRUE);
-    else
-        InitSpritePosToAnimTarget(sprite, TRUE);
-
-    sprite->data[0] = gBattleAnimArgs[2];
-    sprite->data[2] = GetBattlerSpriteCoord(
-        (gBattleAnimArgs[3] == ANIM_ATTACKER) ? gBattleAnimAttacker : gBattleAnimTarget, 
-        BATTLER_COORD_X_2);
-    sprite->data[4] = GetBattlerSpriteCoord(
-        (gBattleAnimArgs[3] == ANIM_ATTACKER) ? gBattleAnimAttacker : gBattleAnimTarget, 
-        BATTLER_COORD_Y_PIC_OFFSET);
-    sprite->callback = StartAnimLinearTranslation;
-    StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
 }
 
 static void AnimAbsorptionOrbProjectile(struct Sprite* sprite)

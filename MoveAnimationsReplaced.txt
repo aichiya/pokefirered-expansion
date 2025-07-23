@@ -70,7 +70,7 @@ Dig
 ~Gust
 
 -H-
-Harden
+~Harden
 Haze
 Headbutt
 Hi-Jump Kick
