@@ -7,9 +7,6 @@
 #include "util.h"
 #include "constants/songs.h"
 
-static void AnimFlamethrower(struct Sprite *);
-static void AnimSlidingFlame(struct Sprite *);
-static void AnimSlidingFlame_Step(struct Sprite *);
 static void AnimSpriteMoveLinear(struct Sprite *);
 static void AnimSpriteMoveLinear_Step(struct Sprite *);
 static void AnimSpriteMoveLinearWithXFlip(struct Sprite *);
@@ -25,11 +22,18 @@ static void AnimSpriteSpiralToMonPos(struct Sprite *);
 static void AnimSpriteStatic(struct Sprite *);
 static void AnimSpriteStaticWithXYFlip(struct Sprite *);
 static void AnimSpriteStaticMirrored(struct Sprite *);
+
+// Probably temporary... probably... //
+static void AnimFlamethrower(struct Sprite *);
+static void AnimSlidingFlame(struct Sprite *);
+static void AnimSlidingFlame_Step(struct Sprite *);
 static void AnimWaterBubbleProjectile(struct Sprite *);
 static void AnimWaterBubbleProjectile_Step1(struct Sprite *);
 static void AnimWaterBubbleProjectile_Step2(struct Sprite *);
 static void AnimWaterBubbleProjectile_Step3(struct Sprite *);
 static void AnimGustTornado(struct Sprite *sprite);
+static void AnimToTargetInSinWaveMirrored(struct Sprite *sprite);
+static void AnimToTargetInSinWave3_Step(struct Sprite *sprite);
 
 ///////////////////
 // GENERIC BEGIN //
@@ -131,6 +135,35 @@ const struct SpriteTemplate gOrbRisingSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSpriteRises,
+};
+
+static const union AnimCmd sAnim_sSupersonic[] =
+{
+    ANIMCMD_FRAME(4, 4),
+    ANIMCMD_FRAME(4, 4, .vFlip = TRUE),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_sSupersonicFlipped[] =
+{
+    ANIMCMD_FRAME(4, 4, .hFlip = TRUE),
+    ANIMCMD_FRAME(4, 4, .hFlip = TRUE, .vFlip = TRUE),
+    ANIMCMD_END,
+};
+static const union AnimCmd *const sSupersonicAnimTable[] =
+{
+    sAnim_sSupersonic,
+    sAnim_sSupersonicFlipped,
+};
+
+const struct SpriteTemplate gSupersonicSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_MUSIC_NOTES,
+    .paletteTag = ANIM_TAG_MUSIC_NOTES,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sSupersonicAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimToTargetInSinWaveMirrored,
 };
 /////////////////
 // GENERIC END //
@@ -1216,6 +1249,58 @@ static void AnimGustTornado(struct Sprite *sprite)
     sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, coordType) + gBattleAnimArgs[3];
     sprite->callback = StartAnimLinearTranslation;
     StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+}
+
+static void AnimToTargetInSinWaveMirrored(struct Sprite *sprite)
+{
+    u16 retArg;
+
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        {
+            StartSpriteAnim(sprite, 1);
+        }
+    else
+        {
+            StartSpriteAnim(sprite, 0);
+        }
+
+    InitSpritePosToAnimAttacker(sprite, TRUE);
+    sprite->data[0] = 30;
+    sprite->data[1] = sprite->x;
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
+    sprite->data[3] = sprite->y;
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET);
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = (0xD200 / sprite->data[0]) * 2;
+    sprite->data[7] = gBattleAnimArgs[3] / 4;
+    retArg = gBattleAnimArgs[7];
+    if (gBattleAnimArgs[7] > 127)
+    {
+        sprite->data[6] = (retArg - 127) * 256;
+        sprite->data[7] = -sprite->data[7];
+    }
+    else
+    {
+        sprite->data[6] = retArg * 256;
+    }
+    sprite->callback = AnimToTargetInSinWave3_Step;
+    sprite->callback(sprite);
+}
+
+static void AnimToTargetInSinWave3_Step(struct Sprite *sprite)
+{
+    if (AnimTranslateLinear(sprite))
+        DestroyAnimSprite(sprite);
+    sprite->y2 += Sin(sprite->data[6] >> 8, sprite->data[7]);
+    if ((sprite->data[6] + sprite->data[5]) >> 8 > 127)
+    {
+        sprite->data[6] = 0;
+        sprite->data[7] = -sprite->data[7];
+    }
+    else
+    {
+        sprite->data[6] += sprite->data[5];
+    }
 }
 ///////////////////
 // CALLBACKS END //

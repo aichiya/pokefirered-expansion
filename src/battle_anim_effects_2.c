@@ -1233,29 +1233,6 @@ const struct SpriteTemplate gMusicNote2SpriteTemplate =
     .callback = AnimMusicNoteAppear,
 };
 
-static const union AnimCmd sSupersonicAnimCmds[] =
-{
-    ANIMCMD_FRAME(4, 4),
-    ANIMCMD_FRAME(4, 4, .vFlip = TRUE),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd *const sSupersonicAnimTable[] =
-{
-    sSupersonicAnimCmds,
-};
-
-const struct SpriteTemplate gSupersonicSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_MUSIC_NOTES,
-    .paletteTag = ANIM_TAG_MUSIC_NOTES,
-    .oam = &gOamData_AffineOff_ObjNormal_16x16,
-    .anims = sSupersonicAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimToTargetInSinWave3,
-};
-
 const struct SpriteTemplate gHeartSineWaveSpriteTemplate =
 {
     .tileTag = ANIM_TAG_RED_ORB,
