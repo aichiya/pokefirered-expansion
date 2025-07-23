@@ -2336,10 +2336,10 @@ Move_HEADBUTT:
 
 Move_HORN_ATTACK:
 	loadspritegfx ANIM_TAG_HORN_HIT
-	createsprite gHornHitSpriteTemplate, ANIM_ATTACKER, 2, -40, 0, 48, 8, 8, 0
+	createsprite gHornHitSpriteTemplate, ANIM_TARGET, 2, -40, 0, 8, 8, 8, ANIM_TARGET, 0
 	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
 	delay 8
-	createsprite gHornHitSpriteTemplate, ANIM_ATTACKER, 2, -32, 8, 48, 8, 8, 0
+	createsprite gHornHitSpriteTemplate, ANIM_TARGET, 2, -32, 8, 8, 8, 8, ANIM_TARGET, 0
 	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
 	waitforvisualfinish
 	end

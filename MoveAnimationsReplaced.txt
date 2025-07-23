@@ -33,7 +33,7 @@ https://bulbapedia.bulbagarden.net/wiki/Category:Generation_I_moves
 ~Cut
 
 -D-
-~Defense Curl
+Defense Curl
 Dig
 ~Disable
 ~Dizzy Punch
@@ -70,11 +70,11 @@ Dig
 ~Gust
 
 -H-
-~Harden
-Haze
-Headbutt
-Hi-Jump Kick
-Horn Attack
+Harden
+~Haze
+~Headbutt
+~Hi-Jump Kick
+~Horn Attack
 Horn Drill
 Hydro Pump
 Hyper Beam
