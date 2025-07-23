@@ -129,12 +129,12 @@ Meditate
 ~Psywave
 
 -Q-
-Quick Attack
+~Quick Attack
 
 -R-
-Rage
-Razor Leaf
-Razor Wind
+~Rage
+~Razor Leaf
+~Razor Wind
 Recover
 Reflect
 Rest
