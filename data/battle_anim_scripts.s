@@ -4524,22 +4524,22 @@ Move_ICE_PUNCH:
 
 IceCrystalWallEffect:
 	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, -24, 32, ANIM_TARGET, -32, 128, 0, 0
-	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, 24, 32, ANIM_TARGET, -32, 128, 0, 0
+	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2,  24, 32, ANIM_TARGET, -32, 128, 0, 0
 	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
 	delay 24
 	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, -16, 32, ANIM_TARGET, -32, 128, 0, 0
-	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, 16, 32, ANIM_TARGET, -32, 128, 0, 0
+	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2,  16, 32, ANIM_TARGET, -32, 128, 0, 0
 	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
 	delay 24
 	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, -24, 32, ANIM_TARGET, -32, 128, 0, 0
-	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, 24, 32, ANIM_TARGET, -32, 128, 0, 0
-	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, -8, 32, ANIM_TARGET, -32, 128, 0, 0
-	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, 8, 32, ANIM_TARGET, -32, 128, 0, 0
+	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2,  24, 32, ANIM_TARGET, -32, 128, 0, 0
+	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2,  -8, 32, ANIM_TARGET, -32, 128, 0, 0
+	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2,   8, 32, ANIM_TARGET, -32, 128, 0, 0
 	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
 	delay 24
 	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, -16, 32, ANIM_TARGET, -32, 128, 0, 0
-	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, 16, 32, ANIM_TARGET, -32, 128, 0, 0
-	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2, 0, 32, ANIM_TARGET, -32, 128, 0, 0
+	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2,  16, 32, ANIM_TARGET, -32, 128, 0, 0
+	createsprite gIceCrystalSpriteTemplate, ANIM_TARGET, 2,   0, 32, ANIM_TARGET, -32, 128, 0, 0
 	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
 	return
 

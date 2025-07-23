@@ -538,7 +538,7 @@ const struct SpriteTemplate gIceCrystalSpriteTemplate =
 {
     .tileTag = ANIM_TAG_ICE_CRYSTALS,
     .paletteTag = ANIM_TAG_ICE_CRYSTALS,
-    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .oam = &gOamData_AffineOff_ObjNormal_8x16,
     .anims = gDummySpriteAnimTable,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
