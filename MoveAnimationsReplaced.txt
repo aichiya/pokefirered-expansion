@@ -83,17 +83,17 @@ Harden
 
 -I-
 ~Ice Beam
-Ice Punch
+~Ice Punch
 
 -J-
-Jump Kick
+~Jump Kick
 
 -K-
-Karate Chop
-Kinesis
+~Karate Chop
+~Kinesis
 
 -L-
-Leech Life
+~Leech Life
 Leech Seed
 Leer
 Lick

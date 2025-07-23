@@ -5563,7 +5563,7 @@ AbsorbEffect:
 	createsprite gOrbCombineSpriteTemplate, ANIM_TARGET, 2,  24,  24, 24, ANIM_TARGET
 	delay 22
 	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_TARGET
-	createsprite gOrbProjectileSpriteTemplate, ANIM_TARGET, 2, 0, 5, 76, 76
+	createsprite gOrbProjectileReversedSpriteTemplate, ANIM_ATTACKER, 2, 108, -40, -108, 40, -30, 76, ANIM_ATTACKER, 0
 	return
 
 Move_MEGA_DRAIN:
