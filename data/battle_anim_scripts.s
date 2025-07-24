@@ -1186,7 +1186,9 @@ Move_WATERFALL:
 	loadspritegfx ANIM_TAG_IMPACT
 	loadspritegfx ANIM_TAG_WATER_COLUMN
 	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 0, 28
-	delay 30
+	delay 8
+	invisible ANIM_ATTACKER
+	delay 22
 	createsprite gSurfGeyserTopSpriteTemplate, ANIM_TARGET, 2, -8, 32, ANIM_TARGET, -64, 32, 0, 0
 	delay 6
 	createsprite gSurfGeyserBottomSpriteTemplate, ANIM_TARGET, 2, -8, 32, ANIM_TARGET, -48, 32, 0, 0
@@ -1215,6 +1217,7 @@ Move_WATERFALL:
 	waitforvisualfinish
 	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0, 0, 1
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
+	visible ANIM_ATTACKER
 	waitforvisualfinish
 	end
 
@@ -1581,10 +1584,10 @@ Move_SMOKESCREEN:
 	playsewithpan SE_M_SAND_ATTACK, SOUND_PAN_ATTACKER
 	call SandAttackPrefab
 	waitforvisualfinish
-	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2, -8,  0,  -24, -16, 40, 0, ANIM_TARGET
-	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2,  8,  0,   24, -16, 40, 1, ANIM_TARGET
-	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2, -8,  16, -24,  32, 40, 2, ANIM_TARGET
-	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2,  8,  16,  24,  32, 40, 3, ANIM_TARGET
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2,  6, -6, -24, -32, 30, ANIM_TARGET, 0
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2, -6, -6,  24, -32, 30, ANIM_TARGET, 1
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2,  6,  6, -24,  32, 30, ANIM_TARGET, 2
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2, -6,  6,  24,  32, 30, ANIM_TARGET, 3
 	waitforvisualfinish
 	call BlackFlashEffect
 	end
@@ -4534,10 +4537,10 @@ Move_TRANSFORM:
 	end
 
 PokeBallPuffPrefab:
-	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2, -8,  -8, -24, -16, 40, 0, ANIM_ATTACKER
-	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2,  8,  -8,  24, -16, 40, 1, ANIM_ATTACKER
-	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2, -8,   8, -24,  16, 40, 2, ANIM_ATTACKER
-	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2,  8,   8,  24,  16, 40, 3, ANIM_ATTACKER
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2, -8,  -8, -24, -24, 40, ANIM_ATTACKER, 0
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2,  8,  -8,  24, -24, 40, ANIM_ATTACKER, 1
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2, -8,   8, -24,  24, 40, ANIM_ATTACKER, 2
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2,  8,   8,  24,  24, 40, ANIM_ATTACKER, 3
 	return
 
 BlackSquareCombineWithReverseProjectilePrefab:

@@ -156,7 +156,7 @@ Sharpen
 ~Sleep Powder
 ~Sludge
 ~Smog
-Smokescreen (Pokeball puff plays on wrong side, also wrong offsets)
+~Smokescreen
 ~Soft-Boiled
 ~Solar Beam
 ~Sonic Boom
@@ -188,7 +188,7 @@ Teleport
 ~Thunder Wave
 ~Thunderbolt
 ~Toxic
-Transform
+~Transform
 ~Tri Attack
 ~Twineedle
 
@@ -198,7 +198,7 @@ Transform
 
 -W-
 ~Water Gun
-Waterfall
+~Waterfall
 Whirlwind (Must be tested in the wild)
 ~Wing Attack
 ~Withdraw (Still needs invisibility mask)

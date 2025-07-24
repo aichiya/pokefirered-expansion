@@ -36,8 +36,6 @@ static void AnimWaterBubbleProjectile_Step3(struct Sprite *);
 static void AnimGustTornado(struct Sprite *sprite);
 static void AnimToTargetInSinWaveMirrored(struct Sprite *sprite);
 static void AnimToTargetInSinWave3_Step(struct Sprite *sprite);
-static void AnimPokeBallPuff(struct Sprite *sprite);
-static void AnimPokeBallPuff_Step(struct Sprite *sprite);
 
 ///////////////////
 // GENERIC BEGIN //
@@ -162,7 +160,7 @@ const struct SpriteTemplate gPokeBallPuffSpriteTemplate =
     .anims = sPokeBallPuffAnimTable,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimPokeBallPuff,
+    .callback = AnimSpriteMoveLinear2,
 };
 
 const struct SpriteTemplate gOrbSpiralInwardSpriteTemplate =
@@ -1506,36 +1504,6 @@ static void AnimToTargetInSinWave3_Step(struct Sprite *sprite)
     {
         sprite->data[6] += sprite->data[5];
     }
-}
-
-static void AnimPokeBallPuff(struct Sprite *sprite)
-{
-    if (gBattleAnimArgs[7] == ANIM_ATTACKER)
-        InitSpritePosToAnimAttacker(sprite, TRUE);
-    else
-        InitSpritePosToAnimTarget(sprite, TRUE);
-    
-    sprite->x += gBattleAnimArgs[0];
-    sprite->y += gBattleAnimArgs[1];
-
-    sprite->data[0] = gBattleAnimArgs[4];
-    sprite->data[1] = sprite->x;
-    sprite->data[2] = sprite->x + gBattleAnimArgs[2];
-    sprite->data[3] = sprite->y;
-    sprite->data[4] = sprite->y + gBattleAnimArgs[3];
-    InitSpriteDataForLinearTranslation(sprite);
-    sprite->data[5] = sprite->data[1] / gBattleAnimArgs[4];
-    sprite->data[6] = sprite->data[2] / gBattleAnimArgs[4];
-    StartSpriteAnim(sprite, gBattleAnimArgs[5]);
-    sprite->callback = AnimPokeBallPuff_Step;
-}
-static void AnimPokeBallPuff_Step(struct Sprite *sprite)
-{
-    TranslateSpriteLinearFixedPoint(sprite);
-    sprite->data[1] -= sprite->data[5];
-    sprite->data[2] -= sprite->data[6];
-    if (!sprite->data[0])
-        DestroyAnimSprite(sprite);
 }
 ///////////////////
 // CALLBACKS END //
