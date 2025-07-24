@@ -5773,7 +5773,7 @@ Move_SLUDGE:
 	loadspritegfx ANIM_TAG_POISON_BUBBLE
 	monbg ANIM_DEF_PARTNER
 	playsewithpan SE_M_BUBBLE3, SOUND_PAN_ATTACKER
-	createsprite gSludgeProjectileSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 0, 64, -25
+	createsprite gSludgeProjectileSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 0, -30, 64, ANIM_ATTACKER, 0
 	delay 62
 	createsprite gSludgeSplatSpriteTemplate, ANIM_TARGET, 13, 0, 0
 	createsprite gAcidPoisonDropletSpriteTemplate, ANIM_TARGET, 2, -4, 8, 0, 6, 16
