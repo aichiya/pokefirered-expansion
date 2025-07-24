@@ -7915,17 +7915,31 @@ Move_TRANSFORM:
 	loadspritegfx ANIM_TAG_ORBS
 	loadspritegfx ANIM_TAG_MUSIC_NOTES
 	playsewithpan SE_M_TELEPORT, SOUND_PAN_ATTACKER
-	call ConversionEffect
+	call TransformEffect
 	waitforvisualfinish
-	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2, -8,  -8,  -24, -16, 40, 0, ANIM_ATTACKER
-	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2,  8,  -8,   24, -16, 40, 1, ANIM_ATTACKER
-	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2, -8,   8, -24,  32, 40, 2, ANIM_ATTACKER
-	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2,  8,   8,  24,  32, 40, 3, ANIM_ATTACKER
+	call PokeBallPuffPrefab
 	waitforvisualfinish
 	createvisualtask AnimTask_TransformMon, 2, 0
 	waitforvisualfinish
 	clearmonbg ANIM_ATTACKER
 	end
+
+PokeBallPuffPrefab:
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2, -8,  -8, -24, -16, 40, 0, ANIM_ATTACKER
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2,  8,  -8,  24, -16, 40, 1, ANIM_ATTACKER
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2, -8,   8, -24,  16, 40, 2, ANIM_ATTACKER
+	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2,  8,   8,  24,  16, 40, 3, ANIM_ATTACKER
+	return
+
+TransformEffect:
+	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2, -24, -24, -4, -4, 24, ANIM_TARGET, 0
+	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2,  24, -24,  4, -4, 24, ANIM_TARGET, 0
+	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2, -24,  24, -4,  4, 24, ANIM_TARGET, 0
+	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2,  24,  24,  4,  4, 24, ANIM_TARGET, 0
+	delay 28
+	playsewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER
+	createsprite gSolidSquareProjectileReversedSpriteTemplate, ANIM_ATTACKER, 2, 112, -48, -108, 44, -30, 64, ANIM_ATTACKER, 0
+	return
 
 Move_MORNING_SUN:
 	loadspritegfx ANIM_TAG_GREEN_STAR

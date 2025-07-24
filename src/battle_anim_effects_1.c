@@ -402,57 +402,6 @@ const struct SpriteTemplate gBouncingSpriteTemplate =
     .callback = AnimBouncingSprite,
 };
 
-static const union AnimCmd sPokeBallPuffAnimCmdsTL[] =
-{
-    ANIMCMD_FRAME(0x14, 4),
-    ANIMCMD_FRAME(0x10, 4),
-    ANIMCMD_FRAME(0xC, 4),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd sPokeBallPuffAnimCmdsTR[] =
-{
-    ANIMCMD_FRAME(0x14, 4, .hFlip = TRUE),
-    ANIMCMD_FRAME(0x10, 4, .hFlip = TRUE),
-    ANIMCMD_FRAME(0xC, 4, .hFlip = TRUE),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd sPokeBallPuffAnimCmdsBL[] =
-{
-    ANIMCMD_FRAME(0x14, 4, .vFlip = TRUE),
-    ANIMCMD_FRAME(0x10, 4, .vFlip = TRUE),
-    ANIMCMD_FRAME(0xC, 4, .vFlip = TRUE),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd sPokeBallPuffAnimCmdsBR[] =
-{
-    ANIMCMD_FRAME(0x14, 4, .hFlip = TRUE, .vFlip = TRUE),
-    ANIMCMD_FRAME(0x10, 4, .hFlip = TRUE, .vFlip = TRUE),
-    ANIMCMD_FRAME(0xC, 4, .hFlip = TRUE, .vFlip = TRUE),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd *const sPokeBallPuffAnimTable[] =
-{
-    sPokeBallPuffAnimCmdsTL,
-    sPokeBallPuffAnimCmdsTR,
-    sPokeBallPuffAnimCmdsBL,
-    sPokeBallPuffAnimCmdsBR,
-};
-
-const struct SpriteTemplate gPokeBallPuffSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_MUSIC_NOTES,
-    .paletteTag = ANIM_TAG_MUSIC_NOTES,
-    .oam = &gOamData_AffineOff_ObjNormal_16x16,
-    .anims = sPokeBallPuffAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimPokeBallPuff,
-};
-
 const struct SpriteTemplate gAbsorptionOrbProjectileSpriteTemplate =
 {
     .tileTag = ANIM_TAG_ORBS,
@@ -2528,37 +2477,6 @@ static void AnimConversionCubeCombine(struct Sprite* sprite)
         BATTLER_COORD_Y_PIC_OFFSET);
     sprite->callback = StartAnimLinearTranslation;
     StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
-}
-
-static void AnimPokeBallPuff(struct Sprite *sprite)
-{
-    if (gBattleAnimArgs[7] == ANIM_ATTACKER)
-        InitSpritePosToAnimAttacker(sprite, TRUE);
-    else
-        InitSpritePosToAnimTarget(sprite, TRUE);
-    
-    sprite->x += gBattleAnimArgs[0];
-    sprite->y += gBattleAnimArgs[1];
-
-    sprite->data[0] = gBattleAnimArgs[4];
-    sprite->data[1] = sprite->x;
-    sprite->data[2] = sprite->x + gBattleAnimArgs[2];
-    sprite->data[3] = sprite->y;
-    sprite->data[4] = sprite->y + gBattleAnimArgs[3];
-    InitSpriteDataForLinearTranslation(sprite);
-    sprite->data[5] = sprite->data[1] / gBattleAnimArgs[4];
-    sprite->data[6] = sprite->data[2] / gBattleAnimArgs[4];
-    StartSpriteAnim(sprite, gBattleAnimArgs[5]);
-    sprite->callback = AnimPokeBallPuff_Step;
-}
-
-static void AnimPokeBallPuff_Step(struct Sprite *sprite)
-{
-    TranslateSpriteLinearFixedPoint(sprite);
-    sprite->data[1] -= sprite->data[5];
-    sprite->data[2] -= sprite->data[6];
-    if (!sprite->data[0])
-        DestroyAnimSprite(sprite);
 }
 
 static void AnimAbsorptionOrbProjectile(struct Sprite* sprite)
