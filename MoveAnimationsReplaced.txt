@@ -166,40 +166,40 @@ Smokescreen
 ~Stomp
 ~Strength
 String Shot
-Struggle
-Stun Spore
-Submission
-Substitute
-Super Fang
-Supersonic
-Surf
-Swift
-Swords Dance
+~Struggle
+~Stun Spore
+~Submission
+~Substitute
+~Super Fang
+~Supersonic
+~Surf
+~Swift
+~Swords Dance
 
 -T-
-Tackle
-Tail Whip
-Take Down
+~Tackle
+~Tail Whip
+~Take Down
 Teleport
-Thrash
-Thunder
-Thunderpunch
-Thundershock
-Thunder Wave
-Thunderbolt
-Toxic
+~Thrash
+~Thunder
+~Thunderpunch
+~Thundershock
+~Thunder Wave
+~Thunderbolt
+~Toxic
 Transform
-Tri Attack
-Twineedle
+~Tri Attack
+~Twineedle
 
 -V-
-Vine Whip
-Vicegrip
+~Vine Whip
+~Vicegrip
 
 -W-
-Water Gun
+~Water Gun
 Waterfall
-Whirlwind
-Wing Attack
+Whirlwind (Must be tested in the wild)
+~Wing Attack
 Withdraw
-Wrap
+~Wrap
