@@ -7,7 +7,6 @@
 
 static void AnimBonemerangProjectile(struct Sprite *sprite);
 static void AnimBoneHitProjectile(struct Sprite *sprite);
-static void AnimSandAttack(struct Sprite *sprite);
 static void AnimDirtScatter(struct Sprite *sprite);
 static void AnimMudSportDirt(struct Sprite *sprite);
 static void AnimDirtPlumeParticle(struct Sprite *sprite);
@@ -69,56 +68,6 @@ const struct SpriteTemplate gSpinningBoneSpriteTemplate =
     .images = NULL,
     .affineAnims = sAffineAnims_SpinningBone,
     .callback = AnimBoneHitProjectile,
-};
-
-static const union AnimCmd sSandAttackAnim1Cmds[] =
-{
-    ANIMCMD_FRAME(0, 1),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd sSandAttackAnim2Cmds[] =
-{
-    ANIMCMD_FRAME(1, 1),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd sSandAttackAnim3Cmds[] =
-{
-    ANIMCMD_FRAME(2, 1),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd sSandAttackAnim4Cmds[] =
-{
-    ANIMCMD_FRAME(3, 1),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd sSandAttackAnim5Cmds[] =
-{
-    ANIMCMD_FRAME(4, 1),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd *const sSandAttackAnimTable[] =
-{
-    sSandAttackAnim1Cmds,
-    sSandAttackAnim2Cmds,
-    sSandAttackAnim3Cmds,
-    sSandAttackAnim4Cmds,
-    sSandAttackAnim5Cmds,
-};
-
-const struct SpriteTemplate gSandAttackSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_MIST_CLOUD,
-    .paletteTag = ANIM_TAG_MIST_CLOUD,
-    .oam = &gOamData_AffineOff_ObjNormal_8x8,
-    .anims = sSandAttackAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimSandAttack,
 };
 
 static const union AnimCmd sAnim_MudSlapMud[] =
@@ -554,18 +503,6 @@ static void AnimDirtPlumeParticle_Step(struct Sprite *sprite)
 {
     if (TranslateAnimHorizontalArc(sprite))
         DestroyAnimSprite(sprite);
-}
-
-static void AnimSandAttack(struct Sprite *sprite)
-{
-    StartSpriteAnim(sprite, gBattleAnimArgs[2]);
-    if (gBattleAnimArgs[4] == 0)
-        InitSpritePosToAnimAttacker(sprite, TRUE);
-    else
-        InitSpritePosToAnimTarget(sprite, TRUE);
-    sprite->data[0] = gBattleAnimArgs[3];
-    sprite->callback = RunStoredCallbackWhenAnimEnds;
-    StoreSpriteCallbackInData6(sprite, DestroyAnimSpriteAfterTimer);
 }
 
 // Displays the dirt mound seen in the move Dig for set duration.

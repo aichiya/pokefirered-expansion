@@ -21,7 +21,8 @@ static void AnimSpriteProjectileParabolicReversed2(struct Sprite *);
 static void AnimSpriteRises(struct Sprite *);
 static void AnimSpriteSpiralToMonPos(struct Sprite *);
 static void AnimSpriteStatic(struct Sprite *);
-static void AnimSpriteStaticWithXYFlip(struct Sprite *);
+static void AnimSpriteStaticVisualXFlip(struct Sprite *);
+static void AnimSpriteStaticPositionXYFlip(struct Sprite *);
 static void AnimSpriteStaticMirrored(struct Sprite *);
 
 // Probably temporary... probably... //
@@ -89,7 +90,7 @@ const struct SpriteTemplate gHitSplatWithXYFlipSpriteTemplate =
     .anims = sGeneric0Ends,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimSpriteStaticWithXYFlip,
+    .callback = AnimSpriteStaticPositionXYFlip,
 };
 
 static const union AnimCmd sAnim_HornEndsNormal[] =
@@ -699,7 +700,49 @@ const struct SpriteTemplate gSludgeSplatSpriteTemplate =
 //////////////////
 // GROUND BEGIN //
 //////////////////
-
+static const union AnimCmd sSandAttackAnim1Cmds[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd sSandAttackAnim2Cmds[] =
+{
+    ANIMCMD_FRAME(1, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd sSandAttackAnim3Cmds[] =
+{
+    ANIMCMD_FRAME(2, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd sSandAttackAnim4Cmds[] =
+{
+    ANIMCMD_FRAME(3, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd sSandAttackAnim5Cmds[] =
+{
+    ANIMCMD_FRAME(4, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd *const sSandAttackAnimTable[] =
+{
+    sSandAttackAnim1Cmds,
+    sSandAttackAnim2Cmds,
+    sSandAttackAnim3Cmds,
+    sSandAttackAnim4Cmds,
+    sSandAttackAnim5Cmds,
+};
+const struct SpriteTemplate gSandAttackSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_MIST_CLOUD,
+    .paletteTag = ANIM_TAG_MIST_CLOUD,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sSandAttackAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteStaticVisualXFlip,
+};
 ////////////////
 // GROUND END //
 ////////////////
@@ -1054,7 +1097,30 @@ static void AnimSpriteStatic(struct Sprite *sprite)
     sprite->callback = DestroyAnimSpriteAfterTimer;
 }
 
-static void AnimSpriteStaticWithXYFlip(struct Sprite *sprite)
+static void AnimSpriteStaticVisualXFlip(struct Sprite *sprite)
+{
+    u8 argIsAttacker = gBattleAnimArgs[4];
+    u8 battler;
+
+    StartSpriteAnim(sprite, gBattleAnimArgs[2]);
+
+    if (argIsAttacker == 0)
+    {
+        battler = gBattleAnimAttacker;
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    }
+    else
+    {
+        battler = gBattleAnimTarget;
+        InitSpritePosToAnimTarget(sprite, TRUE);
+    }
+
+    sprite->hFlip = (GetBattlerSide(battler) == B_SIDE_PLAYER);
+    sprite->data[0]  = gBattleAnimArgs[3];
+    sprite->callback = DestroyAnimSpriteAfterTimer;
+}
+
+static void AnimSpriteStaticPositionXYFlip(struct Sprite *sprite)
 {
     StartSpriteAnim(sprite, gBattleAnimArgs[4]);
 

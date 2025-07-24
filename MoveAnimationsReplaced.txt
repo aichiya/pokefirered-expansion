@@ -142,7 +142,7 @@ Roar (Must be tested in the wild)
 ~Rock Slide
 ~Rock Throw
 ~Rolling Kick
-Sand Attack (Position correct, sprites not X-flipped)
+~Sand Attack
 ~Scratch
 ~Screech
 ~Seismic Toss
@@ -156,7 +156,7 @@ Sharpen
 ~Sleep Powder
 ~Sludge
 ~Smog
-Smokescreen
+Smokescreen (Pokeball puff plays on wrong side, also wrong offsets)
 ~Soft-Boiled
 ~Solar Beam
 ~Sonic Boom

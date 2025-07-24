@@ -1579,27 +1579,7 @@ Move_SMOKESCREEN:
 	loadspritegfx ANIM_TAG_MIST_CLOUD
 	loadspritegfx ANIM_TAG_MUSIC_NOTES
 	playsewithpan SE_M_SAND_ATTACK, SOUND_PAN_ATTACKER
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -64, 16, 0, 19, ANIM_TARGET
-	delay 1
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -56, 16, 1, 16, ANIM_TARGET
-	delay 1
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -48,  8, 0, 13, ANIM_TARGET
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -48, 16, 2, 13, ANIM_TARGET
-	delay 1
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -40,  8, 1, 10, ANIM_TARGET
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -40, 16, 3, 10, ANIM_TARGET
-	delay 1
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -32,  0, 0, 7, ANIM_TARGET
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -32,  8, 2, 7, ANIM_TARGET
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -32, 16, 2, 7, ANIM_TARGET
-	delay 1
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -24,  0, 1, 4, ANIM_TARGET
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -24,  8, 3, 4, ANIM_TARGET
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -24, 16, 3, 4, ANIM_TARGET
-	delay 1
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -16,  0, 4, 1, ANIM_TARGET
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -16,  8, 4, 1, ANIM_TARGET
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -16, 16, 4, 1, ANIM_TARGET
+	call SandAttackPrefab
 	waitforvisualfinish
 	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2, -8,  0,  -24, -16, 40, 0, ANIM_TARGET
 	createsprite gPokeBallPuffSpriteTemplate, ANIM_TARGET, 2,  8,  0,   24, -16, 40, 1, ANIM_TARGET
@@ -2854,7 +2834,11 @@ Move_FAINT_ATTACK:
 Move_SAND_ATTACK:
 	loadspritegfx ANIM_TAG_MIST_CLOUD
 	playsewithpan SE_M_SAND_ATTACK, SOUND_PAN_ATTACKER
-	@                                                         X,  Y, AnimFrame, FramePersist
+	call SandAttackPrefab
+	waitforvisualfinish
+	end
+
+SandAttackPrefab:
 	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -64, 16, 0, 19, ANIM_TARGET
 	delay 1
 	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -56, 16, 1, 16, ANIM_TARGET
@@ -2876,8 +2860,7 @@ Move_SAND_ATTACK:
 	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -16,  0, 4, 1, ANIM_TARGET
 	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -16,  8, 4, 1, ANIM_TARGET
 	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -16, 16, 4, 1, ANIM_TARGET
-	waitforvisualfinish
-	end
+	return
 
 Move_MUD_SLAP:
 	end
@@ -4385,22 +4368,12 @@ Move_MIMIC:
 	splitbgprio_foes ANIM_TARGET
 	setalpha 12, 8
 	playsewithpan SE_M_SWIFT, SOUND_PAN_ATTACKER
-	call MimicEffect
+	call BlackSquareCombineWithReverseProjectilePrefab
 	waitforvisualfinish
 	waitforvisualfinish
 	clearmonbg ANIM_DEF_PARTNER
 	blendoff
 	end
-
-MimicEffect:
-	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2, -24, -24, -4, -4, 24, ANIM_TARGET, 0
-	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2,  24, -24,  4, -4, 24, ANIM_TARGET, 0
-	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2, -24,  24, -4,  4, 24, ANIM_TARGET, 0
-	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2,  24,  24,  4,  4, 24, ANIM_TARGET, 0
-	delay 22
-	playsewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER
-	createsprite gSolidSquareProjectileReversedSpriteTemplate, ANIM_ATTACKER, 2, 112, -48, -108, 44, -30, 64, ANIM_ATTACKER, 0
-	return
 
 Move_CONSTRICT:
 	loadspritegfx ANIM_TAG_TENDRILS
@@ -4548,7 +4521,7 @@ Move_TRANSFORM:
 	loadspritegfx ANIM_TAG_ORBS
 	loadspritegfx ANIM_TAG_MUSIC_NOTES
 	playsewithpan SE_M_TELEPORT, SOUND_PAN_ATTACKER
-	call TransformEffect
+	call BlackSquareCombineWithReverseProjectilePrefab
 	waitforvisualfinish
 	call PokeBallPuffPrefab
 	waitforvisualfinish
@@ -4564,7 +4537,7 @@ PokeBallPuffPrefab:
 	createsprite gPokeBallPuffSpriteTemplate, ANIM_ATTACKER, 2,  8,   8,  24,  16, 40, 3, ANIM_ATTACKER
 	return
 
-TransformEffect:
+BlackSquareCombineWithReverseProjectilePrefab:
 	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2, -24, -24, -4, -4, 24, ANIM_TARGET, 0
 	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2,  24, -24,  4, -4, 24, ANIM_TARGET, 0
 	createsprite gSolidSquareCombineSpriteTemplate, ANIM_TARGET, 2, -24,  24, -4,  4, 24, ANIM_TARGET, 0
