@@ -8,6 +8,7 @@
 #include "constants/songs.h"
 
 static void AnimSpriteMoveLinear(struct Sprite *);
+static void AnimSpriteMoveLinear2(struct Sprite *);
 static void AnimSpriteMoveLinear_Step(struct Sprite *);
 static void AnimSpriteMoveLinearWithXFlip(struct Sprite *);
 static void AnimSpriteMoveLinearWithXFlipMirrored(struct Sprite *);
@@ -310,7 +311,7 @@ const struct SpriteTemplate gDefenseCurlCombineSpriteTemplate =
     .anims = sDefenseCurlAnimTable,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimSpriteMoveLinear,
+    .callback = AnimSpriteMoveLinear2,
 };
 
 static const union AnimCmd sAnim_SolidSquare[] =
@@ -412,7 +413,7 @@ const struct SpriteTemplate gHardenCombineSpriteTemplate =
     .anims = sHardenSquareAnimTable,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimSpriteMoveLinear,
+    .callback = AnimSpriteMoveLinear2,
 };
 ////////////////
 // NORMAL END //
@@ -876,6 +877,52 @@ static void AnimSpriteMoveLinear(struct Sprite *sprite)
     sprite->data[2] = sprite->x + gBattleAnimArgs[2]; // Ending X
     sprite->data[3] = sprite->y + gBattleAnimArgs[1]; // Starting Y
     sprite->data[4] = sprite->y + gBattleAnimArgs[3]; // Ending Y
+    InitAnimLinearTranslation(sprite);
+    sprite->data[5] = 0;
+    sprite->data[6] = 0;
+    sprite->data[7] = 0;
+    sprite->callback = AnimSpriteMoveLinear_Step;
+}
+
+static void AnimSpriteMoveLinear2(struct Sprite *sprite)
+{
+    u8 battler = (gBattleAnimArgs[5] == ANIM_ATTACKER)
+                ? gBattleAnimAttacker
+                : gBattleAnimTarget;
+    u8 side   = GetBattlerSide(battler);
+
+    s16 startX =  gBattleAnimArgs[0];
+    s16 startY =  gBattleAnimArgs[1];
+    s16 endX   =  gBattleAnimArgs[2];
+    s16 endY   =  gBattleAnimArgs[3];
+    u8  duration = gBattleAnimArgs[4];
+    u8  animId   = gBattleAnimArgs[6];
+    u8  frame    = gBattleAnimArgs[7];
+
+    if (side == B_SIDE_OPPONENT)
+    {
+        startX      = -startX;
+        endX        = -endX;
+        sprite->hFlip = TRUE;
+    }
+    else
+    {
+        sprite->hFlip = FALSE;
+    }
+
+    StartSpriteAnim(sprite, animId);
+    sprite->animCmdIndex = frame;
+
+    if (gBattleAnimArgs[5] == ANIM_ATTACKER)
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    else
+        InitSpritePosToAnimTarget(sprite, TRUE);
+
+    sprite->data[0] = duration;  
+    sprite->data[1] = sprite->x + startX;
+    sprite->data[2] = sprite->x + endX;
+    sprite->data[3] = sprite->y + startY;
+    sprite->data[4] = sprite->y + endY;
     InitAnimLinearTranslation(sprite);
     sprite->data[5] = 0;
     sprite->data[6] = 0;

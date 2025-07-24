@@ -1321,12 +1321,12 @@ ExplosionPrefab2:
 
 Move_DEFENSE_CURL:
 	loadspritegfx ANIM_TAG_RED_BALL
-	call DefenseCurlOrbEffect
+	call DefenseCurlOrbPrefab
 	waitforvisualfinish
 	end
 
-DefenseCurlOrbEffect:
-	loopsewithpan SE_M_TRI_ATTACK, SOUND_PAN_ATTACKER, 18, 3
+DefenseCurlOrbPrefab:
+    loopsewithpan SE_M_TRI_ATTACK, SOUND_PAN_ATTACKER, 18, 3
 	createsprite gDefenseCurlCombineSpriteTemplate, ANIM_ATTACKER, 2, -32, -32, -6, -6, 24, ANIM_ATTACKER, 0
 	createsprite gDefenseCurlCombineSpriteTemplate, ANIM_ATTACKER, 2,   0, -32,  0, -6, 24, ANIM_ATTACKER, 1
 	createsprite gDefenseCurlCombineSpriteTemplate, ANIM_ATTACKER, 2,  32, -32,  6, -6, 24, ANIM_ATTACKER, 2
@@ -1335,7 +1335,8 @@ DefenseCurlOrbEffect:
 	createsprite gDefenseCurlCombineSpriteTemplate, ANIM_ATTACKER, 2, -32,  32, -6,  6, 24, ANIM_ATTACKER, 5
 	createsprite gDefenseCurlCombineSpriteTemplate, ANIM_ATTACKER, 2,   0,  32,  0,  6, 24, ANIM_ATTACKER, 6
 	createsprite gDefenseCurlCombineSpriteTemplate, ANIM_ATTACKER, 2,  32,  32,  6,  6, 24, ANIM_ATTACKER, 7
-	return
+    return
+
 
 Move_PROTECT:
 	end
@@ -1729,7 +1730,7 @@ Move_HORN_DRILL:
 Move_THRASH:
 	loadspritegfx ANIM_TAG_IMPACT
 	@loadspritegfx ANIM_TAG_RED_BALL
-	@call HardenSquareEffect
+	@call HardenSquarePrefab
 	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_ATTACKER, -4, 1, 12, 1
 	waitforvisualfinish
 	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET
@@ -1856,7 +1857,7 @@ DigThrowDirt:
 
 Move_MEDITATE:
 	loadspritegfx ANIM_TAG_RED_BALL
-	call HardenSquareEffect
+	call HardenSquarePrefab
 	waitforvisualfinish
 	end
 
@@ -2180,7 +2181,7 @@ Move_ACID_ARMOR:
 
 Move_SHARPEN:
 	loadspritegfx ANIM_TAG_RED_BALL
-	call HardenSquareEffect
+	call HardenSquarePrefab
 	waitforvisualfinish
 	end
 
@@ -2451,11 +2452,11 @@ Move_SHOCK_WAVE:
 
 Move_HARDEN:
 	loadspritegfx ANIM_TAG_RED_BALL
-	call HardenSquareEffect
+	call HardenSquarePrefab
 	waitforvisualfinish
 	end
 
-HardenSquareEffect:
+HardenSquarePrefab:
 	loopsewithpan SE_M_HARDEN, SOUND_PAN_ATTACKER, 28, 2
 	createsprite gHardenCombineSpriteTemplate, ANIM_ATTACKER, 2, -32, -32, -6, -6, 24, ANIM_ATTACKER, 0
 	createsprite gHardenCombineSpriteTemplate, ANIM_ATTACKER, 2,   0, -32,  0, -6, 24, ANIM_ATTACKER, 1
@@ -2877,15 +2878,6 @@ Move_SAND_ATTACK:
 	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -16, 16, 4, 1, ANIM_TARGET
 	waitforvisualfinish
 	end
-
-SandAttackDirt:
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, 15, 15, 20, 0, 0
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, 15, 15, 20, 10, 10
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, 15, 15, 20, -10, -10
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, 15, 15, 20, 20, 5
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, 15, 15, 20, -20, -5
-	delay 2
-	return
 
 Move_MUD_SLAP:
 	end
