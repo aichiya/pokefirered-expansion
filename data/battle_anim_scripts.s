@@ -481,23 +481,23 @@ DoubleSlapRight:
 
 Move_POISON_POWDER:
 	loadspritegfx ANIM_TAG_ORBS
-	call PowderParticleAnimation
+	call PowderParticlesPrefab
 	waitforvisualfinish
 	end
 
 Move_STUN_SPORE:
 	loadspritegfx ANIM_TAG_ORBS
-	call PowderParticleAnimation
+	call PowderParticlesPrefab
 	waitforvisualfinish
 	end
 
 Move_SLEEP_POWDER:
 	loadspritegfx ANIM_TAG_ORBS
-	call PowderParticleAnimation
+	call PowderParticlesPrefab
 	waitforvisualfinish
 	end
 
-PowderParticleAnimation:
+PowderParticlesPrefab:
 	loopsewithpan SE_M_POISON_POWDER, SOUND_PAN_TARGET, 10, 6
 	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -32, -16, 96, 80, 5, 2
 	createsprite gPoisonPowderParticleSpriteTemplate, ANIM_TARGET, 2, -16, -16, 96, 80, 5, 2
@@ -583,12 +583,6 @@ Move_SUPERSONIC:
 	createsprite gSupersonicSpriteTemplate, ANIM_TARGET, 3, 10, 10, 0, 32
 	waitforvisualfinish
 	end
-
-SupersonicRing:
-	playsewithpan SE_M_SUPERSONIC, SOUND_PAN_ATTACKER
-	createsprite gSupersonicRingSpriteTemplate, ANIM_TARGET, 2, 16, 0, 0, 0, 30, 0
-	delay 2
-	return
 
 Move_SCREECH:
 	loadspritegfx ANIM_TAG_MUSIC_NOTES
@@ -696,15 +690,6 @@ Move_FIRE_BLAST:
 	delay 20
 	end
 
-FireBlastRing:
-	createsprite gFireBlastRingSpriteTemplate, ANIM_TARGET, 2, 0, 0, 0
-	createsprite gFireBlastRingSpriteTemplate, ANIM_TARGET, 2, 0, 0, 51
-	createsprite gFireBlastRingSpriteTemplate, ANIM_TARGET, 2, 0, 0, 102
-	createsprite gFireBlastRingSpriteTemplate, ANIM_TARGET, 2, 0, 0, 153
-	createsprite gFireBlastRingSpriteTemplate, ANIM_TARGET, 2, 0, 0, 204
-	delay 5
-	return
-
 FireBlastCross:
 	createsoundtask SoundTask_FireBlast, SE_M_FLAME_WHEEL, SE_M_FLAME_WHEEL2
 	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3,   0,  -8, 0, 16, ANIM_TARGET, 0
@@ -748,11 +733,6 @@ Move_EMBER:
 	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_TARGET
 	waitforvisualfinish
 	end
-
-EmberFireHit:
-	createsprite gEmberFlareSpriteTemplate, ANIM_TARGET, 2, -24, 24, 24, 24, 20, ANIM_TARGET, 1
-	delay 4
-	return
 
 Move_MEGA_PUNCH:
 	loadspritegfx ANIM_TAG_IMPACT
@@ -1094,12 +1074,6 @@ Move_DIZZY_PUNCH:
 	blendoff
 	end
 
-DizzyPunchLunge:
-	createsprite gHorizontalLungeSpriteTemplate, ANIM_ATTACKER, 2, 6, 4
-	delay 6
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 3, 0, 7, 1
-	return
-
 Move_FIRE_SPIN:
 	loadspritegfx ANIM_TAG_FIRE
 	playsewithpan SE_M_SACRED_FIRE2, SOUND_PAN_TARGET
@@ -1133,8 +1107,8 @@ Move_SELF_DESTRUCT:
 	createvisualtask AnimTask_ShakeMon2, 5, 6, 8, 0, 40, 1
 	createvisualtask AnimTask_ShakeMon2, 5, 7, 8, 0, 40, 1
 	createvisualtask AnimTask_ShakeMon2, 5, 8, 8, 0, 40, 1
-	call Explosion2
-	call Explosion2
+	call ExplosionPrefab2
+	call ExplosionPrefab2
 	waitforvisualfinish
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 1, 16, 16, RGB_WHITE
 	loopsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER, 9, 2
@@ -1292,8 +1266,8 @@ Move_EXPLOSION:
 	createvisualtask AnimTask_ShakeMon2, 5, 6, 8, 0, 40, 1
 	createvisualtask AnimTask_ShakeMon2, 5, 7, 8, 0, 40, 1
 	createvisualtask AnimTask_ShakeMon2, 5, 8, 8, 0, 40, 1
-	call Explosion1
-	call Explosion1
+	call ExplosionPrefab1
+	call ExplosionPrefab1
 	waitforvisualfinish
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 1, 16, 16, RGB_WHITE
 	loopsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER, 9, 2
@@ -1309,7 +1283,7 @@ Move_EXPLOSION:
 	clearmonbg ANIM_TARGET
 	end
 
-Explosion1:
+ExplosionPrefab1:
 	playsewithpan SE_M_EXPLOSION, SOUND_PAN_ATTACKER
 	createsprite gExplosionSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 0, 1
 	delay 6
@@ -1327,7 +1301,7 @@ Explosion1:
 	delay 6
 	return
 
-Explosion2:
+ExplosionPrefab2:
 	playsewithpan SE_M_EXPLOSION, SOUND_PAN_ATTACKER
 	createsprite gSelfdestructSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 0, 1
 	delay 6
@@ -1450,12 +1424,6 @@ Move_GROWTH:
 	clearmonbg ANIM_TARGET
 	blendoff
 	end
-
-GrowthEffect:
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_ATTACKER, 0, 2, 0, 8, RGB_WHITE
-	playsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER
-	createvisualtask AnimTask_ScaleMonAndRestore, 5, -3, -3, 16, ANIM_ATTACKER, 0
-	return
 
 Move_WHIRLWIND:
 	loadspritegfx ANIM_TAG_GUST
@@ -1602,27 +1570,6 @@ Move_BUBBLE_BEAM:
 	waitforvisualfinish
 	blendoff
 	end
-
-BulbblebeamCreateBubbles:
-	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 35, 70, 0, 256, 50
-	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
-	delay 3
-	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 20, 40, -10, 256, 50
-	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
-	delay 3
-	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 10, -60, 0, 256, 50
-	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
-	delay 3
-	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 15, -15, 10, 256, 50
-	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
-	delay 3
-	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 30, 10, -10, 256, 50
-	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
-	delay 3
-	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 18, 0, 25, -30, 10, 256, 50
-	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
-	delay 3
-	return
 
 Move_ICY_WIND:
 	end
@@ -3860,7 +3807,7 @@ CreateCottonSpores:
 
 Move_SPORE:
 	loadspritegfx ANIM_TAG_ORBS
-	call PowderParticleAnimation
+	call PowderParticlesPrefab
 	waitforvisualfinish
 	end
 
