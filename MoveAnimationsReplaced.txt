@@ -147,7 +147,7 @@ Roar (Must be tested in the wild)
 ~Screech
 ~Seismic Toss
 ~Self-Destruct
-Sharpen
+~Sharpen
 ~Sing
 ~Skull Bash
 ~Sky Attack
