@@ -513,6 +513,50 @@ const struct SpriteTemplate gWaterBubbleProjectileSpriteTemplate =
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimWaterBubbleProjectile,
 };
+
+static const union AnimCmd sWithdrawAnim1Cmds[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd sWithdrawAnim2Cmds[] =
+{
+    ANIMCMD_FRAME(1, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd sWithdrawAnim3Cmds[] =
+{
+    ANIMCMD_FRAME(4, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd sWithdrawAnim4Cmds[] =
+{
+    ANIMCMD_FRAME(0, 1, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+static const union AnimCmd sWithdrawAnim5Cmds[] =
+{
+    ANIMCMD_FRAME(4, 1, .hFlip = TRUE),
+    ANIMCMD_END,
+};
+static const union AnimCmd *const sWithdrawAnimTable[] =
+{
+    sWithdrawAnim1Cmds,
+    sWithdrawAnim2Cmds,
+    sWithdrawAnim3Cmds,
+    sWithdrawAnim4Cmds,
+    sWithdrawAnim5Cmds,
+};
+const struct SpriteTemplate gWithdrawSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_RED_BALL,
+    .paletteTag = ANIM_TAG_RED_BALL,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sWithdrawAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteStaticVisualXFlip,
+};
 ///////////////
 // WATER END //
 ///////////////

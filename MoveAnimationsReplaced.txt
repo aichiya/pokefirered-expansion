@@ -201,5 +201,5 @@ Transform
 Waterfall
 Whirlwind (Must be tested in the wild)
 ~Wing Attack
-Withdraw
+~Withdraw (Still needs invisibility mask)
 ~Wrap

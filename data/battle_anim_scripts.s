@@ -2843,23 +2843,23 @@ SandAttackPrefab:
 	delay 1
 	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -56, 16, 1, 16, ANIM_TARGET
 	delay 1
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -48,  8, 0, 13, ANIM_TARGET
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -48, 16, 2, 13, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -48,  8, 0, 13, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -48, 16, 2, 13, ANIM_TARGET
 	delay 1
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -40,  8, 1, 10, ANIM_TARGET
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -40, 16, 3, 10, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -40,  8, 1, 10, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -40, 16, 3, 10, ANIM_TARGET
 	delay 1
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -32,  0, 0, 7, ANIM_TARGET
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -32,  8, 2, 7, ANIM_TARGET
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -32, 16, 2, 7, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -32,  0, 0,  7, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -32,  8, 2,  7, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -32, 16, 2,  7, ANIM_TARGET
 	delay 1
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -24,  0, 1, 4, ANIM_TARGET
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -24,  8, 3, 4, ANIM_TARGET
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -24, 16, 3, 4, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -24,  0, 1,  4, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -24,  8, 3,  4, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -24, 16, 3,  4, ANIM_TARGET
 	delay 1
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -16,  0, 4, 1, ANIM_TARGET
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -16,  8, 4, 1, ANIM_TARGET
-	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2,  -16, 16, 4, 1, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -16,  0, 4,  1, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -16,  8, 4,  1, ANIM_TARGET
+	createsprite gSandAttackSpriteTemplate, ANIM_TARGET, 2, -16, 16, 4,  1, ANIM_TARGET
 	return
 
 Move_MUD_SLAP:
@@ -2966,33 +2966,36 @@ Move_WITHDRAW:
 	playsewithpan SE_M_HEADBUTT, SOUND_PAN_ATTACKER
 	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 0, 20
 	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 0, 4, RGB(31, 31, 25)
+	delay 8
+	invisible ANIM_ATTACKER
 	waitforvisualfinish
-	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  8, 2, 16, ANIM_ATTACKER
-	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  0, 0, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  8, 4, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  0, 3, 16, ANIM_ATTACKER
 	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  -8,  0, 1, 16, ANIM_ATTACKER
 	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,   0,  0, 1, 16, ANIM_ATTACKER
 	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,   8,  0, 1, 16, ANIM_ATTACKER
-	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  16,  0, 3, 16, ANIM_ATTACKER
-	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  16,  8, 4, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  16,  0, 0, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  16,  8, 2, 16, ANIM_ATTACKER
 	waitforvisualfinish
 	delay 4
-	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  8, 2, 16, ANIM_ATTACKER
-	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  0, 0, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  8, 4, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  0, 3, 16, ANIM_ATTACKER
 	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  -8,  0, 1, 16, ANIM_ATTACKER
 	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,   0,  0, 1, 16, ANIM_ATTACKER
 	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,   8,  0, 1, 16, ANIM_ATTACKER
-	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  16,  0, 3, 16, ANIM_ATTACKER
-	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  16,  8, 4, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  16,  0, 0, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  16,  8, 2, 16, ANIM_ATTACKER
 	waitforvisualfinish
 	delay 4
-	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  8, 2, 16, ANIM_ATTACKER
-	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  0, 0, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  8, 4, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  0, 3, 16, ANIM_ATTACKER
 	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  -8,  0, 1, 16, ANIM_ATTACKER
 	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,   0,  0, 1, 16, ANIM_ATTACKER
 	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,   8,  0, 1, 16, ANIM_ATTACKER
-	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  16,  0, 3, 16, ANIM_ATTACKER
-	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  16,  8, 4, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  16,  0, 0, 16, ANIM_ATTACKER
+	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  16,  8, 2, 16, ANIM_ATTACKER
 	waitforvisualfinish
+	visible ANIM_ATTACKER
 	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 0, 0, 0, 0
 	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 0, 4, RGB(31, 31, 31)
 	waitforvisualfinish
