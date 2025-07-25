@@ -37,6 +37,7 @@ static void AnimWaterBubbleProjectile_Step3(struct Sprite *);
 static void AnimGustTornado(struct Sprite *sprite);
 static void AnimToTargetInSinWaveMirrored(struct Sprite *sprite);
 static void AnimToTargetInSinWave3_Step(struct Sprite *sprite);
+static void AnimQuestionMark(struct Sprite *sprite);
 
 ///////////////////
 // GENERIC BEGIN //
@@ -224,6 +225,17 @@ const struct SpriteTemplate gSupersonicSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimToTargetInSinWaveMirrored,
+};
+
+const struct SpriteTemplate gStatusPoisonSkullSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ORANGE,
+    .paletteTag = ANIM_TAG_ORANGE,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sGeneric0Ends,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimQuestionMark,
 };
 /////////////////
 // GENERIC END //
@@ -857,6 +869,17 @@ const struct SpriteTemplate gBarrierWallSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSpriteStaticMirrored,
+};
+
+const struct SpriteTemplate gQuestionMarkSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_AMNESIA,
+    .paletteTag = ANIM_TAG_AMNESIA,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sGeneric0Ends,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimQuestionMark,
 };
 /////////////////
 // PSYCHIC END //
@@ -1567,6 +1590,19 @@ static void AnimToTargetInSinWave3_Step(struct Sprite *sprite)
     {
         sprite->data[6] += sprite->data[5];
     }
+}
+
+static void AnimQuestionMark(struct Sprite *sprite)
+{
+    SetSpriteCoordsToAnimAttackerCoords(sprite);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        sprite->x -= gBattleAnimArgs[0];
+    else
+        sprite->x += gBattleAnimArgs[0];
+
+    sprite->y += gBattleAnimArgs[1];
+    sprite->data[0]  = gBattleAnimArgs[2];
+    sprite->callback = DestroyAnimSpriteAfterTimer;
 }
 ///////////////////
 // CALLBACKS END //

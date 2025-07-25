@@ -8,12 +8,9 @@
 static void AnimDefensiveWall(struct Sprite *sprite);
 static void AnimWallSparkle(struct Sprite *sprite);
 static void AnimBentSpoon(struct Sprite *sprite);
-static void AnimQuestionMark(struct Sprite *sprite);
 static void AnimRedX(struct Sprite *sprite);
 static void AnimSkillSwapOrb(struct Sprite *sprite);
 static void AnimPsychoBoost(struct Sprite *sprite);
-static void AnimQuestionMark_Step1(struct Sprite *sprite);
-static void AnimQuestionMark_Step2(struct Sprite *sprite);
 static void AnimTask_MeditateStretchAttacker_Step(u8 taskId);
 static void AnimTask_Teleport_Step(u8 taskId);
 static void AnimTask_ImprisonOrbs_Step(u8 taskId);
@@ -205,28 +202,6 @@ const struct SpriteTemplate gBentSpoonSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimBentSpoon,
-};
-
-static const union AnimCmd sAnim_QuestionMark[] =
-{
-    ANIMCMD_FRAME(0, 30),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd *const sAnims_QuestionMark[] =
-{
-    sAnim_QuestionMark,
-};
-
-const struct SpriteTemplate gQuestionMarkSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_AMNESIA,
-    .paletteTag = ANIM_TAG_AMNESIA,
-    .oam = &gOamData_AffineOff_ObjNormal_16x16,
-    .anims = sAnims_QuestionMark,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimQuestionMark,
 };
 
 static const union AffineAnimCmd sAffineAnim_MeditateStretchAttacker[] =
@@ -450,19 +425,6 @@ static void AnimBentSpoon(struct Sprite *sprite)
     }
     StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
     sprite->callback = RunStoredCallbackWhenAnimEnds;
-}
-
-// Used by Amnesia
-static void AnimQuestionMark(struct Sprite *sprite)
-{
-    SetSpriteCoordsToAnimAttackerCoords(sprite);
-    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
-        sprite->x -= gBattleAnimArgs[0];
-    else
-        sprite->x += gBattleAnimArgs[0];
-    sprite->y += gBattleAnimArgs[1];
-    sprite->callback = RunStoredCallbackWhenAnimEnds;
-    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
 }
 
 void AnimTask_MeditateStretchAttacker(u8 taskId)

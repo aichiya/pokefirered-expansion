@@ -2000,16 +2000,16 @@ Move_AMNESIA:
 	monbg ANIM_ATTACKER
 	splitbgprio ANIM_ATTACKER
 	setalpha 8, 8
-	createsprite gQuestionMarkSpriteTemplate, ANIM_ATTACKER, 13, 16, -16
+	createsprite gQuestionMarkSpriteTemplate, ANIM_ATTACKER, 13, 16, -16, 30
 	playsewithpan SE_M_METRONOME, SOUND_PAN_ATTACKER
 	delay 15
-	createsprite gQuestionMarkSpriteTemplate, ANIM_ATTACKER, 13, 32, 0
+	createsprite gQuestionMarkSpriteTemplate, ANIM_ATTACKER, 13, 32, 0, 30
 	playsewithpan SE_M_METRONOME, SOUND_PAN_ATTACKER
 	waitforvisualfinish
-	createsprite gQuestionMarkSpriteTemplate, ANIM_ATTACKER, 13, 16, -16
+	createsprite gQuestionMarkSpriteTemplate, ANIM_ATTACKER, 13, 16, -16, 30
 	playsewithpan SE_M_METRONOME, SOUND_PAN_ATTACKER
 	delay 15
-	createsprite gQuestionMarkSpriteTemplate, ANIM_ATTACKER, 13, 32, 0
+	createsprite gQuestionMarkSpriteTemplate, ANIM_ATTACKER, 13, 32, 0, 30
 	playsewithpan SE_M_METRONOME, SOUND_PAN_ATTACKER
 	waitforvisualfinish
 	clearmonbg ANIM_ATTACKER
@@ -5114,9 +5114,12 @@ UnsetSolarBeamBg:
 	return
 
 Status_Poison:
+	loadspritegfx ANIM_TAG_ORANGE	
 	loopsewithpan SE_M_TOXIC, SOUND_PAN_TARGET, 13, 6
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_ATTACKER, 1, 0, 18, 2
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_ATTACKER, 2, 2, 0, 12, RGB(30, 0, 31)
+	createsprite gStatusPoisonSkullSpriteTemplate, ANIM_ATTACKER, 13, 16, -16, 20
+	delay 15
+	createsprite gStatusPoisonSkullSpriteTemplate, ANIM_ATTACKER, 13, 32, 0, 20
+	waitforvisualfinish
 	end
 
 Status_Confusion:
