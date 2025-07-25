@@ -5021,25 +5021,6 @@ WaterBubblesEffectLong:
 	playsewithpan SE_M_BUBBLE3, SOUND_PAN_TARGET
 	return
 
-ElectricityEffect:
-	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_TARGET
-	createsprite gElectricitySpriteTemplate, ANIM_TARGET, 2, 5, 0, 5, 0
-	delay 2
-	createsprite gElectricitySpriteTemplate, ANIM_TARGET, 2, -5, 10, 5, 1
-	delay 2
-	createsprite gElectricitySpriteTemplate, ANIM_TARGET, 2, 15, 20, 5, 2
-	delay 2
-	createsprite gElectricitySpriteTemplate, ANIM_TARGET, 2, -15, -10, 5, 0
-	delay 2
-	createsprite gElectricitySpriteTemplate, ANIM_TARGET, 2, 25, 0, 5, 1
-	delay 2
-	createsprite gElectricitySpriteTemplate, ANIM_TARGET, 2, -8, 8, 5, 2
-	delay 2
-	createsprite gElectricitySpriteTemplate, ANIM_TARGET, 2, 2, -8, 5, 0
-	delay 2
-	createsprite gElectricitySpriteTemplate, ANIM_TARGET, 2, -20, 15, 5, 1
-	return
-
 ConfusionEffect:
 	loopsewithpan SE_M_DIZZY_PUNCH, SOUND_PAN_TARGET, 13, 6
 	createsprite gConfusionDuckSpriteTemplate, ANIM_TARGET, 2, 0, -15, 0, 3, 90
@@ -5162,9 +5143,13 @@ Status_Sleep:
 	end
 
 Status_Paralysis:
-	loadspritegfx ANIM_TAG_SPARK_2
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_ATTACKER, 1, 0, 10, 1
-	call ElectricityEffect
+	loadspritegfx ANIM_TAG_TENDRILS
+	createsprite gBindTendrilsSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0
+	delay 20
+	createsprite gBindTendrilsSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0
+	delay 20
+	createsprite gBindTendrilsSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0
+	waitforvisualfinish
 	end
 
 Status_Freeze:
