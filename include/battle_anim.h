@@ -179,7 +179,7 @@ extern const union AffineAnimCmd *const gGrowingRingAffineAnimTable[];
 extern const union AnimCmd *const gAnims_SmallBubblePair[];
 extern const union AnimCmd *const gAnims_BasicFire[];
 extern const union AnimCmd *const gAnims_WaterMudOrb[];
-extern const union AnimCmd *const gAnims_WaterBubble[];
+extern const union AnimCmd *const gAnims_WaterGunDroplet[];
 extern const union AnimCmd *const gMusicNotesAnimTable[];
 extern const u8 *const gBattleAnims_StatusConditions[];
 extern const u8 *const gBattleAnims_Moves[];

@@ -7,8 +7,6 @@ static void AnimMegahornHorn(struct Sprite *sprite);
 static void AnimLeechLifeNeedle(struct Sprite *sprite);
 static void AnimTranslateWebThread(struct Sprite *sprite);
 static void AnimTranslateWebThread_Step(struct Sprite *sprite);
-static void AnimStringWrap(struct Sprite *sprite);
-static void AnimStringWrap_Step(struct Sprite *sprite);
 static void AnimSpiderWeb(struct Sprite *sprite);
 static void AnimSpiderWeb_Step(struct Sprite *sprite);
 static void AnimSpiderWeb_End(struct Sprite *sprite);
@@ -98,17 +96,6 @@ const struct SpriteTemplate gWebThreadSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimTranslateWebThread,
-};
-
-const struct SpriteTemplate gStringWrapSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_STRING,
-    .paletteTag = ANIM_TAG_STRING,
-    .oam = &gOamData_AffineOff_ObjNormal_64x32,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimStringWrap,
 };
 
 static const union AffineAnimCmd sAffineAnim_SpiderWeb[] =
@@ -278,32 +265,6 @@ static void AnimTranslateWebThread_Step(struct Sprite *sprite)
     }
     sprite->x2 += Sin(sprite->data[6], sprite->data[5]);
     sprite->data[6] = (sprite->data[6] + 13) & 0xFF;
-}
-
-static void AnimStringWrap(struct Sprite *sprite)
-{
-    SetAverageBattlerPositions(gBattleAnimTarget, 0, &sprite->x, &sprite->y);
-    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
-        sprite->x -= gBattleAnimArgs[0];
-    else
-        sprite->x += gBattleAnimArgs[0];
-    sprite->y += gBattleAnimArgs[1];
-    if (GetBattlerSide(gBattleAnimTarget) == B_SIDE_PLAYER)
-        sprite->y += 8;
-    sprite->callback = AnimStringWrap_Step;
-}
-
-static void AnimStringWrap_Step(struct Sprite *sprite)
-{
-    if (++sprite->data[0] == 3)
-    {
-        sprite->data[0] = 0;
-        sprite->invisible ^= 1;
-    }
-    if (++sprite->data[1] == 51)
-    {
-        DestroyAnimSprite(sprite);
-    }
 }
 
 static void AnimSpiderWeb(struct Sprite *sprite)
