@@ -164,6 +164,17 @@ const struct SpriteTemplate gPokeBallPuffSpriteTemplate =
     .callback = AnimSpriteMoveLinear2,
 };
 
+const struct SpriteTemplate gOrbCombineSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ORBS,
+    .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sGeneric0Ends,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteMoveToMonPos,
+};
+
 const struct SpriteTemplate gOrbSpiralInwardSpriteTemplate =
 {
     .tileTag = ANIM_TAG_ORBS,
@@ -571,21 +582,12 @@ const struct SpriteTemplate gWithdrawSpriteTemplate =
 /////////////////
 // GRASS BEGIN //
 /////////////////
-static const union AnimCmd sAnim_OrbCombine[] =
+const struct SpriteTemplate gAbsorptionOrbCombineSpriteTemplate =
 {
-    ANIMCMD_FRAME(0, 1),
-    ANIMCMD_END,
-};
-static const union AnimCmd *const sOrbCombine[] =
-{
-    sAnim_OrbCombine,
-};
-const struct SpriteTemplate gOrbCombineSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_ORBS,
-    .paletteTag = ANIM_TAG_ORBS,
+    .tileTag = ANIM_TAG_PENCIL_2,
+    .paletteTag = ANIM_TAG_PENCIL_2,
     .oam = &gOamData_AffineOff_ObjNormal_8x8,
-    .anims = sOrbCombine,
+    .anims = sGeneric0Ends,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSpriteMoveToMonPos,
@@ -614,6 +616,16 @@ const struct SpriteTemplate gOrbProjectileReversedSpriteTemplate =
 {
     .tileTag = ANIM_TAG_ORBS,
     .paletteTag = ANIM_TAG_ORBS,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sLargeOrb,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteProjectileParabolicReversed2,
+};
+const struct SpriteTemplate gAbsorptionOrbProjectileReversedSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_PENCIL_2,
+    .paletteTag = ANIM_TAG_PENCIL_2,
     .oam = &gOamData_AffineOff_ObjNormal_16x16,
     .anims = sLargeOrb,
     .images = NULL,

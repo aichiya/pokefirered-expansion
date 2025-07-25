@@ -3173,31 +3173,17 @@ Move_HYDRO_PUMP:
 	waitforvisualfinish
 	end
 
-HydroPumpBeams:
-	createsprite gHydroPumpOrbSpriteTemplate, ANIM_ATTACKER, 3, 10, 10, 0, 16
-	createsprite gHydroPumpOrbSpriteTemplate, ANIM_ATTACKER, 3, 10, 10, 0, -16
-	delay 1
-	createsprite gHydroPumpOrbSpriteTemplate, ANIM_ATTACKER, 3, 10, 10, 0, 16
-	createsprite gHydroPumpOrbSpriteTemplate, ANIM_ATTACKER, 3, 10, 10, 0, -16
-	delay 1
-	return
-
-HydroPumpHitSplats	:
-	createsprite gWaterHitSplatSpriteTemplate, ANIM_ATTACKER, 4, 0, 15, ANIM_TARGET, 1
-	createsprite gWaterHitSplatSpriteTemplate, ANIM_ATTACKER, 4, 0, -15, ANIM_TARGET, 1
-	return
-
 Move_SIGNAL_BEAM:
 	end
 
 Move_ABSORB:
-	loadspritegfx ANIM_TAG_ORBS
+	loadspritegfx ANIM_TAG_PENCIL_2
 	monbg ANIM_DEF_PARTNER
 	splitbgprio_foes ANIM_TARGET
 	setalpha 12, 8
 	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 0, 4, RGB(13, 31, 12)
 	playsewithpan SE_M_ABSORB, SOUND_PAN_TARGET
-	call AbsorbEffect
+	call AbsorbPrefab
 	delay 98
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 5, 5, 1
 	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 4, 0, RGB(13, 31, 12)
@@ -3206,14 +3192,14 @@ Move_ABSORB:
 	blendoff
 	end
 
-AbsorbEffect:
-	createsprite gOrbCombineSpriteTemplate, ANIM_TARGET, 2, -24, -24, 24, ANIM_TARGET
-	createsprite gOrbCombineSpriteTemplate, ANIM_TARGET, 2,  24, -24, 24, ANIM_TARGET
-	createsprite gOrbCombineSpriteTemplate, ANIM_TARGET, 2, -24,  24, 24, ANIM_TARGET
-	createsprite gOrbCombineSpriteTemplate, ANIM_TARGET, 2,  24,  24, 24, ANIM_TARGET
+AbsorbPrefab:
+	createsprite gAbsorptionOrbCombineSpriteTemplate, ANIM_TARGET, 2, -24, -24, 24, ANIM_TARGET
+	createsprite gAbsorptionOrbCombineSpriteTemplate, ANIM_TARGET, 2,  24, -24, 24, ANIM_TARGET
+	createsprite gAbsorptionOrbCombineSpriteTemplate, ANIM_TARGET, 2, -24,  24, 24, ANIM_TARGET
+	createsprite gAbsorptionOrbCombineSpriteTemplate, ANIM_TARGET, 2,  24,  24, 24, ANIM_TARGET
 	delay 22
 	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_TARGET
-	createsprite gOrbProjectileReversedSpriteTemplate, ANIM_ATTACKER, 2, 108, -40, -108, 40, -30, 76, ANIM_ATTACKER, 0
+	createsprite gAbsorptionOrbProjectileReversedSpriteTemplate, ANIM_ATTACKER, 2, 108, -40, -108, 40, -30, 76, ANIM_ATTACKER, 0
 	return
 
 Move_MEGA_DRAIN:
@@ -3223,7 +3209,7 @@ Move_MEGA_DRAIN:
 	setalpha 12, 8
 	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 0, 4, RGB(13, 31, 12)
 	playsewithpan SE_M_ABSORB, SOUND_PAN_TARGET
-	call AbsorbEffect
+	call AbsorbPrefab
 	delay 98
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 5, 5, 1
 	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 4, 0, RGB(13, 31, 12)
@@ -3286,7 +3272,13 @@ Move_LEECH_LIFE:
 	delay 1
 	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 0, 4, RGB(25, 25, 25)
 	waitforvisualfinish
-	call AbsorbEffect
+	createsprite gOrbCombineSpriteTemplate, ANIM_TARGET, 2, -24, -24, 24, ANIM_TARGET
+	createsprite gOrbCombineSpriteTemplate, ANIM_TARGET, 2,  24, -24, 24, ANIM_TARGET
+	createsprite gOrbCombineSpriteTemplate, ANIM_TARGET, 2, -24,  24, 24, ANIM_TARGET
+	createsprite gOrbCombineSpriteTemplate, ANIM_TARGET, 2,  24,  24, 24, ANIM_TARGET
+	delay 22
+	playsewithpan SE_M_CRABHAMMER, SOUND_PAN_TARGET
+	createsprite gOrbProjectileReversedSpriteTemplate, ANIM_ATTACKER, 2, 108, -40, -108, 40, -30, 76, ANIM_ATTACKER, 0
 	delay 98
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 5, 5, 1
 	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 4, 0, RGB(25, 25, 25)
@@ -4344,24 +4336,6 @@ Move_RECOVER:
 	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
 	waitforvisualfinish
 	end
-	
-
-RecoverAbsorbEffect:
-	createsprite gPowerAbsorptionOrbSpriteTemplate, ANIM_ATTACKER, 2, 40, -10, 13
-	delay 3
-	createsprite gPowerAbsorptionOrbSpriteTemplate, ANIM_ATTACKER, 2, -35, -10, 13
-	delay 3
-	createsprite gPowerAbsorptionOrbSpriteTemplate, ANIM_ATTACKER, 2, 15, -40, 13
-	delay 3
-	createsprite gPowerAbsorptionOrbSpriteTemplate, ANIM_ATTACKER, 2, -10, -32, 13
-	delay 3
-	createsprite gPowerAbsorptionOrbSpriteTemplate, ANIM_ATTACKER, 2, 25, -20, 13
-	delay 3
-	createsprite gPowerAbsorptionOrbSpriteTemplate, ANIM_ATTACKER, 2, -40, -20, 13
-	delay 3
-	createsprite gPowerAbsorptionOrbSpriteTemplate, ANIM_ATTACKER, 2, 5, -40, 13
-	delay 3
-	return
 
 Move_MIMIC:
 	loadspritegfx ANIM_TAG_ORBS
@@ -5546,7 +5520,7 @@ General_IngrainHeal:
 	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 0, 4, RGB(13, 31, 12)
 	waitforvisualfinish
 	delay 3
-	call AbsorbEffect
+	call AbsorbPrefab
 	waitforvisualfinish
 	delay 15
 	call HealingEffect

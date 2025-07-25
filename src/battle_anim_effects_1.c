@@ -303,38 +303,6 @@ static const union AnimCmd *const sSolarBeamSmallOrbAnimTable[] =
     sSolarBeamSmallOrbAnimCms,
 };
 
-static const union AnimCmd *const sPowerAbsorptionOrbCombine[] =
-{
-    sAnim_AbsorptionOrbCombine,
-};
-
-static const union AnimCmd *const sPowerAbsorptionOrbProjectile[] =
-{
-    sAnim_AbsorptionOrbProjectile,
-};
-
-static const union AffineAnimCmd sPowerAbsorptionOrbAffineAnimCmds[] =
-{
-    AFFINEANIMCMD_FRAME(-5, -5, 0, 1),
-    AFFINEANIMCMD_JUMP(0),
-};
-
-static const union AffineAnimCmd *const sPowerAbsorptionOrbAffineAnimTable[] =
-{
-    sPowerAbsorptionOrbAffineAnimCmds,
-};
-
-const struct SpriteTemplate gPowerAbsorptionOrbSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_ORBS,
-    .paletteTag = ANIM_TAG_ORBS,
-    .oam = &gOamData_AffineNormal_ObjBlend_16x16,
-    .anims = sPowerAbsorptionOrbProjectile,
-    .images = NULL,
-    .affineAnims = sPowerAbsorptionOrbAffineAnimTable,
-    .callback = AnimPowerAbsorptionOrb,
-};
-
 const struct SpriteTemplate gSolarBeamBigOrbSpriteTemplate =
 {
     .tileTag = ANIM_TAG_ORBS,
@@ -400,17 +368,6 @@ const struct SpriteTemplate gBouncingSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimBouncingSprite,
-};
-
-const struct SpriteTemplate gAbsorptionOrbProjectileSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_ORBS,
-    .paletteTag = ANIM_TAG_ORBS,
-    .oam = &gOamData_AffineOff_ObjNormal_16x16,
-    .anims = sPowerAbsorptionOrbProjectile,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimAbsorptionOrbProjectile,
 };
 
 const struct SpriteTemplate gHyperBeamOrbSpriteTemplate =
@@ -702,36 +659,6 @@ const struct SpriteTemplate gConstrictBindingSpriteTemplate =
     .images = NULL,
     .affineAnims = sAffineAnims_ConstrictBinding,
     .callback = AnimConstrictBinding,
-};
-
-static const union AffineAnimCmd sMimicOrbAffineAnimCmds1[] = 
-{
-    AFFINEANIMCMD_FRAME(0, 0, 0, 0),
-    AFFINEANIMCMD_FRAME(48, 48, 0, 14),
-    AFFINEANIMCMD_END,
-};
-
-static const union AffineAnimCmd sMimicOrbAffineAnimCmds2[] = 
-{
-    AFFINEANIMCMD_FRAME(-16, -16, 0, 1),
-    AFFINEANIMCMD_JUMP(0),
-};
-
-static const union AffineAnimCmd *const sMimicOrbAffineAnimTable[] = 
-{
-    sMimicOrbAffineAnimCmds1,
-    sMimicOrbAffineAnimCmds2,
-};
-
-const struct SpriteTemplate gMimicOrbSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_ORBS,
-    .paletteTag = ANIM_TAG_ORBS,
-    .oam = &gOamData_AffineDouble_ObjNormal_16x16,
-    .anims = sPowerAbsorptionOrbProjectile,
-    .images = NULL,
-    .affineAnims = sMimicOrbAffineAnimTable,
-    .callback = AnimMimicOrb,
 };
 
 static const union AnimCmd sIngrainRootAnimCmds1[] =
