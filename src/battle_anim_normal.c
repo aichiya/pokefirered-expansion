@@ -34,7 +34,6 @@ static void AnimShakeMonOrBattleTerrain_UpdateCoordOffsetEnabled(void);
 static void AnimShakeMonOrBattleTerrain_Step(struct Sprite *sprite);
 static void AnimTask_ShakeBattleTerrain_Step(u8 taskId);
 static void AnimFlashingHitSplat_Step(struct Sprite *sprite);
-static void AnimStringShot(struct Sprite *sprite);
 
 static const union AnimCmd sAnim_ConfusionDuck_0[] =
 {
@@ -69,28 +68,6 @@ const struct SpriteTemplate gConfusionDuckSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimConfusionDuck,
-};
-
-static const union AnimCmd sStringShotAnimCmds[] =
-{
-    ANIMCMD_FRAME(0, 1),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd *const sStringShotAnimTable[] =
-{
-    sStringShotAnimCmds,
-};
-
-const struct SpriteTemplate gStringShotSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_STRING,
-    .paletteTag = ANIM_TAG_STRING,
-    .oam = &gOamData_AffineOff_ObjNormal_16x16,
-    .anims = sStringShotAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimStringShot,
 };
 
 const struct SpriteTemplate gSimplePaletteBlendSpriteTemplate =
@@ -436,18 +413,6 @@ static void AnimCirclingSparkle(struct Sprite *sprite)
     StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
     sprite->callback = TranslateSpriteInGrowingCircle;
     sprite->callback(sprite);
-}
-
-static void AnimStringShot(struct Sprite *sprite)
-{
-    StartSpriteAnim(sprite, gBattleAnimArgs[2]);
-    if (gBattleAnimArgs[4] == 0)
-        InitSpritePosToAnimAttacker(sprite, TRUE);
-    else
-        InitSpritePosToAnimTarget(sprite, TRUE);
-    sprite->data[0] = gBattleAnimArgs[3];
-    sprite->callback = RunStoredCallbackWhenAnimEnds;
-    StoreSpriteCallbackInData6(sprite, DestroyAnimSpriteAfterTimer);
 }
 
 static void AnimOrbSpiralInward(struct Sprite *sprite)

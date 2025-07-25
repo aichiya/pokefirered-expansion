@@ -22,6 +22,7 @@ static void AnimSpriteRises(struct Sprite *);
 static void AnimSpriteSpiralToMonPos(struct Sprite *);
 static void AnimSpriteStatic(struct Sprite *);
 static void AnimSpriteStaticVisualXFlip(struct Sprite *);
+static void AnimSpriteStaticVisualXYFlipWithHeightAdjustment(struct Sprite *);
 static void AnimSpriteStaticPositionXYFlip(struct Sprite *);
 static void AnimSpriteStaticMirrored(struct Sprite *);
 
@@ -852,7 +853,36 @@ const struct SpriteTemplate gBarrierWallSpriteTemplate =
 ///////////////
 // BUG BEGIN //
 ///////////////
+const struct SpriteTemplate gStringShotSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_SPIDER_WEB,
+    .paletteTag = ANIM_TAG_SPIDER_WEB,
+    .oam = &gOamData_AffineOff_ObjNormal_64x64,
+    .anims = sGeneric0Ends,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteStaticVisualXYFlipWithHeightAdjustment,
+};
 
+static const union AnimCmd sAnim_StringWrap[] =
+{
+    ANIMCMD_FRAME(4, 1),
+    ANIMCMD_END,
+};
+static const union AnimCmd *const sAnims_StringWrap[] =
+{
+    sAnim_StringWrap,
+};
+const struct SpriteTemplate gStringWrapSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_STRING,
+    .paletteTag = ANIM_TAG_STRING,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sAnims_StringWrap,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteMoveLinearWithXFlipMirrored,
+};
 /////////////
 // BUG END //
 /////////////
@@ -1068,11 +1098,11 @@ static void AnimSpriteMoveLinearWithXFlipMirrored(struct Sprite *sprite)
         {
             gBattleAnimArgs[0] = -gBattleAnimArgs[0];
             gBattleAnimArgs[2] = -gBattleAnimArgs[2];
-            StartSpriteAnim(sprite, 1);
+            sprite->hFlip = TRUE;
         }
     else
         {
-            StartSpriteAnim(sprite, 0);
+            sprite->hFlip = FALSE;
         }
 
 
@@ -1158,6 +1188,27 @@ static void AnimSpriteStaticVisualXFlip(struct Sprite *sprite)
     }
 
     sprite->hFlip = (GetBattlerSide(battler) == B_SIDE_PLAYER);
+    sprite->data[0]  = gBattleAnimArgs[3];
+    sprite->callback = DestroyAnimSpriteAfterTimer;
+}
+
+static void AnimSpriteStaticVisualXYFlipWithHeightAdjustment(struct Sprite *sprite)
+{
+    bool8 isFoe = (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER);
+
+    StartSpriteAnim(sprite, gBattleAnimArgs[2]);
+
+    if (isFoe)
+        gBattleAnimArgs[1] += 32;
+
+    if (gBattleAnimArgs[4] == ANIM_ATTACKER)
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    else
+        InitSpritePosToAnimTarget(sprite, TRUE);
+
+    sprite->hFlip = isFoe;
+    sprite->vFlip = isFoe;
+
     sprite->data[0]  = gBattleAnimArgs[3];
     sprite->callback = DestroyAnimSpriteAfterTimer;
 }

@@ -4264,23 +4264,18 @@ BideUnleash:
 
 Move_STRING_SHOT:
 	loadspritegfx ANIM_TAG_STRING
+	loadspritegfx ANIM_TAG_SPIDER_WEB
 	loopsewithpan SE_M_STRING_SHOT, SOUND_PAN_ATTACKER, 9, 6
-	createsprite gStringShotSpriteTemplate, ANIM_TARGET, 2, -64, 16, 0, 4, ANIM_TARGET
-	createsprite gStringShotSpriteTemplate, ANIM_TARGET, 2, -48,  8, 0, 4, ANIM_TARGET
-	createsprite gStringShotSpriteTemplate, ANIM_TARGET, 2, -32,  0, 0, 4, ANIM_TARGET
+	createsprite gStringShotSpriteTemplate, ANIM_ATTACKER, 2, 32, -24, 0, 4, ANIM_ATTACKER
 	waitforvisualfinish
-	createsprite gStringShotSpriteTemplate, ANIM_TARGET, 2, -56, 24, 0, 4, ANIM_TARGET
-	createsprite gStringShotSpriteTemplate, ANIM_TARGET, 2, -40, 16, 0, 4, ANIM_TARGET
-	createsprite gStringShotSpriteTemplate, ANIM_TARGET, 2, -24,  8, 0, 4, ANIM_TARGET
+	createsprite gStringShotSpriteTemplate, ANIM_ATTACKER, 2, 40, -16, 0, 4, ANIM_ATTACKER
 	waitforvisualfinish
-	createsprite gStringShotSpriteTemplate, ANIM_TARGET, 2, -48, 32, 0, 4, ANIM_TARGET
-	createsprite gStringShotSpriteTemplate, ANIM_TARGET, 2, -32, 24, 0, 4, ANIM_TARGET
-	createsprite gStringShotSpriteTemplate, ANIM_TARGET, 2, -16, 16, 0, 4, ANIM_TARGET
+	createsprite gStringShotSpriteTemplate, ANIM_ATTACKER, 2, 48,  -8, 0, 4, ANIM_ATTACKER
 	waitforvisualfinish
 	playsewithpan SE_M_STRING_SHOT2, SOUND_PAN_TARGET
-	createsprite gStringWrapSpriteTemplate, ANIM_TARGET, 2, 32, -16, -48, 8, 30, 100
-	createsprite gStringWrapSpriteTemplate, ANIM_TARGET, 2, 32,   0, -48, 8, 30, 100
-	createsprite gStringWrapSpriteTemplate, ANIM_TARGET, 2, 32,  16, -48, 8, 30, 100
+	createsprite gStringWrapSpriteTemplate, ANIM_TARGET, 2, 32, -16, -32, -16, 30, 100
+	createsprite gStringWrapSpriteTemplate, ANIM_TARGET, 2, 32,   0, -32,   0, 30, 100
+	createsprite gStringWrapSpriteTemplate, ANIM_TARGET, 2, 32,  16, -32,  16, 30, 100
 	waitforvisualfinish
 	end
 
