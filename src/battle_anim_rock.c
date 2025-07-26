@@ -23,6 +23,7 @@ static void CreateRolloutDirtSprite(struct Task *task);
 static u8 GetRolloutCounter(void);
 static void AnimRockTomb_Step(struct Sprite *sprite);
 static void AnimRockScatter_Step(struct Sprite *sprite);
+static void AnimRockProjectile(struct Sprite *sprite);
 
 static const union AnimCmd sAnim_FlyingRock_0[] =
 {
@@ -199,11 +200,33 @@ static const union AnimCmd *const sAnims_BasicRock[] =
     sAnim_Rock_Smallest,
 };
 
+static const union AnimCmd sAnim_RockProjectile[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnims_RockProjectile[] =
+{
+    sAnim_RockProjectile,
+};
+
+const struct SpriteTemplate gRockProjectileSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ROCKS,
+    .paletteTag = ANIM_TAG_ROCKS,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sAnims_RockProjectile,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimRockProjectile,
+};
+
 const struct SpriteTemplate gAncientPowerRockSpriteTemplate =
 {
     .tileTag = ANIM_TAG_ROCKS,
     .paletteTag = ANIM_TAG_ROCKS,
-    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
     .anims = sAnims_BasicRock,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
@@ -533,7 +556,10 @@ static void AnimFlyingSandCrescent(struct Sprite *sprite)
 static void AnimRaiseSprite(struct Sprite *sprite)
 {
     StartSpriteAnim(sprite, gBattleAnimArgs[4]);
-    InitSpritePosToAnimAttacker(sprite, 0);
+    if (gBattleAnimArgs[4] == 0)
+        InitSpritePosToAnimAttacker(sprite, 0);
+    else
+        InitSpritePosToAnimTarget(sprite, 0);
     sprite->data[0] = gBattleAnimArgs[3];
     sprite->data[2] = sprite->x;
     sprite->data[4] = sprite->y + gBattleAnimArgs[2];
@@ -710,6 +736,34 @@ static u8 GetRolloutCounter(void)
     if (var0 > 4)
         retVal = 1;
     return retVal;
+}
+
+static void AnimRockProjectile(struct Sprite *sprite)
+{
+    bool8 animType;
+    u8 coordType;
+    if (GetBattlerSide(gBattleAnimAttacker) == GetBattlerSide(gBattleAnimTarget))
+    {
+        gBattleAnimArgs[0] *= -1;
+        if (GetBattlerPosition(gBattleAnimAttacker) == B_POSITION_PLAYER_LEFT || GetBattlerPosition(gBattleAnimAttacker) == B_POSITION_OPPONENT_LEFT)
+            gBattleAnimArgs[0] *= -1;
+    }
+    if ((gBattleAnimArgs[5] & 0xFF00) == 0)
+        animType = TRUE;
+    else
+        animType = FALSE;
+    if ((u8)gBattleAnimArgs[5] == 0)
+        coordType = BATTLER_COORD_Y_PIC_OFFSET;
+    else
+        coordType = 1;
+    InitSpritePosToAnimAttacker(sprite, animType);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+    sprite->data[0] = gBattleAnimArgs[4];
+    sprite->data[2] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2) + gBattleAnimArgs[2];
+    sprite->data[4] = GetBattlerSpriteCoord(gBattleAnimTarget, coordType) + gBattleAnimArgs[3];
+    sprite->callback = StartAnimLinearTranslation;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
 }
 
 static void AnimRockTomb(struct Sprite *sprite)

@@ -33,6 +33,9 @@ static bool8 CreateVoltTackleBolt(struct Task *task, u8 taskId);
 static bool8 CreateShockWaveBoltSprite(struct Task *task, u8 taskId);
 static bool8 CreateShockWaveLightningSprite(struct Task *task, u8 taskId);
 static void AnimShockWaveLightning(struct Sprite *sprite);
+static void AnimSpriteFalls(struct Sprite *sprite);
+static void AnimSpriteRises2(struct Sprite *sprite);
+static void AnimRBLightning(struct Sprite *sprite);
 
 static const union AnimCmd sAnim_Lightning[] =
 {
@@ -58,6 +61,139 @@ const struct SpriteTemplate gLightningSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimLightning,
+};
+
+static const union AnimCmd sAnim_RBThunder[] =
+{
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(0, 4, .hFlip = TRUE),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd *const sAnims_RBThunder[] =
+{
+    sAnim_RBThunder,
+};
+
+const struct SpriteTemplate gRBThunderSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_LIGHTNING,
+    .paletteTag = ANIM_TAG_LIGHTNING,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sAnims_RBThunder,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteFalls,
+};
+
+static const union AnimCmd sAnim_RBLightningBall1[] =
+{
+    ANIMCMD_FRAME(0, 2),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_RBLightningBall2[] =
+{
+    ANIMCMD_FRAME(16, 4),
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(16, 4),
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(16, 4),
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_FRAME(16, 4),
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnims_RBLightningBall[] =
+{
+    sAnim_RBLightningBall2,
+};
+
+const struct SpriteTemplate gRBLightningBallSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_EXPLOSION,
+    .paletteTag = ANIM_TAG_EXPLOSION,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = sAnims_RBLightningBall,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimRBLightning,
+};
+
+static const union AnimCmd sAnim_RBLightningSpark[] =
+{
+    ANIMCMD_FRAME(10, 4),
+    ANIMCMD_FRAME(32, 8),
+    ANIMCMD_FRAME(10, 4),
+    ANIMCMD_FRAME(32, 8),
+    ANIMCMD_FRAME(10, 4),
+    ANIMCMD_FRAME(32, 8),
+    ANIMCMD_FRAME(10, 4),
+    ANIMCMD_FRAME(32, 8),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnims_RBLightningSpark[] =
+{
+    sAnim_RBLightningSpark,
+};
+
+const struct SpriteTemplate gRBLightningSparkSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_LIGHTNING,
+    .paletteTag = ANIM_TAG_LIGHTNING,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sAnims_RBLightningSpark,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimRBLightning,
+};
+
+static const union AnimCmd sAnim_RBLightningFizzle1[] =
+{
+    ANIMCMD_FRAME(4, 2),
+    ANIMCMD_FRAME(4, 2, .vFlip = TRUE, .hFlip = TRUE),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd *const sAnims_RBLightningFizzle1[] =
+{
+    sAnim_RBLightningFizzle1,
+};
+
+const struct SpriteTemplate gRBLightningFizzle1SpriteTemplate =
+{
+    .tileTag = ANIM_TAG_LIGHTNING,
+    .paletteTag = ANIM_TAG_LIGHTNING,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sAnims_RBLightningFizzle1,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteRises2,
+};
+
+static const union AnimCmd sAnim_RBLightningFizzle2[] =
+{
+    ANIMCMD_FRAME(4, 2, .hFlip = TRUE),
+    ANIMCMD_FRAME(4, 2, .vFlip = TRUE),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd *const sAnims_RBLightningFizzle2[] =
+{
+    sAnim_RBLightningFizzle2,
+};
+
+const struct SpriteTemplate gRBLightningFizzle2SpriteTemplate =
+{
+    .tileTag = ANIM_TAG_LIGHTNING,
+    .paletteTag = ANIM_TAG_LIGHTNING,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = sAnims_RBLightningFizzle2,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimSpriteRises2,
 };
 
 static const union AffineAnimCmd sAffineAnim_UnusedSpinningFist[] =
@@ -772,6 +908,65 @@ static void AnimThunderWave_Step(struct Sprite *sprite)
     }
     if (++sprite->data[1] == 51)
         DestroyAnimSprite(sprite);
+}
+
+void AnimSpriteFalls(struct Sprite *sprite)
+{
+    bool8 r4;
+    u8 battlerId, coordType;
+
+    if (gBattleAnimArgs[2] != ANIM_ATTACKER)
+        InitSpritePosToAnimTarget(sprite, TRUE);
+    else
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+    sprite->data[0] = gBattleAnimArgs[4];
+    sprite->data[2] = sprite->x + gBattleAnimArgs[5];
+    sprite->data[4] = sprite->y + gBattleAnimArgs[3];
+    sprite->callback = StartAnimLinearTranslation;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+}
+
+void AnimSpriteRises2(struct Sprite *sprite)
+{
+    bool8 r4;
+    u8 battlerId, coordType;
+
+    if (gBattleAnimArgs[2] != ANIM_ATTACKER)
+        InitSpritePosToAnimTarget(sprite, TRUE);
+    else
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        gBattleAnimArgs[2] = -gBattleAnimArgs[2];
+    sprite->data[0] = gBattleAnimArgs[4];
+    sprite->data[2] = sprite->x + gBattleAnimArgs[5];
+    sprite->data[4] = sprite->y - gBattleAnimArgs[3];
+    sprite->callback = StartAnimLinearTranslation;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+}
+
+static void AnimRBLightning(struct Sprite *sprite)
+{
+    bool8 var;
+
+    if (!sprite->data[0])
+    {
+        if (!gBattleAnimArgs[3])
+            var = TRUE;
+        else
+            var = FALSE;
+        if (!gBattleAnimArgs[2])
+            InitSpritePosToAnimTarget(sprite, var);
+        else
+            InitSpritePosToAnimAttacker(sprite, var);
+        ++sprite->data[0];
+
+    }
+    else if (sprite->animEnded || sprite->affineAnimEnded)
+    {
+        DestroySpriteAndMatrix(sprite);
+    }
 }
 
 // Animates small electric orbs moving from around the battler inward. For Charge/Shock Wave

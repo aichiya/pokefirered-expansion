@@ -7,3 +7,8 @@ Record machine animation skipped entirely, must restore playing sound.
 
 -General-
 Set FLAG_SYS_CAN_LINK_WITH_RS at game start.
+
+Lass outside Cerulean Cave dialogue not formatted correctly.
+Ninetales backsprite too high.
+Vulpix party sprite not animated.
+Cerulean Cave ladder doesn't work.

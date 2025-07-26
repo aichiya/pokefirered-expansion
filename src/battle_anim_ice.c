@@ -146,6 +146,17 @@ static const union AffineAnimCmd *const sAffineAnims_IceCrystalSpiralInwardLarge
     sAffineAnim_IceCrystalSpiralInwardLarge,
 };
 
+static const union AnimCmd sAnim_TeleportFlyOrb[] =
+{
+    ANIMCMD_FRAME(0, 0),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnims_TeleportFlyOrb[] =
+{
+    sAnim_TeleportFlyOrb,
+};
+
 const struct SpriteTemplate gIceCrystalSpiralInwardLarge =
 {
     .tileTag = ANIM_TAG_ICE_CRYSTALS,

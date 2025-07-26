@@ -9,6 +9,7 @@ static void AnimConfusionDuck(struct Sprite *sprite);
 static void AnimSimplePaletteBlend(struct Sprite *sprite);
 static void AnimComplexPaletteBlend(struct Sprite *sprite);
 static void AnimCirclingSparkle(struct Sprite *sprite);
+static void AnimOrbSpiralInward(struct Sprite *sprite);
 static void AnimShakeMonOrBattleTerrain(struct Sprite *sprite);
 static void AnimHitSplatBasic(struct Sprite *sprite);
 static void AnimHitSplatHandleInvert(struct Sprite *sprite);
@@ -33,7 +34,6 @@ static void AnimShakeMonOrBattleTerrain_UpdateCoordOffsetEnabled(void);
 static void AnimShakeMonOrBattleTerrain_Step(struct Sprite *sprite);
 static void AnimTask_ShakeBattleTerrain_Step(u8 taskId);
 static void AnimFlashingHitSplat_Step(struct Sprite *sprite);
-
 
 static const union AnimCmd sAnim_ConfusionDuck_0[] =
 {
@@ -119,6 +119,17 @@ static const struct SpriteTemplate sCirclingSparkleSpriteTemplate =
     .callback = AnimCirclingSparkle,
 };
 
+static const union AnimCmd sAnim_OrbSpiralSpread[] =
+{
+    ANIMCMD_FRAME(0, 4),
+    ANIMCMD_JUMP(0),
+};
+
+static const union AnimCmd *const sAnims_OrbSpiralSpread[] =
+{
+    sAnim_OrbSpiralSpread,
+};
+
 const struct SpriteTemplate gShakeMonOrTerrainSpriteTemplate =
 {
     .tileTag = 0,
@@ -138,21 +149,18 @@ static const union AffineAnimCmd sAffineAnim_HitSplat_0[] =
 
 static const union AffineAnimCmd sAffineAnim_HitSplat_1[] =
 {
-    AFFINEANIMCMD_FRAME(0xD8, 0xD8, 0, 0),
     AFFINEANIMCMD_FRAME(0x0, 0x0, 0, 8),
     AFFINEANIMCMD_END,
 };
 
 static const union AffineAnimCmd sAffineAnim_HitSplat_2[] =
 {
-    AFFINEANIMCMD_FRAME(0xB0, 0xB0, 0, 0),
     AFFINEANIMCMD_FRAME(0x0, 0x0, 0, 8),
     AFFINEANIMCMD_END,
 };
 
 static const union AffineAnimCmd sAffineAnim_HitSplat_3[] =
 {
-    AFFINEANIMCMD_FRAME(0x80, 0x80, 0, 0),
     AFFINEANIMCMD_FRAME(0x0, 0x0, 0, 8),
     AFFINEANIMCMD_END,
 };
@@ -169,7 +177,7 @@ const struct SpriteTemplate gBasicHitSplatSpriteTemplate =
 {
     .tileTag = ANIM_TAG_IMPACT,
     .paletteTag = ANIM_TAG_IMPACT,
-    .oam = &gOamData_AffineNormal_ObjBlend_32x32,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
     .anims = gDummySpriteAnimTable,
     .images = NULL,
     .affineAnims = sAffineAnims_HitSplat,
@@ -403,6 +411,23 @@ static void AnimCirclingSparkle(struct Sprite *sprite)
     sprite->data[4] = 112;
     sprite->data[5] = 0;
     StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
+    sprite->callback = TranslateSpriteInGrowingCircle;
+    sprite->callback(sprite);
+}
+
+static void AnimOrbSpiralInward(struct Sprite *sprite)
+{
+    if (gBattleAnimArgs[1] == 0)
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    else
+        InitSpritePosToAnimTarget(sprite, TRUE);
+    
+    sprite->data[0] = gBattleAnimArgs[0];
+    sprite->data[1] = 64; //How far out the orbs start?
+    sprite->data[2] = 16;
+    sprite->data[3] = 32;
+    sprite->data[4] = 0xFE00;
+    StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
     sprite->callback = TranslateSpriteInGrowingCircle;
     sprite->callback(sprite);
 }
