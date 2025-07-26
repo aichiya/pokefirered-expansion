@@ -5104,42 +5104,39 @@ Status_Poison:
 	end
 
 Status_Confusion:
-	loadspritegfx ANIM_TAG_DUCK
-	call ConfusionEffect
-	end
-
-Status_Burn:
-	loadspritegfx ANIM_TAG_SMALL_EMBER
-	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_TARGET
-	call BurnFlame
-	call BurnFlame
-	call BurnFlame
+	createsprite gQuestionMarkSpriteTemplate, ANIM_ATTACKER, 13, 16, -16, 30
+	playsewithpan SE_M_METRONOME, SOUND_PAN_ATTACKER
+	delay 15
+	createsprite gQuestionMarkSpriteTemplate, ANIM_ATTACKER, 13, 32, 0, 30
+	playsewithpan SE_M_METRONOME, SOUND_PAN_ATTACKER
+	waitforvisualfinish
+	createsprite gQuestionMarkSpriteTemplate, ANIM_ATTACKER, 13, 16, -16, 30
+	playsewithpan SE_M_METRONOME, SOUND_PAN_ATTACKER
+	delay 15
+	createsprite gQuestionMarkSpriteTemplate, ANIM_ATTACKER, 13, 32, 0, 30
+	playsewithpan SE_M_METRONOME, SOUND_PAN_ATTACKER
 	waitforvisualfinish
 	end
 
-BurnFlame:
-	createsprite gBurnFlameSpriteTemplate, ANIM_TARGET, 2, -24, 24, 24, 24, 20, 1, 1
-	delay 4
-	return
+Status_Burn:
+	loadspritegfx ANIM_TAG_ORANGE	
+	loopsewithpan SE_M_TOXIC, SOUND_PAN_TARGET, 13, 6
+	createsprite gStatusPoisonSkullSpriteTemplate, ANIM_ATTACKER, 13, 16, -16, 20
+	delay 15
+	createsprite gStatusPoisonSkullSpriteTemplate, ANIM_ATTACKER, 13, 32, 0, 20
+	waitforvisualfinish
+	end
 
 Status_Infatuation:
-	loadspritegfx ANIM_TAG_MAGENTA_HEART
-	playsewithpan SE_M_CHARM, SOUND_PAN_ATTACKER
-	createsprite gMagentaHeartSpriteTemplate, ANIM_ATTACKER, 3, 0, 20
-	delay 15
-	playsewithpan SE_M_CHARM, SOUND_PAN_ATTACKER
-	createsprite gMagentaHeartSpriteTemplate, ANIM_ATTACKER, 3, -20, 20
-	delay 15
-	playsewithpan SE_M_CHARM, SOUND_PAN_ATTACKER
-	createsprite gMagentaHeartSpriteTemplate, ANIM_ATTACKER, 3, 20, 20
 	end
 
 Status_Sleep:
-	loadspritegfx ANIM_TAG_LETTER_Z
 	playsewithpan SE_M_SNORE, SOUND_PAN_ATTACKER
-	createsprite gSleepLetterZSpriteTemplate, ANIM_ATTACKER, 2, 4, -10, 16, 0, 0
-	delay 30
-	createsprite gSleepLetterZSpriteTemplate, ANIM_ATTACKER, 2, 4, -10, 16, 0, 0
+	loadspritegfx ANIM_TAG_LETTER_Z
+	createsprite gSleepLetterZSpriteTemplate, ANIM_ATTACKER, 2, 16, -8, -32, 30, 200, 0
+	waitforvisualfinish
+	createsprite gSleepLetterZSpriteTemplate, ANIM_ATTACKER, 2, 16, -8, -32, 30, 200, 0
+	waitforvisualfinish
 	end
 
 Status_Paralysis:
@@ -5153,24 +5150,9 @@ Status_Paralysis:
 	end
 
 Status_Freeze:
-	playsewithpan SE_M_ICY_WIND, 0
-	loadspritegfx ANIM_TAG_ICE_CUBE
-	monbg ANIM_DEF_PARTNER
-	splitbgprio ANIM_TARGET
-	waitplaysewithpan SE_M_HAIL, SOUND_PAN_TARGET, 17
-	createvisualtask AnimTask_FrozenIceCube, 2
-	waitforvisualfinish
-	clearmonbg ANIM_DEF_PARTNER
 	end
 
 Status_Curse:
-	loadspritegfx ANIM_TAG_GHOSTLY_SPIRIT
-	monbg ANIM_DEF_PARTNER
-	playsewithpan SE_M_NIGHTMARE, SOUND_PAN_TARGET
-	createsprite gCurseGhostSpriteTemplate, ANIM_TARGET, 2
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 14, 1
-	waitforvisualfinish
-	clearmonbg ANIM_DEF_PARTNER
 	end
 
 Status_Nightmare:
