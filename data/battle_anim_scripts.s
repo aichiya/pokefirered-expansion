@@ -2153,11 +2153,11 @@ Move_SPLASH:
 
 Move_ACID_ARMOR:
 	setalpha 15, 0
+	playsewithpan SE_M_ACID_ARMOR, SOUND_PAN_ATTACKER
 	createvisualtask AnimTask_ScaleMonAndRestore, 0, 6, 6, 20, ANIM_ATTACKER, 1
 	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 16, 0, 20
 	delay 20
 	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 20
-	playsewithpan SE_M_ACID_ARMOR, SOUND_PAN_ATTACKER
 	waitforvisualfinish
 	blendoff
 	end
