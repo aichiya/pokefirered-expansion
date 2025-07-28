@@ -1553,7 +1553,7 @@ Move_THIEF:
 
 Move_BUBBLE_BEAM:
 	loadspritegfx ANIM_TAG_BUBBLE
-	@                                  Priority, Starting X, Starting Y, Ending X Offset, Ending Y Offset, ?, ?, ?
+	monbg ANIM_TARGET
 	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
 	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 16, -16, -10, -16, 15, 128, 75
 	delay 5
@@ -1573,6 +1573,7 @@ Move_BUBBLE_BEAM:
 	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 16, -16, 16, -16, 15, 128, 75
 	waitforvisualfinish
 	blendoff
+	clearmonbg ANIM_TARGET
 	end
 
 Move_ICY_WIND:
@@ -2050,6 +2051,7 @@ Move_BARRAGE:
 	playsewithpan SE_M_DOUBLE_TEAM, SOUND_PAN_ATTACKER
 	createsprite gBarrageBallSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 0, -25, 25, ANIM_ATTACKER, 0
 	waitforvisualfinish
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 2
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 3, 0, 6, 1
 	waitforvisualfinish
@@ -2799,16 +2801,19 @@ Move_BARRIER:
 
 Move_BUBBLE:
 	loadspritegfx ANIM_TAG_BUBBLE
-	@                                  Priority, Starting X, Starting Y, Ending X Offset, Ending Y Offset, ?, ?, ?
+	monbg ANIM_TARGET
 	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
 	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 16, -16, -10, -16, 15, 128, 100
 	delay 5
+	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
 	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 16, -16, 14, -4, 15, 128, 100
 	delay 5
+	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
 	createsprite gWaterBubbleProjectileSpriteTemplate, ANIM_ATTACKER, 2, 16, -16, -16, 16, 15, 128, 100
 	delay 5
 	waitforvisualfinish
 	blendoff
+	clearmonbg ANIM_TARGET
 	end
 
 Move_SMOG:
@@ -2909,11 +2914,13 @@ Move_BITE:
 	loadspritegfx ANIM_TAG_IMPACT
 	monbg ANIM_TARGET
 	setalpha 12, 8
-	playsewithpan SE_M_DOUBLE_TEAM, SOUND_PAN_ATTACKER
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 16, -8, ANIM_TARGET, 2
 	delay 10
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -16, 0, ANIM_TARGET, 2
 	delay 10
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 8, ANIM_TARGET, 2
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
 	waitforvisualfinish
@@ -3067,18 +3074,22 @@ Move_BLIZZARD:
 
 	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -72, -64, -24, 24, 20, ANIM_TARGET, 0
 	delay 18
+	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
 	createsprite gBlizzardIceLandedSpriteTemplate, ANIM_TARGET, 2, -24, 20, 0, 100, ANIM_TARGET, 0
 
 	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -30, -64, 8, 24, 20, ANIM_TARGET, 0
 	delay 18
+	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
 	createsprite gBlizzardIceLandedSpriteTemplate, ANIM_TARGET, 2, 8, 20, 0, 80, ANIM_TARGET, 0
 
 	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -56, -64, -8, 24, 20, ANIM_TARGET, 0
 	delay 18
+	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
 	createsprite gBlizzardIceLandedSpriteTemplate, ANIM_TARGET, 2, -8, 20, 0, 60, ANIM_TARGET, 0
 
 	createsprite gBlizzardIceFallingSpriteTemplate, ANIM_TARGET, 2, -24, -64, 24, 24, 20, ANIM_TARGET, 0
 	delay 18
+	playsewithpan SE_M_ICY_WIND, SOUND_PAN_TARGET
 	createsprite gBlizzardIceLandedSpriteTemplate, ANIM_TARGET, 2, 24, 20, 0, 40, ANIM_TARGET, 0
 
 	waitforvisualfinish
@@ -3379,10 +3390,13 @@ Move_BONEMERANG:
 	monbg ANIM_TARGET
 	setalpha 12, 8
 	playsewithpan SE_M_DOUBLE_TEAM, SOUND_PAN_ATTACKER
+	playsewithpan SE_M_BONEMERANG, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 16, -8, ANIM_TARGET, 2
 	delay 4
+	playsewithpan SE_M_BONEMERANG, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -16, 0, ANIM_TARGET, 2
 	delay 4
+	playsewithpan SE_M_BONEMERANG, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 8, ANIM_TARGET, 2
 	delay 50
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
@@ -3395,10 +3409,13 @@ Move_BONE_CLUB:
 	monbg ANIM_TARGET
 	setalpha 12, 8
 	playsewithpan SE_M_DOUBLE_TEAM, SOUND_PAN_ATTACKER
+	playsewithpan SE_M_BONEMERANG, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 16, 0, ANIM_TARGET, 2
 	delay 10
+	playsewithpan SE_M_BONEMERANG, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -16, 0, ANIM_TARGET, 2
 	delay 10
+	playsewithpan SE_M_BONEMERANG, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 8, ANIM_TARGET, 2
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
 	waitforvisualfinish
@@ -4067,8 +4084,10 @@ Move_BIND:
 	loadspritegfx ANIM_TAG_TENDRILS
 	monbg ANIM_TARGET
 	setalpha 12, 8
+	playsewithpan SE_M_BIND, SOUND_PAN_TARGET
 	createsprite gBindTendrilsSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0
 	delay 15
+	playsewithpan SE_M_BIND, SOUND_PAN_TARGET
 	createsprite gBindTendrilsSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0
 	waitforvisualfinish
 	clearmonbg ANIM_TARGET
@@ -4245,10 +4264,14 @@ BideUnleash:
 	monbg ANIM_TARGET
 	setalpha 12, 8
 	loopsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER, 9, 2
+	delay 8
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 8, ANIM_TARGET, 2
 	delay 10
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 2
 	delay 10
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 8, -8, ANIM_TARGET, 2
 	waitforvisualfinish
 	clearmonbg ANIM_TARGET
