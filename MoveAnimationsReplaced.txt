@@ -22,15 +22,15 @@ https://bulbapedia.bulbagarden.net/wiki/Category:Generation_I_moves
 ~Bubblebeam\
 
 -C-
-~Clamp
-~Comet Punch
-~Confuse Ray
-~Confusion
-~Constrict
-~Conversion
-~Counter
-~Crabhammer
-~Cut
+~Clamp\
+~Comet Punch\
+~Confuse Ray\
+~Confusion\
+~Constrict\
+~Conversion (Need to solve Z issue)
+~Counter\
+~Crabhammer\
+~Cut\
 
 -D-
 ~Defense Curl
