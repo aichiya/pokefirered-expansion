@@ -1252,6 +1252,7 @@ RisingWaterHitEffect:
 Move_EXPLOSION:
 	loadspritegfx ANIM_TAG_EXPLOSION
 	loadspritegfx ANIM_TAG_IMPACT
+	monbg ANIM_TARGET
 	createvisualtask AnimTask_ShakeMon2, 5, 4, 8, 0, 40, 1
 	createvisualtask AnimTask_ShakeMon2, 5, 5, 8, 0, 40, 1
 	createvisualtask AnimTask_ShakeMon2, 5, 6, 8, 0, 40, 1
@@ -1270,7 +1271,7 @@ Move_EXPLOSION:
 	delay 8
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 3, 16, 0, RGB_WHITE
-	delay 10
+	delay 1
 	clearmonbg ANIM_TARGET
 	end
 
@@ -4197,6 +4198,7 @@ Move_EGG_BOMB:
 	loadspritegfx ANIM_TAG_BLACK_BALL_2
 	loadspritegfx ANIM_TAG_EXPLOSION
 	playsewithpan SE_M_TAIL_WHIP, SOUND_PAN_ATTACKER
+	playsewithpan SE_M_SWAGGER, SOUND_PAN_ATTACKER
 	createsprite gBarrageBallSpriteTemplate, ANIM_TARGET, 2, 20, 0, 0, 0, -25, 25, ANIM_ATTACKER, 0
 	waitforvisualfinish
 	delay 10

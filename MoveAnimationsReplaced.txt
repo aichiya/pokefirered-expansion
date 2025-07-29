@@ -46,10 +46,10 @@ Dig\ (Need invisibility mask)
 ~Drill Peck\
 
 -E-
-~Earthquake
-~Egg Bomb
-~Ember
-~Explosion
+~Earthquake\
+~Egg Bomb\
+~Ember\
+~Explosion\
 
 -F-
 ~Fire Blast
