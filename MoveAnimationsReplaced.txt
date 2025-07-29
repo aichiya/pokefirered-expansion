@@ -33,17 +33,17 @@ https://bulbapedia.bulbagarden.net/wiki/Category:Generation_I_moves
 ~Cut\
 
 -D-
-~Defense Curl
-Dig (Need invisibility mask)
-~Disable
-~Dizzy Punch
-~Double Kick
-~Double Slap
-~Double Team
-~Double-Edge
-~Dragon Rage
-~Dream Eater
-~Drill Peck
+~Defense Curl\
+Dig\ (Need invisibility mask)
+~Disable\
+~Dizzy Punch\
+~Double Kick\
+~Double Slap\
+~Double Team\
+~Double-Edge\
+~Dragon Rage\
+~Dream Eater\
+~Drill Peck\
 
 -E-
 ~Earthquake
@@ -79,7 +79,7 @@ Dig (Need invisibility mask)
 ~Hydro Pump
 ~Hyper Beam
 ~Hyper Fang
-~Hypnosis
+~Hypnosis\
 
 -I-
 ~Ice Beam
