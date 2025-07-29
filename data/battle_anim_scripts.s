@@ -676,22 +676,24 @@ Move_TWINEEDLE:
 
 Move_FIRE_BLAST:
 	loadspritegfx ANIM_TAG_FIRE
+	monbg ANIM_TARGET
 	playsewithpan SE_M_DRAGON_RAGE, SOUND_PAN_ATTACKER
 	call FlamethrowerSprayPrefab
 	waitforvisualfinish
-	call FireBlastCross
+	call FireBlastCrossPrefab
 	delay 16
-	call FireBlastCross
+	call FireBlastCrossPrefab
 	delay 16
+	playsewithpan SE_M_FLAME_WHEEL2, SOUND_PAN_TARGET
 	createsprite gSlidingFlameSpriteTemplate, ANIM_TARGET, 2, -32, 16, 48, 30, 160, 0
 	delay 16
 	createsprite gSlidingFlameSpriteTemplate, ANIM_TARGET, 2, -32, 16, 48, 30, 160, 0
 	createsprite gSlidingFlameSpriteTemplate, ANIM_TARGET, 2, -32, 0, 48, 30, 160, 0
 	delay 20
+	clearmonbg ANIM_TARGET
 	end
 
-FireBlastCross:
-	createsoundtask SoundTask_FireBlast, SE_M_FLAME_WHEEL, SE_M_FLAME_WHEEL2
+FireBlastCrossPrefab:
 	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3,   0,  -8, 0, 16, ANIM_TARGET, 0
 	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3,  -8,  -8, 0, 16, ANIM_TARGET, 0
 	createsprite gSmallEmberSpriteTemplate, ANIM_TARGET, 3, -16,  -8, 0, 16, ANIM_TARGET, 0
@@ -3956,10 +3958,14 @@ Move_HAZE:
 Move_FIRE_PUNCH:
 	loadspritegfx ANIM_TAG_FIRE
 	loadspritegfx ANIM_TAG_IMPACT
+	monbg ANIM_TARGET
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 16, -8, ANIM_TARGET, 2
 	delay 8
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -16, 0, ANIM_TARGET, 2
 	delay 8
+	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 8, ANIM_TARGET, 2
 	delay 16
 	loopsewithpan SE_M_EMBER, SOUND_PAN_ATTACKER, 5, 2
@@ -3972,6 +3978,7 @@ Move_FIRE_PUNCH:
 	createsprite gLargeEmberSpriteTemplate, ANIM_TARGET, 2, 0, 16, 0, 30, ANIM_TARGET, 0
 	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_TARGET
 	waitforvisualfinish
+	clearmonbg ANIM_TARGET
 	end
 
 FireSpreadEffect:

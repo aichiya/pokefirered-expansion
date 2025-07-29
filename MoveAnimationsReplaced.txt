@@ -52,15 +52,15 @@ Dig\ (Need invisibility mask)
 ~Explosion\
 
 -F-
-~Fire Blast
-~Fire Punch
-~Fire Spin
-~Flamethrower
-=Flash=
-~Fly
-~Focus Energy
-~Fury Attack
-~Fury Swipes
+~Fire Blast\
+~Fire Punch\
+~Fire Spin\
+~Flamethrower\
+=Flash=\
+~Fly\
+~Focus Energy\
+~Fury Attack\
+~Fury Swipes\
 
 -G-
 ~Glare
