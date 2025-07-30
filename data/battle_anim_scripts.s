@@ -1408,12 +1408,13 @@ Move_ATTRACT:
 	end
 
 Move_GROWTH:
-	loadspritegfx ANIM_TAG_ORBS,
-	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
+	loadspritegfx ANIM_TAG_ORBS
+	playsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER
+	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 16, 32, 0xFE00, 0, ANIM_ATTACKER, 0
 	delay 1
-	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
+	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 16, 32, 0xFE00, 0, ANIM_ATTACKER, 0
 	delay 1
-	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
+	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 16, 32, 0xFE00, 0, ANIM_ATTACKER, 0
 	delay 10
 	waitforvisualfinish
 	clearmonbg ANIM_TARGET
@@ -2017,6 +2018,7 @@ Move_KINESIS:
 	end
 
 Move_GLARE:
+	playsewithpan SE_M_PSYBEAM2, SOUND_PAN_ATTACKER
 	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
 	waitforvisualfinish
 	delay 4
@@ -3430,8 +3432,8 @@ Move_GUST:
 	monbg ANIM_TARGET
 	playsewithpan SE_M_GUST, SOUND_PAN_TARGET
 	createsprite gGustTornadoSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 32, 257
-	playsewithpan SE_M_GUST2, SOUND_PAN_TARGET
 	waitforvisualfinish
+	playsewithpan SE_M_GUST2, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 16, -8, ANIM_TARGET, 2
 	delay 10
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -16, 0, ANIM_TARGET, 2
