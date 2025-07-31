@@ -1637,8 +1637,8 @@ Move_HEADBUTT:
 	loadspritegfx ANIM_TAG_IMPACT
 	monbg ANIM_TARGET
 	setalpha 12, 8
-	playsewithpan SE_M_HEADBUTT, SOUND_PAN_ATTACKER
 	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	playsewithpan SE_M_VITAL_THROW2, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 2
 	delay 2
 	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
@@ -1686,16 +1686,16 @@ Move_HORN_DRILL:
 	loadspritegfx ANIM_TAG_IMPACT
 	monbg ANIM_TARGET
 	setalpha 12, 8
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 0, 0, ANIM_TARGET, 2
 	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
 	delay 10
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 0, 0, ANIM_TARGET, 2
 	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
 	delay 10
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 1
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 0, 0, ANIM_TARGET, 1
 	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
 	delay 10
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 1
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 0, 0, ANIM_TARGET, 1
 	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
 	waitforvisualfinish
@@ -2462,13 +2462,13 @@ Move_ICE_PUNCH:
 	loadspritegfx ANIM_TAG_IMPACT
 	monbg ANIM_TARGET
 	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 16, -8, ANIM_TARGET, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 16, -8, ANIM_TARGET, 2
 	delay 10
 	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -16, 0, ANIM_TARGET, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, -16, 0, ANIM_TARGET, 2
 	delay 10
 	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 8, ANIM_TARGET, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 0, 8, ANIM_TARGET, 2
 	waitforvisualfinish
 	call IceCrystalWallEffect
 	delay 32
@@ -2950,6 +2950,7 @@ Move_ICE_BEAM:
 	loadspritegfx ANIM_TAG_ICE_CRYSTALS
 	loadspritegfx ANIM_TAG_RAINBOW_RINGS
 	playsewithpan SE_M_BUBBLE_BEAM, SOUND_PAN_ATTACKER
+	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_BUBBLE_BEAM2, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 3, 6, 0, 10
 	createsprite gAuroraBeamOrbSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 24, 257
 	delay 1
 	call AuroraBeamCreateTube
@@ -3664,11 +3665,11 @@ Move_JUMP_KICK:
 	playsewithpan SE_M_JUMP_KICK, SOUND_PAN_TARGET
 	delay 4
 	loopsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER, 9, 2
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 8, ANIM_TARGET, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, -8, 8, ANIM_TARGET, 2
 	delay 8
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 0, 0, ANIM_TARGET, 2
 	delay 8
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 8, -8, ANIM_TARGET, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 8, -8, ANIM_TARGET, 2
 	delay 8
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
 	waitforvisualfinish
@@ -3946,7 +3947,7 @@ Move_HAZE:
 	fadetobg BG_HIGHSPEED_PLAYER
 	waitbgfadeout
 	createvisualtask AnimTask_StartSlidingBg, 5, 1600, 0, 0, -1
-	@playsewithpan SE_M_GUST, SOUND_PAN_TARGET
+	playsewithpan SE_M_GUST, SOUND_PAN_TARGET
 	delay 100
 	clearmonbg ANIM_DEF_PARTNER
 	delay 0
@@ -4255,7 +4256,7 @@ Move_BIDE:
 	end
 
 BideSetUp:
-	loadspritegfx ANIM_TAG_ORBS,
+	loadspritegfx ANIM_TAG_ORBS
 	splitbgprio_foes ANIM_ATTACKER
 	loopsewithpan SE_M_TAKE_DOWN, SOUND_PAN_ATTACKER, 9, 2
 	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 16, 32, 0xFE00, 0, ANIM_ATTACKER, 0
@@ -4484,12 +4485,12 @@ Move_HYPER_FANG:
 	loadspritegfx ANIM_TAG_IMPACT
 	monbg ANIM_TARGET
 	setalpha 12, 8
-	playsewithpan SE_M_DOUBLE_TEAM, SOUND_PAN_ATTACKER
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 16, 0, ANIM_TARGET, 1
+	playsewithpan SE_M_BITE, SOUND_PAN_TARGET
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 16, 0, ANIM_TARGET, 1
 	delay 4
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -16, 0, ANIM_TARGET, 1
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, -16, 0, ANIM_TARGET, 1
 	delay 4
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -4, 12, ANIM_TARGET, 1
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, -4, 12, ANIM_TARGET, 1
 	waitforvisualfinish
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
 	waitforvisualfinish
@@ -4598,17 +4599,17 @@ SweetScentEffect:
 	return
 
 Move_HYPER_BEAM:
-	@loadspritegfx ANIM_TAG_ORBS
+	loadspritegfx ANIM_TAG_ORBS
 	loadspritegfx ANIM_TAG_RAINBOW_RINGS
 	loadspritegfx ANIM_TAG_IMPACT
-	@monbg ANIM_DEF_PARTNER
-	@splitbgprio_foes ANIM_TARGET
+	splitbgprio_foes ANIM_ATTACKER
+	playsewithpan SE_M_HYPER_BEAM, SOUND_PAN_ATTACKER
 	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
-	@createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
-	@delay 1
-	@createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
-	@delay 1
-	@createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 800, 200, 0
+	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 16, 32, 0xFE00, 0, ANIM_ATTACKER, 0
+	delay 1
+	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 16, 32, 0xFE00, 0, ANIM_ATTACKER, 0
+	delay 1
+	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 16, 32, 0xFE00, 0, ANIM_ATTACKER, 0
 	waitforvisualfinish
 	@clearmonbg ANIM_DEF_PARTNER
 	playsewithpan SE_M_HYPER_BEAM, SOUND_PAN_ATTACKER
@@ -4627,6 +4628,7 @@ Move_HYPER_BEAM:
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
 	waitforvisualfinish
 	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	clearmonbg ANIM_ATTACKER
 	end
 
 HyperBeamOrbs:

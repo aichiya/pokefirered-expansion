@@ -70,27 +70,27 @@ Dig\ (Need invisibility mask)
 ~Gust\
 
 -H-
-~Harden
-~Haze
-~Headbutt
-~Hi-Jump Kick
-~Horn Attack
-~Horn Drill
-~Hydro Pump
-~Hyper Beam
-~Hyper Fang
+~Harden\
+~Haze\
+~Headbutt\
+~Hi-Jump Kick\
+~Horn Attack\
+~Horn Drill\
+~Hydro Pump\
+~Hyper Beam\
+~Hyper Fang\
 ~Hypnosis\
 
 -I-
-~Ice Beam
-~Ice Punch
+~Ice Beam\
+~Ice Punch\
 
 -J-
-~Jump Kick
+~Jump Kick\
 
 -K-
-~Karate Chop
-~Kinesis
+~Karate Chop\
+~Kinesis\
 
 -L-
 ~Leech Life
