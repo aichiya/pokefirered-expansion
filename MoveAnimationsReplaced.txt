@@ -93,27 +93,27 @@ Dig\ (Need invisibility mask)
 ~Kinesis\
 
 -L-
-~Leech Life
-~Leech Seed
-~Leer
-~Lick
-~Light Screen
-~Lovely Kiss
-~Low Kick
+~Leech Life\
+~Leech Seed\
+~Leer\
+~Lick\
+~Light Screen\
+~Lovely Kiss\
+~Low Kick\
 
 -M-
-~Meditate
-~Mega Drain
-~Mega Kick
-~Mega Punch
-~Metronome
-~Mimic
-~Minimize
+~Meditate\
+~Mega Drain\
+~Mega Kick\
+~Mega Punch\
+~Metronome\
+~Mimic\
+~Minimize\
 -Mirror Move-
-~Mist
+~Mist\
 
 -N-
-~Night Shade
+~Night Shade\
 
 -P-
 ~Pay Day
