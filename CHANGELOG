@@ -109,3 +109,10 @@ Fixed: SilphCo's Giovanni encounter scripting would rotate the player in the wro
 Fixed: Rock Tunnel had a sign lacking collision.
 Fixed: A lot of incorrect textbox formatting.
 Fixed: Many typos.
+
+-V8-
+Slightly modified newline placement in battle text used when Bind squeezes a Pokemon.
+Completely replaced battle graphics for all Gen1 moves that were visually very different in Gen3!
+Battle status effect animations also replaced.
+
+Fixed: Mr. Mime backsprite being too high.

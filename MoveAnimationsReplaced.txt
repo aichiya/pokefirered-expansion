@@ -1,96 +1,96 @@
 https://bulbapedia.bulbagarden.net/wiki/Category:Generation_I_moves
 
 -A-
-~Absorb
-~Acid
-~Acid Armor
-~Agility
-~Amnesia
-~Aurora Beam
+~Absorb\
+~Acid\
+~Acid Armor\
+~Agility (Needs sound)
+~Amnesia\
+~Aurora Beam\
 
 -B-
-~Barrage
-~Barrier
-~Bide
-~Bind
-~Bite
-~Blizzard
-~Body Slam
-~Bone Club
-~Bonemerang
-~Bubble
-~Bubblebeam
+~Barrage\
+~Barrier\
+~Bide\
+~Bind\
+~Bite\
+~Blizzard\
+~Body Slam\
+~Bone Club\
+~Bonemerang\
+~Bubble\
+~Bubblebeam\
 
 -C-
-~Clamp
-~Comet Punch
-~Confuse Ray
-~Confusion
-~Constrict
-~Conversion
-~Counter
-~Crabhammer
-~Cut
+~Clamp\
+~Comet Punch\
+~Confuse Ray\
+~Confusion\
+~Constrict\
+~Conversion (Need to solve Z issue)
+~Counter\
+~Crabhammer\
+~Cut\
 
 -D-
-~Defense Curl
-Dig (Need invisibility mask)
-~Disable
-~Dizzy Punch
-~Double Kick
-~Double Slap
-~Double Team
-~Double-Edge
-~Dragon Rage
-~Dream Eater
-~Drill Peck
+~Defense Curl\
+Dig\ (Need invisibility mask)
+~Disable\
+~Dizzy Punch\
+~Double Kick\
+~Double Slap\
+~Double Team\
+~Double-Edge\
+~Dragon Rage\
+~Dream Eater\
+~Drill Peck\
 
 -E-
-~Earthquake
-~Egg Bomb
-~Ember
-~Explosion
+~Earthquake\
+~Egg Bomb\
+~Ember\
+~Explosion\
 
 -F-
-~Fire Blast
-~Fire Punch
-~Fire Spin
-~Flamethrower
-=Flash=
-~Fly
-~Focus Energy
-~Fury Attack
-~Fury Swipes
+~Fire Blast\
+~Fire Punch\
+~Fire Spin\
+~Flamethrower\
+=Flash=\
+~Fly\
+~Focus Energy\
+~Fury Attack\
+~Fury Swipes\
 
 -G-
-~Glare
-~Growl
-~Growth
-~Guillotine
-~Gust
+~Glare\
+~Growl\
+~Growth\
+~Guillotine\
+~Gust\
 
 -H-
-~Harden
-~Haze
-~Headbutt
-~Hi-Jump Kick
-~Horn Attack
-~Horn Drill
-~Hydro Pump
-~Hyper Beam
-~Hyper Fang
-~Hypnosis
+~Harden\
+~Haze\
+~Headbutt\
+~Hi-Jump Kick\
+~Horn Attack\
+~Horn Drill\
+~Hydro Pump\
+~Hyper Beam\
+~Hyper Fang\
+~Hypnosis\
 
 -I-
-~Ice Beam
-~Ice Punch
+~Ice Beam\
+~Ice Punch\
 
 -J-
-~Jump Kick
+~Jump Kick\
 
 -K-
-~Karate Chop
-~Kinesis
+~Karate Chop\
+~Kinesis\
 
 -L-
 ~Leech Life
