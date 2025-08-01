@@ -116,20 +116,20 @@ Dig\ (Need invisibility mask)
 ~Night Shade\
 
 -P-
-~Pay Day
-~Peck
-~Petal Dance
-~Pin Missile
-~Poison Gas
-~Poison Powder
-~Poison Sting
-~Pound
-~Psybeam
-~Psychic
-~Psywave
+~Pay Day\
+~Peck\
+~Petal Dance\
+~Pin Missile\
+~Poison Gas\
+~Poison Powder\
+~Poison Sting\
+~Pound\
+~Psybeam\
+~Psychic\
+~Psywave\
 
 -Q-
-~Quick Attack
+~Quick Attack\
 
 -R-
 ~Rage
