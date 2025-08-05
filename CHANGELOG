@@ -115,4 +115,10 @@ Slightly modified newline placement in battle text used when Bind squeezes a Pok
 Completely replaced battle graphics for all Gen1 moves that were visually very different in Gen3!
 Battle status effect animations also replaced.
 
+Workaround: Temporarily shortened a text string in the naming screen from "nickname" to "name" in order to prevent truncation.
 Fixed: Mr. Mime backsprite being too high.
+Fixed: Ninetales backsprite being too high.
+Fixed: Vulpix icon using duplicate animation frames.
+Fixed: Dialogue of lass outside of Cerulean Cave.
+Fixed: Ladder in Cerulean Cave 1F being unusable.
+Fixed: 2 Item Balls being inaccessible while surfing in Cerulean Cave 1F.
