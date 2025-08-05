@@ -609,6 +609,7 @@ Move_ICICLE_SPEAR:
 
 Move_TAKE_DOWN:
 	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 16, 0, 0, 5
+	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET
 	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
 	delay 1
 	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
@@ -649,10 +650,12 @@ Move_POISON_STING:
 
 Move_TWINEEDLE:
 	loadspritegfx ANIM_TAG_IMPACT
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, -8, ANIM_TARGET, 1
+	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, -8, -8, ANIM_TARGET, 1
 	clearmonbg ANIM_TARGET
 	delay 4
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 12, 12, ANIM_TARGET, 1
+	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 12, 12, ANIM_TARGET, 1
 	clearmonbg ANIM_TARGET
 	waitforvisualfinish
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 4, 0, 6, 1
@@ -873,6 +876,7 @@ SonicBoomHit:
 Move_THUNDER_SHOCK:
 	loadspritegfx ANIM_TAG_LIGHTNING
 	loadspritegfx ANIM_TAG_EXPLOSION
+	loopsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_TARGET, 10, 4
 	createsprite gRBLightningBallSpriteTemplate, ANIM_TARGET, 3, 0, 0, 0, 1
 	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  -4, -32, 0, 1
 	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  -4, -24, 0, 1
@@ -898,8 +902,8 @@ Move_THUNDERBOLT:
 	loadspritegfx ANIM_TAG_LIGHTNING
 	loadspritegfx ANIM_TAG_EXPLOSION
 	monbg ANIM_TARGET
-	setalpha 12, 8
 	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	loopsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_TARGET, 10, 4
 	createsprite gRBLightningBallSpriteTemplate, ANIM_TARGET, 3, 0, 0, 0, 1
 	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  -4, -32, 0, 1
 	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  -4, -24, 0, 1
@@ -931,6 +935,7 @@ Move_THUNDERBOLT:
 Move_THUNDER_WAVE:
 	loadspritegfx ANIM_TAG_LIGHTNING
 	loadspritegfx ANIM_TAG_EXPLOSION
+	loopsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_TARGET, 10, 4
 	createsprite gRBLightningBallSpriteTemplate, ANIM_TARGET, 3, 0, 0, 0, 1
 	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  -4, -32, 0, 1
 	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  -4, -24, 0, 1
@@ -972,6 +977,7 @@ Move_STOMP:
 	end
 
 Move_TAIL_WHIP:
+	loopsewithpan SE_M_TAIL_WHIP, SOUND_PAN_ATTACKER, 24, 2
 	createvisualtask AnimTask_TranslateMonEllipticalRespectSide, 2, ANIM_ATTACKER, 16, 0, 2, 4
 	waitforvisualfinish
 	end
@@ -1701,13 +1707,15 @@ Move_HORN_DRILL:
 
 Move_THRASH:
 	loadspritegfx ANIM_TAG_IMPACT
-	@loadspritegfx ANIM_TAG_RED_BALL
-	@call HardenSquarePrefab
+	loadspritegfx ANIM_TAG_RED_BALL
+	call HardenSquarePrefab
+	waitforvisualfinish
 	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_ATTACKER, -4, 1, 12, 1
 	waitforvisualfinish
 	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, -8, 8, ANIM_TARGET, 2
 	delay 8
+	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 0, 0, ANIM_TARGET, 2
 	delay 8
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 8, -8, ANIM_TARGET, 2
@@ -1870,6 +1878,7 @@ Move_RAGE:
 
 Move_TELEPORT:
 	loadspritegfx ANIM_TAG_ORBS
+	playsewithpan SE_M_TELEPORT, SOUND_PAN_ATTACKER
 	createvisualtask AnimTask_TeleportFlySquish, 2, 0
 	waitforvisualfinish
 	invisible ANIM_ATTACKER
@@ -2561,6 +2570,7 @@ Move_THUNDER:
 	loadspritegfx ANIM_TAG_LIGHTNING
 	loadspritegfx ANIM_TAG_EXPLOSION
 	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_TARGET
 	createsprite gRBThunderSpriteTemplate, ANIM_TARGET, 2, 0, -32, ANIM_TARGET, 64, 17, 0, 0
 	delay 2
 	createsprite gRBThunderSpriteTemplate, ANIM_TARGET, 2, 0, -32, ANIM_TARGET, 64, 17, 0, 0
@@ -2576,6 +2586,7 @@ Move_THUNDER:
 	delay 1
 	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
 	waitforvisualfinish
+	loopsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_TARGET, 10, 4
 	createsprite gRBLightningBallSpriteTemplate, ANIM_TARGET, 3, 0, 0, 0, 1
 	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  -4, -32, 0, 1
 	createsprite gRBLightningSparkSpriteTemplate, ANIM_TARGET, 3,  -4, -24, 0, 1
@@ -2603,13 +2614,15 @@ Move_THUNDER_PUNCH:
 	loadspritegfx ANIM_TAG_IMPACT
 	loadspritegfx ANIM_TAG_LIGHTNING
 	loadspritegfx ANIM_TAG_EXPLOSION
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 16, -8, ANIM_TARGET, 2
+	loopsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET, 10, 3
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 16, -8, ANIM_TARGET, 2
 	delay 8
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -16, 0, ANIM_TARGET, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, -16, 0, ANIM_TARGET, 2
 	delay 8
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 8, ANIM_TARGET, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, -8, 8, ANIM_TARGET, 2
 	delay 16
 	createvisualtask AnimTask_InvertScreenColor, 2, 257, 257, 257
+	playsewithpan SE_M_THUNDER_WAVE, SOUND_PAN_TARGET
 	createsprite gRBThunderSpriteTemplate, ANIM_TARGET, 2, 0, -32, ANIM_TARGET, 64, 17, 0, 0
 	delay 2
 	createsprite gRBThunderSpriteTemplate, ANIM_TARGET, 2, 0, -32, ANIM_TARGET, 64, 17, 0, 0
@@ -3316,10 +3329,11 @@ Move_TOXIC:
 	fadetobg BG_HIGHSPEED_PLAYER
 	waitbgfadeout
 	createvisualtask AnimTask_StartSlidingBg, 5, 1600, 0, 0, -1
-	@playsewithpan SE_M_GUST, SOUND_PAN_TARGET
+	playsewithpan SE_M_GUST, SOUND_PAN_TARGET
 	delay 100
 	clearmonbg ANIM_TARGET
 	delay 0
+	playsewithpan SE_M_GUST2, SOUND_PAN_TARGET
 	restorebg
 	waitbgfadeout
 	createvisualtask AnimTask_BlendBattleAnimPalExclude, 10, ANIM_TARGET, 0, 4, 0, RGB_BLACK
@@ -4511,8 +4525,8 @@ Move_HYPER_FANG:
 Move_TRI_ATTACK:
 	loadspritegfx ANIM_TAG_TRI_ATTACK_TRIANGLE
 	call BlackFlashEffect
+	playsewithpan SE_M_SWIFT, SOUND_PAN_ATTACKER
 	createsprite gTriAttackTriangleSpriteTemplate, ANIM_TARGET, 2, 16, 0, 24, -24, 60, 257
-	playsewithpan SE_M_TRI_ATTACK, SOUND_PAN_ATTACKER
 	waitforvisualfinish
 	end
 
@@ -4541,6 +4555,7 @@ Move_TRANSFORM:
 	loadspritegfx ANIM_TAG_ORBS
 	loadspritegfx ANIM_TAG_MUSIC_NOTES
 	playsewithpan SE_M_TELEPORT, SOUND_PAN_ATTACKER
+	playsewithpan SE_M_SWIFT, SOUND_PAN_ATTACKER
 	call BlackSquareCombineWithReverseProjectilePrefab
 	waitforvisualfinish
 	call PokeBallPuffPrefab

@@ -177,20 +177,20 @@ Dig\ (Need invisibility mask)
 ~Swords Dance\
 
 -T-
-~Tackle
-~Tail Whip
-~Take Down
-~Teleport
-~Thrash
-~Thunder
-~Thunderpunch
-~Thundershock
-~Thunder Wave
-~Thunderbolt
-~Toxic
-~Transform
-~Tri Attack
-~Twineedle
+~Tackle\
+~Tail Whip\
+~Take Down\
+~Teleport (Must try in the wild)
+~Thrash\
+~Thunder\
+~Thunderpunch\
+~Thundershock\
+~Thunder Wave\
+~Thunderbolt\
+~Toxic\
+~Transform\
+~Tri Attack\
+~Twineedle\
 
 -V-
 ~Vine Whip
