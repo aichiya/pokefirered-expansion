@@ -4,16 +4,19 @@ Route4_Text_TrippedOverGeodude::
     .string "POKéMON, GEODUDE!$"
 
 Route4_Text_CrissyIntro::
-    .string "I came to MT. MOON in search of\n"
-    .string "mushroom POKéMON.$"
+    .string "I came to get my\n"
+    .string "mushroom POKéMON!$"
 
 Route4_Text_CrissyDefeat::
-    .string "After all I did to catch them!$"
+    .string "LASS: Oh! My cute\n"
+    .string "mushroom POKéMON!$"
 
 Route4_Text_CrissyPostBattle::
-    .string "There might not be any more\n"
+    .string "There might not\n"
+    .string "be any more\l"
     .string "mushrooms here.\p"
-    .string "I think I got them all.$"
+    .string "I think I got\n"
+    .string "them all.$"
 
 Route4_Text_MtMoonEntrance::
     .string "MT.MOON\n"
