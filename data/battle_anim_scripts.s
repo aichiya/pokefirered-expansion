@@ -5201,6 +5201,7 @@ Status_Sleep:
 
 Status_Paralysis:
 	loadspritegfx ANIM_TAG_TENDRILS
+	loopsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_TARGET, 21, 3
 	createsprite gBindTendrilsSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0
 	delay 20
 	createsprite gBindTendrilsSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0
