@@ -1144,11 +1144,13 @@ Move_VINE_WHIP:
 	loadspritegfx ANIM_TAG_IMPACT
 	loadspritegfx ANIM_TAG_CUT
 	playsewithpan SE_M_SCRATCH, SOUND_PAN_TARGET
-	createsprite gCuttingSliceSpriteTemplate, ANIM_ATTACKER, 2, 32, -32, 0
+	createsprite gCuttingSliceSpriteTemplate, ANIM_TARGET, 2, 32, -32, 0
 	waitforvisualfinish
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, -8, ANIM_TARGET, 2
+	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, -8, -8, ANIM_TARGET, 2
 	delay 4
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 12, 12, ANIM_TARGET, 2
+	playsewithpan SE_M_HORN_ATTACK, SOUND_PAN_TARGET
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 12, 12, ANIM_TARGET, 2
 	waitforvisualfinish
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 4, 0, 6, 1
 	waitforvisualfinish
@@ -1177,6 +1179,7 @@ Move_WATERFALL:
 	delay 8
 	invisible ANIM_ATTACKER
 	delay 22
+	playsewithpan SE_M_SURF, SOUND_PAN_TARGET
 	createsprite gSurfGeyserTopSpriteTemplate, ANIM_TARGET, 2, -8, 32, ANIM_TARGET, -64, 32, 0, 0
 	delay 6
 	createsprite gSurfGeyserBottomSpriteTemplate, ANIM_TARGET, 2, -8, 32, ANIM_TARGET, -48, 32, 0, 0
@@ -1187,6 +1190,7 @@ Move_WATERFALL:
 	delay 6
 	createsprite gSurfGeyserBottomSpriteTemplate, ANIM_TARGET, 2, -8, 32, ANIM_TARGET, -48, 32, 0, 0
 	waitforvisualfinish
+	playsewithpan SE_M_SURF, SOUND_PAN_TARGET
 	createsprite gSurfGeyserTopSpriteTemplate, ANIM_TARGET, 2, 8, 32, ANIM_TARGET, -64, 32, 0, 0
 	delay 6
 	createsprite gSurfGeyserBottomSpriteTemplate, ANIM_TARGET, 2, 8, 32, ANIM_TARGET, -48, 32, 0, 0
@@ -1197,11 +1201,12 @@ Move_WATERFALL:
 	delay 6
 	createsprite gSurfGeyserBottomSpriteTemplate, ANIM_TARGET, 2, 8, 32, ANIM_TARGET, -48, 32, 0, 0
 	waitforvisualfinish
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 16, -8, ANIM_TARGET, 2
+	loopsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET, 10, 3
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 16, -8, ANIM_TARGET, 2
 	delay 8
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -16, 0, ANIM_TARGET, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, -16, 0, ANIM_TARGET, 2
 	delay 8
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 8, ANIM_TARGET, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, -8, 8, ANIM_TARGET, 2
 	waitforvisualfinish
 	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 0, 0, 1
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 0, 4, 7, 1
@@ -1349,7 +1354,6 @@ Move_VICE_GRIP:
 	loadspritegfx ANIM_TAG_CUT
 	loadspritegfx ANIM_TAG_IMPACT
 	monbg ANIM_TARGET
-	setalpha 12, 8
 	playsewithpan SE_M_VICEGRIP, SOUND_PAN_TARGET
 	createsprite gViceGripSpriteTemplate, ANIM_ATTACKER, 2, 0
 	createsprite gViceGripSpriteTemplate, ANIM_ATTACKER, 2, 1
@@ -1425,8 +1429,8 @@ Move_WHIRLWIND:
 	loadspritegfx ANIM_TAG_GUST
 	playsewithpan SE_M_GUST, SOUND_PAN_TARGET
 	createsprite gGustTornadoSpriteTemplate, ANIM_TARGET, 2, 16, 0, -16, 8, 32, 257
-	playsewithpan SE_M_GUST2, SOUND_PAN_TARGET
 	waitforvisualfinish
+	playsewithpan SE_M_GUST2, SOUND_PAN_TARGET
 	createvisualtask AnimTask_SlideOffScreen, 5, ANIM_TARGET, 8
 	waitforvisualfinish
 	end
@@ -1839,6 +1843,7 @@ Move_MEDITATE:
 	end
 
 Move_AGILITY:
+	playsewithpan SE_M_DOUBLE_TEAM, SOUND_PAN_ATTACKER
 	delay 10
 	end
 
@@ -2992,10 +2997,13 @@ Move_WITHDRAW:
 	loadspritegfx ANIM_TAG_RED_BALL
 	playsewithpan SE_M_HEADBUTT, SOUND_PAN_ATTACKER
 	createsprite gSlideMonToOffsetSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 0, 20
+	delay 8
+	invisible ANIM_ATTACKER
 	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 0, 4, RGB(31, 31, 25)
 	delay 8
 	invisible ANIM_ATTACKER
 	waitforvisualfinish
+	playsewithpan SE_M_HARDEN, SOUND_PAN_ATTACKER
 	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  8, 4, 16, ANIM_ATTACKER
 	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  0, 3, 16, ANIM_ATTACKER
 	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  -8,  0, 1, 16, ANIM_ATTACKER
@@ -3005,6 +3013,7 @@ Move_WITHDRAW:
 	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  16,  8, 2, 16, ANIM_ATTACKER
 	waitforvisualfinish
 	delay 4
+	playsewithpan SE_M_HARDEN, SOUND_PAN_ATTACKER
 	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  8, 4, 16, ANIM_ATTACKER
 	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  0, 3, 16, ANIM_ATTACKER
 	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  -8,  0, 1, 16, ANIM_ATTACKER
@@ -3014,6 +3023,7 @@ Move_WITHDRAW:
 	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  16,  8, 2, 16, ANIM_ATTACKER
 	waitforvisualfinish
 	delay 4
+	playsewithpan SE_M_HARDEN, SOUND_PAN_ATTACKER
 	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  8, 4, 16, ANIM_ATTACKER
 	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2, -16,  0, 3, 16, ANIM_ATTACKER
 	createsprite gWithdrawSpriteTemplate, ANIM_ATTACKER, 2,  -8,  0, 1, 16, ANIM_ATTACKER
@@ -3469,13 +3479,13 @@ Move_GUST:
 Move_WING_ATTACK:
 	loadspritegfx ANIM_TAG_IMPACT
 	setalpha 12, 8
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, 8, ANIM_TARGET, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, -8, 8, ANIM_TARGET, 2
 	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
 	delay 8
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 0, 0, ANIM_TARGET, 2
 	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
 	delay 8
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 8, -8, ANIM_TARGET, 2
+	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 8, -8, ANIM_TARGET, 2
 	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
 	delay 8
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 4, 0, 7, 1
@@ -3518,6 +3528,7 @@ AeroblastBeam:
 
 Move_WATER_GUN:
 	loadspritegfx ANIM_TAG_WATER_DROPLET
+	playsewithpan SE_M_BUBBLE, SOUND_PAN_ATTACKER
 	createsprite gWaterGunProjectileSpriteTemplate, ANIM_TARGET, 2, -16, -48, 0, 6, 82
 	createsprite gWaterGunProjectileSpriteTemplate, ANIM_TARGET, 2,   0, -32, 0, 6, 64
 	createsprite gWaterGunProjectileSpriteTemplate, ANIM_TARGET, 2,  16, -48, 0, 6, 82
@@ -3849,63 +3860,47 @@ Move_PETAL_DANCE:
 	end
 
 PetalDanceFoe:
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -48, -10, 80, 0, ANIM_TARGET
 	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -41, 15, 80, 0, ANIM_TARGET
 	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -30, 0, 80, 0, ANIM_TARGET
 	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -13, 22, 80, 0, ANIM_TARGET
 	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 0, -8, 80, 0, ANIM_TARGET
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 11, 0, 80, 0, ANIM_TARGET
 	delay 8
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 48, -10, 80, 0, ANIM_TARGET
 	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -41, -15, 80, 0, ANIM_TARGET
 	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 30, 0, 80, 0, ANIM_TARGET
 	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -13, -22, 80, 0, ANIM_TARGET
 	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 0, -8, 80, 0, ANIM_TARGET
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 11, 0, 80, 0, ANIM_TARGET
 	delay 8
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 48, 10, 80, 0, ANIM_TARGET
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 41, -15, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -41, -15, 80, 0, ANIM_TARGET
 	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 30, 0, 80, 0, ANIM_TARGET
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 13, -22, 80, 0, ANIM_TARGET
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 0, 8, 80, 0, ANIM_TARGET
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -11, 0, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -13, -22, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 0, -8, 80, 0, ANIM_TARGET
 	delay 8
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -48, 10, 80, 0, ANIM_TARGET
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 41, 15, 80, 0, ANIM_TARGET
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -30, 0, 80, 0, ANIM_TARGET
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 13, 22, 80, 0, ANIM_TARGET
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 0, 8, 80, 0, ANIM_TARGET
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -11, 0, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -41, -15, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 30, 0, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, -13, -22, 80, 0, ANIM_TARGET
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_TARGET, 2, 1, 0, -8, 80, 0, ANIM_TARGET
 	return
 
 PetalDancePlayer:
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -48, -10, 80, 0, ANIM_ATTACKER
 	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -41, 15, 80, 0, ANIM_ATTACKER
 	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -30, 0, 80, 0, ANIM_ATTACKER
 	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -13, 22, 80, 0, ANIM_ATTACKER
 	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, -8, 80, 0, ANIM_ATTACKER
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 11, 0, 80, 0, ANIM_ATTACKER
 	delay 8
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 48, -10, 80, 0, ANIM_ATTACKER
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -41, -15, 80, 0, ANIM_ATTACKER
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 30, 0, 80, 0, ANIM_ATTACKER
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -13, -22, 80, 0, ANIM_ATTACKER
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, -8, 80, 0, ANIM_ATTACKER
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 11, 0, 80, 0, ANIM_ATTACKER
-	delay 8
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 48, 10, 80, 0, ANIM_ATTACKER
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 41, -15, 80, 0, ANIM_ATTACKER
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 30, 0, 80, 0, ANIM_ATTACKER
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 13, -22, 80, 0, ANIM_ATTACKER
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 8, 80, 0, ANIM_ATTACKER
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -11, 0, 80, 0, ANIM_ATTACKER
-	delay 8
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -48, 10, 80, 0, ANIM_ATTACKER
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 41, 15, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -41, 15, 80, 0, ANIM_ATTACKER
 	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -30, 0, 80, 0, ANIM_ATTACKER
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 13, 22, 80, 0, ANIM_ATTACKER
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 8, 80, 0, ANIM_ATTACKER
-	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -11, 0, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -13, 22, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, -8, 80, 0, ANIM_ATTACKER
+	delay 8
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -41, 15, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -30, 0, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -13, 22, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, -8, 80, 0, ANIM_ATTACKER
+	delay 8
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -41, 15, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -30, 0, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, -13, 22, 80, 0, ANIM_ATTACKER
+	createsprite gPetalDanceParticleSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, -8, 80, 0, ANIM_ATTACKER
 	return
 
 Move_RAZOR_LEAF:
@@ -4135,7 +4130,7 @@ Move_BIND:
 Move_WRAP:
 	loadspritegfx ANIM_TAG_TENDRILS
 	monbg ANIM_TARGET
-	setalpha 12, 8
+	playsewithpan SE_M_BIND, SOUND_PAN_TARGET
 	createsprite gBindTendrilsSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0
 	delay 15
 	createsprite gBindTendrilsSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 0

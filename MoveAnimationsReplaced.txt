@@ -4,7 +4,7 @@ https://bulbapedia.bulbagarden.net/wiki/Category:Generation_I_moves
 ~Absorb\
 ~Acid\
 ~Acid Armor\
-~Agility (Needs sound)
+~Agility\
 ~Amnesia\
 ~Aurora Beam\
 
@@ -180,7 +180,7 @@ Dig\ (Need invisibility mask)
 ~Tackle\
 ~Tail Whip\
 ~Take Down\
-~Teleport (Must try in the wild)
+~Teleport\
 ~Thrash\
 ~Thunder\
 ~Thunderpunch\
@@ -193,13 +193,13 @@ Dig\ (Need invisibility mask)
 ~Twineedle\
 
 -V-
-~Vine Whip
-~Vicegrip
+~Vine Whip\
+~Vicegrip\
 
 -W-
-~Water Gun
-~Waterfall
-~Whirlwind
-~Wing Attack
-~Withdraw (Still needs invisibility mask)
-~Wrap
+~Water Gun\
+~Waterfall\
+~Whirlwind\
+~Wing Attack\
+~Withdraw\ (Still needs invisibility mask)
+~Wrap\
