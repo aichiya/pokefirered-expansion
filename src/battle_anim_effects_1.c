@@ -559,29 +559,6 @@ const struct SpriteTemplate gRazorLeafCutterSpriteTemplate =
     .callback = AnimTranslateLinearSingleSineWave,
 };
 
-static const union AnimCmd sPetalDanceAnimCmds[] =
-{
-    ANIMCMD_FRAME(1, 0),
-    ANIMCMD_JUMP(0),
-};
-
-static const union AnimCmd *const sPetalDanceAnimTable[] =
-{
-    sPetalDanceAnimCmds,
-};
-
-const struct SpriteTemplate gPetalDanceParticleSpriteTemplate =
-{
-    .tileTag = ANIM_TAG_FIRE,
-    .paletteTag = ANIM_TAG_FIRE,
-    .oam = &gOamData_AffineOff_ObjNormal_8x8,
-    .anims = sPetalDanceAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = AnimSporeParticle,
-};
-
-
 static const union AffineAnimCmd sSwiftStarAffineAnimCmds[] = 
 {
     AFFINEANIMCMD_FRAME(0, 0, 0, 1),

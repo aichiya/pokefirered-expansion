@@ -118,7 +118,6 @@ Many, many more changes, large and small!
 * Battle status effect animations also replaced.
 * Entering Oak's Lab now sets the flag necessary for the game to allow link play with Ruby and Sapphire.
 
-
 * Workaround: Temporarily shortened a text string in the naming screen from "nickname" to "name" in order to prevent truncation.
 * Fixed: Mr. Mime backsprite being too high.
 * Fixed: Ninetales backsprite being too high.

@@ -38,6 +38,8 @@ static void AnimGustTornado(struct Sprite *sprite);
 static void AnimToTargetInSinWaveMirrored(struct Sprite *sprite);
 static void AnimToTargetInSinWave3_Step(struct Sprite *sprite);
 static void AnimQuestionMark(struct Sprite *sprite);
+static void AnimPetalDance(struct Sprite *sprite);
+static void AnimPetalDance_Step(struct Sprite *sprite);
 
 ///////////////////
 // GENERIC BEGIN //
@@ -653,6 +655,26 @@ const struct SpriteTemplate gLargeOrbStaticSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSpriteStatic,
+};
+
+static const union AnimCmd sPetalDanceAnimCmds[] =
+{
+    ANIMCMD_FRAME(1, 0),
+    ANIMCMD_JUMP(0),
+};
+static const union AnimCmd *const sPetalDanceAnimTable[] =
+{
+    sPetalDanceAnimCmds,
+};
+const struct SpriteTemplate gPetalDanceParticleSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_FIRE,
+    .paletteTag = ANIM_TAG_FIRE,
+    .oam = &gOamData_AffineOff_ObjNormal_8x8,
+    .anims = sPetalDanceAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimPetalDance,
 };
 ///////////////
 // GRASS END //
@@ -1603,6 +1625,37 @@ static void AnimQuestionMark(struct Sprite *sprite)
     sprite->y += gBattleAnimArgs[1];
     sprite->data[0]  = gBattleAnimArgs[2];
     sprite->callback = DestroyAnimSpriteAfterTimer;
+}
+
+static void AnimPetalDance(struct Sprite* sprite)
+{
+    if (gBattleAnimArgs[5] != ANIM_ATTACKER)
+        InitSpritePosToAnimTarget(sprite, TRUE);
+    else
+        InitSpritePosToAnimAttacker(sprite, TRUE);
+    if (GetBattlerSide(gBattleAnimAttacker) != B_SIDE_PLAYER)
+        gBattleAnimArgs[5] = -gBattleAnimArgs[5];
+    sprite->data[0] = gBattleAnimArgs[3];
+    sprite->data[1] = gBattleAnimArgs[2];
+    sprite->callback = AnimPetalDance_Step;
+    sprite->callback(sprite);
+}
+
+static void AnimPetalDance_Step(struct Sprite* sprite)
+{
+    if (GetBattlerSide(gBattleAnimTarget))
+        sprite->x2 = -Sin(sprite->data[0], 25);
+    else
+        sprite->x2 = Sin(sprite->data[0], 25);
+
+    sprite->data[0] += 2;
+    sprite->data[0] &= 0xFF;
+    sprite->data[1]++;
+    if (!(sprite->data[1] & 1))
+        sprite->y2++;
+
+    if (sprite->data[1] > 80)
+        DestroyAnimSprite(sprite);
 }
 ///////////////////
 // CALLBACKS END //
