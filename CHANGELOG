@@ -1,118 +1,128 @@
 -V4-
-UndergroundPath_NorthSouthTunnel had erroneous impassible tile, fixed.
-Rattata can no longer use FLY HM.
-Super Rod fishing tables for several routes were missing entries, fixed.
-PokemonMansion_3F had erroneous impassible tile, fixed.
-Route23 tiny island in water was inaccessible due to differences in terrain height data, fixed.
-gTileset_RB_Forest used for Safari Zone had wild encounters enabled for mountain terrain, fixed.
-Replaced naming screen Rival sprite.
-Partially replaced naming screen graphics.
-Partially replaced trade screen graphics.
-Enabled and fixed link trading, it is now possible to trade Pokemon!
+* Replaced naming screen Rival sprite.
+* Partially replaced naming screen graphics.
+* Partially replaced trade screen graphics.
+* Enabled and fixed link trading, it is now possible to trade Pokemon!
+
+* Fixed: Rattata can no longer use FLY HM.
+* Fixed: PokemonMansion_3F had erroneous impassible tile.
+* Fixed: Route23 tiny island in water was inaccessible due to differences in terrain height data.
+* Fixed: gTileset_RB_Forest used for Safari Zone had wild encounters enabled for mountain terrain.
+* Fixed: Super Rod fishing tables for several routes were missing entries.
+* Fixed: UndergroundPath_NorthSouthTunnel had erroneous impassible tile.
 
 -V5-
-Fixed NidoranM, Nidorino, and Nidoking backsprite graphics having a visible blank space at the bottom of the image.
-Fixed Pokemon Storage System showing gray boxes when no Pokemon was selected.
-Replaced some item sprites with new custom sprites.
-Fixed some dialogue windows using vertically flipped tiles at the bottom.
-A lot of text now uses the correct black primary with light gray secondary colors.
-Fixed item storage palette swap issue.
-Doors now have custom animation graphics.
+* Replaced some item sprites with new custom sprites.
+* A lot of text now uses the correct black primary with light gray secondary colors.
+* Doors now have custom animation graphics.
+
+* Fixed NidoranM, Nidorino, and Nidoking backsprite graphics having a visible blank space at the bottom of the image.
+* Fixed Pokemon Storage System showing gray boxes when no Pokemon was selected.
+* Fixed: Some dialogue windows using vertically flipped tiles at the bottom.
+* Fixed: Item storage palette swap issue.
 
 -V6-
-Totally revamped standard and TM shop menus.
-Totally revamped TM Case menus.
-Totally revamped Summary Screen menus.
-Totally revamped Trainer Card screens.
-Revamped Item Storage menus.
-Revamped Pokedex menus.
-Revamped Text Entry menus, keyboards now show more and different characters!
-Revamped party menu.
-Revamped Game Corner Coin Clerk menus.
-Revamped Save Game window.
-Replaced original small font with classic Red & Blue style BIG font.
-Resized overworld textboxes to match the size of that of Red & Blue.
-Rewrote all 151 accessible Pokedex entries in order to match those of Red & Blue as closely as possible.
-Rewrote all 354 move descriptions in order to adhere to font and textbox size constraints.
-Rewrote most accessible dialogue in the game in order to match Red & Blue as closely as possible.
-Overhauled graphics for most accessible items, they now sport a retro style!
-Added pre-set name selections for players starting a new game.
-Disabled door animations.
-Disabled icon for cured Pokerus.
-Pokemon Centers automatically update the Pokemon on the back of the Trainer Card.
-EXP.ALL now has (de)activation text.
-Removed item animations.
-Modified build script to create Rev1 ROMs by default, as well as replace FireRed and LeafGreen targets with Red and Blue.
-Added new dialogue for Game Corner Coin Clerk selling 500 coins to the player.
-Changed plural from Coins to Coin. Likely temporary.
-Shiny pokemon now have their original monochrome colors!
-HM moves besides Waterfall no longer show a description window when a Pokemon with said moves is selected in the Party Menu.
-Kabuto and Omanyte now use classic overworld sprites.
-Mimic move tutor now gifts a TM instead, matching Red & Blue.
-Battle UI is slightly modified, notably the decorative arrow and the move info box.
+* Totally revamped standard and TM shop menus.
+* Totally revamped TM Case menus.
+* Totally revamped Summary Screen menus.
+* Totally revamped Trainer Card screens.
+* Revamped Item Storage menus.
+* Revamped Pokedex menus.
+* Revamped Text Entry menus, keyboards now show more and different characters!
+* Revamped party menu.
+* Revamped Game Corner Coin Clerk menus.
+* Revamped Save Game window.
+* Replaced original small font with classic Red & Blue style BIG font.
+* Resized overworld textboxes to match the size of that of Red & Blue.
+* Rewrote all 151 accessible Pokedex entries in order to match those of Red & Blue as closely as possible.
+* Rewrote all 354 move descriptions in order to adhere to font and textbox size constraints.
+* Rewrote most accessible dialogue in the game in order to match Red & Blue as closely as possible.
+* Overhauled graphics for most accessible items, they now sport a retro style!
+* Added pre-set name selections for players starting a new game.
+* Disabled door animations.
+* Disabled icon for cured Pokerus.
+* Pokemon Centers automatically update the Pokemon on the back of the Trainer Card.
+* EXP.ALL now has (de)activation text.
+* Removed item animations.
+* Modified build script to create Rev1 ROMs by default, as well as replace FireRed and LeafGreen targets with Red and Blue.
+* Added new dialogue for Game Corner Coin Clerk selling 500 coins to the player.
+* Changed plural from Coins to Coin. Likely temporary.
+* Shiny pokemon now have their original monochrome colors!
+* HM moves besides Waterfall no longer show a description window when a Pokemon with said moves is selected in the Party Menu.
+* Kabuto and Omanyte now use classic overworld sprites.
+* Mimic move tutor now gifts a TM instead, matching Red & Blue.
+* Battle UI is slightly modified, notably the decorative arrow and the move info box.
 
-Fixed: Leaving Safari Zone then answering No to the clerk's question put the player back on the wrong tile.
-Fixed: Party Menu Cancel button did not fully highlight when selected.
-Fixed: Golduck's front sprite had colors 2 and 3 swapped.
-Fixed: Text windows had gray where they should have had black.
-Fixed: PC sometimes displayed "What would you like to do?" when changing between menus.
-Fixed: Victory Road Badge Guard incorrect dialogue.
-Fixed: Activating EXP.ALL locks the bag menu until the player press A 3 times.
-Fixed: Saffron City incorrect collision allowed players to walk under roof tiles.
-Fixed: Cinnabar Gym gates were replaced with incorrect floor tiles when the path was opened.
-Fixed: Pallet Town Fat Man NPC was incorrectly visible from Route 21.
-Fixed: Route 21 Fisherman NPCs couldn't be interacted with from the water.
-Fixed: Daisy would offer to groom Pokemon after the player defeats the Elite Four.
-Fixed: Unused Fat Man NPC in Route 21 was visible.
-Fixed: Small Level Up menu text color changed based on PP text color.
-Fixed: Incorrect Fucshia City warp arrow tile trapped players in a small house.
-Fixed: Cycling Road didn't automatically move players downwards.
-Fixed: Rocket House used generic layout instead of unique layout.
-Fixed: Saffron City West Gate missing entrance warp tile.
-Fixed: Route 6 minor incorrect collision.
-Fixed: Cerulean City eastern Cut Tree not working or not appearing.
-Fixed: Something to do with trainer names and classes, can't even remember.
-Fixed: Incorrect text for when a Pokemon evolves.
-Fixed: Getting an item sometimes showed unwanted dialogue.
-Fixed: Pewter City Gym Guide had incorrect variable pathing.
-Fixed: Pokemon Tower Rockets had incomplete variable pathing.
-Fixed: Viridian City Gym's doors were not always locked when they should have been.
-Fixed: Viridian City Drunk used incorrect script when the player talks to them.
-Fixed: Nidorina back sprite was visibly too high.
+* Fixed: Leaving Safari Zone then answering No to the clerk's question put the player back on the wrong tile.
+* Fixed: Party Menu Cancel button did not fully highlight when selected.
+* Fixed: Golduck's front sprite had colors 2 and 3 swapped.
+* Fixed: Text windows had gray where they should have had black.
+* Fixed: PC sometimes displayed "What would you like to do?" when changing between menus.
+* Fixed: Victory Road Badge Guard incorrect dialogue.
+* Fixed: Activating EXP.ALL locks the bag menu until the player press A 3 times.
+* Fixed: Saffron City incorrect collision allowed players to walk under roof tiles.
+* Fixed: Cinnabar Gym gates were replaced with incorrect floor tiles when the path was opened.
+* Fixed: Pallet Town Fat Man NPC was incorrectly visible from Route 21.
+* Fixed: Route 21 Fisherman NPCs couldn't be interacted with from the water.
+* Fixed: Daisy would offer to groom Pokemon after the player defeats the Elite Four.
+* Fixed: Unused Fat Man NPC in Route 21 was visible.
+* Fixed: Small Level Up menu text color changed based on PP text color.
+* Fixed: Incorrect Fucshia City warp arrow tile trapped players in a small house.
+* Fixed: Cycling Road didn't automatically move players downwards.
+* Fixed: Rocket House used generic layout instead of unique layout.
+* Fixed: Saffron City West Gate missing entrance warp tile.
+* Fixed: Route 6 minor incorrect collision.
+* Fixed: Cerulean City eastern Cut Tree not working or not appearing.
+* Fixed: Something to do with trainer names and classes, can't even remember.
+* Fixed: Incorrect text for when a Pokemon evolves.
+* Fixed: Getting an item sometimes showed unwanted dialogue.
+* Fixed: Pewter City Gym Guide had incorrect variable pathing.
+* Fixed: Pokemon Tower Rockets had incomplete variable pathing.
+* Fixed: Viridian City Gym's doors were not always locked when they should have been.
+* Fixed: Viridian City Drunk used incorrect script when the player talks to them.
+* Fixed: Nidorina back sprite was visibly too high.
 
 Many, many more changes, large and small!
 
 -V7-
-Daisy will now wander up and down after gifing Town Map to the player.
-FRZ status condition no longer wears off over time.
-SPECIAL stats are effectively merged, keeping save and trade compatibility.
-Trade menus have a new old look!
-Lift Key Guard now correctly keeps the lift key until after talking to him after defeating him.
-The player now has preset name selection in the new game sequence!
-Bicycle animation now plays at half speed, meaning it looks accurate to the 30 FPS animations of the original games.
-A few areas are more colorful! Map and tileset data has been updated in a few instances.
+* Daisy will now wander up and down after gifing Town Map to the player.
+* FRZ status condition no longer wears off over time.
+* SPECIAL stats are effectively merged, keeping save and trade compatibility.
+* Trade menus have a new old look!
+* Lift Key Guard now correctly keeps the lift key until after talking to him after defeating him.
+* The player now has preset name selection in the new game sequence!
+* Bicycle animation now plays at half speed, meaning it looks accurate to the 30 FPS animations of the original games.
+* A few areas are more colorful! Map and tileset data has been updated in a few instances.
 
-Fixed: Empty party menu slots had jumbled graphics.
-Fixed: Text windows shown when hatching eggs and trading pokemon had white text on white background.
-Fixed: Dome Fossil called Helix Fossil in Mt.Moon.
-Fixed: Oak's Parcel sequence had the clerk animate.
-Fixed: Pokedex Acquisition sequence had Oak animate.
-Fixed: Pokedex screens shown when registering a Pokemon used incorrect graphics.
-Fixed: Cerulean City Badge guide had broken dialogue.
-Fixed: Text shown when a Pokemon fainted outside of battle was incorrectly formatted.
-Fixed: Silph Co 11F computer did not function as a PokeCenter PC.
-Fixed: Cycling Road's southern gatehouse kicks the player off of the bike.
-Fixed: Some trainers lacked Clone Objects, making them visually pop into existence on screen.
-Fixed: Safari Zone incorrectly listed the starting step count as 600.
-Fixed: Immediately consequtive evolution stone evolutions would crash the game.
-Fixed: SilphCo's Giovanni encounter scripting would rotate the player in the wrong direction, rotate the player when the wrong activator is triggered.
-Fixed: Rock Tunnel had a sign lacking collision.
-Fixed: A lot of incorrect textbox formatting.
-Fixed: Many typos.
+* Fixed: Empty party menu slots had jumbled graphics.
+* Fixed: Text windows shown when hatching eggs and trading pokemon had white text on white background.
+* Fixed: Dome Fossil called Helix Fossil in Mt.Moon.
+* Fixed: Oak's Parcel sequence had the clerk animate.
+* Fixed: Pokedex Acquisition sequence had Oak animate.
+* Fixed: Pokedex screens shown when registering a Pokemon used incorrect graphics.
+* Fixed: Cerulean City Badge guide had broken dialogue.
+* Fixed: Text shown when a Pokemon fainted outside of battle was incorrectly formatted.
+* Fixed: Silph Co 11F computer did not function as a PokeCenter PC.
+* Fixed: Cycling Road's southern gatehouse kicks the player off of the bike.
+* Fixed: Some trainers lacked Clone Objects, making them visually pop into existence on screen.
+* Fixed: Safari Zone incorrectly listed the starting step count as 600.
+* Fixed: Immediately consequtive evolution stone evolutions would crash the game.
+* Fixed: SilphCo's Giovanni encounter scripting would rotate the player in the wrong direction, rotate the player when the wrong activator is triggered.
+* Fixed: Rock Tunnel had a sign lacking collision.
+* Fixed: A lot of incorrect textbox formatting.
+* Fixed: Many typos.
 
 -V8-
-Slightly modified newline placement in battle text used when Bind squeezes a Pokemon.
-Completely replaced battle graphics for all Gen1 moves that were visually very different in Gen3!
-Battle status effect animations also replaced.
+* Slightly modified newline placement in battle text used when Bind squeezes a Pokemon.
+* Completely replaced battle graphics for all Gen1 moves that were visually very different in Gen3!
+* Battle status effect animations also replaced.
+* Entering Oak's Lab now sets the flag necessary for the game to allow link play with Ruby and Sapphire.
 
-Fixed: Mr. Mime backsprite being too high.
+* Workaround: Temporarily shortened a text string in the naming screen from "nickname" to "name" in order to prevent truncation.
+* Fixed: Mr. Mime backsprite being too high.
+* Fixed: Ninetales backsprite being too high.
+* Fixed: Vulpix icon using duplicate animation frames.
+* Fixed: Dialogue of lass outside of Cerulean Cave.
+* Fixed: Ladder in Cerulean Cave 1F being unusable.
+* Fixed: 2 Item Balls being inaccessible while surfing in Cerulean Cave 1F.
+* Fixed: 2 Grass tiles were visible from a corner between Cerulean City and Cerulean Cave.

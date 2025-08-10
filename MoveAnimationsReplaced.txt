@@ -4,7 +4,7 @@ https://bulbapedia.bulbagarden.net/wiki/Category:Generation_I_moves
 ~Absorb\
 ~Acid\
 ~Acid Armor\
-~Agility (Needs sound)
+~Agility\
 ~Amnesia\
 ~Aurora Beam\
 
@@ -93,113 +93,113 @@ Dig\ (Need invisibility mask)
 ~Kinesis\
 
 -L-
-~Leech Life
-~Leech Seed
-~Leer
-~Lick
-~Light Screen
-~Lovely Kiss
-~Low Kick
+~Leech Life\
+~Leech Seed\
+~Leer\
+~Lick\
+~Light Screen\
+~Lovely Kiss\
+~Low Kick\
 
 -M-
-~Meditate
-~Mega Drain
-~Mega Kick
-~Mega Punch
-~Metronome
-~Mimic
-~Minimize
+~Meditate\
+~Mega Drain\
+~Mega Kick\
+~Mega Punch\
+~Metronome\
+~Mimic\
+~Minimize\
 -Mirror Move-
-~Mist
+~Mist\
 
 -N-
-~Night Shade
+~Night Shade\
 
 -P-
-~Pay Day
-~Peck
-~Petal Dance
-~Pin Missile
-~Poison Gas
-~Poison Powder
-~Poison Sting
-~Pound
-~Psybeam
-~Psychic
-~Psywave
+~Pay Day\
+~Peck\
+~Petal Dance\
+~Pin Missile\
+~Poison Gas\
+~Poison Powder\
+~Poison Sting\
+~Pound\
+~Psybeam\
+~Psychic\
+~Psywave\
 
 -Q-
-~Quick Attack
+~Quick Attack\
 
 -R-
-~Rage
-~Razor Leaf
-~Razor Wind
-~Recover
-~Reflect
-~Rest
+~Rage\
+~Razor Leaf\
+~Razor Wind\
+~Recover\
+~Reflect\
+~Rest\
 ~Roar
-~Rock Slide
-~Rock Throw
-~Rolling Kick
-~Sand Attack
-~Scratch
-~Screech
-~Seismic Toss
-~Self-Destruct
-~Sharpen
-~Sing
-~Skull Bash
-~Sky Attack
-~Slam
-~Slash
-~Sleep Powder
-~Sludge
-~Smog
-~Smokescreen
-~Soft-Boiled
-~Solar Beam
-~Sonic Boom
-~Spike Cannon
-~Splash
-~Spore
-~Stomp
-~Strength
-~String Shot
-~Struggle
-~Stun Spore
-~Submission
-~Substitute
-~Super Fang
-~Supersonic
-~Surf
-~Swift
-~Swords Dance
+~Rock Slide\
+~Rock Throw\
+~Rolling Kick\
+~Sand Attack\
+~Scratch\
+~Screech\
+~Seismic Toss\
+~Self-Destruct\
+~Sharpen\
+~Sing\
+~Skull Bash\
+~Sky Attack\
+~Slam\
+~Slash\
+~Sleep Powder\
+~Sludge\
+~Smog\
+~Smokescreen\
+~Soft-Boiled\
+~Solar Beam\
+~Sonic Boom\
+~Spike Cannon\
+~Splash\
+~Spore\
+~Stomp\
+~Strength\
+~String Shot\
+~Struggle\
+~Stun Spore\
+~Submission\
+~Substitute\
+~Super Fang\
+~Supersonic\
+~Surf\
+~Swift\
+~Swords Dance\
 
 -T-
-~Tackle
-~Tail Whip
-~Take Down
-~Teleport
-~Thrash
-~Thunder
-~Thunderpunch
-~Thundershock
-~Thunder Wave
-~Thunderbolt
-~Toxic
-~Transform
-~Tri Attack
-~Twineedle
+~Tackle\
+~Tail Whip\
+~Take Down\
+~Teleport\
+~Thrash\
+~Thunder\
+~Thunderpunch\
+~Thundershock\
+~Thunder Wave\
+~Thunderbolt\
+~Toxic\
+~Transform\
+~Tri Attack\
+~Twineedle\
 
 -V-
-~Vine Whip
-~Vicegrip
+~Vine Whip\
+~Vicegrip\
 
 -W-
-~Water Gun
-~Waterfall
-~Whirlwind
-~Wing Attack
-~Withdraw (Still needs invisibility mask)
-~Wrap
+~Water Gun\
+~Waterfall\
+~Whirlwind\
+~Wing Attack\
+~Withdraw\ (Still needs invisibility mask)
+~Wrap\
