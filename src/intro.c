@@ -1293,16 +1293,6 @@ static void IntroCB_Scene1(struct IntroSequenceData * this)
     {
     case 0:
         SetVBlankCallback(NULL);
-        LoadPalette(sScene1_Grass_Pal, BG_PLTT_ID(PALSLOT_SCENE1_GRASS), sizeof(sScene1_Grass_Pal));
-        LoadPalette(sScene1_Bg_Pal, BG_PLTT_ID(PALSLOT_SCENE1_BG), sizeof(sScene1_Bg_Pal));
-        BlendPalettes((1 << PALSLOT_SCENE1_GRASS) | (1 << PALSLOT_SCENE1_BG), 16, RGB_WHITE);
-        InitBgsFromTemplates(0, sBgTemplates_Scene1, ARRAY_COUNT(sBgTemplates_Scene1));
-        DecompressAndCopyTileDataToVram(BG_SCENE1_BACKGROUND, sScene1_Bg_Gfx, 0, 0, 0);
-        DecompressAndCopyTileDataToVram(BG_SCENE1_BACKGROUND, sScene1_Bg_Map, 0, 0, 1);
-        ShowBg(BG_SCENE1_BACKGROUND);
-        HideBg(BG_SCENE1_GRASS);
-        HideBg(BG_SCENE1_UNUSED1);
-        HideBg(BG_SCENE1_UNUSED2);
         LoadFightSceneSpriteGraphics();
         SetVBlankCallback(VBlankCB_Intro);
         m4aSongNumStart(MUS_INTRO_FIGHT);
@@ -1378,23 +1368,8 @@ static void IntroCB_Scene2(struct IntroSequenceData * this)
     {
     case 0:
         BlendPalettes(PALETTES_ALL & ~1, 16, RGB_WHITE);
-        InitBgsFromTemplates(0, sBgTemplates_Scene2, ARRAY_COUNT(sBgTemplates_Scene2));
-        DecompressAndCopyTileDataToVram(BG_SCENE2_BACKGROUND, sScene2_Bg_Gfx, 0, 0, 0);
-        DecompressAndCopyTileDataToVram(BG_SCENE2_BACKGROUND, sScene2_Bg_Map, 0, 0, 1);
-        ShowBg(BG_SCENE2_BACKGROUND);
-        LoadPalette(sScene2_Bg_Pal, BG_PLTT_ID(1), sizeof(sScene2_Bg_Pal));
         LoadPalette(sGengar_Pal, BG_PLTT_ID(5), sizeof(sGengar_Pal));
-        LoadPalette(sScene2_JigglypuffClose_Pal, BG_PLTT_ID(6), sizeof(sScene2_JigglypuffClose_Pal));
-        DecompressAndCopyTileDataToVram(BG_SCENE2_PLANTS, sScene2_Plants_Gfx, 0, 0, 0);
-        DecompressAndCopyTileDataToVram(BG_SCENE2_PLANTS, sScene2_Plants_Map, 0, 0, 1);
-        DecompressAndCopyTileDataToVram(BG_SCENE2_JIGGLYPUFF, sScene2_JigglypuffClose_Gfx, 0, 0, 0);
-        DecompressAndCopyTileDataToVram(BG_SCENE2_JIGGLYPUFF, sScene2_JigglypuffClose_Map, 0, 0, 1);
-        DecompressAndCopyTileDataToVram(BG_SCENE2_GENGAR, sScene2_GengarClose_Gfx, 0, 0, 0);
-        DecompressAndCopyTileDataToVram(BG_SCENE2_GENGAR, sScene2_GengarClose_Map, 0, 0, 1);
         ResetBgPositions();
-        ShowBg(BG_SCENE2_PLANTS);
-        HideBg(BG_SCENE2_JIGGLYPUFF);
-        HideBg(BG_SCENE2_GENGAR);
         SetIntroCB(this, IntroCB_Scene3_Entrance);
         break;
     }
@@ -1628,7 +1603,7 @@ static void IntroCB_Scene3_Fight(struct IntroSequenceData * this)
         this->state++;
         break;
     case 1:
-        if (++this->timer > 30)
+        if (++this->timer > 60)
         {
             Scene3_StartJigglypuffCry(this);
             this->state++;
@@ -1642,7 +1617,7 @@ static void IntroCB_Scene3_Fight(struct IntroSequenceData * this)
         }
         break;
     case 3:
-        if (++this->timer > 30)
+        if (++this->timer > 60)
         {
             Scene3_PauseGengarBounce();
             Scene3_StartGengarAttack(this);
@@ -1666,7 +1641,7 @@ static void IntroCB_Scene3_Fight(struct IntroSequenceData * this)
         }
         break;
     case 6:
-        if (++this->timer > 16)
+        if (++this->timer > 60)
         {
             // Jigglypuff's 1st hop backwards in preparation to attack
             Scene3_StartJigglypuffHop(this->scene3JigglypuffSprite, 8, 12, 5);
@@ -2061,7 +2036,7 @@ static void Scene3_Task_GengarAttack(u8 taskId)
         tSinIdx += 8;
         if (++tTimer == 4)
         {
-            Scene3_CreateGengarSwipeSprites();
+            //Scene3_CreateGengarSwipeSprites();
             tMultY = 32;
             tMultX = 48;
             tFrame = 3; // Gengar swipes arm down
@@ -2379,7 +2354,7 @@ static void Scene3_StartJigglypuffRecoil(struct IntroSequenceData * ptr)
     sJigglypuffRecoilReturnTime = 16;
     sJigglypuffJumpMult = 3;
     sJigglypuffJumpDiv = 5;
-    sJigglypuffAnimDelayTime = 0;
+    sJigglypuffAnimDelayTime = 60;
     StartSpriteAnim(ptr->scene3JigglypuffSprite, ANIM_JIGGLYPUFF_CROUCH);
     ptr->scene3JigglypuffSprite->sState = 0;
     ptr->scene3JigglypuffSprite->sStateTimer = 0;
@@ -2425,13 +2400,13 @@ static void SpriteCB_JigglypuffRecoil(struct Sprite *sprite)
         break;
     case 2:
         // Jigglypuff sliding on the ground
-        sprite->sOffsetX += sprite->sSpeedX;
-        sprite->x2 = sprite->sOffsetX >> 4;
+        //sprite->sOffsetX += sprite->sSpeedX;
+        //sprite->x2 = sprite->sOffsetX >> 4;
         if (++sprite->sStateTimer > 6)
         {
             // The position of each subsequent dust sprite is "random", but with a fixed
             // initial seed so that they'll be in the same positions between intro runs
-            CreateJigglypuffRecoilDustSprites(sprite->x + sprite->x2, sprite->y + sprite->y2, sprite->sRandSeed);
+            //CreateJigglypuffRecoilDustSprites(sprite->x + sprite->x2, sprite->y + sprite->y2, sprite->sRandSeed);
             sprite->sRandSeed *= RAND_MULT;
         }
         if (sprite->sStateTimer > 12)
