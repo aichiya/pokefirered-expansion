@@ -355,7 +355,7 @@ static const struct WindowTemplate sWindowTemplates[WIN_COUNT + 1] =
         .bg = 3,
         .tilemapLeft = 9,
         .tilemapTop = 4,
-        .width = 16,
+        .width = 18,
         .height = 2,
         .paletteNum = 10,
         .baseBlock = 0x004c
@@ -367,7 +367,7 @@ static const struct WindowTemplate sWindowTemplates[WIN_COUNT + 1] =
         .width = 30,
         .height = 2,
         .paletteNum = 3,
-        .baseBlock = 0x006c
+        .baseBlock = 0x0070
     },
     DUMMY_WIN_TEMPLATE
 };
@@ -1491,7 +1491,7 @@ static bool8 KeyboardKeyHandler_Character(u8 input)
     {
         bool8 textFull = AddTextCharacter();
 
-        SquishCursor();
+        //SquishCursor();
         if (textFull)
         {
             SetInputState(INPUT_STATE_DISABLED);
