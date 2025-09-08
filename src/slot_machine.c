@@ -378,7 +378,7 @@ static const u32 sDigits_Tiles[]      = INCBIN_U32("graphics/slot_machine/digits
 
 static const struct CompressedSpriteSheet sSpriteSheets[] = {
     {.data = sReelIcons_Tiles, .size = 0x300, .tag = GFXTAG_REEL_ICONS},
-    {.data = sDigits_Tiles,    .size = 0x280, .tag = GFXTAG_DIGITS},
+    {.data = sDigits_Tiles,    .size = 0x140, .tag = GFXTAG_DIGITS},
 };
 
 static const struct SpritePalette sSpritePalettes[] = {
@@ -524,7 +524,7 @@ static const struct OamData sOamData_Digits = {
     .objMode = ST_OAM_OBJ_NORMAL,
     .mosaic = FALSE,
     .bpp = ST_OAM_4BPP,
-    .shape = ST_OAM_V_RECTANGLE,
+    .shape = ST_OAM_SQUARE,
     .x = 0,
     .matrixNum = 0,
     .size = ST_OAM_SIZE_0,
@@ -535,52 +535,52 @@ static const struct OamData sOamData_Digits = {
 };
 
 static const union AnimCmd sSpriteAnim_Digit0[] = {
-    ANIMCMD_FRAME(0x00, 4),
+    ANIMCMD_FRAME(0, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Digit1[] = {
-    ANIMCMD_FRAME(0x02, 4),
+    ANIMCMD_FRAME(1, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Digit2[] = {
-    ANIMCMD_FRAME(0x04, 4),
+    ANIMCMD_FRAME(2, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Digit3[] = {
-    ANIMCMD_FRAME(0x06, 4),
+    ANIMCMD_FRAME(3, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Digit4[] = {
-    ANIMCMD_FRAME(0x08, 4),
+    ANIMCMD_FRAME(4, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Digit5[] = {
-    ANIMCMD_FRAME(0x0a, 4),
+    ANIMCMD_FRAME(5, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Digit6[] = {
-    ANIMCMD_FRAME(0x0c, 4),
+    ANIMCMD_FRAME(6, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Digit7[] = {
-    ANIMCMD_FRAME(0x0e, 4),
+    ANIMCMD_FRAME(7, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Digit8[] = {
-    ANIMCMD_FRAME(0x10, 4),
+    ANIMCMD_FRAME(8, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Digit9[] = {
-    ANIMCMD_FRAME(0x12, 4),
+    ANIMCMD_FRAME(9, 4),
     ANIMCMD_END
 };
 
@@ -689,7 +689,8 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .height = 4,
         .paletteNum = 15,
         .baseBlock = 0x04f
-    }, {
+    }, 
+    { // Guide Bar
         .bg = 0,
         .tilemapLeft = 0,
         .tilemapTop = 0,
@@ -1762,8 +1763,8 @@ static void HBlankCB_SlotMachine(void)
     s32 vcount = REG_VCOUNT - 0x2B;
     if (vcount < 0x54u)
     {
-        *sSlotMachineGfxManager->reelIconAffineParamPtr = sReelIconAffineParams[vcount];
-        REG_BLDY = sReelIconBldY[vcount];
+        //*sSlotMachineGfxManager->reelIconAffineParamPtr = sReelIconAffineParams[vcount];
+        REG_BLDY = 0;
     }
     else
     {
@@ -1779,9 +1780,9 @@ static void CreateScoreDigitSprites(void)
 
     for (i = 0; i < NUM_DIGIT_SPRITES; i++)
     {
-        spriteId = CreateSprite(&sSpriteTemplate_Digits, 84 + 8 * i, 32, 0);
+        spriteId = CreateSprite(&sSpriteTemplate_Digits, 84 + 8 * i, 36, 0);
         sSlotMachineGfxManager->creditDigitSprites[i] = &gSprites[spriteId];
-        spriteId = CreateSprite(&sSpriteTemplate_Digits, 132 + 8 * i, 32, 0);
+        spriteId = CreateSprite(&sSpriteTemplate_Digits, 132 + 8 * i, 36, 0);
         sSlotMachineGfxManager->payoutDigitSprites[i] = &gSprites[spriteId];
     }
 }
