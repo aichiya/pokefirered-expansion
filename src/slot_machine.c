@@ -27,9 +27,9 @@
 #define NUM_DIGIT_SPRITES 4
 
 enum {
-    PALSLOT_LINE_NORMAL = 4, // Loaded as part of sBg_Pal
-    PALSLOT_LINE_BET,
-    PALSLOT_LINE_MATCH,
+    PALSLOT_LINE_NORMAL = 0, // Loaded as part of sBg_Pal
+    PALSLOT_LINE_BET = 4,
+    PALSLOT_LINE_MATCH = 5,
 };
 
 enum {
@@ -688,7 +688,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .tilemapTop = 0,
         .width = 30,
         .height = 2,
-        .paletteNum = 14,
+        .paletteNum = 9,
         .baseBlock = 0x013
     },
     DUMMY_WIN_TEMPLATE
@@ -1907,11 +1907,11 @@ static bool8 SlotsTask_GraphicsInit(u8 * state, struct SlotMachineSetupTaskData 
         FillWindowPixelBuffer(1, 0xFF);
         PutWindowTilemap(1);
 
-        x = DISPLAY_WIDTH - 4 - GetStringWidth(FONT_SMALL, gString_SlotMachineControls, 0);
-        textColor[0] = TEXT_DYNAMIC_COLOR_6;
-        textColor[1] = TEXT_COLOR_WHITE;
-        textColor[2] = TEXT_COLOR_DARK_GRAY;
-        AddTextPrinterParameterized3(1, FONT_SMALL, x, 0, textColor, 0, gString_SlotMachineControls);
+        x = DISPLAY_WIDTH - 4 - GetStringWidth(FONT_NORMAL, gString_SlotMachineControls, 0);
+        textColor[0] = TEXT_COLOR_TRANSPARENT;
+        textColor[1] = TEXT_DYNAMIC_COLOR_5;
+        textColor[2] = TEXT_COLOR_TRANSPARENT;
+        AddTextPrinterParameterized3(1, FONT_NORMAL, x, 0, textColor, 0, gString_SlotMachineControls);
         CopyBgTilemapBufferToVram(0);
 
         SetGpuRegBits(REG_OFFSET_DISPCNT, DISPCNT_MODE_0 | 0x20 | DISPCNT_OBJ_1D_MAP | DISPCNT_OBJ_ON);
@@ -2241,7 +2241,7 @@ static void Task_FlashWinningLine(u8 taskId)
             data[4] += 8;
             data[4] &= 0x7F;
             data[5] = gSineTable[data[4]] >> 5;
-            //BlendPalettes(1 << PALSLOT_LINE_MATCH, data[5], RGB_BLACK);
+            BlendPalettes(1 << 1, data[5], RGB_BLACK);
         }
         else
         {
@@ -2251,7 +2251,7 @@ static void Task_FlashWinningLine(u8 taskId)
                 data[4] = 0;
                 data[5]++;
                 data[5] &= 1;
-                //BlendPalettes(1 << PALSLOT_LINE_MATCH, data[5] * 8, RGB_BLACK);
+                BlendPalettes(1 << 1, data[5] * 8, RGB_BLACK);
             }
         }
 
@@ -2262,14 +2262,14 @@ static void Task_FlashWinningLine(u8 taskId)
         // Restore match lines to normal color 
         for (i = 0; i < NUM_MATCH_LINES; i++)
         {
-            //if (GetWinFlagByLine(i))
-            //    SetLineState(GetBgTilemapBuffer(2), i, PALSLOT_LINE_NORMAL);
+            if (GetWinFlagByLine(i))
+                SetLineState(GetBgTilemapBuffer(2), i, PALSLOT_LINE_NORMAL);
         }
         
         // Restore payout lights to normal color
-        //LoadPalette(&sBg_Pal[1], BG_PLTT_ID(1), sizeof(sBg_Pal[1]));
+        LoadPalette(&sBg_Pal[1], BG_PLTT_ID(1), sizeof(sBg_Pal[1]));
 
-        //CopyBgTilemapBufferToVram(2);
+        CopyBgTilemapBufferToVram(2);
         data[0]++;
         break;
     case 3:
