@@ -14,11 +14,11 @@
 #include "constants/songs.h"
 
 #define NUM_REELS 3
-#define REEL_LENGTH 21 // Total number of icons per reel
+#define REEL_LENGTH 15 // Total number of icons per reel
 
 // Only 4 icons are actually visible per reel at a single
 // time, with 1 on deck. Only 3 visible when not spinning.
-#define REEL_LOAD_LENGTH 5
+#define REEL_LOAD_LENGTH 4
 
 // 3 horizontal, 2 diagonal
 #define NUM_MATCH_LINES 5
@@ -34,7 +34,6 @@ enum {
 
 enum {
     GFXTAG_REEL_ICONS,
-    GFXTAG_CLEFAIRY,
     GFXTAG_DIGITS,
 };
 
@@ -44,27 +43,24 @@ enum {
     PALTAG_REEL_ICONS_2,
     PALTAG_REEL_ICONS_3,
     PALTAG_REEL_ICONS_4,
-    PALTAG_CLEFAIRY,
     PALTAG_DIGITS,
 };
 
 enum {
     ICON_7,
-    ICON_ROCKET,
-    ICON_PIKACHU,
-    ICON_PSYDUCK,   // Psyduck in FR, Slowpoke in LG
+    ICON_BAR,
     ICON_CHERRIES,
-    ICON_MAGNEMITE, // Magnemite in FR, Voltorb in LG
-    ICON_SHELLDER,  // Shellder in FR, Staryu in LG
+    ICON_MAGIKARP, // Magikarp in Red, Jigglypuff in Blue
+    ICON_BIRD,     // Bird in Red, Diglett in Blue
+    ICON_MOUSE,    // Mouse in Red, Poliwag in Blue
+    
 };
 
 enum {
     PAYOUT_NONE,
-    PAYOUT_CHERRIES2,
-    PAYOUT_CHERRIES3,
-    PAYOUT_MAGSHELL,
-    PAYOUT_PIKAPSY,
-    PAYOUT_ROCKET,
+    PAYOUT_CHERRIES,
+    PAYOUT_POKE,
+    PAYOUT_BAR,
     PAYOUT_7,
     NUM_PAYOUT_TYPES
 };
@@ -80,7 +76,6 @@ enum {
     SLOTTASK_GFX_INIT,
     SLOTTASK_FADEOUT_EXIT,
     SLOTTASK_UPDATE_LINE_LIGHTS,
-    SLOTTASK_CLEFAIRY_BOUNCE,
     SLOTTASK_ANIM_WIN,
     SLOTTASK_END_ANIM_WIN,
     SLOTTASK_ANIM_LOSE,
@@ -122,7 +117,6 @@ struct SlotMachineGfxManager
     struct Sprite *reelIconSprites[NUM_REELS][REEL_LOAD_LENGTH];
     struct Sprite *creditDigitSprites[NUM_DIGIT_SPRITES];
     struct Sprite *payoutDigitSprites[NUM_DIGIT_SPRITES];
-    struct Sprite *clefairySprites[2];
     vu16 * reelIconAffineParamPtr;
 };
 
@@ -194,11 +188,9 @@ static bool32 IsSlotMachineSetupTaskActive(u8 taskId);
 static bool8 SlotsTask_GraphicsInit(u8 *state, struct SlotMachineSetupTaskData * ptr);
 static bool8 SlotsTask_FadeOut(u8 *state, struct SlotMachineSetupTaskData * ptr);
 static bool8 SlotsTask_UpdateLineStates(u8 *state, struct SlotMachineSetupTaskData * ptr);
-static bool8 SlotsTask_ClefairyUpdateOnReelsStart(u8 *state, struct SlotMachineSetupTaskData * ptr);
-static bool8 SlotsTask_StartClefairyDanceAndWinningLineFlash(u8 *state, struct SlotMachineSetupTaskData * ptr);
+static bool8 SlotsTask_StartWinningLineFlash(u8 *state, struct SlotMachineSetupTaskData * ptr);
 static bool8 SlotsTask_StopWinningLineFlashTask(u8 *state, struct SlotMachineSetupTaskData * ptr);
-static bool8 SlotsTask_ClefairyFainted(u8 *state, struct SlotMachineSetupTaskData * ptr);
-static bool8 SlotsTask_ClefairyNeutral(u8 *state, struct SlotMachineSetupTaskData * ptr);
+static bool8 SlotsTask_DummySkip(u8 *state, struct SlotMachineSetupTaskData * ptr);
 static bool8 SlotsTask_UpdateCoinsDisplay(u8 *state, struct SlotMachineSetupTaskData * ptr);
 static bool8 SlotsTask_MessageOutOfCoins(u8 *state, struct SlotMachineSetupTaskData * ptr);
 static bool8 SlotsTask_AskQuitPlaying(u8 *state, struct SlotMachineSetupTaskData * ptr);
@@ -260,159 +252,122 @@ static const u8 sRowAttributes[NUM_MATCH_LINES][4] = {
 
 static const u16 sReelBiasChances[][NUM_PAYOUT_TYPES] = {
     {
-        [PAYOUT_NONE]      = 0x1fa1,
-        [PAYOUT_CHERRIES2] = 0x2eab,
-        [PAYOUT_CHERRIES3] = 0x3630,
-        [PAYOUT_MAGSHELL]  = 0x39f3,
-        [PAYOUT_PIKAPSY]   = 0x3bd4,
-        [PAYOUT_ROCKET]    = 0x3bfc,
-        [PAYOUT_7]         = 0x0049,
+        [PAYOUT_NONE]     = 0x1fa1,
+        [PAYOUT_CHERRIES] = 0x3630,
+        [PAYOUT_POKE]     = 0x3bd4,
+        [PAYOUT_BAR]      = 0x3bfc,
+        [PAYOUT_7]        = 0x0049,
     },
     {
-        [PAYOUT_NONE]      = 0x1f97,
-        [PAYOUT_CHERRIES2] = 0x2ea2,
-        [PAYOUT_CHERRIES3] = 0x3627,
-        [PAYOUT_MAGSHELL]  = 0x39e9,
-        [PAYOUT_PIKAPSY]   = 0x3bca,
-        [PAYOUT_ROCKET]    = 0x3bf8,
-        [PAYOUT_7]         = 0x0049,
+        [PAYOUT_NONE]     = 0x1f97,
+        [PAYOUT_CHERRIES] = 0x3627,
+        [PAYOUT_POKE]     = 0x3bca,
+        [PAYOUT_BAR]      = 0x3bf8,
+        [PAYOUT_7]        = 0x0049,
     },
     {
-        [PAYOUT_NONE]      = 0x1f91,
-        [PAYOUT_CHERRIES2] = 0x2e9b,
-        [PAYOUT_CHERRIES3] = 0x3620,
-        [PAYOUT_MAGSHELL]  = 0x39e3,
-        [PAYOUT_PIKAPSY]   = 0x3bc4,
-        [PAYOUT_ROCKET]    = 0x3bf4,
-        [PAYOUT_7]         = 0x0049,
+        [PAYOUT_NONE]     = 0x1f91,
+        [PAYOUT_CHERRIES] = 0x3620,
+        [PAYOUT_POKE]     = 0x3bc4,
+        [PAYOUT_BAR]      = 0x3bf4,
+        [PAYOUT_7]        = 0x0049,
     },
     {
-        [PAYOUT_NONE]      = 0x1f87,
-        [PAYOUT_CHERRIES2] = 0x2e92,
-        [PAYOUT_CHERRIES3] = 0x3617,
-        [PAYOUT_MAGSHELL]  = 0x39d9,
-        [PAYOUT_PIKAPSY]   = 0x3bba,
-        [PAYOUT_ROCKET]    = 0x3bef,
-        [PAYOUT_7]         = 0x0050,
+        [PAYOUT_NONE]     = 0x1f87,
+        [PAYOUT_CHERRIES] = 0x3617,
+        [PAYOUT_POKE]     = 0x3bba,
+        [PAYOUT_BAR]      = 0x3bef,
+        [PAYOUT_7]        = 0x0050,
     },
     {
-        [PAYOUT_NONE]      = 0x1f7f,
-        [PAYOUT_CHERRIES2] = 0x2e89,
-        [PAYOUT_CHERRIES3] = 0x360e,
-        [PAYOUT_MAGSHELL]  = 0x39d1,
-        [PAYOUT_PIKAPSY]   = 0x3bb2,
-        [PAYOUT_ROCKET]    = 0x3bea,
-        [PAYOUT_7]         = 0x0050,
+        [PAYOUT_NONE]     = 0x1f7f,
+        [PAYOUT_CHERRIES] = 0x360e,
+        [PAYOUT_POKE]     = 0x3bb2,
+        [PAYOUT_BAR]      = 0x3bea,
+        [PAYOUT_7]        = 0x0050,
     },
     {
-        [PAYOUT_NONE]      = 0x1fc9,
-        [PAYOUT_CHERRIES2] = 0x2efc,
-        [PAYOUT_CHERRIES3] = 0x3696,
-        [PAYOUT_MAGSHELL]  = 0x3a63,
-        [PAYOUT_PIKAPSY]   = 0x3c49,
-        [PAYOUT_ROCKET]    = 0x3c8b,
-        [PAYOUT_7]         = 0x0073,
+        [PAYOUT_NONE]     = 0x1fc9,
+        [PAYOUT_CHERRIES] = 0x3696,
+        [PAYOUT_POKE]     = 0x3c49,
+        [PAYOUT_BAR]      = 0x3c8b,
+        [PAYOUT_7]        = 0x0073,
     },
 };
 
 static const u8 sReelIconAnimByReelAndPos[NUM_REELS][REEL_LENGTH] = {
     {
         ICON_7,
-        ICON_PSYDUCK,
+        ICON_MOUSE,
+        ICON_MAGIKARP,
+        ICON_BAR,
         ICON_CHERRIES,
-        ICON_ROCKET,
-        ICON_PIKACHU,
-        ICON_SHELLDER,
-        ICON_PIKACHU,
-        ICON_MAGNEMITE,
         ICON_7,
-        ICON_SHELLDER,
-        ICON_PSYDUCK,
-        ICON_ROCKET,
+        ICON_MAGIKARP,
+        ICON_BIRD,
+        ICON_BAR,
         ICON_CHERRIES,
-        ICON_PIKACHU,
-        ICON_SHELLDER,
         ICON_7,
-        ICON_MAGNEMITE,
-        ICON_PIKACHU,
-        ICON_ROCKET,
-        ICON_SHELLDER,
-        ICON_PIKACHU
-    }, {
-        ICON_7,
-        ICON_MAGNEMITE,
-        ICON_CHERRIES,
-        ICON_PSYDUCK,
-        ICON_ROCKET,
-        ICON_MAGNEMITE,
-        ICON_CHERRIES,
-        ICON_PSYDUCK,
-        ICON_PIKACHU,
-        ICON_MAGNEMITE,
-        ICON_CHERRIES,
-        ICON_PSYDUCK,
-        ICON_7,
-        ICON_MAGNEMITE,
-        ICON_CHERRIES,
-        ICON_ROCKET,
-        ICON_PSYDUCK,
-        ICON_SHELLDER,
-        ICON_MAGNEMITE,
-        ICON_PSYDUCK,
+        ICON_MOUSE,
+        ICON_BIRD,
+        ICON_BAR,
         ICON_CHERRIES
     }, {
         ICON_7,
-        ICON_PSYDUCK,
-        ICON_SHELLDER,
-        ICON_MAGNEMITE,
-        ICON_PIKACHU,
-        ICON_PSYDUCK,
-        ICON_SHELLDER,
-        ICON_MAGNEMITE,
-        ICON_PIKACHU,
-        ICON_PSYDUCK,
-        ICON_MAGNEMITE,
-        ICON_SHELLDER,
-        ICON_PIKACHU,
-        ICON_PSYDUCK,
-        ICON_MAGNEMITE,
-        ICON_SHELLDER,
-        ICON_PIKACHU,
-        ICON_PSYDUCK,
-        ICON_MAGNEMITE,
-        ICON_SHELLDER,
-        ICON_ROCKET
+        ICON_MAGIKARP,
+        ICON_CHERRIES,
+        ICON_BIRD,
+        ICON_MOUSE,
+        ICON_BAR,
+        ICON_CHERRIES,
+        ICON_MAGIKARP,
+        ICON_BIRD,
+        ICON_CHERRIES,
+        ICON_BAR,
+        ICON_MAGIKARP,
+        ICON_BIRD,
+        ICON_CHERRIES,
+        ICON_MOUSE
+    }, {
+        ICON_7,
+        ICON_BIRD,
+        ICON_MAGIKARP,
+        ICON_CHERRIES,
+        ICON_MOUSE,
+        ICON_BIRD,
+        ICON_MAGIKARP,
+        ICON_CHERRIES,
+        ICON_MOUSE,
+        ICON_BIRD,
+        ICON_MAGIKARP,
+        ICON_CHERRIES,
+        ICON_MOUSE,
+        ICON_BIRD,
+        ICON_BAR
     },
 };
 
 static const u16 sPayoutTable[] = {
-    [PAYOUT_NONE]      =   0,
-    [PAYOUT_CHERRIES2] =   2,
-    [PAYOUT_CHERRIES3] =   6,
-    [PAYOUT_MAGSHELL]  =   8,
-    [PAYOUT_PIKAPSY]   =  15,
-    [PAYOUT_ROCKET]    = 100,
-    [PAYOUT_7]         = 300
+    [PAYOUT_NONE]     =   0,
+    [PAYOUT_CHERRIES] =   8,
+    [PAYOUT_POKE]     =  15,
+    [PAYOUT_BAR]      = 100,
+    [PAYOUT_7]        = 300
 };
 
 #if defined(FIRERED)
 static const u16 sReelIcons_Pal[][16] = INCBIN_U16("graphics/slot_machine/firered/reel_icons.gbapal");
 static const u32 sReelIcons_Tiles[]   = INCBIN_U32("graphics/slot_machine/firered/reel_icons.4bpp.lz");
-static const u16 sClefairy_Pal[]      = INCBIN_U16("graphics/slot_machine/firered/clefairy.gbapal");
-static const u32 sClefairy_Tiles[]    = INCBIN_U32("graphics/slot_machine/firered/clefairy.4bpp.lz");
 #elif defined(LEAFGREEN)
 static const u16 sReelIcons_Pal[][16] = INCBIN_U16("graphics/slot_machine/leafgreen/reel_icons.gbapal");
 static const u32 sReelIcons_Tiles[]   = INCBIN_U32("graphics/slot_machine/leafgreen/reel_icons.4bpp.lz");
-static const u16 sClefairy_Pal[]      = INCBIN_U16("graphics/slot_machine/leafgreen/clefairy.gbapal");
-static const u32 sClefairy_Tiles[]    = INCBIN_U32("graphics/slot_machine/leafgreen/clefairy.4bpp.lz");
 #endif
 static const u16 sDigits_Pal[]        = INCBIN_U16("graphics/slot_machine/digits.gbapal");
 static const u32 sDigits_Tiles[]      = INCBIN_U32("graphics/slot_machine/digits.4bpp.lz");
 
 static const struct CompressedSpriteSheet sSpriteSheets[] = {
-    {.data = sReelIcons_Tiles, .size = 0xe00, .tag = GFXTAG_REEL_ICONS},
-    {.data = sClefairy_Tiles,  .size = 0xc00, .tag = GFXTAG_CLEFAIRY},
-    {.data = sDigits_Tiles,    .size = 0x280, .tag = GFXTAG_DIGITS},
+    {.data = sReelIcons_Tiles, .size = 0x300, .tag = GFXTAG_REEL_ICONS},
+    {.data = sDigits_Tiles,    .size = 0x140, .tag = GFXTAG_DIGITS},
 };
 
 static const struct SpritePalette sSpritePalettes[] = {
@@ -421,28 +376,25 @@ static const struct SpritePalette sSpritePalettes[] = {
     {.data = sReelIcons_Pal[2], .tag = PALTAG_REEL_ICONS_2},
     {.data = sReelIcons_Pal[3], .tag = PALTAG_REEL_ICONS_3},
     {.data = sReelIcons_Pal[4], .tag = PALTAG_REEL_ICONS_4},
-    {.data = sClefairy_Pal,     .tag = PALTAG_CLEFAIRY},
     {.data = sDigits_Pal,       .tag = PALTAG_DIGITS},
     {}
 };
 
 static const u16 sReelIconPaletteTags[] = {
 #if defined(FIRERED)
-    [ICON_7]         = PALTAG_REEL_ICONS_2,
-    [ICON_ROCKET]    = PALTAG_REEL_ICONS_2,
-    [ICON_PIKACHU]   = PALTAG_REEL_ICONS_0,
-    [ICON_PSYDUCK]   = PALTAG_REEL_ICONS_0,
-    [ICON_CHERRIES]  = PALTAG_REEL_ICONS_2,
-    [ICON_MAGNEMITE] = PALTAG_REEL_ICONS_4,
-    [ICON_SHELLDER]  = PALTAG_REEL_ICONS_3,
+    [ICON_7]        = PALTAG_REEL_ICONS_0,
+    [ICON_BAR]      = PALTAG_REEL_ICONS_0,
+    [ICON_BIRD]     = PALTAG_REEL_ICONS_0,
+    [ICON_MOUSE]    = PALTAG_REEL_ICONS_0,
+    [ICON_CHERRIES] = PALTAG_REEL_ICONS_0,
+    [ICON_MAGIKARP] = PALTAG_REEL_ICONS_0,
 #elif defined(LEAFGREEN)
-    [ICON_7]         = PALTAG_REEL_ICONS_2,
-    [ICON_ROCKET]    = PALTAG_REEL_ICONS_2,
-    [ICON_PIKACHU]   = PALTAG_REEL_ICONS_0,
-    [ICON_PSYDUCK]   = PALTAG_REEL_ICONS_3,
-    [ICON_CHERRIES]  = PALTAG_REEL_ICONS_2,
-    [ICON_MAGNEMITE] = PALTAG_REEL_ICONS_1,
-    [ICON_SHELLDER]  = PALTAG_REEL_ICONS_1,
+    [ICON_7]        = PALTAG_REEL_ICONS_0,
+    [ICON_BAR]      = PALTAG_REEL_ICONS_0,
+    [ICON_BIRD]     = PALTAG_REEL_ICONS_0,
+    [ICON_MOUSE]    = PALTAG_REEL_ICONS_0,
+    [ICON_CHERRIES] = PALTAG_REEL_ICONS_0,
+    [ICON_MAGIKARP] = PALTAG_REEL_ICONS_0,
 #endif
 };
 
@@ -470,7 +422,7 @@ static const struct OamData sOamData_ReelIcons = {
     .shape = ST_OAM_SQUARE,
     .x = 0,
     .matrixNum = 0,
-    .size = ST_OAM_SIZE_2,
+    .size = ST_OAM_SIZE_1,
     .tileNum = 0,
     .priority = 3,
     .paletteNum = 0,
@@ -482,74 +434,58 @@ static const union AnimCmd sAnimCmd_ReelIcon_7[] = {
     ANIMCMD_END
 };
 
-static const union AnimCmd sAnimCmd_ReelIcon_Rocket[] = {
-    ANIMCMD_FRAME(0x10, 4),
+static const union AnimCmd sAnimCmd_ReelICON_BAR[] = {
+    ANIMCMD_FRAME(0x04, 4),
     ANIMCMD_END
 };
 
-static const union AnimCmd sAnimCmd_ReelIcon_Pikachu[] = {
-    ANIMCMD_FRAME(0x20, 4),
+static const union AnimCmd sAnimCmd_ReelICON_BIRD[] = {
+    ANIMCMD_FRAME(0x08, 4),
     ANIMCMD_END
 };
 
-static const union AnimCmd sAnimCmd_ReelIcon_Psyduck[] = {
-    ANIMCMD_FRAME(0x30, 4),
+static const union AnimCmd sAnimCmd_ReelICON_MOUSE[] = {
+    ANIMCMD_FRAME(0x0c, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sAnimCmd_ReelIcon_Cherries[] = {
-    ANIMCMD_FRAME(0x40, 4),
+    ANIMCMD_FRAME(0x10, 4),
     ANIMCMD_END
 };
 
-static const union AnimCmd sAnimCmd_ReelIcon_Magnemite[] = {
-    ANIMCMD_FRAME(0x50, 4),
+static const union AnimCmd sAnimCmd_ReelICON_MAGIKARP[] = {
+    ANIMCMD_FRAME(0x14, 4),
     ANIMCMD_END
 };
 
-static const union AnimCmd sAnimCmd_ReelIcon_Shellder[] = {
-    ANIMCMD_FRAME(0x60, 4),
+static const union AnimCmd sAnimCmd_ReelICON_BIRD_2[] = {
+    ANIMCMD_FRAME(0x04, 4),
     ANIMCMD_END
 };
 
-static const union AnimCmd sAnimCmd_ReelIcon_Pikachu_2[] = {
-    ANIMCMD_FRAME(0x20, 4),
-    ANIMCMD_END
-};
-
-static const union AnimCmd sAnimCmd_ReelIcon_Psyduck_2[] = {
-    ANIMCMD_FRAME(0x30, 4),
+static const union AnimCmd sAnimCmd_ReelICON_MOUSE_2[] = {
+    ANIMCMD_FRAME(0x08, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sAnimCmd_ReelIcon_Cherries_2[] = {
-    ANIMCMD_FRAME(0x40, 4),
+    ANIMCMD_FRAME(0x0c, 4),
     ANIMCMD_END
 };
 
-static const union AnimCmd sAnimCmd_ReelIcon_Magnemite_2[] = {
-    ANIMCMD_FRAME(0x50, 4),
-    ANIMCMD_END
-};
-
-static const union AnimCmd sAnimCmd_ReelIcon_Shellder_2[] = {
-    ANIMCMD_FRAME(0x60, 4),
+static const union AnimCmd sAnimCmd_ReelICON_MAGIKARP_2[] = {
+    ANIMCMD_FRAME(0x10, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd *const sAnimTable_ReelIcons[] = {
-    [ICON_7]         = sAnimCmd_ReelIcon_7,
-    [ICON_ROCKET]    = sAnimCmd_ReelIcon_Rocket,
-    [ICON_PIKACHU]   = sAnimCmd_ReelIcon_Pikachu,
-    [ICON_PSYDUCK]   = sAnimCmd_ReelIcon_Psyduck,
-    [ICON_CHERRIES]  = sAnimCmd_ReelIcon_Cherries,
-    [ICON_MAGNEMITE] = sAnimCmd_ReelIcon_Magnemite,
-    [ICON_SHELLDER]  = sAnimCmd_ReelIcon_Shellder,
-    sAnimCmd_ReelIcon_Pikachu_2,
-    sAnimCmd_ReelIcon_Psyduck_2,
-    sAnimCmd_ReelIcon_Cherries_2,
-    sAnimCmd_ReelIcon_Magnemite_2,
-    sAnimCmd_ReelIcon_Shellder_2
+    [ICON_7]        = sAnimCmd_ReelIcon_7,
+    [ICON_BAR]      = sAnimCmd_ReelICON_BAR,
+    [ICON_BIRD]     = sAnimCmd_ReelICON_BIRD,
+    [ICON_MOUSE]    = sAnimCmd_ReelICON_MOUSE,
+    [ICON_CHERRIES] = sAnimCmd_ReelIcon_Cherries,
+    [ICON_MAGIKARP] = sAnimCmd_ReelICON_MAGIKARP,
 };
 
 static const union AffineAnimCmd sAffineAnimCmd_ReelIcons_Unused[] = {
@@ -577,7 +513,7 @@ static const struct OamData sOamData_Digits = {
     .objMode = ST_OAM_OBJ_NORMAL,
     .mosaic = FALSE,
     .bpp = ST_OAM_4BPP,
-    .shape = ST_OAM_V_RECTANGLE,
+    .shape = ST_OAM_SQUARE,
     .x = 0,
     .matrixNum = 0,
     .size = ST_OAM_SIZE_0,
@@ -588,52 +524,52 @@ static const struct OamData sOamData_Digits = {
 };
 
 static const union AnimCmd sSpriteAnim_Digit0[] = {
-    ANIMCMD_FRAME(0x00, 4),
+    ANIMCMD_FRAME(0, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Digit1[] = {
-    ANIMCMD_FRAME(0x02, 4),
+    ANIMCMD_FRAME(1, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Digit2[] = {
-    ANIMCMD_FRAME(0x04, 4),
+    ANIMCMD_FRAME(2, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Digit3[] = {
-    ANIMCMD_FRAME(0x06, 4),
+    ANIMCMD_FRAME(3, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Digit4[] = {
-    ANIMCMD_FRAME(0x08, 4),
+    ANIMCMD_FRAME(4, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Digit5[] = {
-    ANIMCMD_FRAME(0x0a, 4),
+    ANIMCMD_FRAME(5, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Digit6[] = {
-    ANIMCMD_FRAME(0x0c, 4),
+    ANIMCMD_FRAME(6, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Digit7[] = {
-    ANIMCMD_FRAME(0x0e, 4),
+    ANIMCMD_FRAME(7, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Digit8[] = {
-    ANIMCMD_FRAME(0x10, 4),
+    ANIMCMD_FRAME(8, 4),
     ANIMCMD_END
 };
 
 static const union AnimCmd sSpriteAnim_Digit9[] = {
-    ANIMCMD_FRAME(0x12, 4),
+    ANIMCMD_FRAME(9, 4),
     ANIMCMD_END
 };
 
@@ -660,71 +596,14 @@ static const struct SpriteTemplate sSpriteTemplate_Digits = {
     .callback = SpriteCallbackDummy
 };
 
-static const struct OamData sOamData_Clefairy = {
-    .y = 0,
-    .affineMode = ST_OAM_AFFINE_OFF,
-    .objMode = ST_OAM_OBJ_NORMAL,
-    .mosaic = FALSE,
-    .bpp = ST_OAM_4BPP,
-    .shape = ST_OAM_SQUARE,
-    .x = 0,
-    .matrixNum = 0,
-    .size = ST_OAM_SIZE_2,
-    .tileNum = 0,
-    .priority = 1,
-    .paletteNum = 0,
-    .affineParam = 0
-};
-
-static const union AnimCmd sAnimCmd_Clefairy_Neutral[] = {
-    ANIMCMD_FRAME(0, 4),
-    ANIMCMD_END
-};
-
-static const union AnimCmd sAnimCmd_Clefairy_Spinning[] = {
-    ANIMCMD_FRAME( 0, 24),
-    ANIMCMD_FRAME(16, 24),
-    ANIMCMD_JUMP(0)
-};
-
-static const union AnimCmd sAnimCmd_Clefairy_Payout[] = {
-    ANIMCMD_FRAME(32, 28),
-    ANIMCMD_FRAME(48, 28),
-    ANIMCMD_JUMP(0)
-};
-
-static const union AnimCmd sAnimCmd_Clefairy_Lose[] = {
-    ANIMCMD_FRAME(64, 12),
-    ANIMCMD_FRAME(80, 12),
-    ANIMCMD_JUMP(0)
-};
-
-static const union AnimCmd *const sAnimTable_Clefairy[] = {
-    sAnimCmd_Clefairy_Neutral,
-    sAnimCmd_Clefairy_Spinning,
-    sAnimCmd_Clefairy_Payout,
-    sAnimCmd_Clefairy_Lose
-};
-
-static const struct SpriteTemplate sSpriteTemplate_Clefairy = {
-    .tileTag = GFXTAG_CLEFAIRY,
-    .paletteTag = PALTAG_CLEFAIRY,
-    .oam = &sOamData_Clefairy,
-    .anims = sAnimTable_Clefairy,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = SpriteCallbackDummy
-};
-
 bool8 (*const sSlotMachineSetupTasks[])(u8 *, struct SlotMachineSetupTaskData *) = {
     [SLOTTASK_GFX_INIT] = SlotsTask_GraphicsInit,
     [SLOTTASK_FADEOUT_EXIT] = SlotsTask_FadeOut,
     [SLOTTASK_UPDATE_LINE_LIGHTS] = SlotsTask_UpdateLineStates,
-    [SLOTTASK_CLEFAIRY_BOUNCE] = SlotsTask_ClefairyUpdateOnReelsStart,
-    [SLOTTASK_ANIM_WIN] = SlotsTask_StartClefairyDanceAndWinningLineFlash,
+    [SLOTTASK_ANIM_WIN] = SlotsTask_StartWinningLineFlash,
     [SLOTTASK_END_ANIM_WIN] = SlotsTask_StopWinningLineFlashTask,
-    [SLOTTASK_ANIM_LOSE] = SlotsTask_ClefairyFainted,
-    [SLOTTASK_ANIM_BETTING] = SlotsTask_ClefairyNeutral,
+    [SLOTTASK_ANIM_LOSE] = SlotsTask_DummySkip,
+    [SLOTTASK_ANIM_BETTING] = SlotsTask_DummySkip,
     [SLOTTASK_SHOW_AMOUNTS] = SlotsTask_UpdateCoinsDisplay,
     [SLOTTASK_MSG_NO_COINS] = SlotsTask_MessageOutOfCoins,
     [SLOTTASK_ASK_QUIT] = SlotsTask_AskQuitPlaying,
@@ -802,7 +681,8 @@ static const struct WindowTemplate sWindowTemplates[] = {
         .height = 4,
         .paletteNum = 15,
         .baseBlock = 0x04f
-    }, {
+    }, 
+    { // Guide Bar
         .bg = 0,
         .tilemapLeft = 0,
         .tilemapTop = 0,
@@ -815,23 +695,28 @@ static const struct WindowTemplate sWindowTemplates[] = {
 };
 
 static const u16 sLineTiles_TLBR[] = {
-    0x00a4, 0x00a5, 0x00a6, 0x00c4, 0x00c5, 0x00c6, 0x00c7, 0x00e7, 0x012c, 0x014c, 0x0191, 0x01b1, 0x01f6, 0x0216, 0x0217, 0x0218, 0x0219, 0x0237, 0x0238, 0x0239
+    165, 166, 167,   182, 183, 184,
+    197, 198, 199,   214, 215, 216
 };
 
 static const u16 sLineTiles_TopRow[] = {
-    0x00e4, 0x00e5, 0x00e6, 0x00f7, 0x00f8, 0x00f9, 0x0104, 0x0105, 0x0106, 0x0107, 0x010c, 0x0111, 0x0116, 0x0117, 0x0118, 0x0119, 0x0124, 0x0125, 0x0126, 0x0137, 0x0138, 0x0139
+    229, 230, 231,   246, 247, 248,
+    261, 262, 263,   278, 279, 280
 };
 
 static const u16 sLineTiles_MiddleRow[] = {
-    0x0144, 0x0145, 0x0146, 0x0157, 0x0158, 0x0159, 0x0164, 0x0165, 0x0166, 0x0167, 0x016c, 0x0171, 0x0176, 0x0177, 0x0178, 0x0179, 0x0184, 0x0185, 0x0186, 0x0197, 0x0198, 0x0199
+    293, 294, 295,   310, 311, 312,
+    325, 326, 327,   342, 343, 344
 };
 
 static const u16 sLineTiles_BottomRow[] = {
-    0x01a4, 0x01a5, 0x01a6, 0x01b7, 0x01b8, 0x01b9, 0x01c4, 0x01c5, 0x01c6, 0x01c7, 0x01cc, 0x01d1, 0x01d6, 0x01d7, 0x01d8, 0x01d9, 0x01e4, 0x01e5, 0x01e6, 0x01f7, 0x01f8, 0x01f9
+    357, 358, 359,   374, 375, 376,
+    389, 390, 391,   406, 407, 408
 };
 
 static const u16 sLineTiles_BLTR[] = {
-    0x0204, 0x0205, 0x0206, 0x0224, 0x0225, 0x0226, 0x01e7, 0x0207, 0x018c, 0x01ac, 0x0131, 0x0151, 0x00d6, 0x00f6, 0x00b7, 0x00b8, 0x00b9, 0x00d7, 0x00d8, 0x00d9
+    421, 422, 423,   438, 439, 440,
+    453, 454, 455,   470, 471, 472
 };
 
 static const struct LineStateTileIdxList sLineStateTileIdxs[NUM_MATCH_LINES] = {
@@ -855,9 +740,9 @@ static const struct WindowTemplate sYesNoWindowTemplate = {
 };
 
 static const u16 sReelButtonMapTileIdxs[NUM_REELS][NUM_BUTTON_TILES] = {
-    {0x0229, 0x022a, 0x0249, 0x024a},
-    {0x022e, 0x022f, 0x024e, 0x024f},
-    {0x0233, 0x0234, 0x0253, 0x0254}
+    {426, 427, 458, 459},
+    {430, 431, 462, 463},
+    {434, 435, 466, 467}
 };
 
 void PlaySlotMachine(u16 machineIdx, MainCallback savedCallback)
@@ -1009,7 +894,6 @@ static void MainTask_SlotsGameLoop(u8 taskId)
         CalcSlotBias();
         StartReels();
         sSlotMachineState->currentReel = 0;
-        SetSlotMachineSetupTask(SLOTTASK_CLEFAIRY_BOUNCE, 0);
         data[0] = 3;
         break;
     case 3:
@@ -1174,7 +1058,7 @@ static void MainTask_WinHandlePayout(u8 taskId)
     switch (data[0])
     {
     case 0:
-        if (sSlotMachineState->slotRewardClass == PAYOUT_ROCKET || sSlotMachineState->slotRewardClass == PAYOUT_7)
+        if (sSlotMachineState->slotRewardClass == PAYOUT_BAR || sSlotMachineState->slotRewardClass == PAYOUT_7)
             PlayFanfare(MUS_SLOTS_JACKPOT);
         else
             PlayFanfare(MUS_SLOTS_WIN);
@@ -1437,7 +1321,7 @@ static void StopReel2(u16 whichReel)
     if (numPossiblePositions == 0)
     {
         sSlotMachineState->reel2BiasInPlay = 0;
-        if (sSlotMachineState->machineBias == PAYOUT_ROCKET || sSlotMachineState->machineBias == PAYOUT_7)
+        if (sSlotMachineState->machineBias == PAYOUT_BAR || sSlotMachineState->machineBias == PAYOUT_7)
             pos = 4;
         else
             pos = 0;
@@ -1479,7 +1363,7 @@ static void StopReel3(u16 whichReel)
     }
     if (numPossiblePositions == 0)
     {
-        if (sSlotMachineState->machineBias == PAYOUT_ROCKET || sSlotMachineState->machineBias == PAYOUT_7)
+        if (sSlotMachineState->machineBias == PAYOUT_BAR || sSlotMachineState->machineBias == PAYOUT_7)
             pos = 4;
         else
             pos = 0;
@@ -1607,19 +1491,7 @@ static bool32 OneReelBiasCheck(s32 reelId, s32 reelPos, s32 biasIcon)
                 return FALSE;
         }
         return TRUE;
-    case PAYOUT_CHERRIES2:
-        for (i = 0; i < NUM_MATCH_LINES; i++)
-        {
-            if (icons[sThirdReelBiasCheckIndices[i][0]] == icons[sThirdReelBiasCheckIndices[i][1]] && TestReelIconAttribute(biasIcon, icons[sThirdReelBiasCheckIndices[i][0]]))
-                return FALSE;
-        }
-        for (i = 0; i < 3; i++)
-        {
-            if (TestReelIconAttribute(biasIcon, icons[i]))
-                return TRUE;
-        }
-        return FALSE;
-    case PAYOUT_CHERRIES3:
+    case PAYOUT_CHERRIES:
         for (i = 0; i < NUM_MATCH_LINES; i++)
         {
             if (icons[sThirdReelBiasCheckIndices[i][0]] == icons[sThirdReelBiasCheckIndices[i][1]] && TestReelIconAttribute(biasIcon, icons[sThirdReelBiasCheckIndices[i][0]]))
@@ -1641,15 +1513,12 @@ static bool32 TestReelIconAttribute(s32 attr, s32 icon)
     {
     case PAYOUT_NONE:
         return icon ^ 4 ? TRUE : FALSE;
-    case PAYOUT_CHERRIES2:
-    case PAYOUT_CHERRIES3:
+    case PAYOUT_CHERRIES:
         return icon == ICON_CHERRIES ? TRUE : FALSE;
-    case PAYOUT_MAGSHELL:
-        return icon == ICON_MAGNEMITE || icon == ICON_SHELLDER ? TRUE : FALSE;
-    case PAYOUT_PIKAPSY:
-        return icon == ICON_PIKACHU || icon == ICON_PSYDUCK ? TRUE : FALSE;
-    case PAYOUT_ROCKET:
-        return icon == ICON_ROCKET ? TRUE : FALSE;
+    case PAYOUT_POKE:
+        return icon == ICON_BIRD || icon == ICON_MAGIKARP || icon == ICON_MOUSE ? TRUE : FALSE;
+    case PAYOUT_BAR:
+        return icon == ICON_BAR ? TRUE : FALSE;
     case PAYOUT_7:
         return icon == ICON_7 ? TRUE : FALSE;
     default:
@@ -1663,15 +1532,13 @@ static u8 ReelIconToPayoutRank(s32 iconId)
     {
     default:
     case ICON_CHERRIES:
-        return PAYOUT_CHERRIES2;
-    case ICON_MAGNEMITE:
-    case ICON_SHELLDER:
-        return PAYOUT_MAGSHELL;
-    case ICON_PIKACHU:
-    case ICON_PSYDUCK:
-        return PAYOUT_PIKAPSY;
-    case ICON_ROCKET:
-        return PAYOUT_ROCKET;
+        return PAYOUT_CHERRIES;
+    case ICON_BIRD:
+    case ICON_MAGIKARP:
+    case ICON_MOUSE:
+        return PAYOUT_POKE;
+    case ICON_BAR:
+        return PAYOUT_BAR;
     case ICON_7:
         return PAYOUT_7;
     }
@@ -1687,7 +1554,7 @@ static void CalcSlotBias(void)
         if (rval < biasChances[i])
             break;
     }
-    if (sSlotMachineState->machineBias < PAYOUT_ROCKET)
+    if (sSlotMachineState->machineBias < PAYOUT_BAR)
     {
         if (sSlotMachineState->biasCooldown == 0)
         {
@@ -1823,7 +1690,7 @@ static void CreateReelIconSprites(void)
     {
         for (j = 0; j < REEL_LOAD_LENGTH; j++)
         {
-            spriteId = CreateSprite(&sSpriteTemplate_ReelIcons, 80 + 40 * i, 44 + 24 * j, 2);
+            spriteId = CreateSprite(&sSpriteTemplate_ReelIcons, 88 + 32 * i, 48 + 16 * j, 2);
             animId =  sReelIconAnimByReelAndPos[i][j];
             sprite = &gSprites[spriteId];
             StartSpriteAnim(sprite, animId);
@@ -1876,8 +1743,8 @@ static void HBlankCB_SlotMachine(void)
     s32 vcount = REG_VCOUNT - 0x2B;
     if (vcount < 0x54u)
     {
-        *sSlotMachineGfxManager->reelIconAffineParamPtr = sReelIconAffineParams[vcount];
-        REG_BLDY = sReelIconBldY[vcount];
+        //*sSlotMachineGfxManager->reelIconAffineParamPtr = sReelIconAffineParams[vcount];
+        REG_BLDY = 0;
     }
     else
     {
@@ -1893,9 +1760,9 @@ static void CreateScoreDigitSprites(void)
 
     for (i = 0; i < NUM_DIGIT_SPRITES; i++)
     {
-        spriteId = CreateSprite(&sSpriteTemplate_Digits, 85 + 7 * i, 30, 0);
+        spriteId = CreateSprite(&sSpriteTemplate_Digits, 84 + 8 * i, 36, 0);
         sSlotMachineGfxManager->creditDigitSprites[i] = &gSprites[spriteId];
-        spriteId = CreateSprite(&sSpriteTemplate_Digits, 133 + 7 * i, 30, 0);
+        spriteId = CreateSprite(&sSpriteTemplate_Digits, 132 + 8 * i, 36, 0);
         sSlotMachineGfxManager->payoutDigitSprites[i] = &gSprites[spriteId];
     }
 }
@@ -1918,22 +1785,6 @@ static void UpdateCoinsDisplay(void)
         payout -= quotient * divisor;
         divisor /= 10;
     }
-}
-
-static void CreateClefairySprites(void)
-{
-    s32 spriteId = CreateSprite(&sSpriteTemplate_Clefairy, 16, 136, 1);
-    sSlotMachineGfxManager->clefairySprites[0] = &gSprites[spriteId];
-    spriteId = CreateSprite(&sSpriteTemplate_Clefairy, DISPLAY_WIDTH - 16, 136, 1);
-    sSlotMachineGfxManager->clefairySprites[1] = &gSprites[spriteId];
-    sSlotMachineGfxManager->clefairySprites[1]->hFlip = TRUE;
-}
-
-static void SetClefairySpriteAnim(u8 animId)
-{
-    s32 i;
-    for (i = 0; i < (int)ARRAY_COUNT(sSlotMachineGfxManager->clefairySprites); i++)
-        StartSpriteAnim(sSlotMachineGfxManager->clefairySprites[i], animId);
 }
 
 static bool32 CreateSlotMachine(void)
@@ -2068,7 +1919,6 @@ static bool8 SlotsTask_GraphicsInit(u8 * state, struct SlotMachineSetupTaskData 
         LoadSpriteGraphicsAndAllocateManager();
         CreateReelIconSprites();
         CreateScoreDigitSprites();
-        CreateClefairySprites();
         UpdateCoinsDisplay();
         BlendPalettes(PALETTES_ALL, 0x10, RGB_BLACK);
         SetVBlankCallback(VBlankCB_SlotMachine);
@@ -2131,19 +1981,6 @@ static bool8 SlotsTask_UpdateLineStates(u8 * state, struct SlotMachineSetupTaskD
     return TRUE;
 }
 
-static bool8 SlotsTask_ClefairyUpdateOnReelsStart(u8 * state, struct SlotMachineSetupTaskData * ptr)
-{
-    SetClefairySpriteAnim(1);
-    return FALSE;
-}
-
-static bool8 SlotsTask_StartClefairyDanceAndWinningLineFlash(u8 * state, struct SlotMachineSetupTaskData * ptr)
-{
-    SetClefairySpriteAnim(2);
-    CreateTask(Task_FlashWinningLine, 3);
-    return FALSE;
-}
-
 static bool8 SlotsTask_StopWinningLineFlashTask(u8 * state, struct SlotMachineSetupTaskData * ptr)
 {
     switch (*state)
@@ -2155,7 +1992,6 @@ static bool8 SlotsTask_StopWinningLineFlashTask(u8 * state, struct SlotMachineSe
     case 1:
         if (!FuncIsActiveTask(Task_FlashWinningLine))
         {
-            SetClefairySpriteAnim(0);
             return FALSE;
         }
         break;
@@ -2163,15 +1999,8 @@ static bool8 SlotsTask_StopWinningLineFlashTask(u8 * state, struct SlotMachineSe
     return TRUE;
 }
 
-static bool8 SlotsTask_ClefairyFainted(u8 * state, struct SlotMachineSetupTaskData * ptr)
+static bool8 SlotsTask_DummySkip(u8 * state, struct SlotMachineSetupTaskData * ptr)
 {
-    SetClefairySpriteAnim(3);
-    return FALSE;
-}
-
-static bool8 SlotsTask_ClefairyNeutral(u8 * state, struct SlotMachineSetupTaskData * ptr)
-{
-    SetClefairySpriteAnim(0);
     return FALSE;
 }
 
@@ -2412,7 +2241,7 @@ static void Task_FlashWinningLine(u8 taskId)
             data[4] += 8;
             data[4] &= 0x7F;
             data[5] = gSineTable[data[4]] >> 5;
-            BlendPalettes(1 << PALSLOT_LINE_MATCH, data[5], RGB_BLACK);
+            //BlendPalettes(1 << PALSLOT_LINE_MATCH, data[5], RGB_BLACK);
         }
         else
         {
@@ -2422,7 +2251,7 @@ static void Task_FlashWinningLine(u8 taskId)
                 data[4] = 0;
                 data[5]++;
                 data[5] &= 1;
-                BlendPalettes(1 << PALSLOT_LINE_MATCH, data[5] * 8, RGB_BLACK);
+                //BlendPalettes(1 << PALSLOT_LINE_MATCH, data[5] * 8, RGB_BLACK);
             }
         }
 
@@ -2433,14 +2262,14 @@ static void Task_FlashWinningLine(u8 taskId)
         // Restore match lines to normal color 
         for (i = 0; i < NUM_MATCH_LINES; i++)
         {
-            if (GetWinFlagByLine(i))
-                SetLineState(GetBgTilemapBuffer(2), i, PALSLOT_LINE_NORMAL);
+            //if (GetWinFlagByLine(i))
+            //    SetLineState(GetBgTilemapBuffer(2), i, PALSLOT_LINE_NORMAL);
         }
         
         // Restore payout lights to normal color
-        LoadPalette(&sBg_Pal[1], BG_PLTT_ID(1), sizeof(sBg_Pal[1]));
+        //LoadPalette(&sBg_Pal[1], BG_PLTT_ID(1), sizeof(sBg_Pal[1]));
 
-        CopyBgTilemapBufferToVram(2);
+        //CopyBgTilemapBufferToVram(2);
         data[0]++;
         break;
     case 3:
@@ -2448,6 +2277,12 @@ static void Task_FlashWinningLine(u8 taskId)
             DestroyTask(taskId);
         break;
     }
+}
+
+static bool8 SlotsTask_StartWinningLineFlash(u8 * state, struct SlotMachineSetupTaskData * ptr)
+{
+    CreateTask(Task_FlashWinningLine, 3);
+    return FALSE;
 }
 
 static void SignalStopWinningLineFlashTask(void)

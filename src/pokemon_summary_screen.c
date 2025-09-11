@@ -12,6 +12,8 @@
 #include "new_menu_helpers.h"
 #include "menu.h"
 #include "constants/items.h"
+#include "text.h"
+#include "window.h"
 #include "data.h"
 #include "item.h"
 #include "constants/party_menu.h"
@@ -2474,7 +2476,27 @@ static void PrintInfoPage(void)
         AddTextPrinterParameterized3(sMonSummaryScreen->windowIds[POKESUM_WIN_RIGHT_PANE], FONT_NORMAL, 0, 16, sLevelNickTextColors[0], TEXT_SKIP_DRAW, gText_SummaryScreenType);
         
         AddTextPrinterParameterized3(sMonSummaryScreen->windowIds[POKESUM_WIN_RIGHT_PANE], FONT_NORMAL, 0, 32, sLevelNickTextColors[0], TEXT_SKIP_DRAW, gText_SummaryScreenOT);
-        AddTextPrinterParameterized3(sMonSummaryScreen->windowIds[POKESUM_WIN_RIGHT_PANE], FONT_NORMAL, 48, 32, sLevelNickTextColors[0], TEXT_SKIP_DRAW, sMonSummaryScreen->summary.otNameStrBuf);
+
+        // CoPilot shit to replace during refactoring later.
+        {
+    u8 winId    = sMonSummaryScreen->windowIds[POKESUM_WIN_RIGHT_PANE];
+    u16 namePx  = GetStringWidth(FONT_NORMAL, sMonSummaryScreen->summary.otNameStrBuf, 0);
+    u16 winPx   = GetWindowAttribute(winId, WINDOW_WIDTH) * 8;
+    const u8 pad = 0;  // right-margin in pixels
+    u16 xPos    = winPx - namePx - pad;
+
+    AddTextPrinterParameterized3(
+        winId,
+        FONT_NORMAL,
+        xPos,
+        32,
+        sLevelNickTextColors[0],
+        TEXT_SKIP_DRAW,
+        sMonSummaryScreen->summary.otNameStrBuf
+    );
+}
+// CoPilot shit ends here.
+
 
         AddTextPrinterParameterized3(sMonSummaryScreen->windowIds[POKESUM_WIN_RIGHT_PANE], FONT_NORMAL, 0, 48, sLevelNickTextColors[0], TEXT_SKIP_DRAW, gText_SummaryScreenIDNo);
         AddTextPrinterParameterized3(sMonSummaryScreen->windowIds[POKESUM_WIN_RIGHT_PANE], FONT_NORMAL, 64, 48, sLevelNickTextColors[0], TEXT_SKIP_DRAW, sMonSummaryScreen->summary.IDNo);

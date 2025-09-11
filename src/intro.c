@@ -22,8 +22,8 @@
     - Copyright screen
     - GF Logo
     Scene 1. Brief close up shot of grass
-    Scene 2. A panning wide shot followed by a close-up of Gengar/Nidorino
-    Scene 3. A fight between Gengar/Nidorino
+    Scene 2. A panning wide shot followed by a close-up of Gengar/Jigglypuff
+    Scene 3. A fight between Gengar/Jigglypuff
 
     After this it progresses to the title screen
 */
@@ -34,9 +34,9 @@ enum {
     GFXTAG_SPARKLES_BIG,
     GFXTAG_GF_LOGO,
     GFXTAG_PRESENTS,
-    GFXTAG_SCENE3_NIDORINO,
+    GFXTAG_SCENE3_JIGGLYPUFF,
     GFXTAG_SCENE2_GENGAR,
-    GFXTAG_SCENE2_NIDORINO,
+    GFXTAG_SCENE2_JIGGLYPUFF,
     GFXTAG_SCENE3_GRASS,
     GFXTAG_SCENE3_GENGAR,
     GFXTAG_SCENE3_SWIPE,
@@ -51,7 +51,7 @@ enum {
     PALTAG_UNUSED_4,
     PALTAG_UNUSED_5,
     PALTAG_GENGAR,
-    PALTAG_NIDORINO,
+    PALTAG_JIGGLYPUFF,
     PALTAG_SCENE3_GRASS,
     PALTAG_UNUSED_9,
     PALTAG_SCENE3_SWIPE,
@@ -79,7 +79,7 @@ enum {
 // Background IDs for Scene 2
 enum {
     BG_SCENE2_PLANTS,
-    BG_SCENE2_NIDORINO,
+    BG_SCENE2_JIGGLYPUFF,
     BG_SCENE2_GENGAR,
     BG_SCENE2_BACKGROUND // Bg for wide shot on upper half, close up on lower half
 };
@@ -93,11 +93,11 @@ enum {
 };
 
 enum {
-    ANIM_NIDORINO_NORMAL,
-    ANIM_NIDORINO_CRY,
-    ANIM_NIDORINO_CROUCH,
-    ANIM_NIDORINO_HOP,
-    ANIM_NIDORINO_ATTACK,
+    ANIM_JIGGLYPUFF_NORMAL,
+    ANIM_JIGGLYPUFF_CRY,
+    ANIM_JIGGLYPUFF_CROUCH,
+    ANIM_JIGGLYPUFF_HOP,
+    ANIM_JIGGLYPUFF_ATTACK,
 };
 
 enum {
@@ -138,9 +138,9 @@ struct IntroSequenceData
     u16 data[5]; // [0] and [1] are set but never read, the rest are unused
     u16 timer;
     struct Sprite *gameFreakLogoArtSprite;
-    struct Sprite *scene3NidorinoSprite;
+    struct Sprite *scene3JigglypuffSprite;
     struct Sprite *scene2GengarSprite;
-    struct Sprite *scene2NidorinoSprite;
+    struct Sprite *scene2JigglypuffSprite;
     struct Sprite *scene3GrassSprite;
     struct Sprite *scene3GengarSprites[NUM_GENGAR_BACK_SPRITES];
     u8 unused0[4];
@@ -152,11 +152,11 @@ struct IntroSequenceData
 static EWRAM_DATA struct GcmbStruct sGcmb = {0};
 static EWRAM_DATA u16 sUnusedScene3Var0 = 0; // Set but never read
 static EWRAM_DATA u16 sUnusedScene3Var1 = 0; // Set but never read
-static EWRAM_DATA u16 sNidorinoJumpMult = 0;
-static EWRAM_DATA u16 sNidorinoAnimDelayTime = 0;
-static EWRAM_DATA u16 sNidorinoJumpDiv = 0;
-static EWRAM_DATA u16 sNidorinoRecoilReturnTime = 0;
-static EWRAM_DATA u16 sNidorinoUnusedVar = 0; // Set but never read
+static EWRAM_DATA u16 sJigglypuffJumpMult = 0;
+static EWRAM_DATA u16 sJigglypuffAnimDelayTime = 0;
+static EWRAM_DATA u16 sJigglypuffJumpDiv = 0;
+static EWRAM_DATA u16 sJigglypuffRecoilReturnTime = 0;
+static EWRAM_DATA u16 sJigglypuffUnusedVar = 0; // Set but never read
 static EWRAM_DATA u16 sStarSpeedX = 0;
 static EWRAM_DATA u16 sStarSpeedY = 0;
 static EWRAM_DATA u16 sStarSparklesXmodMask = 0;
@@ -219,29 +219,29 @@ static void Scene3_StartBgScroll(void);
 static void Scene3_Task_GengarBounce(u8 taskId);
 static void Scene3_CreateGrassSprite(struct IntroSequenceData * ptr);
 static void Scene3_CreateGengarSprite(struct IntroSequenceData * ptr);
-static void Scene3_StartNidorinoCry(struct IntroSequenceData * ptr);
-static void Scene3_StartNidorinoHop(struct Sprite *sprite, u16 time, s16 targetX, u8 heightShift);
+static void Scene3_StartJigglypuffCry(struct IntroSequenceData * ptr);
+static void Scene3_StartJigglypuffHop(struct Sprite *sprite, u16 time, s16 targetX, u8 heightShift);
 static void Scene3_StartGengarAttack(struct IntroSequenceData * ptr);
 static void Scene3_Task_GengarAttack(u8 taskId);
-static void Scene3_NidorinoZoom(struct IntroSequenceData * ptr);
+static void Scene3_JigglypuffZoom(struct IntroSequenceData * ptr);
 static void Scene3_GengarZoom(struct IntroSequenceData * ptr);
 static void Scene3_CreateGengarSwipeSprites(void);
 static void Scene3_Task_GengarEnter(u8 taskId);
-static void Scene3_CreateNidorinoSprite(struct IntroSequenceData * ptr);
-static void Scene3_StartNidorinoEntrance(struct Sprite *sprite, s16 xStart, s16 xEnd, u16 speed);
-static void Scene3_SpriteCB_NidorinoEnter(struct Sprite *sprite);
-static bool32 Scene3_IsNidorinoEntering(struct IntroSequenceData * ptr);
-static void Scene3_StartNidorinoRecoil(struct IntroSequenceData * ptr);
-static bool8 Scene3_NidorinoAnimIsRunning(struct IntroSequenceData * ptr);
-static void CreateNidorinoRecoilDustSprites(s16 x, s16 y, s16 seed);
-static void Scene3_StartNidorinoAttack(struct IntroSequenceData * ptr);
+static void Scene3_CreateJigglypuffSprite(struct IntroSequenceData * ptr);
+static void Scene3_StartJigglypuffEntrance(struct Sprite *sprite, s16 xStart, s16 xEnd, u16 speed);
+static void Scene3_SpriteCB_JigglypuffEnter(struct Sprite *sprite);
+static bool32 Scene3_IsJigglypuffEntering(struct IntroSequenceData * ptr);
+static void Scene3_StartJigglypuffRecoil(struct IntroSequenceData * ptr);
+static bool8 Scene3_JigglypuffAnimIsRunning(struct IntroSequenceData * ptr);
+static void CreateJigglypuffRecoilDustSprites(s16 x, s16 y, s16 seed);
+static void Scene3_StartJigglypuffAttack(struct IntroSequenceData * ptr);
 static void SpriteCB_Grass(struct Sprite *sprite);
 static void SpriteCB_GengarSwipe(struct Sprite *sprite);
 static void SpriteCB_RecoilDust(struct Sprite *sprite);
-static void SpriteCB_NidorinoCry(struct Sprite *sprite);
-static void SpriteCB_NidorinoRecoil(struct Sprite *sprite);
-static void SpriteCB_NidorinoHop(struct Sprite *sprite);
-static void SpriteCB_NidorinoAttack(struct Sprite *sprite);
+static void SpriteCB_JigglypuffCry(struct Sprite *sprite);
+static void SpriteCB_JigglypuffRecoil(struct Sprite *sprite);
+static void SpriteCB_JigglypuffHop(struct Sprite *sprite);
+static void SpriteCB_JigglypuffAttack(struct Sprite *sprite);
 
 extern const u32 gMultiBootProgram_PokemonColosseum_Start[];
 extern const u32 gMultiBootProgram_PokemonColosseum_End[];
@@ -272,7 +272,7 @@ static const u16 sScene1_Bg_Pal[]    = INCBIN_U16("graphics/intro/scene_1/bg.gba
 static const u8 sScene1_Bg_Gfx[]     = INCBIN_U8( "graphics/intro/scene_1/bg.4bpp.lz");
 static const u8 sScene1_Bg_Map[]     = INCBIN_U8( "graphics/intro/scene_1/bg.bin.lz");
 
-// Scenes 2 and 3 (Gengar and Nidorino)
+// Scenes 2 and 3 (Gengar and Jigglypuff)
 static const u16 sScene2_Bg_Pal[]            = INCBIN_U16("graphics/intro/scene_2/bg.gbapal");
 static const u8 sScene2_Bg_Gfx[]             = INCBIN_U8( "graphics/intro/scene_2/bg.4bpp.lz");
 static const u8 sScene2_Bg_Map[]             = INCBIN_U8( "graphics/intro/scene_2/bg.bin.lz");
@@ -282,21 +282,21 @@ static const u8 sScene2_Plants_Map[]         = INCBIN_U8( "graphics/intro/scene_
 static const u16 sGengar_Pal[]               = INCBIN_U16("graphics/intro/gengar.gbapal"); // Used by multiple scenes
 static const u8 sScene2_GengarClose_Gfx[]    = INCBIN_U8( "graphics/intro/scene_2/gengar_close.4bpp.lz");
 static const u8 sScene2_GengarClose_Map[]    = INCBIN_U8( "graphics/intro/scene_2/gengar_close.bin.lz");
-static const u16 sScene2_NidorinoClose_Pal[] = INCBIN_U16("graphics/intro/scene_2/nidorino_close.gbapal");
-static const u8 sScene2_NidorinoClose_Gfx[]  = INCBIN_U8( "graphics/intro/scene_2/nidorino_close.4bpp.lz");
-static const u8 sScene2_NidorinoClose_Map[]  = INCBIN_U8( "graphics/intro/scene_2/nidorino_close.bin.lz");
+static const u16 sScene2_JigglypuffClose_Pal[] = INCBIN_U16("graphics/intro/scene_2/jigglypuff_close.gbapal");
+static const u8 sScene2_JigglypuffClose_Gfx[]  = INCBIN_U8( "graphics/intro/scene_2/jigglypuff_close.4bpp.lz");
+static const u8 sScene2_JigglypuffClose_Map[]  = INCBIN_U8( "graphics/intro/scene_2/jigglypuff_close.bin.lz");
 static const u16 sScene3_Bg_Pal[]            = INCBIN_U16("graphics/intro/scene_3/bg.gbapal");
 static const u8 sScene3_Bg_Gfx[]             = INCBIN_U8( "graphics/intro/scene_3/bg.4bpp.lz");
 static const u8 sScene3_Bg_Map[]             = INCBIN_U8( "graphics/intro/scene_3/bg.bin.lz");
 static const u8 sScene3_GengarAnim_Gfx[]     = INCBIN_U8( "graphics/intro/scene_3/gengar_anim.4bpp.lz");
 static const u8 sScene3_GengarAnim_Map[]     = INCBIN_U8( "graphics/intro/scene_3/gengar_anim.bin.lz");
 static const u32 sScene2_Gengar_Gfx[]        = INCBIN_U32("graphics/intro/scene_2/gengar.4bpp.lz");
-static const u16 sNidorino_Pal[]             = INCBIN_U16("graphics/intro/nidorino.gbapal"); // Used by multiple scenes
-static const u32 sScene2_Nidorino_Gfx[]      = INCBIN_U32("graphics/intro/scene_2/nidorino.4bpp.lz");
+static const u16 sJigglypuff_Pal[]             = INCBIN_U16("graphics/intro/jigglypuff.gbapal"); // Used by multiple scenes
+static const u32 sScene2_Jigglypuff_Gfx[]      = INCBIN_U32("graphics/intro/scene_2/jigglypuff.4bpp.lz");
 static const u16 sScene3_Grass_Pal[]         = INCBIN_U16("graphics/intro/scene_3/grass.gbapal");
 static const u32 sScene3_Grass_Gfx[]         = INCBIN_U32("graphics/intro/scene_3/grass.4bpp.lz");
 static const u32 sScene3_GengarStatic_Gfx[]  = INCBIN_U32("graphics/intro/scene_3/gengar_static.4bpp.lz");
-static const u32 sScene3_Nidorino_Gfx[]      = INCBIN_U32("graphics/intro/scene_3/nidorino.4bpp.lz");
+static const u32 sScene3_Jigglypuff_Gfx[]      = INCBIN_U32("graphics/intro/scene_3/jigglypuff.4bpp.lz");
 static const u16 sScene3_Swipe_Pal[]         = INCBIN_U16("graphics/intro/scene_3/swipe.gbapal");
 static const u16 sScene3_RecoilDust_Pal[]    = INCBIN_U16("graphics/intro/scene_3/recoil_dust.gbapal");
 static const u32 sScene3_Swipe_Gfx[]         = INCBIN_U32("graphics/intro/scene_3/swipe.4bpp.lz");
@@ -368,7 +368,7 @@ static const struct BgTemplate sBgTemplates_Scene2[] = {
         .priority = 2,
         .baseTile = 0x000
     }, {
-        .bg = BG_SCENE2_NIDORINO,
+        .bg = BG_SCENE2_JIGGLYPUFF,
         .charBaseIndex = 2,
         .mapBaseIndex = 28,
         .screenSize = 0,
@@ -593,7 +593,7 @@ static const struct SpriteTemplate sSpriteTemplate_Presents = {
     .callback = SpriteCallbackDummy
 };
 
-static const struct OamData sOam_Scene3_Nidorino = {
+static const struct OamData sOam_Scene3_Jigglypuff = {
     .affineMode = ST_OAM_AFFINE_DOUBLE,
     .objMode = ST_OAM_OBJ_NORMAL,
     .mosaic = FALSE,
@@ -606,37 +606,37 @@ static const struct OamData sOam_Scene3_Nidorino = {
     .paletteNum = 0
 };
 
-static const union AnimCmd sAnim_Scene3_Nidorino_Normal[] = {
+static const union AnimCmd sAnim_Scene3_Jigglypuff_Normal[] = {
 	ANIMCMD_FRAME(0, 1),
 	ANIMCMD_END
 };
 
-static const union AnimCmd sAnim_Scene3_Nidorino_Cry[] = {
+static const union AnimCmd sAnim_Scene3_Jigglypuff_Cry[] = {
 	ANIMCMD_FRAME(64, 1),
 	ANIMCMD_END
 };
 
-static const union AnimCmd sAnim_Scene3_Nidorino_Crouch[] = {
+static const union AnimCmd sAnim_Scene3_Jigglypuff_Crouch[] = {
 	ANIMCMD_FRAME(128, 1),
 	ANIMCMD_END
 };
 
-static const union AnimCmd sAnim_Scene3_Nidorino_Hop[] = {
+static const union AnimCmd sAnim_Scene3_Jigglypuff_Hop[] = {
 	ANIMCMD_FRAME(192, 1),
 	ANIMCMD_END
 };
 
-static const union AnimCmd sAnim_Scene3_Nidorino_Attack[] = {
+static const union AnimCmd sAnim_Scene3_Jigglypuff_Attack[] = {
 	ANIMCMD_FRAME(256, 1),
 	ANIMCMD_END
 };
 
-static const union AnimCmd *const sAnims_Scene3_Nidorino[] = {
-    [ANIM_NIDORINO_NORMAL] = sAnim_Scene3_Nidorino_Normal,
-    [ANIM_NIDORINO_CRY]    = sAnim_Scene3_Nidorino_Cry,
-    [ANIM_NIDORINO_CROUCH] = sAnim_Scene3_Nidorino_Crouch,
-    [ANIM_NIDORINO_HOP]    = sAnim_Scene3_Nidorino_Hop,
-    [ANIM_NIDORINO_ATTACK] = sAnim_Scene3_Nidorino_Attack
+static const union AnimCmd *const sAnims_Scene3_Jigglypuff[] = {
+    [ANIM_JIGGLYPUFF_NORMAL] = sAnim_Scene3_Jigglypuff_Normal,
+    [ANIM_JIGGLYPUFF_CRY]    = sAnim_Scene3_Jigglypuff_Cry,
+    [ANIM_JIGGLYPUFF_CROUCH] = sAnim_Scene3_Jigglypuff_Crouch,
+    [ANIM_JIGGLYPUFF_HOP]    = sAnim_Scene3_Jigglypuff_Hop,
+    [ANIM_JIGGLYPUFF_ATTACK] = sAnim_Scene3_Jigglypuff_Attack
 };
 
 static const union AffineAnimCmd sAffineAnim_Scene3_Mons_Normal[] = {
@@ -655,11 +655,11 @@ static const union AffineAnimCmd *const sAffineAnims_Scene3_Mons[] = {
 	[AFFINEANIM_ZOOM]   = sAffineAnim_Scene3_Mons_Zoom
 };
 
-static const struct SpriteTemplate sSpriteTemplate_Scene3_Nidorino = {
-    .tileTag = GFXTAG_SCENE3_NIDORINO,
-    .paletteTag = PALTAG_NIDORINO,
-    .oam = &sOam_Scene3_Nidorino,
-    .anims = sAnims_Scene3_Nidorino,
+static const struct SpriteTemplate sSpriteTemplate_Scene3_Jigglypuff = {
+    .tileTag = GFXTAG_SCENE3_JIGGLYPUFF,
+    .paletteTag = PALTAG_JIGGLYPUFF,
+    .oam = &sOam_Scene3_Jigglypuff,
+    .anims = sAnims_Scene3_Jigglypuff,
     .images = NULL,
     .affineAnims = sAffineAnims_Scene3_Mons,
     .callback = SpriteCallbackDummy
@@ -678,9 +678,9 @@ static const struct OamData sOam_Scene2_Mons = {
     .paletteNum = 0
 };
 
-static const struct SpriteTemplate sSpriteTemplate_Scene2_Nidorino = {
-    .tileTag = GFXTAG_SCENE2_NIDORINO,
-    .paletteTag = PALTAG_NIDORINO,
+static const struct SpriteTemplate sSpriteTemplate_Scene2_Jigglypuff = {
+    .tileTag = GFXTAG_SCENE2_JIGGLYPUFF,
+    .paletteTag = PALTAG_JIGGLYPUFF,
     .oam = &sOam_Scene2_Mons,
     .anims = gDummySpriteAnimTable,
     .images = NULL,
@@ -852,7 +852,7 @@ static const union AnimCmd *const sAnims_RecoilDust[] = {
 	sAnim_RecoilDust
 };
 
-static const struct SpriteTemplate sSpriteTemplate_NidorinoRecoilDust = {
+static const struct SpriteTemplate sSpriteTemplate_JigglypuffRecoilDust = {
     .tileTag = GFXTAG_SCENE3_RECOIL_DUST,
     .paletteTag = PALTAG_SCENE3_RECOIL_DUST,
     .oam = &sOam_RecoilDust,
@@ -864,8 +864,8 @@ static const struct SpriteTemplate sSpriteTemplate_NidorinoRecoilDust = {
 
 static const struct CompressedSpriteSheet sFightSceneSpriteSheets[] = {
 	{sScene2_Gengar_Gfx,       0x800,  GFXTAG_SCENE2_GENGAR},
-	{sScene2_Nidorino_Gfx,     0x800,  GFXTAG_SCENE2_NIDORINO},
-	{sScene3_Nidorino_Gfx,     0x2800, GFXTAG_SCENE3_NIDORINO},
+	{sScene2_Jigglypuff_Gfx,     0x800,  GFXTAG_SCENE2_JIGGLYPUFF},
+	{sScene3_Jigglypuff_Gfx,     0x2800, GFXTAG_SCENE3_JIGGLYPUFF},
 	{sScene3_Grass_Gfx,        0x800,  GFXTAG_SCENE3_GRASS},
 	{sScene3_GengarStatic_Gfx, 0x1800, GFXTAG_SCENE3_GENGAR},
 	{sScene3_Swipe_Gfx,        0xA00,  GFXTAG_SCENE3_SWIPE},
@@ -879,7 +879,7 @@ static const struct CompressedSpriteSheet sFightSceneSpriteSheets[] = {
 // continues reading into the next .rodata section.
 static const struct SpritePalette sFightSceneSpritePalettes[] = {
 	{sGengar_Pal,            PALTAG_GENGAR},
-	{sNidorino_Pal,          PALTAG_NIDORINO},
+	{sJigglypuff_Pal,        PALTAG_JIGGLYPUFF},
 	{sScene3_Grass_Pal,      PALTAG_SCENE3_GRASS},
 	{sScene3_Swipe_Pal,      PALTAG_SCENE3_SWIPE},
 	{sScene3_RecoilDust_Pal, PALTAG_SCENE3_RECOIL_DUST},
@@ -1281,7 +1281,7 @@ static void IntroCB_GF_RevealLogo(struct IntroSequenceData * this)
         if (++this->timer > 20)
         {
             SetGpuReg(REG_OFFSET_BLDCNT, 0);
-            SetIntroCB(this, IntroCB_ExitToTitleScreen);
+            SetIntroCB(this, IntroCB_Scene1);
         }
         break;
     }
@@ -1293,71 +1293,10 @@ static void IntroCB_Scene1(struct IntroSequenceData * this)
     {
     case 0:
         SetVBlankCallback(NULL);
-        LoadPalette(sScene1_Grass_Pal, BG_PLTT_ID(PALSLOT_SCENE1_GRASS), sizeof(sScene1_Grass_Pal));
-        LoadPalette(sScene1_Bg_Pal, BG_PLTT_ID(PALSLOT_SCENE1_BG), sizeof(sScene1_Bg_Pal));
-        BlendPalettes((1 << PALSLOT_SCENE1_GRASS) | (1 << PALSLOT_SCENE1_BG), 16, RGB_WHITE);
-        InitBgsFromTemplates(0, sBgTemplates_Scene1, ARRAY_COUNT(sBgTemplates_Scene1));
-        DecompressAndCopyTileDataToVram(BG_SCENE1_BACKGROUND, sScene1_Bg_Gfx, 0, 0, 0);
-        DecompressAndCopyTileDataToVram(BG_SCENE1_BACKGROUND, sScene1_Bg_Map, 0, 0, 1);
-        ShowBg(BG_SCENE1_BACKGROUND);
-        HideBg(BG_SCENE1_GRASS);
-        HideBg(BG_SCENE1_UNUSED1);
-        HideBg(BG_SCENE1_UNUSED2);
         LoadFightSceneSpriteGraphics();
         SetVBlankCallback(VBlankCB_Intro);
-        this->state++;
-        break;
-    case 1:
-        if (!FreeTempTileDataBuffersIfPossible())
-        {
-            DecompressAndCopyTileDataToVram(BG_SCENE1_GRASS, sScene1_Grass_Gfx, 0, 0, 0);
-            DecompressAndCopyTileDataToVram(BG_SCENE1_GRASS, sScene1_Grass_Map, 0, 0, 1);
-            ResetBgPositions();
-            ShowBg(BG_SCENE1_BACKGROUND);
-            this->state++;
-        }
-        break;
-    case 2:
-        if (!FreeTempTileDataBuffersIfPossible())
-        {
-            ShowBg(BG_SCENE1_GRASS);
-            CreateTask(Scene1_Task_AnimateGrass, 0);
-            BeginNormalPaletteFade((1 << PALSLOT_SCENE1_GRASS) | (1 << PALSLOT_SCENE1_BG), -2, 16, 0, RGB_WHITE);
-            this->state++;
-        }
-        break;
-    case 3:
-        if (!gPaletteFade.active)
-        {
-            m4aSongNumStart(MUS_INTRO_FIGHT);
-            this->timer = 0;
-            this->state++;
-        }
-        break;
-    case 4:
-        if (++this->timer == 20)
-        {
-            // Start animation for transitioning to the next scene
-            CreateTask(Scene1_Task_BgZoom, 0);
-            Scene1_StartGrassScrolling();
-        }
-        if (this->timer >= 30)
-        {
-            // End scene
-            BlendPalettes(PALETTES_ALL & ~1, 16, RGB_WHITE);
-            DestroyTask(FindTaskIdByFunc(Scene1_Task_AnimateGrass));
-            DestroyTask(FindTaskIdByFunc(Scene1_Task_BgZoom));
-            SetIntroCB(this, IntroCB_Scene2);
-        }
-        break;
-    case 5:
-        // Never reached
-        if (!gPaletteFade.active)
-        {
-            DestroyTask(FindTaskIdByFunc(Scene1_Task_AnimateGrass));
-            DestroyTask(FindTaskIdByFunc(Scene1_Task_BgZoom));
-            SetIntroCB(this, IntroCB_Scene2);
-        }
+        m4aSongNumStart(MUS_INTRO_FIGHT);
+        SetIntroCB(this, IntroCB_Scene2);
         break;
     }
 }
@@ -1429,81 +1368,9 @@ static void IntroCB_Scene2(struct IntroSequenceData * this)
     {
     case 0:
         BlendPalettes(PALETTES_ALL & ~1, 16, RGB_WHITE);
-        InitBgsFromTemplates(0, sBgTemplates_Scene2, ARRAY_COUNT(sBgTemplates_Scene2));
-        DecompressAndCopyTileDataToVram(BG_SCENE2_BACKGROUND, sScene2_Bg_Gfx, 0, 0, 0);
-        DecompressAndCopyTileDataToVram(BG_SCENE2_BACKGROUND, sScene2_Bg_Map, 0, 0, 1);
-        ShowBg(BG_SCENE2_BACKGROUND);
-        this->state++;
-        break;
-    case 1:
-        if (!FreeTempTileDataBuffersIfPossible())
-        {
-            SetVBlankCallback(NULL);
-            LoadPalette(sScene2_Bg_Pal, BG_PLTT_ID(1), sizeof(sScene2_Bg_Pal));
-            LoadPalette(sGengar_Pal, BG_PLTT_ID(5), sizeof(sGengar_Pal));
-            LoadPalette(sScene2_NidorinoClose_Pal, BG_PLTT_ID(6), sizeof(sScene2_NidorinoClose_Pal));
-            BlendPalettes(PALETTES_ALL & ~1, 16, RGB_WHITE);
-            DecompressAndCopyTileDataToVram(BG_SCENE2_PLANTS, sScene2_Plants_Gfx, 0, 0, 0);
-            DecompressAndCopyTileDataToVram(BG_SCENE2_PLANTS, sScene2_Plants_Map, 0, 0, 1);
-            DecompressAndCopyTileDataToVram(BG_SCENE2_NIDORINO, sScene2_NidorinoClose_Gfx, 0, 0, 0);
-            DecompressAndCopyTileDataToVram(BG_SCENE2_NIDORINO, sScene2_NidorinoClose_Map, 0, 0, 1);
-            DecompressAndCopyTileDataToVram(BG_SCENE2_GENGAR, sScene2_GengarClose_Gfx, 0, 0, 0);
-            DecompressAndCopyTileDataToVram(BG_SCENE2_GENGAR, sScene2_GengarClose_Map, 0, 0, 1);
-            ResetBgPositions();
-            ShowBg(BG_SCENE2_PLANTS);
-            HideBg(BG_SCENE2_NIDORINO); // Hide bgs for the close up shot
-            HideBg(BG_SCENE2_GENGAR);
-            ChangeBgY(BG_SCENE2_GENGAR, 0x0001CE00, BG_COORD_SET);
-            ChangeBgY(BG_SCENE2_NIDORINO, 0x00002800, BG_COORD_SET);
-            CreateTask(Scene2_Task_PanForest, 0);
-            Scene2_CreateMonSprites(this);
-            BlendPalettes(PALETTES_ALL & ~1, 16, RGB_WHITE);
-            SetVBlankCallback(VBlankCB_Intro);
-            this->state++;
-        }
-        break;
-    case 2:
-        if (!FreeTempTileDataBuffersIfPossible())
-        {
-            BeginNormalPaletteFade(PALETTES_ALL & ~1, -2, 16, 0, RGB_WHITE);
-            this->state++;
-        }
-        break;
-    case 3:
-        if (!gPaletteFade.active)
-        {
-            this->timer = 0;
-            this->state++;
-        }
-        break;
-    case 4:
-        if (++this->timer >= 60)
-        {
-            this->timer = 0;
-            DestroyTask(FindTaskIdByFunc(Scene2_Task_PanForest));
-            Scene2_DestroyMonSprites(this);
-            CreateTask(Scene2_Task_PanMons, 0);
-            ChangeBgY(BG_SCENE2_BACKGROUND, 0x00010000, BG_COORD_SET); // Move background from upper half (wide shot) to lower half (close up)
-            HideBg(BG_SCENE2_PLANTS);
-            ShowBg(BG_SCENE2_BACKGROUND);
-            ShowBg(BG_SCENE2_NIDORINO);
-            ShowBg(BG_SCENE2_GENGAR);
-            this->state++;
-        }
-        break;
-    case 5:
-        if (!IsDma3ManagerBusyWithBgCopy())
-        {
-            this->timer = 0;
-            this->state++;
-        }
-        break;
-    case 6:
-        if (++this->timer >= 60)
-        {
-            DestroyTask(FindTaskIdByFunc(Scene2_Task_PanMons));
-            SetIntroCB(this, IntroCB_Scene3_Entrance);
-        }
+        LoadPalette(sGengar_Pal, BG_PLTT_ID(5), sizeof(sGengar_Pal));
+        ResetBgPositions();
+        SetIntroCB(this, IntroCB_Scene3_Entrance);
         break;
     }
 }
@@ -1515,24 +1382,24 @@ static void Scene2_Task_PanForest(u8 taskId)
     ChangeBgX(BG_SCENE2_PLANTS, 0x110, BG_COORD_ADD);
 }
 
-// Pan Gengar up and Nidorino down in the close up shot
+// Pan Gengar up and Jigglypuff down in the close up shot
 static void Scene2_Task_PanMons(u8 taskId)
 {
     ChangeBgY(BG_SCENE2_GENGAR, 0x020, BG_COORD_ADD);
-    ChangeBgY(BG_SCENE2_NIDORINO, 0x024, BG_COORD_SUB);
+    ChangeBgY(BG_SCENE2_JIGGLYPUFF, 0x024, BG_COORD_SUB);
 }
 
-// Create the Gengar/Nidorino sprites for the wide shot in scene 2
+// Create the Gengar/Jigglypuff sprites for the wide shot in scene 2
 static void Scene2_CreateMonSprites(struct IntroSequenceData * this)
 {
     u8 spriteId;
 
     this->scene2GengarSprite = NULL;
-    this->scene2NidorinoSprite = NULL;
+    this->scene2JigglypuffSprite = NULL;
 
-    spriteId = CreateSprite(&sSpriteTemplate_Scene2_Nidorino, 168, 80, 11);
+    spriteId = CreateSprite(&sSpriteTemplate_Scene2_Jigglypuff, 168, 80, 11);
     if (spriteId != MAX_SPRITES)
-        this->scene2NidorinoSprite = &gSprites[spriteId];
+        this->scene2JigglypuffSprite = &gSprites[spriteId];
 
     spriteId = CreateSprite(&sSpriteTemplate_Scene2_Gengar, 72, 80, 12);
     if (spriteId != MAX_SPRITES)
@@ -1543,11 +1410,11 @@ static void Scene2_DestroyMonSprites(struct IntroSequenceData * this)
 {
     if (this->scene2GengarSprite != NULL)
         DestroySprite(this->scene2GengarSprite);
-    if (this->scene2NidorinoSprite != NULL)
-        DestroySprite(this->scene2NidorinoSprite);
+    if (this->scene2JigglypuffSprite != NULL)
+        DestroySprite(this->scene2JigglypuffSprite);
 }
 
-// Set up the scene 3 graphics, then start the scrolling to get Gengar and Nidorino in their fight positions
+// Set up the scene 3 graphics, then start the scrolling to get Gengar and Jigglypuff in their fight positions
 static void IntroCB_Scene3_Entrance(struct IntroSequenceData * this)
 {
     switch (this->state)
@@ -1590,8 +1457,8 @@ static void IntroCB_Scene3_Entrance(struct IntroSequenceData * this)
             BlendPalettes(PALETTES_ALL & ~1, 0, RGB_WHITE);
             ShowBg(BG_SCENE3_GENGAR);
             CreateTask(Scene3_Task_GengarBounce, 0);
-            Scene3_CreateNidorinoSprite(this);
-            Scene3_StartNidorinoEntrance(this->scene3NidorinoSprite, 0, 180, 52);
+            Scene3_CreateJigglypuffSprite(this);
+            Scene3_StartJigglypuffEntrance(this->scene3JigglypuffSprite, 0, 180, 52);
             CreateTask(Scene3_Task_GengarEnter, 0);
             Scene3_StartBgScroll();
             this->timer = 0;
@@ -1601,7 +1468,7 @@ static void IntroCB_Scene3_Entrance(struct IntroSequenceData * this)
     case 3:
         if (++this->timer == 16)
             Scene3_CreateGrassSprite(this);
-        if (!Scene3_IsNidorinoEntering(this) && !FuncIsActiveTask(Scene3_Task_GengarEnter))
+        if (!Scene3_IsJigglypuffEntering(this) && !FuncIsActiveTask(Scene3_Task_GengarEnter))
             SetIntroCB(this, IntroCB_Scene3_Fight);
         break;
     }
@@ -1610,7 +1477,7 @@ static void IntroCB_Scene3_Entrance(struct IntroSequenceData * this)
 #define tSlow data[0]
 
 // Pan the background trees right during the fight scene.
-// It pans quickly while Gengar/Nidorino are sliding onscreen, and it pans slowly thereafter.
+// It pans quickly while Gengar/Jigglypuff are sliding onscreen, and it pans slowly thereafter.
 static void Scene3_Task_BgScroll(u8 taskId)
 {
     if (!gTasks[taskId].tSlow)
@@ -1736,21 +1603,21 @@ static void IntroCB_Scene3_Fight(struct IntroSequenceData * this)
         this->state++;
         break;
     case 1:
-        if (++this->timer > 30)
+        if (++this->timer > 60)
         {
-            Scene3_StartNidorinoCry(this);
+            Scene3_StartJigglypuffCry(this);
             this->state++;
         }
         break;
     case 2:
-        if (!Scene3_NidorinoAnimIsRunning(this))
+        if (!Scene3_JigglypuffAnimIsRunning(this))
         {
             this->timer = 0;
             this->state++;
         }
         break;
     case 3:
-        if (++this->timer > 30)
+        if (++this->timer > 60)
         {
             Scene3_PauseGengarBounce();
             Scene3_StartGengarAttack(this);
@@ -1761,12 +1628,12 @@ static void IntroCB_Scene3_Fight(struct IntroSequenceData * this)
     case 4:
         if (this->gengarAttackLanded)
         {
-            Scene3_StartNidorinoRecoil(this);
+            Scene3_StartJigglypuffRecoil(this);
             this->state++;
         }
         break;
     case 5:
-        if (!Scene3_NidorinoAnimIsRunning(this))
+        if (!Scene3_JigglypuffAnimIsRunning(this))
         {
             Scene3_ResumeGengarBounce();
             this->timer = 0;
@@ -1774,23 +1641,23 @@ static void IntroCB_Scene3_Fight(struct IntroSequenceData * this)
         }
         break;
     case 6:
-        if (++this->timer > 16)
+        if (++this->timer > 60)
         {
-            // Nidorino's 1st hop backwards in preparation to attack
-            Scene3_StartNidorinoHop(this->scene3NidorinoSprite, 8, 12, 5);
+            // Jigglypuff's 1st hop backwards in preparation to attack
+            Scene3_StartJigglypuffHop(this->scene3JigglypuffSprite, 8, 12, 5);
             this->state++;
         }
         break;
     case 7:
-        if (!Scene3_NidorinoAnimIsRunning(this))
+        if (!Scene3_JigglypuffAnimIsRunning(this))
         {
-            // Nidorino's 2nd hop backwards in preparation to attack
-            Scene3_StartNidorinoHop(this->scene3NidorinoSprite, 8, 12, 5);
+            // Jigglypuff's 2nd hop backwards in preparation to attack
+            Scene3_StartJigglypuffHop(this->scene3JigglypuffSprite, 8, 12, 5);
             this->state++;
         }
         break;
     case 8:
-        if (!Scene3_NidorinoAnimIsRunning(this))
+        if (!Scene3_JigglypuffAnimIsRunning(this))
         {
             this->timer = 0;
             this->state++;
@@ -1799,7 +1666,7 @@ static void IntroCB_Scene3_Fight(struct IntroSequenceData * this)
     case 9:
         if (++this->timer > 20)
         {
-            Scene3_StartNidorinoAttack(this);
+            Scene3_StartJigglypuffAttack(this);
             this->timer = 0;
             this->state++;
         }
@@ -1822,7 +1689,7 @@ static void IntroCB_Scene3_Fight(struct IntroSequenceData * this)
             BeginNormalPaletteFade((1 << 1) | (1 << 2), 2, 0, 16, RGB_WHITE);
         if (this->timer > 120)
         {
-            Scene3_NidorinoZoom(this);
+            Scene3_JigglypuffZoom(this);
             Scene3_GengarZoom(this);
             this->state++;
             this->timer = 0;
@@ -1851,8 +1718,8 @@ static void IntroCB_Scene3_Fight(struct IntroSequenceData * this)
         if (JOY_NEW(R_BUTTON))
         {
             BlendPalettes(PALETTES_OBJECTS | (1 << 2) | (1 << 5) | (1 << 6), 0, RGB_WHITE);
-            this->scene3NidorinoSprite->x2 = 0;
-            this->scene3NidorinoSprite->x = 180;
+            this->scene3JigglypuffSprite->x2 = 0;
+            this->scene3JigglypuffSprite->x = 180;
             this->state = 1;
             this->timer = 30;
         }
@@ -1872,8 +1739,8 @@ static void Scene3_CreateGengarSprite(struct IntroSequenceData * this)
     // Not using a subsprite table for this
     for (i = 0; i < NUM_GENGAR_BACK_SPRITES; i++)
     {
-        int x = (i & 1) * 48 + 49;
-        int y = (i / 2) * 64 + 72;
+        int x = (i & 1) * 48 + 88;
+        int y = (i / 2) * 64 + 96;
         u8 spriteId = CreateSprite(&sSpriteTemplate_Scene3_Gengar, x, y, 8);
         if (spriteId != MAX_SPRITES)
         {
@@ -1886,13 +1753,13 @@ static void Scene3_CreateGengarSprite(struct IntroSequenceData * this)
     }
 }
 
-static void Scene3_NidorinoZoom(struct IntroSequenceData * this)
+static void Scene3_JigglypuffZoom(struct IntroSequenceData * this)
 {
-    this->scene3NidorinoSprite->x += this->scene3NidorinoSprite->x2;
-    this->scene3NidorinoSprite->y += this->scene3NidorinoSprite->y2;
-    SetSpriteMatrixAnchor(this->scene3NidorinoSprite, 0, 42);
-    this->scene3NidorinoSprite->callback = SpriteCallbackDummy;
-    StartSpriteAffineAnim(this->scene3NidorinoSprite, AFFINEANIM_ZOOM);
+    this->scene3JigglypuffSprite->x += this->scene3JigglypuffSprite->x2;
+    this->scene3JigglypuffSprite->y += this->scene3JigglypuffSprite->y2;
+    SetSpriteMatrixAnchor(this->scene3JigglypuffSprite, 0, 42);
+    this->scene3JigglypuffSprite->callback = SpriteCallbackDummy;
+    StartSpriteAffineAnim(this->scene3JigglypuffSprite, AFFINEANIM_ZOOM);
 }
 
 static void SpriteCB_Idle(struct Sprite *sprite)
@@ -2169,7 +2036,7 @@ static void Scene3_Task_GengarAttack(u8 taskId)
         tSinIdx += 8;
         if (++tTimer == 4)
         {
-            Scene3_CreateGengarSwipeSprites();
+            //Scene3_CreateGengarSwipeSprites();
             tMultY = 32;
             tMultX = 48;
             tFrame = 3; // Gengar swipes arm down
@@ -2369,10 +2236,10 @@ static void SpriteCB_SparklesBig(struct Sprite *sprite)
         DestroySprite(sprite);
 }
 
-static void Scene3_CreateNidorinoSprite(struct IntroSequenceData * this)
+static void Scene3_CreateJigglypuffSprite(struct IntroSequenceData * this)
 {
-    u8 spriteId = CreateSprite(&sSpriteTemplate_Scene3_Nidorino, 0, 0, 9);
-    this->scene3NidorinoSprite = &gSprites[spriteId];
+    u8 spriteId = CreateSprite(&sSpriteTemplate_Scene3_Jigglypuff, 0, 0, 9);
+    this->scene3JigglypuffSprite = &gSprites[spriteId];
 }
 
 #define sX       data[0]
@@ -2381,7 +2248,7 @@ static void Scene3_CreateNidorinoSprite(struct IntroSequenceData * this)
 #define sTargetX data[3]
 #define sTimer   data[4]
 
-static void Scene3_StartNidorinoEntrance(struct Sprite *sprite, s16 xStart, s16 x1, u16 time)
+static void Scene3_StartJigglypuffEntrance(struct Sprite *sprite, s16 xStart, s16 x1, u16 time)
 {
     sprite->sX = xStart << 4;
     sprite->sSpeed = ((x1 - xStart) << 4) / time;
@@ -2390,10 +2257,10 @@ static void Scene3_StartNidorinoEntrance(struct Sprite *sprite, s16 xStart, s16 
     sprite->sTimer = 0;
     sprite->x = xStart;
     sprite->y = 100;
-    sprite->callback = Scene3_SpriteCB_NidorinoEnter;
+    sprite->callback = Scene3_SpriteCB_JigglypuffEnter;
 }
 
-static void Scene3_SpriteCB_NidorinoEnter(struct Sprite *sprite)
+static void Scene3_SpriteCB_JigglypuffEnter(struct Sprite *sprite)
 {
     if (++sprite->sTimer >= 40)
     {
@@ -2411,9 +2278,9 @@ static void Scene3_SpriteCB_NidorinoEnter(struct Sprite *sprite)
     }
 }
 
-static bool32 Scene3_IsNidorinoEntering(struct IntroSequenceData * ptr)
+static bool32 Scene3_IsJigglypuffEntering(struct IntroSequenceData * ptr)
 {
-    return ptr->scene3NidorinoSprite->callback == Scene3_SpriteCB_NidorinoEnter ? TRUE : FALSE;
+    return ptr->scene3JigglypuffSprite->callback == Scene3_SpriteCB_JigglypuffEnter ? TRUE : FALSE;
 }
 
 #undef sX
@@ -2426,23 +2293,23 @@ static bool32 Scene3_IsNidorinoEntering(struct IntroSequenceData * ptr)
 #define sStateTimer  data[1]
 #define sBounceTimer data[2]
 
-static void Scene3_StartNidorinoCry(struct IntroSequenceData * ptr)
+static void Scene3_StartJigglypuffCry(struct IntroSequenceData * ptr)
 {
-    StartSpriteAnim(ptr->scene3NidorinoSprite, ANIM_NIDORINO_CROUCH);
-    ptr->scene3NidorinoSprite->sState = 0;
-    ptr->scene3NidorinoSprite->sStateTimer = 0;
-    ptr->scene3NidorinoSprite->y2 = 3;
-    ptr->scene3NidorinoSprite->callback = SpriteCB_NidorinoCry;
+    StartSpriteAnim(ptr->scene3JigglypuffSprite, ANIM_JIGGLYPUFF_CROUCH);
+    ptr->scene3JigglypuffSprite->sState = 0;
+    ptr->scene3JigglypuffSprite->sStateTimer = 0;
+    ptr->scene3JigglypuffSprite->y2 = 3;
+    ptr->scene3JigglypuffSprite->callback = SpriteCB_JigglypuffCry;
 }
 
-static void SpriteCB_NidorinoCry(struct Sprite *sprite)
+static void SpriteCB_JigglypuffCry(struct Sprite *sprite)
 {
     switch (sprite->sState)
     {
     case 0:
         if (++sprite->sStateTimer > 8)
         {
-            StartSpriteAnim(sprite, ANIM_NIDORINO_CRY);
+            StartSpriteAnim(sprite, ANIM_JIGGLYPUFF_CRY);
             sprite->y2 = 0;
             sprite->sState++;
         }
@@ -2455,13 +2322,13 @@ static void SpriteCB_NidorinoCry(struct Sprite *sprite)
     case 2:
         if (++sprite->sBounceTimer > 1)
         {
-            // Nidorino bounces slightly while crying
+            // Jigglypuff bounces slightly while crying
             sprite->sBounceTimer = 0;
             sprite->y2 = sprite->y2 == 0 ? 1 : 0;
         }
         if (++sprite->sStateTimer > 48)
         {
-            StartSpriteAnim(sprite, ANIM_NIDORINO_NORMAL);
+            StartSpriteAnim(sprite, ANIM_JIGGLYPUFF_NORMAL);
             sprite->y2 = 0;
             sprite->callback = SpriteCallbackDummy;
         }
@@ -2482,49 +2349,49 @@ static void SpriteCB_NidorinoCry(struct Sprite *sprite)
 #define sRandSeed      data[6]
 #define sSpeedX        data[7]
 
-static void Scene3_StartNidorinoRecoil(struct IntroSequenceData * ptr)
+static void Scene3_StartJigglypuffRecoil(struct IntroSequenceData * ptr)
 {
-    sNidorinoRecoilReturnTime = 16;
-    sNidorinoJumpMult = 3;
-    sNidorinoJumpDiv = 5;
-    sNidorinoAnimDelayTime = 0;
-    StartSpriteAnim(ptr->scene3NidorinoSprite, ANIM_NIDORINO_CROUCH);
-    ptr->scene3NidorinoSprite->sState = 0;
-    ptr->scene3NidorinoSprite->sStateTimer = 0;
-    ptr->scene3NidorinoSprite->sOffsetX = 0;
-    ptr->scene3NidorinoSprite->sSinIdx = 0;
-    ptr->scene3NidorinoSprite->sLandTimer = 0;
-    ptr->scene3NidorinoSprite->sSpeedX = 40;
-    ptr->scene3NidorinoSprite->callback = SpriteCB_NidorinoRecoil;
+    sJigglypuffRecoilReturnTime = 16;
+    sJigglypuffJumpMult = 3;
+    sJigglypuffJumpDiv = 5;
+    sJigglypuffAnimDelayTime = 60;
+    StartSpriteAnim(ptr->scene3JigglypuffSprite, ANIM_JIGGLYPUFF_CROUCH);
+    ptr->scene3JigglypuffSprite->sState = 0;
+    ptr->scene3JigglypuffSprite->sStateTimer = 0;
+    ptr->scene3JigglypuffSprite->sOffsetX = 0;
+    ptr->scene3JigglypuffSprite->sSinIdx = 0;
+    ptr->scene3JigglypuffSprite->sLandTimer = 0;
+    ptr->scene3JigglypuffSprite->sSpeedX = 40;
+    ptr->scene3JigglypuffSprite->callback = SpriteCB_JigglypuffRecoil;
 }
 
-static void SpriteCB_NidorinoRecoil(struct Sprite *sprite)
+static void SpriteCB_JigglypuffRecoil(struct Sprite *sprite)
 {
     switch (sprite->sState)
     {
     case 0:
         if (++sprite->sStateTimer > 4)
         {
-            StartSpriteAnim(sprite, ANIM_NIDORINO_HOP);
+            StartSpriteAnim(sprite, ANIM_JIGGLYPUFF_HOP);
             sprite->sState++;
         }
         break;
     case 1:
-        // Nidorino jumping backwards in the air
+        // Jigglypuff jumping backwards in the air
         sprite->sOffsetX += sprite->sSpeedX;
         sprite->sSinIdx += 8;
         sprite->x2 = sprite->sOffsetX >> 4;
-        sprite->y2 = -((gSineTable[sprite->sSinIdx] * sNidorinoJumpMult) >> sNidorinoJumpDiv);
+        sprite->y2 = -((gSineTable[sprite->sSinIdx] * sJigglypuffJumpMult) >> sJigglypuffJumpDiv);
         sprite->sSlowdownTimer++;
-        if (sprite->sSlowdownTimer > sNidorinoAnimDelayTime)
+        if (sprite->sSlowdownTimer > sJigglypuffAnimDelayTime)
         {
             sprite->sSlowdownTimer = 0;
             sprite->sSpeedX--;
         }
         if (++sprite->sLandTimer > 15)
         {
-            // Nidorino hits the ground
-            StartSpriteAnim(sprite, ANIM_NIDORINO_CROUCH);
+            // Jigglypuff hits the ground
+            StartSpriteAnim(sprite, ANIM_JIGGLYPUFF_CROUCH);
             sprite->sStateTimer = 0;
             sprite->sRandSeed = 0x4757;
             sprite->sSpeedX = 28;
@@ -2532,27 +2399,27 @@ static void SpriteCB_NidorinoRecoil(struct Sprite *sprite)
         }
         break;
     case 2:
-        // Nidorino sliding on the ground
-        sprite->sOffsetX += sprite->sSpeedX;
-        sprite->x2 = sprite->sOffsetX >> 4;
+        // Jigglypuff sliding on the ground
+        //sprite->sOffsetX += sprite->sSpeedX;
+        //sprite->x2 = sprite->sOffsetX >> 4;
         if (++sprite->sStateTimer > 6)
         {
             // The position of each subsequent dust sprite is "random", but with a fixed
             // initial seed so that they'll be in the same positions between intro runs
-            CreateNidorinoRecoilDustSprites(sprite->x + sprite->x2, sprite->y + sprite->y2, sprite->sRandSeed);
+            //CreateJigglypuffRecoilDustSprites(sprite->x + sprite->x2, sprite->y + sprite->y2, sprite->sRandSeed);
             sprite->sRandSeed *= RAND_MULT;
         }
         if (sprite->sStateTimer > 12)
         {
-            StartSpriteAnim(sprite, ANIM_NIDORINO_NORMAL);
+            StartSpriteAnim(sprite, ANIM_JIGGLYPUFF_NORMAL);
             sprite->sStateTimer = 0;
             sprite->sState++;
         }
         break;
     case 3:
-        // Nidorino hops back to its original position
+        // Jigglypuff hops back to its original position
         if (++sprite->sStateTimer > 16)
-            Scene3_StartNidorinoHop(sprite, sNidorinoRecoilReturnTime, -sprite->x2, 4);
+            Scene3_StartJigglypuffHop(sprite, sJigglypuffRecoilReturnTime, -sprite->x2, 4);
         break;
     }
 }
@@ -2566,9 +2433,9 @@ static void SpriteCB_NidorinoRecoil(struct Sprite *sprite)
 #undef sRandSeed
 #undef sSpeedX
 
-static bool8 Scene3_NidorinoAnimIsRunning(struct IntroSequenceData * ptr)
+static bool8 Scene3_JigglypuffAnimIsRunning(struct IntroSequenceData * ptr)
 {
-    return ptr->scene3NidorinoSprite->callback == SpriteCallbackDummy ? FALSE : TRUE;
+    return ptr->scene3JigglypuffSprite->callback == SpriteCallbackDummy ? FALSE : TRUE;
 }
 
 #define sState          data[0]
@@ -2578,7 +2445,7 @@ static bool8 Scene3_NidorinoAnimIsRunning(struct IntroSequenceData * ptr)
 #define sSpeedY         data[4]
 #define sInvisibleTimer data[7]
 
-static void CreateNidorinoRecoilDustSprites(s16 x, s16 y, s16 seed)
+static void CreateJigglypuffRecoilDustSprites(s16 x, s16 y, s16 seed)
 {
     int i;
     u8 spriteId;
@@ -2587,7 +2454,7 @@ static void CreateNidorinoRecoilDustSprites(s16 x, s16 y, s16 seed)
     // Only one of each pair will be visible at a time.
     for (i = 0; i < 2; i++)
     {
-        spriteId = CreateSprite(&sSpriteTemplate_NidorinoRecoilDust, x - 22, y + 24, 10);
+        spriteId = CreateSprite(&sSpriteTemplate_JigglypuffRecoilDust, x - 22, y + 24, 10);
         if (spriteId != MAX_SPRITES)
         {
             gSprites[spriteId].sSpeedX = (seed % 13) + 8;
@@ -2643,7 +2510,7 @@ static void SpriteCB_RecoilDust(struct Sprite *sprite)
 #define sTimer       data[6]
 #define sHeightShift data[7]
 
-static void Scene3_StartNidorinoHop(struct Sprite *sprite, u16 time, s16 targetX, u8 heightShift)
+static void Scene3_StartJigglypuffHop(struct Sprite *sprite, u16 time, s16 targetX, u8 heightShift)
 {
     sprite->sState = 0;
     sprite->sAirTime = time;
@@ -2653,18 +2520,18 @@ static void Scene3_StartNidorinoHop(struct Sprite *sprite, u16 time, s16 targetX
     sprite->sSpeedY = 0x800 / time;
     sprite->sTimer = 0;
     sprite->sHeightShift = heightShift;
-    StartSpriteAnim(sprite, ANIM_NIDORINO_CROUCH);
-    sprite->callback = SpriteCB_NidorinoHop;
+    StartSpriteAnim(sprite, ANIM_JIGGLYPUFF_CROUCH);
+    sprite->callback = SpriteCB_JigglypuffHop;
 }
 
-static void SpriteCB_NidorinoHop(struct Sprite *sprite)
+static void SpriteCB_JigglypuffHop(struct Sprite *sprite)
 {
     switch (sprite->sState)
     {
     case 0:
         if (++sprite->sTimer > 4)
         {
-            StartSpriteAnim(sprite, ANIM_NIDORINO_HOP);
+            StartSpriteAnim(sprite, ANIM_JIGGLYPUFF_HOP);
             sprite->sTimer = 0;
             sprite->sState++;
         }
@@ -2672,7 +2539,7 @@ static void SpriteCB_NidorinoHop(struct Sprite *sprite)
     case 1:
         if (--sprite->sAirTime)
         {
-            // Nidorino moving through the air
+            // Jigglypuff moving through the air
             sprite->sOffsetX += sprite->sSpeedX;
             sprite->sSinIdx += sprite->sSpeedY;
             sprite->x2 = sprite->sOffsetX >> 4;
@@ -2680,14 +2547,14 @@ static void SpriteCB_NidorinoHop(struct Sprite *sprite)
         }
         else
         {
-            // Nidorino lands
+            // Jigglypuff lands
             sprite->x2 = (u16)sprite->sOffsetX >> 4;
             sprite->y2 = 0;
-            StartSpriteAnim(sprite, ANIM_NIDORINO_CROUCH);
+            StartSpriteAnim(sprite, ANIM_JIGGLYPUFF_CROUCH);
             if (sprite->sHeightShift == 5)
             {
-                // This is used by the short hops before Nidorino's attack.
-                // The last state is skipped so that Nidorino will stay in the crouched animation.
+                // This is used by the short hops before Jigglypuff's attack.
+                // The last state is skipped so that Jigglypuff will stay in the crouched animation.
                 sprite->callback = SpriteCallbackDummy;
             }
             else
@@ -2700,7 +2567,7 @@ static void SpriteCB_NidorinoHop(struct Sprite *sprite)
     case 2:
         if (++sprite->sTimer > 4)
         {
-            StartSpriteAnim(sprite, ANIM_NIDORINO_NORMAL);
+            StartSpriteAnim(sprite, ANIM_JIGGLYPUFF_NORMAL);
             sprite->callback = SpriteCallbackDummy;
         }
         break;
@@ -2721,33 +2588,33 @@ static void SpriteCB_NidorinoHop(struct Sprite *sprite)
 #define sShakeTimer data[2]
 #define sSpeed      data[7]
 
-static void Scene3_StartNidorinoAttack(struct IntroSequenceData * ptr)
+static void Scene3_StartJigglypuffAttack(struct IntroSequenceData * ptr)
 {
-    ptr->scene3NidorinoSprite->sState = 0;
-    ptr->scene3NidorinoSprite->sTimer = 0;
-    ptr->scene3NidorinoSprite->sShakeTimer = 0;
-    ptr->scene3NidorinoSprite->data[3] = 0; // Unused
-    ptr->scene3NidorinoSprite->data[4] = 0; // Unused
-    ptr->scene3NidorinoSprite->data[5] = 0; // Unused
-    ptr->scene3NidorinoSprite->x += ptr->scene3NidorinoSprite->x2;
-    ptr->scene3NidorinoSprite->x2 = 0;
-    sNidorinoUnusedVar = 36;
-    sNidorinoAnimDelayTime = 40;
-    sNidorinoJumpMult = 3;
-    sNidorinoJumpDiv = 4;
-    ptr->scene3NidorinoSprite->sSpeed = 36;
-    StartSpriteAnim(ptr->scene3NidorinoSprite, ANIM_NIDORINO_CROUCH);
-    ptr->scene3NidorinoSprite->callback = SpriteCB_NidorinoAttack;
+    ptr->scene3JigglypuffSprite->sState = 0;
+    ptr->scene3JigglypuffSprite->sTimer = 0;
+    ptr->scene3JigglypuffSprite->sShakeTimer = 0;
+    ptr->scene3JigglypuffSprite->data[3] = 0; // Unused
+    ptr->scene3JigglypuffSprite->data[4] = 0; // Unused
+    ptr->scene3JigglypuffSprite->data[5] = 0; // Unused
+    ptr->scene3JigglypuffSprite->x += ptr->scene3JigglypuffSprite->x2;
+    ptr->scene3JigglypuffSprite->x2 = 0;
+    sJigglypuffUnusedVar = 36;
+    sJigglypuffAnimDelayTime = 40;
+    sJigglypuffJumpMult = 3;
+    sJigglypuffJumpDiv = 4;
+    ptr->scene3JigglypuffSprite->sSpeed = 36;
+    StartSpriteAnim(ptr->scene3JigglypuffSprite, ANIM_JIGGLYPUFF_CROUCH);
+    ptr->scene3JigglypuffSprite->callback = SpriteCB_JigglypuffAttack;
 }
 
-static void SpriteCB_NidorinoAttack(struct Sprite *sprite)
+static void SpriteCB_JigglypuffAttack(struct Sprite *sprite)
 {
     switch (sprite->sState)
     {
     case 0:
         if (++sprite->sTimer & 1)
         {
-            // Nidorino shakes horizontally before attacking
+            // Jigglypuff shakes horizontally before attacking
             if (++sprite->sShakeTimer & 1)
                 sprite->x2++;
             else
@@ -2760,19 +2627,19 @@ static void SpriteCB_NidorinoAttack(struct Sprite *sprite)
         }
         break;
     case 1:
-        if (++sprite->sTimer >= sNidorinoAnimDelayTime)
+        if (++sprite->sTimer >= sJigglypuffAnimDelayTime)
         {
-            StartSpriteAnim(sprite, ANIM_NIDORINO_ATTACK);
+            StartSpriteAnim(sprite, ANIM_JIGGLYPUFF_ATTACK);
             sprite->sTimer = 0;
             sprite->sShakeTimer = 0;
             sprite->sState++;
         }
         break;
     case 2:
-        // Nidorino jumps at Gengar
+        // Jigglypuff jumps at Gengar
         sprite->sTimer += sprite->sSpeed;
         sprite->x2 = -(sprite->sTimer >> 4);
-        sprite->y2 = -((gSineTable[sprite->sTimer >> 4] * sNidorinoJumpMult) >> sNidorinoJumpDiv);
+        sprite->y2 = -((gSineTable[sprite->sTimer >> 4] * sJigglypuffJumpMult) >> sJigglypuffJumpDiv);
         sprite->sShakeTimer++; // Does nothing   
         if (sprite->sSpeed > 12)
             sprite->sSpeed--; // Decelerate as jump progresses
