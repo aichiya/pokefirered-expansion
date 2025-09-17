@@ -1142,7 +1142,7 @@ static void Task_TradeEvolutionScene(u8 taskId)
     case T_EVOSTATE_START_BG_AND_SPARKLE_SPIRAL:
         if (!gPaletteFade.active)
         {
-            StartBgAnimation(TRUE);
+            StartBgAnimation(FALSE); // Changed from TRUE to FALSE
             var = gSprites[sEvoStructPtr->preEvoSpriteId].oam.paletteNum + 16;
             sEvoGraphicsTaskId = EvolutionSparkles_SpiralUpward(var);
             gTasks[taskId].tState++;
