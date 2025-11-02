@@ -40,7 +40,15 @@ static void Task_DiplomaInit(u8);
 static void Task_DiplomaExit(u8);
 
 static const u32 sDiplomaGfx[] = INCBIN_U32("graphics/diploma/diploma.4bpp.lz");
-static const u32 sDiplomaTilemap[] = INCBIN_U32("graphics/diploma/diploma.bin.lz");
+
+#ifdef FIRERED
+static const u32 sDiplomaTilemap[] = INCBIN_U32("graphics/diploma/diploma_red.bin.lz");
+#endif
+
+#ifdef LEAFGREEN
+static const u32 sDiplomaTilemap[] = INCBIN_U32("graphics/diploma/diploma_blue.bin.lz");
+#endif
+
 static const u16 sDiplomaPal[] = INCBIN_U16("graphics/diploma/diploma.gbapal");
 
 // Leftover text from RSE (some of which is also unused there)
