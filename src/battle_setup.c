@@ -85,18 +85,18 @@ static EWRAM_DATA u16 sRivalBattleFlags = 0;
 // Otherwise, the second transition is used.
 static const u8 sBattleTransitionTable_Wild[][2] =
 {
-    [TRANSITION_TYPE_NORMAL] = {B_TRANSITION_SLICE,          B_TRANSITION_WHITE_BARS_FADE},
-    [TRANSITION_TYPE_CAVE]   = {B_TRANSITION_CLOCKWISE_WIPE, B_TRANSITION_GRID_SQUARES},
-    [TRANSITION_TYPE_FLASH]  = {B_TRANSITION_BLUR,           B_TRANSITION_GRID_SQUARES},
-    [TRANSITION_TYPE_WATER]  = {B_TRANSITION_WAVE,           B_TRANSITION_RIPPLE},
+    [TRANSITION_TYPE_NORMAL] = {B_TRANSITION_CLOCKWISE_WIPE, B_TRANSITION_CLOCKWISE_WIPE},
+    [TRANSITION_TYPE_CAVE]   = {B_TRANSITION_CLOCKWISE_WIPE, B_TRANSITION_CLOCKWISE_WIPE},
+    [TRANSITION_TYPE_FLASH]  = {B_TRANSITION_CLOCKWISE_WIPE, B_TRANSITION_CLOCKWISE_WIPE},
+    [TRANSITION_TYPE_WATER]  = {B_TRANSITION_CLOCKWISE_WIPE, B_TRANSITION_CLOCKWISE_WIPE},
 };
 
 static const u8 sBattleTransitionTable_Trainer[][2] =
 {
-    [TRANSITION_TYPE_NORMAL] = {B_TRANSITION_POKEBALLS_TRAIL, B_TRANSITION_ANGLED_WIPES},
-    [TRANSITION_TYPE_CAVE]   = {B_TRANSITION_SHUFFLE,         B_TRANSITION_BIG_POKEBALL},
-    [TRANSITION_TYPE_FLASH]  = {B_TRANSITION_BLUR,            B_TRANSITION_GRID_SQUARES},
-    [TRANSITION_TYPE_WATER]  = {B_TRANSITION_SWIRL,           B_TRANSITION_RIPPLE},
+    [TRANSITION_TYPE_NORMAL] = {B_TRANSITION_ANGLED_WIPES, B_TRANSITION_ANGLED_WIPES},
+    [TRANSITION_TYPE_CAVE]   = {B_TRANSITION_ANGLED_WIPES, B_TRANSITION_ANGLED_WIPES},
+    [TRANSITION_TYPE_FLASH]  = {B_TRANSITION_ANGLED_WIPES, B_TRANSITION_ANGLED_WIPES},
+    [TRANSITION_TYPE_WATER]  = {B_TRANSITION_ANGLED_WIPES, B_TRANSITION_ANGLED_WIPES},
 };
 
 static const struct TrainerBattleParameter sOrdinaryBattleParams[] =
@@ -629,7 +629,7 @@ static u8 GetTrainerBattleTransition(void)
 
     if (gTrainerBattleOpponent_A == TRAINER_SECRET_BASE)
         return B_TRANSITION_BLUE;
-    if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_ELITE_FOUR)
+/*     if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_ELITE_FOUR)
     {
         if (gTrainerBattleOpponent_A == TRAINER_ELITE_FOUR_LORELEI || gTrainerBattleOpponent_A == TRAINER_ELITE_FOUR_LORELEI_2)
             return B_TRANSITION_BIG_POKEBALL;
@@ -642,7 +642,7 @@ static u8 GetTrainerBattleTransition(void)
         return B_TRANSITION_BLUE;
     }
     if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_CHAMPION)
-        return B_TRANSITION_BLUE;
+        return B_TRANSITION_BLUE; */
     if (gTrainers[gTrainerBattleOpponent_A].doubleBattle == TRUE)
         minPartyCount = 2; // double battles always at least have 2 pokemon.
     else
