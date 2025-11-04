@@ -135,6 +135,8 @@ Many, many more changes, large and small!
 * Removed cutscenes shown when using field moves.
 * Lightly modified Safari Zone battle interface.
 * Implemented new per-game diploma graphics.
+* Replaced credits sequence.
+* Modified battle transition animation tables to use 2 transitions.
 
 * Fixed: Game Corner prize room coin display window cut off after overlapping prize selection window disappeared.
 * Fixed: Missingno wild encounters in some areas.
