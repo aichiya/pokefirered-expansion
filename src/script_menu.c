@@ -674,7 +674,7 @@ static const u8 *const sSeagallopDestStrings[] = {
 
 static u16 GetStringTilesWide(const u8 *str)
 {
-    return (GetStringWidth(FONT_NORMAL_COPY_1, str, 0) + 7) / 8;
+    return (GetStringWidth(FONT_NORMAL, str, 0) + 7) / 8;
 }
 
 static u8 GetMenuWidthFromList(const struct MenuAction * items, u8 count)
@@ -931,8 +931,8 @@ bool8 ScriptMenu_MultichoiceGrid(u8 left, u8 top, u8 multichoiceId, bool8 ignore
         gTasks[taskId].tIgnoreBPress = ignoreBpress;
         gTasks[taskId].tWindowId = CreateWindowFromRect(left, top, width * columnCount, rowCount * 2);
         SetStdWindowBorderStyle(gTasks[taskId].tWindowId, FALSE);
-        MultichoiceGrid_PrintItems(gTasks[taskId].tWindowId, FONT_NORMAL_COPY_1, width * 8, 16, columnCount, rowCount, list);
-        MultichoiceGrid_InitCursor(gTasks[taskId].tWindowId, FONT_NORMAL_COPY_1, 0, 1, width * 8, columnCount, rowCount, 0);
+        MultichoiceGrid_PrintItems(gTasks[taskId].tWindowId, FONT_NORMAL, width * 8, 16, columnCount, rowCount, list);
+        MultichoiceGrid_InitCursor(gTasks[taskId].tWindowId, FONT_NORMAL, 0, 1, width * 8, columnCount, rowCount, 0);
         ScheduleBgCopyTilemapToVram(0);
     }
     return TRUE;

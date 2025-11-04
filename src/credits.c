@@ -839,7 +839,7 @@ static s32 RollCredits(void)
         if (gPaletteFade.active)
             return sCreditsMgr->canSpeedThrough;
         win0v[0] = sCreditsTexts[sCreditsScript[sCreditsMgr->scrcmdidx].param].unused;
-        AddTextPrinterParameterized4(sCreditsMgr->windowId, FONT_NORMAL_COPY_1, 2, 6, 0, 0, sTextColor_Header, -1, sCreditsTexts[sCreditsScript[sCreditsMgr->scrcmdidx].param].title);
+        AddTextPrinterParameterized4(sCreditsMgr->windowId, FONT_NORMAL, 2, 6, 0, 0, sTextColor_Header, -1, sCreditsTexts[sCreditsScript[sCreditsMgr->scrcmdidx].param].title);
         sCreditsMgr->mainseqno = CREDITSSCENE_PRINT_ADDPRINTER2;
         return sCreditsMgr->canSpeedThrough;
     case CREDITSSCENE_PRINT_ADDPRINTER2:

@@ -68,28 +68,8 @@ static const struct FontInfo gFontInfos[] =
         .bgColor = 1,
         .shadowColor = 3,
     },
-    [FONT_NORMAL_COPY_1] = {
-        .fontFunction = FontFunc_NormalCopy1,
-        .maxLetterWidth = 8,
-        .maxLetterHeight = 14,
-        .letterSpacing = 0,
-        .lineSpacing = 0,
-        .fgColor = 2,
-        .bgColor = 1,
-        .shadowColor = 3,
-    },
     [FONT_NORMAL] = {
         .fontFunction = FontFunc_Normal,
-        .maxLetterWidth = 10,
-        .maxLetterHeight = 14,
-        .letterSpacing = 1,
-        .lineSpacing = 0,
-        .fgColor = 2,
-        .bgColor = 1,
-        .shadowColor = 3,
-    },
-    [FONT_NORMAL_COPY_2] = {
-        .fontFunction = FontFunc_NormalCopy2,
         .maxLetterWidth = 10,
         .maxLetterHeight = 14,
         .letterSpacing = 1,
@@ -143,9 +123,7 @@ static const struct FontInfo gFontInfos[] =
 static const u8 gMenuCursorDimensions[][2] = 
 {
     [FONT_SMALL]         = { 8,  13 },
-    [FONT_NORMAL_COPY_1] = { 8,  14 },
     [FONT_NORMAL]        = { 8,  14 },
-    [FONT_NORMAL_COPY_2] = { 8,  14 },
     [FONT_MALE]          = { 8,  14 },
     [FONT_FEMALE]        = { 8,  14 },
     [FONT_BRAILLE]       = { 8,  16 },

@@ -44,9 +44,7 @@ static const u8 sWindowVerticalScrollSpeeds[] = {
 
 static const struct GlyphWidthFunc sGlyphWidthFuncs[] = {
     { FONT_SMALL,         GetGlyphWidth_Small },
-    { FONT_NORMAL_COPY_1, GetGlyphWidth_NormalCopy1 },
     { FONT_NORMAL,        GetGlyphWidth_Normal },
-    { FONT_NORMAL_COPY_2, GetGlyphWidth_NormalCopy2 },
     { FONT_MALE,          GetGlyphWidth_Male },
     { FONT_FEMALE,        GetGlyphWidth_Female },
     { FONT_BRAILLE,       GetGlyphWidth_Braille }
@@ -464,7 +462,7 @@ u16 FontFunc_NormalCopy1(struct TextPrinter *textPrinter)
 
     if (subStruct->hasGlyphIdBeenSet == 0)
     {
-        textPrinter->subUnion.sub.glyphId = FONT_NORMAL_COPY_1;
+        textPrinter->subUnion.sub.glyphId = FONT_NORMAL;
         subStruct->hasGlyphIdBeenSet = 1;
     }
     return RenderText(textPrinter);
@@ -477,18 +475,6 @@ u16 FontFunc_Normal(struct TextPrinter *textPrinter)
     if (subStruct->hasGlyphIdBeenSet == 0)
     {
         textPrinter->subUnion.sub.glyphId = FONT_NORMAL;
-        subStruct->hasGlyphIdBeenSet = 1;
-    }
-    return RenderText(textPrinter);
-}
-
-u16 FontFunc_NormalCopy2(struct TextPrinter *textPrinter)
-{
-    struct TextPrinterSubStruct *subStruct = &textPrinter->subUnion.sub;
-
-    if (subStruct->hasGlyphIdBeenSet == 0)
-    {
-        textPrinter->subUnion.sub.glyphId = FONT_NORMAL_COPY_2;
         subStruct->hasGlyphIdBeenSet = 1;
     }
     return RenderText(textPrinter);
@@ -882,14 +868,8 @@ u16 RenderText(struct TextPrinter *textPrinter)
         case FONT_SMALL:
             DecompressGlyph_Small(currChar, textPrinter->japanese);
             break;
-        case FONT_NORMAL_COPY_1:
-            DecompressGlyph_NormalCopy1(currChar, textPrinter->japanese);
-            break;
         case FONT_NORMAL:
             DecompressGlyph_Normal(currChar, textPrinter->japanese);
-            break;
-        case FONT_NORMAL_COPY_2:
-            DecompressGlyph_NormalCopy2(currChar, textPrinter->japanese);
             break;
         case FONT_MALE:
             DecompressGlyph_Male(currChar, textPrinter->japanese);

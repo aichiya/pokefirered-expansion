@@ -2433,7 +2433,7 @@ static const struct BattleWindowText sTextOnWindowsInfo_Normal[] = {
     },
     [B_WIN_ACTION_MENU] = {
         .fillValue = PIXEL_FILL(0xe),
-        .fontId = FONT_NORMAL_COPY_1,
+        .fontId = FONT_NORMAL,
         .x = 0,
         .y = 2,
         .letterSpacing = 0,
@@ -2529,7 +2529,7 @@ static const struct BattleWindowText sTextOnWindowsInfo_Normal[] = {
     },
     [B_WIN_DUMMY] = {
         .fillValue = PIXEL_FILL(0xe),
-        .fontId = FONT_NORMAL_COPY_1,
+        .fontId = FONT_NORMAL,
         .x = 0,
         .y = 2,
         .letterSpacing = 0,
@@ -2541,7 +2541,7 @@ static const struct BattleWindowText sTextOnWindowsInfo_Normal[] = {
     },
     [B_WIN_SWITCH_PROMPT] = {
         .fillValue = PIXEL_FILL(0xe),
-        .fontId = FONT_NORMAL_COPY_1,
+        .fontId = FONT_NORMAL,
         .x = 0,
         .y = 2,
         .letterSpacing = 0,

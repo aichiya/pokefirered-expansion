@@ -1698,7 +1698,7 @@ static void HandleDpadMovement(struct Task *task)
 static void DrawNormalTextEntryBox(void)
 {
     FillWindowPixelBuffer(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], PIXEL_FILL(1));
-    AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], FONT_NORMAL_COPY_1, sNamingScreen->template->title, 1, 1, 0, NULL);
+    AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], FONT_NORMAL, sNamingScreen->template->title, 1, 1, 0, NULL);
     PutWindowTilemap(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX]);
 }
 
@@ -1709,7 +1709,7 @@ static void DrawMonTextEntryBox(void)
     StringCopy(buffer, gSpeciesNames[sNamingScreen->monSpecies]);
     StringAppendN(buffer, sNamingScreen->template->title, 15);
     FillWindowPixelBuffer(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], PIXEL_FILL(1));
-    AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], FONT_NORMAL_COPY_1, buffer, 1, 1, 0, NULL);
+    AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX], FONT_NORMAL, buffer, 1, 1, 0, NULL);
     PutWindowTilemap(sNamingScreen->windows[WIN_TEXT_ENTRY_BOX]);
 }
 
@@ -1940,7 +1940,7 @@ static void PrintKeyboardKeys(u8 window, u8 page)
     FillWindowPixelBuffer(window, sFillValues[page]);
 
     for (i = 0; i < KBROW_COUNT; i++)
-        AddTextPrinterParameterized3(window, FONT_NORMAL_COPY_1, 0, i * 16 + 1, sKeyboardTextColors[page], 0, sNamingScreenKeyboardText[page][i]);
+        AddTextPrinterParameterized3(window, FONT_NORMAL, 0, i * 16 + 1, sKeyboardTextColors[page], 0, sNamingScreenKeyboardText[page][i]);
 
     PutWindowTilemap(window);
 }
