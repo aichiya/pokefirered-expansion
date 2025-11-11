@@ -4,8 +4,7 @@
 ![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/BulkPromoTitleAndBattle.png "Title And Battle Screens")
 
 ![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/CONFUSE_RAY.webp "CONFUSE RAY Move Animation")
-![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/WHIRLWIND.webp "WHIRLWIND Move Animation")
-![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/SEISMIC_TOSS.webp "SEISMIC TOSS Move Animation")
+![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/Red-Slot.webp "Red Slot Machine")
 
 **Why?**
 
