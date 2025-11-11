@@ -1,14 +1,11 @@
 # Pokémon Red & Blue Gen1Style
-#        V8 release!
+#        V9 release!
 
 ![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/BulkPromoTitleAndBattle.png "Title And Battle Screens")
 
 ![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/CONFUSE_RAY.webp "CONFUSE RAY Move Animation")
-![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/THUNDERBOLT.webp "THUNDERBOLT Move Animation")
 ![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/WHIRLWIND.webp "WHIRLWIND Move Animation")
-![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/NIGHT_SHADE.webp "NIGHT SHADE Move Animation")
 ![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/SEISMIC_TOSS.webp "SEISMIC TOSS Move Animation")
-![](https://gitlab.com/xyifer12/firered_gen1style/-/raw/master/ImagesAndStuff/TELEPORT.webp "TELEPORT Move Animation")
 
 **Why?**
 
