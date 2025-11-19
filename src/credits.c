@@ -17,9 +17,9 @@
 #include "constants/sound.h"
 
 #if defined(FIRERED)
-#define TITLE_TEXT gString_PokemonFireRed_Staff
+#define TITLE_TEXT gString_PokemonRed_Staff
 #elif defined(LEAFGREEN)
-#define TITLE_TEXT gString_PokemonLeafGreen_Staff
+#define TITLE_TEXT gString_PokemonBlue_Staff
 #endif
 
 enum CreditsSceneIdx
@@ -72,65 +72,39 @@ enum CreditsClosingText
 enum CreditsString
 {
     CREDITS_STRING_DIRECTOR = 0,
-    CREDITS_STRING_ART_DIRECTOR_BATTLE_DIRECTOR,
-    CREDITS_STRING_PROGRAM_LEADER_PLANNING_LEADER_GRAPHIC_DESIGN_LEADER,
     CREDITS_STRING_PROGRAMMERS,
-    CREDITS_STRING_SYSTEM_PROGRAMMERS,
-    CREDITS_STRING_GRAPHIC_DESIGNERS,
-    CREDITS_STRING_GRAPHIC_DESIGNERS_2,
-    CREDITS_STRING_MUSIC_COMPOSITION,
+    CREDITS_STRING_CHARACTER_DESIGN,
+    CREDITS_STRING_MUSIC,
     CREDITS_STRING_SOUND_EFFECTS,
-    CREDITS_STRING_GAME_DESIGNERS,
-    CREDITS_STRING_GAME_DESIGNERS_2,
+    CREDITS_STRING_GAME_DESIGN,
+    CREDITS_STRING_MONSTER_DESIGN,
     CREDITS_STRING_GAME_SCENARIO,
-    CREDITS_STRING_SCRIPT_DESIGNER_MAP_DESIGNER,
-    CREDITS_STRING_PARAMETRIC_DESIGNERS,
-    CREDITS_STRING_POKEDEX_TEXT,
-    CREDITS_STRING_POKEMON_DESIGNERS,
-    CREDITS_STRING_POKEMON_DESIGNERS_2,
-    CREDITS_STRING_POKEMON_DESIGNERS_3,
-    CREDITS_STRING_SUPPORTING_PROGRAMMERS,
-    CREDITS_STRING_NCL_PRODUCT_TESTING,
+    CREDITS_STRING_PARAMETRIC_DESIGN,
+    CREDITS_STRING_MAP_DESIGN,
+    CREDITS_STRING_PRODUCT_TESTING,
     CREDITS_STRING_SPECIAL_THANKS,
-    CREDITS_STRING_SPECIAL_THANKS_2,
-    CREDITS_STRING_SPECIAL_THANKS_3,
-    CREDITS_STRING_BRAILLE_CODE_CHECK,
-    CREDITS_STRING_INFORMATION_SUPERVISORS,
-    CREDITS_STRING_COORDINATORS,
-    CREDITS_STRING_TASK_MANAGERS,
     CREDITS_STRING_PRODUCERS,
-    CREDITS_STRING_EXECUTIVE_DIRECTOR,
+    CREDITS_STRING_US_VERSION_STAFF,
+    CREDITS_STRING_US_COORDINATION,
+    CREDITS_STRING_TEXT_TRANSLATION,
+    CREDITS_STRING_PRODUCER,
     CREDITS_STRING_EXECUTIVE_PRODUCER,
-    CREDITS_STRING_EXECUTIVE_PRODUCER_2,
-    CREDITS_STRING_ENGLISH_VERSION_COORDINATORS,
-    CREDITS_STRING_TRANSLATOR_TEXT_EDITOR,
-    CREDITS_STRING_PROGRAMMERS_2,
-    CREDITS_STRING_ENVIRONMENT_TOOL_PROGRAMMERS,
-    CREDITS_STRING_NOA_PRODUCT_TESTING,
-    CREDITS_STRING_BRAILLE_CODE_CHECK_2,
-    CREDITS_STRING_BRAILLE_CODE_CHECK_3,
-    CREDITS_STRING_SPECIAL_THANKS_4,
-    CREDITS_STRING_SPECIAL_THANKS_5,
-    CREDITS_STRING_BRAILLE_CODE_CHECK_4,
-    CREDITS_STRING_GRAPHIC_DESIGNER,
     CREDITS_STRING_DUMMY
 };
 
 enum CreditsMap
 {
-    CREDITS_MAP_ROUTE23 = 0,
+    CREDITS_MAP_PALLET_TOWN = 0,
     CREDITS_MAP_VIRIDIAN_CITY,
     CREDITS_MAP_PEWTER_CITY,
     CREDITS_MAP_CERULEAN_CITY,
-    CREDITS_MAP_ROUTE25,
+    CREDITS_MAP_LAVENDER_TOWN,
     CREDITS_MAP_VERMILION_CITY,
-    CREDITS_MAP_ROUTE10,
     CREDITS_MAP_CELADON_CITY,
-    CREDITS_MAP_SAFFRON_CITY,
-    CREDITS_MAP_ROUTE17,
     CREDITS_MAP_FUCHSIA_CITY,
+    CREDITS_MAP_SAFFRON_CITY,
     CREDITS_MAP_CINNABAR_ISLAND,
-    CREDITS_MAP_ROUTE21_NORTH
+    CREDITS_MAP_ROUTE23
 };
 
 enum {
@@ -381,64 +355,34 @@ static const struct CompressedGraphicsHeader sCopyrightOrTheEndGfxHeaders[] = {
 #define CREDITS_WAITBUTTON(time) { CREDITSSCRCMD_WAITBUTTON, .duration = time }
 
 static const struct CreditsScrcmd sCreditsScript[] = {
-    CREDITS_MAPNEXT(ROUTE23, 16),
+    CREDITS_MAPNEXT(PALLET_TOWN, 16),
     CREDITS_PRINT(DIRECTOR, 300),
-    CREDITS_PRINT(ART_DIRECTOR_BATTLE_DIRECTOR, 300),
-    CREDITS_PRINT(PROGRAM_LEADER_PLANNING_LEADER_GRAPHIC_DESIGN_LEADER, 300),
-    CREDITS_PRINT(DUMMY, 60),
-    CREDITS_MAPNEXT(VIRIDIAN_CITY, 0),
-    CREDITS_PRINT(PROGRAMMERS, 211),
-    CREDITS_PRINT(SYSTEM_PROGRAMMERS, 211),
-    CREDITS_PRINT(GRAPHIC_DESIGNERS, 211),
-    CREDITS_MAPNEXT(PEWTER_CITY, 0),
-    CREDITS_PRINT(GRAPHIC_DESIGNERS_2, 211),
-    CREDITS_PRINT(MUSIC_COMPOSITION, 210),
-    CREDITS_PRINT(SOUND_EFFECTS, 210),
+    CREDITS_PRINT(PROGRAMMERS, 300),
+    CREDITS_MAPNEXT(VIRIDIAN_CITY, 16),
+    CREDITS_PRINT(CHARACTER_DESIGN, 300),
+    CREDITS_PRINT(MUSIC, 300),
+    CREDITS_MAPNEXT(PEWTER_CITY, 16),
+    CREDITS_PRINT(SOUND_EFFECTS, 300),
+    CREDITS_PRINT(GAME_DESIGN, 300),
     CREDITS_MAP(CERULEAN_CITY, 16),
-    CREDITS_PRINT(GAME_DESIGNERS, 211),
-    CREDITS_PRINT(GAME_DESIGNERS_2, 210),
-    CREDITS_PRINT(GAME_SCENARIO, 210),
-    CREDITS_MAPNEXT(ROUTE25, 16),
-    CREDITS_PRINT(SCRIPT_DESIGNER_MAP_DESIGNER, 211),
-    CREDITS_PRINT(PARAMETRIC_DESIGNERS, 210),
-    CREDITS_PRINT(POKEDEX_TEXT, 210),
+    CREDITS_PRINT(MONSTER_DESIGN, 300),
+    CREDITS_PRINT(GAME_SCENARIO, 300),
+    CREDITS_MAP(LAVENDER_TOWN, 16),
+    CREDITS_PRINT(PARAMETRIC_DESIGN, 300),
+    CREDITS_PRINT(MAP_DESIGN, 300),
     CREDITS_MAPNEXT(VERMILION_CITY, 16),
-    CREDITS_PRINT(POKEMON_DESIGNERS, 211),
-    CREDITS_PRINT(POKEMON_DESIGNERS_2, 210),
-    CREDITS_PRINT(POKEMON_DESIGNERS_3, 210),
-    CREDITS_MAP(ROUTE10, 16),
-    CREDITS_PRINT(SUPPORTING_PROGRAMMERS, 211),
-    CREDITS_PRINT(NCL_PRODUCT_TESTING, 210),
-    CREDITS_PRINT(SPECIAL_THANKS, 210),
+    CREDITS_PRINT(PRODUCT_TESTING, 300),
+    CREDITS_PRINT(SPECIAL_THANKS, 300),
     CREDITS_MAPNEXT(CELADON_CITY, 16),
-    CREDITS_PRINT(SPECIAL_THANKS_2, 221),
-    CREDITS_PRINT(SPECIAL_THANKS_3, 221),
-    CREDITS_PRINT(BRAILLE_CODE_CHECK, 221),
-    CREDITS_PRINT(INFORMATION_SUPERVISORS, 221),
-    CREDITS_PRINT(DUMMY, 51),
-    CREDITS_MAPNEXT(SAFFRON_CITY, 16),
-    CREDITS_PRINT(COORDINATORS, 211),
-    CREDITS_PRINT(TASK_MANAGERS, 210),
-    CREDITS_PRINT(PRODUCERS, 210),
-    CREDITS_MAP(ROUTE17, 16),
-    CREDITS_PRINT(EXECUTIVE_DIRECTOR, 331),
-    CREDITS_PRINT(EXECUTIVE_PRODUCER, 331),
-    CREDITS_PRINT(EXECUTIVE_PRODUCER_2, 331),
+    CREDITS_PRINT(PRODUCERS, 300),
     CREDITS_MAPNEXT(FUCHSIA_CITY, 16),
-    CREDITS_PRINT(ENGLISH_VERSION_COORDINATORS, 221),
-    CREDITS_PRINT(TRANSLATOR_TEXT_EDITOR, 221),
-    CREDITS_PRINT(PROGRAMMERS_2, 221),
-    CREDITS_PRINT(ENVIRONMENT_TOOL_PROGRAMMERS, 221),
-    CREDITS_PRINT(DUMMY, 52),
+    CREDITS_PRINT(US_VERSION_STAFF, 300),
+    CREDITS_MAPNEXT(SAFFRON_CITY, 16),
+    CREDITS_PRINT(US_COORDINATION, 300),
     CREDITS_MAPNEXT(CINNABAR_ISLAND, 16),
-    CREDITS_PRINT(GRAPHIC_DESIGNER, 210),
-    CREDITS_PRINT(NOA_PRODUCT_TESTING, 210),
-    CREDITS_PRINT(BRAILLE_CODE_CHECK_2, 211),
-    CREDITS_MAP(ROUTE21_NORTH, 16),
-    CREDITS_PRINT(BRAILLE_CODE_CHECK_3, 221),
-    CREDITS_PRINT(BRAILLE_CODE_CHECK_4, 221),
-    CREDITS_PRINT(SPECIAL_THANKS_4, 221),
-    CREDITS_PRINT(SPECIAL_THANKS_5, 221),
+    CREDITS_PRINT(TEXT_TRANSLATION, 300),
+    CREDITS_MAPNEXT(ROUTE23, 16),
+    CREDITS_PRINT(PRODUCER, 300),
     CREDITS_PRINT(DUMMY, 52),
     CREDITS_THEENDGFX(ALLRIGHTSRESERVED, 224),
     CREDITS_THEENDGFX(THEEND, 240),
@@ -451,12 +395,12 @@ static const ALIGNED(4) u8 sTextColor_Regular[3] = {0, 1, 2};
 
 static const struct WindowTemplate sCreditsWindowTemplate = {
     .bg = 0,
-    .tilemapLeft = 0,
+    .tilemapLeft = 4,
     .tilemapTop = 4,
-    .width = 30,
+    .width = 20,
     .height = 12,
     .paletteNum = 15,
-    .baseBlock = 0x008
+    .baseBlock = 8
 };
 
 static const u16 sPlayerMale_Pal[]     = INCBIN_U16("graphics/credits/player_male.gbapal");
@@ -564,143 +508,120 @@ static const struct SpriteTemplate sGroundSpriteTemplate_Static = {
     .callback = SpriteCallbackDummy
 };
 
-static const struct CreditsOverworldCmd sOverworldCmd_Route23[] = {
-    CREDITSOVWLDLOADMAP(ROUTE23, 11, 104, 1),
-    CREDITSOVWLDSCROLL(0, 1, 0x0500), // Scroll down
+static const struct CreditsOverworldCmd sOverworldCmd_PalletTown[] = {
+    CREDITSOVWLDLOADMAP(PALLET_TOWN, 5, 5, 1),
+    CREDITSOVWLDSCROLL(1, 1, 0x0500), // Scroll right and down
     CREDITSOVWLDEND
 };
 
 static const struct CreditsOverworldCmd sOverworldCmd_ViridianCity[] = {
-    CREDITSOVWLDLOADMAP(VIRIDIAN_CITY, 26, 24, 1),
+    CREDITSOVWLDLOADMAP(VIRIDIAN_CITY, 23, 25, 1),
     CREDITSOVWLDSCROLL(0, -1, 0x0500), // Scroll up
     CREDITSOVWLDEND
 };
 
 static const struct CreditsOverworldCmd sOverworldCmd_PewterCity[] = {
-    CREDITSOVWLDLOADMAP(PEWTER_CITY, 24, 28, 1),
-    CREDITSOVWLDSCROLL(0, -1, 0x0500), // Scroll up
-    CREDITSOVWLDEND
-};
-
-static const struct CreditsOverworldCmd sOverworldCmd_CeruleanCity[] = {
-    CREDITSOVWLDLOADMAP(CERULEAN_CITY, 9, 7, 1),
-    CREDITSOVWLDSCROLL(1, 1, 0x0500), // Scroll right and down
-    CREDITSOVWLDEND
-};
-
-static const struct CreditsOverworldCmd sOverworldCmd_Route25[] = {
-    CREDITSOVWLDLOADMAP(ROUTE25, 25, 10, 1),
+    CREDITSOVWLDLOADMAP(PEWTER_CITY, 22, 17, 1),
     CREDITSOVWLDSCROLL(1, 0, 0x0500), // Scroll right
     CREDITSOVWLDEND
 };
 
-static const struct CreditsOverworldCmd sOverworldCmd_VermilionCity[] = {
-    CREDITSOVWLDLOADMAP(VERMILION_CITY, 11, 5, 1),
-    CREDITSOVWLDSCROLL(1, 1, 0x0500), // Scroll right and down
+static const struct CreditsOverworldCmd sOverworldCmd_CeruleanCity[] = {
+    CREDITSOVWLDLOADMAP(CERULEAN_CITY, 30, 10, 1),
+    CREDITSOVWLDSCROLL(-1, 1, 0x0500), // Scroll left and down
     CREDITSOVWLDEND
 };
 
-static const struct CreditsOverworldCmd sOverworldCmd_Route10[] = {
-    CREDITSOVWLDLOADMAP(ROUTE10, 8, 18, 1),
+static const struct CreditsOverworldCmd sOverworldCmd_LavenderTown[] = {
+    CREDITSOVWLDLOADMAP(LAVENDER_TOWN, 8, 0, 1),
     CREDITSOVWLDSCROLL(0, 1, 0x0500), // Scroll down
+    CREDITSOVWLDEND
+};
+
+static const struct CreditsOverworldCmd sOverworldCmd_VermilionCity[] = {
+    CREDITSOVWLDLOADMAP(VERMILION_CITY, 18, 15, 1),
+    CREDITSOVWLDSCROLL(1, 0, 0x0500), // Scroll right
     CREDITSOVWLDEND
 };
 
 static const struct CreditsOverworldCmd sOverworldCmd_CeladonCity[] = {
-    CREDITSOVWLDLOADMAP(CELADON_CITY, 38, 22, 1),
-    CREDITSOVWLDSCROLL(-1, 0, 0x0500), // Scroll left
-    CREDITSOVWLDEND
-};
-
-static const struct CreditsOverworldCmd sOverworldCmd_SaffronCity[] = {
-    CREDITSOVWLDLOADMAP(SAFFRON_CITY, 30, 7, 1),
-    CREDITSOVWLDSCROLL(0, 1, 0x0500), // Scroll down
-    CREDITSOVWLDEND
-};
-
-static const struct CreditsOverworldCmd sOverworldCmd_Route17[] = {
-    CREDITSOVWLDLOADMAP(ROUTE17, 9, 5, 1),
-    CREDITSOVWLDSCROLL(0, 1, 0x0500), // Scroll down
+    CREDITSOVWLDLOADMAP(CELADON_CITY, 13, 11, 1),
+    CREDITSOVWLDSCROLL(1, 1, 0x0500), // Scroll right and down
     CREDITSOVWLDEND
 };
 
 static const struct CreditsOverworldCmd sOverworldCmd_FuchsiaCity[] = {
-    CREDITSOVWLDLOADMAP(FUCHSIA_CITY, 18, 6, 1),
-    CREDITSOVWLDSCROLL(0, 1, 0x0500), // Scroll down
-    CREDITSOVWLDEND
-};
-
-static const struct CreditsOverworldCmd sOverworldCmd_CinnabarIsland[] = {
-    CREDITSOVWLDLOADMAP(CINNABAR_ISLAND, 11, 12, 1),
+    CREDITSOVWLDLOADMAP(FUCHSIA_CITY, 19, 30, 1),
     CREDITSOVWLDSCROLL(0, -1, 0x0500), // Scroll up
     CREDITSOVWLDEND
 };
 
-static const struct CreditsOverworldCmd sOverworldCmd_Route21[] = {
-    CREDITSOVWLDLOADMAP(ROUTE21_NORTH, 16, 53, 1),
+static const struct CreditsOverworldCmd sOverworldCmd_SaffronCity[] = {
+    CREDITSOVWLDLOADMAP(SAFFRON_CITY, 11, 25, 1),
+    CREDITSOVWLDSCROLL(1, 0, 0x0500), // Scroll right
+    CREDITSOVWLDEND
+};
+
+static const struct CreditsOverworldCmd sOverworldCmd_CinnabarIsland[] = {
+    CREDITSOVWLDLOADMAP(CINNABAR_ISLAND, 8, 8, 1),
+    CREDITSOVWLDSCROLL(1, 0, 0x0500), // Scroll right
+    CREDITSOVWLDEND
+};
+
+static const struct CreditsOverworldCmd sOverworldCmd_Route23[] = {
+    CREDITSOVWLDLOADMAP(ROUTE23, 11, 69, 1),
     CREDITSOVWLDSCROLL(0, -1, 0x0500), // Scroll up
     CREDITSOVWLDEND,
 };
 
 static const struct CreditsOverworldCmd *const sOverworldMapScenes[] = {
-    sOverworldCmd_Route23,
+    sOverworldCmd_PalletTown,
     sOverworldCmd_ViridianCity,
     sOverworldCmd_PewterCity,
     sOverworldCmd_CeruleanCity,
-    sOverworldCmd_Route25,
+    sOverworldCmd_LavenderTown,
     sOverworldCmd_VermilionCity,
-    sOverworldCmd_Route10,
     sOverworldCmd_CeladonCity,
-    sOverworldCmd_SaffronCity,
-    sOverworldCmd_Route17,
     sOverworldCmd_FuchsiaCity,
+    sOverworldCmd_SaffronCity,
     sOverworldCmd_CinnabarIsland,
-    sOverworldCmd_Route21
+    sOverworldCmd_Route23
 };
 
 static const struct CreditsTextHeader sCreditsTexts[] = {
-    { gCreditsString_Director, gCreditsString_Junichi_Masuda, FALSE },
-    { gCreditsString_Art_Director_Battle_Director, gCreditsString_Ken_Sugimori_Shigeki_Morimoto, FALSE },
-    { gCreditsString_Program_Leader_Planning_Leader_Graphic_Design_Leader, gCreditsString_Tetsuya_Watanabe_Koji_Nishino_Takao_Unno, FALSE },
-    { gCreditsString_Programmers, gCreditsString_Hiroyuki_Nakamura_Masao_Taya_Satoshi_Nohara_Miyuki_Iwasawa_Daisuke_Goto, FALSE },
-    { gCreditsString_System_Programmers, gCreditsString_Tetsuya_Watanabe_Akito_Mori_Hisashi_Sogabe_Sousuke_Tamada, TRUE  },
-    { gCreditsString_Graphic_Designers, gCreditsString_Takao_Unno_Asuka_Iwashita_Kanako_Eo_Hiroki_Fuchino, TRUE  },
-    { gCreditsString_Graphic_Designers_2, gCreditsString_Ken_Sugimori_Hironobu_Yoshida, TRUE  },
-    { gCreditsString_Music_Composition, gCreditsString_Go_Ichinose_Junichi_Masuda, TRUE  },
-    { gCreditsString_Sound_Effects, gCreditsString_Go_Ichinose, FALSE },
-    { gCreditsString_Game_Designers, gCreditsString_Junichi_Masuda_Koji_Nishino_Tetsuji_Ohta, FALSE },
-    { gCreditsString_Game_Designers_2, gCreditsString_Hitomi_Sato_Shigeru_Ohmori_Tadashi_Takahashi, FALSE },
-    { gCreditsString_Game_Scenario, gCreditsString_Hitomi_Sato_Satoshi_Tajiri, TRUE  },
-    { gCreditsString_Script_Designer_Map_Designer, gCreditsString_Satoshi_Nohara_Shigeru_Ohmori, FALSE },
-    { gCreditsString_Parametric_Designers, gCreditsString_Koji_Nishino_Tetsuji_Ohta_Shigeki_Morimoto, FALSE },
-    { gCreditsString_POKeDEX_Text, gCreditsString_Kenji_Matsushima, FALSE },
-    { gCreditsString_POKeMON_Designers, gCreditsString_Ken_Sugimori_Motofumi_Fujiwara_Shigeki_Morimoto_Hironobu_Yoshida, TRUE  },
-    { gCreditsString_POKeMON_Designers_2, gCreditsString_Satoshi_Ohta_Asuka_Iwashita_Takao_Unno_Kanako_Eo_Aimi_Tomita, FALSE },
-    { gCreditsString_POKeMON_Designers_3, gCreditsString_Atsuko_Nishida_Muneo_Saito_Rena_Yoshikawa_Jun_Okutani, TRUE  },
-    { gCreditsString_Supporting_Programmers, gCreditsString_Teruyuki_Yoshioka_Takao_Nakano_Satoshi_Mitsuhara_Daisuke_Hoshino, FALSE },
-    { gCreditsString_NCL_Product_Testing, gCreditsString_NCL_Super_Mario_Club, FALSE },
-    { gCreditsString_Special_Thanks, gCreditsString_Hiro_Nakamura_Hiroyuki_Uesugi_Teruki_Murakawa_Kazuya_Suyama, FALSE },
-    { gCreditsString_Special_Thanks_2, gCreditsString_Kenji_Tominaga_Kenjiro_Ito_Tomotaka_Komura_Michiko_Takizawa, FALSE },
-    { gCreditsString_Special_Thanks_3, gCreditsString_Makiko_Takada_Mikiko_Ohashi_Shusaku_Egami_Takanao_Kondo_Rui_Kawaguchi, FALSE },
-    { gCreditsString_Braille_Code_Check, gCreditsString_Japan_Braille_Library, FALSE },
-    { gCreditsString_Information_Supervisors, gCreditsString_Hiroki_Enomoto_Kazuyuki_Terada_Yuri_Sakurai_Yumi_Funasaka_Naoko_Yanase, FALSE },
-    { gCreditsString_Coordinators, gCreditsString_Azusa_Tajima_Akira_Kinashi_Kazuki_Yoshihara_Retsuji_Nomoto, FALSE },
-    { gCreditsString_Task_Managers, gCreditsString_Hitoshi_Yamagami_Gakuji_Nomoto, TRUE  },
-    { gCreditsString_Producers, gCreditsString_Hiroyuki_Jinnai_Takehiro_Izushi_Hiroaki_Tsuru, FALSE },
-    { gCreditsString_Executive_Director, gCreditsString_Satoshi_Tajiri, FALSE },
-    { gCreditsString_Executive_Producer, gCreditsString_Satoru_Iwata, FALSE },
-    { gCreditsString_Executive_Producer_2, gCreditsString_Tsunekaz_Ishihara, FALSE },
-    { gCreditsString_English_Version_Coordinators, gCreditsString_Hiro_Nakamura_Seth_McMahill, FALSE },
-    { gCreditsString_Translator_Text_Editor, gCreditsString_Nob_Ogasawara_Teresa_Lillygren, FALSE },
-    { gCreditsString_Programmers_2, gCreditsString_Teruki_Murakawa_Souichi_Yamamoto_Yuichiro_Ito_Akira_Kinashi, FALSE },
-    { gCreditsString_Environment_Tool_Programmers, gCreditsString_Teruki_Murakawa_Souichi_Yamamoto_Kimiko_Nakamichi, TRUE  },
-    { gCreditsString_NOA_Product_Testing, gCreditsString_Thomas_Hertzog_Kathy_Huguenard_Mika_Kurosawa, TRUE  },
-    { gCreditsString_Braille_Code_Check_2, gCreditsString_National_Federation_of_the_Blind_Patricia_A_Maurer_Japan_Braille_Library_European_Blind_Union, TRUE  },
-    { gCreditsString_Braille_Code_Check_3, gCreditsString_National_Information_Library_Service_Margaret_Campion, TRUE  },
-    { gCreditsString_Special_Thanks_4, gCreditsString_Takehiro_Izushi_Motoyasu_Tojima_Hitoshi_Yamagami_Hiroyuki_Uesugi, FALSE },
-    { gCreditsString_Special_Thanks_5, gCreditsString_Nicola_Pratt_Barlow_Shellie_Dow_Anthony_Howitt_Naoko_Saeki_Kyoko_Onishi, FALSE },
-    { gCreditsString_Braille_Code_Check_4, gCreditsString_The_Royal_New_Zealand_Foundation_of_the_Blind_Greg_Moran, FALSE },
-    { gCreditsString_Graphic_Designer, gCreditsString_Akira_Kinashi, FALSE },
+    { gCreditsString_Director, gCreditsString_Satoshi_Tajiri, FALSE },
+    { gCreditsString_Programmers, gCreditsString_Takenori_Oota_Shigeki_Morimoto, FALSE },
+    { gCreditsString_Programmers, gCreditsString_Tetsuya_Watanabe_Junichi_Masuda_Sousuke_Tamada, FALSE },
+    { gCreditsString_CharacterDesign, gCreditsString_Ken_Sugimori_Atsuko_Nishida, FALSE },
+    { gCreditsString_Music, gCreditsString_Junichi_Masuda, FALSE  },
+    { gCreditsString_Sound_Effects, gCreditsString_Junichi_Masuda, FALSE },
+    { gCreditsString_Game_Design, gCreditsString_Satoshi_Tajiri, FALSE },
+    { gCreditsString_Monster_Design, gCreditsString_Ken_Sugimori_Atsuko_Nishida_Motofumo_Fuziwara, FALSE  },
+    { gCreditsString_Monster_Design, gCreditsString_Shigeki_Morimoto_Satoshi_Oota_Rena_Yoshikawa, FALSE  },
+    { gCreditsString_Game_Scenario, gCreditsString_Satoshi_Tajiri, FALSE  },
+    { gCreditsString_Game_Scenario, gCreditsString_Ryohsuke_Taniguchi_Fumihiro_Nonomura_Hiroyuki_Zinnai, FALSE  },
+    { gCreditsString_Parametric_Design, gCreditsString_Kohji_Nisino_Takeo_Nakamura, FALSE },
+    { gCreditsString_Map_Design, gCreditsString_Satoshi_Tajiri_Kohji_Nisino, FALSE },
+    { gCreditsString_Map_Design, gCreditsString_Kenji_Matsusima_Fumihiro_Nonomura_Ryohsuke_Taniguchi, FALSE },
+    { gCreditsString_Product_Testing, gCreditsString_Akiyoshi_Kakei_Kazuki_Tsuchiya, FALSE },
+    { gCreditsString_Product_Testing, gCreditsString_Takeo_Nakamura_Masamitsu_Yuda, FALSE },
+    { gCreditsString_Special_Thanks, gCreditsString_Tatsuya_Hishida_Yasuhiro_Sakai, FALSE },
+    { gCreditsString_Special_Thanks, gCreditsString_Wataru_Yamaguchi_Kazuyuki_Yamamoto, FALSE },
+    { gCreditsString_Special_Thanks, gCreditsString_Akihito_Tomisawa_Hiroyoshi_Kawamoto_Tomomichi_Oota, FALSE },
+    { gCreditsString_Producers, gCreditsString_Shigeru_Miyamoto, FALSE },
+    { gCreditsString_Producers, gCreditsString_Takashi_Kawaguchi, FALSE },
+    { gCreditsString_Producers, gCreditsString_Tsunekazu_Ishihara, FALSE },
+    { gCreditsString_US_Version_Staff, gText_TrainerCardNull, FALSE },
+    { gCreditsString_US_Coordination, gCreditsString_Gail_Tilden, FALSE  },
+    { gCreditsString_US_Coordination, gCreditsString_Naoko_Kawakami_Hiro_Nakamura, FALSE  },
+    { gCreditsString_US_Coordination, gCreditsString_William_Giese_Sara_Osborne, FALSE  },
+    { gCreditsString_Text_Translation, gCreditsString_Nob_Ogasawara, FALSE },
+    { gCreditsString_Programmers, gCreditsString_Teruki_Murakawa_Kohta_Fukui, FALSE  },
+    { gCreditsString_Special_Thanks, gCreditsString_Satoru_Iwata, FALSE },
+    { gCreditsString_Special_Thanks, gCreditsString_Takahiro_Harada, FALSE },
+    { gCreditsString_Product_Testing, gCreditsString_Paad_Testing_NCL_Super_Mario_Club, FALSE  },
+    { gCreditsString_Producer, gCreditsString_Takehiro_Izushi, FALSE  },
+    { gCreditsString_Executive_Producer, gCreditsString_Hiroshi_Yamauchi, FALSE },
     { gString_Dummy, gString_Dummy, FALSE }
 };
 
@@ -861,7 +782,7 @@ static s32 RollCredits(void)
             
         }
         sCreditsMgr->timer = 360;
-        AddTextPrinterParameterized4(sCreditsMgr->windowId, FONT_NORMAL_COPY_1, 0x08, 0x29, 1, 2, sTextColor_Header, 0, TITLE_TEXT);
+        AddTextPrinterParameterized4(sCreditsMgr->windowId, FONT_NORMAL, 8, 16, 1, 2, sTextColor_Header, 0, TITLE_TEXT);
         sCreditsMgr->mainseqno = CREDITSSCENE_WAIT_TITLE_STAFF;
         return 0;
     case CREDITSSCENE_WAIT_TITLE_STAFF:
@@ -918,7 +839,7 @@ static s32 RollCredits(void)
         if (gPaletteFade.active)
             return sCreditsMgr->canSpeedThrough;
         win0v[0] = sCreditsTexts[sCreditsScript[sCreditsMgr->scrcmdidx].param].unused;
-        AddTextPrinterParameterized4(sCreditsMgr->windowId, FONT_NORMAL_COPY_1, 2, 6, 0, 0, sTextColor_Header, -1, sCreditsTexts[sCreditsScript[sCreditsMgr->scrcmdidx].param].title);
+        AddTextPrinterParameterized4(sCreditsMgr->windowId, FONT_NORMAL, 2, 6, 0, 0, sTextColor_Header, -1, sCreditsTexts[sCreditsScript[sCreditsMgr->scrcmdidx].param].title);
         sCreditsMgr->mainseqno = CREDITSSCENE_PRINT_ADDPRINTER2;
         return sCreditsMgr->canSpeedThrough;
     case CREDITSSCENE_PRINT_ADDPRINTER2:

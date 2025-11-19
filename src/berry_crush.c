@@ -3000,7 +3000,7 @@ static void printCrushingResults(struct BerryCrushGame * game)
     AddTextPrinterParameterized3(game->gfx.resultsWindowId, FONT_NORMAL, 2, y, sBerryCrushTextColorTable[COLORID_GRAY], 0, gText_PressingSpeed);
 
     x = 190 - (u8)GetStringWidth(FONT_NORMAL, gText_TimesPerSec, 0);
-    AddTextPrinterParameterized3(game->gfx.resultsWindowId, FONT_NORMAL_COPY_2, x, y, sBerryCrushTextColorTable[COLORID_GRAY], 0, gText_TimesPerSec);
+    AddTextPrinterParameterized3(game->gfx.resultsWindowId, FONT_NORMAL, x, y, sBerryCrushTextColorTable[COLORID_GRAY], 0, gText_TimesPerSec);
 
     for (i = 0; i < 8; ++i)
         if (((u8)game->pressingSpeed >> (7 - i)) & 1)
@@ -3153,10 +3153,10 @@ static void Task_ShowBerryCrushRankings(u8 taskId)
             str = StringExpandPlaceholders(gStringVar4, gText_XDotY3);
             *str++ = CHAR_SPACE;
             StringCopy(str, gText_TimesPerSec);
-            xPos = 192 - (u8)GetStringWidth(FONT_NORMAL_COPY_2, gStringVar4, 0);
+            xPos = 192 - (u8)GetStringWidth(FONT_NORMAL, gStringVar4, 0);
             AddTextPrinterParameterized3(
                 tWindowId,
-                FONT_NORMAL_COPY_2,
+                FONT_NORMAL,
                 xPos,
                 yPos,
                 sBerryCrushTextColorTable[COLORID_GRAY],

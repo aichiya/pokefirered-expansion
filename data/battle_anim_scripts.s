@@ -4317,7 +4317,7 @@ RazorWindSetUp:
 	delay 1
 	createsprite gOrbSpiralInwardSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, 64, 16, 32, 0xFE00, 0, ANIM_ATTACKER, 0
 	waitforvisualfinish
-	goto RazorWindUnleash
+	goto RazorWindEnd
 
 RazorWindUnleash:
 	loadspritegfx ANIM_TAG_CUT

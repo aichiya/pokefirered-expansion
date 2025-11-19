@@ -800,8 +800,8 @@ static void DestroyScrollIndicatorArrows(void)
 
 static void PrintBerryPouchHeaderCentered(void)
 {
-    u32 slack = 72 - GetStringWidth(FONT_NORMAL_COPY_1, gText_BerryPouch, 0);
-    BerryPouchPrint(2, FONT_NORMAL_COPY_1, gText_BerryPouch, slack / 2, 1, 0, 0, 0, 0);
+    u32 slack = 72 - GetStringWidth(FONT_NORMAL, gText_BerryPouch, 0);
+    BerryPouchPrint(2, FONT_NORMAL, gText_BerryPouch, slack / 2, 1, 0, 0, 0, 0);
 }
 
 void BerryPouch_CursorResetToTop(void)

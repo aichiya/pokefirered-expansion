@@ -1523,16 +1523,16 @@ static void PrintMessageWithFollowupTask(u8 taskId, u8 fontId, const u8 * str, T
 
 static void PrintTitle(void)
 {
-    u32 distance = 72 - GetStringWidth(FONT_NORMAL_COPY_1, gText_TMCase, 0);
-    AddTextPrinterParameterized3(WIN_TITLE, FONT_NORMAL_COPY_1, distance / 2, 1, sTextColors[COLOR_DARK], 0, gText_TMCase);
+    u32 distance = 72 - GetStringWidth(FONT_NORMAL, gText_TMCase, 0);
+    AddTextPrinterParameterized3(WIN_TITLE, FONT_NORMAL, distance / 2, 1, sTextColors[COLOR_DARK], 0, gText_TMCase);
 }
 
 static void DrawMoveInfoLabels(void)
 {
-    AddTextPrinterParameterized3(WIN_MOVE_INFO_LABELS, FONT_NORMAL_COPY_2, 0, 0, sTextColors[COLOR_LIGHT], 0, gText_TMCaseType);
-    AddTextPrinterParameterized3(WIN_MOVE_INFO_LABELS, FONT_NORMAL_COPY_2, 0, 12, sTextColors[COLOR_LIGHT], 0, gText_TMCasePower);
-    AddTextPrinterParameterized3(WIN_MOVE_INFO_LABELS, FONT_NORMAL_COPY_2, 0, 24, sTextColors[COLOR_LIGHT], 0, gText_TMCaseAccuracy);
-    AddTextPrinterParameterized3(WIN_MOVE_INFO_LABELS, FONT_NORMAL_COPY_2, 0, 36, sTextColors[COLOR_LIGHT], 0, gText_TMCasePP);
+    AddTextPrinterParameterized3(WIN_MOVE_INFO_LABELS, FONT_NORMAL, 0, 0, sTextColors[COLOR_LIGHT], 0, gText_TMCaseType);
+    AddTextPrinterParameterized3(WIN_MOVE_INFO_LABELS, FONT_NORMAL, 0, 12, sTextColors[COLOR_LIGHT], 0, gText_TMCasePower);
+    AddTextPrinterParameterized3(WIN_MOVE_INFO_LABELS, FONT_NORMAL, 0, 24, sTextColors[COLOR_LIGHT], 0, gText_TMCaseAccuracy);
+    AddTextPrinterParameterized3(WIN_MOVE_INFO_LABELS, FONT_NORMAL, 0, 36, sTextColors[COLOR_LIGHT], 0, gText_TMCasePP);
     CopyWindowToVram(WIN_MOVE_INFO_LABELS, COPYWIN_GFX);
 }
 
@@ -1546,7 +1546,7 @@ static void PrintMoveInfo(u16 itemId)
     if (itemId == ITEM_NONE)
     {
         for (i = 0; i < 4; i++)
-            TMCase_Print(WIN_MOVE_INFO, FONT_NORMAL_COPY_2, gText_ThreeHyphens, 7, 12 * i, 0, 0, TEXT_SKIP_DRAW, COLOR_MOVE_INFO);
+            TMCase_Print(WIN_MOVE_INFO, FONT_NORMAL, gText_ThreeHyphens, 7, 12 * i, 0, 0, TEXT_SKIP_DRAW, COLOR_MOVE_INFO);
         CopyWindowToVram(WIN_MOVE_INFO, COPYWIN_GFX);
     }
     else
@@ -1563,7 +1563,7 @@ static void PrintMoveInfo(u16 itemId)
             ConvertIntToDecimalStringN(gStringVar1, gBattleMoves[move].power, STR_CONV_MODE_RIGHT_ALIGN, 3);
             str = gStringVar1;
         }
-        TMCase_Print(WIN_MOVE_INFO, FONT_NORMAL_COPY_2, str, 7, 12, 0, 0, TEXT_SKIP_DRAW, COLOR_MOVE_INFO);
+        TMCase_Print(WIN_MOVE_INFO, FONT_NORMAL, str, 7, 12, 0, 0, TEXT_SKIP_DRAW, COLOR_MOVE_INFO);
 
         // Print accuracy
         if (gBattleMoves[move].accuracy == 0)
@@ -1573,11 +1573,11 @@ static void PrintMoveInfo(u16 itemId)
             ConvertIntToDecimalStringN(gStringVar1, gBattleMoves[move].accuracy, STR_CONV_MODE_RIGHT_ALIGN, 3);
             str = gStringVar1;
         }
-        TMCase_Print(WIN_MOVE_INFO, FONT_NORMAL_COPY_2, str, 7, 24, 0, 0, TEXT_SKIP_DRAW, COLOR_MOVE_INFO);
+        TMCase_Print(WIN_MOVE_INFO, FONT_NORMAL, str, 7, 24, 0, 0, TEXT_SKIP_DRAW, COLOR_MOVE_INFO);
 
         // Print PP
         ConvertIntToDecimalStringN(gStringVar1, gBattleMoves[move].pp, STR_CONV_MODE_RIGHT_ALIGN, 3);
-        TMCase_Print(WIN_MOVE_INFO, FONT_NORMAL_COPY_2, gStringVar1, 7, 36, 0, 0, TEXT_SKIP_DRAW, COLOR_MOVE_INFO);
+        TMCase_Print(WIN_MOVE_INFO, FONT_NORMAL, gStringVar1, 7, 36, 0, 0, TEXT_SKIP_DRAW, COLOR_MOVE_INFO);
 
         CopyWindowToVram(WIN_MOVE_INFO, COPYWIN_GFX);
     }

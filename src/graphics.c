@@ -1237,28 +1237,6 @@ const u32 gUnionRoomChat_Bg_Gfx[] = INCBIN_U32("graphics/union_room_chat/bg.4bpp
 const u32 gUnionRoomChat_Bg_Tilemap[] = INCBIN_U32("graphics/union_room_chat/bg.bin.lz");
 const u32 gUnionRoomChat_Icons_Gfx[] = INCBIN_U32("graphics/union_room_chat/icons.4bpp.lz");
 
-const u16 gTilesetPalettes_General[][16] =
-{
-    INCBIN_U16("data/tilesets/primary/general/palettes/00.gbapal"),
-    INCBIN_U16("data/tilesets/primary/general/palettes/01.gbapal"),
-    INCBIN_U16("data/tilesets/primary/general/palettes/02.gbapal"),
-    INCBIN_U16("data/tilesets/primary/general/palettes/03.gbapal"),
-    INCBIN_U16("data/tilesets/primary/general/palettes/04.gbapal"),
-    INCBIN_U16("data/tilesets/primary/general/palettes/05.gbapal"),
-    INCBIN_U16("data/tilesets/primary/general/palettes/06.gbapal"),
-    INCBIN_U16("data/tilesets/primary/general/palettes/07.gbapal"),
-    INCBIN_U16("data/tilesets/primary/general/palettes/08.gbapal"),
-    INCBIN_U16("data/tilesets/primary/general/palettes/09.gbapal"),
-    INCBIN_U16("data/tilesets/primary/general/palettes/10.gbapal"),
-    INCBIN_U16("data/tilesets/primary/general/palettes/11.gbapal"),
-    INCBIN_U16("data/tilesets/primary/general/palettes/12.gbapal"),
-    INCBIN_U16("data/tilesets/primary/general/palettes/13.gbapal"),
-    INCBIN_U16("data/tilesets/primary/general/palettes/14.gbapal"),
-    INCBIN_U16("data/tilesets/primary/general/palettes/15.gbapal"),
-};
-
-const u32 gTilesetTiles_General[] = INCBIN_U32("data/tilesets/primary/general/tiles.4bpp.lz");
-
 const u8 gBerryFixGameboy_Pal[] = INCBIN_U8("graphics/berry_fix/gba_small.gbapal");
 const u8 gBerryFixGameboy_Gfx[] = INCBIN_U8("graphics/berry_fix/gba_small.4bpp.lz");
 const u8 gBerryFixGameboy_Tilemap[] = INCBIN_U8("graphics/berry_fix/gba_small.bin.lz");
@@ -1277,50 +1255,6 @@ const u8 gBerryFixGbaTransferError_Tilemap[] = INCBIN_U8("graphics/berry_fix/gba
 const u8 gBerryFixWindow_Pal[] = INCBIN_U8("graphics/berry_fix/window.gbapal");
 const u8 gBerryFixWindow_Gfx[] = INCBIN_U8("graphics/berry_fix/window.4bpp.lz");
 const u8 gBerryFixWindow_Tilemap[] = INCBIN_U8("graphics/berry_fix/window.bin.lz");
-
-const u16 gTilesetPalettes_GenericBuilding1[][16] =
-{
-    INCBIN_U16("data/tilesets/secondary/generic_building_1/palettes/00.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/generic_building_1/palettes/01.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/generic_building_1/palettes/02.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/generic_building_1/palettes/03.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/generic_building_1/palettes/04.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/generic_building_1/palettes/05.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/generic_building_1/palettes/06.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/generic_building_1/palettes/07.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/generic_building_1/palettes/08.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/generic_building_1/palettes/09.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/generic_building_1/palettes/10.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/generic_building_1/palettes/11.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/generic_building_1/palettes/12.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/generic_building_1/palettes/13.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/generic_building_1/palettes/14.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/generic_building_1/palettes/15.gbapal"),
-};
-
-const u32 gTilesetTiles_GenericBuilding1[] = INCBIN_U32("data/tilesets/secondary/generic_building_1/tiles.4bpp.lz");
-
-const u16 gTilesetPalettes_DepartmentStore[][16] =
-{
-    INCBIN_U16("data/tilesets/secondary/department_store/palettes/00.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/department_store/palettes/01.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/department_store/palettes/02.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/department_store/palettes/03.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/department_store/palettes/04.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/department_store/palettes/05.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/department_store/palettes/06.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/department_store/palettes/07.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/department_store/palettes/08.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/department_store/palettes/09.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/department_store/palettes/10.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/department_store/palettes/11.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/department_store/palettes/12.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/department_store/palettes/13.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/department_store/palettes/14.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/department_store/palettes/15.gbapal"),
-};
-
-const u32 gTilesetTiles_DepartmentStore[] = INCBIN_U32("data/tilesets/secondary/department_store/tiles.4bpp.lz");
 
 const u16 gUnionRoomChat_Panel_Pal[] = INCBIN_U16("graphics/union_room_chat/panel.gbapal");
 const u32 gUnionRoomChat_Panel_Gfx[] = INCBIN_U32("graphics/union_room_chat/panel.4bpp.lz");

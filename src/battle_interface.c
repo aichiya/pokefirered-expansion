@@ -1728,7 +1728,7 @@ static void UpdateSafariBallsTextOnHealthbox(u8 healthboxSpriteId)
     windowTileData = AddTextPrinterAndCreateWindowOnHealthbox(gText_SafariBalls, 0, 3, &windowId);
     spriteTileNum = gSprites[healthboxSpriteId].oam.tileNum * TILE_SIZE_4BPP;
     TextIntoHealthboxObject((void *)(OBJ_VRAM0 + 0x40) + spriteTileNum, windowTileData, 6);
-    TextIntoHealthboxObject((void *)(OBJ_VRAM0 + 0x800) + spriteTileNum, windowTileData + 0xC0, 2);
+    TextIntoHealthboxObject((void *)(OBJ_VRAM0 + 0x800) + spriteTileNum, windowTileData + 192, 2);
     RemoveWindowOnHealthbox(windowId);
 }
 
@@ -1739,7 +1739,7 @@ static void UpdateLeftNoOfBallsTextOnHealthbox(u8 healthboxSpriteId)
     u32 windowId, spriteTileNum;
     u8 *windowTileData;
 
-    txtPtr = StringCopy(text, gText_HighlightRed_Left);
+    txtPtr = StringCopy(text, gText_SafariBalls);
     ConvertIntToDecimalStringN(txtPtr, gNumSafariBalls, STR_CONV_MODE_LEFT_ALIGN, 2);
 
     windowTileData = AddTextPrinterAndCreateWindowOnHealthbox(text, 47 - GetStringWidth(FONT_SMALL, text, 0), 3, &windowId);
@@ -1797,8 +1797,8 @@ void UpdateHealthboxAttribute(u8 healthboxSpriteId, struct Pokemon *mon, u8 elem
             UpdateNickInHealthbox(healthboxSpriteId, mon);
         if (elementId == HEALTHBOX_STATUS_ICON || elementId == HEALTHBOX_ALL)
             UpdateStatusIconInHealthbox(healthboxSpriteId);
-        if (elementId == HEALTHBOX_SAFARI_ALL_TEXT)
-            UpdateSafariBallsTextOnHealthbox(healthboxSpriteId);
+        //if (elementId == HEALTHBOX_SAFARI_ALL_TEXT)
+        //    UpdateSafariBallsTextOnHealthbox(healthboxSpriteId);
         if (elementId == HEALTHBOX_SAFARI_ALL_TEXT || elementId == HEALTHBOX_SAFARI_BALLS_TEXT)
             UpdateLeftNoOfBallsTextOnHealthbox(healthboxSpriteId);
     }

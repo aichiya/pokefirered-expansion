@@ -1090,7 +1090,7 @@ static void unused_ItemPc_AddTextPrinterParameterized(u8 windowId, const u8 * st
 
     template.currentChar = string;
     template.windowId = windowId;
-    template.fontId = FONT_NORMAL_COPY_2;
+    template.fontId = FONT_NORMAL;
     template.x = x;
     template.y = y;
     template.currentX = x;
@@ -1098,9 +1098,9 @@ static void unused_ItemPc_AddTextPrinterParameterized(u8 windowId, const u8 * st
     template.fgColor = 2;
     template.bgColor = 0;
     template.shadowColor = 3;
-    template.unk = GetFontAttribute(FONT_NORMAL_COPY_2, FONTATTR_UNKNOWN);
-    template.letterSpacing = letterSpacing + GetFontAttribute(FONT_NORMAL_COPY_2, FONTATTR_LETTER_SPACING);
-    template.lineSpacing = lineSpacing + GetFontAttribute(FONT_NORMAL_COPY_2, FONTATTR_LINE_SPACING);
+    template.unk = GetFontAttribute(FONT_NORMAL, FONTATTR_UNKNOWN);
+    template.letterSpacing = letterSpacing + GetFontAttribute(FONT_NORMAL, FONTATTR_LETTER_SPACING);
+    template.lineSpacing = lineSpacing + GetFontAttribute(FONT_NORMAL, FONTATTR_LINE_SPACING);
     AddTextPrinter(&template, speed, NULL);
 }
 

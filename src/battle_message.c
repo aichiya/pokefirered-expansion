@@ -1281,7 +1281,7 @@ const u8 gText_WhatWillPkmnDo[] = _("");
 const u8 gText_WhatWillPlayerThrow[] = _(""); //"What will {B_PLAYER_NAME}\nthrow?"
 const u8 gText_WhatWillOldManDo[] = _("What will the\nold man do?");
 const u8 gText_LinkStandby[] = _("{PAUSE 16}Link standby…");
-const u8 gText_BattleMenu[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW 1 14 15}FIGHT{CLEAR_TO 56}ITEM\nPARTY{CLEAR_TO 56}RUN");
+const u8 gText_BattleMenu[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW 1 14 15}FIGHT{CLEAR_TO 56}PARTY\nITEM{CLEAR_TO 56}RUN");
 const u8 gText_SafariZoneMenu[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW 1 14 15}ORB{CLEAR_TO 56}BAIT\nROCK{CLEAR_TO 56}RUN");
 const u8 gText_MoveInterfacePP[] = _("PP ");
 const u8 gText_MoveInterfaceType[] = _(""); //"{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW 1 14 15}TYPE/"
@@ -1311,7 +1311,7 @@ static const u8 *const sStatNamesTable2[] =
     sText_Speed
 };
 
-const u8 gText_SafariBalls[] = _("SAFARI BALLS"); //
+const u8 gText_SafariBalls[] = _("BALLS:");
 const u8 gText_HighlightRed_Left[] = _("Left: ");
 const u8 gText_HighlightRed[] = _("");
 const u8 gText_Sleep[] = _("sleep");
@@ -2433,7 +2433,7 @@ static const struct BattleWindowText sTextOnWindowsInfo_Normal[] = {
     },
     [B_WIN_ACTION_MENU] = {
         .fillValue = PIXEL_FILL(0xe),
-        .fontId = FONT_NORMAL_COPY_1,
+        .fontId = FONT_NORMAL,
         .x = 0,
         .y = 2,
         .letterSpacing = 0,
@@ -2529,7 +2529,7 @@ static const struct BattleWindowText sTextOnWindowsInfo_Normal[] = {
     },
     [B_WIN_DUMMY] = {
         .fillValue = PIXEL_FILL(0xe),
-        .fontId = FONT_NORMAL_COPY_1,
+        .fontId = FONT_NORMAL,
         .x = 0,
         .y = 2,
         .letterSpacing = 0,
@@ -2541,7 +2541,7 @@ static const struct BattleWindowText sTextOnWindowsInfo_Normal[] = {
     },
     [B_WIN_SWITCH_PROMPT] = {
         .fillValue = PIXEL_FILL(0xe),
-        .fontId = FONT_NORMAL_COPY_1,
+        .fontId = FONT_NORMAL,
         .x = 0,
         .y = 2,
         .letterSpacing = 0,

@@ -138,6 +138,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_Porygon::
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeMon1::
+	showcoinsbox 0, 0
 	bufferspeciesname STR_VAR_1, VAR_TEMP_1
 	msgbox CeladonCity_GameCorner_PrizeRoom_Text_YouWantPrize, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
@@ -151,6 +152,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeMon1::
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeMon2::
+	showcoinsbox 0, 0
 	bufferspeciesname STR_VAR_1, VAR_TEMP_1
 	msgbox CeladonCity_GameCorner_PrizeRoom_Text_YouWantPrize, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
@@ -326,6 +328,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_TM50::
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeTM::
+	showcoinsbox 0, 0
 	msgbox CeladonCity_GameCorner_PrizeRoom_Text_YouWantTM, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_TryGivePrize
